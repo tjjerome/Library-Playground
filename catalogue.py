@@ -39,7 +39,7 @@ CATALOG_FILE = "Library_Catalog.json"
 MODEL = "claude-haiku-4-5-20251001"
 MAX_TOKENS = 8000
 DEFAULT_CHUNK_SIZE = 10
-RATE_LIMIT_DELAY = 1.5   # seconds between API calls
+RATE_LIMIT_DELAY = 10    # seconds between API calls
 MAX_RETRIES = 3
 
 WEB_SEARCH_TOOL = {
@@ -333,6 +333,7 @@ def main():
 
     processed = 0
     chunk_num = 0
+    consecutive_failures = 0
 
     while processed < total_to_process:
         chunk_num += 1
@@ -345,8 +346,17 @@ def main():
         try:
             n = catalogue_chunk(client, chunk_data, catalog, system)
             print(f"  Catalogued {n}/{len(chunk_slice)} entries.")
+            consecutive_failures = 0
         except Exception as e:
             print(f"  Error processing chunk: {e}")
+            consecutive_failures += 1
+            if consecutive_failures >= 3:
+                save_catalog(catalog, args.catalog)
+                print(f"  Saved → {args.catalog}")
+                print("\n  3 consecutive chunk failures — rate limit likely saturated.")
+                print("  Progress saved. Re-run the script to resume.")
+                print_status(catalog)
+                sys.exit(1)
             print("  Saving progress and continuing...")
 
         save_catalog(catalog, args.catalog)
