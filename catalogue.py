@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 """
 Library Cataloguer
-Autonomously builds Library_Catalog.json from a Library CSV,
-including an inline audit of CSV tags against known records.
+Autonomously builds Library_Catalog.json from a Library CSV.
 Designed to run in Claude Code without requiring human approval between chunks.
 
 Usage:
     python catalogue.py --library Library.csv
     python catalogue.py --library Library.csv --chunk-size 40
     python catalogue.py --library Library.csv --status
-    python catalogue.py --library Library.csv --audit-report
-    python catalogue.py --library Library.csv --re-audit     # reprocess for audit only
     python catalogue.py --library Library.csv --review-only  # reprocess needs_review entries
 
 Requirements:
@@ -32,7 +29,6 @@ from catalogue_prompts import (
     build_system_prompt,
     build_batch_prompt,
     parse_catalog_response,
-    generate_audit_report,
 )
 
 # ---------------------------------------------------------------------------
@@ -40,7 +36,6 @@ from catalogue_prompts import (
 # ---------------------------------------------------------------------------
 
 CATALOG_FILE = "Library_Catalog.json"
-AUDIT_REPORT_FILE = "Library_Audit_Report.md"
 MODEL = "claude-haiku-4-5-20251001"
 MAX_TOKENS = 8000
 DEFAULT_CHUNK_SIZE = 10
@@ -129,8 +124,7 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> int:
                 "audio_notes": None,
                 "content_flags": [],
                 "confidence": None,
-                "research_source": None,
-                "audit": None
+                "research_source": None
             }
             added += 1
     return added
@@ -205,11 +199,10 @@ def catalogue_chunk(
     chunk: list[dict],
     catalog: dict,
     system: str
-) -> tuple[int, int]:
+) -> int:
     """
-    Send a chunk of book dicts (with CSV data included) to Claude.
-    Updates catalog entries in place.
-    Returns (n_catalogued, n_audit_flags).
+    Send a chunk of book dicts to Claude. Updates catalog entries in place.
+    Returns n_catalogued.
     """
     print(f"\n  Sending {len(chunk)} books to Claude...")
 
@@ -221,10 +214,9 @@ def catalogue_chunk(
 
     if not results:
         print("  Warning: could not parse response. Entries remain pending.")
-        return 0, 0
+        return 0
 
     catalogued = 0
-    audit_flags = 0
 
     for key, entry_data in results.items():
         matched_key = None
@@ -244,16 +236,11 @@ def catalogue_chunk(
                     "needs_review" if entry_data.get("confidence") == "Low"
                     else "complete"
                 )
-            # Count audit flags
-            audit = entry_data.get("audit", {})
-            if audit and not audit.get("passed", True):
-                flags = audit.get("flags", [])
-                audit_flags += len(flags)
             catalogued += 1
         else:
             print(f"  Warning: couldn't match '{key}' to a catalog entry — skipping.")
 
-    return catalogued, audit_flags
+    return catalogued
 
 # ---------------------------------------------------------------------------
 # Progress and audit reporting
@@ -267,13 +254,6 @@ def print_status(catalog: dict):
     pending = sum(1 for e in entries.values() if e["status"] == "pending")
     pct = round((complete + needs_review) / total * 100, 1) if total else 0
 
-    # Audit stats
-    audited = sum(1 for e in entries.values() if e.get("audit") is not None)
-    audit_failures = sum(
-        1 for e in entries.values()
-        if e.get("audit") and not e["audit"].get("passed", True)
-    )
-
     print(f"\n{'='*55}")
     print(f"  Library Catalog Status")
     print(f"{'='*55}")
@@ -282,17 +262,8 @@ def print_status(catalog: dict):
     print(f"  Needs review     : {needs_review}")
     print(f"  Pending          : {pending}")
     print(f"  Progress         : {pct}%")
-    print(f"  Audited entries  : {audited}")
-    print(f"  Audit failures   : {audit_failures}")
     print(f"  Last updated     : {catalog.get('last_updated', 'never')}")
     print(f"{'='*55}\n")
-
-
-def write_audit_report(catalog: dict, path: str):
-    report = generate_audit_report(catalog)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(report)
-    print(f"Audit report written → {path}")
 
 # ---------------------------------------------------------------------------
 # Main
@@ -304,10 +275,6 @@ def main():
     parser.add_argument("--catalog", default=CATALOG_FILE)
     parser.add_argument("--chunk-size", type=int, default=DEFAULT_CHUNK_SIZE)
     parser.add_argument("--status", action="store_true", help="Print progress and exit")
-    parser.add_argument("--audit-report", action="store_true",
-                        help="Generate audit report from existing catalog and exit")
-    parser.add_argument("--re-audit", action="store_true",
-                        help="Reprocess all complete entries to add/refresh audit data")
     parser.add_argument("--review-only", action="store_true",
                         help="Only reprocess needs_review entries")
     args = parser.parse_args()
@@ -331,22 +298,10 @@ def main():
     if args.status:
         sys.exit(0)
 
-    if args.audit_report:
-        write_audit_report(catalog, AUDIT_REPORT_FILE)
-        sys.exit(0)
-
     # Determine which entries to process
     if args.review_only:
         target_statuses = {"needs_review"}
         print("Mode: reprocessing needs_review entries.\n")
-    elif args.re_audit:
-        # Re-audit: reprocess complete entries that have no audit data yet
-        target_statuses = {"complete"}
-        catalog["entries"] = {
-            k: v for k, v in catalog["entries"].items()
-            if v.get("audit") is None or v["status"] == "pending"
-        }
-        print("Mode: re-auditing entries without audit data.\n")
     else:
         target_statuses = {"pending"}
         print("Mode: cataloguing all pending entries.\n")
@@ -359,7 +314,6 @@ def main():
 
     if not pending_entries:
         print("Nothing to process.")
-        write_audit_report(catalog, AUDIT_REPORT_FILE)
         sys.exit(0)
 
     total_to_process = len(pending_entries)
@@ -379,7 +333,6 @@ def main():
 
     processed = 0
     chunk_num = 0
-    total_audit_flags = 0
 
     while processed < total_to_process:
         chunk_num += 1
@@ -390,10 +343,8 @@ def main():
               f"books {processed + 1}–{processed + len(chunk_slice)} of {total_to_process}")
 
         try:
-            n, flags = catalogue_chunk(client, chunk_data, catalog, system)
-            total_audit_flags += flags
-            flag_note = f", {flags} audit flag(s)" if flags else ""
-            print(f"  Catalogued {n}/{len(chunk_slice)} entries{flag_note}.")
+            n = catalogue_chunk(client, chunk_data, catalog, system)
+            print(f"  Catalogued {n}/{len(chunk_slice)} entries.")
         except Exception as e:
             print(f"  Error processing chunk: {e}")
             print("  Saving progress and continuing...")
@@ -409,13 +360,6 @@ def main():
 
     print("\nCataloguing complete.")
     print_status(catalog)
-
-    # Always write audit report at the end
-    write_audit_report(catalog, AUDIT_REPORT_FILE)
-    if total_audit_flags:
-        print(f"\n  ⚠️  {total_audit_flags} total audit flags found. Review {AUDIT_REPORT_FILE}.")
-    else:
-        print(f"\n  ✅  No audit flags. {AUDIT_REPORT_FILE} written.")
 
 
 if __name__ == "__main__":
