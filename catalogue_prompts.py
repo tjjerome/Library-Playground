@@ -26,9 +26,6 @@ The library CSV contains the following fields:
 - series_position: position in series (e.g. Book 1, Book 3) if applicable
 - series_type: one of "Standalone" | "Short Stories" | "Short Series" | "Long Series"
 - pubdate: publication date (not required for cataloguing, but may be useful for auditing)
-- #pages: page count, calculated from epub data, useful for determining book length and level of commitment to reader
-- #goodreads_rating: average Goodreads rating to determine general reception and quality
-- #goodreads_reviews: number of Goodreads reviews, to determine popularity and how much information is likely available online for research
 - tags: comma-separated values from a controlled vocabulary (see VALID TAGS below)
 - goodreads_shelves: original Goodreads shelf data (context, not primary audit target)
 
@@ -49,9 +46,6 @@ CATALOG ENTRY SCHEMA:
   "series_position": "e.g. Book 1, or null",
   "genre": "single most accurate genre label",
   "series_status": one of: "Standalone" | "Short Stories" | "Short Series" | "Long Series",
-  "pages": integer page count or null,
-  "goodreads_rating": float average rating or null,
-  "goodreads_reviews": integer review count or null,
   "indie": true or false,
   "classic": true or false,
   "status": "complete" or "needs_review",
