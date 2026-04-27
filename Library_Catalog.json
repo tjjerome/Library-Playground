@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3475,
-  "total_pending": 1125,
+  "total_catalogued": 3495,
+  "total_pending": 1105,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -192132,27 +192132,46 @@
       "title": "Mage of No Renown",
       "author": "Kel Kade",
       "series": "Tales of Terralor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young Wesson, gifted with immense destructive magical power he desperately doesn't want to use, flees a murderous mob and must master his dangerous abilities while hunted by an assassin. A coming-of-age prequel set in the world of the King's Dark Tidings series.",
+      "tone": "adventurous, heartfelt, action-packed, coming-of-age",
+      "pacing": "Fast",
+      "themes": [
+        "power and responsibility",
+        "coming of age",
+        "self-control",
+        "identity",
+        "morality of violence"
+      ],
+      "setting": "Secondary fantasy world of Terralor; medieval-style kingdom",
+      "comparable_books": [
+        "Free the Darkness - Kel Kade",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Sufficiently Advanced Magic - Andrew Rowe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "coming-of-age protagonist",
+          "elemental magic system",
+          "fast-paced action",
+          "prequel with strong character depth",
+          "standalone entry point to a larger world"
+        ],
+        "negative": [
+          "side-character focus may disappoint readers seeking the main series protagonist",
+          "some reviewers found character motivation thin"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Nick Podehl, a fan-favourite narrator for the King's Dark Tidings series; reviewers praised the audio edition highly.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Solaris - Stanisław Lem": {
@@ -192160,80 +192179,139 @@
       "author": "Stanisław Lem",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Scientists stationed above the ocean-covered planet Solaris find that the living ocean has begun manifesting physical embodiments of their deepest memories and psychological traumas, raising profound questions about alien intelligence and human self-knowledge.",
+      "tone": "philosophical, melancholic, unsettling, cerebral",
+      "pacing": "Slow",
+      "themes": [
+        "limits of human knowledge",
+        "alien intelligence",
+        "memory and grief",
+        "the unknowable Other",
+        "science and hubris"
+      ],
+      "setting": "Near-future; a research space station orbiting the sentient ocean-world Solaris",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Roadside Picnic - Arkady & Boris Strugatsky",
+        "His Master's Voice - Stanisław Lem"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical science fiction",
+          "deeply literary",
+          "alien first contact",
+          "introspective protagonist",
+          "ideas-driven narrative"
+        ],
+        "negative": [
+          "minimal plot action",
+          "heavy philosophical digression",
+          "no resolution or answers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Memoirs Found in a Bathtub - Stanisław Lem": {
       "title": "Memoirs Found in a Bathtub",
       "author": "Stanisław Lem",
-      "series": "Ijon Tichy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "From the Memoirs of Ijon Tichy",
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In the year 3149, a man trapped inside a vast, hermetically sealed underground bureaucratic complex wanders its labyrinthine corridors on an increasingly absurd and paranoid mission he cannot fully understand. A Kafkaesque satire of bureaucracy, politics, and the nature of meaning.",
+      "tone": "darkly comic, absurdist, Kafkaesque, satirical",
+      "pacing": "Moderate",
+      "themes": [
+        "bureaucracy and absurdism",
+        "paranoia",
+        "meaning and interpretation",
+        "political satire",
+        "totalitarianism"
+      ],
+      "setting": "Far future (3149); a vast, self-contained underground bunker society",
+      "comparable_books": [
+        "The Trial - Franz Kafka",
+        "The Futurological Congress - Stanisław Lem",
+        "Catch-22 - Joseph Heller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Kafkaesque absurdism",
+          "satirical wit",
+          "philosophical depth",
+          "short and dense",
+          "political allegory"
+        ],
+        "negative": [
+          "no conventional plot resolution",
+          "deliberately disorienting",
+          "not action-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Peace on Earth: A Novel - Stanisław Lem": {
       "title": "Peace on Earth: A Novel",
       "author": "Stanisław Lem",
-      "series": "Ijon Tichy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "From the Memoirs of Ijon Tichy",
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ijon Tichy is sent to the Moon to investigate self-evolving robot weapons that have gone silent, but returns with his brain's hemispheres surgically severed — his left hand literally doesn't know what his right is doing. A satirical Cold War parable about the arms race and autonomous weapons.",
+      "tone": "wry, satirical, absurdist, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "arms race and militarism",
+        "artificial intelligence",
+        "split identity",
+        "Cold War satire",
+        "technology out of control"
+      ],
+      "setting": "Near-future Earth and the Moon; satirical geopolitical world order",
+      "comparable_books": [
+        "The Star Diaries - Stanisław Lem",
+        "The Futurological Congress - Stanisław Lem",
+        "Dr. Strangelove (film analogue)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War satire",
+          "slapstick humour",
+          "ideas-driven SF",
+          "short and punchy",
+          "Lem fans"
+        ],
+        "negative": [
+          "lacks visceral plot drive",
+          "best appreciated with prior Lem/Tichy context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood Music - Greg Bear": {
@@ -192241,215 +192319,369 @@
       "author": "Greg Bear",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A rogue scientist engineers intelligent microorganisms from his own blood cells; when released into the world, the rapidly evolving biocircuitry transforms human biology and civilisation in ways that transcend ordinary existence. A landmark hard-SF exploration of the biological singularity.",
+      "tone": "cerebral, unsettling, visionary, body-horror adjacent",
+      "pacing": "Moderate",
+      "themes": [
+        "biological evolution",
+        "the singularity",
+        "scientific hubris",
+        "consciousness and identity",
+        "transformation"
+      ],
+      "setting": "Near-future United States; expanded into a transformed biological substrate",
+      "comparable_books": [
+        "Accelerando - Charles Stross",
+        "Prey - Michael Crichton",
+        "Darwin's Radio - Greg Bear"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "big ideas",
+          "biological horror undertones",
+          "evolutionary speculation",
+          "thought-provoking concept"
+        ],
+        "negative": [
+          "body horror elements",
+          "detached narrative voice",
+          "not character-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Trains of Keldora - Alex Raizman": {
       "title": "The Trains of Keldora",
       "author": "Alex Raizman",
       "series": "Factory of the Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After his victory over the Chained God, isekai'd inventor Julian expands his factory on the fantasy world of Keldora, but finds himself surrounded by sabotage and a new divine threat from the Gods of the Green. He must outproduce his enemies rather than overpower them.",
+      "tone": "light, propulsive, problem-solving, humorous",
+      "pacing": "Fast",
+      "themes": [
+        "ingenuity over brute force",
+        "industrialisation",
+        "community and belonging",
+        "progression fantasy"
+      ],
+      "setting": "Fantasy world of Keldora; medieval-adjacent world with LitRPG game mechanics",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "The Land: Founding - Aleron Kong",
+        "He Who Fights With Monsters - Jason Cheyne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "crafting and automation fantasy",
+          "isekai protagonist",
+          "satisfying progression",
+          "fast-paced adventure",
+          "factory/building game fans (Factorio)"
+        ],
+        "negative": [
+          "LitRPG game mechanics and stat screens",
+          "light characterisation",
+          "prose typos noted by reviewers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Practical Guide to Evil I - David Verburg": {
       "title": "A Practical Guide to Evil I",
       "author": "David Verburg",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "A Practical Guide to Evil",
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Catherine Foundling, an orphan girl in a conquered kingdom, chooses to join the villainous empire rather than fight it, apprenticing herself to the Black Knight to change the world from within — but in a world where Good and Evil are literal cosmic forces, her morally grey path has deadly consequences.",
+      "tone": "darkly comic, subversive, propulsive, trope-aware",
+      "pacing": "Fast",
+      "themes": [
+        "good vs evil as cosmic law",
+        "moral ambiguity",
+        "power and corruption",
+        "narrative tropes as in-world mechanics",
+        "coming of age"
+      ],
+      "setting": "Secondary world of 'Creation' — a high-fantasy continent where narrative tropes are literally enforced by fate",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "The Black Company - Glen Cook",
+        "The Traitor Baru Cormorant - Seth Dickinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "subversive fantasy tropes",
+          "darkly comic tone",
+          "web serial origins with huge fanbase",
+          "villain protagonist"
+        ],
+        "negative": [
+          "originally a web serial — first book is shorter than later volumes",
+          "some tonal whiplash between comedy and darkness"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Motors of Keldora - Alex Raizman": {
       "title": "The Motors of Keldora",
       "author": "Alex Raizman",
       "series": "Factory of the Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Julian's factory grows ever more powerful, but the Gold God Folas has assembled a full raid party of summoners, necromancers, and beastmasters to claim everything Julian has built. Outpaced by an army of minions, Julian must get creative — and motors might be the trick.",
+      "tone": "light, propulsive, problem-solving, humorous",
+      "pacing": "Fast",
+      "themes": [
+        "ingenuity over brute force",
+        "industrialisation",
+        "escalating conflict",
+        "progression fantasy"
+      ],
+      "setting": "Fantasy world of Keldora; medieval-adjacent world with LitRPG game mechanics",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "The Land: Founding - Aleron Kong",
+        "He Who Fights With Monsters - Jason Cheyne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "crafting and automation fantasy",
+          "escalating stakes",
+          "satisfying progression",
+          "fast-paced adventure"
+        ],
+        "negative": [
+          "LitRPG game mechanics",
+          "light characterisation",
+          "must read prior books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Guns of Keldora - Alex Raizman": {
       "title": "The Guns of Keldora",
       "author": "Alex Raizman",
       "series": "Factory of the Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With his Godcore phone advancing to firearms production, Julian must weaponise his factory to confront the rising Hive threat and an ancient intelligence behind it, while uncovering a terrible secret about the power driving his enemies.",
+      "tone": "light, propulsive, problem-solving, action-heavy",
+      "pacing": "Fast",
+      "themes": [
+        "ingenuity over brute force",
+        "escalating conflict",
+        "ancient threats",
+        "progression fantasy"
+      ],
+      "setting": "Fantasy world of Keldora; medieval-adjacent world with LitRPG game mechanics",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "The Land: Founding - Aleron Kong",
+        "He Who Fights With Monsters - Jason Cheyne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "crafting and automation fantasy",
+          "escalating stakes",
+          "satisfying progression",
+          "fast-paced adventure"
+        ],
+        "negative": [
+          "LitRPG game mechanics",
+          "light characterisation",
+          "must read prior books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Drones of Keldora - Alex Raizman": {
       "title": "The Drones of Keldora",
       "author": "Alex Raizman",
       "series": "Factory of the Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Facing Symmetry's monstrous Hive Drone swarm, a missing dungeon core, and a world-freezing Umbra, Julian must build an army of robotic drones to survive the final confrontation with the cosmic Entity threatening Keldora. The concluding volume of the series.",
+      "tone": "light, propulsive, action-heavy, satisfying climax",
+      "pacing": "Fast",
+      "themes": [
+        "ingenuity over brute force",
+        "escalating conflict",
+        "culmination and sacrifice",
+        "progression fantasy"
+      ],
+      "setting": "Fantasy world of Keldora; medieval-adjacent world with LitRPG game mechanics",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "The Land: Founding - Aleron Kong",
+        "He Who Fights With Monsters - Jason Cheyne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "completed series",
+          "satisfying climax",
+          "crafting and automation fantasy",
+          "dinosaurs vs mech-suits"
+        ],
+        "negative": [
+          "LitRPG game mechanics",
+          "not a standalone — requires series investment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Strange Cosmology - Alex Raizman": {
       "title": "Strange Cosmology",
       "author": "Alex Raizman",
       "series": "Small Worlds",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After defeating Enki, newly minted god Ryan thought planning the Apocalypse would be the hard part — but shifting divine alliances, the missing Olympian pantheon, mythological monsters, and a military project building synthetic gods from his blood make it anything but easy.",
+      "tone": "action-packed, witty, mythologically inventive",
+      "pacing": "Fast",
+      "themes": [
+        "modern mythology",
+        "divine power",
+        "apocalypse",
+        "shifting alliances",
+        "faith and belief"
+      ],
+      "setting": "Contemporary Earth; gods from multiple mythologies operating in the modern world",
+      "comparable_books": [
+        "American Gods - Neil Gaiman",
+        "The Divine Cities - Robert Jackson Bennett",
+        "Myth-O-Mania series"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "mythology-based urban fantasy",
+          "multiple POV characters",
+          "action-paced",
+          "Reddit web serial origin",
+          "gods as characters"
+        ],
+        "negative": [
+          "indie polish issues noted by reviewers (typos)",
+          "requires reading Book 1 first"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "New Kingdom - Wilbur Smith": {
       "title": "New Kingdom",
       "author": "Wilbur Smith",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young Hui, the privileged son of a city governor in ancient Egypt, is betrayed and cast out by his stepmother and brother, falling in with the outlaw Hyksos warriors who teach him the arts of war as he plots vengeance and seeks to reclaim his birthright.",
+      "tone": "adventurous, sweeping, action-driven, historical",
+      "pacing": "Moderate",
+      "themes": [
+        "vengeance and justice",
+        "loyalty and betrayal",
+        "ancient Egypt and the Hyksos invasion",
+        "war and identity",
+        "coming of age"
+      ],
+      "setting": "Ancient Egypt, circa the Hyksos invasion period (~1650–1550 BCE)",
+      "comparable_books": [
+        "River God - Wilbur Smith",
+        "Pharaoh - Wilbur Smith",
+        "Warlock - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient Egypt setting",
+          "adventure and action",
+          "historical sweep",
+          "fans of the Egyptian series"
+        ],
+        "negative": [
+          "co-authored (with Mark Chadbourn) — some fans find it lacks Smith's original spark",
+          "light on character development for female characters"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Lesser Dead - Christopher Buehlman": {
@@ -192457,107 +192689,194 @@
       "author": "Christopher Buehlman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Joey Peacock, a perpetually young vampire haunting 1970s Manhattan, narrates the darkly comic story of his undead clan's comfortable existence being shattered by the arrival of a group of terrifying, ancient child vampires. A literary horror novel with a razor-sharp voice.",
+      "tone": "darkly comic, literary, dread-soaked, voice-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "predator and prey",
+        "found family",
+        "innocence corrupted",
+        "nostalgia and loss",
+        "community under threat"
+      ],
+      "setting": "New York City, 1970s; the underground vampire world of Manhattan",
+      "comparable_books": [
+        "Interview with the Vampire - Anne Rice",
+        "Between Two Fires - Christopher Buehlman",
+        "Let the Right One In - John Ajvide Lindqvist"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary horror",
+          "unreliable narrator",
+          "darkly comic voice",
+          "vampire fiction",
+          "found family with sinister edge"
+        ],
+        "negative": [
+          "child vampire horror — disturbing content",
+          "1970s NYC setting requires some patience"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by the author, whose performance is widely considered outstanding and integral to the novel's distinctive voice.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Light of All That Falls - James Islington": {
       "title": "The Light of All That Falls",
       "author": "James Islington",
       "series": "The Licanius Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Licanius Trilogy sees Davian, Wirr, and Asha converge in a final confrontation with the Venerate as time-bending consequences cascade to their resolution, demanding enormous sacrifices to preserve the future. A densely plotted, satisfying conclusion.",
+      "tone": "serious, intricate, emotionally resonant, epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fate and free will",
+        "sacrifice",
+        "time and consequence",
+        "redemption",
+        "the nature of power"
+      ],
+      "setting": "Secondary world of Andarra; a land of Augurs, Echoes, and a conflict between ancient powers",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "The Shadow Rising - Robert Jordan",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "complex time-travel plotting",
+          "emotionally satisfying conclusion",
+          "deeply invested readers rewarded",
+          "intricate magic system",
+          "epic fantasy fans"
+        ],
+        "negative": [
+          "requires reading the full trilogy",
+          "very dense plotting",
+          "slow start to the trilogy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Judging Eye - R. Scott Bakker": {
       "title": "The Judging Eye",
       "author": "R. Scott Bakker",
       "series": "The Aspect-Emperor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twenty years after the First Holy War, Kellhus rules as Aspect-Emperor and launches the Great Ordeal against the No-God's resurrecting forces — while his estranged son Sorweel joins the march and the scalper Achamian leads a desperate quest to uncover the truth of the Dûnyain.",
+      "tone": "grimdark, philosophically dense, bleak, magisterial",
+      "pacing": "Slow",
+      "themes": [
+        "religion and power",
+        "free will and determinism",
+        "truth and deception",
+        "trauma",
+        "the nature of evil"
+      ],
+      "setting": "Eärwa; a vast secondary world of decaying civilisations threatened by an apocalyptic return",
+      "comparable_books": [
+        "The Darkness That Comes Before - R. Scott Bakker",
+        "The Book of the New Sun - Gene Wolfe",
+        "Malazan Book of the Fallen - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical grimdark",
+          "dense world-building",
+          "morally complex characters",
+          "challenging literary prose",
+          "readers of the Prince of Nothing trilogy"
+        ],
+        "negative": [
+          "extremely demanding prose",
+          "graphic violence and sexual content",
+          "pessimistic worldview",
+          "requires prior trilogy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Last Graduate - Naomi Novik": {
       "title": "The Last Graduate",
       "author": "Naomi Novik",
       "series": "The Scholomance",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "El returns for her senior year at the deadly Scholomance, determined to survive graduation — the school's most lethal gauntlet — while her growing power and unexpected alliances force her to reconsider everything she thought she wanted. Ends on a significant cliffhanger.",
+      "tone": "propulsive, darkly witty, emotionally charged, romantic",
+      "pacing": "Fast",
+      "themes": [
+        "survival and sacrifice",
+        "power and responsibility",
+        "found family",
+        "romantic tension",
+        "moral complexity"
+      ],
+      "setting": "The Scholomance — a magical school with no teachers, no exits, and monsters in the walls; contemporary-adjacent secondary world",
+      "comparable_books": [
+        "A Deadly Education - Naomi Novik",
+        "The Magicians - Lev Grossman",
+        "Ninth House - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sharp wit and voice",
+          "slow-burn romance",
+          "found family",
+          "dark magical school",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "cliffhanger ending — must read Book 3",
+          "some pacing drag mid-book",
+          "very different in tone to Novik's other work"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Anisha Dadia, whose performance is widely praised as perfectly capturing El's acerbic voice.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Demon of Unrest: A Saga of Hubris, Heartbreak, and Heroism at the Dawn of the Civil War - Erik Larson": {
@@ -192565,26 +192884,46 @@
       "author": "Erik Larson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Erik Larson chronicles the agonising four-month period between Abraham Lincoln's election and the Confederate attack on Fort Sumter, weaving together the stories of soldiers, politicians, spies, and civilians as the nation plunged irreversibly toward civil war.",
+      "tone": "cinematic, propulsive, richly detailed, ominous",
+      "pacing": "Moderate",
+      "themes": [
+        "political crisis",
+        "hubris and miscalculation",
+        "the slide to war",
+        "leadership under pressure",
+        "American history"
+      ],
+      "setting": "United States, November 1860 – April 1861; primarily Charleston, South Carolina and Washington D.C.",
+      "comparable_books": [
+        "Devil in the White City - Erik Larson",
+        "Team of Rivals - Doris Kearns Goodwin",
+        "Battle Cry of Freedom - James McPherson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cinematic narrative non-fiction",
+          "Civil War history",
+          "character-driven history",
+          "Erik Larson fans",
+          "immersive historical detail"
+        ],
+        "negative": [
+          "non-fiction — no plot invention",
+          "dense historical cast of characters",
+          "harrowing subject matter"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Erik Larson's narrative non-fiction translates exceptionally well to audio; this follows the same cinematic, scene-driven format as his other bestsellers.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Coddling of the American Mind - Jonathan Haidt & Greg Lukianoff": {
@@ -192592,80 +192931,142 @@
       "author": "Jonathan Haidt & Greg Lukianoff",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Haidt and Lukianoff argue that well-intentioned protective trends in American education and parenting — from safe spaces to trigger warnings — are instilling cognitive distortions in young people and undermining resilience, free inquiry, and mental health.",
+      "tone": "analytical, urgent, accessible, provocative",
+      "pacing": "Moderate",
+      "themes": [
+        "free speech and campus culture",
+        "cognitive behavioural therapy",
+        "resilience and fragility",
+        "generational change",
+        "institutional trust"
+      ],
+      "setting": "Contemporary United States; higher education and cultural debate",
+      "comparable_books": [
+        "The Righteous Mind - Jonathan Haidt",
+        "Free Speech - Timothy Garton Ash",
+        "Excellent Sheep - William Deresiewicz"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "social psychology framing",
+          "accessible academic writing",
+          "cultural commentary",
+          "education policy readers",
+          "free speech advocates"
+        ],
+        "negative": [
+          "politically contested arguments",
+          "US-centric focus",
+          "some readers find conclusions overstated"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Caves of Steel - Isaac Asimov": {
       "title": "Caves of Steel",
       "author": "Isaac Asimov",
       "series": "The Robot Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In a future where billions live in vast enclosed cities, detective Elijah Baley is forced to partner with the humanoid robot R. Daneel Olivaw to solve the murder of a prominent Spacer — a case that could inflame tensions between Earth and its robot-using colonies.",
+      "tone": "cerebral, propulsive, puzzle-driven, socially thoughtful",
+      "pacing": "Moderate",
+      "themes": [
+        "human vs robot",
+        "prejudice and fear of change",
+        "urbanisation and claustrophobia",
+        "justice and law",
+        "partnership across difference"
+      ],
+      "setting": "Far-future Earth; the enclosed mega-city of New York",
+      "comparable_books": [
+        "The Naked Sun - Isaac Asimov",
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick",
+        "I, Robot - Isaac Asimov"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic SF mystery",
+          "robot ethics",
+          "buddy detective dynamic",
+          "Asimov fans",
+          "worldbuilding through social extrapolation"
+        ],
+        "negative": [
+          "dated prose and gender attitudes",
+          "mystery fairly predictable",
+          "light characterisation by modern standards"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Black Hawks - David Wragg": {
       "title": "The Black Hawks",
       "author": "David Wragg",
       "series": "Articles of Faith",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Vedren Chel, a disenchanted oath-bound knight, strikes a desperate bargain to escort a stranded prince across a war-torn kingdom — a task that forces him into the chaotic company of the Black Hawks, a mercenary band of dangerous, dysfunctional rogues with knives on their trail.",
+      "tone": "darkly comic, action-packed, witty, irreverent",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and oath",
+        "faith and moral complexity",
+        "mercenary camaraderie",
+        "found family",
+        "war and its cost"
+      ],
+      "setting": "Secondary fantasy world; a war-fractured kingdom with low magic and morally complex factions",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "Kings of the Wyld - Nicholas Eames",
+        "Priest of Bones - Peter McLean"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "mercenary ensemble cast",
+          "darkly comedic tone",
+          "found family dynamic",
+          "fast-paced action",
+          "fans of Abercrombie and Eames"
+        ],
+        "negative": [
+          "low magic system — not for magic-focused readers",
+          "slow opening before the Hawks appear",
+          "series left unresolved at 2 books with no confirmed continuation"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tales From the Perilous Realm - J. R. R. Tolkien": {
