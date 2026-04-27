@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3164,
-  "total_pending": 1436,
+  "total_catalogued": 3184,
+  "total_pending": 1416,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -177602,162 +177602,288 @@
       "title": "The Third Kingdom",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wu Ying, now navigating inter-kingdom politics, is drawn into diplomatic tensions as the war-mongering kingdom of Cai stirs once more, threatening a fragile peace. He must balance his cultivation journey with the demands of a world that refuses to leave him alone.",
+      "tone": "adventurous, meditative, wuxia-inspired",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation and self-improvement",
+        "political intrigue",
+        "morality vs. practicality",
+        "immortality"
+      ],
+      "setting": "Ancient China-inspired fantasy world; inter-kingdom travel and diplomacy",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "Beware of Chicken - Travis Baldree",
+        "The First Law of Cultivation - KKS"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "xianxia cultivation",
+          "Eastern philosophy",
+          "political intrigue",
+          "wuxia action"
+        ],
+        "negative": [
+          "Western high fantasy tropes",
+          "romance-heavy",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree; widely praised by listeners of the series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Third Cut - Tao Wong": {
       "title": "The Third Cut",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wu Ying travels to the southern kingdom of Nanyue to investigate a spreading corruption in spirit stones that threatens the entire cultivation world. Aided by old and new companions, he races to stop the corruption at its source before it is too late.",
+      "tone": "adventurous, wuxia-inspired, steadily escalating",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation and self-improvement",
+        "corruption and pollution",
+        "friendship and loyalty",
+        "immortality"
+      ],
+      "setting": "Ancient China-inspired fantasy world; the exotic southern kingdom of Nanyue",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "Beware of Chicken - Travis Baldree",
+        "The First Law of Cultivation - KKS"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "xianxia cultivation",
+          "wuxia action",
+          "ensemble cast",
+          "world travel"
+        ],
+        "negative": [
+          "Western high fantasy tropes",
+          "romance-heavy",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree; series has strong audiobook following.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Third Realm - Tao Wong": {
       "title": "The Third Realm",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wu Ying journeys beyond the kingdom of Shen in pursuit of enlightenment, encountering disparate cultures, governments, and new methods of cultivation across the broader world. Guided by the Seven Winds, his choices will shape both who he is and his eventual place among the immortals.",
+      "tone": "adventurous, philosophical, wuxia-inspired",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation and self-improvement",
+        "cultural discovery",
+        "identity and dao",
+        "immortality"
+      ],
+      "setting": "Ancient China-inspired fantasy world; lands beyond the kingdom of Shen",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "Beware of Chicken - Travis Baldree",
+        "Forge of Destiny - Yrsillar"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "xianxia cultivation",
+          "Eastern philosophy",
+          "world travel",
+          "wuxia action"
+        ],
+        "negative": [
+          "Western high fantasy tropes",
+          "romance-heavy",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree; well-received by audiobook listeners.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fourth Stage - Tao Wong": {
       "title": "The Fourth Stage",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Returning to his sect as an Elder, Wu Ying must find his place amid jealous rivals while also recovering from cultivation wounds sustained in the south. This book begins the final arc of his long journey toward immortality.",
+      "tone": "introspective, wuxia-inspired, politically tense",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation and self-improvement",
+        "leadership and responsibility",
+        "political rivalry",
+        "healing and resilience"
+      ],
+      "setting": "Ancient China-inspired fantasy world; the Verdant Green Waters Sect",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "Forge of Destiny - Yrsillar",
+        "Beware of Chicken - Travis Baldree"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "xianxia cultivation",
+          "sect politics",
+          "character growth",
+          "wuxia action"
+        ],
+        "negative": [
+          "Western high fantasy tropes",
+          "romance-heavy",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree; consistently praised for audio production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fourth Fall - Tao Wong": {
       "title": "The Fourth Fall",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 11",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wu Ying is drawn into inter-kingdom diplomatic negotiations as the warlike kingdom of Cai threatens a widening conflict. As a fish out of water in these political waters, he must grapple with the boundaries of morality and practicality on the path to immortality.",
+      "tone": "wuxia-inspired, politically complex, reflective",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation and self-improvement",
+        "war and peace",
+        "morality vs. power",
+        "immortality"
+      ],
+      "setting": "Ancient China-inspired fantasy world; inter-kingdom diplomatic arena",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "Forge of Destiny - Yrsillar",
+        "Beware of Chicken - Travis Baldree"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "xianxia cultivation",
+          "political intrigue",
+          "wuxia action",
+          "moral complexity"
+        ],
+        "negative": [
+          "Western high fantasy tropes",
+          "romance-heavy",
+          "pure action fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree; strong series audiobook tradition.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Thousand Li: The Fourth Wall - Tao Wong": {
       "title": "A Thousand Li: The Fourth Wall",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the main A Thousand Li series, bringing Wu Ying's long cultivation journey toward immortality to its climax and resolution.",
+      "tone": "wuxia-inspired, culminating, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation and self-improvement",
+        "destiny and immortality",
+        "legacy",
+        "perseverance"
+      ],
+      "setting": "Ancient China-inspired fantasy world",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "Forge of Destiny - Yrsillar",
+        "Beware of Chicken - Travis Baldree"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "xianxia cultivation",
+          "series conclusion",
+          "wuxia action",
+          "Eastern philosophy"
+        ],
+        "negative": [
+          "Western high fantasy tropes",
+          "romance-heavy",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree; series has an exceptionally devoted audio fanbase.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Pilgrim: A Medieval Horror - Mitchell Luthi": {
@@ -177765,80 +177891,148 @@
       "author": "Mitchell Luthi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A German knight and his diverse companions make a perilous journey home from Jerusalem after seven years of crusading, only to encounter escalating supernatural horrors drawn from Arabic, Christian, and pre-Islamic folklore. The novel blends historical epic with metaphysical dread and theological questions about faith and evil.",
+      "tone": "atmospheric, densely researched, cosmically despairing, lyrical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and doubt",
+        "the nature of evil",
+        "religious conflict",
+        "survival",
+        "the cost of holy war"
+      ],
+      "setting": "12th-century Crusader-era Holy Land and the route back to Germany; richly historical",
+      "comparable_books": [
+        "Between Two Fires - Christopher Buehlman",
+        "The Lesser Dead - Christopher Buehlman",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical horror",
+          "atmospheric world-building",
+          "multi-faith setting",
+          "found family under pressure",
+          "literary prose",
+          "slow-burn dread"
+        ],
+        "negative": [
+          "fast-paced horror",
+          "light reading",
+          "readers averse to theological content",
+          "aversion to very long books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Inside Man - K. J. Parker": {
       "title": "Inside Man",
       "author": "K. J. Parker",
       "series": "Prosper's Demon",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A burnt-out demon, once a Duke of Hell and now assigned to distract monks from their prayers, is reluctantly conscripted into a labyrinthine plot alongside a sadistic exorcist to subvert the very nature of Good and Evil. The novella flips the perspective of the first book, narrating events from the demon's point of view.",
+      "tone": "darkly comic, sardonic, wry, bureaucratic absurdism",
+      "pacing": "Fast",
+      "themes": [
+        "bureaucracy of heaven and hell",
+        "moral ambiguity",
+        "free will and determinism",
+        "the nature of Good and Evil"
+      ],
+      "setting": "A Renaissance-adjacent secondary fantasy world where angels and demons are real",
+      "comparable_books": [
+        "Prosper's Demon - K. J. Parker",
+        "The Screwtape Letters - C. S. Lewis",
+        "Good Omens - Terry Pratchett & Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic",
+          "sardonic wit",
+          "philosophical fantasy",
+          "novella-length",
+          "morally grey",
+          "fourth-wall awareness"
+        ],
+        "negative": [
+          "epic fantasy",
+          "clear-cut morality",
+          "action-heavy",
+          "romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Darkness at Sethanon - Raymond E. Feist": {
       "title": "A Darkness at Sethanon",
       "author": "Raymond E. Feist",
       "series": "The Riftwar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The dark sorcerer Murmandamus leads his Moredhel horde toward the fortress city of Sethanon, where an ancient and world-threatening secret lies buried. Pug, Tomas, and their companions must race to stop a catastrophe that could unmake two worlds.",
+      "tone": "epic, propulsive, high-stakes, classic adventure",
+      "pacing": "Fast",
+      "themes": [
+        "good vs. evil",
+        "sacrifice",
+        "war and heroism",
+        "destiny",
+        "the consequences of power"
+      ],
+      "setting": "The world of Midkemia and Kelewan; medieval fantasy kingdoms, 1980s",
+      "comparable_books": [
+        "The Dragonbone Chair - Tad Williams",
+        "Magician - Raymond E. Feist",
+        "The Eye of the World - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "fast-paced adventure",
+          "large cast of heroes",
+          "magic systems",
+          "world-ending stakes"
+        ],
+        "negative": [
+          "subversive fantasy",
+          "grimdark",
+          "slow-burn character study",
+          "morally grey protagonists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Academic Exercises - K. J. Parker": {
@@ -177846,107 +178040,198 @@
       "author": "K. J. Parker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The first major short fiction collection from K. J. Parker, gathering ten stories, novellas, and three non-fiction essays in a shared secondary world, featuring morally compromised academics, alchemists, and schemers. Includes two World Fantasy Award-winning novellas and showcases Parker's characteristic dry wit and cynical view of human nature.",
+      "tone": "sardonic, darkly comic, cynical, intellectually playful",
+      "pacing": "Moderate",
+      "themes": [
+        "academic rivalry and ambition",
+        "moral corruption",
+        "magic as science",
+        "power and its costs",
+        "self-destruction"
+      ],
+      "setting": "A shared secondary fantasy world loosely analogous to early modern Europe; various times and places",
+      "comparable_books": [
+        "Father of Lies - K. J. Parker",
+        "Swords and Dark Magic - ed. Strahan & Anders",
+        "The Compleat Enchanter - de Camp & Pratt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic",
+          "short fiction",
+          "morally grey protagonists",
+          "intellectual fantasy",
+          "sardonic wit",
+          "award-winning work"
+        ],
+        "negative": [
+          "epic fantasy",
+          "romance",
+          "fast-paced action",
+          "clear-cut morality"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Saevus Corax Gets Away With Murder - K. J. Parker": {
       "title": "Saevus Corax Gets Away With Murder",
       "author": "K. J. Parker",
       "series": "The Corax trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Battlefield salvage contractor Saevus Corax, with a massive war looming, attempts one last score to fund his retirement, but is forced to confront his hidden past and the truth about a long-ago act of apparent fratricide. The trilogy concludes with a bittersweet reckoning with history, identity, and the question of who gets to tell the truth.",
+      "tone": "darkly comic, sardonic, wry, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "truth vs. narrative",
+        "the cost of war",
+        "identity and past",
+        "moral ambiguity",
+        "retirement and legacy"
+      ],
+      "setting": "A secondary fantasy world loosely analogous to alternate Eurasia; battlefields, cities, and intrigues",
+      "comparable_books": [
+        "Sixteen Ways to Defend a Walled City - K. J. Parker",
+        "The Blade Itself - Joe Abercrombie",
+        "A Practical Guide to Conquering the World - K. J. Parker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic low fantasy",
+          "sardonic first-person narrator",
+          "morally grey protagonist",
+          "anti-hero",
+          "war commentary",
+          "bittersweet endings"
+        ],
+        "negative": [
+          "epic heroic fantasy",
+          "clear-cut morality",
+          "romance-heavy",
+          "grimdark without humor"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Magician: Master - Raymond E. Feist": {
       "title": "Magician: Master",
       "author": "Raymond E. Feist",
       "series": "The Riftwar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Pug, now a Great One of the Tsurani Empire, and his friend Tomas, transformed by ancient dragon-lord magic, must each find their true purpose as the Riftwar reaches its turning point. The novel weaves between two worlds as both men grapple with power, identity, and destiny.",
+      "tone": "epic, sweeping, classic adventure, emotionally earnest",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and transformation",
+        "destiny and free will",
+        "war and its costs",
+        "friendship and loyalty",
+        "power"
+      ],
+      "setting": "The worlds of Midkemia and Kelewan; medieval fantasy kingdoms, 1980s",
+      "comparable_books": [
+        "A Darkness at Sethanon - Raymond E. Feist",
+        "The Eye of the World - Robert Jordan",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "chosen hero journey",
+          "dual-world setting",
+          "magic schools and systems",
+          "adventure"
+        ],
+        "negative": [
+          "subversive fantasy",
+          "grimdark",
+          "morally grey protagonists",
+          "slow literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Saevus Corax Captures the Castle - K. J. Parker": {
       "title": "Saevus Corax Captures the Castle",
       "author": "K. J. Parker",
       "series": "The Corax trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "To save his crew from being killed, battlefield salvage man Saevus Corax finds himself having to capture a castle — a task for which he is comically unqualified — while navigating the ever-escalating politics of warring powers. The novel deepens the trilogy's examination of war, loyalty, and Corax's buried past.",
+      "tone": "darkly comic, sardonic, wry, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and crew welfare",
+        "the absurdity of war",
+        "resourcefulness under pressure",
+        "identity and past"
+      ],
+      "setting": "A secondary fantasy world loosely analogous to alternate Eurasia; castles, battlefields, and political intrigue",
+      "comparable_books": [
+        "Sixteen Ways to Defend a Walled City - K. J. Parker",
+        "Saevus Corax Deals with the Dead - K. J. Parker",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic low fantasy",
+          "sardonic first-person narrator",
+          "morally grey anti-hero",
+          "unconventional heist-like plot",
+          "war commentary"
+        ],
+        "negative": [
+          "epic heroic fantasy",
+          "clear-cut morality",
+          "romance-heavy",
+          "grimdark without humor"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Plot Against America - Philip Roth": {
@@ -177954,26 +178239,48 @@
       "author": "Philip Roth",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate 1940s America where aviator hero Charles Lindbergh defeats Roosevelt and signs a pact with Nazi Germany, a young Jewish boy in Newark watches his family and community torn apart by rising antisemitism and fascism. Narrated from a child's-eye perspective, the novel is a searing exploration of how ordinary life buckles under political terror.",
+      "tone": "dread-laden, intimate, politically urgent, quietly terrifying",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "antisemitism and fascism",
+        "the fragility of democracy",
+        "family under political pressure",
+        "American identity",
+        "fear and complicity"
+      ],
+      "setting": "Alternate-history 1940s Newark, New Jersey and the United States",
+      "comparable_books": [
+        "The Man in the High Castle - Philip K. Dick",
+        "It Can't Happen Here - Sinclair Lewis",
+        "The Handmaid's Tale - Margaret Atwood"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "literary fiction",
+          "political dread",
+          "family drama",
+          "Jewish-American experience",
+          "award-winning author"
+        ],
+        "negative": [
+          "plot-driven thriller",
+          "fantasy",
+          "fast-paced action",
+          "light reading"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Intimate first-person narration lends itself superbly to audio; widely praised in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Big Myth - Naomi Oreskes & Erik M. Conway": {
@@ -177981,80 +178288,149 @@
       "author": "Naomi Oreskes & Erik M. Conway",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Historians of science Oreskes and Conway trace how, throughout the 20th century, American business elites and their allies ran a coordinated, century-long campaign to install free-market fundamentalism as an unchallengeable American orthodoxy. Drawing on archival evidence, they document how textbooks were rewritten, unions combated, and culture weaponized to conflate market freedom with liberty itself.",
+      "tone": "scholarly, rigorously argued, polemical, historically grounded",
+      "pacing": "Slow",
+      "themes": [
+        "free market ideology",
+        "political propaganda",
+        "corporate power",
+        "American democracy",
+        "the history of economic thought"
+      ],
+      "setting": "20th-century United States; history of ideas and political economy",
+      "comparable_books": [
+        "Merchants of Doubt - Oreskes & Conway",
+        "Dark Money - Jane Mayer",
+        "The Shock Doctrine - Naomi Klein"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political history",
+          "history of ideas",
+          "archival research",
+          "progressive economics",
+          "long-form nonfiction"
+        ],
+        "negative": [
+          "light reading",
+          "pro-free-market perspectives",
+          "fiction",
+          "narrative-driven nonfiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wall of Storms - Ken Liu": {
       "title": "The Wall of Storms",
       "author": "Ken Liu",
       "series": "The Dandelion Dynasty",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Emperor Kuni Garu's children come of age as a new and terrifying threat arrives from beyond the Wall of Storms — the fearsome Lyucu, a nomadic warrior people who invade the islands of Dara. The novel shifts the series' focus toward the next generation and a clash of civilizations with divergent philosophies of governance and war.",
+      "tone": "epic, lyrical, silkpunk, politically rich",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "imperialism and resistance",
+        "generational change",
+        "innovation vs. tradition",
+        "philosophy of governance",
+        "science vs. magic"
+      ],
+      "setting": "The archipelago of Dara, a secondary world inspired by East Asian history and philosophy; silkpunk technology",
+      "comparable_books": [
+        "The Grace of Kings - Ken Liu",
+        "The Poppy War - R. F. Kuang",
+        "Jade City - Fonda Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "silkpunk epic fantasy",
+          "East Asian-inspired world",
+          "political complexity",
+          "lyrical prose",
+          "multi-generational saga",
+          "award-winning author"
+        ],
+        "negative": [
+          "fast-paced adventure",
+          "Western medieval fantasy",
+          "romance-heavy",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Speaking Bones - Ken Liu": {
       "title": "Speaking Bones",
       "author": "Ken Liu",
       "series": "The Dandelion Dynasty",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the concluding volume of the Dandelion Dynasty, the people of Dara continue their desperate struggle against the genocidal Lyucu, as science and destiny collide against the will of the gods. Princess Théra and Pékyu Takval press toward an ancestral dream even as war on two fronts threatens to consume everything.",
+      "tone": "epic, elegiac, lyrical, emotionally weighty",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "war and genocide",
+        "national myth and memory",
+        "science vs. fate",
+        "love and sacrifice",
+        "civilization and its cost"
+      ],
+      "setting": "The archipelago of Dara and lands beyond, a secondary world inspired by East Asian history; silkpunk technology",
+      "comparable_books": [
+        "The Veiled Throne - Ken Liu",
+        "The Poppy War - R. F. Kuang",
+        "Jade City - Fonda Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "silkpunk epic fantasy",
+          "series conclusion",
+          "East Asian-inspired world",
+          "political complexity",
+          "lyrical prose",
+          "multi-generational saga"
+        ],
+        "negative": [
+          "fast-paced adventure",
+          "Western medieval fantasy",
+          "standalone stories",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Value of Everything: Making and Taking in the Global Economy - Mariana Mazzucato": {
@@ -178062,26 +178438,47 @@
       "author": "Mariana Mazzucato",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Economist Mariana Mazzucato argues that modern capitalism has fundamentally confused value creation with value extraction, rewarding rent-seekers and financiers while neglecting true producers. Using case studies from Silicon Valley to Big Pharma, she calls for a radical rethinking of how economies define, measure, and reward value.",
+      "tone": "polemical, rigorous, passionate, accessible for the genre",
+      "pacing": "Moderate",
+      "themes": [
+        "value creation vs. extraction",
+        "financialization",
+        "the role of the state",
+        "inequality",
+        "innovation economics"
+      ],
+      "setting": "Contemporary global economy; history of economic thought from 17th century to present",
+      "comparable_books": [
+        "The Entrepreneurial State - Mariana Mazzucato",
+        "Capital in the Twenty-First Century - Thomas Piketty",
+        "The Big Myth - Oreskes & Conway"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progressive economics",
+          "political economy",
+          "critique of capitalism",
+          "accessible academic writing",
+          "policy-oriented"
+        ],
+        "negative": [
+          "pro-free-market perspectives",
+          "fiction",
+          "narrative-driven popular nonfiction",
+          "light reading"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Skunk Works - Ben R. Rich & Leo Janos": {
@@ -178089,53 +178486,99 @@
       "author": "Ben R. Rich & Leo Janos",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ben Rich, director of Lockheed's legendary secret advanced development division, recounts the breathtaking engineering achievements behind the U-2, SR-71 Blackbird, and F-117 Stealth Fighter during the Cold War and Gulf War. Part memoir, part corporate history, and part thriller, the book is a portrait of small-team innovation under extreme secrecy.",
+      "tone": "propulsive, insider, anecdotal, patriotic, occasionally boastful",
+      "pacing": "Fast",
+      "themes": [
+        "innovation and engineering",
+        "secrecy and government",
+        "Cold War competition",
+        "small-team dynamics",
+        "leadership"
+      ],
+      "setting": "Burbank, California and classified test sites; Cold War and Gulf War era United States, 1944–1991",
+      "comparable_books": [
+        "The Right Stuff - Tom Wolfe",
+        "Boyd - Robert Coram",
+        "Area 51 - Annie Jacobsen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "aviation history",
+          "Cold War history",
+          "engineering and technology",
+          "insider memoir",
+          "military history",
+          "fast-paced nonfiction"
+        ],
+        "negative": [
+          "academic history",
+          "anti-military",
+          "literary fiction",
+          "slow-paced reading"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Veiled Throne - Ken Liu": {
       "title": "The Veiled Throne",
       "author": "Ken Liu",
       "series": "The Dandelion Dynasty",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Lyucu occupation of Dara continues, Princess Théra journeys into exile with her Lyucu ally Pékyu Takval to forge an alliance against the oppressors, while the resistance within Dara struggles against a brutal and complex occupying power. The novel weaves together multiple storylines across two continents, expanding the series' scope.",
+      "tone": "epic, lyrical, politically complex, silkpunk",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "occupation and resistance",
+        "diplomacy and alliance",
+        "identity and belonging",
+        "myth-making",
+        "the nature of civilization"
+      ],
+      "setting": "The archipelago of Dara and lands beyond; a secondary world inspired by East Asian history; silkpunk technology",
+      "comparable_books": [
+        "Speaking Bones - Ken Liu",
+        "The Wall of Storms - Ken Liu",
+        "The Poppy War - R. F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "silkpunk epic fantasy",
+          "East Asian-inspired world",
+          "political complexity",
+          "lyrical prose",
+          "multi-generational saga",
+          "large-scope storytelling"
+        ],
+        "negative": [
+          "fast-paced adventure",
+          "Western medieval fantasy",
+          "standalone stories",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Merchants of Doubt - Naomi Oreskes & Erik M. Conway": {
