@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2228,
-  "total_pending": 2372,
+  "total_catalogued": 2248,
+  "total_pending": 2352,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -131437,513 +131437,911 @@
       "title": "The Wrong Side of Goodbye",
       "author": "Michael Connelly",
       "series": "Harry Bosch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 21",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired LAPD detective Harry Bosch investigates a cold-case search for a billionaire's possible heir while also working part-time as a detective for a small San Fernando police department. The dual investigation pulls him into two worlds of crime and conspiracy.",
+      "tone": "gritty, methodical, morally earnest",
+      "pacing": "Moderate",
+      "themes": [
+        "justice",
+        "obsession",
+        "legacy",
+        "the persistence of the past",
+        "policing ethics"
+      ],
+      "setting": "Contemporary Los Angeles and San Fernando Valley, California",
+      "comparable_books": [
+        "The Black Echo - Michael Connelly",
+        "Devil in a Blue Dress - Walter Mosley",
+        "The Poet - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "procedural crime fiction",
+          "morally driven detective",
+          "Los Angeles atmosphere",
+          "cold case mysteries",
+          "dual-plot structure"
+        ],
+        "negative": [
+          "romance-heavy",
+          "fast-paced action thriller",
+          "supernatural elements"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Long-running series with a definitive audiobook narrator (Titus Welliver) well suited to the procedural tone.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "City of Bones - Michael Connelly": {
       "title": "City of Bones",
       "author": "Michael Connelly",
       "series": "Harry Bosch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "LAPD detective Harry Bosch uncovers the bones of a murdered child on a Hollywood hillside, launching a cold-case investigation into a decades-old crime that exposes deep wounds in a family and in Bosch himself. The case forces him to confront questions of justice, guilt, and the limits of the law.",
+      "tone": "bleak, determined, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "child endangerment",
+        "the past's reach into the present",
+        "justice vs. the law",
+        "obsession",
+        "grief"
+      ],
+      "setting": "Contemporary Los Angeles; Hollywood Hills and LAPD bureaucracy",
+      "comparable_books": [
+        "The Black Echo - Michael Connelly",
+        "Gone Girl - Gillian Flynn",
+        "The Lincoln Lawyer - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "procedural crime fiction",
+          "cold case mysteries",
+          "morally driven detective",
+          "literary crime writing",
+          "Los Angeles noir"
+        ],
+        "negative": [
+          "cozy mystery",
+          "romance-heavy",
+          "supernatural elements"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Long-running series well established in audio format with strong narrative performance.",
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lost Light - Michael Connelly": {
       "title": "Lost Light",
       "author": "Michael Connelly",
       "series": "Harry Bosch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Now retired from the LAPD and working as a private investigator, Harry Bosch reopens a murder case involving a young woman killed during a film set robbery and a missing cache of FBI sting money. Operating without a badge, he must navigate hostile police bureaucracy and shadowy federal agents.",
+      "tone": "gritty, determined, quietly melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "justice outside the system",
+        "institutional obstruction",
+        "the cost of obsession",
+        "identity without a badge"
+      ],
+      "setting": "Contemporary Los Angeles; film industry milieu and federal law enforcement",
+      "comparable_books": [
+        "City of Bones - Michael Connelly",
+        "The Last Detective - Peter Crais",
+        "Void Moon - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "procedural crime fiction",
+          "morally driven detective",
+          "Los Angeles atmosphere",
+          "private investigator stories",
+          "institutional conflict"
+        ],
+        "negative": [
+          "cozy mystery",
+          "supernatural elements",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "First Bosch novel written in first person; strong audio tradition for this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Trials of the Jedi - Charles Soule": {
       "title": "Trials of the Jedi",
       "author": "Charles Soule",
-      "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Star Wars: The High Republic",
+      "series_position": "Phase III, Book 3 (series finale)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the epic conclusion to Star Wars: The High Republic, nine Jedi led by Avar Kriss and Elzar Mann embark on a perilous quest to find the homeworld of the Nameless and stop the galaxy-consuming blight, while facing a final confrontation with the ruthless Marchion Ro. The fate of the Force itself hangs in the balance.",
+      "tone": "epic, urgent, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "the nature of the Force",
+        "courage under impossible odds",
+        "legacy",
+        "light versus darkness"
+      ],
+      "setting": "A galaxy far, far away; the High Republic era, approximately 232 years before The Phantom Menace",
+      "comparable_books": [
+        "Light of the Jedi - Charles Soule",
+        "The Fallen Star - Claudia Gray",
+        "The Eye of Darkness - George Mann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "Force mythology",
+          "ensemble cast",
+          "epic space opera",
+          "series conclusions"
+        ],
+        "negative": [
+          "Star Wars newcomers (series finale requires prior reading)",
+          "readers averse to graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Marc Thompson, the acclaimed audio performer for the entire High Republic series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Treason - Timothy Zahn": {
       "title": "Treason",
       "author": "Timothy Zahn",
       "series": "Star Wars: Thrawn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Grand Admiral Thrawn is dispatched by the Emperor on a secret mission to investigate a crisis involving the TIE Defender program, only to uncover a web of Imperial treachery. Forced to choose between loyalty to the Empire and his own principles, Thrawn must outwit enemies on every side.",
+      "tone": "cerebral, tightly plotted, militaristic",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty vs. ethics",
+        "strategic genius",
+        "political intrigue",
+        "the cost of serving a corrupt empire"
+      ],
+      "setting": "Star Wars galaxy during the Imperial era (between Rebels Seasons 3 and 4)",
+      "comparable_books": [
+        "Thrawn - Timothy Zahn",
+        "Thrawn: Alliances - Timothy Zahn",
+        "Heir to the Empire - Timothy Zahn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Thrawn fans",
+          "political/military Star Wars",
+          "chess-match plotting",
+          "character study of a villain-adjacent hero"
+        ],
+        "negative": [
+          "action-first readers",
+          "romance-heavy",
+          "readers unfamiliar with Star Wars Rebels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Legacy of Spies - John le Carre": {
       "title": "A Legacy of Spies",
-      "author": "John le Carre",
+      "author": "John le Carré",
       "series": "George Smiley",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Spy Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aging Cold War spy Peter Guillam is summoned from retirement to answer for operations he ran under George Smiley decades earlier, including the events surrounding the legendary Alec Leamas affair. A late-career le Carré novel that revisits and reframes the moral cost of espionage.",
+      "tone": "elegiac, morally complex, introspective",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "moral reckoning",
+        "the cost of Cold War espionage",
+        "institutional betrayal",
+        "memory and guilt",
+        "the limits of loyalty"
+      ],
+      "setting": "Contemporary Europe and Cold War flashbacks; Circus (MI6) bureaucracy",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Secret Pilgrim - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "moral ambiguity",
+          "Cold War nostalgia",
+          "character-driven introspection",
+          "le Carré universe"
+        ],
+        "negative": [
+          "action-driven thriller fans",
+          "readers wanting standalone entry points",
+          "fast-paced plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Le Carré's dense, literary prose rewards excellent narration; strong audio editions available.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The State of the Art - Iain M. Banks": {
       "title": "The State of the Art",
       "author": "Iain M. Banks",
       "series": "Culture",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of short stories, primarily featuring the novella in which a Culture ship visits Earth in 1977 and its crew debates whether to make first contact or leave humanity to its own devices. Characteristically witty and philosophically provocative.",
+      "tone": "satirical, philosophical, wry",
+      "pacing": "Moderate",
+      "themes": [
+        "intervention vs. non-interference",
+        "humanity's self-destructiveness",
+        "utopia and its limits",
+        "the Culture's ethics"
+      ],
+      "setting": "Earth (1977) and Culture spacecraft; also short fiction across various settings",
+      "comparable_books": [
+        "Consider Phlebas - Iain M. Banks",
+        "The Player of Games - Iain M. Banks",
+        "The Dispossessed - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Culture series fans",
+          "philosophical science fiction",
+          "short fiction",
+          "satirical writing",
+          "post-scarcity utopia themes"
+        ],
+        "negative": [
+          "readers preferring linear novels over story collections",
+          "action-driven space opera fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Spectacle of Corruption - David Liss": {
       "title": "A Spectacle of Corruption",
       "author": "David Liss",
       "series": "Benjamin Weaver",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1722 London, Jewish ex-pugilist and thief-taker Benjamin Weaver is falsely convicted of murder and escapes Newgate Prison, forced to disguise himself as a wealthy merchant to investigate his own frame-up amid the corruption and intrigue of a hotly contested Parliamentary election. Navigating crime lords, political schemers, and Jacobite conspiracies, Weaver fights to clear his name at enormous personal cost.",
+      "tone": "wry, gritty, intellectually playful",
+      "pacing": "Fast",
+      "themes": [
+        "political corruption",
+        "justice vs. the law",
+        "identity and disguise",
+        "anti-Semitism",
+        "18th-century democracy"
+      ],
+      "setting": "London, 1722; coffeehouses, prisons, political campaigns, and underworld haunts of the early Georgian era",
+      "comparable_books": [
+        "A Conspiracy of Paper - David Liss",
+        "The Alienist - Caleb Carr",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical mystery fans",
+          "18th-century London settings",
+          "political intrigue",
+          "underdog protagonists",
+          "witty first-person narration"
+        ],
+        "negative": [
+          "readers wanting supernatural elements",
+          "romance-heavy fiction",
+          "modern settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Test of Courage - Justina Ireland": {
       "title": "A Test of Courage",
       "author": "Justina Ireland",
-      "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Star Wars: The High Republic",
+      "series_position": "Phase I (middle grade)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young Jedi Knight Vernestra Rwoh and a ragtag group of children—including the inventive Avon Starros—are stranded on a dangerous jungle moon after their ship is sabotaged, and must rely on courage, ingenuity, and each other to survive. A middle-grade adventure set during the golden age of the Jedi.",
+      "tone": "hopeful, adventurous, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "courage",
+        "friendship",
+        "grief and healing",
+        "coming of age",
+        "trust"
+      ],
+      "setting": "Star Wars galaxy; a hostile jungle moon, approximately 232 years before The Phantom Menace",
+      "comparable_books": [
+        "Into the Dark - Claudia Gray",
+        "Ender's Game - Orson Scott Card",
+        "The Maze Runner - James Dashner"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "middle grade readers",
+          "found family",
+          "survival stories",
+          "character-driven adventures"
+        ],
+        "negative": [
+          "adult-oriented hard sci-fi",
+          "grimdark fiction",
+          "readers seeking complex political plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Call for the Dead - John le Carre": {
       "title": "Call for the Dead",
-      "author": "John le Carre",
+      "author": "John le Carré",
       "series": "George Smiley",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Spy Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "George Smiley investigates the apparent suicide of a Foreign Office clerk he had just cleared of Communist sympathies, uncovering a deeper conspiracy that draws him into a personal and professional confrontation with East German intelligence. Le Carré's debut novel, introducing his defining protagonist.",
+      "tone": "melancholic, understated, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "betrayal",
+        "moral ambiguity",
+        "institutional failure",
+        "loyalty",
+        "the personal cost of espionage"
+      ],
+      "setting": "Post-war London and Cold War intelligence circles; 1960s",
+      "comparable_books": [
+        "A Murder of Quality - John le Carré",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Big Sleep - Raymond Chandler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "Cold War atmosphere",
+          "morally ambiguous protagonists",
+          "character-focused mysteries",
+          "British procedural tone"
+        ],
+        "negative": [
+          "action-driven thrillers",
+          "fast-paced plots",
+          "readers wanting large ensemble casts"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dark Force Rising - Timothy Zahn": {
       "title": "Dark Force Rising",
       "author": "Timothy Zahn",
       "series": "Star Wars: The Thrawn Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Grand Admiral Thrawn tightens his grip on the New Republic, Luke Skywalker seeks the reborn clone Emperor's insane ally Joruus C'baoth, while Han and Lando race to find the legendary lost fleet known as the Katana fleet before the Empire does. The political and military stakes escalate dramatically in this middle volume of the landmark Legends trilogy.",
+      "tone": "propulsive, action-driven, expansive",
+      "pacing": "Fast",
+      "themes": [
+        "power and its corrupting nature",
+        "loyalty",
+        "the cost of war",
+        "strategic genius",
+        "madness"
+      ],
+      "setting": "Star Wars galaxy (Legends); post-Return of the Jedi New Republic era",
+      "comparable_books": [
+        "Heir to the Empire - Timothy Zahn",
+        "The Last Command - Timothy Zahn",
+        "X-Wing: Rogue Squadron - Michael A. Stackpole"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars Legends fans",
+          "military space opera",
+          "Thrawn as antagonist",
+          "classic Star Wars characters",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "Canon-only Star Wars readers",
+          "slow literary fiction fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Defending Elysium - Brandon Sanderson": {
       "title": "Defending Elysium",
       "author": "Brandon Sanderson",
       "series": "Skyward",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel novella",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Centuries before the events of the Skyward series, Phone Company operative Jason Write—a psionic agent who regulates humanity's contact with alien species—investigates a murder on an orbital platform that threatens galactic peace and exposes the terrifying secret humanity has been kept from knowing. A fast, twisty sci-fi mystery that establishes the origins of Cytonics.",
+      "tone": "propulsive, clever, lightly noir",
+      "pacing": "Fast",
+      "themes": [
+        "first contact",
+        "humanity's readiness for the galaxy",
+        "deception and truth",
+        "the ethics of concealment",
+        "psionic power"
+      ],
+      "setting": "Future Earth and an orbital platform called Evensong; early 21st-century interstellar society",
+      "comparable_books": [
+        "Skyward - Brandon Sanderson",
+        "Old Man's War - John Scalzi",
+        "The Emperor's Soul - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Skyward series fans",
+          "sci-fi mystery",
+          "fast reads",
+          "Sanderson completionists",
+          "first contact stories"
+        ],
+        "negative": [
+          "readers seeking deep character development",
+          "those unfamiliar with Skyward may miss connections"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Debt of Honor - Tom Clancy": {
       "title": "Debt of Honor",
       "author": "Tom Clancy",
       "series": "Jack Ryan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "National Security Advisor Jack Ryan must help avert a catastrophic war with Japan after a coordinated economic and military attack on the United States, culminating in one of thriller fiction's most shocking endings. A sprawling techno-thriller that captures the anxieties of post-Cold War geopolitics.",
+      "tone": "propulsive, techno-detailed, operatic",
+      "pacing": "Moderate",
+      "themes": [
+        "economic warfare",
+        "national security",
+        "geopolitics",
+        "the fragility of peace",
+        "institutional power"
+      ],
+      "setting": "Contemporary United States, Japan, and global geopolitical theatres; mid-1990s",
+      "comparable_books": [
+        "The Sum of All Fears - Tom Clancy",
+        "Executive Orders - Tom Clancy",
+        "Vince Flynn's Mitch Rapp series"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "techno-thriller fans",
+          "military fiction",
+          "geopolitical plots",
+          "procedural detail lovers",
+          "Jack Ryan universe fans"
+        ],
+        "negative": [
+          "readers wanting lean prose",
+          "character-first literary fiction fans",
+          "those put off by extensive technical detail"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fourth Wing - Rebecca Yarros": {
       "title": "Fourth Wing",
       "author": "Rebecca Yarros",
       "series": "The Empyrean",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Violet Sorrengail is thrust into a brutal war college for dragon riders, where she must survive training, political enemies, and her dangerous attraction to the morally complex Xaden Riorson. A romance-forward fantasy set in a world of dragons, war magic, and dark secrets.",
+      "tone": "steamy, propulsive, romantically charged",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "forbidden romance",
+        "war and sacrifice",
+        "power and ambition",
+        "found family"
+      ],
+      "setting": "A secondary fantasy world at a military dragon-riding academy called Basgiath War College",
+      "comparable_books": [
+        "A Court of Thorns and Roses - Sarah J. Maas",
+        "From Blood and Ash - Jennifer L. Armentrout",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "romantasy fans",
+          "dragon riders",
+          "enemies-to-lovers",
+          "found family",
+          "fast-paced fantasy"
+        ],
+        "negative": [
+          "readers seeking hard fantasy world-building",
+          "those averse to romance-heavy plots",
+          "grimdark purists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Greater Good - Timothy Zahn": {
       "title": "Greater Good",
       "author": "Timothy Zahn",
       "series": "Star Wars: Thrawn Ascendancy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thrawn and Admiral Ar'alani work to uncover a shadowy enemy that is destabilizing the Chiss Ascendancy from within by exploiting rivalries between the ruling families, rather than attacking with military force. The second volume of the Ascendancy trilogy deepens the political complexity of Thrawn's homeworld.",
+      "tone": "cerebral, politically layered, methodical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "political manipulation",
+        "loyalty vs. self-interest",
+        "the vulnerability of civilisation",
+        "strategic deception",
+        "identity and belonging"
+      ],
+      "setting": "The Chiss Ascendancy in the Unknown Regions; Clone Wars era (prequel to Thrawn's Imperial career)",
+      "comparable_books": [
+        "Chaos Rising - Timothy Zahn",
+        "Lesser Evil - Timothy Zahn",
+        "Thrawn - Timothy Zahn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Thrawn devotees",
+          "political intrigue in Star Wars",
+          "ensemble casts",
+          "military sci-fi",
+          "slow-burn mysteries"
+        ],
+        "negative": [
+          "readers wanting Thrawn as the primary POV character",
+          "action-first Star Wars fans",
+          "Legends-only readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Holy Sister - Mark Lawrence": {
       "title": "Holy Sister",
       "author": "Mark Lawrence",
       "series": "Book of the Ancestor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Nona Grey faces her most desperate battle yet as the Ancestor's convent is threatened by a brutal siege and old enemies close in, forcing her to draw on every skill—combat, magic, and friendship—she has honed across years of brutal training. The climactic conclusion to the trilogy brings Nona's story to a violent, emotionally charged resolution.",
+      "tone": "grimdark, fierce, deeply emotional",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and sisterhood",
+        "identity and destiny",
+        "violence as survival",
+        "faith and its limits",
+        "sacrifice"
+      ],
+      "setting": "A dying world with a shrinking sun; a convent for warrior nuns and the besieged empire around it",
+      "comparable_books": [
+        "Red Sister - Mark Lawrence",
+        "Grey Sister - Mark Lawrence",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy fans",
+          "female-led casts",
+          "found family",
+          "magic systems",
+          "morally grey protagonists"
+        ],
+        "negative": [
+          "light fantasy readers",
+          "readers averse to graphic violence",
+          "those who prefer standalone stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Heir to the Empire - Timothy Zahn": {
       "title": "Heir to the Empire",
       "author": "Timothy Zahn",
       "series": "Star Wars: The Thrawn Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Five years after Return of the Jedi, the New Republic faces a resurgent Empire led by the brilliant and ruthless Grand Admiral Thrawn, a tactical genius who uses art and culture to understand and defeat his enemies. The novel that revived the Star Wars expanded universe introduces Thrawn, Mara Jade, and a captured clone Emperor's ally.",
+      "tone": "propulsive, epic, accessible",
+      "pacing": "Fast",
+      "themes": [
+        "the nature of leadership",
+        "the persistence of evil",
+        "loyalty and identity",
+        "strategic genius",
+        "rebuilding after war"
+      ],
+      "setting": "Star Wars galaxy (Legends); New Republic era, five years after the Battle of Endor",
+      "comparable_books": [
+        "Dark Force Rising - Timothy Zahn",
+        "The Last Command - Timothy Zahn",
+        "X-Wing: Rogue Squadron - Michael A. Stackpole"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars Legends fans",
+          "Thrawn devotees",
+          "military space opera",
+          "classic Star Wars characters",
+          "foundational expanded universe"
+        ],
+        "negative": [
+          "Canon-only Star Wars readers",
+          "readers expecting literary prose",
+          "those unfamiliar with original trilogy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Look to Windward - Iain M. Banks": {
       "title": "Look to Windward",
       "author": "Iain M. Banks",
       "series": "Culture",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Chelgrian emissary arrives at the orbital Masaq' to attend a memorial concert, carrying a secret mission linked to a catastrophic civil war the Culture inadvertently caused. A meditation on grief, guilt, and the moral weight of utopian interventionism, told through elegant, elegiac prose.",
+      "tone": "elegiac, philosophical, quietly devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "guilt and complicity",
+        "grief and memory",
+        "the price of utopia",
+        "music and meaning",
+        "violence and its long aftermath"
+      ],
+      "setting": "Masaq' Orbital (a vast Culture habitat) and flashbacks to the Chelgrian civil war; far-future",
+      "comparable_books": [
+        "The Player of Games - Iain M. Banks",
+        "Use of Weapons - Iain M. Banks",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "Culture series fans",
+          "philosophical world-building",
+          "melancholic tone",
+          "slow meditative pacing"
+        ],
+        "negative": [
+          "action-heavy space opera fans",
+          "plot-driven readers",
+          "those seeking fast-paced adventure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "MaddAddam - Margaret Atwood": {
       "title": "MaddAddam",
       "author": "Margaret Atwood",
       "series": "MaddAddam Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of the catastrophic BlyssPluss plague, survivors Toby and Zeb forge fragile alliances with the genetically engineered Crakers while hunting the last of the violent Painballers. The concluding volume weaves together the trilogy's timelines and characters in a story about storytelling, survival, and the possibility of a new beginning.",
+      "tone": "darkly comic, lyrical, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "human nature and its reinvention",
+        "storytelling as myth-making",
+        "environmentalism",
+        "corporate dystopia",
+        "love and survival"
+      ],
+      "setting": "Near-future post-apocalyptic Earth; a ravaged North America after a man-made pandemic",
+      "comparable_books": [
+        "Oryx and Crake - Margaret Atwood",
+        "The Year of the Flood - Margaret Atwood",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary sci-fi fans",
+          "Margaret Atwood readers",
+          "dystopian fiction",
+          "bittersweet conclusions",
+          "environmentalist themes"
+        ],
+        "negative": [
+          "readers wanting a standalone entry point",
+          "those seeking fast-paced thrillers",
+          "hard sci-fi fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Master and Apprentice - Claudia Gray": {
@@ -131951,26 +132349,46 @@
       "author": "Claudia Gray",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Years before The Phantom Menace, Jedi Master Qui-Gon Jinn and his teenage Padawan Obi-Wan Kenobi are sent to mediate a political dispute on the planet Pijal, where an unexpected offer from the Jedi Council forces them to confront their differences and the future of their partnership. A character-driven Star Wars novel that deepens the relationship between two beloved Jedi.",
+      "tone": "thoughtful, character-driven, politically nuanced",
+      "pacing": "Moderate",
+      "themes": [
+        "mentorship and trust",
+        "prophecy vs. pragmatism",
+        "political complexity",
+        "identity",
+        "faith in the Force"
+      ],
+      "setting": "Star Wars galaxy (Canon); approximately 8 years before The Phantom Menace, including the planet Pijal",
+      "comparable_books": [
+        "Lost Stars - Claudia Gray",
+        "Bloodline - Claudia Gray",
+        "A New Dawn - John Jackson Miller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars Canon fans",
+          "Qui-Gon Jinn devotees",
+          "character-driven fiction",
+          "political nuance in Star Wars",
+          "Claudia Gray readers"
+        ],
+        "negative": [
+          "action-only Star Wars fans",
+          "readers unfamiliar with the prequel era",
+          "those seeking Legends continuity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Peace Talks - Jim Butcher": {
