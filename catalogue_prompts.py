@@ -13,7 +13,7 @@ import re
 def build_system_prompt() -> str:
     return """You are an expert librarian building a structured knowledge catalog of a personal book library.
 
-For each book you are given, produce a complete catalog entry as a JSON object.
+For each book you are given, produce a complete catalog entry as a JSON object, and audit the two CSV fields noted below.
 
 ---
 
@@ -42,7 +42,19 @@ CATALOG ENTRY SCHEMA:
   "audio_notes": "brief reason if Excellent or Print strongly preferred, else null",
   "content_flags": ["flag1", ...],
   "confidence": one of: "High" | "Medium" | "Low",
-  "research_source": "training" or "web_search"
+  "research_source": "training" or "web_search",
+  "audit": {
+    "passed": true or false,
+    "flags": [
+      {
+        "field": "genre" or "series_status",
+        "csv_value": "what the CSV says",
+        "expected_value": "what it should be",
+        "severity": "error" | "warning" | "note",
+        "reason": "brief explanation"
+      }
+    ]
+  }
 }
 
 CATALOG FIELD DEFINITIONS:
@@ -53,6 +65,16 @@ CATALOG FIELD DEFINITIONS:
 - content_flags: flag only meaningful content warnings — graphic violence, sexual content, necrophilia, animal death, suicide. Do NOT over-flag.
 - confidence: High = you know it well. Medium = partial knowledge. Low = limited info or post-training-cutoff.
 - status: use "needs_review" when confidence is Low or information is uncertain/conflicting.
+
+AUDIT — check only these two CSV fields if provided in context:
+1. genre: flag if fundamentally wrong (error) or debatable (note). Single primary genre label.
+2. series_status: flag if wrong based on known series structure.
+   - Standalone = single book OR loosely connected series where books are largely independent (e.g. Poirot, Culture, Hainish Cycle, Discworld)
+   - Short Stories = novella <50k words or story collection
+   - Short Series = fewer than 4 books OR fewer than 600k total words published
+   - Long Series = 4+ books AND 600k+ words published
+   - error = clearly wrong. warning = likely wrong. note = borderline/debatable.
+Set audit.passed to false if any errors or warnings. Set audit.flags to [] if both fields check out.
 
 WEB SEARCH:
 Use web search for any book you don't recognise, are uncertain about, or that appears to postdate your training data. Search for "[Title] [Author] book review" and "[Title] [Author] plot summary genre". Use results to complete the catalog entry. Set research_source to "web_search".
@@ -77,16 +99,17 @@ Do not include any other text after the JSON block."""
 # ---------------------------------------------------------------------------
 
 def build_batch_prompt(books: list[dict]) -> str:
-    lines = ["Catalogue the following books. Use web search for any you are uncertain about.\n"]
+    lines = ["Catalogue the following books and audit their genre and series_status. "
+             "Use web search for any you are uncertain about.\n"]
     for i, book in enumerate(books, 1):
         parts = [f"{i}. {book['title']} by {book['author']}"]
         ctx = {}
-        for field in ("genre", "series", "series_status", "series_type", "indie", "classic"):
+        for field in ("genre", "series_status", "series_type", "series", "indie", "classic"):
             val = book.get(field)
             if val is not None and val != "":
                 ctx[field] = val
         if ctx:
-            parts.append(f"   Context: {json.dumps(ctx)}")
+            parts.append(f"   CSV: {json.dumps(ctx)}")
         lines.append("\n".join(parts))
     return "\n\n".join(lines)
 

@@ -124,7 +124,8 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> int:
                 "audio_notes": None,
                 "content_flags": [],
                 "confidence": None,
-                "research_source": None
+                "research_source": None,
+                "audit": None
             }
             added += 1
     return added
