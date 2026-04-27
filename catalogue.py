@@ -36,9 +36,9 @@ from catalogue_prompts import (
 # ---------------------------------------------------------------------------
 
 CATALOG_FILE = "Library_Catalog.json"
-MODEL = "claude-haiku-4-5-20251001"
-MAX_TOKENS = 8000
-DEFAULT_CHUNK_SIZE = 10
+MODEL = "claude-sonnet-4-6"
+MAX_TOKENS = 16000
+DEFAULT_CHUNK_SIZE = 20
 RATE_LIMIT_DELAY = 10    # seconds between API calls
 MAX_RETRIES = 3
 
