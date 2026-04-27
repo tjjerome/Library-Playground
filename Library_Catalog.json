@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2348,
-  "total_pending": 2252,
+  "total_catalogued": 2368,
+  "total_pending": 2232,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -137186,26 +137186,45 @@
       "author": "Agatha Christie",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A young man of modest means marries a beautiful heiress and builds their dream home on a supposedly cursed plot of land, but dark secrets and tragedy begin to close in. One of Christie's most psychologically unsettling novels, told with a twist that reframes everything.",
+      "tone": "sinister, atmospheric, psychologically subversive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "obsession",
+        "class and ambition",
+        "fate and curses",
+        "psychological manipulation",
+        "dark secrets"
+      ],
+      "setting": "Contemporary rural England, 1960s",
+      "comparable_books": [
+        "The Secret History - Donna Tartt",
+        "Before I Go to Sleep - S.J. Watson",
+        "Rebecca - Daphne du Maurier"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrator",
+          "psychological suspense",
+          "twist endings",
+          "atmospheric gothic tone",
+          "classic crime"
+        ],
+        "negative": [
+          "cozy mystery fans expecting a traditional whodunit",
+          "readers wanting a detective protagonist"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "First-person unreliable narration makes audio particularly effective and immersive.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Every Man a Menace - Patrick Hoffman": {
@@ -137213,53 +137232,98 @@
       "author": "Patrick Hoffman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A massive shipment of MDMA winds its way from the Golden Triangle of Southeast Asia to San Francisco, tracked through the eyes of ex-cons, dealers, and fixers who are all replaceable links in a brutal chain. A multi-perspective noir about the global drug trade told with laconic urgency.",
+      "tone": "gritty, propulsive, darkly comic, noir",
+      "pacing": "Fast",
+      "themes": [
+        "drug trade",
+        "betrayal",
+        "moral bankruptcy",
+        "interconnected fates",
+        "criminality and consequence"
+      ],
+      "setting": "Contemporary San Francisco, Miami, Bangkok, and the Golden Triangle",
+      "comparable_books": [
+        "The White Van - Patrick Hoffman",
+        "The Friends of Eddie Coyle - George V. Higgins",
+        "City of Thieves - David Benioff"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-perspective crime fiction",
+          "propulsive plotting",
+          "Elmore Leonard fans",
+          "gritty noir",
+          "drug trade narratives"
+        ],
+        "negative": [
+          "readers wanting sympathetic protagonists",
+          "character-driven literary fiction fans",
+          "cozy mystery readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Death at the Sign of the Rook - Kate Atkinson": {
       "title": "Death at the Sign of the Rook",
       "author": "Kate Atkinson",
       "series": "Jackson Brodie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ex-detective Jackson Brodie investigates a series of stolen paintings, a trail that leads him to a crumbling Yorkshire manor hosting a murder mystery weekend — where fiction and real crime blur dangerously. A winking, Christie-homage mystery packed with Atkinson's signature wit and mordant humour.",
+      "tone": "wryly comic, playful, warmly mordant",
+      "pacing": "Moderate",
+      "themes": [
+        "art theft and deception",
+        "class decline",
+        "justice",
+        "coincidence and fate",
+        "meta-mystery"
+      ],
+      "setting": "Contemporary Yorkshire, England — a decaying country estate",
+      "comparable_books": [
+        "Big Sky - Kate Atkinson",
+        "Magpie Murders - Anthony Horowitz",
+        "A Great Deliverance - Elizabeth George"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Agatha Christie fans",
+          "British crime fiction",
+          "darkly comic tone",
+          "meta-mystery",
+          "character-driven detective fiction",
+          "cosy-adjacent with literary depth"
+        ],
+        "negative": [
+          "readers wanting hard-boiled or dark noir",
+          "those averse to large ensemble casts",
+          "readers who need prior series knowledge"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Atkinson's witty parenthetical style and ensemble cast shine particularly well in audio performance.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Death Comes as the End - Agatha Christie": {
@@ -137267,80 +137331,142 @@
       "author": "Agatha Christie",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Set in ancient Egypt around 2000 BC, a young widow uncovers a series of murders within her wealthy family after her father brings home a scheming concubine. Christie's only historical novel, remarkable for its authentic atmosphere and timeless domestic tension.",
+      "tone": "measured, atmospheric, quietly tense",
+      "pacing": "Moderate",
+      "themes": [
+        "family rivalry",
+        "greed and inheritance",
+        "power and gender",
+        "ancient Egypt",
+        "domestic violence"
+      ],
+      "setting": "Ancient Egypt, c. 2000 BC — a rural estate near Luxor",
+      "comparable_books": [
+        "The Egyptian - Mika Waltari",
+        "An Instance of the Fingerpost - Iain Pears",
+        "Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction lovers",
+          "Agatha Christie completists",
+          "ancient Egypt enthusiasts",
+          "closed-circle mysteries"
+        ],
+        "negative": [
+          "readers expecting Poirot or Marple",
+          "fans of contemporary settings",
+          "fast-paced thriller readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Bluebird, Bluebird - Attica Locke": {
       "title": "Bluebird, Bluebird",
       "author": "Attica Locke",
       "series": "A Highway 59 Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Black Texas Ranger travels deep into East Texas to investigate two murders — a Black lawyer and a white local woman — navigating the tangled intersection of race, law, and Southern history. A taut, lyrical noir that uses crime fiction to probe America's racial wounds.",
+      "tone": "lyrical, tense, politically charged",
+      "pacing": "Moderate",
+      "themes": [
+        "race in America",
+        "justice and the law",
+        "Southern history",
+        "identity",
+        "grief"
+      ],
+      "setting": "Contemporary rural East Texas — a small town on Highway 59",
+      "comparable_books": [
+        "Heaven, My Home - Attica Locke",
+        "The Cutting Season - Attica Locke",
+        "Devil in a Blue Dress - Walter Mosley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary crime fiction",
+          "race and social justice themes",
+          "lyrical prose",
+          "Southern noir",
+          "morally complex protagonist"
+        ],
+        "negative": [
+          "readers wanting action-heavy pacing",
+          "cozy mystery fans",
+          "those averse to racial politics in fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The blues-infused, lyrical prose and strong sense of place translate beautifully to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Big Sky - Kate Atkinson": {
       "title": "Big Sky",
       "author": "Kate Atkinson",
       "series": "Jackson Brodie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jackson Brodie resurfaces on the Yorkshire coast, where a seemingly mundane surveillance job draws him into a dark web of sex trafficking and organised crime with links to celebrity scandal. Atkinson's most sombre Brodie novel, reminiscent of real-life abuse cases.",
+      "tone": "dark, mordant, socially engaged",
+      "pacing": "Moderate",
+      "themes": [
+        "sex trafficking",
+        "organised crime",
+        "justice and complicity",
+        "coincidence",
+        "trauma"
+      ],
+      "setting": "Contemporary Yorkshire coast, England",
+      "comparable_books": [
+        "When Will There Be Good News? - Kate Atkinson",
+        "Started Early, Took My Dog - Kate Atkinson",
+        "The Cutting - James Hayman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "British crime fiction",
+          "literary detective novels",
+          "dark social themes",
+          "returning series fans"
+        ],
+        "negative": [
+          "readers wanting light or comedic crime",
+          "those sensitive to child exploitation themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Beirut Station: Two Lives of a Spy - Paul Vidich": {
@@ -137348,134 +137474,230 @@
       "author": "Paul Vidich",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 2006 Beirut during the Israel-Hezbollah war, Lebanese-American CIA agent Analise Assad is tasked with a joint CIA-Mossad operation to eliminate a Hezbollah terrorist — until she uncovers a deeper conspiracy that makes her the target. A taut, le Carré-esque espionage novel steeped in moral complexity.",
+      "tone": "tense, morally nuanced, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "double lives and identity",
+        "loyalty and betrayal",
+        "geopolitics and the Middle East",
+        "the ethics of espionage",
+        "survival"
+      ],
+      "setting": "Beirut, Lebanon, 2006 — during the Israel-Hezbollah war",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Coldest Warrior - Paul Vidich",
+        "Our Man in Havana - Graham Greene"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "le Carré fans",
+          "literary spy fiction",
+          "moral ambiguity",
+          "Middle East geopolitics",
+          "female protagonist"
+        ],
+        "negative": [
+          "readers wanting high-octane action thrillers",
+          "those uninterested in political nuance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A God in Ruins - Kate Atkinson": {
       "title": "A God in Ruins",
       "author": "Kate Atkinson",
       "series": "Todd Family",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A companion novel to Life After Life, told through the life of Teddy Todd — Ursula's beloved brother — a WWII RAF bomber pilot whose survival shapes the rest of his long, quiet, and bittersweet life. A profound meditation on war, sacrifice, memory, and what it costs to survive.",
+      "tone": "elegiac, lyrical, devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "war and its aftermath",
+        "memory and time",
+        "survival and grief",
+        "family",
+        "the unlived life"
+      ],
+      "setting": "England, 1920s–2012 — wartime and post-war Britain",
+      "comparable_books": [
+        "Life After Life - Kate Atkinson",
+        "The Remains of the Day - Kazuo Ishiguro",
+        "Birdsong - Sebastian Faulks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII literary fiction",
+          "lyrical prose",
+          "character studies",
+          "Costa Award fans",
+          "non-linear narrative"
+        ],
+        "negative": [
+          "genre thriller readers",
+          "readers wanting plot-driven fiction",
+          "those who dislike fragmented timelines"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lyrical, temporally layered prose and emotional depth are greatly enhanced by skilled audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Cytonic - Brandon Sanderson": {
       "title": "Cytonic",
       "author": "Brandon Sanderson",
       "series": "Skyward",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Spensa enters the mysterious dimension known as the Nowhere in search of answers about her Cytonic powers, navigating rival space pirate factions and uncovering ancient secrets about her species — all while a galaxy-wide war escalates without her. A character-focused penultimate entry in Sanderson's YA sci-fi series.",
+      "tone": "adventurous, fast-paced, YA-optimistic",
+      "pacing": "Fast",
+      "themes": [
+        "identity and self-discovery",
+        "courage and sacrifice",
+        "memory",
+        "duty vs. freedom",
+        "what it means to be a hero"
+      ],
+      "setting": "The Nowhere — a dimension outside normal space — far future science fiction universe",
+      "comparable_books": [
+        "Starsight - Brandon Sanderson",
+        "Ender's Game - Orson Scott Card",
+        "Scythe - Neal Shusterman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA science fiction fans",
+          "Brandon Sanderson fans",
+          "space opera",
+          "found family",
+          "action-packed pacing"
+        ],
+        "negative": [
+          "adult literary fiction readers",
+          "readers sensitive to YA conventions",
+          "those who found Cytonic a weaker entry in the series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Sanderson's propulsive plotting and action sequences make this a compelling listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Warm Up - V. E. Schwab": {
       "title": "Warm Up",
       "author": "V. E. Schwab",
       "series": "Villains",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A man who survives an avalanche returns home with a terrifying new power — a prequel short story set in the world of the Villains series, introducing the concept of ExtraOrdinaries before the events of Vicious.",
+      "tone": "tense, dark, superhero-adjacent",
+      "pacing": "Fast",
+      "themes": [
+        "superpowers and their cost",
+        "fear and isolation",
+        "identity after trauma"
+      ],
+      "setting": "Contemporary United States — same universe as Vicious",
+      "comparable_books": [
+        "Vicious - V. E. Schwab",
+        "Vengeful - V. E. Schwab",
+        "Steelheart - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Villains series fans",
+          "V. E. Schwab readers",
+          "morally grey superpowers",
+          "short fiction"
+        ],
+        "negative": [
+          "readers wanting a full novel",
+          "those unfamiliar with the Villains series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "When Will There Be Good News? - Kate Atkinson": {
       "title": "When Will There Be Good News?",
       "author": "Kate Atkinson",
       "series": "Jackson Brodie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three separate lives — a woman who survived a childhood massacre, a young nanny, and Jackson Brodie himself after a train crash — collide in a mystery that weaves trauma, survival, and unexpected justice. Considered one of the strongest entries in the Jackson Brodie series.",
+      "tone": "darkly comic, urgent, emotionally layered",
+      "pacing": "Moderate",
+      "themes": [
+        "survival and trauma",
+        "coincidence and fate",
+        "justice",
+        "memory",
+        "found connection"
+      ],
+      "setting": "Contemporary Edinburgh and rural Scotland",
+      "comparable_books": [
+        "Case Histories - Kate Atkinson",
+        "One Good Turn - Kate Atkinson",
+        "The Likeness - Tana French"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary crime fiction",
+          "Atkinson fans",
+          "Scottish settings",
+          "character-driven mysteries",
+          "dark wit"
+        ],
+        "negative": [
+          "readers wanting plot-only procedurals",
+          "those averse to multiple interweaving storylines"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multiple converging storylines and Atkinson's distinctive voice are brilliantly served by audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The White Van - Patrick Hoffman": {
@@ -137483,26 +137705,48 @@
       "author": "Patrick Hoffman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A drug-addicted woman in San Francisco's Tenderloin district is drugged and manipulated into a bank robbery scheme, while a desperate and corrupt cop races to find her and the money. A debut noir thriller exploring the seedy criminal underbelly of San Francisco with shocking twists.",
+      "tone": "gritty, propulsive, unsettling",
+      "pacing": "Fast",
+      "themes": [
+        "desperation and bad choices",
+        "corruption",
+        "criminal underworld",
+        "San Francisco's underbelly",
+        "survival"
+      ],
+      "setting": "Contemporary San Francisco — the Tenderloin district and criminal networks",
+      "comparable_books": [
+        "Every Man a Menace - Patrick Hoffman",
+        "The Friends of Eddie Coyle - George V. Higgins",
+        "Gone Baby Gone - Dennis Lehane"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir fans",
+          "San Francisco crime fiction",
+          "propulsive plotting",
+          "morally grey characters",
+          "Elmore Leonard fans"
+        ],
+        "negative": [
+          "cozy mystery readers",
+          "those wanting sympathetic protagonists",
+          "readers averse to graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "We Are Watching - Alison Gaylin": {
@@ -137510,26 +137754,47 @@
       "author": "Alison Gaylin",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Psychological Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A bookstore owner grieving her husband's death becomes the target of a violent online doomsday cult that has linked her teenage fantasy novel — and her reclusive rock-star father — to Satanic prophecy. A timely, horror-tinged domestic thriller about conspiracy, grief, and the weaponisation of misinformation.",
+      "tone": "tense, paranoid, horror-tinged, timely",
+      "pacing": "Fast",
+      "themes": [
+        "conspiracy theories and misinformation",
+        "online extremism",
+        "grief and family",
+        "the past catching up",
+        "mother-daughter bonds"
+      ],
+      "setting": "Contemporary small-town New York State (Catskills region)",
+      "comparable_books": [
+        "The Collective - Alison Gaylin",
+        "The Whisper Man - Alex North",
+        "The Push - Ashley Audrain"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "domestic thriller fans",
+          "social media horror",
+          "conspiracy thriller",
+          "multi-generational family dynamics",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "readers averse to online cult/extremism themes",
+          "those wanting traditional whodunits"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bury Our Bones in the Midnight Soil - V. E. Schwab": {
@@ -137537,26 +137802,50 @@
       "author": "V. E. Schwab",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three women across centuries — 16th-century Spain, 19th-century London, and present-day Boston — are each drawn into the world of vampirism as a path to freedom from a world that would cage them. A lyrical, feminist, queer gothic horror novel about hunger, immortality, and the cost of power.",
+      "tone": "lyrical, gothic, sensual, feminist",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "female autonomy and power",
+        "queer identity",
+        "hunger and desire",
+        "immortality and its cost",
+        "survival across centuries"
+      ],
+      "setting": "16th-century Spain, 19th-century London, and contemporary Boston — multi-era historical and modern",
+      "comparable_books": [
+        "The Invisible Life of Addie LaRue - V. E. Schwab",
+        "Interview with the Vampire - Anne Rice",
+        "Mexican Gothic - Silvia Moreno-Garcia"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "queer fiction fans",
+          "feminist gothic horror",
+          "lyrical prose",
+          "vampire fiction",
+          "multi-era historical narratives",
+          "V. E. Schwab fans"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "those who prefer plot-driven over character-driven",
+          "readers averse to slow burns"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Schwab's lush, poetic prose and multi-era structure shine in audio format.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Alien Clay - Adrian Tchaikovsky": {
@@ -137564,26 +137853,49 @@
       "author": "Adrian Tchaikovsky",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dissident biologist Professor Arton Daghdev is exiled by Earth's fascist Mandate government to a penal labour camp on the alien world of Kiln, where a ravenous, utterly strange ecosystem conceals the ruins of a vanished civilisation — and a secret that could transform both worlds. A Hugo-finalist novel blending biological horror, dystopian satire, and first-contact wonder.",
+      "tone": "darkly comic, satirical, intellectually charged, unsettling",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "authoritarianism and dissent",
+        "scientific freedom vs. dogma",
+        "evolution and biological identity",
+        "collective action",
+        "first contact"
+      ],
+      "setting": "Far future — the alien exoplanet Kiln and its labour camp; dystopian Earth backdrop",
+      "comparable_books": [
+        "Children of Time - Adrian Tchaikovsky",
+        "Nineteen Eighty-Four - George Orwell",
+        "The Left Hand of Darkness - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction fans",
+          "biological/xenobiology concepts",
+          "political dystopia",
+          "Tchaikovsky fans",
+          "Hugo Award readers",
+          "weird fiction"
+        ],
+        "negative": [
+          "readers wanting action-heavy pacing early on",
+          "those averse to philosophical digression",
+          "fantasy-only readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "I Who Have Never Known Men - Jacqueline Harpman": {
@@ -137591,26 +137903,46 @@
       "author": "Jacqueline Harpman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Forty women are kept in an underground cage by silent guards in a world they cannot understand; the youngest, who has never known any other life, leads their escape into a desolate empty world — and spends her life trying to make sense of it. A haunting, existential Belgian dystopian novel about humanity, isolation, and what it means to survive.",
+      "tone": "stark, elegiac, meditative, existential",
+      "pacing": "Slow",
+      "themes": [
+        "isolation and captivity",
+        "what makes us human",
+        "survival vs. living",
+        "memory and identity",
+        "female community"
+      ],
+      "setting": "An indeterminate post-apocalyptic world — underground bunker and vast empty landscape",
+      "comparable_books": [
+        "The Road - Cormac McCarthy",
+        "The Handmaid's Tale - Margaret Atwood",
+        "Annihilation - Jeff VanderMeer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary dystopia fans",
+          "philosophical fiction",
+          "spare minimalist prose",
+          "feminist speculative fiction",
+          "book club readers"
+        ],
+        "negative": [
+          "readers wanting plot-driven narratives",
+          "those seeking answers or resolution",
+          "action/adventure readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bottoms Up and the Devil Laughs: A Journey Through the Deep State - Kerry Howley": {
@@ -137618,26 +137950,45 @@
       "author": "Kerry Howley",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Using the true story of Reality Winner — a young intelligence specialist who leaked classified documents about Russian election interference and was sentenced to five years in prison — Kerry Howley maps the absurdities and horrors of America's post-9/11 surveillance state, drawing in whistleblowers from Snowden to Manning. A National Book Critics Circle finalist described as darkly funny and unclassifiable.",
+      "tone": "darkly comic, essayistic, politically urgent, humane",
+      "pacing": "Moderate",
+      "themes": [
+        "surveillance and privacy",
+        "whistleblowing and government power",
+        "the post-9/11 security state",
+        "digital identity",
+        "justice and punishment"
+      ],
+      "setting": "Contemporary America — from rural Texas to federal courtrooms and the intelligence community",
+      "comparable_books": [
+        "No Place to Hide - Glenn Greenwald",
+        "The Unwinding - George Packer",
+        "Catch and Kill - Ronan Farrow"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction fans",
+          "political journalism readers",
+          "surveillance state interest",
+          "Joan Didion fans",
+          "darkly comic nonfiction"
+        ],
+        "negative": [
+          "readers wanting straightforward journalism",
+          "those uninterested in US intelligence/security politics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bad Blood - John Carreyrou": {
@@ -137645,26 +137996,45 @@
       "author": "John Carreyrou",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wall Street Journal reporter John Carreyrou exposes the rise and spectacular collapse of Theranos — Elizabeth Holmes's Silicon Valley blood-testing startup that defrauded investors and endangered patients with technology that never worked. The definitive account of one of the biggest corporate frauds in American history.",
+      "tone": "propulsive, investigative, revelatory",
+      "pacing": "Fast",
+      "themes": [
+        "corporate fraud",
+        "Silicon Valley hubris",
+        "whistleblowing",
+        "ambition and deception",
+        "institutional failure"
+      ],
+      "setting": "Contemporary Silicon Valley and the US corporate/medical world",
+      "comparable_books": [
+        "American Kingpin - Nick Bilton",
+        "The Smartest Guys in the Room - Bethany McLean",
+        "Super Pumped - Mike Isaac"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime fans",
+          "business scandal narratives",
+          "investigative journalism",
+          "propulsive nonfiction",
+          "Silicon Valley stories"
+        ],
+        "negative": [
+          "readers wanting literary or lyrical nonfiction",
+          "those uninterested in corporate/tech subjects"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Reads like a thriller; the propulsive investigative narrative is ideally suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road - Nick Bilton": {
@@ -137672,26 +138042,45 @@
       "author": "Nick Bilton",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The true story of Ross Ulbricht, the libertarian idealist who built the Silk Road — the dark web's billion-dollar drug marketplace — and the multi-agency manhunt that eventually brought him down. A propulsive cat-and-mouse narrative that reads like a thriller.",
+      "tone": "propulsive, cinematic, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "dark web and technology",
+        "libertarianism and its limits",
+        "crime and consequence",
+        "law enforcement",
+        "the war on drugs"
+      ],
+      "setting": "Contemporary America and the dark web, 2010s",
+      "comparable_books": [
+        "Bad Blood - John Carreyrou",
+        "The Dark Net - Jamie Bartlett",
+        "Kingpin - Kevin Poulsen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime fans",
+          "dark web and tech interest",
+          "cat-and-mouse narratives",
+          "propulsive nonfiction",
+          "drug policy readers"
+        ],
+        "negative": [
+          "readers wanting literary nonfiction",
+          "those uninterested in digital crime or tech"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The thriller-like pacing and dramatic structure make this an outstanding audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Wild Swans - Jung Chang": {
@@ -137699,26 +138088,45 @@
       "author": "Jung Chang",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir / Biography",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three generations of Chinese women — grandmother, mother, and the author herself — are traced across the tumultuous sweep of 20th-century China, from warlord concubinage through Mao's Cultural Revolution to the post-Mao era. A sweeping, intimate, and devastating family history that is also one of the most widely read books about modern China.",
+      "tone": "lyrical, intimate, sweeping, harrowing",
+      "pacing": "Moderate",
+      "themes": [
+        "women and patriarchy in China",
+        "political oppression",
+        "family and survival",
+        "identity and belonging",
+        "the Cultural Revolution"
+      ],
+      "setting": "China, 1900s–1970s — across multiple cities and provinces during war, revolution, and upheaval",
+      "comparable_books": [
+        "Mao's Last Dancer - Li Cunxin",
+        "The Woman Warrior - Maxine Hong Kingston",
+        "Red Dust - Ma Jian"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Chinese history enthusiasts",
+          "family memoir readers",
+          "feminist history",
+          "20th-century political biography",
+          "sweeping multi-generational narratives"
+        ],
+        "negative": [
+          "readers wanting strictly objective history",
+          "those averse to personal/memoir writing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "What We Can Know - Ian McEwan": {
