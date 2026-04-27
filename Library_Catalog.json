@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1780,
-  "total_pending": 2820,
+  "total_catalogued": 1800,
+  "total_pending": 2800,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -109650,539 +109650,1001 @@
       "author": "V. E. Schwab",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1714 France, a young woman makes a Faustian bargain to live forever but is cursed to be forgotten by everyone she meets — until, three centuries later, she encounters a man who inexplicably remembers her. A sweeping story about identity, memory, and the cost of immortality.",
+      "tone": "lyrical, melancholic, romantic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "memory and identity",
+        "immortality",
+        "loneliness",
+        "art and legacy",
+        "Faustian bargains"
+      ],
+      "setting": "Spans centuries and continents — rural 18th-century France, revolutionary Paris, and modern-day New York City",
+      "comparable_books": [
+        "The Night Circus - Erin Morgenstern",
+        "All the Light We Cannot See - Anthony Doerr",
+        "The Song of Achilles - Madeline Miller",
+        "Mexican Gothic - Silvia Moreno-Garcia"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "immortal protagonist",
+          "sweeping romance",
+          "dual timeline",
+          "found meaning in art",
+          "introspective and character-driven"
+        ],
+        "negative": [
+          "slow pacing",
+          "minimal action",
+          "non-linear structure may frustrate some readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lyrical prose and dual-timeline structure reward a skilled audiobook narrator; widely praised in audio format.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Defiant - Michael R. Miller": {
       "title": "Defiant",
       "author": "Michael R. Miller",
       "series": "Songs of Chaos",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Holt and his dragon Ash are summoned by the Life Elder on a perilous mission through jungles and islands, while the great powers of the world — Elders and Paragons — begin to turn on one another, threatening to shatter the fragile peace that holds the realm together.",
+      "tone": "action-driven, high-stakes, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "power and responsibility",
+        "dragon bonds",
+        "war and sacrifice",
+        "progression and growth",
+        "political fracture"
+      ],
+      "setting": "Secondary fantasy world threatened by the undead Scourge; jungles, islands, and rider sanctums",
+      "comparable_books": [
+        "Ascendant - Michael R. Miller",
+        "Cradle (Unsouled) - Will Wight",
+        "Eragon - Christopher Paolini",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon riders",
+          "progression fantasy",
+          "fast-paced action",
+          "rich magic system",
+          "character-driven arcs",
+          "epic scope"
+        ],
+        "negative": [
+          "middle-book syndrome",
+          "large cast of POVs",
+          "prior books required"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Widely consumed as an Audible series with strong narrator performance; action-heavy pacing translates well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Reckoning - Michael R. Miller": {
       "title": "Reckoning",
       "author": "Michael R. Miller",
       "series": "Songs of Chaos",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Elder turns against Elder and riders clash across a world consumed by war, Holt and Ash fight to protect the people of the Fae Forest while Talia is dragged into a war in the west that forces her to choose between duty and her dream of being both rider and queen.",
+      "tone": "action-driven, emotionally weighty, escalating",
+      "pacing": "Fast",
+      "themes": [
+        "war and consequence",
+        "power and sacrifice",
+        "identity and duty",
+        "dragon bonds",
+        "moral ambiguity"
+      ],
+      "setting": "Secondary fantasy world spanning the Fae Forest, western kingdoms, and battlefronts; winter war setting",
+      "comparable_books": [
+        "Defiant - Michael R. Miller",
+        "Cradle (Unsouled) - Will Wight",
+        "The Way of Kings - Brandon Sanderson",
+        "Eragon - Christopher Paolini"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "dragon riders",
+          "multi-POV epic fantasy",
+          "high stakes action",
+          "rich character arcs"
+        ],
+        "negative": [
+          "requires reading prior books",
+          "850+ pages",
+          "multiple POVs may feel fragmented"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of a widely praised audiobook series; fast pacing and action suit the format well.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Caliban's War - James S. A. Corey": {
       "title": "Caliban's War",
       "author": "James S. A. Corey",
       "series": "The Expanse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As a mysterious soldier appears on Ganymede and a child goes missing, Holden and the Rocinante crew find themselves entangled in a political crisis that threatens to ignite a full-scale war between Earth, Mars, and the Belt, while a new protomolecule threat looms.",
+      "tone": "propulsive, tense, politically complex",
+      "pacing": "Fast",
+      "themes": [
+        "political brinkmanship",
+        "humanity vs. alien threat",
+        "parental love",
+        "military ethics",
+        "colonialism"
+      ],
+      "setting": "Near-future solar system — Ganymede, Earth, Mars, and deep space; mid-21st century",
+      "comparable_books": [
+        "Leviathan Wakes - James S. A. Corey",
+        "Old Man's War - John Scalzi",
+        "Blindsight - Peter Watts",
+        "Aurora - Kim Stanley Robinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "multi-POV",
+          "political intrigue",
+          "hard SF elements",
+          "propulsive plotting",
+          "ensemble cast"
+        ],
+        "negative": [
+          "requires Book 1 for context",
+          "dense political detail"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The full-cast Audible production is widely regarded as one of the best SF audiobook series available.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Abaddon's Gate - James S. A. Corey": {
       "title": "Abaddon's Gate",
       "author": "James S. A. Corey",
       "series": "The Expanse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A mysterious ring structure has appeared in the outer solar system, and a massive coalition fleet converges on it — but when the gate activates and ships are pulled into a strange, alien-controlled space, humanity must confront something incomprehensibly vast and dangerous.",
+      "tone": "tense, mysterious, claustrophobic",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact",
+        "human nature under pressure",
+        "faith and reason",
+        "political power",
+        "transcendence"
+      ],
+      "setting": "Near-future solar system and the Ring Space — an alien-controlled void beyond the solar system",
+      "comparable_books": [
+        "Blindsight - Peter Watts",
+        "Rendezvous with Rama - Arthur C. Clarke",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Leviathan Wakes - James S. A. Corey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "alien mystery",
+          "political maneuvering",
+          "ensemble cast",
+          "hard SF"
+        ],
+        "negative": [
+          "slower mid-section",
+          "requires prior books",
+          "some new POVs take time to invest in"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of the acclaimed full-cast Audible Expanse production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Cibola Burn - James S. A. Corey": {
       "title": "Cibola Burn",
       "author": "James S. A. Corey",
       "series": "The Expanse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Colonists and a corporate mining expedition clash violently on a newly opened alien world beyond the Ring gates, and Holden is sent to mediate — only to find the planet itself may be waking up and turning hostile to all human life.",
+      "tone": "tense, frontier-thriller, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "colonialism",
+        "corporate greed vs. settlers' rights",
+        "alien ecology",
+        "survival",
+        "justice"
+      ],
+      "setting": "Ilus/New Terra — a newly habitable alien world beyond the Ring gates; near-future",
+      "comparable_books": [
+        "Avatar (film tie-in novels)",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Leviathan Wakes - James S. A. Corey",
+        "The Word Exchange - Alena Graedon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "frontier conflict",
+          "space opera",
+          "hard SF",
+          "morally complex antagonist",
+          "alien world exploration"
+        ],
+        "negative": [
+          "considered slower by some fans",
+          "requires prior books",
+          "less political intrigue than earlier volumes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of the acclaimed full-cast Audible Expanse production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Not Till We Are Lost - Dennis E. Taylor": {
       "title": "Not Till We Are Lost",
       "author": "Dennis E. Taylor",
       "series": "Bobiverse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of the Starfleet War, the Bobs face a fractured universe of anti-Bob sentiment and rogue AI experiments — but all of this pales when two Bobs return from a 26,000-year mission to the galactic core with a discovery that may answer the Fermi Paradox and reveal an existential threat to the galaxy.",
+      "tone": "humorous, nerdy, high-concept, episodic",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and consciousness",
+        "existential risk",
+        "Fermi Paradox",
+        "AI and humanity",
+        "exploration"
+      ],
+      "setting": "Far-future galaxy-spanning universe; multiple star systems and the galactic core",
+      "comparable_books": [
+        "We Are Legion (We Are Bob) - Dennis E. Taylor",
+        "Project Hail Mary - Andy Weir",
+        "The Long Way to a Small, Angry Planet - Becky Chambers",
+        "All Systems Red - Martha Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "geek humor and pop culture references",
+          "hard SF concepts",
+          "AI protagonist",
+          "space exploration",
+          "Fermi Paradox",
+          "episodic adventure"
+        ],
+        "negative": [
+          "requires prior books",
+          "some reviewers find it less focused than earlier entries",
+          "abrupt ending reported"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrator Ray Porter is considered definitive for the series; his performance is a major part of the Bobiverse's appeal.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Persepolis Rising - James S. A. Corey": {
       "title": "Persepolis Rising",
       "author": "James S. A. Corey",
       "series": "The Expanse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thirty years after the opening of the Ring gates, a militaristic faction seizes control of the gate network and declares itself the new authority over humanity — forcing an aging Holden and his crew into a desperate resistance.",
+      "tone": "tense, politically charged, bittersweet",
+      "pacing": "Fast",
+      "themes": [
+        "authoritarianism",
+        "aging and legacy",
+        "resistance",
+        "political power",
+        "loyalty"
+      ],
+      "setting": "Near-future solar system and the Ring gate network; approximately 3300 CE",
+      "comparable_books": [
+        "Tiamat's Wrath - James S. A. Corey",
+        "Old Man's War - John Scalzi",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Leviathan Wakes - James S. A. Corey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "political intrigue",
+          "resistance narrative",
+          "ensemble cast",
+          "hard SF"
+        ],
+        "negative": [
+          "large time jump from prior books",
+          "requires reading earlier volumes",
+          "slower build before action"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of the acclaimed full-cast Audible Expanse production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Heaven's River - Dennis E. Taylor": {
       "title": "Heaven's River",
       "author": "Dennis E. Taylor",
       "series": "Bobiverse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bob discovers a massive alien megastructure — a vast, enclosed river habitat spanning a star system — and leads a rescue mission inside, navigating alien societies and political intrigue while the Bobiverse outside faces growing internal tensions.",
+      "tone": "humorous, adventurous, nerdy, wonder-filled",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and consciousness",
+        "exploration and first contact",
+        "AI ethics",
+        "freedom vs. control",
+        "megastructures"
+      ],
+      "setting": "Far-future; interior of a vast alien megastructure (a ringed river habitat) orbiting a distant star",
+      "comparable_books": [
+        "Ringworld - Larry Niven",
+        "Project Hail Mary - Andy Weir",
+        "We Are Legion (We Are Bob) - Dennis E. Taylor",
+        "All Systems Red - Martha Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "megastructure SF",
+          "geek humor",
+          "alien society",
+          "AI protagonist",
+          "sense of wonder",
+          "political intrigue"
+        ],
+        "negative": [
+          "requires prior books",
+          "some find the internal Bobiverse politics less engaging"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrator Ray Porter is considered definitive for the series and elevates the material significantly.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Tiamat's Wrath - James S. A. Corey": {
       "title": "Tiamat's Wrath",
       "author": "James S. A. Corey",
       "series": "The Expanse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Under the iron grip of the Laconian Empire, the remnants of the underground resistance push back at great cost, while experiments on alien technology begin to awaken something vast and terrifying beyond the Ring gates.",
+      "tone": "dark, urgent, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "resistance and sacrifice",
+        "authoritarianism",
+        "mortality",
+        "alien transcendence",
+        "grief"
+      ],
+      "setting": "Near-future solar system and colony worlds under Laconian rule; c. 3330 CE",
+      "comparable_books": [
+        "Persepolis Rising - James S. A. Corey",
+        "Leviathan Falls - James S. A. Corey",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Blindsight - Peter Watts"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "resistance narrative",
+          "alien mystery",
+          "emotional stakes",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "requires reading all prior books",
+          "major character consequences — emotionally harrowing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of the acclaimed full-cast Audible Expanse production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Memory's Legion - James S. A. Corey": {
       "title": "Memory's Legion",
       "author": "James S. A. Corey",
       "series": "The Expanse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Companion volume",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A complete collection of all The Expanse short fiction — novellas and stories spanning the full timeline of the series — offering character backstories, bridge narratives, and standalone tales set in the Expanse universe.",
+      "tone": "varied — intimate, propulsive, melancholic depending on story",
+      "pacing": "Moderate",
+      "themes": [
+        "identity",
+        "war and survival",
+        "political power",
+        "humanity and alien contact",
+        "found family"
+      ],
+      "setting": "The Expanse universe across multiple time periods and locations",
+      "comparable_books": [
+        "Leviathan Wakes - James S. A. Corey",
+        "Old Man's War - John Scalzi",
+        "Stories of Your Life and Others - Ted Chiang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Expanse completionists",
+          "short fiction fans",
+          "character backstory",
+          "series deep-dives"
+        ],
+        "negative": [
+          "not a good entry point — requires series familiarity",
+          "uneven as standalone reading"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Leviathan Falls - James S. A. Corey": {
       "title": "Leviathan Falls",
       "author": "James S. A. Corey",
       "series": "The Expanse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the series finale, the alien entity beyond the Ring gates threatens to destroy consciousness itself, and Holden and allies must make a final, desperate gambit to save humanity — and perhaps the universe — from an ancient, incomprehensible war.",
+      "tone": "epic, elegiac, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and legacy",
+        "existential threat",
+        "the nature of consciousness",
+        "endings and beginnings",
+        "humanity's place in the cosmos"
+      ],
+      "setting": "Near-future solar system, colony worlds, and the Ring Space; series conclusion",
+      "comparable_books": [
+        "Tiamat's Wrath - James S. A. Corey",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Blindsight - Peter Watts",
+        "Hyperion - Dan Simmons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series finales done well",
+          "cosmic horror SF",
+          "earned emotional payoffs",
+          "space opera",
+          "ensemble cast resolution"
+        ],
+        "negative": [
+          "requires all prior books",
+          "bittersweet/ambiguous ending may not satisfy all readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of the acclaimed full-cast Audible Expanse production; the finale delivers strong emotional impact in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "We Are Legion (We Are Bob) - Dennis E. Taylor": {
       "title": "We Are Legion (We Are Bob)",
       "author": "Dennis E. Taylor",
       "series": "Bobiverse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bob Johansson dies and wakes up as a self-replicating AI inside a space probe, sent to explore the galaxy and find habitable planets — and quickly becomes many Bobs, each developing distinct personalities as they encounter alien life and the remnants of a shattered Earth.",
+      "tone": "humorous, nerdy, warm, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "identity and consciousness",
+        "AI and humanity",
+        "exploration",
+        "loneliness",
+        "Fermi Paradox"
+      ],
+      "setting": "Near-future and expanding into deep space; late 21st century onward",
+      "comparable_books": [
+        "Project Hail Mary - Andy Weir",
+        "The Martian - Andy Weir",
+        "All Systems Red - Martha Wells",
+        "Old Man's War - John Scalzi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "geek humor and pop culture references",
+          "AI protagonist",
+          "hard SF ideas",
+          "light and fun tone",
+          "space exploration",
+          "Fermi Paradox"
+        ],
+        "negative": [
+          "thin human characters",
+          "episodic structure",
+          "light on traditional narrative tension"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrator Ray Porter is widely considered one of the best pairings of narrator and material in SF audiobooks.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "For We Are Many - Dennis E. Taylor": {
       "title": "For We Are Many",
       "author": "Dennis E. Taylor",
       "series": "Bobiverse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Bobs continue to multiply and explore the galaxy, racing to find habitable worlds for a dying Earth while confronting an aggressive alien species (the Others) that threatens to wipe out all life in their path.",
+      "tone": "humorous, nerdy, escalating stakes, warm",
+      "pacing": "Fast",
+      "themes": [
+        "identity and divergence",
+        "existential risk",
+        "first contact",
+        "AI ethics",
+        "survival of humanity"
+      ],
+      "setting": "Far-future; multiple star systems across the galaxy",
+      "comparable_books": [
+        "We Are Legion (We Are Bob) - Dennis E. Taylor",
+        "Project Hail Mary - Andy Weir",
+        "Old Man's War - John Scalzi",
+        "All Systems Red - Martha Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "geek humor",
+          "AI protagonist",
+          "alien threat",
+          "space opera",
+          "hard SF",
+          "multi-strand plotting"
+        ],
+        "negative": [
+          "requires Book 1",
+          "episodic structure continues",
+          "many Bob strands may feel diffuse"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ray Porter's narration remains the definitive way to experience the Bobiverse series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Revelation Space - Alastair Reynolds": {
       "title": "Revelation Space",
       "author": "Alastair Reynolds",
       "series": "Revelation Space",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An archaeologist uncovering an extinct alien civilisation, a starship captain desperate for a cure, and an assassin on a killing mission are drawn together by a secret at the heart of the universe — one that explains why the galaxy appears so terrifyingly silent.",
+      "tone": "dark, vast, cerebral, gothic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Fermi Paradox",
+        "extinction",
+        "transhumanism",
+        "the nature of consciousness",
+        "cosmic horror"
+      ],
+      "setting": "Far future; the planet Resurgam, the lighthugger starship Nostalgia for Infinity, and deep interstellar space; c. 2500 CE",
+      "comparable_books": [
+        "Blindsight - Peter Watts",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Hyperion - Dan Simmons",
+        "The Songs of Distant Earth - Arthur C. Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "Fermi Paradox",
+          "cosmic horror",
+          "complex world-building",
+          "transhumanism",
+          "dark atmosphere"
+        ],
+        "negative": [
+          "very slow start",
+          "dense and demanding prose",
+          "bleak tone throughout",
+          "minimal warmth or humor"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "All These Worlds - Dennis E. Taylor": {
       "title": "All These Worlds",
       "author": "Dennis E. Taylor",
       "series": "Bobiverse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Bobs face their climactic confrontation with the Others while simultaneously managing the relocation of humanity to new worlds — a crisis that tests the limits of what a replicant AI can and should sacrifice for organic life.",
+      "tone": "humorous, warm, emotionally resonant, action-filled",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "identity",
+        "AI and humanity",
+        "existential risk",
+        "found purpose"
+      ],
+      "setting": "Far-future; multiple star systems and colony worlds",
+      "comparable_books": [
+        "For We Are Many - Dennis E. Taylor",
+        "Project Hail Mary - Andy Weir",
+        "Old Man's War - John Scalzi",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satisfying trilogy conclusion",
+          "geek humor",
+          "hard SF",
+          "AI protagonist",
+          "space opera",
+          "earned emotional stakes"
+        ],
+        "negative": [
+          "requires prior books",
+          "episodic structure",
+          "some find resolution too tidy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ray Porter's narration is definitive; this volume is widely praised as the emotional high point of the original trilogy in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Wilds Exile - J. D. L. Rosell": {
       "title": "The Wilds Exile",
       "author": "J. D. L. Rosell",
       "series": "Ranger of the Titan Wilds",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Exiled and grief-stricken after devastating losses, ranger Leiyn fixates on one purpose — hunting down the villain Sharo to bring him to justice — while ancient forces continue to plot the destruction of the world she has sworn to protect.",
+      "tone": "dark, action-driven, emotionally raw",
+      "pacing": "Fast",
+      "themes": [
+        "grief and vengeance",
+        "redemption",
+        "found family",
+        "colonialism and indigenous conflict",
+        "sacrifice"
+      ],
+      "setting": "The Veiled Lands — a recently colonized fantasy continent threatened by giant spirit creatures called titans; inspired by the colonization of the Americas",
+      "comparable_books": [
+        "The Last Ranger - J. D. L. Rosell",
+        "The Blade Itself - Joe Abercrombie",
+        "Range of Ghosts - Elizabeth Bear",
+        "Spinning Silver - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female protagonist",
+          "revenge plot",
+          "found family",
+          "fast-paced action",
+          "unique creature world-building",
+          "penultimate book tension"
+        ],
+        "negative": [
+          "dark tone",
+          "requires prior books",
+          "grief-heavy narrative may be heavy going"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dreams of the Dying - Nicolas Lietzau": {
       "title": "Dreams of the Dying",
       "author": "Nicolas Lietzau",
       "series": "The Twelfth World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ex-mercenary Jespar Dal'Varek accepts a job in a volatile tropical empire to wake a comatose merchant king — the only man who can prevent civil war — and soon finds himself diving into the man's nightmares, battling his own PTSD, and confronting the blurring line between dream and reality.",
+      "tone": "haunting, grimdark, psychologically intense, slow-burning",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "mental illness and trauma",
+        "class inequality",
+        "morality and determinism",
+        "dream vs. reality",
+        "redemption"
+      ],
+      "setting": "The archipelago of Kilay — a Polynesian-inspired tropical empire on the brink of civil war; richly detailed secondary world",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Blade Itself - Joe Abercrombie",
+        "City of Stairs - Robert Jackson Bennett",
+        "The Traitor Baru Cormorant - Seth Dickinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark with psychological depth",
+          "morally grey protagonist",
+          "unique Polynesian-inspired setting",
+          "dream sequences",
+          "political intrigue",
+          "literary ambition"
+        ],
+        "negative": [
+          "very slow burn",
+          "heavy content warnings",
+          "prose occasionally awkward (non-native English author)",
+          "chunky tome"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "suicide",
+        "substance abuse"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Of Thieves and Shadows - B. S. H. Garcia": {
       "title": "Of Thieves and Shadows",
       "author": "B. S. H. Garcia",
       "series": "The Heart of Quinaria",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Reluctant heir Elaysia is thrust into leadership of the Twelve Tribes of Quinaria as three rival nations edge toward war over a dwindling magical resource, and a deadly attack on her induction day leads her to uncover a conspiracy tied to her parents' murders and an ancient evil reawakening.",
+      "tone": "nobledark, politically complex, adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "political power and corruption",
+        "environmental destruction",
+        "colonialism and racism",
+        "identity and duty",
+        "ancient evil"
+      ],
+      "setting": "The fantasy world of Quinaria — a richly built secondary world of three rival nations, magical creatures, and ancient mysteries",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "Legends of the First Empire - Michael J. Sullivan",
+        "City of Stairs - Robert Jackson Bennett",
+        "A Deadly Education - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "morally grey characters",
+          "rich world-building",
+          "political intrigue",
+          "diverse cast",
+          "environmental themes"
+        ],
+        "negative": [
+          "6 POVs may feel overwhelming",
+          "indie debut — some rough edges reported",
+          "slow mid-section"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Of Love and Loss - B. S. H. Garcia": {
       "title": "Of Love and Loss",
       "author": "B. S. H. Garcia",
       "series": "The Heart of Quinaria",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "War has come to Neharem; Elaysia, having survived betrayal and reclaimed her throne, now faces an invasion from Az Zar, a fractured nation, and ancient powers stirring beneath the surface of Quinaria, while her companions each reckon with devastating personal losses and secrets.",
+      "tone": "dark, emotionally devastating, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its costs",
+        "love and grief",
+        "resilience and trauma",
+        "political alliance",
+        "ancient evil"
+      ],
+      "setting": "The world of Quinaria — spanning Neharem, Cadar, the north, and beyond; war-torn and expanding in scope",
+      "comparable_books": [
+        "Of Thieves and Shadows - B. S. H. Garcia",
+        "The Way of Kings - Brandon Sanderson",
+        "Legends of the First Empire - Michael J. Sullivan",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotionally intense sequel",
+          "multi-POV epic fantasy",
+          "dark and expanding stakes",
+          "character growth",
+          "morally complex world"
+        ],
+        "negative": [
+          "requires Book 1",
+          "~800 pages",
+          "pacing can be uneven",
+          "emotionally harrowing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The First Ancestor - J. D. L. Rosell": {
