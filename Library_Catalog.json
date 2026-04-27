@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2506,
-  "total_pending": 2094,
+  "total_catalogued": 2526,
+  "total_pending": 2074,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -144922,107 +144922,199 @@
       "author": "Ray Nayler",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A murdered elephant researcher's digitized consciousness is downloaded into a resurrected mammoth in 22nd-century Russia, where she must protect her herd from poachers while grappling with her own ghosts and Moscow's hidden agenda. A Hugo Award-winning novella exploring de-extinction, conservation, and the nature of memory.",
+      "tone": "literary, elegiac, impassioned",
+      "pacing": "Moderate",
+      "themes": [
+        "de-extinction",
+        "conservation",
+        "consciousness",
+        "memory",
+        "human greed",
+        "animal intelligence"
+      ],
+      "setting": "Russian taiga and steppes, 22nd century; a near-future world where elephants have gone extinct and mammoths have been revived",
+      "comparable_books": [
+        "The Mountain in the Sea - Ray Nayler",
+        "Feed Them Silence - Lee Mandelo",
+        "Blackfish City - Sam J. Miller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "ecological themes",
+          "non-human consciousness",
+          "short-form SFF",
+          "climate fiction",
+          "morally complex protagonist"
+        ],
+        "negative": [
+          "wants action-heavy thriller",
+          "prefers long-form novels",
+          "sensitive to animal death/cruelty"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "animal death",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Waiting - Michael Connelly": {
       "title": "The Waiting",
       "author": "Michael Connelly",
       "series": "Renée Ballard",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Crime",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "LAPD Detective Renée Ballard's Open-Unsolved Unit pursues a serial rapist and murderer via a familial DNA match, while she secretly investigates the theft of her own badge and gun with help from Harry Bosch — and integrates Bosch's daughter Maddie as a new team volunteer with an agenda of her own.",
+      "tone": "taut, procedural, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "cold cases",
+        "institutional corruption",
+        "legacy",
+        "justice",
+        "mentorship",
+        "DNA forensics"
+      ],
+      "setting": "Contemporary Los Angeles; LAPD's Open-Unsolved Unit and the city's streets and precincts",
+      "comparable_books": [
+        "Desert Star - Michael Connelly",
+        "The Late Show - Michael Connelly",
+        "The Night Fire - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "police procedural",
+          "Los Angeles crime fiction",
+          "series continuity",
+          "fast-paced mystery",
+          "female detective protagonist"
+        ],
+        "negative": [
+          "wants standalone reads",
+          "dislikes long interconnected universes",
+          "prefers literary fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multi-narrator audio featuring Christine Lakin, Titus Welliver, and Madison Lintz is especially well-regarded for this series.",
+      "content_flags": [
+        "sexual violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Tomb of Dragons - Katherine Addison": {
       "title": "The Tomb of Dragons",
       "author": "Katherine Addison",
       "series": "The Chronicles of Osreth",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thara Celehar — the Witness for the Dead — has lost his supernatural ability to speak with the deceased, yet still must untangle a cemetery full of fifty years' worth of secrets, seek justice for dragons slaughtered by a mining company, and navigate a political uprising that threatens his own life. The concluding volume of the Cemeteries of Amalo trilogy.",
+      "tone": "cozy-adjacent, melancholy, compassionate",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "justice",
+        "identity",
+        "obligation",
+        "grief",
+        "institutional wrongdoing",
+        "found family"
+      ],
+      "setting": "The steampunk-inflected fantasy world of Osreth (Goblin Emperor universe); the city of Amalo",
+      "comparable_books": [
+        "The Witness for the Dead - Katherine Addison",
+        "The Goblin Emperor - Katherine Addison",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "fantasy mystery",
+          "gentle protagonist",
+          "rich world-building",
+          "series conclusion",
+          "found family"
+        ],
+        "negative": [
+          "wants fast-paced action fantasy",
+          "dislikes slow introspective stories",
+          "prefers grimdark"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Immersive secondary-world setting and thoughtful prose reward careful listening.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Tombs of Atuan - Ursula K. le Guin": {
       "title": "The Tombs of Atuan",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": "The Books of Earthsea",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A young girl is chosen as the high priestess of a dark, nameless cult and raised in the labyrinthine Tombs of Atuan, until a thief named Ged intrudes into her underground domain and offers her a choice between duty and freedom. A profound meditation on identity, darkness, and liberation.",
+      "tone": "lyrical, dark, meditative",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity",
+        "freedom",
+        "darkness and light",
+        "religion and power",
+        "coming of age",
+        "self-discovery"
+      ],
+      "setting": "The island of Atuan in the Earthsea archipelago; the ancient, labyrinthine Tombs and their surrounding desert — a timeless secondary world",
+      "comparable_books": [
+        "A Wizard of Earthsea - Ursula K. Le Guin",
+        "The Farthest Shore - Ursula K. Le Guin",
+        "The Left Hand of Darkness - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "classic SFF",
+          "female protagonist",
+          "philosophical themes",
+          "atmospheric world-building",
+          "elegant prose"
+        ],
+        "negative": [
+          "prefers fast action-driven fantasy",
+          "dislikes sparse world-building",
+          "wants romance-driven plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Le Guin's spare, lyrical prose is beautifully suited to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Terror - Dan Simmons": {
@@ -145030,26 +145122,51 @@
       "author": "Dan Simmons",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Based on the doomed 1845 Franklin Expedition to find the Northwest Passage, two Royal Navy ships become icebound in the Arctic, their crews slowly dying of cold, starvation, scurvy, and lead poisoning — while a monstrous creature hunts them across the frozen darkness. A sweeping blend of historical fiction and supernatural horror.",
+      "tone": "grimdark, oppressive, slow-burning dread",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival",
+        "leadership and command",
+        "the unknown",
+        "hubris",
+        "the Arctic sublime",
+        "madness"
+      ],
+      "setting": "The Canadian Arctic, 1845–1848; aboard icebound ships HMS Erebus and HMS Terror",
+      "comparable_books": [
+        "The Abominable - Dan Simmons",
+        "In the Kingdom of Ice - Hampton Sides",
+        "Endurance - Alfred Lansing"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "supernatural horror",
+          "survival stories",
+          "epic scope",
+          "morally complex ensemble casts",
+          "literary horror"
+        ],
+        "negative": [
+          "prefers fast-paced reads",
+          "dislikes bleak or hopeless narratives",
+          "sensitive to graphic suffering"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Strange - Nathan Ballingrud": {
@@ -145057,80 +145174,151 @@
       "author": "Nathan Ballingrud",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1931, on a Mars colonized since the 19th century, fourteen-year-old Anabelle Crisp sets out across the haunted Martian wasteland with her kitchen robot and a drunken pilot to hunt down the gang that destroyed her father and stole her mother's voice recording. A genre-blending space western suffused with folk horror, childhood loss, and revenge.",
+      "tone": "haunting, lyrical, spare and brutal",
+      "pacing": "Moderate",
+      "themes": [
+        "revenge",
+        "coming of age",
+        "grief and loss",
+        "frontier violence",
+        "isolation",
+        "the uncanny"
+      ],
+      "setting": "Alternate-history 1931 Mars; frontier settlements, ghost towns, and the alien wilderness of the Strange",
+      "comparable_books": [
+        "The Martian Chronicles - Ray Bradbury",
+        "True Grit - Charles Portis",
+        "Lone Women - Victor LaValle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "genre-bending",
+          "space western",
+          "literary horror",
+          "coming-of-age",
+          "vivid atmosphere",
+          "non-traditional SF"
+        ],
+        "negative": [
+          "wants hard SF or realistic science",
+          "dislikes horror elements",
+          "prefers straightforward plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Ships of Merior - Janny Wurts": {
       "title": "The Ships of Merior",
       "author": "Janny Wurts",
       "series": "Wars of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cursed to lifelong enmity by the defeated Mistwraith, half-brothers Arithon (Master of Shadow) and Lysaer (Lord of Light) continue their relentless conflict: Lysaer hunts Arithon with a vast army while Arithon takes to the seas, building ships and alliances in the hope of avoiding slaughter, as their struggle threatens the deepest magic of the world of Athera.",
+      "tone": "dense, lyrical, morally complex",
+      "pacing": "Slow",
+      "themes": [
+        "fate and free will",
+        "brotherhood and enmity",
+        "morality and war",
+        "magic and its cost",
+        "deception",
+        "prophecy"
+      ],
+      "setting": "The secondary-world fantasy realm of Athera — a steampunk-influenced medieval world with complex magic systems, coastlines, and mountain ranges",
+      "comparable_books": [
+        "The Curse of the Mistwraith - Janny Wurts",
+        "The Farseer Trilogy - Robin Hobb",
+        "A Song of Ice and Fire - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "morally grey protagonists",
+          "dense prose",
+          "long ambitious series",
+          "rich world-building",
+          "literary fantasy"
+        ],
+        "negative": [
+          "prefers fast-paced reads",
+          "dislikes slow dense prose",
+          "wants clear-cut heroes and villains",
+          "dislikes very long series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Searcher - Tana French": {
       "title": "The Searcher",
       "author": "Tana French",
       "series": "Cal Hooper",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A retired Chicago detective buys a fixer-upper in a remote Irish village, seeking peace, but is drawn into searching for a local teenager who has mysteriously disappeared — and finds the quiet countryside harbouring deep, resistant secrets. A slow, atmospheric standalone mystery about belonging, community, and the limits of justice.",
+      "tone": "atmospheric, melancholy, quietly menacing",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "belonging",
+        "community and outsiders",
+        "justice vs. the law",
+        "rural Ireland",
+        "reinvention",
+        "secrets and silence"
+      ],
+      "setting": "Rural County Galway, Ireland, contemporary; a small, insular farming community",
+      "comparable_books": [
+        "The Woods - Tana French",
+        "In the Woods - Tana French",
+        "The Redbreast - Jo Nesbø"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric crime fiction",
+          "literary mysteries",
+          "rural setting",
+          "character-driven",
+          "Ireland",
+          "morally complex protagonist"
+        ],
+        "negative": [
+          "wants fast thriller pacing",
+          "dislikes introspective slow burns",
+          "prefers plot-driven crime fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tana French's atmospheric Irish prose and rural setting are particularly immersive on audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Regatta Mystery and Other Stories - Agatha Christie": {
@@ -145138,26 +145326,47 @@
       "author": "Agatha Christie",
       "series": "Hercule Poirot",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A collection of short detective stories featuring Hercule Poirot, Miss Marple, and Parker Pyne, including the title story in which a priceless diamond vanishes from a yacht during a regatta. Light, ingenious, and characteristic of Christie's puzzle-box style.",
+      "tone": "genteel, clever, cosy",
+      "pacing": "Fast",
+      "themes": [
+        "deduction",
+        "social observation",
+        "deception",
+        "English manners",
+        "greed"
+      ],
+      "setting": "Various English and European locations, 1930s–1940s; seaside resorts, country houses, and drawing rooms",
+      "comparable_books": [
+        "The Mysterious Mr. Quin - Agatha Christie",
+        "Partners in Crime - Agatha Christie",
+        "Lord Edgware Dies - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mystery",
+          "Golden Age crime",
+          "short stories",
+          "Poirot",
+          "Miss Marple",
+          "puzzle-driven plotting"
+        ],
+        "negative": [
+          "wants gritty realism",
+          "dislikes short story collections",
+          "prefers psychological depth over plot puzzles"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short story format and Christie's dialogue are ideally suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Queen of Fives - Alex Hay": {
@@ -145165,53 +145374,98 @@
       "author": "Alex Hay",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1898 London, Quinn Le Blanc — the Queen of Fives and leader of a network of con artists — has exactly five days to trick an eligible duke into marriage and steal his family's fortune, but finds herself tangled in a web of competing deceptions as the Kendal family harbours dangerous secrets of their own.",
+      "tone": "propulsive, witty, stylishly twisty",
+      "pacing": "Fast",
+      "themes": [
+        "deception and identity",
+        "class and wealth",
+        "female power",
+        "Victorian society",
+        "loyalty and betrayal"
+      ],
+      "setting": "Victorian London, 1898; high society drawing rooms, Buckingham Palace, and the criminal underworld",
+      "comparable_books": [
+        "The Housekeepers - Alex Hay",
+        "The Appeal - Janice Hallett",
+        "The Maid - Nita Prose"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical thriller",
+          "heist fiction",
+          "morally grey female protagonist",
+          "fast-paced twists",
+          "Victorian setting",
+          "Bridgerton-adjacent"
+        ],
+        "negative": [
+          "wants deep character studies",
+          "dislikes implausible plotting",
+          "prefers literary fiction over genre entertainments"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Rising Storm - Cavan Scott": {
       "title": "The Rising Storm",
       "author": "Cavan Scott",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set 200 years before The Phantom Menace, the Republic Fair on the planet Valo — Chancellor Soh's grand celebration of galactic unity — is brutally attacked by the Nihil, as their leader Marchion Ro reveals a terrifying new weapon that even the Force cannot shield the Jedi from.",
+      "tone": "adventurous, tense, escalating dread",
+      "pacing": "Fast",
+      "themes": [
+        "unity vs. chaos",
+        "faith and doubt",
+        "sacrifice",
+        "terrorism",
+        "the limits of heroism",
+        "found family"
+      ],
+      "setting": "The Star Wars galaxy circa 231 BBY — the High Republic era; the planet Valo, the Nihil's base of Grizal, and the Starlight Beacon station",
+      "comparable_books": [
+        "Light of the Jedi - Charles Soule",
+        "The Fallen Star - Claudia Gray",
+        "Into the Dark - Claudia Gray"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fan",
+          "ensemble cast",
+          "action-adventure",
+          "space opera",
+          "tie-in fiction",
+          "multi-POV storytelling"
+        ],
+        "negative": [
+          "unfamiliar with Star Wars",
+          "dislikes shared-universe fiction",
+          "requires standalone reading"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full-cast audio production with Marc Thompson is a hallmark of the High Republic novel line.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Premonition: A Pandemic Story - Michael Lewis": {
@@ -145219,26 +145473,47 @@
       "author": "Michael Lewis",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An account of a small group of public health outsiders — including a maverick California county health officer and a ragtag team of disease fighters — who saw COVID-19 coming and tried to warn a sclerotic US government, illuminating the catastrophic failures that allowed the pandemic to spiral out of control.",
+      "tone": "propulsive, infuriating, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "public health systems",
+        "bureaucratic failure",
+        "pandemic preparedness",
+        "individual heroism",
+        "government dysfunction",
+        "science vs. politics"
+      ],
+      "setting": "United States, primarily 2019–2021; public health offices, government agencies, and disease-response front lines",
+      "comparable_books": [
+        "The Big Short - Michael Lewis",
+        "The Premonition - Michael Lewis",
+        "Breath from Salt - Bijal P. Trivedi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction",
+          "Michael Lewis fans",
+          "public policy and health",
+          "propulsive character-driven non-fiction",
+          "COVID history"
+        ],
+        "negative": [
+          "prefers fiction",
+          "pandemic-fatigued readers",
+          "wants emotional distance from recent events"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Michael Lewis's narrative non-fiction reads like a thriller and translates extremely well to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Peacock and the Sparrow - I. S. Berry": {
@@ -145246,134 +145521,254 @@
       "author": "I. S. Berry",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A world-weary CIA officer on his final tour in Bahrain during the Arab Spring becomes entangled with a beautiful artist and a trusted informant, only to find his loyalties and moral certainties shredded as revolution engulfs the island and American secrets prove as dark as Bahrain's own. A debut spy novel by a former CIA operations officer.",
+      "tone": "gritty, atmospheric, morally ambiguous",
+      "pacing": "Moderate",
+      "themes": [
+        "espionage and betrayal",
+        "moral complicity",
+        "the Arab Spring",
+        "truth and deception",
+        "love and loyalty",
+        "American foreign policy"
+      ],
+      "setting": "Bahrain and Cambodia, 2012; the Arab Spring uprisings and the murky world of CIA field operations",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Damascus Station - David McCloskey",
+        "Our Man in Havana - Graham Greene"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "le Carré-esque moral complexity",
+          "unreliable narrator",
+          "Middle East setting",
+          "award-winning debut",
+          "authentic CIA detail"
+        ],
+        "negative": [
+          "wants heroic spy action",
+          "dislikes morally repugnant protagonists",
+          "prefers fast-paced thrillers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Pariah - Anthony Ryan": {
       "title": "The Pariah",
       "author": "Anthony Ryan",
       "series": "The Covenant of Steel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alwyn Scribe, a bandit turned reluctant soldier, survives massacre and servitude to find himself drawn into the orbit of a reformist outlaw preacher, discovering that his ruthless pragmatism and gift for violence may be exactly what a fledgling revolution needs. A gritty epic fantasy origin story.",
+      "tone": "grimdark, propulsive, dry-witted",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "faith and heresy",
+        "violence and conscience",
+        "class and power",
+        "loyalty",
+        "revolution"
+      ],
+      "setting": "A dark secondary-world medieval fantasy setting; lawless borderlands, religious kingdoms, and frontier conflict",
+      "comparable_books": [
+        "Blood Song - Anthony Ryan",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "morally grey protagonist",
+          "fast-paced action",
+          "first-person narrator",
+          "epic fantasy",
+          "dark military fiction"
+        ],
+        "negative": [
+          "prefers optimistic fantasy",
+          "dislikes graphic violence",
+          "wants female protagonists",
+          "sensitive to religious themes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "First-person narrative voice and propulsive pacing are highly engaging on audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Nature of the Beast - Louise Penny": {
       "title": "The Nature of the Beast",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 11",
+      "genre": "Crime",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a boy known for telling wild stories is found murdered in the woods near Three Pines, Gamache investigates and uncovers a massive hidden weapon in the forest — leading to a conspiracy stretching back decades and involving international arms dealers and a war criminal.",
+      "tone": "cosy with darkness, contemplative, tightly plotted",
+      "pacing": "Moderate",
+      "themes": [
+        "truth and lies",
+        "war crimes and justice",
+        "storytelling",
+        "the weight of the past",
+        "community",
+        "evil masquerading as ordinary"
+      ],
+      "setting": "The fictional Quebec village of Three Pines, and wider international intrigue; contemporary Canada",
+      "comparable_books": [
+        "The Long Way to a Small Angry Planet - Becky Chambers",
+        "Still Life - Louise Penny",
+        "How the Light Gets In - Louise Penny"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mystery with depth",
+          "series lovers",
+          "Quebec setting",
+          "ensemble cast",
+          "character-driven crime fiction",
+          "psychological complexity"
+        ],
+        "negative": [
+          "wants fast-paced thrillers",
+          "prefers standalone reads",
+          "dislikes long ongoing series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ralph Cosham's narration of the Gamache series is considered definitive and deeply beloved by fans.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Oleander Sword - Tasha Suri": {
       "title": "The Oleander Sword",
       "author": "Tasha Suri",
       "series": "The Burning Kingdoms",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Malini and Priya — now on opposite sides of a rising war — must navigate imperial politics, bloodshed, and the terrifying growth of Priya's nature-magic powers, as their fraught love becomes both their greatest weapon and their greatest vulnerability in the struggle for Parijatdvipa's throne.",
+      "tone": "lush, romantic, politically charged",
+      "pacing": "Moderate",
+      "themes": [
+        "empire and resistance",
+        "queer love",
+        "power and sacrifice",
+        "colonialism",
+        "myth and magic",
+        "war"
+      ],
+      "setting": "The secondary-world empire of Parijatdvipa, inspired by historical South Asia; ancient temples, imperial courts, and war-scarred landscapes",
+      "comparable_books": [
+        "The Jasmine Throne - Tasha Suri",
+        "A Master of Djinn - P. Djèlí Clark",
+        "The Priory of the Orange Tree - Samantha Shannon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "queer romance",
+          "South Asian-inspired fantasy",
+          "epic fantasy",
+          "political intrigue",
+          "lush prose",
+          "morally complex female protagonist"
+        ],
+        "negative": [
+          "uncomfortable with queer romance",
+          "wants faster action over introspection",
+          "dislikes romance-heavy fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Nameless Ones - John Connolly": {
       "title": "The Nameless Ones",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 19",
+      "genre": "Crime",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Private detective Charlie Parker and his associates Louis and Angel pursue a pair of Serbian war criminals across Europe, while Louis hunts a killer who has decimated a network connected to him, in a revenge thriller that plunges deep into the darkness of post-Balkan conflict and old evil.",
+      "tone": "dark, violent, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "vengeance and justice",
+        "war crimes",
+        "evil and its persistence",
+        "loyalty and friendship",
+        "the supernatural",
+        "grief"
+      ],
+      "setting": "Amsterdam, Vienna, and Serbia; contemporary Europe, with flashbacks to Balkan war crimes",
+      "comparable_books": [
+        "The Book of Lost Things - John Connolly",
+        "Every Dead Thing - John Connolly",
+        "The Burning Soul - John Connolly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark crime fiction",
+          "supernatural thriller",
+          "series loyalty",
+          "morally grey protagonist",
+          "European settings",
+          "literary noir"
+        ],
+        "negative": [
+          "sensitive to graphic violence",
+          "dislikes supernatural elements in crime fiction",
+          "wants standalone reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Midnight Feast - Lucy Foley": {
@@ -145381,80 +145776,146 @@
       "author": "Lucy Foley",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the grand opening weekend of The Manor — a luxury Dorset wellness resort — a body is found after a solstice celebration, and threads of past trauma and buried secrets among guests, staff, and locals converge in a mystery laced with folk horror and local legend. A multi-POV thriller described as 'Soho Farmhouse meets The Wicker Man.'",
+      "tone": "atmospheric, darkly comic, folk-horror-tinged",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "secrets and the past",
+        "class and wealth",
+        "folk horror",
+        "vengeance",
+        "the corruption of wellness culture",
+        "community vs. outsiders"
+      ],
+      "setting": "The Dorset coast and its ancient woodland, England; present day, with flashbacks fifteen years earlier",
+      "comparable_books": [
+        "The Guest List - Lucy Foley",
+        "The Paris Apartment - Lucy Foley",
+        "The Hunting Party - Lucy Foley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric mystery",
+          "folk horror",
+          "multi-POV thriller",
+          "isolated-setting mysteries",
+          "British crime fiction",
+          "White Lotus fans"
+        ],
+        "negative": [
+          "wants American-style fast thriller shocks",
+          "dislikes slow atmospheric builds",
+          "prefers police procedurals"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Martian Contingency - Mary Robinette Kowal": {
       "title": "The Martian Contingency",
       "author": "Mary Robinette Kowal",
       "series": "Lady Astronaut",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Elma York, the Lady Astronaut, lands on Mars to prepare the first wave of permanent colonists, but from the moment she arrives she senses something is wrong — and begins to uncover a hidden disaster from the First Mars Expedition that was deliberately buried, with potentially civilization-ending consequences for a dying Earth.",
+      "tone": "hopeful, tense, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "colonisation and survival",
+        "institutional cover-ups",
+        "climate catastrophe",
+        "gender and racism in science",
+        "truth-telling",
+        "hope"
+      ],
+      "setting": "Mars and Earth orbit, alternate history 1970; a mid-20th-century world reshaped by a catastrophic meteor strike",
+      "comparable_books": [
+        "The Calculating Stars - Mary Robinette Kowal",
+        "The Fated Sky - Mary Robinette Kowal",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history SF",
+          "female protagonist",
+          "optimistic science fiction",
+          "space exploration",
+          "Hidden Figures fans",
+          "series continuity"
+        ],
+        "negative": [
+          "wants grimdark or hard SF",
+          "dislikes cosy or optimistic tone",
+          "prefers standalone reads"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Mary Robinette Kowal narrates her own audiobooks; as a professional voice actor the results are exceptional.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Madness of Crowds - Louise Penny": {
       "title": "The Madness of Crowds",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17",
+      "genre": "Crime",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gamache takes a sabbatical to the village of Three Pines but finds himself drawn into providing security for a controversial statistician whose provocative views on euthanasia and human 'usefulness' are inflaming passions — until someone attempts to murder her, and Gamache must confront a crime rooted in ideological extremism.",
+      "tone": "cosy with darkness, tense, morally probing",
+      "pacing": "Moderate",
+      "themes": [
+        "euthanasia and ethics",
+        "mob mentality and social media",
+        "the danger of ideas",
+        "grief and recovery",
+        "justice",
+        "Three Pines community"
+      ],
+      "setting": "The village of Three Pines, Quebec, Canada; contemporary, set in a world emerging from a global pandemic",
+      "comparable_books": [
+        "A World of Curiosities - Louise Penny",
+        "The Nature of the Beast - Louise Penny",
+        "Still Life - Louise Penny"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mystery with philosophical depth",
+          "Gamache series devotees",
+          "Canadian setting",
+          "social commentary in crime fiction",
+          "character-driven series"
+        ],
+        "negative": [
+          "wants fast-paced action thrillers",
+          "prefers standalone reads",
+          "dislikes long ongoing series",
+          "COVID-adjacent themes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Gamache series audiobooks are narrated to a very high standard and are a fan favourite in this format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Long Way Home - Louise Penny": {
