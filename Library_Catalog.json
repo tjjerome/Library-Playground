@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3224,
-  "total_pending": 1376,
+  "total_catalogued": 3244,
+  "total_pending": 1356,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -180543,27 +180543,49 @@
       "title": "Aftermath",
       "author": "Chuck Wendig",
       "series": "Star Wars: Aftermath",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set immediately after the Battle of Endor, a rebel pilot, an Imperial loyalty officer, and a ragtag group converge on the planet Akiva as the remnants of the Empire begin plotting their next move. The novel expands the post-Return of the Jedi galaxy and sets the stage for the New Republic era.",
+      "tone": "propulsive, kinetic, darkly hopeful",
+      "pacing": "Fast",
+      "themes": [
+        "aftermath of war",
+        "political transition",
+        "found family",
+        "moral ambiguity",
+        "Imperial collapse"
+      ],
+      "setting": "Star Wars galaxy, immediately following the Battle of Endor (Return of the Jedi era)",
+      "comparable_books": [
+        "Life Debt - Chuck Wendig",
+        "Empire's End - Chuck Wendig",
+        "Bloodline - Claudia Gray"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast",
+          "fast-paced action",
+          "post-war political drama",
+          "new canon Star Wars",
+          "propulsive prose style"
+        ],
+        "negative": [
+          "controversial second-person prose segments",
+          "divisive writing style",
+          "readers preferring EU Legends continuity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Maul - Shadow Hunter - Michael Reaves": {
@@ -180571,188 +180593,341 @@
       "author": "Michael Reaves",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set just before The Phantom Menace, Darth Maul is tasked with hunting down a low-level Sith informant who has learned too much about the Sith's return, while an information broker and a Jedi Padawan are caught in the deadly pursuit. A tense cat-and-mouse thriller through the underworld of Coruscant.",
+      "tone": "tense, dark, thriller-paced",
+      "pacing": "Fast",
+      "themes": [
+        "predator vs. prey",
+        "Sith secrecy",
+        "survival",
+        "the dark side",
+        "Coruscant underworld"
+      ],
+      "setting": "Star Wars Legends galaxy, Coruscant, just before The Phantom Menace (Legends continuity)",
+      "comparable_books": [
+        "Maul - Lockdown - Joe Schreiber",
+        "Darth Plagueis - James Luceno",
+        "Cloak of Deception - James Luceno"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Darth Maul fans",
+          "Legends continuity readers",
+          "thriller pacing",
+          "Coruscant underworld setting"
+        ],
+        "negative": [
+          "readers preferring new canon",
+          "character-driven over plot-driven stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Victory's Price - Alexander Freed": {
       "title": "Victory's Price",
       "author": "Alexander Freed",
       "series": "Star Wars: Alphabet Squadron",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The final chapter of the Alphabet Squadron trilogy sees the scattered pilots of Alphabet Squadron pursuing Shadow Wing to its last stand, as the New Republic pushes toward a final victory and each pilot must reckon with who they have become. A bleak, emotionally devastating conclusion.",
+      "tone": "grimdark, elegiac, psychologically intense",
+      "pacing": "Moderate",
+      "themes": [
+        "cost of war",
+        "trauma and identity",
+        "loyalty",
+        "endings and loss",
+        "radicalization"
+      ],
+      "setting": "Star Wars galaxy, post-Battle of Endor, New Republic era",
+      "comparable_books": [
+        "Shadow Fall - Alexander Freed",
+        "Alphabet Squadron - Alexander Freed",
+        "Battlefront: Twilight Company - Alexander Freed"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military sci-fi fans",
+          "character-driven war fiction",
+          "morally grey protagonists",
+          "literary Star Wars",
+          "grimdark tone"
+        ],
+        "negative": [
+          "readers wanting hopeful endings",
+          "action-first readers",
+          "casual Star Wars readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "True Colors - Karen Traviss": {
       "title": "True Colors",
       "author": "Karen Traviss",
       "series": "Star Wars: Republic Commando",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Clone Wars intensify, the clone commandos of Omega Squad begin to question their loyalty to the Republic while uncovering the disturbing truth about Project Kaminoan and the Kaminoan cloning agenda. Traviss deepens her examination of clone identity, ethics of cloning, and what it means to be human.",
+      "tone": "morally complex, gritty, introspective",
+      "pacing": "Moderate",
+      "themes": [
+        "clone identity and personhood",
+        "military ethics",
+        "loyalty vs. conscience",
+        "family bonds",
+        "political corruption"
+      ],
+      "setting": "Star Wars Legends galaxy, Clone Wars era (Legends continuity)",
+      "comparable_books": [
+        "Hard Contact - Karen Traviss",
+        "Triple Zero - Karen Traviss",
+        "Order 66 - Karen Traviss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military sci-fi fans",
+          "clone-centric stories",
+          "Mandalorian culture enthusiasts",
+          "morally grey narratives",
+          "Legends readers"
+        ],
+        "negative": [
+          "readers opposed to Traviss's Mandalorian/Jedi perspective",
+          "new canon readers",
+          "action-over-philosophy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Triple Zero - Karen Traviss": {
       "title": "Triple Zero",
       "author": "Karen Traviss",
       "series": "Star Wars: Republic Commando",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Omega Squad and Delta Squad are reunited on Coruscant to root out a Separatist terror cell, while Null ARCs and Mandalorian mercenaries operate in the shadows. Traviss delivers a gritty counter-terrorism thriller that continues her unflinching look at clone identity and Mandalorian culture.",
+      "tone": "gritty, morally complex, tightly plotted",
+      "pacing": "Fast",
+      "themes": [
+        "clone identity",
+        "Mandalorian culture",
+        "counter-terrorism",
+        "found family",
+        "ethics of warfare"
+      ],
+      "setting": "Star Wars Legends galaxy, Coruscant, Clone Wars era (Legends continuity)",
+      "comparable_books": [
+        "Hard Contact - Karen Traviss",
+        "True Colors - Karen Traviss",
+        "Order 66 - Karen Traviss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military sci-fi fans",
+          "Mandalorian culture fans",
+          "ensemble cast stories",
+          "morally complex war fiction",
+          "Legends continuity readers"
+        ],
+        "negative": [
+          "readers opposed to Traviss's ideological framing",
+          "new canon readers",
+          "Jedi-centric story fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Mask of Fear - Alexander Freed": {
       "title": "The Mask of Fear",
       "author": "Alexander Freed",
       "series": "Reign of the Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the terrifying first year of the Galactic Empire, Mon Mothma, Bail Organa, and Saw Gerrera each grapple with the rise of tyranny from different vantages — senator, consort, and soldier — as they begin to find their footing as future architects of the Rebel Alliance. A political thriller tracing the birth of resistance.",
+      "tone": "sombre, politically urgent, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "rise of authoritarianism",
+        "political complicity and resistance",
+        "democracy's fragility",
+        "grief and loss",
+        "moral courage"
+      ],
+      "setting": "Star Wars galaxy, first year of the Galactic Empire, immediately post-Revenge of the Sith (new canon)",
+      "comparable_books": [
+        "Bloodline - Claudia Gray",
+        "Andor (TV — novelization-adjacent)",
+        "Shadow Fall - Alexander Freed",
+        "Catalyst - James Luceno"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political thriller fans",
+          "Andor fans",
+          "character-driven Star Wars",
+          "literary prose",
+          "prequel-era enthusiasts"
+        ],
+        "negative": [
+          "action-first readers",
+          "readers wanting lightsaber battles or space combat",
+          "casual Star Wars readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Enchanters - James Ellroy": {
       "title": "The Enchanters",
       "author": "James Ellroy",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Freddy Otash",
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "It's the summer of 1962, and disgraced ex-LAPD cop turned Hollywood fixer Freddy Otash is pulled into the chaos surrounding Marilyn Monroe's death, a kidnapped starlet, a serial killer dubbed the Sex Creep, and the Kennedy family's dangerous secrets. A propulsive, darkly comic noir through the seedy underbelly of early-1960s Los Angeles.",
+      "tone": "darkly comic, sleazy, propulsive, staccato",
+      "pacing": "Fast",
+      "themes": [
+        "celebrity and corruption",
+        "Hollywood mythology",
+        "political power and sex",
+        "moral complicity",
+        "conspiracy"
+      ],
+      "setting": "Los Angeles, summer 1962 — seedy Hollywood, the Kennedy orbit, and the LAPD underworld",
+      "comparable_books": [
+        "Widespread Panic - James Ellroy",
+        "L.A. Confidential - James Ellroy",
+        "American Tabloid - James Ellroy",
+        "The Black Dahlia - James Ellroy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "noir fiction fans",
+          "historical crime fans",
+          "Ellroy devotees",
+          "morally grey protagonist",
+          "staccato propulsive prose",
+          "1960s Hollywood setting"
+        ],
+        "negative": [
+          "readers preferring traditional plotting",
+          "sensitive to graphic content",
+          "readers wanting sympathetic protagonists",
+          "disliking telegrammatic prose style"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sanctuary - Lamar Giles": {
       "title": "Sanctuary",
       "author": "Lamar Giles",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Star Wars: Bad Batch",
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set after Season 2's episode 'Pabu,' Clone Force 99 — Hunter, Wrecker, Tech, Omega, and Phee Genoa — take on a dangerous heist to raise funds for rebuilding their island home, only to pick up stowaways that pull them into a far more complex web of Imperial intrigue. A character-driven adventure that deepens the inner lives of the Bad Batch.",
+      "tone": "action-driven, warm, character-rich",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "identity and belonging",
+        "sacrifice",
+        "loyalty",
+        "early Imperial era"
+      ],
+      "setting": "Star Wars galaxy, mid-Clone Wars through early Imperial era, Bad Batch Season 2 timeline (new canon)",
+      "comparable_books": [
+        "Dark Disciple - Christie Golden",
+        "Ahsoka - E. K. Johnston",
+        "Brotherhood - Mike Chen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Bad Batch fans",
+          "clone-centric stories",
+          "found family themes",
+          "fast-paced Star Wars adventures",
+          "character depth"
+        ],
+        "negative": [
+          "readers unfamiliar with The Bad Batch show",
+          "readers wanting high-stakes continuity impact",
+          "Legends readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Inquisitor: Rise of the Red Blade - Delilah S. Dawson": {
@@ -180760,26 +180935,48 @@
       "author": "Delilah S. Dawson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Padawan Iskat Akaris dedicates herself to the Jedi Order but finds peace and belonging perpetually out of reach, until Order 66 presents her with an unexpected freedom — to embrace the dark side and become one of the Emperor's Inquisitors. A tragic origin story exploring why a Jedi might willingly choose the dark side.",
+      "tone": "dark, introspective, tragic",
+      "pacing": "Moderate",
+      "themes": [
+        "belonging and otherness",
+        "institutional failure",
+        "the dark side's seduction",
+        "identity",
+        "trauma and neglect"
+      ],
+      "setting": "Star Wars galaxy, Clone Wars through early Imperial era (new canon)",
+      "comparable_books": [
+        "Phasma - Delilah S. Dawson",
+        "Dark Disciple - Christie Golden",
+        "Path of Destruction - Drew Karpyshyn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "villain protagonist fans",
+          "prequel-era enthusiasts",
+          "character origin stories",
+          "morally complex dark-side narratives",
+          "Inquisitor/Obi-Wan Kenobi fans"
+        ],
+        "negative": [
+          "readers wanting a traditional hero's journey",
+          "readers preferring Jedi protagonists",
+          "light-tone Star Wars fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Resistance Reborn - Rebecca Roanhorse": {
@@ -180787,53 +180984,94 @@
       "author": "Rebecca Roanhorse",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set between The Last Jedi and The Rise of Skywalker, Poe Dameron, Leia Organa, and a desperate Resistance struggle to rebuild their forces and find allies after their catastrophic losses, reuniting scattered survivors and recruiting new ones for the fight ahead.",
+      "tone": "hopeful, urgent, ensemble-driven",
+      "pacing": "Fast",
+      "themes": [
+        "rebuilding hope",
+        "resilience",
+        "leadership",
+        "found family",
+        "resistance against tyranny"
+      ],
+      "setting": "Star Wars galaxy, sequel trilogy era, between Episodes VIII and IX (new canon)",
+      "comparable_books": [
+        "Phasma - Delilah S. Dawson",
+        "Bloodline - Claudia Gray",
+        "Aftermath - Chuck Wendig"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sequel trilogy fans",
+          "ensemble cast stories",
+          "Poe/Leia fans",
+          "bridge novel enthusiasts"
+        ],
+        "negative": [
+          "sequel trilogy skeptics",
+          "readers wanting deep character development over plot",
+          "prequel or original trilogy purists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Shadow Fall - Alexander Freed": {
       "title": "Shadow Fall",
       "author": "Alexander Freed",
       "series": "Star Wars: Alphabet Squadron",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alphabet Squadron pursues the elite Imperial fighter unit Shadow Wing to the devastated planet Troithe, where the campaign devolves into brutal urban warfare and each pilot is pushed to their psychological and moral limits. A harrowing middle chapter that deepens character trauma and raises the stakes.",
+      "tone": "grimdark, psychologically intense, brutal",
+      "pacing": "Moderate",
+      "themes": [
+        "cost of war",
+        "trauma",
+        "moral compromise",
+        "obsession",
+        "survival"
+      ],
+      "setting": "Star Wars galaxy, post-Battle of Endor, New Republic era — primarily Troithe",
+      "comparable_books": [
+        "Victory's Price - Alexander Freed",
+        "Alphabet Squadron - Alexander Freed",
+        "Battlefront: Twilight Company - Alexander Freed"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military sci-fi fans",
+          "grimdark tone",
+          "character-driven war fiction",
+          "morally grey protagonists",
+          "literary Star Wars"
+        ],
+        "negative": [
+          "readers wanting hopeful or action-first stories",
+          "casual Star Wars fans",
+          "readers averse to dark tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Red Harvest - Joe Schreiber": {
@@ -180841,53 +181079,95 @@
       "author": "Joe Schreiber",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "At a remote Sith academy during the Old Republic era, a Sith alchemist's experiment unleashes a zombie plague that tears through the students and masters, leaving a young Jedi captive as one of the few survivors trying to escape. A pulpy horror novel set in the Star Wars Legends universe.",
+      "tone": "pulpy, gory, relentlessly tense",
+      "pacing": "Fast",
+      "themes": [
+        "horror and survival",
+        "Sith corruption",
+        "isolation",
+        "hubris",
+        "the dark side's destructive power"
+      ],
+      "setting": "Star Wars Legends galaxy, Old Republic era, remote Sith academy (Legends continuity)",
+      "comparable_books": [
+        "Death Troopers - Joe Schreiber",
+        "Maul - Lockdown - Joe Schreiber",
+        "Path of Destruction - Drew Karpyshyn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror fiction fans",
+          "zombie/survival horror fans",
+          "pulpy fast reads",
+          "Legends readers",
+          "Old Republic era fans"
+        ],
+        "negative": [
+          "readers wanting serious Star Wars lore",
+          "horror-averse readers",
+          "new canon readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Razor's Edge - Martha Wells": {
       "title": "Razor's Edge",
       "author": "Martha Wells",
       "series": "Star Wars: Empire and Rebellion",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Princess Leia leads a desperate mission to secure funding for the Rebellion, but finds herself tangled up with a band of Alderaanian pirates — survivors of her destroyed world — who are pursuing their own ruthless agenda. A character-focused adventure exploring Leia's grief and moral resolve.",
+      "tone": "action-driven, emotionally resonant, character-focused",
+      "pacing": "Fast",
+      "themes": [
+        "grief and survival",
+        "Alderaanian identity",
+        "leadership under pressure",
+        "moral compromise",
+        "loyalty"
+      ],
+      "setting": "Star Wars galaxy, Original Trilogy era (between A New Hope and The Empire Strikes Back), Legends continuity",
+      "comparable_books": [
+        "Honor Among Thieves - James S. A. Corey",
+        "Bloodline - Claudia Gray",
+        "Heir to the Empire - Timothy Zahn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Leia-centric stories",
+          "character-driven Star Wars",
+          "Original Trilogy era fans",
+          "adventure pacing",
+          "Martha Wells fans"
+        ],
+        "negative": [
+          "readers preferring new canon",
+          "readers wanting large ensemble casts",
+          "Legends-averse readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Phasma - Delilah S. Dawson": {
@@ -180895,53 +181175,97 @@
       "author": "Delilah S. Dawson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told through a frame narrative of captured Resistance spy Vi Moradi, this is the origin story of Captain Phasma — a brutal survivor from a post-apocalyptic backwater world who clawed her way to power through ruthless pragmatism and moral emptiness. A dark character study of ambition stripped of conscience.",
+      "tone": "dark, gritty, survival-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "survival at any cost",
+        "ambition and amorality",
+        "origin of villainy",
+        "loyalty as a weapon",
+        "resistance"
+      ],
+      "setting": "Star Wars galaxy, sequel trilogy era and Phasma's pre-First Order past (new canon)",
+      "comparable_books": [
+        "Inquisitor: Rise of the Red Blade - Delilah S. Dawson",
+        "Resistance Reborn - Rebecca Roanhorse",
+        "Path of Destruction - Drew Karpyshyn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "villain origin story fans",
+          "morally grey/amoral protagonist",
+          "survival fiction",
+          "sequel trilogy readers",
+          "strong female antagonist"
+        ],
+        "negative": [
+          "readers wanting a traditional hero",
+          "light-tone Star Wars fans",
+          "readers expecting action-heavy pacing throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Life Debt - Chuck Wendig": {
       "title": "Life Debt",
       "author": "Chuck Wendig",
       "series": "Star Wars: Aftermath",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the New Republic consolidates its gains, Han Solo disappears attempting to liberate Kashyyyk, and Norra Wexley's team is tasked with finding him while a secret Imperial faction plots a devastating counter-offensive. The middle volume raises personal and political stakes significantly.",
+      "tone": "propulsive, urgent, darkly hopeful",
+      "pacing": "Fast",
+      "themes": [
+        "liberation and freedom",
+        "loyalty and sacrifice",
+        "Imperial remnant",
+        "political transition",
+        "found family"
+      ],
+      "setting": "Star Wars galaxy, post-Battle of Endor, New Republic era — including Kashyyyk (new canon)",
+      "comparable_books": [
+        "Aftermath - Chuck Wendig",
+        "Empire's End - Chuck Wendig",
+        "Bloodline - Claudia Gray"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Aftermath trilogy fans",
+          "Han Solo/Chewie fans",
+          "propulsive pacing",
+          "post-Endor era enthusiasm",
+          "new canon readers"
+        ],
+        "negative": [
+          "readers disliking Wendig's prose style",
+          "Legends purists",
+          "readers who disliked Aftermath"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Maul - Lockdown - Joe Schreiber": {
@@ -180949,80 +181273,145 @@
       "author": "Joe Schreiber",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Darth Maul goes undercover in a brutal prison fighting ring to locate a black-market arms dealer for Darth Sidious, where survival means winning gladiatorial combat against the galaxy's most dangerous criminals. A relentlessly violent, pulpy thriller set before The Phantom Menace.",
+      "tone": "brutal, pulpy, relentlessly violent",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "Sith training and purpose",
+        "violence as power",
+        "underworld crime",
+        "loyalty to the Sith"
+      ],
+      "setting": "Star Wars Legends galaxy, prison station Cog Hive Seven, pre-Phantom Menace (Legends continuity)",
+      "comparable_books": [
+        "Maul - Shadow Hunter - Michael Reaves",
+        "Red Harvest - Joe Schreiber",
+        "Death Troopers - Joe Schreiber"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Darth Maul fans",
+          "pulpy action fiction",
+          "prison/gladiator setting fans",
+          "Legends readers",
+          "horror/thriller hybrids"
+        ],
+        "negative": [
+          "horror-averse readers",
+          "readers wanting lore-heavy stories",
+          "new canon readers",
+          "character depth over action readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Honor Among Thieves - James S. A. Corey": {
       "title": "Honor Among Thieves",
       "author": "James S. A. Corey",
       "series": "Star Wars: Empire and Rebellion",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Han Solo is sent on a mission to extract a valuable Rebel spy, but the job spirals into a galaxy-spanning adventure involving a mysterious ancient device coveted by the Empire. Corey captures Han's roguish voice and delivers a breezy, fun adventure set between A New Hope and The Empire Strikes Back.",
+      "tone": "fun, breezy, adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty vs. self-interest",
+        "freedom",
+        "ancient secrets",
+        "Imperial threat",
+        "trust"
+      ],
+      "setting": "Star Wars galaxy, Original Trilogy era (between Episodes IV and V), Legends continuity",
+      "comparable_books": [
+        "Razor's Edge - Martha Wells",
+        "Scoundrels - Timothy Zahn",
+        "Heir to the Empire - Timothy Zahn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Han Solo fans",
+          "adventure pacing",
+          "Original Trilogy era",
+          "Expanse series readers",
+          "light-tone Star Wars"
+        ],
+        "negative": [
+          "readers preferring deep lore or darkness",
+          "new canon readers",
+          "readers wanting ensemble over solo protagonist"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced, dialogue-heavy, and charming — lends itself very well to audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Hard Contact - Karen Traviss": {
       "title": "Hard Contact",
       "author": "Karen Traviss",
       "series": "Star Wars: Republic Commando",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A squad of clone commandos is stranded behind enemy lines on a Separatist world, forced to team up with a young Jedi Padawan to complete their mission and survive. The series opener that introduces Traviss's gritty, ground-level view of the Clone Wars and her deeply humanising portrayal of the clone troopers.",
+      "tone": "gritty, intimate, military-focused",
+      "pacing": "Moderate",
+      "themes": [
+        "clone identity and personhood",
+        "brotherhood",
+        "military ethics",
+        "the human cost of war",
+        "Mandalorian culture"
+      ],
+      "setting": "Star Wars Legends galaxy, Outer Rim, Clone Wars era (Legends continuity)",
+      "comparable_books": [
+        "Triple Zero - Karen Traviss",
+        "True Colors - Karen Traviss",
+        "Order 66 - Karen Traviss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military sci-fi fans",
+          "clone-centric stories",
+          "Mandalorian culture enthusiasts",
+          "gritty war fiction",
+          "Legends readers"
+        ],
+        "negative": [
+          "readers opposed to Traviss's framing of Jedi",
+          "new canon readers",
+          "action-over-character readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ficciones - Jorge Luis Borges": {
@@ -181030,53 +181419,97 @@
       "author": "Jorge Luis Borges",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A landmark collection of philosophical short fiction in which Borges constructs labyrinths of ideas — infinite libraries, dream worlds, alternate histories, and paradoxical encyclopedias — that blur the line between fiction, essay, and philosophy. Widely considered one of the foundational texts of magical realism and postmodern literature.",
+      "tone": "cerebral, labyrinthine, erudite, quietly uncanny",
+      "pacing": "Slow",
+      "themes": [
+        "infinity and recursion",
+        "identity and doubles",
+        "the nature of reality",
+        "time and memory",
+        "literature and philosophy"
+      ],
+      "setting": "Various — imagined libraries, encyclopedias, detective stories, and metaphysical spaces across invented and real history",
+      "comparable_books": [
+        "Labyrinths - Jorge Luis Borges",
+        "The Name of the Rose - Umberto Eco",
+        "If on a winter's night a traveler - Italo Calvino",
+        "The Collected Fictions - Jorge Luis Borges"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction fans",
+          "philosophical fiction",
+          "postmodern literature",
+          "short story collections",
+          "magical realism",
+          "idea-driven fiction"
+        ],
+        "negative": [
+          "plot-driven readers",
+          "readers wanting narrative momentum",
+          "genre fiction readers seeking clear resolution"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Empire's End - Chuck Wendig": {
       "title": "Empire's End",
       "author": "Chuck Wendig",
       "series": "Star Wars: Aftermath",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Aftermath trilogy concludes as the New Republic and the Imperial remnant clash in a final battle over Jakku, while Norra Wexley's team faces its most personal and devastating choices. The novel bridges the gap between Return of the Jedi and The Force Awakens, establishing the world of the sequel trilogy.",
+      "tone": "propulsive, emotionally charged, epic",
+      "pacing": "Fast",
+      "themes": [
+        "the end of an era",
+        "sacrifice",
+        "political rebirth",
+        "the cost of victory",
+        "legacy"
+      ],
+      "setting": "Star Wars galaxy, Battle of Jakku — the decisive final engagement of the Galactic Civil War (new canon)",
+      "comparable_books": [
+        "Aftermath - Chuck Wendig",
+        "Life Debt - Chuck Wendig",
+        "Bloodline - Claudia Gray"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Aftermath trilogy fans",
+          "epic conclusion fans",
+          "new canon readers",
+          "propulsive pacing",
+          "post-Endor Star Wars"
+        ],
+        "negative": [
+          "readers who disliked earlier Aftermath volumes",
+          "Legends purists",
+          "readers averse to Wendig's prose style"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Princess and the Scoundrel - Beth Revis": {
