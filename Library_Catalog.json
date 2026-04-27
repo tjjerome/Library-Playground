@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2766,
-  "total_pending": 1834,
+  "total_catalogued": 2786,
+  "total_pending": 1814,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -157500,26 +157500,49 @@
       "author": "Dan Jones",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A sweeping narrative history of the Plantagenet dynasty from Henry II to Richard II, tracing the kings and queens who forged medieval England through war, conquest, and political upheaval. Jones brings the medieval world to vivid life, covering iconic events such as Magna Carta, the Black Death, and the Hundred Years' War.",
+      "tone": "Propulsive, dramatic, accessible",
+      "pacing": "Moderate",
+      "themes": [
+        "monarchy and power",
+        "medieval warfare",
+        "dynastic ambition",
+        "English identity",
+        "law and justice"
+      ],
+      "setting": "Medieval England and France, 12th–14th centuries",
+      "comparable_books": [
+        "The Wars of the Roses - Dan Jones",
+        "The Hollow Crown - Dan Jones",
+        "Medieval - Ian Mortimer",
+        "Edward I - Marc Morris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction",
+          "accessible history",
+          "medieval England",
+          "dynastic drama",
+          "propulsive storytelling"
+        ],
+        "negative": [
+          "dense academic history",
+          "footnote-heavy scholarship",
+          "slow pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jones's narrative style is cinematic and propulsive, making it highly engaging in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Wars of the Roses: The Fall of the Plantagenets and the Rise of the Tudors - Dan Jones": {
@@ -157527,26 +157550,49 @@
       "author": "Dan Jones",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A gripping narrative history of the dynastic civil wars between the houses of Lancaster and York that tore 15th-century England apart, culminating in the rise of the Tudor dynasty. Jones charts the chaos of weak kingship, shifting allegiances, and brutal battles with novelistic energy.",
+      "tone": "Dramatic, fast-paced, cinematic",
+      "pacing": "Fast",
+      "themes": [
+        "dynastic conflict",
+        "power and legitimacy",
+        "betrayal",
+        "war and politics",
+        "the nature of kingship"
+      ],
+      "setting": "15th-century England and France",
+      "comparable_books": [
+        "The Plantagenets - Dan Jones",
+        "Hollow Crown - Dan Jones",
+        "Richard III - Michael Hicks",
+        "The Sunne in Splendour - Sharon Kay Penman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction",
+          "accessible history",
+          "political intrigue",
+          "propulsive pacing",
+          "medieval warfare"
+        ],
+        "negative": [
+          "academic history",
+          "dry scholarship",
+          "slow burn"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jones's thriller-paced writing style translates exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Summer of Blood: The Peasants' Revolt of 1381 - Dan Jones": {
@@ -157554,26 +157600,48 @@
       "author": "Dan Jones",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A focused, narrative account of the Peasants' Revolt of 1381, when Wat Tyler and John Ball led a mass uprising of common people against the English ruling class, briefly seizing London and threatening the throne of the young Richard II. Jones reconstructs the chaotic summer days of rebellion with vivid detail.",
+      "tone": "Urgent, vivid, accessible",
+      "pacing": "Fast",
+      "themes": [
+        "class struggle",
+        "rebellion and revolution",
+        "medieval society",
+        "taxation and oppression",
+        "the mob vs. the crown"
+      ],
+      "setting": "Medieval England, summer of 1381",
+      "comparable_books": [
+        "The Plantagenets - Dan Jones",
+        "The Peasants' Revolt - Juliet Barker",
+        "A Distant Mirror - Barbara Tuchman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction",
+          "accessible history",
+          "political upheaval",
+          "underdog stories",
+          "compact focused history"
+        ],
+        "negative": [
+          "long sweeping histories",
+          "academic prose",
+          "slow pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The tight focus and fast pace of the narrative makes this particularly immersive in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Templars: The Rise and Spectacular Fall of God's Holy Warriors - Dan Jones": {
@@ -157581,107 +157649,202 @@
       "author": "Dan Jones",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A narrative history of the Knights Templar, from their founding as protectors of pilgrims in the Holy Land to their dramatic suppression and destruction by the French crown and papacy in the early 14th century. Jones separates myth from history in his characteristically accessible style.",
+      "tone": "Dramatic, accessible, authoritative",
+      "pacing": "Moderate",
+      "themes": [
+        "crusades and holy war",
+        "religious power",
+        "rise and fall",
+        "conspiracy and persecution",
+        "medieval politics"
+      ],
+      "setting": "Medieval Europe and the Holy Land, 12th–14th centuries",
+      "comparable_books": [
+        "The Plantagenets - Dan Jones",
+        "God's War - Christopher Tyerman",
+        "The Crusades - Thomas Asbridge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction",
+          "accessible history",
+          "medieval warfare",
+          "religious history",
+          "fall from power"
+        ],
+        "negative": [
+          "conspiracy theory books",
+          "academic history",
+          "slow pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dreaming the Bull - Manda Scott": {
       "title": "Dreaming the Bull",
       "author": "Manda Scott",
       "series": "Boudica",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in AD 53, this second entry in the Boudica series follows the warrior queen Breaca as she marshals the British tribes against Roman occupation, while her half-brother Bán — now a Roman cavalry officer known as Julius Valerius — fights on the opposing side. Across the battle lines, sibling identity and loyalty collide in a brutal war of attrition.",
+      "tone": "Lyrical, intense, mystical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and belonging",
+        "resistance and occupation",
+        "sibling bonds and betrayal",
+        "druidic mysticism",
+        "colonisation"
+      ],
+      "setting": "Roman-occupied Britain and Rome, c. AD 53",
+      "comparable_books": [
+        "Dreaming the Eagle - Manda Scott",
+        "The Eagle of the Ninth - Rosemary Sutcliff",
+        "Warrior Queen - Alan Gold",
+        "Centurion - Simon Scarrow"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "Celtic mysticism",
+          "dual POV",
+          "morally grey protagonist",
+          "Roman Britain setting",
+          "feminist historical fiction"
+        ],
+        "negative": [
+          "fast-paced action-first storytelling",
+          "dislike of spiritual/shamanic elements",
+          "linear plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dead Man's Walk - Larry McMurtry": {
       "title": "Dead Man's Walk",
       "author": "Larry McMurtry",
       "series": "Lonesome Dove",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (chronological)",
+      "genre": "Western",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel to Lonesome Dove, following a young Augustus McCrae and Woodrow Call on their first harrowing expeditions as Texas Rangers in the 1840s, facing the Comanche war chief Buffalo Hump, an ill-fated military mission to Santa Fe, and the unforgiving Texas wilderness. It is the origin story of the most celebrated friendship in American Western fiction.",
+      "tone": "Wry, brutal, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "friendship and loyalty",
+        "frontier survival",
+        "coming of age",
+        "manifest destiny and its costs",
+        "man vs. nature"
+      ],
+      "setting": "1840s Texas and the American Southwest frontier",
+      "comparable_books": [
+        "Lonesome Dove - Larry McMurtry",
+        "Comanche Moon - Larry McMurtry",
+        "Centennial - James Michener",
+        "Blood Meridian - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Western fiction",
+          "buddy dynamics",
+          "frontier hardship",
+          "propulsive adventure",
+          "Lonesome Dove fans"
+        ],
+        "negative": [
+          "discomfort with violence and torture",
+          "slow character-driven beginnings",
+          "bleak outcomes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "McMurtry's dialogue-rich, wry narrative voice is ideal for audio, and the Lonesome Dove series has a celebrated audio tradition.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Temple of Fortuna - Elodie Harper": {
       "title": "The Temple of Fortuna",
       "author": "Elodie Harper",
       "series": "Wolf Den Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the final instalment of the Wolf Den Trilogy, Amara has risen from enslaved prostitute to powerful courtesan in Rome, but her daughter remains in Pompeii with the man she loves — and it is AD 79, with Vesuvius about to erupt. A climactic conclusion blending Roman court politics, personal redemption, and one of history's most famous disasters.",
+      "tone": "Tense, immersive, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and survival",
+        "female agency in a patriarchal world",
+        "love and sacrifice",
+        "fate vs. fortune",
+        "the fragility of power"
+      ],
+      "setting": "Rome and Pompeii, AD 79, in the lead-up to the eruption of Vesuvius",
+      "comparable_books": [
+        "The Wolf Den - Elodie Harper",
+        "Ariadne - Jennifer Saint",
+        "A Thousand Ships - Natalie Haynes",
+        "Clytemnestra - Costanza Casati"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist historical fiction",
+          "ancient Rome",
+          "strong female protagonist",
+          "morally complex characters",
+          "survival narratives",
+          "disaster fiction"
+        ],
+        "negative": [
+          "slow pacing",
+          "romance-averse readers",
+          "discomfort with sexual content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Son - Philipp Meyer": {
@@ -157689,323 +157852,600 @@
       "author": "Philipp Meyer",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A multigenerational epic spanning nearly two centuries of Texas history, told through three McCullough family members: Eli, abducted as a boy by Comanches in 1849 who assimilates into their world; his son Peter, a more moral man horrified by the family's brutality; and his great-granddaughter Jeanne, who inherits the family's toughness in the oil boom era. A Pulitzer Prize finalist.",
+      "tone": "Brutal, lyrical, unflinching",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "American myth and violence",
+        "cultural collision and assimilation",
+        "power and legacy",
+        "land and identity",
+        "cycles of conquest"
+      ],
+      "setting": "Texas, from the 1840s Comanche era through the 20th-century oil boom",
+      "comparable_books": [
+        "Blood Meridian - Cormac McCarthy",
+        "Lonesome Dove - Larry McMurtry",
+        "Empire of the Summer Moon - S.C. Gwynne",
+        "All the Pretty Horses - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction",
+          "multigenerational saga",
+          "Cormac McCarthy fans",
+          "American West",
+          "morally complex narratives",
+          "Pulitzer-calibre fiction"
+        ],
+        "negative": [
+          "graphic violence",
+          "bleak worldview",
+          "slow meditative pacing",
+          "non-linear structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wolf Den - Elodie Harper": {
       "title": "The Wolf Den",
       "author": "Elodie Harper",
       "series": "Wolf Den Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In AD 74 Pompeii, Amara — a Greek doctor's daughter sold into slavery — works as a prostitute in the city's notorious brothel, the Wolf Den. Sharp-witted and determined, she begins scheming for her freedom while forging fierce bonds of sisterhood with her fellow 'she-wolves.'",
+      "tone": "Gritty, immersive, fiercely feminist",
+      "pacing": "Moderate",
+      "themes": [
+        "slavery and freedom",
+        "female solidarity",
+        "survival and agency",
+        "ancient Roman society",
+        "sex work and power"
+      ],
+      "setting": "Ancient Pompeii, AD 74",
+      "comparable_books": [
+        "The House with the Golden Door - Elodie Harper",
+        "Circe - Madeline Miller",
+        "A Thousand Ships - Natalie Haynes",
+        "Ariadne - Jennifer Saint"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist historical fiction",
+          "ancient Rome setting",
+          "strong female protagonist",
+          "sisterhood and solidarity",
+          "survival narrative"
+        ],
+        "negative": [
+          "graphic depictions of sexual exploitation",
+          "slow plot-driven readers",
+          "discomfort with sex work subject matter"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dreaming the Eagle - Manda Scott": {
       "title": "Dreaming the Eagle",
       "author": "Manda Scott",
       "series": "Boudica",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Beginning in AD 33, this series opener follows Breaca of the Eceni tribe from girlhood, as she proves herself a warrior while her half-brother Bán longs to be a dreamer — until Roman invasion tears them apart and sets both on collision courses with each other and with history. The origin story of Boudica, Britain's legendary warrior queen.",
+      "tone": "Lyrical, mystical, sweeping",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and destiny",
+        "resistance to empire",
+        "Celtic spirituality",
+        "sibling bonds",
+        "the cost of war"
+      ],
+      "setting": "Pre-Roman and Roman-invaded Britain, c. AD 33–43",
+      "comparable_books": [
+        "Dreaming the Bull - Manda Scott",
+        "The Eagle of the Ninth - Rosemary Sutcliff",
+        "Warriors of Camlann - N.M. Browne",
+        "The Last Kingdom - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "Celtic mythology and mysticism",
+          "feminist historical fiction",
+          "Roman Britain",
+          "epic character-driven sagas"
+        ],
+        "negative": [
+          "fast-paced action-first novels",
+          "dislike of spiritual or shamanic themes",
+          "impatient readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The House With the Golden Door - Elodie Harper": {
       "title": "The House With the Golden Door",
       "author": "Elodie Harper",
       "series": "Wolf Den Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Amara has escaped the Wolf Den brothel and now lives as a freedwoman in a gilded house gifted by her wealthy patron Rufus — but freedom remains precarious, as she is still at the mercy of Rufus's affections and hunted by her former owner Felix. Set in Pompeii, AD 75, this second instalment deepens Amara's dangerous quest for true independence.",
+      "tone": "Tense, immersive, emotionally layered",
+      "pacing": "Moderate",
+      "themes": [
+        "conditional freedom",
+        "female agency",
+        "love and danger",
+        "class and Roman society",
+        "sisterhood under strain"
+      ],
+      "setting": "Pompeii, AD 75, four years before the eruption of Vesuvius",
+      "comparable_books": [
+        "The Wolf Den - Elodie Harper",
+        "The Temple of Fortuna - Elodie Harper",
+        "Ariadne - Jennifer Saint",
+        "Circe - Madeline Miller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist historical fiction",
+          "ancient Rome",
+          "strong female protagonist",
+          "morally complex characters",
+          "survival narrative"
+        ],
+        "negative": [
+          "graphic depictions of exploitation",
+          "romance-heavy plotting",
+          "slow literary pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Gods of War - Conn Iggulden": {
       "title": "The Gods of War",
       "author": "Conn Iggulden",
       "series": "Emperor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The penultimate volume of the Emperor series follows Julius Caesar at the height of his power: his conquest of Gaul complete, his crossing of the Rubicon plunging Rome into civil war against Pompey, and his relentless march toward absolute rule of the Roman world.",
+      "tone": "Epic, propulsive, martial",
+      "pacing": "Fast",
+      "themes": [
+        "ambition and power",
+        "civil war",
+        "loyalty and betrayal",
+        "the nature of leadership",
+        "the cost of glory"
+      ],
+      "setting": "Rome and the wider Roman world, c. 50s–40s BC",
+      "comparable_books": [
+        "The Gates of Rome - Conn Iggulden",
+        "Masters of Rome - Colleen McCullough",
+        "Rubicon - Tom Holland",
+        "Caesar - Adrian Goldsworthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action-packed historical fiction",
+          "Roman history",
+          "military campaigns",
+          "propulsive pacing",
+          "Julius Caesar"
+        ],
+        "negative": [
+          "historical accuracy purists",
+          "slow literary fiction",
+          "character study over action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Gates of Rome - Conn Iggulden": {
       "title": "The Gates of Rome",
       "author": "Conn Iggulden",
       "series": "Emperor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The first book in Iggulden's Emperor series follows the boyhood and early manhood of Julius Caesar and his closest companion Marcus Brutus, as they navigate the violent politics of the late Roman Republic, learning the arts of war and power that will define their destinies.",
+      "tone": "Propulsive, adventurous, vivid",
+      "pacing": "Fast",
+      "themes": [
+        "friendship and rivalry",
+        "ambition",
+        "coming of age",
+        "Roman Republic politics",
+        "destiny"
+      ],
+      "setting": "Late Roman Republic, Rome and the wider Mediterranean, c. 100–80s BC",
+      "comparable_books": [
+        "The Death of Kings - Conn Iggulden",
+        "Masters of Rome - Colleen McCullough",
+        "Wolf of the Plains - Conn Iggulden",
+        "Imperium - Robert Harris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action-packed historical fiction",
+          "Roman history",
+          "coming-of-age",
+          "propulsive pacing",
+          "Julius Caesar"
+        ],
+        "negative": [
+          "historical accuracy purists (significant fictional liberties taken)",
+          "slow literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Persian Boy - Mary Renault": {
       "title": "The Persian Boy",
       "author": "Mary Renault",
       "series": "The Novels of Alexander the Great",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Told from the perspective of Bagoas, a Persian eunuch who becomes Alexander the Great's beloved companion and lover, this novel follows Alexander's campaigns through Persia and into Asia, offering an intimate portrait of a god-like conqueror seen through the eyes of someone who loves him completely.",
+      "tone": "Lyrical, intimate, luminous",
+      "pacing": "Moderate",
+      "themes": [
+        "love and devotion",
+        "power and conquest",
+        "identity and selfhood",
+        "cultural collision",
+        "the nature of greatness"
+      ],
+      "setting": "The Persian Empire and Central Asia, c. 330–323 BC, during Alexander the Great's campaigns",
+      "comparable_books": [
+        "Fire from Heaven - Mary Renault",
+        "Funeral Games - Mary Renault",
+        "Alexander - Valerio Massimo Manfredi",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary historical fiction",
+          "intimate character study",
+          "LGBTQ+ themes",
+          "ancient world",
+          "lyrical prose",
+          "classic historical fiction"
+        ],
+        "negative": [
+          "action-heavy war novels",
+          "discomfort with LGBTQ+ content",
+          "fast-paced plotting"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Renault's lyrical, intimate prose and the first-person narration of Bagoas are ideally suited to audio performance.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Gates of Athens - Conn Iggulden": {
       "title": "The Gates of Athens",
       "author": "Conn Iggulden",
       "series": "Athenian",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in 490 BC, this opening novel of the Athenian series follows soldier-statesman Xanthippus and the outnumbered Athenians as they face the vast Persian army of Darius the Great at Marathon, and then — a decade later — the return of the Persians under Xerxes, culminating in the legendary last stand at Thermopylae.",
+      "tone": "Epic, action-packed, vivid",
+      "pacing": "Fast",
+      "themes": [
+        "freedom vs. empire",
+        "heroism and sacrifice",
+        "Athenian democracy",
+        "military leadership",
+        "political betrayal"
+      ],
+      "setting": "Ancient Greece, 490–480 BC — Marathon, Athens, and Thermopylae",
+      "comparable_books": [
+        "Protector - Conn Iggulden",
+        "Gates of Fire - Steven Pressfield",
+        "The Falcon of Sparta - Conn Iggulden",
+        "The Last Stand of the Tin Can Sailors - James D. Hornfischer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action-packed historical fiction",
+          "ancient Greece",
+          "military battles",
+          "propulsive pacing",
+          "heroic underdog stories"
+        ],
+        "negative": [
+          "historical accuracy purists",
+          "slow literary fiction",
+          "character study over action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Field of Swords - Conn Iggulden": {
       "title": "The Field of Swords",
       "author": "Conn Iggulden",
       "series": "Emperor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The third volume of the Emperor series follows Julius Caesar's brutal campaigns in Gaul and his first tentative raids into Britain, as his legend grows alongside his political ambitions back in Rome — and the friendship between Caesar and Brutus begins to show its fatal cracks.",
+      "tone": "Epic, propulsive, martial",
+      "pacing": "Fast",
+      "themes": [
+        "military conquest",
+        "ambition and friendship",
+        "political machination",
+        "the Gallic wars",
+        "empire-building"
+      ],
+      "setting": "Gaul, Britain, and Rome, c. 58–50 BC",
+      "comparable_books": [
+        "The Gates of Rome - Conn Iggulden",
+        "The Gods of War - Conn Iggulden",
+        "Masters of Rome - Colleen McCullough",
+        "Imperium - Robert Harris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action-packed historical fiction",
+          "Roman history",
+          "military campaigns",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "historical accuracy purists",
+          "slow literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Death of Kings - Conn Iggulden": {
       "title": "The Death of Kings",
       "author": "Conn Iggulden",
       "series": "Emperor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The second Emperor novel follows the young Julius Caesar as he is captured by pirates, serves in military campaigns in Asia Minor, and begins his ascent through Roman politics, while his friendship with Marcus Brutus continues to deepen even as their paths diverge.",
+      "tone": "Propulsive, adventurous, vivid",
+      "pacing": "Fast",
+      "themes": [
+        "ambition and identity",
+        "loyalty and friendship",
+        "Roman political life",
+        "military adventure",
+        "the making of a legend"
+      ],
+      "setting": "The Mediterranean world and Rome, c. 75–65 BC",
+      "comparable_books": [
+        "The Gates of Rome - Conn Iggulden",
+        "The Field of Swords - Conn Iggulden",
+        "Rubicon - Tom Holland",
+        "Imperium - Robert Harris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action-packed historical fiction",
+          "Roman history",
+          "propulsive pacing",
+          "Julius Caesar"
+        ],
+        "negative": [
+          "historical accuracy purists",
+          "slow literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Blood of Gods - Conn Iggulden": {
       "title": "The Blood of Gods",
       "author": "Conn Iggulden",
       "series": "Emperor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Emperor series depicts the assassination of Julius Caesar on the Ides of March and its bloody aftermath — the vengeance of Mark Antony and Octavian, the fate of the conspirators Brutus and Cassius, and the final collapse of the Roman Republic into empire.",
+      "tone": "Epic, tragic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "the end of the Republic",
+        "betrayal and its consequences",
+        "power and its costs",
+        "friendship destroyed by ambition",
+        "the birth of empire"
+      ],
+      "setting": "Rome and the wider Roman world, c. 44–42 BC",
+      "comparable_books": [
+        "The Gods of War - Conn Iggulden",
+        "Antony and Cleopatra - Conn Iggulden",
+        "Rubicon - Tom Holland",
+        "Masters of Rome - Colleen McCullough"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action-packed historical fiction",
+          "Roman history",
+          "propulsive pacing",
+          "political intrigue",
+          "series conclusions"
+        ],
+        "negative": [
+          "historical accuracy purists",
+          "slow literary fiction",
+          "character study over action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "God of Vengeance - Giles Kristian": {
       "title": "God of Vengeance",
       "author": "Giles Kristian",
       "series": "The Rise of Sigurd",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Norway, AD 785, when the treacherous King Gorm massacres the family of Jarl Harald, his youngest son Sigurd survives and vows vengeance. Gathering a small band of ferociously loyal warriors — including the shield maiden Valgerd and the lethal Black Floki — Sigurd sets out to make a king pay for his betrayal, with or without the blessing of Odin.",
+      "tone": "Visceral, blood-soaked, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and honour",
+        "found family and loyalty",
+        "Norse mythology",
+        "blood feud",
+        "the price of vengeance"
+      ],
+      "setting": "Norway, AD 785",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "Raven: Blood Eye - Giles Kristian",
+        "Winter's Fire - Giles Kristian",
+        "Viking Fire - Justin Hill"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Viking fiction",
+          "action-packed historical fiction",
+          "found family",
+          "revenge narratives",
+          "Bernard Cornwell fans"
+        ],
+        "negative": [
+          "graphic violence aversion",
+          "preference for literary over genre fiction",
+          "slow pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The propulsive, action-heavy narrative and strong Norse voice make this particularly immersive in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ride the Wind - Lucia St. Clair Robson": {
@@ -158013,26 +158453,50 @@
       "author": "Lucia St. Clair Robson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Based on true events, this novel follows Cynthia Ann Parker, abducted by Comanche raiders from her Texas homestead in 1836 at age nine, who grows up fully assimilated into Comanche life — mastering their ways, marrying a war chief, and becoming, in every sense, a Comanche woman. Her son would become Quanah Parker, the last free Comanche war chief.",
+      "tone": "Immersive, lyrical, elegiac",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "cultural assimilation and identity",
+        "captivity and belonging",
+        "the destruction of the Comanche nation",
+        "love and sacrifice",
+        "the American frontier"
+      ],
+      "setting": "19th-century Texas and Comanche territory, 1836 onwards",
+      "comparable_books": [
+        "The Son - Philipp Meyer",
+        "Empire of the Summer Moon - S.C. Gwynne",
+        "Lonesome Dove - Larry McMurtry",
+        "Centennial - James Michener"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "immersive historical fiction",
+          "Native American perspectives",
+          "frontier history",
+          "based on true events",
+          "love story embedded in history"
+        ],
+        "negative": [
+          "graphic depictions of frontier violence",
+          "slow meditative pacing",
+          "readers seeking fast plot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Funeral Games - Mary Renault": {
