@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3244,
-  "total_pending": 1356,
+  "total_catalogued": 3264,
+  "total_pending": 1336,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -181515,190 +181515,341 @@
     "The Princess and the Scoundrel - Beth Revis": {
       "title": "The Princess and the Scoundrel",
       "author": "Beth Revis",
-      "series": null,
+      "series": "Star Wars (Standalone Novels)",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set immediately after Return of the Jedi, Han Solo proposes to Leia Organa and the two embark on a honeymoon cruise aboard the luxury starship Halcyon — only to find that the war against Imperial remnants is far from over. The novel explores their relationship from alternating perspectives as danger closes in around the newlyweds.",
+      "tone": "romantic, adventurous, emotionally warm",
+      "pacing": "Moderate",
+      "themes": [
+        "love and partnership",
+        "identity and heritage",
+        "post-war recovery",
+        "duty vs. personal happiness"
+      ],
+      "setting": "Star Wars galaxy, immediately post-Return of the Jedi (4 ABY); Endor, the luxury starship Halcyon, various planets",
+      "comparable_books": [
+        "Leia: Princess of Alderaan - Claudia Gray",
+        "Bloodline - Claudia Gray",
+        "Rebel Rising - Beth Revis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "romance-forward",
+          "Han and Leia fans",
+          "dual POV",
+          "post-Battle of Endor era",
+          "character introspection",
+          "Star Wars expanded universe"
+        ],
+        "negative": [
+          "Force / Jedi-centric readers",
+          "action-heavy preferences",
+          "readers who dislike tie-in fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence (mild)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Most Wanted - Rae Carson": {
       "title": "Most Wanted",
       "author": "Rae Carson",
-      "series": null,
+      "series": "Star Wars (Standalone Novels)",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set before Solo: A Star Wars Story, teenage Han and Qi'ra are street kids working for the White Worms crime syndicate on Corellia. When they're unwittingly assigned to the same dangerous mission that goes badly wrong, they must learn to trust each other to survive pirates, a droid crime syndicate, and their own ruthless boss.",
+      "tone": "fast-paced, gritty, YA adventure",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "trust and partnership",
+        "escape from poverty",
+        "crime and loyalty"
+      ],
+      "setting": "Star Wars galaxy, ~13 BBY; the industrial planet Corellia and its criminal underworld",
+      "comparable_books": [
+        "Rebel Rising - Beth Revis",
+        "Scoundrels - Timothy Zahn",
+        "Lando's Luck - Justina Ireland"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Han Solo fans",
+          "heist and caper stories",
+          "YA action-adventure",
+          "Solo: A Star Wars Story tie-in",
+          "character origin stories"
+        ],
+        "negative": [
+          "adult Star Wars readers expecting depth",
+          "those who dislike YA pacing",
+          "Force / Jedi-centric readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full-cast audio with Star Wars sound effects; praised by reviewers for enhancing an already fast-paced narrative.",
+      "content_flags": [
+        "graphic violence (mild)",
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Rebel Rising - Beth Revis": {
       "title": "Rebel Rising",
       "author": "Beth Revis",
-      "series": null,
+      "series": "Star Wars (Standalone Novels)",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A YA prequel to Rogue One: A Star Wars Story, covering thirteen years of Jyn Erso's life — from when Saw Gerrera takes her in as a child soldier after her mother is murdered, through her years as a rebel fighter and eventual Imperial prisoner. The novel traces Jyn's moral disillusionment and the brutal path that shaped her into the reluctant hero of Rogue One.",
+      "tone": "dark, emotionally unrelenting, grim",
+      "pacing": "Moderate",
+      "themes": [
+        "survival and resilience",
+        "betrayal",
+        "radicalism vs. resistance",
+        "identity and belief",
+        "found family"
+      ],
+      "setting": "Star Wars galaxy, 13–1 BBY; various planets across the Outer Rim, Imperial labor camps",
+      "comparable_books": [
+        "Most Wanted - Rae Carson",
+        "Leia: Princess of Alderaan - Claudia Gray",
+        "Catalyst: A Rogue One Novel - James Luceno"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Rogue One fans",
+          "dark character-driven Star Wars",
+          "origin stories",
+          "morally complex protagonists"
+        ],
+        "negative": [
+          "readers who dislike YA label (though tone is darker than typical YA)",
+          "those who prefer action-light stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Shadow of the Sith - Adam Christopher": {
       "title": "Shadow of the Sith",
       "author": "Adam Christopher",
-      "series": null,
+      "series": "Star Wars (Standalone Novels)",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set approximately 17 years after Return of the Jedi, Luke Skywalker and Lando Calrissian team up to investigate a resurgent Sith presence. While a Sith assassin hunts Rey's parents across the galaxy on orders to bring Rey to Exegol, Luke and Lando race to uncover the Sith Eternal's dark secret before it's too late.",
+      "tone": "dark, tense, adventurous, nostalgic",
+      "pacing": "Moderate",
+      "themes": [
+        "legacy and destiny",
+        "parenthood and sacrifice",
+        "the persistence of evil",
+        "mentorship and failure",
+        "Sith lore"
+      ],
+      "setting": "Star Wars galaxy, ~21 ABY; New Republic era, multiple planets including Exegol-adjacent locations",
+      "comparable_books": [
+        "Bloodline - Claudia Gray",
+        "Heir to the Empire - Timothy Zahn",
+        "The Princess and the Scoundrel - Beth Revis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Luke Skywalker and Lando fans",
+          "sequel trilogy lore enthusiasts",
+          "dark Sith mythology",
+          "bridge novels between trilogies"
+        ],
+        "negative": [
+          "readers who disliked The Rise of Skywalker",
+          "those preferring standalone non-film-adjacent stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Leia: Princess of Alderaan - Claudia Gray": {
       "title": "Leia: Princess of Alderaan",
       "author": "Claudia Gray",
-      "series": null,
+      "series": "Star Wars (Standalone Novels)",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A YA novel following a teenage Leia Organa as she completes the challenges necessary to claim her royal title, while slowly uncovering her parents' secret work on behalf of the nascent Rebellion. As Leia becomes increasingly aware of the Empire's cruelty, she must decide where her true loyalty lies.",
+      "tone": "thoughtful, hopeful, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "coming of age",
+        "political awakening",
+        "family and duty",
+        "identity",
+        "the birth of rebellion"
+      ],
+      "setting": "Star Wars galaxy, ~3 BBY; Alderaan, the Imperial Senate on Coruscant, and various Outer Rim worlds",
+      "comparable_books": [
+        "Bloodline - Claudia Gray",
+        "The Princess and the Scoundrel - Beth Revis",
+        "Rebel Rising - Beth Revis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Leia fans",
+          "YA coming-of-age",
+          "Claudia Gray's Star Wars work",
+          "political intrigue",
+          "prequel-era readers"
+        ],
+        "negative": [
+          "readers who dislike YA",
+          "action-first readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Space Between Worlds - Micaiah Johnson": {
       "title": "The Space Between Worlds",
       "author": "Micaiah Johnson",
       "series": "The Space Between Worlds",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future dystopia where multiverse travel is possible only if your counterpart on the destination Earth is already dead, Cara — a woman from the wastes whose alternate selves are exceptionally good at dying — works as a traverser for the powerful Eldridge Institute. When one of her last living counterparts is murdered under mysterious circumstances, Cara is plunged into a conspiracy that threatens not just her world but the entire multiverse.",
+      "tone": "gritty, propulsive, socially sharp, emotionally layered",
+      "pacing": "Fast",
+      "themes": [
+        "class and privilege",
+        "identity and self-determination",
+        "race and belonging",
+        "found power in marginalization",
+        "queer love"
+      ],
+      "setting": "Near-future dystopian Earth; the walled corporate city of Wiley City and the surrounding wastelands of Ashtown",
+      "comparable_books": [
+        "All Systems Red - Martha Wells",
+        "The Long Way to a Small Angry Planet - Becky Chambers",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "queer SFF",
+          "social commentary sci-fi",
+          "multiverse/parallel worlds",
+          "morally complex protagonist",
+          "fast plot with twists",
+          "BIPOC protagonist"
+        ],
+        "negative": [
+          "hard science fiction readers",
+          "readers wanting light or cozy tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lesser Evil - Timothy Zahn": {
       "title": "Lesser Evil",
       "author": "Timothy Zahn",
       "series": "Star Wars: Thrawn Ascendancy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The epic conclusion of the Thrawn Ascendancy trilogy: the Chiss Ascendancy teeters on the brink of civil war as a cunning enemy has spent years sowing distrust among its ruling families. Thrawn must delve into the dark secrets of his people's history to prevent total collapse — even if it means sacrificing everything he holds dear.",
+      "tone": "cerebral, politically intricate, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "political manipulation",
+        "loyalty and sacrifice",
+        "Chiss society and history",
+        "the cost of leadership",
+        "deception"
+      ],
+      "setting": "Star Wars galaxy, ~18 BBY; the Chiss Ascendancy in the Unknown Regions, predating the Empire",
+      "comparable_books": [
+        "Heir to the Empire - Timothy Zahn",
+        "Thrawn Ascendancy: Chaos Rising - Timothy Zahn",
+        "Thrawn - Timothy Zahn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Thrawn fans",
+          "political intrigue",
+          "military sci-fi",
+          "elaborate plotting",
+          "Zahn's writing style",
+          "Star Wars deep lore"
+        ],
+        "negative": [
+          "casual Star Wars readers",
+          "readers who dislike dense political plotting",
+          "those unfamiliar with Thrawn"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Scoundrels - Timothy Zahn": {
@@ -181706,26 +181857,47 @@
       "author": "Timothy Zahn",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Shortly after the Battle of Yavin, Han Solo is broke and deeply in debt to Jabba the Hutt. When a mysterious stranger offers him a king's ransom to crack the impregnable vault of a Black Sun crime syndicate underboss, Han assembles a crew of rogues — including Chewbacca and Lando Calrissian — for the heist of the century. A Star Wars Legends novel.",
+      "tone": "breezy, caper-fun, twisty",
+      "pacing": "Moderate",
+      "themes": [
+        "greed and risk",
+        "loyalty among thieves",
+        "con artistry",
+        "friendship"
+      ],
+      "setting": "Star Wars galaxy (Legends), 0 ABY; the festival planet Wukkar and its criminal underworld, shortly after A New Hope",
+      "comparable_books": [
+        "Most Wanted - Rae Carson",
+        "Heir to the Empire - Timothy Zahn",
+        "Lando's Luck - Justina Ireland"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heist/caper fans",
+          "Ocean's Eleven lovers",
+          "Han Solo and Lando fans",
+          "Zahn's Star Wars writing",
+          "Legends continuity readers"
+        ],
+        "negative": [
+          "Force/Jedi-centric readers",
+          "readers expecting Legends continuity significance",
+          "those wanting epic scope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Witch Elm - Tana French": {
@@ -181733,134 +181905,247 @@
       "author": "Tana French",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Toby, a charming and lucky young Dublin man, is violently attacked in his home and left deeply shaken. While recovering at his uncle's crumbling family estate, a skull is discovered inside a hollow tree in the garden — and Toby's sense of his own past begins to fracture. A psychological thriller told from the rare perspective of the suspect rather than the detective.",
+      "tone": "slow-burn, unsettling, claustrophobic, introspective",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "privilege and its blind spots",
+        "memory and unreliable selfhood",
+        "guilt and culpability",
+        "family secrets",
+        "identity"
+      ],
+      "setting": "Contemporary Dublin, Ireland; primarily a Gothic family estate (Ivy House)",
+      "comparable_books": [
+        "In the Woods - Tana French",
+        "The Secret History - Donna Tartt",
+        "Behind Closed Doors - B.A. Paris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological thriller fans",
+          "literary crime fiction",
+          "unreliable narrator",
+          "atmospheric setting",
+          "Tana French fans",
+          "character-driven mysteries"
+        ],
+        "negative": [
+          "readers wanting a detective protagonist",
+          "those preferring fast pacing",
+          "procedural crime fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich first-person narration with a shifting, unreliable Irish voice; the claustrophobic tone transfers exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content (mild)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Morning Star - Pierce Brown": {
       "title": "Morning Star",
       "author": "Pierce Brown",
       "series": "Red Rising",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Darrow, broken and imprisoned, must rebuild himself and the revolution from nothing. The trilogy's explosive conclusion sees him forge unexpected alliances across the Solar System to bring down the Society — at devastating personal cost.",
+      "tone": "grimdark, propulsive, epic, emotionally brutal",
+      "pacing": "Fast",
+      "themes": [
+        "revolution and sacrifice",
+        "power and corruption",
+        "loyalty and betrayal",
+        "class warfare",
+        "the cost of war"
+      ],
+      "setting": "Far-future colonized Solar System; Mars, Luna, and across planetary civilizations in a rigid color-coded caste society",
+      "comparable_books": [
+        "Red Rising - Pierce Brown",
+        "The Name of the Wind - Patrick Rothfuss",
+        "An Ember in the Ashes - Sabaa Tahir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark action",
+          "epic stakes",
+          "morally grey protagonist",
+          "brutal battle sequences",
+          "series payoff readers"
+        ],
+        "negative": [
+          "readers who dislike graphic violence",
+          "those wanting hopeful or cozy tone",
+          "standalone seekers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds' narration is widely considered one of the finest in audiobook history, perfectly matched to the epic scope.",
+      "content_flags": [
+        "graphic violence",
+        "death",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Last Jedi - Jason Fry": {
       "title": "The Last Jedi",
       "author": "Jason Fry",
-      "series": null,
+      "series": "Star Wars (Standalone Novels)",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The official expanded novelization of Star Wars: Episode VIII, written with input from director Rian Johnson, including deleted scenes and alternate script material. Rey seeks Jedi training from a reluctant Luke Skywalker while the Resistance flees the relentless First Order, and Kylo Ren wrestles with his own conflict.",
+      "tone": "epic, introspective, emotionally complex",
+      "pacing": "Fast",
+      "themes": [
+        "failure as teacher",
+        "legacy and the past",
+        "sacrifice",
+        "hope",
+        "the Force and its nature"
+      ],
+      "setting": "Star Wars galaxy, sequel trilogy era; Ahch-To, Canto Bight, the Supremacy, Crait",
+      "comparable_books": [
+        "The Force Awakens novelization - Alan Dean Foster",
+        "The Rise of Skywalker - Rae Carson",
+        "Shadow of the Sith - Adam Christopher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "The Last Jedi film fans",
+          "novelization enthusiasts",
+          "Rey and Kylo Ren character study readers",
+          "deleted scene completionists"
+        ],
+        "negative": [
+          "The Last Jedi detractors",
+          "readers who dislike film adaptations"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "City on Fire - Don Winslow": {
       "title": "City on Fire",
       "author": "Don Winslow",
       "series": "The Danny Ryan Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Providence, Rhode Island, 1986: Irish and Italian crime families who've long shared New England in uneasy peace are plunged into all-out war when a beautiful woman comes between them. Reluctant mob soldier Danny Ryan is dragged into the carnage and must rise from enforcer to ruthless strategist to protect the people he loves — in a contemporary retelling of the Iliad.",
+      "tone": "propulsive, operatic, violent, cinematic",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and betrayal",
+        "honor among criminals",
+        "fate and duty",
+        "family",
+        "the corrupting nature of power"
+      ],
+      "setting": "Providence, Rhode Island, 1980s; extends later to Hollywood and Las Vegas",
+      "comparable_books": [
+        "The Godfather - Mario Puzo",
+        "The Power of the Dog - Don Winslow",
+        "City of Thieves - David Benioff"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "mob fiction fans",
+          "The Sopranos viewers",
+          "The Godfather readers",
+          "literary crime fiction",
+          "propulsive ensemble casts"
+        ],
+        "negative": [
+          "readers who dislike graphic violence or criminal protagonists",
+          "those wanting redemption arcs"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Winslow's terse, cinematic prose and rapid chapter structure are perfectly suited to audio; widely praised in that format.",
+      "content_flags": [
+        "graphic violence",
+        "death",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Daughter of the Empire - Raymond E. Feist & Janny Wurts": {
       "title": "Daughter of the Empire",
       "author": "Raymond E. Feist & Janny Wurts",
       "series": "The Empire Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young Mara of the Acoma inherits her noble house at the moment of its near-destruction, thrust overnight from convent life into the treacherous political Game of the Council in the Empire of Tsuranuanni. Outnumbered and underestimated, she must use cunning, diplomacy, and ruthlessness to rebuild her house and survive deadly enemies.",
+      "tone": "intricate, politically tense, compelling, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "political scheming and survival",
+        "honor and pragmatism",
+        "female agency in patriarchal society",
+        "loyalty",
+        "power"
+      ],
+      "setting": "Kelewan (Tsuranuanni), a feudal Asian-influenced alien world in the Riftwar universe; concurrent with Feist's Magician",
+      "comparable_books": [
+        "The Goblin Emperor - Katherine Addison",
+        "A Memory Called Empire - Arkady Martine",
+        "Assassin's Apprentice - Robin Hobb"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political fantasy",
+          "female protagonist",
+          "court intrigue",
+          "Asian-influenced worldbuilding",
+          "underdog strategists"
+        ],
+        "negative": [
+          "readers wanting action-heavy fantasy",
+          "those unfamiliar with Feist's Riftwar setting (though readable standalone)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Light in August - William Faulkner": {
@@ -181868,26 +182153,49 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In rural Mississippi, the lives of several characters interweave: Joe Christmas, a man tormented by his uncertain racial identity; the pregnant Lena Grove, searching for the father of her child; and Reverend Hightower, haunted by his family's Civil War past. A sweeping meditation on race, guilt, and fate in the American South.",
+      "tone": "lyrical, dense, tragic, Southern Gothic",
+      "pacing": "Slow",
+      "themes": [
+        "racial identity and violence",
+        "guilt and sin",
+        "religion and fanaticism",
+        "Southern history and trauma",
+        "fate vs. free will"
+      ],
+      "setting": "Rural Mississippi and Jefferson, early 20th century American South",
+      "comparable_books": [
+        "As I Lay Dying - William Faulkner",
+        "Beloved - Toni Morrison",
+        "To Kill a Mockingbird - Harper Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction enthusiasts",
+          "Southern Gothic readers",
+          "Faulkner devotees",
+          "stream-of-consciousness narrative fans"
+        ],
+        "negative": [
+          "readers who dislike non-linear structure",
+          "those wanting accessible prose",
+          "genre fiction readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Faulkner's complex, fragmented prose and shifting chronology benefit greatly from the ability to re-read passages; tracking multiple threads is significantly harder in audio.",
+      "content_flags": [
+        "graphic violence",
+        "racial violence",
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Uprooted - Naomi Novik": {
@@ -181895,26 +182203,50 @@
       "author": "Naomi Novik",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a valley shadowed by a malevolent magical forest called the Wood, a young woman named Agnieszka is chosen by the cold and powerful wizard known as the Dragon — and discovers she has magic of her own that defies everything he knows. A fairy-tale-inflected standalone drawing on Polish folklore, full of surprising twists and a growing war against an ancient corruption.",
+      "tone": "lyrical, fairy-tale, adventurous, darkly romantic",
+      "pacing": "Moderate",
+      "themes": [
+        "unexpected power and self-discovery",
+        "nature and corruption",
+        "sacrifice and love",
+        "tradition vs. intuition",
+        "good and evil in ambiguous forms"
+      ],
+      "setting": "A secondary world inspired by Eastern European (Polish) folklore; a kingdom bordered by a sentient, corrupting forest",
+      "comparable_books": [
+        "Spinning Silver - Naomi Novik",
+        "Piranesi - Susanna Clarke",
+        "The Bear and the Nightingale - Katherine Arden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fairy tale retellings",
+          "lyrical prose",
+          "standalone fantasy",
+          "folklore-inspired settings",
+          "slow-burn romance",
+          "female protagonist"
+        ],
+        "negative": [
+          "readers wanting hard magic systems",
+          "grimdark fans",
+          "those who dislike fairy-tale conventions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Julia Emelin's narration is widely praised as perfectly capturing the lyrical, fairy-tale quality of Novik's prose.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content (mild)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Scanner Darkly - Philip K. Dick": {
@@ -181922,53 +182254,95 @@
       "author": "Philip K. Dick",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Near-future California: undercover narcotics agent Bob Arctor spies on a group of drug users — including himself — as his identity and mind fragment under the influence of the addictive Substance D. A darkly comic and deeply personal novel about addiction, surveillance, and the dissolution of self, based partly on Dick's own experiences.",
+      "tone": "darkly comic, paranoid, melancholic, tragicomic",
+      "pacing": "Slow",
+      "themes": [
+        "addiction and self-destruction",
+        "surveillance and privacy",
+        "identity dissolution",
+        "government exploitation",
+        "friendship and loss"
+      ],
+      "setting": "Near-future Anaheim, California; a seedy drug culture milieu",
+      "comparable_books": [
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick",
+        "Naked Lunch - William S. Burroughs",
+        "Fear and Loathing in Las Vegas - Hunter S. Thompson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Philip K. Dick fans",
+          "literary science fiction",
+          "counter-culture fiction",
+          "unreliable narrator",
+          "dark comedy"
+        ],
+        "negative": [
+          "readers wanting plot-driven sci-fi",
+          "those sensitive to drug content",
+          "action-focused readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "drug use (extensive)",
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Rise of Skywalker - Rae Carson": {
       "title": "The Rise of Skywalker",
       "author": "Rae Carson",
-      "series": null,
+      "series": "Star Wars (Standalone Novels)",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The official expanded novelization of Star Wars: Episode IX, with added scenes and context not in the theatrical cut. Rey, Finn, Poe, and the Resistance face the return of Emperor Palpatine and embark on a desperate, galaxy-spanning mission as the Skywalker saga draws to its conclusion.",
+      "tone": "epic, propulsive, emotionally earnest",
+      "pacing": "Fast",
+      "themes": [
+        "chosen identity vs. destiny",
+        "legacy and sacrifice",
+        "good vs. evil",
+        "belonging and found family"
+      ],
+      "setting": "Star Wars galaxy, sequel trilogy era; multiple planets including Exegol, Kijimi, and Ajan Kloss",
+      "comparable_books": [
+        "The Last Jedi - Jason Fry",
+        "Shadow of the Sith - Adam Christopher",
+        "The Force Awakens novelization - Alan Dean Foster"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars completionists",
+          "Rey and Kylo Ren fans",
+          "novelization enthusiasts",
+          "expanded content seekers"
+        ],
+        "negative": [
+          "Rise of Skywalker film detractors",
+          "readers wanting original stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "My Planet - Mary Roach": {
@@ -181976,26 +182350,44 @@
       "author": "Mary Roach",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Humor",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A complete collection of Mary Roach's 'My Planet' columns from Reader's Digest, in which she turns her sharp, self-deprecating wit on the absurdities of everyday life — marriage, domesticity, technology, and the quirks of modern American existence.",
+      "tone": "laugh-out-loud funny, self-deprecating, warm, observational",
+      "pacing": "Fast",
+      "themes": [
+        "marriage and domesticity",
+        "everyday absurdity",
+        "consumer culture",
+        "human foibles",
+        "humor in the mundane"
+      ],
+      "setting": "Contemporary everyday America; domestic settings",
+      "comparable_books": [
+        "Stiff - Mary Roach",
+        "I Feel Bad About My Neck - Nora Ephron",
+        "Bossypants - Tina Fey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "humor essay fans",
+          "Mary Roach devotees",
+          "light nonfiction readers",
+          "fans of witty domestic observation"
+        ],
+        "negative": [
+          "readers wanting Mary Roach's science-focused books",
+          "those wanting long-form narrative nonfiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Third Rule of Time Travel - Philip Fracassi": {
@@ -182003,53 +182395,94 @@
       "author": "Philip Fracassi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Scientist Beth Darlow has built a machine that allows human consciousness to travel back through one's own lifetime — but only to observe, never to interact. After her co-creator husband dies, Beth is left grieving, raising their daughter alone, and under corporate pressure to commercialize the technology. When her repeated trips begin warping her own timeline in impossible ways, she realizes the rules she thought unbreakable may not hold.",
+      "tone": "tense, emotionally grounded, propulsive, melancholic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "grief and memory",
+        "the ethics of time travel",
+        "motherhood under pressure",
+        "corporate exploitation of science",
+        "identity and the past"
+      ],
+      "setting": "Contemporary near-future America; a corporate research facility and domestic settings",
+      "comparable_books": [
+        "The Time Machine - H.G. Wells",
+        "Dark Matter - Blake Crouch",
+        "Recursion - Blake Crouch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "time travel fiction fans",
+          "emotional sci-fi thrillers",
+          "character-driven speculative fiction",
+          "grief narratives"
+        ],
+        "negative": [
+          "hard science fiction readers wanting rigorous physics",
+          "readers seeking action-dominant plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sundiver - David Brin": {
       "title": "Sundiver",
       "author": "David Brin",
       "series": "The Uplift Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a future where all spacefaring civilizations were 'uplifted' to intelligence by older patron races, humanity is the mysterious exception — and faces galactic suspicion. When strange entities are discovered living within the Sun, Earth's best contact specialist, Jacob Demwa, is sent on the Sundiver mission to investigate — and finds the fate of humanity may hang in the balance.",
+      "tone": "intellectually dense, classic space opera, mystery-tinged",
+      "pacing": "Moderate",
+      "themes": [
+        "humanity's place in the cosmos",
+        "evolution and uplift",
+        "first contact",
+        "political survival of a young civilization",
+        "mystery and conspiracy"
+      ],
+      "setting": "Far future; Earth, a solar research station, and the interior of the Sun",
+      "comparable_books": [
+        "Startide Rising - David Brin",
+        "Rendezvous with Rama - Arthur C. Clarke",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic hard science fiction",
+          "big-idea space opera",
+          "alien civilizations",
+          "Uplift series fans"
+        ],
+        "negative": [
+          "readers preferring character-driven narratives",
+          "those wanting fast-paced action",
+          "fans of Brin's later Uplift books who find Sundiver weaker"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "In the Shadow of Lightning - Brian McClellan": {
