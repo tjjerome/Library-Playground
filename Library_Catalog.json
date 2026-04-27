@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3555,
-  "total_pending": 1045,
+  "total_catalogued": 3575,
+  "total_pending": 1025,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -196002,53 +196002,91 @@
       "author": "John Grisham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Legal Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three law students at a predatory for-profit law school discover their institution is part of a massive fraud and decide to drop out and practice law illegally, targeting lucrative cases before their scheme unravels. A dark, satirical look at student debt, the legal system, and corporate corruption.",
+      "tone": "darkly comic, propulsive, satirical",
+      "pacing": "Fast",
+      "themes": [
+        "student debt",
+        "corporate fraud",
+        "legal ethics",
+        "desperation",
+        "systemic exploitation"
+      ],
+      "setting": "Contemporary Washington D.C.; for-profit law school milieu",
+      "comparable_books": [
+        "The Firm - John Grisham",
+        "The Associate - John Grisham",
+        "Rogue Lawyer - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal thriller fans",
+          "anti-corporate satire",
+          "morally grey protagonists",
+          "fast pacing",
+          "Grisham fans"
+        ],
+        "negative": [
+          "readers wanting courtroom drama",
+          "those preferring clear moral heroes",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fetching Raymond: A Ford County Story - John Grisham": {
       "title": "Fetching Raymond: A Ford County Story",
       "author": "John Grisham",
-      "series": null,
+      "series": "Ford County",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A poor rural family from Ford County, Mississippi, makes the difficult journey to visit their condemned brother on death row, revealing the deep strains of poverty, shame, and fractured family loyalty. One of seven stories in the Ford County collection.",
+      "tone": "melancholic, quietly observational, Southern Gothic",
+      "pacing": "Moderate",
+      "themes": [
+        "poverty",
+        "family dysfunction",
+        "capital punishment",
+        "rural Southern life",
+        "shame and loyalty"
+      ],
+      "setting": "Rural Mississippi; present day",
+      "comparable_books": [
+        "Ford County - John Grisham",
+        "A Time to Kill - John Grisham",
+        "Olive Kitteridge - Elizabeth Strout"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern fiction fans",
+          "character-driven short stories",
+          "social realism",
+          "Grisham literary side"
+        ],
+        "negative": [
+          "readers wanting legal thriller plots",
+          "fast-paced action seekers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gray Mountain - John Grisham": {
@@ -196056,53 +196094,94 @@
       "author": "John Grisham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Legal Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A New York lawyer laid off during the 2008 financial crisis lands at a tiny legal aid clinic in Appalachian Virginia, where she becomes entangled in the dangerous world of coal company litigation and mountaintop removal mining. The case puts her life at risk as she uncovers corporate crimes.",
+      "tone": "tense, socially conscious, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "environmental destruction",
+        "corporate power",
+        "Appalachian poverty",
+        "legal aid",
+        "corruption"
+      ],
+      "setting": "Appalachian Virginia; circa 2008–2009",
+      "comparable_books": [
+        "The Pelican Brief - John Grisham",
+        "Rogue Lawyer - John Grisham",
+        "The Rainmaker - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal thriller fans",
+          "environmental justice themes",
+          "strong female protagonist",
+          "Grisham fans"
+        ],
+        "negative": [
+          "readers avoiding social issue fiction",
+          "those wanting courtroom-heavy plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sycamore Row - John Grisham": {
       "title": "Sycamore Row",
       "author": "John Grisham",
       "series": "Jake Brigance",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Legal Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Small-town Mississippi lawyer Jake Brigance defends a controversial handwritten will that leaves a timber fortune to a Black housekeeper, igniting racial tensions and a bitter courtroom battle decades after the Civil Rights era. A sequel to A Time to Kill that revisits the wounds of the Jim Crow South.",
+      "tone": "measured, morally rich, Southern Gothic",
+      "pacing": "Moderate",
+      "themes": [
+        "race",
+        "inheritance and greed",
+        "Southern history",
+        "justice",
+        "small-town law"
+      ],
+      "setting": "Clanton, Mississippi; 1988–1989",
+      "comparable_books": [
+        "A Time to Kill - John Grisham",
+        "A Time for Mercy - John Grisham",
+        "To Kill a Mockingbird - Harper Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "courtroom drama fans",
+          "Southern fiction lovers",
+          "racial justice themes",
+          "Grisham fans",
+          "A Time to Kill fans"
+        ],
+        "negative": [
+          "readers avoiding race-relation heavy plots",
+          "fast-paced thriller seekers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich Southern setting and courtroom drama translate especially well to audio performance.",
+      "content_flags": [
+        "racial slurs in period-appropriate dialogue"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dinner at Deviant's Palace - Tim Powers": {
@@ -196110,26 +196189,47 @@
       "author": "Tim Powers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-apocalyptic Los Angeles, a former musician turned professional 'redeemer' is hired to rescue a woman from the cult of a charismatic and possibly supernatural messianic figure. Winner of the Philip K. Dick Award, the novel blends dystopian sci-fi with dark religious horror.",
+      "tone": "gritty, strange, bleakly inventive",
+      "pacing": "Moderate",
+      "themes": [
+        "cult and religious manipulation",
+        "post-apocalypse survival",
+        "redemption",
+        "addiction as metaphor",
+        "good vs. evil"
+      ],
+      "setting": "Post-apocalyptic Southern California, far future",
+      "comparable_books": [
+        "On Stranger Tides - Tim Powers",
+        "The Anubis Gates - Tim Powers",
+        "A Canticle for Leibowitz - Walter M. Miller Jr."
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Philip K. Dick Award fans",
+          "post-apocalyptic settings",
+          "dark religious themes",
+          "Tim Powers fans",
+          "cult horror"
+        ],
+        "negative": [
+          "readers wanting hard sci-fi",
+          "those disliking grim dystopian worlds"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rogue Lawyer - John Grisham": {
@@ -196137,26 +196237,47 @@
       "author": "John Grisham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Legal Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sebastian Rudd is an unconventional street lawyer who operates out of a bulletproof van, defending the most despised clients society can produce — from death row inmates to accused terrorists — while navigating corrupt judges, rival lawyers, and his own chaotic personal life.",
+      "tone": "sardonic, propulsive, anti-establishment",
+      "pacing": "Fast",
+      "themes": [
+        "legal ethics",
+        "systemic injustice",
+        "anti-establishment",
+        "criminal defence",
+        "corruption"
+      ],
+      "setting": "Contemporary unnamed American city",
+      "comparable_books": [
+        "The Rooster Bar - John Grisham",
+        "The Innocent Man - John Grisham",
+        "Lincoln Lawyer - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal thriller fans",
+          "morally grey protagonist",
+          "anti-hero appeal",
+          "fast pacing",
+          "Grisham fans"
+        ],
+        "negative": [
+          "readers wanting traditional courtroom drama",
+          "those preferring upstanding heroes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Three Days to Never - Tim Powers": {
@@ -196164,53 +196285,93 @@
       "author": "Tim Powers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A California father discovers his late grandmother possessed a device connected to Albert Einstein's secret time-travel research, drawing both Israeli intelligence agents and a ruthless occult society intent on rewriting history. Powers weaves together real historical figures with his trademark hidden supernatural layer.",
+      "tone": "intricate, tense, quietly eerie",
+      "pacing": "Moderate",
+      "themes": [
+        "time travel",
+        "secret history",
+        "family legacy",
+        "espionage",
+        "occult"
+      ],
+      "setting": "Contemporary California; with roots in 1930s–40s Einstein-era history",
+      "comparable_books": [
+        "The Anubis Gates - Tim Powers",
+        "Declare - Tim Powers",
+        "Last Call - Tim Powers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tim Powers fans",
+          "secret history enthusiasts",
+          "espionage thriller readers",
+          "historical supernatural fiction"
+        ],
+        "negative": [
+          "readers wanting straightforward time travel sci-fi",
+          "those disliking occult elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Last Call - Tim Powers": {
       "title": "Last Call",
       "author": "Tim Powers",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Fault Lines",
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A professional poker player realises a game of Tarot poker he played in 1969 may have allowed an ancient supernatural force to begin stealing his body and identity, and must confront the mythological underbelly of Las Vegas to reclaim his soul. A World Fantasy Award winner blending Arthurian legend, Fisher King mythology, and the hidden magic of gambling.",
+      "tone": "darkly mythic, labyrinthine, atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Arthurian myth",
+        "identity and possession",
+        "gambling and fate",
+        "the Fisher King",
+        "hidden history of America"
+      ],
+      "setting": "Las Vegas and the American Southwest; 1969 and early 1990s",
+      "comparable_books": [
+        "Expiration Date - Tim Powers",
+        "Earthquake Weather - Tim Powers",
+        "American Gods - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "World Fantasy Award fans",
+          "mythic fantasy lovers",
+          "Tim Powers fans",
+          "Arthurian legend interest",
+          "slow-burn payoff readers"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "those disliking dense plotting",
+          "readers averse to occult themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Medusa's Web - Tim Powers": {
@@ -196218,26 +196379,45 @@
       "author": "Tim Powers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two siblings inherit a crumbling Hollywood mansion from their cousin and discover that eight-limbed spider-like symbols called 'spiders' cause temporal hallucinations when stared at, plunging them into a decades-spanning occult conspiracy rooted in Old Hollywood's dark history.",
+      "tone": "eerie, melancholic, dreamlike",
+      "pacing": "Moderate",
+      "themes": [
+        "time and memory",
+        "Hollywood's dark past",
+        "addiction as metaphor",
+        "family secrets",
+        "occult"
+      ],
+      "setting": "Hollywood, Los Angeles; present day and Golden Age Hollywood past",
+      "comparable_books": [
+        "Three Days to Never - Tim Powers",
+        "Declare - Tim Powers",
+        "Last Call - Tim Powers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tim Powers fans",
+          "Old Hollywood atmosphere",
+          "occult fiction lovers",
+          "literary horror",
+          "secret history"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "those disliking time-bending narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "On Stranger Tides - Tim Powers": {
@@ -196245,26 +196425,46 @@
       "author": "Tim Powers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A puppeteer in the 18th-century Caribbean is drawn into the world of piracy and voodoo magic after his ship is taken by Blackbeard's crew, and joins a quest for the Fountain of Youth. A hugely influential swashbuckling fantasy that inspired the Pirates of the Caribbean film franchise.",
+      "tone": "adventurous, richly atmospheric, darkly magical",
+      "pacing": "Fast",
+      "themes": [
+        "piracy and freedom",
+        "voodoo and magic",
+        "mortality and the Fountain of Youth",
+        "adventure",
+        "love"
+      ],
+      "setting": "Caribbean Sea and Florida; early 18th century",
+      "comparable_books": [
+        "The Drawing of the Dark - Tim Powers",
+        "The Anubis Gates - Tim Powers",
+        "Treasure Island - Robert Louis Stevenson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "swashbuckling adventure fans",
+          "historical fantasy lovers",
+          "Tim Powers fans",
+          "pirate fiction enthusiasts"
+        ],
+        "negative": [
+          "readers disliking supernatural elements in historical fiction",
+          "those wanting literary slow reads"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Swashbuckling adventure, vivid Caribbean setting, and propulsive plot make for a highly enjoyable listen.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Drawing of the Dark - Tim Powers": {
@@ -196272,53 +196472,92 @@
       "author": "Tim Powers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An aging Irish mercenary is hired to guard a Vienna inn during the Ottoman siege of 1529, only to discover the inn's legendary dark beer is the mystical centre of a battle between Western civilisation and the forces of darkness, with the Fisher King myth at its heart.",
+      "tone": "richly atmospheric, wry, mythic",
+      "pacing": "Moderate",
+      "themes": [
+        "Arthurian and Fisher King myth",
+        "the clash of civilisations",
+        "fate and duty",
+        "magic hidden in history",
+        "beer as sacred vessel"
+      ],
+      "setting": "Vienna, Austria; 1529 during the Ottoman siege",
+      "comparable_books": [
+        "Last Call - Tim Powers",
+        "On Stranger Tides - Tim Powers",
+        "The Anubis Gates - Tim Powers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fantasy lovers",
+          "Arthurian myth fans",
+          "Tim Powers fans",
+          "Renaissance-era settings"
+        ],
+        "negative": [
+          "readers wanting fast action",
+          "those disliking mythic layering"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Secret of Secrets - Dan Brown": {
       "title": "The Secret of Secrets",
       "author": "Dan Brown",
       "series": "Robert Langdon",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Harvard symbologist Robert Langdon travels to Prague with scientist Katherine Solomon, whose explosive manuscript on human consciousness vanishes after a brutal murder, sending Langdon on a race through the city's ancient mythology pursued by a powerful secret organisation. The sixth Robert Langdon novel, blending codes, philosophy, and high-stakes suspense.",
+      "tone": "propulsive, puzzle-driven, intellectually playful",
+      "pacing": "Fast",
+      "themes": [
+        "human consciousness",
+        "science vs. religion",
+        "secret societies",
+        "the nature of death",
+        "knowledge suppression"
+      ],
+      "setting": "Prague, London, and New York; contemporary",
+      "comparable_books": [
+        "Origin - Dan Brown",
+        "The Lost Symbol - Dan Brown",
+        "Inferno - Dan Brown"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Dan Brown fans",
+          "Robert Langdon series readers",
+          "puzzle and code enthusiasts",
+          "globe-trotting thriller fans"
+        ],
+        "negative": [
+          "literary fiction readers",
+          "those who disliked previous Langdon novels",
+          "readers wanting character depth over plot mechanics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Creeper - A. M. Shine": {
@@ -196326,80 +196565,144 @@
       "author": "A. M. Shine",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two researchers hired by an enigmatic academic travel to a remote, isolated village in rural Ireland to document local folklore, only to encounter a terrifying entity from local legend — the Creeper — who visits its victims in increasingly close proximity until the fourth and final night. A slow-burn folk horror rooted in Irish mythology and rural isolation.",
+      "tone": "creeping dread, atmospheric, claustrophobic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "folk horror",
+        "Irish mythology and superstition",
+        "isolation",
+        "belief and reality",
+        "the unknown"
+      ],
+      "setting": "Remote rural Ireland; contemporary",
+      "comparable_books": [
+        "The Watchers - A. M. Shine",
+        "The Ritual - Adam Nevill",
+        "Bird Box - Josh Malerman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folk horror fans",
+          "Irish mythology interest",
+          "slow-burn horror",
+          "atmospheric dread",
+          "A. M. Shine fans"
+        ],
+        "negative": [
+          "readers wanting fast-paced horror",
+          "those disliking ambiguous monsters",
+          "gore-seekers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Slow-build atmospheric dread and rural Irish setting are enhanced by a strong audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Stay in the Light - A. M. Shine": {
       "title": "Stay in the Light",
       "author": "A. M. Shine",
       "series": "The Watchers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After escaping the nightmarish forest of the Watchers, Mina flees to the Irish coast but soon finds the creatures are closing in again, questioning her own sanity as people around her disappear and the power of the Watchers seems to be growing. The sequel to The Watchers expands the mythology and raises the stakes across dual storylines.",
+      "tone": "paranoid, atmospheric, escalating dread",
+      "pacing": "Moderate",
+      "themes": [
+        "survival trauma",
+        "Irish folklore and the Sidhe",
+        "paranoia",
+        "belief vs. sanity",
+        "shapeshifting creatures"
+      ],
+      "setting": "West coast of Ireland; contemporary",
+      "comparable_books": [
+        "The Watchers - A. M. Shine",
+        "Bird Box - Josh Malerman",
+        "The Ritual - Adam Nevill"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "The Watchers fans",
+          "Irish Gothic horror lovers",
+          "atmospheric creature horror",
+          "A. M. Shine fans"
+        ],
+        "negative": [
+          "readers new to the series (must read Book 1 first)",
+          "those wanting standalone horror",
+          "fast-paced horror seekers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Watchers - A. M. Shine": {
       "title": "The Watchers",
       "author": "A. M. Shine",
       "series": "The Watchers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young woman's car breaks down at the edge of an uncharted Irish forest, and she finds herself trapped with a group of strangers in a concrete bunker, forced each night to stand before a mirrored wall as unseen creatures observe them from the darkness. A claustrophobic debut Gothic horror rooted in Irish folklore, adapted into a major film.",
+      "tone": "claustrophobic, atmospheric, quietly terrifying",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Irish folklore and mythology",
+        "captivity and survival",
+        "the unknown",
+        "isolation",
+        "identity"
+      ],
+      "setting": "Unmapped forest on the west coast of Ireland; contemporary",
+      "comparable_books": [
+        "Stay in the Light - A. M. Shine",
+        "Bird Box - Josh Malerman",
+        "The Ritual - Adam Nevill"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Irish Gothic horror fans",
+          "creature horror enthusiasts",
+          "claustrophobic tension lovers",
+          "atmospheric slow-burn readers"
+        ],
+        "negative": [
+          "readers wanting action-heavy horror",
+          "those disliking ambiguous creature reveals",
+          "gore-seekers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The claustrophobic tension and atmospheric dread of the forest setting are powerfully conveyed in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "This Is the Way the World Ends - James K. Morrow": {
@@ -196407,26 +196710,48 @@
       "author": "James K. Morrow",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An ordinary gravestone carver accepts a radiation suit in exchange for testifying at a surreal war crimes tribunal held by the 'unadmitted' — the billions of people who would never be born because of nuclear war. A darkly satirical and deeply philosophical anti-nuclear fable.",
+      "tone": "darkly satirical, surreal, morally urgent",
+      "pacing": "Moderate",
+      "themes": [
+        "nuclear war and its consequences",
+        "moral responsibility",
+        "satire of militarism",
+        "justice for the unborn",
+        "absurdism"
+      ],
+      "setting": "Post-nuclear-war Earth; 1980s speculative near-future",
+      "comparable_books": [
+        "The Last Man - Mary Shelley",
+        "Cat's Cradle - Kurt Vonnegut",
+        "Only Begotten Daughter - James K. Morrow"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anti-war fiction fans",
+          "dark satire lovers",
+          "philosophical sci-fi readers",
+          "Vonnegut fans",
+          "nuclear dread fiction"
+        ],
+        "negative": [
+          "readers wanting action or plot-driven sci-fi",
+          "those disliking surrealism",
+          "readers avoiding bleak subject matter"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Silent Patient - Alex Michaelides": {
@@ -196434,26 +196759,48 @@
       "author": "Alex Michaelides",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Psychological Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A criminal psychotherapist becomes obsessed with uncovering why a celebrated painter shot her husband five times and then went permanently silent, only to discover that the truth is far more disturbing than anyone suspected. A twisty debut thriller with a stunning final revelation.",
+      "tone": "tense, claustrophobic, darkly psychological",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "obsession",
+        "trauma and silence",
+        "unreliable narrator",
+        "Greek mythology parallels",
+        "therapy and manipulation"
+      ],
+      "setting": "London; contemporary, with flashback diary entries",
+      "comparable_books": [
+        "The Woman in the Window - A. J. Finn",
+        "Behind Closed Doors - B. A. Paris",
+        "I Am Pilgrim - Terry Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological thriller fans",
+          "twist-ending lovers",
+          "unreliable narrator enthusiasts",
+          "debut thriller readers"
+        ],
+        "negative": [
+          "readers who dislike therapy/clinical settings",
+          "those averse to Greek mythology references",
+          "spoiler-sensitive readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The unreliable narration and psychological tension are heightened with a skilled dual-narrator audio performance.",
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Yellowface - R. F. Kuang": {
@@ -196461,26 +196808,48 @@
       "author": "R. F. Kuang",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A white author steals the unpublished manuscript of her deceased Chinese-American friend and publishes it as her own, achieving massive success — until her theft begins to unravel, and the internet's fury closes in around her. A sharp, satirical skewering of publishing, race, and literary ambition.",
+      "tone": "darkly comic, razor-sharp, unsettling",
+      "pacing": "Fast",
+      "themes": [
+        "cultural appropriation",
+        "race and identity in publishing",
+        "literary ambition and envy",
+        "social media mob culture",
+        "self-justification"
+      ],
+      "setting": "Contemporary New York and Washington D.C.; the literary world",
+      "comparable_books": [
+        "Babel - R. F. Kuang",
+        "The Secret History - Donna Tartt",
+        "Bunny - Mona Awad"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary satire fans",
+          "publishing industry interest",
+          "morally unreliable narrator",
+          "race and identity themes",
+          "R. F. Kuang fans"
+        ],
+        "negative": [
+          "readers wanting likeable protagonists",
+          "those avoiding social commentary fiction",
+          "readers preferring fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The protagonist's unreliable, self-justifying first-person voice is particularly compelling in audio.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "King Sorrow - Joe Hill": {
@@ -196488,53 +196857,99 @@
       "author": "Joe Hill",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Six college friends at a Maine university summon an ancient dragon called King Sorrow to escape a blackmail scheme, only to find themselves bound to him for the rest of their lives — forced every year to provide a human sacrifice or become his next meal. An epic Faustian horror-fantasy spanning decades, from Joe Hill's first novel in nine years.",
+      "tone": "epic, darkly comic, terrifying, heartfelt",
+      "pacing": "Moderate",
+      "themes": [
+        "Faustian bargain",
+        "found family",
+        "the cost of power",
+        "guilt and complicity",
+        "dark academia"
+      ],
+      "setting": "Maine and beyond; late 1980s through to the present day",
+      "comparable_books": [
+        "NOS4A2 - Joe Hill",
+        "The Secret History - Donna Tartt",
+        "It - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Joe Hill fans",
+          "Stephen King universe fans",
+          "found family horror",
+          "dark academia",
+          "epic horror novels",
+          "dragon/creature horror"
+        ],
+        "negative": [
+          "readers averse to very long novels (~900 pages)",
+          "those wanting fast-paced horror",
+          "readers disliking graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Doctor Sleep - Stephen King": {
       "title": "Doctor Sleep",
       "author": "Stephen King",
       "series": "The Shining",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A now-adult Danny Torrance, haunted by his childhood at the Overlook Hotel and struggling with alcoholism, uses his remaining psychic 'shining' to comfort the dying — until he must protect a young girl with even greater powers from a nomadic group of psychic vampires who feed on those who shine.",
+      "tone": "dark, propulsive, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "alcoholism and recovery",
+        "trauma and resilience",
+        "the shining/psychic power",
+        "good vs. evil",
+        "chosen family"
+      ],
+      "setting": "Contemporary New Hampshire and various American locations; sequel to events of The Shining",
+      "comparable_books": [
+        "The Shining - Stephen King",
+        "It - Stephen King",
+        "NOS4A2 - Joe Hill"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Stephen King fans",
+          "The Shining fans",
+          "psychic horror enthusiasts",
+          "character-driven horror",
+          "addiction recovery themes"
+        ],
+        "negative": [
+          "readers who need to read The Shining first",
+          "those expecting Overlook Hotel horror",
+          "readers averse to lengthy Stephen King style"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Will Patton's acclaimed audiobook narration is widely regarded as a definitive performance of this novel.",
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Seed - Ania Ahlborn": {
