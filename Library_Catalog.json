@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3085,
-  "total_pending": 1515,
+  "total_catalogued": 3105,
+  "total_pending": 1495,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -173146,109 +173146,200 @@
     "The Triumph of the Sun - Wilbur Smith": {
       "title": "The Triumph of the Sun",
       "author": "Wilbur Smith",
-      "series": "Triumph of the Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Courtney / Ballantyne",
+      "series_position": "Book 12 (Courtney); Book 5 (Ballantyne)",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set against the 1884–85 siege of Khartoum, a cast of Courtney and Ballantyne characters — traders, soldiers, and adventurers — fight for survival as Mahdist forces close in around General Gordon's garrison. Love, rivalry, and courage collide in one of history's most dramatic last stands.",
+      "tone": "Propulsive, romantic, epic adventure",
+      "pacing": "Fast",
+      "themes": [
+        "Siege warfare",
+        "Colonial Africa",
+        "Survival",
+        "Love and rivalry",
+        "Courage under fire"
+      ],
+      "setting": "Khartoum, Sudan, 1884–1885; the Anglo-Egyptian Sudan during the Mahdist uprising",
+      "comparable_books": [
+        "Monsoon - Wilbur Smith",
+        "King of Kings - Wilbur Smith",
+        "Blue Horizon - Wilbur Smith",
+        "The Zulu War - Saul David"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Action-adventure",
+          "Epic scope",
+          "Vivid historical battle scenes",
+          "Romantic subplot",
+          "Multiple POV family saga"
+        ],
+        "negative": [
+          "Long-running series continuity required",
+          "Dated gender dynamics",
+          "Pulpy adventure over literary depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "River God - Wilbur Smith": {
       "title": "River God",
       "author": "Wilbur Smith",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Narrated by the cunning eunuch slave Taita, the story follows his brilliant mistress Lostris and the warrior Tanus through the politics, wars, and loves of ancient Egypt during the Hyksos invasion. A sweeping tale of loyalty, forbidden love, and survival across a civilization under siege.",
+      "tone": "Epic, sensuous, grandiose",
+      "pacing": "Moderate",
+      "themes": [
+        "Slavery and power",
+        "Forbidden love",
+        "Ancient Egypt",
+        "War and conquest",
+        "Loyalty"
+      ],
+      "setting": "Ancient Egypt, c. 1780 BC, during the Hyksos invasion of the Nile valley",
+      "comparable_books": [
+        "Warlock - Wilbur Smith",
+        "The Egyptian - Mika Waltari",
+        "Nefertiti - Michelle Moran",
+        "Pharaoh - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Vivid ancient world immersion",
+          "Richly drawn narrator",
+          "Epic family saga",
+          "Romance with tragedy",
+          "Action and intrigue"
+        ],
+        "negative": [
+          "Long book (600+ pages)",
+          "Dated depictions of slavery and gender",
+          "Pulpy adventure tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Taita's clever, flamboyant first-person narration is exceptionally well-suited to audio performance.",
+      "content_flags": [
+        "Graphic violence",
+        "Sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Warrior King - Wilbur Smith & Tom Harper": {
       "title": "Warrior King",
       "author": "Wilbur Smith & Tom Harper",
-      "series": "Birds of Prey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Birds of Prey (Courtney)",
+      "series_position": "Book 3 (Birds of Prey Trilogy); Book 23 (Courtney Series)",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "South Africa, 1820: when a shipwrecked convict named Ralph Courtney escapes Robben Island and seeks his fortune at a remote harbour, he collides with a woman raising a mysterious orphaned boy — and soon discovers their new home borders the kingdom of the fearsome Zulu king Shaka.",
+      "tone": "Propulsive, action-driven, adventure",
+      "pacing": "Fast",
+      "themes": [
+        "Colonial Africa",
+        "Identity and family",
+        "Zulu history",
+        "Survival",
+        "Fortune-seeking"
+      ],
+      "setting": "South Africa, 1820; the borders of the Zulu kingdom under Shaka",
+      "comparable_books": [
+        "Storm Tide - Wilbur Smith",
+        "Birds of Prey - Wilbur Smith",
+        "Monsoon - Wilbur Smith",
+        "Assegai - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Action-adventure",
+          "Historical Africa setting",
+          "Fast-paced plot twists",
+          "Continuation of beloved family saga"
+        ],
+        "negative": [
+          "Ghost-written after Smith's death",
+          "Continuity requires prior series knowledge",
+          "Some find plot implausible"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Storm Tide - Wilbur Smith": {
       "title": "Storm Tide",
       "author": "Wilbur Smith",
-      "series": "Birds of Prey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Birds of Prey (Courtney)",
+      "series_position": "Book 2 (Birds of Prey Trilogy); Book 20 (Courtney Series)",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set against the American Revolution of 1774, Rob Courtney sails from Africa to England and is pressed into the British Navy — unaware that his distant cousins Cal and Aidan Courtney are fighting on the other side for American independence. A saga of a family torn apart by war.",
+      "tone": "Action-driven, epic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "Family divided by war",
+        "American Revolution",
+        "Loyalty and identity",
+        "Adventure at sea",
+        "Colonial struggle"
+      ],
+      "setting": "Africa, England, and the American colonies, 1774; the American Revolutionary War",
+      "comparable_books": [
+        "Warrior King - Wilbur Smith & Tom Harper",
+        "Birds of Prey - Wilbur Smith",
+        "Monsoon - Wilbur Smith",
+        "The Last Kingdom - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Action-adventure",
+          "Sweeping historical backdrop",
+          "Family saga dynamics",
+          "Naval and land warfare"
+        ],
+        "negative": [
+          "Long Courtney series context helpful",
+          "Pulpy adventure over literary depth",
+          "Dated gender dynamics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Martians: The True Story of an Alien Craze That Captured Turn-Of-The-Century America - David Baron": {
@@ -173256,26 +173347,47 @@
       "author": "David Baron",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Journalist David Baron chronicles the extraordinary late 19th–early 20th century mania in which millions of Americans became convinced that Mars was home to a dying civilisation — driven by Boston astronomer Percival Lowell's claims of canals on the Red Planet. The craze sparked science fiction as a genre and left a lasting cultural footprint.",
+      "tone": "Brisk, witty, rigorously researched popular history",
+      "pacing": "Moderate",
+      "themes": [
+        "Mass delusion and media",
+        "History of science",
+        "Astronomy",
+        "Public credulity",
+        "Origins of science fiction"
+      ],
+      "setting": "United States and Europe, roughly 1890–1916; the Gilded Age",
+      "comparable_books": [
+        "American Eclipse - David Baron",
+        "The Immortal Life of Henrietta Lacks - Rebecca Skloot",
+        "Devil in the White City - Erik Larson",
+        "The Radium Girls - Kate Moore"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Narrative non-fiction",
+          "Gilded Age history",
+          "Science and society",
+          "Eccentric real-life characters",
+          "Quick engaging read"
+        ],
+        "negative": [
+          "Not fiction",
+          "Niche subject matter",
+          "Academic detail may feel dense to some"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Murder in the House of Omari - Taku Ashibe": {
@@ -173283,107 +173395,198 @@
       "author": "Taku Ashibe",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In wartime Osaka, 1943, the once-illustrious Omari cosmetics dynasty finds its members being murdered one by one as American bombs fall on the city — a young doctor-in-training applies her wits to the mounting deaths while the war itself closes in. A densely-plotted honkaku puzzle mystery spanning four decades of Japanese history.",
+      "tone": "Atmospheric, dense, puzzle-driven, melancholic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "War and its human cost",
+        "Merchant family decline",
+        "Class and commerce",
+        "Classic puzzle mystery",
+        "Japanese history"
+      ],
+      "setting": "Osaka, Japan, primarily 1943–1946, with flashbacks from 1906 onward; the Semba merchant quarter during World War II",
+      "comparable_books": [
+        "The Mill House Murders - Yukito Ayatsuji",
+        "The Decagon House Murders - Yukito Ayatsuji",
+        "Death on the Nile - Agatha Christie",
+        "The Village of Eight Graves - Seishi Yokomizo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Honkaku puzzle mystery",
+          "Golden Age mystery homage",
+          "Rich historical detail",
+          "Large cast and complex plotting",
+          "Award-winning Japanese crime fiction"
+        ],
+        "negative": [
+          "Slow build with confusing non-linear structure",
+          "Very large cast — character list essential",
+          "Requires patience before payoff"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dreams of Chaos - Shauna Lawless": {
       "title": "Dreams of Chaos",
       "author": "Shauna Lawless",
-      "series": "Gael Song Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gael Song",
+      "series_position": "Book 0.6 (Novella)",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel novella in the Gael Song series, told through the eyes of Murchad, son of the legendary Irish warrior-king Brian Boru, as he comes of age amid Viking raids, political upheaval, and the ancient war between the Tuatha Dé Danann and the Fomorians. A compact but emotionally devastating companion piece to the main trilogy.",
+      "tone": "Lyrical, emotionally intense, mythic",
+      "pacing": "Fast",
+      "themes": [
+        "Coming of age",
+        "Irish mythology",
+        "Viking raids",
+        "Grief and vengeance",
+        "Identity and legacy"
+      ],
+      "setting": "Medieval Ireland, 10th century; the Viking Age and the world of Irish myth",
+      "comparable_books": [
+        "The Children of Gods and Fighting Men - Shauna Lawless",
+        "The Weaver and the Witch Queen - Genevieve Gornichec",
+        "A Memory Called Empire - Arkady Martine",
+        "Dreams of Fire - Shauna Lawless"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Irish mythology fans",
+          "Viking Age setting",
+          "Emotionally resonant prose",
+          "Short and punchy",
+          "Series companion piece"
+        ],
+        "negative": [
+          "Best read after the main trilogy — limited standalone value",
+          "Only 160 pages — very short",
+          "Fantasy elements secondary in this entry"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Howl's Moving Castle - Diana Wynne Jones": {
       "title": "Howl's Moving Castle",
       "author": "Diana Wynne Jones",
       "series": "Howl's Moving Castle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sophie Hatter, the eldest of three sisters and therefore certain to have a dull life, is cursed by the Witch of the Waste and transformed into an old woman — leading her to take refuge in the magical moving castle of the vain, mercurial wizard Howl. A witty and subversive fairy tale that delights in overturning its own conventions.",
+      "tone": "Warm, witty, whimsical, playfully subversive",
+      "pacing": "Moderate",
+      "themes": [
+        "Self-worth and identity",
+        "Fairy tale subversion",
+        "Magic and contracts",
+        "Love disguised as something else",
+        "Found family"
+      ],
+      "setting": "The fictional kingdom of Ingary; a secondary world with fairy tale logic and moving magical architecture",
+      "comparable_books": [
+        "Castle in the Air - Diana Wynne Jones",
+        "Stardust - Neil Gaiman",
+        "The Goblin Emperor - Katherine Addison",
+        "Dealing with Dragons - Patricia C. Wrede"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Whimsical fairy tale",
+          "Witty and self-aware storytelling",
+          "Found family",
+          "Charming romance",
+          "Perfect comfort read"
+        ],
+        "negative": [
+          "Plot can feel chaotic and hard to follow",
+          "Resolution is very compressed",
+          "Not for readers wanting gritty or serious fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The witty, warm narrative voice translates beautifully to audio; a delightful listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Harrow the Ninth - Tamsyn Muir": {
       "title": "Harrow the Ninth",
       "author": "Tamsyn Muir",
       "series": "The Locked Tomb",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Harrowhark Nonagesimus, freshly made a Lyctor of the undying God-Emperor, finds her memory has been tampered with and her grip on reality fracturing — all while a threat capable of killing even gods looms. A deeply experimental novel told in second person with a deliberately unreliable narrative structure.",
+      "tone": "Grimdark, baroque, wildly inventive, emotionally harrowing",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Memory and identity",
+        "Grief",
+        "Sacrifice",
+        "Loyalty and obsession",
+        "Body horror"
+      ],
+      "setting": "A far-future gothic universe of necromancers and resurrected saints; the Emperor's Mithraeum space station and the House of the First",
+      "comparable_books": [
+        "Gideon the Ninth - Tamsyn Muir",
+        "Nona the Ninth - Tamsyn Muir",
+        "The Fifth Season - N.K. Jemisin",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Experimental narrative structure",
+          "Gothic necromancy",
+          "Queer characters",
+          "Dense lore payoff",
+          "Emotionally devastating"
+        ],
+        "negative": [
+          "Extremely confusing without reading Gideon the Ninth first",
+          "Second-person narration is challenging",
+          "Very slow build — requires patience"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The complex, layered unreliable narration and shifting timelines reward visual re-reading and annotation; easy to get lost on audio.",
+      "content_flags": [
+        "Graphic violence",
+        "Body horror"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Splendid and the Vile: A Saga of Churchill, Family, and Defiance During the Blitz - Erik Larson": {
@@ -173391,26 +173594,47 @@
       "author": "Erik Larson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drawing on diaries, letters, and intelligence files, Erik Larson chronicles Winston Churchill's first year as Prime Minister — May 1940 to May 1941 — and the intimate lives of his family and inner circle as the German Blitz rained terror on Britain. An immersive portrait of defiance, leadership, and ordinary courage.",
+      "tone": "Cinematic, intimate, urgent, vivid",
+      "pacing": "Fast",
+      "themes": [
+        "Leadership under pressure",
+        "World War II",
+        "Civilian resilience",
+        "Family under wartime stress",
+        "Propaganda and morale"
+      ],
+      "setting": "London and Britain, May 1940–May 1941; the height of the German Blitz",
+      "comparable_books": [
+        "The Devil in the White City - Erik Larson",
+        "Churchill: Walking with Destiny - Andrew Roberts",
+        "Finest Hours - Jon Meacham",
+        "Agent Sonya - Ben Macintyre"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Narrative non-fiction",
+          "WWII history",
+          "Intimate portraiture of historical figures",
+          "Cinematic pacing",
+          "Detail-rich but highly readable"
+        ],
+        "negative": [
+          "Not fiction",
+          "Focus on Churchill may feel hagiographic to some",
+          "Narrower scope than some WWII histories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Larson's cinematic narrative non-fiction is superbly suited to audio; performed versions are consistently praised.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Bury Your Gays - Chuck Tingle": {
@@ -173418,53 +173642,100 @@
       "author": "Chuck Tingle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bisexual screenwriter Misha Byrne is pressured by a Hollywood studio to kill off the gay characters in his hit show — and when he refuses, the monsters from his own horror films begin stalking him and his friends through the hills above Los Angeles. A campy, sharp satire of Hollywood's queerbaiting culture wrapped in a propulsive horror thriller.",
+      "tone": "Darkly comic, campy, propulsive, heartfelt",
+      "pacing": "Fast",
+      "themes": [
+        "Queer representation in media",
+        "Hollywood corruption",
+        "AI and creativity",
+        "Self-acceptance",
+        "Rainbow capitalism"
+      ],
+      "setting": "Contemporary Los Angeles; Hollywood film and TV industry",
+      "comparable_books": [
+        "Camp Damascus - Chuck Tingle",
+        "The Final Girl Support Group - Grady Hendrix",
+        "My Best Friend's Exorcism - Grady Hendrix",
+        "Yellowface - R.F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Queer horror",
+          "Hollywood satire",
+          "Fast and funny",
+          "Campy monster set-pieces",
+          "Genuine heart underneath the gore"
+        ],
+        "negative": [
+          "Heavy-handed messaging noted by some reviewers",
+          "Not subtle about its themes",
+          "Gore and violence throughout"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The full-cast audiobook with sound effects has been widely praised as an ideal format for this story.",
+      "content_flags": [
+        "Graphic violence",
+        "Sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Joe Country - Mick Herron": {
       "title": "Joe Country",
       "author": "Mick Herron",
       "series": "Slough House",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Spy Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The slow horses of Slough House are sent to Wales to retrieve a spy gone rogue — while back in London, old debts and fresh betrayals threaten to bring Slough House down entirely. A taut, character-driven instalment that ratchets up the emotional and political stakes.",
+      "tone": "Darkly comic, melancholic, razor-sharp",
+      "pacing": "Moderate",
+      "themes": [
+        "Institutional failure",
+        "Grief and guilt",
+        "Loyalty and betrayal",
+        "Bureaucracy as weapon",
+        "Damaged people doing dangerous work"
+      ],
+      "setting": "Contemporary London and rural Wales; MI5's dumping ground for disgraced spies",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Dead Lions - Mick Herron",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Night Manager - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Mordant British wit",
+          "Literary spy fiction",
+          "Ensemble cast of loveable misfits",
+          "Propulsive plotting",
+          "Sharp satire of intelligence bureaucracy"
+        ],
+        "negative": [
+          "Best read in series order — significant continuity",
+          "Occasionally bleak and despairing",
+          "Dense cast requires investment"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Herron's prose and dialogue are outstanding in audio; the series has a superb dedicated narrator (Sean Barrett).",
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Spiderlight - Adrian Tchaikovsky": {
@@ -173472,80 +173743,145 @@
       "author": "Adrian Tchaikovsky",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A classic fantasy quest party — cleric, warrior, mage, thief — are sent to defeat the Dark Lord, but must first pass through the forest of the dread spider-goddess Darvezian, compelling her champion, the spider Nth, to join them. A sharp, funny, and ultimately compassionate deconstruction of fantasy tropes told largely from the spider's perspective.",
+      "tone": "Darkly comic, subversive, compassionate",
+      "pacing": "Fast",
+      "themes": [
+        "Trope subversion",
+        "Good vs. evil as social construct",
+        "Otherness and empathy",
+        "The cost of prophecy",
+        "Transformation"
+      ],
+      "setting": "A generic secondary fantasy world deliberately invoking classic D&D/quest fantasy conventions",
+      "comparable_books": [
+        "Guards! Guards! - Terry Pratchett",
+        "The Last Wish - Andrzej Sapkowski",
+        "Piranesi - Susanna Clarke",
+        "Black Hats - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Fantasy subversion and deconstruction",
+          "Short and punchy",
+          "Surprising emotional depth",
+          "Non-human POV done brilliantly",
+          "Spider content done with genuine empathy"
+        ],
+        "negative": [
+          "Spider content (may unsettle arachnophobes)",
+          "Deliberately generic fantasy setting may irritate some",
+          "Very short — some want more"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Causal Angel - Hannu Rajaniemi": {
       "title": "The Causal Angel",
       "author": "Hannu Rajaniemi",
       "series": "Jean le Flambeur",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Master thief Jean le Flambeur returns for a final, galaxy-spanning heist in a posthuman solar system where gods, uploaded minds, and quantum physics collide — and where the very nature of reality is the ultimate prize. A dazzling, demanding conclusion to the trilogy.",
+      "tone": "Intellectually dazzling, baroque, fast-paced",
+      "pacing": "Fast",
+      "themes": [
+        "Identity and copy",
+        "Posthumanism",
+        "Free will vs. determinism",
+        "The nature of reality",
+        "The perfect heist"
+      ],
+      "setting": "Far-future solar system, post-Singularity; a universe of Gogols (mind-copies), privacy gods, and quantum cryptography",
+      "comparable_books": [
+        "The Quantum Thief - Hannu Rajaniemi",
+        "The Fractal Prince - Hannu Rajaniemi",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Blindsight - Peter Watts"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Hard SF ideas",
+          "Mind-bending posthuman concepts",
+          "Heist narrative energy",
+          "Dense and rewarding lore",
+          "Strong series conclusion"
+        ],
+        "negative": [
+          "Extremely dense — requires reading books 1 & 2 first",
+          "Difficult to follow without physics/maths background",
+          "Not for casual SF readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The extreme conceptual density, invented terminology, and non-linear structure make print strongly recommended for following the plot.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Translation State - Ann Leckie": {
       "title": "Translation State",
       "author": "Ann Leckie",
       "series": "Imperial Radch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5 (standalone within universe)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three lives collide when a reluctant diplomat tracks a 200-year-old fugitive, an adoptee searches for his genetic origins, and a Presger Translator rejects the fate assigned to them — all converging on a galactic treaty negotiation that could alter the balance between species. A standalone space opera of identity, belonging, and alien otherness set in the Imperial Radch universe.",
+      "tone": "Humane, cerebral, diplomatically tense, quietly strange",
+      "pacing": "Moderate",
+      "themes": [
+        "Identity and self-determination",
+        "Alien otherness",
+        "Gender and personhood",
+        "Interspecies diplomacy",
+        "Belonging and family"
+      ],
+      "setting": "Far-future space, the Imperial Radch universe; space stations and the frontier of human–Presger contact",
+      "comparable_books": [
+        "Ancillary Justice - Ann Leckie",
+        "Provenance - Ann Leckie",
+        "A Memory Called Empire - Arkady Martine",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Thoughtful literary SF",
+          "Non-binary and queer characters central",
+          "Compelling alien worldbuilding",
+          "Multiple converging POVs",
+          "Award-winning author at top form"
+        ],
+        "negative": [
+          "Prior Radch knowledge enriches but not required",
+          "Slower middle section",
+          "Not action-heavy — political and character focused"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Flowers for Algernon - Daniel Keyes": {
@@ -173553,80 +173889,149 @@
       "author": "Daniel Keyes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Told through the progress reports of Charlie Gordon, a 32-year-old man with an intellectual disability who undergoes an experimental surgery that rapidly raises his IQ to genius level — only to watch the process reverse. A devastating study in what it means to be human, to be seen, and to be loved.",
+      "tone": "Deeply moving, psychologically intimate, tragic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Intelligence and humanity",
+        "Isolation",
+        "Ethics of science",
+        "Love and loss",
+        "Disability and dignity"
+      ],
+      "setting": "Contemporary USA (1960s); laboratories, classrooms, and the inner life of an extraordinary mind",
+      "comparable_books": [
+        "The Curious Incident of the Dog in the Night-Time - Mark Haddon",
+        "Frankenstein - Mary Shelley",
+        "Never Let Me Go - Kazuo Ishiguro",
+        "The Speed of Dark - Elizabeth Moon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Emotionally devastating classics",
+          "Unique narrative voice",
+          "Ethical SF",
+          "Short and impactful",
+          "Character study"
+        ],
+        "negative": [
+          "Extremely sad ending",
+          "Dated 1960s attitudes to disability and sexuality",
+          "Some find the epistolary style slow at first"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The evolving written voice of Charlie — from simple to sophisticated and back — is particularly powerful in audio performance.",
+      "content_flags": [
+        "Sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Odin's Wolves - Giles Kristian": {
       "title": "Odin's Wolves",
       "author": "Giles Kristian",
       "series": "Raven",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Raven and the Viking Fellowship sail south through the Mediterranean — from the marshes of the Camargue to the decaying arenas of Rome — on a blood-soaked quest to reach the golden city of Miklagard (Constantinople), where glory, treachery, and an old enemy await. The climactic conclusion to the Raven trilogy.",
+      "tone": "Grimdark, visceral, fiercely atmospheric",
+      "pacing": "Fast",
+      "themes": [
+        "Brotherhood and belonging",
+        "Fame and legacy",
+        "Viking mythology and honour",
+        "Betrayal",
+        "Coming of age through violence"
+      ],
+      "setting": "Early medieval Europe and the Mediterranean, c. 800 AD; from Frankia through Rome to Constantinople",
+      "comparable_books": [
+        "Blood Eye - Giles Kristian",
+        "Sons of Thunder - Giles Kristian",
+        "The Last Kingdom - Bernard Cornwell",
+        "God of Vengeance - Giles Kristian"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Viking historical fiction",
+          "Brotherhood and warrior culture",
+          "Vivid battle scenes",
+          "Strong series conclusion",
+          "Bernard Cornwell fans"
+        ],
+        "negative": [
+          "Requires reading books 1 & 2 — not standalone",
+          "Extremely violent throughout",
+          "Grim and unsparing — little levity"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The first-person warrior voice and immersive action sequences make this a particularly strong audio experience.",
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Golden Enclaves - Naomi Novik": {
       "title": "The Golden Enclaves",
       "author": "Naomi Novik",
       "series": "The Scholomance",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "El has survived the Scholomance and destroyed it — but the magical world's enclaves are now falling, and she must confront the brutal inequalities baked into the system she helped dismantle, all while searching for Orion. A sweeping, emotionally rich conclusion that reframes the entire trilogy.",
+      "tone": "Propulsive, witty, emotionally complex, triumphant",
+      "pacing": "Fast",
+      "themes": [
+        "Systemic inequality and power",
+        "Sacrifice and consequence",
+        "Love and partnership",
+        "Chosen one deconstruction",
+        "Community vs. individual"
+      ],
+      "setting": "The contemporary magical world of wizarding enclaves across Europe and beyond; post-Scholomance",
+      "comparable_books": [
+        "A Deadly Education - Naomi Novik",
+        "The Last Graduate - Naomi Novik",
+        "Piranesi - Susanna Clarke",
+        "Spinning Silver - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Sharp wit and voice",
+          "Strong female protagonist",
+          "Series conclusion with satisfying payoff",
+          "Magic system with real stakes",
+          "Anti-elitist themes"
+        ],
+        "negative": [
+          "Must read books 1 & 2 first",
+          "El's voice can be abrasive to some",
+          "Some find the ending too neat"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "El's sardonic, high-energy first-person narration is brilliantly rendered in audio; the series is a standout audiobook experience.",
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Kill List - Frederick Forsyth": {
@@ -173634,26 +174039,49 @@
       "author": "Frederick Forsyth",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A covert US military unit called the Tracker is tasked with hunting a shadowy jihadist known as the Preacher, who radicalises Western Muslims via online sermons to commit lone-wolf attacks. A globe-spanning cat-and-mouse thriller in the tradition of Forsyth's meticulously researched procedural thrillers.",
+      "tone": "Taut, procedural, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "Counter-terrorism",
+        "Online radicalisation",
+        "Intelligence vs. military operations",
+        "The hunt",
+        "Morality of assassination"
+      ],
+      "setting": "Contemporary USA, Somalia, Afghanistan, and multiple global locations; the post-9/11 counter-terror world",
+      "comparable_books": [
+        "The Day of the Jackal - Frederick Forsyth",
+        "The Afghan - Frederick Forsyth",
+        "Vince Flynn's Mitch Rapp series",
+        "Zero Dark Thirty (non-fiction)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Meticulous procedural thriller",
+          "Real-world intelligence tradecraft",
+          "Fast and propulsive",
+          "Forsyth fans",
+          "Solo hunt narrative"
+        ],
+        "negative": [
+          "Dated/simplistic treatment of Islam and radicalisation",
+          "Thin characterisation",
+          "Techno-thriller feel over literary depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Man at Arms - Steven Pressfield": {
@@ -173661,26 +174089,49 @@
       "author": "Steven Pressfield",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In AD 55, Roman authorities hire the hardened mercenary Telamon of Arcadia to intercept a courier carrying a letter — later revealed as Paul the Apostle's Epistle to the Corinthians — that could incite rebellion across the empire. A spare, muscular tale of a cynical warrior transformed by an unexpected bond.",
+      "tone": "Lean, stoic, morally searching, gritty",
+      "pacing": "Moderate",
+      "themes": [
+        "The warrior ethos",
+        "Moral transformation",
+        "Faith and power",
+        "Roman empire",
+        "Protecting the innocent"
+      ],
+      "setting": "Roman-occupied Judea and the Near East, AD 55; the early years of Christianity",
+      "comparable_books": [
+        "Gates of Fire - Steven Pressfield",
+        "Tides of War - Steven Pressfield",
+        "Quo Vadis - Henryk Sienkiewicz",
+        "Ben-Hur - Lew Wallace"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Military historical fiction",
+          "Stoic warrior protagonist",
+          "Ancient world setting",
+          "Moral depth beneath action",
+          "Short and propulsive"
+        ],
+        "negative": [
+          "Mixed reviews on historical plausibility",
+          "Spare prose can feel arid",
+          "Some find the protagonist's transformation unconvincing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tombland - C. J. Sansom": {
