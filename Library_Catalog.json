@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3435,
-  "total_pending": 1165,
+  "total_catalogued": 3455,
+  "total_pending": 1145,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -190182,28 +190182,51 @@
     "Day of Ascension - Adrian Tchaikovsky": {
       "title": "Day of Ascension",
       "author": "Adrian Tchaikovsky",
-      "series": null,
+      "series": "Warhammer 40,000",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the forge world of Morod, a tech-priest infiltrates a shadowy underground congregation that believes the Adeptus Mechanicus are keeping the populace from their true salvation — a union with alien 'angels'. A tense tale of insurgency, transhumanism, and alien conspiracy set in the Warhammer 40K universe.",
+      "tone": "grimdark, tense, philosophically nuanced",
+      "pacing": "Fast",
+      "themes": [
+        "transhumanism",
+        "class oppression",
+        "revolution",
+        "humanity vs. machine",
+        "alien infiltration"
+      ],
+      "setting": "Forge world of Morod, far future Warhammer 40,000 universe",
+      "comparable_books": [
+        "Gaunts Ghosts series - Dan Abnett",
+        "Horus Heresy series - Various",
+        "Cage of Souls - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Warhammer 40K fans",
+          "non-human perspectives",
+          "morally grey factions",
+          "grimdark SF",
+          "class uprising narrative",
+          "short punchy read"
+        ],
+        "negative": [
+          "requires some 40K background knowledge",
+          "very short — may feel rushed",
+          "no happy endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Available as audiobook from Black Library; runtime ~5.5 hours makes it ideal for audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Evil in Me - Brom": {
@@ -190211,26 +190234,49 @@
       "author": "Brom",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aspiring punk musician Ruby Tucker is accidentally possessed by a bloodthirsty demon via an ancient cursed ring, and must reunite her band to perform a powerful enough song to exorcise it — all while a monstrous mob closes in. A frenetic blend of 1980s punk culture, Jewish mysticism, and demonic horror.",
+      "tone": "darkly comic, frenetic, gonzo horror",
+      "pacing": "Fast",
+      "themes": [
+        "possession",
+        "redemption",
+        "outcasts and belonging",
+        "music as power",
+        "ancient evil"
+      ],
+      "setting": "1980s small-town rural Georgia and Atlanta punk scene",
+      "comparable_books": [
+        "Slewfoot - Brom",
+        "We Sold Our Souls - Grady Hendrix",
+        "Schrader's Chord - Scott Leeds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror fans",
+          "punk music enthusiasts",
+          "darkly comedic tone",
+          "illustrated novels",
+          "Jewish mythology",
+          "fast propulsive pace"
+        ],
+        "negative": [
+          "not scary in a traditional sense — more chaotic fun",
+          "heavily music-reference-dependent",
+          "protagonist makes frustrating choices"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Child Thief - Brom": {
@@ -190238,26 +190284,50 @@
       "author": "Brom",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A dark, brutal retelling of Peter Pan in which Peter is a feral, ancient creature luring damaged and abused children to Avalon — a dying faerie realm — to serve as his warriors in a desperate, bloody war. Brom's illustrated novel reimagines the myth as a gothic horror fairy tale.",
+      "tone": "grimdark, brutal, gothic, tragic",
+      "pacing": "Moderate",
+      "themes": [
+        "lost childhood",
+        "exploitation of the vulnerable",
+        "myth subversion",
+        "war and sacrifice",
+        "faerie mythology"
+      ],
+      "setting": "Contemporary New York and the mythic realm of Avalon / Neverland, drawing on Celtic and Arthurian lore",
+      "comparable_books": [
+        "Slewfoot - Brom",
+        "American Gods - Neil Gaiman",
+        "The Graveyard Book - Neil Gaiman",
+        "Lost Gods - Brom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fairy tale retellings",
+          "illustrated novels",
+          "morally complex antiheroes",
+          "grimdark fantasy",
+          "mythology fans"
+        ],
+        "negative": [
+          "extreme violence including against children",
+          "very dark — no redemptive arc for many characters",
+          "slow in places"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child abuse themes"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Krampus - Brom": {
@@ -190265,53 +190335,97 @@
       "author": "Brom",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The ancient pagan demon Krampus, long imprisoned by Santa Claus (a corrupted saint who stole Christmas for himself), escapes and embarks on a savage Yuletide rampage to reclaim the holiday's dark traditions. A short, darkly festive illustrated novel blending folklore, horror, and anti-commercialism.",
+      "tone": "darkly festive, savage, irreverent",
+      "pacing": "Fast",
+      "themes": [
+        "pagan vs. Christian tradition",
+        "corruption of myth",
+        "anti-commercialism",
+        "revenge",
+        "the nature of evil"
+      ],
+      "setting": "Contemporary rural America, Christmas season; with flashbacks to European pagan mythology",
+      "comparable_books": [
+        "The Child Thief - Brom",
+        "Slewfoot - Brom",
+        "American Gods - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark Christmas stories",
+          "folklore and mythology",
+          "illustrated novels",
+          "fast reads",
+          "Brom fans"
+        ],
+        "negative": [
+          "very short — can feel slight",
+          "graphic violence",
+          "not a traditional horror novel"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Warring Son - Bryce O'Connor": {
       "title": "The Warring Son",
       "author": "Bryce O'Connor",
       "series": "The Wings of War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Hunted and forced to flee north, atherian warrior Raz i'Syul Arro finds himself in new, frozen lands where corruption and violence are just as rampant as in the south — and is soon drawn into brutal arena combat and savage political intrigue to protect those he meets along the way.",
+      "tone": "grimdark, action-driven, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "identity",
+        "corruption of power",
+        "outsider vs. society",
+        "found family"
+      ],
+      "setting": "The frozen Northern lands of a secondary fantasy world; arena cities and wilderness",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Black Prism - Brent Weeks",
+        "Child of the Daystar - Bryce O'Connor"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "non-human protagonist",
+          "arena/gladiatorial combat",
+          "dark sword and sorcery",
+          "morally grey anti-hero",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "must read Book 1 first",
+          "high body count",
+          "graphic combat violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Mikael Naramore, who is praised consistently across the series for bringing Raz to life.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Slewfoot - Brom": {
@@ -190319,296 +190433,532 @@
       "author": "Brom",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1666 Connecticut, recently widowed English immigrant Abitha finds an unlikely protector in Slewfoot — an ancient forest spirit newly awakened and feared as a demon by the Puritan colonists — as accusations of witchcraft bring the village to a violent, bloody reckoning.",
+      "tone": "bleak, atmospheric, feminist fury, folk horror",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "witch trial hysteria",
+        "patriarchy and oppression",
+        "pagan vs. Puritan",
+        "identity and transformation",
+        "nature vs. civilization"
+      ],
+      "setting": "Puritan colonial Connecticut, 1666; dense, ominous forest wilderness",
+      "comparable_books": [
+        "The VVitch (film)",
+        "The Child Thief - Brom",
+        "Maplecroft - Cherie Priest",
+        "Mexican Gothic - Silvia Moreno-Garcia"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folk horror fans",
+          "historical dark fantasy",
+          "feminist themes",
+          "illustrated novels",
+          "morally complex 'monsters'",
+          "atmospheric prose"
+        ],
+        "negative": [
+          "slow build",
+          "very bleak — little comfort",
+          "graphic violence toward end"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual assault (off-page/implied)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Winter's King - Bryce O'Connor": {
       "title": "Winter's King",
       "author": "Bryce O'Connor",
       "series": "The Wings of War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Raz i'Syul Arro rides north to join High Priest Talo Brahnt at the High Citadel, even as the savage Kayle Gûlraht Baoill leads his mountain tribes in a siege upon it — forcing Raz, Syrah, and their allies into a climactic, brutal confrontation to defend the Laorin faith.",
+      "tone": "grimdark, epic, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "faith and duty",
+        "sacrifice",
+        "war and siege",
+        "belonging and purpose",
+        "violence and its cost"
+      ],
+      "setting": "The frigid Northern wilds and the High Citadel fortress, secondary fantasy world",
+      "comparable_books": [
+        "The Warring Son - Bryce O'Connor",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Way of Shadows - Brent Weeks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic siege battles",
+          "character-driven grimdark",
+          "intense emotional stakes",
+          "action-packed",
+          "compelling anti-hero"
+        ],
+        "negative": [
+          "must read Books 1–2 first",
+          "very high body count",
+          "sexual assault referenced (off-page)"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Mikael Naramore; widely praised as the series' best audiobook entry.",
+      "content_flags": [
+        "graphic violence",
+        "sexual assault (referenced, not depicted)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "As Iron Falls - Bryce O'Connor": {
       "title": "As Iron Falls",
       "author": "Bryce O'Connor",
       "series": "The Wings of War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Exiled from the High Citadel, Raz i'Syul Arro and Syrah are forced to abandon everything they know, fleeing to a distant, unknown land across the sea where a prophesied destiny awaits — and where a man in iron shackles has been whispering their coming for years.",
+      "tone": "grimdark, adventurous, world-expanding",
+      "pacing": "Moderate",
+      "themes": [
+        "prophecy and destiny",
+        "exile and loss",
+        "identity",
+        "slavery and freedom",
+        "legacy"
+      ],
+      "setting": "A new continent beyond the sea (Perce/Souelian region); secondary fantasy world",
+      "comparable_books": [
+        "Winter's King - Bryce O'Connor",
+        "The Way of Kings - Brandon Sanderson",
+        "The Warring Son - Bryce O'Connor"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "world-building expansion",
+          "prophecy arcs",
+          "morally grey hero",
+          "action-driven",
+          "slavery/liberation themes"
+        ],
+        "negative": [
+          "must read Books 1–3 first",
+          "slightly slower than previous entries",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Mikael Naramore; consistent quality across the series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Of Sand and Snow - Bryce O'Connor": {
       "title": "Of Sand and Snow",
       "author": "Bryce O'Connor",
       "series": "The Wings of War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With fifty thousand freed slaves at their back, Raz i'Syul Arro and Syrah Brahnt leave the savannahs of Perce behind and press toward the fringe cities of the south, even as a hidden enemy within their own ranks prepares to strike.",
+      "tone": "grimdark, epic, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "liberation and slavery",
+        "leadership and sacrifice",
+        "destiny fulfilled",
+        "love and partnership",
+        "betrayal"
+      ],
+      "setting": "The southern fringe cities and deserts of the secondary fantasy world; returning to the series' original terrain",
+      "comparable_books": [
+        "As Iron Falls - Bryce O'Connor",
+        "The Final Empire - Brandon Sanderson",
+        "Child of the Daystar - Bryce O'Connor"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic liberation arc",
+          "series payoff",
+          "action-heavy",
+          "non-human protagonist",
+          "self-published indie fantasy"
+        ],
+        "negative": [
+          "must read Books 1–4 first",
+          "ends on a cliffhanger with no confirmed Book 6 yet",
+          "mixed reviews compared to earlier entries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Mikael Naramore; audiobook available.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Free the Darkness - Kel Kade": {
       "title": "Free the Darkness",
       "author": "Kel Kade",
       "series": "King's Dark Tidings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Raised in total seclusion as a secret weapon, the supremely trained warrior Rezkin is thrust into the outside world when everyone he knows is killed — and must now find 'friends' he has never met, protect them by royal order, and unravel the mystery of who he truly is.",
+      "tone": "adventurous, darkly comic, fish-out-of-water",
+      "pacing": "Fast",
+      "themes": [
+        "identity and purpose",
+        "training vs. humanity",
+        "loyalty",
+        "political intrigue",
+        "found family"
+      ],
+      "setting": "The Kingdom of Ashai; a secondary epic fantasy world with magic and court intrigue",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Assassin's Apprentice - Robin Hobb",
+        "The Way of Shadows - Brent Weeks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "overpowered assassin protagonist",
+          "fish-out-of-water comedy beats",
+          "fast-paced action",
+          "mystery of protagonist's origins",
+          "found family"
+        ],
+        "negative": [
+          "early self-published prose quality — some editing roughness",
+          "protagonist is almost too overpowered early on"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Nick Podehl, who is widely praised for bringing Rezkin's detached, lethal persona to life.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Reign of Madness - Kel Kade": {
       "title": "Reign of Madness",
       "author": "Kel Kade",
       "series": "King's Dark Tidings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rezkin, the mysterious ultimate warrior, is thrust deeper into Ashaiian politics and intrigue as a mad king tightens his grip on the kingdom — and Rezkin must navigate a world of criminals, courtiers, and enemies while still concealing his true nature from the friends he is sworn to protect.",
+      "tone": "adventurous, darkly comic, intrigue-heavy",
+      "pacing": "Fast",
+      "themes": [
+        "political intrigue",
+        "loyalty and deception",
+        "identity",
+        "tyranny",
+        "unlikely heroism"
+      ],
+      "setting": "The Kingdom of Ashai; courts, cities, and the criminal underworld",
+      "comparable_books": [
+        "Free the Darkness - Kel Kade",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "The Way of Shadows - Brent Weeks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of overpowered but endearing protagonists",
+          "court intrigue",
+          "darkly comic moments",
+          "fast-paced adventure",
+          "found family dynamics"
+        ],
+        "negative": [
+          "must read Book 1 first",
+          "some find the power fantasy wish-fulfillment too strong"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Nick Podehl narration is a series highlight.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Legends of Ahn - Kel Kade": {
       "title": "Legends of Ahn",
       "author": "Kel Kade",
       "series": "King's Dark Tidings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rezkin works to restore order in a destabilized Ashai after an attack on the King's Tournament turns former allies into enemies — with only a ragtag group of refugees and no army, he must wrest control from a mad usurper while keeping his oath to protect his friends.",
+      "tone": "adventurous, action-driven, world-expanding",
+      "pacing": "Fast",
+      "themes": [
+        "leadership",
+        "political upheaval",
+        "loyalty under pressure",
+        "magic systems",
+        "identity"
+      ],
+      "setting": "The Kingdom of Ashai and surrounding realms; secondary fantasy world",
+      "comparable_books": [
+        "Reign of Madness - Kel Kade",
+        "The Final Empire - Brandon Sanderson",
+        "Free the Darkness - Kel Kade"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "expanding magic system",
+          "political intrigue",
+          "action-heavy",
+          "found family",
+          "series fans"
+        ],
+        "negative": [
+          "must read Books 1–2 first",
+          "reduced romance/humour compared to earlier books per some reviews"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Nick Podehl narration continues.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Kingdoms and Chaos - Kel Kade": {
       "title": "Kingdoms and Chaos",
       "author": "Kel Kade",
       "series": "King's Dark Tidings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The future of Rezkin's nascent haven kingdom grows ever more precarious as the mad king Caydean tightens his demonic grip on Ashai — and Rezkin must forge alliances across rival factions while protecting his people and confronting secrets about his own dark origins.",
+      "tone": "adventurous, darkly tense, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "nation-building",
+        "tyranny vs. freedom",
+        "demonic corruption",
+        "loyalty",
+        "sacrifice"
+      ],
+      "setting": "Island kingdom Cael and the wider Ashaiian empire; secondary fantasy world",
+      "comparable_books": [
+        "Legends of Ahn - Kel Kade",
+        "The Way of Kings - Brandon Sanderson",
+        "Reign of Madness - Kel Kade"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "empire-building arc",
+          "escalating stakes",
+          "action and intrigue",
+          "series payoff moments"
+        ],
+        "negative": [
+          "must read Books 1–3 first",
+          "ends on a major cliffhanger"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Nick Podehl narration continues.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dragons and Demons - Kel Kade": {
       "title": "Dragons and Demons",
       "author": "Kel Kade",
       "series": "King's Dark Tidings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Every kingdom Rezkin touches has shattered, and as turbulence spreads across the Souelian, he begins to forge a new empire from the ruins — but a price comes due when something ancient and mysterious tears him from his path toward shocking revelations about his true identity.",
+      "tone": "dark, action-driven, revelatory",
+      "pacing": "Fast",
+      "themes": [
+        "identity and origins",
+        "empire and power",
+        "demonic forces",
+        "sacrifice",
+        "elves and shapeshifters"
+      ],
+      "setting": "The Souelian world — newly explored continents and ruins; secondary fantasy world",
+      "comparable_books": [
+        "Kingdoms and Chaos - Kel Kade",
+        "Knight of Shadows - Kel Kade",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "answers long-running mysteries",
+          "new fantastical races",
+          "high-stakes action",
+          "dragon companion debut"
+        ],
+        "negative": [
+          "must read Books 1–4 first",
+          "some readers miss the lighter early-series tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Nick Podehl narration; audiobook released same day as ebook.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Knight of Shadows - Kel Kade": {
       "title": "Knight of Shadows",
       "author": "Kel Kade",
       "series": "King's Dark Tidings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Declared dead after a devastating defeat, Rezkin operates from the shadows as the Shadow Knight — a covert force hunting his enemies — while his friends, scattered and leaderless, struggle to hold the crumbling empire together against Caydean's unchecked reign.",
+      "tone": "dark, action-driven, covert thriller",
+      "pacing": "Fast",
+      "themes": [
+        "shadows and deception",
+        "political collapse",
+        "survival",
+        "identity and disguise",
+        "empire under siege"
+      ],
+      "setting": "Multiple kingdoms including Lon Lerésh; secondary fantasy world",
+      "comparable_books": [
+        "Dragons and Demons - Kel Kade",
+        "Ritual of Ruin - Kel Kade",
+        "The Way of Shadows - Brent Weeks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "covert assassin arc",
+          "dragon companion",
+          "high-stakes intrigue",
+          "action every chapter"
+        ],
+        "negative": [
+          "must read Books 1–5 first",
+          "some reviews note pacing feels padded mid-book"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Nick Podehl narration; audiobook released December 2024.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ritual of Ruin - Kel Kade": {
       "title": "Ritual of Ruin",
       "author": "Kel Kade",
       "series": "King's Dark Tidings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rezkin's secret survival is known only to a few as he and Azeria seek ancient technology to stand against Caydean's demons, while Wesson treads a dark path to free enslaved mages — and the demonic king draws the entire kingdom to his doorstep for a final apocalyptic reckoning.",
+      "tone": "dark, action-driven, climactic",
+      "pacing": "Fast",
+      "themes": [
+        "ancient technology vs. magic",
+        "slavery and liberation",
+        "sacrifice",
+        "demonic power",
+        "identity and legacy"
+      ],
+      "setting": "Ruins of a forgotten civilization and the Ashaiian capital Kaibain; secondary fantasy world",
+      "comparable_books": [
+        "Knight of Shadows - Kel Kade",
+        "The Final Empire - Brandon Sanderson",
+        "Dragons and Demons - Kel Kade"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series climax build-up",
+          "ancient ruins exploration",
+          "escalating stakes",
+          "action-heavy",
+          "long-running mystery payoffs"
+        ],
+        "negative": [
+          "must read Books 1–6 first",
+          "not a full series conclusion — more books likely to follow"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Nick Podehl narration; released November 2025.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Turn of the Key - Ruth Ware": {
@@ -190616,107 +190966,196 @@
       "author": "Ruth Ware",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rowan, a nanny at a remote Scottish smart-home mansion, writes letters from prison claiming she did not murder one of the children in her care — a locked-house thriller that unspools her increasingly terrifying months in a tech-controlled house with a dark history.",
+      "tone": "tense, claustrophobic, gothic suspense",
+      "pacing": "Fast",
+      "themes": [
+        "domestic suspense",
+        "technology and surveillance",
+        "isolation",
+        "gaslighting",
+        "secrets and lies"
+      ],
+      "setting": "Remote Scottish Highlands; a high-tech 'smart' Victorian mansion, contemporary",
+      "comparable_books": [
+        "The Woman in the Window - A.J. Finn",
+        "In a Dark Dark Wood - Ruth Ware",
+        "The Silent Patient - Alex Michaelides"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological thriller fans",
+          "unreliable narrator",
+          "locked-room mystery",
+          "gothic atmosphere",
+          "propulsive one-sitting read"
+        ],
+        "negative": [
+          "twist-dependent — may not satisfy all readers",
+          "smart-home tech gimmick divides readers",
+          "some find protagonist frustrating"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The epistolary format — letters written from prison — translates powerfully to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Grace of Kings - Ken Liu": {
       "title": "The Grace of Kings",
       "author": "Ken Liu",
       "series": "The Dandelion Dynasty",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two very different men — a bandit king and a noble scion — rise together and apart across a silkpunk world inspired by ancient China and the fall of the Qin Dynasty, as gods meddle in the fates of empires and ordinary people shape the course of history.",
+      "tone": "epic, lyrical, mythic, bittersweet",
+      "pacing": "Slow",
+      "themes": [
+        "empire and revolution",
+        "friendship and rivalry",
+        "fate vs. free will",
+        "myth and history",
+        "gender and power"
+      ],
+      "setting": "The Dara archipelago — a silkpunk secondary world inspired by ancient China and Pacific island cultures",
+      "comparable_books": [
+        "The Wall of Storms - Ken Liu",
+        "Tigana - Guy Gavriel Kay",
+        "Romance of the Three Kingdoms - Luo Guanzhong",
+        "The Poppy War - R.F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic historical-inspired fantasy",
+          "silkpunk aesthetic",
+          "lyrical omniscient narration",
+          "mythology and gods",
+          "political intrigue",
+          "literary fantasy"
+        ],
+        "negative": [
+          "vast cast of characters — requires patience",
+          "emotionally distanced omniscient narrator style divides readers",
+          "slow build"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Kushiel's Mercy - Jacqueline Carey": {
       "title": "Kushiel's Mercy",
       "author": "Jacqueline Carey",
       "series": "Imriel's Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Imriel de la Courcel must navigate a devastating magical enchantment that has stolen both his homeland and the mind of the woman he loves, journeying across the world to break the curse and restore Terre d'Ange — the culmination of his personal and political arc.",
+      "tone": "lush, romantic, emotionally intense, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "love and sacrifice",
+        "identity and memory",
+        "political redemption",
+        "fate and mercy",
+        "trauma and healing"
+      ],
+      "setting": "Terre d'Ange and the wider alternate-historical Mediterranean world, roughly medieval-equivalent",
+      "comparable_books": [
+        "Kushiel's Justice - Jacqueline Carey",
+        "Kushiel's Dart - Jacqueline Carey",
+        "A Shadow in Summer - Daniel Abraham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush romantic epic fantasy",
+          "political intrigue",
+          "complex protagonist redemption arc",
+          "series conclusion",
+          "emotional payoff for long-time fans"
+        ],
+        "negative": [
+          "must read the full Imriel Trilogy (and ideally Phèdre Trilogy) first",
+          "explicit sexual content",
+          "very long"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Kushiel's Justice - Jacqueline Carey": {
       "title": "Kushiel's Justice",
       "author": "Jacqueline Carey",
       "series": "Imriel's Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Prince Imriel de la Courcel, bound by a political marriage and haunted by forbidden love, is plunged into tragedy and grief that takes him from the courts of Terre d'Ange to the wild magic of Alba — a dark, emotionally devastating middle chapter in his story.",
+      "tone": "lush, tragic, emotionally devastating, romantic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "forbidden love",
+        "grief and vengeance",
+        "political duty vs. desire",
+        "fate and prophecy",
+        "Celtic myth and magic"
+      ],
+      "setting": "Terre d'Ange, Alba (Celtic-inspired Britain), and beyond; alternate-historical medieval Europe",
+      "comparable_books": [
+        "Kushiel's Mercy - Jacqueline Carey",
+        "Kushiel's Dart - Jacqueline Carey",
+        "Tigana - Guy Gavriel Kay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush romantic epic fantasy",
+          "Celtic mythology",
+          "emotionally complex protagonist",
+          "political intrigue",
+          "grief-driven narrative"
+        ],
+        "negative": [
+          "must read Imriel's Trilogy Book 1 and the Phèdre Trilogy first",
+          "explicit sexual content",
+          "very emotionally dark mid-book"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Kushiel's Scion - Jacqueline Carey": {
