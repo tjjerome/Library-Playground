@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3025,
-  "total_pending": 1575,
+  "total_catalogued": 3045,
+  "total_pending": 1555,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -170196,26 +170196,54 @@
       "author": "Gabino Iglesias",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After the death of his daughter and the collapse of his marriage, a desperate man named Mario slides into contract killing and ultimately agrees to rob a Mexican cartel—a near-suicidal mission haunted by supernatural horrors rooted in Latino folklore.",
+      "tone": "Brutal, hallucinogenic, politically charged barrio noir",
+      "pacing": "Fast",
+      "themes": [
+        "grief and loss",
+        "poverty and systemic racism",
+        "moral corruption",
+        "supernatural folklore",
+        "cycles of violence",
+        "border culture"
+      ],
+      "setting": "Contemporary Texas and Mexico — desert borderlands, cartel territory",
+      "comparable_books": [
+        "Blacktop Wasteland - S.A. Cosby",
+        "The Only Good Indians - Stephen Graham Jones",
+        "Gods of Jade and Shadow - Silvia Moreno-Garcia",
+        "The Power of the Dog - Don Winslow"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "genre-blending noir and horror",
+          "morally grey protagonist",
+          "supernatural elements grounded in folklore",
+          "propulsive pacing",
+          "lyrical yet brutal prose",
+          "social and political commentary",
+          "multicultural perspective"
+        ],
+        "negative": [
+          "extremely graphic violence",
+          "nihilistic tone",
+          "no redemptive arc",
+          "child death on-page"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Praised narration by Jean-Marc Berne; the rhythm and bilingual prose translate powerfully to audio.",
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Hunger - Alma Katsu": {
@@ -170223,26 +170251,50 @@
       "author": "Alma Katsu",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A supernatural retelling of the ill-fated Donner Party, in which the snowbound pioneers face not only starvation and desperation but a creeping, monstrous evil that preys on the group from the shadows.",
+      "tone": "Dread-soaked, slow-burn historical horror",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival and desperation",
+        "evil lurking in isolation",
+        "human darkness vs. supernatural darkness",
+        "historical tragedy",
+        "community breakdown"
+      ],
+      "setting": "1846–1847 American West — the Sierra Nevada mountains in winter",
+      "comparable_books": [
+        "The Terror - Dan Simmons",
+        "The Troop - Nick Cutter",
+        "Kin - Kealan Patrick Burke",
+        "The Fervor - Alma Katsu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical horror",
+          "slow atmospheric dread",
+          "well-researched historical setting",
+          "supernatural mystery",
+          "character-driven ensemble"
+        ],
+        "negative": [
+          "slow pacing in first half",
+          "bleak with no hopeful resolution",
+          "graphic depictions of starvation and violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Cabin at the End of the World - Paul Tremblay": {
@@ -170250,107 +170302,198 @@
       "author": "Paul Tremblay",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A family's vacation is shattered when four strangers armed with weapons arrive at their remote cabin, claiming that one member of the family must be sacrificed to prevent the apocalypse — and the family must decide whether the invaders are delusional or telling the truth.",
+      "tone": "Claustrophobic, psychologically tormenting, ambiguous",
+      "pacing": "Fast",
+      "themes": [
+        "faith vs. reason",
+        "apocalyptic dread",
+        "family under siege",
+        "sacrifice and free will",
+        "moral ambiguity"
+      ],
+      "setting": "Contemporary — isolated cabin in rural New Hampshire",
+      "comparable_books": [
+        "A Head Full of Ghosts - Paul Tremblay",
+        "The Ruins - Scott Smith",
+        "Come with Me - Ronald Malfi",
+        "Bird Box - Josh Malerman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological tension",
+          "unreliable reality",
+          "home invasion horror",
+          "ambiguous ending",
+          "LGBTQ+ protagonists"
+        ],
+        "negative": [
+          "deliberately unresolved ending",
+          "graphic violence",
+          "no clear supernatural confirmation"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Red Widow - Alma Katsu": {
       "title": "Red Widow",
       "author": "Alma Katsu",
       "series": "Red Widow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "CIA officer Lyndsey Duncan returns from administrative leave to investigate a mole inside the agency's Russia Division, and grows dangerously close to the enigmatic 'Red Widow' — a colleague whose late husband's death may hold the key to everything.",
+      "tone": "Taut, procedural, character-driven espionage",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty and betrayal",
+        "women in intelligence",
+        "institutional corruption",
+        "identity and trust",
+        "Cold War echoes"
+      ],
+      "setting": "Contemporary Washington D.C. — CIA headquarters and the Russia Division",
+      "comparable_books": [
+        "Red Sparrow - Jason Matthews",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Need to Know - Karen Cleveland",
+        "The Last Agent - Robert Dugoni"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female-led spy thriller",
+          "CIA insider authenticity",
+          "character-driven over action-heavy",
+          "investigative procedural",
+          "nuanced moral landscape"
+        ],
+        "negative": [
+          "light on action and field tradecraft",
+          "office-politics-heavy",
+          "divided critical reception"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Red London - Alma Katsu": {
       "title": "Red London",
       "author": "Alma Katsu",
       "series": "Red Widow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "CIA agent Lyndsey Duncan is pulled from administrative leave to assist MI6 in London, tasked with befriending the wife of a Russian oligarch after a suspicious attack on his property — only to discover a geopolitical conspiracy that could shake the world order.",
+      "tone": "Propulsive, international, relationship-driven espionage",
+      "pacing": "Fast",
+      "themes": [
+        "Russia and geopolitics",
+        "women and power",
+        "loyalty and allegiance",
+        "friendship as intelligence tool",
+        "corruption and oligarchy"
+      ],
+      "setting": "Contemporary London — high society, MI6, and Russian oligarch circles",
+      "comparable_books": [
+        "Red Widow - Alma Katsu",
+        "The Spy and the Traitor - Ben Macintyre",
+        "Moscow X - David McCloskey",
+        "The Mole - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female-led spy thriller",
+          "international setting",
+          "ripped-from-headlines geopolitics",
+          "relationship-driven plot",
+          "CIA insider voice"
+        ],
+        "negative": [
+          "weaker than book one per some reviewers",
+          "bifurcated storylines",
+          "unresolved threads from prior book"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Angel of Indian Lake - Stephen Graham Jones": {
       "title": "The Angel of Indian Lake",
       "author": "Stephen Graham Jones",
       "series": "The Indian Lake Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Four years after the events of Don't Fear the Reaper, Jade Daniels returns to Proofrock, Idaho as a history teacher, only to find that the town's violent curse is not finished — and that she must face a final, apocalyptic reckoning with the Lake Witch on Halloween night.",
+      "tone": "Visceral, metafictional, grief-laden and darkly triumphant",
+      "pacing": "Fast",
+      "themes": [
+        "final girl mythology",
+        "Indigenous trauma and survival",
+        "slasher genre deconstruction",
+        "found family",
+        "generational haunting",
+        "identity and belonging"
+      ],
+      "setting": "Contemporary Proofrock, Idaho — small mountain lakeside town; set on Halloween",
+      "comparable_books": [
+        "My Heart Is a Chainsaw - Stephen Graham Jones",
+        "Don't Fear the Reaper - Stephen Graham Jones",
+        "The Final Girl Support Group - Grady Hendrix",
+        "The Only Good Indians - Stephen Graham Jones"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slasher horror fan-service",
+          "metafictional horror commentary",
+          "Indigenous perspective",
+          "beloved series finale",
+          "strong female protagonist",
+          "horror genre scholarship woven into narrative"
+        ],
+        "negative": [
+          "requires reading books 1 and 2 first",
+          "extremely graphic violence",
+          "dense internal narration",
+          "some find pacing slow in middle"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast production including Isabella Star LaBlanc, Barbara Crampton, and Stephen King; widely praised as a standout horror audiobook.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Caine Mutiny - Herman Wouk": {
@@ -170358,26 +170501,47 @@
       "author": "Herman Wouk",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "During World War II, officers aboard the USS Caine relieve their erratic captain of command during a typhoon, triggering a court-martial that forces a reckoning with authority, loyalty, and the meaning of military duty.",
+      "tone": "Gravely serious, morally complex, dramatic",
+      "pacing": "Moderate",
+      "themes": [
+        "authority and mutiny",
+        "military duty and loyalty",
+        "moral responsibility",
+        "leadership under pressure",
+        "war and justice"
+      ],
+      "setting": "World War II Pacific Theatre — aboard a US Navy minesweeper",
+      "comparable_books": [
+        "From Here to Eternity - James Jones",
+        "The Naked and the Dead - Norman Mailer",
+        "Billy Budd - Herman Melville",
+        "Catch-22 - Joseph Heller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Pulitzer Prize winner",
+          "military fiction",
+          "courtroom drama",
+          "morally complex characters",
+          "richly detailed historical setting"
+        ],
+        "negative": [
+          "long and slow-building",
+          "dated gender and social attitudes",
+          "dense military procedural detail"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Kindred - Octavia E. Butler": {
@@ -170385,26 +170549,49 @@
       "author": "Octavia E. Butler",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A modern Black woman is repeatedly and involuntarily pulled back in time to the antebellum South, where she must protect the life of her white ancestor — a slave owner — in order to ensure her own existence.",
+      "tone": "Unflinching, urgent, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "slavery and its legacy",
+        "race and power",
+        "survival and complicity",
+        "time and identity",
+        "the body as site of oppression"
+      ],
+      "setting": "1976 California and antebellum Maryland plantation (1815–1831)",
+      "comparable_books": [
+        "Beloved - Toni Morrison",
+        "The Underground Railroad - Colson Whitehead",
+        "Parable of the Sower - Octavia E. Butler",
+        "The Time Machine - H.G. Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "landmark speculative fiction",
+          "emotionally powerful",
+          "Black female protagonist",
+          "propulsive despite heavy themes",
+          "essential American literature"
+        ],
+        "negative": [
+          "deeply harrowing depictions of slavery and violence",
+          "no comforting resolution"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kim Staunton's narration is widely considered definitive; the intimate first-person voice is especially powerful in audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Five Decembers - James Kestrel": {
@@ -170412,26 +170599,50 @@
       "author": "James Kestrel",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In December 1941 Honolulu, detective Joe McGrady investigates a brutal double murder just as Pearl Harbor is bombed — a case that drags him across the Pacific and through years of war, imprisonment, and a devastating love story spanning five Decembers.",
+      "tone": "Lyrical, operatically tragic, hard-boiled with profound emotional depth",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "war and its cost",
+        "love and loss",
+        "persistence and survival",
+        "justice across impossible odds",
+        "cross-cultural humanity"
+      ],
+      "setting": "1941–1946 — Honolulu, Hong Kong, and wartime Tokyo across World War II",
+      "comparable_books": [
+        "All the Light We Cannot See - Anthony Doerr",
+        "The Long Goodbye - Raymond Chandler",
+        "The Monstrumologist - Rick Yancey",
+        "Red Harvest - Dashiell Hammett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Edgar Award winner",
+          "ambitious historical sweep",
+          "lyrical prose",
+          "transcendent love story",
+          "hardboiled mystery elevated to literary fiction",
+          "readers who loved All the Light We Cannot See"
+        ],
+        "negative": [
+          "slow in places",
+          "emotionally devastating — no easy comfort",
+          "WWII immersion may not suit all readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Exhalation - Ted Chiang": {
@@ -170439,161 +170650,290 @@
       "author": "Ted Chiang",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of nine science fiction stories probing questions of free will, time, memory, consciousness, and what it means to be human — including the acclaimed title story about a scientist who discovers the nature of his universe.",
+      "tone": "Contemplative, rigorously intellectual, quietly wondrous",
+      "pacing": "Slow",
+      "themes": [
+        "free will vs. determinism",
+        "memory and identity",
+        "artificial intelligence and consciousness",
+        "time and causality",
+        "the nature of the universe"
+      ],
+      "setting": "Various — far-future, alternate history, contemporary and near-future settings",
+      "comparable_books": [
+        "Stories of Your Life and Others - Ted Chiang",
+        "The Paper Menagerie - Ken Liu",
+        "Blindsight - Peter Watts",
+        "Flowers for Algernon - Daniel Keyes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ideas-first science fiction",
+          "philosophical depth",
+          "short story form",
+          "Nebula and Hugo Award winner",
+          "accessible literary SF"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "little action or plot momentum",
+          "not for readers seeking character-driven narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "2061: Odyssey Three - Arthur C. Clarke": {
       "title": "2061: Odyssey Three",
       "author": "Arthur C. Clarke",
       "series": "Space Odyssey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 2061, Heywood Floyd joins a voyage to Halley's Comet, but a crisis forces a diversion to the now-transformed moon Europa — where the monolith's prohibition on human landing may have to be broken.",
+      "tone": "Expansive, speculative, wonder-driven hard SF",
+      "pacing": "Moderate",
+      "themes": [
+        "humanity and the cosmos",
+        "first contact",
+        "scientific wonder",
+        "transformation and transcendence",
+        "forbidden frontiers"
+      ],
+      "setting": "2061 — deep space, Halley's Comet, and the Jovian moon Europa",
+      "comparable_books": [
+        "2001: A Space Odyssey - Arthur C. Clarke",
+        "2010: Odyssey Two - Arthur C. Clarke",
+        "Rendezvous with Rama - Arthur C. Clarke",
+        "The Fountains of Paradise - Arthur C. Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic hard SF",
+          "sense of cosmic wonder",
+          "fans of the 2001 universe",
+          "scientifically grounded speculation"
+        ],
+        "negative": [
+          "weakest entry in the series by consensus",
+          "thin characterization",
+          "episodic structure",
+          "requires familiarity with earlier books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "House of Many Ways - Diana Wynne Jones": {
       "title": "House of Many Ways",
       "author": "Diana Wynne Jones",
       "series": "Howl's Moving Castle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bookish Charmain is unexpectedly left to house-sit her great-uncle's magical, spatially impossible cottage — a chaotic adventure involving a royal library, a small and inept apprentice wizard, a gold-hungry creature, and the return of Howl and Sophie.",
+      "tone": "Whimsical, warm, gently comic",
+      "pacing": "Moderate",
+      "themes": [
+        "magic and self-discovery",
+        "books and knowledge",
+        "growing up",
+        "family and belonging",
+        "the unexpected hero"
+      ],
+      "setting": "The kingdom of High Norland — a magical Europe-adjacent world with an impossible cottage",
+      "comparable_books": [
+        "Howl's Moving Castle - Diana Wynne Jones",
+        "Castle in the Air - Diana Wynne Jones",
+        "The Enchanted Forest Chronicles - Patricia C. Wrede",
+        "A Wizard of Earthsea - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "beloved author",
+          "light and humorous tone",
+          "Howl and Sophie cameos",
+          "great for younger readers and adults alike"
+        ],
+        "negative": [
+          "looser and lighter than Howl's Moving Castle",
+          "new protagonist with less charisma than Sophie",
+          "slight and episodic"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Path to Power - Robert A. Caro": {
       "title": "The Path to Power",
       "author": "Robert A. Caro",
       "series": "The Years of Lyndon Johnson",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Biography",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The first volume of Robert Caro's monumental biography traces Lyndon Johnson's origins in the Texas Hill Country through his early political career and first campaigns for Congress, revealing the ruthless drive and ambition that would define his rise to power.",
+      "tone": "Exhaustively researched, gripping, morally probing",
+      "pacing": "Slow",
+      "themes": [
+        "political ambition and ruthlessness",
+        "poverty and aspiration",
+        "power and its acquisition",
+        "the American South and Texas politics",
+        "manipulation and charisma"
+      ],
+      "setting": "1900s–1941 Texas Hill Country and Washington D.C.",
+      "comparable_books": [
+        "The Power Broker - Robert A. Caro",
+        "Grant - Ron Chernow",
+        "Nixon - John A. Farrell",
+        "Team of Rivals - Doris Kearns Goodwin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "landmark political biography",
+          "Pulitzer Prize-winning author",
+          "narrative non-fiction that reads like a novel",
+          "fans of power and politics",
+          "deeply immersive historical portrait"
+        ],
+        "negative": [
+          "very long and slow",
+          "enormous detail may overwhelm casual readers",
+          "requires patience and sustained commitment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Inheritance - Christopher Paolini": {
       "title": "Inheritance",
       "author": "Christopher Paolini",
       "series": "The Inheritance Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the long-awaited conclusion to the Inheritance Cycle, Eragon and his dragon Saphira lead the Varden in a final, desperate assault on the tyrannical king Galbatorix's stronghold, with the fate of all Alagaësia hanging in the balance.",
+      "tone": "Epic, action-driven, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "good vs. evil",
+        "coming of age",
+        "redemption",
+        "sacrifice and duty",
+        "the cost of war"
+      ],
+      "setting": "The fictional world of Alagaësia — high fantasy secondary world with dragons and magic",
+      "comparable_books": [
+        "Eragon - Christopher Paolini",
+        "The Lord of the Rings - J.R.R. Tolkien",
+        "Eldest - Christopher Paolini",
+        "Brisingr - Christopher Paolini"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of the Inheritance Cycle",
+          "dragon-rider fantasy",
+          "epic world-building conclusion",
+          "nostalgia for YA high fantasy"
+        ],
+        "negative": [
+          "derivative of Tolkien and Star Wars",
+          "overly long and slow in places",
+          "unresolved plot threads",
+          "mixed critical reception"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Murtagh - Christopher Paolini": {
       "title": "Murtagh",
       "author": "Christopher Paolini",
       "series": "The Inheritance Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set one year after the fall of Galbatorix, the fan-favourite Dragon Rider Murtagh and his dragon Thorn — exiled and despised for their role in the tyrant's reign — embark on a perilous journey across Alagaësia to outwit a mysterious and dangerous witch.",
+      "tone": "Adventure-driven, introspective, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "redemption and identity",
+        "living with past sins",
+        "the outsider",
+        "loyalty and found purpose",
+        "what it means to be free"
+      ],
+      "setting": "Post-Galbatorix Alagaësia — the familiar secondary-world fantasy setting one year after Inheritance",
+      "comparable_books": [
+        "Inheritance - Christopher Paolini",
+        "Eragon - Christopher Paolini",
+        "The Way of Kings - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fan-favourite protagonist gets his own story",
+          "accessible entry point to the series",
+          "faster pacing than main cycle",
+          "dragon-rider fantasy",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "requires knowledge of Inheritance Cycle for full impact",
+          "first in a new duology — not yet concluded"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Senseless - Ronald Malfi": {
@@ -170601,26 +170941,49 @@
       "author": "Ronald Malfi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three seemingly unconnected Los Angeles lives — a grieving detective investigating serial murders, a woman unsettled by her fiancé's disturbing son, and a young man who believes he is becoming something inhuman — slowly converge in a web of supernatural noir horror.",
+      "tone": "Queasy, hallucinatory, noirish LA gothic",
+      "pacing": "Moderate",
+      "themes": [
+        "grief and guilt",
+        "hidden evil",
+        "identity and transformation",
+        "urban alienation",
+        "the nature of evil"
+      ],
+      "setting": "Contemporary Los Angeles — Hollywood mansions, seedy clubs, and the Mojave Desert",
+      "comparable_books": [
+        "Come with Me - Ronald Malfi",
+        "Black Mouth - Ronald Malfi",
+        "The Girls - Emma Cline",
+        "Mongrels - Stephen Graham Jones"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV puzzle-box thriller",
+          "horror-noir blend",
+          "supernaturally tinged without being overt",
+          "Los Angeles setting",
+          "fans of Ronald Malfi"
+        ],
+        "negative": [
+          "ambiguous and open-ended",
+          "slow convergence of storylines",
+          "not all threads fully resolved"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Small Town Horror - Ronald Malfi": {
@@ -170628,26 +170991,52 @@
       "author": "Ronald Malfi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a lawyer receives a frantic call from his childhood friend, he returns to the small Maryland shore town they both fled — and the group of five friends must finally confront the dark secret of a summer night twenty years ago and the curse it brought upon them.",
+      "tone": "Atmospheric, slow-burn gothic, hauntingly lyrical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "guilt and shared secrets",
+        "the past refusing to stay buried",
+        "small-town decay",
+        "folk horror and witchcraft",
+        "friendship and betrayal"
+      ],
+      "setting": "Contemporary Kingsport, Maryland — a decaying Chesapeake Bay shore town",
+      "comparable_books": [
+        "It - Stephen King",
+        "Ghost Story - Peter Straub",
+        "Black Mouth - Ronald Malfi",
+        "Come with Me - Ronald Malfi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "small-town horror atmosphere",
+          "Chesapeake Bay gothic setting",
+          "shocking twist mid-novel",
+          "lyrical prose",
+          "folk horror elements",
+          "fans of Stephen King's IT"
+        ],
+        "negative": [
+          "familiar 'friends reunite to face old evil' premise",
+          "bleak and unsettling ending",
+          "some characters hard to connect with",
+          "animal death"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Vertigo - Pierre Boileau & Thomas Narcejac": {
@@ -170655,26 +171044,47 @@
       "author": "Pierre Boileau & Thomas Narcejac",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In wartime Paris, a former detective with a debilitating fear of heights is asked by an old friend to surveil his mysteriously behaving wife — an obsessive investigation that spirals into deceit, psychological ruin, and a devastating twist.",
+      "tone": "Dark, brooding, psychologically suffocating noir",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "obsession and desire",
+        "identity and deception",
+        "psychological deterioration",
+        "male gaze and control",
+        "the inescapability of the past"
+      ],
+      "setting": "World War II-era Paris and Marseilles, 1940s France",
+      "comparable_books": [
+        "She Who Was No More - Boileau-Narcejac",
+        "The Talented Mr. Ripley - Patricia Highsmith",
+        "Rebecca - Daphne du Maurier",
+        "Strangers on a Train - Patricia Highsmith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "source novel for Hitchcock's Vertigo",
+          "classic French noir",
+          "psychological suspense",
+          "tight plotting with a stunning twist",
+          "fans of Patricia Highsmith"
+        ],
+        "negative": [
+          "slow first half",
+          "unsympathetic protagonist",
+          "nihilistic and bleak"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Little Girls - Ronald Malfi": {
@@ -170682,53 +171092,99 @@
       "author": "Ronald Malfi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After her estranged father's death, Laurie returns to her childhood home with her husband and daughter to settle the estate — but the decaying house stirs suppressed memories and a growing dread around her daughter's new playmate, who bears an uncanny resemblance to a girl who died there.",
+      "tone": "Slow, creeping, psychologically unreliable",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "repressed trauma and childhood",
+        "parental abuse and its aftermath",
+        "ambiguous supernatural horror",
+        "grief and inheritance",
+        "sanity and unreliable perception"
+      ],
+      "setting": "Contemporary rural Maryland — a large, decaying estate house",
+      "comparable_books": [
+        "The Turn of the Screw - Henry James",
+        "Come with Me - Ronald Malfi",
+        "The Haunting of Hill House - Shirley Jackson",
+        "Floating Staircase - Ronald Malfi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "creepy child horror",
+          "gothic haunted house",
+          "ambiguous supernatural vs. psychological",
+          "lyrical prose",
+          "childhood trauma as horror"
+        ],
+        "negative": [
+          "very slow pacing",
+          "ambiguous ending frustrates some readers",
+          "content involving child abuse",
+          "thin characterisation of some secondary characters"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Star Diaries - Stanisław Lem": {
       "title": "The Star Diaries",
       "author": "Stanisław Lem",
       "series": "Ijon Tichy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The collected intergalactic travelogue of the irrepressibly hapless space explorer Ijon Tichy, whose absurd voyages take him through time loops, cosmic bureaucracies, and philosophical parables that satirise humanity, politics, religion, and the nature of existence itself.",
+      "tone": "Darkly comic, satirical, philosophically playful",
+      "pacing": "Moderate",
+      "themes": [
+        "satire of human nature and civilization",
+        "time and causality",
+        "the absurdity of progress",
+        "political and religious institutions",
+        "identity and consciousness"
+      ],
+      "setting": "Far-future deep space — a series of comic, allegorical alien worlds and civilisations",
+      "comparable_books": [
+        "The Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Memoirs Found in a Bathtub - Stanisław Lem",
+        "Cat's Cradle - Kurt Vonnegut",
+        "The Futurological Congress - Stanisław Lem"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satirical science fiction",
+          "darkly comic tone",
+          "philosophical depth",
+          "Eastern European SF classic",
+          "fans of absurdist and literary SF"
+        ],
+        "negative": [
+          "episodic — no unified narrative arc",
+          "translation may affect some humour",
+          "dense philosophical digressions"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Blood of the Mantis - Adrian Tchaikovsky": {
