@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3535,
-  "total_pending": 1065,
+  "total_catalogued": 3555,
+  "total_pending": 1045,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -195024,26 +195024,46 @@
       "author": "Dan Simmons",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A quintet of novellas by Dan Simmons ranging across dark fantasy, space opera, hard SF, and mainstream fiction, including an award-winning return to the Hyperion universe. The stories explore themes of mortality, power, and the persistence of the past across radically different settings.",
+      "tone": "varied — literary, wistful, adventurous, apocalyptic",
+      "pacing": "Moderate",
+      "themes": [
+        "mortality",
+        "human ambition",
+        "loss",
+        "the past",
+        "identity"
+      ],
+      "setting": "Multiple settings: Colorado, the Himalayas, the far future, the Hyperion universe (various times and places)",
+      "comparable_books": [
+        "Lovedeath - Dan Simmons",
+        "Stories of Your Life and Others - Ted Chiang",
+        "Burning Chrome - William Gibson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "genre-spanning short fiction",
+          "literary SF",
+          "Hyperion universe fans",
+          "thoughtful speculative fiction",
+          "varied tones and genres"
+        ],
+        "negative": [
+          "readers wanting a single unified narrative",
+          "those who dislike author introductions",
+          "uneven anthology quality"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Them Bones - Howard Waldrop": {
@@ -195051,26 +195071,48 @@
       "author": "Howard Waldrop",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Alternate History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A slim, inventive novel told in three interwoven strands: a soldier from a post-nuclear future who time-travels into an alternate pre-Columbian America, his backup team that lands in a different timeline, and a 1929 archaeologist team excavating mysterious anachronistic artifacts from Mississippi burial mounds. The narratives converge into a poignant tragedy about doomed worlds and lost history.",
+      "tone": "quirky, melancholic, world-weary, inventive",
+      "pacing": "Fast",
+      "themes": [
+        "alternate history",
+        "time travel",
+        "indigenous cultures",
+        "tragedy of civilisations",
+        "paradox"
+      ],
+      "setting": "1929 Louisiana; a 13th-century alternate pre-Columbian Mississippi; a radiation-poisoned 21st-century future",
+      "comparable_books": [
+        "The Man in the High Castle - Philip K. Dick",
+        "Pastwatch: The Redemption of Christopher Columbus - Orson Scott Card",
+        "Lincoln's Dreams - Connie Willis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history enthusiasts",
+          "time travel fiction",
+          "literary SF",
+          "unconventional narrative structure",
+          "pre-Columbian settings"
+        ],
+        "negative": [
+          "readers wanting fully developed characters",
+          "those needing clear connective tissue between plotlines",
+          "epic fantasy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The October Country - Ray Bradbury": {
@@ -195078,53 +195120,98 @@
       "author": "Ray Bradbury",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A landmark collection of dark fantasy and horror stories set in a twilight realm Bradbury called 'the October Country' — a world of strange towns, grotesque secrets, and melancholy dread. The stories blend the macabre with lyrical beauty, encompassing themes of death, obsession, childhood, and the uncanny.",
+      "tone": "lyrical, melancholic, eerie, quietly unsettling",
+      "pacing": "Slow",
+      "themes": [
+        "death",
+        "obsession",
+        "childhood and innocence",
+        "the grotesque",
+        "small-town darkness"
+      ],
+      "setting": "Timeless, dreamlike American towns and interiors; a symbolic autumnal landscape",
+      "comparable_books": [
+        "Something Wicked This Way Comes - Ray Bradbury",
+        "Skeleton Crew - Stephen King",
+        "Nightmares & Dreamscapes - Stephen King",
+        "Songs of a Dead Dreamer - Thomas Ligotti"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary horror",
+          "dark fantasy",
+          "lyrical prose",
+          "short story collections",
+          "classic American Gothic",
+          "Bradbury fans"
+        ],
+        "negative": [
+          "readers wanting graphic horror",
+          "action-driven plots",
+          "contemporary settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Bradbury's lyrical, rhythmic prose is especially well-suited to being read aloud.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Nightside the Long Sun - Gene Wolfe": {
       "title": "Nightside the Long Sun",
       "author": "Gene Wolfe",
       "series": "The Book of the Long Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Patera Silk, a young priest in the city of Viron aboard a vast generation starship called the Whorl, receives a divine vision and is charged with saving his impoverished congregation's church from a powerful crime lord. What begins as a modest act of spiritual duty unravels into a conspiracy involving the nature of gods, machines, and the ship-world itself.",
+      "tone": "dense, allusive, meditative, quietly revelatory",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and divinity",
+        "the nature of gods",
+        "duty and sacrifice",
+        "colonialism and community",
+        "reality vs. illusion"
+      ],
+      "setting": "The Whorl — a vast cylindrical generation starship with an artificial sun running along its axis; a city modelled on ancient Rome and Renaissance Italy, far future",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "A Canticle for Leibowitz - Walter M. Miller Jr.",
+        "Hyperion - Dan Simmons",
+        "Soldier of the Mist - Gene Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrators",
+          "deeply layered worldbuilding",
+          "religious allegory",
+          "literary SF",
+          "puzzle-box narratives",
+          "Gene Wolfe fans"
+        ],
+        "negative": [
+          "readers wanting fast action",
+          "clear linear plotting",
+          "immediate answers",
+          "casual SF readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Salt Bones - Jennifer Givhan": {
@@ -195132,80 +195219,148 @@
       "author": "Jennifer Givhan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Persephone-and-Demeter-inspired horror thriller set in the dying border town of El Valle near the Salton Sea, following Malamar 'Mal' Veracruz as she investigates the disappearance of a local girl while haunted by visions of a horse-headed spirit from Mexican folklore — and by the decades-old vanishing of her own sister. Told through the alternating voices of Mal and her two daughters, the novel braids Indigenous mythology, generational trauma, and environmental catastrophe.",
+      "tone": "lyrical, claustrophobic, haunting, visceral",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "generational trauma",
+        "missing and murdered Indigenous/Latina women",
+        "motherhood",
+        "environmental disaster",
+        "mythology and folklore"
+      ],
+      "setting": "El Valle, a fictional dying border town near the Salton Sea, California-Mexico borderlands; contemporary",
+      "comparable_books": [
+        "River Woman, River Demon - Jennifer Givhan",
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "The Reformatory - Tananarive Due",
+        "Shutter - Ramona Emerson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Latina Gothic fiction",
+          "magical realism",
+          "horror with social commentary",
+          "lyrical prose",
+          "mother-daughter relationships",
+          "mythology retellings"
+        ],
+        "negative": [
+          "readers wanting fast-paced horror",
+          "plot-first thriller readers",
+          "those uncomfortable with Spanish code-switching"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lake of the Long Sun - Gene Wolfe": {
       "title": "Lake of the Long Sun",
       "author": "Gene Wolfe",
       "series": "The Book of the Long Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Patera Silk continues his increasingly dangerous quest to save his manteion, venturing deeper into the tunnels beneath Viron and encountering the gods of Mainframe — digital intelligences residing in the Whorl's computer network — as political upheaval and criminal intrigue intensify around him.",
+      "tone": "dense, allusive, meditative, conspiratorial",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and doubt",
+        "the nature of gods and machines",
+        "political revolution",
+        "identity",
+        "loyalty"
+      ],
+      "setting": "The Whorl — the same vast cylindrical generation starship; the tunnels and underworld beneath Viron, far future",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "A Canticle for Leibowitz - Walter M. Miller Jr.",
+        "Hyperion - Dan Simmons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrators",
+          "deeply layered worldbuilding",
+          "literary SF",
+          "puzzle-box narratives",
+          "Gene Wolfe fans"
+        ],
+        "negative": [
+          "readers wanting fast action",
+          "new readers to the series",
+          "casual SF readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Caldé of the Long Sun - Gene Wolfe": {
       "title": "Caldé of the Long Sun",
       "author": "Gene Wolfe",
       "series": "The Book of the Long Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As civil war erupts in Viron, Patera Silk is swept up in the revolution and thrust into political leadership despite himself, while the true nature of the Whorl — a massive generation starship — becomes undeniable. Silk's moral rectitude is tested as violence escalates and the gods of Mainframe pursue their own agenda.",
+      "tone": "propulsive, dense, morally complex, revelatory",
+      "pacing": "Fast",
+      "themes": [
+        "political revolution",
+        "reluctant heroism",
+        "faith vs. revelation",
+        "the nature of divinity",
+        "war"
+      ],
+      "setting": "Viron and surroundings aboard the Whorl generation starship, far future; politically fractured",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "A Canticle for Leibowitz - Walter M. Miller Jr.",
+        "The Urth of the New Sun - Gene Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrators",
+          "literary SF",
+          "political intrigue",
+          "revolutionary narratives",
+          "Gene Wolfe fans"
+        ],
+        "negative": [
+          "readers new to the series",
+          "those wanting standalone stories",
+          "readers seeking clear resolution"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Phases of Gravity - Dan Simmons": {
@@ -195213,53 +195368,96 @@
       "author": "Dan Simmons",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Richard Baedecker, a former Apollo astronaut who walked on the moon, drifts through a purposeless middle age — his marriage dissolved, his relationship with his son fractured — until an encounter with a mysterious young woman in India sets him on a journey to revisit the 'places of power' from his past. A quiet, beautifully written meditation on loss, meaning, and second chances.",
+      "tone": "quiet, lyrical, introspective, melancholic",
+      "pacing": "Slow",
+      "themes": [
+        "loss and regret",
+        "fatherhood",
+        "the space program",
+        "searching for meaning",
+        "second chances",
+        "gravity and transcendence"
+      ],
+      "setting": "Contemporary (1989) America — Colorado, Indiana, South Dakota — and briefly Poona, India; with memories of the moon",
+      "comparable_books": [
+        "The Right Stuff - Tom Wolfe",
+        "Rabbit, Run - John Updike",
+        "The Astronaut Wives Club - Lily Koppel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction fans",
+          "character-driven novels",
+          "space programme nostalgia",
+          "introspective mid-life narratives",
+          "Simmons non-genre work"
+        ],
+        "negative": [
+          "readers expecting SF from Simmons",
+          "action-oriented readers",
+          "plot-driven thriller fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Introspective, lyrical prose rewards attentive listening; minimal action makes it ideal for audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Exodus From the Long Sun - Gene Wolfe": {
       "title": "Exodus From the Long Sun",
       "author": "Gene Wolfe",
       "series": "The Book of the Long Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of The Book of the Long Sun, in which the Whorl's failing systems force its inhabitants toward an exodus to the new worlds of Blue and Green. Silk must navigate political chaos, divine demands, and personal sacrifice as the series' grand theological and science-fictional revelations reach their culmination.",
+      "tone": "dense, elegiac, morally complex, transcendent",
+      "pacing": "Moderate",
+      "themes": [
+        "exodus and promised lands",
+        "sacrifice",
+        "divinity and humanity",
+        "endings and beginnings",
+        "free will"
+      ],
+      "setting": "The Whorl generation starship in its final days; approaching the twin planets Blue and Green, far future",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "On Blue's Waters - Gene Wolfe",
+        "A Canticle for Leibowitz - Walter M. Miller Jr."
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "religious allegory",
+          "Gene Wolfe fans",
+          "series completionists",
+          "unreliable narrators"
+        ],
+        "negative": [
+          "new readers",
+          "readers wanting clear resolution",
+          "those who bounced off earlier volumes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "My Brother's Keeper - Tim Powers": {
@@ -195267,26 +195465,50 @@
       "author": "Tim Powers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Gothic Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set on the Yorkshire moors in 1845–1846, this secret history follows Emily Brontë as she becomes embroiled in a war between occult cults after encountering a wounded stranger linked to a demonic werewolf god that has been corrupting her brother Branwell for years. Powers weaves supernatural horror through the real gaps in the Brontë family's biography with characteristic rigor.",
+      "tone": "gothic, eerie, atmospheric, melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "good versus evil",
+        "family loyalty",
+        "redemption",
+        "the supernatural in history",
+        "sacrifice"
+      ],
+      "setting": "Haworth, Yorkshire moors, England, 1845–1848",
+      "comparable_books": [
+        "The Stress of Her Regard - Tim Powers",
+        "Hide Me Among the Graves - Tim Powers",
+        "Declare - Tim Powers",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "secret history fiction",
+          "occult historical fiction",
+          "Brontë enthusiasts",
+          "gothic horror",
+          "Tim Powers fans",
+          "werewolf fiction with literary grounding"
+        ],
+        "negative": [
+          "readers wanting Brontë pastiche or romance",
+          "those expecting straightforward horror",
+          "readers unfamiliar with Powers' dense style"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Anubis Gates - Tim Powers": {
@@ -195294,26 +195516,51 @@
       "author": "Tim Powers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A literature professor is recruited for a time-travel expedition to 1810 London to attend a lecture by Samuel Coleridge, but becomes stranded in the past and entangled with Egyptian sorcerers, murderous clowns, werewolves, and body-swapping villains — all while trying to find his way back. A genre-defining blend of historical adventure, dark fantasy, and SF.",
+      "tone": "propulsive, darkly inventive, atmospheric, witty",
+      "pacing": "Fast",
+      "themes": [
+        "fate and free will",
+        "identity and body horror",
+        "the Romantic era",
+        "magic vs. modernity",
+        "time travel paradox"
+      ],
+      "setting": "London and surroundings, 1810–1811 (with framing in 1983); Regency England's underworld",
+      "comparable_books": [
+        "Declare - Tim Powers",
+        "Fevre Dream - George R.R. Martin",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "Anno Dracula - Kim Newman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "time travel fiction",
+          "historical dark fantasy",
+          "steampunk precursor",
+          "Regency London settings",
+          "plot-dense intricate narratives",
+          "Philip K. Dick Award winners"
+        ],
+        "negative": [
+          "readers wanting slow literary fiction",
+          "those who dislike body horror",
+          "readers preferring clean linear timelines"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Hide Me Among the Graves - Tim Powers": {
@@ -195321,53 +195568,96 @@
       "author": "Tim Powers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Gothic Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A loose sequel to The Stress of Her Regard, set in Victorian London and following Christina Rossetti, her brother Dante Gabriel, and a veterinarian named Crawford as they battle a species of vampiric supernatural entities that feed on artistic inspiration — the same creatures that plagued Keats, Byron, and Shelley a generation earlier.",
+      "tone": "gothic, atmospheric, richly historical, darkly romantic",
+      "pacing": "Moderate",
+      "themes": [
+        "artistic inspiration and corruption",
+        "sacrifice",
+        "vampirism as creative possession",
+        "Victorian society",
+        "family and obligation"
+      ],
+      "setting": "London and surroundings, 1862–1882; Victorian England",
+      "comparable_books": [
+        "The Stress of Her Regard - Tim Powers",
+        "Declare - Tim Powers",
+        "My Brother's Keeper - Tim Powers",
+        "Anno Dracula - Kim Newman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "secret history fiction",
+          "Victorian Gothic",
+          "vampire fiction with literary roots",
+          "Pre-Raphaelite era",
+          "Tim Powers fans"
+        ],
+        "negative": [
+          "readers wanting traditional vampire horror",
+          "those unfamiliar with Victorian literary figures",
+          "fast-paced thriller readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Camino Island - John Grisham": {
       "title": "Camino Island",
       "author": "John Grisham",
       "series": "Camino Island",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A daring heist steals five original F. Scott Fitzgerald manuscripts from Princeton's library, and a struggling novelist named Mercer Mann is recruited by an insurance company to befriend the charming rare-book dealer on Camino Island, Florida, who is suspected of fencing them. A lively, book-world caper blending crime thriller with literary atmosphere.",
+      "tone": "breezy, propulsive, sun-drenched, witty",
+      "pacing": "Fast",
+      "themes": [
+        "rare books and literary culture",
+        "deception and loyalty",
+        "the writing life",
+        "crime and commerce",
+        "Florida coastal life"
+      ],
+      "setting": "Camino Island (fictional barrier island), northern Florida; Princeton, NJ; contemporary",
+      "comparable_books": [
+        "Camino Winds - John Grisham",
+        "The Bookman's Tale - Charlie Lovett",
+        "The Art Thief - Michael Finkel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "book-world fiction",
+          "light crime capers",
+          "Florida settings",
+          "Grisham fans wanting something lighter",
+          "beach reads"
+        ],
+        "negative": [
+          "readers wanting a traditional courtroom thriller",
+          "those seeking gritty crime fiction",
+          "Grisham readers expecting legal drama"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Breezy, character-driven prose translates perfectly to audio; an ideal listen for a beach or travel setting.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Declare - Tim Powers": {
@@ -195375,161 +195665,286 @@
       "author": "Tim Powers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Cold War spy thriller threaded through with supernatural horror, following Andrew Hale — a British intelligence operative whose career intertwines with the double agent Kim Philby, a secret operation on Mount Ararat, and djinn-like entities that both sides of the Cold War have been desperately trying to control. A World Fantasy Award winner.",
+      "tone": "tense, intricate, eerie, historically immersive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Cold War espionage",
+        "the supernatural in history",
+        "faith and doubt",
+        "loyalty and betrayal",
+        "sacrifice"
+      ],
+      "setting": "Europe and the Middle East, 1940s–1960s Cold War; Mount Ararat; Beirut; London; Paris",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Anubis Gates - Tim Powers",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Secret History - Donna Tartt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War espionage fiction",
+          "secret history",
+          "occult thriller",
+          "intricately plotted novels",
+          "Kim Philby / Cambridge Five history",
+          "World Fantasy Award winners"
+        ],
+        "negative": [
+          "readers wanting fast action",
+          "those who dislike supernatural elements in spy fiction",
+          "casual thriller readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Camino Winds - John Grisham": {
       "title": "Camino Winds",
       "author": "John Grisham",
       "series": "Camino Island",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of a devastating hurricane on Camino Island, bookseller Bruce Cable and writer Mercer Mann investigate the suspicious death of a mystery novelist whose manuscript apparently exposed real political crimes — a killing disguised by the storm's chaos. A hurricane-wrapped murder mystery with a bookish heart.",
+      "tone": "breezy, propulsive, atmospheric, lightly suspenseful",
+      "pacing": "Fast",
+      "themes": [
+        "political corruption",
+        "the writing life",
+        "natural disaster",
+        "murder and investigation",
+        "Florida coastal community"
+      ],
+      "setting": "Camino Island (fictional barrier island), northern Florida; post-hurricane; contemporary",
+      "comparable_books": [
+        "Camino Island - John Grisham",
+        "Camino Ghosts - John Grisham",
+        "The Bookman's Tale - Charlie Lovett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "light crime capers",
+          "book-world fiction",
+          "Florida settings",
+          "Grisham fans",
+          "beach reads",
+          "amateur sleuth stories"
+        ],
+        "negative": [
+          "readers wanting courtroom drama",
+          "gritty crime fiction fans",
+          "those seeking legal thriller conventions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Propulsive, light prose is ideal for audio listening; a perfect audiobook.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Witness to a Trial - John Grisham": {
       "title": "Witness to a Trial",
       "author": "John Grisham",
       "series": "The Whistler",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (prequel short story)",
+      "genre": "Legal Thriller",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A tightly structured ~30-page e-short serving as a prequel to The Whistler, depicting the rigged murder trial of a Tappacola Indian man — framed for a killing because he opposed casino development on tribal land — told through the brief perspectives of each courtroom player. Sets up the corruption at the heart of The Whistler.",
+      "tone": "taut, efficient, procedural, morally outraged",
+      "pacing": "Fast",
+      "themes": [
+        "judicial corruption",
+        "wrongful conviction",
+        "organised crime",
+        "Native American rights",
+        "systemic injustice"
+      ],
+      "setting": "A small-town courthouse in Brunswick County, Florida; contemporary",
+      "comparable_books": [
+        "The Whistler - John Grisham",
+        "The Judge's List - John Grisham",
+        "The Innocent Man - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Grisham fans",
+          "prequel/companion pieces",
+          "legal thriller readers",
+          "quick reads",
+          "courtroom drama"
+        ],
+        "negative": [
+          "readers wanting a full novel",
+          "those who dislike fragmentary structure",
+          "non-Grisham readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Camino Ghosts - John Grisham": {
       "title": "Camino Ghosts",
       "author": "John Grisham",
       "series": "Camino Island",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Novelist Mercer Mann and bookseller Bruce Cable take up the cause of Lovely Jackson, the last descendant of a community of freed slaves who settled the abandoned Dark Isle — now targeted by ruthless developers — while discovering that the island may be genuinely, lethally cursed. The most historically and atmospherically ambitious entry in the Camino series.",
+      "tone": "atmospheric, propulsive, lightly gothic, socially conscious",
+      "pacing": "Moderate",
+      "themes": [
+        "racial injustice and land rights",
+        "the legacy of slavery",
+        "environmental threat",
+        "curses and the supernatural",
+        "corporate greed"
+      ],
+      "setting": "Camino Island and Dark Isle (fictional), North Florida coast; contemporary with historical flashbacks",
+      "comparable_books": [
+        "Camino Island - John Grisham",
+        "Camino Winds - John Grisham",
+        "Where the Crawdads Sing - Delia Owens"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Grisham Camino series fans",
+          "light thriller with historical depth",
+          "beach reads with social conscience",
+          "Florida settings",
+          "mild supernatural elements"
+        ],
+        "negative": [
+          "readers wanting hard legal thriller",
+          "courtroom drama fans",
+          "those seeking intense horror"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lively, readable prose and a strong sense of place make this an ideal audiobook.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Whistler - John Grisham": {
       "title": "The Whistler",
       "author": "John Grisham",
       "series": "The Whistler",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Legal Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lacy Stoltz, an investigator for Florida's Board on Judicial Conduct, receives a tip from a secretive whistleblower exposing a sitting judge who has been skimming millions from a Native American casino — in league with organised crime. As the corruption runs deeper than anyone imagined, Lacy's investigation puts her life in danger.",
+      "tone": "propulsive, tense, procedural, morally driven",
+      "pacing": "Fast",
+      "themes": [
+        "judicial corruption",
+        "organised crime",
+        "Native American sovereignty",
+        "whistleblowing",
+        "systemic injustice"
+      ],
+      "setting": "Florida — Tallahassee, the Panhandle, and a Tappacola Indian reservation; contemporary",
+      "comparable_books": [
+        "The Judge's List - John Grisham",
+        "The Firm - John Grisham",
+        "The Associate - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal thriller fans",
+          "corruption narratives",
+          "Grisham fans",
+          "female protagonist thriller",
+          "Florida crime fiction"
+        ],
+        "negative": [
+          "readers wanting courtroom scenes",
+          "those seeking character-driven literary fiction",
+          "light beach read seekers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "A propulsive, plot-driven narrative that works exceptionally well as an audiobook.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Judge's List - John Grisham": {
       "title": "The Judge's List",
       "author": "John Grisham",
       "series": "The Whistler",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Legal Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lacy Stoltz returns to investigate a federal appellate judge who may be a serial killer — a man with the power to destroy any investigation against him. A cat-and-mouse thriller in which the predator is the one who controls the justice system.",
+      "tone": "tense, propulsive, chilling, procedural",
+      "pacing": "Fast",
+      "themes": [
+        "judicial power and corruption",
+        "serial killing",
+        "whistleblowing",
+        "the limits of the justice system",
+        "institutional abuse"
+      ],
+      "setting": "Florida and Washington D.C.; contemporary federal court system",
+      "comparable_books": [
+        "The Whistler - John Grisham",
+        "The Firm - John Grisham",
+        "The Pelican Brief - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal thriller fans",
+          "serial killer narratives",
+          "Grisham fans",
+          "corruption fiction",
+          "female protagonist thrillers"
+        ],
+        "negative": [
+          "readers wanting courtroom drama",
+          "literary fiction readers",
+          "those who haven't read The Whistler"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced, dialogue-driven thriller is an ideal audiobook.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sooley - John Grisham": {
@@ -195537,26 +195952,49 @@
       "author": "John Grisham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Sports Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Samuel 'Sooley' Sooleymon, a seventeen-year-old South Sudanese basketball prodigy, earns a college scholarship in the US while civil war devastates his family back home, leaving him driven by a fierce determination to succeed — and to bring his surviving family to safety. A departure from Grisham's legal thrillers, blending sports underdog narrative with a portrait of African refugee experience.",
+      "tone": "emotional, propulsive, earnest, at times tragic",
+      "pacing": "Fast",
+      "themes": [
+        "refugee experience",
+        "ambition and sacrifice",
+        "family",
+        "civil war",
+        "the American dream",
+        "sport as escape"
+      ],
+      "setting": "South Sudan; Durham, North Carolina (North Carolina Central University); contemporary",
+      "comparable_books": [
+        "Calico Joe - John Grisham",
+        "The Kite Runner - Khaled Hosseini",
+        "Bleachers - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sports fiction fans",
+          "underdog narratives",
+          "South Sudan / African diaspora stories",
+          "Grisham fans open to non-legal fiction",
+          "emotional page-turners"
+        ],
+        "negative": [
+          "readers wanting legal thriller conventions",
+          "those uninterested in basketball",
+          "readers expecting courtroom drama"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Propulsive, emotionally direct prose is ideal for audio; frequently cited as a compelling listen.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Rooster Bar - John Grisham": {
