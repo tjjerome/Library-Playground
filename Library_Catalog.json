@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3045,
-  "total_pending": 1555,
+  "total_catalogued": 3065,
+  "total_pending": 1535,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -171191,81 +171191,148 @@
       "title": "Blood of the Mantis",
       "author": "Adrian Tchaikovsky",
       "series": "Shadows of the Apt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Wasp Empire musters for its next great offensive, Stenwold rallies his scattered allies while Achaeos races to recover the stolen Shadow Box — a dark magical artefact that, should the Emperor seize it, could doom the world. The third entry escalates both the battlefield action and the espionage, splitting the cast across a web of political intrigue.",
+      "tone": "propulsive, geopolitical, steampunk-flavoured",
+      "pacing": "Fast",
+      "themes": [
+        "war and resistance",
+        "political intrigue",
+        "magic vs. technology",
+        "loyalty and betrayal"
+      ],
+      "setting": "A secondary fantasy world populated by insect-kinden races, mixing steampunk technology with fading magic; primarily the cities of Solarno and Jerez",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "Gardens of the Moon - Steven Erikson",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "large ensemble cast",
+          "geopolitical scope",
+          "steampunk fantasy",
+          "fast-paced action",
+          "morally complex factions",
+          "espionage subplot"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "very large cast may overwhelm",
+          "no standalone entry point"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Finders Keepers - Stephen King": {
       "title": "Finders Keepers",
       "author": "Stephen King",
       "series": "Bill Hodges",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A fanatical fan murders a reclusive novelist and steals his unpublished manuscripts, hiding them for decades — until a teenager discovers the treasure and sets off a deadly chain of events that eventually draws retired detective Bill Hodges back in. A propulsive literary-thriller hybrid about obsession and the dangerous power of fiction.",
+      "tone": "propulsive, darkly suspenseful, literary",
+      "pacing": "Fast",
+      "themes": [
+        "literary obsession",
+        "fan worship",
+        "crime and consequences",
+        "the power of fiction",
+        "coming of age"
+      ],
+      "setting": "Contemporary American Midwest; present day and flashbacks to 1978",
+      "comparable_books": [
+        "The Likeness - Tana French",
+        "Misery - Stephen King",
+        "Mr. Mercedes - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "literary thriller",
+          "crime procedural elements",
+          "character-driven",
+          "King's accessible prose"
+        ],
+        "negative": [
+          "less supernatural than typical King",
+          "serial killer plot",
+          "requires Mr. Mercedes for full context"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Will Patton's narration of the Bill Hodges trilogy is widely praised as definitive.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Outsider - Stephen King": {
       "title": "The Outsider",
       "author": "Stephen King",
       "series": "Holly Gibney",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A horrific child murder appears to have an airtight case against a beloved local coach — except that watertight alibi evidence places him elsewhere at the very same time. As detective Ralph Anderson investigates the impossible, the trail leads toward something deeply, supernaturally wrong.",
+      "tone": "creeping dread, slow-burn horror, investigative",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "supernatural evil",
+        "truth and evidence",
+        "grief",
+        "community trauma",
+        "the limits of reason"
+      ],
+      "setting": "Contemporary small-town Oklahoma and Texas; realistic mundane world that gradually darkens",
+      "comparable_books": [
+        "The Troop - Nick Cutter",
+        "NOS4A2 - Joe Hill",
+        "Mr. Mercedes - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "mystery-horror hybrid",
+          "slow-burn build",
+          "supernatural payoff",
+          "Holly Gibney fans",
+          "police procedural opening"
+        ],
+        "negative": [
+          "graphic child murder content",
+          "slow first half",
+          "some readers dislike the genre shift mid-novel"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Will Patton's narration is exceptional; multiple characters voiced with strong distinction.",
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Glass Hotel - Emily St. John Mandel": {
@@ -171273,53 +171340,93 @@
       "author": "Emily St. John Mandel",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Centred on a Ponzi scheme and the web of lives it destroys, the novel follows Vincent, a bartender at a remote Vancouver Island hotel, whose fate entwines with the scheme's architect and the ghost-haunted margins of a glamorous, hollow world. Mandel weaves together financial crime, grief, and questions of complicity across fractured timelines.",
+      "tone": "haunting, lyrical, meditative",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "financial crime and complicity",
+        "grief and memory",
+        "identity",
+        "interconnected lives",
+        "the cost of comfort"
+      ],
+      "setting": "Contemporary Canada (Vancouver Island, Toronto) and the US; also briefly Station Eleven's universe in a loose crossover sense",
+      "comparable_books": [
+        "Station Eleven - Emily St. John Mandel",
+        "The Goldfinch - Donna Tartt",
+        "A Little Life - Hanya Yanagihara"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary prose",
+          "nonlinear structure",
+          "character studies",
+          "quiet haunting atmosphere",
+          "Station Eleven fans"
+        ],
+        "negative": [
+          "no strong plot momentum",
+          "lacks supernatural elements despite ghost motif",
+          "some find the Ponzi scheme thread dry"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Futurological Congress: From the Memoirs of Ijon Tichy - Stanisław Lem": {
       "title": "The Futurological Congress: From the Memoirs of Ijon Tichy",
       "author": "Stanisław Lem",
       "series": "Ijon Tichy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Cosmonaut Ijon Tichy attends a futurological congress in Costa Rica, only to be caught in a revolution, dosed with hallucinogenic psychochemicals, and cryogenically frozen — awakening in a future where drugs mask a desperate reality beneath an apparent utopia. A short, biting satire on futurism, pharmaceutical control, and the malleability of perceived reality.",
+      "tone": "absurdist, darkly comic, satirical",
+      "pacing": "Fast",
+      "themes": [
+        "reality vs. illusion",
+        "pharmaceutical social control",
+        "satirising futurology",
+        "dystopia masked as utopia",
+        "overpopulation"
+      ],
+      "setting": "Near-future Costa Rica and the year 2039; a drugged, chemically controlled dystopian Earth",
+      "comparable_books": [
+        "Solaris - Stanisław Lem",
+        "The Star Diaries - Stanisław Lem",
+        "Brave New World - Aldous Huxley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "absurdist humour",
+          "satirical science fiction",
+          "short and dense",
+          "philosophical depth",
+          "Philip K. Dick fans"
+        ],
+        "negative": [
+          "requires tolerance for deliberate incoherence",
+          "novella-length may feel slight",
+          "dated Cold War context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Mind Electric: A Neurologist on the Strangeness and Wonder of Our Brains - Pria Anand": {
@@ -171327,26 +171434,46 @@
       "author": "Pria Anand",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Boston neurologist Pria Anand weaves together patient case studies, medical history, fable, and memoir to explore how the brain constructs narrative from chaos — and how those stories, shaped by culture and power, govern what doctors hear and patients believe. Winner of the PEN/E.O. Wilson Literary Science Writing Award.",
+      "tone": "lyrical, humane, meditative",
+      "pacing": "Moderate",
+      "themes": [
+        "narrative and medicine",
+        "brain and consciousness",
+        "medical bias and power",
+        "storytelling as survival",
+        "the thin line between sanity and illness"
+      ],
+      "setting": "Contemporary clinical settings across Boston, India, the Caribbean, and West Africa; ranges across medical history",
+      "comparable_books": [
+        "The Man Who Mistook His Wife for a Hat - Oliver Sacks",
+        "Brain on Fire - Susannah Cahalan",
+        "Being Mortal - Atul Gawande"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Oliver Sacks fans",
+          "lyrical non-fiction",
+          "medical case studies",
+          "memoir elements",
+          "social justice lens on medicine"
+        ],
+        "negative": [
+          "no single narrative throughline",
+          "essayistic structure may feel meandering",
+          "clinical detail may not suit all readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Deep - Alma Katsu": {
@@ -171354,107 +171481,198 @@
       "author": "Alma Katsu",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Annie Hebbley, a stewardess haunted by strange compulsions, survives the sinking of the Titanic in 1912 — only to find herself aboard its doomed sister ship, the Britannic, as a wartime nurse in 1916, still pursued by a dark supernatural presence. Katsu blends meticulous historical research with gothic ghost-story horror across two doomed voyages.",
+      "tone": "atmospheric, gothic, slow-burning",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "hauntings and possession",
+        "class and gender",
+        "love and obsession",
+        "historical tragedy",
+        "survival and trauma"
+      ],
+      "setting": "RMS Titanic (1912) and HMHS Britannic (1916); Edwardian Atlantic Ocean during the First World War",
+      "comparable_books": [
+        "The Hunger - Alma Katsu",
+        "The Terror - Dan Simmons",
+        "The Little Stranger - Sarah Waters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction fans",
+          "gothic horror",
+          "Titanic setting",
+          "atmospheric pacing",
+          "dual timeline"
+        ],
+        "negative": [
+          "pacing criticised as slow",
+          "horror elements lighter than expected",
+          "emotionally distant climax for some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Seal of the Worm - Adrian Tchaikovsky": {
       "title": "Seal of the Worm",
       "author": "Adrian Tchaikovsky",
       "series": "Shadows of the Apt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Wasp Empire stands triumphant, but Empress Seda's victory has come at a terrible price: the ancient Seal is shattered, and the Worm — a monstrous subterranean force imprisoned for a thousand years — stirs toward the surface. The tenth and final volume of the series brings all threads to a climactic convergence.",
+      "tone": "grimdark, epic, bittersweet",
+      "pacing": "Fast",
+      "themes": [
+        "consequence of power",
+        "sacrifice",
+        "war's toll",
+        "ancient evil resurgent",
+        "heroism and loss"
+      ],
+      "setting": "The same insect-kinden secondary world as the rest of the series; with emphasis on the underground domain of the Worm",
+      "comparable_books": [
+        "The Crippled God - Steven Erikson",
+        "A Memory of Light - Robert Jordan & Brandon Sanderson",
+        "Children of Time - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusion payoff",
+          "large-scale epic battles",
+          "character deaths with weight",
+          "satisfying arc resolution for fans"
+        ],
+        "negative": [
+          "completely inaccessible without the preceding nine books",
+          "some character deaths feel arbitrary to fans",
+          "grimdark tone throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Chasm City - Alastair Reynolds": {
       "title": "Chasm City",
       "author": "Alastair Reynolds",
       "series": "Revelation Space",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mercenary Tanner Mirabel pursues a vendetta to the fallen city of Chasm City on Yellowstone — once a glittering jewel of civilisation, now a plague-warped nightmare — while buried memories and a second narrative strand complicate everything he believes about his identity and mission. A noir-inflected space opera that works as a near-standalone.",
+      "tone": "noir, bleak, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and memory",
+        "transhumanism gone wrong",
+        "vengeance",
+        "class and inequality",
+        "the long shadow of history"
+      ],
+      "setting": "Far-future Yellowstone system; the decayed mega-city of Chasm City and flashbacks to the colony ship era",
+      "comparable_books": [
+        "Revelation Space - Alastair Reynolds",
+        "Blindsight - Peter Watts",
+        "Altered Carbon - Richard Morgan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF world-building",
+          "noir mystery",
+          "transhumanist themes",
+          "unreliable narrator",
+          "can be read first in the series"
+        ],
+        "negative": [
+          "bleak and cold tone",
+          "dense technical exposition",
+          "slow mid-section",
+          "morally grey cast throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Doomsday Book - Connie Willis": {
       "title": "Doomsday Book",
       "author": "Connie Willis",
       "series": "Oxford Time Travel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Oxford historian Kivrin is sent back to medieval England for a field study, but a technical malfunction deposits her in the wrong year — directly into the path of the Black Death — while a modern flu epidemic simultaneously paralyses the future Oxford that must retrieve her. A Hugo and Nebula Award-winning novel of profound emotional weight.",
+      "tone": "elegiac, harrowing, emotionally devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "mortality and plague",
+        "faith and doubt",
+        "historical compassion",
+        "helplessness vs. courage",
+        "the human cost of disaster"
+      ],
+      "setting": "Near-future Oxford and 14th-century medieval England during the Black Death",
+      "comparable_books": [
+        "To Say Nothing of the Dog - Connie Willis",
+        "The Name of the Rose - Umberto Eco",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotional depth",
+          "historical immersion",
+          "dual timeline tension",
+          "award-winning literary SF",
+          "plague narrative fans"
+        ],
+        "negative": [
+          "extremely bleak and emotionally draining",
+          "slow build",
+          "comedy-of-errors future sections frustrate some readers",
+          "long for its plot volume"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jenny Sterlin's audiobook narration is acclaimed and enhances the emotional impact considerably.",
+      "content_flags": [
+        "child death",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mongrels - Stephen Graham Jones": {
@@ -171462,269 +171680,484 @@
       "author": "Stephen Graham Jones",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An unnamed boy grows up in the American South with his aunt and uncle — a family of werewolves — travelling perpetually on the margins, always one step ahead of discovery, while he waits to see if his own transformation will ever come. A literary horror novel as much about poverty, identity, and belonging as it is about lycanthropy.",
+      "tone": "darkly comic, raw, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "coming of age",
+        "family and belonging",
+        "poverty and survival",
+        "outsider identity",
+        "Indigenous identity",
+        "werewolf mythology subverted"
+      ],
+      "setting": "Contemporary American South; rural poverty-stricken settings across multiple states",
+      "comparable_books": [
+        "The Only Good Indians - Stephen Graham Jones",
+        "The Troop - Nick Cutter",
+        "Joe Hill's NOS4A2"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary horror",
+          "coming-of-age story",
+          "subverted genre conventions",
+          "found family",
+          "darkly comic voice"
+        ],
+        "negative": [
+          "graphic body horror",
+          "episodic structure with little momentum",
+          "bleak poverty setting",
+          "werewolf violence is grotesque"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Gentleman Jole and the Red Queen - Lois McMaster Bujold": {
       "title": "Gentleman Jole and the Red Queen",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three years after Aral Vorkosigan's death, his widow Cordelia proposes an unconventional future to Admiral Oliver Jole — her late husband's long-time companion — involving new children, old grief, and quietly revolutionary reproductive choices on the planet Sergyar. A contemplative science-fiction romance about older adults, love, and reinvention.",
+      "tone": "warmly comic, contemplative, bittersweet",
+      "pacing": "Slow",
+      "themes": [
+        "grief and reinvention",
+        "non-traditional relationships",
+        "reproductive technology",
+        "ageing and new beginnings",
+        "legacy"
+      ],
+      "setting": "Far-future planet Sergyar; a colonial world in the Vorkosigan interstellar empire",
+      "comparable_books": [
+        "A Civil Campaign - Lois McMaster Bujold",
+        "Shards of Honor - Lois McMaster Bujold",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "romance-heavy",
+          "older protagonists",
+          "Cordelia Vorkosigan fans",
+          "found family",
+          "low-stakes cosy SF"
+        ],
+        "negative": [
+          "requires deep series knowledge",
+          "almost no action or plot",
+          "divisive among Vorkosigan fans expecting Miles-style adventure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Drowned Kingdom - P. L. Stuart": {
       "title": "A Drowned Kingdom",
       "author": "P. L. Stuart",
       "series": "The Drowned Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After the cataclysmic sinking of the Atlantis-inspired kingdom of Atalanyx, the flawed and zealously religious Second Prince Othrun leads the last survivors across the sea to forge a new kingdom among foreign peoples and pagan powers. Told in first-person from Othrun's unreliable, bigoted perspective, it is a slow-burn political and military epic about colonialism, faith, and the cost of ambition.",
+      "tone": "grimdark, psychological, politically dense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "colonialism and conquest",
+        "religious fanaticism",
+        "morally grey protagonist",
+        "identity and exile",
+        "power and legitimacy"
+      ],
+      "setting": "A secondary world inspired by the Atlantis myth; a new continent of feuding warlords and elemental mages",
+      "comparable_books": [
+        "The Prince of Thorns - Mark Lawrence",
+        "A Song of Ice and Fire - George R.R. Martin",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "morally grey / unreliable narrator",
+          "political intrigue",
+          "military fantasy",
+          "slow-burn character study"
+        ],
+        "negative": [
+          "protagonist is deliberately bigoted and unlikeable",
+          "very slow opening",
+          "dense prose style",
+          "requires patience with the narrator's worldview"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Dense first-person prose with long introspective paragraphs rewards close reading; audio may lose nuance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Lion's Pride - P. L. Stuart": {
       "title": "A Lion's Pride",
       "author": "P. L. Stuart",
       "series": "The Drowned Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "King Othrun of Eastrealm is called to lead an invasion on behalf of his liege lord, forcing him to betray a hard-won peace while navigating rival warlords, scheming mages, and his own dangerous romantic entanglements. The series' midpoint pivots toward earthshattering revelations and introduces a new point-of-view character who shifts the saga's perspective.",
+      "tone": "grimdark, politically complex, character-driven",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "pride and its consequences",
+        "divine mission vs. personal desire",
+        "faith and doubt",
+        "conquest and its moral cost",
+        "redemption arc"
+      ],
+      "setting": "The continent of Eltnia and Atalanyx-occupied Eastrealm; warring medieval-analogous kingdoms",
+      "comparable_books": [
+        "The Prince of Thorns - Mark Lawrence",
+        "A Dance with Dragons - George R.R. Martin",
+        "The Heroes - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "political epic fantasy",
+          "complex villain protagonist",
+          "payoff for long-series investment",
+          "slow redemption arcs"
+        ],
+        "negative": [
+          "completely inaccessible without books 1–3",
+          "introspective passages slow pacing for some",
+          "protagonist's flaws remain extreme"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Dense first-person prose; print allows re-reading of complex political threads.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Pack of Wolves - P. L. Stuart": {
       "title": "A Pack of Wolves",
       "author": "P. L. Stuart",
       "series": "The Drowned Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A united Sanaavian horde descends on the Eltnish kingdoms while King Othrun faces a succession crisis, a new point-of-view character in his own son, and long-hidden truths that reframe the entire saga. Widely praised as the series' finest entry to date, with its largest battle sequence and major long-running revelations.",
+      "tone": "grimdark, epic, revelatory",
+      "pacing": "Fast",
+      "themes": [
+        "war and sacrifice",
+        "fathers and sons",
+        "faith vs. evidence",
+        "legacy of empire",
+        "redemption"
+      ],
+      "setting": "The continent of Eltnia during a full-scale invasion; winter campaigning across multiple kingdoms",
+      "comparable_books": [
+        "The Crippled God - Steven Erikson",
+        "A Dance with Dragons - George R.R. Martin",
+        "Red Country - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "long-series payoff",
+          "epic battle scenes",
+          "character revelations",
+          "grimdark fans",
+          "father-son dynamics"
+        ],
+        "negative": [
+          "entirely inaccessible without books 1–4",
+          "series is still incomplete (2 books remaining)",
+          "grimdark throughout"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Complex multi-POV threads and political intrigue reward print for cross-referencing.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Diplomatic Immunity - Lois McMaster Bujold": {
       "title": "Diplomatic Immunity",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Miles and Ekaterin Vorkosigan's delayed honeymoon is interrupted when Emperor Gregor orders Miles to untangle a dangerous diplomatic incident at Graf Station in Quaddiespace — a space habitat of genetically engineered four-armed humans — where old friends, political tensions, and a lethal secret spiral into crisis. A fast-moving mystery-thriller in space with Bujold's trademark wit.",
+      "tone": "witty, propulsive, lightly comedic",
+      "pacing": "Fast",
+      "themes": [
+        "diplomatic crisis",
+        "prejudice and difference",
+        "duty vs. personal life",
+        "old loyalties",
+        "biological engineering"
+      ],
+      "setting": "Far-future Graf Station in Quaddiespace; a zero-gravity habitat of the four-armed Quaddies",
+      "comparable_books": [
+        "A Civil Campaign - Lois McMaster Bujold",
+        "Memory - Lois McMaster Bujold",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Miles Vorkosigan fans",
+          "space opera mystery",
+          "character-driven",
+          "witty dialogue",
+          "fan-service for returning characters"
+        ],
+        "negative": [
+          "requires series context for full enjoyment",
+          "some find it a lesser entry",
+          "Ekaterin sidelined compared to previous books"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Grover Gardner's long-running narration of the Vorkosigan Saga is one of SF audio's great ongoing performances.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lord and King - P. L. Stuart": {
       "title": "Lord and King",
       "author": "P. L. Stuart",
       "series": "The Drowned Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Newly crowned King of Eastrealm, Othrun struggles to balance Atalantean religious values against the divergent cultures of his new subjects, navigating treacherous warlords, scheming mages, personal tragedy, and the mounting question of whether he is, in fact, a good man. The third book deepens the series' psychological and political focus.",
+      "tone": "grimdark, introspective, psychologically rich",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the cost of kingship",
+        "religious zealotry vs. pragmatism",
+        "moral growth and failure",
+        "political legitimacy",
+        "grief and resilience"
+      ],
+      "setting": "The kingdom of Eastrealm on the continent of Eltnia; a pseudo-medieval secondary world",
+      "comparable_books": [
+        "The Prince of Thorns - Mark Lawrence",
+        "The Blade Itself - Joe Abercrombie",
+        "Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "psychological character study",
+          "political intrigue",
+          "morally ambiguous protagonist evolving",
+          "slow redemption arc"
+        ],
+        "negative": [
+          "requires books 1–2",
+          "heavy introspection may slow pacing for some",
+          "protagonist remains difficult to like"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Dense introspective prose suits careful reading.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Flowers of Vashnoi - Lois McMaster Bujold": {
       "title": "The Flowers of Vashnoi",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14.5",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ekaterin Vorkosigan and scientist Enrique Borgos test bioengineered insects in the radioactive Vashnoi exclusion zone — a legacy of the Cetagandan invasion — only to discover the supposedly empty wasteland still holds dangerous, heartbreaking secrets. A quietly moving novella focused on Ekaterin rather than Miles.",
+      "tone": "warmly humane, bittersweet, quietly optimistic",
+      "pacing": "Moderate",
+      "themes": [
+        "healing and environmental restoration",
+        "legacy of war",
+        "compassion",
+        "bioengineering",
+        "Barrayaran history"
+      ],
+      "setting": "The radioactive Vashnoi exclusion zone on planet Barrayar; far-future interstellar feudal empire",
+      "comparable_books": [
+        "A Civil Campaign - Lois McMaster Bujold",
+        "Gentleman Jole and the Red Queen - Lois McMaster Bujold",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Ekaterin fans",
+          "Vorkosigan completionists",
+          "cosy science fiction",
+          "environmental themes",
+          "emotional warmth"
+        ],
+        "negative": [
+          "novella length — brief",
+          "requires series familiarity for full resonance",
+          "very low stakes compared to series norms"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Last of the Atalanteans - P. L. Stuart": {
       "title": "The Last of the Atalanteans",
       "author": "P. L. Stuart",
       "series": "The Drowned Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up immediately after the first book, Prince Othrun infiltrates the usurped kingdom of Lynchun in disguise to restore his ally Wely to the throne — while his Atalantean followers are left in uncertain hands and the dangerous mage-queen Lysi continues to ensnare his ambitions. The pace escalates sharply with visceral battle scenes and deepening political intrigue.",
+      "tone": "grimdark, action-driven, psychologically probing",
+      "pacing": "Fast",
+      "themes": [
+        "ambition and legitimacy",
+        "faith tested by experience",
+        "gender and power",
+        "colonialism",
+        "the price of alliance"
+      ],
+      "setting": "The kingdom of Lynchun and surrounding lands on the continent of Eltnia",
+      "comparable_books": [
+        "The King of Thorns - Mark Lawrence",
+        "Before They Are Hanged - Joe Abercrombie",
+        "The Way of Shadows - Brent Weeks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "faster pacing than Book 1",
+          "grimdark battle scenes",
+          "political complexity",
+          "expanding world-building",
+          "series investment pays off"
+        ],
+        "negative": [
+          "requires Book 1",
+          "protagonist remains morally troubling",
+          "dense prose style continues"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Action-heavy but prose density remains better suited to print.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ethan of Athos - Lois McMaster Bujold": {
       "title": "Ethan of Athos",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dr. Ethan Urquhart, a naïve obstetrician from the all-male planet Athos, is sent into the wider galaxy to find replacement ovarian tissue cultures after a suspicious shipment fails — and finds himself entangled with Cetagandan agents, a telepathic fugitive, and the inimitable mercenary officer Elli Quinn. A fast, funny, standalone-friendly SF adventure that serves as an unusual outlier in the Vorkosigan sequence.",
+      "tone": "light, witty, swiftly plotted",
+      "pacing": "Fast",
+      "themes": [
+        "gender and society",
+        "homosexuality and normalisation",
+        "reproductive technology",
+        "innocence encountering the wider world",
+        "prejudice examined from inside"
+      ],
+      "setting": "The space station Kline Station; set in the broader Vorkosigan interstellar universe but with no Vorkosigan family involvement",
+      "comparable_books": [
+        "A Civil Campaign - Lois McMaster Bujold",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gender-exploration SF",
+          "Elli Quinn fans",
+          "fast comedic adventure",
+          "can work as near-standalone",
+          "LGBTQ+ themes handled thoughtfully"
+        ],
+        "negative": [
+          "Miles Vorkosigan is absent",
+          "feels like an outlier — some fans feel cheated",
+          "lighter than the Miles-centric books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Last Murder at the End of the World - Stuart Turton": {
