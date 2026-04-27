@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3613,
-  "total_pending": 987,
+  "total_catalogued": 3633,
+  "total_pending": 967,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -198936,272 +198936,488 @@
     },
     "The Regulators - Stephen King": {
       "title": "The Regulators",
-      "author": "Stephen King",
+      "author": "Stephen King (as Richard Bachman)",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a quiet suburban cul-de-sac, a young autistic boy possessed by a malevolent entity begins reshaping reality into a violent, television-inspired nightmare, trapping residents in a deadly battle for survival. The novel serves as a dark mirror-world companion to King's simultaneous release Desperation.",
+      "tone": "Visceral, pulpy, surreal, darkly satirical",
+      "pacing": "Fast",
+      "themes": [
+        "suburban horror",
+        "media violence",
+        "childhood innocence corrupted",
+        "reality distortion",
+        "survival"
+      ],
+      "setting": "Contemporary suburban America; a single cul-de-sac that warps into a nightmarish alternate reality",
+      "comparable_books": [
+        "Desperation - Stephen King",
+        "It - Stephen King",
+        "The Tommyknockers - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive horror pacing",
+          "King's trademark suburban dread",
+          "experimental structure",
+          "dark satire of pop culture",
+          "violent action set-pieces"
+        ],
+        "negative": [
+          "very graphic violence",
+          "chaotic non-linear structure",
+          "no redemptive arc",
+          "companion novel benefits from reading Desperation first"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child in peril"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ship of Destiny - Robin Hobb": {
       "title": "Ship of Destiny",
       "author": "Robin Hobb",
       "series": "Liveship Traders",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Liveship Traders trilogy brings the fates of the Vestrit family, the serpents, and the living ships to a tumultuous resolution as war, betrayal, and transformation reshape the Rain Wild world. Long-simmering conflicts between pirates, merchants, and sea serpents reach their devastating and emotionally powerful climax.",
+      "tone": "Lyrical, emotionally intense, epic, bittersweet",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and transformation",
+        "family loyalty",
+        "freedom vs. obligation",
+        "the nature of sentience",
+        "sacrifice"
+      ],
+      "setting": "The Cursed Shores, Rain Wilds, and the high seas of the Six Duchies universe; secondary world, pre-industrial maritime",
+      "comparable_books": [
+        "Ship of Magic - Robin Hobb",
+        "The Mad Ship - Robin Hobb",
+        "Assassin's Apprentice - Robin Hobb"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "deep character work",
+          "morally complex cast",
+          "lyrical prose",
+          "emotional payoff",
+          "found family",
+          "non-human sentience themes"
+        ],
+        "negative": [
+          "slow pacing",
+          "large ensemble cast can be overwhelming",
+          "requires reading prior books",
+          "some plotlines feel stretched"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Hobb's lyrical, character-driven prose translates exceptionally well to audio performance.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Short Order Dad - Robert Rosenthal": {
-      "title": "Short Order Dad",
+      "title": "Short Order Dad: One Guy's Guide to Making Food Fun and Hassle-Free",
       "author": "Robert Rosenthal",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Cookbook",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A humorous yet practical cookbook aimed at dads and novice home cooks, teaching basic culinary techniques and offering simple, family-tested recipes from appetizers to desserts. Written by an ad executive and comedian with a professional cooking degree, it blends wit with accessible, no-fuss cooking instruction.",
+      "tone": "Lighthearted, humorous, encouraging, practical",
+      "pacing": "Moderate",
+      "themes": [
+        "home cooking",
+        "family meals",
+        "accessible technique",
+        "humor in the kitchen",
+        "father involvement"
+      ],
+      "setting": "Non-fiction / cookbook — modern home kitchen",
+      "comparable_books": [
+        "Dad's Own Cookbook - Bob Sloan",
+        "How to Cook Everything - Mark Bittman",
+        "The Homesick Texan Cookbook - Lisa Fain"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "beginner-friendly",
+          "humorous voice",
+          "family-tested recipes",
+          "wide recipe variety",
+          "practical pantry advice"
+        ],
+        "negative": [
+          "not for advanced cooks",
+          "some recipes very simple",
+          "dad-centric framing may not appeal to all readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Force Heretic II: Refugee - Sean Williams & Shane Dix": {
       "title": "Force Heretic II: Refugee",
       "author": "Sean Williams & Shane Dix",
       "series": "Star Wars: The New Jedi Order",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 16",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Luke Skywalker and his allies continue searching the Unknown Regions for the legendary planet Zonama Sekot, while Han and Leia deal with political unrest on worlds fractured by the Yuuzhan Vong invasion. The novel deepens the ongoing conflict and explores the desperate search for a key to defeating the alien invaders.",
+      "tone": "Propulsive, war-weary, operatic",
+      "pacing": "Fast",
+      "themes": [
+        "galactic war",
+        "desperate alliances",
+        "searching for salvation",
+        "refugee crises",
+        "the Force's mysteries"
+      ],
+      "setting": "Far-future Star Wars galaxy; the Unknown Regions and fractured Republic worlds during the Yuuzhan Vong War",
+      "comparable_books": [
+        "Vector Prime - R.A. Salvatore",
+        "Traitor - Matthew Stover",
+        "Dark Journey - Elaine Cunningham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high-stakes galactic conflict",
+          "large ensemble cast",
+          "Star Wars expanded universe lore",
+          "fast-paced action"
+        ],
+        "negative": [
+          "requires significant prior series knowledge",
+          "middle-of-series pacing",
+          "variable quality across NJO authors"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Thyme and Place: Medieval Feasts and Recipes for the Modern Table - Lisa Graves": {
       "title": "A Thyme and Place: Medieval Feasts and Recipes for the Modern Table",
-      "author": "Lisa Graves",
+      "author": "Lisa Graves & Tricia Cohen",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Cookbook",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A illustrated historical cookbook presenting 35 recipes inspired by medieval feasts and calendar festivals, adapted for modern kitchens, accompanied by historical tidbits and whimsical hand-drawn illustrations. It blends culinary history with practical cooking, revisiting medieval dishes from seasonal celebrations throughout the year.",
+      "tone": "Whimsical, educational, historically flavoured, accessible",
+      "pacing": "Slow",
+      "themes": [
+        "medieval food history",
+        "seasonal feasting",
+        "culinary tradition",
+        "historical adaptation",
+        "illustrated reference"
+      ],
+      "setting": "Non-fiction / cookbook — medieval European culinary tradition adapted for modern tables",
+      "comparable_books": [
+        "The Tudor Tutor - Barb Alexander",
+        "An Edible History of Humanity - Tom Standage",
+        "The Medieval Cookbook - Maggie Black"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "history buffs",
+          "foodies",
+          "beautiful illustrations",
+          "seasonal recipes",
+          "accessible historical context"
+        ],
+        "negative": [
+          "historical accuracy contested by some reviewers",
+          "niche appeal",
+          "some anachronistic ingredients noted by critics"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Cookbook with hand-drawn illustrations and recipes; visual format is essential.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sekaran - Rachel Neumeier": {
       "title": "Sekaran",
       "author": "Rachel Neumeier",
       "series": "Tuyo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 11",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told through a novel-length series of linked vignettes, Sekaran chronicles the life of a would-be king of the summer country, revealing key moments of blood, friendship, and loyalty that span the breadth of the entire Tuyo series. A character study rather than a plot-driven narrative, it illuminates Sekaran's relationships and his role in the world's transformation.",
+      "tone": "Lyrical, intimate, reflective, emotionally rich",
+      "pacing": "Slow",
+      "themes": [
+        "loyalty and kinship",
+        "political transformation",
+        "cross-cultural understanding",
+        "identity",
+        "the passage of time"
+      ],
+      "setting": "The Tuyo world — summer country (Lau lands) and glimpses of the winter country; secondary fantasy world with distinct seasonal metaphysics",
+      "comparable_books": [
+        "Tuyo - Rachel Neumeier",
+        "Tasmakat - Rachel Neumeier",
+        "The Goblin Emperor - Katherine Addison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "deep character studies",
+          "vignette/linked-story structure",
+          "rich world-building",
+          "themes of trust and loyalty",
+          "emotionally rewarding for series fans"
+        ],
+        "negative": [
+          "not a good entry point to the series",
+          "no standalone plot arc",
+          "requires knowledge of prior books",
+          "slow and meditative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Hedesa - Rachel Neumeier": {
       "title": "Hedesa",
       "author": "Rachel Neumeier",
       "series": "Tuyo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A direct sequel to Tano, Hedesa follows the young Ugaro warrior Tano as he accompanies a mixed expedition of Ugaro and Lau into the mysterious starlit country, where the gentle Tarashana people may not be as harmless as everyone believes. The novel expands the world significantly while continuing to explore themes of cross-cultural trust and hidden threats.",
+      "tone": "Lyrical, adventurous, warmly character-driven, mysterious",
+      "pacing": "Moderate",
+      "themes": [
+        "cross-cultural understanding",
+        "trust and loyalty",
+        "exploration of the unknown",
+        "found family",
+        "the nature of threats"
+      ],
+      "setting": "The Tuyo world — the starlit country (Tarashana lands) beyond the mountains; secondary fantasy world with seasonal and metaphysical geography",
+      "comparable_books": [
+        "Tano - Rachel Neumeier",
+        "Tasmakat - Rachel Neumeier",
+        "The Long Way to a Small, Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich world-building",
+          "ensemble cast",
+          "cross-cultural dynamics",
+          "lyrical prose",
+          "cozy-adventurous tone"
+        ],
+        "negative": [
+          "requires prior series reading",
+          "slow pacing for action-oriented readers",
+          "sequel-dependent"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Ravager - Andy Peloquin": {
       "title": "Ravager",
       "author": "Andy Peloquin",
       "series": "Darkblade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The immortal assassin known only as the Hunter pursues his quarry — a treacherous priest sheltered by the deadly Scarlet Ghosts assassin organization — into the Princelands, only to have his mission violently derailed and be forced into an uneasy alliance with old enemies. Amid betrayal and overwhelming odds, the Hunter must unleash his full lethal fury.",
+      "tone": "Grimdark, propulsive, brutal, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance",
+        "identity and monstrosity",
+        "unlikely alliances",
+        "moral ambiguity",
+        "found family"
+      ],
+      "setting": "The world of Einan — the Princelands; a gritty secondary fantasy world with demons and dark magic",
+      "comparable_books": [
+        "Assassin's Creed: Renaissance - Oliver Bowden",
+        "The Blade Itself - Joe Abercrombie",
+        "Brent Weeks' Night Angel Trilogy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark action",
+          "morally grey immortal protagonist",
+          "fast pacing",
+          "long-running series payoffs",
+          "brutal fight scenes"
+        ],
+        "negative": [
+          "heavy series investment required",
+          "graphic violence throughout",
+          "little breathing room between action sequences"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Rihasi - Rachel Neumeier": {
       "title": "Rihasi",
       "author": "Rachel Neumeier",
       "series": "Tuyo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set two years after Tasmakat, a brilliant and determined young Lau noblewoman named Rihasi must reach the king's most powerful scepter-holder, Lord Aras, to bring down a dangerous criminal enterprise — but the road is treacherous and those who would stop her are many. A new-character-focused adventure that reads as an action caper within the Tuyo world.",
+      "tone": "Warmly adventurous, witty, character-driven, romantic undertones",
+      "pacing": "Fast",
+      "themes": [
+        "female competence and agency",
+        "cross-cultural alliance",
+        "justice and crime",
+        "trust",
+        "romance"
+      ],
+      "setting": "The Tuyo world — the Lau summer country and the winter country; secondary fantasy world with distinct seasonal metaphysics",
+      "comparable_books": [
+        "Keraunani - Rachel Neumeier",
+        "The Goblin Emperor - Katherine Addison",
+        "A Natural History of Dragons - Marie Brennan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hyper-competent female protagonist",
+          "romantic subplot",
+          "fast-paced caper structure",
+          "strong character dynamics",
+          "accessible to newer series readers"
+        ],
+        "negative": [
+          "spoilers for earlier books if read out of order",
+          "romance subplot not for all readers",
+          "world best appreciated with series context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "A Clash of Fates - Philip C. Quaintrell": {
       "title": "A Clash of Fates",
       "author": "Philip C. Quaintrell",
       "series": "The Echoes Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of The Echoes Saga sees Alijah Galfrey poised to reshape the world of Verda through any means necessary, as a beleaguered Rebellion makes its desperate final stand against his overwhelming forces. Fate's long-woven web finally snaps taut in an emotionally charged finale spanning 1.6 million words of series history.",
+      "tone": "Epic, cinematic, emotionally resonant, action-heavy",
+      "pacing": "Fast",
+      "themes": [
+        "fate vs. free will",
+        "heroism and sacrifice",
+        "redemption",
+        "power and tyranny",
+        "the cost of war"
+      ],
+      "setting": "The world of Verda — a secondary high fantasy world of men, elves, dwarves, and dragons spanning multiple kingdoms",
+      "comparable_books": [
+        "Rise of the Ranger - Philip C. Quaintrell",
+        "The Blade Itself - Joe Abercrombie",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic high fantasy scale",
+          "satisfying series conclusion",
+          "large ensemble cast",
+          "dragon riders",
+          "cinematic battle scenes"
+        ],
+        "negative": [
+          "requires reading all 9 prior books",
+          "redemption arc divides readers",
+          "pacing issues in middle sections",
+          "very long series commitment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Old Soldiers Never Die - Sandy Mitchell": {
@@ -199209,269 +199425,489 @@
       "author": "Sandy Mitchell",
       "series": "Ciaphas Cain",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Commissar Ciaphas Cain and his malodorous aide Jurgen are deployed to the planet Lentonia to mop up after an insurrection, only to find themselves battling a warp-tainted plague that turns its victims into flesh-eating zombies. A darkly humorous novella in the Warhammer 40,000 universe, originally a limited Black Library event exclusive.",
+      "tone": "Darkly comic, action-packed, satirical, breezy",
+      "pacing": "Fast",
+      "themes": [
+        "reluctant heroism",
+        "the absurdity of war",
+        "survival against the odds",
+        "undead horror",
+        "military camaraderie"
+      ],
+      "setting": "Warhammer 40,000 universe — the planet Lentonia; far-future grimdark science fantasy",
+      "comparable_books": [
+        "For the Emperor - Sandy Mitchell",
+        "Caves of Ice - Sandy Mitchell",
+        "15 Lives of Harry August - Claire North"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark humour",
+          "reluctant anti-hero protagonist",
+          "fast-paced action",
+          "Warhammer 40K lore",
+          "zombie horror with wit"
+        ],
+        "negative": [
+          "very short — novella length",
+          "benefits from prior Cain series knowledge",
+          "Warhammer 40K setting not for all readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Last of the Dragorn - Philip C. Quaintrell": {
       "title": "Last of the Dragorn",
       "author": "Philip C. Quaintrell",
       "series": "The Echoes Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Alijah's reign sweeping across Verda and the Rebellion scattered across countless battlefields, Inara Galfrey fights as both sword and shield while seeking the one path that might stop her brother — a journey into forgotten lands. The penultimate chapter of the series raises the stakes to their breaking point as fate's final move approaches.",
+      "tone": "Epic, tense, emotionally weighty, cinematic",
+      "pacing": "Fast",
+      "themes": [
+        "sibling conflict",
+        "rebellion vs. tyranny",
+        "prophecy and fate",
+        "sacrifice",
+        "the burden of destiny"
+      ],
+      "setting": "The world of Verda — multiple kingdoms, dwarven strongholds, and forgotten lands; secondary high fantasy world",
+      "comparable_books": [
+        "The Knights of Erador - Philip C. Quaintrell",
+        "A Clash of Fates - Philip C. Quaintrell",
+        "The Stormlight Archive - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "penultimate epic fantasy momentum",
+          "dragon riders",
+          "large-scale war narrative",
+          "multi-POV ensemble",
+          "fast pacing"
+        ],
+        "negative": [
+          "requires all prior books",
+          "some pacing criticism in reviews",
+          "very long series investment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Marag - Rachel Neumeier": {
       "title": "Marag",
       "author": "Rachel Neumeier",
       "series": "Tuyo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set twenty years before the events of Tuyo, this prequel follows Marag inKarano — the mother of the series' hero Ryo — as she navigates a courtship with the formidable warrior Sinowa inGara while confronting a mysterious curse spreading ill luck from the mountains at the winter Convocation. A romantic fantasy adventure rooted in Ugaro culture and folklore.",
+      "tone": "Lyrical, warmly folkloric, romantic, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "courtship and agency",
+        "folklore and the sacred",
+        "curse and healing",
+        "cultural identity",
+        "the singer's role"
+      ],
+      "setting": "The Tuyo world — winter country (Ugaro tribal lands) at the winter Convocation; secondary fantasy world with seasonal metaphysics",
+      "comparable_books": [
+        "Tuyo - Rachel Neumeier",
+        "Spinning Silver - Naomi Novik",
+        "The Bear and the Nightingale - Katherine Arden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folklore-rich atmosphere",
+          "strong female protagonist",
+          "romance with agency",
+          "cozy-adventurous tone",
+          "enriches series lore"
+        ],
+        "negative": [
+          "standalone prequel with modest stakes",
+          "low tension compared to main arc books",
+          "less accessible without series context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Uncrowned - Will Wight": {
       "title": "Uncrowned",
       "author": "Will Wight",
       "series": "Cradle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lindon and his companions travel to the Ninecloud Court to compete in the Uncrowned King Tournament, a contest among the greatest young sacred artists in the world, as looming Dreadgod threats demand ever-faster advancement. The tournament arc escalates the power scale dramatically while introducing a broader cast of rivals and world powers.",
+      "tone": "Propulsive, tournament-driven, escalating, energetic",
+      "pacing": "Fast",
+      "themes": [
+        "cultivation and self-improvement",
+        "competition and rivalry",
+        "power and responsibility",
+        "friendship under pressure",
+        "global stakes"
+      ],
+      "setting": "Cradle — a secondary cultivation fantasy world inspired by xianxia; the Ninecloud Court tournament grounds",
+      "comparable_books": [
+        "Underlord - Will Wight",
+        "Soulsmith - Will Wight",
+        "Sufficiently Advanced Magic - Andrew Rowe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced cultivation progression",
+          "tournament arc excitement",
+          "satisfying power-ups",
+          "expanding world-building",
+          "short chapters"
+        ],
+        "negative": [
+          "requires prior 6 books",
+          "power-scaling can feel arbitrary to newcomers",
+          "light on character depth",
+          "xianxia-adjacent tropes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Reckoner - Andy Peloquin": {
       "title": "Reckoner",
       "author": "Andy Peloquin",
       "series": "Darkblade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Trapped in the besieged City of the Dead, the Hunter fights to protect his daughter Jaia and his gathered family against overwhelming forces threatening to destroy Shalandra, while every shadow conceals enemies who may be closer than he thinks. The eighth Darkblade novel pushes the Hunter's emotional limits as the stakes for those he loves reach a new peak.",
+      "tone": "Grimdark, intense, emotionally charged, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "fatherhood and identity",
+        "survival against impossible odds",
+        "loyalty and betrayal",
+        "the cost of violence"
+      ],
+      "setting": "The world of Einan — the City of the Dead (Shalandra); a gritty secondary fantasy world under siege",
+      "comparable_books": [
+        "Defender - Andy Peloquin",
+        "Ravager - Andy Peloquin",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intense siege action",
+          "found family emotional beats",
+          "morally complex immortal protagonist",
+          "grimdark atmosphere",
+          "fast pacing"
+        ],
+        "negative": [
+          "requires all prior books",
+          "graphic violence throughout",
+          "very dark tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Ravaged Land - C. M. Carney": {
       "title": "Ravaged Land",
       "author": "C. M. Carney",
       "series": "The Realms",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the hero Gryph is torn from the Realms by the Light — an ancient secret society battling the High God Aluran — he discovers that even among supposed allies, shadows fester, and to save his sister and friends he must somehow win a war between gods. The seventh entry in the Realms series raises the stakes to a divine level.",
+      "tone": "Epic, action-driven, game-mechanic-infused, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "divine war and its cost",
+        "betrayal within alliances",
+        "heroic sacrifice",
+        "game-world progression",
+        "saving the innocent"
+      ],
+      "setting": "The Realms — a LitRPG/portal fantasy secondary world with RPG mechanics, stats, and levelling systems",
+      "comparable_books": [
+        "Barrow King - C.M. Carney",
+        "Ascend Online - Luke Chmilenko",
+        "The Completionist Chronicles - Dakota Krout"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG progression mechanics",
+          "high-stakes divine conflict",
+          "fast pacing",
+          "long-running series investment",
+          "gaming-inspired world-building"
+        ],
+        "negative": [
+          "requires prior 6 books",
+          "LitRPG stats-and-levels format not for everyone",
+          "can feel formulaic to non-fans of genre"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Defender - Andy Peloquin": {
       "title": "Defender",
       "author": "Andy Peloquin",
       "series": "Darkblade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The immortal Hunter finds himself in an unfamiliar role when he is forced to protect his daughter Jaia from the relentless pursuit of the Secret Keepers — tongueless alchemist warrior-priests who will stop at nothing to claim her. An emotionally charged instalment in which the Hunter's legendary ferocity meets the vulnerability of unexpected fatherhood.",
+      "tone": "Grimdark, emotionally vulnerable, intense, action-packed",
+      "pacing": "Fast",
+      "themes": [
+        "fatherhood and identity",
+        "protection vs. control",
+        "the limits of power",
+        "loyalty",
+        "secrets and revelation"
+      ],
+      "setting": "The world of Einan — multiple locations across the gritty secondary fantasy world as the Hunter and Jaia flee their pursuers",
+      "comparable_books": [
+        "Reckoner - Andy Peloquin",
+        "Awakener - Andy Peloquin",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotionally resonant father-daughter dynamic",
+          "relentless action pacing",
+          "morally grey immortal protagonist",
+          "escalating stakes",
+          "grimdark atmosphere"
+        ],
+        "negative": [
+          "requires prior 6 books",
+          "graphic violence",
+          "very dark tone throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Underlord - Will Wight": {
       "title": "Underlord",
       "author": "Will Wight",
       "series": "Cradle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lindon and his companions race to reach the Underlord stage of advancement before the next Dreadgod attack threatens Sacred Valley and the wider world, forcing Lindon to confront deep truths about his past and his path forward. A pivotal turning point in the Cradle series that delivers major advancement and emotional payoffs.",
+      "tone": "Propulsive, emotionally resonant, escalating, triumphant",
+      "pacing": "Fast",
+      "themes": [
+        "cultivation and self-mastery",
+        "identity and origins",
+        "sacrifice for family",
+        "pushing past limits",
+        "the cost of power"
+      ],
+      "setting": "Cradle — a secondary cultivation fantasy world; Sacred Valley and the wider world of sacred artists and Dreadgods",
+      "comparable_books": [
+        "Uncrowned - Will Wight",
+        "Soulsmith - Will Wight",
+        "Mother of Learning - Domagoj Kurmaic"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "major power progression milestone",
+          "emotional pay-offs from earlier books",
+          "fast-paced cultivation fantasy",
+          "short punchy chapters",
+          "satisfying advancement arcs"
+        ],
+        "negative": [
+          "requires prior 5 books",
+          "power escalation can strain credulity",
+          "xianxia-adjacent tropes",
+          "thin on literary depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Knights of Erador - Philip C. Quaintrell": {
       "title": "The Knights of Erador",
       "author": "Philip C. Quaintrell",
       "series": "The Echoes Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fifteen years of peace shatter as whispers of rebellion reach the king and a new, terrifying threat stirs beyond Illian's borders, forcing old heroes back into the fray while dwarven refugees and darker machinations reshape the political landscape of Verda. The opening book of the final trilogy within the Echoes Saga, widely regarded as the series' strongest entry.",
+      "tone": "Epic, intensifying, politically charged, dramatic",
+      "pacing": "Moderate",
+      "themes": [
+        "the fragility of peace",
+        "political betrayal",
+        "heroism and mortality",
+        "fate and destiny",
+        "war and consequence"
+      ],
+      "setting": "The world of Verda — the kingdom of Illian and surrounding lands; secondary high fantasy world with elves, dwarves, and dragons",
+      "comparable_books": [
+        "Last of the Dragorn - Philip C. Quaintrell",
+        "A Clash of Fates - Philip C. Quaintrell",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic high fantasy scale",
+          "political intrigue",
+          "villain-origin arc",
+          "beloved returning cast",
+          "high reader satisfaction"
+        ],
+        "negative": [
+          "requires all prior 6 books",
+          "time jump may disorient readers",
+          "very long series commitment required"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Conviction - Aaron Allston": {
       "title": "Conviction",
       "author": "Aaron Allston",
       "series": "Star Wars: Fate of the Jedi",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the political crisis in the Galactic Alliance deepens and the Sith under Abeloth tighten their grip, Luke and Ben Skywalker continue their pursuit while Han and Leia work to expose the conspiracy threatening the Jedi Order's survival. Allston's instalment in the nine-book series brings his trademark wit and action to the escalating conflict.",
+      "tone": "Propulsive, witty, action-driven, politically layered",
+      "pacing": "Fast",
+      "themes": [
+        "political corruption",
+        "Jedi survival",
+        "family loyalty",
+        "the nature of the dark side",
+        "resistance against tyranny"
+      ],
+      "setting": "Far-future Star Wars galaxy — post-Legacy of the Force era, Galactic Alliance and Jedi Temple politics",
+      "comparable_books": [
+        "Outcast - Aaron Allston",
+        "Vortex - Troy Denning",
+        "Backlash - Aaron Allston"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Allston's trademark humour",
+          "fast Star Wars action",
+          "political intrigue",
+          "Jedi/Sith conflict",
+          "expanded universe lore"
+        ],
+        "negative": [
+          "requires significant prior series knowledge",
+          "middle-of-series pacing",
+          "dense continuity for casual Star Wars fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Brief History of Chronomancy - Andrew Rowe": {
