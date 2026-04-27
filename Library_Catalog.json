@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2149,
-  "total_pending": 2451,
+  "total_catalogued": 2169,
+  "total_pending": 2431,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -127608,108 +127608,194 @@
       "title": "Forge of the High Mage",
       "author": "Ian C. Esslemont",
       "series": "Path to Ascendancy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Emperor Kellanved orders an audacious invasion of the Falari archipelago, the untested High Mage Tayschrenn must confront an ancient and devastating force awakened in the Ice Wastes — a trial that will forge him into the formidable mage readers know from the main Malazan sequence.",
+      "tone": "grimdark, propulsive, ensemble-driven",
+      "pacing": "Fast",
+      "themes": [
+        "empire-building",
+        "coming into power",
+        "unlikely alliances",
+        "war",
+        "identity"
+      ],
+      "setting": "The Malazan Empire's early expansion — the Falari islands and Ice Wastes, pre-Malazan Book of the Fallen",
+      "comparable_books": [
+        "Gardens of the Moon - Steven Erikson",
+        "Dancer's Lament - Ian C. Esslemont",
+        "The Black Company - Glen Cook"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Malazan lore enthusiasts",
+          "large ensemble casts",
+          "military fantasy",
+          "morally grey protagonists",
+          "prequel payoff for series readers",
+          "fast-paced action set pieces"
+        ],
+        "negative": [
+          "new readers to Malazan (heavy prior knowledge assumed)",
+          "character-light action concerns",
+          "readers who dislike prequels with known survivors"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Age of Myth - Michael J. Sullivan": {
       "title": "Age of Myth",
       "author": "Michael J. Sullivan",
       "series": "The Legends of the First Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a human warrior kills one of the seemingly immortal Fhrey — gods in the eyes of humankind — it ignites a rebellion that will reshape the world, following a reluctant hero, a young seer, and a grieving chieftain's wife as they stand between their people and annihilation.",
+      "tone": "adventurous, accessible, mythic",
+      "pacing": "Moderate",
+      "themes": [
+        "gods vs. mortals",
+        "rebellion",
+        "destiny",
+        "leadership",
+        "myth-making"
+      ],
+      "setting": "The ancient world of Elan, 3,000 years before the Riyria novels — a pre-imperial bronze-age-style fantasy world",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Way of Kings - Brandon Sanderson",
+        "Theft of Swords - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible epic fantasy",
+          "propulsive plotting",
+          "sympathetic ensemble cast",
+          "myth and legend as narrative backdrop",
+          "readers who enjoyed Riyria"
+        ],
+        "negative": [
+          "grimdark fans",
+          "readers wanting morally complex antiheroes",
+          "slow burn world-building devotees"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds's narration of the Sullivan backlist is widely praised and highly recommended.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Age of Swords - Michael J. Sullivan": {
       "title": "Age of Swords",
       "author": "Michael J. Sullivan",
       "series": "The Legends of the First Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The human uprising against the Fhrey continues as bitter rivalries within the clans threaten the alliance from within, while Persephone leads a desperate quest into darkness to find weapons capable of fighting the gods.",
+      "tone": "adventurous, tense, mythic",
+      "pacing": "Moderate",
+      "themes": [
+        "rebellion",
+        "unity vs. division",
+        "sacrifice",
+        "power",
+        "found family"
+      ],
+      "setting": "The ancient world of Elan — forests, dwarven underground realms, and contested frontier territories",
+      "comparable_books": [
+        "Age of Myth - Michael J. Sullivan",
+        "The Blade Itself - Joe Abercrombie",
+        "The Eye of the World - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble quest narratives",
+          "escalating stakes",
+          "character-driven fantasy",
+          "accessible prose",
+          "strong female leads"
+        ],
+        "negative": [
+          "grimdark fans",
+          "readers wanting standalone resolution"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds narrates; consistently rated among the best fantasy audio performances.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Age of War - Michael J. Sullivan": {
       "title": "Age of War",
       "author": "Michael J. Sullivan",
       "series": "The Legends of the First Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The fragile human-Fhrey alliance is tested as never before when the Fhrey marshal sorcerers and dragons to crush the rebellion, forcing Persephone to hold together fractious clans while confronting personal betrayal and heartbreaking cost.",
+      "tone": "adventurous, emotionally charged, escalating",
+      "pacing": "Fast",
+      "themes": [
+        "war and sacrifice",
+        "leadership",
+        "betrayal",
+        "love and loss",
+        "the cost of power"
+      ],
+      "setting": "The ancient world of Elan — besieged fortress of Alon Rhist and the surrounding contested territories",
+      "comparable_books": [
+        "Age of Swords - Michael J. Sullivan",
+        "A Storm of Swords - George R. R. Martin",
+        "The Heroes - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high-stakes battle sequences",
+          "emotional character arcs",
+          "ensemble fantasy",
+          "series readers rewarded"
+        ],
+        "negative": [
+          "readers wanting standalone resolutions",
+          "grimdark fans expecting nihilism"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds narrates; widely considered one of the finest audiobook series in fantasy.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Small Miracles - Olivia Atwater": {
@@ -127717,53 +127803,97 @@
       "author": "Olivia Atwater",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Contemporary Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gadriel, a fallen angel of petty temptations saddled with a gambling debt, is tasked with tempting the impossibly virtuous Holly Harker into a few small sins — but what should be simple work soon uncovers deeper mysteries of grief, family, and what it truly means to help someone.",
+      "tone": "warmly comic, whimsical, bittersweet",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "grief",
+        "found family",
+        "identity and gender",
+        "celestial bureaucracy",
+        "small kindnesses"
+      ],
+      "setting": "Contemporary England — a quiet town, a school, and a celestial accounting system operating just below the surface of modern life",
+      "comparable_books": [
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "The Good Place (TV) - equivalent in book form",
+        "Half a Soul - Olivia Atwater"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "Pratchett/Good Omens fans",
+          "gender-fluid characters",
+          "found family",
+          "low-stakes personal drama",
+          "quick reads"
+        ],
+        "negative": [
+          "readers wanting high-stakes epic fantasy",
+          "those who dislike footnote-heavy narration",
+          "genre romance readers expecting HEA"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Marked - Benedict Jacka": {
       "title": "Marked",
       "author": "Benedict Jacka",
       "series": "An Alex Verus Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Diviner-mage Alex Verus, now a reluctant member of the Light Council, finds himself simultaneously under investigation by the Council and in Richard Drakh's crosshairs as his old master makes a bold move that threatens both Alex and Anne.",
+      "tone": "propulsive, darkening, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "power and corruption",
+        "loyalty",
+        "identity",
+        "moral compromise",
+        "political intrigue"
+      ],
+      "setting": "Contemporary London and the hidden magical world of the Light and Dark Councils",
+      "comparable_books": [
+        "Storm Front - Jim Butcher",
+        "Rivers of London - Ben Aaronovitch",
+        "Fated - Benedict Jacka"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy fans",
+          "propulsive first-person narration",
+          "escalating series arcs",
+          "morally grey protagonist",
+          "London setting"
+        ],
+        "negative": [
+          "readers starting mid-series (heavy continuity)",
+          "those wanting lighter urban fantasy",
+          "romance-centric readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sharp Objects - Gillian Flynn": {
@@ -127771,134 +127901,243 @@
       "author": "Gillian Flynn",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Psychological Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Journalist Camille Preaker returns to her small Missouri hometown to investigate the murders of two young girls, and finds herself confronting her own history of self-harm, her deeply disturbed mother, and the town's festering secrets.",
+      "tone": "darkly gothic, claustrophobic, deeply unsettling",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "trauma and self-harm",
+        "toxic femininity",
+        "dysfunctional family",
+        "small-town secrets",
+        "memory and identity"
+      ],
+      "setting": "Wind Gap, a small fictional town in Missouri — stifling, gothic, present day",
+      "comparable_books": [
+        "Gone Girl - Gillian Flynn",
+        "Dark Places - Gillian Flynn",
+        "The Woman in the Window - A.J. Finn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological thriller fans",
+          "unreliable narrators",
+          "gothic atmosphere",
+          "female-centred dark fiction",
+          "slow-burn payoff readers"
+        ],
+        "negative": [
+          "readers sensitive to self-harm content",
+          "those wanting fast pacing",
+          "cozy mystery readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "self-harm",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lords of the Sith - Paul S. Kemp": {
       "title": "Lords of the Sith",
       "author": "Paul S. Kemp",
-      "series": null,
+      "series": "Star Wars (Canon)",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Emperor Palpatine and Darth Vader are stranded on the Twi'lek planet Ryloth after a rebel ambush, the Sith Lords must fight their way through an insurgency led by Cham Syndulla — while their fragile master-apprentice bond is tested in the field.",
+      "tone": "tense, action-heavy, character-focused on villainy",
+      "pacing": "Fast",
+      "themes": [
+        "master and apprentice",
+        "power and loyalty",
+        "rebellion vs. empire",
+        "identity and the dark side"
+      ],
+      "setting": "Ryloth and its surrounding space, Star Wars galaxy, circa 14 BBY — between Revenge of the Sith and Rebels",
+      "comparable_books": [
+        "Darth Vader: Dark Lord of the Sith - Charles Soule",
+        "Tarkin - James Luceno",
+        "A New Dawn - John Jackson Miller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "Vader/Palpatine character studies",
+          "action-driven tie-in novels",
+          "Rebels TV show viewers"
+        ],
+        "negative": [
+          "readers unfamiliar with Star Wars lore",
+          "those wanting standalone non-IP fiction",
+          "character depth seekers (secondary cast thin)"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Jonathan Davis, one of Star Wars audio's most acclaimed narrators.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "League of Dragons - Naomi Novik": {
       "title": "League of Dragons",
       "author": "Naomi Novik",
       "series": "Temeraire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Historical Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The final volume of the Temeraire series brings Captain Laurence and his dragon to Napoleon's disastrous Russian campaign and its aftermath, as Temeraire works to forge a league of dragons across nations to end the war once and for all.",
+      "tone": "sweeping, bittersweet, adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "freedom and dragon rights",
+        "war and its cost",
+        "loyalty",
+        "found family",
+        "the end of an era"
+      ],
+      "setting": "Napoleonic Europe — Russia, Poland, and Western Europe, alternate history ca. 1813",
+      "comparable_books": [
+        "His Majesty's Dragon - Naomi Novik",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "Sharpe's Rifles - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fantasy fans",
+          "series conclusion readers",
+          "dragon-bond narratives",
+          "Napoleonic era fiction",
+          "found family"
+        ],
+        "negative": [
+          "new readers (requires full series context)",
+          "readers wanting faster pacing in later entries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simon Vance's narration across the Temeraire series is considered definitive; an outstanding listening experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Illborn - Daniel T. Jackson": {
       "title": "Illborn",
       "author": "Daniel T. Jackson",
       "series": "The Illborn Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a medieval world dominated by religious persecution, four young people across a feudal continent begin independently developing forbidden supernatural powers — powers that will shatter their lives and draw them toward a mysterious Gate that haunts their dreams.",
+      "tone": "grimdark, character-driven, tense",
+      "pacing": "Moderate",
+      "themes": [
+        "religion vs. power",
+        "survival",
+        "identity",
+        "coming of age",
+        "political persecution"
+      ],
+      "setting": "A medieval European-inspired continent with Scandinavian elements — the nations of Andar, Elannis, Dei Magnus, and the island of Bergen",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "A Game of Thrones - George R. R. Martin",
+        "The Wheel of Time - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven epic fantasy",
+          "multiple POV",
+          "religious political intrigue",
+          "grimdark with heart",
+          "indie fantasy supporters",
+          "SPFBO fans"
+        ],
+        "negative": [
+          "readers wanting light or cozy fantasy",
+          "those opposed to religious themes",
+          "impatient readers (slow series burn)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Gatebound - Daniel T. Jackson": {
       "title": "Gatebound",
       "author": "Daniel T. Jackson",
       "series": "The Illborn Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the four Illborn finally grasp the full meaning of their shared dream, each must decide whether to journey toward the war-torn Holy Land and the power at Aiduel's Gate — and only one of them can claim what awaits there.",
+      "tone": "grimdark, propulsive, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "fate vs. free will",
+        "power and corruption",
+        "religious war",
+        "moral alignment",
+        "identity"
+      ],
+      "setting": "A medieval fantasy continent — the Holy Land, the island of Abass, Andar, and Bergen",
+      "comparable_books": [
+        "Illborn - Daniel T. Jackson",
+        "Aiduel's Sin - Daniel T. Jackson",
+        "The Wise Man's Fear - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "invested series readers",
+          "morally grey characters",
+          "fast-paced fantasy",
+          "religious political intrigue",
+          "indie fantasy"
+        ],
+        "negative": [
+          "new readers (series entry point not recommended)",
+          "readers wanting standalone resolution"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "House of Suns - Alastair Reynolds": {
@@ -127906,80 +128145,141 @@
       "author": "Alastair Reynolds",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Six million years in the future, two members of a clone family of near-immortal galactic travellers survive a catastrophic ambush that wiped out most of their line, and must unravel the conspiracy behind the attack before whoever is responsible finishes the job.",
+      "tone": "lyrical, vast, melancholy",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "memory and identity",
+        "deep time",
+        "love across millennia",
+        "conspiracy",
+        "what it means to be human"
+      ],
+      "setting": "The far future — a galaxy-spanning civilisation millions of years from now, visited across multiple star systems",
+      "comparable_books": [
+        "Revelation Space - Alastair Reynolds",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "To Be Taught, If Fortunate - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fans",
+          "sense-of-wonder space opera",
+          "deep time fiction",
+          "lyrical prose",
+          "standalone SF novels"
+        ],
+        "negative": [
+          "readers wanting fast action-focused SF",
+          "those who dislike slow openings",
+          "character-over-concept readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Hidden - Benedict Jacka": {
       "title": "Hidden",
       "author": "Benedict Jacka",
       "series": "An Alex Verus Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alex Verus tries to build a legitimate reputation with the Keepers while his former master Richard Drakh returns to Britain, and an investigation into a forbidden ritual quickly puts him in the crosshairs of enemies on both sides of the magical divide.",
+      "tone": "propulsive, conspiratorial, darkening",
+      "pacing": "Fast",
+      "themes": [
+        "trust and betrayal",
+        "legitimacy vs. survival",
+        "magical politics",
+        "divided loyalties"
+      ],
+      "setting": "Contemporary London and its hidden magical underworld",
+      "comparable_books": [
+        "Fated - Benedict Jacka",
+        "Fool Moon - Jim Butcher",
+        "Midnight Riot - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy fans",
+          "series arc investment",
+          "first-person propulsive narration",
+          "magical London setting"
+        ],
+        "negative": [
+          "series newcomers (continuity-heavy)",
+          "readers wanting lighter urban fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Delta-V - Daniel Suarez": {
       "title": "Delta-V",
       "author": "Daniel Suarez",
       "series": "A Delta-v Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 2032, an eccentric bitcoin billionaire recruits elite specialists — including cave diver James Tighe — to crew humanity's first asteroid-mining mission, a perilous four-year voyage that will test them against space, each other, and their enigmatic backer's hidden agenda.",
+      "tone": "propulsive, techno-thriller, grounded",
+      "pacing": "Fast",
+      "themes": [
+        "commercial space exploration",
+        "capitalism vs. vision",
+        "survival",
+        "the future of humanity",
+        "trust and deception"
+      ],
+      "setting": "Near-future Earth (2032) and deep space — an asteroid mining mission to Ryugu, approx. 300 million km from Earth",
+      "comparable_books": [
+        "The Martian - Andy Weir",
+        "Seveneves - Neal Stephenson",
+        "Influx - Daniel Suarez"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fans",
+          "near-future techno-thrillers",
+          "The Martian/Expanse readers",
+          "space exploration enthusiasts",
+          "fast-paced plot-driven SF"
+        ],
+        "negative": [
+          "readers wanting deep characterisation",
+          "those who dislike technical exposition",
+          "literary SF readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fevre Dream - George R. R. Martin": {
@@ -127987,107 +128287,193 @@
       "author": "George R. R. Martin",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the antebellum Mississippi River, a down-on-his-luck steamboat captain partners with a mysterious pale stranger to captain a magnificent new vessel — unaware his patron is a vampire working to liberate his kind from bloodlust, while a crueller vampire lord hunts them both.",
+      "tone": "gothic, atmospheric, melancholy",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "freedom vs. predation",
+        "friendship across difference",
+        "the antebellum South",
+        "what it means to be human",
+        "addiction and nature"
+      ],
+      "setting": "The Mississippi River, 1857 — antebellum America, richly rendered riverboat culture",
+      "comparable_books": [
+        "Interview with the Vampire - Anne Rice",
+        "Salem's Lot - Stephen King",
+        "The Historian - Elizabeth Kostova"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "vampire fiction fans",
+          "gothic literary horror",
+          "historical atmosphere lovers",
+          "GRRM fans beyond Westeros",
+          "slow-burn horror"
+        ],
+        "negative": [
+          "readers wanting fast-paced horror",
+          "those opposed to antebellum Southern settings",
+          "action-centric readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The rich period atmosphere and GRRM's lyrical prose translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Empire of Ivory - Naomi Novik": {
       "title": "Empire of Ivory",
       "author": "Naomi Novik",
       "series": "Temeraire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A deadly plague is decimating Britain's dragons, and Temeraire — mysteriously immune — must race with Captain Laurence to Africa to find a cure, while Napoleon presses his advantage against a nearly defenceless Britain.",
+      "tone": "adventurous, tense, morally weighty",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty and treason",
+        "colonialism",
+        "dragon rights",
+        "sacrifice",
+        "disease and cure"
+      ],
+      "setting": "Britain and sub-Saharan Africa — alternate Napoleonic era ca. 1807",
+      "comparable_books": [
+        "His Majesty's Dragon - Naomi Novik",
+        "Victory of Eagles - Naomi Novik",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Temeraire series fans",
+          "historical fantasy",
+          "dragon-bond narratives",
+          "morally complex plot turns",
+          "colonial history interest"
+        ],
+        "negative": [
+          "new readers (series context essential)",
+          "readers wanting lighter adventure"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simon Vance narrates; widely considered one of fantasy audio's finest long-running performances.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Curse of the Mistwraith - Janny Wurts": {
       "title": "The Curse of the Mistwraith",
       "author": "Janny Wurts",
       "series": "Wars of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two half-brothers — Arithon, Master of Shadow, and Lysaer, Lord of Light — are exiled to the fog-shrouded world of Athera and must combine their opposing gifts to defeat the malevolent Mistwraith, only to be bound by a curse that condemns them to lifelong enmity.",
+      "tone": "dense, lyrical, epic, morally ambiguous",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "light vs. shadow (deconstructed)",
+        "fate and free will",
+        "moral ambiguity",
+        "brotherhood and enmity",
+        "the cost of power"
+      ],
+      "setting": "Athera — a richly detailed secondary world steeped in ancient magic, mystery, and centuries of hidden history",
+      "comparable_books": [
+        "The Lord of the Rings - J.R.R. Tolkien",
+        "A Sword of Kaegen - Steven Erikson",
+        "The Darkest Road - Guy Gavriel Kay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense literary epic fantasy fans",
+          "lyrical prose devotees",
+          "morally complex long-series readers",
+          "hero deconstruction enthusiasts",
+          "Tolkien-adjacent depth seekers"
+        ],
+        "negative": [
+          "readers who dislike purple prose",
+          "those wanting fast pacing",
+          "casual fantasy readers",
+          "readers needing immediate clarity"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Wurts's exceptionally dense, layered prose and intricate world-building reward close reading; the text benefits from being able to re-read sentences and passages.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Cursed - Benedict Jacka": {
       "title": "Cursed",
       "author": "Benedict Jacka",
       "series": "An Alex Verus Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Diviner Alex Verus is drawn into a conspiracy involving life-draining dark magic that is harvesting magical creatures in London, and must navigate treacherous Council politics to stop it before humans become the next target.",
+      "tone": "propulsive, witty, darkening",
+      "pacing": "Fast",
+      "themes": [
+        "magical exploitation",
+        "trust and allies",
+        "Light vs. Dark mage politics",
+        "identity"
+      ],
+      "setting": "Contemporary London and its hidden magical underworld",
+      "comparable_books": [
+        "Fated - Benedict Jacka",
+        "Storm Front - Jim Butcher",
+        "Midnight Riot - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy fans",
+          "London magical settings",
+          "first-person propulsive narration",
+          "Jim Butcher fans"
+        ],
+        "negative": [
+          "readers wanting heavy world-building",
+          "those who dislike serialised urban fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Come With Me - Ronald Malfi": {
@@ -128095,53 +128481,96 @@
       "author": "Ronald Malfi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After his wife Allison is killed in a mass shooting, Aaron Decker discovers a motel receipt among her belongings and embarks on a grief-driven investigation into her secret life — uncovering dark mysteries, possible hauntings, and a trail of dead girls that leads somewhere terrifying.",
+      "tone": "atmospheric, emotionally devastating, creeping dread",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "grief and obsession",
+        "secrets within marriage",
+        "gun violence",
+        "haunting (literal and metaphorical)",
+        "identity and self-deception"
+      ],
+      "setting": "Contemporary Maryland and small-town America — roads, motels, and quiet places with dark histories",
+      "comparable_books": [
+        "The Silent Patient - Alex Michaelides",
+        "Disappearance at Devil's Rock - Paul Tremblay",
+        "Black House - Stephen King & Peter Straub"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Stephen King fans",
+          "horror-mystery hybrids",
+          "atmospheric slow-burn",
+          "emotionally resonant horror",
+          "unreliable narrator fans"
+        ],
+        "negative": [
+          "readers wanting fast-paced horror",
+          "those sensitive to gun violence/mass shooting content",
+          "readers expecting resolution of all supernatural elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Crucible of Gold - Naomi Novik": {
       "title": "Crucible of Gold",
       "author": "Naomi Novik",
       "series": "Temeraire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Historical Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Recalled from their Australian exile, Laurence and Temeraire are dispatched to South America to forge an alliance with the Inca Empire against Napoleon — a mission that careens through shipwreck, French captivity, and the courts of a thriving Inca civilisation.",
+      "tone": "adventurous, globe-trotting, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "diplomacy and alliance",
+        "alternate history empire",
+        "dragon intelligence and rights",
+        "loyalty",
+        "the wider world beyond Europe"
+      ],
+      "setting": "The South Atlantic, Inca Empire (South America), and Brazil — alternate history ca. 1813",
+      "comparable_books": [
+        "Empire of Ivory - Naomi Novik",
+        "Blood of Tyrants - Naomi Novik",
+        "His Majesty's Dragon - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Temeraire series fans",
+          "alternate history enthusiasts",
+          "dragon-bond narratives",
+          "globe-trotting adventure",
+          "Inca history interest"
+        ],
+        "negative": [
+          "new readers (prior series context essential)",
+          "readers who found earlier entries slow"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simon Vance's narration is superb throughout the series; this entry's globe-trotting scope shines in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Chosen - Benedict Jacka": {
