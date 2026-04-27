@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3364,
-  "total_pending": 1236,
+  "total_catalogued": 3377,
+  "total_pending": 1223,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -23242,30 +23242,48 @@
       "goodreads_reviews": null
     },
     "I Am America - Stephen Colbert": {
-      "title": "I Am America",
+      "title": "I Am America (And So Can You!)",
       "author": "Stephen Colbert",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Humour / Satire",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A satirical manifesto written in the voice of Colbert's pompous right-wing TV pundit character, skewering American politics, culture, and the media. A companion piece to his Comedy Central persona, delivered as a mock self-help guide.",
+      "tone": "broadly comic, satirical, bombastic",
+      "pacing": "Fast",
+      "themes": [
+        "American politics",
+        "media satire",
+        "patriotism and nationalism",
+        "cultural commentary"
+      ],
+      "setting": "Contemporary America — cultural and political landscape of the mid-2000s",
+      "comparable_books": [
+        "America (The Book) - Jon Stewart",
+        "Your Disgusting Head - Dave Barry",
+        "Earth (The Book) - Jon Stewart"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fan of political satire",
+          "enjoys The Daily Show / Colbert Report humour",
+          "light casual reading",
+          "pop culture awareness"
+        ],
+        "negative": [
+          "unfamiliar with US political satire",
+          "prefers narrative non-fiction",
+          "dated cultural references may not land"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Colbert performs the audiobook himself in full character, significantly enhancing the comedy.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Red Badge of Courage and Selected Short Fiction - Stephen Crane": {
@@ -56621,30 +56639,51 @@
       "goodreads_reviews": null
     },
     "Fourth Hand - John Irving": {
-      "title": "Fourth Hand",
+      "title": "The Fourth Hand",
       "author": "John Irving",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A TV journalist loses his hand to a lion live on camera, and the widow of the hand donor demands visiting rights to the transplanted hand, entangling both in an unexpected relationship. A darkly comic Irving novel exploring fate, desire, and identity.",
+      "tone": "darkly comic, absurdist, warmly humanist",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and the body",
+        "fate and coincidence",
+        "desire and obsession",
+        "modern media",
+        "grief"
+      ],
+      "setting": "Contemporary America and India, late 1990s–early 2000s",
+      "comparable_books": [
+        "The World According to Garp - John Irving",
+        "A Prayer for Owen Meany - John Irving",
+        "Kavalier & Clay - Michael Chabon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fan of John Irving's style",
+          "enjoys character-driven literary fiction",
+          "appreciates dark humour",
+          "quirky premises"
+        ],
+        "negative": [
+          "prefers tightly plotted thrillers",
+          "finds Irving's digressions indulgent",
+          "wants fast pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Last Night in Twisted River - John Irving": {
@@ -66234,30 +66273,50 @@
       "goodreads_reviews": null
     },
     "Suite Francaise - Irene Nemirovsky": {
-      "title": "Suite Francaise",
-      "author": "Irene Nemirovsky",
+      "title": "Suite Française",
+      "author": "Irène Némirovsky",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two interconnected novellas depicting life in France during the German occupation of 1940–41: the first follows the chaotic exodus from Paris, and the second portrays tense daily interactions between French villagers and occupying German soldiers. A remarkable work discovered in manuscript decades after the author's death at Auschwitz.",
+      "tone": "elegiac, lucid, quietly devastating",
+      "pacing": "Moderate",
+      "themes": [
+        "war and occupation",
+        "human nature under duress",
+        "class and society",
+        "collaboration and resistance",
+        "love across enemy lines"
+      ],
+      "setting": "France, 1940–41 — Paris in flight and a rural village under German occupation",
+      "comparable_books": [
+        "All Quiet on the Western Front - Erich Maria Remarque",
+        "Sarah's Key - Tatiana de Rosnay",
+        "The Remains of the Day - Kazuo Ishiguro",
+        "A Long Long Way - Sebastian Barry"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII historical fiction",
+          "literary European fiction",
+          "character-driven drama",
+          "morally complex narratives",
+          "interest in the French resistance era"
+        ],
+        "negative": [
+          "prefers action-driven plots",
+          "finds literary prose slow"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Foundation - Isaac Asimov": {
@@ -73347,30 +73406,51 @@
       "audit": null
     },
     "Farewell to Arms - Ernest Hemingway": {
-      "title": "Farewell to Arms",
+      "title": "A Farewell to Arms",
       "author": "Ernest Hemingway",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "An American ambulance driver on the Italian front in WWI falls in love with a British nurse, and the two attempt to escape the war and forge a life together. One of the defining novels of the Lost Generation, blending love, war, and tragedy.",
+      "tone": "spare, stoic, understated, tragic",
+      "pacing": "Moderate",
+      "themes": [
+        "war and disillusionment",
+        "love and loss",
+        "identity",
+        "masculinity",
+        "the futility of war"
+      ],
+      "setting": "Italy and Switzerland during World War I, 1917–18",
+      "comparable_books": [
+        "For Whom the Bell Tolls - Ernest Hemingway",
+        "All Quiet on the Western Front - Erich Maria Remarque",
+        "The Sun Also Rises - Ernest Hemingway",
+        "Birdsong - Sebastian Faulks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic literature reader",
+          "WWI fiction",
+          "spare minimalist prose",
+          "tragic romance",
+          "anti-war themes"
+        ],
+        "negative": [
+          "dislikes Hemingway's style",
+          "prefers plot-dense narratives",
+          "finds classic prose dated"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America - Erik Larson": {
@@ -84833,30 +84913,51 @@
       "goodreads_reviews": null
     },
     "Tree Grows in Brooklyn, A - Betty Smith": {
-      "title": "Tree Grows in Brooklyn, A",
+      "title": "A Tree Grows in Brooklyn",
       "author": "Betty Smith",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A coming-of-age novel following Francie Nolan, a bright and sensitive girl growing up in a poor Irish-American family in early twentieth-century Brooklyn. A richly observed portrait of poverty, ambition, family love, and the redemptive power of reading.",
+      "tone": "warm, bittersweet, lyrical, nostalgic",
+      "pacing": "Slow",
+      "themes": [
+        "coming of age",
+        "poverty and class",
+        "the American Dream",
+        "family",
+        "education and reading",
+        "resilience"
+      ],
+      "setting": "Williamsburg, Brooklyn, New York, circa 1900–1919",
+      "comparable_books": [
+        "Little Women - Louisa May Alcott",
+        "Angela's Ashes - Frank McCourt",
+        "The Glass Castle - Jeannette Walls",
+        "My Antonia - Willa Cather"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic coming-of-age stories",
+          "literary character studies",
+          "historical American settings",
+          "stories of resilience",
+          "bibliophiles"
+        ],
+        "negative": [
+          "prefers plot-driven action",
+          "finds nostalgic domestic fiction slow"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Pygmalion - George Bernard Shaw": {
@@ -88757,30 +88858,51 @@
       "audit": null
     },
     "2001 - Arthur C. Clarke": {
-      "title": "2001",
+      "title": "2001: A Space Odyssey",
       "author": "Arthur C. Clarke",
       "series": "Space Odyssey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A mysterious alien monolith propels humanity from its prehistoric origins to a voyage to Jupiter, where astronaut Dave Bowman and the ship's computer HAL 9000 move toward an unknowable cosmic transformation. A landmark of hard SF exploring intelligence, evolution, and humanity's place in the universe.",
+      "tone": "cool, visionary, philosophical, awe-inspiring",
+      "pacing": "Slow",
+      "themes": [
+        "human evolution",
+        "artificial intelligence",
+        "first contact",
+        "the nature of consciousness",
+        "technology and transcendence"
+      ],
+      "setting": "Africa in prehistory, Earth orbit, and deep space en route to Jupiter — spanning millennia to 2001 AD",
+      "comparable_books": [
+        "Rendezvous with Rama - Arthur C. Clarke",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Solaris - Stanisław Lem",
+        "Contact - Carl Sagan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic hard SF",
+          "fans of Kubrick's film",
+          "big-idea SF",
+          "philosophical science fiction",
+          "space exploration themes"
+        ],
+        "negative": [
+          "prefers character-driven fiction",
+          "finds meditative pacing too slow",
+          "dislikes ambiguous endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Knight of the Seven Kingdoms - George R. R. Martin": {
@@ -95731,30 +95853,49 @@
       "audit": null
     },
     "Yoda - Dark Rendezvous - Sean Stewart": {
-      "title": "Yoda - Dark Rendezvous",
+      "title": "Yoda: Dark Rendezvous",
       "author": "Sean Stewart",
-      "series": null,
+      "series": "Star Wars Legends (Clone Wars)",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "During the Clone Wars, Count Dooku sends a peace overture to Jedi Master Yoda, demanding a secret rendezvous — almost certainly a trap. Yoda travels to the dark-side-steeped planet of Vjun, hoping against hope to redeem his former student.",
+      "tone": "tense, character-rich, emotionally resonant, adventure-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "redemption vs. the dark side",
+        "faith and sacrifice",
+        "mentorship",
+        "the cost of war",
+        "identity"
+      ],
+      "setting": "Star Wars galaxy during the Clone Wars era — Coruscant and the planet Vjun",
+      "comparable_books": [
+        "Shatterpoint - Matthew Stover",
+        "Revenge of the Sith (novelization) - Matthew Stover",
+        "Kenobi - John Jackson Miller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars Legends EU fans",
+          "Clone Wars era stories",
+          "character-focused SF tie-in fiction",
+          "Yoda or Dooku fans"
+        ],
+        "negative": [
+          "not interested in Star Wars fiction",
+          "prefers canonical Disney-era material",
+          "expects hard SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Deceived - Paul S. Kemp": {
@@ -165454,30 +165595,49 @@
       "audit": null
     },
     "3001 - Arthur C. Clarke": {
-      "title": "3001",
+      "title": "3001: The Final Odyssey",
       "author": "Arthur C. Clarke",
       "series": "Space Odyssey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Frank Poole, the astronaut killed by HAL 9000 in 2001, is recovered from deep space a thousand years later and must adapt to a radically transformed human civilisation — and confront the monolith's returning threat. The concluding volume of Clarke's Space Odyssey sequence.",
+      "tone": "cool, speculative, contemplative, quietly hopeful",
+      "pacing": "Moderate",
+      "themes": [
+        "human evolution and adaptation",
+        "technology and posthumanism",
+        "memory and identity",
+        "first contact",
+        "the far future"
+      ],
+      "setting": "The solar system in 3001 AD — an advanced future Earth, a space elevator, and the outer planets",
+      "comparable_books": [
+        "2001: A Space Odyssey - Arthur C. Clarke",
+        "2010: Odyssey Two - Arthur C. Clarke",
+        "The Songs of Distant Earth - Arthur C. Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Space Odyssey series completionists",
+          "classic hard SF fans",
+          "far-future speculation",
+          "Arthur C. Clarke devotees"
+        ],
+        "negative": [
+          "prefers character-driven fiction",
+          "finds this a weaker series conclusion",
+          "not invested in the Odyssey universe"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Urth of the New Sun - Gene Wolfe": {
@@ -175139,135 +175299,251 @@
       "title": "Winter's Fire",
       "author": "Giles Kristian",
       "series": "The Rise of Sigurd",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the oath-breaking King Gorm still alive, Sigurd Haraldarson and his loyal warband journey to Sweden to fight as mercenaries, seeking the silver and fame they need to one day challenge their enemy — facing treachery and brutal battle along the way. A thunderous Viking saga blending lyrical prose with visceral historical combat.",
+      "tone": "lyrical, gritty, propulsive, saga-like",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance and honour",
+        "brotherhood and loyalty",
+        "fate and the Norse gods",
+        "glory and sacrifice",
+        "Viking age society"
+      ],
+      "setting": "Scandinavia — Norway and Sweden — in AD 785, the pre-Viking raid era",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "God of Vengeance - Giles Kristian",
+        "Oathsworn series - Robert Low",
+        "Half a King - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Viking historical fiction fans",
+          "Bernard Cornwell readers",
+          "fans of brutal but lyrical action",
+          "found family / warband dynamics",
+          "Norse mythology and culture"
+        ],
+        "negative": [
+          "prefers fantasy over grounded historical fiction",
+          "dislikes gory battle scenes",
+          "wants female-led narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Neutronium Alchemist - Peter F. Hamilton": {
       "title": "The Neutronium Alchemist",
       "author": "Peter F. Hamilton",
       "series": "Night's Dawn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The possessed — souls of the dead who have broken back through into the living universe — spread from world to world, threatening the entire Confederation, while a desperate chase unfolds to prevent a scientist from deploying her apocalyptic doomsday weapon. The massive mid-volume of Hamilton's epic space opera trilogy.",
+      "tone": "epic, sprawling, propulsive, dark",
+      "pacing": "Moderate",
+      "themes": [
+        "death and the afterlife",
+        "possession and identity",
+        "survival of civilisation",
+        "religion and science",
+        "the nature of the soul"
+      ],
+      "setting": "Far-future interstellar Confederation spanning dozens of planets and habitats, 600 years from now",
+      "comparable_books": [
+        "The Reality Dysfunction - Peter F. Hamilton",
+        "Pandora's Star - Peter F. Hamilton",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Revelation Space - Alastair Reynolds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic space opera fans",
+          "Peter F. Hamilton devotees",
+          "readers who love massive cast and scope",
+          "SF with horror elements",
+          "hard SF with big ideas"
+        ],
+        "negative": [
+          "prefers concise focused narratives",
+          "dislikes bloated middle-book syndrome",
+          "not already invested in the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "House of Two Pharaohs - Wilbur Smith": {
       "title": "House of Two Pharaohs",
       "author": "Wilbur Smith",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "needs_review",
+      "summary": "In post-Hyksos Memphis, newly appointed Nomarch Piay calls on his mentor, the legendary sage Taita, to solve a series of ritual murders bearing the mark of Anubis — uncovering a criminal mastermind bent on preventing the reunification of Egypt. An action-packed ancient Egyptian mystery adventure.",
+      "tone": "swashbuckling, adventurous, intricately plotted",
+      "pacing": "Fast",
+      "themes": [
+        "political power and unity",
+        "ancient Egyptian religion and history",
+        "loyalty and mentorship",
+        "crime and conspiracy",
+        "empire building"
+      ],
+      "setting": "Ancient Egypt, c. 1550 BC — primarily the city of Memphis in the post-Hyksos period",
+      "comparable_books": [
+        "River God - Wilbur Smith",
+        "Pharaoh - Wilbur Smith",
+        "Testament - Wilbur Smith & Mark Chadbourn",
+        "The Egyptian - Mika Waltari"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Wilbur Smith Egyptian series fans",
+          "ancient Egypt historical fiction",
+          "action-adventure historical fiction",
+          "readers of Taita and Piay stories"
+        ],
+        "negative": [
+          "purists of original Smith's style (note: ghostwritten with Mark Chadbourn)",
+          "prefers literary historical fiction",
+          "unfamiliar with the long preceding series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Delirium Brief - Charles Stross": {
       "title": "The Delirium Brief",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a catastrophic public exposure of the Laundry's existence, agent Bob Howard must navigate a hostile government bent on outsourcing occult defence to a sinister private corporation run by what may be a genuine demon. A darkly satirical thriller blending Lovecraftian horror, office politics, and spy fiction.",
+      "tone": "darkly comic, satirical, tense, increasingly grim",
+      "pacing": "Fast",
+      "themes": [
+        "bureaucracy and government incompetence",
+        "Lovecraftian horror",
+        "surveillance and power",
+        "privatisation of public services",
+        "existential threat"
+      ],
+      "setting": "Contemporary Britain — London and beyond, in a secret world where Lovecraftian entities are real",
+      "comparable_books": [
+        "The Atrocity Archives - Charles Stross",
+        "Rivers of London - Ben Aaronovitch",
+        "A Dead Djinn in Cairo - P. Djèlí Clark",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Charles Stross fans",
+          "Lovecraftian comedy-horror",
+          "spy fiction readers",
+          "satire of British bureaucracy",
+          "urban fantasy with hard SF backbone"
+        ],
+        "negative": [
+          "needs prior series knowledge to fully appreciate",
+          "prefers horror without comedy",
+          "dislikes satirical SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Echopraxia - Peter Watts": {
       "title": "Echopraxia",
       "author": "Peter Watts",
       "series": "Firefall",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A baseline human biologist hitches a ride on a spaceship crewed by posthuman monks, vampires, and enhanced soldiers headed toward the sun on a collision course with an alien intelligence — forcing a confrontation with the question of whether consciousness itself is a disadvantage. A challenging, cerebral hard SF companion to Blindsight.",
+      "tone": "cold, intellectually dense, philosophically unsettling, bleak",
+      "pacing": "Slow",
+      "themes": [
+        "consciousness and free will",
+        "human obsolescence",
+        "religion and neuroscience",
+        "alien cognition",
+        "posthumanism"
+      ],
+      "setting": "A near-future Earth and deep space in the early 22nd century",
+      "comparable_books": [
+        "Blindsight - Peter Watts",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Revelation Space - Alastair Reynolds",
+        "Dragon's Egg - Robert Forward"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF devotees",
+          "Blindsight fans",
+          "philosophical SF",
+          "readers comfortable with unreliable narrators and ambiguous endings",
+          "neuroscience and consciousness themes"
+        ],
+        "negative": [
+          "prefers accessible character-driven SF",
+          "dislikes bleak or nihilistic fiction",
+          "wants answers not questions",
+          "not already invested in the Firefall universe"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Densely footnoted with scientific citations and philosophically demanding prose requiring close reading and re-reading.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lucky Day - Chuck Tingle": {
