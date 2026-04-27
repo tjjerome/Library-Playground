@@ -36,9 +36,9 @@ from catalogue_prompts import (
 # ---------------------------------------------------------------------------
 
 CATALOG_FILE = "Library_Catalog.json"
-MODEL = "claude-haiku-4-5-20251001"
-MAX_TOKENS = 8000
-DEFAULT_CHUNK_SIZE = 10
+MODEL = "claude-sonnet-4-6"
+MAX_TOKENS = 16000
+DEFAULT_CHUNK_SIZE = 20
 RATE_LIMIT_DELAY = 10    # seconds between API calls
 MAX_RETRIES = 3
 
@@ -143,12 +143,22 @@ def get_book_csv_data(books: list[dict], key: str) -> dict:
 
 def call_api_with_tools(client: anthropic.Anthropic, messages: list, system: str) -> str:
     """Runs the multi-turn tool-use loop. Returns final assistant text."""
+    # Cache the system prompt + tool list so they aren't re-billed on every call.
+    # Note: Sonnet 4.6 requires a >=2048-token prefix to actually cache; this prompt
+    # is ~900 tokens, so the marker is currently a no-op. It activates automatically
+    # if the prompt grows past 2048 tokens.
+    cached_system = [{
+        "type": "text",
+        "text": system,
+        "cache_control": {"type": "ephemeral"},
+    }]
+
     for attempt in range(MAX_RETRIES):
         try:
             response = client.messages.create(
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
-                system=system,
+                system=cached_system,
                 tools=[WEB_SEARCH_TOOL],
                 messages=messages
             )
@@ -169,10 +179,18 @@ def call_api_with_tools(client: anthropic.Anthropic, messages: list, system: str
                 response = client.messages.create(
                     model=MODEL,
                     max_tokens=MAX_TOKENS,
-                    system=system,
+                    system=cached_system,
                     tools=[WEB_SEARCH_TOOL],
                     messages=messages
                 )
+
+            u = response.usage
+            print(
+                f"  tokens: in={u.input_tokens} "
+                f"cache_read={getattr(u, 'cache_read_input_tokens', 0) or 0} "
+                f"cache_write={getattr(u, 'cache_creation_input_tokens', 0) or 0} "
+                f"out={u.output_tokens}"
+            )
 
             text_blocks = [b.text for b in response.content if hasattr(b, "text")]
             return "\n".join(text_blocks)
