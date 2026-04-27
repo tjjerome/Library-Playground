@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2926,
-  "total_pending": 1674,
+  "total_catalogued": 2945,
+  "total_pending": 1655,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -165310,53 +165310,98 @@
       "author": "Philip K. Dick",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fourteen colonists are sent to the planet Delmak-O for an unspecified mission, but as they begin dying under mysterious circumstances, the nature of reality itself comes into question. A darkly paranoid novel that blurs the line between faith, delusion, and simulated existence.",
+      "tone": "paranoid, bleak, metaphysically unsettling",
+      "pacing": "Moderate",
+      "themes": [
+        "reality vs. illusion",
+        "collective delusion",
+        "religion and faith",
+        "isolation",
+        "death"
+      ],
+      "setting": "A remote colony planet called Delmak-O; distant future",
+      "comparable_books": [
+        "Ubik - Philip K. Dick",
+        "The Three Stigmata of Palmer Eldritch - Philip K. Dick",
+        "Solaris - Stanislaw Lem"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical science fiction",
+          "unreliable reality",
+          "dark existential tone",
+          "short and punchy",
+          "cult classic"
+        ],
+        "negative": [
+          "needs tidy resolution",
+          "character-driven literary fiction",
+          "optimistic SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "suicide",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Reaper at the Gates - Sabaa Tahir": {
       "title": "A Reaper at the Gates",
       "author": "Sabaa Tahir",
       "series": "An Ember in the Ashes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Martian Empire fractures and the Nightbringer's dark plan accelerates, Laia, Elias, and Helene are each drawn into desperate battles that will determine the fate of their world. The third installment raises the stakes to near-apocalyptic levels as alliances shatter and sacrifices mount.",
+      "tone": "propulsive, emotionally intense, romantic",
+      "pacing": "Fast",
+      "themes": [
+        "empire and resistance",
+        "sacrifice",
+        "love and duty",
+        "fate",
+        "moral compromise"
+      ],
+      "setting": "A Roman Empire-inspired fantasy world; ancient-feeling militaristic society",
+      "comparable_books": [
+        "Red Queen - Victoria Aveyard",
+        "Throne of Glass - Sarah J. Maas",
+        "Children of Blood and Bone - Tomi Adeyemi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced YA fantasy",
+          "multiple POVs",
+          "romance subplot",
+          "high stakes",
+          "found family"
+        ],
+        "negative": [
+          "grimdark without hope",
+          "low fantasy",
+          "slow worldbuilding"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multi-narrator production matches the multiple POV structure and adds emotional intensity.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Head Full of Ghosts - Paul Tremblay": {
@@ -165364,26 +165409,48 @@
       "author": "Paul Tremblay",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fifteen years after a troubled teenager's apparent demonic possession became a reality TV spectacle, her younger sister recounts the disturbing events to a true crime blogger. The novel plays with the slippery boundary between faith, mental illness, and genuine supernatural horror.",
+      "tone": "creepy, meta, psychologically tense",
+      "pacing": "Moderate",
+      "themes": [
+        "possession and exorcism",
+        "faith vs. science",
+        "media exploitation",
+        "unreliable memory",
+        "family dysfunction"
+      ],
+      "setting": "Contemporary suburban Massachusetts; present-day",
+      "comparable_books": [
+        "The Exorcist - William Peter Blatty",
+        "Bird Box - Josh Malerman",
+        "The Haunting of Hill House - Shirley Jackson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary horror",
+          "unreliable narrator",
+          "meta horror commentary",
+          "ambiguous supernatural",
+          "fast read"
+        ],
+        "negative": [
+          "graphic gore",
+          "clear-cut supernatural explanations",
+          "action-heavy horror"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "3001 - Arthur C. Clarke": {
@@ -165417,27 +165484,50 @@
       "title": "The Urth of the New Sun",
       "author": "Gene Wolfe",
       "series": "The Book of the New Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5 (coda)",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Severian the Autarch travels to the distant stars to face judgment and attempt to bring a new sun to the dying world of Urth, completing and complicating the mythic arc of the original tetralogy. A dense, allusive companion volume that expands and recontextualises the entire series.",
+      "tone": "lyrical, mythic, labyrinthine",
+      "pacing": "Slow",
+      "themes": [
+        "time and memory",
+        "sacrifice and redemption",
+        "dying earth",
+        "messianic destiny",
+        "unreliable narration"
+      ],
+      "setting": "Urth (a far-future dying Earth) and interstellar space; the deep future",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "Piranesi - Susanna Clarke",
+        "Gormenghast - Mervyn Peake"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense literary SF",
+          "unreliable narrator",
+          "mythic scope",
+          "requires re-reading",
+          "series completionist"
+        ],
+        "negative": [
+          "easy casual reads",
+          "clear linear plotting",
+          "action-forward narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Zoo City - Lauren Beukes": {
@@ -165445,53 +165535,97 @@
       "author": "Lauren Beukes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Urban Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate Johannesburg where criminals are magically bonded to animal familiars, a former journalist named Zinzi — burdened with a sloth — takes on a missing-persons case in the city's criminal underworld that threatens to expose her own dark past. A noir mystery grounded in South African urban life and social commentary.",
+      "tone": "gritty, propulsive, sharply observed",
+      "pacing": "Fast",
+      "themes": [
+        "guilt and redemption",
+        "social inequality",
+        "crime and punishment",
+        "identity",
+        "South African urban life"
+      ],
+      "setting": "Alternate-history contemporary Johannesburg, South Africa",
+      "comparable_books": [
+        "Who Fears Death - Nnedi Okofor",
+        "The Shining Girls - Lauren Beukes",
+        "Kraken - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "non-Western settings",
+          "unique magic systems",
+          "noir thriller",
+          "Clarke Award winner",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "cosy fantasy",
+          "traditional European settings",
+          "clean resolutions"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Science Fiction Hall of Fame, Volume One 1929-1964 - A. E. van Vogt & Alfred Bester & Anthony Boucher & Arthur C. Clarke & C. M. Kornbluth & Clifford D. Simak & Cordwainer Smith & Damon Knight & Daniel Keyes & Don A. Stuart & Fredric Brown & Fritz Leiber & Isaac Asimov & James Blish & Jerome Bixby & John W. Campbell Jr. & Judith Merril & Lester Del Rey & Lewis Padgett & Murray Leinster & Ray Bradbury & Richard Matheson & Robert A. Heinlein & Roger Zelazny & Stanley G. Weinbaum & Theodore Sturgeon & Tom Godwin": {
       "title": "The Science Fiction Hall of Fame, Volume One 1929-1964",
-      "author": "A. E. van Vogt & Alfred Bester & Anthony Boucher & Arthur C. Clarke & C. M. Kornbluth & Clifford D. Simak & Cordwainer Smith & Damon Knight & Daniel Keyes & Don A. Stuart & Fredric Brown & Fritz Leiber & Isaac Asimov & James Blish & Jerome Bixby & John W. Campbell Jr. & Judith Merril & Lester Del Rey & Lewis Padgett & Murray Leinster & Ray Bradbury & Richard Matheson & Robert A. Heinlein & Roger Zelazny & Stanley G. Weinbaum & Theodore Sturgeon & Tom Godwin",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "author": "Robert Silverberg (ed.); stories by A. E. van Vogt, Alfred Bester, Anthony Boucher, Arthur C. Clarke, C. M. Kornbluth, Clifford D. Simak, Cordwainer Smith, Damon Knight, Daniel Keyes, Don A. Stuart, Fredric Brown, Fritz Leiber, Isaac Asimov, James Blish, Jerome Bixby, John W. Campbell Jr., Judith Merril, Lester Del Rey, Lewis Padgett, Murray Leinster, Ray Bradbury, Richard Matheson, Robert A. Heinlein, Roger Zelazny, Stanley G. Weinbaum, Theodore Sturgeon, Tom Godwin",
+      "series": "The Science Fiction Hall of Fame",
+      "series_position": "Volume 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Twenty-six short stories selected by vote of the Science Fiction Writers of America as the greatest SF stories of the pre-Nebula era (1929–1964), including landmark works by Asimov, Heinlein, Bradbury, Sturgeon, and many more. The definitive canonical anthology of classic American science fiction.",
+      "tone": "varied — adventurous, philosophical, satirical, elegiac",
+      "pacing": "Fast",
+      "themes": [
+        "first contact",
+        "technology and humanity",
+        "time",
+        "evolution",
+        "alien intelligence",
+        "the future of Earth"
+      ],
+      "setting": "Spans space, Earth's past and future, alien worlds; stories range from 1929–1964",
+      "comparable_books": [
+        "The Best of Science Fiction - Groff Conklin (ed.)",
+        "The Hugo Winners Vol. 1 - Isaac Asimov (ed.)",
+        "Adventures in Time and Space - Healy & McComas (ed.)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "genre history",
+          "classic SF",
+          "short story collections",
+          "canonical reading",
+          "SFWA-voted"
+        ],
+        "negative": [
+          "contemporary diverse voices",
+          "character-driven literary fiction",
+          "single-author collections"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bloodlands: Europe Between Hitler and Stalin - Timothy Snyder": {
@@ -165499,26 +165633,48 @@
       "author": "Timothy Snyder",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A groundbreaking history of the lands between Nazi Germany and the Soviet Union — Poland, Ukraine, Belarus, the Baltic states — where both regimes deliberately murdered some fourteen million civilians between 1933 and 1945. Snyder reconstructs the scale and individual humanity of these mass killings.",
+      "tone": "sober, meticulously documented, harrowing",
+      "pacing": "Slow",
+      "themes": [
+        "genocide",
+        "totalitarianism",
+        "World War II",
+        "political violence",
+        "historical memory",
+        "Eastern Europe"
+      ],
+      "setting": "Eastern Europe (Poland, Ukraine, Belarus, Baltic States), 1933–1945",
+      "comparable_books": [
+        "The Anatomy of Fascism - Robert O. Paxton",
+        "Ordinary Men - Christopher Browning",
+        "Black Earth - Timothy Snyder"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rigorous narrative history",
+          "WWII non-fiction",
+          "Eastern European history",
+          "award-winning scholarship"
+        ],
+        "negative": [
+          "casual popular history",
+          "biography",
+          "military history focused on battles"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Witchcraft for Wayward Girls - Grady Hendrix": {
@@ -165526,53 +165682,97 @@
       "author": "Grady Hendrix",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1970 Florida, four teenage girls sent to a home for unwed mothers discover a book of witchcraft, and for the first time find power in their powerless situation — but power always comes with a terrible price. A searing blend of historical horror and feminist anger.",
+      "tone": "darkly empathetic, enraging, body-horror adjacent",
+      "pacing": "Moderate",
+      "themes": [
+        "female agency and oppression",
+        "power and its cost",
+        "institutional cruelty",
+        "witchcraft",
+        "bodily autonomy",
+        "found sisterhood"
+      ],
+      "setting": "Wellwood House maternity home, St. Augustine, Florida, 1970",
+      "comparable_books": [
+        "The Final Girl Support Group - Grady Hendrix",
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "The Fervor - Alma Katsu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist horror",
+          "historical horror",
+          "body horror",
+          "socially engaged fiction",
+          "NY Times bestseller"
+        ],
+        "negative": [
+          "supernatural-light horror",
+          "male-centred narratives",
+          "cosy reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "To Say Nothing of the Dog - Connie Willis": {
       "title": "To Say Nothing of the Dog",
       "author": "Connie Willis",
       "series": "Oxford Time Travel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An exhausted time-travelling historian accidentally brings a Victorian cat back to the present, threatening to unravel history, and must navigate the drawing rooms and river parties of 1888 England to set things right. A delightfully comic homage to P. G. Wodehouse and Jerome K. Jerome.",
+      "tone": "warmly comic, witty, gently romantic",
+      "pacing": "Moderate",
+      "themes": [
+        "time travel",
+        "chaos theory",
+        "Victorian society",
+        "comedy of errors",
+        "romance"
+      ],
+      "setting": "Victorian England (1888) and near-future Oxford; time travel between both",
+      "comparable_books": [
+        "Doomsday Book - Connie Willis",
+        "The Eyre Affair - Jasper Fforde",
+        "Three Men in a Boat - Jerome K. Jerome"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "comedic SF",
+          "historical fiction",
+          "cosy time travel",
+          "Hugo and Locus Award winner",
+          "light romance"
+        ],
+        "negative": [
+          "grimdark",
+          "hard SF",
+          "action-heavy narrative"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The comedic timing and period dialogue are greatly enhanced by a skilled narrator.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Windup Girl - Paolo Bacigalupi": {
@@ -165580,26 +165780,50 @@
       "author": "Paolo Bacigalupi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a future Bangkok ravaged by climate change, corporate food monopolies, and engineered plagues, the lives of a calorie company agent, a genetically engineered 'windup girl', and various political factions collide in a story of exploitation, survival, and revolution. A Hugo and Nebula Award-winning biopunk novel.",
+      "tone": "dense, bleak, richly textured",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "climate change",
+        "corporate exploitation",
+        "genetic engineering",
+        "colonialism",
+        "bodily autonomy",
+        "political power"
+      ],
+      "setting": "Near-future Bangkok, Thailand; in a world of rising seas and energy scarcity",
+      "comparable_books": [
+        "The Water Knife - Paolo Bacigalupi",
+        "Oryx and Crake - Margaret Atwood",
+        "The Drowned World - J. G. Ballard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "biopunk",
+          "climate fiction",
+          "non-Western settings",
+          "Hugo Award winner",
+          "literary SF"
+        ],
+        "negative": [
+          "optimistic futures",
+          "fast light reads",
+          "cosy SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Underground Railroad - Colson Whitehead": {
@@ -165607,26 +165831,49 @@
       "author": "Colson Whitehead",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cora, an enslaved woman on a Georgia plantation, escapes via an alternate-history Underground Railroad — a literal subterranean train network — and travels through a series of American states each representing a different vision of racism and oppression. A Pulitzer Prize and National Book Award-winning novel.",
+      "tone": "harrowing, lyrical, allegorical",
+      "pacing": "Moderate",
+      "themes": [
+        "slavery and freedom",
+        "racial violence",
+        "American history",
+        "escape and pursuit",
+        "alternate history"
+      ],
+      "setting": "Antebellum American South; alternate-history 19th-century USA",
+      "comparable_books": [
+        "Beloved - Toni Morrison",
+        "The Water Dancer - Ta-Nehisi Coates",
+        "Kindred - Octavia E. Butler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction",
+          "Pulitzer Prize winner",
+          "historical SF with allegorical intent",
+          "morally serious",
+          "award fiction"
+        ],
+        "negative": [
+          "escapist fantasy",
+          "fast plot-driven reads",
+          "genre SF"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The audiobook narrated by Bahni Turpin is widely considered exceptional and enhances the novel's emotional power.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Two Lies of Faven Sythe - Megan E. O'Keefe": {
@@ -165634,26 +165881,46 @@
       "author": "Megan E. O'Keefe",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Faven Sythe, a crystborn navigator who can chart paths between the stars, enlists the notorious pirate Bitter Amandine to help find her missing mentor in a haunted cosmic graveyard — uncovering a galaxy-spanning conspiracy in the process. A fast-paced, sapphic space opera adventure.",
+      "tone": "swashbuckling, energetic, fun",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "conspiracy and secrets",
+        "identity and belonging",
+        "anti-authoritarianism",
+        "sapphic romance"
+      ],
+      "setting": "A space opera galaxy with crystalline FTL navigation; cosmic graveyards and pirate havens",
+      "comparable_books": [
+        "The Blighted Stars - Megan E. O'Keefe",
+        "A Memory Called Empire - Arkady Martine",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sapphic romance",
+          "space pirates",
+          "found family",
+          "fast-paced standalone",
+          "inventive worldbuilding"
+        ],
+        "negative": [
+          "slow character study",
+          "grimdark SF",
+          "long series commitment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Southern Book Club's Guide to Slaying Vampires - Grady Hendrix": {
@@ -165661,26 +165928,48 @@
       "author": "Grady Hendrix",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A group of suburban Southern women in a true-crime book club discover that their charming new neighbour is a vampire preying on their community — and that their husbands refuse to believe them. A wickedly funny and surprisingly pointed horror novel about women's invisible labour and social dismissal.",
+      "tone": "darkly comic, satirical, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "gender and disbelief",
+        "suburban domesticity",
+        "community and class",
+        "race in the American South",
+        "women's solidarity"
+      ],
+      "setting": "A suburban South Carolina neighbourhood, 1988–1993",
+      "comparable_books": [
+        "Practical Magic - Alice Hoffman",
+        "Wilder Girls - Rory Power",
+        "My Best Friend's Exorcism - Grady Hendrix"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic horror",
+          "feminist subtext",
+          "vampire fiction",
+          "socially engaged",
+          "propulsive plot"
+        ],
+        "negative": [
+          "serious literary horror",
+          "grimdark",
+          "pure comedy without scares"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Tiger's Wife - Tea Obreht": {
@@ -165688,26 +165977,49 @@
       "author": "Tea Obreht",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young doctor in a Balkan country pieces together her late grandfather's life through two mysterious tales — his encounters with a deathless man and a tiger's wife — while reckoning with a war-torn land's myths and grief. An Orange Prize-winning debut suffused with folklore and magical realism.",
+      "tone": "lyrical, elegiac, mythic",
+      "pacing": "Slow",
+      "themes": [
+        "war and trauma",
+        "myth and folklore",
+        "grief and loss",
+        "family legacy",
+        "the Balkans",
+        "magical realism"
+      ],
+      "setting": "An unnamed Balkan country (modelled on former Yugoslavia); early 21st century and wartime past",
+      "comparable_books": [
+        "The Lacuna - Barbara Kingsolver",
+        "The Ministry of Utmost Happiness - Arundhati Roy",
+        "Extremely Loud and Incredibly Close - Jonathan Safran Foer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary magical realism",
+          "debut fiction",
+          "Orange Prize winner",
+          "war literature",
+          "folklore-infused"
+        ],
+        "negative": [
+          "plot-driven genre fiction",
+          "fast pacing",
+          "science fiction readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Society of Unknowable Objects - Gareth Brown": {
@@ -165715,26 +166027,46 @@
       "author": "Gareth Brown",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Magda Sparks, the newest member of a secret London society devoted to finding and protecting magical objects, is sent to investigate a powerful new artefact in Hong Kong — and is immediately plunged into a deadly, globe-spanning chase involving professional killers and dark secrets about her own family. A propulsive, standalone companion to The Book of Doors.",
+      "tone": "propulsive, globe-trotting, lightly whimsical",
+      "pacing": "Fast",
+      "themes": [
+        "secret societies",
+        "magical objects",
+        "legacy and family",
+        "moral duty",
+        "hidden worlds"
+      ],
+      "setting": "Contemporary London, Hong Kong, and the American South; present day",
+      "comparable_books": [
+        "The Book of Doors - Gareth Brown",
+        "The Midnight Library - Matt Haig",
+        "The Book of the Most Precious Substance - Sara Gran"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "magical realism",
+          "globe-trotting thriller",
+          "secret societies",
+          "accessible fantasy",
+          "fast read"
+        ],
+        "negative": [
+          "dense worldbuilding",
+          "epic fantasy",
+          "dark or grimdark tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sellout - Paul Beatty": {
@@ -165742,53 +166074,97 @@
       "author": "Paul Beatty",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young Black man from a fictional Los Angeles ghetto ends up before the Supreme Court after reinstating slavery and segregation in his hometown as a satirical experiment. The Man Booker Prize-winning novel is a blistering, absurdist indictment of American race relations.",
+      "tone": "savagely comic, absurdist, provocative",
+      "pacing": "Moderate",
+      "themes": [
+        "race in America",
+        "identity",
+        "absurdism and satire",
+        "post-civil rights disillusionment",
+        "belonging"
+      ],
+      "setting": "Dickens, a fictional Los Angeles ghetto; contemporary USA and the Supreme Court",
+      "comparable_books": [
+        "Invisible Man - Ralph Ellison",
+        "Native Son - Richard Wright",
+        "Sag Harbor - Colson Whitehead"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satirical fiction",
+          "Man Booker Prize winner",
+          "provocative comedy",
+          "literary fiction",
+          "race and identity"
+        ],
+        "negative": [
+          "linear plot",
+          "comfort reads",
+          "genre fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Reality Dysfunction - Peter F. Hamilton": {
       "title": "The Reality Dysfunction",
       "author": "Peter F. Hamilton",
       "series": "Night's Dawn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the 26th century, humanity's interstellar civilisation is thrown into chaos when the souls of the dead begin possessing the living on a colony world, unleashing a catastrophic force that threatens to consume the entire Confederation. An enormous, sprawling space opera blending SF with cosmic horror.",
+      "tone": "epic, dense, visceral",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "life after death",
+        "possession",
+        "empire and confederation",
+        "survival",
+        "humanity's limits"
+      ],
+      "setting": "Interstellar human civilisation of the 26th–27th centuries; colony worlds and space habitats",
+      "comparable_books": [
+        "Pandora's Star - Peter F. Hamilton",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Revelation Space - Alastair Reynolds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic space opera",
+          "immense scope",
+          "SF horror hybrid",
+          "dedicated genre readers",
+          "world-building depth"
+        ],
+        "negative": [
+          "short focused novels",
+          "fast pacing",
+          "character-centred literary fiction",
+          "series-averse readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sixth Extinction: An Unnatural History - Elizabeth Kolbert": {
@@ -165796,53 +166172,96 @@
       "author": "Elizabeth Kolbert",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Pulitzer Prize-winning journalist Elizabeth Kolbert travels the world to document the ongoing sixth mass extinction — driven by human activity — weaving natural history, ecology, and field reporting into a gripping account of species loss on a geological scale.",
+      "tone": "urgent, accessible, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "extinction and biodiversity",
+        "climate change",
+        "human impact on nature",
+        "evolutionary history",
+        "scientific discovery"
+      ],
+      "setting": "Global field sites — rainforests, coral reefs, polar regions, and more; contemporary",
+      "comparable_books": [
+        "The Uninhabitable Earth - David Wallace-Wells",
+        "Feral - George Monbiot",
+        "The Song of the Dodo - David Quammen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative science writing",
+          "Pulitzer Prize winner",
+          "environmentalism",
+          "accessible non-fiction",
+          "natural history"
+        ],
+        "negative": [
+          "optimistic non-fiction",
+          "dry academic texts",
+          "fiction readers only"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Memory Hunters - Mia Tsai": {
       "title": "The Memory Hunters",
       "author": "Mia Tsai",
       "series": "The Consecrated",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a climate-ravaged post-apocalyptic future, archaeologist Kiana 'Key' Strade has the rare ability to dive into the blood memories of the dead using fungal chalices, and when an unauthorized dig uncovers a memory that contradicts official history, she and her devoted bodyguard Vale are pulled into a dangerous political conspiracy. A sapphic dark-academia science fantasy with lush worldbuilding.",
+      "tone": "atmospheric, slow-burn romantic, politically tense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "historical memory and truth",
+        "institutional power",
+        "climate catastrophe",
+        "sapphic romance",
+        "class and privilege",
+        "cultural identity"
+      ],
+      "setting": "A post-apocalyptic future world built on the ruins of our own; fungal and mycological society",
+      "comparable_books": [
+        "A Memory Called Empire - Arkady Martine",
+        "Ink Blood Sister Scribe - Emma Törzs",
+        "Blood Over Bright Haven - M. L. Wang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sapphic romance",
+          "dark academia",
+          "innovative magic systems",
+          "post-apocalyptic SF",
+          "slow burn"
+        ],
+        "negative": [
+          "fast-paced adventure",
+          "action-first plotting",
+          "light romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Manchurian Candidate - Richard Condon": {
