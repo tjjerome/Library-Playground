@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2009,
-  "total_pending": 2591,
+  "total_catalogued": 2029,
+  "total_pending": 2571,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -120817,108 +120817,198 @@
       "title": "Blood Reaver",
       "author": "Aaron Dembski-Bowden",
       "series": "Night Lords",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Military Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Talos and First Claw seek an alliance with the Red Corsairs and their master Huron Blackheart, whose title 'Blood Reaver' gives the novel its name, in a desperate attempt to rebuild the Tenth Company's strength. The fragile alliance between two ruthless Chaos warbands is a powder keg of distrust and competing ambitions.",
+      "tone": "grimdark, tense, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "treachery and alliance",
+        "power and survival",
+        "identity and corruption",
+        "the futility of Chaos",
+        "loyalty under pressure"
+      ],
+      "setting": "Far future (41st Millennium); space, raider vessels, and contested worlds in Warhammer 40,000",
+      "comparable_books": [
+        "Soul Hunter - Aaron Dembski-Bowden",
+        "Void Stalker - Aaron Dembski-Bowden",
+        "The First Heretic - Aaron Dembski-Bowden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "villain protagonist",
+          "escalating stakes",
+          "morally grey cast",
+          "brutal action sequences",
+          "rich faction politics"
+        ],
+        "negative": [
+          "graphic violence throughout",
+          "no heroic or sympathetic Imperial perspective",
+          "requires reading Book 1 first"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Soul Hunter - Aaron Dembski-Bowden": {
       "title": "Soul Hunter",
       "author": "Aaron Dembski-Bowden",
       "series": "Night Lords",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Military Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Talos Valcoran, a prophet-cursed Chaos Space Marine of the Night Lords' Tenth Company, leads his squad of First Claw in brutal raids across the galaxy while struggling to hold his warband together against treachery from within and without. The novel follows both the warriors and their human slaves, exploring the grim existence of those who fight on the losing side of the Horus Heresy's long aftermath.",
+      "tone": "grimdark, bleak, character-driven horror",
+      "pacing": "Moderate",
+      "themes": [
+        "brotherhood and loyalty",
+        "faith and heresy",
+        "the cost of survival",
+        "predator and prey",
+        "the nature of monsters"
+      ],
+      "setting": "Far future (41st Millennium); the void of space and various war-torn worlds across the Warhammer 40,000 galaxy",
+      "comparable_books": [
+        "Blood Reaver - Aaron Dembski-Bowden",
+        "The First Heretic - Aaron Dembski-Bowden",
+        "Helsreach - Aaron Dembski-Bowden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "villain protagonist",
+          "morally grey cast",
+          "found family under duress",
+          "psychological horror elements",
+          "richly characterised antagonists",
+          "dual POV including human slaves"
+        ],
+        "negative": [
+          "grimdark with no redemption arc",
+          "no heroic Imperium perspective",
+          "heavy violence and torture scenes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Carrion Throne - Chris Wraight": {
       "title": "The Carrion Throne",
       "author": "Chris Wraight",
       "series": "Vaults of Terra",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ordo Hereticus Inquisitor Erasmus Crowl and his new acolyte Interrogator Spinoza pursue a dark conspiracy through the teeming underhive of Holy Terra, where even the Emperor's throne world is not immune to heresy and hidden horrors. Their investigation leads them ever deeper into the shadowy underbelly of the Imperial Palace districts, hunted by forces they cannot yet name.",
+      "tone": "brooding, claustrophobic, investigative noir",
+      "pacing": "Moderate",
+      "themes": [
+        "corruption within institutions",
+        "the nature of faith",
+        "duty versus morality",
+        "Imperial hypocrisy",
+        "the decay of civilisation"
+      ],
+      "setting": "Holy Terra, the Throneworld of the Imperium, in the 41st Millennium — decaying hive-slums and palace districts",
+      "comparable_books": [
+        "Eisenhorn - Dan Abnett",
+        "The Hollow Mountain - Chris Wraight",
+        "Ravenor - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Inquisitor protagonist",
+          "investigative mystery structure",
+          "richly realised setting",
+          "ideological character clash",
+          "grimdark atmosphere without relentless action"
+        ],
+        "negative": [
+          "slow build with limited action",
+          "requires familiarity with 40K lore for full impact",
+          "dark and oppressive tone throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Hollow Mountain - Chris Wraight": {
       "title": "The Hollow Mountain",
       "author": "Chris Wraight",
       "series": "Vaults of Terra",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Inquisitor Crowl and Interrogator Spinoza continue their secret investigation into a high-level conspiracy on Terra even as the cataclysm of the Great Rift tears the galaxy apart and chaos descends upon the Throneworld itself. The widening crisis forces them to act as the foundations of the Imperium shake around them.",
+      "tone": "brooding, tense, escalating dread",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "institutional corruption",
+        "duty under chaos",
+        "change versus stasis",
+        "the cost of knowledge",
+        "apocalyptic change"
+      ],
+      "setting": "Holy Terra in the opening of the Noctis Aeterna / Great Rift era — hive underbelly, noble institutions, and the Hollow Mountain itself",
+      "comparable_books": [
+        "The Carrion Throne - Chris Wraight",
+        "The Dark City - Chris Wraight",
+        "Ravenor - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "direct sequel with strong continuity",
+          "character development over action",
+          "landmark 40K lore events portrayed intimately",
+          "strong sense of place"
+        ],
+        "negative": [
+          "less action-focused than typical 40K",
+          "requires reading Book 1 first",
+          "melancholic and oppressive tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Emperor's Gift - Aaron Dembski-Bowden": {
@@ -120926,377 +121016,679 @@
       "author": "Aaron Dembski-Bowden",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Military Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Grey Knights Space Marine recounts his brotherhood's involvement in the First War for Armageddon, fighting against a catastrophic daemonic incursion led by a Greater Daemon of Khorne — and the devastating moral cost of the Inquisition's brutal solution to contain the knowledge of what transpired. A meditation on duty, sacrifice, and the terrible price of the Imperium's secrets.",
+      "tone": "grimdark, reflective, bleak",
+      "pacing": "Moderate",
+      "themes": [
+        "duty and sacrifice",
+        "the cost of secrecy",
+        "loyalty to an ideal versus loyalty to individuals",
+        "the nature of the Emperor's gift",
+        "moral compromise"
+      ],
+      "setting": "The forge world of Armageddon and the void of space, during the First War for Armageddon in the 41st Millennium",
+      "comparable_books": [
+        "Soul Hunter - Aaron Dembski-Bowden",
+        "The First Heretic - Aaron Dembski-Bowden",
+        "Legion of the Damned - Rob Sanders"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sympathetic Space Marine protagonist",
+          "morally challenging storyline",
+          "introspective first-person narrative",
+          "iconic Grey Knights and Armageddon lore",
+          "standalone accessible"
+        ],
+        "negative": [
+          "grimdark with a deeply tragic ending",
+          "Inquisition portrayed at its most ruthless",
+          "heavy themes of complicity and moral compromise"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "First-person confessional narration makes this exceptionally well-suited to audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fabius Bile: Primogenitor - Joshua Reynolds": {
       "title": "Fabius Bile: Primogenitor",
       "author": "Joshua Reynolds",
       "series": "Fabius Bile",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Exiled into the depths of the Eye of Terror for his monstrous experiments, former Emperor's Children Chief Apothecary Fabius Bile is drawn back into the galaxy's wars when a former student offers him the chance to seize a prize that might hold the key to preventing his own inevitable death. A darkly comic romp following the galaxy's most notorious mad scientist and his coterie of appalling companions.",
+      "tone": "darkly comic, sardonic, baroque grotesque",
+      "pacing": "Fast",
+      "themes": [
+        "scientific ambition and hubris",
+        "legacy and mortality",
+        "identity and self-determination",
+        "atheism in a galaxy of gods",
+        "the nature of humanity"
+      ],
+      "setting": "The Eye of Terror, the wider 41st Millennium galaxy, and the dead Crone World of Urum — M34",
+      "comparable_books": [
+        "Clonelord - Joshua Reynolds",
+        "Ahriman: Exile - John French",
+        "Soul Hunter - Aaron Dembski-Bowden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "villain protagonist with unexpected depth",
+          "dark humour",
+          "sharp dialogue",
+          "morally appalling but compelling cast",
+          "rich lore integration"
+        ],
+        "negative": [
+          "extremely dark content including horrific experiments",
+          "villain POV with no heroic counterpoint",
+          "benefits from prior Horus Heresy knowledge"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Clonelord - Joshua Reynolds": {
       "title": "Clonelord",
       "author": "Joshua Reynolds",
       "series": "Fabius Bile",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fabius Bile is drawn back into the deadly machinations of his former Legion, the Emperor's Children, when a former comrade requests his aid on a mission he cannot refuse — a journey to the mysterious world of Solemnace on the Eastern Fringe that may hold the key to his survival. The novel deepens Bile's world through bitter rivalries, shifting allegiances, and a galaxy-spanning cat-and-mouse of ambition.",
+      "tone": "darkly comic, dialogue-driven, cynical",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and legacy",
+        "the nature of cloning and selfhood",
+        "bitter rivalries",
+        "survival and ambition",
+        "the corruption of ideals"
+      ],
+      "setting": "The Eastern Fringe of the galaxy, aboard the ship Vesalius, and the mysterious world Solemnace — 41st Millennium",
+      "comparable_books": [
+        "Fabius Bile: Primogenitor - Joshua Reynolds",
+        "Fabius Bile: Manflayer - Joshua Reynolds",
+        "Ahriman: Exile - John French"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "villain protagonist",
+          "sharp banter and dialogue-heavy narrative",
+          "deeper world-building than Book 1",
+          "compelling faction intrigue"
+        ],
+        "negative": [
+          "requires reading Primogenitor first",
+          "less accessible than Book 1",
+          "heavy body horror and dark content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Regent's Shadow - Chris Wraight": {
       "title": "The Regent's Shadow",
       "author": "Chris Wraight",
       "series": "Watchers of the Throne",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Military Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Guilliman departed to lead the Indomitus Crusade, Terra is left stripped of its armies and beset by cult activity, and the Adeptus Custodes must guard a Throneworld seething with discontent, conspiracy, and those who do not share the Regent's vision for a new order. A deeply political thriller exploring the tension between Guilliman's reforms and Terra's entrenched powers.",
+      "tone": "political, tense, introspective",
+      "pacing": "Moderate",
+      "themes": [
+        "political upheaval",
+        "institutional change versus stasis",
+        "the cost of progress",
+        "loyalty and identity",
+        "civil unrest"
+      ],
+      "setting": "Holy Terra and Luna in the immediate aftermath of the Indomitus Crusade's launch — 41st Millennium",
+      "comparable_books": [
+        "The Emperor's Legion - Chris Wraight",
+        "The Carrion Throne - Chris Wraight",
+        "Dark Imperium - Guy Haley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "politically complex narrative",
+          "multi-POV first-person narration",
+          "excellent character work on returning protagonists",
+          "strong worldbuilding of Terra"
+        ],
+        "negative": [
+          "action takes a back seat to politics",
+          "requires reading Book 1",
+          "less grand in scope than The Emperor's Legion"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Emperor's Legion - Chris Wraight": {
       "title": "The Emperor's Legion",
       "author": "Chris Wraight",
       "series": "Watchers of the Throne",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Military Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a catastrophic Chaos incursion descends upon Holy Terra itself, the Adeptus Custodes, the Sisters of Silence, and the servants of the High Lords of Terra must defend the Emperor's palace against an assault that should be impossible. Told from multiple perspectives across the three POV factions, the novel covers the landmark return of Roboute Guilliman and its seismic consequences for the Imperium.",
+      "tone": "epic, portentous, operatic",
+      "pacing": "Moderate",
+      "themes": [
+        "duty and sacrifice",
+        "the burden of immortality",
+        "institutional change",
+        "faith under siege",
+        "the nature of the Emperor"
+      ],
+      "setting": "Holy Terra and its orbital approaches during the Gathering Storm / return of Guilliman era",
+      "comparable_books": [
+        "The Regent's Shadow - Chris Wraight",
+        "The Carrion Throne - Chris Wraight",
+        "Dark Imperium - Guy Haley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Adeptus Custodes and Sisters of Silence as protagonists",
+          "landmark 40K lore events",
+          "multiple POV perspectives",
+          "grand epic scale",
+          "strong character work"
+        ],
+        "negative": [
+          "requires some 40K lore familiarity",
+          "political elements may feel slow for action-seekers",
+          "somewhat dense in faction detail"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Manslayer - Nathan Long": {
       "title": "Manslayer",
       "author": "Nathan Long",
       "series": "Gotrek and Felix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gotrek and Felix return to the realms of man for the first time in decades; reunions with old friends Malakai Makaisson and Felix's brother Otto lead to an investigation into an insidious Chaos plot — and a painful, long-anticipated reunion with Ulrika that carries heavy emotional consequences.",
+      "tone": "adventurous, bittersweet, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "return and reunion",
+        "time's passage and change",
+        "Chaos corruption",
+        "love and loss",
+        "loyalty and old ties"
+      ],
+      "setting": "Cities and settlements of the Empire during the Storm of Chaos — Warhammer Fantasy Old World",
+      "comparable_books": [
+        "Orcslayer - Nathan Long",
+        "Giantslayer - William King",
+        "Elfslayer - Nathan Long"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "significant emotional payoff from long series arcs",
+          "reunion with beloved characters",
+          "strong Chaos storyline",
+          "series milestone feel"
+        ],
+        "negative": [
+          "requires reading many prior books for full emotional impact",
+          "bittersweet tone",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Skavenslayer - William King": {
       "title": "Skavenslayer",
       "author": "William King",
       "series": "Gotrek and Felix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gotrek and Felix have found employment in the Empire city of Nuln when the scheming ratmen known as Skaven, led by the cunning Grey Seer Thanquol, launch a series of devastating attacks on the city. The duo must battle their way through competing Skaven factions to save Nuln, in the novel that introduces the beloved recurring nemesis Thanquol.",
+      "tone": "pulpy, propulsive, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "unlikely heroism",
+        "the comedy of villainy",
+        "urban warfare",
+        "survival",
+        "recurring nemesis"
+      ],
+      "setting": "The Empire city of Nuln — a great industrial and academic centre of the Warhammer Old World",
+      "comparable_books": [
+        "Trollslayer - William King",
+        "Daemonslayer - William King",
+        "Beastslayer - William King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "beloved comic villain in Thanquol",
+          "propulsive city-under-siege plot",
+          "fan-favourite Skaven antagonists",
+          "classic Warhammer Fantasy feel",
+          "great duo banter"
+        ],
+        "negative": [
+          "graphic violence",
+          "pulpy rather than literary",
+          "light on character depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Orcslayer - Nathan Long": {
       "title": "Orcslayer",
       "author": "Nathan Long",
       "series": "Gotrek and Felix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After their long absence from the Old World, Gotrek and Felix agree to help an old friend reclaim an Orc-infested Dwarf hold — but something sinister and powerful seems to be controlling the Orcs, drawing the pair into their fiercest battle yet. The first Gotrek and Felix novel written by Nathan Long, taking over from series creator William King.",
+      "tone": "pulpy, propulsive, darkly humorous",
+      "pacing": "Fast",
+      "themes": [
+        "reclaiming heritage",
+        "the darkness beneath the earth",
+        "dwarfen honour",
+        "unlikely courage",
+        "ancient grudges"
+      ],
+      "setting": "A reclaimed Dwarf hold deep in the mountains of the Warhammer Fantasy Old World",
+      "comparable_books": [
+        "Giantslayer - William King",
+        "Manslayer - Nathan Long",
+        "Daemonslayer - William King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic dungeon-delving adventure",
+          "familiar duo dynamic maintained by new author",
+          "action-packed",
+          "Warhammer Dwarfs and Orcs lore"
+        ],
+        "negative": [
+          "noticeable author transition for fans of King's style",
+          "pulpy prose",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Giantslayer - William King": {
       "title": "Giantslayer",
       "author": "William King",
       "series": "Gotrek and Felix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Separated from their companions by a wormhole, Gotrek and Felix find themselves stranded on the mysterious and twisted isle of Albion, beset by dangers on all sides. Unexpectedly, one of the Old World's most powerful heroes — Teclis of Ulthuan — becomes entangled in their fate.",
+      "tone": "adventurous, strange, energetic",
+      "pacing": "Fast",
+      "themes": [
+        "isolation and survival",
+        "ancient mysteries",
+        "elven-dwarf tensions",
+        "fate and destiny",
+        "heroism in strange lands"
+      ],
+      "setting": "The mysterious island of Albion — an analogue of ancient Britain in the Warhammer Fantasy Old World",
+      "comparable_books": [
+        "Vampireslayer - William King",
+        "Orcslayer - Nathan Long",
+        "Dragonslayer - William King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unique and unusual setting for the series",
+          "high-elf protagonist Teclis as ally",
+          "standalone-accessible adventure",
+          "fast-paced"
+        ],
+        "negative": [
+          "departure from established supporting cast",
+          "pulpy prose",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Trollslayer - William King": {
       "title": "Trollslayer",
       "author": "William King",
       "series": "Gotrek and Felix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An anthology of linked short stories introducing Gotrek Gurnisson, a Dwarf Slayer sworn to seek a glorious death in battle to atone for an unspoken disgrace, and Felix Jaeger, the young human poet who swore a drunken oath to chronicle his deeds. Together they battle Slaaneshi cultists, greenskins, Chaos beastmen, and worse across the dark corners of the Warhammer Old World.",
+      "tone": "pulpy, adventurous, darkly humorous",
+      "pacing": "Fast",
+      "themes": [
+        "honour and redemption",
+        "unlikely companionship",
+        "death-seeking and fate",
+        "heroism and survival",
+        "the darkness of the Old World"
+      ],
+      "setting": "The Warhammer Fantasy Old World — Empire cities, border regions, and underground ruins",
+      "comparable_books": [
+        "Skavenslayer - William King",
+        "Daemonslayer - William King",
+        "Gotrek and Felix: The Anthology"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "episodic adventure structure",
+          "iconic duo dynamic",
+          "humorous edge to dark material",
+          "fast-moving pulp fantasy",
+          "classic Warhammer Fantasy flavour"
+        ],
+        "negative": [
+          "short story collection rather than a novel",
+          "episodic structure means no single overarching plot",
+          "older prose style"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Vampireslayer - William King": {
       "title": "Vampireslayer",
       "author": "William King",
       "series": "Gotrek and Felix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gotrek, Felix, Snorri, Max and Ulrika venture into vampire-haunted Sylvania to hunt down and destroy the powerful Vampire Lord Adolphus Krieger. The quest into the land of the undead will have devastating and lasting consequences for all of them.",
+      "tone": "gothic, dark, adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "undeath and mortality",
+        "the cost of adventure",
+        "love and loss",
+        "dwarfen doom-seeking",
+        "gothic horror"
+      ],
+      "setting": "Sylvania — the cursed, vampire-ruled province of the Warhammer Fantasy Old World",
+      "comparable_books": [
+        "Beastslayer - William King",
+        "Dragonslayer - William King",
+        "Giantslayer - William King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic horror atmosphere",
+          "major character consequences",
+          "classic Vampire Counts setting",
+          "significant emotional stakes"
+        ],
+        "negative": [
+          "graphic violence",
+          "pulpy prose",
+          "series milestone with lasting changes requires prior reading"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dragonslayer - William King": {
       "title": "Dragonslayer",
       "author": "William King",
       "series": "Gotrek and Felix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Having returned from the Chaos Wastes aboard the Spirit of Grungni, Gotrek, Felix, Snorri, Max and Ulrika join an expedition to hunt and slay an ancient and mighty dragon. The quest pits them against more than mere dragonfire as dark forces manoeuvre around the prize the beast guards.",
+      "tone": "adventurous, pulpy, energetic",
+      "pacing": "Fast",
+      "themes": [
+        "glory and doom",
+        "greed and treasure",
+        "the nature of monsters",
+        "dwarfen oaths",
+        "courage under fire"
+      ],
+      "setting": "The Warhammer Fantasy Old World — mountain ranges, ruins, and dragon lairs",
+      "comparable_books": [
+        "Daemonslayer - William King",
+        "Beastslayer - William King",
+        "Vampireslayer - William King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic dragon-slaying fantasy adventure",
+          "great ensemble cast from Daemonslayer",
+          "fast-moving and entertaining",
+          "iconic Warhammer monsters"
+        ],
+        "negative": [
+          "pulpy prose",
+          "graphic violence",
+          "formulaic quest structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Daemonslayer - William King": {
       "title": "Daemonslayer",
       "author": "William King",
       "series": "Gotrek and Felix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gotrek is summoned by an old friend to join an airborne expedition into the dread Chaos Wastes aboard the great airship Spirit of Grungni, seeking the lost Dwarf hold of Karag Dum. The novel introduces several long-running series characters including Snorri Nosebiter, Malakai Makaisson, Max Schreiber, and Ulrika Magdova.",
+      "tone": "adventurous, epic, darkly humorous",
+      "pacing": "Fast",
+      "themes": [
+        "glory and doom",
+        "friendship and sacrifice",
+        "Chaos corruption",
+        "dwarfen honour",
+        "exploration into darkness"
+      ],
+      "setting": "The Empire and the terrifying Chaos Wastes in the far north — Warhammer Fantasy Old World",
+      "comparable_books": [
+        "Dragonslayer - William King",
+        "Beastslayer - William King",
+        "Trollslayer - William King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "iconic supporting cast introduced",
+          "grand adventure scope",
+          "airship adventure",
+          "strong series milestone",
+          "great action pacing"
+        ],
+        "negative": [
+          "graphic violence",
+          "pulpy prose",
+          "builds on prior books' character relationships"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Beastslayer - William King": {
       "title": "Beastslayer",
       "author": "William King",
       "series": "Gotrek and Felix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The armies of Chaos march south to invade the Old World and the city of Praag is the first to fall under siege. Gotrek and Snorri hope to find their long-sought dooms in the carnage of a truly enormous battle, while Felix, Max and Ulrika fight simply to survive.",
+      "tone": "epic, brutal, siege-warfare",
+      "pacing": "Fast",
+      "themes": [
+        "siege and survival",
+        "glory and sacrifice",
+        "Chaos corruption",
+        "the scale of war",
+        "friendship under fire"
+      ],
+      "setting": "The besieged city of Praag in Kislev, during a massive Chaos invasion — Warhammer Fantasy Old World",
+      "comparable_books": [
+        "Daemonslayer - William King",
+        "Dragonslayer - William King",
+        "Vampireslayer - William King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "large-scale siege warfare",
+          "iconic Chaos invasion setting",
+          "strong use of ensemble cast",
+          "epic tone"
+        ],
+        "negative": [
+          "graphic violence",
+          "pulpy prose",
+          "large battle scenes may feel repetitive"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Infinite and the Divine - Robert Rath": {
@@ -121304,26 +121696,48 @@
       "author": "Robert Rath",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Trazyn the Infinite, an obsessive Necron collector of historical artefacts, and Orikan the Diviner, an arrogant chronomancer who predicts and manipulates the future, are bitter immortal rivals drawn into a multi-millennia cat-and-mouse pursuit across time and space when an ancient artefact emerges that may hold the key to the Necron race's next evolution. A rare, darkly comic Warhammer 40,000 novel told entirely from the perspective of ancient alien machine-gods.",
+      "tone": "darkly comic, witty, cosmic in scope",
+      "pacing": "Moderate",
+      "themes": [
+        "immortality and its burdens",
+        "obsession and rivalry",
+        "identity and purpose",
+        "the nature of time",
+        "what it means to preserve versus to advance"
+      ],
+      "setting": "Across ten thousand years of galactic history, from pre-Imperium eras to the 41st Millennium — Necron tomb worlds, alien civilisations, and the world of Solemnace",
+      "comparable_books": [
+        "Fabius Bile: Primogenitor - Joshua Reynolds",
+        "Eisenhorn - Dan Abnett",
+        "The Long Way to a Small, Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unique xenos protagonist perspective",
+          "genuinely funny and witty dialogue",
+          "epic cosmic scope spanning millennia",
+          "character-driven study of immortality",
+          "standalone accessible"
+        ],
+        "negative": [
+          "slower paced than typical 40K action novels",
+          "philosophical and reflective stretches",
+          "benefits from broader 40K Necron lore knowledge"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The sharp, dry banter between Trazyn and Orikan is exceptionally well-suited to audio performance with distinct character voices.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fire Caste - Peter Fehervari": {
@@ -121331,26 +121745,49 @@
       "author": "Peter Fehervari",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Military Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the perpetual jungle hell of the planet Phaedra, the 19th Arkan Confederates Imperial Guard regiment is deployed to break a decades-long stalemate against a Tau coalition force — but the planet itself seems hateful and alive, the regiment fractures under a mad commissar's influence, and darker, warp-touched forces begin to surface. A dense, literary 'Apocalypse Now'-influenced Warhammer novel that is part of Fehervari's interconnected 'Dark Coil' mythos.",
+      "tone": "surreal, oppressive, literary horror",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "madness and obsession",
+        "the futility of war",
+        "imperial faith under siege",
+        "the jungle as living horror",
+        "ideological contrast"
+      ],
+      "setting": "The jungle planet Phaedra in the Dolorosa Coil — a hellish, perpetual warzone on the fringes of Tau and Imperial space",
+      "comparable_books": [
+        "Gunheads - Steve Parker",
+        "The Infinite and the Divine - Robert Rath",
+        "Void Stalker - Aaron Dembski-Bowden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary, layered storytelling",
+          "strong atmosphere and world-building",
+          "standalone entry point to Fehervari's Dark Coil",
+          "unique and mature approach to 40K fiction",
+          "psychological depth"
+        ],
+        "negative": [
+          "very slow build and deliberately disorientating narrative",
+          "not recommended as a first 40K novel",
+          "nihilistic and dark tone throughout",
+          "puzzle-box structure may frustrate some readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The complex puzzle-box narrative structure, multiple interweaving strands, and journal-entry conceits reward close reading and re-reading; easier to track on the page.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Titanicus - Dan Abnett": {
