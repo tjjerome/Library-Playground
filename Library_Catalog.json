@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2169,
-  "total_pending": 2431,
+  "total_catalogued": 2189,
+  "total_pending": 2411,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -128577,135 +128577,232 @@
       "title": "Chosen",
       "author": "Benedict Jacka",
       "series": "An Alex Verus Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alex Verus, a diviner mage running a magic shop in London, is drawn into a deadly conflict as forces from his dark past resurface and the magical Council's politics grow increasingly dangerous. Old enemies converge on Alex, forcing him to make difficult choices about loyalty and survival.",
+      "tone": "propulsive, darkly suspenseful, wry",
+      "pacing": "Fast",
+      "themes": [
+        "consequences of the past",
+        "moral ambiguity",
+        "survival",
+        "political intrigue among mages"
+      ],
+      "setting": "Contemporary London; a hidden magical world operating alongside the mundane",
+      "comparable_books": [
+        "Storm Front - Jim Butcher",
+        "Midnight Riot - Ben Aaronovitch",
+        "Grave Witch - Kalayna Price"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced urban fantasy",
+          "morally grey protagonist",
+          "London setting",
+          "magic system focused on divination",
+          "escalating series arc"
+        ],
+        "negative": [
+          "readers wanting standalone stories",
+          "those averse to slow-burn series investment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Burned - Benedict Jacka": {
       "title": "Burned",
       "author": "Benedict Jacka",
       "series": "An Alex Verus Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alex Verus faces the full wrath of the Light Council, which has turned against him, while his relationships with allies are pushed to breaking point. With enemies closing in from all sides, Alex must decide how far he is willing to go to protect those he cares about.",
+      "tone": "tense, dark, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "institutional betrayal",
+        "moral cost of survival",
+        "loyalty",
+        "political corruption"
+      ],
+      "setting": "Contemporary London; the hidden magical world of Light and Dark mages",
+      "comparable_books": [
+        "Storm Front - Jim Butcher",
+        "Midnight Riot - Ben Aaronovitch",
+        "The Iron Druid Chronicles - Kevin Hearne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "escalating stakes",
+          "morally grey protagonist",
+          "fast-paced urban fantasy",
+          "series payoff"
+        ],
+        "negative": [
+          "new readers — requires prior series knowledge",
+          "those wanting light tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Bound - Benedict Jacka": {
       "title": "Bound",
       "author": "Benedict Jacka",
       "series": "An Alex Verus Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Alex Verus now operating under a dangerous binding arrangement with dark mage Richard Drakh, he must navigate impossible loyalties while trying to protect his friends from the consequences of his choices. The series' moral complexity reaches new depths as Alex is forced into increasingly compromised positions.",
+      "tone": "dark, morally tense, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "coercion and agency",
+        "moral compromise",
+        "power and control",
+        "the cost of protection"
+      ],
+      "setting": "Contemporary London; the hidden world of Light and Dark mages",
+      "comparable_books": [
+        "Storm Front - Jim Butcher",
+        "Midnight Riot - Ben Aaronovitch",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "escalating series arc",
+          "fast-paced urban fantasy",
+          "dark tone"
+        ],
+        "negative": [
+          "new readers — requires prior series knowledge",
+          "readers wanting clear-cut heroes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Catalyst - James Luceno": {
       "title": "Catalyst",
       "author": "James Luceno",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Star Wars",
+      "series_position": "Standalone (Rogue One prequel)",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set during the Clone Wars and early Imperial era, Catalyst traces the relationship between brilliant scientist Galen Erso and ambitious Imperial officer Orson Krennic, as Krennic manipulates Erso's kyber crystal research to secretly advance the Death Star project. It serves as a direct prelude to the film Rogue One: A Star Wars Story.",
+      "tone": "understated, politically intricate, character-driven",
+      "pacing": "Slow",
+      "themes": [
+        "moral compromise",
+        "scientific ethics",
+        "manipulation and betrayal",
+        "the cost of ambition",
+        "the banality of evil"
+      ],
+      "setting": "The Star Wars galaxy, from the Clone Wars to several years after Revenge of the Sith",
+      "comparable_books": [
+        "Tarkin - James Luceno",
+        "Darth Plagueis - James Luceno",
+        "Battlefront: Twilight Company - Alexander Freed"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars lore enthusiasts",
+          "character-driven political intrigue",
+          "Rogue One fans",
+          "readers who enjoyed Darth Plagueis"
+        ],
+        "negative": [
+          "readers wanting action-heavy Star Wars",
+          "non-fans of the franchise",
+          "those unfamiliar with Rogue One"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full Star Wars audio production with music and sound effects; narrated by Jonathan Davis, a veteran of 30+ Star Wars audiobooks.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood of Tyrants - Naomi Novik": {
       "title": "Blood of Tyrants",
       "author": "Naomi Novik",
       "series": "Temeraire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Historical Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Captain Laurence washes ashore in Japan with no memory of the last eight years, while Temeraire and the crew must navigate the treacherous courts of feudal Japan and Imperial China before reuniting with Laurence and flying to Russia, arriving in time for Napoleon's catastrophic invasion.",
+      "tone": "adventurous, sweeping, warmly humane",
+      "pacing": "Moderate",
+      "themes": [
+        "memory and identity",
+        "loyalty",
+        "the treatment of dragons across cultures",
+        "war and imperialism"
+      ],
+      "setting": "Alternate-history Napoleonic era — feudal Japan, Imperial China, and Russia during Napoleon's invasion",
+      "comparable_books": [
+        "His Majesty's Dragon - Naomi Novik",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Shadow of the Wind - Carlos Ruiz Zafón"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "dragon companions",
+          "Napoleonic setting",
+          "adventure with heart",
+          "long-running series investment"
+        ],
+        "negative": [
+          "new readers — requires prior series knowledge",
+          "readers wanting grittier war fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Black Mouth - Ronald Malfi": {
@@ -128713,53 +128810,95 @@
       "author": "Ronald Malfi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After recovering from alcohol addiction, Jamie Warren is forced to return to his childhood home when his mother dies, reuniting with his disabled brother and two estranged childhood friends. Together, they must confront the terrifying memories of a sinister magician who groomed them as children near the abandoned mine known as Black Mouth.",
+      "tone": "atmospheric, deeply unsettling, psychologically layered",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "childhood trauma",
+        "addiction and recovery",
+        "supernatural evil",
+        "guilt and grief",
+        "the past's grip on the present"
+      ],
+      "setting": "Contemporary rural Virginia (Sutton's Quay); alternates between present day and 1998",
+      "comparable_books": [
+        "It - Stephen King",
+        "Come with Me - Ronald Malfi",
+        "A Head Full of Ghosts - Paul Tremblay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Stephen King fans",
+          "slow-burn horror",
+          "character-driven dread",
+          "suburban/rural American horror",
+          "literary horror"
+        ],
+        "negative": [
+          "readers wanting fast action or jump-scare horror",
+          "those sensitive to child abuse or addiction themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child abuse",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Black Powder War - Naomi Novik": {
       "title": "Black Powder War",
       "author": "Naomi Novik",
       "series": "Temeraire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Laurence and Temeraire depart China on urgent orders to collect three valuable dragon eggs from the Ottoman Empire in Istanbul, only to face betrayal and find themselves fighting alongside Prussia against Napoleon's seemingly unstoppable advance across Europe.",
+      "tone": "adventurous, propulsive, warmly humane",
+      "pacing": "Fast",
+      "themes": [
+        "duty and loyalty",
+        "the costs of war",
+        "cross-cultural diplomacy",
+        "dragon rights"
+      ],
+      "setting": "Alternate-history Napoleonic Europe — the Ottoman Empire, Prussia, and the battlefields of Central Europe",
+      "comparable_books": [
+        "His Majesty's Dragon - Naomi Novik",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "dragon companions",
+          "Napoleonic warfare",
+          "propulsive adventure"
+        ],
+        "negative": [
+          "new readers — best after books 1–2",
+          "readers seeking non-European settings in this entry"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Slip of the Keyboard - Terry Pratchett": {
@@ -128767,242 +128906,419 @@
       "author": "Terry Pratchett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of Pratchett's non-fiction writing spanning his entire career — essays, speeches, and articles ranging from whimsical musings on writing and mushrooms to passionate advocacy for Alzheimer's research and assisted dying, with a foreword by Neil Gaiman.",
+      "tone": "witty, warm, sharply angry, humanist",
+      "pacing": "Moderate",
+      "themes": [
+        "the craft of writing",
+        "Alzheimer's disease and death with dignity",
+        "fantasy and literature",
+        "humanism and social justice"
+      ],
+      "setting": "Non-fiction; spans Pratchett's life and career from the 1970s to the early 2010s",
+      "comparable_books": [
+        "The View from the Cheap Seats - Neil Gaiman",
+        "The Art of Fiction - John Gardner",
+        "Good Omens - Terry Pratchett & Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Pratchett fans",
+          "essays and non-fiction readers",
+          "interest in craft of writing",
+          "Alzheimer's advocacy"
+        ],
+        "negative": [
+          "readers wanting fiction or Discworld narrative",
+          "those unfamiliar with Pratchett's work"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Aiduel's Sin - Daniel T. Jackson": {
       "title": "Aiduel's Sin",
       "author": "Daniel T. Jackson",
       "series": "The Illborn Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three months after the events of Illborn, the four Illborn — Arion, Allana, Leanna, and Corin — face escalating dangers as the nations of Angall slide toward Holy War, their diverging paths bringing them into conflict with powerful enemies, the Holy Church, and each other. Their growing powers and moral choices begin to shape the fate of the continent.",
+      "tone": "grimdark, character-driven, cliffhanger-propelled",
+      "pacing": "Fast",
+      "themes": [
+        "destiny and free will",
+        "religious corruption",
+        "moral ambiguity",
+        "power and its costs",
+        "love and obsession"
+      ],
+      "setting": "The medieval-esque continent of Angall — multiple nations including Andar, Arlais, and Karn; pre-industrial fantasy world with a monotheistic church",
+      "comparable_books": [
+        "A Game of Thrones - George R.R. Martin",
+        "The Prince of Nothing - R. Scott Bakker",
+        "Gunmetal Gods - Zamil Akhtar"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark epic fantasy",
+          "morally grey protagonists",
+          "multi-POV storytelling",
+          "religious critique",
+          "no character is safe"
+        ],
+        "negative": [
+          "new readers — must read Illborn first",
+          "readers wanting lighter fantasy or clear moral heroes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Anji Kills a King - Evan Leikam": {
       "title": "Anji Kills a King",
       "author": "Evan Leikam",
       "series": "The Rising Tide",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Anji, a palace laundress, seizes an impulsive chance to slit a tyrant king's throat, then goes on the run with a massive bounty on her head. Captured by the Hawk — a veteran bounty hunter of the magical mercenary group the Menagerie — Anji finds herself physically and magically tethered to her captor in a fraught road-trip across a crumbling kingdom.",
+      "tone": "grimdark, brutal, propulsive, darkly intimate",
+      "pacing": "Fast",
+      "themes": [
+        "consequences of revolution",
+        "power and oppression",
+        "survival",
+        "unlikely alliance",
+        "trauma and identity"
+      ],
+      "setting": "A grimdark secondary world kingdom of Linuria; road-trip structure across dangerous landscapes",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "The Blacktongue Thief - Christopher Buehlman",
+        "The Poppy War - R.F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "propulsive pacing",
+          "morally grey protagonist",
+          "Joe Abercrombie fans",
+          "road-trip structure",
+          "female-led grimdark"
+        ],
+        "negative": [
+          "readers wanting high fantasy with prophecies or epic scope",
+          "those averse to graphic violence or grim tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Moira Quirk to strong praise; audio production from Macmillan Audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Veiled - Benedict Jacka": {
       "title": "Veiled",
       "author": "Benedict Jacka",
       "series": "An Alex Verus Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Pressured into working as an enforcer for the Light Council, Alex Verus finds himself caught between his principles and the Council's ruthless methods as he investigates a dangerous conspiracy. The series takes a darker turn as Alex is forced to operate within an institution he distrusts.",
+      "tone": "tense, darkening, wry",
+      "pacing": "Fast",
+      "themes": [
+        "institutional compromise",
+        "moral corruption",
+        "surveillance and control",
+        "divided loyalties"
+      ],
+      "setting": "Contemporary London; the hidden world of Light and Dark mages",
+      "comparable_books": [
+        "Storm Front - Jim Butcher",
+        "Midnight Riot - Ben Aaronovitch",
+        "The Iron Druid Chronicles - Kevin Hearne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy fans",
+          "morally grey protagonist",
+          "escalating series arc",
+          "London setting"
+        ],
+        "negative": [
+          "new readers — requires prior series knowledge",
+          "readers wanting lighter tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Age of Ash - Daniel Abraham": {
       "title": "Age of Ash",
       "author": "Daniel Abraham",
       "series": "The Kithamar Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the sprawling ancient city of Kithamar, petty thief Alys sets out to uncover the truth behind her brother's murder, only to find herself entangled in a conspiracy that reaches from the slums of Longhill to the very throne. A city-contained epic where every story matters and the setting itself becomes a character.",
+      "tone": "atmospheric, lyrical, slow-burn, gritty",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "class and inequality",
+        "grief",
+        "the city as living entity",
+        "identity and belonging",
+        "hidden power"
+      ],
+      "setting": "The ancient walled trading city of Kithamar, inspired by medieval fantasy settings; all action contained within the city over one year",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "A Shadow in Summer - Daniel Abraham",
+        "Foundryside - Robert Jackson Bennett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich world-building",
+          "literary epic fantasy",
+          "city-based stories",
+          "character-driven intrigue",
+          "Scott Lynch fans"
+        ],
+        "negative": [
+          "readers wanting fast pacing or large-scale action",
+          "those expecting a traditional quest structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Victory of Eagles - Naomi Novik": {
       "title": "Victory of Eagles",
       "author": "Naomi Novik",
       "series": "Temeraire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following their act of treason, Laurence faces sentencing while Temeraire is conscripted into Britain's desperate defense as Napoleon successfully invades. Separated and disgraced, the pair must rally a ragtag dragon army to resist the French occupation and prove that loyalty is not blind obedience.",
+      "tone": "darker, emotionally weighty, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "duty versus conscience",
+        "treason and loyalty",
+        "the costs of doing right",
+        "dragon autonomy"
+      ],
+      "setting": "Alternate-history Britain under French invasion; Napoleonic era",
+      "comparable_books": [
+        "His Majesty's Dragon - Naomi Novik",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "dragon companions",
+          "emotional stakes",
+          "Napoleonic warfare",
+          "series devotees"
+        ],
+        "negative": [
+          "new readers — requires prior series knowledge",
+          "readers expecting adventure-light tone of early books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The River of Silver - S. A. Chakraborty": {
       "title": "The River of Silver",
       "author": "S. A. Chakraborty",
       "series": "The Daevabad Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Companion volume (Book 4)",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A companion collection of fifteen short stories and deleted scenes set in the world of the Daevabad Trilogy, spanning events before, during, and after the trilogy's main narrative, and featuring POV characters who were only seen through others' eyes in the novels — including a special coda for series fans.",
+      "tone": "lush, intimate, nostalgic, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "power and identity among djinn",
+        "political intrigue",
+        "family and sacrifice",
+        "the costs of war"
+      ],
+      "setting": "The magical Islamic-inspired world of Daevabad and its surrounding lands; various points in the trilogy's timeline",
+      "comparable_books": [
+        "The City of Brass - S.A. Chakraborty",
+        "The Kingdom of Copper - S.A. Chakraborty",
+        "The Bear and the Nightingale - Katherine Arden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Daevabad Trilogy devotees",
+          "Middle Eastern fantasy fans",
+          "character deep-dives",
+          "short story collections"
+        ],
+        "negative": [
+          "new readers — must read the trilogy first",
+          "readers wanting a new full novel",
+          "those who dislike anthology formats"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tongues of Serpents - Naomi Novik": {
       "title": "Tongues of Serpents",
       "author": "Naomi Novik",
       "series": "Temeraire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Historical Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Exiled to the penal colony of New South Wales in Australia, Laurence and Temeraire are tasked with escorting dragon eggs into the interior, but the theft of an egg sends them on a chase deep into the unmapped, dangerous Australian continent, where they make a startling discovery.",
+      "tone": "adventurous, exploratory, somewhat more subdued",
+      "pacing": "Moderate",
+      "themes": [
+        "exile and belonging",
+        "colonial encounter",
+        "discovery",
+        "loyalty under strain"
+      ],
+      "setting": "Alternate-history early 19th-century Australia — the penal colony of New South Wales and the uncharted interior continent",
+      "comparable_books": [
+        "His Majesty's Dragon - Naomi Novik",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Secret History of the Pink Carnation - Lauren Willig"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "dragon companions",
+          "exotic settings",
+          "series devotees"
+        ],
+        "negative": [
+          "new readers — requires prior series knowledge",
+          "readers who found this entry slower than earlier books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Throne of Jade - Naomi Novik": {
       "title": "Throne of Jade",
       "author": "Naomi Novik",
       "series": "Temeraire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Imperial China demands the return of Temeraire — an imperial Celestial dragon never meant for British hands — Laurence must accompany Temeraire on a long sea voyage to China, navigating deadly court intrigue, attempts on his life, and a world where dragons are treated as honored citizens rather than war beasts.",
+      "tone": "adventurous, warmly humane, immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "cultural collision",
+        "dragon rights and dignity",
+        "class and rank",
+        "loyalty and belonging"
+      ],
+      "setting": "Alternate-history Napoleonic era — an ocean voyage from England to Qing Dynasty China",
+      "comparable_books": [
+        "His Majesty's Dragon - Naomi Novik",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "dragon companions",
+          "cross-cultural worldbuilding",
+          "warm adventurous tone"
+        ],
+        "negative": [
+          "readers wanting primarily action and battle over character and diplomacy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Station Eleven - Emily St. John Mandel": {
@@ -129010,107 +129326,188 @@
       "author": "Emily St. John Mandel",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A flu pandemic collapses civilisation, and the narrative moves between the final days before the collapse and twenty years after, tracing a travelling Shakespearean theatre company in the Great Lakes region alongside the interconnected lives of people linked to a famous actor who died on the night the pandemic began.",
+      "tone": "elegiac, lyrical, quietly hopeful",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival and memory",
+        "art as necessity",
+        "interconnectedness",
+        "the fragility of civilisation",
+        "grief"
+      ],
+      "setting": "Near-future North America, primarily the Great Lakes region; alternates between pre- and post-collapse timelines",
+      "comparable_books": [
+        "The Road - Cormac McCarthy",
+        "Oryx and Crake - Margaret Atwood",
+        "The Passage - Justin Cronin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary post-apocalyptic fiction",
+          "non-linear narratives",
+          "lyrical prose",
+          "character-driven",
+          "art and culture themes"
+        ],
+        "negative": [
+          "readers wanting action-heavy or horror-inflected post-apocalypse",
+          "those who dislike fragmented timelines"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lyrical prose and non-linear structure reward attentive listening; widely praised in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Changeling - Victor Lavalle": {
       "title": "The Changeling",
-      "author": "Victor Lavalle",
+      "author": "Victor LaValle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Apollo Kagwa, a rare-book dealer in New York City, is building a life with his wife Emma and their newborn son when Emma commits an unthinkable act and vanishes, sending Apollo on a dangerous quest through a city infused with ancient folklore, hidden islands, and dark magic. A genre-defying modern fairy tale about parenthood, grief, and the monsters lurking in social media and the urban landscape.",
+      "tone": "lyrical, uncanny, emotionally devastating, darkly wondrous",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "parenthood and its anxieties",
+        "folklore in the modern world",
+        "race and class in New York",
+        "technology as threat",
+        "grief and identity"
+      ],
+      "setting": "Contemporary New York City — the Bronx, Queens, and a secret island in the East River; infused with Scandinavian and African folklore",
+      "comparable_books": [
+        "The Ocean at the End of the Lane - Neil Gaiman",
+        "The Ballad of Black Tom - Victor LaValle",
+        "A Head Full of Ghosts - Paul Tremblay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary horror",
+          "dark fairy tales",
+          "New York setting",
+          "character-driven dread",
+          "folklore-infused fiction",
+          "Shirley Jackson Award winners"
+        ],
+        "negative": [
+          "readers wanting straightforward horror or genre fantasy",
+          "those sensitive to infant harm"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wildcard - Marie Lu": {
       "title": "Wildcard",
       "author": "Marie Lu",
       "series": "Warcross",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Emika Chen, having uncovered the dark truth behind the Warcross neural gaming world and its creator Hideo Tanaka, must decide whether to expose Hideo's plan to control human free will or side with a dangerous alliance that wants to destroy him — a conclusion to the duology that raises questions about surveillance, liberty, and love.",
+      "tone": "propulsive, tech-noir, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "free will vs. control",
+        "surveillance and power",
+        "loyalty and betrayal",
+        "technology and identity"
+      ],
+      "setting": "Near-future Japan and a global immersive virtual reality gaming world called Warcross",
+      "comparable_books": [
+        "Warcross - Marie Lu",
+        "Ready Player One - Ernest Cline",
+        "All the Light We Cannot See - Anthony Doerr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA sci-fi readers",
+          "virtual reality settings",
+          "propulsive pacing",
+          "romance subplot",
+          "cyberpunk-lite"
+        ],
+        "negative": [
+          "new readers — must read Warcross first",
+          "readers wanting hard science fiction",
+          "those averse to YA romance elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fractal Prince - Hannu Rajaniemi": {
       "title": "The Fractal Prince",
       "author": "Hannu Rajaniemi",
       "series": "Jean le Flambeur",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gentleman thief Jean le Flambeur and his handler Mieli travel to a post-Collapse Earth ruled by rival factions of uploaded minds and story-based technology, where Jean must navigate a labyrinthine heist involving competing Sobornost gods and wild-code entities. The second entry in the trilogy deepens its baroque far-future world with Arabian Nights-inflected storytelling.",
+      "tone": "dense, baroque, dazzling, cerebral",
+      "pacing": "Slow",
+      "themes": [
+        "identity and memory",
+        "storytelling as power",
+        "posthumanism",
+        "free will",
+        "the nature of consciousness"
+      ],
+      "setting": "A post-Singularity far future — a fractured, mostly-desert Earth and the vast digital civilisations orbiting above it",
+      "comparable_books": [
+        "The Quantum Thief - Hannu Rajaniemi",
+        "Blindsight - Peter Watts",
+        "Permutation City - Greg Egan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF readers",
+          "post-singularity worldbuilding",
+          "dense cerebral prose",
+          "unreliable narrators",
+          "1001 Nights aesthetic"
+        ],
+        "negative": [
+          "new readers — requires The Quantum Thief first",
+          "readers wanting accessible or fast-paced SF",
+          "those who dislike dense neologism-heavy prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Extremely dense prose with neologisms, intricate worldbuilding, and unreliable narration; benefits greatly from the ability to re-read passages.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Word for World Is Forest - Ursula K. le Guin": {
