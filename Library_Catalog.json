@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2746,
-  "total_pending": 1854,
+  "total_catalogued": 2766,
+  "total_pending": 1834,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -156526,27 +156526,50 @@
       "title": "Streets of Laredo",
       "author": "Larry McMurtry",
       "series": "Lonesome Dove",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Western",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aging Texas Ranger Call is hired to track down a ruthless young Mexican bandit, Mox Mox, across a desolate and violent frontier landscape. The novel revisits many characters from the earlier books as the West closes in around them.",
+      "tone": "elegiac, grim, melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "aging and decline",
+        "the end of the frontier",
+        "violence",
+        "loyalty",
+        "mortality"
+      ],
+      "setting": "Late 19th-century Texas and Mexico; the dying American West",
+      "comparable_books": [
+        "Blood Meridian - Cormac McCarthy",
+        "True Grit - Charles Portis",
+        "Lonesome Dove - Larry McMurtry"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary Westerns",
+          "character-driven narratives",
+          "the dying frontier",
+          "morally complex protagonists",
+          "slow-burn elegiac fiction"
+        ],
+        "negative": [
+          "fast-paced action",
+          "optimistic endings",
+          "romance-heavy plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich dialogue and atmospheric prose lend themselves exceptionally well to audio narration.",
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "She Who Was No More - Pierre Boileau & Thomas Narcejac": {
@@ -156554,80 +156577,146 @@
       "author": "Pierre Boileau & Thomas Narcejac",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Psychological Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A travelling salesman and his mistress drown his wife for her life insurance, but when the body mysteriously disappears the killer's grip on sanity slowly unravels. The novel is a study in guilt and psychological terror rather than detective investigation.",
+      "tone": "dark, claustrophobic, psychologically menacing",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "guilt and remorse",
+        "psychological disintegration",
+        "greed",
+        "the crime of passion",
+        "fate"
+      ],
+      "setting": "Post-WWII France, in and around Paris; fog-drenched provincial settings, ~1952",
+      "comparable_books": [
+        "Vertigo (D'entre les morts) - Boileau-Narcejac",
+        "The Talented Mr. Ripley - Patricia Highsmith",
+        "Strangers on a Train - Patricia Highsmith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "French noir",
+          "psychological suspense",
+          "unreliable/guilty protagonist",
+          "classic crime fiction",
+          "short reads"
+        ],
+        "negative": [
+          "detective procedurals",
+          "action-heavy plots",
+          "upbeat resolutions"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood's a Rover - James Ellroy": {
       "title": "Blood's a Rover",
       "author": "James Ellroy",
       "series": "Underworld USA",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set between 1968 and 1972, three men — a cop, a federal agent, and a private eye — are drawn into a vast conspiracy involving J. Edgar Hoover, Howard Hughes, the Black Power movement, and the Dominican Republic. It is the violent, morally sprawling conclusion to Ellroy's Underworld USA trilogy.",
+      "tone": "brutal, feverish, maximalist, darkly propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "political conspiracy",
+        "American corruption",
+        "obsession",
+        "race and power",
+        "moral ambiguity"
+      ],
+      "setting": "USA, 1968–1972; the turbulent final years of the Nixon era's prelude",
+      "comparable_books": [
+        "American Tabloid - James Ellroy",
+        "The Cold Six Thousand - James Ellroy",
+        "L.A. Confidential - James Ellroy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hardboiled crime",
+          "maximalist prose",
+          "political conspiracy",
+          "moral darkness",
+          "American history reimagined"
+        ],
+        "negative": [
+          "clean prose style",
+          "sympathetic protagonists",
+          "linear narratives",
+          "light reading"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Mill House Murders - Yukito Ayatsuji": {
       "title": "The Mill House Murders",
       "author": "Yukito Ayatsuji",
       "series": "The Bizarre House Mysteries",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Each year a small group of acquaintances visits the remote, castle-like Mill House, home to the reclusive and disfigured Fujinuma Kiichi. When their visit is disrupted by an impossible disappearance, a stolen painting, and a series of baffling murders, the brilliant detective Shimada Kiyoshi arrives to investigate.",
+      "tone": "atmospheric, eerie, puzzle-driven, Gothic",
+      "pacing": "Moderate",
+      "themes": [
+        "impossible crime",
+        "isolation",
+        "secrets and identity",
+        "fair-play detection",
+        "architecture as menace"
+      ],
+      "setting": "1980s Japan; a remote, castle-like mountain mansion",
+      "comparable_books": [
+        "The Decagon House Murders - Yukito Ayatsuji",
+        "The Honjin Murders - Seishi Yokomizo",
+        "And Then There Were None - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "honkaku/fair-play mysteries",
+          "locked-room puzzles",
+          "Golden Age tropes",
+          "Japanese crime fiction",
+          "atmospheric settings"
+        ],
+        "negative": [
+          "character-driven literary fiction",
+          "fast-paced thrillers",
+          "romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Master Key - Masako Togawa": {
@@ -156635,404 +156724,728 @@
       "author": "Masako Togawa",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the K Apartment for Ladies in postwar Tokyo is slated to be moved due to a highway widening project, the secrets of its aging, eccentric residents — including a buried child's corpse — begin to surface. A multilayered puzzle mystery that peels back the hidden lives of lonely women.",
+      "tone": "eerily atmospheric, quietly unsettling, melancholic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "secrets and hidden lives",
+        "loneliness",
+        "guilt",
+        "fate and chance",
+        "postwar Japan"
+      ],
+      "setting": "Postwar Tokyo, 1950s; the K Apartment for Ladies",
+      "comparable_books": [
+        "She Who Was No More - Boileau-Narcejac",
+        "The Devotion of Suspect X - Keigo Higashino",
+        "In the Woods - Tana French"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese mystery",
+          "puzzle mysteries",
+          "unusual narrative structure",
+          "female perspectives",
+          "creepy atmosphere"
+        ],
+        "negative": [
+          "action-heavy plots",
+          "conventional detective stories",
+          "fast-paced reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Scarecrow - Michael Connelly": {
       "title": "The Scarecrow",
       "author": "Michael Connelly",
       "series": "Jack McEvoy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Reporter Jack McEvoy, facing redundancy at the LA Times, latches onto a murder case involving a young man accused of killing a stripper — but the evidence points to something far darker: a brilliant, predatory killer using the internet's data centers to hide his crimes. An FBI agent joins the hunt as the conspiracy deepens.",
+      "tone": "propulsive, tense, procedural",
+      "pacing": "Fast",
+      "themes": [
+        "media and journalism",
+        "digital surveillance",
+        "predatory evil",
+        "truth-seeking",
+        "technology and crime"
+      ],
+      "setting": "Contemporary Los Angeles and Las Vegas; data centers and newsrooms",
+      "comparable_books": [
+        "The Poet - Michael Connelly",
+        "The Bat - Jo Nesbø",
+        "The Girl with the Dragon Tattoo - Stieg Larsson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive thrillers",
+          "serial killer narratives",
+          "journalism as plot driver",
+          "procedural detail",
+          "Connelly fans"
+        ],
+        "negative": [
+          "slow-burn literary fiction",
+          "character interiority over plot"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Connelly's books are widely praised in audio format; propulsive pacing suits the medium.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Battle for Peace - Andy Peloquin": {
       "title": "Battle for Peace",
       "author": "Andy Peloquin",
       "series": "The Silent Champions",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Captain Aravon and his elite special-ops unit must fight off a vast barbarian invasion while hunting a traitor in their own ranks who is feeding intelligence to the enemy. A grimdark military fantasy of brotherhood, sacrifice, and impossible odds.",
+      "tone": "grimdark, action-driven, military, camaraderie-focused",
+      "pacing": "Fast",
+      "themes": [
+        "brotherhood and loyalty",
+        "betrayal",
+        "war and sacrifice",
+        "duty",
+        "courage"
+      ],
+      "setting": "Secondary world medieval fantasy; barbarian-threatened frontier lands",
+      "comparable_books": [
+        "The Black Company - Glen Cook",
+        "The Malazan Book of the Fallen - Steven Erikson",
+        "Stiger's Tigers - Marc Alan Edelheit"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "grimdark",
+          "band-of-brothers narratives",
+          "fast-paced action",
+          "indie fantasy"
+        ],
+        "negative": [
+          "slow-paced literary fantasy",
+          "romance-heavy stories",
+          "low-stakes narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Whispers of Ruin - J. D. L. Rosell": {
       "title": "Whispers of Ruin",
       "author": "J. D. L. Rosell",
       "series": "The Famine Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the scheming, treacherous city of Oedija, a penniless peddler of secrets named Airene seizes her chance at justice when her nation's ruler dies under suspicious circumstances. Her investigation pulls her into a deadly conspiracy involving outlaw sorcerers, underground societies, and a world-devouring god.",
+      "tone": "intrigue-laden, fast-paced, politically tense",
+      "pacing": "Fast",
+      "themes": [
+        "political intrigue",
+        "forbidden magic",
+        "justice vs. survival",
+        "conspiracy",
+        "awakening gods"
+      ],
+      "setting": "Secondary world; the city of Oedija, a medieval fantasy setting with hard magic",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Mistborn - Brandon Sanderson",
+        "Theft of Swords - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indie epic fantasy",
+          "political intrigue",
+          "rogue protagonists",
+          "hard magic systems",
+          "city-based fantasy"
+        ],
+        "negative": [
+          "slow-burn meditative fiction",
+          "literary prose",
+          "low-magic settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Deceiver - Andy Peloquin": {
       "title": "Deceiver",
       "author": "Andy Peloquin",
       "series": "Darkblade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Hunter of Voramis is set on a collision course with the criminal underworld's Night Guild after a child is found slaughtered in a bloody ritual. Drawn into a web of deceit and betrayal that stretches across the continent, he must expose those truly responsible before his world is destroyed.",
+      "tone": "grimdark, action-driven, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "good vs. evil",
+        "sacrifice",
+        "identity",
+        "the cost of vengeance"
+      ],
+      "setting": "Secondary world dark fantasy; the cities of Einan, including Praamis",
+      "comparable_books": [
+        "Brent Weeks - The Way of Shadows",
+        "Michael J. Sullivan - Theft of Swords",
+        "Glen Cook - The Black Company"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "assassin protagonists",
+          "morally grey heroes",
+          "action-heavy plots",
+          "indie fantasy"
+        ],
+        "negative": [
+          "slow literary fantasy",
+          "minimal action",
+          "clean-cut heroics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Last March - Andy Peloquin": {
       "title": "The Last March",
       "author": "Andy Peloquin",
       "series": "The Silent Champions",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6 (companion novel / prequel)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sergeant Koltun and his misfit Screaming Howlers are caught up in a desperate last stand defending Highcliff Motte against a horde of Eirdkilr barbarians. Outnumbered and cut off from reinforcements, their only hope is to march — every step a fight to survive.",
+      "tone": "grimdark, grim, military, poignant",
+      "pacing": "Fast",
+      "themes": [
+        "duty and sacrifice",
+        "brotherhood",
+        "survival against impossible odds",
+        "courage",
+        "legacy"
+      ],
+      "setting": "Secondary world medieval fantasy; Highcliff Motte frontier fortification",
+      "comparable_books": [
+        "The Black Company - Glen Cook",
+        "300 (film source: Gates of Fire) - Steven Pressfield",
+        "Malazan Book of the Fallen - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "grimdark",
+          "last-stand narratives",
+          "band-of-brothers stories",
+          "indie fantasy"
+        ],
+        "negative": [
+          "romance subplots",
+          "slow-burn world-building",
+          "optimistic resolutions"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Cruel Wind - Glen Cook": {
       "title": "A Cruel Wind",
       "author": "Glen Cook",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Dread Empire",
+      "series_position": "Books 1–3 (omnibus)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An omnibus collecting the first three Dread Empire novels — A Shadow of All Night Falling, October's Baby, and All Darkness Met — which follow adventurers, wizards, and mercenaries caught in the vast political and magical struggles of the continent of Shinsan. A precursor to Cook's Black Company, it blends epic scope with grounded, morally complex characterisation.",
+      "tone": "gritty, epic, morally ambiguous",
+      "pacing": "Moderate",
+      "themes": [
+        "war and empire",
+        "power and corruption",
+        "loyalty",
+        "fate",
+        "the cost of ambition"
+      ],
+      "setting": "Secondary world; the continent of Shinsan and the Lesser Kingdoms of the West, high fantasy medieval setting",
+      "comparable_books": [
+        "The Black Company - Glen Cook",
+        "Malazan Book of the Fallen - Steven Erikson",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark epic fantasy",
+          "military fantasy precursors",
+          "morally grey casts",
+          "Glen Cook fans",
+          "classic 1980s fantasy"
+        ],
+        "negative": [
+          "light-hearted fantasy",
+          "romance-heavy stories",
+          "clean heroic narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lies Weeping - Glen Cook": {
       "title": "Lies Weeping",
       "author": "Glen Cook",
       "series": "Chronicles of The Black Company",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12 (A Pitiless Rain, Book 1)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Orphaned cousins Arkana and Shukrat Voroshk take up the role of Annalists for the Black Company as it retreats to a new world called Hsien, trying to rebuild while mysterious dangers emerge around them. The first book in the all-new 'A Pitiless Rain' arc, told through the lively journal entries of two young women.",
+      "tone": "grimdark, surprisingly playful at times, dense, world-weary",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival and loyalty",
+        "war's aftermath",
+        "recording history",
+        "identity",
+        "power and its costs"
+      ],
+      "setting": "Hsien (Land of Unknown Shadows); a secondary world in the Black Company universe, post-events of Soldiers Live",
+      "comparable_books": [
+        "Soldiers Live - Glen Cook",
+        "Port of Shadows - Glen Cook",
+        "Malazan Book of the Fallen - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "Black Company fans",
+          "morally grey military fantasy",
+          "unconventional narrators",
+          "epic series"
+        ],
+        "negative": [
+          "newcomers to the series",
+          "fast-paced standalone reads",
+          "light fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Labyrinth House Murders - Yukito Ayatsuji": {
       "title": "The Labyrinth House Murders",
       "author": "Yukito Ayatsuji",
       "series": "The Bizarre House Mysteries",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Four rising crime writers are invited to the underground, labyrinthine Labyrinth House for a birthday party, only to find themselves confronted with death and lured into a deadly writing competition. As murders multiply, detective Shimada Kiyoshi investigates in a mystery-within-a-mystery structure steeped in Greek myth.",
+      "tone": "eerie, cerebral, puzzle-driven, postmodern",
+      "pacing": "Moderate",
+      "themes": [
+        "fair-play detection",
+        "metafiction",
+        "architecture and entrapment",
+        "ambition and envy",
+        "Greek mythology"
+      ],
+      "setting": "1987 Japan; an underground labyrinthine mansion in a remote location",
+      "comparable_books": [
+        "The Mill House Murders - Yukito Ayatsuji",
+        "The Decagon House Murders - Yukito Ayatsuji",
+        "Magpie Murders - Anthony Horowitz"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "honkaku mysteries",
+          "locked-room puzzles",
+          "metafictional crime",
+          "Japanese crime fiction",
+          "Golden Age whodunits"
+        ],
+        "negative": [
+          "character-driven literary fiction",
+          "fast-paced action thrillers",
+          "romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Daughter of the Otherworld - Shauna Lawless": {
       "title": "Daughter of the Otherworld",
       "author": "Shauna Lawless",
       "series": "Gael Song: Era II",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Over a hundred years after her disappearance, Isolde — daughter of a famous Irish king and a powerful immortal Descendant — reappears with no magical ability in a medieval Ireland now threatened by Norman invasion and the resurgent Fomorians. A coming-of-age story woven from Irish mythology and the history of the Norman conquest of Ireland.",
+      "tone": "lyrical, emotionally charged, epic, romantic",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and heritage",
+        "mythology vs. history",
+        "war and invasion",
+        "coming of age",
+        "belonging"
+      ],
+      "setting": "12th-century Ireland during the Norman invasion; a world of Tuatha Dé Danann and Fomorians",
+      "comparable_books": [
+        "The Children of Gods and Fighting Men - Shauna Lawless",
+        "A Song of Ice and Fire - George R.R. Martin",
+        "The Last Kingdom - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Irish mythology",
+          "historical fantasy",
+          "strong female protagonists",
+          "emotionally rich storytelling",
+          "lyrical prose"
+        ],
+        "negative": [
+          "hard grimdark",
+          "minimal romance",
+          "low fantasy or non-mythological settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dreams of Fire - Shauna Lawless": {
       "title": "Dreams of Fire",
       "author": "Shauna Lawless",
       "series": "Gael Song Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (prequel novella)",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel novella set a century before The Children of Gods and Fighting Men, following Rónnat and her sister Fódla, Descendants of the Tuatha Dé Danann, as their people are drawn back into war with the fire-wielding Fomorians in medieval Ireland.",
+      "tone": "lyrical, intimate, foreboding",
+      "pacing": "Fast",
+      "themes": [
+        "sisterhood",
+        "freedom vs. duty",
+        "ancient conflict",
+        "prophecy",
+        "mythology"
+      ],
+      "setting": "Early 10th-century Ireland; the world of immortal Descendants and Fomorians",
+      "comparable_books": [
+        "Dreams of Sorrow - Shauna Lawless",
+        "The Children of Gods and Fighting Men - Shauna Lawless",
+        "The Wolf and the Watchman - Niklas Natt och Dag"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Irish mythology",
+          "historical fantasy novellas",
+          "prequel world-building",
+          "lyrical prose",
+          "strong female characters"
+        ],
+        "negative": [
+          "long epic reads",
+          "high action pacing",
+          "minimal mythology"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dreams of Sorrow - Shauna Lawless": {
       "title": "Dreams of Sorrow",
       "author": "Shauna Lawless",
       "series": "Gael Song Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2.5 (interquel novella)",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young woman named Senna discovers she is a Descendant of the Tuatha Dé Danann when a traumatic event unleashes powers she cannot control, forcing her to leave her mortal life behind and enter the world of immortals — and the manipulative Tomas. A heartbreaking companion novella to the Gael Song trilogy.",
+      "tone": "lyrical, heartbreaking, intimate",
+      "pacing": "Fast",
+      "themes": [
+        "magical awakening",
+        "loss of innocence",
+        "manipulation and betrayal",
+        "belonging",
+        "the cost of power"
+      ],
+      "setting": "Medieval Ireland; the world of the Descendants and the Tuatha Dé Danann",
+      "comparable_books": [
+        "Dreams of Fire - Shauna Lawless",
+        "The Words of Kings and Prophets - Shauna Lawless",
+        "The Children of Gods and Fighting Men - Shauna Lawless"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Irish mythology",
+          "companion novellas",
+          "emotional storytelling",
+          "lyrical prose",
+          "series devotees"
+        ],
+        "negative": [
+          "standalone reads",
+          "action-focused fantasy",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Land of the Living and the Dead - Shauna Lawless": {
       "title": "The Land of the Living and the Dead",
       "author": "Shauna Lawless",
       "series": "Gael Song Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The culminating volume of the Gael Song trilogy, set in Ireland around 1011 AD, as the old world of Descendants and Fomorians faces annihilation and mortal kingdoms collide in the lead-up to the Battle of Clontarf. Threads of mythology, treachery, and sacrifice are woven to their violent conclusion.",
+      "tone": "lyrical, epic, emotionally devastating",
+      "pacing": "Moderate",
+      "themes": [
+        "war and sacrifice",
+        "mythology and history intertwined",
+        "loyalty and betrayal",
+        "the end of an age",
+        "love and loss"
+      ],
+      "setting": "Ireland, c. 1011 AD; Viking Age medieval Ireland blending history and Irish myth",
+      "comparable_books": [
+        "The Words of Kings and Prophets - Shauna Lawless",
+        "The Children of Gods and Fighting Men - Shauna Lawless",
+        "The Last Kingdom - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Irish mythology",
+          "historical fantasy",
+          "epic conclusions",
+          "emotionally rich storytelling",
+          "lyrical prose"
+        ],
+        "negative": [
+          "grimdark without heart",
+          "minimal mythology",
+          "standalone reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Words of Kings and Prophets - Shauna Lawless": {
       "title": "The Words of Kings and Prophets",
       "author": "Shauna Lawless",
       "series": "Gael Song Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The sequel to The Children of Gods and Fighting Men continues to braid the lives of immortal Descendants and mortal Irish kings as political intrigues and the war between the Tuatha Dé Danann and Fomorians escalate across Viking Age Ireland.",
+      "tone": "lyrical, politically tense, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "political power",
+        "mythology vs. mortality",
+        "loyalty and ambition",
+        "war",
+        "identity"
+      ],
+      "setting": "10th-century Ireland; Viking Age, a world of mortal kings and immortal magical races",
+      "comparable_books": [
+        "The Children of Gods and Fighting Men - Shauna Lawless",
+        "The Land of the Living and the Dead - Shauna Lawless",
+        "A Discovery of Witches - Deborah Harkness"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Irish mythology",
+          "historical fantasy",
+          "strong female casts",
+          "lyrical prose",
+          "political intrigue in fantasy"
+        ],
+        "negative": [
+          "hard grimdark",
+          "minimal mythology",
+          "standalone readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Tyrant - Conn Iggulden": {
       "title": "Tyrant",
       "author": "Conn Iggulden",
       "series": "Nero",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Rome from 50 AD, Agrippina the Younger manoeuvres her son Lucius into the imperial succession through her marriage to Emperor Claudius, and Lucius is adopted as Nero Claudius Caesar. As Nero grows into manhood under the tutelage of Seneca, mother and son navigate treacherous court politics until Nero himself ascends to power.",
+      "tone": "propulsive, politically sharp, vivid, Roman",
+      "pacing": "Fast",
+      "themes": [
+        "power and ambition",
+        "motherhood and manipulation",
+        "political survival",
+        "the corruption of power",
+        "Roman imperial intrigue"
+      ],
+      "setting": "Ancient Rome, c. 50 AD; the Palatine court of Emperor Claudius",
+      "comparable_books": [
+        "Nero - Conn Iggulden",
+        "I, Claudius - Robert Graves",
+        "Masters of Rome - Colleen McCullough"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient Rome historical fiction",
+          "propulsive political drama",
+          "morally complex characters",
+          "Conn Iggulden fans",
+          "biographical historical fiction"
+        ],
+        "negative": [
+          "slow literary fiction",
+          "low-stakes narratives",
+          "fantasy settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Iggulden's vivid dialogue and propulsive plotting translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Magna Carta: The Birth of Liberty - Dan Jones": {
@@ -157040,26 +157453,46 @@
       "author": "Dan Jones",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dan Jones charts the turbulent origins of Magna Carta in 1215, exploring the clash between King John and his barons, and traces the document's evolving legacy from a feudal peace treaty to one of the foundational texts of modern liberty and constitutional law.",
+      "tone": "authoritative, accessible, lively",
+      "pacing": "Moderate",
+      "themes": [
+        "liberty and rights",
+        "the rule of law",
+        "feudal power struggles",
+        "constitutional history",
+        "legacy and myth-making"
+      ],
+      "setting": "Medieval England, 1215 and beyond; Runnymede and the courts of King John",
+      "comparable_books": [
+        "The Plantagenets - Dan Jones",
+        "1215: The Year of Magna Carta - Danny Danziger & John Gillingham",
+        "The Birth of the English Common Law - R.C. van Caenegem"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible popular history",
+          "medieval England",
+          "constitutional and legal history",
+          "narrative non-fiction",
+          "Dan Jones fans"
+        ],
+        "negative": [
+          "dense academic history",
+          "fiction readers only",
+          "non-historical readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jones's accessible, narrative style makes this a compelling listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Plantagenets: The Warrior Kings and Queens Who Made England - Dan Jones": {
