@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3284,
-  "total_pending": 1316,
+  "total_catalogued": 3304,
+  "total_pending": 1296,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -183448,26 +183448,52 @@
       "author": "Ferdia Lennon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in 412 BC Syracuse after the failed Athenian invasion of Sicily, two unemployed potters hatch an audacious plan to stage Euripides' plays using starving Athenian prisoners of war as actors. Told in a riotous contemporary Irish voice, it is both a darkly comic and deeply moving meditation on the power of art in wartime.",
+      "tone": "darkly comic, tragicomic, lyrical, irreverent",
+      "pacing": "Moderate",
+      "themes": [
+        "art and survival",
+        "brotherhood",
+        "war and its aftermath",
+        "the power of theatre",
+        "humanity across battle lines"
+      ],
+      "setting": "412 BC Syracuse, Sicily, in the aftermath of the Athenian military disaster during the Peloponnesian War",
+      "comparable_books": [
+        "Enter Ghost - Isabella Hammad",
+        "Station Eleven - Emily St. John Mandel",
+        "Dark Earth - Rebecca Stott",
+        "A Long Long Way - Sebastian Barry"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic historical fiction",
+          "literary debut fiction",
+          "Greek antiquity setting",
+          "bromance and male friendship",
+          "art-as-resistance theme",
+          "Irish literary voice",
+          "tragicomic tone",
+          "prize-winning literary fiction"
+        ],
+        "negative": [
+          "readers wanting pure comedy without darkness",
+          "readers expecting conventional ancient-world epic",
+          "slow meditative pacing preferred"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Adapted for BBC Radio 4; the contemporary Irish vernacular voice is particularly vivid and alive when performed.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Deluge - Stephen Markley": {
@@ -183475,26 +183501,53 @@
       "author": "Stephen Markley",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An ambitious, nearly 900-page American epic spanning 2013 to 2040, following a sprawling ensemble of characters — activists, scientists, politicians, and zealots — whose fates intertwine as ecological collapse and political chaos accelerate toward a catastrophic breaking point. A towering work of climate fiction that blends procedural thriller, literary character study, and speculative horror.",
+      "tone": "urgent, propulsive, terrifying, polyphonic, sprawling",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "climate change and ecological collapse",
+        "political polarization",
+        "activism and sacrifice",
+        "the American social fabric",
+        "hope vs. despair"
+      ],
+      "setting": "Near-future America, 2013–2040, spanning the Gulf Coast, Los Angeles, the Midwest, and Washington D.C.",
+      "comparable_books": [
+        "The Overstory - Richard Powers",
+        "Ohio - Stephen Markley",
+        "Underworld - Don DeLillo",
+        "Flight Behavior - Barbara Kingsolver",
+        "The Ministry for the Future - Kim Stanley Robinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "climate fiction",
+          "polyphonic narration",
+          "large ensemble casts",
+          "literary epic ambition",
+          "near-future speculative fiction",
+          "socially urgent fiction",
+          "fans of very long novels"
+        ],
+        "negative": [
+          "readers who prefer focused single-protagonist narratives",
+          "readers averse to political content",
+          "readers wanting fast pacing throughout",
+          "those put off by 900-page books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Good German - Joseph Kanon": {
@@ -183502,26 +183555,50 @@
       "author": "Joseph Kanon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the ruins of Berlin just after World War II, American journalist Jake Geismar returns to find his former lover caught up in a web of murder, black-market dealings, and the race between the Allied powers to recruit Nazi scientists. A noir thriller steeped in moral ambiguity and the chaos of the immediate postwar world.",
+      "tone": "noir, morally complex, atmospheric, tense",
+      "pacing": "Moderate",
+      "themes": [
+        "guilt and complicity",
+        "moral ambiguity",
+        "postwar chaos and reconstruction",
+        "justice vs. expediency",
+        "love and betrayal"
+      ],
+      "setting": "Berlin, Germany, summer 1945, immediately after the German surrender and during the Potsdam Conference",
+      "comparable_books": [
+        "The Third Man - Graham Greene",
+        "Berlin Game - Len Deighton",
+        "Zoo Station - David Downing",
+        "Istanbul Passage - Joseph Kanon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "postwar noir thriller",
+          "WWII historical fiction",
+          "morally grey characters",
+          "atmospheric European settings",
+          "literary spy fiction"
+        ],
+        "negative": [
+          "readers wanting action-heavy thrillers",
+          "readers put off by moral ambiguity",
+          "romance-heavy plot seekers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Empire of Pain: The Secret History of the Sackler Dynasty - Patrick Radden Keefe": {
@@ -183529,296 +183606,572 @@
       "author": "Patrick Radden Keefe",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A meticulous and damning investigation into the Sackler family dynasty, tracing their rise from immigrant origins to extraordinary philanthropic wealth, and exposing their central role in creating and profiting from the American opioid crisis through Purdue Pharma and OxyContin. A gripping work of narrative nonfiction that reads like a thriller.",
+      "tone": "incisive, propulsive, outraged, meticulously reported",
+      "pacing": "Fast",
+      "themes": [
+        "corporate greed and accountability",
+        "the opioid crisis",
+        "philanthropy as reputation laundering",
+        "the American dream and its corruption",
+        "family legacy and complicity"
+      ],
+      "setting": "America and Europe, 20th–21st century, centred on the Sackler family business empire and Purdue Pharma",
+      "comparable_books": [
+        "Say Nothing - Patrick Radden Keefe",
+        "Dopesick - Beth Macy",
+        "Bad Blood - John Carreyrou",
+        "American Overdose - Chris McGreal",
+        "Pain Killer - Barry Meier"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction",
+          "investigative journalism",
+          "corporate malfeasance exposés",
+          "propulsive true-crime adjacent",
+          "American dynasty stories",
+          "opioid crisis interest"
+        ],
+        "negative": [
+          "readers wanting purely objective reporting without authorial perspective",
+          "readers averse to nonfiction",
+          "those seeking uplifting reads"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Keefe's propulsive, novelistic narrative style translates superbly to audio; widely praised in this format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "My Heart Is a Chainsaw - Stephen Graham Jones": {
       "title": "My Heart Is a Chainsaw",
       "author": "Stephen Graham Jones",
       "series": "The Indian Lake Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jade Daniels, a half-Native American teenager obsessed with slasher films, is convinced that her Idaho lakeside town of Proofrock is on the cusp of a real massacre — and she might be the only one who can see it coming. A deeply knowing love letter to slasher cinema that is simultaneously a story of trauma, Indigenous identity, and survival.",
+      "tone": "visceral, propulsive, deeply cinematic, emotionally layered",
+      "pacing": "Fast",
+      "themes": [
+        "slasher cinema and horror fandom",
+        "trauma and survival",
+        "Indigenous identity and dispossession",
+        "class conflict",
+        "gentrification"
+      ],
+      "setting": "Proofrock, Idaho — a small lakeside town — in the present day",
+      "comparable_books": [
+        "The Only Good Indians - Stephen Graham Jones",
+        "The Final Girl Support Group - Grady Hendrix",
+        "Paperbacks from Hell - Grady Hendrix",
+        "Mexican Gothic - Silvia Moreno-Garcia"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slasher horror",
+          "horror fandom and meta-horror",
+          "propulsive pacing",
+          "Native American voices",
+          "literary horror",
+          "strong female protagonist",
+          "genre-savvy fiction"
+        ],
+        "negative": [
+          "readers averse to graphic violence",
+          "readers who dislike meta or self-referential fiction",
+          "those wanting supernatural horror over grounded threat"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Revelation - C. J. Sansom": {
       "title": "Revelation",
       "author": "C. J. Sansom",
       "series": "The Shardlake Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the turbulent London of 1543, hunchback lawyer Matthew Shardlake is drawn into a terrifying investigation when a series of murders appear to match the apocalyptic plagues of the Book of Revelation, pursued by a religious zealot convinced the End Times are at hand. Sansom weaves courtroom intrigue, Tudor politics, and a chilling serial killer hunt into a gripping historical procedural.",
+      "tone": "atmospheric, grim, methodical, richly researched",
+      "pacing": "Moderate",
+      "themes": [
+        "religious fanaticism and the Reformation",
+        "justice and the law",
+        "Tudor England's political dangers",
+        "apocalypticism",
+        "morality and obsession"
+      ],
+      "setting": "London, 1543, during the reign of Henry VIII, amid the turbulence of the English Reformation",
+      "comparable_books": [
+        "Dissolution - C. J. Sansom",
+        "The Name of the Rose - Umberto Eco",
+        "An Instance of the Fingerpost - Iain Pears",
+        "The Reckoning - Sharon Kay Penman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tudor historical fiction",
+          "historical mystery and procedural",
+          "long immersive series",
+          "richly researched settings",
+          "morally complex protagonists",
+          "fans of C. J. Sansom's series"
+        ],
+        "negative": [
+          "readers wanting fast-paced thrillers",
+          "those put off by lengthy historical novels",
+          "readers averse to religious/Reformation content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Shardlake series is widely regarded as exceptionally well-suited to audio, with Anton Lesser's acclaimed narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Shadow of the Torturer - Gene Wolfe": {
       "title": "The Shadow of the Torturer",
       "author": "Gene Wolfe",
       "series": "The Book of the New Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Severian, a young apprentice in the ancient guild of torturers in the far-future dying Earth of Urth, is exiled after showing mercy to a prisoner, and begins an epic journey to a distant city carrying the great sword Terminus Est. Wolfe's prose is dense, layered, and deliberately unreliable, told by a narrator who claims perfect memory yet deceives.",
+      "tone": "dense, dreamlike, unreliable, erudite, mythic",
+      "pacing": "Slow",
+      "themes": [
+        "memory and truth",
+        "guilt and redemption",
+        "the nature of narrative and unreliable narration",
+        "entropy and civilizational decline",
+        "identity and transformation"
+      ],
+      "setting": "The far-future dying Earth of Urth, in a world so ancient that science has become indistinguishable from magic, in a decaying civilization",
+      "comparable_books": [
+        "The Claw of the Conciliator - Gene Wolfe",
+        "Book of the Long Sun - Gene Wolfe",
+        "A Wizard of Earthsea - Ursula K. Le Guin",
+        "Lord of Light - Roger Zelazny",
+        "The Dying Earth - Jack Vance"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fantasy",
+          "unreliable narrators",
+          "dense and layered prose",
+          "dying Earth subgenre",
+          "puzzle-box fiction",
+          "re-readable classics",
+          "fans of Wolfe"
+        ],
+        "negative": [
+          "readers wanting fast-paced or action-driven fantasy",
+          "readers who prefer straightforward narrators",
+          "readers averse to deliberately obscure prose",
+          "casual genre readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Wolfe's deliberate prose rewards close reading, rereading, and annotation; the layered meanings and unreliable narration are best appreciated in print.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Claw of the Conciliator - Gene Wolfe": {
       "title": "The Claw of the Conciliator",
       "author": "Gene Wolfe",
       "series": "The Book of the New Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Severian continues his journey across Urth, now carrying the mysterious Claw of the Conciliator — a gem with miraculous healing powers — while becoming entangled with rebels, an ancient theatrical troupe, and the enigmatic forces shaping his destiny. The novel deepens the series' mythological and theological mysteries while further destabilising the reader's trust in the narrator.",
+      "tone": "dense, dreamlike, unreliable, erudite, mythic",
+      "pacing": "Slow",
+      "themes": [
+        "religious and messianic mythology",
+        "memory and deception",
+        "fate and free will",
+        "power and its corruption",
+        "the nature of miracles"
+      ],
+      "setting": "The far-future dying Earth of Urth, spanning cities, jungles, and ancient ruins of a civilisation beyond reckoning",
+      "comparable_books": [
+        "The Shadow of the Torturer - Gene Wolfe",
+        "The Sword of the Lictor - Gene Wolfe",
+        "Lord of Light - Roger Zelazny",
+        "The Dying Earth - Jack Vance"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fantasy",
+          "unreliable narrators",
+          "dense and layered prose",
+          "dying Earth subgenre",
+          "puzzle-box fiction",
+          "Hugo Award winners",
+          "fans of Wolfe"
+        ],
+        "negative": [
+          "readers wanting fast-paced or action-driven fantasy",
+          "readers who prefer transparent narrators",
+          "readers averse to deliberately obscure prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The layered unreliable narration and deeply embedded textual clues reward careful print reading and re-reading.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Sword of the Lictor - Gene Wolfe": {
       "title": "The Sword of the Lictor",
       "author": "Gene Wolfe",
       "series": "The Book of the New Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Severian arrives in the mountain city of Thrax as its new Lictor, but is forced to flee again after another act of compassion places him outside the law, leading him into a wilderness of giants, monsters, and hermits as his messianic destiny becomes harder to deny. The third volume of Wolfe's tetralogy accelerates toward the series' cosmological revelations.",
+      "tone": "dense, dreamlike, unreliable, erudite, mythic",
+      "pacing": "Slow",
+      "themes": [
+        "sacrifice and messianic identity",
+        "isolation and exile",
+        "civilization vs. wilderness",
+        "death and resurrection",
+        "the cruelty and necessity of law"
+      ],
+      "setting": "The mountain city of Thrax and the wild northern wilderness of the dying Earth of Urth",
+      "comparable_books": [
+        "The Claw of the Conciliator - Gene Wolfe",
+        "The Citadel of the Autarch - Gene Wolfe",
+        "The Dying Earth - Jack Vance",
+        "Lord of Light - Roger Zelazny"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fantasy",
+          "unreliable narrators",
+          "dense layered prose",
+          "dying Earth subgenre",
+          "puzzle-box fiction",
+          "fans of Wolfe"
+        ],
+        "negative": [
+          "readers wanting action-driven fantasy",
+          "readers averse to oblique narration",
+          "casual genre readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The layered unreliable narration and deeply embedded textual clues reward careful print reading and re-reading.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Citadel of the Autarch - Gene Wolfe": {
       "title": "The Citadel of the Autarch",
       "author": "Gene Wolfe",
       "series": "The Book of the New Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The concluding volume brings Severian to the front lines of a vast war and ultimately to the seat of ultimate power, where the truth of his identity, his mission, and the fate of the dying sun of Urth are finally revealed — though never quite simply. A richly ambiguous conclusion that rewards readers who have followed Wolfe's clues across all four volumes.",
+      "tone": "dense, mythic, revelatory, erudite, elegiac",
+      "pacing": "Slow",
+      "themes": [
+        "destiny and messianic purpose",
+        "the nature of time and causality",
+        "civilizational renewal vs. extinction",
+        "the unreliability of memory and self-knowledge",
+        "sacrifice"
+      ],
+      "setting": "The battlefields and court of the Autarch on the far-future dying Earth of Urth, as an alien war reaches its crisis",
+      "comparable_books": [
+        "The Sword of the Lictor - Gene Wolfe",
+        "Urth of the New Sun - Gene Wolfe",
+        "The Dying Earth - Jack Vance",
+        "Lord of Light - Roger Zelazny"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fantasy",
+          "unreliable narrators",
+          "dense layered prose",
+          "dying Earth subgenre",
+          "puzzle-box fiction",
+          "Hugo and Nebula Award winners",
+          "fans of Wolfe"
+        ],
+        "negative": [
+          "readers wanting fast or action-driven fantasy",
+          "readers averse to oblique narration",
+          "those seeking clear and satisfying resolutions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The layered unreliable narration and deeply embedded textual clues reward careful print reading and re-reading.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Thief of the Night Guild - Andy Peloquin": {
       "title": "Thief of the Night Guild",
       "author": "Andy Peloquin",
       "series": "Queen of Thieves",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Now a journeyman thief operating under the brutal rules of the Night Guild, Ilanna assembles a crew to execute an audacious heist against the most powerful man in the city — all to buy her freedom and protect the secret of her young son. The second entry in the trilogy escalates the stakes and darkness considerably, functioning as a grimdark fantasy heist novel.",
+      "tone": "grimdark, relentless, action-driven, emotionally punishing",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and servitude",
+        "survival and sacrifice",
+        "loyalty and betrayal",
+        "maternal love",
+        "the criminal underworld"
+      ],
+      "setting": "The city of Praamis, a gritty secondary-world fantasy city dominated by the Night Guild's criminal hierarchy",
+      "comparable_books": [
+        "Six of Crows - Leigh Bardugo",
+        "The Way of Shadows - Brent Weeks",
+        "Nevernight - Jay Kristoff",
+        "Child of the Night Guild - Andy Peloquin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "heist plots",
+          "gritty female protagonists",
+          "fast-paced action",
+          "thieves' guild fiction",
+          "indie fantasy"
+        ],
+        "negative": [
+          "readers averse to graphic violence or sexual assault themes",
+          "readers wanting lighter fantasy",
+          "those who prefer hopeful or humorous tones"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Queen of the Night Guild - Andy Peloquin": {
       "title": "Queen of the Night Guild",
       "author": "Andy Peloquin",
       "series": "Queen of Thieves",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the blazing conclusion to the trilogy, Ilanna has lost everything — friends, home, and her dreams of freedom — and now channels her grief into a burning war of vengeance against those who betrayed and destroyed what she loved. A relentless, action-packed finale that brings the Queen of Thieves' arc to an emotionally devastating close.",
+      "tone": "grimdark, relentless, action-driven, devastating",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and justice",
+        "loss and grief",
+        "survival against impossible odds",
+        "loyalty",
+        "the cost of power"
+      ],
+      "setting": "The city of Praamis and beyond, in a gritty secondary-world fantasy setting",
+      "comparable_books": [
+        "Thief of the Night Guild - Andy Peloquin",
+        "The Way of Shadows - Brent Weeks",
+        "Six of Crows - Leigh Bardugo",
+        "Queen of Shadows - Sarah J. Maas"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "action-packed series finales",
+          "gritty female protagonists",
+          "revenge plots",
+          "thieves' guild fiction",
+          "indie fantasy"
+        ],
+        "negative": [
+          "readers averse to graphic violence",
+          "those wanting lighter or hopeful fantasy",
+          "readers who haven't read books 1–2"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Traitors' Fate - Andy Peloquin": {
       "title": "Traitors' Fate",
       "author": "Andy Peloquin",
       "series": "Queen of Thieves",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3.5",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set eight years after the events of the trilogy, Ilanna — now Master of the Night Guild — uncovers a ring of slavers trafficking young women across the continent and must ally with the legendary assassin known as the Hunter to destroy a conspiracy that her guild's power alone cannot reach. A standalone spinoff that bridges the Queen of Thieves and Darkblade Assassin series.",
+      "tone": "grimdark, action-driven, dark, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "justice and vigilantism",
+        "human trafficking and slavery",
+        "unlikely alliances",
+        "the cost of leadership",
+        "morality in a criminal world"
+      ],
+      "setting": "Praamis and the city of Voramis, in a gritty secondary-world fantasy setting",
+      "comparable_books": [
+        "Queen of the Night Guild - Andy Peloquin",
+        "The Way of Shadows - Brent Weeks",
+        "Nevernight - Jay Kristoff"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "dual-protagonist action",
+          "thieves and assassins",
+          "crossover spinoffs",
+          "fast-paced plots",
+          "indie fantasy"
+        ],
+        "negative": [
+          "readers averse to dark content including human trafficking themes",
+          "those who have not read the main trilogy",
+          "readers wanting lighter fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Child of the Night Guild - Andy Peloquin": {
       "title": "Child of the Night Guild",
       "author": "Andy Peloquin",
       "series": "Queen of Thieves",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When her father sells her to pay his debts, a young girl named Viola is thrown into the brutal training of the Night Guild, where she must survive a decade of cruelty, rivalry, and grief to become the most skilled thief in the kingdom. A dark, coming-of-age grimdark fantasy centred on resilience and identity forged in suffering.",
+      "tone": "grimdark, bleak, action-driven, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "survival and resilience",
+        "identity and self-determination",
+        "child abuse and exploitation",
+        "found family",
+        "the criminal underworld"
+      ],
+      "setting": "The city of Praamis, a gritty secondary-world fantasy city dominated by the Night Guild's criminal hierarchy",
+      "comparable_books": [
+        "Nevernight - Jay Kristoff",
+        "The Way of Shadows - Brent Weeks",
+        "Six of Crows - Leigh Bardugo",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "coming-of-age dark fantasy",
+          "thieves' guild fiction",
+          "gritty female protagonists",
+          "fast-paced action",
+          "indie fantasy"
+        ],
+        "negative": [
+          "readers averse to child abuse and sexual assault content",
+          "readers wanting lighter or hopeful fantasy",
+          "those who prefer slower, more literary prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Those Across the River - Christopher Buehlman": {
@@ -183826,53 +184179,103 @@
       "author": "Christopher Buehlman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1935 Georgia, failed academic Frank Nichols arrives in the decaying town of Whitbrow to write a history of his ancestor's brutal plantation, only to discover that a monstrous presence in the shadowy woods across the river has been waiting — and feeding — for generations. A lyrical, atmospheric Southern Gothic horror debut that blends folklore, Jim Crow-era racial tension, and genuine supernatural dread.",
+      "tone": "atmospheric, dread-laden, lyrical, Southern Gothic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "ancestral guilt and inherited sin",
+        "racial violence and Southern history",
+        "the monstrous lurking beneath small-town charm",
+        "sacrifice and debt",
+        "the past refusing to die"
+      ],
+      "setting": "Whitbrow, Georgia, 1935 — a decaying small town beside a dark river and the ruins of a plantation, in the Jim Crow South",
+      "comparable_books": [
+        "Between Two Fires - Christopher Buehlman",
+        "Harvest Home - Thomas Tryon",
+        "The Southern Book Club's Guide to Slaying Vampires - Grady Hendrix",
+        "Beloved - Toni Morrison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern Gothic horror",
+          "atmospheric literary horror",
+          "historical horror settings",
+          "folklore-based horror",
+          "debut horror novels",
+          "fans of Buehlman"
+        ],
+        "negative": [
+          "readers wanting fast-paced horror",
+          "those averse to racial violence themes",
+          "readers expecting purely action-driven horror"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Widely praised on audio; the Southern atmosphere and period voices are vividly brought to life by narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mississippi Blue 42 - Eli Cranor": {
       "title": "Mississippi Blue 42",
       "author": "Eli Cranor",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "FBI Special Agent Rae Johnson",
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fresh out of Quantico, rookie FBI agent Rae Johnson is sent to Compson, Mississippi, to investigate illicit money flowing into a college football program — but a simple fraud case explodes when the star quarterback is hurled from a rooftop onto a bag of cash. A darkly comic, Elmore Leonard-channelling crime novel that skewers the corrupt machinery of big-money college football.",
+      "tone": "darkly comic, propulsive, sharp, Southern-fried noir",
+      "pacing": "Fast",
+      "themes": [
+        "corruption in college athletics",
+        "race and class in the American South",
+        "ambition and greed",
+        "murder and cover-ups",
+        "NIL money and exploitation of athletes"
+      ],
+      "setting": "Compson, Mississippi — a small, football-obsessed college town in the heart of the Delta — present day",
+      "comparable_books": [
+        "Don't Know Tough - Eli Cranor",
+        "Ozark Dogs - Eli Cranor",
+        "Mystic River - Dennis Lehane",
+        "Carl Hiaasen novels",
+        "Elmore Leonard novels"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "crime fiction",
+          "Southern noir",
+          "darkly comic crime",
+          "college football backdrop",
+          "FBI procedural",
+          "fast-paced plotting",
+          "series debut"
+        ],
+        "negative": [
+          "readers uninterested in sports culture",
+          "those wanting pure action over social commentary",
+          "readers preferring character-driven literary crime"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Silver Metal Lover - Tanith Lee": {
@@ -183880,26 +184283,51 @@
       "author": "Tanith Lee",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a stratified future society, a sheltered and privileged young woman named Jane falls desperately in love with Silver, a humanoid robot designed for entertainment — and in doing so discovers her own capacity for passion, sacrifice, and selfhood. A lyrical and emotionally devastating romance that interrogates what it means to be human and who deserves to be loved.",
+      "tone": "lyrical, romantic, melancholic, deeply emotional, feminist",
+      "pacing": "Moderate",
+      "themes": [
+        "what constitutes humanity",
+        "class and social inequality",
+        "love and self-discovery",
+        "individuality vs. conformity",
+        "the nature of consciousness and personhood"
+      ],
+      "setting": "A decadent, stratified future Earth city, in a society of rigid class divisions and spectacular inequality",
+      "comparable_books": [
+        "Ancillary Justice - Ann Leckie",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Flowers for Algernon - Daniel Keyes",
+        "Klara and the Sun - Kazuo Ishiguro",
+        "Warm Bodies - Isaac Marion"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "science fiction romance",
+          "lyrical prose",
+          "android/robot and human love stories",
+          "feminist science fiction",
+          "emotionally devastating books",
+          "Tanith Lee fans"
+        ],
+        "negative": [
+          "readers wanting hard science fiction",
+          "readers averse to romance-heavy plots",
+          "those wanting fast-paced action-driven SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Defectors - Joseph Kanon": {
@@ -183907,80 +184335,154 @@
       "author": "Joseph Kanon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1960s Moscow, American publisher Frank Weeks travels to meet his brother Simon — a CIA agent who defected to the Soviet Union years ago — ostensibly to help edit his memoirs, but soon finds himself enmeshed in a web of old betrayals, KGB surveillance, and a dangerous secret that could get them both killed. A taut Cold War spy novel of moral reckoning and fraternal betrayal.",
+      "tone": "taut, morally complex, atmospheric, melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "betrayal and loyalty",
+        "Cold War espionage and ideology",
+        "brotherhood and family",
+        "truth and propaganda",
+        "the personal cost of political conviction"
+      ],
+      "setting": "Moscow, Soviet Union, 1961 — a city of surveillance, secrecy, and paranoia during the height of the Cold War",
+      "comparable_books": [
+        "The Good German - Joseph Kanon",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Moscow Rules - Daniel Silva"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War spy fiction",
+          "atmospheric literary thrillers",
+          "morally grey characters",
+          "le Carré-style espionage",
+          "family and betrayal",
+          "Cold War history interest"
+        ],
+        "negative": [
+          "readers wanting action-heavy thrillers",
+          "those preferring contemporary settings",
+          "readers averse to moral ambiguity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Bone Shroud - Andrew D. Meredith": {
       "title": "Bone Shroud",
       "author": "Andrew D. Meredith",
       "series": "Kallattian Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The second volume of the Kallattian Saga deepens the political and religious conflicts of the world of Kallattia, following the Clouw siblings, the paladin Jined, the wandering Katiam, and newly introduced blind monk Seriah as darker forces — including a sinister figure cloaked in the bones of his victims — move against all they hold dear. Rich worldbuilding and a slow-burn structure culminate in a shocking finale.",
+      "tone": "epic, methodical, richly worldbuilt, slowly escalating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "religious conflict and heresy",
+        "faith and doubt",
+        "political intrigue",
+        "the gods walking among mortals",
+        "duty and identity"
+      ],
+      "setting": "The world of Kallattia, a richly constructed secondary fantasy world with deep theological and political history",
+      "comparable_books": [
+        "The Stormlight Archive - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Wheel of Time - Robert Jordan",
+        "Deathless Beast - Andrew D. Meredith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "intricate worldbuilding",
+          "multi-POV ensemble casts",
+          "faith and theology themes",
+          "indie epic fantasy",
+          "Sanderson-style worldbuilding",
+          "slow-burn readers"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "those preferring single-POV narratives",
+          "readers who haven't read Book 1",
+          "those averse to long series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Gloves of Eons - Andrew D. Meredith": {
       "title": "Gloves of Eons",
       "author": "Andrew D. Meredith",
       "series": "Kallattian Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up weeks after Bone Shroud, the Clouw siblings find themselves caught between rival power-hungry factions, while Katiam must navigate a newly sentient force, the Paladins regroup in the west, and Seriah — now an unwitting messenger of dark gods — flees her own unravelling mind. The third volume expands the series' scope while weaving threads of legacy, faith, and political machination toward an inevitable confrontation.",
+      "tone": "epic, literary, richly meditative, slowly escalating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "legacy and what we leave behind",
+        "religious and political factionalism",
+        "the burden of knowledge",
+        "gods and mortality",
+        "identity and one's place in history"
+      ],
+      "setting": "The world of Kallattia, spanning cities, western territories, and lands beyond the known map, in a richly constructed secondary fantasy world",
+      "comparable_books": [
+        "Bone Shroud - Andrew D. Meredith",
+        "The Stormlight Archive - Brandon Sanderson",
+        "The Wheel of Time - Robert Jordan",
+        "A Memory of Light - Robert Jordan & Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "intricate worldbuilding",
+          "multi-POV ensemble casts",
+          "literary epic fantasy",
+          "faith and theology themes",
+          "indie epic fantasy",
+          "slow-burn readers"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "those who haven't read Books 1–2",
+          "readers averse to very long series",
+          "those preferring simpler narrative structures"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dread Knight - Andrew D. Meredith": {
