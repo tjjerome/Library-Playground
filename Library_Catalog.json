@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2526,
-  "total_pending": 2074,
+  "total_catalogued": 2546,
+  "total_pending": 2054,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -145922,81 +145922,152 @@
       "title": "The Long Way Home",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Gamache's neighbour Peter Morrow goes missing after a year of artistic self-exile, Gamache and Clara Morrow travel across Quebec and beyond to trace his final steps, uncovering dark truths about art, obsession, and the lengths people will go to reinvent themselves.",
+      "tone": "Atmospheric, contemplative, melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "art and obsession",
+        "marriage and estrangement",
+        "self-reinvention",
+        "friendship",
+        "loss"
+      ],
+      "setting": "Rural Quebec, Canada; various locations across Canada — contemporary",
+      "comparable_books": [
+        "Still Life - Louise Penny",
+        "The Secret Place - Tana French",
+        "Darkness at Sethanon - Raymond E. Feist"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric small-town setting",
+          "character-driven mystery",
+          "literary prose",
+          "long-running beloved series",
+          "psychological depth"
+        ],
+        "negative": [
+          "slow pacing",
+          "not action-driven",
+          "requires series investment for full emotional payoff"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich atmospheric prose and strong character voices reward the audio format; the series has a beloved narrator (Ralph Cosham/Robert Bathurst).",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Lotus Empire - Tasha Suri": {
       "title": "The Lotus Empire",
       "author": "Tasha Suri",
       "series": "The Burning Kingdoms",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Empress Malini consolidates her throne and an ancient yaksa magic resurges in Ahiranya, she and priestess Priya find themselves on opposing sides — forced to choose between their kingdoms and their love for one another in a final, devastating confrontation.",
+      "tone": "Lyrical, emotionally devastating, epic",
+      "pacing": "Fast",
+      "themes": [
+        "colonialism and resistance",
+        "sapphic love",
+        "sacrifice and duty",
+        "faith and power",
+        "political intrigue"
+      ],
+      "setting": "Secondary world inspired by South Asian history and mythology — empire of Parijatdvipa and the kingdom of Ahiranya",
+      "comparable_books": [
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "The Poppy War - R.F. Kuang",
+        "She Who Became the Sun - Shelley Parker-Chan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sapphic romance",
+          "lyrical prose",
+          "epic fantasy scale",
+          "morally grey protagonists",
+          "South Asian-inspired worldbuilding",
+          "found family"
+        ],
+        "negative": [
+          "high emotional intensity",
+          "graphic violence",
+          "requires reading series in order",
+          "body horror elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Last Light of the Sun - Guy Gavriel Kay": {
       "title": "The Last Light of the Sun",
       "author": "Guy Gavriel Kay",
       "series": "Sarantine Universe",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in a world reflecting early medieval Britain and Scandinavia, the novel follows interwoven characters — an Anglcyn king, a Viking raider, and a Welsh bard — caught between the fading world of the faeries and the violent ambitions of men in an age of conflict and change.",
+      "tone": "Elegiac, lyrical, meditative",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fate and free will",
+        "the fading of magic",
+        "heroism and legacy",
+        "cultural clash",
+        "memory and loss"
+      ],
+      "setting": "Fictional analogue of early medieval Britain, Wales, and Scandinavia",
+      "comparable_books": [
+        "The Lions of Al-Rassan - Guy Gavriel Kay",
+        "Tigana - Guy Gavriel Kay",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical literary prose",
+          "historical fantasy",
+          "emotionally resonant",
+          "standalone-friendly",
+          "morally complex characters"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "large cast",
+          "not plot-driven",
+          "readers expecting action may be disappointed"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kay's dense, lyrical prose is especially well-suited to audio; the novel's elegiac tone rewards attentive listening.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The It Girl - Ruth Ware": {
@@ -146004,107 +146075,197 @@
       "author": "Ruth Ware",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A decade after her glamorous Oxford roommate April was murdered and a college porter convicted, Hannah learns the man died in prison still claiming innocence — forcing her to re-examine everything she remembers about that year and whether the real killer is still at large.",
+      "tone": "Propulsive, twisty, campus-gothic",
+      "pacing": "Fast",
+      "themes": [
+        "memory and unreliable perception",
+        "class and privilege",
+        "guilt and complicity",
+        "friendship",
+        "justice"
+      ],
+      "setting": "Oxford University, England — dual timeline of present day and ten years prior",
+      "comparable_books": [
+        "In a Dark Dark Wood - Ruth Ware",
+        "The Secret History - Donna Tartt",
+        "One by One - Ruth Ware"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "dual timeline",
+          "campus setting",
+          "twisty mystery",
+          "female friendship"
+        ],
+        "negative": [
+          "formulaic thriller beats",
+          "not deeply literary",
+          "some readers find protagonist passive"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Jasmine Throne - Tasha Suri": {
       "title": "The Jasmine Throne",
       "author": "Tasha Suri",
       "series": "The Burning Kingdoms",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Exiled princess Malini is imprisoned in a remote temple, where she forms a dangerous alliance — and an unexpected bond — with Priya, a servant with hidden magical powers tied to an ancient, forbidden forest, as revolution stirs across the empire.",
+      "tone": "Lyrical, slow-burn romantic, politically charged",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "colonialism and resistance",
+        "sapphic love",
+        "power and sacrifice",
+        "magic and religion",
+        "identity"
+      ],
+      "setting": "Secondary world inspired by South Asian history and mythology — the empire of Parijatdvipa",
+      "comparable_books": [
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "She Who Became the Sun - Shelley Parker-Chan",
+        "The Poppy War - R.F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sapphic slow-burn romance",
+          "lyrical prose",
+          "South Asian-inspired worldbuilding",
+          "morally grey characters",
+          "political intrigue"
+        ],
+        "negative": [
+          "slow pacing in first half",
+          "graphic violence",
+          "requires series commitment for full resolution"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hunter - Tana French": {
       "title": "The Hunter",
       "author": "Tana French",
       "series": "Cal Hooper",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cal Hooper's hard-won peace in a rural Irish village is shattered when Trey's absent father returns with an English millionaire and a scheme to find gold on the land, drawing Cal, Lena, and Trey into a web of greed and violence with devastating consequences.",
+      "tone": "Atmospheric, lyrical, slow-burn tense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "loyalty and betrayal",
+        "protection vs. agency",
+        "rural community and secrets",
+        "revenge",
+        "fatherhood and mentorship"
+      ],
+      "setting": "Rural west of Ireland — contemporary",
+      "comparable_books": [
+        "The Searcher - Tana French",
+        "The Secret Place - Tana French",
+        "Where the Crawdads Sing - Delia Owens"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric rural setting",
+          "character-driven",
+          "literary crime fiction",
+          "morally complex",
+          "strong sense of place"
+        ],
+        "negative": [
+          "slow pacing",
+          "not plot-driven",
+          "better read after The Searcher",
+          "some readers find it meandering"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "French's immersive prose and richly drawn Irish setting are exceptionally well-served in audio; the series has a praised narrator (Roger Clark).",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Instruments of Darkness - John Connolly": {
       "title": "The Instruments of Darkness",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 21",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Private investigator Charlie Parker is hired to exonerate a woman accused of murdering her own toddler son, a case that leads him into the Maine woods — to a centuries-old house harbouring an ancient evil, a white supremacist militia, and a disgraced psychic seeking redemption.",
+      "tone": "Dark, supernaturally charged, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "justice and innocence",
+        "evil and its origins",
+        "grief and guilt",
+        "the supernatural",
+        "political extremism"
+      ],
+      "setting": "Portland and rural Maine — contemporary",
+      "comparable_books": [
+        "The Killing Kind - John Connolly",
+        "Every Dead Thing - John Connolly",
+        "The Black Angel - John Connolly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural thriller blend",
+          "atmospheric horror elements",
+          "long-running series characters",
+          "dark and propulsive",
+          "morally complex"
+        ],
+        "negative": [
+          "graphic violence and horror",
+          "requires some series familiarity for full character depth",
+          "child endangerment themes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jeff Harding's narration is widely praised as one of the finest in crime audiobooks, perfectly matching the series' dark and atmospheric tone.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Housekeepers - Alex Hay": {
@@ -146112,26 +146273,46 @@
       "author": "Alex Hay",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When housekeeper Mrs. King is abruptly dismissed from her position in a grand Mayfair mansion in Edwardian London, she assembles an unlikely crew of women — criminals, actresses, and acrobats — to rob the house of everything it contains on the night of the season's most lavish ball.",
+      "tone": "Witty, propulsive, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "class and inequality",
+        "revenge and justice",
+        "female agency",
+        "power and wealth",
+        "solidarity"
+      ],
+      "setting": "Edwardian London, 1905 — Mayfair",
+      "comparable_books": [
+        "Portrait of a Thief - Grace D. Li",
+        "The Christie Affair - Nina de Gramont",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heist narrative",
+          "female ensemble cast",
+          "historical setting",
+          "darkly comic tone",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "large cast can be confusing",
+          "some readers find execution uneven",
+          "not deeply literary"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Praised narrator and fast-paced ensemble heist plot make this an excellent listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Heist of Hollow London - Eddie Robson": {
@@ -146139,26 +146320,49 @@
       "author": "Eddie Robson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future dystopian London where a mega-corporation has collapsed, a group of clones — bred as organ-harvesting backups for their corporate owners — are purchased by a scientist and tasked with infiltrating a secure facility to steal a data drive, with their freedom as the prize.",
+      "tone": "Darkly comic, propulsive, satirical",
+      "pacing": "Fast",
+      "themes": [
+        "corporate exploitation",
+        "identity and humanity",
+        "freedom and servitude",
+        "hypercapitalism",
+        "solidarity"
+      ],
+      "setting": "Near-future dystopian London — a corporate-collapsed city",
+      "comparable_books": [
+        "Drunk on All Your Strange New Words - Eddie Robson",
+        "All Systems Red - Martha Wells",
+        "Starter Villain - John Scalzi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heist narrative",
+          "sci-fi crime blend",
+          "darkly comic",
+          "propulsive pacing",
+          "anti-capitalist themes",
+          "ensemble cast"
+        ],
+        "negative": [
+          "some readers find the ending rushed",
+          "lighter fare — not hard SF",
+          "near-future setting may feel bleak"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Haunting of Hill House - Shirley Jackson": {
@@ -146166,53 +146370,96 @@
       "author": "Shirley Jackson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A paranormal investigator invites three strangers to spend a summer in the notoriously sinister Hill House, where one of the guests — the troubled Eleanor — begins to lose her grip on reality as the house seems to reach into her very psyche.",
+      "tone": "Psychological, dread-saturated, ambiguous",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "psychological disintegration",
+        "belonging and loneliness",
+        "the uncanny",
+        "female repression",
+        "reality vs. delusion"
+      ],
+      "setting": "Hill House, a remote Gothic mansion — mid-20th century New England, USA",
+      "comparable_books": [
+        "We Have Always Lived in the Castle - Shirley Jackson",
+        "Rebecca - Daphne du Maurier",
+        "House of Leaves - Mark Z. Danielewski"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological horror",
+          "gothic atmosphere",
+          "literary prose",
+          "canonical classic",
+          "unreliable narrator",
+          "ambiguous supernatural"
+        ],
+        "negative": [
+          "slow pacing",
+          "no explicit scares — dread over gore",
+          "dated in some characterisation"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jackson's precise, unsettling prose and the novel's psychological intensity reward attentive audio listening.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Grief of Stones - Katherine Addison": {
       "title": "The Grief of Stones",
       "author": "Katherine Addison",
       "series": "The Chronicles of Osreth",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thara Celehar, Witness for the Dead in the city of Amalo, takes on a new apprentice and becomes entangled in the plight of the city's foundling girls — orphans sold into servitude — as he investigates a murder that leads him deep into his own grief and past.",
+      "tone": "Quiet, melancholic, warmly humane",
+      "pacing": "Slow",
+      "themes": [
+        "grief and loss",
+        "justice for the powerless",
+        "mentorship and belonging",
+        "faith and duty",
+        "class and gender inequality"
+      ],
+      "setting": "The city of Amalo, in the secondary-world empire of the Goblin Emperor novels — steampunk-adjacent with goblins and elves",
+      "comparable_books": [
+        "The Witness for the Dead - Katherine Addison",
+        "The Goblin Emperor - Katherine Addison",
+        "A Wizard's Guide to Defensive Baking - T. Kingfisher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "mystery-fantasy blend",
+          "gentle protagonist",
+          "quiet emotional depth",
+          "found family",
+          "LGBTQ+ content"
+        ],
+        "negative": [
+          "very slow pacing",
+          "minimal action",
+          "requires reading The Witness for the Dead first",
+          "low stakes plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Good Liar - Denise Mina": {
@@ -146220,242 +146467,447 @@
       "author": "Denise Mina",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Forensic blood-spatter expert Dr. Claudia O'Sheil discovers that her expert testimony in a high-profile double murder trial was manipulated — and as she prepares to give a major career speech before London's elite, she must decide whether to expose the truth or protect herself, her children, and her comfortable life.",
+      "tone": "Taut, class-conscious, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "truth and complicity",
+        "class and privilege",
+        "justice and corruption",
+        "expert testimony and power",
+        "female ambition"
+      ],
+      "setting": "Contemporary London — upper-class milieu",
+      "comparable_books": [
+        "Conviction - Denise Mina",
+        "The Less Dead - Denise Mina",
+        "The Woman in the Window - A.J. Finn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally complex female protagonist",
+          "class commentary",
+          "propulsive pacing",
+          "forensic detail",
+          "Scottish literary crime"
+        ],
+        "negative": [
+          "large cast of secondary characters",
+          "animal death (dog)",
+          "standalone with no resolution hook for further books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Good Assassin - Paul Vidich": {
       "title": "The Good Assassin",
       "author": "Paul Vidich",
       "series": "George Mueller",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired CIA agent George Mueller is dispatched to Havana in 1958, just months before the fall of the Batista regime, to determine whether his old friend Toby Graham has gone rogue and is funnelling American weapons to Castro's rebels — uncovering a web of personal and political betrayal.",
+      "tone": "Laconic, melancholic, atmospherically noir",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "loyalty and betrayal",
+        "Cold War moral ambiguity",
+        "idealism vs. duty",
+        "friendship under pressure",
+        "pre-revolutionary Cuba"
+      ],
+      "setting": "Havana, Cuba — August 1958, months before the revolution",
+      "comparable_books": [
+        "An Honorable Man - Paul Vidich",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Our Man in Havana - Graham Greene"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "atmospheric historical setting",
+          "le Carré-esque moral complexity",
+          "spare elegant prose",
+          "Cold War era"
+        ],
+        "negative": [
+          "slow pace",
+          "thin on action",
+          "sparse character development",
+          "requires patience"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Furies - John Connolly": {
       "title": "The Furies",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 20",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two linked novellas: in the first, the return of criminal Raum Buker to Portland triggers chaos around the enigmatic Strange sisters; in the second, Charlie Parker is hired to protect two women during a pandemic lockdown, only to find his clients may be more dangerous than those who threaten them.",
+      "tone": "Dark, wry, supernaturally edged",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance and justice",
+        "female power",
+        "the supernatural",
+        "corruption",
+        "loyalty"
+      ],
+      "setting": "Portland, Maine — contemporary, during a global pandemic",
+      "comparable_books": [
+        "The Dirty South - John Connolly",
+        "The Instruments of Darkness - John Connolly",
+        "Every Dead Thing - John Connolly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dual novella format",
+          "Parker series regulars",
+          "supernatural thriller blend",
+          "darkly witty",
+          "fast-paced"
+        ],
+        "negative": [
+          "not a full novel — two shorter pieces",
+          "less supernatural than usual for the series",
+          "pandemic setting may date it"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fires of Vengeance - Evan Winter": {
       "title": "The Fires of Vengeance",
       "author": "Evan Winter",
       "series": "The Burning",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Tau Solarin continues his relentless quest for revenge against those who destroyed his family, as war erupts across Omehi society and the fate of his entire people becomes entangled with his personal vendetta and the terrifying power of the demons he can summon.",
+      "tone": "Grimdark, relentless, viscerally intense",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and its cost",
+        "caste and oppression",
+        "war and sacrifice",
+        "identity and purpose",
+        "colonialism"
+      ],
+      "setting": "Secondary world inspired by African history and culture — the continent of Xidda, tribal and imperial society",
+      "comparable_books": [
+        "The Rage of Dragons - Evan Winter",
+        "The Way of Kings - Brandon Sanderson",
+        "A Little Hatred - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark action fantasy",
+          "African-inspired worldbuilding",
+          "propulsive pacing",
+          "morally grey protagonist",
+          "epic battle sequences"
+        ],
+        "negative": [
+          "graphic violence",
+          "relentlessly dark tone",
+          "protagonist's single-mindedness can feel repetitive",
+          "requires reading Book 1 first"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fireborne Blade - Charlotte Bond": {
       "title": "The Fireborne Blade",
       "author": "Charlotte Bond",
       "series": "The Fireborne Blade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Disgraced knight Maddileh must descend into the lair of the legendary dragon the White Lady to retrieve the fabled Fireborne Blade and reclaim her honour — encountering treachery, magic, and dark truths about the nature of heroism along the way.",
+      "tone": "Propulsive, darkly playful, feminist",
+      "pacing": "Fast",
+      "themes": [
+        "female agency in patriarchal systems",
+        "honour and identity",
+        "deception and betrayal",
+        "sapphic love",
+        "heroism subverted"
+      ],
+      "setting": "Secondary world — a medievalesque kingdom with dragons, mages, and knights",
+      "comparable_books": [
+        "A Deadly Education - Naomi Novik",
+        "The Goblin Emperor - Katherine Addison",
+        "Spinning Silver - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "novella length — fast read",
+          "feminist fantasy",
+          "sapphic content",
+          "twisty plot",
+          "dragon-slaying adventure",
+          "clever subversion of tropes"
+        ],
+        "negative": [
+          "at 176 pages some find it slight",
+          "world not deeply developed",
+          "some horror-adjacent content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Hallowed Hunt - Lois McMaster Bujold": {
       "title": "The Hallowed Hunt",
       "author": "Lois McMaster Bujold",
       "series": "World of the Five Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lord Ingrey kin Wolfcliff, burdened by a forbidden spirit-animal possession, is sent to investigate the suspicious death of a prince, only to become entangled in a centuries-old spiritual conspiracy that threatens the soul of his entire kingdom.",
+      "tone": "Rich, theological, quietly intense",
+      "pacing": "Moderate",
+      "themes": [
+        "the soul and spiritual possession",
+        "duty and honour",
+        "sin and redemption",
+        "theology and divine will",
+        "inherited trauma"
+      ],
+      "setting": "Secondary world inspired by medieval Europe — the kingdom of Weald",
+      "comparable_books": [
+        "The Curse of Chalion - Lois McMaster Bujold",
+        "Paladin of Souls - Lois McMaster Bujold",
+        "The Lions of Al-Rassan - Guy Gavriel Kay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven fantasy",
+          "theological depth",
+          "rich secondary world",
+          "romance subplot",
+          "standalone-friendly"
+        ],
+        "negative": [
+          "slower pacing",
+          "less beloved than Chalion and Paladin by many fans",
+          "dense mythology requires attention"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Curse of Chalion - Lois McMaster Bujold": {
       "title": "The Curse of Chalion",
       "author": "Lois McMaster Bujold",
       "series": "World of the Five Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Broken former soldier Cazaril returns to his homeland seeking only a quiet life, but is appointed tutor to a royal princess — and finds himself caught up in a deadly political conspiracy and a divine curse that may demand the ultimate sacrifice to break.",
+      "tone": "Rich, emotionally resonant, quietly profound",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "sacrifice and redemption",
+        "divine intervention and faith",
+        "political intrigue",
+        "healing from trauma",
+        "duty and love"
+      ],
+      "setting": "Secondary world inspired by medieval Iberia — the kingdom of Chalion",
+      "comparable_books": [
+        "Paladin of Souls - Lois McMaster Bujold",
+        "The Lions of Al-Rassan - Guy Gavriel Kay",
+        "Tigana - Guy Gavriel Kay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "beloved protagonist",
+          "theological world-building",
+          "emotional depth",
+          "political intrigue",
+          "Hugo and Nebula winner",
+          "standalone-friendly"
+        ],
+        "negative": [
+          "slow first act",
+          "not action-focused",
+          "religious themes may not appeal to all readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "A deeply immersive listen; the novel's introspective, emotionally layered prose and the protagonist's interiority reward audio attention.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Dirty South - John Connolly": {
       "title": "The Dirty South",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 18",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel set in 1997: a grief-stricken Charlie Parker — barely functioning after the murder of his wife and daughter — drifts into a small Arkansas town where young Black women are being murdered and their deaths covered up, and finds himself drawn into an investigation that begins to forge who he will become.",
+      "tone": "Southern Gothic, atmospheric, grief-laden",
+      "pacing": "Moderate",
+      "themes": [
+        "grief and identity",
+        "racism and systemic injustice",
+        "origin story",
+        "corruption and complicity",
+        "vengeance vs. justice"
+      ],
+      "setting": "Cargill, Burdon County, Arkansas — 1997",
+      "comparable_books": [
+        "Every Dead Thing - John Connolly",
+        "The Instruments of Darkness - John Connolly",
+        "Devil in a Blue Dress - Walter Mosley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern Gothic atmosphere",
+          "origin story for a beloved character",
+          "race and justice themes",
+          "literary crime fiction",
+          "can be read as standalone"
+        ],
+        "negative": [
+          "minimal supernatural elements — atypical for the series",
+          "very dark subject matter",
+          "slower than later Parker novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Cold Six Thousand - James Ellroy": {
       "title": "The Cold Six Thousand",
       "author": "James Ellroy",
       "series": "Underworld USA",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Beginning moments after the JFK assassination, three men — a Dallas cop, an FBI enforcer, and a mob-connected gambler — are swept into a vast criminal conspiracy spanning Vegas, Vietnam, and the civil rights era, depicting the hidden machinery of American power in the 1960s.",
+      "tone": "Staccato, hallucinatory, operatically dark",
+      "pacing": "Fast",
+      "themes": [
+        "American political corruption",
+        "organized crime and government collusion",
+        "race and the civil rights era",
+        "masculinity and violence",
+        "moral nihilism"
+      ],
+      "setting": "United States — 1963–1968; Dallas, Las Vegas, Los Angeles, Vietnam",
+      "comparable_books": [
+        "American Tabloid - James Ellroy",
+        "Blood's a Rover - James Ellroy",
+        "LA Confidential - James Ellroy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense maximalist crime fiction",
+          "conspiratorial American history",
+          "unique staccato prose style",
+          "operatic scale",
+          "morally bankrupt characters"
+        ],
+        "negative": [
+          "extremely challenging prose style — not for all readers",
+          "relentlessly bleak",
+          "graphic violence and sexual content",
+          "racist characters and language throughout",
+          "requires reading American Tabloid first for full context"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Ellroy's distinctive staccato prose style — dense with abbreviation, fragmented syntax, and rapid cutting — is significantly harder to follow aurally than on the page.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The City of Brass - S. A. Chakraborty": {
