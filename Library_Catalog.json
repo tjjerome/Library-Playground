@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1720,
-  "total_pending": 2880,
+  "total_catalogued": 1740,
+  "total_pending": 2860,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -106748,216 +106748,382 @@
       "title": "A Mirage in the Memory",
       "author": "Simon Tull",
       "series": "The Slip Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (Prequel)",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-apocalyptic cyberpunk world where vampires have replaced humanity and use full-immersion VR to satisfy their bloodlust, a morally compromised bounty hunter is tasked with tracking down a killer — all while desperately searching for his missing wife. A hard-boiled detective mystery set in a dystopian future.",
+      "tone": "noir, gritty, suspenseful",
+      "pacing": "Fast",
+      "themes": [
+        "identity and reality",
+        "love and obsession",
+        "morality in a broken world",
+        "virtual vs. physical existence"
+      ],
+      "setting": "Post-apocalyptic Earth, a dystopian cyberpunk city with both a physical reality and a full-immersion virtual world called 'the slip'",
+      "comparable_books": [
+        "Neuromancer - William Gibson",
+        "Never Die - Rob J. Hayes",
+        "Murderbot Diaries - Martha Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled detective mystery",
+          "morally grey protagonist",
+          "cyberpunk aesthetic",
+          "fast-paced novella",
+          "vampire mythology reimagined",
+          "virtual reality worldbuilding"
+        ],
+        "negative": [
+          "readers who dislike vampire fiction",
+          "readers wanting extensive prose or slow world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Mortal Knight - Michael Cronk": {
       "title": "The Mortal Knight",
       "author": "Michael Cronk",
       "series": "The Immortal Investigations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a wealthy wizard is murdered at a high-society gala hosted by the powerful immortal Houses, mortal detective Jason Turner must solve the crime in secret — all while navigating the treacherous politics of an immortal world that sees him as nothing more than a pawn.",
+      "tone": "light, propulsive, romantic",
+      "pacing": "Fast",
+      "themes": [
+        "mortality vs. immortality",
+        "class and power",
+        "found relationships",
+        "hidden societies",
+        "mystery and justice"
+      ],
+      "setting": "Contemporary England, with an underground immortal society of vampires, wizards, and other magical beings hidden beneath the modern world",
+      "comparable_books": [
+        "A Discovery of Witches - Deborah Harkness",
+        "Rivers of London - Ben Aaronovitch",
+        "Ninth House - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy mystery",
+          "romance subplot",
+          "found family",
+          "mortal protagonist in a supernatural world",
+          "fast and accessible read",
+          "political intrigue among supernatural factions"
+        ],
+        "negative": [
+          "readers wanting hardcore grimdark",
+          "readers sensitive to progressive representation themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Spectre in the Stream - Simon Tull": {
       "title": "A Spectre in the Stream",
       "author": "Simon Tull",
       "series": "The Slip Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-apocalyptic world overrun by blood-thirsting immortals and their virtual reality network, a girl with a fractured identity and a dangerous alter-ego must protect a mysterious boy whose origins could unravel the secrets of their dying world.",
+      "tone": "gritty, action-driven, darkly humorous",
+      "pacing": "Fast",
+      "themes": [
+        "identity and duality",
+        "survival",
+        "virtual vs. physical reality",
+        "found family",
+        "predator and prey"
+      ],
+      "setting": "Post-apocalyptic Earth, two centuries after humanity's extinction, split between a decaying physical city and its virtual twin 'the slip'",
+      "comparable_books": [
+        "Neuromancer - William Gibson",
+        "I Am Legend - Richard Matheson",
+        "Murderbot Diaries - Martha Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gritty action-adventure",
+          "fast-paced cyberpunk",
+          "multiple POV characters",
+          "morally complex world",
+          "vampire mythology reimagined"
+        ],
+        "negative": [
+          "readers wanting slow introspective fantasy",
+          "readers who dislike violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Greatest Pub in the Multiverse - Herman Steuernagel": {
       "title": "The Greatest Pub in the Multiverse",
       "author": "Herman Steuernagel",
       "series": "Greatest in the Multiverse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When James O'Sullivan returns to his estranged father's Irish hometown to settle his estate, he discovers the family pub is secretly a portal to a magical speakeasy serving orcs, dwarves, and dragon riders — and must decide whether to embrace this unexpected new life and the colourful community that comes with it.",
+      "tone": "cozy, heartwarming, whimsical",
+      "pacing": "Moderate",
+      "themes": [
+        "found family",
+        "second chances",
+        "grief and inheritance",
+        "belonging",
+        "slow-burn romance"
+      ],
+      "setting": "A small Irish coastal town in the contemporary world, anchored around a pub that connects via portal to a multiverse of fantasy realms",
+      "comparable_books": [
+        "Legends & Lattes - Travis Baldree",
+        "The House in the Cerulean Sea - TJ Klune",
+        "The Bartender Between Worlds - Herman Steuernagel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "found family",
+          "slow-burn romance",
+          "low-stakes magic",
+          "heartwarming",
+          "portal fantasy"
+        ],
+        "negative": [
+          "readers wanting grimdark or high-tension plots",
+          "readers seeking hard magic systems or epic battles"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Cozy, character-driven tone and warm Irish setting translate exceptionally well to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Immortal Investigation - Michael Cronk": {
       "title": "The Immortal Investigation",
       "author": "Michael Cronk",
       "series": "The Immortal Investigations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rookie cop Jason Turner's ambitions of becoming a detective take a supernatural turn when his roommate's date with a supposed vampire exposes him to a secret world of immortals, magic, and murder lurking beneath the surface of a quiet English seaside town.",
+      "tone": "light, propulsive, romantic",
+      "pacing": "Fast",
+      "themes": [
+        "hidden worlds",
+        "mortality vs. immortality",
+        "romance",
+        "justice and law",
+        "secret societies"
+      ],
+      "setting": "Contemporary Plymouth, England — a quiet seaside town with a hidden immortal underworld",
+      "comparable_books": [
+        "Rivers of London - Ben Aaronovitch",
+        "A Discovery of Witches - Deborah Harkness",
+        "Ninth House - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy mystery",
+          "slow-burn romance",
+          "accessible and fast-paced",
+          "mortal protagonist discovering the supernatural",
+          "diverse and inclusive cast"
+        ],
+        "negative": [
+          "readers wanting complex hard magic systems",
+          "readers who dislike romance subplots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bartender Between Worlds - Herman Steuernagel": {
       "title": "The Bartender Between Worlds",
       "author": "Herman Steuernagel",
       "series": "Greatest in the Multiverse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Emma, one of the kingdom's most skilled hunters of the magically Cursed, is forced to go on the run when she discovers she possesses the very magic she has spent her life eradicating — and soon finds herself dimension-hopping across the multiverse with a rogue fairy and a mad scientist.",
+      "tone": "cozy, whimsical, self-discovery",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and self-acceptance",
+        "found family",
+        "prejudice and bias",
+        "chosen path vs. destiny",
+        "belonging"
+      ],
+      "setting": "A fantasy kingdom with magic-hunting laws, expanding into a multiverse of different worlds accessed through dimensional portals",
+      "comparable_books": [
+        "Legends & Lattes - Travis Baldree",
+        "The Wizard's Guide to Defensive Baking - T. Kingfisher",
+        "The Greatest Pub in the Multiverse - Herman Steuernagel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "low-stakes magic",
+          "self-discovery arc",
+          "dimension-hopping adventure",
+          "found family",
+          "recipes included"
+        ],
+        "negative": [
+          "readers wanting grimdark or heavy combat",
+          "readers seeking complex world-building or political intrigue"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Crystal Heir - Brendan Noble": {
       "title": "The Crystal Heir",
       "author": "Brendan Noble",
       "series": "The Realm Reachers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of the Crimson Court's fall, Kasia Niezik struggles to control her dangerous new abilities while war erupts across the realm of Zekiaz — and every surviving faction scrambles to claim power from the ruins of the old order.",
+      "tone": "dark, politically charged, intense",
+      "pacing": "Moderate",
+      "themes": [
+        "power and its costs",
+        "political intrigue",
+        "revenge and its aftermath",
+        "class conflict",
+        "magic as a burden"
+      ],
+      "setting": "The realm of Zekiaz, an Eastern European-inspired gaslamp fantasy world with flintlock guns, spirits, crystalline dragons, and interdimensional Reacher magic",
+      "comparable_books": [
+        "The Rook and Rose - M.A. Carrick",
+        "A Touch of Light - Thiago Abdalla",
+        "The Crimson Court - Brendan Noble"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political fantasy",
+          "morally grey characters",
+          "Slavic-inspired world",
+          "unique magic system with costs",
+          "multi-POV",
+          "gorgeous interior art"
+        ],
+        "negative": [
+          "readers wanting standalone stories",
+          "readers who dislike dense political plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Crimson Court - Brendan Noble": {
       "title": "The Crimson Court",
       "author": "Brendan Noble",
       "series": "The Realm Reachers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kasia Niezik, a noblewoman with forbidden Death Reacher magic, vows to destroy the shadowy Crimson Court responsible for her father's assassination — but infiltrating the immortal elites of her nation's capital means navigating a web of lies where every ally might be an enemy.",
+      "tone": "dark, politically charged, propulsive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "revenge",
+        "political intrigue",
+        "power and corruption",
+        "magic and its costs",
+        "class and inequality"
+      ],
+      "setting": "The realm of Zekiaz, an Eastern European-inspired gaslamp/flintlock fantasy world with spirits, interdimensional Reacher magic, and shadowy noble houses",
+      "comparable_books": [
+        "The Rook and Rose - M.A. Carrick",
+        "A Touch of Light - Thiago Abdalla",
+        "The Powder Mage Trilogy - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political fantasy",
+          "revenge plot",
+          "Slavic-inspired world-building",
+          "unique hard magic system",
+          "multi-POV",
+          "morally grey characters",
+          "gorgeous interior art"
+        ],
+        "negative": [
+          "readers wanting fast action from page one",
+          "readers who dislike dense political machinations"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sing No Suns, Sing the Night: Stories - Michael Michel": {
@@ -106965,53 +107131,86 @@
       "author": "Michael Michel",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "needs_review",
+      "summary": "A short story collection from indie epic fantasy author Michael Michel, set in and around the dark, morally complex worlds of his Dreams of Dust and Steel and Way of the Wizard series.",
+      "tone": "dark, intense, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "power and ambition",
+        "morality and consequence",
+        "war and survival"
+      ],
+      "setting": "Various fantasy settings connected to Michel's existing fictional universes",
+      "comparable_books": [
+        "The Emperor's Soul - Brandon Sanderson",
+        "The Shattered Sea - Joe Abercrombie (novellas)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of Michael Michel's other work",
+          "dark fantasy short fiction",
+          "morally grey characters"
+        ],
+        "negative": [
+          "readers wanting standalone worlds or cozy fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Low",
+      "research_source": "web_search",
       "audit": null
     },
     "The Amber Dame - Brendan Noble": {
       "title": "The Amber Dame",
       "author": "Brendan Noble",
       "series": "The Realm Reachers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (Prequel)",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set two years before the events of The Crimson Court, this prequel novella follows Kasia Niezik as she claws her way back from ruin — haunted by her father's murder and the lover she killed with her own untamed magic — as she battles rival nobles and beasts to reclaim her fallen house.",
+      "tone": "dark, tense, driven",
+      "pacing": "Fast",
+      "themes": [
+        "grief and guilt",
+        "ambition and survival",
+        "political power games",
+        "magic and its costs"
+      ],
+      "setting": "The realm of Zekiaz, an Eastern European-inspired gaslamp fantasy world, focused on the borderlands between rival noble houses",
+      "comparable_books": [
+        "The Crimson Court - Brendan Noble",
+        "The Rook and Rose - M.A. Carrick"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "prequel backstory novella",
+          "morally grey female protagonist",
+          "Slavic-inspired world",
+          "fast and dark fantasy"
+        ],
+        "negative": [
+          "readers new to the series who prefer to start from the beginning",
+          "readers wanting low-stakes plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Advent of Winter - Dom McDermott & Thiago Abdalla & Kian N. Ardalan & Zack Argyle & Cal Black & Ryan Cahill & T. L. Greylock & Tim Hardie & Natalie Kelda & Christer Lende & L. L. MacRae & Andrew D. Meredith & H. C. Newell & Tatiana Obey & Quenby Olson & Palmer Pickering & J. D. L. Rosell & Kerstin Espinosa Rosero & D. W. Ross & Karim Soliman & Tori Tecken & Jim Wilbourne & A. R. Witham & H.l.tinsley": {
@@ -107019,26 +107218,44 @@
       "author": "Dom McDermott & Thiago Abdalla & Kian N. Ardalan & Zack Argyle & Cal Black & Ryan Cahill & T. L. Greylock & Tim Hardie & Natalie Kelda & Christer Lende & L. L. MacRae & Andrew D. Meredith & H. C. Newell & Tatiana Obey & Quenby Olson & Palmer Pickering & J. D. L. Rosell & Kerstin Espinosa Rosero & D. W. Ross & Karim Soliman & Tori Tecken & Jim Wilbourne & A. R. Witham & H.l.tinsley",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "An advent-calendar anthology featuring 24 original short stories by 24 self-published fantasy authors, originally released daily through December, spanning the full tonal range of the genre — from cozy winter warmth to dark frozen horror.",
+      "tone": "varied — from cozy to dark and harrowing",
+      "pacing": "Fast",
+      "themes": [
+        "winter and the seasons",
+        "survival",
+        "tradition and ritual",
+        "the supernatural",
+        "humanity and monsters"
+      ],
+      "setting": "24 distinct fantasy settings, ranging across epic fantasy, cozy fantasy, steampunk, gaslamp, historical fantasy, and more — all winter-themed",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe (anthology feel)",
+        "Unfettered - Shawn Speakman (charity anthology)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indie fantasy sampler",
+          "short story format",
+          "winter themes",
+          "genre variety",
+          "great for discovering new indie authors"
+        ],
+        "negative": [
+          "readers wanting a single consistent narrative",
+          "readers who dislike anthology format"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "One Hand Screaming: 20 Haunting Years - Mark Leslie": {
@@ -107046,26 +107263,47 @@
       "author": "Mark Leslie",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "An expanded and updated 20th-anniversary edition of Mark Leslie's debut horror collection, featuring chilling short stories and disturbing poetry spanning two decades — from haunted bookstores and phantom limbs to ancient skulls and bogeymen — accompanied by behind-the-scenes notes from the author.",
+      "tone": "eerie, darkly comic, suspenseful",
+      "pacing": "Fast",
+      "themes": [
+        "the supernatural",
+        "fear and the unknown",
+        "dark humour",
+        "the macabre",
+        "human vulnerability"
+      ],
+      "setting": "Various contemporary and near-contemporary settings — Northern Ontario, haunted shops, lonely highways, and beyond",
+      "comparable_books": [
+        "Night Shift - Stephen King",
+        "Skeleton Crew - Stephen King",
+        "Nocturnal Screams - Mark Leslie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror short fiction",
+          "Twilight Zone-style twists",
+          "dark humour",
+          "poetry alongside prose",
+          "Canadian Gothic flavour"
+        ],
+        "negative": [
+          "readers who dislike short fiction or poetry",
+          "readers wanting sustained narrative horror novels"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full-cast audio production enhances the anthology's variety of voices and tones.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "More Lore From the Mythos - Charles Reis & L. E. Harrison & Dale Drake & Ryan Colley & Valerie Lioudis & Kari Leigh Sanders & Aaron White & Patrick J Rahall & Steve Van Samson & Ev Knight & Edward Morris & Jon Tobey & Oliver Lodge & Michael Clark": {
@@ -107073,215 +107311,387 @@
       "author": "Charles Reis & L. E. Harrison & Dale Drake & Ryan Colley & Valerie Lioudis & Kari Leigh Sanders & Aaron White & Patrick J Rahall & Steve Van Samson & Ev Knight & Edward Morris & Jon Tobey & Oliver Lodge & Michael Clark",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fourteen original Lovecraftian horror stories from Fractured Mind Publishing, expanding the Cthulhu Mythos with new tales of madness, cosmic dread, and eldritch monsters — written by a roster of independent horror authors working in the tradition of H.P. Lovecraft.",
+      "tone": "eerie, cosmic, dread-inducing",
+      "pacing": "Moderate",
+      "themes": [
+        "cosmic horror",
+        "forbidden knowledge",
+        "madness and the unknowable",
+        "ancient evil",
+        "human insignificance"
+      ],
+      "setting": "Various — spanning the Lovecraftian shared universe of Cthulhu Mythos locations and contemporary or historical settings",
+      "comparable_books": [
+        "Tales of the Cthulhu Mythos - H.P. Lovecraft et al.",
+        "The Book of Cthulhu - Ross Lockhart (ed.)",
+        "New Suns - Nisi Shawl (ed.)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraft fans",
+          "cosmic horror",
+          "short story anthologies",
+          "indie horror",
+          "Cthulhu Mythos fiction"
+        ],
+        "negative": [
+          "readers who dislike Lovecraftian horror tropes",
+          "readers wanting modern subversive takes on the Mythos"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Herald - Rob J. Hayes": {
       "title": "Herald",
       "author": "Rob J. Hayes",
       "series": "Age of the God Eater",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A thousand years after humanity's greatest heroes killed God and drove the angels from Heaven, laundry girl Renira is thrust into an ancient war between humans and divine beings when a stranger reveals that her blood may hold the secret to ushering in a terrifying new age — and only the Herald can bring God back to life.",
+      "tone": "epic, propulsive, heroic with dark edges",
+      "pacing": "Fast",
+      "themes": [
+        "destiny and prophecy",
+        "religion and divinity",
+        "humanity vs. the divine",
+        "coming-of-age",
+        "sacrifice"
+      ],
+      "setting": "The land of Helesia, roughly 1,000 years after humanity killed God — a world of warrior-kings, stalking demons, and surviving angels, told in the most recent timeline of the sprawling God Eater Saga",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Of Blood and Fire - Ryan Cahill",
+        "The Faithful and the Fallen - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "coming-of-age hero",
+          "angels and demons mythology",
+          "propulsive action",
+          "trilogy of trilogies world-building",
+          "self-published award-winner"
+        ],
+        "negative": [
+          "readers who dislike complex multi-series reading orders",
+          "readers wanting low-fantasy or grounded settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Eva Kaminsky; the epic scope and action-driven pacing translate powerfully to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dragonfired - J. Zachary Pike": {
       "title": "Dragonfired",
       "author": "J. Zachary Pike",
       "series": "The Dark Profit Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gorm Ingerson and the Heroes of Destiny must reunite and seek out the legendary dragon and its hoard to expose the corrupt king of Andarun — while the entire kingdom teeters on the edge of economic collapse and civil war — in this witty and heartfelt conclusion to the satirical Dark Profit Saga.",
+      "tone": "darkly comic, satirical, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "capitalism and systemic corruption",
+        "civil rights",
+        "redemption",
+        "duty and honour",
+        "the absurdity of heroism"
+      ],
+      "setting": "The world of Arth — a fully realised fantasy world where professional adventuring operates like a capitalist industry, with guilds, contracts, and market forces driving quests",
+      "comparable_books": [
+        "Orconomics - J. Zachary Pike",
+        "Kings of the Wyld - Nicholas Eames",
+        "Discworld - Terry Pratchett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fantasy satire",
+          "darkly comic",
+          "Pratchett-esque social commentary",
+          "RPG/D&D references",
+          "emotionally satisfying conclusion",
+          "SPFBO winner lineage"
+        ],
+        "negative": [
+          "readers wanting serious epic fantasy without humour",
+          "readers who haven't read books 1 and 2"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Demon - Rob J. Hayes": {
       "title": "Demon",
       "author": "Rob J. Hayes",
       "series": "Archive of the God Eater",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three thousand years before the events of Herald, Dien Hostain lives a quiet life in a village where fire is forbidden and humanity hides from nightmarish demons — until a demon attack murders her father and takes her captive, igniting a ferocious drive for survival, vengeance, and freedom that will make her a legend.",
+      "tone": "grimdark, brutal, relentless",
+      "pacing": "Fast",
+      "themes": [
+        "survival and resilience",
+        "vengeance and justice",
+        "slavery and freedom",
+        "the origins of legend",
+        "humanity under siege"
+      ],
+      "setting": "The world of Helesia, 3,000 years before the main timeline of the God Eater Saga — a primitive age when humanity lives in hiding from demons and Heaven still stands",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "Of Blood and Fire - Ryan Cahill",
+        "Herald - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark origin story",
+          "fierce female protagonist",
+          "brutal action",
+          "fast and propulsive",
+          "deeply dark world-building",
+          "part of a grand trilogy-of-trilogies saga"
+        ],
+        "negative": [
+          "readers sensitive to extreme violence or torture",
+          "readers who prefer uplifting or cozy fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Way of Edan - Philip Chase": {
       "title": "The Way of Edan",
       "author": "Philip Chase",
       "series": "The Edan Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the fanatical Supreme Priest Bledla leads Torrlond's armies in a holy war to convert all the kingdoms of Eormenlond by sword and fang, a chance encounter curses a young man named Dayraven with power that may decide the fate of the entire world — if he can survive long enough to understand it.",
+      "tone": "lyrical, elegiac, epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "religious fanaticism and war",
+        "prophecy and destiny",
+        "identity and self-discovery",
+        "sacrifice",
+        "the nature of faith"
+      ],
+      "setting": "Eormenlond — a richly imagined secondary world with heavy Anglo-Saxon, Old Norse, and Celtic influences, featuring soft magic, elves, and dragons in a pre-industrial setting",
+      "comparable_books": [
+        "The Lord of the Rings - J.R.R. Tolkien",
+        "The Faithful and the Fallen - John Gwynne",
+        "A Warrior of the People - Brian Lee Durfee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical epic fantasy",
+          "classic fantasy feel with modern execution",
+          "soft magic system",
+          "religious and philosophical depth",
+          "Tolkien-adjacent",
+          "self-published hidden gem"
+        ],
+        "negative": [
+          "readers wanting hard magic systems or fast-paced action",
+          "readers who dislike slow-burn openings or detailed world-building"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lyrical, literary prose is exceptionally well-suited to audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Prophet of Edan - Philip Chase": {
       "title": "The Prophet of Edan",
       "author": "Philip Chase",
       "series": "The Edan Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Torrlond's victorious army and its enslaved dragons lay waste to Eormenlond, Dayraven struggles to contain the terrifying elven power embedded within him — and he and his allies must decide what they are willing to sacrifice to stop the Prophet of Edan's blood-soaked holy war.",
+      "tone": "lyrical, intense, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "religious war and its costs",
+        "identity vs. power",
+        "love and sacrifice",
+        "enlightenment and self-mastery",
+        "political chaos"
+      ],
+      "setting": "The sprawling kingdoms of Eormenlond — an Anglo-Saxon and Celtic-inspired secondary world engulfed in holy war, with dragons, magic, and a vast cast of nations and cultures",
+      "comparable_books": [
+        "The Faithful and the Fallen - John Gwynne",
+        "A Game of Thrones - George R.R. Martin",
+        "The Way of Edan - Philip Chase"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic scope",
+          "character-driven philosophical depth",
+          "dragon-fuelled battle sequences",
+          "lyrical prose",
+          "multi-POV",
+          "emotional gut-punches"
+        ],
+        "negative": [
+          "readers who found Book 1 too slow and hoped Book 2 would be different — it is faster but still literary"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lyrical prose and philosophical depth reward attentive audio listening.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "While Darkness Gathers - Philip Chase": {
       "title": "While Darkness Gathers",
       "author": "Philip Chase",
       "series": "The Edan Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3.5 (Sequel)",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sixteen years after the War of the Way, a young sorceress named Riall begins to discover powers that may be the only hope against Gorsarhad, the eldest of dragons, who lays waste to the north — while Queen Sequara stands torn between protecting the world and protecting her pupil.",
+      "tone": "lyrical, melancholic, quietly hopeful",
+      "pacing": "Moderate",
+      "themes": [
+        "chosen ones and their burden",
+        "found family and mentorship",
+        "legacy of war",
+        "sacrifice and martyrdom",
+        "hope in darkness"
+      ],
+      "setting": "Eormenlond, sixteen years after the events of Return to Edan — a world still healing from the War of the Way, now facing the return of an ancient draconic evil",
+      "comparable_books": [
+        "Return to Edan - Philip Chase",
+        "The Lord of the Rings - J.R.R. Tolkien",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical epic fantasy",
+          "returning to a beloved world",
+          "found family and mentorship",
+          "elegant prose",
+          "slimmer and more focused than the main trilogy"
+        ],
+        "negative": [
+          "readers new to the series — requires prior trilogy knowledge",
+          "readers wanting high action or political complexity"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Philip Chase's lyrical prose is ideally suited to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Return to Edan - Philip Chase": {
       "title": "Return to Edan",
       "author": "Philip Chase",
       "series": "The Edan Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "From the ashes of the War of the Way, a new menace swarms the battle-ravaged kingdoms of Eormenlond — but the greatest threat may be its own savior, as Dayraven's friends race to reach him before the elven power within him destroys everything he sought to protect.",
+      "tone": "lyrical, dark, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "the cost of salvation",
+        "love and attachment vs. spiritual transcendence",
+        "the aftermath of war",
+        "moral ambiguity of power",
+        "redemption"
+      ],
+      "setting": "The kingdoms of Eormenlond in the ravaged aftermath of the War of the Way — a world of violence, disease, and the shadow of its own prophet",
+      "comparable_books": [
+        "The Return of the King - J.R.R. Tolkien",
+        "The Faithful and the Fallen - John Gwynne",
+        "The Prophet of Edan - Philip Chase"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical epic fantasy conclusion",
+          "philosophical and thematic depth",
+          "multi-POV",
+          "bittersweet satisfying ending",
+          "Tolkien-adjacent gravitas"
+        ],
+        "negative": [
+          "readers wanting a fast or action-packed finale",
+          "readers who haven't read the first two books"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The elegiac, literary prose is exceptionally well-suited to audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Ice - Ryan Cahill": {
