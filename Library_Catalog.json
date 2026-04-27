@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2029,
-  "total_pending": 2571,
+  "total_catalogued": 2049,
+  "total_pending": 2551,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -121793,541 +121793,976 @@
     "Titanicus - Dan Abnett": {
       "title": "Titanicus",
       "author": "Dan Abnett",
-      "series": null,
+      "series": "Sabbat Worlds",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Military Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the forge world of Orestes is invaded by a legion of Chaos Titans, the battle-worn Legio Invicta is diverted to defend it — setting off a massive god-machine war that threatens to destroy the very world they are sworn to save. The story is told through multiple perspectives, from Titan princeps to ordinary civilians, weaving in threads of Mechanicus political intrigue alongside the front-line carnage.",
+      "tone": "grimdark, ensemble-driven, politically layered",
+      "pacing": "Moderate",
+      "themes": [
+        "the cost of war",
+        "faith vs. reason",
+        "political ambition",
+        "loyalty",
+        "man vs. machine"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the industrial forge world of Orestes during the Sabbat Worlds Crusade",
+      "comparable_books": [
+        "Horus Rising - Dan Abnett",
+        "Know No Fear - Dan Abnett",
+        "Mechanicum - Graham McNeill"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast",
+          "multiple POV war narrative",
+          "mech/giant robot combat",
+          "political intrigue",
+          "Warhammer 40K lore-heavy",
+          "civilian perspectives alongside military"
+        ],
+        "negative": [
+          "no single protagonist",
+          "large cast can be difficult to track",
+          "some storylines under-resolved",
+          "requires prior 40K familiarity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Double Eagle - Dan Abnett": {
       "title": "Double Eagle",
       "author": "Dan Abnett",
-      "series": null,
+      "series": "Sabbat Worlds",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Military Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "During the Sabbat Worlds Crusade, the outnumbered pilots of the Phantine XX fighter corps are all that stand between the Chaos forces of Anakwanar Sek and the total fall of the world of Enothis. Drawing heavily on WWII aerial combat, the novel follows a diverse ensemble of flyers as they fight for air supremacy in a desperate, day-by-day struggle for survival.",
+      "tone": "propulsive, gritty, WWII-inflected, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "camaraderie",
+        "the human cost of war",
+        "duty",
+        "aerial warfare"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the war-torn world of Enothis during the Sabbat Worlds Crusade",
+      "comparable_books": [
+        "Titanicus - Dan Abnett",
+        "First and Only - Dan Abnett",
+        "Fifteen Hours - Mitchel Scanlon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII-style aerial combat",
+          "ensemble cast",
+          "propulsive pacing",
+          "accessible entry point to 40K",
+          "strong character arcs",
+          "anyone-can-die tension"
+        ],
+        "negative": [
+          "large cast introduced quickly",
+          "light on wider plot",
+          "minimal Space Marine content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced aerial action translates superbly to audio; Toby Longworth narration is well regarded.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "First and Only - Dan Abnett": {
       "title": "First and Only",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 1",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Colonel-Commissar Ibram Gaunt and the Tanith First-and-Only — a regiment of soldiers whose homeworld was destroyed on the day of their founding — are drawn into a deadly conspiracy that reaches to the heart of the Sabbat Worlds Crusade's high command. As Gaunt uncovers treachery among the Imperial Guard's officer class, he must protect his men and his honour against enemies both external and within.",
+      "tone": "grimdark, propulsive, conspiratorial",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty",
+        "military politics and betrayal",
+        "identity and loss",
+        "duty vs. conscience"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); various war-zones of the Sabbat Worlds Crusade, 41st millennium",
+      "comparable_books": [
+        "Sharpe's Rifles - Bernard Cornwell",
+        "Old Man's War - John Scalzi",
+        "The Forever War - Joe Haldeman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive military action",
+          "morally complex protagonist",
+          "found family",
+          "conspiracy thriller elements",
+          "accessible 40K entry point"
+        ],
+        "negative": [
+          "grimdark setting",
+          "high body count",
+          "ongoing series commitment"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong narrator performance and fast pacing make this a standout listen.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ghostmaker - Dan Abnett": {
       "title": "Ghostmaker",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 2",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Tanith First-and-Only await their next engagement on the jungle world of Monthax, Gaunt walks the regimental lines, and the novel unfolds as a series of interconnected stories exploring each Ghost's past heroics and the tragedies that followed them from doomed Tanith. A character-building volume that deepens the ensemble before the series' major arcs begin.",
+      "tone": "elegiac, character-driven, episodic",
+      "pacing": "Moderate",
+      "themes": [
+        "memory and loss",
+        "identity",
+        "soldierly bonds",
+        "the weight of survival",
+        "origin and grief"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); multiple worlds of the Sabbat Worlds Crusade told in flashback, framed on Monthax",
+      "comparable_books": [
+        "First and Only - Dan Abnett",
+        "Matterhorn - Karl Marlantes",
+        "The Things They Carried - Tim O'Brien"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble character depth",
+          "anthology-style structure within a novel",
+          "emotional resonance",
+          "world-building",
+          "found family"
+        ],
+        "negative": [
+          "slower pacing than Book 1",
+          "episodic structure may feel disjointed",
+          "less forward plot momentum"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Necropolis - Dan Abnett": {
       "title": "Necropolis",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 3",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the hive world of Verghast, a grinding civil war between a loyal hive city and a Chaos-corrupted neighbour draws in Gaunt and his Ghosts as reinforcements. What begins as urban siege warfare becomes a desperate last stand, and the novel introduces several characters who join the regiment and become fan favourites throughout the series.",
+      "tone": "grimdark, siege-heavy, claustrophobic",
+      "pacing": "Moderate",
+      "themes": [
+        "siege warfare",
+        "class and loyalty",
+        "civilian cost of war",
+        "resistance",
+        "integration and identity"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the hive world of Verghast, 41st millennium",
+      "comparable_books": [
+        "Stalingrad - Antony Beevor",
+        "First and Only - Dan Abnett",
+        "Honour Guard - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "large-scale urban warfare",
+          "expanded cast",
+          "civilian perspectives",
+          "siege thriller",
+          "high stakes"
+        ],
+        "negative": [
+          "darker and heavier than earlier books",
+          "high body count",
+          "complex multi-faction politics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Honour Guard - Dan Abnett": {
       "title": "Honour Guard",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 4",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In disgrace after the war on Verghast, Gaunt and his Ghosts are sent on a near-suicidal mission to retrieve the sacred relics of Saint Sabbat from a Chaos-occupied world. The mission takes on a mystical dimension as strange, seemingly miraculous events begin to suggest that the saint herself may be working through them.",
+      "tone": "grimdark, adventure-paced, with spiritual undercurrents",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "faith and miracles",
+        "duty under impossible odds",
+        "sacrifice",
+        "the nature of saints"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the Chaos-held world of Hagia, 41st millennium",
+      "comparable_books": [
+        "Sabbat Martyr - Dan Abnett",
+        "First and Only - Dan Abnett",
+        "Necropolis - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive action",
+          "supernatural/religious overtones",
+          "redemption arc",
+          "tightly plotted mission structure",
+          "deepening series lore"
+        ],
+        "negative": [
+          "grimdark setting",
+          "graphic violence",
+          "requires prior series knowledge for full impact"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sabbat Martyr - Dan Abnett": {
       "title": "Sabbat Martyr",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 7",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The reincarnation of the living saint Sabbat on the world of Herodor ignites a religious fervour across the Crusade — and makes her a target for assassination by the Archenemy's most feared agents. Gaunt and the Ghosts are tasked with protecting her, in a novel that blends military action with mythic, almost devotional undertones.",
+      "tone": "grimdark, mythic, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "faith and miracles",
+        "martyrdom and sacrifice",
+        "the power of symbols",
+        "fanaticism",
+        "redemption"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the shrine world of Herodor, 41st millennium",
+      "comparable_books": [
+        "Honour Guard - Dan Abnett",
+        "Double Eagle - Dan Abnett",
+        "Blood Pact - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "mythic/religious undertones",
+          "fast-paced action",
+          "series turning-point",
+          "emotionally resonant",
+          "strong villain presence"
+        ],
+        "negative": [
+          "grimdark setting",
+          "graphic violence",
+          "relies on series history for full emotional impact"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Straight Silver - Dan Abnett": {
       "title": "Straight Silver",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 6",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On Aexe Cardinal, a world locked in a decades-long stalemate of brutal trench warfare between the Imperial Alliance and the Chaos-corrupted Shadik Republic, Gaunt and his scout specialists are misused as frontline infantry. Frustrated by obsolete command tactics, Gaunt volunteers the Ghosts for a near-suicidal deep-penetration mission to break the deadlock.",
+      "tone": "grimdark, WWI-inflected, bleak",
+      "pacing": "Moderate",
+      "themes": [
+        "futility of trench warfare",
+        "command incompetence",
+        "individual courage vs. institutional failure",
+        "attrition"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the war-locked world of Aexe Cardinal, 41st millennium",
+      "comparable_books": [
+        "All Quiet on the Western Front - Erich Maria Remarque",
+        "Necropolis - Dan Abnett",
+        "The Guns of Tanith - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWI trench warfare aesthetic",
+          "strong anti-war commentary",
+          "character under pressure",
+          "morally complex command structure"
+        ],
+        "negative": [
+          "bleakest book in the series to this point",
+          "deliberately slow build",
+          "frustrating command politics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Guns of Tanith - Dan Abnett": {
       "title": "The Guns of Tanith",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 5",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gaunt's Ghosts make a daring drop assault on the sky-city world of Phantine, fighting through vertical urban terrain against the elite Blood Pact and alien mercenaries with no hope of resupply or retreat. The novel introduces the Phantine fighter corps, who later star in the spinoff Double Eagle.",
+      "tone": "propulsive, tense, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "urban combat",
+        "survival against impossible odds",
+        "escalating personal loss",
+        "sacrifice"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the sky-hive world of Phantine, 41st millennium",
+      "comparable_books": [
+        "Double Eagle - Dan Abnett",
+        "Straight Silver - Dan Abnett",
+        "Necropolis - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced action",
+          "vertical urban warfare",
+          "anyone-can-die tension",
+          "tight mission structure",
+          "series lore deepening"
+        ],
+        "negative": [
+          "grimdark setting",
+          "very high character mortality",
+          "dark tone throughout"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "High-octane pacing and vivid action sequences work exceptionally well in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Only in Death - Dan Abnett": {
       "title": "Only in Death",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 9",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Trapped in the ancient fortress of Hinzerhaus on the fortress-world Jago, the Ghosts find themselves cut off, under siege, and haunted by something far more unsettling than the enemy outside. One of the darkest entries in the series, blending military horror with psychological dread as the regiment is pushed to its breaking point.",
+      "tone": "grimdark, horror-tinged, claustrophobic, haunting",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "psychological horror",
+        "siege and isolation",
+        "the supernatural",
+        "resilience",
+        "mortality"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the fortress-world Jago, the ancient stronghold of Hinzerhaus, 41st millennium",
+      "comparable_books": [
+        "Traitor General - Dan Abnett",
+        "Blood Pact - Dan Abnett",
+        "The Armour of Contempt - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror elements",
+          "psychological tension",
+          "claustrophobic atmosphere",
+          "slow-burn suspense",
+          "emotionally devastating payoff"
+        ],
+        "negative": [
+          "very dark tone",
+          "slower pacing than other entries",
+          "horror-averse readers may struggle"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Horror atmosphere and creeping dread translate powerfully to audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Traitor General - Dan Abnett": {
       "title": "Traitor General",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 8",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A small, elite squad of Ghosts are inserted deep behind enemy lines on the occupied world of Gereon — a Chaos-held planet where the very landscape has been corrupted — tasked with assassinating a captured Imperial general before he can be turned against the Imperium.",
+      "tone": "tense, espionage-thriller, oppressive",
+      "pacing": "Fast",
+      "themes": [
+        "occupation and resistance",
+        "survival behind enemy lines",
+        "identity and corruption",
+        "the cost of duty"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the Chaos-occupied world of Gereon, 41st millennium",
+      "comparable_books": [
+        "His Last Command - Dan Abnett",
+        "The Armour of Contempt - Dan Abnett",
+        "Only in Death - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "spy/commando thriller feel",
+          "small squad deep behind enemy lines",
+          "high tension",
+          "series lore expansion",
+          "dark atmosphere"
+        ],
+        "negative": [
+          "grimdark setting",
+          "oppressive tone throughout",
+          "requires prior series context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "His Last Command - Dan Abnett": {
       "title": "His Last Command",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 10",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After the harrowing events on Gereon, the surviving squad returns to Imperial lines — only to find themselves under suspicion of corruption and forced through decontamination and interrogation. Meanwhile the regiment, thought to be dead, has been fighting on under different command, and Gaunt must fight bureaucracy as much as the enemy to reclaim his place.",
+      "tone": "grimdark, politically charged, emotionally taut",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional distrust",
+        "return and reintegration",
+        "trauma",
+        "loyalty tested",
+        "identity"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); Imperial lines during the Sabbat Worlds Crusade, 41st millennium",
+      "comparable_books": [
+        "Traitor General - Dan Abnett",
+        "The Armour of Contempt - Dan Abnett",
+        "Blood Pact - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "trauma and aftermath",
+          "political intrigue",
+          "character reunions",
+          "emotionally resonant",
+          "series continuity payoff"
+        ],
+        "negative": [
+          "requires deep series knowledge",
+          "less frontline combat than other entries",
+          "bureaucratic frustration as a plot driver"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Armour of Contempt - Dan Abnett": {
       "title": "The Armour of Contempt",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 11",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Tanith First is reinstated and returned to active combat, participating in the large-scale Imperial push to retake Gereon. The story splits between a veteran Ghost perspective and that of Dalin Criid, a new conscript experiencing his first campaign, offering a fresh-eyes view of the regiment's brutal world.",
+      "tone": "grimdark, dual-perspective, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "baptism by fire",
+        "the generational cost of war",
+        "liberation",
+        "duty and sacrifice",
+        "idealism vs. reality"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the world of Gereon during liberation, 41st millennium",
+      "comparable_books": [
+        "His Last Command - Dan Abnett",
+        "Traitor General - Dan Abnett",
+        "Only in Death - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fresh-eyes POV alongside veterans",
+          "action-heavy",
+          "series lore payoff",
+          "liberation warfare",
+          "strong character contrasts"
+        ],
+        "negative": [
+          "grimdark setting",
+          "requires series history",
+          "high violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sabbat Crusade - Dan Abnett": {
       "title": "Sabbat Crusade",
       "author": "Dan Abnett",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 15",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An anthology of short stories edited by Dan Abnett, set across the wider Sabbat Worlds Crusade and taking place after the events of Salvation's Reach. Features new Gaunt's Ghosts fiction by Abnett alongside contributions from Aaron Dembski-Bowden, Nick Kyme, Matthew Farrer, John French, and others, exploring corners of the crusade beyond the Tanith First.",
+      "tone": "grimdark, varied across stories",
+      "pacing": "Moderate",
+      "themes": [
+        "war across a sector",
+        "loyalty and betrayal",
+        "the many faces of the Crusade",
+        "chaos and order"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); multiple worlds of the Sabbat Worlds Crusade, 41st millennium",
+      "comparable_books": [
+        "Sabbat Worlds (anthology) - Dan Abnett",
+        "Blood Pact - Dan Abnett",
+        "The Warmaster - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anthology variety",
+          "expands Crusade lore",
+          "multiple author voices",
+          "includes Abnett Ghosts stories",
+          "essential bridge to The Warmaster"
+        ],
+        "negative": [
+          "uneven quality across stories",
+          "short story format may not satisfy novel readers",
+          "requires significant prior series knowledge"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood Pact - Dan Abnett": {
       "title": "Blood Pact",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 12",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "While recovering from the gruelling campaign on Jago, the Ghosts are posted to garrison duty on Balhaut — but the rest is shattered when a prisoner in their custody becomes the target of a determined enemy assassin team, and a mystery begins to unravel that could compromise the entire Crusade.",
+      "tone": "thriller, tense, grimly comic at intervals",
+      "pacing": "Fast",
+      "themes": [
+        "espionage and assassination",
+        "trust and betrayal",
+        "rest vs. duty",
+        "the enemy within"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the world of Balhaut behind the Imperial lines, 41st millennium",
+      "comparable_books": [
+        "Anarch - Dan Abnett",
+        "The Warmaster - Dan Abnett",
+        "Traitor General - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "espionage thriller structure",
+          "change of pace from frontline combat",
+          "whodunit elements",
+          "strong character moments",
+          "propulsive"
+        ],
+        "negative": [
+          "less conventional warfare than prior books",
+          "slower character-build pace may frustrate action-focused readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Anarch - Dan Abnett": {
       "title": "Anarch",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 16",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the forge world of Urdesh, the Imperial Crusade faces the Archenemy commander known as the Anarch and his elite Sons of Sek in what may be the decisive battle for the Sabbat Worlds. Gaunt — now at the Warmaster's right hand — finds that the greatest threat may come from treachery within, as years of accumulated plot threads converge.",
+      "tone": "grimdark, epic, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "betrayal from within",
+        "the price of victory",
+        "leadership and sacrifice",
+        "the nature of evil",
+        "resolution of long arcs"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); the forge world of Urdesh, 41st millennium",
+      "comparable_books": [
+        "The Warmaster - Dan Abnett",
+        "Blood Pact - Dan Abnett",
+        "Salvation's Reach - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "long-running series payoff",
+          "epic scale",
+          "emotionally resonant",
+          "multiple converging threads",
+          "satisfying character arcs"
+        ],
+        "negative": [
+          "requires reading the full series",
+          "very high stakes may be stressful",
+          "significant character losses"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Warmaster - Dan Abnett": {
       "title": "The Warmaster",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 14",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After years of front-line combat, Gaunt is given a new and unexpected posting at the heart of the Imperial command structure — directly serving Warmaster Macaroth. As he navigates the treacherous politics of the high command and uncovers a dangerous conspiracy, sinister forces close in on him and the Ghosts from multiple directions.",
+      "tone": "grimdark, politically charged, conspiratorial",
+      "pacing": "Moderate",
+      "themes": [
+        "political intrigue",
+        "command and power",
+        "loyalty under pressure",
+        "conspiracy",
+        "elevation and isolation"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); Imperial high command during the Sabbat Worlds Crusade, 41st millennium",
+      "comparable_books": [
+        "Anarch - Dan Abnett",
+        "Blood Pact - Dan Abnett",
+        "Salvation's Reach - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political thriller elements",
+          "series escalation",
+          "character development at the top of command",
+          "deep lore payoff"
+        ],
+        "negative": [
+          "less frontline action than earlier books",
+          "complex political web requires series knowledge",
+          "dark throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Salvation's Reach - Dan Abnett": {
       "title": "Salvation's Reach",
       "author": "Dan Abnett",
-      "series": "Gaunt’s Ghosts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gaunt's Ghosts",
+      "series_position": "Book 13",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Ghosts are dispatched on a covert deep-space assault mission to raid a remote Archenemy facility known as Salvation's Reach, a void-station guarding something the Crusade desperately needs. The mission is high-risk and under-resourced, featuring some of the series' most intense void-combat and boarding-action sequences.",
+      "tone": "propulsive, tense, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "impossible odds",
+        "void warfare",
+        "sacrifice",
+        "the cost of intelligence operations",
+        "unit cohesion"
+      ],
+      "setting": "Far future (Warhammer 40,000 universe); deep space and a remote Archenemy orbital installation, 41st millennium",
+      "comparable_books": [
+        "The Warmaster - Dan Abnett",
+        "Anarch - Dan Abnett",
+        "Traitor General - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space boarding action",
+          "high-octane pacing",
+          "ensemble under pressure",
+          "change of scenery from previous books",
+          "strong series momentum"
+        ],
+        "negative": [
+          "requires full series context",
+          "grimdark",
+          "significant casualties"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Last Ballad of Hope - Philip C. Quaintrell": {
       "title": "The Last Ballad of Hope",
       "author": "Philip C. Quaintrell",
       "series": "A Time of Dragons",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the shattering aftermath of the Dark One's return, the survivors of Verda must hunt down what cannot be killed — ranger Cob and the fearless Androma pursue the enemy before he can strike, while Joran Pendain takes his first steps towards a destiny as a Dragon Rider, and beneath the waves, battle maiden Kitrana Voden fights to save her ocean-people from extinction.",
+      "tone": "epic, emotionally charged, action-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "destiny and free will",
+        "sacrifice",
+        "power and corruption",
+        "hope in darkness",
+        "dragon bonding"
+      ],
+      "setting": "The world of Verda, a secondary fantasy world in its ancient past, featuring dragons, ocean-kingdoms, and warring human factions",
+      "comparable_books": [
+        "Rise of the Ranger - Philip C. Quaintrell",
+        "Eragon - Christopher Paolini",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon rider fantasy",
+          "multi-POV epic",
+          "emotionally resonant",
+          "fast-paced action balanced with character depth",
+          "self-published indie quality"
+        ],
+        "negative": [
+          "requires prior books in series",
+          "large cast across multiple POVs",
+          "classic epic fantasy tropes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "From the Shadows of the Owl Queen's Court - Benedict Patrick": {
       "title": "From the Shadows of the Owl Queen's Court",
       "author": "Benedict Patrick",
       "series": "Yarnsworld",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Nascha, a captive of the Owl Queen's Court who is persecuted for the colour of her hair and her latent magical gifts, flees through the monster-haunted Magpie King's forest and finds an unlikely ally in Bradan, a young man slowly being consumed by his father's dangerous magical inheritance. Together they must navigate feuding supernatural powers as the balance of the forest shifts around them.",
+      "tone": "dark fairytale, atmospheric, folk-horror adjacent",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and the cost of survival",
+        "power and its corruption",
+        "nature and the supernatural",
+        "outcasts finding one another",
+        "myth embedded in narrative"
+      ],
+      "setting": "A folkloric secondary world inspired by Eastern European myth; the Magpie King's dark forest and the Owl Queen's Court",
+      "comparable_books": [
+        "They Mostly Come Out at Night - Benedict Patrick",
+        "Uprooted - Naomi Novik",
+        "The Bear and the Nightingale - Katherine Arden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fairytale atmosphere",
+          "folklore-within-story structure",
+          "standalone despite being series entry",
+          "strong female protagonist",
+          "Brothers Grimm aesthetic",
+          "indie gem"
+        ],
+        "negative": [
+          "very dark tone",
+          "plot can feel episodic",
+          "limited prior Yarnsworld knowledge adds depth but not required"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "To Dream and Die as a Taniwha Girl - Benedict Patrick": {
