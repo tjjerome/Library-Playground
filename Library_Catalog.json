@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3455,
-  "total_pending": 1145,
+  "total_catalogued": 3475,
+  "total_pending": 1125,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -191162,27 +191162,52 @@
       "title": "Kushiel's Scion",
       "author": "Jacqueline Carey",
       "series": "Imriel's Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Imriel de la Courcel, son of the most infamous traitor in Terre d'Ange, comes of age grappling with his dark heritage and his place among the nobility while navigating a world of political intrigue and moral complexity. Set in the richly imagined world of Kushiel's Dart, this volume follows Imriel's journey from adolescence through early adulthood, including a harrowing sojourn in war-torn Tiberium.",
+      "tone": "lush, introspective, morally complex, romantic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and heritage",
+        "redemption",
+        "political intrigue",
+        "coming of age",
+        "love and desire",
+        "religious devotion"
+      ],
+      "setting": "Alternate-history Europe (Terre d'Ange and surrounding lands), medieval-inspired fantasy world",
+      "comparable_books": [
+        "Kushiel's Dart - Jacqueline Carey",
+        "The Name of the Wind - Patrick Rothfuss",
+        "A Song of Ice and Fire - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush prose",
+          "morally complex protagonist",
+          "rich world-building",
+          "romance-heavy",
+          "political intrigue",
+          "BDSM-adjacent content handled literarily"
+        ],
+        "negative": [
+          "slow pacing in early sections",
+          "very long books",
+          "explicit sexual content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich, lyrical prose and a single narrator perspective make it ideally suited to audio.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fiasco - Stanisław Lem": {
@@ -191190,26 +191215,47 @@
       "author": "Stanisław Lem",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A human expedition travels to a distant star system to make first contact with an alien civilisation, but the attempt at communication spirals catastrophically due to mutual incomprehension, hubris, and the limits of human reason. Lem's bleakest meditation on the impossibility of genuine contact with the radically alien.",
+      "tone": "philosophical, bleak, cerebral, pessimistic",
+      "pacing": "Slow",
+      "themes": [
+        "first contact",
+        "limits of human reason",
+        "communication and incomprehension",
+        "hubris",
+        "determinism vs. free will"
+      ],
+      "setting": "Far-future deep space and an alien planet, indeterminate era",
+      "comparable_books": [
+        "Solaris - Stanisław Lem",
+        "The Invincible - Stanisław Lem",
+        "His Master's Voice - Stanisław Lem",
+        "Blindsight - Peter Watts"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF ideas",
+          "philosophical depth",
+          "bleak tone",
+          "alien as truly unknowable"
+        ],
+        "negative": [
+          "minimal characterisation",
+          "very slow and dense",
+          "no resolution or optimism",
+          "demanding prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Alchemised - SenLinYu": {
@@ -191217,80 +191263,150 @@
       "author": "SenLinYu",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Helena Marino, a prisoner of war suffering from inexplicable amnesia, is sent to the ruthless High Reeve — one of the most powerful necromancers in a world ruled by corrupt guild families and the undead — who is tasked with unlocking the secrets buried in her mind. A grimdark dark fantasy epic combining a war-torn world of necromancy and alchemy with a consuming enemies-to-lovers romance.",
+      "tone": "grimdark, gothic, intensely romantic, harrowing",
+      "pacing": "Fast",
+      "themes": [
+        "survival and moral compromise",
+        "war and its costs",
+        "memory and identity",
+        "immortality and death",
+        "love under impossible circumstances",
+        "oppression and resistance"
+      ],
+      "setting": "The fantasy continent of Paladia, a gaslamp/industrial-era dark fantasy world in the aftermath of a long war",
+      "comparable_books": [
+        "A Court of Thorns and Roses - Sarah J. Maas",
+        "From Blood and Ash - Jennifer L. Armentrout",
+        "The Priory of the Orange Tree - Samantha Shannon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "enemies-to-lovers romance",
+          "grimdark world-building",
+          "consuming slow-burn romance",
+          "necromancy and dark magic",
+          "morally grey love interest",
+          "BookTok/romantasy adjacent"
+        ],
+        "negative": [
+          "extremely dark and harrowing content",
+          "graphic violence and war crimes",
+          "very long (1000+ pages)",
+          "melodrama",
+          "thin secondary characters"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Silverthorn - Raymond E. Feist": {
       "title": "Silverthorn",
       "author": "Raymond E. Feist",
       "series": "The Riftwar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Prince Arutha's new bride Anita is struck by a poisoned arrow on their wedding day, and only the mythical herb Silverthorn can save her life. Arutha must race across the kingdom and beyond on a desperate quest while dark forces — including the enigmatic Nighthawks and the sinister Murmandamus — close in.",
+      "tone": "adventurous, quest-driven, heroic, classic high fantasy",
+      "pacing": "Fast",
+      "themes": [
+        "heroism and sacrifice",
+        "friendship and loyalty",
+        "good vs. evil",
+        "quest and adventure",
+        "dark magic"
+      ],
+      "setting": "Midkemia — a secondary world medieval fantasy kingdom, continuing from Magician",
+      "comparable_books": [
+        "Magician - Raymond E. Feist",
+        "The Dragonbone Chair - Tad Williams",
+        "The Eye of the World - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic high fantasy questing",
+          "fast-paced adventure",
+          "beloved characters returning",
+          "straightforward hero's journey"
+        ],
+        "negative": [
+          "formulaic plot structure",
+          "thin characterisation compared to modern fantasy",
+          "dated by contemporary standards"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Winners - Fredrik Backman": {
       "title": "The Winners",
       "author": "Fredrik Backman",
       "series": "Beartown",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Years after the trauma that tore Beartown apart, a catastrophic storm strikes the town, forcing its residents to confront old wounds, loyalties, and what they owe one another. The final volume of the Beartown trilogy returns to beloved characters as they grapple with community, grief, and what it means to survive together.",
+      "tone": "emotionally devastating, hopeful, community-driven, quietly intense",
+      "pacing": "Moderate",
+      "themes": [
+        "community and belonging",
+        "grief and trauma",
+        "forgiveness and accountability",
+        "sport and identity",
+        "small-town life",
+        "family"
+      ],
+      "setting": "Beartown, a small fictional Swedish ice-hockey town, present day",
+      "comparable_books": [
+        "Beartown - Fredrik Backman",
+        "Us Against You - Fredrik Backman",
+        "A Man Called Ove - Fredrik Backman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotionally resonant",
+          "community-focused",
+          "character-driven",
+          "found family",
+          "satisfying series conclusion"
+        ],
+        "negative": [
+          "slow in places",
+          "very long",
+          "heavy emotional content",
+          "requires reading prior books"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Backman's ensemble character writing and emotional prose translate exceptionally well to audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fiend - Alma Katsu": {
@@ -191298,26 +191414,50 @@
       "author": "Alma Katsu",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Berisha family runs a global empire built on suspiciously consistent good fortune — but when the patriarch prepares to hand power to his eldest son, his ambitious daughter Maris suspects the family's success is bound to something ancient and demonic. A contemporary supernatural thriller about dynastic greed, sibling rivalry, and the terrible price of power.",
+      "tone": "darkly comic, tense, satirical, dread-laced",
+      "pacing": "Fast",
+      "themes": [
+        "greed and corruption",
+        "generational wealth",
+        "sibling rivalry",
+        "nature vs. nurture",
+        "the price of power",
+        "sexism in corporate hierarchies"
+      ],
+      "setting": "Contemporary New York City, corporate and domestic settings",
+      "comparable_books": [
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "The Fall of the House of Usher - Edgar Allan Poe",
+        "Rosemary's Baby - Ira Levin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Succession fans",
+          "corporate satire",
+          "family dysfunction",
+          "fast-paced",
+          "supernatural horror light on gore",
+          "darkly comic tone"
+        ],
+        "negative": [
+          "horror arrives late in the book",
+          "short (novella-length ~240 pages)",
+          "light on traditional horror scares"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Never - Ken Follett": {
@@ -191325,26 +191465,49 @@
       "author": "Ken Follett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Multiple interlocking storylines — spanning a CIA operative in Chad, a Chinese spymaster, a young widow fleeing human traffickers, and the US President — converge as a series of miscalculations and political pressures drag the world toward nuclear war. A globe-spanning thriller structured around escalating DEFCON levels.",
+      "tone": "propulsive, politically tense, globe-trotting, alarming",
+      "pacing": "Moderate",
+      "themes": [
+        "nuclear war and geopolitics",
+        "diplomacy and miscalculation",
+        "terrorism and espionage",
+        "human trafficking",
+        "political leadership under pressure",
+        "great-power rivalry"
+      ],
+      "setting": "Near-contemporary world — Chad/Sahara, USA, China, North Korea, multiple locations",
+      "comparable_books": [
+        "The Sum of All Fears - Tom Clancy",
+        "Eye of the Needle - Ken Follett",
+        "2034 - Elliot Ackerman & James Stavridis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV geopolitical thriller",
+          "fast-paced globe-trotting",
+          "plausible real-world scenario",
+          "strong female protagonists",
+          "meticulously researched"
+        ],
+        "negative": [
+          "very long (800 pages)",
+          "some readers find it preachy or politically slanted",
+          "sprawling cast"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Eden - Stanisław Lem": {
@@ -191352,26 +191515,48 @@
       "author": "Stanisław Lem",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A six-man starship crew crash-lands on the beautiful but increasingly sinister planet they call Eden, where they encounter a bizarre alien civilisation — the 'doublers' — whose incomprehensible society appears to be perpetrating mass atrocities under an information-control system that denies its own existence. An early Lem meditation on failed first contact, colonialism, and the impossibility of understanding the truly alien.",
+      "tone": "eerie, philosophical, melancholic, cerebral",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact and incomprehension",
+        "totalitarianism and information control",
+        "colonialism and non-interference",
+        "the limits of human knowledge",
+        "alien otherness"
+      ],
+      "setting": "The planet Eden, a distant Earth-like world orbiting a far star; 1959 science-fictional future",
+      "comparable_books": [
+        "Solaris - Stanisław Lem",
+        "Fiasco - Stanisław Lem",
+        "The Invincible - Stanisław Lem",
+        "Roadside Picnic - Arkady & Boris Strugatsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical SF",
+          "alien as truly unknowable",
+          "anti-colonialist themes",
+          "Eastern Bloc SF",
+          "atmospheric mystery"
+        ],
+        "negative": [
+          "schematic characters",
+          "slow and uneven pacing",
+          "no satisfying resolution",
+          "dated science"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Aquanaut: A Life Beneath the Surface – the Inside Story of the Thai Cave Rescue - Rick Stanton": {
@@ -191379,107 +191564,186 @@
       "author": "Rick Stanton",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cave-diving expert Rick Stanton recounts his forty years of obsessive cave exploration and the accumulation of expertise that led to his unlikely role as the key figure in the 2018 rescue of twelve boys and their football coach from the flooded Tham Luang cave in Thailand. Part memoir, part gripping real-life adventure story.",
+      "tone": "propulsive, matter-of-fact, quietly heroic, occasionally blunt",
+      "pacing": "Moderate",
+      "themes": [
+        "obsession and mastery",
+        "heroism and humility",
+        "human ingenuity under pressure",
+        "cave exploration",
+        "rescue and survival"
+      ],
+      "setting": "United Kingdom (Stanton's life and career) and Tham Luang Cave, Thailand, 2018",
+      "comparable_books": [
+        "Touching the Void - Joe Simpson",
+        "Into Thin Air - Jon Krakauer",
+        "The Rescue (documentary companion)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true adventure",
+          "insider perspective on a famous event",
+          "technical detail on cave diving",
+          "understated heroism"
+        ],
+        "negative": [
+          "not exclusively about the cave rescue",
+          "some find Stanton's voice blunt/unsympathetic",
+          "structural back-and-forth can be confusing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Into the Riverlands - Nghi Vo": {
       "title": "Into the Riverlands",
       "author": "Nghi Vo",
       "series": "The Singing Hills Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cleric Chih travels into the legendary Riverlands with a group of pilgrims, gathering stories of the great heroes and martial artists who once shaped the land — but not all of the travellers are who they appear to be, and old legends have a way of demanding new blood. A beautifully written novella exploring the power of story and memory.",
+      "tone": "lyrical, quietly suspenseful, meditative, elegant",
+      "pacing": "Moderate",
+      "themes": [
+        "storytelling and memory",
+        "heroism and its legends",
+        "identity and performance",
+        "the past living in the present",
+        "community and belonging"
+      ],
+      "setting": "The Riverlands — a secondary world inspired by East Asian martial arts traditions and culture",
+      "comparable_books": [
+        "The Empress of Salt and Fortune - Nghi Vo",
+        "When the Tiger Came Down the Mountain - Nghi Vo",
+        "The Buried Giant - Kazuo Ishiguro"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "found family of travellers",
+          "wuxia-adjacent aesthetic",
+          "story-within-a-story structure",
+          "short and satisfying"
+        ],
+        "negative": [
+          "novella length may feel slight",
+          "minimal action",
+          "requires prior series knowledge for full resonance"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Vo's lyrical, voice-driven prose and the embedded storytelling structure excel in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Blade of Dream - Daniel Abraham": {
       "title": "Blade of Dream",
       "author": "Daniel Abraham",
       "series": "The Kithamar Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Garreth Left, heir to a struggling Kithamar merchant family, falls obsessively in love with a mysterious woman after a single chance encounter and descends into the city's dangerous underworld to find her again — while Elaine, daughter of the city's new ruler, discovers secrets in the palace she cannot let go. A parallel narrative to Age of Ash, set over the same tumultuous year.",
+      "tone": "atmospheric, character-driven, intricate, quietly tense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fate and personal choice",
+        "class and power",
+        "love and obsession",
+        "the weight of history",
+        "conspiracy and political upheaval"
+      ],
+      "setting": "Kithamar — a richly built secondary-world city, medieval-ish, over the course of one year",
+      "comparable_books": [
+        "Age of Ash - Daniel Abraham",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-focused fantasy",
+          "intricate city world-building",
+          "parallel narrative structure",
+          "subtle magic",
+          "literary sensibility"
+        ],
+        "negative": [
+          "very slow pacing",
+          "no prior-book recap — context needed",
+          "low action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Brides of High Hill - Nghi Vo": {
       "title": "The Brides of High Hill",
       "author": "Nghi Vo",
       "series": "The Singing Hills Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cleric Chih arrives at an isolated mountain estate where a lord has taken multiple brides, each of whom has disappeared under mysterious circumstances — and discovers that the house harbours a dark supernatural secret that demands reckoning. A gothic, fairy-tale-inflected novella in Vo's signature lyrical style.",
+      "tone": "gothic, eerie, elegant, unsettling",
+      "pacing": "Moderate",
+      "themes": [
+        "women and power",
+        "storytelling as survival",
+        "the supernatural and the everyday",
+        "domestic horror",
+        "memory and witness"
+      ],
+      "setting": "A remote mountain manor in the secondary world of the Singing Hills Cycle, East Asian-inflected",
+      "comparable_books": [
+        "Bluebeard (fairy tale)",
+        "The Empress of Salt and Fortune - Nghi Vo",
+        "Mexican Gothic - Silvia Moreno-Garcia"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "gothic atmosphere",
+          "fairy-tale retelling energy",
+          "feminist themes",
+          "short and contained"
+        ],
+        "negative": [
+          "novella length",
+          "not standalone — benefits from series familiarity",
+          "minimal action"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The gothic atmosphere and Vo's lyrical prose are particularly enhanced by audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Pioneers: The Heroic Story of the Settlers Who Brought the American Ideal West - David McCullough": {
@@ -191487,26 +191751,46 @@
       "author": "David McCullough",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "McCullough chronicles the extraordinary men and women who settled the Northwest Territory in the late eighteenth and early nineteenth centuries, focusing on the Ohio territory and the idealists — particularly Manasseh Cutler and Rufus Putnam — who shaped a new American society guided by the principles of the Ordinance of 1787.",
+      "tone": "celebratory, accessible, patriotic, narrative-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "American expansion and idealism",
+        "pioneer hardship and resilience",
+        "democracy and law on the frontier",
+        "community-building",
+        "the Northwest Ordinance and slavery's exclusion"
+      ],
+      "setting": "The Ohio River valley and Northwest Territory, late 18th–early 19th century America",
+      "comparable_books": [
+        "1776 - David McCullough",
+        "Empire of the Summer Moon - S.C. Gwynne",
+        "Undaunted Courage - Stephen Ambrose"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible popular history",
+          "narrative non-fiction",
+          "American founding era",
+          "celebratory tone",
+          "short and readable"
+        ],
+        "negative": [
+          "critics note it downplays Native American displacement",
+          "hagiographic rather than critical",
+          "shorter than McCullough's major works"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "McCullough himself narrates the audiobook, making it a definitive listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sanctuary - William Faulkner": {
@@ -191514,26 +191798,50 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A young college student, Temple Drake, stumbles into the hideout of a gang of bootleggers in rural Mississippi and is subjected to horrifying violence, setting off a chain of events involving murder, false accusation, and the corruption of Southern justice. Faulkner's most deliberately shocking novel, a dark crime story wrapped in literary modernism.",
+      "tone": "sordid, nightmarish, darkly satirical, modernist",
+      "pacing": "Moderate",
+      "themes": [
+        "sexual violence and its aftermath",
+        "corruption of justice",
+        "Southern Gothic decay",
+        "class and hypocrisy",
+        "trauma and complicity"
+      ],
+      "setting": "Mississippi and Memphis, Tennessee, American South, late 1920s",
+      "comparable_books": [
+        "As I Lay Dying - William Faulkner",
+        "The Sound and the Fury - William Faulkner",
+        "In Cold Blood - Truman Capote"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern Gothic",
+          "literary modernism",
+          "moral complexity",
+          "dark social satire",
+          "crime fiction with literary ambition"
+        ],
+        "negative": [
+          "graphic sexual violence (including rape)",
+          "deliberately disturbing content",
+          "Faulknerian prose density",
+          "bleak with no redemption"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Hothouse - Brian W. Aldiss": {
@@ -191541,161 +191849,283 @@
       "author": "Brian W. Aldiss",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In the far future, the Earth has stopped rotating, the sun is hotter and larger, and the world has become a vast, all-consuming jungle dominated by enormous, predatory plants — tiny, devolved humans struggle to survive in the canopy of a world-spanning banyan tree. A visionary, hallucinatory science fiction classic of biological imagination.",
+      "tone": "hallucinatory, exuberant, alien, wonder-suffused",
+      "pacing": "Moderate",
+      "themes": [
+        "devolution and evolution",
+        "humanity's place in nature",
+        "ecological transformation",
+        "survival and adaptation",
+        "far-future Earth"
+      ],
+      "setting": "Far-future Earth — a tidally locked jungle world dominated by plant life",
+      "comparable_books": [
+        "The Long Tomorrow - Leigh Brackett",
+        "The Book of the New Sun - Gene Wolfe",
+        "Dying Earth - Jack Vance"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "far-future world-building",
+          "biological imagination",
+          "classic SF",
+          "Hugo Award winner",
+          "sense of wonder",
+          "ecological themes"
+        ],
+        "negative": [
+          "thin characterisation",
+          "episodic and loose structure",
+          "very dated by modern SF standards"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Order of the Shadow Dragon - Steven McKinnon": {
       "title": "Order of the Shadow Dragon",
       "author": "Steven McKinnon",
       "series": "Legacy of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Adrian Navarro, the sole surviving member of a defunct knightly order sworn to protect the world from magical threats, agrees to assassinate a sorceress blamed for a devastating cataclysm — only to discover that his quest for revenge may be built on a lie. An action-packed military fantasy with a hero's journey and a grim twist.",
+      "tone": "action-driven, darkly humorous, gritty, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and its costs",
+        "truth vs. propaganda",
+        "light and darkness in human nature",
+        "greed and political corruption",
+        "found companionship"
+      ],
+      "setting": "A secondary world epic fantasy setting with airships, military orders, and dark magic — same world as The Raincatcher's Ballad",
+      "comparable_books": [
+        "Symphony of the Wind - Steven McKinnon",
+        "The Blade Itself - Joe Abercrombie",
+        "Senlin Ascends - Josiah Bancroft"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced action",
+          "snarky humour",
+          "grimdark-lite",
+          "SPFBO-finalist author",
+          "indie SFF gem",
+          "flawed protagonist growth arc"
+        ],
+        "negative": [
+          "secondary cast somewhat thin",
+          "enemy motivations underdeveloped in book 1",
+          "indie production quality"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "In the Shadow of the Black Flag: A Fantasy Fiction Adventure - Steven McKinnon": {
-      "title": "In the Shadow of the Black Flag: A Fantasy Fiction Adventure",
+      "title": "In the Shadow of the Black Flag",
       "author": "Steven McKinnon",
       "series": "Legacy of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Outcast knight Adrian Navarro races to hunt down and close magical portals before they can unleash nightmarish creatures upon the world — but when a fanatic attempts to open a gateway to a city ruled by the damned, Adrian must forge a desperate alliance with pirates and thieves. A pirate-flavoured second entry in the series with escalating stakes.",
+      "tone": "action-driven, darkly humorous, swashbuckling, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and duty",
+        "alliance and trust",
+        "the nature of evil",
+        "outcasts and redemption",
+        "demonic corruption"
+      ],
+      "setting": "Same secondary world as book 1 — now extending to maritime and pirate territories",
+      "comparable_books": [
+        "Order of the Shadow Dragon - Steven McKinnon",
+        "The Blade Itself - Joe Abercrombie",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced action",
+          "pirates and rogues",
+          "snarky humour",
+          "escalating stakes",
+          "SPFBO-finalist author"
+        ],
+        "negative": [
+          "requires reading book 1",
+          "indie production quality",
+          "light on introspective depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fate of the Fallen - Kel Kade": {
       "title": "Fate of the Fallen",
       "author": "Kel Kade",
       "series": "The Shroud of Prophecy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the destined Chosen One — beloved by all — fails almost immediately, his reluctant best friend Aaslo, a simple forester, is left holding the bag and the prophecy. A trope-subverting dark epic fantasy that asks what happens when the hero's journey goes catastrophically wrong from the very first chapter.",
+      "tone": "darkly comic, subversive, adventurous, irreverent",
+      "pacing": "Fast",
+      "themes": [
+        "fate and free will",
+        "the burden of destiny",
+        "friendship and loyalty",
+        "what happens when prophecy fails",
+        "gods and their indifference"
+      ],
+      "setting": "A secondary world epic fantasy kingdom with gods, magic, and monsters",
+      "comparable_books": [
+        "The Ruin of Kings - Jenn Lyons",
+        "Kings of the Wyld - Nicholas Eames",
+        "Discworld (Pratchett) for tonal irreverence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "subverts chosen-one tropes",
+          "dark humour",
+          "fast-paced",
+          "fun and surprising",
+          "morbid comedy"
+        ],
+        "negative": [
+          "some find character work thin",
+          "humour may not land for all readers",
+          "plot can feel chaotic"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Nick Podehl, widely praised by fans as an ideal audio experience for this series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sanctum of the Soul - Kel Kade": {
       "title": "Sanctum of the Soul",
       "author": "Kel Kade",
       "series": "The Shroud of Prophecy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the epic conclusion to the Shroud of Prophecy trilogy, Aaslo — the reluctant, undead-commanding Chosen One — and the failed mage healer Teza lead a ragged band of survivors in a final desperate battle as a god of Death wages war on all living things. The series culminates in a war of gods and a reckoning with destiny.",
+      "tone": "darkly comic, high-stakes, emotionally satisfying, irreverent",
+      "pacing": "Fast",
+      "themes": [
+        "destiny and acceptance",
+        "survival against impossible odds",
+        "gods and mortality",
+        "friendship and sacrifice",
+        "unlikely heroism"
+      ],
+      "setting": "Same secondary world epic fantasy setting as prior books, now consumed by divine war",
+      "comparable_books": [
+        "Fate of the Fallen - Kel Kade",
+        "Destiny of the Dead - Kel Kade",
+        "The Ruin of Kings - Jenn Lyons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satisfying trilogy conclusion",
+          "dark humour persists",
+          "earned emotional payoff",
+          "fast-paced battle sequences"
+        ],
+        "negative": [
+          "requires reading all prior books",
+          "humour-horror blend not for everyone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Nick Podehl, praised as an outstanding audio experience for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Destiny of the Dead - Kel Kade": {
       "title": "Destiny of the Dead",
       "author": "Kel Kade",
       "series": "The Shroud of Prophecy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the God of Death having allied with the dark mage empire of the Berru to unleash a monstrous army upon the living, Aaslo and his misfit band fight on using his unsettling ability to bind souls to dead bodies — while in the north, Cherrí, avatar of a fire god, wages her own war. The two must unite their divine and profane powers to challenge Death itself.",
+      "tone": "darkly comic, action-packed, doomsday-tinged, irreverent",
+      "pacing": "Fast",
+      "themes": [
+        "death and what follows",
+        "unlikely alliances",
+        "divine politics",
+        "survival and determination",
+        "destiny for the living and dead alike"
+      ],
+      "setting": "Same secondary world epic fantasy setting as book 1, expanded northward",
+      "comparable_books": [
+        "Fate of the Fallen - Kel Kade",
+        "Sanctum of the Soul - Kel Kade",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark humour alongside doomsday stakes",
+          "necromancy-adjacent magic",
+          "fast-paced",
+          "expands the world significantly"
+        ],
+        "negative": [
+          "requires reading book 1",
+          "some find Aaslo's sanity arc irritating"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Nick Podehl, praised by fans as one of the best audio experiences in the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mage of No Renown - Kel Kade": {
