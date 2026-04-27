@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3595,
-  "total_pending": 1005,
+  "total_catalogued": 3613,
+  "total_pending": 987,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -197992,27 +197992,51 @@
       "title": "Dragonfall",
       "author": "David Estes",
       "series": "The Kingfall Histories",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As war looms across Kingfall, multiple protagonists — including royals, mages, and soldiers — pursue dangerous quests while the legendary godblades re-emerge and a growing evil threatens the entire continent. Secrets are unsheathed and alliances tested across a sprawling multi-POV narrative.",
+      "tone": "epic, action-driven, plot-twist-heavy",
+      "pacing": "Fast",
+      "themes": [
+        "power and destiny",
+        "war and politics",
+        "chosen weapons",
+        "good vs. evil",
+        "coming of age"
+      ],
+      "setting": "The continent of Kingfall — a secondary-world epic fantasy realm with warring kingdoms, dragons, and ancient magic",
+      "comparable_books": [
+        "Kingfall - David Estes",
+        "The Fatemarked Epic - David Estes",
+        "The Stormlight Archive - Brandon Sanderson",
+        "Legends of the First Empire - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "dragons and dragonriders",
+          "large cast of characters",
+          "fast-paced plot twists",
+          "found family",
+          "action-packed battles"
+        ],
+        "negative": [
+          "readers who dislike very large casts",
+          "those who want slow literary prose",
+          "reported frequent typos in early editions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Tim Gerard Reynolds, a highly regarded epic fantasy narrator.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Inquisitor’s Foil - D. J. Bodden": {
@@ -198046,135 +198070,249 @@
       "title": "Murder on the Lamplight Express",
       "author": "Morgan Stang",
       "series": "The Lamplight Murder Mysteries",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy Mystery",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Huntress Isabeau Agarwal and her team are dispatched to protect passengers on the maiden voyage of the luxury Lamplight Express, only to find themselves investigating multiple murders and a possible monster among the ten eccentric travellers, all while the train hurtles through a thunderstorm across desolate moors.",
+      "tone": "darkly comic, witty, fast-paced, homage to classic mystery",
+      "pacing": "Fast",
+      "themes": [
+        "mystery and deception",
+        "monster hunting",
+        "identity",
+        "ensemble casts",
+        "horror-comedy"
+      ],
+      "setting": "A pseudo-Victorian gaslamp fantasy world — aboard a luxury steam train traversing desolate moors",
+      "comparable_books": [
+        "Murder at Spindle Manor - Morgan Stang",
+        "Murder on the Orient Express - Agatha Christie",
+        "The Tainted Cup - Robert Jackson Bennett",
+        "Orconomics - J. Zachary Pike"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "murder mystery fans",
+          "gaslamp / Victorian fantasy",
+          "horror-comedy blend",
+          "ensemble casts of suspects",
+          "witty prose",
+          "found team dynamics"
+        ],
+        "negative": [
+          "readers wanting straightforward mystery without supernatural elements",
+          "those who dislike horror elements",
+          "readers who need heavy worldbuilding"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Voyager - Diana Gabaldon": {
       "title": "Voyager",
       "author": "Diana Gabaldon",
       "series": "Outlander",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twenty years after the Jacobite defeat at Culloden, Claire Randall travels back through the standing stones to find Jamie Fraser alive, and the reunited couple are swept into dangerous adventures that take them from the Scottish Highlands to the high seas and the Caribbean.",
+      "tone": "romantic, sweeping, adventurous",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "time travel",
+        "love and reunion",
+        "history and identity",
+        "adventure",
+        "family"
+      ],
+      "setting": "18th-century Scotland, France, and the Caribbean — with time-travel elements connecting to the 20th century",
+      "comparable_books": [
+        "Dragonfly in Amber - Diana Gabaldon",
+        "The Bronze Horseman - Paullina Simons",
+        "A Discovery of Witches - Deborah Harkness"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "romance-heavy",
+          "sweeping historical epics",
+          "time travel",
+          "reunion stories",
+          "long immersive reads",
+          "strong female protagonist"
+        ],
+        "negative": [
+          "readers who dislike slow pacing",
+          "those seeking plot-driven action over character depth",
+          "readers averse to explicit romance"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Davina Porter, widely considered one of the finest audiobook performances; the series is a beloved audio experience.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Tiger Lily - K. Bird Lincoln": {
       "title": "Tiger Lily",
       "author": "K. Bird Lincoln",
       "series": "Tiger Lily",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lily, a cook's daughter born in the year of the Tiger in feudal Japan, uses forbidden Jindo spirit-song magic to save the Daimyo's son Ashikaga from the Pretender Emperor's forces, entangling herself in a web of political danger, hidden secrets, and unexpected connection.",
+      "tone": "lyrical, gentle, introspective",
+      "pacing": "Slow",
+      "themes": [
+        "forbidden magic",
+        "class and social expectations",
+        "gender identity",
+        "feudal Japanese culture",
+        "courage",
+        "romance"
+      ],
+      "setting": "Feudal / samurai-era Japan — forests, castles, and noble courts suffused with spirit magic and Jindo religion",
+      "comparable_books": [
+        "The Straw Doll Cries at Midnight - K. Bird Lincoln",
+        "The Hakawati - Rabih Alameddine",
+        "Sword of Kaigen - M. L. Wang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese mythology and culture",
+          "gender-bending fantasy",
+          "lyrical prose",
+          "slow-burn romance",
+          "non-Eurocentric fantasy settings"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "those preferring plot over introspection",
+          "readers who want a decisive protagonist early in the story"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wrath - John Gwynne": {
       "title": "Wrath",
       "author": "John Gwynne",
       "series": "The Faithful and the Fallen",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the apocalyptic conclusion to The Faithful and the Fallen, the forces of light and darkness collide in a final cataclysmic war as the Black Sun rises and heroes across the Banished Lands make their ultimate stands — at tremendous cost.",
+      "tone": "grimdark, epic, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "good vs. evil",
+        "sacrifice",
+        "loyalty and betrayal",
+        "prophecy",
+        "war",
+        "fate"
+      ],
+      "setting": "The Banished Lands — a gritty secondary-world fantasy realm inspired by early medieval Europe, with warring kingdoms and dark gods",
+      "comparable_books": [
+        "Malice - John Gwynne",
+        "The First Law - Joe Abercrombie",
+        "The Way of Kings - Brandon Sanderson",
+        "A Song of Ice and Fire - George R. R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark epic fantasy",
+          "large-scale battles",
+          "morally grey characters",
+          "prophecy-driven narratives",
+          "loyal companions",
+          "emotionally resonant conclusions"
+        ],
+        "negative": [
+          "readers wanting light or hopeful fantasy",
+          "those averse to high body counts among beloved characters",
+          "readers preferring magic-system-forward stories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Joe Jameson; the series has a strong audiobook following and the final book delivers an emotionally powerful listen.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Lost City of Faar - D. J. Machale": {
       "title": "The Lost City of Faar",
-      "author": "D. J. Machale",
+      "author": "D. J. MacHale",
       "series": "Pendragon",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Young Adult Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bobby Pendragon travels to the water world of Cloral, where he must stop the villainous Saint Dane from destroying an entire civilisation by poisoning its agricultural supply, while searching for the legendary lost city of Faar.",
+      "tone": "adventurous, fast-paced, fun",
+      "pacing": "Fast",
+      "themes": [
+        "heroism and destiny",
+        "friendship",
+        "environmental survival",
+        "coming of age",
+        "good vs. evil across dimensions"
+      ],
+      "setting": "Cloral — a world covered entirely by ocean, with floating habitats and an underwater lost city",
+      "comparable_books": [
+        "The Merchant of Death - D. J. MacHale",
+        "Animorphs - K. A. Applegate",
+        "His Dark Materials - Philip Pullman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "middle grade / YA adventure fans",
+          "dimension-hopping stories",
+          "fast-paced episodic plotting",
+          "environmental themes",
+          "young heroic protagonists"
+        ],
+        "negative": [
+          "adult readers seeking complex prose or moral ambiguity",
+          "those preferring standalone stories",
+          "readers averse to epistolary / journal-style narration"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Grapes of Wrath - John Steinbeck": {
@@ -198182,188 +198320,348 @@
       "author": "John Steinbeck",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The Joad family, dispossessed Oklahoma sharecroppers, migrate west to California during the Great Depression in search of work and dignity, only to encounter exploitation, poverty, and broken promises — a devastating portrait of human resilience and systemic injustice.",
+      "tone": "tragic, earnest, humanist, politically charged",
+      "pacing": "Slow",
+      "themes": [
+        "poverty and class struggle",
+        "the American Dream",
+        "family and solidarity",
+        "social injustice",
+        "human dignity",
+        "migration"
+      ],
+      "setting": "Oklahoma and California, USA — 1930s Dust Bowl era and the agricultural labour camps of the Great Depression",
+      "comparable_books": [
+        "Of Mice and Men - John Steinbeck",
+        "The Jungle - Upton Sinclair",
+        "East of Eden - John Steinbeck",
+        "Their Eyes Were Watching God - Zora Neale Hurston"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "American literature fans",
+          "social realism",
+          "emotionally heavy character studies",
+          "classic literature",
+          "political and economic themes",
+          "working-class narratives"
+        ],
+        "negative": [
+          "readers wanting plot-driven or genre fiction",
+          "those averse to bleak outcomes",
+          "readers who dislike interspersed intercalary chapters"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Frequently cited as one of the great American audiobook experiences; Dylan Baker's narration is particularly well-regarded.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Of Sea and Shadow - Will Wight": {
       "title": "Of Sea and Shadow",
       "author": "Will Wight",
       "series": "The Elder Empire: Sea",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Captain Calder Marten and his crew of the ship Testament race to recover the legendary Heart of Nakothi — an artifact capable of crowning a new Emperor — while contending with the shadowy Consultant's Guild, which seeks to destroy it and keep the empire in chaos.",
+      "tone": "propulsive, swashbuckling, Lovecraftian-tinged",
+      "pacing": "Fast",
+      "themes": [
+        "power and empire",
+        "loyalty and betrayal",
+        "eldritch horror",
+        "heroism and ambition",
+        "fate"
+      ],
+      "setting": "The Aion Sea of the Aurelian Empire — a nautical secondary-world fantasy with Lovecraftian Elder creatures and dual-timeline narration",
+      "comparable_books": [
+        "Of Shadow and Sea - Will Wight",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "pirate / nautical fantasy",
+          "Lovecraftian horror elements",
+          "morally complex protagonists",
+          "unique parallel-series structure",
+          "fast-paced plotting"
+        ],
+        "negative": [
+          "readers wanting dense worldbuilding delivered slowly",
+          "those who dislike short books",
+          "readers who find Lovecraftian horror off-putting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Of Shadow and Sea - Will Wight": {
       "title": "Of Shadow and Sea",
       "author": "Will Wight",
       "series": "The Elder Empire: Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Shera, an assassin of the Consultant's Guild, works from the shadows to prevent the Heart of Nakothi from being recovered and used to crown a new Emperor — covering the same world events as Of Sea and Shadow but from the opposing faction's perspective.",
+      "tone": "dark, tense, assassin-cool",
+      "pacing": "Fast",
+      "themes": [
+        "power and empire",
+        "loyalty and identity",
+        "assassination and morality",
+        "eldritch horror",
+        "opposing perspectives"
+      ],
+      "setting": "The Aurelian Empire — a secondary-world fantasy seen from the shadows of spy guilds and assassin networks, parallel to the nautical events of the Sea trilogy",
+      "comparable_books": [
+        "Of Sea and Shadow - Will Wight",
+        "Brent Weeks' Night Angel Trilogy",
+        "Mistborn - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "assassin protagonist stories",
+          "dual-perspective narratives",
+          "morally grey characters",
+          "Lovecraftian elements",
+          "fast and lean prose"
+        ],
+        "negative": [
+          "readers who dislike reading parallel books to the same events",
+          "those who prefer a single clear protagonist",
+          "readers who want heavy romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sacrifice - Karen Traviss": {
       "title": "Sacrifice",
       "author": "Karen Traviss",
       "series": "Star Wars: Legacy of the Force",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As civil war tears the Galactic Alliance apart, Jacen Solo faces the ultimate Sith test — he must murder someone he loves — while Luke and Mara Skywalker grow increasingly alarmed that their nephew is following his grandfather Darth Vader's dark path, culminating in a shocking, irreversible act.",
+      "tone": "tense, dark, emotionally charged, operatic",
+      "pacing": "Fast",
+      "themes": [
+        "fall to the dark side",
+        "sacrifice and duty",
+        "family loyalty vs. ideology",
+        "power and corruption",
+        "consequences of war"
+      ],
+      "setting": "The Star Wars galaxy — post-New Jedi Order era, spanning Coruscant, Hapes Consortium, and the Mandalorian homeworld",
+      "comparable_books": [
+        "Betrayal - Aaron Allston",
+        "Inferno - Troy Denning",
+        "Darth Plagueis - James Luceno"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars Legends fans",
+          "space opera with political intrigue",
+          "villain origin stories",
+          "Mandalorian culture depth",
+          "morally complex drama"
+        ],
+        "negative": [
+          "readers unfamiliar with the EU / Legends continuity",
+          "fans of Mara Jade Skywalker (major character death)",
+          "those who dislike Boba Fett / Mandalorian subplots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Of Darkness and Dawn - Will Wight": {
       "title": "Of Darkness and Dawn",
       "author": "Will Wight",
       "series": "The Elder Empire: Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Shera and the Consultant's Guild press deeper into the conflict over the Heart of Nakothi and the future of the Aurelian Empire, as the stakes escalate and the Elder creatures that lurk at the edge of reality grow ever more threatening.",
+      "tone": "dark, tense, escalating",
+      "pacing": "Fast",
+      "themes": [
+        "power and empire",
+        "identity and purpose",
+        "eldritch horror",
+        "loyalty and betrayal",
+        "consequences of power"
+      ],
+      "setting": "The Aurelian Empire — secondary-world fantasy continuing from the shadows of spy guilds and assassin networks",
+      "comparable_books": [
+        "Of Shadow and Sea - Will Wight",
+        "Of Sea and Shadow - Will Wight",
+        "Brent Weeks' Night Angel Trilogy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "assassin protagonist stories",
+          "Lovecraftian dark fantasy",
+          "fast and lean prose",
+          "morally grey factions",
+          "continuation readers"
+        ],
+        "negative": [
+          "new readers unfamiliar with the series",
+          "those wanting standalone stories",
+          "readers who dislike parallel-series structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Protector - Conn Iggulden": {
       "title": "Protector",
       "author": "Conn Iggulden",
       "series": "Athenian",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 480 BC, battle-scarred Themistocles leads the outnumbered Athenians against the Persian forces of Xerxes, masterminding the stunning naval victory at Salamis and the subsequent land battle at Plataea in a desperate fight to preserve Greek democracy.",
+      "tone": "gritty, epic, martial, historically vivid",
+      "pacing": "Moderate",
+      "themes": [
+        "democracy vs. tyranny",
+        "military heroism",
+        "political ambition",
+        "sacrifice",
+        "the clash of civilisations"
+      ],
+      "setting": "Ancient Greece, 480–479 BC — the sea at Salamis, the plains of Plataea, and the politics of Athens during the Greco-Persian Wars",
+      "comparable_books": [
+        "The Gates of Athens - Conn Iggulden",
+        "Gates of Fire - Steven Pressfield",
+        "Tides of War - Steven Pressfield",
+        "The Lion - Conn Iggulden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient history fans",
+          "military historical fiction",
+          "vivid battle sequences",
+          "Greek and Persian history",
+          "political intrigue in antiquity"
+        ],
+        "negative": [
+          "readers wanting fantasy or supernatural elements",
+          "those who prefer character introspection over action",
+          "readers unfamiliar with the Greco-Persian Wars"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Shōgun - James Clavell": {
       "title": "Shōgun",
       "author": "James Clavell",
       "series": "Asian Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "English navigator John Blackthorne is shipwrecked in feudal Japan in 1600 and finds himself enmeshed in the lethal political struggles between rival warlords, slowly immersing himself in Japanese culture and forming a deep bond with the powerful lord Toranaga.",
+      "tone": "immersive, sweeping, intricate, culturally rich",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "cultural clash and immersion",
+        "honour and loyalty",
+        "political intrigue",
+        "power",
+        "love and duty",
+        "identity"
+      ],
+      "setting": "Feudal Japan, 1600 — the period of warring samurai lords just before the Battle of Sekigahara",
+      "comparable_books": [
+        "Tai-Pan - James Clavell",
+        "King Rat - James Clavell",
+        "James Clavell's Noble House",
+        "Musashi - Eiji Yoshikawa"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical epic fans",
+          "Japanese culture and history",
+          "slow immersive reads",
+          "political intrigue",
+          "cultural clash narratives",
+          "morally complex characters"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "those averse to very long books",
+          "readers uncomfortable with period-accurate cultural attitudes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "An immersive listening experience; the long runtime rewards audio format for its sweeping scope and vivid sense of place.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Wild ​Reverence - Rebecca Ross": {
@@ -198397,81 +198695,150 @@
       "title": "The Iron Keys",
       "author": "Ben Galley",
       "series": "Emaneska",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel Short Story",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young recruit Farden the Written mage makes his first foray into the deadly Marshes of Efjar with the legendary Iron Keys regiment, facing the ferocious minotaur clans that have repelled every army — a prequel short story to the Emaneska Series.",
+      "tone": "dark, gritty, atmospheric, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "war and military brotherhood",
+        "coming of age",
+        "courage under fire",
+        "dark fantasy world-building"
+      ],
+      "setting": "The Marshes of Efjar, Emaneska — a dark, Nordic-inspired fantasy world of bogs, minotaurs, and magical soldiers",
+      "comparable_books": [
+        "The Written - Ben Galley",
+        "Bloodrush - Ben Galley",
+        "The First Law - Joe Abercrombie",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy fans",
+          "military fantasy",
+          "Norse-inspired settings",
+          "fans of the Emaneska series",
+          "short reads as series entry points"
+        ],
+        "negative": [
+          "readers wanting a full novel",
+          "those who dislike grimdark tones",
+          "new readers without series context (though it works as an intro)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "War Song: A Dreams of Dust and Steel Saga - Michael Michel": {
       "title": "War Song: A Dreams of Dust and Steel Saga",
       "author": "Michael Michel",
       "series": "Dreams of Dust and Steel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel Novella",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Admar, a miner ground down by the brutal Scothean occupation of his homeland, is forced to question the depths of his convictions as a glimmer of hope emerges amid oppression — a dark, fast-paced prequel novella introducing the world of the Dreams of Dust and Steel series.",
+      "tone": "grimdark, bleak, propulsive, brutal",
+      "pacing": "Fast",
+      "themes": [
+        "oppression and resistance",
+        "sacrifice and conviction",
+        "hope in darkness",
+        "identity under tyranny",
+        "rebellion"
+      ],
+      "setting": "The nation of Namarr under Scothean occupation — a secondary-world grimdark fantasy with political and military conflict",
+      "comparable_books": [
+        "The Price of Power - Michael Michel",
+        "The First Law - Joe Abercrombie",
+        "A Graveyard for Heroes - Michael Michel",
+        "Kings of Paradise - Richard Nell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy fans",
+          "Joe Abercrombie readers",
+          "rebellion / underdog narratives",
+          "morally complex protagonists",
+          "short punchy reads as series samplers"
+        ],
+        "negative": [
+          "readers preferring hopeful or light fantasy",
+          "those who dislike dark and brutal content",
+          "readers wanting a full novel experience"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Crimson Fire - Abel Montero": {
       "title": "The Crimson Fire",
       "author": "Abel Montero",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Memories of Kenjir",
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an ancient Sumerian-inspired empire where gods walk among mortals, loyal servant Ensin Andik uncovers a sinister conspiracy threatening the divine order, while ruthless rebel Eshfen stokes the flames of civil war — four POV characters converge in a sweeping, slow-burn tale of rebellion, sacrifice, and divine conflict.",
+      "tone": "immersive, slow-burn epic, politically layered, morally ambiguous",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "rebellion and divine rule",
+        "loyalty and identity",
+        "sacrifice",
+        "political intrigue",
+        "gods and mortals",
+        "self-discovery"
+      ],
+      "setting": "The empire of Kenjir — a richly imagined secondary world inspired by ancient Sumerian mythology, with gods ruling over mortal civilisation",
+      "comparable_books": [
+        "Mistborn - Brandon Sanderson",
+        "Sons of Darkness - Gourav Mohanty",
+        "The Blade Itself - Joe Abercrombie",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Sumerian / ancient world-inspired fantasy",
+          "gods-among-mortals narratives",
+          "morally ambiguous multi-POV epics",
+          "slow-burn readers who love payoffs",
+          "immersive worldbuilding"
+        ],
+        "negative": [
+          "readers wanting fast-paced plotting from page one",
+          "those who dislike multiple POVs introduced sequentially",
+          "readers expecting a familiar Western fantasy template"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Why Do Men Have Nipples? Hundreds of Questions You'd Only Ask a Doctor After Your Third Martini - Mark Leyner & Billy Goldberg": {
@@ -198479,26 +198846,46 @@
       "author": "Mark Leyner & Billy Goldberg",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Humour / Popular Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Doctor Billy Goldberg and writer Mark Leyner team up to answer the weird, embarrassing, and absurd medical questions people are too shy to ask their doctors, delivered with irreverent humour and genuine medical insight.",
+      "tone": "irreverent, funny, breezy, conversational",
+      "pacing": "Fast",
+      "themes": [
+        "human body curiosity",
+        "popular medicine",
+        "humour",
+        "taboo questions",
+        "science communication"
+      ],
+      "setting": "Non-fiction — modern medical and pop-science context",
+      "comparable_books": [
+        "Why Do Men Fall Asleep After Sex? - Mark Leyner & Billy Goldberg",
+        "Mary Roach's Stiff",
+        "Gulp - Mary Roach"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "humour readers",
+          "popular science fans",
+          "bathroom book browsing",
+          "trivia lovers",
+          "those who enjoy irreverent non-fiction"
+        ],
+        "negative": [
+          "readers wanting deep medical or scientific rigour",
+          "those who dislike crude humour",
+          "readers seeking narrative non-fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "World's Best Drinks - Lonely Planet": {
@@ -198506,26 +198893,45 @@
       "author": "Lonely Planet",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Travel / Food & Drink",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Lonely Planet guide exploring the world's most celebrated and distinctive beverages — from regional wines and spirits to teas and traditional drinks — presented by country and culture with travel context and tasting notes.",
+      "tone": "celebratory, informative, wanderlust-inducing",
+      "pacing": "Moderate",
+      "themes": [
+        "global drink culture",
+        "travel and exploration",
+        "culinary heritage",
+        "regional traditions"
+      ],
+      "setting": "Non-fiction — worldwide, covering major drink-producing regions and cultures",
+      "comparable_books": [
+        "World's Best Street Food - Lonely Planet",
+        "Drink the Harvest - Nan K. Chase",
+        "The World Atlas of Wine - Hugh Johnson & Jancis Robinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "travel enthusiasts",
+          "food and drink culture fans",
+          "armchair travellers",
+          "gift book seekers",
+          "readers who enjoy browsable reference books"
+        ],
+        "negative": [
+          "readers wanting deep technical expertise on beverages",
+          "those seeking narrative non-fiction",
+          "readers wanting cocktail recipes specifically"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "A heavily visual travel reference book; photography and layout are central to the reading experience and do not translate to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "training",
       "audit": null
     },
     "The Regulators - Stephen King": {
