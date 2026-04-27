@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2726,
-  "total_pending": 1874,
+  "total_catalogued": 2746,
+  "total_pending": 1854,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -155600,27 +155600,51 @@
       "title": "Shield of the Mothership: Turn Seven of the Hybrid Helix",
       "author": "J. C. M. Berne",
       "series": "Hybrid Helix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rohan, a reluctant superhero living on the space station Wistful, is forced to work alongside untrustworthy allies on a galaxy-threatening mission for the empire he swore never to serve again. The seventh installment continues his arc of self-discovery amid high-stakes action, banter, and cosmic dangers.",
+      "tone": "action-packed, warmly humorous, space-operatic",
+      "pacing": "Fast",
+      "themes": [
+        "identity and self-acceptance",
+        "reluctant heroism",
+        "loyalty and trust",
+        "found family",
+        "empire vs. individual"
+      ],
+      "setting": "Far-future space, centred on the space station Wistful and a remote star system",
+      "comparable_books": [
+        "Wistful Ascending - J. C. M. Berne",
+        "Starter Villain - John Scalzi",
+        "Off to Be the Wizard - Scott Meyer",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "superhero space opera crossover",
+          "banter-heavy dialogue",
+          "found family",
+          "propulsive action",
+          "diverse alien cast",
+          "ongoing series with strong character arcs"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "mixing of superpowers and hard SF",
+          "late entry in a long series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Deadly Hall - John Dickson Carr": {
@@ -155628,26 +155652,46 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1927 New Orleans, young novelist Jeff Caldwell visits the foreboding Delys Hall — a 16th-century English manor transported brick-by-brick — where rumours of hidden Spanish gold and a family curse lead to murder. A late-career Carr with a gothic atmosphere but widely considered a lesser work.",
+      "tone": "gothic, atmospheric, leisurely",
+      "pacing": "Slow",
+      "themes": [
+        "hidden treasure",
+        "family secrets",
+        "gothic atmosphere",
+        "the American South",
+        "inheritance and greed"
+      ],
+      "setting": "New Orleans, 1927; a transplanted Tudor manor house",
+      "comparable_books": [
+        "The Witch of the Low Tide - John Dickson Carr",
+        "Scandal at High Chimneys - John Dickson Carr",
+        "The Red House Mystery - A. A. Milne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic mansion mystery",
+          "period atmosphere",
+          "hidden treasure subplot",
+          "Golden Age whodunit"
+        ],
+        "negative": [
+          "late-career Carr decline",
+          "slow and repetitive dialogue",
+          "considered weakest-tier Carr by most fans",
+          "clues not fully resolved"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Witch of the Low Tide - John Dickson Carr": {
@@ -155655,80 +155699,133 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Edwardian England in 1906, a respectable doctor finds his mistress strangled on a beach that shows no footprints in the sand, making murder apparently impossible. Dr. Fell is called in to unravel the impossible crime in this sun-drenched Edwardian puzzle.",
+      "tone": "atmospheric, genteel, puzzle-focused",
+      "pacing": "Moderate",
+      "themes": [
+        "impossible crime",
+        "Edwardian society",
+        "class and respectability",
+        "romantic entanglement",
+        "secrets and scandal"
+      ],
+      "setting": "English seaside, Edwardian England, 1906",
+      "comparable_books": [
+        "The Hollow Man - John Dickson Carr",
+        "Fire, Burn! - John Dickson Carr",
+        "The Documents in the Case - Dorothy L. Sayers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic locked-room impossible crime",
+          "rich period atmosphere",
+          "Dr. Fell detective",
+          "Golden Age puzzle plotting"
+        ],
+        "negative": [
+          "secondary-tier Carr by fan consensus",
+          "romance subplot may feel dated"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fatal Descent - John Dickson Carr": {
       "title": "Fatal Descent",
       "author": "John Dickson Carr",
-      "series": null,
+      "series": "Dr. Gideon Fell",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A man is found dead in a sealed elevator that never stopped between floors, presenting a seemingly impossible locked-room problem for Dr. Gideon Fell. Co-written with John Rhode, this novel combines two masters of the impossible crime.",
+      "tone": "puzzle-driven, ingenious, brisk",
+      "pacing": "Moderate",
+      "themes": [
+        "impossible crime",
+        "mechanical ingenuity",
+        "collaboration",
+        "detection vs. deception"
+      ],
+      "setting": "Contemporary England, 1930s; a publishing office building",
+      "comparable_books": [
+        "The Hollow Man - John Dickson Carr",
+        "The Problem of the Wire Cage - John Dickson Carr",
+        "Death in the Tunnel - Miles Burton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic impossible crime",
+          "Dr. Fell detective",
+          "dual-author ingenious puzzle",
+          "Golden Age fair-play mystery"
+        ],
+        "negative": [
+          "co-written — some unevenness in style",
+          "plot over character",
+          "very puzzle-centric with little atmosphere"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The White Priory Murders - John Dickson Carr": {
       "title": "The White Priory Murders",
       "author": "John Dickson Carr",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Sir Henry Merrivale",
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A glamorous actress is found murdered in a snow-covered pavilion with no footprints leading to or from it, creating a classic impossible crime for Sir Henry Merrivale to solve. Published under the Carter Dickson pseudonym, this is an early and highly praised entry in the Merrivale series.",
+      "tone": "atmospheric, gothic, puzzle-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "impossible crime",
+        "showbusiness and celebrity",
+        "snow-sealed rooms",
+        "deduction and misdirection"
+      ],
+      "setting": "English country house, 1930s; snow-covered grounds",
+      "comparable_books": [
+        "The Hollow Man - John Dickson Carr",
+        "The Red Widow Murders - Carter Dickson",
+        "And Then There Were None - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "snow-locked impossible crime",
+          "classic country house mystery",
+          "Sir Henry Merrivale detective",
+          "high-quality Golden Age plotting"
+        ],
+        "negative": [
+          "published under Carter Dickson pseudonym — may cause confusion",
+          "Merrivale's personality is an acquired taste"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Scandal at High Chimneys - John Dickson Carr": {
@@ -155736,26 +155833,44 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Victorian England in 1865, a young barrister becomes entangled in murder at a country house where his client's wife has been found shot, amid a swirl of scandal, blackmail, and disguise. A lively historical mystery with swashbuckling energy.",
+      "tone": "swashbuckling, vivid, period-rich",
+      "pacing": "Moderate",
+      "themes": [
+        "Victorian respectability and scandal",
+        "blackmail",
+        "disguise and identity",
+        "justice and law",
+        "romance"
+      ],
+      "setting": "Victorian England, 1865; a country house",
+      "comparable_books": [
+        "The Bride of Newgate - John Dickson Carr",
+        "Fire, Burn! - John Dickson Carr",
+        "The Devil in Velvet - John Dickson Carr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich Victorian atmosphere",
+          "swashbuckling historical mystery",
+          "period detail",
+          "energetic plot"
+        ],
+        "negative": [
+          "mystery element secondary to historical adventure",
+          "no series detective"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fire, Burn! - John Dickson Carr": {
@@ -155763,26 +155878,45 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A modern-day detective inspector is inexplicably transported back to 1829 London, where he must adapt to life among the newly formed Bow Street Runners and solve a murder in the age of horse-drawn carriages and gaslit streets. One of Carr's own personal favourites among his works.",
+      "tone": "exuberant, richly atmospheric, clever",
+      "pacing": "Moderate",
+      "themes": [
+        "time travel",
+        "fish out of water",
+        "historical immersion",
+        "Regency law and order",
+        "impossible crime"
+      ],
+      "setting": "London, 1829; Regency/early Victorian era, Bow Street",
+      "comparable_books": [
+        "The Devil in Velvet - John Dickson Carr",
+        "Most Secret - John Dickson Carr",
+        "To Say Nothing of the Dog - Connie Willis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "time travel mystery",
+          "immersive historical setting",
+          "witty fish-out-of-water premise",
+          "Carr at or near his best",
+          "highly regarded by fans"
+        ],
+        "negative": [
+          "no recurring series detective",
+          "mystery secondary to historical adventure for some readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Carr's rich period dialogue and vivid scene-setting translate exceptionally well to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Men Who Explained Miracles - John Dickson Carr": {
@@ -155790,26 +155924,44 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of short detective stories featuring several of Carr's recurring characters, including Colonel March and Dr. Gideon Fell, each tackling seemingly impossible or miraculous crimes. Showcases Carr's range across shorter formats.",
+      "tone": "ingenious, varied, puzzle-driven",
+      "pacing": "Fast",
+      "themes": [
+        "impossible crime",
+        "misdirection",
+        "detection",
+        "the miraculous explained"
+      ],
+      "setting": "Various — England and beyond, 1940s–1960s",
+      "comparable_books": [
+        "The Department of Queer Complaints - Carter Dickson",
+        "The Door to Doom and Other Detections - John Dickson Carr",
+        "The Third Bullet and Other Stories - John Dickson Carr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short story format — ideal for dipping in",
+          "classic impossible crime puzzles",
+          "multiple recurring detectives",
+          "Golden Age variety"
+        ],
+        "negative": [
+          "uneven quality across stories",
+          "some entries feel compressed",
+          "light on atmosphere vs. the novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Third Bullet and Other Stories - John Dickson Carr": {
@@ -155817,53 +155969,92 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of short mysteries including the novella 'The Third Bullet', in which an impossible shooting is meticulously unravelled, alongside several other tales of detection. Features a Sherlock Holmes pastiche co-written with Adrian Conan Doyle in some editions.",
+      "tone": "ingenious, brisk, puzzle-focused",
+      "pacing": "Fast",
+      "themes": [
+        "impossible crime",
+        "detection",
+        "ballistics and locked rooms",
+        "fair-play mystery"
+      ],
+      "setting": "Various — England, 1930s–1950s",
+      "comparable_books": [
+        "The Men Who Explained Miracles - John Dickson Carr",
+        "The Door to Doom and Other Detections - John Dickson Carr",
+        "The Department of Queer Complaints - Carter Dickson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "compact puzzle mysteries",
+          "impossible crime specialist",
+          "varied detective fiction",
+          "Golden Age short stories"
+        ],
+        "negative": [
+          "uneven across entries",
+          "some stories feel slight",
+          "less immersive than full novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hollow Man - John Dickson Carr": {
       "title": "The Hollow Man",
       "author": "John Dickson Carr",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Dr. Gideon Fell",
+      "series_position": "Book 6",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Two impossible murders occur in the same night — a man shot dead in a locked room, and another killed in an open street with no footprints in the snow — and Dr. Gideon Fell delivers a celebrated in-story lecture on the art of the locked-room mystery. Widely regarded as the greatest locked-room mystery ever written.",
+      "tone": "atmospheric, gothic, brilliantly ingenious",
+      "pacing": "Moderate",
+      "themes": [
+        "impossible crime",
+        "the nature of detection",
+        "meta-mystery",
+        "death and the uncanny",
+        "deduction"
+      ],
+      "setting": "London and a remote English village, 1930s winter",
+      "comparable_books": [
+        "The Red House Mystery - A. A. Milne",
+        "And Then There Were None - Agatha Christie",
+        "The Big Bow Mystery - Israel Zangwill",
+        "Death of Jezebel - Christianna Brand"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "canonical impossible crime masterpiece",
+          "in-story lecture on locked-room theory",
+          "Dr. Fell at his best",
+          "essential Golden Age reading",
+          "multiple interlocking puzzles"
+        ],
+        "negative": [
+          "dated in some social attitudes",
+          "solution requires accepting one unusual mechanical device",
+          "some find the lecture chapter self-indulgent"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The famous locked-room lecture in Chapter 17 is a tour de force that rewards attentive listening.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Ghosts' High Noon - John Dickson Carr": {
@@ -155871,26 +156062,46 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1912 New Orleans, journalist Jim Blake arrives to write about congressional candidate James Claiborne Blake, only to find himself entangled in political intrigue, blackmail over a Creole courtesan, and a seemingly impossible murder. A late-career Carr historical with atmospheric New Orleans colour but sluggish pacing.",
+      "tone": "atmospheric, talky, historically flavoured",
+      "pacing": "Slow",
+      "themes": [
+        "political scandal",
+        "impossible crime",
+        "New Orleans atmosphere",
+        "journalism and truth",
+        "Edwardian America"
+      ],
+      "setting": "New Orleans, Louisiana, 1912",
+      "comparable_books": [
+        "Deadly Hall - John Dickson Carr",
+        "The Demoniacs - John Dickson Carr",
+        "Papa La-Bas - John Dickson Carr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "richly evoked historical setting",
+          "New Orleans atmosphere",
+          "impossible crime element",
+          "real historical figures"
+        ],
+        "negative": [
+          "late-career decline in plotting",
+          "heavily dialogue-driven pacing",
+          "slow to reach the mystery",
+          "considered minor Carr"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Emperor's Snuff-Box - John Dickson Carr": {
@@ -155898,26 +156109,46 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a French coastal town, a young Englishwoman witnesses a murder through a window — or does she? — and becomes the prime suspect when her account is called into question, driving a razor-sharp psychological thriller. One of Carr's most acclaimed standalones, praised for its tight plotting and brilliant surprise solution.",
+      "tone": "tense, psychological, elegantly constructed",
+      "pacing": "Fast",
+      "themes": [
+        "eyewitness reliability",
+        "obsession and guilt",
+        "small-town claustrophobia",
+        "romantic suspicion",
+        "perception vs. reality"
+      ],
+      "setting": "A small French coastal town, contemporary (early 1940s)",
+      "comparable_books": [
+        "The Burning Court - John Dickson Carr",
+        "Before She Met Me - Julian Barnes",
+        "The Beast Must Die - Nicholas Blake"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological suspense over puzzle",
+          "standalone — no prior knowledge needed",
+          "brilliant twist ending",
+          "brisk pace",
+          "highly accessible entry point for Carr"
+        ],
+        "negative": [
+          "not a traditional locked-room mystery",
+          "no series detective",
+          "relatively short and some want more"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The psychological tension and single-location claustrophobia make for a gripping listen with a satisfying payoff.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Door to Doom and Other Detections - John Dickson Carr": {
@@ -155925,26 +156156,45 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A posthumously compiled collection of Carr's short fiction and radio plays, gathered by editor Douglas Greene, featuring rare and previously uncollected detective stories spanning Henri Bencolin, Dr. Fell, and other Carr creations. An essential anthology for completist fans.",
+      "tone": "varied — gothic, brisk, witty, atmospheric",
+      "pacing": "Fast",
+      "themes": [
+        "impossible crime",
+        "detection",
+        "Gothic atmosphere",
+        "radio drama adapted to page",
+        "vintage mystery"
+      ],
+      "setting": "Various — England, France, America; 1930s–1950s",
+      "comparable_books": [
+        "The Men Who Explained Miracles - John Dickson Carr",
+        "The Department of Queer Complaints - Carter Dickson",
+        "The Third Bullet and Other Stories - John Dickson Carr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rare and uncollected Carr",
+          "multiple detectives in one volume",
+          "includes radio play adaptations",
+          "essential for Carr completists"
+        ],
+        "negative": [
+          "posthumous compilation — uneven quality",
+          "some pieces originally written for radio",
+          "not a starting point for new readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Devil in Velvet - John Dickson Carr": {
@@ -155952,26 +156202,45 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Cambridge professor makes a pact with the devil to be transported into the body of a 17th-century Restoration rake, where he must solve a poisoning murder while navigating swordfights, court intrigue, and romantic danger. One of Carr's own favourite novels, brimming with swashbuckling historical vitality.",
+      "tone": "swashbuckling, romantic, vivid",
+      "pacing": "Fast",
+      "themes": [
+        "time travel / possession",
+        "Restoration England",
+        "the devil and bargains",
+        "swordsmanship and honour",
+        "murder and deception"
+      ],
+      "setting": "Restoration London, 1670s; King Charles II's court",
+      "comparable_books": [
+        "Fire, Burn! - John Dickson Carr",
+        "Most Secret - John Dickson Carr",
+        "The Bride of Newgate - John Dickson Carr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "time travel / body-swap premise",
+          "rich Restoration atmosphere",
+          "swashbuckling action and romance",
+          "Carr's personal favourite",
+          "highly praised by fans"
+        ],
+        "negative": [
+          "mystery less rigorous than puzzle-focused novels",
+          "requires taste for historical adventure over detective puzzle"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The vivid period voice, swordfights, and Restoration court banter are exceptionally well-suited to audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Demoniacs - John Dickson Carr": {
@@ -155979,26 +156248,45 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1757 London, Bow Street Runner Jeffrey Wynne is tasked with retrieving a headstrong heiress from the continent, only to find himself and Peg entangled in a murder on London Bridge linked to a mysterious portrait, a nursery rhyme, and a clandestine hellfire-style club. A vivid Georgian historical with a locked-room twist.",
+      "tone": "bawdy, gothic, historically colourful",
+      "pacing": "Moderate",
+      "themes": [
+        "Georgian London",
+        "class and society",
+        "locked-room murder",
+        "blackmail and conspiracy",
+        "hidden identity"
+      ],
+      "setting": "London, 1757; London Bridge, Ranelagh Gardens, Newgate Prison",
+      "comparable_books": [
+        "The Bride of Newgate - John Dickson Carr",
+        "Fire, Burn! - John Dickson Carr",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "vividly realised Georgian London",
+          "Bow Street Runner detective",
+          "locked-room mystery element",
+          "historical atmosphere and period detail"
+        ],
+        "negative": [
+          "hero and heroine can feel irritating to modern readers",
+          "mystery less sharp than peak Carr",
+          "heavy historical detail may slow readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Burning Court - John Dickson Carr": {
@@ -156006,26 +156294,46 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An editor at a true-crime publishing house discovers a photograph that appears to show a woman executed for poisoning in 17th-century France — and the woman looks exactly like his wife. A darkly supernatural mystery that blurs the line between rational detection and genuine occult horror, with a deeply unsettling ending.",
+      "tone": "eerie, gothic, deeply unsettling",
+      "pacing": "Moderate",
+      "themes": [
+        "witchcraft and the supernatural",
+        "reincarnation",
+        "poisoning",
+        "the rational vs. the uncanny",
+        "marriage and doubt"
+      ],
+      "setting": "Pennsylvania countryside and New York, 1930s",
+      "comparable_books": [
+        "The Emperor's Snuff-Box - John Dickson Carr",
+        "House of Leaves - Mark Z. Danielewski",
+        "The Turn of the Screw - Henry James"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "genuinely unsettling supernatural ambiguity",
+          "unique among Golden Age mysteries",
+          "remarkable double-ending",
+          "occult atmosphere",
+          "memorable and divisive finale"
+        ],
+        "negative": [
+          "ending is controversial and deeply divisive",
+          "breaks Golden Age 'rational explanation' convention",
+          "not a pure detective puzzle"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The creeping dread and gothic atmosphere build superbly in audio; the ambiguous ending lands with powerful effect.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Bride of Newgate - John Dickson Carr": {
@@ -156033,26 +156341,45 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the eve of the Napoleonic Wars, a condemned man in Newgate Prison is pardoned and married to a noblewoman in a scheme to preserve her inheritance, but the pair are soon drawn into murder, conspiracy, and swashbuckling adventure in Regency London. Carr's first major historical novel and considered one of his finest.",
+      "tone": "swashbuckling, romantic, vivid",
+      "pacing": "Fast",
+      "themes": [
+        "Regency England",
+        "marriage of convenience",
+        "class and honour",
+        "murder and conspiracy",
+        "Napoleonic era"
+      ],
+      "setting": "London and surrounds, 1815; the close of the Napoleonic Wars",
+      "comparable_books": [
+        "The Devil in Velvet - John Dickson Carr",
+        "Fire, Burn! - John Dickson Carr",
+        "Scaramouche - Rafael Sabatini"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich Regency atmosphere",
+          "swashbuckling adventure with mystery",
+          "marriage-of-convenience plot",
+          "Carr in top historical form",
+          "highly regarded by fans"
+        ],
+        "negative": [
+          "mystery less central than historical adventure",
+          "no recurring series detective"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The vivid Regency period voice and action-adventure pacing make this an outstanding audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Poison in Jest - John Dickson Carr": {
@@ -156060,26 +156387,46 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young man visiting a remote Pennsylvania mountain family finds himself trapped by snow with an eccentric, quarrelsome clan, one of whom begins to die of poisoning. An early standalone Carr — atmospheric and gothic but considered one of his weaker efforts by most fans.",
+      "tone": "gothic, claustrophobic, slow-burning",
+      "pacing": "Slow",
+      "themes": [
+        "family dysfunction",
+        "rural isolation",
+        "poisoning",
+        "eccentric characters",
+        "gothic atmosphere"
+      ],
+      "setting": "Remote Pennsylvania mountains, 1930s; snowbound family estate",
+      "comparable_books": [
+        "The Hollow Man - John Dickson Carr",
+        "And Then There Were None - Agatha Christie",
+        "The Red House Mystery - A. A. Milne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic snowbound atmosphere",
+          "eccentric cast",
+          "early Carr flavour",
+          "claustrophobic setting"
+        ],
+        "negative": [
+          "widely considered weakest-tier Carr",
+          "no series detective",
+          "plotting less rigorous than peak work",
+          "slow and meandering"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Bowstring Murders - Carter Dickson": {
@@ -156087,26 +156434,45 @@
       "author": "Carter Dickson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "At Bowstring Castle, eccentric Lord Rayle — obsessed with his collection of medieval arms and armour — is found strangled with one of his own bowstrings in a sealed hall under observation, and alcoholic retired detective John Gaunt is called in to investigate. An early Carr published under the one-time pseudonym 'Carr Dickson', featuring Gaunt's only appearance.",
+      "tone": "gothic, macabre, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "impossible crime",
+        "medieval Gothic atmosphere",
+        "eccentricity and madness",
+        "country house murder",
+        "sealed-room detection"
+      ],
+      "setting": "Bowstring Castle, England, 1930s; a vast Gothic medieval castle",
+      "comparable_books": [
+        "The Hollow Man - John Dickson Carr",
+        "Hag's Nook - John Dickson Carr",
+        "The Red Widow Murders - Carter Dickson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric Gothic castle setting",
+          "classic locked-room impossible crime",
+          "medieval armour collection as backdrop",
+          "early Carr energy"
+        ],
+        "negative": [
+          "minor detective Gaunt has no charisma of Fell or Merrivale",
+          "considered a lesser Carr by most fans",
+          "one-off detective never revisited"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Most Secret - John Dickson Carr": {
@@ -156114,26 +156480,46 @@
       "author": "John Dickson Carr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young country gentleman Roderick Kinsmere arrives at King Charles II's Restoration court in 1670, only to lose his fortune, gain a wife, and become entangled in deadly plots, piracy, and a mystery centred on a sapphire ring inherited from his father. A revised version of Carr's early pseudonymous novel 'Devil Kinsmere', brimming with swashbuckling energy.",
+      "tone": "swashbuckling, rollicking, period-rich",
+      "pacing": "Fast",
+      "themes": [
+        "Restoration England",
+        "court intrigue",
+        "swashbuckling adventure",
+        "identity and inheritance",
+        "political conspiracy"
+      ],
+      "setting": "Restoration London, 1670; King Charles II's Whitehall Palace",
+      "comparable_books": [
+        "The Devil in Velvet - John Dickson Carr",
+        "The Bride of Newgate - John Dickson Carr",
+        "Fire, Burn! - John Dickson Carr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "vivid Restoration court atmosphere",
+          "swashbuckling adventure",
+          "fast-moving plot",
+          "duels and intrigue",
+          "Carr's historical writing at an energetic pitch"
+        ],
+        "negative": [
+          "mystery element lighter than detective novels",
+          "revised early work — some unevenness",
+          "ending considered anti-climactic by some"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Streets of Laredo - Larry McMurtry": {
