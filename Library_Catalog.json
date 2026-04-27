@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3495,
-  "total_pending": 1105,
+  "total_catalogued": 3515,
+  "total_pending": 1085,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -193074,53 +193074,93 @@
       "author": "J. R. R. Tolkien",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A collection of Tolkien's shorter fantasy works, including Roverandom, Farmer Giles of Ham, The Adventures of Tom Bombadil, and Leaf by Niggle, showcasing his mythological imagination beyond Middle-earth.",
+      "tone": "whimsical, fable-like, lyrical",
+      "pacing": "Slow",
+      "themes": [
+        "myth and legend",
+        "enchantment",
+        "the nature of art and creation",
+        "the everyday versus the fantastical"
+      ],
+      "setting": "Various — mythological England, faerie realms, and invented worlds, pre-modern",
+      "comparable_books": [
+        "Smith of Wootton Major - J. R. R. Tolkien",
+        "The Book of Lost Tales - J. R. R. Tolkien",
+        "The Wood on the Hill - Lord Dunsany"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tolkien completist",
+          "short fantasy fiction",
+          "fairy tale sensibility",
+          "lyrical prose",
+          "mythopoeic worldbuilding"
+        ],
+        "negative": [
+          "plot-driven readers",
+          "epic fantasy expectations",
+          "action-oriented pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tolkien's lyrical, fable-like prose is ideally suited to being read aloud.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Summers End - Juneau Black": {
       "title": "Summers End",
       "author": "Juneau Black",
       "series": "Shady Hollow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Reporter Vera Vixen chaperones a school trip to Summers End, an ancient tomb and archaeological site, where a modern corpse is discovered and she must investigate a murder within the competitive world of academia to clear Lenore's sister's name.",
+      "tone": "cozy, whimsical, dark academia-tinged",
+      "pacing": "Moderate",
+      "themes": [
+        "academic rivalry",
+        "friendship",
+        "community",
+        "justice",
+        "archaeology and history"
+      ],
+      "setting": "The fictional village of Shady Hollow and the nearby ancient site of Summers End, inhabited by anthropomorphic woodland creatures",
+      "comparable_books": [
+        "Shady Hollow - Juneau Black",
+        "The Thursday Murder Club - Richard Osman",
+        "Three Bags Full - Leonie Swann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery",
+          "anthropomorphic animals",
+          "found family",
+          "dark academia",
+          "whimsical tone",
+          "female investigator"
+        ],
+        "negative": [
+          "hard-boiled mystery fans",
+          "graphic content seekers",
+          "readers allergic to whimsy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The charming, whimsical world of Shady Hollow and its ensemble cast translate beautifully to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Spook - Mary Roach": {
@@ -193128,242 +193168,422 @@
       "author": "Mary Roach",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Science journalist Mary Roach investigates the scientific and historical evidence for the soul's survival after death, exploring reincarnation research, ectoplasm studies, ghost hunters, and near-death experiences with her trademark wit.",
+      "tone": "darkly comic, irreverent, curious",
+      "pacing": "Moderate",
+      "themes": [
+        "death and the afterlife",
+        "the soul",
+        "science vs. belief",
+        "paranormal investigation",
+        "history of science"
+      ],
+      "setting": "Various real-world research labs, séance parlors, and historical archives — contemporary and historical",
+      "comparable_books": [
+        "Stiff - Mary Roach",
+        "Gulp - Mary Roach",
+        "Smoke Gets in Your Eyes - Caitlin Doughty"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science fans",
+          "darkly comic nonfiction",
+          "death positivity",
+          "skeptical enquiry",
+          "quirky research dives"
+        ],
+        "negative": [
+          "earnest believers in the paranormal",
+          "readers wanting straightforward academic treatment"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Roach's dry, comedic voice is ideally suited to audio; she narrates her own work.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Phantom Pond - Juneau Black": {
       "title": "Phantom Pond",
       "author": "Juneau Black",
       "series": "Shady Hollow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novella (between Books 4 and 5)",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Halloween short story set in Shady Hollow, where a local legend about a witch named Creeping Juniper becomes frighteningly real when a young creature goes missing and Vera Vixen must find the mysterious Phantom Pond before it's too late.",
+      "tone": "cozy, spooky, autumnal",
+      "pacing": "Fast",
+      "themes": [
+        "folklore and legend",
+        "community",
+        "Halloween",
+        "friendship",
+        "mystery"
+      ],
+      "setting": "The woodlands around Shady Hollow during Halloween/Mischief Night, populated by anthropomorphic animals",
+      "comparable_books": [
+        "Evergreen Chase - Juneau Black",
+        "The House in the Cerulean Sea - TJ Klune",
+        "Hollow Kingdom - Kira Jane Buxton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery",
+          "Halloween reads",
+          "anthropomorphic fiction",
+          "short seasonal stories",
+          "whimsical tone"
+        ],
+        "negative": [
+          "readers wanting full-length novels",
+          "hard mystery purists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "My Soul to Take - Yrsa Sigurdardottir": {
       "title": "My Soul to Take",
       "author": "Yrsa Sigurdardottir",
       "series": "Þóra Guðmundsdóttir",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Icelandic lawyer Thóra Gudmundsdóttir is hired to represent the owner of a New Age health resort who becomes the prime suspect when a young woman is found murdered; she uncovers a dark and disturbing history of the farmhouse that blurs the line between ghost story and crime.",
+      "tone": "chilling, atmospheric, darkly witty",
+      "pacing": "Moderate",
+      "themes": [
+        "haunting and folklore",
+        "dark history",
+        "justice",
+        "single motherhood",
+        "Iceland's landscape and culture"
+      ],
+      "setting": "Snæfellsnes peninsula, western Iceland, contemporary",
+      "comparable_books": [
+        "Last Rituals - Yrsa Sigurdardottir",
+        "I Remember You - Yrsa Sigurdardottir",
+        "The Snowman - Jo Nesbø"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Nordic noir",
+          "female protagonist",
+          "ghost story elements",
+          "atmospheric Icelandic setting",
+          "amateur sleuth"
+        ],
+        "negative": [
+          "readers wanting fast-paced thrillers",
+          "those averse to supernatural elements in crime fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mockingbird Court - Juneau Black": {
       "title": "Mockingbird Court",
       "author": "Juneau Black",
       "series": "Shady Hollow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "During the Harvest Festival in Shady Hollow, famous wolf author Bradley Marvel arrives on the run after a body is found in his city apartment, and Vera Vixen must solve the murder from afar while confronting secrets from her own past in this final installment of the series.",
+      "tone": "cozy, autumnal, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "justice",
+        "friendship",
+        "secrets and identity",
+        "community",
+        "the publishing world"
+      ],
+      "setting": "Shady Hollow and a distant city, autumn setting, a world of anthropomorphic woodland creatures",
+      "comparable_books": [
+        "Summers End - Juneau Black",
+        "The Thursday Murder Club - Richard Osman",
+        "Dial A for Aunties - Jesse Q. Sutanto"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery",
+          "series conclusions",
+          "found family",
+          "anthropomorphic fiction",
+          "autumnal atmosphere"
+        ],
+        "negative": [
+          "readers new to the series",
+          "those preferring hard-boiled crime"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The warm ensemble cast and seasonal atmosphere make this an ideal audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mirror Lake - Juneau Black": {
       "title": "Mirror Lake",
       "author": "Juneau Black",
       "series": "Shady Hollow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the third Shady Hollow mystery, reporter Vera Vixen investigates the bizarre claim of a rat who insists her husband has been murdered — even though he is standing right next to her — all while Orville Braun campaigns to replace the town's lazy chief of police.",
+      "tone": "cozy, autumnal, gently comic",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and imposture",
+        "community politics",
+        "justice",
+        "romance",
+        "small-town secrets"
+      ],
+      "setting": "Shady Hollow and the Mirror Lake neighborhood, mid-October, inhabited by anthropomorphic woodland creatures",
+      "comparable_books": [
+        "Cold Clay - Juneau Black",
+        "Shady Hollow - Juneau Black",
+        "Three Bags Full - Leonie Swann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery",
+          "Agatha Christie homage",
+          "anthropomorphic animals",
+          "whimsical setting",
+          "slow-burn romance subplot"
+        ],
+        "negative": [
+          "readers who dislike whimsy",
+          "thriller fans expecting high stakes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mammoths at the Gates - Nghi Vo": {
       "title": "Mammoths at the Gates",
       "author": "Nghi Vo",
       "series": "The Singing Hills Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wandering Cleric Chih returns home to the Singing Hills Abbey after years away, only to find their beloved mentor has died — and the dead cleric's warrior granddaughters have arrived on royal war mammoths demanding the body for burial, threatening the abbey's precious archive.",
+      "tone": "lyrical, elegiac, quietly bittersweet",
+      "pacing": "Slow",
+      "themes": [
+        "grief and loss",
+        "memory and storytelling",
+        "identity and belonging",
+        "duty vs. loyalty",
+        "change"
+      ],
+      "setting": "The Singing Hills Abbey, an East Asian-inspired fantasy world, contemporary to the series",
+      "comparable_books": [
+        "The Empress of Salt and Fortune - Nghi Vo",
+        "Into the Riverlands - Nghi Vo",
+        "The Very Secret Society of Irregular Witches - Sangu Mandanna"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "lyrical prose",
+          "novellas",
+          "Hugo Award winners",
+          "non-binary protagonist",
+          "grief narratives",
+          "East Asian-inspired worlds"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "epic fantasy with large casts",
+          "hard magic systems"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The series is designed around oral storytelling; the audio format is exceptionally well-suited to Vo's lyrical prose.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Last Rituals - Yrsa Sigurdardottir": {
       "title": "Last Rituals",
       "author": "Yrsa Sigurdardottir",
       "series": "Þóra Guðmundsdóttir",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Icelandic attorney Thóra Gudmundsdóttir is hired by a wealthy German family to reinvestigate the mutilation murder of their son, a student obsessed with Iceland's history of witch hunts, uncovering dark secrets connecting medieval torture traditions to a modern killer.",
+      "tone": "dark, atmospheric, mordantly witty",
+      "pacing": "Moderate",
+      "themes": [
+        "witchcraft and history",
+        "dark academia",
+        "justice",
+        "single motherhood",
+        "Iceland's past"
+      ],
+      "setting": "Reykjavík, Iceland, contemporary",
+      "comparable_books": [
+        "My Soul to Take - Yrsa Sigurdardottir",
+        "The Secret History - Donna Tartt",
+        "The Girl with the Dragon Tattoo - Stieg Larsson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Nordic noir",
+          "historical mystery elements",
+          "female investigator",
+          "dark academia",
+          "Icelandic setting"
+        ],
+        "negative": [
+          "readers expecting fast pacing",
+          "those sensitive to body mutilation descriptions"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "I, Robot - Isaac Asimov": {
       "title": "I, Robot",
       "author": "Isaac Asimov",
       "series": "The Robot Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (publication order)",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A linked collection of nine short stories, framed as a journalist's interview with robot psychologist Dr. Susan Calvin, tracing the evolution of robots and the increasingly complex ethical dilemmas arising from Asimov's famous Three Laws of Robotics.",
+      "tone": "intellectual, cerebral, puzzle-like",
+      "pacing": "Moderate",
+      "themes": [
+        "artificial intelligence",
+        "the Three Laws of Robotics",
+        "human-machine relations",
+        "ethics and logic",
+        "progress and control"
+      ],
+      "setting": "Earth and space, mid-21st to late 21st century, future United States and beyond",
+      "comparable_books": [
+        "The Caves of Steel - Isaac Asimov",
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick",
+        "Klara and the Sun - Kazuo Ishiguro"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic science fiction",
+          "robot ethics",
+          "puzzle mysteries",
+          "philosophical SF",
+          "linked short stories"
+        ],
+        "negative": [
+          "character-driven literary fiction readers",
+          "action-focused SF readers",
+          "readers averse to dated prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Invisible Helix - Keigo Higashino": {
       "title": "Invisible Helix",
       "author": "Keigo Higashino",
       "series": "Detective Galileo Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5 (English); Book 10 (Japanese original)",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a man's body is found floating in Tokyo Bay and his live-in girlfriend vanishes, detectives Kusanagi and Utsumi call in brilliant physicist Professor Yukawa — 'Detective Galileo' — who discovers the case connects to his own hidden past through nearly invisible threads of family and coincidence.",
+      "tone": "slow-burn, introspective, emotionally resonant",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "family and identity",
+        "secrets of the past",
+        "guilt and responsibility",
+        "the definition of justice",
+        "domestic abuse"
+      ],
+      "setting": "Contemporary Tokyo, Japan",
+      "comparable_books": [
+        "The Devotion of Suspect X - Keigo Higashino",
+        "Salvation of a Saint - Keigo Higashino",
+        "The Inugami Clan - Seishi Yokomizo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese crime fiction",
+          "slow-burn procedurals",
+          "emotional depth",
+          "puzzle mysteries",
+          "character-driven crime"
+        ],
+        "negative": [
+          "action-heavy thriller fans",
+          "readers wanting explosive pacing",
+          "those unfamiliar with Japanese procedural conventions"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Death of Ivan Ilyich and Other Stories - Leo Tolstoy": {
@@ -193371,53 +193591,95 @@
       "author": "Leo Tolstoy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The title novella follows a high-court judge confronting his own mortality, as physical decline strips away the social façade of his comfortable life and forces him to examine what has made it meaningful; accompanying stories explore similar themes of morality, death, and spiritual awakening.",
+      "tone": "austere, harrowing, morally searching",
+      "pacing": "Slow",
+      "themes": [
+        "death and dying",
+        "the meaning of life",
+        "moral hypocrisy",
+        "spiritual redemption",
+        "bourgeois emptiness"
+      ],
+      "setting": "19th-century Russia, primarily urban bureaucratic settings",
+      "comparable_books": [
+        "The Metamorphosis - Franz Kafka",
+        "A Confession - Leo Tolstoy",
+        "Ward No. 6 - Anton Chekhov"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary classics",
+          "existential fiction",
+          "19th-century Russian literature",
+          "death and meaning",
+          "philosophical fiction"
+        ],
+        "negative": [
+          "plot-driven readers",
+          "those averse to moral didacticism",
+          "light reading seekers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Dinosaur Feather - S. J. Gazan": {
       "title": "The Dinosaur Feather",
       "author": "S. J. Gazan",
       "series": "Søren Marhauge",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a despised biology professor is found dead at the University of Copenhagen with his severed tongue on his chest and a PhD student's bloodstained thesis in his lap, tormented Superintendent Søren Marhauge investigates a murder rooted in the fiercely contested scientific debate over whether birds descended from dinosaurs.",
+      "tone": "dark, cerebral, psychologically complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "academic rivalry",
+        "the nature of scientific truth",
+        "parenthood and family dysfunction",
+        "obsession",
+        "dark secrets"
+      ],
+      "setting": "University of Copenhagen, contemporary Denmark",
+      "comparable_books": [
+        "The Secret History - Donna Tartt",
+        "The Devotion of Suspect X - Keigo Higashino",
+        "Still Life - Louise Penny"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Scandinavian noir",
+          "dark academia",
+          "science-heavy fiction",
+          "psychological depth",
+          "multi-POV narratives"
+        ],
+        "negative": [
+          "fast-paced thriller fans",
+          "readers averse to heavy scientific detail",
+          "those wanting light mysteries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The dense scientific content and multiple academic threads are better tracked in print.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ghost Station - S. A. Barnes": {
@@ -193425,26 +193687,48 @@
       "author": "S. A. Barnes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Psychologist Dr. Ophelia Bray joins a small exploration crew on a mission to an ancient, abandoned planet, but as the crew begins to unravel secrets about the previous colonizers' hasty departure, murder and a mysterious space-borne syndrome threaten to doom them all.",
+      "tone": "creeping dread, claustrophobic, atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "isolation and paranoia",
+        "psychological horror",
+        "corporate exploitation",
+        "class and power",
+        "the unknown"
+      ],
+      "setting": "Deep space; an ancient, frozen alien planet with ruined structures, far future",
+      "comparable_books": [
+        "Dead Silence - S. A. Barnes",
+        "The Swallowed Man - Edward Carey",
+        "Into the Drowning Deep - Seanan McGuire"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space horror",
+          "Alien-style claustrophobia",
+          "atmospheric SF",
+          "unreliable narrator",
+          "psychological suspense"
+        ],
+        "negative": [
+          "readers who dislike slow burns",
+          "those wanting action from the first page",
+          "hard science fiction readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "In a Dark, Dark Wood - Ruth Ware": {
@@ -193452,26 +193736,48 @@
       "author": "Ruth Ware",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Nora is unexpectedly invited to her estranged best friend's bachelorette party at a remote glass house in the English woods, but when the weekend takes a deadly turn, she wakes in a hospital with no memory of what happened.",
+      "tone": "propulsive, claustrophobic, paranoid",
+      "pacing": "Fast",
+      "themes": [
+        "friendship and betrayal",
+        "secrets and past trauma",
+        "isolation",
+        "memory",
+        "the dark side of domesticity"
+      ],
+      "setting": "A remote glass house in the English countryside, contemporary",
+      "comparable_books": [
+        "The Woman in the Window - A. J. Finn",
+        "One by One - Ruth Ware",
+        "The Girl on the Train - Paula Hawkins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room thriller",
+          "propulsive pacing",
+          "unreliable narrator",
+          "female protagonist",
+          "domestic noir"
+        ],
+        "negative": [
+          "literary fiction readers",
+          "those who dislike amnesia plots",
+          "readers wanting complex character studies"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The propulsive, thriller pacing and first-person voice translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Grunt: The Curious Science of Humans at War - Mary Roach": {
@@ -193479,26 +193785,46 @@
       "author": "Mary Roach",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mary Roach investigates the bizarre and often overlooked science that keeps soldiers alive and functional in combat — from heat-resistant uniforms and stink bombs to genital reconstruction surgery and the science of diarrhea in the field.",
+      "tone": "darkly comic, irreverent, curious",
+      "pacing": "Moderate",
+      "themes": [
+        "military science",
+        "the human body under stress",
+        "innovation and absurdity",
+        "survival",
+        "the unsung heroes of war research"
+      ],
+      "setting": "Various military research facilities, labs, and conflict zones — contemporary United States and global",
+      "comparable_books": [
+        "Stiff - Mary Roach",
+        "Spook - Mary Roach",
+        "Packing for Mars - Mary Roach"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science fans",
+          "darkly comic nonfiction",
+          "military history buffs",
+          "science of everyday life",
+          "quirky research"
+        ],
+        "negative": [
+          "anti-military readers",
+          "those wanting earnest war narrative",
+          "squeamish readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Roach's comedic delivery and gift for comic timing make her books ideal in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Death Takes Me - Cristina Rivera Garza": {
@@ -193506,26 +193832,50 @@
       "author": "Cristina Rivera Garza",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A professor named Cristina Rivera Garza discovers the castrated body of a man in a dark alley, becoming the key informant in a case led by a poetry-obsessed detective, as a series of similar murders unfolds across the city accompanied by verses from Argentinian poet Alejandra Pizarnik.",
+      "tone": "surreal, elliptical, dreamlike, politically charged",
+      "pacing": "Slow",
+      "themes": [
+        "gendered violence and femicide",
+        "language and literature",
+        "identity",
+        "metafiction",
+        "justice and its failures"
+      ],
+      "setting": "A contemporary Mexican city, unnamed",
+      "comparable_books": [
+        "The Savage Detectives - Roberto Bolaño",
+        "The Iliac Crest - Cristina Rivera Garza",
+        "My Absolute Darling - Gabriel Tallent"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction",
+          "experimental form",
+          "Latin American literature",
+          "metafiction",
+          "feminist fiction",
+          "translated literature"
+        ],
+        "negative": [
+          "readers wanting plot-driven mysteries",
+          "those seeking resolution and catharsis",
+          "readers averse to genre-defying structure"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "The experimental structure, prose-poetry passages, footnotes, and shifting narrators require visual tracking on the page.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dissolution - Nicholas Binge": {
@@ -193533,26 +193883,49 @@
       "author": "Nicholas Binge",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Eighty-three-year-old Maggie Webb discovers her husband Stanley's dementia is actually the result of someone deliberately erasing his memories, and must dive into his past using experimental technology to uncover a decades-old scientific feud that now threatens the fabric of reality itself.",
+      "tone": "propulsive, emotionally tender, mind-bending",
+      "pacing": "Fast",
+      "themes": [
+        "memory and identity",
+        "love and aging",
+        "the ethics of science",
+        "time and consequence",
+        "secrets and their costs"
+      ],
+      "setting": "Contemporary Britain, with flashbacks to Stanley's youth in the 1950s; near-future neuroscience setting",
+      "comparable_books": [
+        "Ascension - Nicholas Binge",
+        "The Midnight Library - Matt Haig",
+        "Before I Go to Sleep - S. J. Watson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "techno-thriller fans",
+          "emotional SF",
+          "time travel and memory",
+          "puzzle-box narratives",
+          "elderly protagonist",
+          "Philip K. Dick fans"
+        ],
+        "negative": [
+          "hard science fiction purists",
+          "readers averse to genre blending",
+          "those wanting simple linear narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dead Silence - S. A. Barnes": {
@@ -193560,26 +193933,48 @@
       "author": "S. A. Barnes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A salvage crew discovers the Aurora, a legendary luxury space liner that vanished decades ago with thousands aboard, and as they explore its opulent and eerily preserved halls, something malevolent and long-dormant begins to hunt them.",
+      "tone": "gothic, dread-filled, atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "isolation and claustrophobia",
+        "greed and corporate malfeasance",
+        "the past haunting the present",
+        "survival horror",
+        "class"
+      ],
+      "setting": "Deep space; aboard the abandoned luxury liner Aurora, far future",
+      "comparable_books": [
+        "Ghost Station - S. A. Barnes",
+        "The Haunting of Hill House - Shirley Jackson",
+        "Into the Drowning Deep - Seanan McGuire"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space horror",
+          "haunted house in space",
+          "atmospheric horror",
+          "slow-burn dread",
+          "Titanic meets The Shining"
+        ],
+        "negative": [
+          "readers wanting fast action from the start",
+          "those averse to horror",
+          "hard SF readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Cold Eternity - S. A. Barnes": {
@@ -193587,26 +193982,48 @@
       "author": "S. A. Barnes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fleeing an interplanetary political scandal, Halley Zwick takes a shady caretaker job aboard the Elysian Fields — a derelict space barge storing hundreds of cryogenically frozen wealthy patrons — only to find something terrifying is already alive and moving in the dark corridors.",
+      "tone": "eerie, claustrophobic, slow-creeping dread",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "isolation and paranoia",
+        "class and privilege",
+        "the hubris of immortality",
+        "survival horror",
+        "political corruption"
+      ],
+      "setting": "Aboard the derelict space barge Elysian Fields, far-future solar system",
+      "comparable_books": [
+        "Dead Silence - S. A. Barnes",
+        "Ghost Station - S. A. Barnes",
+        "Alien: Out of the Shadows - Tim Lebbon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space horror",
+          "isolated setting",
+          "atmospheric dread",
+          "eat-the-rich satire",
+          "sci-fi horror fans"
+        ],
+        "negative": [
+          "readers wanting fast pacing throughout",
+          "those preferring psychological over monster horror",
+          "hard SF readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Cold Clay - Juneau Black": {
