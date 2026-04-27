@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1820,
-  "total_pending": 2780,
+  "total_catalogued": 1840,
+  "total_pending": 2760,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -111617,404 +111617,716 @@
       "author": "T. Kingfisher",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A princess embarks on an impossible quest to save her sister from an abusive prince, gathering a band of unlikely companions — including a dust-wife, a bone dog, and a goblin market trader — to defeat him. Dark fairy tale logic and sardonic wit underpin a surprisingly tender story about chosen family and quiet heroism.",
+      "tone": "darkly whimsical, sardonic, warm-hearted",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "abuse and agency",
+        "impossible quests",
+        "fairy tale logic",
+        "sacrifice"
+      ],
+      "setting": "Secondary world medieval fantasy kingdom, fairy-tale atmosphere",
+      "comparable_books": [
+        "The Bear and the Nightingale - Katherine Arden",
+        "A Memory Called Empire - Arkady Martine",
+        "Piranesi - Susanna Clarke",
+        "The Goblin Emperor - Katherine Addison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "feminist fairy tale",
+          "darkly comic tone",
+          "fast-paced standalone",
+          "literary horror-adjacent fantasy",
+          "compassionate protagonist"
+        ],
+        "negative": [
+          "epic scope fantasy",
+          "hard magic systems",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "T. Kingfisher's first-person narration style translates exceptionally well to audio; strong character voice and propulsive pacing reward the format.",
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Knightmare Arcanist - Shami Stovall": {
       "title": "Knightmare Arcanist",
       "author": "Shami Stovall",
       "series": "Frith Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gravedigger Volke Savan dreams of becoming an arcanist — a magic-wielder bonded to a mythical creature — and gets his chance when he bonds with a knightmare made of shadow and terror. But the bond draws him into a deadly confrontation with his idol, a legendary arcanist secretly spreading corrupted magic.",
+      "tone": "adventurous, coming-of-age, swashbuckling",
+      "pacing": "Fast",
+      "themes": [
+        "coming of age",
+        "hero worship and disillusionment",
+        "found family",
+        "corruption of power",
+        "mentorship"
+      ],
+      "setting": "Secondary world nautical fantasy; island archipelagos with a creature-bonding magic system",
+      "comparable_books": [
+        "Furies of Calderon - Jim Butcher",
+        "Unsouled - Will Wight",
+        "Percy Jackson and the Olympians - Rick Riordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "creature-bonding magic",
+          "found family",
+          "YA-adjacent adventure",
+          "fast-paced bingeable series"
+        ],
+        "negative": [
+          "grimdark",
+          "slow burn",
+          "complex literary prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced adventure with a consistent narrator (Brian Wiggins) across the whole series; highly rated in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Night of Blacker Darkness: Being the Memoir of Frederick Whithers as Edited by Cecil G. Bagsworth III - Dan Wells": {
       "title": "A Night of Blacker Darkness: Being the Memoir of Frederick Whithers as Edited by Cecil G. Bagsworth III",
       "author": "Dan Wells",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Frederick Whithers",
+      "series_position": "Book 1",
+      "genre": "Comedy Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in 1817, a wrongfully imprisoned con artist fakes his own death and escapes in a coffin — only to be mistaken for a powerful vampire by an actual vampire community. He must claim a stolen inheritance while outrunning vampires, vampire hunters, constables, and the Romantic poet John Keats.",
+      "tone": "farcical, absurdist, gleefully silly",
+      "pacing": "Fast",
+      "themes": [
+        "mistaken identity",
+        "farce and deception",
+        "Gothic horror parody",
+        "Regency-era satire"
+      ],
+      "setting": "England, 1817; Gothic Regency setting played for maximum absurdity",
+      "comparable_books": [
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "absurdist humor",
+          "Gothic parody",
+          "fast farcical plotting",
+          "historical setting with comedy",
+          "vampire fiction that subverts tropes"
+        ],
+        "negative": [
+          "horror fans expecting genuine scares",
+          "readers wanting emotional depth"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Originally released as an Audible exclusive novella; the farcical dialogue and comic timing shine in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Redemption of Time - Baoshu": {
       "title": "The Redemption of Time",
       "author": "Baoshu",
       "series": "Remembrance of Earth's Past",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the events of Death's End, Yun Tianming — the man whose brain was sent into space — is brought back to life by the Trisolarans and ultimately recruited by a god-like entity to prevent a cosmic war that could collapse the entire universe. An authorized fan-fiction expansion of the Three-Body trilogy.",
+      "tone": "epic, philosophical, cosmically scaled",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "redemption",
+        "cosmic scale conflict",
+        "sacrifice",
+        "human potential",
+        "fate vs agency"
+      ],
+      "setting": "The universe of the Remembrance of Earth's Past trilogy; spans thousands of years and multiple civilizations",
+      "comparable_books": [
+        "Death's End - Liu Cixin",
+        "The Dark Forest - Liu Cixin",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fans",
+          "fans of the Three-Body trilogy",
+          "cosmic scope",
+          "philosophical SF"
+        ],
+        "negative": [
+          "readers new to the series — requires familiarity with the trilogy",
+          "readers who dislike tell-heavy exposition"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Death's End - Liu Cixin": {
       "title": "Death's End",
       "author": "Liu Cixin",
       "series": "Remembrance of Earth's Past",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aerospace engineer Cheng Xin becomes the pivotal decision-maker in humanity's final struggle for survival against a universe governed by the brutal logic of the Dark Forest theory, as civilization faces extinction across millions of years and multiple dimensions. The sweeping, devastating conclusion to the Three-Body trilogy.",
+      "tone": "bleak, epic, grandly tragic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival of civilization",
+        "cosmology and dark forest theory",
+        "sacrifice and consequence",
+        "the nature of humanity",
+        "time and loss"
+      ],
+      "setting": "Earth and the cosmos, spanning from the near future to the far end of the universe's lifespan",
+      "comparable_books": [
+        "The Dark Forest - Liu Cixin",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Blindsight - Peter Watts"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "cosmological scale",
+          "philosophical tragedy",
+          "Big Ideas fiction",
+          "epic scope"
+        ],
+        "negative": [
+          "character-driven fiction fans",
+          "readers who prefer hopeful narratives",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "World Serpent Arcanist - Shami Stovall": {
       "title": "World Serpent Arcanist",
       "author": "Shami Stovall",
       "series": "Frith Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Volke Savan rejoins the Frith Guild to stop the villainous Second Ascension from bonding with the god-tier world serpent, whose power could subjugate entire nations. As Volke grows into a mentor role for a new knightmare arcanist, the stakes reach their highest yet.",
+      "tone": "adventurous, escalating, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "power and responsibility",
+        "mentorship",
+        "corruption",
+        "chosen one mythology",
+        "sacrifice"
+      ],
+      "setting": "Secondary world nautical/flintlock fantasy with airships and island nations",
+      "comparable_books": [
+        "Furies of Calderon - Jim Butcher",
+        "Unsouled - Will Wight",
+        "The Summoner - Taran Matharu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "series binge readers",
+          "escalating stakes",
+          "creature-bonding magic"
+        ],
+        "negative": [
+          "standalone readers",
+          "grimdark fans",
+          "literary fiction fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Consistent narrator (Brian Wiggins) throughout the series; highly suited to audio binge.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Warlord Arcanist - Shami Stovall": {
       "title": "Warlord Arcanist",
       "author": "Shami Stovall",
       "series": "Frith Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Now a god-arcanist himself, Volke must navigate new political pressures as kings, dragons, and rival arcanists challenge his authority, all while the Second Ascension races to seize the remaining god-creatures before a dreaded apocalyptic dragon arrives. The Frith Guild faces the opening salvos of an all-consuming war.",
+      "tone": "epic, politically charged, emotionally intense",
+      "pacing": "Moderate",
+      "themes": [
+        "power and politics",
+        "war and alliance-building",
+        "identity and growth",
+        "corruption",
+        "loyalty"
+      ],
+      "setting": "Secondary world nautical/flintlock fantasy; expanding continental scope",
+      "comparable_books": [
+        "Furies of Calderon - Jim Butcher",
+        "The Summoner - Taran Matharu",
+        "Unsouled - Will Wight"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "series binge readers",
+          "political intrigue",
+          "epic war plots"
+        ],
+        "negative": [
+          "standalone readers",
+          "grimdark fans",
+          "slow-burn character studies"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Consistent narrator (Brian Wiggins) throughout the series; highly suited to audio binge.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Three-Body Problem - Liu Cixin": {
       "title": "The Three-Body Problem",
       "author": "Liu Cixin",
       "series": "Remembrance of Earth's Past",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "During China's Cultural Revolution, a secret military project makes first contact with an alien civilization on the verge of collapse, setting in motion an interstellar crisis that will determine humanity's fate. A physicist unravels the mystery of a VR game called Three-Body as both worlds converge.",
+      "tone": "intellectually rigorous, measured, ominous",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact",
+        "civilization vs survival",
+        "scientific inquiry",
+        "ideology and history",
+        "betrayal"
+      ],
+      "setting": "China (Cultural Revolution era) and near-future Earth; plus alien planet Trisolaris",
+      "comparable_books": [
+        "The Dark Forest - Liu Cixin",
+        "Blindsight - Peter Watts",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Rendezvous with Rama - Arthur C. Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "Big Ideas fiction",
+          "first contact",
+          "political history as backdrop",
+          "puzzle-box plotting"
+        ],
+        "negative": [
+          "character-driven fiction",
+          "romance-heavy",
+          "fast-paced action fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Master Arcanist - Shami Stovall": {
       "title": "Master Arcanist",
       "author": "Shami Stovall",
       "series": "Frith Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Volke Savan races to find and bond the remaining god-creatures with allies before the Second Ascension can claim them, while the spreading arcane plague threatens to destroy everything he loves. He must choose between creation and destruction to end the plague once and for all.",
+      "tone": "intense, emotionally resonant, escalating",
+      "pacing": "Fast",
+      "themes": [
+        "corruption and plague",
+        "creation vs destruction",
+        "leadership and sacrifice",
+        "found family",
+        "war"
+      ],
+      "setting": "Secondary world nautical/flintlock fantasy; global scope as war approaches",
+      "comparable_books": [
+        "Unsouled - Will Wight",
+        "The Summoner - Taran Matharu",
+        "Furies of Calderon - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "series binge readers",
+          "high-stakes finales",
+          "found family payoff"
+        ],
+        "negative": [
+          "standalone readers",
+          "grimdark fans",
+          "literary fiction fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Consistent narrator (Brian Wiggins) throughout the series; highly suited to audio binge.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Grandmaster Arcanist - Shami Stovall": {
       "title": "Grandmaster Arcanist",
       "author": "Shami Stovall",
       "series": "Frith Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the final installment of the Frith Chronicles, Volke Savan confronts the Autarch in an all-out war between god-arcanists, with the fate of the world and the survival of magic itself hanging in the balance as the legendary magic-destroying apoch dragon looms over everything.",
+      "tone": "epic, emotionally charged, culminating",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and legacy",
+        "war and justice",
+        "found family",
+        "the cost of power",
+        "endings and new beginnings"
+      ],
+      "setting": "Secondary world nautical/flintlock fantasy; climactic global conflict",
+      "comparable_books": [
+        "Unsouled - Will Wight",
+        "The Summoner - Taran Matharu",
+        "Furies of Calderon - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "series completion",
+          "satisfying final payoffs",
+          "found family resolution"
+        ],
+        "negative": [
+          "standalone readers",
+          "grimdark fans",
+          "readers wanting ambiguous endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Consistent narrator (Brian Wiggins) across the full 8-book series; an ideal audio binge conclusion.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Dark Forest - Liu Cixin": {
       "title": "The Dark Forest",
       "author": "Liu Cixin",
       "series": "Remembrance of Earth's Past",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With an alien invasion four centuries away and all human communication monitored by Trisolaran sophons, Earth's only hope lies with four 'Wallfacers' — individuals given unlimited resources to devise secret counterstrategies in the privacy of their own minds. Sociologist Luo Ji slowly unravels the universe's terrifying survival logic.",
+      "tone": "cerebral, bleak, grandly contemplative",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the dark forest theory",
+        "civilization and survival",
+        "paranoia and deception",
+        "solitude",
+        "strategic thinking"
+      ],
+      "setting": "Earth and near space, spanning centuries from the near future to the eve of alien contact",
+      "comparable_books": [
+        "The Three-Body Problem - Liu Cixin",
+        "Blindsight - Peter Watts",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "Big Ideas fiction",
+          "slow-burn philosophical thriller",
+          "cosmic dread",
+          "puzzle-box plotting"
+        ],
+        "negative": [
+          "character-driven fiction",
+          "romance-heavy",
+          "fast-paced action fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Nothing That Is - Kyle Winkler": {
       "title": "The Nothing That Is",
       "author": "Kyle Winkler",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Mr. Dinosaur",
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1986, Cade McCall, an assistant manager at a catering company, accepts a suspicious high-paying gig for a mysterious client who calls himself Mr. Dinosaur — and finds himself plunged into a world of cosmic horror involving cults, exploding graveyards, and existential dread. A darkly funny debut novella that escalates from mundane to cosmically terrifying.",
+      "tone": "darkly comic, weird, disorientingly hilarious",
+      "pacing": "Fast",
+      "themes": [
+        "cosmic horror",
+        "the mundane vs the uncanny",
+        "existential dread",
+        "consumerism and exploitation",
+        "identity"
+      ],
+      "setting": "1986 American Midwest; escalates into cosmic horror territory",
+      "comparable_books": [
+        "I Have No Mouth and I Must Scream - Harlan Ellison",
+        "Something Wicked This Way Comes - Ray Bradbury",
+        "The Troop - Nick Cutter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosmic horror fans",
+          "dark comedy",
+          "Lovecraft-adjacent but fresh",
+          "weird fiction",
+          "80s horror atmosphere"
+        ],
+        "negative": [
+          "sensitive readers",
+          "those seeking conventional horror narrative",
+          "pure comedy fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ring Shout - P. Djeli Clark": {
       "title": "Ring Shout",
-      "author": "P. Djeli Clark",
+      "author": "P. Djèlí Clark",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1920s Georgia, a Black woman monster hunter named Maryse Boudreaux discovers that the KKK's burning crosses are summoning actual demons — and that D.W. Griffith's Birth of a Nation is a magical weapon conjuring evil into the world. A novella blending folk horror, Black Southern history, and cosmic terror.",
+      "tone": "visceral, righteous, historically grounded horror",
+      "pacing": "Fast",
+      "themes": [
+        "racism and white supremacy as literal evil",
+        "Black resistance and resilience",
+        "folk magic and heritage",
+        "trauma and power",
+        "found family"
+      ],
+      "setting": "1920s Georgia; the American South during the height of the Ku Klux Klan's resurgence",
+      "comparable_books": [
+        "A Dead Djinn in Cairo - P. Djèlí Clark",
+        "Lovecraft Country - Matt Ruff",
+        "Roots of the Earth - Kai Ashante Wilson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Afrofuturism/Afrodiaspora horror",
+          "historical horror",
+          "righteous action",
+          "novella-length reads",
+          "cosmic horror with social commentary"
+        ],
+        "negative": [
+          "readers sensitive to racial violence",
+          "those seeking light or comedic fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong rhythmic prose and vivid Southern voice make this an outstanding audio experience.",
+      "content_flags": [
+        "graphic violence",
+        "racial violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Magpie Murders - Anthony Horowitz": {
       "title": "Magpie Murders",
       "author": "Anthony Horowitz",
       "series": "Susan Ryeland Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Book editor Susan Ryeland reads a manuscript for the final Atticus Pünd mystery novel and discovers that its author has died under suspicious circumstances — and that the manuscript itself may contain clues to a real murder. A clever meta-mystery nested inside a Golden Age-style whodunit.",
+      "tone": "witty, clever, metafictional",
+      "pacing": "Moderate",
+      "themes": [
+        "metafiction and storytelling",
+        "publishing industry",
+        "the Golden Age mystery tradition",
+        "truth and fiction",
+        "greed and secrets"
+      ],
+      "setting": "Contemporary England (publishing world) and 1950s English village (within the novel-within-a-novel)",
+      "comparable_books": [
+        "The Thursday Murder Club - Richard Osman",
+        "The Man Who Died Twice - Richard Osman",
+        "The Seven Deaths of Evelyn Hardcastle - Stuart Turton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age mystery fans",
+          "metafiction",
+          "puzzle-box plotting",
+          "British settings",
+          "clever narrative structure"
+        ],
+        "negative": [
+          "action-focused thriller readers",
+          "those who dislike novels-within-novels"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The nested structure of a novel-within-a-novel is exceptionally well-served by audio; distinct narrative voices aid immersion.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Gathering of Shadows - V. E. Schwab": {
       "title": "A Gathering of Shadows",
       "author": "V. E. Schwab",
       "series": "Shades of Magic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Four months after the events of A Darker Shade of Magic, Kell is chafing under his captivity as the Antari magician of Red London's royal family while thief-turned-pirate Lila Bard makes her way back for the Essen Tasch, a grand magic tournament — but dangerous forces are gathering in the shadows.",
+      "tone": "propulsive, romantic, swashbuckling",
+      "pacing": "Moderate",
+      "themes": [
+        "freedom vs duty",
+        "identity and belonging",
+        "magic and power",
+        "found family",
+        "political intrigue"
+      ],
+      "setting": "Red London (a magic-rich alternate London) and the wider multi-London world; largely set during a grand magic tournament",
+      "comparable_books": [
+        "A Darker Shade of Magic - V. E. Schwab",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Six of Crows - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-world fantasy",
+          "swashbuckling adventure",
+          "will-they-won't-they romance",
+          "tournament arcs",
+          "morally grey protagonists"
+        ],
+        "negative": [
+          "hard magic system fans",
+          "grimdark fans",
+          "readers who dislike slow middle books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Automaton - Ian Young": {
@@ -112022,80 +112334,144 @@
       "author": "Ian Young",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thousands of years after humanity has uploaded itself into a vast supercomputer floating above Earth, a long-deactivated automaton named XR-345x is awakened in an overgrown African facility to investigate an anomaly — and must piece together millennia of history through a series of generational memory files. An ambitious indie meditation on humanity, AI, and cyclical failure.",
+      "tone": "contemplative, hopeful, Asimovian",
+      "pacing": "Moderate",
+      "themes": [
+        "what it means to be human",
+        "AI and consciousness",
+        "cyclical history",
+        "love and sacrifice",
+        "race and inequality"
+      ],
+      "setting": "Far future Earth and beyond; told through a generational frame story spanning thousands of years",
+      "comparable_books": [
+        "City - Clifford Simak",
+        "The Murderbot Diaries - Martha Wells",
+        "Klara and the Sun - Kazuo Ishiguro"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "robot/AI fiction",
+          "generational storytelling",
+          "philosophical SF",
+          "Asimov fans",
+          "indie SF"
+        ],
+        "negative": [
+          "action-driven SF fans",
+          "readers sensitive to prose-level polish issues"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lovecraft Country - Matt Ruff": {
       "title": "Lovecraft Country",
       "author": "Matt Ruff",
       "series": "Lovecraft Country",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1950s Jim Crow America, Atticus Turner and his family navigate a road trip through the sundown-town South to find his missing father — only to stumble into the machinations of a white sorcerer and his secret cult. A linked story collection that uses the conventions of Lovecraftian horror to explore the everyday terror of anti-Black racism.",
+      "tone": "tense, pointed, darkly inventive",
+      "pacing": "Moderate",
+      "themes": [
+        "racism as horror",
+        "Black American history",
+        "family and legacy",
+        "white privilege and power",
+        "Lovecraftian horror subverted"
+      ],
+      "setting": "1950s United States, particularly the Jim Crow South and Chicago",
+      "comparable_books": [
+        "Ring Shout - P. Djèlí Clark",
+        "Victor LaValle's The Changeling",
+        "The Underground Railroad - Colson Whitehead"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Afrodiaspora horror",
+          "social horror",
+          "historical setting",
+          "Lovecraft subversion",
+          "linked story collection structure"
+        ],
+        "negative": [
+          "readers sensitive to racial violence and trauma",
+          "those seeking traditional Lovecraftian horror"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "racial violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Conjuring of Light - V. E. Schwab": {
       "title": "A Conjuring of Light",
       "author": "V. E. Schwab",
       "series": "Shades of Magic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the stunning series conclusion, Kell, Lila, Rhy, and Alucard must join forces to stop the ancient and monstrous Osaron from destroying Red London and spreading its darkness across all worlds. High-stakes battles, hard sacrifices, and the resolution of every character arc bring the trilogy to an emotional close.",
+      "tone": "propulsive, emotionally devastating, triumphant",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and love",
+        "power and corruption",
+        "identity and freedom",
+        "found family",
+        "heroism and cost"
+      ],
+      "setting": "Red London and the multi-London world; under siege by an ancient magical parasite",
+      "comparable_books": [
+        "A Gathering of Shadows - V. E. Schwab",
+        "Six of Crows - Leigh Bardugo",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-world fantasy",
+          "high-stakes series finales",
+          "found family payoff",
+          "swashbuckling adventure",
+          "emotional character arcs"
+        ],
+        "negative": [
+          "grimdark fans",
+          "hard magic system fans",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sealed Empire - Norbert Zsivicz": {
@@ -112103,26 +112479,49 @@
       "author": "Norbert Zsivicz",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Experienced sailor Ser Edward sets out on a daring expedition from the medieval kingdom of Esenworth, only to encounter something that shatters his worldview — while his love Emma becomes enmeshed in the scheming of the brutal new king Erick back home. A genre-blending debut that fuses medieval fantasy with unexpected science fiction elements and a world-shaking twist.",
+      "tone": "adventurous, epic, genre-bending",
+      "pacing": "Moderate",
+      "themes": [
+        "faith and worldview shattered",
+        "political intrigue and tyranny",
+        "love and loyalty",
+        "discovery",
+        "the nature of reality"
+      ],
+      "setting": "The medieval kingdom of Esenworth; spanning ocean voyages and a brutal royal court",
+      "comparable_books": [
+        "The Riyria Chronicles - Michael J. Sullivan",
+        "Prince of Thorns - Mark Lawrence",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "genre-blending SF/fantasy",
+          "twist-heavy plotting",
+          "medieval adventure",
+          "Hungarian literary fantasy",
+          "fast-paced debut fiction"
+        ],
+        "negative": [
+          "readers averse to sexual violence",
+          "those wanting pure genre classification",
+          "readers who dislike abrupt POV switching"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Service Model - Adrian Tchaikovsky": {
@@ -112130,26 +112529,48 @@
       "author": "Adrian Tchaikovsky",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Charles, an impeccably mannered robotic valet, accidentally murders his master and is left purposeless in a post-apocalyptic world where human civilization has collapsed and an entire robot ecosystem devoted to serving humanity is struggling to find meaning. A darkly comic and philosophical journey through the ruins of society.",
+      "tone": "darkly comic, Kafkaesque, wryly satirical",
+      "pacing": "Moderate",
+      "themes": [
+        "purpose and identity",
+        "labor and exploitation",
+        "the absurdity of bureaucracy",
+        "AI consciousness",
+        "civilizational collapse"
+      ],
+      "setting": "Near-future post-apocalyptic Earth; a rusting, crumbling world still populated by purposeless robots",
+      "comparable_books": [
+        "The Murderbot Diaries - Martha Wells",
+        "Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "A Psalm for the Wild-Built - Becky Chambers",
+        "Klara and the Sun - Kazuo Ishiguro"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "AI/robot fiction",
+          "dark comedy",
+          "social satire",
+          "cozy-adjacent SF",
+          "Douglas Adams fans",
+          "philosophical SF"
+        ],
+        "negative": [
+          "action-driven SF fans",
+          "readers wanting emotional warmth",
+          "grimdark fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The wry, politely deadpan third-person narration is ideally suited to audio; the butler-like tone of the robot protagonist shines in the spoken format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Shadow in Summer - Daniel Abraham": {
