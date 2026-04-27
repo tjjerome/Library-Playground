@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2566,
-  "total_pending": 2034,
+  "total_catalogued": 2586,
+  "total_pending": 2014,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -147902,188 +147902,339 @@
       "author": "Ruth Ware",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A post-doctoral scientist and her actor boyfriend join a reality TV show on a remote island, but after a devastating storm cuts them off from the outside world, survival instincts take over and a killer begins to stalk the survivors.",
+      "tone": "tense, propulsive, sun-drenched and sinister",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "reality TV and performance",
+        "relationship strain",
+        "human brutality",
+        "isolation"
+      ],
+      "setting": "Present-day, a remote island in the Indian Ocean during a reality TV shoot",
+      "comparable_books": [
+        "And Then There Were None - Agatha Christie",
+        "One by One - Ruth Ware",
+        "The Wilds (TV series equivalent) - Lord of the Flies by William Golding"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced survival thriller",
+          "island isolation",
+          "reality TV setting",
+          "strong female protagonist",
+          "quick read"
+        ],
+        "negative": [
+          "readers expecting a traditional whodunit",
+          "those wanting subtle atmospheric dread over action",
+          "readers put off by abusive relationship dynamics"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Propulsive pacing and cinematic quality make it ideal for audio; Ben Macintyre-style narrative drive translates well.",
+      "content_flags": [
+        "graphic violence",
+        "domestic abuse"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Nightshade - Michael Connelly": {
       "title": "Nightshade",
       "author": "Michael Connelly",
       "series": "A Catalina Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "L.A. County Sheriff's Detective Stilwell, exiled to a quiet post on Catalina Island, finds himself drawn into two converging investigations — a Jane Doe found weighed down in the harbour and a dangerous poaching case tied to a powerful island figure — uncovering dark secrets beneath the island's idyllic surface.",
+      "tone": "propulsive, atmospheric, small-town noir",
+      "pacing": "Fast",
+      "themes": [
+        "justice",
+        "institutional politics",
+        "island community secrets",
+        "principled policing",
+        "corruption"
+      ],
+      "setting": "Contemporary Catalina Island, California — a rustic, insular resort island off the L.A. coast",
+      "comparable_books": [
+        "The Black Echo - Michael Connelly",
+        "The Dark Hours - Michael Connelly",
+        "The Long Goodbye - Raymond Chandler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Connelly fans",
+          "atmospheric setting",
+          "new-series launch with strong hero",
+          "tight plotting",
+          "claustrophobic island community"
+        ],
+        "negative": [
+          "readers wanting supernatural or cozy elements",
+          "those preferring Harry Bosch or Mickey Haller specifically"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Connelly's crime novels are perennially praised in audio format; propulsive pacing suits the medium perfectly.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Nona the Ninth - Tamsyn Muir": {
       "title": "Nona the Ninth",
       "author": "Tamsyn Muir",
       "series": "The Locked Tomb",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Nona wakes in a strange body in a city on the brink of war, with no memory of who she is, surrounded by people who may know her secret — a wildly different, character-driven instalment of the Locked Tomb series that expands the world through the eyes of an entirely new perspective.",
+      "tone": "darkly comic, warm, surreal, eccentric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and selfhood",
+        "memory",
+        "found family",
+        "the cost of power",
+        "apocalypse",
+        "loyalty"
+      ],
+      "setting": "A besieged city on a dying planet in a far-future universe of necromancers and interstellar empires",
+      "comparable_books": [
+        "Gideon the Ninth - Tamsyn Muir",
+        "Harrow the Ninth - Tamsyn Muir",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "nonlinear narrative",
+          "morally grey characters",
+          "queer characters",
+          "literary playfulness",
+          "prior Locked Tomb fans"
+        ],
+        "negative": [
+          "readers wanting plot-driven momentum",
+          "those who haven't read the first two books",
+          "readers wanting clear answers immediately"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Never Flinch - Stephen King": {
       "title": "Never Flinch",
       "author": "Stephen King",
       "series": "Holly Gibney",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Crime Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Holly Gibney is pulled into two converging cases: helping a detective track a serial killer who has promised to execute fourteen people as vigilante atonement, while serving as bodyguard to a controversial feminist activist being stalked by a religious extremist.",
+      "tone": "slow-burn, character-driven, pulpy, socially charged",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "vigilante justice",
+        "fanaticism and extremism",
+        "women's rights",
+        "guilt and atonement",
+        "courage"
+      ],
+      "setting": "Present-day Buckeye City (fictional mid-American setting), 2025",
+      "comparable_books": [
+        "Holly - Stephen King",
+        "Mr. Mercedes - Stephen King",
+        "The Outsider - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Holly Gibney fans",
+          "King crime thriller mode",
+          "dual-narrative structure",
+          "contemporary social themes"
+        ],
+        "negative": [
+          "readers wanting supernatural horror",
+          "those fatigued by the Holly Gibney universe",
+          "readers expecting tight plotting over character study"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "King's character-rich, slow-burn style is highly suited to audio; the dual narrative benefits from performance.",
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Murder in the Crooked House - Soji Shimada": {
       "title": "Murder in the Crooked House",
       "author": "Soji Shimada",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Kiyoshi Mitarai",
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Christmas house party at a millionaire's bizarrely constructed, sloping mansion on a remote snowbound cliff in northern Japan descends into a series of seemingly impossible locked-room murders — until detective Kiyoshi Mitarai arrives to unravel the ingenious puzzle.",
+      "tone": "cerebral, playful, retro puzzle-box",
+      "pacing": "Moderate",
+      "themes": [
+        "impossible crime",
+        "class and status",
+        "the architecture of deception",
+        "fair-play detection"
+      ],
+      "setting": "1980s Japan, a remote, architecturally eccentric mansion on a snowy Hokkaido cliffside",
+      "comparable_books": [
+        "The Tokyo Zodiac Murders - Soji Shimada",
+        "And Then There Were None - Agatha Christie",
+        "The House of the Crooked Corridor - Yukito Ayatsuji"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room mystery enthusiasts",
+          "golden age puzzle fans",
+          "honkaku Japanese mystery fans",
+          "challenge-to-the-reader format",
+          "architectural mystery setting"
+        ],
+        "negative": [
+          "readers wanting character depth over puzzle",
+          "those expecting emotional stakes",
+          "readers who dislike slow detective arrivals"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Contains floor plans, diagrams, and a formal 'challenge to the reader' that are integral to solving the puzzle — best experienced in print.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Moonflower Murders - Anthony Horowitz": {
       "title": "Moonflower Murders",
       "author": "Anthony Horowitz",
       "series": "Susan Ryeland Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former editor Susan Ryeland is drawn back into murder investigation when a couple reveal that a long-ago killing at their Suffolk hotel was predicted — in code — in a novel she once edited, and the author has since gone missing.",
+      "tone": "witty, meta, golden-age homage",
+      "pacing": "Moderate",
+      "themes": [
+        "fiction within fiction",
+        "literary detection",
+        "buried secrets",
+        "the craft of mystery writing",
+        "village crime"
+      ],
+      "setting": "Contemporary Suffolk, England, and a luxury hotel; also a novel-within-the-novel set in the same location",
+      "comparable_books": [
+        "Magpie Murders - Anthony Horowitz",
+        "The Thursday Murder Club - Richard Osman",
+        "A is for Alibi - Sue Grafton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "meta-mysteries and books about books",
+          "cozy-adjacent literary mystery",
+          "Agatha Christie fans",
+          "dual-narrative structure",
+          "British settings"
+        ],
+        "negative": [
+          "readers wanting action-heavy plots",
+          "those who haven't read Magpie Murders first",
+          "readers wanting emotional depth over puzzle"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The novel-within-a-novel structure performs beautifully in audio with differentiated narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mistress of the Empire - Raymond E. Feist & Janny Wurts": {
       "title": "Mistress of the Empire",
       "author": "Raymond E. Feist & Janny Wurts",
       "series": "The Empire Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lady Mara of the Acoma reaches the pinnacle of power in the Tsurani Empire, but must navigate a final deadly convergence of enemies — the Assembly of Magicians, a secret society, and political rivals — in a fight that will define the future of her world.",
+      "tone": "political, epic, emotionally weighty",
+      "pacing": "Moderate",
+      "themes": [
+        "power and its costs",
+        "loyalty and sacrifice",
+        "political intrigue",
+        "honour and duty",
+        "motherhood"
+      ],
+      "setting": "The Tsurani Empire — an alien world of rigid honour culture, interlocked political houses, and strict social hierarchy",
+      "comparable_books": [
+        "Servant of the Empire - Feist & Wurts",
+        "Daughter of the Empire - Feist & Wurts",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political fantasy",
+          "female protagonist at centre of power",
+          "epic world-building",
+          "series payoff",
+          "court intrigue"
+        ],
+        "negative": [
+          "readers wanting action-first fantasy",
+          "those new to the Empire Trilogy (must read in order)",
+          "readers put off by honour-culture rigidity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Leaving Berlin - Joseph Kanon": {
@@ -148091,26 +148242,48 @@
       "author": "Joseph Kanon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1948 Berlin, Jewish writer Alex Meier — blacklisted in America by the McCarthy witch-hunts — strikes a desperate deal with the CIA to spy in Soviet-occupied East Berlin, only to discover his true assignment is to surveil the woman he has always loved.",
+      "tone": "atmospheric, morally complex, melancholy, cinematic",
+      "pacing": "Moderate",
+      "themes": [
+        "Cold War moral compromise",
+        "betrayal and loyalty",
+        "identity in exile",
+        "political idealism vs reality",
+        "love under duress"
+      ],
+      "setting": "Berlin, 1948-49 — a city in ruins, divided between Soviet and Western occupation zones, under the Berlin Airlift",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Night Soldiers - Alan Furst",
+        "The Good German - Joseph Kanon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "le Carré fans",
+          "post-WWII espionage",
+          "literary historical thriller",
+          "morally grey protagonist",
+          "atmospheric setting"
+        ],
+        "negative": [
+          "readers wanting action-heavy spy plots",
+          "those uninterested in Cold War history",
+          "readers preferring clear moral lines"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kanon's staccato prose and elliptical dialogue are highly atmospheric and suit a skilled audio narrator well.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Prisoners of the Castle: An Epic Story of Survival and Escape From Colditz, the Nazis' Fortress Prison - Ben Macintyre": {
@@ -148118,53 +148291,91 @@
       "author": "Ben Macintyre",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History/Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ben Macintyre's gripping narrative history of Colditz Castle, where the Nazi German army imprisoned the most defiant Allied officers during WWII, recounting the ingenious escape attempts, hidden heroism, class tensions, traitors, and desperate final months as the war closed in.",
+      "tone": "propulsive, cinematic, warts-and-all, admiringly critical",
+      "pacing": "Fast",
+      "themes": [
+        "resistance and ingenuity",
+        "captivity and freedom",
+        "class and privilege",
+        "the human spirit in extremity",
+        "myth vs. reality of wartime heroism"
+      ],
+      "setting": "Colditz Castle, Saxony, Germany, 1940–1945, during World War II",
+      "comparable_books": [
+        "Operation Mincemeat - Ben Macintyre",
+        "The Spy and the Traitor - Ben Macintyre",
+        "Unbroken - Laura Hillenbrand"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII history fans",
+          "narrative nonfiction",
+          "escape and survival stories",
+          "Macintyre fans",
+          "revisionist history that complicates myths"
+        ],
+        "negative": [
+          "readers wanting pure espionage rather than POW stories",
+          "those uninterested in military history"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Macintyre himself in the UK edition; his voice is widely praised as one of the best author-narrated audiobooks available.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Kingdom of the Blind - Louise Penny": {
       "title": "Kingdom of the Blind",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Chief Inspector Gamache is named executor of a mysterious will by a woman he never knew, drawing him into a puzzling inheritance case — while a dangerous opioid crisis and a mole inside the Sûreté threaten everything he has built.",
+      "tone": "atmospheric, contemplative, morally serious",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "justice and consequences",
+        "trust and betrayal",
+        "the opioid epidemic",
+        "community and belonging",
+        "moral compromise"
+      ],
+      "setting": "Contemporary Three Pines, Quebec, Canada — a small, fictional village near the Vermont border",
+      "comparable_books": [
+        "Still Life - Louise Penny",
+        "Glass Houses - Louise Penny",
+        "A Great Deliverance - Elizabeth George"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy-adjacent literary mystery",
+          "series readers invested in Gamache's arc",
+          "atmospheric Quebec setting",
+          "character-driven crime fiction"
+        ],
+        "negative": [
+          "readers new to the series (heavy series continuity)",
+          "those wanting faster pacing",
+          "readers uninterested in ethical philosophy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Robert Bathurst's narration of the Gamache series is considered definitive and greatly enhances the atmospheric quality.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "How Jesus Became God - Bart D. Ehrman": {
@@ -148172,53 +148383,93 @@
       "author": "Bart D. Ehrman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Religious Studies / Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "New Testament scholar Bart Ehrman traces the historical and theological evolution of how Jesus of Nazareth — a Jewish apocalyptic preacher — came to be worshipped as God by early Christians, examining how the doctrine of the divine Christ developed over the first few centuries.",
+      "tone": "scholarly yet accessible, provocative, even-handed",
+      "pacing": "Moderate",
+      "themes": [
+        "the historical Jesus",
+        "the development of Christianity",
+        "divinity and humanity",
+        "early church theology",
+        "textual criticism"
+      ],
+      "setting": "Historical — ancient Judea, the Roman Empire, and the early Christian world from roughly 30 CE to the 4th century",
+      "comparable_books": [
+        "Misquoting Jesus - Bart D. Ehrman",
+        "Jesus: A Biography - Paul Johnson",
+        "The Lost Gospel of Judas Iscariot - Bart D. Ehrman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "readers interested in biblical history and criticism",
+          "fans of Ehrman's accessible scholarly style",
+          "religious history enthusiasts",
+          "agnostics and sceptics exploring Christian origins"
+        ],
+        "negative": [
+          "readers seeking devotional or faith-affirming content",
+          "those wanting purely academic theology without narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "La Belle Sauvage - Philip Pullman": {
       "title": "La Belle Sauvage",
       "author": "Philip Pullman",
       "series": "The Book of Dust",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set a decade before His Dark Materials, eleven-year-old Malcolm Polstead — aided by his canoe La Belle Sauvage — shelters the infant Lyra Belacqua from sinister forces of the Magisterium and is swept into a dangerous flood-journey that blurs the line between the real and the mythic.",
+      "tone": "lyrical, dark, mythically charged, wonder-filled",
+      "pacing": "Moderate",
+      "themes": [
+        "innocence and its protection",
+        "authoritarianism and resistance",
+        "the nature of daemons",
+        "fate and destiny",
+        "the boundaries of reality"
+      ],
+      "setting": "Pullman's alternative Britain — Oxford and the surrounding countryside, in a world of daemons, Dust, and the Magisterium",
+      "comparable_books": [
+        "Northern Lights - Philip Pullman",
+        "The Secret Commonwealth - Philip Pullman",
+        "The Night Circus - Erin Morgenstern"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "His Dark Materials fans",
+          "lyrical fantasy",
+          "child protagonist with adult themes",
+          "world-building enthusiasts",
+          "prequel stories"
+        ],
+        "negative": [
+          "readers expecting the same pace as Northern Lights",
+          "those wanting Lyra as central protagonist",
+          "readers uninterested in extended mythic sequences"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Michael Sheen's narration is widely considered outstanding and deeply suited to the lyrical prose.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Manson - Jeff Guinn": {
@@ -148226,53 +148477,94 @@
       "author": "Jeff Guinn",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "True Crime / Biography",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drawing on previously unavailable family sources, Jeff Guinn traces Charles Manson's life from a neglected, criminal childhood through his manipulation of the 1960s counterculture to build his murderous Family, culminating in the 1969 Tate-LaBianca killings.",
+      "tone": "hard-boiled, rigorously factual, compulsively readable",
+      "pacing": "Moderate",
+      "themes": [
+        "cult psychology and manipulation",
+        "the dark side of 1960s America",
+        "criminality and exploitation",
+        "fame and power",
+        "race and paranoia"
+      ],
+      "setting": "America, 1930s–1970s — rural poverty, California prisons, and the late-1960s Los Angeles counterculture scene",
+      "comparable_books": [
+        "Helter Skelter - Vincent Bugliosi",
+        "The Road to Jonestown - Jeff Guinn",
+        "I'll Be Gone in the Dark - Michelle McNamara"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime enthusiasts",
+          "cultural history of 1960s America",
+          "biography of notorious figures",
+          "compulsively readable narrative nonfiction"
+        ],
+        "negative": [
+          "readers seeking psychological analysis over factual narrative",
+          "those wanting fictional dramatisation",
+          "readers sensitive to graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "His Majesty's Dragon - Naomi Novik": {
       "title": "His Majesty's Dragon",
       "author": "Naomi Novik",
       "series": "Temeraire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "During the Napoleonic Wars, Royal Navy captain Will Laurence captures a French ship carrying a dragon egg — and when it hatches, the dragon Temeraire bonds to Laurence, drawing him into Britain's Aerial Corps and an unlikely partnership that will change both their lives.",
+      "tone": "warm, adventurous, Hornblower-meets-dragon, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "duty vs. personal loyalty",
+        "the bond between human and animal",
+        "honour and service",
+        "found family",
+        "the ethics of war"
+      ],
+      "setting": "Napoleonic-era Europe — Britain, the English Channel, and aerial battlefields — in an alternate history where dragons are intelligent military partners",
+      "comparable_books": [
+        "Throne of Jade - Naomi Novik",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fantasy",
+          "human-animal bond",
+          "Napoleonic era",
+          "found family",
+          "Hornblower / Patrick O'Brian fans"
+        ],
+        "negative": [
+          "readers wanting grimdark or dark tone",
+          "those uninterested in military strategy",
+          "readers expecting magic systems over dragon relationships"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simon Vance's narration is universally praised and perfectly captures the period voice and warmth of the dragon-human relationship.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Guns of the Dawn - Adrian Tchaikovsky": {
@@ -148280,161 +148572,291 @@
       "author": "Adrian Tchaikovsky",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When revolution in neighbouring Denland sparks a grinding war, genteel noblewoman Emily Marshwic watches the conflict swallow the men of her kingdom one by one — until conscription reaches the women, and Emily must trade her skirts for a musket and march to the front, where she begins to question everything she was fighting for.",
+      "tone": "grim, emotionally rich, Austen-meets-war-epic, thought-provoking",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the true cost of war",
+        "gender and duty",
+        "class and society",
+        "moral disillusionment",
+        "loyalty and conscience"
+      ],
+      "setting": "A secondary-world fantasy inspired by Regency-era Europe, with flintlock weapons, warlocks, and revolutionary politics",
+      "comparable_books": [
+        "All the Light We Cannot See - Anthony Doerr",
+        "The Red Badge of Courage - Stephen Crane",
+        "Daughter of the Empire - Feist & Wurts"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "female protagonist",
+          "slow-burn character study",
+          "social commentary through fantasy",
+          "Jane Austen sensibility meets war"
+        ],
+        "negative": [
+          "readers wanting high magic or elaborate magic systems",
+          "those expecting fast action from page one",
+          "grimdark-only readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hell Bent - Leigh Bardugo": {
       "title": "Hell Bent",
       "author": "Leigh Bardugo",
       "series": "Alex Stern",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Galaxy 'Alex' Stern assembles a team of unlikely allies — including several murderers — to perform an ancient ritual and break her mentor Darlington out of literal Hell, while something far deadlier begins killing faculty on Yale's campus.",
+      "tone": "dark academia, gritty, witty, emotionally raw",
+      "pacing": "Moderate",
+      "themes": [
+        "privilege and exploitation",
+        "trauma and redemption",
+        "the price of power",
+        "loyalty",
+        "the occult and institutional corruption"
+      ],
+      "setting": "Contemporary Yale University, New Haven, Connecticut — beneath which lies an underbelly of secret magical societies and gateways to the underworld",
+      "comparable_books": [
+        "Ninth House - Leigh Bardugo",
+        "The Atlas Six - Olivia Blake",
+        "Vicious - V.E. Schwab"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark academia",
+          "morally grey heroine",
+          "secret society magic",
+          "queer characters",
+          "Bardugo fans",
+          "urban fantasy with literary depth"
+        ],
+        "negative": [
+          "must read Ninth House first",
+          "readers wanting fast-paced light fantasy",
+          "those put off by gritty trauma themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Grand Conspiracy - Janny Wurts": {
       "title": "Grand Conspiracy",
       "author": "Janny Wurts",
       "series": "Wars of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Arithon, Master of Shadow, becomes the target of a vast conspiracy when the ruthless Koriathain sorceresses create a body-double to lure him into a trap, while his half-brother Lysaer's cult of divine light grows ever more dangerous and all-consuming.",
+      "tone": "lyrical, dense, morally ambiguous, epic",
+      "pacing": "Slow",
+      "themes": [
+        "false religion and manipulation",
+        "the nature of good and evil",
+        "moral complexity of both sides",
+        "sacrifice and compassion",
+        "free will vs. cursed fate"
+      ],
+      "setting": "The world of Athera — a richly built secondary world of feuding kingdoms, sorcerers, and ancient covenants, centuries into a cursed half-brothers' conflict",
+      "comparable_books": [
+        "Curse of the Mistwraith - Janny Wurts",
+        "Fugitive Prince - Janny Wurts",
+        "The Wheel of Time - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic high fantasy",
+          "lyrical dense prose",
+          "morally complex characters",
+          "readers who prize world-building over action",
+          "series devotees"
+        ],
+        "negative": [
+          "new readers (must start from Book 1)",
+          "readers wanting fast action",
+          "those put off by extremely dense prose style"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Extremely dense, lyrical prose with complex world-building, political scheming, and layered backstory requires careful reading to follow; print allows re-reading of key passages.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fated - Benedict Jacka": {
       "title": "Fated",
       "author": "Benedict Jacka",
       "series": "An Alex Verus Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alex Verus runs a magic shop in Camden, London, and survives by using his divination powers to see the most likely futures — but when both Light and Dark mage factions demand he help them open a dangerous relic from an ancient mage war, his odds of living through it drop to nearly zero.",
+      "tone": "breezy, action-driven, wry, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "neutrality and complicity",
+        "mage faction politics",
+        "survival by wit",
+        "the ethics of power",
+        "hidden worlds"
+      ],
+      "setting": "Contemporary London — Camden specifically — with a hidden world of mages, magical artefacts, and faction politics layered beneath ordinary city life",
+      "comparable_books": [
+        "Storm Front - Jim Butcher",
+        "Rivers of London - Ben Aaronovitch",
+        "The Magicians - Lev Grossman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Dresden Files fans",
+          "London urban fantasy",
+          "fast-paced magic action",
+          "wisecracking male protagonist",
+          "light-and-dark mage politics"
+        ],
+        "negative": [
+          "readers wanting deep world-building from book one",
+          "those seeking grimdark or literary depth",
+          "readers expecting romance subplots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Glass Houses - Louise Penny": {
       "title": "Glass Houses",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Chief Inspector Gamache is on trial in Montreal — the outcome of a controversial decision he made involving the drug trade — and in flashback we learn how a black-cloaked figure standing silently in Three Pines set in motion a chain of events with massive, irreversible consequences.",
+      "tone": "atmospheric, contemplative, morally anguished, suspenseful",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "moral compromise for the greater good",
+        "justice and the law",
+        "the opioid crisis",
+        "trust and institutional loyalty",
+        "accountability"
+      ],
+      "setting": "Three Pines, Quebec, and Montreal courthouse — contemporary Canada, with a mystery unfolding in dual timeline",
+      "comparable_books": [
+        "Kingdom of the Blind - Louise Penny",
+        "Still Life - Louise Penny",
+        "The Dry - Jane Harper"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Gamache series fans",
+          "literary crime fiction",
+          "morally complex protagonist",
+          "atmospheric Quebec setting",
+          "dual-timeline structure"
+        ],
+        "negative": [
+          "new readers (pivotal series entry, requires context)",
+          "those wanting lighter cozy mystery",
+          "readers put off by slow build"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Robert Bathurst's narration is iconic for this series and greatly enhances the dual-timeline courtroom and village atmosphere.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fugitive Prince - Janny Wurts": {
       "title": "Fugitive Prince",
       "author": "Janny Wurts",
       "series": "Wars of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Arithon, Master of Shadow, is driven into desperate flight as Lysaer forges a new alliance with the Koriathain sorceresses and a cult of divine persecution grows around the Prince of Light, threatening to consume the world in holy war.",
+      "tone": "lyrical, dense, morally ambiguous, dark",
+      "pacing": "Slow",
+      "themes": [
+        "cursed enmity and its cost",
+        "the rise of false religion",
+        "sacrifice and compassion",
+        "political manipulation",
+        "the burden of leadership"
+      ],
+      "setting": "The world of Athera — a secondary world of ancient covenants, rival kingdoms, sorcerers, and a centuries-long cursed war between two half-brothers",
+      "comparable_books": [
+        "Grand Conspiracy - Janny Wurts",
+        "Curse of the Mistwraith - Janny Wurts",
+        "A Song of Ice and Fire - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic high fantasy devotees",
+          "morally ambiguous protagonists on both sides",
+          "lyrical dense prose",
+          "long-form series investment"
+        ],
+        "negative": [
+          "new readers (must start from Book 1)",
+          "readers wanting clear heroes and villains",
+          "those put off by extremely slow pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "As with the whole Wars of Light and Shadow series, the prose density and complex world architecture demand close attention; print allows re-reading and reference.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fair Warning - Michael Connelly": {
