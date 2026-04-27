@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2666,
-  "total_pending": 1934,
+  "total_catalogued": 2686,
+  "total_pending": 1914,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -152725,405 +152725,729 @@
       "title": "The Moon Tartan",
       "author": "Raymond St. Elmo",
       "series": "Quest of the Five Clans",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rayne Gray, a philosophical and often violent man, honeymoons with his vampiric bride in their castle while haunted by ghosts and mad in-laws — yet duty calls him south to confront his betrayers before they can unleash industrial apocalypse on a new age.",
+      "tone": "darkly comic, madcap, philosophical, picaresque",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and madness",
+        "vengeance",
+        "industrialisation vs. magic",
+        "family and clan loyalty",
+        "appearance vs. reality"
+      ],
+      "setting": "Alternate 19th-century Europe at the dawn of industrialisation, populated with vampires, minotaurs, and warring clans of mad geniuses",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "A Wizard of Earthsea - Ursula K. Le Guin",
+        "The Anubis Gates - Tim Powers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic tone",
+          "philosophical protagonist",
+          "magic realism influences",
+          "eccentric cast",
+          "propulsive first-person voice",
+          "vampires and monsters"
+        ],
+        "negative": [
+          "readers wanting linear plot",
+          "those disliking deliberate narrative chaos",
+          "readers preferring clear-cut heroes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "From the Ashes - B. S. H. Garcia": {
       "title": "From the Ashes",
       "author": "B. S. H. Garcia",
       "series": "The Heart of Quinaria",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel novelette set two thousand years before the main series, following rebel leader Igtheos as he accepts a dangerous armistice from a would-be dictator in a desperate last-ditch attempt to save his people and loved ones from destruction.",
+      "tone": "bittersweet, dark, emotionally charged, fast-paced",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and survival",
+        "family and parental love",
+        "tyranny and resistance",
+        "hope vs. caution"
+      ],
+      "setting": "The ancient world of Quinaria, two thousand years before the main series, amid a civil war against a would-be dictator",
+      "comparable_books": [
+        "A Memory Called Empire - Arkady Martine",
+        "The Blade Itself - Joe Abercrombie",
+        "Children of Blood and Bone - Tomi Adeyemi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey characters",
+          "rich worldbuilding",
+          "fast reads",
+          "diverse cast",
+          "dark stakes",
+          "prequel lore"
+        ],
+        "negative": [
+          "readers wanting standalone completeness",
+          "those averse to grimdark-adjacent content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "From the Depths - B. S. H. Garcia": {
       "title": "From the Depths",
       "author": "B. S. H. Garcia",
       "series": "The Heart of Quinaria",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel novella set roughly a thousand years before the main series, following the children of a notorious pirate family — Konar and Karliah — as their parents accept a seemingly impossible imperial bounty to retrieve a mythical artefact, putting the family's bonds and lives at risk.",
+      "tone": "adventurous, emotionally intense, atmospheric, fast-paced",
+      "pacing": "Fast",
+      "themes": [
+        "family bonds and loyalty",
+        "childhood innocence in a brutal world",
+        "greed and power",
+        "sacrifice",
+        "sibling relationships"
+      ],
+      "setting": "The world of Quinaria roughly a thousand years before the main series, featuring seafaring pirates, jungles, and mythical creatures",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Piranesi - Susanna Clarke",
+        "Children of Blood and Bone - Tomi Adeyemi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "pirate adventures",
+          "sibling dynamics",
+          "rich worldbuilding",
+          "morally grey characters",
+          "dark stakes",
+          "fast novellas"
+        ],
+        "negative": [
+          "readers wanting standalone completeness",
+          "those expecting series context without prior reading"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lightblade - Zamil Akhtar": {
       "title": "Lightblade",
       "author": "Zamil Akhtar",
       "series": "Lightblade Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jyosh, a slave in a world where sunlight can be wielded as magic, acquires a black-market dream-stone that trains him in the art of the lightblade while he sleeps — but when he wakes to find a terrifying new enemy threatening to burn everything down, his dream-forged skills face their ultimate test.",
+      "tone": "dark, surreal, mind-bending, action-packed, philosophical",
+      "pacing": "Moderate",
+      "themes": [
+        "slavery and liberation",
+        "dreams vs. reality",
+        "power and its cost",
+        "nihilism and purpose",
+        "identity"
+      ],
+      "setting": "The Dayworld — a secondary world where sunlight never sets and can be refracted into magical energy, featuring sky ships, dragon gods, and a dreamscape dimension",
+      "comparable_books": [
+        "Cradle series - Will Wight",
+        "Gunmetal Gods - Zamil Akhtar",
+        "The Stormlight Archive - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "dream/reality blurring",
+          "light-based magic systems",
+          "dark and surreal tone",
+          "philosophical musings",
+          "South/East Asian cultural influences"
+        ],
+        "negative": [
+          "readers wanting clean linear plots",
+          "those disliking philosophical tangents",
+          "readers averse to surreal or Inception-style narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Scarlet Blade - Jack Fields": {
       "title": "Scarlet Blade",
       "author": "Jack Fields",
       "series": "Walking Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ten years after joining the Scarlet Citadel, the now-legendary agent Hughes investigates a series of murders linked to the myth of Spring-Heeled Jack, while his girlfriend Cate leads a team of fighters into a monster-filled otherworld — and both face greater darkness than they ever anticipated.",
+      "tone": "darkly comic, emotionally resonant, genre-blending, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "grief and loss",
+        "partnership and love",
+        "duty vs. personal cost",
+        "myth and reality",
+        "found family"
+      ],
+      "setting": "The steampunk-meets-neon-gothic metropolis of Corinth City and the otherworld of Euridyce, ten years after the first book",
+      "comparable_books": [
+        "The Dresden Files - Jim Butcher",
+        "Perdido Street Station - China Miéville",
+        "The Stormcaller - Tom Lloyd"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dual-POV narratives",
+          "monster hunting",
+          "noir mystery elements",
+          "emotionally complex characters",
+          "genre mash-ups",
+          "Baldur's Gate 3 fans"
+        ],
+        "negative": [
+          "readers wanting series read in order",
+          "those averse to grief-heavy storylines",
+          "child loss content warning readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Dual narrators (Neil Hellegers and Tess Irondale) praised for seamless chemistry and distinct character voices.",
+      "content_flags": [
+        "graphic violence",
+        "child loss"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Scarlet Citadel - Jack Fields": {
       "title": "Scarlet Citadel",
       "author": "Jack Fields",
       "series": "Walking Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young, heartbroken, and indebted to a criminal gang in the neon-gothic city of Corinth City, Gormon Hughes pins his hopes for salvation on joining the Scarlet Citadel — a secretive organisation of monster hunters and pageant fighters — armed with a unique mind-twisting magic and a very precarious ladder to climb.",
+      "tone": "darkly comic, eccentric, propulsive, oddly cozy",
+      "pacing": "Fast",
+      "themes": [
+        "self-reinvention",
+        "ambition and its cost",
+        "belonging",
+        "magic and power",
+        "class and debt"
+      ],
+      "setting": "Corinth City — a steampunk-meets-neon-gothic metropolis with cybernetic limbs, flaming skeleton biker gangs, and sinister monsters",
+      "comparable_books": [
+        "Perdido Street Station - China Miéville",
+        "He Who Fights with Monsters - Jason Cheyne",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy elements",
+          "monster hunting",
+          "eccentric worldbuilding",
+          "darkly comic tone",
+          "Baldur's Gate 3 fans",
+          "D&D-inspired fiction"
+        ],
+        "negative": [
+          "readers wanting high realism",
+          "those averse to blended genre settings",
+          "pure grimdark readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Dual narrators praised for seamless performance that enhances the story's tone and dual-POV structure.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Season of Ravens - J. R. Snyder": {
       "title": "A Season of Ravens",
       "author": "J. R. Snyder",
       "series": "Sin Eater Tales",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Asher Norwood, a sin eater — a guild mage who combats dark magic — and his raven companion Aethon travel the world of Eyora confronting werewolves, haunted forests, angry spirits, and ancient vampires across a collection of eight interconnected short stories.",
+      "tone": "cozy-dark, medieval-folklore, adventurous, warmly episodic",
+      "pacing": "Fast",
+      "themes": [
+        "duty and sacrifice",
+        "nature and magic",
+        "outcasts and belonging",
+        "good vs. dark magic",
+        "companionship"
+      ],
+      "setting": "The fantasy world of Eyora, where magic is intertwined with nature and corruption births monsters — spanning enchanted forests, mountains, seas, and cities",
+      "comparable_books": [
+        "The Witcher series - Andrzej Sapkowski",
+        "A Wizard's Guide to Defensive Baking - T. Kingfisher",
+        "Monster Hunter International - Larry Correia"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "monster-of-the-week episodic format",
+          "cozy-dark tone",
+          "animal companions",
+          "short story collections",
+          "medieval folklore",
+          "lighter fantasy reads"
+        ],
+        "negative": [
+          "readers wanting a single sustained plot arc",
+          "those wanting grimdark intensity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ruins of Smoke - João F. Silva": {
       "title": "Ruins of Smoke",
       "author": "João F. Silva",
       "series": "The Smokesmiths",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel novella set thousands of years before the main series, following four POV characters — including a young smokesmith and an imperial general — as they fight to save the Usharian Empire's capital from a devastating assault by an avatar of the ancient Deceiver.",
+      "tone": "grimdark, action-packed, emotionally intense, epic in scope",
+      "pacing": "Fast",
+      "themes": [
+        "duty and sacrifice",
+        "good vs. evil",
+        "family and loyalty",
+        "faith and power",
+        "the cost of war"
+      ],
+      "setting": "The Usharian Empire of the Known World, thousands of years before the main series, during a single cataclysmic battle for the capital city of Ushar",
+      "comparable_books": [
+        "Seeds of War - João F. Silva",
+        "The First Law - Joe Abercrombie",
+        "The Rage of Dragons - Evan Winter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark action",
+          "multi-POV battle scenes",
+          "unique smoke-based magic",
+          "morally complex characters",
+          "epic scale in novella format",
+          "indie SFF"
+        ],
+        "negative": [
+          "readers wanting slow-burn worldbuilding",
+          "those preferring to start with the main novel"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Scarlet War - Jack Fields": {
       "title": "Scarlet War",
       "author": "Jack Fields",
       "series": "Walking Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Now President-Elect of his country, Hughes forges diplomatic alliances across worlds while Cate commands the Scarlet Army in a brutal multi-world war — and a dark secret about their daughter Evelyn, who may be the reincarnation of a serial killer, threatens to tear them apart.",
+      "tone": "darkly comic, emotionally climactic, bittersweet, action-packed",
+      "pacing": "Fast",
+      "themes": [
+        "war and its cost",
+        "family and identity",
+        "reincarnation",
+        "power and diplomacy",
+        "love under pressure"
+      ],
+      "setting": "Multiple worlds including Corinth City and the otherworld of Euridyce, roughly twenty years after the series begins",
+      "comparable_books": [
+        "The Dresden Files - Jim Butcher",
+        "Perdido Street Station - China Miéville",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-world conflicts",
+          "series conclusions",
+          "dual-POV narratives",
+          "monster hunting",
+          "Baldur's Gate 3 fans",
+          "dark fantasy with heart"
+        ],
+        "negative": [
+          "must be read in series order",
+          "readers averse to reincarnation plotlines"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Dual narrators (Neil Hellegers and Tess Irondale) carry the series' distinct dual-POV voice with strong chemistry.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Broken Heart of Arelium - Alex Robins": {
       "title": "The Broken Heart of Arelium",
       "author": "Alex Robins",
       "series": "War of the Twelve",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Guard Merad Reed's bleak posting at the crater known as the Pit is shattered when a Knight of the Twelve arrives, triggering a catastrophic chain of events, while heiress Jelaïa del Arelium must navigate deadly court politics — as something monstrous stirs beneath the earth.",
+      "tone": "action-packed, gritty, propulsive, classic epic fantasy",
+      "pacing": "Fast",
+      "themes": [
+        "duty and legacy",
+        "political intrigue",
+        "ancient evil resurgent",
+        "coming of age",
+        "loyalty and betrayal"
+      ],
+      "setting": "A secondary fantasy world of nine Baronies, four hundred years after twelve legendary warriors defeated a monstrous underground threat that is now returning",
+      "comparable_books": [
+        "The Dragonlance Chronicles - Weis & Hickman",
+        "The First Law - Joe Abercrombie",
+        "The Belgariad - David Eddings"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy feel",
+          "fast-paced battles",
+          "dual POV",
+          "knights and monsters",
+          "political intrigue",
+          "clean prose"
+        ],
+        "negative": [
+          "readers wanting subversive or grimdark deconstructions",
+          "those preferring character-first pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Ashen Hand of Kessrin - Alex Robins": {
       "title": "The Ashen Hand of Kessrin",
       "author": "Alex Robins",
       "series": "War of the Twelve",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of Arelium's siege, a scarred Reed investigates a disaster to the north, Jelaïa struggles with dangerous emerging powers, and the treacherous Lord Praxis acts as Regent — while an awakening ancient demi-god advances to lay waste to the lands of men.",
+      "tone": "action-packed, intrigue-heavy, propulsive, classic epic fantasy",
+      "pacing": "Fast",
+      "themes": [
+        "aftermath of war",
+        "political betrayal",
+        "emerging power and its cost",
+        "ancient evil",
+        "loyalty"
+      ],
+      "setting": "The nine Baronies, following directly from Book 1, expanding into the coastal Barony of Kessrin and beyond",
+      "comparable_books": [
+        "The Dragonlance Chronicles - Weis & Hickman",
+        "The First Law - Joe Abercrombie",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series fantasy continuation",
+          "political intrigue",
+          "expanding multi-POV",
+          "fast-paced battles",
+          "ancient demi-gods"
+        ],
+        "negative": [
+          "must be read in order",
+          "readers wanting standalone arcs"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Burning Tears of Morlak - Alex Robins": {
       "title": "The Burning Tears of Morlak",
       "author": "Alex Robins",
       "series": "War of the Twelve",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jelaïa and Derello must rally weakened armies to reclaim the north from the greylings, while Reed languishes imprisoned in Morlak keep — and only the enigmatic ex-criminal Jeffson stands any chance of breaking its impregnable defences from within.",
+      "tone": "action-packed, dark, propulsive, escalating stakes",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and imprisonment",
+        "redemption and past sins",
+        "war at apocalyptic scale",
+        "ancient gods awakening",
+        "unlikely heroes"
+      ],
+      "setting": "The nine Baronies under siege, with the Barony of Talth in greyling hands and Morlak keep as a key battleground",
+      "comparable_books": [
+        "The Dragonlance Chronicles - Weis & Hickman",
+        "The First Law - Joe Abercrombie",
+        "The Stormlight Archive - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "prison break plots",
+          "reluctant anti-heroes",
+          "escalating epic fantasy",
+          "fast-paced battles",
+          "new POV characters"
+        ],
+        "negative": [
+          "must be read in order",
+          "readers wanting more political intrigue over action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Winter of the Witch - Katherine Arden": {
       "title": "The Winter of the Witch",
       "author": "Katherine Arden",
       "series": "The Winternight Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Vasilisa Petrovna, branded a witch and her home destroyed, must cross into the world of Russian spirits and forge an alliance with Morozko, the winter king, to stop a dark power that threatens both the mortal world and the realm of magic during the Mongol invasion of medieval Russia.",
+      "tone": "lyrical, atmospheric, bittersweet, mythic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "female agency and power",
+        "faith vs. magic",
+        "sacrifice",
+        "identity",
+        "the death of the old ways"
+      ],
+      "setting": "Medieval Russia during the Mongol invasions, woven through with Russian folklore and the spirit world",
+      "comparable_books": [
+        "Deathless - Catherynne M. Valente",
+        "The Bear and the Nightingale - Katherine Arden",
+        "Uprooted - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "Russian folklore",
+          "strong female protagonists",
+          "bittersweet endings",
+          "mythic tone",
+          "series conclusions"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "those disliking slow atmospheric fantasy",
+          "must be read in series order"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Kathleen Gati, whose voice is widely praised as perfectly suited to the lyrical, atmospheric prose.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "An Honorable Man - Paul Vidich": {
       "title": "An Honorable Man",
       "author": "Paul Vidich",
       "series": "George Mueller",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Spy Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "CIA officer George Mueller is tasked with uncovering a Soviet mole within the Agency during the early Cold War, a hunt that forces him to suspect colleagues and confront the moral compromises at the heart of intelligence work.",
+      "tone": "quiet, morally complex, atmospheric, literary spy fiction",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "loyalty and betrayal",
+        "moral compromise",
+        "Cold War paranoia",
+        "identity",
+        "institutional trust"
+      ],
+      "setting": "Washington D.C. and the early CIA, 1950s Cold War era",
+      "comparable_books": [
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Company - Robert Baer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "moral ambiguity",
+          "Cold War setting",
+          "quiet tension",
+          "le Carré fans"
+        ],
+        "negative": [
+          "readers wanting action-heavy thrillers",
+          "those disliking slow-burn narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A World of Curiosities - Louise Penny": {
       "title": "A World of Curiosities",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 18",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Chief Inspector Gamache and his team in Three Pines face a threat rooted in a decades-old tragedy when two young siblings, orphaned by a murder years ago, return to the village with unresolved trauma and dangerous intentions.",
+      "tone": "cozy-dark, emotionally resonant, atmospheric, character-driven",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "trauma and healing",
+        "community and belonging",
+        "the past haunting the present",
+        "justice vs. vengeance",
+        "family"
+      ],
+      "setting": "The idyllic but deceptively dark village of Three Pines, Québec, Canada, contemporary",
+      "comparable_books": [
+        "The Thursday Murder Club - Richard Osman",
+        "Still Life - Louise Penny",
+        "In the Woods - Tana French"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery fans",
+          "character-driven series",
+          "atmospheric Quebec setting",
+          "emotional depth",
+          "long-running series devotees"
+        ],
+        "negative": [
+          "readers wanting fast-paced thrillers",
+          "new readers unfamiliar with the series",
+          "those preferring action-driven plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Robert Bathurst, widely lauded as the definitive voice of the Gamache series — warmly atmospheric and character-perfect.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Epic Fantasy Story Bundle - J. D. L. Rosell": {
@@ -153131,107 +153455,191 @@
       "author": "J. D. L. Rosell",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of prequel short stories serving as introductions to four of J.D.L. Rosell's series: Ranger of the Titan Wilds, Legend of Tal, The Runewar Saga, and The Famine Cycle — offered as a reader-magnet sampler bundle.",
+      "tone": "adventurous, varied by story, classic epic fantasy",
+      "pacing": "Fast",
+      "themes": [
+        "heroism",
+        "magic and destiny",
+        "adventure",
+        "sacrifice"
+      ],
+      "setting": "Multiple secondary fantasy worlds across Rosell's interconnected series",
+      "comparable_books": [
+        "A King's Bargain - J.D.L. Rosell",
+        "The Throne of Ice & Ash - J.D.L. Rosell",
+        "Ranger of the Titan Wilds - J.D.L. Rosell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "series samplers",
+          "world-hopping",
+          "heroic protagonists",
+          "Tolkien-adjacent tone"
+        ],
+        "negative": [
+          "readers wanting standalone deep stories",
+          "those expecting novel-length content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Short story bundle format works best in print/ebook as a series sampler; no known full audio production.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Blackfire Blade - James Logan": {
       "title": "The Blackfire Blade",
       "author": "James Logan",
       "series": "The Last Legacy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lukan Gardova, his thief companion Ashra, and street-rat Flea arrive in the frozen city of Korslakov to access his father's vault at the Blackfire Bank — but when Lukan drunkenly loses the key to a mysterious thief, the trio are dragged into a web of murder, ancient alchemical secrets, and noble conspiracies.",
+      "tone": "propulsive, witty, darkly comic, adventurous, emotionally rewarding",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "atonement and vengeance",
+        "identity and legacy",
+        "ambition and betrayal",
+        "friendship under pressure"
+      ],
+      "setting": "The frozen northern city of Korslakov, famous for technological marvels and alchemical ingenuity, in a richly detailed secondary world of the Old Empire",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Among Thieves - M.J. Kuhn",
+        "The Riyria Revelations - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "heist and caper plots",
+          "witty banter",
+          "rogues and thieves",
+          "fast-paced adventures",
+          "Kirkus starred review"
+        ],
+        "negative": [
+          "must be read in series order",
+          "readers wanting grimdark intensity over wit"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Prince of Fools - Mark Lawrence": {
       "title": "Prince of Fools",
       "author": "Mark Lawrence",
       "series": "The Red Queen's War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Prince Jalan Kendeth — a coward and hedonist — is magically bound to the taciturn Viking Snorri ver Snagason and dragged on a quest to the frozen north, where the Red Queen's secret war against the forces of death and undeath reaches its most dangerous front.",
+      "tone": "darkly comic, propulsive, morally ambiguous, buddy-comedy grimdark",
+      "pacing": "Fast",
+      "themes": [
+        "cowardice and courage",
+        "unlikely friendship",
+        "duty vs. self-preservation",
+        "death and the undead",
+        "fate and free will"
+      ],
+      "setting": "A far-future post-apocalyptic Europe reimagined as a medieval world, spanning from the Broken Empire to the Viking north",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic tone",
+          "morally grey protagonist",
+          "buddy-comedy dynamics",
+          "grimdark with humour",
+          "anti-hero POV",
+          "fast-paced adventure"
+        ],
+        "negative": [
+          "readers wanting noble heroes",
+          "those disliking cowardly or selfish protagonists",
+          "readers averse to grimdark"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds delivers an exceptional performance that perfectly captures Jalan's roguish, comedic voice.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Life for a Life - Andy Peloquin": {
       "title": "Life for a Life",
       "author": "Andy Peloquin",
       "series": "The Last Bucelarii",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Hunter of Voramis, legendary immortal assassin, pursues vengeance against a deceitful client in a single blood-soaked night — a fast-paced short story introducing the dark world of the series and its morally complex anti-hero.",
+      "tone": "grimdark, fast-paced, violent, tense",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance and justice",
+        "moral code of a killer",
+        "loyalty and betrayal",
+        "corruption"
+      ],
+      "setting": "The medieval-dark-fantasy city of Voramis on the world of Einan",
+      "comparable_books": [
+        "Brent Weeks' Night Angel Trilogy",
+        "The First Law - Joe Abercrombie",
+        "Darkblade Assassin - Andy Peloquin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anti-hero assassins",
+          "grimdark short fiction",
+          "sentient magical weapons",
+          "dark morality plays",
+          "series samplers"
+        ],
+        "negative": [
+          "readers wanting heroic protagonists",
+          "those averse to graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wager - David Grann": {
@@ -153239,26 +153647,48 @@
       "author": "David Grann",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The true story of the HMS Wager, a British man-of-war that wrecked off Patagonia in 1741, and the extraordinary survival odyssey and bitter dispute that erupted among its castaways — ultimately becoming a trial that exposed the nature of honour, empire, and human savagery.",
+      "tone": "gripping, literary, morally probing, cinematic",
+      "pacing": "Fast",
+      "themes": [
+        "survival and endurance",
+        "authority and mutiny",
+        "empire and its costs",
+        "truth vs. perception",
+        "human nature under extreme pressure"
+      ],
+      "setting": "18th-century seas, the treacherous coast of Patagonia, and the courts of England — told through contemporary accounts and historical research",
+      "comparable_books": [
+        "Killers of the Flower Moon - David Grann",
+        "In the Heart of the Sea - Nathaniel Philbrick",
+        "The Lost City of Z - David Grann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction",
+          "survival stories",
+          "maritime history",
+          "moral complexity",
+          "cinematic storytelling",
+          "page-turning non-fiction"
+        ],
+        "negative": [
+          "readers wanting fiction",
+          "those preferring strictly academic history"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Read by the author with a full cast for dramatized sections; the audiobook was widely praised for its immersive production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Forge of Darkness - Steven Erikson": {
