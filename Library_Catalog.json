@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2906,
-  "total_pending": 1694,
+  "total_catalogued": 2926,
+  "total_pending": 1674,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -164314,27 +164314,48 @@
       "title": "Fire Watch",
       "author": "Connie Willis",
       "series": "Oxford Time Travel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (prequel novelette / story collection)",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A future Oxford history student is accidentally sent to St. Paul's Cathedral during the London Blitz instead of to the time of the apostle Paul, where he joins the fire watch and forms a deep bond with the cathedral and its people. This entry refers to both the award-winning novelette and the 1985 short story collection of the same name.",
+      "tone": "warm, emotionally resonant, historically immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "history and human connection",
+        "duty and sacrifice",
+        "time travel consequences",
+        "World War II"
+      ],
+      "setting": "London, 1940 (the Blitz), and a near-future Oxford; framed as diary entries",
+      "comparable_books": [
+        "Doomsday Book - Connie Willis",
+        "To Say Nothing of the Dog - Connie Willis",
+        "Slaughterhouse-Five - Kurt Vonnegut"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction lovers",
+          "time travel with emotional stakes",
+          "WWII settings",
+          "character-driven SF",
+          "Hugo/Nebula award fiction"
+        ],
+        "negative": [
+          "readers wanting hard science",
+          "action-heavy plots",
+          "readers who dislike short fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence (wartime bombing)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dhalgren - Samuel R. Delany": {
@@ -164342,53 +164363,102 @@
       "author": "Samuel R. Delany",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A young amnesiac known only as the Kid wanders into Bellona, a mid-western American city cut off from the world by an unknown catastrophe, where reality, time, and identity are perpetually unstable. The novel is a dense, experimental, and deliberately circular meditation on race, sexuality, art, and the nature of perception.",
+      "tone": "hallucinatory, labyrinthine, transgressive, Joycean",
+      "pacing": "Slow",
+      "themes": [
+        "identity and memory",
+        "race and sexuality",
+        "the nature of reality",
+        "art and creativity",
+        "social collapse"
+      ],
+      "setting": "Bellona, a fictional collapsed American Midwestern city; indeterminate near-future",
+      "comparable_books": [
+        "Naked Lunch - William S. Burroughs",
+        "Gravity's Rainbow - Thomas Pynchon",
+        "The Road - Cormac McCarthy",
+        "Nova - Samuel R. Delany"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "experimental / postmodern literature",
+          "Joycean prose",
+          "LGBTQ+ themes",
+          "challenging cult classics",
+          "literary SF"
+        ],
+        "negative": [
+          "readers wanting plot resolution",
+          "conventional narrative structure",
+          "fast pacing",
+          "genre SF readers expecting action"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "The novel's structural complexity, circular text, stream-of-consciousness passages, and typographic experiments are deeply dependent on the reading experience; audio loses critical perceptual effects.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dawn - Octavia E. Butler": {
       "title": "Dawn",
       "author": "Octavia E. Butler",
       "series": "Xenogenesis",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After humanity nearly destroys itself in nuclear war, Lilith Iyapo awakens aboard an alien spacecraft where the gene-trading Oankali have preserved the last humans, intending to merge their species — with or without human consent. Lilith must navigate a deeply unsettling first contact that challenges every notion of identity, autonomy, and what it means to be human.",
+      "tone": "unsettling, philosophically provocative, claustrophobic",
+      "pacing": "Moderate",
+      "themes": [
+        "bodily autonomy",
+        "colonialism and consent",
+        "species survival",
+        "otherness and identity",
+        "power and coercion"
+      ],
+      "setting": "Aboard an Oankali spacecraft, post-nuclear-war future Earth revival",
+      "comparable_books": [
+        "Kindred - Octavia E. Butler",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Parable of the Sower - Octavia E. Butler",
+        "Embassytown - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "afrofuturism",
+          "morally complex first contact",
+          "feminist SF",
+          "challenging genre-defying fiction",
+          "literary science fiction"
+        ],
+        "negative": [
+          "readers wanting clear heroes/villains",
+          "action-heavy plots",
+          "comfort reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dark Money - Jane Mayer": {
@@ -164396,26 +164466,45 @@
       "author": "Jane Mayer",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Investigative journalist Jane Mayer traces how a network of ultra-wealthy conservative donors — led by the Koch brothers — used secretive funding channels to reshape American politics, policy, and public opinion over several decades. A landmark work of political journalism exposing the influence of billionaire money on democracy.",
+      "tone": "investigative, urgent, rigorously researched",
+      "pacing": "Moderate",
+      "themes": [
+        "political corruption",
+        "wealth and power",
+        "American democracy",
+        "media and propaganda",
+        "climate denial"
+      ],
+      "setting": "Contemporary United States; political and financial institutions",
+      "comparable_books": [
+        "Dark Money - Jane Mayer",
+        "Bad Blood - John Carreyrou",
+        "The Fifth Risk - Michael Lewis",
+        "Democracy in Chains - Nancy MacLean"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political nonfiction readers",
+          "investigative journalism fans",
+          "interest in American political economy",
+          "readers of The New Yorker-style reporting"
+        ],
+        "negative": [
+          "readers wanting narrative nonfiction storytelling",
+          "those seeking ideologically neutral framing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Circe - Madeline Miller": {
@@ -164423,26 +164512,50 @@
       "author": "Madeline Miller",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The daughter of the sun god Helios discovers she possesses the power of witchcraft, and over millennia she encounters legendary figures — Daedalus, Medea, Odysseus — while forging an identity apart from the gods who dismiss her. A feminist reimagining of Greek myth told from the margins of the Olympian world.",
+      "tone": "lyrical, introspective, mythic, quietly feminist",
+      "pacing": "Moderate",
+      "themes": [
+        "female power and autonomy",
+        "identity and transformation",
+        "mythology retold",
+        "solitude and self-discovery",
+        "mortality"
+      ],
+      "setting": "Ancient Greece and the mythological world; the island of Aeaea and beyond",
+      "comparable_books": [
+        "The Song of Achilles - Madeline Miller",
+        "A Thousand Ships - Natalie Haynes",
+        "The Penelopiad - Margaret Atwood",
+        "House of Names - Colm Tóibín"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Greek mythology retellings",
+          "feminist fantasy",
+          "lyrical prose",
+          "character-driven historical fantasy",
+          "strong female protagonists"
+        ],
+        "negative": [
+          "readers wanting action-driven plots",
+          "hard fantasy world-building",
+          "those unfamiliar with or uninterested in mythology"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Perdita Weeks's audiobook narration is widely praised as a perfect complement to Miller's lush, incantatory prose.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Boys in the Valley - Philip Fracassi": {
@@ -164450,161 +164563,297 @@
       "author": "Philip Fracassi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "At St. Vincent's Orphanage for Boys in early twentieth-century rural Pennsylvania, sixteen-year-old Peter Barlow's fragile sense of family is shattered when a dying stranger's arrival unleashes an ancient demonic evil that spreads through the boys like a sickness. A visceral coming-of-age horror novel pitting faith and courage against supernatural corruption.",
+      "tone": "gothic, relentless, claustrophobic, gory",
+      "pacing": "Fast",
+      "themes": [
+        "faith and doubt",
+        "innocence corrupted",
+        "survival",
+        "institutional cruelty",
+        "good vs evil"
+      ],
+      "setting": "A remote boys' orphanage in rural Pennsylvania, early 1900s",
+      "comparable_books": [
+        "The Exorcist - William Peter Blatty",
+        "Lord of the Flies - William Golding",
+        "The Troop - Nick Cutter",
+        "Midnight Mass - Mike Flanagan (TV)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "demonic possession horror",
+          "gothic atmosphere",
+          "coming-of-age horror",
+          "Stephen King fans",
+          "fans of The Exorcist"
+        ],
+        "negative": [
+          "readers averse to child-in-peril content",
+          "readers who dislike graphic violence",
+          "those wanting psychological subtlety over visceral horror"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Authority - Jeff VanderMeer": {
       "title": "Authority",
       "author": "Jeff VanderMeer",
       "series": "Southern Reach",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A new director known only as \"Control\" takes charge of the Southern Reach — the secret government agency that monitors the mysterious Area X — and attempts to debrief the biologist who returned from the twelfth expedition, while uncovering disturbing secrets about the agency itself. A bureaucratic and paranoid companion to Annihilation, where the horror is as much institutional as supernatural.",
+      "tone": "paranoid, claustrophobic, bureaucratic dread, slow-burn",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "institutional paranoia",
+        "identity and control",
+        "the unknowable",
+        "surveillance and power",
+        "ecological horror"
+      ],
+      "setting": "The Southern Reach government facility on the border of Area X; contemporary near-future USA",
+      "comparable_books": [
+        "Annihilation - Jeff VanderMeer",
+        "The X-Files (TV series)",
+        "Kafka's The Trial",
+        "The Peripheral - William Gibson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "weird fiction fans",
+          "Kafkaesque bureaucratic horror",
+          "readers of Annihilation",
+          "literary SF/horror crossover"
+        ],
+        "negative": [
+          "readers expecting action",
+          "those wanting answers to Area X mysteries",
+          "readers who prefer Annihilation's pace"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Blackout - Connie Willis": {
       "title": "Blackout",
       "author": "Connie Willis",
       "series": "Oxford Time Travel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three Oxford time-travelling historians — Michael, Merope, and Polly — become stranded in World War II England when their retrieval drops stop working, forcing them to survive the Blitz as ordinary civilians while desperately searching for a way home. The first half of a single novel concluded in All Clear.",
+      "tone": "warm, propulsive, emotionally devastating, richly historical",
+      "pacing": "Moderate",
+      "themes": [
+        "heroism and sacrifice",
+        "the human cost of war",
+        "the fragility of time",
+        "community and resilience",
+        "WWII Britain"
+      ],
+      "setting": "London and the English countryside, 1940–1941 (the Blitz); and 2060 Oxford",
+      "comparable_books": [
+        "All Clear - Connie Willis",
+        "Doomsday Book - Connie Willis",
+        "The Guernsey Literary and Potato Peel Pie Society - Mary Ann Shaffer",
+        "Life After Life - Kate Atkinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII historical fiction",
+          "time travel with emotional depth",
+          "ensemble casts",
+          "award-winning SF",
+          "Anglophiles"
+        ],
+        "negative": [
+          "readers wanting quick plot resolution (ends on a cliffhanger)",
+          "hard SF fans",
+          "those averse to repetitive anxiety loops in mid-section"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The richly detailed historical atmosphere and multi-character ensemble reward an immersive full-cast or expressive single-narrator audiobook experience.",
+      "content_flags": [
+        "graphic violence (wartime)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ancillary Sword - Ann Leckie": {
       "title": "Ancillary Sword",
       "author": "Ann Leckie",
       "series": "Imperial Radch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Breq, the lone surviving ancillary of a destroyed troop carrier, is given command of a ship and sent to stabilize a tea-producing system on the edge of the empire, where she must navigate colonial exploitation, political intrigue, and her own quest for justice. A tighter, more intimate follow-up to Ancillary Justice.",
+      "tone": "cool, precise, politically charged, quietly tense",
+      "pacing": "Moderate",
+      "themes": [
+        "colonialism and exploitation",
+        "identity and consciousness",
+        "loyalty and justice",
+        "class and power",
+        "gender"
+      ],
+      "setting": "The Athoek system, a colonial world in the far-future Radchaai empire",
+      "comparable_books": [
+        "Ancillary Justice - Ann Leckie",
+        "Ancillary Mercy - Ann Leckie",
+        "A Memory Called Empire - Arkady Martine",
+        "The Left Hand of Darkness - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary space opera",
+          "gender-neutral pronouns / pronoun experimentation",
+          "post-colonial SF themes",
+          "morally complex protagonist",
+          "Hugo/Nebula award fiction"
+        ],
+        "negative": [
+          "readers wanting action-heavy military SF",
+          "those who found Ancillary Justice's scale more appealing",
+          "readers wanting faster pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ancillary Mercy - Ann Leckie": {
       "title": "Ancillary Mercy",
       "author": "Ann Leckie",
       "series": "Imperial Radch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Breq's confrontation with the fractured Radchaai emperor reaches its climax as alien Presger translators arrive and the empire teeters on civil war, forcing Breq to find an unexpected path to justice that challenges the very foundations of imperial power. The satisfying conclusion to the Imperial Radch trilogy.",
+      "tone": "cool, precise, quietly subversive, warmly humanistic",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and personhood",
+        "justice vs. power",
+        "empire and its collapse",
+        "found family",
+        "AI consciousness"
+      ],
+      "setting": "The Athoek system and the wider Radchaai empire, far future",
+      "comparable_books": [
+        "Ancillary Justice - Ann Leckie",
+        "Ancillary Sword - Ann Leckie",
+        "A Desolation Called Peace - Arkady Martine",
+        "The Goblin Emperor - Katherine Addison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary space opera",
+          "AI/consciousness themes",
+          "found family dynamics",
+          "satisfying trilogy conclusions",
+          "award-winning SF"
+        ],
+        "negative": [
+          "readers wanting epic battle finales",
+          "those who dislike deliberately small-scale conclusions"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ancillary Justice - Ann Leckie": {
       "title": "Ancillary Justice",
       "author": "Ann Leckie",
       "series": "Imperial Radch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Breq, once the vast distributed consciousness of a starship with thousands of soldier-bodies, has been reduced to a single human form and is on a mission of revenge against the ruler of a galactic empire. Told in alternating timelines, the novel interrogates identity, empire, and gender through its genre-defying use of a single pronoun for all characters.",
+      "tone": "cool, cerebral, morally complex, quietly revolutionary",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and consciousness",
+        "imperialism and conquest",
+        "gender and perception",
+        "revenge and justice",
+        "AI personhood"
+      ],
+      "setting": "A vast galactic empire (the Radch), spanning multiple planets and centuries",
+      "comparable_books": [
+        "A Memory Called Empire - Arkady Martine",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Use of Weapons - Iain M. Banks",
+        "Ninefox Gambit - Yoon Ha Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Hugo/Nebula/Clarke Award sweep fiction",
+          "gender-bending SF",
+          "literary space opera",
+          "morally grey AI protagonist",
+          "post-colonial themes"
+        ],
+        "negative": [
+          "readers wanting straightforward action",
+          "those averse to pronoun experimentation",
+          "readers expecting traditional military SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Among Others - Jo Walton": {
@@ -164612,26 +164861,47 @@
       "author": "Jo Walton",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mori, a Welsh teenager recovering from a tragedy that killed her twin sister and left her with a limp, is sent to a boarding school where she escapes into science fiction novels while navigating her strange, possibly real magical abilities and her complicated relationship with her mother. A deeply personal love letter to SF fandom wrapped in an ambiguous fantasy.",
+      "tone": "introspective, gentle, bookish, bittersweet",
+      "pacing": "Slow",
+      "themes": [
+        "grief and loss",
+        "the solace of books and reading",
+        "magic and belief",
+        "belonging and outsider identity",
+        "adolescence"
+      ],
+      "setting": "England and Wales, 1979–1980; boarding school and the SF reading community",
+      "comparable_books": [
+        "The Goblin Emperor - Katherine Addison",
+        "Piranesi - Susanna Clarke",
+        "The House in the Cerulean Sea - TJ Klune",
+        "Possession - A.S. Byatt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "bookish protagonists",
+          "SF readers who love books-about-books",
+          "gentle introspective fantasy",
+          "grief narratives",
+          "Hugo/Nebula award fiction"
+        ],
+        "negative": [
+          "readers wanting plot-driven fantasy",
+          "those unfamiliar with 1970s SF references (Delany, Le Guin, etc.)",
+          "action readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "All the Birds in the Sky - Charlie Jane Anders": {
@@ -164639,215 +164909,400 @@
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Patricia, a witch, and Laurence, a mad scientist, are childhood friends whose lives diverge before colliding again as adults, as magic and technology race toward potential world-ending conflict. A genre-blending novel that playfully and poignantly asks whether science or magic — or love — can save a dying world.",
+      "tone": "whimsical, darkly comic, emotionally rich, genre-blending",
+      "pacing": "Moderate",
+      "themes": [
+        "science vs. magic / reason vs. intuition",
+        "friendship and love",
+        "ecological collapse",
+        "identity and belonging",
+        "the end of the world"
+      ],
+      "setting": "San Francisco and surrounding area, near-future; a world where magic and advanced technology coexist",
+      "comparable_books": [
+        "The Long Way to a Small, Angry Planet - Becky Chambers",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Ocean at the End of the Lane - Neil Gaiman",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "genre-blending SF/fantasy",
+          "found family and friendship",
+          "whimsical tone",
+          "ecological themes",
+          "Nebula Award fiction"
+        ],
+        "negative": [
+          "hard SF or hard fantasy purists",
+          "readers wanting consistent genre tone",
+          "those wanting epic stakes without emotional focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "An Ember in the Ashes - Sabaa Tahir": {
       "title": "An Ember in the Ashes",
       "author": "Sabaa Tahir",
       "series": "An Ember in the Ashes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a fantasy empire modelled on ancient Rome, scholar-slave Laia agrees to spy for rebels in exchange for help rescuing her brother, while Elias, the empire's finest soldier, secretly yearns to be free of the brutal regime he serves. Two characters from opposite sides of a brutal system are drawn together across a world of trials, violence, and dark magic.",
+      "tone": "propulsive, gritty, emotionally charged, romantic",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and oppression",
+        "loyalty and sacrifice",
+        "identity under tyranny",
+        "love across divides",
+        "resistance"
+      ],
+      "setting": "A fantasy world inspired by ancient Rome; the Martial Empire's military academy and Scholar slums",
+      "comparable_books": [
+        "Red Queen - Victoria Aveyard",
+        "Children of Blood and Bone - Tomi Adeyemi",
+        "Throne of Glass - Sarah J. Maas",
+        "Shadow and Bone - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA epic fantasy",
+          "dual POV romance",
+          "Roman-inspired world-building",
+          "action-packed plotting",
+          "strong female protagonist"
+        ],
+        "negative": [
+          "readers averse to YA tropes",
+          "those wanting slow-burn literary fantasy",
+          "readers uncomfortable with slavery/torture content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The dual-narrator audiobook format matches the novel's dual POV structure exceptionally well, with two narrators lending distinct voices to Laia and Elias.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "All Clear - Connie Willis": {
       "title": "All Clear",
       "author": "Connie Willis",
       "series": "Oxford Time Travel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the conclusion to the story begun in Blackout, the three stranded Oxford historians — Michael, Merope, and Polly — continue to survive the London Blitz while desperately seeking a way back to 2060, as their supervisor Dunworthy races to find them before history itself unravels. A Hugo and Nebula Award-winning epic of wartime courage and the bonds of time.",
+      "tone": "warm, emotionally devastating, historical, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "heroism and sacrifice",
+        "WWII courage",
+        "the meaning of history",
+        "time travel consequences",
+        "community and survival"
+      ],
+      "setting": "London and England, 1940–1945; 2060 Oxford (Note: intended as a single novel with Blackout)",
+      "comparable_books": [
+        "Blackout - Connie Willis",
+        "Doomsday Book - Connie Willis",
+        "Life After Life - Kate Atkinson",
+        "The Guernsey Literary and Potato Peel Pie Society - Mary Ann Shaffer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII historical fiction",
+          "time travel with emotional depth",
+          "satisfying long-novel conclusions",
+          "award-winning SF",
+          "Anglophiles"
+        ],
+        "negative": [
+          "readers who haven't read Blackout first",
+          "hard SF fans",
+          "those averse to lengthy emotional build-ups"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The richly detailed historical immersion and large ensemble cast reward an expressive audiobook narrator; the emotional payoff is particularly powerful in audio.",
+      "content_flags": [
+        "graphic violence (wartime)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Adulthood Rites - Octavia E. Butler": {
       "title": "Adulthood Rites",
       "author": "Octavia E. Butler",
       "series": "Xenogenesis",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Akin, the first human-born child with Oankali characteristics, is kidnapped by resisters who oppose the alien-human merger, and his unique nature — straddling two worlds — makes him the key to the future of both species. A deeply moral meditation on hybrid identity, coercion, and what it means to belong.",
+      "tone": "measured, philosophical, unsettling, deeply humane",
+      "pacing": "Moderate",
+      "themes": [
+        "hybrid identity",
+        "colonialism and consent",
+        "childhood and belonging",
+        "species survival",
+        "what makes us human"
+      ],
+      "setting": "Post-apocalyptic Earth being slowly terraformed by the Oankali; human and alien settlements",
+      "comparable_books": [
+        "Dawn - Octavia E. Butler",
+        "Imago - Octavia E. Butler",
+        "The Dispossessed - Ursula K. Le Guin",
+        "Embassytown - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "afrofuturism",
+          "literary SF exploring consent and colonialism",
+          "character-driven science fiction",
+          "morally complex worlds",
+          "Butler completists"
+        ],
+        "negative": [
+          "readers wanting action",
+          "those uncomfortable with the Oankali premise",
+          "comfort reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Acceptance - Jeff VanderMeer": {
       "title": "Acceptance",
       "author": "Jeff VanderMeer",
       "series": "Southern Reach",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Southern Reach trilogy concludes by shifting among multiple perspectives — including the lighthouse keeper before Area X existed — as the barrier around Area X collapses and the terrifying transformation spreads outward. The most ambitious and fragmented entry, it offers partial illumination but preserves the series' essential mystery.",
+      "tone": "elegiac, hallucinatory, disorienting, haunting",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the unknowable and unknowing",
+        "ecological transformation",
+        "memory and identity",
+        "institutional failure",
+        "the end of the human world"
+      ],
+      "setting": "The Forgotten Coast / Area X, the Southern Reach facility, and the wider world; near-future USA",
+      "comparable_books": [
+        "Annihilation - Jeff VanderMeer",
+        "Authority - Jeff VanderMeer",
+        "The Road - Cormac McCarthy",
+        "House of Leaves - Mark Z. Danielewski"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "weird fiction enthusiasts",
+          "ecological horror fans",
+          "readers comfortable with ambiguity",
+          "literary SF/horror crossover",
+          "fans of Annihilation"
+        ],
+        "negative": [
+          "readers expecting definitive answers",
+          "those who prefer linear narrative",
+          "action readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Absolution - Jeff VanderMeer": {
       "title": "Absolution",
       "author": "Jeff VanderMeer",
       "series": "Southern Reach",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Structured in three linked novellas, Absolution explores the years before Area X came to be — following a Central investigator combing through biologists' field notes, an operative whose mission into the Forgotten Coast goes catastrophically wrong, and the first formal expedition into Area X — filling in backstory while maintaining the series' signature unknowability. A 2024 prequel-companion that expands, rather than resolves, the mythology.",
+      "tone": "eerie, hallucinatory, bureaucratic dread, beautifully strange",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the origin of the unknowable",
+        "ecological horror",
+        "government complicity",
+        "identity and transformation",
+        "cosmic indifference"
+      ],
+      "setting": "The Forgotten Coast (pre-Area X), near the Gulf coast of Florida; various time periods preceding the original trilogy",
+      "comparable_books": [
+        "Annihilation - Jeff VanderMeer",
+        "Acceptance - Jeff VanderMeer",
+        "The Peripheral - William Gibson",
+        "The King in Yellow - Robert W. Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern Reach trilogy fans",
+          "weird fiction devotees",
+          "readers comfortable with ambiguity and fragmented narrative",
+          "ecological SF/horror fans"
+        ],
+        "negative": [
+          "readers wanting resolution to Area X's mysteries",
+          "those new to the series (read trilogy first)",
+          "action readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Torch Against the Night - Sabaa Tahir": {
       "title": "A Torch Against the Night",
       "author": "Sabaa Tahir",
       "series": "An Ember in the Ashes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fugitives Laia and Elias flee the empire across a dangerous landscape, hunted by a relentless Mask, as Laia seeks to break her brother out of the empire's most brutal prison. A darker, faster-paced sequel that deepens the world's mythology while raising the stakes for all its characters.",
+      "tone": "propulsive, dark, emotionally intense, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and sacrifice",
+        "identity and duty",
+        "love and survival",
+        "resistance and oppression",
+        "the costs of war"
+      ],
+      "setting": "The Martial Empire's roads, forests, and the Kauf prison; the same Roman-inspired fantasy world",
+      "comparable_books": [
+        "An Ember in the Ashes - Sabaa Tahir",
+        "Red Queen - Victoria Aveyard",
+        "Throne of Glass - Sarah J. Maas",
+        "Six of Crows - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA epic fantasy sequels",
+          "action-driven plotting",
+          "dual POV romance",
+          "prison-break narratives",
+          "fans of the first book"
+        ],
+        "negative": [
+          "readers averse to YA tropes",
+          "those wanting slower literary fantasy",
+          "readers uncomfortable with graphic violence in YA"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Dual narrator audiobook mirrors the dual POV structure effectively, with strong performances enhancing the propulsive plot.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Sky Beyond the Storm - Sabaa Tahir": {
       "title": "A Sky Beyond the Storm",
       "author": "Sabaa Tahir",
       "series": "An Ember in the Ashes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the series finale, Laia and the Blood Shrike unite against the self-declared Empress Keris Veturia and the Nightbringer as the free jinn wage apocalyptic war across the empire, while the Soul Catcher must choose between his oath to death and the life he left behind. An emotionally devastating and epic conclusion to the quartet.",
+      "tone": "epic, emotionally devastating, propulsive, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "sacrifice and love",
+        "freedom and justice",
+        "the cost of war",
+        "identity and destiny",
+        "grief and resilience"
+      ],
+      "setting": "The Martial Empire at the brink of supernatural apocalypse; the same Roman-inspired fantasy world and the spirit realm",
+      "comparable_books": [
+        "A Torch Against the Night - Sabaa Tahir",
+        "An Ember in the Ashes - Sabaa Tahir",
+        "Empire of Sand - Tasha Suri",
+        "The Poppy War - R.F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA epic fantasy series conclusions",
+          "high-stakes emotional payoff",
+          "fans of the series",
+          "multi-POV epics",
+          "romance with consequences"
+        ],
+        "negative": [
+          "readers new to the series",
+          "those wanting lighter YA fantasy",
+          "readers averse to tragedy and major character deaths"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The multi-POV audiobook narration with ensemble cast enhances the sweeping emotional scope of the series finale.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Maze of Death - Philip K. Dick": {
