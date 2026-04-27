@@ -1,9 +1,9 @@
 {
   "catalog_version": 2,
-  "last_updated": "2026-04-26",
+  "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1690,
-  "total_pending": 2910,
+  "total_catalogued": 1700,
+  "total_pending": 2900,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -89867,27 +89867,46 @@
       "title": "The Last Battle",
       "author": "C. S. Lewis",
       "series": "The Chronicles of Narnia",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The final chronicle of Narnia follows King Tirian as a false Aslan appears and the world of Narnia is brought to its apocalyptic end — culminating in a vision of the real Narnia beyond death.",
+      "tone": "elegiac, allegorical, bittersweet, mythic",
+      "pacing": "Moderate",
+      "themes": [
+        "apocalypse and endings",
+        "faith and deception",
+        "death and the afterlife",
+        "Christian allegory",
+        "the nature of reality"
+      ],
+      "setting": "Narnia and beyond, in its final days",
+      "comparable_books": [
+        "The Lion, the Witch and the Wardrobe - C. S. Lewis",
+        "The Magician's Nephew - C. S. Lewis",
+        "Perelandra - C. S. Lewis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Narnia fans",
+          "Christian allegory",
+          "mythic fantasy",
+          "childhood classics"
+        ],
+        "negative": [
+          "controversial ending — some characters excluded from 'heaven'",
+          "darker and more melancholy than earlier Narnia books",
+          "heavy-handed allegory"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full-cast BBC dramatisations and single-narrator editions (notably Kenneth Branagh) are acclaimed and suit the mythic, allegorical register perfectly.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Lion, the Witch and the Wardrobe - C. S. Lewis": {
@@ -104142,27 +104161,48 @@
       "title": "Jade City",
       "author": "Fonda Lee",
       "series": "The Green Bone Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the island of Kekon, two rival clans of jade-powered warriors — the Kaul family's No Peak clan and their rivals — fight for control of the city of Janloon as foreign powers and drug cartels threaten to upend everything they have built.",
+      "tone": "epic, propulsive, family-saga, ruthless",
+      "pacing": "Moderate",
+      "themes": [
+        "family and loyalty",
+        "organized crime",
+        "colonialism and cultural identity",
+        "power and corruption",
+        "honour"
+      ],
+      "setting": "Kekon, a fictional island nation inspired by mid-20th-century East Asia, in an era of modernization and political tension",
+      "comparable_books": [
+        "The Godfather - Mario Puzo",
+        "Tigana - Guy Gavriel Kay",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "family saga epics",
+          "crime and gangster fiction with fantasy elements",
+          "morally grey factions",
+          "propulsive multi-POV storytelling"
+        ],
+        "negative": [
+          "large cast to track",
+          "not a clean good-vs-evil story",
+          "violence is significant"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Naturalist - Andrew Mayne": {
@@ -105383,135 +105423,235 @@
       "title": "Sharp Ends",
       "author": "Joe Abercrombie",
       "series": "First Law World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7 (story collection)",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of award-winning and brand-new short stories set across the world of the First Law, featuring fan-favourite characters in side-shows, prequels, and sharp-ended vignettes from Abercrombie's grimdark world.",
+      "tone": "grimdark, sardonic, violent, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "violence and consequence",
+        "moral ambiguity",
+        "war",
+        "loyalty and betrayal",
+        "fate"
+      ],
+      "setting": "The First Law world — the Union, the North, Styria — across various time periods",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "Best Served Cold - Joe Abercrombie",
+        "The Heroes - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "First Law series fans",
+          "grimdark fantasy",
+          "short punchy stories",
+          "returning characters in new scenarios"
+        ],
+        "negative": [
+          "requires prior First Law knowledge to fully appreciate",
+          "short story format not for everyone",
+          "no overarching narrative"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Steven Pacey, whose acclaimed voice work for the First Law series makes this the definitive format for established fans.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Senlin Ascends - Josiah Bancroft": {
       "title": "Senlin Ascends",
       "author": "Josiah Bancroft",
       "series": "The Books of Babel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mild-mannered headmaster Thomas Senlin travels with his new bride to the legendary Tower of Babel for their honeymoon, only for her to vanish in the crowds on arrival — propelling the meek scholar into ever stranger and more dangerous ringdoms as he fights to find her.",
+      "tone": "whimsical yet dark, Dickensian, adventurous, melancholy",
+      "pacing": "Moderate",
+      "themes": [
+        "transformation and identity",
+        "obsession and devotion",
+        "the corruption of civilization",
+        "curiosity and wonder",
+        "class and power"
+      ],
+      "setting": "The Tower of Babel — a colossal, self-contained tower world divided into bizarre and distinct 'ringdoms', in a vaguely Victorian-era secondary world",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Piranesi - Susanna Clarke",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "original world-building",
+          "character transformation arcs",
+          "whimsical-dark tone",
+          "self-published word-of-mouth success stories",
+          "literary fantasy"
+        ],
+        "negative": [
+          "slow start",
+          "protagonist begins as frustratingly passive",
+          "episodic ringdom structure may feel disconnected early on"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Shadow and Bone - Leigh Bardugo": {
       "title": "Shadow and Bone",
       "author": "Leigh Bardugo",
       "series": "Shadow and Bone",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Orphan soldier Alina Starkov discovers she possesses a unique power that could destroy the Shadow Fold — a swath of dark monsters dividing her country — but her gift draws her into the dangerous court of the enigmatic and powerful Darkling.",
+      "tone": "romantic, atmospheric, YA-adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "power and identity",
+        "chosen one mythology",
+        "romance and manipulation",
+        "political corruption",
+        "belonging"
+      ],
+      "setting": "Ravka, a fantasy nation inspired by Tsarist Russia, in a world divided by a supernatural darkness",
+      "comparable_books": [
+        "Red Queen - Victoria Aveyard",
+        "An Ember in the Ashes - Sabaa Tahir",
+        "Six of Crows - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA fantasy readers",
+          "romantic subplots",
+          "villain-as-love-interest trope",
+          "lush secondary worlds inspired by real cultures"
+        ],
+        "negative": [
+          "classic chosen-one structure",
+          "more romance-driven than some fantasy readers prefer",
+          "first book setup is slower than the rest of the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Bone Ships - R. J. Barker": {
       "title": "The Bone Ships",
       "author": "R. J. Barker",
       "series": "Tide Child",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a war-ravaged archipelago where ships are built from dragon bones, disgraced officer Joron Twiner finds himself second-in-command to the legendary Shipwife Meas on a near-suicidal mission to hunt down the first living sea dragon seen in centuries.",
+      "tone": "immersive, brutal, lyrical, epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "honour and duty",
+        "redemption",
+        "found family",
+        "war's futility",
+        "extinction and sacrifice"
+      ],
+      "setting": "The Hundred Isles — a matriarchal, seafaring secondary world of scattered islands and dragon-boned ships",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Grace of Kings - Ken Liu",
+        "Pirate Latitudes - Michael Crichton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich immersive world-building",
+          "nautical fantasy",
+          "found family crew dynamics",
+          "readers willing to invest in a slow start"
+        ],
+        "negative": [
+          "very slow and dense opening — invented terminology and culture require patience",
+          "not action-immediately-forward"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Six of Crows - Leigh Bardugo": {
       "title": "Six of Crows",
       "author": "Leigh Bardugo",
       "series": "Six of Crows",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Criminal prodigy Kaz Brekker assembles a crew of six outcasts for an impossible heist — breaking into the world's most impenetrable prison — in the grimy, morally complex underworld of the canal city Ketterdam.",
+      "tone": "propulsive, clever, dark, found-family-driven",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "heist and cunning",
+        "trauma and survival",
+        "greed and power",
+        "loyalty"
+      ],
+      "setting": "Ketterdam, a corrupt mercantile city inspired by Amsterdam, in the Grishaverse",
+      "comparable_books": [
+        "Mistborn - Brandon Sanderson",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Shadow and Bone - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heist narratives",
+          "found family dynamics",
+          "morally grey protagonists",
+          "multi-POV ensemble casts",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "benefits from Grishaverse familiarity",
+          "romantic subplots are significant",
+          "some readers find it more YA than adult fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Devolution: A Firsthand Account of the Rainier Sasquatch Massacre - Max Brooks": {
@@ -105519,80 +105659,139 @@
       "author": "Max Brooks",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Mount Rainier erupts and cuts off a remote eco-tech community from the outside world, the residents face not only starvation and social collapse but a horrifying siege by a displaced clan of Bigfoot, told through the recovered journals of one survivor.",
+      "tone": "tense, documentary-style, escalating dread, socially satirical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "technological dependence and fragility",
+        "human devolution under pressure",
+        "survival",
+        "community collapse",
+        "nature vs. civilization"
+      ],
+      "setting": "A remote eco-community on the slopes of Mount Rainier, Washington State, near-contemporary",
+      "comparable_books": [
+        "World War Z - Max Brooks",
+        "The Martian - Andy Weir",
+        "Bird Box - Josh Malerman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epistolary horror",
+          "survival fiction",
+          "social satire wrapped in genre horror",
+          "found-footage/documentary style"
+        ],
+        "negative": [
+          "graphic violence",
+          "slow build before Sasquatch action begins",
+          "mixed critical reception on horror effectiveness"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast audio production with Max Brooks, Jeff Daniels, Nathan Fillion and others — the documentary format is ideally suited to the multi-narrator audio form.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Whisky: The Manual: A No-Nonsense Guide to Enjoying Whisky in All Its Forms - Dave Broom": {
-      "title": "Whisky: The Manual: A No-Nonsense Guide to Enjoying Whisky in All Its Forms",
+      "title": "Whisky: The Manual",
       "author": "Dave Broom",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "World-renowned whisky expert Dave Broom busts myths about how whisky must be drunk, explores flavour profiles and tasting notes across all major styles and brands, and explains how to enjoy whisky neat, with water, in cocktails, and with food.",
+      "tone": "accessible, opinionated, entertaining, demystifying",
+      "pacing": "Moderate",
+      "themes": [
+        "whisky appreciation",
+        "flavour and tasting",
+        "cocktail culture",
+        "debunking snobbery"
+      ],
+      "setting": "Non-fiction reference guide — global whisky styles from Scotland, Japan, Ireland, America and beyond",
+      "comparable_books": [
+        "The World Atlas of Whisky - Dave Broom",
+        "Whiskey: A Spirited Story with 115 Warm, Toasty Drinks - Warren Bobrow",
+        "Bourbon: A History of the American Spirit - Dane Huckelbridge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "whisky enthusiasts at all levels",
+          "accessible entry-point for beginners",
+          "cocktail and mixing culture",
+          "demystifying approach to spirits"
+        ],
+        "negative": [
+          "tasting notes-heavy sections may bore non-whisky readers",
+          "less comprehensive than atlas-style references"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Parable of the Sower - Octavia E. Butler": {
       "title": "Parable of the Sower",
       "author": "Octavia E. Butler",
       "series": "Earthseed",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future California ravaged by climate collapse, inequality, and social breakdown, teenage Lauren Olamina — who feels others' pain as her own — escapes her burning neighbourhood and begins leading a group of survivors north, founding a new philosophy called Earthseed.",
+      "tone": "urgent, prophetic, unflinching, hopeful-yet-brutal",
+      "pacing": "Moderate",
+      "themes": [
+        "survival and resilience",
+        "climate change and societal collapse",
+        "religion and philosophy",
+        "leadership and community",
+        "race and class in America"
+      ],
+      "setting": "California and the Pacific Coast, 2024–2027, in a near-future dystopia of climate catastrophe and failed governance",
+      "comparable_books": [
+        "The Road - Cormac McCarthy",
+        "Station Eleven - Emily St. John Mandel",
+        "Kindred - Octavia E. Butler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dystopian fiction with depth",
+          "Afrofuturism",
+          "character-driven survival narratives",
+          "speculative fiction with urgent real-world resonance"
+        ],
+        "negative": [
+          "relentlessly bleak at times",
+          "more philosophical than action-driven in places",
+          "diary format may feel slow"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Parable of the Talents - Octavia E. Butler": {
