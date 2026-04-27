@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2109,
-  "total_pending": 2491,
+  "total_catalogued": 2129,
+  "total_pending": 2471,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -125667,432 +125667,793 @@
       "title": "Assassin's Fate",
       "author": "Robin Hobb",
       "series": "Fitz and the Fool",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fitz and his companions journey to the island of Clerres to take vengeance on the Servants of the Four who tortured the Fool and abducted his daughter Bee, bringing the entire Realm of the Elderlings saga to its conclusion.",
+      "tone": "emotionally devastating, lyrical, slow-burn",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fate and prophecy",
+        "sacrifice",
+        "love and grief",
+        "identity",
+        "revenge"
+      ],
+      "setting": "The Six Duchies, Rain Wilds, and beyond — a secondary world with dragons and magic, spanning sea voyages and ancient cities",
+      "comparable_books": [
+        "The Tawny Man Trilogy - Robin Hobb",
+        "A Memory of Light - Robert Jordan",
+        "The Lord of the Rings - J.R.R. Tolkien"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotional depth over action",
+          "deeply developed characters",
+          "found family",
+          "decades-long payoff",
+          "character-driven prose"
+        ],
+        "negative": [
+          "slow pacing",
+          "readers wanting plot over introspection",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Long, immersive prose and emotional character work reward a skilled narrator; the series has a strong audiobook following.",
+      "content_flags": [
+        "graphic violence",
+        "torture",
+        "child in peril"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Folding Knife - K. J. Parker": {
-      "title": "Folding Knife",
+      "title": "The Folding Knife",
       "author": "K. J. Parker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The brilliant and ruthless Basso rises from obscurity to become First Citizen of a powerful republic, wielding political genius and personal sacrifice to build an empire — until the costs of his ambition come due.",
+      "tone": "sardonic, melancholy, dry wit, fatalistic",
+      "pacing": "Moderate",
+      "themes": [
+        "power and corruption",
+        "political ambition",
+        "the cost of genius",
+        "betrayal",
+        "fate"
+      ],
+      "setting": "A secondary world loosely inspired by classical antiquity — a Mediterranean-style mercantile republic",
+      "comparable_books": [
+        "Sixteen Ways to Defend a Walled City - K. J. Parker",
+        "The Prince - Machiavelli",
+        "Tigana - Guy Gavriel Kay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrators",
+          "political intrigue",
+          "dark wit",
+          "morally grey protagonists",
+          "introspective prose"
+        ],
+        "negative": [
+          "action-focused readers",
+          "romance-heavy readers",
+          "readers wanting magic systems"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Scarab Path - Adrian Tchaikovsky": {
       "title": "The Scarab Path",
       "author": "Adrian Tchaikovsky",
       "series": "Shadows of the Apt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of the war with the Wasp Empire, a broken Cheerwell Maker travels as ambassador to the ancient, mysterious desert city of Khanaphes, while former spymaster Thalric navigates deadly Wasp court politics — and both uncover a terrifying secret lurking beneath the city.",
+      "tone": "epic, character-focused, mysterious, grim",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and transformation",
+        "ancient power vs. modernity",
+        "loyalty",
+        "the cost of war",
+        "cultural clash"
+      ],
+      "setting": "The world of the insect-kinden — a secondary world where human races bear the traits of insects; this volume focuses on an Egypt-inspired desert city far from the Lowlands",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Malazan Book of the Fallen - Steven Erikson",
+        "Children of Time - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich worldbuilding",
+          "epic military fantasy",
+          "insect-inspired races",
+          "mystery elements",
+          "multi-POV"
+        ],
+        "negative": [
+          "readers new to the series",
+          "readers wanting magic over technology",
+          "standalone readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Air War - Adrian Tchaikovsky": {
       "title": "The Air War",
       "author": "Adrian Tchaikovsky",
       "series": "Shadows of the Apt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wasp Empress Seda launches a renewed invasion of the Lowlands, and as spies, soldiers, and pilots across multiple cities brace for war, a conflict unlike anything the insect-kinden world has ever seen erupts across the skies and borders.",
+      "tone": "propulsive, epic, war-focused, tense",
+      "pacing": "Fast",
+      "themes": [
+        "industrialised warfare",
+        "empire and resistance",
+        "technology vs. magic",
+        "courage under fire",
+        "political intrigue"
+      ],
+      "setting": "The world of the insect-kinden — multiple city-states across the Lowlands and the Wasp Empire, with heavy aerial combat focus",
+      "comparable_books": [
+        "Gardens of the Moon - Steven Erikson",
+        "The Blade Itself - Joe Abercrombie",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic military fantasy",
+          "multi-POV war narrative",
+          "aviation combat",
+          "tense pacing",
+          "large-scale conflict"
+        ],
+        "negative": [
+          "readers new to the series",
+          "readers preferring character over action",
+          "standalone readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Ben Allen throughout the series; the propulsive, action-driven multi-POV structure works very well in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Salute the Dark - Adrian Tchaikovsky": {
       "title": "Salute the Dark",
       "author": "Adrian Tchaikovsky",
       "series": "Shadows of the Apt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Wasp Empire launches its full assault on the Lowlands as spymaster Stenwold makes a last stand, a vampiric sorcerer pursues his own dark scheme with the Emperor, and a weaponsmaster faces a terrible sacrifice — bringing the first arc of the series to a shattering climax.",
+      "tone": "epic, brutal, high-stakes, emotionally punishing",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "loyalty vs. honour",
+        "the cost of war",
+        "power and manipulation",
+        "betrayal"
+      ],
+      "setting": "The Lowlands and the Wasp Empire — a secondary world of insect-kinden races with both magic and advancing technology",
+      "comparable_books": [
+        "Gardens of the Moon - Steven Erikson",
+        "The Blade Itself - Joe Abercrombie",
+        "A Clash of Kings - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic climaxes",
+          "large-scale battle scenes",
+          "no-one-is-safe stakes",
+          "multi-POV",
+          "political intrigue"
+        ],
+        "negative": [
+          "readers new to the series",
+          "readers preferring quieter character work",
+          "standalone readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Prosper's Demon - K. J. Parker": {
       "title": "Prosper's Demon",
       "author": "K. J. Parker",
       "series": "Prosper's Demon",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An unnamed, morally questionable exorcist who cares little for his hosts tracks a demon he suspects inhabits the body of a brilliant Renaissance-style philosopher and artist, facing a thorny dilemma about genius, possession, and the greater good.",
+      "tone": "darkly comic, sardonic, pitch-black wit",
+      "pacing": "Fast",
+      "themes": [
+        "morality and ends vs. means",
+        "art and genius",
+        "good vs. evil ambiguity",
+        "power",
+        "faith"
+      ],
+      "setting": "A medievalesque secondary world loosely inspired by Renaissance Europe, seething with demons and political intrigue",
+      "comparable_books": [
+        "The Devil You Know - K. J. Parker",
+        "Piranesi - Susanna Clarke",
+        "The Books of Babel - Josiah Bancroft"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonists",
+          "dry wit",
+          "philosophical asides",
+          "novella length",
+          "darkly comic tone"
+        ],
+        "negative": [
+          "readers wanting action over introspection",
+          "readers wanting clear-cut heroes",
+          "readers who dislike monologue-heavy narration"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ruin - John Gwynne": {
       "title": "Ruin",
       "author": "John Gwynne",
       "series": "The Faithful and the Fallen",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The God-War erupts across the Banished Lands as Queen Rhin conquers the west, dark forces close in on the seven treasures needed to unleash a demon host, and Corban must transform from reluctant survivor into the prophesied warrior-saviour his world desperately needs.",
+      "tone": "grimdark, propulsive, emotionally brutal, epic",
+      "pacing": "Fast",
+      "themes": [
+        "good vs. evil",
+        "loyalty and sacrifice",
+        "prophecy",
+        "betrayal",
+        "family bonds"
+      ],
+      "setting": "The Banished Lands — a secondary world with Norse and Celtic flavours, populated by humans, giants, and dark powers from the Otherworld",
+      "comparable_books": [
+        "A Song of Ice and Fire - George R.R. Martin",
+        "The Wheel of Time - Robert Jordan",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic battle scenes",
+          "no-one-is-safe stakes",
+          "multi-POV",
+          "found family",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "readers new to the series",
+          "readers preferring quieter character studies",
+          "low-magic readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "How to Rule an Empire and Get Away With It - K. J. Parker": {
       "title": "How to Rule an Empire and Get Away With It",
       "author": "K. J. Parker",
       "series": "The Siege",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Notker, a jobbing actor and gifted impersonator, is coerced into impersonating a recently killed war hero to keep a besieged city's morale alive — and finds himself accidentally promoted to Emperor, ruling an empire while desperately trying to stay alive and get away with it.",
+      "tone": "darkly comic, satirical, melancholic, witty",
+      "pacing": "Fast",
+      "themes": [
+        "power and identity",
+        "performance and deception",
+        "the corrupting nature of power",
+        "siege warfare",
+        "politics and incompetence"
+      ],
+      "setting": "A Roman Empire-inspired fictional city-state under prolonged siege — a secondary world with low fantasy elements",
+      "comparable_books": [
+        "Sixteen Ways to Defend a Walled City - K. J. Parker",
+        "Jig the Goblin - Jim C. Hines",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic unreliable narrators",
+          "political satire",
+          "propulsive pacing",
+          "morally grey protagonists",
+          "witty prose"
+        ],
+        "negative": [
+          "readers wanting epic magic",
+          "grimdark purists",
+          "readers wanting heavy romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Time of Courage - John Gwynne": {
       "title": "A Time of Courage",
       "author": "John Gwynne",
       "series": "Of Blood and Bone",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Demon-King Asroth is finally free and marches his war-host south; Drem, Riv, and the Bright Star's warriors must unite all remaining forces in the Banished Lands for a final, cataclysmic battle to decide the fate of humanity.",
+      "tone": "epic, emotionally intense, heroic, bittersweet",
+      "pacing": "Fast",
+      "themes": [
+        "courage and sacrifice",
+        "good vs. evil",
+        "loyalty and friendship",
+        "legacy",
+        "the cost of war"
+      ],
+      "setting": "The Banished Lands — a secondary world set 130 years after The Faithful and the Fallen, with warrior angels, demons, giants, and talking crows",
+      "comparable_books": [
+        "Wrath - John Gwynne",
+        "The Return of the King - J.R.R. Tolkien",
+        "A Memory of Light - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic finales",
+          "large-scale battle scenes",
+          "found family",
+          "heroic fantasy",
+          "emotionally satisfying conclusions"
+        ],
+        "negative": [
+          "readers new to the series",
+          "low-magic readers",
+          "readers preferring grim ambiguity over heroic resolution"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Time of Blood - John Gwynne": {
       "title": "A Time of Blood",
       "author": "John Gwynne",
       "series": "Of Blood and Bone",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fleeing the horrors of Starstone Lake, Drem and companions race to warn the Order of the Bright Star as demonic forces pursue them; meanwhile Riv, hiding her dangerous half-breed heritage in Forn Forest, discovers terrible truths about the warrior angels she once revered.",
+      "tone": "grimdark, propulsive, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "good vs. evil complexity",
+        "loyalty",
+        "identity and heritage",
+        "courage",
+        "betrayal"
+      ],
+      "setting": "The Banished Lands — a sprawling secondary world with ancient forests, ruined fortresses, warrior angels, demons, and animal companions",
+      "comparable_books": [
+        "A Clash of Kings - George R.R. Martin",
+        "The Way of Kings - Brandon Sanderson",
+        "Wrath - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "epic battle scenes",
+          "animal companions",
+          "multi-POV",
+          "no-one-is-safe stakes"
+        ],
+        "negative": [
+          "readers new to the series",
+          "low-magic readers",
+          "readers preferring quiet character studies"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fool's Quest - Robin Hobb": {
       "title": "Fool's Quest",
       "author": "Robin Hobb",
       "series": "Fitz and the Fool",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Fitz tends to the broken and near-dead Fool at Buckkeep Castle, his young daughter Bee is abducted by the Servants of the Four, leaving Fitz torn between healing his oldest friend and launching a desperate rescue mission across the known world.",
+      "tone": "emotionally devastating, lyrical, introspective",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "loyalty and love",
+        "sacrifice",
+        "prophecy",
+        "parenthood",
+        "identity"
+      ],
+      "setting": "The Six Duchies — Buckkeep Castle and beyond, a secondary world of kings, assassins, and magic",
+      "comparable_books": [
+        "Assassin's Fate - Robin Hobb",
+        "Fool's Assassin - Robin Hobb",
+        "The Farseer Trilogy - Robin Hobb"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotional depth",
+          "deeply developed characters",
+          "found family",
+          "literary fantasy prose",
+          "long-running series investment"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "readers new to the series",
+          "readers wanting plot over introspection"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "torture",
+        "child in peril"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sacred - Dennis Lehane": {
       "title": "Sacred",
       "author": "Dennis Lehane",
       "series": "Kenzie & Gennaro",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Boston private detectives Patrick Kenzie and Angela Gennaro are hired by a dying billionaire to find his grief-stricken daughter who has vanished into an exploitative cult — a case that plunges them into a world of deception, manipulation, and danger.",
+      "tone": "gritty noir, dark, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "grief and exploitation",
+        "faith and cults",
+        "loyalty",
+        "moral ambiguity",
+        "Boston working class"
+      ],
+      "setting": "Boston, Massachusetts — primarily working-class Dorchester, with excursions to Florida",
+      "comparable_books": [
+        "Gone, Baby, Gone - Dennis Lehane",
+        "A Drink Before the War - Dennis Lehane",
+        "The Poet - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled detective fiction",
+          "Boston noir",
+          "fast-paced mysteries",
+          "sharp dialogue",
+          "gritty realism"
+        ],
+        "negative": [
+          "cozy mystery readers",
+          "readers wanting light tone",
+          "readers preferring police procedurals"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Moonlight Mile - Dennis Lehane": {
       "title": "Moonlight Mile",
       "author": "Dennis Lehane",
       "series": "Kenzie & Gennaro",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twelve years after Patrick Kenzie and Angie Gennaro found four-year-old Amanda McCready and returned her to a neglectful home, Amanda has vanished again — and Kenzie must re-open the case that haunts him most, confronting the moral choices of his past.",
+      "tone": "gritty noir, emotionally resonant, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "moral consequences",
+        "justice vs. the law",
+        "parenthood",
+        "the past catching up",
+        "loyalty"
+      ],
+      "setting": "Boston, Massachusetts — Dorchester and the Boston area, present day",
+      "comparable_books": [
+        "Gone, Baby, Gone - Dennis Lehane",
+        "Mystic River - Dennis Lehane",
+        "The Drop - Dennis Lehane"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled detective fiction",
+          "Boston noir",
+          "emotional stakes",
+          "series payoff",
+          "moral ambiguity"
+        ],
+        "negative": [
+          "cozy mystery readers",
+          "readers wanting light tone",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gone, Baby, Gone - Dennis Lehane": {
       "title": "Gone, Baby, Gone",
       "author": "Dennis Lehane",
       "series": "Kenzie & Gennaro",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Patrick Kenzie and Angela Gennaro are hired to find a four-year-old girl who has disappeared from a rough Dorchester neighbourhood — a case that spirals into a morally devastating investigation of corruption, crime, and impossible choices about a child's future.",
+      "tone": "gritty noir, morally anguished, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "justice vs. morality",
+        "child welfare",
+        "corruption",
+        "loyalty",
+        "the limits of doing the right thing"
+      ],
+      "setting": "Boston, Massachusetts — working-class Dorchester neighbourhood",
+      "comparable_books": [
+        "Mystic River - Dennis Lehane",
+        "Moonlight Mile - Dennis Lehane",
+        "The Poet - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled detective fiction",
+          "morally complex endings",
+          "Boston noir",
+          "propulsive pacing",
+          "emotionally weighty crime fiction"
+        ],
+        "negative": [
+          "cozy mystery readers",
+          "readers wanting happy resolutions",
+          "readers preferring light crime fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child in peril"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "King Bullet - Richard Kadrey": {
       "title": "King Bullet",
       "author": "Richard Kadrey",
       "series": "Sandman Slim",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a viral pandemic-ravaged Los Angeles, Sandman Slim faces King Bullet — a supernatural gang leader with a plague army of cult followers — in the series' explosive, emotionally charged finale that brings James Stark's long saga to its ultimate conclusion.",
+      "tone": "sardonic, frenetic, darkly comic, action-packed",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "identity",
+        "death and meaning",
+        "loyalty",
+        "the cost of power"
+      ],
+      "setting": "Los Angeles — a supernatural noir version of present-day LA, during a pandemic",
+      "comparable_books": [
+        "The Dresden Files - Jim Butcher",
+        "Hollywood Dead - Richard Kadrey",
+        "Devil Said Bang - Richard Kadrey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural noir",
+          "anti-hero protagonists",
+          "fast-paced action",
+          "snarky first-person voice",
+          "series finales"
+        ],
+        "negative": [
+          "readers new to the series",
+          "readers wanting literary prose",
+          "readers sensitive to graphic content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by MacLeod Andrews throughout the series; the sarcastic first-person voice and propulsive pacing are ideally suited to audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hollywood Dead - Richard Kadrey": {
       "title": "Hollywood Dead",
       "author": "Richard Kadrey",
       "series": "Sandman Slim",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "James Stark is brought back from Hell by the sinister power-brokers Wormwood with a grim catch — he's only partially alive, with a deadline ticking down before his reanimated body fails, unless he can hunt down Wormwood's enemies in time to earn a permanent return to life.",
+      "tone": "sardonic, darkly comic, high-octane",
+      "pacing": "Fast",
+      "themes": [
+        "mortality",
+        "loyalty",
+        "love and loss",
+        "identity",
+        "power and deals"
+      ],
+      "setting": "Los Angeles — a dark supernatural version of present-day LA, plus supernatural planes of existence",
+      "comparable_books": [
+        "King Bullet - Richard Kadrey",
+        "The Dresden Files - Jim Butcher",
+        "Devil Said Bang - Richard Kadrey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural noir",
+          "anti-hero protagonists",
+          "fast-paced action",
+          "snarky first-person voice",
+          "ensemble casts"
+        ],
+        "negative": [
+          "readers new to the series",
+          "readers wanting literary prose",
+          "readers sensitive to graphic content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Children of Earth and Sky - Guy Gavriel Kay": {
@@ -126100,53 +126461,97 @@
       "author": "Guy Gavriel Kay",
       "series": "Sarantine Universe",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A group of interconnected travellers — a spy, a painter, a merchant, and a young woman warrior — navigate the borders and intrigues of a Renaissance-inspired world torn between a great empire and its rivals, where small lives intersect with world-shaping forces.",
+      "tone": "lyrical, bittersweet, elegiac, sweeping",
+      "pacing": "Moderate",
+      "themes": [
+        "fate and chance",
+        "war and its human cost",
+        "art and memory",
+        "identity",
+        "the individual vs. history"
+      ],
+      "setting": "A fantasy analogue of the Renaissance Mediterranean — loosely inspired by Venice, Dubrovnik, and the Ottoman Empire",
+      "comparable_books": [
+        "A Brightness Long Ago - Guy Gavriel Kay",
+        "Tigana - Guy Gavriel Kay",
+        "The Lions of Al-Rassan - Guy Gavriel Kay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "historical richness",
+          "bittersweet tone",
+          "lush prose",
+          "character-driven narrative"
+        ],
+        "negative": [
+          "readers wanting high-action plots",
+          "readers wanting extensive magic systems",
+          "readers preferring single-POV"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Absolution Gap - Alastair Reynolds": {
       "title": "Absolution Gap",
       "author": "Alastair Reynolds",
       "series": "Revelation Space",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Decades after the events of Redemption Ark, the remnants of humanity cluster around a gas giant whose bizarre moon vanishes and reappears, while a fanatical religious cult and desperate survivors converge on a final reckoning with the alien Inhibitors threatening galactic extinction.",
+      "tone": "dark, vast, cosmic dread, bleak",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "extinction and survival",
+        "religion and faith",
+        "transhumanism",
+        "the Fermi paradox",
+        "sacrifice"
+      ],
+      "setting": "Far future — multiple star systems, aboard vast spaceships, and on the strange moon Hela orbiting a gas giant",
+      "comparable_books": [
+        "Revelation Space - Alastair Reynolds",
+        "Blindsight - Peter Watts",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "cosmic scale",
+          "slow-burn payoff",
+          "dark atmosphere",
+          "Fermi paradox fiction"
+        ],
+        "negative": [
+          "readers new to the series",
+          "readers wanting action-focused SF",
+          "readers preferring optimistic SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Written on the Dark - Guy Gavriel Kay": {
@@ -126154,53 +126559,98 @@
       "author": "Guy Gavriel Kay",
       "series": "Sarantine Universe",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thierry Villar, a notorious tavern poet in the city of Orane, is drawn from the shadows of street life into the deadly contests of royal assassins, invading armies, and court intrigue — finding himself caught up in events that will determine the fate of his beloved Ferrieres.",
+      "tone": "lyrical, bittersweet, elegant, sweeping",
+      "pacing": "Moderate",
+      "themes": [
+        "art and power",
+        "fate and agency",
+        "love and war",
+        "justice",
+        "the role of ordinary people in history"
+      ],
+      "setting": "Ferrieres — Kay's fantasy analogue of 15th-century France, during a conflict echoing the Hundred Years' War, in the same two-moon world as his earlier novels",
+      "comparable_books": [
+        "A Brightness Long Ago - Guy Gavriel Kay",
+        "Children of Earth and Sky - Guy Gavriel Kay",
+        "Tigana - Guy Gavriel Kay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary historical fantasy",
+          "lush prose",
+          "bittersweet tone",
+          "medieval French setting",
+          "LGBTQ+ characters"
+        ],
+        "negative": [
+          "readers wanting heavy magic systems",
+          "readers preferring fast action",
+          "readers new to Kay who expect longer books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Devil Said Bang - Richard Kadrey": {
       "title": "Devil Said Bang",
       "author": "Richard Kadrey",
       "series": "Sandman Slim",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "James Stark has assumed the throne of Hell as the new Lucifer — but everyone in Heaven, Hell, and in between wants to take down the new ruler, while back in LA a serial killer ghost is running wild and his angelic alter-ego is hiding with a cabal that can rewrite reality.",
+      "tone": "sardonic, frenetic, darkly comic, irreverent",
+      "pacing": "Fast",
+      "themes": [
+        "power and identity",
+        "responsibility",
+        "good vs. evil absurdity",
+        "redemption",
+        "mortality"
+      ],
+      "setting": "Hell and Los Angeles — a dark supernatural version of both realms, blending noir LA with infernal bureaucracy",
+      "comparable_books": [
+        "Hollywood Dead - Richard Kadrey",
+        "King Bullet - Richard Kadrey",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural noir",
+          "anti-hero protagonists",
+          "darkly comic first-person voice",
+          "fast pacing",
+          "irreverent humour"
+        ],
+        "negative": [
+          "readers new to the series",
+          "readers wanting literary prose",
+          "readers sensitive to graphic content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Kill City Blues - Richard Kadrey": {
