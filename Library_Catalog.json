@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3204,
-  "total_pending": 1396,
+  "total_catalogued": 3224,
+  "total_pending": 1376,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -179538,27 +179538,51 @@
       "title": "Return to Blood",
       "author": "Michael Bennett",
       "series": "A Hana Westerman Thriller",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former Māori detective Hana Westerman, retired to a quiet coastal town, is drawn back into investigation when her daughter discovers a skeleton in the dunes — bones that link to a decades-old wrongful conviction and a killer who may still be free.",
+      "tone": "atmospheric, culturally rich, tense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Indigenous identity",
+        "miscarriage of justice",
+        "colonialism",
+        "family",
+        "truth and justice"
+      ],
+      "setting": "Contemporary New Zealand — coastal Tātā Bay and Auckland",
+      "comparable_books": [
+        "Better the Blood - Michael Bennett",
+        "The Dry - Jane Harper",
+        "Nine Perfect Strangers - Liane Moriarty",
+        "Winter Counts - David Heska Wanbli Weiden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Indigenous protagonist",
+          "culturally immersive",
+          "wrongful conviction mystery",
+          "female detective",
+          "New Zealand setting",
+          "literary crime"
+        ],
+        "negative": [
+          "slow pacing",
+          "limited action sequences",
+          "subplot-heavy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich Māori cultural texture and te reo Māori language rewards attentive listening; audiobook well-reviewed.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hardwired - Walter Jon Williams": {
@@ -179566,26 +179590,50 @@
       "author": "Walter Jon Williams",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-collapse America dominated by orbiting corporate Orbital powers, a cyborg smuggler named Cowboy and a mercenary called Sarah fight to survive and reclaim their humanity in a brutal, neon-soaked world.",
+      "tone": "gritty, propulsive, noir cyberpunk",
+      "pacing": "Fast",
+      "themes": [
+        "corporate power",
+        "identity and humanity",
+        "resistance",
+        "technology and the body",
+        "survival"
+      ],
+      "setting": "Near-future dystopian USA, post-economic collapse — deserts, black markets, cyberpunk underworld",
+      "comparable_books": [
+        "Neuromancer - William Gibson",
+        "Snow Crash - Neal Stephenson",
+        "Blood Music - Greg Bear",
+        "Islands in the Net - Bruce Sterling"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cyberpunk classic",
+          "morally grey protagonists",
+          "fast action",
+          "noir atmosphere",
+          "corporate dystopia"
+        ],
+        "negative": [
+          "dated 1980s cyberpunk tropes",
+          "graphic violence",
+          "male-gaze elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Thrill Switch - Tim Hawken": {
@@ -179593,26 +179641,52 @@
       "author": "Tim Hawken",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Detective Ada Byron is rattled when her first murder case mirrors the VR-based killing of her own father — a crime attributed to imprisoned serial killer Jazlin Switch, who must now be consulted to stop a copycat in near-future Las Vegas.",
+      "tone": "gritty, neo-noir, relentlessly dark",
+      "pacing": "Fast",
+      "themes": [
+        "virtual reality vs reality",
+        "trauma and justice",
+        "surveillance and power",
+        "identity",
+        "corruption"
+      ],
+      "setting": "Near-future Las Vegas, where most inhabitants live plugged into a lawless virtual metaverse",
+      "comparable_books": [
+        "The Silence of the Lambs - Thomas Harris",
+        "Neuromancer - William Gibson",
+        "Ready Player One - Ernest Cline",
+        "Altered Carbon - Richard K. Morgan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cyberpunk thriller",
+          "female protagonist",
+          "serial killer procedural",
+          "VR/metaverse worldbuilding",
+          "fast-paced",
+          "SPSFC finalist"
+        ],
+        "negative": [
+          "graphic violence",
+          "attempted sexual assault content",
+          "extremely dark tone",
+          "not for squeamish readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bluest Eye - Toni Morrison": {
@@ -179620,53 +179694,104 @@
       "author": "Toni Morrison",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In 1940s Ohio, young Black girl Pecola Breedlove prays for blue eyes, believing beauty and whiteness will save her from a life of poverty, abuse, and social rejection — a devastating meditation on race, self-hatred, and the violence of white beauty standards.",
+      "tone": "lyrical, tragic, devastating",
+      "pacing": "Slow",
+      "themes": [
+        "racism and white beauty standards",
+        "self-worth and identity",
+        "sexual abuse",
+        "poverty",
+        "childhood and innocence"
+      ],
+      "setting": "Lorain, Ohio, 1940s — a poor Black community during the Great Depression's aftermath",
+      "comparable_books": [
+        "Beloved - Toni Morrison",
+        "Their Eyes Were Watching God - Zora Neale Hurston",
+        "I Know Why the Caged Bird Sings - Maya Angelou",
+        "Sula - Toni Morrison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Nobel Prize author",
+          "American classic",
+          "lyrical prose",
+          "social commentary",
+          "unflinching emotional depth"
+        ],
+        "negative": [
+          "deeply harrowing subject matter",
+          "sexual abuse of a child",
+          "no redemptive arc",
+          "not plot-driven"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Morrison's lyrical, layered prose is extraordinarily well-suited to audio narration.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Red Rabbit - Alex Grecian": {
       "title": "Red Rabbit",
       "author": "Alex Grecian",
       "series": "Sadie Grace",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a demon-haunted post-Civil War Kansas, a ragtag posse of witch hunters, wandering cowboys, and a widowed schoolteacher converge on the legendary witch Sadie Grace, only to discover that the monsters on the trail are far worse than any witch.",
+      "tone": "darkly comic, brutal, episodic folk horror",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "folk horror",
+        "found family",
+        "morality and judgment",
+        "superstition vs reality",
+        "American mythology"
+      ],
+      "setting": "Post-Civil War Kansas and the American West — drought-stricken plains, supernatural demons and ghosts",
+      "comparable_books": [
+        "The Only Good Indians - Stephen Graham Jones",
+        "The Sisters Brothers - Patrick deWitt",
+        "The Hunger - Alma Katsu",
+        "True Grit - Charles Portis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folk horror",
+          "weird western",
+          "ensemble cast",
+          "found family",
+          "multi-POV",
+          "darkly atmospheric",
+          "American mythology"
+        ],
+        "negative": [
+          "slow episodic pacing",
+          "very large cast can feel unwieldy",
+          "graphic violence and gore",
+          "cannibalism content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Erasure - Percival Everett": {
@@ -179674,242 +179799,452 @@
       "author": "Percival Everett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A highbrow Black novelist, frustrated by the market's demand for 'authentic' Black trauma narratives, writes a deliberately crude parody of such books under a pseudonym — only for it to become a runaway bestseller, forcing him to confront questions of authenticity, race, and artistic identity.",
+      "tone": "darkly comic, satirical, formally inventive",
+      "pacing": "Moderate",
+      "themes": [
+        "racial identity and authenticity",
+        "literary satire",
+        "publishing and commercialism",
+        "Black intellectual life",
+        "self-erasure"
+      ],
+      "setting": "Contemporary USA — primarily literary circles, with a family home in Maine",
+      "comparable_books": [
+        "American Fiction (film adaptation)",
+        "Invisible Man - Ralph Ellison",
+        "Beg, Borrow, or Steal - Paul Beatty",
+        "The Sellout - Paul Beatty"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary satire",
+          "meta-fiction",
+          "darkly comic",
+          "formally inventive",
+          "National Book Award winner",
+          "race and identity"
+        ],
+        "negative": [
+          "demands an engaged reader",
+          "multiple interwoven text styles",
+          "no conventional plot arc"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Wings of the Storm - Giles Kristian": {
       "title": "Wings of the Storm",
       "author": "Giles Kristian",
       "series": "The Rise of Sigurd",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Viking warrior Sigurd and his loyal crew of oath-men sail toward a final reckoning with the treacherous Norse king who murdered their kin, seeking vengeance, glory, and the favour of the gods in a brutal and richly atmospheric conclusion to the trilogy.",
+      "tone": "visceral, heroic, mythologically steeped",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance and honour",
+        "loyalty and brotherhood",
+        "fate and the Norse gods",
+        "war",
+        "identity and legacy"
+      ],
+      "setting": "Late 8th–early 9th century Norse world — Scandinavia, the seas, and raided coastlines",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "Oathsworn - Robert Low",
+        "The Half-Drowned King - Linnea Hartsuyker",
+        "Sword of Kaigen - M.L. Wang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Viking fiction",
+          "propulsive action",
+          "brotherhood and loyalty",
+          "Norse mythology",
+          "vivid historical detail",
+          "series conclusion"
+        ],
+        "negative": [
+          "graphic battle violence",
+          "male-dominated cast",
+          "requires reading prior books"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Action-heavy Norse adventure with strong oral storytelling qualities that translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "All the Devils Are Here - Louise Penny": {
       "title": "All the Devils Are Here",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 16",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Gamache's mentor and friend Stephen Horowitz is nearly killed in a hit-and-run in Paris, Gamache and his family are drawn into a web of corporate conspiracy, espionage, and murder stretching across the City of Light.",
+      "tone": "cosy-literary, intelligent, warmly atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "family and loyalty",
+        "corporate corruption",
+        "trust and betrayal",
+        "moral courage",
+        "good versus evil"
+      ],
+      "setting": "Contemporary Paris — museums, restaurants, the Seine, corporate boardrooms",
+      "comparable_books": [
+        "A Great Deliverance - Elizabeth George",
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith",
+        "Still Life - Louise Penny",
+        "Inspector Morse - Colin Dexter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mystery",
+          "beloved recurring characters",
+          "Parisian setting",
+          "character-driven",
+          "long-running series reward"
+        ],
+        "negative": [
+          "requires series context",
+          "slow-burn pacing",
+          "low action",
+          "predictable formula for series veterans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Robert Bathurst's narration of the Gamache series is widely considered definitive and adds enormous warmth.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Starsight - Brandon Sanderson": {
       "title": "Starsight",
       "author": "Brandon Sanderson",
       "series": "Skyward",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Spensa goes undercover among humanity's alien enemies, learning to pilot their ships and uncovering shocking truths about the war with the Krell — and about her own mysterious powers.",
+      "tone": "adventurous, fast-paced, emotionally earnest",
+      "pacing": "Fast",
+      "themes": [
+        "identity and belonging",
+        "prejudice and understanding",
+        "courage",
+        "sacrifice",
+        "found family"
+      ],
+      "setting": "A galaxy at war — alien space stations and fleets far from humanity's last refuge",
+      "comparable_books": [
+        "Ender's Game - Orson Scott Card",
+        "Skyward - Brandon Sanderson",
+        "Steelheart - Brandon Sanderson",
+        "Aurora Rising - Amie Kaufman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA-accessible sci-fi",
+          "strong female protagonist",
+          "space combat",
+          "alien worldbuilding",
+          "fast-paced",
+          "Sanderson fan favourite"
+        ],
+        "negative": [
+          "younger-skewing tone",
+          "less grounded than Book 1",
+          "cliffhanger ending"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Suzy Jackson's narration for the Skyward series is energetic and widely praised.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Power of the Dog - Don Winslow": {
       "title": "The Power of the Dog",
       "author": "Don Winslow",
       "series": "Power of the Dog",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Over three decades, DEA agent Art Keller wages an obsessive, brutal war against the Barrera family's Sinaloa cartel, as drugs, money, violence, and political corruption reshape both Mexico and the United States.",
+      "tone": "grimdark, propulsive, epic in scope",
+      "pacing": "Fast",
+      "themes": [
+        "the War on Drugs",
+        "institutional corruption",
+        "obsession and moral compromise",
+        "violence and consequence",
+        "American and Mexican politics"
+      ],
+      "setting": "Mexico, USA, and Central America — 1970s–1990s, cartel territories, Washington corridors of power",
+      "comparable_books": [
+        "The Cartel - Don Winslow",
+        "No Country for Old Men - Cormac McCarthy",
+        "Savages - Don Winslow",
+        "El Narco - Ioan Grillo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic crime saga",
+          "morally complex characters",
+          "unflinching realism",
+          "propulsive plotting",
+          "political depth"
+        ],
+        "negative": [
+          "extreme graphic violence",
+          "sexual violence",
+          "sprawling cast",
+          "bleak worldview"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Cartel - Don Winslow": {
       "title": "The Cartel",
       "author": "Don Winslow",
       "series": "Power of the Dog",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Art Keller re-enters the fray as Mexico's cartel wars explode into unprecedented bloodshed in the 2000s, drawn back into direct conflict with his nemesis Adán Barrera in a sweeping, ripped-from-the-headlines saga.",
+      "tone": "grimdark, propulsive, journalistic",
+      "pacing": "Fast",
+      "themes": [
+        "cartel warfare",
+        "journalism and truth",
+        "corruption",
+        "obsession",
+        "civilian suffering"
+      ],
+      "setting": "Mexico and USA — 2004–2012, the height of the Sinaloa/Zeta cartel wars",
+      "comparable_books": [
+        "The Power of the Dog - Don Winslow",
+        "The Border - Don Winslow",
+        "Narconomics - Tom Wainwright"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic sequel",
+          "ripped from headlines",
+          "morally grey anti-hero",
+          "propulsive",
+          "political crime"
+        ],
+        "negative": [
+          "extreme graphic violence",
+          "sexual violence",
+          "relentlessly bleak",
+          "requires Book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Border - Don Winslow": {
       "title": "The Border",
       "author": "Don Winslow",
       "series": "Power of the Dog",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Art Keller's war finally reaches Washington itself as he takes on the cartels from inside the DEA, confronting political complicity, the opioid crisis, and a new generation of cartel violence in the epic conclusion to Winslow's trilogy.",
+      "tone": "grimdark, urgent, politically incendiary",
+      "pacing": "Fast",
+      "themes": [
+        "political corruption",
+        "the opioid epidemic",
+        "immigration",
+        "moral cost of war",
+        "institutional failure"
+      ],
+      "setting": "USA and Mexico — 2012–2017, spanning New York, Washington D.C., and the border",
+      "comparable_books": [
+        "The Cartel - Don Winslow",
+        "The Power of the Dog - Don Winslow",
+        "American War - Omar El Akkad"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic conclusion",
+          "topical and urgent",
+          "morally complex",
+          "political thriller",
+          "series payoff"
+        ],
+        "negative": [
+          "graphic violence",
+          "sexual content",
+          "very long",
+          "demands prior books",
+          "relentlessly dark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "City of Dreams - Don Winslow": {
       "title": "City of Dreams",
       "author": "Don Winslow",
       "series": "The Danny Ryan Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the run from the mob and the FBI after losing a brutal East Coast gang war, Danny Ryan flees west with his infant son to California, where dreams of a new life collide with Hollywood temptation, federal pressure, and the pull of his criminal past.",
+      "tone": "propulsive, cinematic, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "reinvention and the American dream",
+        "family and loyalty",
+        "crime and consequence",
+        "escape from the past",
+        "classical tragedy"
+      ],
+      "setting": "Contemporary USA — California (Hollywood and the desert) and Las Vegas, inspired by Virgil's Aeneid",
+      "comparable_books": [
+        "City on Fire - Don Winslow",
+        "City in Ruins - Don Winslow",
+        "The Godfather - Mario Puzo",
+        "Get Shorty - Elmore Leonard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Godfather comparisons",
+          "morally complex protagonist",
+          "Aeneid-inspired",
+          "propulsive",
+          "cinematic crime epic"
+        ],
+        "negative": [
+          "graphic violence",
+          "requires Book 1",
+          "middle-book syndrome for some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "City in Ruins - Don Winslow": {
       "title": "City in Ruins",
       "author": "Don Winslow",
       "series": "The Danny Ryan Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Now a billionaire Las Vegas casino mogul, Danny Ryan believes he's left his mob past behind — until a bid for a prime strip of real estate triggers war with power brokers, a vengeful FBI agent, and the Mafia, threatening everything he loves.",
+      "tone": "propulsive, elegiac, Shakespearean",
+      "pacing": "Fast",
+      "themes": [
+        "the cost of ambition",
+        "legacy and self-destruction",
+        "crime and identity",
+        "Greek tragedy",
+        "the American dream"
+      ],
+      "setting": "Late 1990s Las Vegas — casinos, power corridors, and the criminal underworld",
+      "comparable_books": [
+        "City of Dreams - Don Winslow",
+        "City on Fire - Don Winslow",
+        "The Godfather - Mario Puzo",
+        "Goodfellas (film)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic series conclusion",
+          "Greek tragedy arc",
+          "morally complex",
+          "propulsive",
+          "Stephen King praised"
+        ],
+        "negative": [
+          "graphic violence",
+          "requires prior books",
+          "crime genre conventions"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Final Girl Support Group - Grady Hendrix": {
@@ -179917,80 +180252,146 @@
       "author": "Grady Hendrix",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Six women who each survived real-life slasher massacres — events so extreme they inspired horror film franchises — meet in a support group, until someone begins killing them off, and the most damaged of them must fight to save the others.",
+      "tone": "darkly comic, meta-horror, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "trauma and survival",
+        "horror genre deconstruction",
+        "sisterhood",
+        "PTSD",
+        "media exploitation of victims"
+      ],
+      "setting": "Contemporary Los Angeles — support group meetings, malls, campsites; a loving parody of slasher film tropes",
+      "comparable_books": [
+        "The Southern Book Club's Guide to Slaying Vampires - Grady Hendrix",
+        "My Best Friend's Exorcism - Grady Hendrix",
+        "Survivor - Chuck Palahniuk",
+        "Scream (film)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror comedy",
+          "meta horror",
+          "female protagonists",
+          "slasher genre fans",
+          "propulsive",
+          "darkly funny"
+        ],
+        "negative": [
+          "graphic violence",
+          "trauma-heavy content",
+          "requires slasher film literacy for full appreciation"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Oathbringer - Brandon Sanderson": {
       "title": "Oathbringer",
       "author": "Brandon Sanderson",
       "series": "The Stormlight Archive",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the ancient Desolation returns and Roshar's armies gather, Dalinar Kholin confronts his dark and violent past while wielding unprecedented power, struggling to forge alliances in a war that could decide the fate of the world.",
+      "tone": "epic, emotionally weighty, philosophical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "redemption",
+        "leadership and power",
+        "trauma and memory",
+        "unity vs division",
+        "the nature of oaths"
+      ],
+      "setting": "The world of Roshar — a storm-ravaged alien planet with an intricate magic system and millennium-spanning history",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "Words of Radiance - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Wheel of Time - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "deep worldbuilding",
+          "Sanderson magic systems",
+          "emotional character arcs",
+          "long-running series reward"
+        ],
+        "negative": [
+          "extremely long",
+          "dense lore",
+          "requires prior two books",
+          "slow opening act"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Michael Kramer and Kate Reading's dual narration is legendary among fantasy audiobook listeners.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Path of Vengeance - Cavan Scott": {
       "title": "Path of Vengeance",
       "author": "Cavan Scott",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5 (Phase II YA)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cousins Marda and Yana Ro, torn apart by faith and betrayal within the anti-Jedi cult the Path of the Open Hand, must each choose their fate as the Battle of Jedha ignites and the galaxy is pushed toward catastrophe.",
+      "tone": "dark, emotional, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "faith and fanaticism",
+        "family loyalty vs ideology",
+        "radicalization",
+        "the Force",
+        "choice and consequence"
+      ],
+      "setting": "A galaxy far, far away — 382 BBY, 150 years before the High Republic Phase I era, centred on Jedha and Planet X",
+      "comparable_books": [
+        "Path of Deceit - Tessa Gratton & Justina Ireland",
+        "The Rising Storm - Cavan Scott",
+        "The Battle of Jedha - George Mann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars High Republic",
+          "villain origin story",
+          "dual female protagonists",
+          "action-packed",
+          "dark Star Wars tone"
+        ],
+        "negative": [
+          "requires Phase II context",
+          "YA-targeted",
+          "best read in publication order"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Brotherhood - Mike Chen": {
@@ -179998,26 +180399,46 @@
       "author": "Mike Chen",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set just after Attack of the Clones, Obi-Wan Kenobi investigates a devastating terrorist bombing on neutral Cato Neimoidia while Anakin Skywalker — newly knighted — navigates his secret marriage and first steps as a mentor, as the two forge their bond as brothers rather than master and apprentice.",
+      "tone": "character-driven, warm, melancholy",
+      "pacing": "Moderate",
+      "themes": [
+        "brotherhood and mentorship",
+        "identity and change",
+        "war and neutrality",
+        "the Force",
+        "duty vs love"
+      ],
+      "setting": "Star Wars galaxy — Cato Neimoidia and Coruscant, 22 BBY at the outset of the Clone Wars",
+      "comparable_books": [
+        "Master and Apprentice - Claudia Gray",
+        "Queen's Hope - E.K. Johnston",
+        "Dark Disciple - Christie Golden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars prequel era",
+          "Obi-Wan and Anakin focus",
+          "emotional depth",
+          "Clone Wars feel",
+          "great audiobook production"
+        ],
+        "negative": [
+          "thin main plot",
+          "best enjoyed by prequel fans",
+          "spending much of the book with characters separated"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jonathan Davis's narration with full Star Wars sound design and John Williams score is outstanding.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Living Force - John Jackson Miller": {
@@ -180025,53 +180446,97 @@
       "author": "John Jackson Miller",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "One year before The Phantom Menace, Qui-Gon Jinn challenges the entire Jedi Council to leave Coruscant on a goodwill mission to a remote outpost — where they discover a rising pirate threat and an uncomfortable truth about their own growing isolation from the galaxy.",
+      "tone": "adventurous, ensemble-driven, warmly humorous",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional complacency",
+        "presence and the Living Force",
+        "community and service",
+        "Jedi philosophy",
+        "the cost of isolation"
+      ],
+      "setting": "Star Wars galaxy — the planet Kwenn, one year before Episode I: The Phantom Menace (32 BBY)",
+      "comparable_books": [
+        "Brotherhood - Mike Chen",
+        "Master and Apprentice - Claudia Gray",
+        "Dooku: Jedi Lost - Cavan Scott",
+        "Kenobi - John Jackson Miller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Jedi Council ensemble",
+          "prequel era",
+          "Qui-Gon Jinn focus",
+          "Star Wars 25th anniversary",
+          "accessible standalone",
+          "fun and humorous"
+        ],
+        "negative": [
+          "very large cast can feel thin for individual characters",
+          "light stakes by Star Wars standards"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Alphabet Squadron - Alexander Freed": {
       "title": "Alphabet Squadron",
       "author": "Alexander Freed",
       "series": "Star Wars: Alphabet Squadron",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the chaotic aftermath of the Battle of Endor, a ragtag New Republic squadron of mismatched pilots is assembled to hunt down Shadow Wing, an elite Imperial TIE fighter unit refusing to accept defeat — a dark, character-driven war novel set in the Star Wars universe.",
+      "tone": "gritty, psychologically complex, war-weary",
+      "pacing": "Moderate",
+      "themes": [
+        "trauma and PTSD",
+        "loyalty and purpose",
+        "the cost of war",
+        "identity",
+        "moral ambiguity in conflict"
+      ],
+      "setting": "Star Wars galaxy — the fractured post-Endor period (~4 ABY), featuring space combat, occupied worlds, and New Republic politics",
+      "comparable_books": [
+        "Battlefront: Twilight Company - Alexander Freed",
+        "Shadow Fall - Alexander Freed",
+        "X-Wing: Rogue Squadron - Michael A. Stackpole",
+        "The Art of War (thematic)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark military Star Wars",
+          "character-driven",
+          "psychologically complex",
+          "diverse ensemble",
+          "post-Endor setting"
+        ],
+        "negative": [
+          "slower than typical Star Wars fare",
+          "dark tone may not suit casual fans",
+          "requires patience with ensemble setup"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Aftermath - Chuck Wendig": {
