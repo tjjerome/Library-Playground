@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1929,
-  "total_pending": 2671,
+  "total_catalogued": 1949,
+  "total_pending": 2651,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -116962,513 +116962,946 @@
       "title": "Freelancer",
       "author": "James Jakins",
       "series": "Heroes of Summervale",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jack Bloodfist, an orc fixer-for-hire, takes on a series of jobs that spiral into a city-spanning conspiracy involving a necromancer with powerful demonic allies. From Southern towns to elven courts to the rooftops of New York City, Jack must call in every favour he has to survive.",
+      "tone": "comedic, action-packed, pulpy urban fantasy",
+      "pacing": "Fast",
+      "themes": [
+        "identity and belonging",
+        "community",
+        "found family",
+        "morally grey jobs"
+      ],
+      "setting": "Contemporary Earth (Summervale, Virginia and beyond) — orcs, goblins, and supernatural beings living among humans",
+      "comparable_books": [
+        "Fixer - James Jakins",
+        "Full Blooded - Amanda Carlson",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "orc/non-human protagonist",
+          "urban fantasy with humour",
+          "fast-paced action",
+          "supernatural ensemble cast",
+          "light-hearted tone"
+        ],
+        "negative": [
+          "grimdark",
+          "slow meditative pacing",
+          "traditional epic fantasy setting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Sin Eater - Mike Shel": {
       "title": "Sin Eater",
       "author": "Mike Shel",
       "series": "Iconoclasts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired adventurer Auric Manteo is dragged back into danger alongside his estranged daughter Agnes, sent on a near-suicidal mission to deal with an ancient, cannibalistic queen whose dark bargain has kept her alive for over a century. A slow-burn dungeon crawl fused with a deeply personal story of family reconciliation.",
+      "tone": "dark, brooding, psychologically rich, gothic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "trauma and recovery",
+        "parent-child relationships",
+        "the cost of power",
+        "fear",
+        "duty vs. self-preservation"
+      ],
+      "setting": "The Hanifaxan Imperium — a grimdark secondary-world empire with ancient ruins, corrupt courts, and imprisoned gods",
+      "comparable_books": [
+        "Aching God - Mike Shel",
+        "The Black Company - Glen Cook",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dungeon crawling",
+          "D&D-adjacent adventuring parties",
+          "psychological depth",
+          "trauma-informed storytelling",
+          "morally grey protagonist",
+          "slow burn with payoff"
+        ],
+        "negative": [
+          "fast-paced action-first fantasy",
+          "light-hearted tone",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Choir of the Damned - Steven McKinnon": {
       "title": "Choir of the Damned",
       "author": "Steven McKinnon",
       "series": "The Raincatcher's Ballad",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The climactic conclusion to The Raincatcher's Ballad, in which Serena — the last living Siren-born with godlike power — hunts the demon threatening her mind, while assassin Damien Fieri pursues the tyrant who destroyed his kingdom, as the world teeters on the brink of total war.",
+      "tone": "high-octane, propulsive, darkly comic, relentless",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance vs. justice",
+        "power and corruption",
+        "found family",
+        "ecological catastrophe",
+        "war's human cost"
+      ],
+      "setting": "A gritty secondary world with early-industrial elements, spanning multiple nations from Dalthea to new continents",
+      "comparable_books": [
+        "Symphony of the Wind - Steven McKinnon",
+        "The Blade Itself - Joe Abercrombie",
+        "Blood Song - Anthony Ryan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "grimdark action",
+          "diverse ensemble cast",
+          "dry humour",
+          "explosive set pieces",
+          "SPFBO finalist"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "low-action literary fantasy",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Idols Fall - Mike Shel": {
       "title": "Idols Fall",
       "author": "Mike Shel",
       "series": "Iconoclasts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Agnes Manteo, now wielding her father's sentient Djao sword, leads her companions on a deicidal mission to hunt down and destroy the false gods who have exploited humanity for centuries — all while the empire fractures around her after the fall of its undying queen.",
+      "tone": "dark, intense, gothic, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "deicide and false religion",
+        "political upheaval",
+        "trauma and resilience",
+        "duty and sacrifice",
+        "legacy"
+      ],
+      "setting": "The Hanifaxan Imperium — ancient Barrowlands ruins, contested throne, and demonic forces threatening civilization",
+      "comparable_books": [
+        "Sin Eater - Mike Shel",
+        "Aching God - Mike Shel",
+        "The Black Company - Glen Cook"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dungeon crawling",
+          "god-killing quest",
+          "morally complex characters",
+          "dark atmosphere",
+          "satisfying trilogy conclusion",
+          "SPFBO pedigree"
+        ],
+        "negative": [
+          "fast comedic fantasy",
+          "romance-heavy",
+          "low stakes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Simon Vance, widely praised as an outstanding performance that elevates the already compelling text.",
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Blood King - Keith Ward": {
       "title": "The Blood King",
       "author": "Keith Ward",
       "series": "Red Proxy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the world of Greyfelle, life spans can be stolen and transferred — a practice that has kept the tyrant Lord Fathim alive for 278 years and slowly driving him insane. When he summons the powerful Span Seer Mavel to cure him, she must find the courage to use a secret that could end his reign forever.",
+      "tone": "grim, morally unsettling, fast-paced novella",
+      "pacing": "Fast",
+      "themes": [
+        "immortality and its costs",
+        "power and corruption",
+        "moral complicity",
+        "courage vs. cowardice"
+      ],
+      "setting": "The medieval-esque world of Greyfelle, where life-force can be bought and sold as a commodity",
+      "comparable_books": [
+        "99 Days - Keith Ward",
+        "The Blade Itself - Joe Abercrombie",
+        "The Broken Empire - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "unique magic system",
+          "villain POV",
+          "morally uncomfortable world",
+          "quick read"
+        ],
+        "negative": [
+          "slow pacing",
+          "light-hearted tone",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Anointed - Keith Ward": {
       "title": "The Anointed",
       "author": "Keith Ward",
       "series": "Red Proxy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Xinlas, a young man marked as the Anointed — destined to stop a ruler who would enslave the world — must overcome his own arrogance and forge an unlikely alliance with Greengrass, who despises him, to fulfil a destiny that could save or shatter civilization.",
+      "tone": "grim, character-focused, tense",
+      "pacing": "Moderate",
+      "themes": [
+        "destiny vs. agency",
+        "arrogance and humility",
+        "the corrupting nature of the Proxy system",
+        "chosen one subversion"
+      ],
+      "setting": "The world of Greyfelle — a medieval fantasy setting where life spans are transferred through dark magic",
+      "comparable_books": [
+        "The Blood King - Keith Ward",
+        "99 Days - Keith Ward"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "flawed chosen one",
+          "morally complex world",
+          "unique magic system"
+        ],
+        "negative": [
+          "light-hearted fantasy",
+          "romance-heavy",
+          "slow pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "99 Days - Keith Ward": {
       "title": "99 Days",
       "author": "Keith Ward",
       "series": "Red Proxy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A father who has just lost his wife races against a 99-day countdown to save his newborn triplets from being sacrificed for their valuable life spans, accompanied by a morally conflicted Span Seer, a haunted ex-soldier, and a guide whose mind is too broken to remember his own name.",
+      "tone": "tense, emotional, grim",
+      "pacing": "Fast",
+      "themes": [
+        "parental sacrifice",
+        "moral complicity",
+        "the injustice of the Proxy system",
+        "desperation"
+      ],
+      "setting": "The world of Greyfelle — a medieval fantasy world with life-force magic and social stratification based on lifespan",
+      "comparable_books": [
+        "The Blood King - Keith Ward",
+        "The Anointed - Keith Ward"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "race-against-time plot",
+          "emotional stakes",
+          "unique magic system",
+          "quick read"
+        ],
+        "negative": [
+          "light-hearted fantasy",
+          "slow pacing",
+          "low-stakes settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Silence of Unworthy Gods - Andrew Rowe": {
       "title": "The Silence of Unworthy Gods",
       "author": "Andrew Rowe",
       "series": "Arcane Ascension",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Progression Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Corin Cadence returns to Valia after his journey abroad, facing a showdown with his powerful and dangerous father while his friends navigate a second year at Lorian Heights magical academy — all as a mysterious faction emerges, targeting commoners and foreigners in a violent purge.",
+      "tone": "methodical, systems-focused, found-family warmth, escalating stakes",
+      "pacing": "Slow",
+      "themes": [
+        "found family",
+        "systemic oppression",
+        "power and responsibility",
+        "neurodiversity",
+        "political corruption",
+        "progression and growth"
+      ],
+      "setting": "The world of Arcanis — a secondary fantasy world with attunement-based magic, towered dungeons, and a magical academy",
+      "comparable_books": [
+        "Sufficiently Advanced Magic - Andrew Rowe",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Cradle - Will Wight"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "magic system deep-dives",
+          "magical school",
+          "dungeon crawling",
+          "progression fantasy",
+          "found family",
+          "neurodiverse protagonist"
+        ],
+        "negative": [
+          "grimdark",
+          "fast action-first",
+          "romance-heavy",
+          "impatient with slow reveals"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Shadow King - Alec Hutson": {
       "title": "The Shadow King",
       "author": "Alec Hutson",
       "series": "The Raveling",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of The Raveling: Keilan and his companions race north bearing a weapon forged to destroy the Chosen, while the Crimson Queen marshals her sorcerers and the immortal Alyanna schemes her revenge — all converging on a cataclysmic final battle as ancient powers awaken to end the age of humanity.",
+      "tone": "epic, lyrical, classic-fantasy adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "the nature of evil",
+        "sorcery and power",
+        "ancient history vs. present conflict",
+        "chosen destiny",
+        "moral ambiguity"
+      ],
+      "setting": "A richly imagined secondary world drawing on both eastern and western cultures, spanning frozen Frostlands, shattered cities, and ancient sorcerous ruins",
+      "comparable_books": [
+        "The Crimson Queen - Alec Hutson",
+        "The Licanius Trilogy - James Islington",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "intricate world-building",
+          "multiple POVs",
+          "plot-driven over character-driven",
+          "self-published quality"
+        ],
+        "negative": [
+          "grimdark",
+          "character-first literary fantasy",
+          "slow introspective pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Devil's Night Dawning - Damien Black": {
       "title": "Devil's Night Dawning",
       "author": "Damien Black",
       "series": "Broken Stone Chronicle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When novice monk Adelko is assigned to legendary exorcist Horskram, the two stumble onto a sorcerous theft that threatens to unleash an ancient evil — pursued across a kingdom plunging into civil war, they must stop a warlock from reuniting a cursed anti-relic before demons reclaim the mortal world.",
+      "tone": "gothic, slow-burn, densely world-built, Lovecraftian horror-tinged",
+      "pacing": "Slow",
+      "themes": [
+        "faith vs. doubt",
+        "demonic corruption",
+        "political power",
+        "good vs. ancient evil",
+        "free will and fate"
+      ],
+      "setting": "A richly researched pseudo-medieval world evoking Arthurian legend, Tolkienesque mythology, and H.P. Lovecraft — kingdoms at war with a barrier between worlds crumbling",
+      "comparable_books": [
+        "The Black Company - Glen Cook",
+        "A Song of Ice and Fire - George R.R. Martin",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tolkienesque world-building",
+          "gothic horror fantasy",
+          "slow immersive pacing",
+          "Lovecraftian dread",
+          "multi-POV epic",
+          "SPFBO finalist"
+        ],
+        "negative": [
+          "fast-paced action-first",
+          "comedy",
+          "light-hearted tone",
+          "impatient with info-dumps"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Pilgrim's Storm Brooding - Damien Black": {
       "title": "Pilgrim's Storm Brooding",
       "author": "Damien Black",
       "series": "Broken Stone Chronicle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With one warlock slain and the conspiracy of wizards still growing, Adelko and Horskram travel to the exotic Pilgrim Kingdoms — where Crusader lords and native Sassanians coexist uneasily — while other characters race to warn the keepers of a sacred fragment before the dark mastermind can reunite the deadly Headstone.",
+      "tone": "gothic, sprawling, densely world-built, doomed-heroism",
+      "pacing": "Slow",
+      "themes": [
+        "religious and political corruption",
+        "faith and doubt",
+        "the cost of heroism",
+        "cultural clash",
+        "ancient evil"
+      ],
+      "setting": "The broader Known World — from the Argolian Order's headquarters in Rima to the Crusader-held Pilgrim Kingdoms and the war-torn north of Thraxia",
+      "comparable_books": [
+        "Devil's Night Dawning - Damien Black",
+        "The Deed of Paksenarrion - Elizabeth Moon",
+        "The Black Company - Glen Cook"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic multi-POV fantasy",
+          "religious mysticism",
+          "slow immersive world-building",
+          "gothic horror elements",
+          "escalating stakes"
+        ],
+        "negative": [
+          "fast-paced",
+          "comedic",
+          "light-hearted",
+          "impatient with dense lore"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Witch's Moon Calling - Damien Black": {
       "title": "Witch's Moon Calling",
       "author": "Damien Black",
       "series": "Broken Stone Chronicle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "needs_review",
+      "summary": "The mastermind behind the sorcerous conspiracy to reunite the Headstone has been revealed — now Adelko, Horskram, and their allies must find a way to stop him before the full might of demonkind is unleashed upon the Known World.",
+      "tone": "gothic, dark, slow-burn",
+      "pacing": "Slow",
+      "themes": [
+        "faith and corruption",
+        "ancient evil",
+        "sacrifice and duty",
+        "demonic incursion"
+      ],
+      "setting": "The Known World of the Broken Stone Chronicle — medieval pseudo-European kingdoms under threat from demonic forces on the Other Side",
+      "comparable_books": [
+        "Pilgrim's Storm Brooding - Damien Black",
+        "The Black Company - Glen Cook",
+        "A Song of Ice and Fire - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic epic fantasy",
+          "slow immersive world-building",
+          "Lovecraftian horror elements",
+          "multi-POV",
+          "long-form series investment"
+        ],
+        "negative": [
+          "fast-paced",
+          "comedic",
+          "light-hearted",
+          "impatient with dense lore"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "Low",
+      "research_source": "web_search",
       "audit": null
     },
     "Death's Beating Heart - Rob J. Hayes": {
       "title": "Death's Beating Heart",
       "author": "Rob J. Hayes",
       "series": "The War Eternal",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the epic conclusion to The War Eternal, the Corpse Queen Eskara Helsene comes out of retirement to help her daughter Sirileth face the catastrophic consequences of crashing a moon into the world — including a ravenous portal to the Other World — and must decide whether she can save the world without once more becoming the monster everyone fears.",
+      "tone": "grimdark, propulsive, emotionally brutal, blackly comic",
+      "pacing": "Moderate",
+      "themes": [
+        "redemption and legacy",
+        "motherhood",
+        "the weight of past actions",
+        "power and its costs",
+        "breaking cycles of violence"
+      ],
+      "setting": "The world of Ovaeris — a grimdark secondary world of crumbling nations, god-level magic, and dimensional horror",
+      "comparable_books": [
+        "Along the Razor's Edge - Rob J. Hayes",
+        "Prince of Thorns - Mark Lawrence",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "morally grey anti-hero protagonist",
+          "female lead",
+          "long-form character arc",
+          "SPFBO winning series author",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "cosy fantasy",
+          "light-hearted tone",
+          "low-stakes setting",
+          "linear moral frameworks"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Gods of the Broken Sea - James Jakins": {
       "title": "Gods of the Broken Sea",
       "author": "James Jakins",
       "series": "Heroes of Summervale",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Holy knight Arthur Shield and the half-orc girl Mikaia Goretusk sail the perilous Broken Sea aboard a pirate ship, chasing rumours of an Elven Queen who might be able to return Mikaia to Earth — pursued by an Imperial admiral and beset by god-infested islands and an evil as old as the sea itself.",
+      "tone": "adventurous, action-packed, light-hearted, swashbuckling",
+      "pacing": "Fast",
+      "themes": [
+        "belonging and home",
+        "unlikely alliances",
+        "faith and duty",
+        "ancient evil",
+        "journey and discovery"
+      ],
+      "setting": "The fantasy world of Domhan and the treacherous Broken Sea — a secondary world with gods, pirates, and cross-world travel, connected to modern Earth",
+      "comparable_books": [
+        "Knights of the Dead God - James Jakins",
+        "Fixer - James Jakins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced adventure",
+          "found family",
+          "portal fantasy",
+          "light-hearted tone",
+          "pirate adventure"
+        ],
+        "negative": [
+          "grimdark",
+          "slow meditative pacing",
+          "hard magic systems"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Straw Doll Cries at Midnight - K. Bird Lincoln": {
       "title": "The Straw Doll Cries at Midnight",
       "author": "K. Bird Lincoln",
       "series": "Tiger Lily",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lily, now a handmaiden, follows her lordling Ashikaga into the intrigues of the Emperor's court in Kyoto, where a cursed spirit haunts them at night and a murder mystery unfolds — forcing her to turn to an old enemy, the fox general Norinaga, for help while keeping her forbidden connection to the outlawed Jindo gods secret.",
+      "tone": "lyrical, atmospheric, romantic, quietly tense",
+      "pacing": "Moderate",
+      "themes": [
+        "forbidden love",
+        "cultural identity",
+        "outlawed religion",
+        "courtly intrigue",
+        "gender and disguise"
+      ],
+      "setting": "Alternate medieval Japan (Kyoto) — a world where Shinto has been outlawed and sleeping gods stir, mixing historical court culture with Japanese mythology",
+      "comparable_books": [
+        "Tiger Lily - K. Bird Lincoln",
+        "The Pillow Book - Sei Shonagon (as influence)",
+        "The Hakawati - Rabih Alameddine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fantasy",
+          "Japanese mythology",
+          "lyrical prose",
+          "gender-bending",
+          "court intrigue",
+          "romance"
+        ],
+        "negative": [
+          "fast-paced action-first",
+          "grimdark",
+          "Western secondary world"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "What Remains of Heroes - David Benem": {
       "title": "What Remains of Heroes",
       "author": "David Benem",
       "series": "A Requiem for Heroes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lannick deVeers, a disgraced war hero drowning his grief in ale, is thrust onto an unlikely path to revenge when dark sorcerers called the Necrists begin raising dead gods to destroy the kingdom — joined by a misanthropic cleric and a band of assassins struggling with a member's growing madness.",
+      "tone": "gritty, grimly philosophical, darkly comic, introspective",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "redemption and heroism",
+        "grief and trauma",
+        "ancient evil",
+        "the cost of vengeance",
+        "morality and survival"
+      ],
+      "setting": "A dark secondary-world kingdom called Rune — medieval fantasy with deep religious mythology and rising necromantic evil",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "The Black Company - Glen Cook",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "morally complex protagonist",
+          "fallen-hero redemption arc",
+          "dark religious mythology",
+          "SPFBO finalist",
+          "wry humour"
+        ],
+        "negative": [
+          "light-hearted fantasy",
+          "fast uncomplicated action",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wrath of Heroes - David Benem": {
       "title": "The Wrath of Heroes",
       "author": "David Benem",
       "series": "A Requiem for Heroes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up directly after the shocking events of the first book, Lannick continues his difficult journey toward becoming a hero again while the Necrists and the mysterious Spider King consolidate their power — raising the stakes for the kingdom's increasingly desperate defenders.",
+      "tone": "gritty, action-heavy, dark, tense",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "the cost of war",
+        "political corruption",
+        "ancient evil resurgent",
+        "broken characters striving for better"
+      ],
+      "setting": "The dark secondary-world kingdom of Rune — fractured by the death of the High King and besieged by necromantic forces",
+      "comparable_books": [
+        "What Remains of Heroes - David Benem",
+        "The First Law - Joe Abercrombie",
+        "The Black Company - Glen Cook"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "morally complex characters",
+          "fast action",
+          "political intrigue",
+          "shades-of-grey morality"
+        ],
+        "negative": [
+          "light-hearted fantasy",
+          "romance-heavy",
+          "low-stakes settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Priest - Matthew Colville": {
       "title": "Priest",
       "author": "Matthew Colville",
       "series": "Ratcatchers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Heden, a guilt-haunted retired adventurer turned priest, is sent by his bishop into a haunted forest to investigate why the knights of the Green Order have abandoned their duty — and finds their commander dead, the survivors paralysed by shame, and a monstrous army bearing down on a defenceless town.",
+      "tone": "hardboiled, grim, wry, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "guilt and redemption",
+        "duty vs. conscience",
+        "the dark side of knightly orders",
+        "PTSD and heroism",
+        "moral duty"
+      ],
+      "setting": "A secondary world of medieval kingdoms, haunted forests, and D&D-esque adventuring guilds — grounded and grim",
+      "comparable_books": [
+        "The Black Company - Glen Cook",
+        "The First Law - Joe Abercrombie",
+        "Thief - Matthew Colville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "D&D-inspired world",
+          "retired adventurer protagonist",
+          "hardboiled fantasy",
+          "moral complexity",
+          "tight plot",
+          "SPFBO winner"
+        ],
+        "negative": [
+          "romance-heavy",
+          "light-hearted tone",
+          "high-concept magic systems"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Thief - Matthew Colville": {
       "title": "Thief",
       "author": "Matthew Colville",
       "series": "Ratcatchers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Returning from the forest, Heden plans his vengeance against the treacherous bishop — but finds the city in chaos as a power-hungry Count, armed with a substance that turns men into ghouls, schemes to become the Underking of all crime, threatening the young woman Heden has sworn to protect.",
+      "tone": "hardboiled, propulsive, darkly comic, urban grit",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "loyalty and protection",
+        "crime and power",
+        "a man is more than his worst act",
+        "urban corruption"
+      ],
+      "setting": "A secondary-world city — thieves' guilds, political corruption, and hardboiled fantasy adventure",
+      "comparable_books": [
+        "Priest - Matthew Colville",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "The Black Company - Glen Cook"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "D&D-inspired world",
+          "hardboiled fantasy",
+          "city-based intrigue",
+          "thieves' guilds",
+          "fast-paced",
+          "moral complexity"
+        ],
+        "negative": [
+          "romance-heavy",
+          "light-hearted cosy fantasy",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Saint Elspeth - Wick Welker": {
@@ -117476,26 +117909,50 @@
       "author": "Wick Welker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twenty years after alien ships appeared in Earth's skies and triggered a nuclear apocalypse, Dr. Elspeth Darrow runs the last functioning hospital in post-collapse San Francisco — until a salvage run leads her to a dead alien and the terrifying realisation that the extraterrestrials have returned and want to communicate, forcing her to hide the truth from the reactionary despots fighting for control of the ruins.",
+      "tone": "contemplative, tense, humanistic, post-apocalyptic dread",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fear vs. hope",
+        "human nature and cynicism",
+        "first contact",
+        "medicine and healing",
+        "power and authoritarian control"
+      ],
+      "setting": "Post-apocalyptic Neo California (San Francisco) — 20 years after alien arrival triggered nuclear war, a society rebuilding from scratch",
+      "comparable_books": [
+        "The Road - Cormac McCarthy",
+        "Station Eleven - Emily St. John Mandel",
+        "The Book of the Unnamed Midwife - Meg Elison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "post-apocalyptic setting",
+          "first contact",
+          "strong female protagonist",
+          "character-driven",
+          "medical authenticity",
+          "SPSFC winner"
+        ],
+        "negative": [
+          "fast action-first sci-fi",
+          "space opera",
+          "light-hearted tone",
+          "impatient with slow build"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Praised audiobook edition; narrator brings strong life to Elspeth's complex emotional arc.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Long Way Down - Craig Schaefer": {
