@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2866,
-  "total_pending": 1734,
+  "total_catalogued": 2886,
+  "total_pending": 1714,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -162359,108 +162359,192 @@
       "title": "Holly",
       "author": "Stephen King",
       "series": "Holly Gibney",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Private investigator Holly Gibney, grieving her mother's death amid the COVID-19 pandemic, takes on the case of a missing young woman and finds herself up against a pair of shockingly depraved retired professors hiding a terrible secret. A standalone mystery that deepens King's beloved neurodivergent detective.",
+      "tone": "Dark, propulsive, socially charged",
+      "pacing": "Moderate",
+      "themes": [
+        "grief",
+        "obsession",
+        "predation",
+        "pandemic isolation",
+        "justice"
+      ],
+      "setting": "Midwestern American city, July 2021, during the COVID-19 pandemic",
+      "comparable_books": [
+        "Mr. Mercedes - Stephen King",
+        "The Outsider - Stephen King",
+        "The Woman in the Window - A.J. Finn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "neurodivergent protagonist",
+          "procedural mystery",
+          "character-driven thriller",
+          "Stephen King fan",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "readers who dislike political commentary in fiction",
+          "readers wanting supernatural horror"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "King's audiobooks are consistently well-produced with strong narrators, and Holly's distinctive voice translates exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence",
+        "cannibalism"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mr. Mercedes - Stephen King": {
       "title": "Mr. Mercedes",
       "author": "Stephen King",
       "series": "Bill Hodges",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired detective Bill Hodges receives taunting letters from a killer who drove a stolen Mercedes into a crowd of job-seekers, and is drawn back into the hunt — aided by the unexpectedly resourceful Holly Gibney. A cat-and-mouse thriller that marks King's foray into straightforward crime fiction.",
+      "tone": "Tense, procedural, darkly suspenseful",
+      "pacing": "Fast",
+      "themes": [
+        "obsession",
+        "revenge",
+        "isolation",
+        "vigilantism",
+        "redemption"
+      ],
+      "setting": "Midwest America, contemporary",
+      "comparable_books": [
+        "Holly - Stephen King",
+        "The Silence of the Lambs - Thomas Harris",
+        "I Am Pilgrim - Terry Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cat-and-mouse thriller",
+          "detective fiction",
+          "propulsive pacing",
+          "Stephen King fan",
+          "villain POV chapters"
+        ],
+        "negative": [
+          "readers expecting supernatural horror",
+          "readers sensitive to mass-casualty violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Performed by Will Patton, widely regarded as one of the best King audiobook narrators.",
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Battle of Jedha - George Mann": {
       "title": "The Battle of Jedha",
       "author": "George Mann",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Phase II — Book 3 (audio original)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jedi Masters Creighton Sun and Aida Forte accompany delegations from two warring planets to the holy moon of Jedha to oversee a peace treaty signing, but religious tensions and the machinations of the Path of the Open Hand ignite a battle that threatens to consume the entire world. Originally produced as a full-cast audio drama, later published as a script.",
+      "tone": "Action-packed, politically tense, adventure-driven",
+      "pacing": "Fast",
+      "themes": [
+        "religious conflict",
+        "peace vs. war",
+        "fanaticism",
+        "diplomacy",
+        "unity"
+      ],
+      "setting": "The moon of Jedha, Star Wars galaxy, High Republic Era (~200 years before the films)",
+      "comparable_books": [
+        "The High Republic: Convergence - Zoraida Córdova",
+        "The High Republic: Path of Deceit - Tessa Gratton & Justina Ireland",
+        "Dooku: Jedi Lost - Cavan Scott"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fan",
+          "High Republic reader",
+          "audio drama / full-cast production",
+          "political intrigue in sci-fi",
+          "ensemble cast"
+        ],
+        "negative": [
+          "casual Star Wars fans unfamiliar with the High Republic",
+          "readers wanting self-contained stories",
+          "print-preferred readers (script format)"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Originally conceived as a full-cast audio drama with music and sound effects; the audio version is the definitive experience. The print edition is a script.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "How the Light Gets In - Louise Penny": {
       "title": "How the Light Gets In",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Chief Inspector Gamache faces a crisis on two fronts: a missing woman in Three Pines connected to a decades-old mass murder of quintuplets, and a mounting internal battle against a corrupt Sûreté du Québec that threatens everything he has built. A pivotal, emotionally devastating entry in the series.",
+      "tone": "Cozy-dark, emotionally resonant, suspenseful",
+      "pacing": "Moderate",
+      "themes": [
+        "corruption",
+        "justice",
+        "grief",
+        "community",
+        "redemption",
+        "moral courage"
+      ],
+      "setting": "Three Pines, Québec, and Montréal, contemporary",
+      "comparable_books": [
+        "Still Life - Louise Penny",
+        "The ABC Murders - Agatha Christie",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery with depth",
+          "series reader",
+          "character-driven mystery",
+          "Quebec setting",
+          "found family"
+        ],
+        "negative": [
+          "readers who want fast-paced action",
+          "readers who dislike revisiting series backstory"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ralph Cosham's narration is iconic for this series; widely considered among the best mystery audiobooks available.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "And Every Morning the Way Home Gets Longer and Longer - Fredrik Backman": {
@@ -162468,188 +162552,335 @@
       "author": "Fredrik Backman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A grandfather with dementia sits on a bench in a dreamlike place between memory and forgetting, visited by his grandson and the ghost of his own father — a tender, heartbreaking meditation on love, loss, and what we hold onto as the mind fades.",
+      "tone": "Lyrical, tender, bittersweet, quietly devastating",
+      "pacing": "Slow",
+      "themes": [
+        "dementia",
+        "memory",
+        "grief",
+        "grandfather-grandson bond",
+        "letting go",
+        "love"
+      ],
+      "setting": "A surreal, dreamlike liminal space; memory and the present intertwined",
+      "comparable_books": [
+        "A Man Called Ove - Fredrik Backman",
+        "The 100-Year-Old Man Who Climbed Out the Window - Jonas Jonasson",
+        "The Art of Racing in the Rain - Garth Stein"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotional literary fiction",
+          "Backman fan",
+          "stories about aging and memory",
+          "short reads with big impact",
+          "multigenerational bonds"
+        ],
+        "negative": [
+          "readers who dislike sad or weepy stories",
+          "readers wanting plot-driven narratives"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lyrical, intimate prose translates beautifully to audio; the novella's short length makes it a single sitting listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Forest of Swords - Baptiste Pinson Wu": {
       "title": "Forest of Swords",
       "author": "Baptiste Pinson Wu",
       "series": "The Three Kingdoms Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A novella set in the Han Empire, 200 CE, in which Liao Chun — burdened by the consequences of his betrayal of a former lord — must decide whether to return a vulnerable woman and her child to certain death or protect them and earn the enmity of all his former allies.",
+      "tone": "Gritty, tense, morally charged, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "betrayal",
+        "loyalty",
+        "moral choice",
+        "consequences",
+        "honor"
+      ],
+      "setting": "Han Empire, China, 200 CE — ancient roads and wilderness",
+      "comparable_books": [
+        "Yellow Sky Revolt - Baptiste Pinson Wu",
+        "The Poppy War - R.F. Kuang",
+        "Musashi - Eiji Yoshikawa"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of ancient Chinese history",
+          "action-heavy historical fiction",
+          "series readers",
+          "short punchy reads",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "readers unfamiliar with the Three Kingdoms period who haven't read earlier books",
+          "readers wanting extensive world-building exposition"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Shields of the Empire - Baptiste Pinson Wu": {
       "title": "Shields of the Empire",
       "author": "Baptiste Pinson Wu",
       "series": "The Three Kingdoms Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Cao Cao's armies massing in the north, Liu Bei's survival hinges on the brilliant but shadowed scholar Xu Shu; Liao Hua and his Blood Riders must eliminate the ghosts of Xu Shu's violent past before the two forces collide at Bowang Po.",
+      "tone": "Gritty, propulsive, camaraderie-driven",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty",
+        "sacrifice",
+        "war",
+        "leadership",
+        "brotherhood"
+      ],
+      "setting": "Northern Jing province, Han China, early 3rd century CE",
+      "comparable_books": [
+        "Dynasty Killers - Baptiste Pinson Wu",
+        "The Poppy War - R.F. Kuang",
+        "Shōgun - James Clavell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Three Kingdoms period fans",
+          "military historical fiction",
+          "found family / band of brothers",
+          "action-focused series readers"
+        ],
+        "negative": [
+          "new readers to the series",
+          "readers wanting slower character development"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Cold Silver for Souls - Tori Tecken": {
       "title": "Cold Silver for Souls",
       "author": "Tori Tecken",
       "series": "Shadesilver",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Hunter, a necromancer-bounty hunter who drags an animated corpse named Rip behind her, is blackmailed by a powerful Shadesilver baron into taking on one last job — and instead finds herself on an unexpected path toward justice for someone else entirely.",
+      "tone": "Gritty, atmospheric, darkly wry, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "justice",
+        "outcasts",
+        "found family",
+        "necromancy",
+        "the lawless frontier",
+        "redemption"
+      ],
+      "setting": "A wild-west-inspired fantasy world reminiscent of the Yukon Gold Rush era, in a lawless Territories region",
+      "comparable_books": [
+        "Of Honey and Wildfires - Sarah Chorn",
+        "The Gunslinger - Stephen King",
+        "Six of Crows - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fantasy western fans",
+          "necromancer protagonists",
+          "found family trope",
+          "lone wolf and cub dynamic",
+          "indie fantasy",
+          "episodic storytelling"
+        ],
+        "negative": [
+          "readers wanting high-magic systems",
+          "readers who dislike western settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Yellow Sky Revolt - Baptiste Pinson Wu": {
       "title": "Yellow Sky Revolt",
       "author": "Baptiste Pinson Wu",
       "series": "The Three Kingdoms Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 184 CE China, young peasant boy Liao Hua joins the Yellow Turban Rebellion against the crumbling Han dynasty, following his journey from naive farm boy to hardened warrior across the brutal opening years of the Three Kingdoms era.",
+      "tone": "Epic, gritty, coming-of-age, immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "coming of age",
+        "war",
+        "ambition",
+        "survival",
+        "loyalty",
+        "class uprising"
+      ],
+      "setting": "Han Empire, China, 184 CE — villages, battle camps, and ancient cities",
+      "comparable_books": [
+        "The Poppy War - R.F. Kuang",
+        "Shōgun - James Clavell",
+        "The Grace of Kings - Ken Liu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient Chinese history fans",
+          "epic historical fiction",
+          "underdog protagonist",
+          "action-driven storytelling",
+          "indie fiction",
+          "Dynasty Warriors / Romance of the Three Kingdoms fans"
+        ],
+        "negative": [
+          "readers wanting fast-paced prose",
+          "readers unfamiliar with Chinese history who want more context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Heroes of Chaos - Baptiste Pinson Wu": {
       "title": "Heroes of Chaos",
       "author": "Baptiste Pinson Wu",
       "series": "The Three Kingdoms Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the collapse of the Yellow Turban Rebellion, now-young-man Liao Hua serves the ambitious warlord Cao Cao amid a coalition of self-interested lords vying for control of a fractured empire, testing his loyalty and forging him into a true soldier.",
+      "tone": "Gritty, action-driven, politically charged",
+      "pacing": "Fast",
+      "themes": [
+        "ambition",
+        "loyalty",
+        "brotherhood",
+        "political scheming",
+        "war",
+        "coming of age"
+      ],
+      "setting": "Han Empire, China, 190 CE — warlord coalitions, sieges, and frontier campaigns",
+      "comparable_books": [
+        "Yellow Sky Revolt - Baptiste Pinson Wu",
+        "The Poppy War - R.F. Kuang",
+        "Musashi - Eiji Yoshikawa"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Three Kingdoms series readers",
+          "military historical fiction",
+          "fans of Cao Cao as a character",
+          "action-heavy sequels"
+        ],
+        "negative": [
+          "new readers to the series (entry point is Book 1)",
+          "readers wanting slower political intrigue"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dynasty Killers - Baptiste Pinson Wu": {
       "title": "Dynasty Killers",
       "author": "Baptiste Pinson Wu",
       "series": "The Three Kingdoms Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Cao Cao's campaign to reunify the Han empire intensifies, Liao Chun leads his elite Scorpions unit on brutal covert missions — but mounting losses and growing moral doubts force him to confront the ultimate choice between blind obedience and honest betrayal.",
+      "tone": "Grimdark-adjacent, morally complex, relentless",
+      "pacing": "Fast",
+      "themes": [
+        "moral disillusionment",
+        "loyalty vs. conscience",
+        "war crimes",
+        "brotherhood",
+        "betrayal"
+      ],
+      "setting": "Han Empire, China, 196–200 CE — spanning the central plains and southern kingdoms",
+      "comparable_books": [
+        "Heroes of Chaos - Baptiste Pinson Wu",
+        "The Poppy War - R.F. Kuang",
+        "Malazan Book of the Fallen - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series readers",
+          "morally grey protagonist",
+          "special forces / elite unit dynamics",
+          "Three Kingdoms history fans",
+          "action and consequence"
+        ],
+        "negative": [
+          "readers wanting a heroic, uncomplicated protagonist",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dream Count - Chimamanda Ngozi Adichie": {
@@ -162657,26 +162888,47 @@
       "author": "Chimamanda Ngozi Adichie",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Four African women — a Nigerian travel writer stranded by the pandemic, her lawyer best friend, her outspoken cousin in Nigerian finance, and her Guinean housekeeper — each confront love, motherhood, identity, and the choices that have defined them.",
+      "tone": "Lyrical, intimate, empathetic, sharply observant",
+      "pacing": "Slow",
+      "themes": [
+        "womanhood",
+        "love and regret",
+        "motherhood",
+        "immigration",
+        "identity",
+        "the African diaspora",
+        "pandemic isolation"
+      ],
+      "setting": "United States and Nigeria, primarily during the COVID-19 pandemic of 2020",
+      "comparable_books": [
+        "Americanah - Chimamanda Ngozi Adichie",
+        "Half of a Yellow Sun - Chimamanda Ngozi Adichie",
+        "Homegoing - Yaa Gyasi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Adichie fans",
+          "character-driven literary fiction",
+          "multi-POV women's stories",
+          "African diaspora literature",
+          "feminist themes"
+        ],
+        "negative": [
+          "readers wanting strong plot momentum",
+          "readers who dislike introspective or slow-paced fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Half of a Yellow Sun - Chimamanda Ngozi Adichie": {
@@ -162684,26 +162936,49 @@
       "author": "Chimamanda Ngozi Adichie",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set before and during the Biafran War of the 1960s, the novel follows three characters — twin sisters from a privileged Igbo family and a British expat — whose lives are transformed by the catastrophic conflict as Nigeria's secession crisis turns into devastating civil war.",
+      "tone": "Sweeping, emotionally intense, vivid, at times brutal",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its aftermath",
+        "colonialism",
+        "identity",
+        "love",
+        "loyalty",
+        "the cost of nationalism"
+      ],
+      "setting": "Nigeria, 1960s — university campuses, cities, and war-torn Biafra",
+      "comparable_books": [
+        "Things Fall Apart - Chinua Achebe",
+        "Homegoing - Yaa Gyasi",
+        "The Kite Runner - Khaled Hosseini"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical literary fiction",
+          "African literature",
+          "war narratives with personal stakes",
+          "multi-POV structure",
+          "Women's Prize winner"
+        ],
+        "negative": [
+          "readers sensitive to depictions of war atrocities",
+          "readers who dislike non-linear timelines"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Demon Copperhead - Barbara Kingsolver": {
@@ -162711,26 +162986,52 @@
       "author": "Barbara Kingsolver",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A retelling of David Copperfield set in the Appalachian opioid crisis, following Demon — a red-haired boy born to a teenage mother in the Virginia mountains — through the foster care system, addiction, and the wreckage left by OxyContin in his community.",
+      "tone": "Raw, compassionate, darkly comic, socially searing",
+      "pacing": "Moderate",
+      "themes": [
+        "the opioid epidemic",
+        "poverty",
+        "systemic failure",
+        "resilience",
+        "Appalachian identity",
+        "addiction",
+        "childhood trauma"
+      ],
+      "setting": "Rural Appalachian Virginia, late 20th to early 21st century",
+      "comparable_books": [
+        "David Copperfield - Charles Dickens",
+        "Hillbilly Elegy - J.D. Vance",
+        "A Little Life - Hanya Yanagihara"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Pulitzer Prize winner",
+          "Dickens adaptation fans",
+          "socially engaged literary fiction",
+          "Appalachian fiction",
+          "first-person voice-driven narratives"
+        ],
+        "negative": [
+          "readers sensitive to addiction and child abuse content",
+          "readers who dislike dark, relentlessly difficult subject matter"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The first-person Appalachian vernacular voice is exceptionally vivid in audio; narrated by Charlie Thurston to widespread acclaim.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "suicide",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lethal Passage: The Story of a Gun - Erik Larson": {
@@ -162738,26 +163039,47 @@
       "author": "Erik Larson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Larson traces the journey of a single semi-automatic weapon — from its manufacture to its use in a 1988 school shooting — to expose the shockingly lax American gun industry and regulatory gaps that allow deadly weapons to fall into dangerous hands.",
+      "tone": "Investigative, measured, quietly outraged",
+      "pacing": "Moderate",
+      "themes": [
+        "gun control",
+        "American gun culture",
+        "regulatory failure",
+        "violence",
+        "journalism"
+      ],
+      "setting": "United States, primarily the 1980s–1990s, tracing a weapon's path through the gun industry",
+      "comparable_books": [
+        "Thunderstruck - Erik Larson",
+        "Under the Banner of Heaven - Jon Krakauer",
+        "Say Nothing - Patrick Radden Keefe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Erik Larson fan",
+          "narrative nonfiction",
+          "investigative journalism",
+          "policy-focused nonfiction",
+          "true crime-adjacent"
+        ],
+        "negative": [
+          "readers who oppose gun control perspectives",
+          "readers wanting narrative-first storytelling over reportage"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Thunderstruck - Erik Larson": {
@@ -162765,26 +163087,48 @@
       "author": "Erik Larson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Larson interweaves the story of Guglielmo Marconi's race to perfect wireless telegraphy with the tale of mild-mannered London murderer Dr. Hawley Crippen — whose 1910 transatlantic chase became the first ever solved with the aid of Marconi's invention.",
+      "tone": "Propulsive, richly detailed, dual-narrative suspense",
+      "pacing": "Moderate",
+      "themes": [
+        "invention and obsession",
+        "technology changing society",
+        "true crime",
+        "hubris",
+        "the Edwardian era"
+      ],
+      "setting": "London and the Atlantic Ocean, primarily 1890s–1910",
+      "comparable_books": [
+        "The Devil in the White City - Erik Larson",
+        "Isaac's Storm - Erik Larson",
+        "The Radium Girls - Kate Moore"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Erik Larson fan",
+          "dual-narrative history",
+          "Edwardian era",
+          "invention history",
+          "true crime elements",
+          "propulsive narrative nonfiction"
+        ],
+        "negative": [
+          "readers who dislike alternating timelines",
+          "readers wanting pure crime or pure science history"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Larson's dual-narrative structure is particularly effective in audio, building suspense between the two storylines in a cinematic way.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Isaac's Storm: A Man, a Time, and the Deadliest Hurricane in History - Erik Larson": {
@@ -162792,80 +163136,143 @@
       "author": "Erik Larson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Larson reconstructs the catastrophic 1900 Galveston hurricane — the deadliest natural disaster in American history — through the eyes of Isaac Cline, the U.S. Weather Bureau chief who dismissed warnings of the storm's approach, in a story of hubris, science, and devastating loss.",
+      "tone": "Immersive, tension-building, elegiac",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "hubris",
+        "nature's power",
+        "scientific arrogance",
+        "disaster",
+        "mortality",
+        "turn-of-the-century America"
+      ],
+      "setting": "Galveston, Texas, September 1900",
+      "comparable_books": [
+        "Thunderstruck - Erik Larson",
+        "The Devil in the White City - Erik Larson",
+        "Killers of the Flower Moon - David Grann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Erik Larson fan",
+          "disaster history",
+          "American history",
+          "narrative nonfiction",
+          "character-driven history"
+        ],
+        "negative": [
+          "readers wanting faster pacing",
+          "readers who find slow-burn build-ups frustrating"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The slow build toward the storm's climax is especially gripping in audio format, with the atmospheric prose reading beautifully aloud.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Last Star - Rick Yancey": {
       "title": "The Last Star",
       "author": "Rick Yancey",
       "series": "The 5th Wave",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the explosive conclusion to the 5th Wave trilogy, Cassie, Evan, Ben, and Ringer converge for a final stand against an alien invasion that has reshaped humanity's understanding of what it means to survive — and what it means to be human.",
+      "tone": "Urgent, bleak, emotionally intense, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "humanity vs. alien threat",
+        "sacrifice",
+        "identity",
+        "what it means to be human"
+      ],
+      "setting": "Post-apocalyptic Earth, near-future America",
+      "comparable_books": [
+        "The 5th Wave - Rick Yancey",
+        "The Infinite Sea - Rick Yancey",
+        "Ender's Game - Orson Scott Card"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA sci-fi fan",
+          "alien invasion narratives",
+          "series closer",
+          "action-driven conclusions",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "readers who found the second book weak",
+          "readers sensitive to bleak conclusions",
+          "readers who dislike multiple POV switches"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Infinite Sea - Rick Yancey": {
       "title": "The Infinite Sea",
       "author": "Rick Yancey",
       "series": "The 5th Wave",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the events of The 5th Wave, a small group of survivors including Cassie and Ringer must navigate an increasingly desperate and paranoid world while uncovering new, disturbing dimensions of the alien Others' endgame for humanity.",
+      "tone": "Bleak, paranoid, psychologically intense",
+      "pacing": "Moderate",
+      "themes": [
+        "survival",
+        "trust",
+        "what makes us human",
+        "alien strategy",
+        "sacrifice",
+        "hope"
+      ],
+      "setting": "Post-apocalyptic Earth, near-future America",
+      "comparable_books": [
+        "The 5th Wave - Rick Yancey",
+        "The Last Star - Rick Yancey",
+        "The Host - Stephenie Meyer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "5th Wave series reader",
+          "YA sci-fi fan",
+          "bleak survival stories",
+          "multiple POV narratives"
+        ],
+        "negative": [
+          "readers who disliked the pacing shift from Book 1",
+          "readers wanting more action over introspection"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Haunting of Velkwood - Gwendolyn Kiste": {
@@ -162873,26 +163280,50 @@
       "author": "Gwendolyn Kiste",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twenty years ago, an entire suburban street vanished behind an impenetrable veil — everyone inside turned to ghosts — and only three college-age women escaped. Now Talitha Velkwood, still haunted and drifting, is lured back into the Velkwood Vicinity by a researcher's offer, forcing her to confront both the supernatural horror and the buried traumas of her past.",
+      "tone": "Atmospheric, eerie, emotionally devastating, gothic",
+      "pacing": "Fast",
+      "themes": [
+        "trauma and survival",
+        "suburban horror",
+        "queer identity",
+        "grief",
+        "friendship",
+        "the past trapping us"
+      ],
+      "setting": "A haunted suburban street (the Velkwood Vicinity), with flashbacks to a 1980s American suburb",
+      "comparable_books": [
+        "Annihilation - Jeff VanderMeer",
+        "The Rust Maidens - Gwendolyn Kiste",
+        "Good Neighbors - Sarah Langan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Bram Stoker Award winner",
+          "atmospheric horror",
+          "queer horror",
+          "suburban gothic",
+          "character-driven ghost stories",
+          "Yellowjackets fans"
+        ],
+        "negative": [
+          "readers wanting graphic traditional horror",
+          "readers who dislike ambiguous or metaphorical hauntings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Cyberiad - Stanisław Lem": {
