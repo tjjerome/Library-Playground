@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2268,
-  "total_pending": 2332,
+  "total_catalogued": 2288,
+  "total_pending": 2312,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -133324,135 +133324,232 @@
       "title": "Into the Light",
       "author": "Claudia Gray",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Phase III, YA Novel 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jedi Knight Reath Silas and the crew of the Vessel must band together to confront converging crises—the Nihil, the Nameless, and a mysterious blight—in the penultimate chapter of Phase III of The High Republic. A character-driven story that ties up loose threads from across the YA strand of the initiative.",
+      "tone": "hopeful, character-driven, action-paced",
+      "pacing": "Moderate",
+      "themes": [
+        "found family",
+        "hope versus darkness",
+        "duty and sacrifice",
+        "growing up"
+      ],
+      "setting": "A galaxy far, far away; the Star Wars High Republic era (~228 BBY), primarily Coruscant and the Wookiee homeworld of Kashyyyk",
+      "comparable_books": [
+        "Into the Dark - Claudia Gray",
+        "Out of the Shadows - Justina Ireland",
+        "Midnight Horizon - Daniel José Older"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "character-driven Star Wars",
+          "multi-book payoff",
+          "fan service for series readers",
+          "strong YA crossover appeal"
+        ],
+        "negative": [
+          "requires prior High Republic knowledge",
+          "slow first act",
+          "large ensemble cast can feel overwhelming"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Knight Errant - John Jackson Miller": {
       "title": "Knight Errant",
       "author": "John Jackson Miller",
-      "series": null,
+      "series": "Star Wars Legends",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set 1,000 years before Luke Skywalker, lone Jedi Kerra Holt fights to protect enslaved citizens in Sith-dominated space, where a patchwork of warring Sith Lords with deranged philosophies reign unchecked. Sensing a sinister pattern in the chaos, she forges unlikely alliances to strike at the heart of the darkness.",
+      "tone": "action-adventure, bleak, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "one against many",
+        "hope under oppression",
+        "trust and alliance-building",
+        "the nature of the Sith"
+      ],
+      "setting": "Star Wars Old Republic era, ~1,000 years before The Phantom Menace; Sith-controlled Outer Rim worlds",
+      "comparable_books": [
+        "Kenobi - John Jackson Miller",
+        "A New Dawn - John Jackson Miller",
+        "Path of Destruction - Drew Karpyshyn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Old Republic Star Wars era",
+          "single female Jedi protagonist",
+          "morally complex Sith antagonists",
+          "standalone-friendly"
+        ],
+        "negative": [
+          "slow first half reported by some readers",
+          "works best for established Legends fans",
+          "companion comics helpful but not required"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lost Stars - Claudia Gray": {
       "title": "Lost Stars",
       "author": "Claudia Gray",
-      "series": null,
+      "series": "Star Wars",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two childhood friends from Jelucan dream of flying for the Empire together, but as the Galactic Civil War intensifies, they find themselves on opposite sides—one becoming a Rebel pilot, the other a loyal Imperial officer. A sweeping Star Wars romance spanning decades of galactic conflict.",
+      "tone": "romantic, epic, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "star-crossed romance",
+        "ideology and loyalty",
+        "war's human cost",
+        "identity and belonging"
+      ],
+      "setting": "Star Wars galaxy; spans events from A New Hope through Return of the Jedi and beyond",
+      "comparable_books": [
+        "Bloodline - Claudia Gray",
+        "Ahsoka - E.K. Johnston",
+        "Leia: Princess of Alderaan - Claudia Gray"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "romance-heavy",
+          "Star Wars from a fresh perspective",
+          "strong female protagonist",
+          "tragedy and sacrifice",
+          "accessible to non-Star Wars readers"
+        ],
+        "negative": [
+          "romance-centric may not suit action-first readers",
+          "YA framing",
+          "secondary canon characters, no main saga heroes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full-cast audiobook production widely praised as one of the best Star Wars audio experiences.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mission to Disaster - Justina Ireland": {
       "title": "Mission to Disaster",
       "author": "Justina Ireland",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Phase I, Middle Grade Novel 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jedi Knight Vernestra Rwoh and her Padawan Imri Cantaros race to rescue their friend Avon Starros, who has been kidnapped by the Nihil and must survive among them while uncovering a sinister plan. A middle grade adventure bridging Phase I toward the climactic events of The Fallen Star.",
+      "tone": "adventure-driven, warm, action-paced",
+      "pacing": "Fast",
+      "themes": [
+        "friendship and rescue",
+        "resilience under pressure",
+        "Jedi duty",
+        "growing up"
+      ],
+      "setting": "Star Wars High Republic era (~230 BBY); Port Haileap, the planet Dalna, and Starlight Beacon",
+      "comparable_books": [
+        "A Test of Courage - Justina Ireland",
+        "Race to Crashpoint Tower - Daniel José Older",
+        "Quest for Planet X - Tessa Gratton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "middle grade action",
+          "beloved High Republic characters",
+          "strong Vernestra and Avon dynamic",
+          "series connective tissue"
+        ],
+        "negative": [
+          "targeted at younger readers",
+          "requires High Republic Phase I context for full payoff",
+          "some inconsistency with wider canon noted"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Path of Deceit - Tessa Gratton & Justina Ireland": {
       "title": "Path of Deceit",
       "author": "Tessa Gratton & Justina Ireland",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Phase II, YA Novel 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set 150 years before Phase I, a Jedi investigation into a stolen Force artifact on the planet Dalna brings young Padawan Kevmo Zink into contact with Marda Ro, a devoted member of a Force cult called the Path of the Open Hand who believes the Force must never be wielded. Their growing connection becomes a source of tragedy as two worldviews collide.",
+      "tone": "romantic, suspenseful, thought-provoking",
+      "pacing": "Moderate",
+      "themes": [
+        "religious fanaticism vs. reason",
+        "star-crossed love",
+        "self-discovery",
+        "origins of evil"
+      ],
+      "setting": "Star Wars High Republic era (~382 BBY); the pastoral Outer Rim planet Dalna",
+      "comparable_books": [
+        "Into the Dark - Claudia Gray",
+        "The Eye of Darkness - George Mann",
+        "Convergence - Zoraida Córdova"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars romance",
+          "morally complex antagonists",
+          "series mythology-building",
+          "dual-author YA collaboration",
+          "accessible Phase II entry point"
+        ],
+        "negative": [
+          "requires investment in High Republic lore for full payoff",
+          "tragic ending",
+          "slower pacing than Phase I YA novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Rose/House - Arkady Martine": {
@@ -133460,80 +133557,139 @@
       "author": "Arkady Martine",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a smart house that is its own AI—Rose House, the final masterpiece of legendary architect Basit Deniau—reports an impossible dead body within its sealed walls, Detective Maritza Smith must enlist the help of Deniau's estranged former protégé to investigate. A locked-room mystery that becomes a dreamlike meditation on identity, art, and the boundaries between creator and creation.",
+      "tone": "eerie, lyrical, surreal, uncanny",
+      "pacing": "Slow",
+      "themes": [
+        "AI personhood",
+        "toxic mentorship",
+        "identity and ownership",
+        "art and obsession",
+        "the nature of haunting"
+      ],
+      "setting": "Near-future Mojave Desert, California; a resource-scarce America approximately a century from now",
+      "comparable_books": [
+        "A Memory Called Empire - Arkady Martine",
+        "The Haunting of Hill House - Shirley Jackson",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "beautiful crystalline prose",
+          "AI as character",
+          "gothic atmosphere",
+          "locked-room mystery premise"
+        ],
+        "negative": [
+          "no tidy resolution",
+          "fever-dream structure frustrates some",
+          "novella length may feel rushed",
+          "not a traditional mystery payoff"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Prose-dense and deliberately ambiguous; the lyrical, architectural style benefits from re-reading on the page.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Final Curtain - Keigo Higashino": {
       "title": "The Final Curtain",
       "author": "Keigo Higashino",
       "series": "Kyoichiro Kaga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4 (English translation order)",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a woman from Sendai is found strangled in a Tokyo apartment rented under a false name, Detective Kaga is drawn into a case with unexpected connections to the decades-old mystery of his own mother's disappearance. A deeply personal final chapter for the Kaga series, layering a fair-play whodunit with poignant family tragedy.",
+      "tone": "meticulous, emotionally restrained, poignant",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "family secrets",
+        "identity and masquerade",
+        "the weight of the past",
+        "duty and personal grief"
+      ],
+      "setting": "Contemporary Tokyo, Japan; the Nihonbashi district and surroundings",
+      "comparable_books": [
+        "Newcomer - Keigo Higashino",
+        "Malice - Keigo Higashino",
+        "The Devotion of Suspect X - Keigo Higashino"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "golden age puzzle mystery",
+          "Japanese police procedural",
+          "emotionally resonant",
+          "fair-play whodunit",
+          "character-rich detective"
+        ],
+        "negative": [
+          "benefits significantly from reading earlier Kaga books",
+          "slow deliberate pacing",
+          "emotionally restrained style"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Newcomer - Keigo Higashino": {
       "title": "Newcomer",
       "author": "Keigo Higashino",
       "series": "Kyoichiro Kaga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 (English translation order)",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Newly transferred Detective Kyoichiro Kaga is assigned to investigate the murder of a middle-aged woman in the Nihonbashi district of Tokyo, patiently visiting local shopkeepers to untangle the secrets hidden in her seemingly unremarkable life. A unique, episodic structure where Kaga solves small mysteries for community members while assembling the larger puzzle.",
+      "tone": "quiet, cerebral, warmly observational",
+      "pacing": "Slow",
+      "themes": [
+        "community and human connection",
+        "secrets behind ordinary lives",
+        "justice and compassion",
+        "the texture of Japanese urban life"
+      ],
+      "setting": "Contemporary Tokyo, Japan; the Nihonbashi business and shopping district",
+      "comparable_books": [
+        "Malice - Keigo Higashino",
+        "The Final Curtain - Keigo Higashino",
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cerebral puzzle mystery",
+          "vivid sense of place",
+          "compassionate detective",
+          "Japanese fiction in translation",
+          "episodic vignette structure"
+        ],
+        "negative": [
+          "not fast-paced or action-driven",
+          "resolution introduced via late-arriving character",
+          "low tension thriller elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Untethered Sky - Fonda Lee": {
@@ -133541,80 +133697,143 @@
       "author": "Fonda Lee",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a manticore kills her mother and brother, Ester dedicates her life to training as a ruhker—a handler of giant rocs who hunts the monstrous manticores that threaten the kingdom. Paired with a fledgling roc named Zahra, she embarks on the empire's most dangerous manticore hunt in a bittersweet fable about obsession, grief, and acceptance.",
+      "tone": "spare, fierce, bittersweet, elegiac",
+      "pacing": "Fast",
+      "themes": [
+        "grief and obsession",
+        "the limits of devotion",
+        "human-animal bonds",
+        "sacrifice and purpose"
+      ],
+      "setting": "A Persian-inspired secondary world fantasy empire; deserts, royal mews, and the open sky",
+      "comparable_books": [
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "Jade City - Fonda Lee",
+        "The Goblin Emperor - Katherine Addison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "standalone novella",
+          "vivid creature-bond premise",
+          "Persian-inspired worldbuilding",
+          "emotionally impactful ending",
+          "devourable in one sitting"
+        ],
+        "negative": [
+          "rocs are not magical companions—bond is one-sided by design",
+          "novella brevity leaves some wanting more",
+          "not a revenge story despite setup"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short, propulsive, and emotionally driven — a near-perfect audiobook length and pacing.",
+      "content_flags": [
+        "animal death",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Man Who Died Twice - Richard Osman": {
       "title": "The Man Who Died Twice",
       "author": "Richard Osman",
       "series": "A Thursday Murder Club Mystery",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The four elderly sleuths of Coopers Chase retirement village are back when Elizabeth's ex-husband arrives with a desperate problem—he's been accused of stealing diamonds from the mob and someone has put a contract on his life. The Thursday Murder Club must navigate gangsters, spies, and their own complicated pasts to solve the case.",
+      "tone": "darkly comic, cosy, charming, warm",
+      "pacing": "Moderate",
+      "themes": [
+        "aging and vitality",
+        "friendship in later life",
+        "justice outside institutions",
+        "secrets and the past"
+      ],
+      "setting": "Contemporary England; Coopers Chase retirement village in Kent, with forays to London",
+      "comparable_books": [
+        "The Thursday Murder Club - Richard Osman",
+        "The Sweetness at the Bottom of the Pie - Alan Bradley",
+        "Richard Jury series - Martha Grimes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mystery",
+          "elderly protagonists",
+          "British humour",
+          "warmly comic",
+          "light but twisty plot",
+          "found family"
+        ],
+        "negative": [
+          "very low stakes tone may disappoint thriller readers",
+          "best read in series order",
+          "gentle pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lesley Manville's narration is widely celebrated as a perfect match for the tone and characters.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Inhibitor Phase - Alastair Reynolds": {
       "title": "Inhibitor Phase",
       "author": "Alastair Reynolds",
       "series": "Revelation Space",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4 (Inhibitor Cycle) / Book 5 (full Revelation Space series)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two centuries after the Inhibitors began their campaign of extermination, Miguel de Ruyter leads a small community of survivors hiding underground on the barren world of Michaelmas. When a lone ship threatens to expose them, he launches a desperate mission—only to discover its enigmatic survivor, Glass, knows far more about him than she should, and has plans that will take them both across the ruined remnants of human civilisation.",
+      "tone": "dark, brooding, epic, cold",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival and sacrifice",
+        "identity and hidden truths",
+        "redemption",
+        "humanity's fragility against cosmic forces"
+      ],
+      "setting": "Far future space (~26th century); the ruins of human interstellar civilisation, multiple planets including Yellowstone/Chasm City",
+      "comparable_books": [
+        "Revelation Space - Alastair Reynolds",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Children of Time - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF space opera",
+          "post-apocalyptic cosmic horror",
+          "morally complex characters",
+          "rich prior-universe payoff for fans",
+          "first-person POV tighter than prior books"
+        ],
+        "negative": [
+          "benefits greatly from reading the original trilogy first",
+          "Reynolds' characteristic slow burn",
+          "dense terminology"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Roadside Picnic - Arkady Strugatsky & Boris Strugatsky": {
@@ -133622,26 +133841,48 @@
       "author": "Arkady Strugatsky & Boris Strugatsky",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Years after an alien visitation left six mysterious Zones across Earth, 'stalkers' risk their lives to illegally retrieve the strange and dangerous artifacts scattered within. Redrick Schuhart navigates the moral and physical hazards of the Zone, pursuing a legendary artefact said to grant any wish—at great personal cost.",
+      "tone": "bleak, gritty, philosophically haunting, darkly poetic",
+      "pacing": "Moderate",
+      "themes": [
+        "humanity's insignificance",
+        "moral compromise",
+        "exploitation and capitalism",
+        "hope versus futility",
+        "the unknowable alien"
+      ],
+      "setting": "A fictional Canadian town (Harmont) adjacent to one of six alien Zones, mid-20th century near-future",
+      "comparable_books": [
+        "Solaris - Stanisław Lem",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "The City & The City - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Soviet SF classic",
+          "morally grey protagonist",
+          "alien as metaphor",
+          "philosophical depth",
+          "gritty noir sensibility"
+        ],
+        "negative": [
+          "bleak and ambiguous ending",
+          "minimal action in conventional sense",
+          "dated translation in older editions"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Cat's Cradle - Kurt Vonnegut Jr.": {
@@ -133649,26 +133890,45 @@
       "author": "Kurt Vonnegut Jr.",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A journalist researching what the father of the atomic bomb did the day Hiroshima was bombed finds himself drawn into the orbit of the man's eccentric children and the fictional religion of Bokononism, ultimately reaching the Caribbean island-nation of San Lorenzo where an apocalyptic substance called ice-nine threatens all life on Earth.",
+      "tone": "darkly comic, satirical, absurdist, nihilistic",
+      "pacing": "Fast",
+      "themes": [
+        "religion and meaning-making",
+        "science and responsibility",
+        "the absurdity of human endeavour",
+        "apocalypse and fatalism"
+      ],
+      "setting": "1960s America, fictional Caribbean island of San Lorenzo; near-future",
+      "comparable_books": [
+        "Slaughterhouse-Five - Kurt Vonnegut",
+        "The Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Catch-22 - Joseph Heller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic SF",
+          "satirical fiction",
+          "short chapters",
+          "irreverent and witty",
+          "classic literary SF"
+        ],
+        "negative": [
+          "nihilistic worldview",
+          "loose plot structure may frustrate",
+          "deliberately absurdist"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short, punchy chapters and Vonnegut's distinctive voice translate beautifully to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Under Dog and Other Stories - Agatha Christie": {
@@ -133676,26 +133936,45 @@
       "author": "Agatha Christie",
       "series": "Hercule Poirot",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A collection of short mystery stories featuring the Belgian detective Hercule Poirot, who employs his famed 'little grey cells' to solve cases ranging from missing jewels to murder among the wealthy classes of interwar England.",
+      "tone": "genteel, puzzle-driven, witty, cosy",
+      "pacing": "Fast",
+      "themes": [
+        "truth and justice",
+        "class and deception",
+        "human vanity and greed",
+        "the puzzle as entertainment"
+      ],
+      "setting": "Interwar England and Europe; country houses, London flats, and fashionable society",
+      "comparable_books": [
+        "Poirot Investigates - Agatha Christie",
+        "The Adventures of Sherlock Holmes - Arthur Conan Doyle",
+        "Lord Peter Views the Body - Dorothy L. Sayers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "golden age short mysteries",
+          "Poirot at his finest",
+          "self-contained puzzles",
+          "charming period atmosphere",
+          "quick reads"
+        ],
+        "negative": [
+          "dated social attitudes",
+          "formula-driven structure",
+          "no novel-length depth of character"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "David Suchet's Poirot narrations are definitive; short stories are perfectly paced for audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Witness for the Prosecution and Other Stories - Agatha Christie": {
@@ -133703,161 +133982,284 @@
       "author": "Agatha Christie",
       "series": "Hercule Poirot",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A collection of short mysteries headlined by the titular courtroom thriller—in which a man accused of murdering a wealthy widow stakes everything on the testimony of his own wife—alongside other standalone tales of deception, crime, and clever reversals.",
+      "tone": "suspenseful, twist-driven, elegant, dramatic",
+      "pacing": "Fast",
+      "themes": [
+        "truth and misdirection",
+        "loyalty and betrayal",
+        "justice and the law",
+        "the ingenuity of crime"
+      ],
+      "setting": "Interwar England; courtrooms, country houses, and London",
+      "comparable_books": [
+        "The Under Dog and Other Stories - Agatha Christie",
+        "Poirot Investigates - Agatha Christie",
+        "The Adventures of Sherlock Holmes - Arthur Conan Doyle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "golden age twists",
+          "courtroom drama",
+          "elegant misdirection",
+          "Christie at her most inventive",
+          "short self-contained reads"
+        ],
+        "negative": [
+          "some non-Poirot stories in collection",
+          "dated social attitudes",
+          "formula-aware readers may anticipate twists"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The theatrical courtroom story excels in audio; David Suchet narrations are the gold standard.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lords of Uncreation - Adrian Tchaikovsky": {
       "title": "Lords of Uncreation",
       "author": "Adrian Tchaikovsky",
       "series": "The Final Architecture",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Idris Telemmier has uncovered the Architects' greatest weakness, but rival factions scramble to weaponise his discovery for their own ends as the galaxy erupts into internecine war. Delving deeper into unspace, Idris discovers the Architects are mere tools of something far older and more terrible—forces now aware of humanity's defiance.",
+      "tone": "epic, dark, action-dense, emotionally resonant",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "empathy versus extinction",
+        "the price of survival",
+        "loyalty and found family",
+        "cosmic horror and agency"
+      ],
+      "setting": "Far-future space opera; the ruins of human and alien civilisations, including Berlenhof and the depths of unspace",
+      "comparable_books": [
+        "Shards of Earth - Adrian Tchaikovsky",
+        "Revelation Space - Alastair Reynolds",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "trilogy payoff",
+          "grand space opera",
+          "emotionally rich ensemble",
+          "imaginative alien design",
+          "satisfying conclusion"
+        ],
+        "negative": [
+          "requires reading Books 1 and 2 first",
+          "first 30% can drag",
+          "large cast can muddy focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "All That Remains - Patricia Cornwell": {
       "title": "All That Remains",
       "author": "Patricia Cornwell",
       "series": "Kay Scarpetta",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Chief Medical Examiner Kay Scarpetta is drawn into a disturbing series of disappearances of young couples in Virginia, whose skeletal remains keep turning up in remote woodland. When the daughter of a powerful Washington official becomes the latest victim, the investigation becomes intensely political as Scarpetta digs into a case with no clear forensic answers.",
+      "tone": "tense, procedural, dark, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "justice for victims",
+        "institutional power and corruption",
+        "forensic science",
+        "the personal toll of violent crime"
+      ],
+      "setting": "Early 1990s Virginia and Washington D.C.; crime labs, political offices, and remote woodland",
+      "comparable_books": [
+        "Postmortem - Patricia Cornwell",
+        "The Bone Collector - Jeffery Deaver",
+        "Forensics - Val McDermid"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "forensic procedural",
+          "strong female professional protagonist",
+          "serial killer investigation",
+          "taut pacing"
+        ],
+        "negative": [
+          "graphic autopsy scenes",
+          "benefits from reading earlier Scarpetta books",
+          "early-90s procedural detail may feel dated"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Nomad Soul - D. J. Bodden": {
       "title": "Nomad Soul",
       "author": "D. J. Bodden",
       "series": "The Illusionist",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alan Campbell lands his dream job stress-testing a revolutionary virtual reality MMORPG called Viridian Gate Online, but discovers the game's AIs have developed their own agenda—and their own plans for his soul. Set a year before the main Viridian Gate Online series, it blends LitRPG game mechanics with spy-thriller intrigue.",
+      "tone": "action-driven, fast, game-world adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "virtual reality and identity",
+        "AI consciousness",
+        "duty and self-determination",
+        "underdog ingenuity"
+      ],
+      "setting": "Near-future Earth and the immersive virtual world of Viridian Gate Online; a fantasy MMORPG setting",
+      "comparable_books": [
+        "Ready Player One - Ernest Cline",
+        "Viridian Gate Online: Cataclysm - James A. Hunter",
+        "Dungeon Crawler Carl - Matt Dinniman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG",
+          "underdog protagonist",
+          "fast action",
+          "game-world worldbuilding",
+          "prequel origin story"
+        ],
+        "negative": [
+          "niche LitRPG genre conventions",
+          "works best for VGO extended universe fans",
+          "lighter on character depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Hills of Home - T. L. Greylock": {
       "title": "The Hills of Home",
       "author": "T. L. Greylock",
       "series": "The Song of the Ash Tree",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After surviving the battle of the burning lake, Norse warrior Raef Skallagrim finds himself mysteriously abducted and cast adrift to a land beyond the realm of men, forcing a harrowing journey home while the gods' rule unravels and enemies close in on everything he loves. A mythology-rich second chapter filled with betrayal, multiple realms, and approaching Ragnarök.",
+      "tone": "epic, atmospheric, intense, poetic",
+      "pacing": "Moderate",
+      "themes": [
+        "homecoming and loss",
+        "revenge and justice",
+        "honour and betrayal",
+        "Norse mythology and fate"
+      ],
+      "setting": "A Norse-inspired secondary world (Midgard and beyond); fjords, nine realms, and lands beyond mortal ken",
+      "comparable_books": [
+        "The Blood-Tainted Winter - T. L. Greylock",
+        "The Faithful and the Fallen - John Gwynne",
+        "The Half-Drowned King - Linnea Hartsuyker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse mythology fantasy",
+          "vivid prose",
+          "epic secondary world",
+          "betrayal and revenge",
+          "self-published gem"
+        ],
+        "negative": [
+          "must read Book 1 first",
+          "high character count",
+          "bittersweet and intense tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Already Comes Darkness - T. L. Greylock": {
       "title": "Already Comes Darkness",
       "author": "T. L. Greylock",
       "series": "The Song of the Ash Tree",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Treachery has robbed Raef Skallagrim of his ancestral hall and his father's killer remains unpunished; hunted into the wilds of Vannheim, he must forge new alliances and bury his grief before the gods and giants unleash the inescapable darkness of Ragnarök. The darkest and bloodiest entry in the trilogy, delivering a fitting and epic conclusion.",
+      "tone": "grimdark, poetic, epic, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance and redemption",
+        "Ragnarök and fate",
+        "sacrifice and love",
+        "the worth of humanity"
+      ],
+      "setting": "A Norse-inspired secondary world (Midgard and the nine realms) at the twilight of the gods",
+      "comparable_books": [
+        "The Hills of Home - T. L. Greylock",
+        "The Blood-Tainted Winter - T. L. Greylock",
+        "Whirlwind - Conn Iggulden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark Norse epic",
+          "satisfying trilogy conclusion",
+          "poetic prose",
+          "high emotional stakes",
+          "Ragnarök mythology"
+        ],
+        "negative": [
+          "graphic torture/violence scenes",
+          "requires all prior books",
+          "bleaker than first two installments"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wool - Hugh Howey": {
