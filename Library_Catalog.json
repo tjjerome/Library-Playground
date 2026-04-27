@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2985,
-  "total_pending": 1615,
+  "total_catalogued": 3005,
+  "total_pending": 1595,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -168214,540 +168214,1008 @@
       "title": "A Day of Fallen Night",
       "author": "Samantha Shannon",
       "series": "The Roots of Chaos",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.1 (prequel)",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set 500 years before The Priory of the Orange Tree, four protagonists from across a divided world — a warrior of the Priory, a royal heir, a godsinger, and a northern housecarl — must confront an ancient evil as wyrms reawaken and threaten all of humanity. A sweeping, feminist, multi-POV epic steeped in dragons, intricate mythology, and the bonds of love and sacrifice.",
+      "tone": "lyrical, sweeping, emotionally resonant, feminist epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "motherhood and intergenerational bonds",
+        "duty vs. identity",
+        "found family",
+        "queer love",
+        "sacrifice",
+        "faith and religion",
+        "bodily autonomy"
+      ],
+      "setting": "A richly imagined secondary world spanning East, West, South and North, 500 years before The Priory of the Orange Tree; high fantasy with dragons and ancient magic",
+      "comparable_books": [
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Shadow of the Gods - John Gwynne",
+        "The Traitor Baru Cormorant - Seth Dickinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "feminist worldbuilding",
+          "queer representation",
+          "dragon lore",
+          "detailed mythology",
+          "emotionally complex female protagonists",
+          "slow-burn payoff"
+        ],
+        "negative": [
+          "slow pacing in middle sections",
+          "disjointed multi-POV structure",
+          "very long books (880 pages)",
+          "no male-led narrative focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Butcher's Moon - Richard Stark": {
       "title": "Butcher's Moon",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 16",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker returns to a corrupt Midwestern city where mob boss Lozini is sitting on money Parker left behind after a botched job — and when Lozini refuses to pay, Parker assembles a crew of associates from across his career to start and finish a gang war. The largest and most operatic entry in the series, it served as the capstone of the original run for nearly 25 years.",
+      "tone": "cold, hard-boiled, brutal, operatic",
+      "pacing": "Fast",
+      "themes": [
+        "professional codes of honour",
+        "revenge",
+        "organised crime",
+        "loyalty among criminals",
+        "amorality"
+      ],
+      "setting": "Tyler, a fictional corrupt Midwestern American city; 1974",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "Red Harvest - Dashiell Hammett",
+        "The Friends of Eddie Coyle - George V. Higgins",
+        "Devil in a Blue Dress - Walter Mosley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "morally grey protagonist",
+          "heist fiction",
+          "ultra-lean prose",
+          "gang war climax",
+          "series culmination"
+        ],
+        "negative": [
+          "amoral protagonist with no redemption arc",
+          "high body count",
+          "no romance or emotional warmth",
+          "longer than typical Parker (double length)"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short, punchy chapters and lean prose translate exceptionally well to audio; widely praised in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Breakout - Richard Stark": {
       "title": "Breakout",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 21",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Caught during a robbery and imprisoned in a seemingly escape-proof facility, Parker builds a network among fellow prisoners and engineers a jailbreak — only to find that freedom immediately entangles him in another dangerous heist. An escape thriller in three acts: out of prison, out of a job gone wrong, out of a hostile small town.",
+      "tone": "cold, methodical, tightly plotted, relentless",
+      "pacing": "Fast",
+      "themes": [
+        "escape and freedom",
+        "professionalism under pressure",
+        "criminal loyalty",
+        "improvisation",
+        "amorality"
+      ],
+      "setting": "A fortress-like holding prison in an unnamed Midwestern state, then a nearby city; early 2000s",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "Firebreak - Richard Stark",
+        "The Hot Rock - Donald Westlake",
+        "The Friends of Eddie Coyle - George V. Higgins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "prison break thriller",
+          "heist fiction",
+          "morally grey protagonist",
+          "ultra-lean prose",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "amoral protagonist with no redemption arc",
+          "no romance or emotional warmth",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ask the Parrot - Richard Stark": {
       "title": "Ask the Parrot",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 23",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fleeing a massive bank-heist manhunt through the Massachusetts backwoods, Parker is sheltered by Tom Lindahl — a bitter recluse and whistleblower nursing a grudge against the corrupt racetrack that fired him — who draws Parker into a dangerous scheme to rob it. The second book of the final Parker trilogy, unusually laced with dark humour.",
+      "tone": "cold, darkly comic, taut, minimalist",
+      "pacing": "Fast",
+      "themes": [
+        "corruption and revenge",
+        "professionalism vs amateurism",
+        "rural America",
+        "whistleblowing",
+        "criminal survival"
+      ],
+      "setting": "Rural Massachusetts; contemporary (2006)",
+      "comparable_books": [
+        "Nobody Runs Forever - Richard Stark",
+        "Dirty Money - Richard Stark",
+        "The Hunter - Richard Stark",
+        "No Country for Old Men - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "heist fiction",
+          "ultra-lean prose",
+          "dark humour",
+          "propulsive pacing",
+          "rural noir"
+        ],
+        "negative": [
+          "amoral protagonist with no redemption arc",
+          "graphic violence",
+          "requires some series context from Nobody Runs Forever"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lean, staccato prose and strong character voices reward audio performance; well-received in the format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Even the Wicked - Lawrence Block": {
       "title": "Even the Wicked",
       "author": "Lawrence Block",
       "series": "Matthew Scudder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a self-styled vigilante killer calling himself 'Will of the People' begins targeting criminals who have escaped justice, unlicensed New York PI Matthew Scudder is drawn into the hunt — navigating the blurry line between justice and murder. A morally complex thriller examining vigilantism in the tabloid age.",
+      "tone": "gritty, morally complex, atmospheric, contemplative",
+      "pacing": "Moderate",
+      "themes": [
+        "vigilantism and justice",
+        "morality and law",
+        "media and public opinion",
+        "sobriety and addiction",
+        "New York City life"
+      ],
+      "setting": "New York City; mid-1990s",
+      "comparable_books": [
+        "A Walk Among the Tombstones - Lawrence Block",
+        "A Long Line of Dead Men - Lawrence Block",
+        "Devil in a Blue Dress - Walter Mosley",
+        "The Big Nowhere - James Ellroy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "atmospheric New York setting",
+          "serial killer plot",
+          "recovery and sobriety themes",
+          "character-driven mystery"
+        ],
+        "negative": [
+          "slow investigative pace",
+          "no action-thriller energy",
+          "graphic crime content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Time to Scatter Stones - Lawrence Block": {
       "title": "A Time to Scatter Stones",
       "author": "Lawrence Block",
       "series": "Matthew Scudder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17.5 (novella)",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Well past retirement age, Matthew Scudder is drawn back into action when his wife Elaine's friend — a former sex worker — is stalked and threatened by an abusive former client who refuses to let her move on. A quiet, valedictory portrait of an ageing detective grappling with mortality and legacy.",
+      "tone": "elegiac, introspective, quiet, bittersweet",
+      "pacing": "Slow",
+      "themes": [
+        "aging and mortality",
+        "sobriety and recovery",
+        "sex work and exploitation",
+        "loyalty and love",
+        "retirement"
+      ],
+      "setting": "New York City; contemporary (2019)",
+      "comparable_books": [
+        "A Drop of the Hard Stuff - Lawrence Block",
+        "All the Flowers Are Dying - Lawrence Block",
+        "The Long Goodbye - Raymond Chandler",
+        "Retirement - Donald Westlake"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven",
+          "series fans",
+          "quiet contemplative tone",
+          "bittersweet emotional resonance"
+        ],
+        "negative": [
+          "very short (novella)",
+          "minimal plot tension",
+          "best appreciated by existing Scudder fans",
+          "not a strong introduction to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Drop of the Hard Stuff - Lawrence Block": {
       "title": "A Drop of the Hard Stuff",
       "author": "Lawrence Block",
       "series": "Matthew Scudder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A flashback novel set during Scudder's first year of sobriety in the late 1970s: an old acquaintance working a Twelve Step programme is found dead, and Scudder investigates whether his moral inventory — and the enemies it may have stirred up — got him killed. A deeply character-driven noir rooted in the AA world.",
+      "tone": "introspective, atmospheric, melancholic, hard-boiled",
+      "pacing": "Moderate",
+      "themes": [
+        "sobriety and the Twelve Steps",
+        "guilt and atonement",
+        "memory and the past",
+        "friendship and betrayal",
+        "New York City in the 1970s"
+      ],
+      "setting": "New York City, late 1970s (flashback novel)",
+      "comparable_books": [
+        "When the Sacred Ginmill Closes - Lawrence Block",
+        "A Walk Among the Tombstones - Lawrence Block",
+        "The Long Goodbye - Raymond Chandler",
+        "Eight Million Ways to Die - Lawrence Block"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "recovering alcoholic protagonist",
+          "period noir atmosphere",
+          "AA and recovery themes",
+          "morally complex mystery",
+          "atmospheric New York setting"
+        ],
+        "negative": [
+          "slow investigative pace",
+          "flashback structure may frustrate series readers",
+          "minimal action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Walk Among the Tombstones - Lawrence Block": {
       "title": "A Walk Among the Tombstones",
       "author": "Lawrence Block",
       "series": "Matthew Scudder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Unlicensed PI Matthew Scudder is hired by a drug trafficker whose wife was kidnapped, ransomed, and brutally murdered — and discovers that the killers are serial predators targeting the wives of criminals who can't go to the police. A dark, relentlessly tense thriller and one of the series' most acclaimed entries.",
+      "tone": "dark, tense, gritty, relentless",
+      "pacing": "Fast",
+      "themes": [
+        "predatory violence against women",
+        "justice outside the law",
+        "sobriety under pressure",
+        "New York City underworld",
+        "moral compromise"
+      ],
+      "setting": "New York City; 1992",
+      "comparable_books": [
+        "A Dance at the Slaughterhouse - Lawrence Block",
+        "Even the Wicked - Lawrence Block",
+        "The Girl with the Dragon Tattoo - Stieg Larsson",
+        "L.A. Confidential - James Ellroy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "dark thriller",
+          "morally grey protagonist",
+          "serial killer plot",
+          "atmospheric New York setting"
+        ],
+        "negative": [
+          "graphic violence against women",
+          "dark and disturbing content",
+          "not a cosy mystery"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast pacing, strong dialogue, and a gripping plot make this one of the best Scudder entries for audio; adapted to film with Liam Neeson.",
+      "content_flags": [
+        "graphic violence",
+        "sexual violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Conventional Boy - Charles Stross": {
       "title": "A Conventional Boy",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1984, Derek Reilly was a teenage Dungeon Master swept up by Britain's secret anti-occult Laundry agency during the Satanic D&D Panic; decades later, he escapes his institutional 'deprogramming' facility to attend a nearby gaming convention — where a LARP group is unknowingly conducting a genuine elder-god-summoning ritual. A gleefully nerdy novella with two bonus Bob Howard short stories.",
+      "tone": "darkly comic, nerdy, Lovecraftian, bureaucratic",
+      "pacing": "Moderate",
+      "themes": [
+        "geek culture and D&D history",
+        "bureaucracy and institutional life",
+        "Lovecraftian horror",
+        "moral panic",
+        "redemption through competence"
+      ],
+      "setting": "Britain; contemporary (with 1984 flashbacks); a gaming convention hotel",
+      "comparable_books": [
+        "The Atrocity Archives - Charles Stross",
+        "The Nightmare Stacks - Charles Stross",
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "The Rook - Daniel O'Malley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror comedy",
+          "D&D and gaming culture",
+          "British spy fiction parody",
+          "workplace humour",
+          "nerdy in-jokes"
+        ],
+        "negative": [
+          "requires familiarity with Laundry Files lore for full enjoyment",
+          "lighter than core series entries",
+          "novella length"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sour Lemon Score - Richard Stark": {
       "title": "The Sour Lemon Score",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a bank robbery, one of Parker's crew goes violently rogue — killing associates and taking the full score — forcing Parker into a methodical, lethal pursuit across the criminal underworld to reclaim what's his. A lean, stripped-back revenge novel with a psychologically unstable antagonist.",
+      "tone": "cold, terse, relentless, violent",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and pursuit",
+        "betrayal among criminals",
+        "professional codes",
+        "amorality",
+        "violence as consequence"
+      ],
+      "setting": "Various American cities; late 1960s",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "The Outfit - Richard Stark",
+        "Killing - Ellroy",
+        "No Country for Old Men - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "heist gone wrong",
+          "propulsive revenge plot",
+          "ultra-lean prose",
+          "hard-boiled noir"
+        ],
+        "negative": [
+          "amoral protagonist",
+          "graphic violence",
+          "no emotional warmth or redemption arc"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Seventh - Richard Stark": {
       "title": "The Seventh",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker's share of a college football game robbery is stolen by a crazed, violence-prone amateur — forcing Parker to hunt down the thief while simultaneously evading the police. One of the most acclaimed early Parkers, praised for its blistering finale.",
+      "tone": "cold, tense, razor-sharp, ruthless",
+      "pacing": "Fast",
+      "themes": [
+        "theft and counter-theft",
+        "amateur vs professional criminal",
+        "pursuit and survival",
+        "amorality",
+        "professional codes"
+      ],
+      "setting": "An unnamed American city; 1966",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "The Outfit - Richard Stark",
+        "The Friends of Eddie Coyle - George V. Higgins",
+        "Slayground - Richard Stark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "heist fiction",
+          "propulsive pacing",
+          "ultra-lean prose",
+          "classic noir"
+        ],
+        "negative": [
+          "amoral protagonist",
+          "graphic violence",
+          "no emotional warmth"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "A short, perfectly paced entry with a legendary final line; among the best in the series for audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Rare Coin Score - Richard Stark": {
       "title": "The Rare Coin Score",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker joins a crew to rob a numismatics convention, but the plan is complicated by Billy Lebatard — a disruptive, dangerously impulsive amateur — and by Claire, a woman whose cool competence and sharp instincts will become central to Parker's life. Introduces Parker's long-term partner Claire.",
+      "tone": "cold, terse, tightly plotted, hard-boiled",
+      "pacing": "Fast",
+      "themes": [
+        "professional planning vs amateurism",
+        "trust and partnership",
+        "criminal teamwork",
+        "amorality"
+      ],
+      "setting": "A numismatics convention and surrounding city; 1967",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "The Green Eagle Score - Richard Stark",
+        "Slayground - Richard Stark",
+        "The Hot Rock - Donald Westlake"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heist fiction",
+          "morally grey protagonist",
+          "ultra-lean prose",
+          "strong female character introduction",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "amoral protagonist",
+          "graphic violence",
+          "no emotional warmth except through Claire"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Outfit - Richard Stark": {
       "title": "The Outfit",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Outfit — a nationwide crime syndicate — has put a contract on Parker's life; rather than run, Parker retaliates by organising a coordinated wave of simultaneous robberies targeting the Outfit's operations across the country. A structurally inventive entry that established Parker's reputation as a force to be reckoned with.",
+      "tone": "cold, audacious, structurally inventive, hard-boiled",
+      "pacing": "Fast",
+      "themes": [
+        "organised crime vs the individual",
+        "revenge and retaliation",
+        "professional pride",
+        "amorality",
+        "power structures"
+      ],
+      "setting": "Various locations across the United States; 1963",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "Butcher's Moon - Richard Stark",
+        "Red Harvest - Dashiell Hammett",
+        "The Friends of Eddie Coyle - George V. Higgins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "heist fiction",
+          "crime syndicate conflict",
+          "structural inventiveness",
+          "ultra-lean prose"
+        ],
+        "negative": [
+          "amoral protagonist",
+          "graphic violence",
+          "episodic structure in middle section"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short and propulsive with Stark's signature staccato prose; works brilliantly in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Nightmare Stacks - Charles Stross": {
       "title": "The Nightmare Stacks",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Newly recruited Laundry operative Alex Schwartz — a vampire-infected ex-banker still learning the ropes — is dispatched to his hometown of Leeds, where he stumbles into CASE NIGHTMARE RED: a full-scale invasion by elf-like extradimensional beings. A darker, more action-heavy entry with a new POV protagonist and romance subplot.",
+      "tone": "darkly comic, action-driven, Lovecraftian, nerdy",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fish out of water",
+        "alien invasion",
+        "bureaucracy vs catastrophe",
+        "identity and transformation",
+        "forbidden romance"
+      ],
+      "setting": "Leeds, England; contemporary (2015 in-series)",
+      "comparable_books": [
+        "The Atrocity Archives - Charles Stross",
+        "A Conventional Boy - Charles Stross",
+        "The Rook - Daniel O'Malley",
+        "Rivers of London - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror comedy",
+          "British spy fiction parody",
+          "alien invasion",
+          "workplace humour",
+          "vampire protagonist"
+        ],
+        "negative": [
+          "darker and more violent than earlier entries",
+          "best read after at least a few earlier Laundry books",
+          "slow start",
+          "romance subplot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Mourner - Richard Stark": {
       "title": "The Mourner",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker is hired to steal a priceless statuette from a collector, but the job grows dangerously complicated when a defecting Eastern Bloc official and blackmailers become entangled in the score. An early Parker with Cold War-tinged intrigue and Parker at his most brutally pragmatic.",
+      "tone": "cold, terse, ruthless, hard-boiled",
+      "pacing": "Fast",
+      "themes": [
+        "theft and espionage",
+        "Cold War politics",
+        "professional adaptability",
+        "amorality",
+        "collateral danger"
+      ],
+      "setting": "Washington D.C. area; 1963",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "The Outfit - Richard Stark",
+        "The Handle - Richard Stark",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "Cold War flavour",
+          "heist fiction",
+          "ultra-lean prose",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "amoral protagonist",
+          "graphic violence",
+          "no emotional warmth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Man With the Getaway Face - Richard Stark": {
       "title": "The Man With the Getaway Face",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker undergoes plastic surgery to get a new face and escape the mob's contract on his life, then immediately plunges into a high-stakes armoured car heist in New Jersey — only for the job to go sideways when someone from the surgeon's past threatens to blow everything apart. The first entry to introduce Parker's new face and his long partnership with Handy McKay.",
+      "tone": "cold, terse, propulsive, hard-boiled",
+      "pacing": "Fast",
+      "themes": [
+        "identity and disguise",
+        "professional heist planning",
+        "betrayal and survival",
+        "criminal underworld logistics"
+      ],
+      "setting": "New Jersey; 1963",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "The Outfit - Richard Stark",
+        "The Jugger - Richard Stark",
+        "The Friends of Eddie Coyle - George V. Higgins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "heist fiction",
+          "ultra-lean prose",
+          "propulsive pacing",
+          "identity thriller elements"
+        ],
+        "negative": [
+          "amoral protagonist",
+          "graphic violence",
+          "no emotional warmth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Handle - Richard Stark": {
       "title": "The Handle",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker is enlisted by the mob to knock over an illegal casino on a heavily guarded island forty miles off the Texas coast — but the job comes with unwanted political entanglements when a government agent with his own agenda insists on tagging along. A heist with Cold War-spy overtones.",
+      "tone": "cold, methodical, tautly plotted, hard-boiled",
+      "pacing": "Fast",
+      "themes": [
+        "professional planning and execution",
+        "political interference",
+        "criminal and government interests",
+        "amorality",
+        "loyalty"
+      ],
+      "setting": "An island casino off the Texas coast; 1966",
+      "comparable_books": [
+        "The Outfit - Richard Stark",
+        "The Rare Coin Score - Richard Stark",
+        "The Green Eagle Score - Richard Stark",
+        "Casino Royale - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "heist fiction",
+          "island setting",
+          "spy-thriller crossover",
+          "ultra-lean prose"
+        ],
+        "negative": [
+          "amoral protagonist",
+          "graphic violence",
+          "no emotional warmth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Green Eagle Score - Richard Stark": {
       "title": "The Green Eagle Score",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker is recruited to rob a US Air Force base payroll — an audaciously ambitious target — but is dragged into an increasingly complicated situation when a crew member's personal obsessions start to unravel the plan from within. A tightly contained heist with military-base logistics.",
+      "tone": "cold, methodical, tense, hard-boiled",
+      "pacing": "Fast",
+      "themes": [
+        "heist planning and execution",
+        "human unpredictability vs professional control",
+        "military targets",
+        "amorality",
+        "betrayal"
+      ],
+      "setting": "A US Air Force base; 1967",
+      "comparable_books": [
+        "The Rare Coin Score - Richard Stark",
+        "The Handle - Richard Stark",
+        "The Outfit - Richard Stark",
+        "Rififi - Auguste le Breton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "heist fiction",
+          "military setting",
+          "ultra-lean prose",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "amoral protagonist",
+          "graphic violence",
+          "no emotional warmth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Dance at the Slaughterhouse - Lawrence Block": {
       "title": "A Dance at the Slaughterhouse",
       "author": "Lawrence Block",
       "series": "Matthew Scudder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 11",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "While investigating a seemingly accidental death, Matthew Scudder stumbles onto a snuff film operation targeting young men — drawing him into one of the darkest and most disturbing cases of his career, and introducing his young protégé TJ. An Edgar Award winner and arguably the series' darkest entry.",
+      "tone": "dark, disturbing, morally urgent, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "sexual exploitation and violence",
+        "corruption and privilege",
+        "justice outside the law",
+        "mentorship",
+        "sobriety"
+      ],
+      "setting": "New York City; 1991",
+      "comparable_books": [
+        "A Walk Among the Tombstones - Lawrence Block",
+        "Even the Wicked - Lawrence Block",
+        "The Girl with the Dragon Tattoo - Stieg Larsson",
+        "L.A. Confidential - James Ellroy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "dark crime thriller",
+          "atmospheric New York",
+          "Edgar Award winner",
+          "mentorship dynamic"
+        ],
+        "negative": [
+          "very dark content (child exploitation themes)",
+          "graphic violence",
+          "disturbing subject matter"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual violence",
+        "child sexual exploitation themes"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Long Line of Dead Men - Lawrence Block": {
       "title": "A Long Line of Dead Men",
       "author": "Lawrence Block",
       "series": "Matthew Scudder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Scudder investigates a peculiar gentlemen's club whose members have been dying at an alarming rate over three decades — an investigation that leads him through the city's forgotten corners while also culminating in his marriage to Elaine. A reflective, mortality-haunted mystery combining investigation with personal milestones.",
+      "tone": "meditative, elegiac, atmospheric, hard-boiled",
+      "pacing": "Moderate",
+      "themes": [
+        "mortality and coincidence",
+        "secret societies",
+        "New York City history",
+        "marriage and partnership",
+        "sobriety"
+      ],
+      "setting": "New York City; 1994",
+      "comparable_books": [
+        "Even the Wicked - Lawrence Block",
+        "A Dance at the Slaughterhouse - Lawrence Block",
+        "The Big Sleep - Raymond Chandler",
+        "A Walk Among the Tombstones - Lawrence Block"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "atmospheric New York setting",
+          "meditative mystery",
+          "series character development",
+          "sobriety themes"
+        ],
+        "negative": [
+          "slow investigative pace",
+          "relatively low tension compared to adjacent entries",
+          "minimal action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Black Ice Score - Richard Stark": {
