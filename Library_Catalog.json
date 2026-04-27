@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2546,
-  "total_pending": 2054,
+  "total_catalogued": 2566,
+  "total_pending": 2034,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -146914,81 +146914,147 @@
       "title": "The City of Brass",
       "author": "S. A. Chakraborty",
       "series": "The Daevabad Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young con-artist in 18th-century Cairo accidentally summons a djinn warrior, who drags her into the dangerous, glittering city of Daevabad—a place of warring magical tribes and ancient power she never knew existed. Nahri must navigate deadly politics and her own mysterious heritage to survive.",
+      "tone": "lush, intrigue-laden, politically charged",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and heritage",
+        "colonialism and power",
+        "religious conflict",
+        "belonging",
+        "magic and consequence"
+      ],
+      "setting": "18th-century Cairo and the mythical djinn city of Daevabad, drawing on Islamic folklore and history",
+      "comparable_books": [
+        "The Golem and the Jinni - Helene Wecker",
+        "Spinning Silver - Naomi Novik",
+        "A Thousand and One Nights (traditional)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Islamic mythology and folklore",
+          "morally complex politics",
+          "lush world-building",
+          "slow-burn romance",
+          "female protagonist",
+          "intrigue-heavy plotting"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "those averse to dense world-building",
+          "readers wanting clear-cut heroes and villains"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich atmospheric prose and a sprawling cast benefit greatly from audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Cage of Dark Hours - Marina J. Lostetter": {
       "title": "The Cage of Dark Hours",
       "author": "Marina J. Lostetter",
       "series": "The Five Penalties",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After surviving their encounter with a long-dead serial killer, Krona and her Regulators must battle a ruling elite and confront the mysterious, shadow-puppet-masters known as the Thalo, who have secretly controlled their world from the beginning. Dark conspiracies and layered mythologies deepen as the stakes escalate across the city-states of Arkensyre.",
+      "tone": "dark, atmospheric, mystery-laden, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "power and deception",
+        "grief and loss",
+        "hidden history",
+        "institutional corruption",
+        "identity"
+      ],
+      "setting": "The secondary-world city-states of Arkensyre, a quasi-Victorian fantasy setting with a complex magic system rooted in human bodies and a five-deity pantheon",
+      "comparable_books": [
+        "The Helm of Midnight - Marina J. Lostetter",
+        "The Bone Shard Daughter - Andrea Stewart",
+        "City of Lies - Sam Hawke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "genre hybrids mixing fantasy and mystery",
+          "layered world-building with escalating reveals",
+          "queer representation",
+          "multiple POVs",
+          "dark and inventive magic systems"
+        ],
+        "negative": [
+          "readers who prefer clean, simple magic systems",
+          "those who dislike escalating complexity in sequels",
+          "readers wanting a standalone experience"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Children of Eve - John Connolly": {
       "title": "The Children of Eve",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 22",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Maine private investigator Charlie Parker is hired to find a missing ex-soldier whose disappearance leads him into a web of child abductions, cartel violence, and a terrifying supernatural maternal figure. Parker must confront a darkness that is both earthly and otherworldly.",
+      "tone": "dark, hard-boiled with supernatural undertones, tense",
+      "pacing": "Fast",
+      "themes": [
+        "parenthood and protection",
+        "evil and its origins",
+        "the supernatural in everyday life",
+        "crime and consequence",
+        "loyalty"
+      ],
+      "setting": "Contemporary Maine and surrounding locations; dark, ghost-haunted American Northeast",
+      "comparable_books": [
+        "Every Dead Thing - John Connolly",
+        "The Black Echo - Michael Connelly",
+        "Doctor Sleep - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled crime blended with horror",
+          "long-running series with deep continuity",
+          "supernatural elements in a realistic setting",
+          "atmospheric New England setting"
+        ],
+        "negative": [
+          "readers new to the series (best read in order)",
+          "those who prefer pure crime fiction without supernatural elements",
+          "readers averse to graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The series has a long-established, acclaimed audiobook narrator tradition that enhances the atmospheric tone.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bright Sword - Lev Grossman": {
@@ -146996,242 +147062,446 @@
       "author": "Lev Grossman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young knight named Collum arrives at Camelot just two weeks too late—King Arthur is dead and the Round Table is shattered. The surviving knights, a cast of outsiders who never quite fit the legends, must seek a successor and rebuild a broken Britain while old magic returns and Morgan le Fay schemes for the throne.",
+      "tone": "wry, emotionally resonant, bittersweet, epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the end of an age",
+        "identity and outsiderdom",
+        "myth vs. reality",
+        "faith and doubt",
+        "legacy and grief"
+      ],
+      "setting": "Post-Camlann Britain; a mythologised Dark Ages England blending Arthurian legend with modern sensibility and deliberate anachronism",
+      "comparable_books": [
+        "The Once and Future King - T. H. White",
+        "The Mists of Avalon - Marion Zimmer Bradley",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arthurian mythology",
+          "literary fantasy with emotional depth",
+          "diverse and marginalised characters given voice",
+          "bittersweet endings",
+          "quest narratives",
+          "fans of Lev Grossman's The Magicians"
+        ],
+        "negative": [
+          "readers wanting fast action-driven fantasy",
+          "those with no interest in Arthurian lore",
+          "readers who dislike digressive, meandering narratives"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Epic scope, lyrical prose, and multiple knight POVs make this ideal for audio listening.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bone Ship's Wake - R. J. Barker": {
       "title": "The Bone Ship's Wake",
       "author": "R. J. Barker",
       "series": "Tide Child",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With his shipwife Meas captured, Joron Twiner takes command of the black fleet and wages a desperate pirate war against the Hundred Isles, all while a terrible rot eats at his body and a prophecy warns that he and the Windseer may end the world. The Tide Child trilogy reaches its emotionally devastating conclusion.",
+      "tone": "dark, elegiac, emotionally charged, epic",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and redemption",
+        "found family",
+        "the cost of leadership",
+        "war and its futility",
+        "prophecy and fate"
+      ],
+      "setting": "A seafaring secondary world of scattered archipelagos where warships are built from the bones of extinct sea dragons",
+      "comparable_books": [
+        "The Bone Ships - R. J. Barker",
+        "Age of Assassins - R. J. Barker",
+        "The Farseer Trilogy - Robin Hobb"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "naval fantasy",
+          "found family",
+          "emotionally devastating conclusions",
+          "morally grey protagonists",
+          "epic sea battles",
+          "Patrick O'Brian fans"
+        ],
+        "negative": [
+          "readers who dislike slow initial world-building (series-level)",
+          "those averse to high emotional stakes and character deaths",
+          "readers wanting lighter fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bloodless Princes - Charlotte Bond": {
       "title": "The Bloodless Princes",
       "author": "Charlotte Bond",
       "series": "The Fireborne Blade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Newly-crowned High Mage Saralene is cursed by her predecessor and dragged toward the afterlife; she and her champion Sir Maddileh must descend into the underworld to beg a favour of the Bloodless Princes who rule the dead. An Orpheus-and-Eurydice-inspired tale of love, myth-busting, and dragons.",
+      "tone": "dark, lyrical, myth-inflected, tender",
+      "pacing": "Moderate",
+      "themes": [
+        "love beyond death",
+        "the unreliability of history and myth",
+        "duty and honour",
+        "the nature of monsters",
+        "sapphic romance"
+      ],
+      "setting": "A secondary fantasy world of mages, knights and dragons, extending into an underworld ruled by two rival Bloodless Princes",
+      "comparable_books": [
+        "The Fireborne Blade - Charlotte Bond",
+        "A Psalm for the Wild-Built - Becky Chambers",
+        "The House in the Cerulean Sea - TJ Klune"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "novella-length fantasy",
+          "sapphic romance",
+          "mythology retelling (Orpheus)",
+          "dragons with depth",
+          "underworld settings",
+          "feminist fantasy"
+        ],
+        "negative": [
+          "readers wanting epic length and scale",
+          "those expecting grimdark",
+          "readers who prefer straightforward plots over layered myth"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short length and lyrical prose make this ideal for a single audio sitting; reviewed positively for its narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Adventures of Amina Al-Sirafi - Shannon Chakraborty": {
       "title": "The Adventures of Amina Al-Sirafi",
       "author": "Shannon Chakraborty",
       "series": "An Amina al-Sirafi Adventure",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Amina al-Sirafi, a legendary—and retired—female pirate of the medieval Indian Ocean, is coaxed out of hiding for one last job: rescuing a young noblewoman from a dangerous collector of forbidden relics. What begins as a straightforward mission spirals into a confrontation with ancient djinn magic and mythic evil.",
+      "tone": "swashbuckling, humorous, warm, adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "motherhood and identity",
+        "legacy and reputation",
+        "female agency",
+        "faith",
+        "loyalty and found family"
+      ],
+      "setting": "12th-century Indian Ocean world—the Arabian Peninsula, East Africa, and South Asia—steeped in Islamic folklore and seafaring history",
+      "comparable_books": [
+        "The City of Brass - S. A. Chakraborty",
+        "The Daevabad Trilogy - S. A. Chakraborty",
+        "The Long Way to a Small, Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female protagonist",
+          "Islamic mythology",
+          "swashbuckling adventure",
+          "found family",
+          "historical fantasy",
+          "humour and warmth",
+          "pirate stories"
+        ],
+        "negative": [
+          "readers wanting grimdark",
+          "those preferring heavy political intrigue over adventure",
+          "readers who dislike first-person voice"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "First-person voice, vivid action sequences, and warmth make this a standout audio experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Stormed Fortress - Janny Wurts": {
       "title": "Stormed Fortress",
       "author": "Janny Wurts",
       "series": "Wars of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8 (Arc III: Alliance of Light, Book 5)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The cursed enmity between half-brothers Arithon and Lysaer culminates at the besieged fortress of Alestron, where Lysaer's Alliance of Light lays siege while ancient sorceries and political machinations reach their crisis point. The concluding volume of the Alliance of Light arc delivers an epic and emotionally costly resolution.",
+      "tone": "lyrical, dense, emotionally intense, morally complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "free will vs. fate",
+        "the cost of compassion",
+        "the corruption of power",
+        "religious zealotry",
+        "loyalty and betrayal"
+      ],
+      "setting": "The secondary world of Athera, a richly detailed secondary fantasy world with deep magical lore; centred on the city-fortress of Alestron",
+      "comparable_books": [
+        "The Curse of the Mistwraith - Janny Wurts",
+        "The Lord of the Rings - J. R. R. Tolkien",
+        "Lymond Chronicles - Dorothy Dunnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense lyrical prose",
+          "morally grey protagonists on both sides",
+          "long-form epic fantasy",
+          "complex magic and world-building",
+          "anti-war themes",
+          "siege narratives"
+        ],
+        "negative": [
+          "casual readers (requires deep series investment)",
+          "readers who dislike demanding prose styles",
+          "those wanting fast pacing or clear-cut heroes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Shorefall - Robert Jackson Bennett": {
       "title": "Shorefall",
       "author": "Robert Jackson Bennett",
       "series": "The Founders Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the city of Tevanne, scriving engineer Sancia Grado and her allies attempt a daring heist while a terrifying ancient being—one of the original founders of the world's magic—is resurrected and threatens to reshape reality itself. The stakes of the series escalate dramatically.",
+      "tone": "propulsive, tense, darkly inventive",
+      "pacing": "Fast",
+      "themes": [
+        "power and its origins",
+        "colonialism and exploitation",
+        "identity and consciousness",
+        "technology and ethics",
+        "revolution"
+      ],
+      "setting": "The merchant city of Tevanne, a secondary world Renaissance-flavoured city where reality is manipulated through a scripted magical language",
+      "comparable_books": [
+        "Foundryside - Robert Jackson Bennett",
+        "The Goblin Emperor - Katherine Addison",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "inventive hard magic systems",
+          "heist elements",
+          "propulsive plotting",
+          "diverse cast",
+          "philosophical depth beneath action",
+          "fans of Foundryside"
+        ],
+        "negative": [
+          "readers who dislike technical or system-heavy magic",
+          "those who need to read book 1 first",
+          "readers wanting slow meditative fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sailing to Sarantium - Guy Gavriel Kay": {
       "title": "Sailing to Sarantium",
       "author": "Guy Gavriel Kay",
       "series": "Sarantine Universe",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Caius Crispus, a mosaicist from the western provinces, is summoned to the glittering Byzantine-inspired capital of Sarantium by the Emperor himself, carrying a secret message that will entangle him in the city's dangerous politics, chariot racing factions, and the ambitions of kings. A luminous meditation on art, legacy, and empire.",
+      "tone": "lyrical, meditative, stately, melancholic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "art and immortality",
+        "empire and power",
+        "fate and free will",
+        "the weight of history",
+        "beauty and loss"
+      ],
+      "setting": "A fictionalized Late Antiquity world inspired by the Byzantine Empire and its capital Constantinople (Sarantium), richly detailed",
+      "comparable_books": [
+        "The Lions of Al-Rassan - Guy Gavriel Kay",
+        "Lord of Emperors - Guy Gavriel Kay",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary historical fantasy",
+          "Byzantine history",
+          "lyrical prose",
+          "political intrigue",
+          "art and craft as theme",
+          "fans of Guy Gavriel Kay"
+        ],
+        "negative": [
+          "readers wanting fast plots or action",
+          "those averse to historical detail",
+          "readers who dislike melancholic tones"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kay's lyrical, flowing prose is ideally suited to audio; the immersive historical world rewards attentive listening.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Servant of the Empire - Raymond E. Feist & Janny Wurts": {
       "title": "Servant of the Empire",
       "author": "Raymond E. Feist & Janny Wurts",
       "series": "The Empire Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lady Mara of the Acoma continues her rise through the deadly political ranks of the Tsurani Empire, forging unlikely alliances and confronting the brutal Game of the Council while navigating a forbidden bond with a Midkemian slave. Political intrigue and personal sacrifice are pushed to their extremes.",
+      "tone": "tense, politically intricate, emotionally rich",
+      "pacing": "Moderate",
+      "themes": [
+        "duty vs. desire",
+        "political survival",
+        "honour and sacrifice",
+        "cross-cultural understanding",
+        "slavery and dignity"
+      ],
+      "setting": "The alien world of Kelewan, home of the Tsurani Empire; an Asian-inspired secondary fantasy world with rigid hierarchical politics",
+      "comparable_books": [
+        "Daughter of the Empire - Raymond E. Feist & Janny Wurts",
+        "Mistress of the Empire - Raymond E. Feist & Janny Wurts",
+        "The Goblin Emperor - Katherine Addison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political intrigue",
+          "female protagonists navigating patriarchal systems",
+          "slow-burn forbidden romance",
+          "detailed secondary world cultures",
+          "fans of the Riftwar Saga"
+        ],
+        "negative": [
+          "readers wanting high magic or action-led fantasy",
+          "those new to the series (must start with book 1)",
+          "readers averse to political machination plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ruin and Rising - Leigh Bardugo": {
       "title": "Ruin and Rising",
       "author": "Leigh Bardugo",
       "series": "Shadow and Bone",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alina Starkov, the Sun Summoner, leads a desperate final assault against the Darkling and the spreading Fold, while grappling with the limits of her power and the cost of her choices. The Shadow and Bone trilogy reaches its climactic conclusion.",
+      "tone": "dark, romantic, emotionally intense, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "power and its corruption",
+        "sacrifice",
+        "chosen one mythology subverted",
+        "love and obsession",
+        "identity"
+      ],
+      "setting": "The fictional land of Ravka, inspired by Tsarist Russia, steeped in Slavic folklore and magic",
+      "comparable_books": [
+        "Shadow and Bone - Leigh Bardugo",
+        "Six of Crows - Leigh Bardugo",
+        "An Ember in the Ashes - Sabaa Tahir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Slavic-inspired fantasy",
+          "dark romance",
+          "chosen one narratives with subversion",
+          "YA-adjacent fantasy",
+          "morally complex antagonists"
+        ],
+        "negative": [
+          "readers who dislike YA conventions or love triangles",
+          "those who prefer adult-level complexity",
+          "readers averse to dark romantic obsession tropes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rogues: True Stories of Grifters, Killers, Rebels and Crooks - Patrick Radden Keefe": {
@@ -147239,26 +147509,48 @@
       "author": "Patrick Radden Keefe",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twelve long-form essays, originally published in The New Yorker, profiling a gallery of grifters, killers, arms dealers, drug lords, and one lovable rogue (Anthony Bourdain)—united by Keefe's abiding preoccupations with crime, corruption, secrets, and the humanity lurking beneath each headline. Each piece reads with the pace and suspense of a thriller.",
+      "tone": "incisive, compulsively readable, humane, investigative",
+      "pacing": "Fast",
+      "themes": [
+        "crime and human nature",
+        "obsession",
+        "corruption and moral ambiguity",
+        "the permeable line between legal and illegal",
+        "identity"
+      ],
+      "setting": "Contemporary global settings — the United States, Mexico, the Netherlands, and beyond",
+      "comparable_books": [
+        "Say Nothing - Patrick Radden Keefe",
+        "Empire of Pain - Patrick Radden Keefe",
+        "The Feather Thief - Kirk Wallace Johnson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime",
+          "longform journalism",
+          "narrative non-fiction with novelistic prose",
+          "morally complex portraits",
+          "compulsive page-turners",
+          "essay collections"
+        ],
+        "negative": [
+          "readers wanting a single sustained narrative",
+          "those averse to content about real-world violence and crime"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The essay format and propulsive journalistic prose make each piece ideal for audio, easily consumed one piece per sitting.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Replaceable You: Adventures in Human Anatomy - Mary Roach": {
@@ -147266,161 +147558,294 @@
       "author": "Mary Roach",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Science writer Mary Roach travels the world investigating humanity's long quest to repair and replace the body's failing parts—from brass noses and pig hearts to 3D-printed organs—mixing rigorous science journalism with her signature gonzo humour, footnotes, and boundless curiosity.",
+      "tone": "witty, curious, warm, occasionally gross",
+      "pacing": "Moderate",
+      "themes": [
+        "the limits of medicine",
+        "bodily identity and repair",
+        "scientific ingenuity",
+        "mortality",
+        "the strangeness of the human body"
+      ],
+      "setting": "Operating theatres, laboratories, and clinics across Mongolia, China, Georgia, Arizona, and beyond — contemporary global medical science",
+      "comparable_books": [
+        "Stiff - Mary Roach",
+        "Gulp - Mary Roach",
+        "The Body - Bill Bryson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science with humour",
+          "narrative non-fiction",
+          "medical curiosity",
+          "accessible science writing",
+          "fans of Mary Roach's previous books"
+        ],
+        "negative": [
+          "readers with squeamishness about medical detail or animal experimentation",
+          "those wanting dry academic science",
+          "readers who dislike irreverent approaches to serious topics"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Roach's wit and footnote-heavy style shine on audio, where her first-person asides play like comedy.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Real Tigers - Mick Herron": {
       "title": "Real Tigers",
       "author": "Mick Herron",
       "series": "Slough House",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Spy Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When one of Slough House's slow horses is kidnapped and used as leverage to steal classified documents from MI5, Jackson Lamb's dysfunctional team of failed spies find themselves the unwitting centre of a dangerous conspiracy reaching into the heart of the intelligence services. The series' darkly comic tone sharpens as the stakes turn deadly.",
+      "tone": "darkly comic, sardonic, tense, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "institutional failure and bureaucracy",
+        "loyalty and betrayal",
+        "redemption and disgrace",
+        "the banality of intelligence work",
+        "class and power in Britain"
+      ],
+      "setting": "Contemporary London; Slough House (a dumping ground for disgraced MI5 officers) and the corridors of power at Regent's Park",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Secret Agent - Joseph Conrad"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic spy fiction",
+          "ensemble casts of broken characters",
+          "British wit and cynicism",
+          "propulsive plotting",
+          "subverted spy genre tropes"
+        ],
+        "negative": [
+          "readers wanting globe-trotting glamour of James Bond-style spy fiction",
+          "those who dislike morally compromised characters",
+          "readers needing cheerful or hopeful tones"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The long-running audiobook narrator (Sean Barrett) is acclaimed and inseparable from the series' tone.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Peril's Gate - Janny Wurts": {
       "title": "Peril's Gate",
       "author": "Janny Wurts",
       "series": "Wars of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6 (Arc III: Alliance of Light, Book 3)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Arithon, the Master of Shadow, is hunted across treacherous winter mountains by Lysaer's forces and the Koriani Sisterhood, while ancient forces stir and the Fellowship of Seven fights battles on multiple fronts. Widely considered the tipping point of the entire series, where the true scope of the conflict begins to be revealed.",
+      "tone": "lyrical, relentless, emotionally intense, philosophically dense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "self-discovery and forgiveness",
+        "the nature of good and evil",
+        "fate and free will",
+        "the price of compassion",
+        "perception and truth"
+      ],
+      "setting": "The secondary world of Athera; harsh winter mountain terrain and the wider continent, with deep magical and political lore",
+      "comparable_books": [
+        "Stormed Fortress - Janny Wurts",
+        "The Curse of the Mistwraith - Janny Wurts",
+        "Lymond Chronicles - Dorothy Dunnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense lyrical epic fantasy",
+          "deeply morally ambiguous conflicts",
+          "philosophical depth",
+          "long-form series investment",
+          "fans of the series"
+        ],
+        "negative": [
+          "readers new to the series (entirely inaccessible without prior books)",
+          "those wanting fast pacing",
+          "readers who dislike demanding prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wind and Truth - Brandon Sanderson": {
       "title": "Wind and Truth",
       "author": "Brandon Sanderson",
       "series": "The Stormlight Archive",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dalinar Kholin's contest of champions against the newly ascended god Odium will determine the fate of the world of Roshar and the wider Cosmere; Kaladin accompanies the repentant assassin Szeth on a quest to cleanse his homeland, while Shallan and her allies unravel the mystery of the ancient Unmade. The explosive conclusion to the first arc of the Stormlight Archive.",
+      "tone": "epic, emotionally charged, grand in scope, propulsive in its finale",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "mental health and healing",
+        "redemption",
+        "the nature of gods and faith",
+        "sacrifice",
+        "legacy"
+      ],
+      "setting": "Roshar, a storm-battered alien world of Knights Radiant, spren, and competing divine powers; part of Sanderson's wider Cosmere",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "Rhythm of War - Brandon Sanderson",
+        "The Hero of Ages - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic high fantasy with hard magic systems",
+          "massive world-building investment",
+          "mental health themes treated seriously",
+          "interconnected universe (Cosmere)",
+          "long-form series payoff"
+        ],
+        "negative": [
+          "casual readers (requires 4 prior books + novellas)",
+          "those who dislike very long books",
+          "readers wanting concise plotting or simple magic systems"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The long-running Michael Kramer / Kate Reading narration team is acclaimed as definitive for the series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Paladin of Souls - Lois McMaster Bujold": {
       "title": "Paladin of Souls",
       "author": "Lois McMaster Bujold",
       "series": "World of the Five Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ista, the middle-aged former Royina of Chalion and one-time vessel of a god, escapes her smothering life of piety on a pilgrimage that quickly spirals into a divine mission against demonic forces. A rare and celebrated fantasy about a woman past fifty discovering her true calling.",
+      "tone": "warm, wry, emotionally intelligent, quietly profound",
+      "pacing": "Moderate",
+      "themes": [
+        "faith and doubt",
+        "purpose and identity in middle age",
+        "divine intervention and free will",
+        "grief and healing",
+        "unexpected heroism"
+      ],
+      "setting": "The secondary medieval world of Chalion and the adjacent kingdom of Ibra, loosely inspired by Iberian history and Catholic theology",
+      "comparable_books": [
+        "The Curse of Chalion - Lois McMaster Bujold",
+        "Spinning Silver - Naomi Novik",
+        "A Wizard's Guide to Defensive Baking - T. Kingfisher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "older female protagonists",
+          "faith-based fantasy",
+          "quiet emotional depth",
+          "Hugo and Nebula Award winner",
+          "character-over-plot",
+          "wry humour"
+        ],
+        "negative": [
+          "readers wanting high-action fantasy",
+          "those who dislike theological themes",
+          "readers wanting younger protagonists"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Bujold's intimate, character-driven prose excels in audio; the inner voice of Ista is particularly well-suited to narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Pandora's Star - Peter F. Hamilton": {
       "title": "Pandora's Star",
       "author": "Peter F. Hamilton",
       "series": "The Commonwealth Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the far-future Commonwealth, a vast interstellar civilisation discovers that a distant star has been enclosed inside an artificial barrier—and sends an expedition to investigate. What they awaken threatens the entire human race with an alien intelligence that has exterminated civilisations before.",
+      "tone": "epic in scope, propulsive, ideas-driven, grand",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "first contact and alien intelligence",
+        "post-scarcity civilisation",
+        "mortality and immortality",
+        "exploration and discovery",
+        "the nature of consciousness"
+      ],
+      "setting": "The Commonwealth — a vast 24th-century interstellar human civilisation connected by a train network — and deep space; far-future hard SF",
+      "comparable_books": [
+        "Judas Unchained - Peter F. Hamilton",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Revelation Space - Alastair Reynolds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic hard science fiction",
+          "far-future world-building",
+          "first contact",
+          "large ensemble casts",
+          "big ideas SF",
+          "fans of Peter F. Hamilton"
+        ],
+        "negative": [
+          "readers who dislike very long books with slow starts",
+          "those averse to multiple POVs and large casts",
+          "readers wanting tight plotting or character-focused stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "One by One - Ruth Ware": {
@@ -147428,26 +147853,48 @@
       "author": "Ruth Ware",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A group of tech company colleagues gathers at a remote alpine chalet for a team retreat; when an avalanche cuts them off from the outside world, people begin to die and the survivors must identify the killer among them before they become the next victim.",
+      "tone": "tense, claustrophobic, icy, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "greed and corporate culture",
+        "trust and paranoia",
+        "isolation",
+        "class tension",
+        "survival"
+      ],
+      "setting": "An isolated ski chalet in the French Alps, snowbound; contemporary",
+      "comparable_books": [
+        "In a Dark, Dark Wood - Ruth Ware",
+        "And Then There Were None - Agatha Christie",
+        "The Woman in the Window - A. J. Finn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room mysteries",
+          "snowy isolated settings",
+          "propulsive thriller pacing",
+          "Agatha Christie-style ensemble mysteries",
+          "one-sitting reads"
+        ],
+        "negative": [
+          "readers wanting literary depth or character complexity",
+          "those who dislike corporate-world settings",
+          "readers wanting unpredictable plots (formula is apparent)"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The dual-narrator format and tense claustrophobic atmosphere are greatly enhanced by audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "One Perfect Couple - Ruth Ware": {
