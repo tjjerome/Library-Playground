@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3396,
-  "total_pending": 1204,
+  "total_catalogued": 3416,
+  "total_pending": 1184,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -188248,54 +188248,101 @@
       "title": "The Blood Mirror",
       "author": "Brent Weeks",
       "series": "Lightbringer",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gavin Guile is imprisoned and stripped of his power as the Color Prince's forces continue to reshape the world, while Kip and the Mighty push deeper into enemy territory. Political and magical threads tighten toward a reckoning that will reshape the Seven Satrapies.",
+      "tone": "Grimdark, propulsive, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "power and corruption",
+        "sacrifice",
+        "identity",
+        "war",
+        "redemption"
+      ],
+      "setting": "The Seven Satrapies — a secondary-world empire built around chromaturgy (light magic), featuring diverse cultures and an ongoing civil war",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intricate magic systems",
+          "morally grey protagonist",
+          "high stakes",
+          "propulsive plotting",
+          "political intrigue"
+        ],
+        "negative": [
+          "dark content including torture and imprisonment",
+          "very long series commitment required",
+          "cliffhanger endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong narrator (Simon Vance) and propulsive pacing make this an excellent listen.",
+      "content_flags": [
+        "graphic violence",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Broken Eye - Brent Weeks": {
       "title": "The Broken Eye",
       "author": "Brent Weeks",
       "series": "Lightbringer",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kip and the Mighty struggle to survive in a world increasingly dominated by the Color Prince's rebellion, while the imprisoned Gavin confronts terrifying truths about his past. Secrets at the heart of the Chromeria begin to unravel as the war intensifies.",
+      "tone": "Grimdark, propulsive, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "identity and deception",
+        "power",
+        "loyalty",
+        "family legacy",
+        "sacrifice"
+      ],
+      "setting": "The Seven Satrapies — a secondary-world empire built around chromaturgy (light magic), in the grip of a devastating civil war",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intricate magic systems",
+          "morally grey protagonist",
+          "high stakes",
+          "propulsive plotting",
+          "political intrigue",
+          "found family"
+        ],
+        "negative": [
+          "dark content including torture",
+          "very long series commitment required",
+          "cliffhanger endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simon Vance's narration and the propulsive pacing are ideal for audio.",
+      "content_flags": [
+        "graphic violence",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Tiger: A True Story of Vengeance and Survival - John Vaillant": {
@@ -188303,134 +188350,245 @@
       "author": "John Vaillant",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the Russian Far East, an Amur tiger begins stalking and killing humans, and the men tasked with hunting it must confront not just the animal but the brutal poverty and ecological collapse of post-Soviet Siberia. Vaillant weaves natural history, cultural anthropology, and thriller-paced reporting into a gripping portrait of predator and prey.",
+      "tone": "Atmospheric, urgent, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "man versus nature",
+        "ecological collapse",
+        "survival",
+        "post-Soviet Russia",
+        "predation and vengeance"
+      ],
+      "setting": "The Primorye region of Russia's Far East, 1990s — a remote, impoverished, and ecologically threatened wilderness",
+      "comparable_books": [
+        "The Feather Thief - Kirk Wallace Johnson",
+        "Killers of the Flower Moon - David Grann",
+        "The Snow Leopard - Peter Matthiessen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "immersive narrative non-fiction",
+          "nature writing",
+          "thriller pacing",
+          "vivid sense of place",
+          "ecological themes"
+        ],
+        "negative": [
+          "detailed descriptions of animal attacks and death",
+          "slow-building atmospheric sections"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Kushiel's Dart - Jacqueline Carey": {
       "title": "Kushiel's Dart",
       "author": "Jacqueline Carey",
       "series": "Phèdre's Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Phèdre nó Delaunay, a courtesan and spy in a richly imagined alternate-medieval France, is sold into indentured servitude and trained in both pleasure and espionage, uncovering a treasonous conspiracy that threatens her nation. Her unique magical gift — finding pleasure in pain — drives both her personal journey and a sweeping political epic.",
+      "tone": "Lush, sensuous, epic, introspective",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "love and devotion",
+        "political intrigue",
+        "identity and fate",
+        "religion and divinity",
+        "freedom and servitude"
+      ],
+      "setting": "Terre d'Ange — a lushly realised alternate Europe inspired by medieval France, with a religion based on angelic descent",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "A Song of Ice and Fire - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush world-building",
+          "political intrigue",
+          "morally complex protagonist",
+          "slow-burn romance",
+          "adult fantasy"
+        ],
+        "negative": [
+          "explicit sexual content including BDSM",
+          "slow opening",
+          "very long and dense narrative"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich, lyrical prose and a sweeping epic scope reward attentive listening.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Emily Wilde's Compendium of Lost Tales - Heather Fawcett": {
       "title": "Emily Wilde's Compendium of Lost Tales",
       "author": "Heather Fawcett",
       "series": "Emily Wilde",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Faerie scholar Emily Wilde and her fiancé Wendell Bambleby navigate the deadly intrigues of Wendell's long-lost faerie kingdom as they attempt to break a curse laid upon the realm by his murderous stepmother. Emily must use her knowledge of faerie stories as much as Wendell's magic to save everything they hold dear.",
+      "tone": "Cosy, whimsical, quietly enchanting with sharp edges",
+      "pacing": "Moderate",
+      "themes": [
+        "the power of stories",
+        "identity and belonging",
+        "love and partnership",
+        "academic curiosity",
+        "the uncanny"
+      ],
+      "setting": "A Victorian/Edwardian-inspired secondary world and the perilous faerie realm of Wendell's kingdom",
+      "comparable_books": [
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "A Natural History of Dragons - Marie Brennan",
+        "The Starless Sea - Erin Morgenstern"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy fantasy",
+          "academic protagonist",
+          "slow-burn romance",
+          "faerie lore",
+          "found family",
+          "charming voice"
+        ],
+        "negative": [
+          "low action",
+          "slow pacing in sections",
+          "requires reading prior books in series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Dry, witty narrative voice and cosy atmosphere are well-suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ballistic Kiss - Richard Kadrey": {
       "title": "Ballistic Kiss",
       "author": "Richard Kadrey",
       "series": "Sandman Slim",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 11",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Half-angel antihero James Stark investigates a ghost infestation in LA's Little Cairo neighbourhood, uncovering a 1970s unsolved murder that may hold the key to ending the ongoing war among angels — while navigating new romantic entanglements and the fallout of his return from the dead.",
+      "tone": "Darkly comic, cynical, pulpy, noir",
+      "pacing": "Fast",
+      "themes": [
+        "identity and monstrousness",
+        "redemption",
+        "grief and loss",
+        "supernatural warfare",
+        "urban alienation"
+      ],
+      "setting": "Contemporary Los Angeles, with frequent forays into supernatural realms — Heaven, Hell, and the spaces between",
+      "comparable_books": [
+        "Dresden Files - Jim Butcher",
+        "Johannes Cabal the Necromancer - Jonathan L. Howard",
+        "Rivers of London - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced urban fantasy",
+          "antihero protagonist",
+          "dark humour",
+          "noir atmosphere",
+          "supernatural action"
+        ],
+        "negative": [
+          "very long series requiring substantial prior investment",
+          "graphic violence",
+          "repetitive late-series structure for some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Blinding Knife - Brent Weeks": {
       "title": "The Blinding Knife",
       "author": "Brent Weeks",
       "series": "Lightbringer",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Prism Gavin Guile races against his own deteriorating magical abilities while Kip — newly discovered as a Lightbringer — struggles to master his drafting at the Chromeria. As the Color Prince's revolution gains momentum, the consequences of past deceptions begin to close in on everyone.",
+      "tone": "Grimdark, propulsive, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "power and sacrifice",
+        "deception and truth",
+        "identity",
+        "war",
+        "coming of age"
+      ],
+      "setting": "The Seven Satrapies — a secondary-world empire built around chromaturgy (light magic)",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intricate magic systems",
+          "morally grey protagonist",
+          "high stakes",
+          "propulsive plotting",
+          "political intrigue"
+        ],
+        "negative": [
+          "dark content including violence and torture",
+          "very long series commitment required",
+          "cliffhanger endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simon Vance's narration and the series' propulsive pacing make for an exceptional listen.",
+      "content_flags": [
+        "graphic violence",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Say Nothing: A True Story of Murder and Memory in Northern Ireland - Patrick Radden Keefe": {
@@ -188438,350 +188596,628 @@
       "author": "Patrick Radden Keefe",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Beginning with the 1972 abduction and murder of Jean McConville, a widowed mother of ten, Patrick Radden Keefe traces the lives of IRA members Dolours Price and Brendan Hughes through the Troubles, examining how political violence and its memory continue to haunt Northern Ireland. A meticulously reported meditation on atrocity, trauma, and the costs of silence.",
+      "tone": "Measured, haunting, rigorously reported, morally probing",
+      "pacing": "Moderate",
+      "themes": [
+        "political violence and its aftermath",
+        "memory and truth",
+        "justice",
+        "the Troubles",
+        "moral cost of ideology"
+      ],
+      "setting": "Northern Ireland, primarily Belfast, spanning the 1970s through the 2010s",
+      "comparable_books": [
+        "Killers of the Flower Moon - David Grann",
+        "The Executioner's Song - Norman Mailer",
+        "Empire of Pain - Patrick Radden Keefe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary narrative non-fiction",
+          "true crime",
+          "political history",
+          "character-driven reportage",
+          "moral complexity"
+        ],
+        "negative": [
+          "heavy subject matter — sectarian violence and murder",
+          "not action-forward"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The narrative's linear, character-driven structure and thriller-adjacent pacing are ideally suited to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Raven's Ruin - J. A. Andrews": {
       "title": "Raven's Ruin",
       "author": "J. A. Andrews",
       "series": "The Keeper Origins",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sable, a truth-sensing actress turned reluctant rebel, finds herself trapped in the priory and used as a political pawn in High Prioress Vivaine's negotiations with the encroaching Kalesh Empire. As her powers grow and her homeland faces invasion, she must find the courage to defy those who seek to silence her.",
+      "tone": "Hopeful epic, emotionally rich, high-stakes but optimistic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "found family",
+        "truth and power",
+        "freedom and resistance",
+        "political corruption",
+        "personal courage"
+      ],
+      "setting": "The fantasy continent of Tallus — a secondary world with priories, magic, elves, trolls, and an expanding empire",
+      "comparable_books": [
+        "The Riyria Chronicles - Michael J. Sullivan",
+        "A Threat of Shadows - JA Andrews",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "hopeful epic fantasy",
+          "strong female protagonist",
+          "friendship-driven narrative",
+          "political intrigue",
+          "cosy-adjacent without being low-stakes"
+        ],
+        "negative": [
+          "slower pacing in early sections",
+          "low gore — may disappoint grimdark fans",
+          "requires prior book"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Kate Reading; character-driven emotional storytelling is well-suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dragon's Reach - J. A. Andrews": {
       "title": "Dragon's Reach",
       "author": "J. A. Andrews",
       "series": "The Keeper Origins",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sable, a thief with the rare ability to sense truth in people's words, escapes a vicious gang boss and joins a travelling theatre troupe, only to discover a devastating conspiracy by the Kalesh Empire that threatens her entire homeland. She must use her voice and growing magical power to warn the city — before those who want her silenced can catch up.",
+      "tone": "Hopeful epic, adventurous, warmly character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "found family",
+        "truth and power",
+        "freedom",
+        "courage",
+        "identity"
+      ],
+      "setting": "The fantasy continent of Tallus — a secondary world of priories, city-states, and an encroaching empire, set before the events of the Keeper Chronicles",
+      "comparable_books": [
+        "The Riyria Chronicles - Michael J. Sullivan",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Theft of Swords - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "hopeful epic fantasy",
+          "strong female protagonist",
+          "unique magic system",
+          "adventure and camaraderie"
+        ],
+        "negative": [
+          "low gore — may disappoint grimdark fans",
+          "slower start",
+          "cliffhanger ending"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Kate Reading; warmly character-driven adventure is well-suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fury Yet to Come - Steven McKinnon": {
       "title": "The Fury Yet to Come",
       "author": "Steven McKinnon",
       "series": "The Raincatcher's Ballad",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (prequel novella)",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Corporal Tyson Gallows wakes in chains after his squad is ambushed, his mind held captive by a demented witch who seeks his military secrets. A grimdark prequel novella testing one soldier's sanity, loyalty, and love under psychological torture.",
+      "tone": "Grimdark, intense, psychologically brutal",
+      "pacing": "Fast",
+      "themes": [
+        "psychological endurance",
+        "love as strength",
+        "war and captivity",
+        "sacrifice",
+        "loyalty"
+      ],
+      "setting": "A secondary-world grimdark fantasy setting with warring nations, black magic, and military conflict",
+      "comparable_books": [
+        "Symphony of the Wind - Steven McKinnon",
+        "The Blade Itself - Joe Abercrombie",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "fast-paced action",
+          "psychological thriller elements",
+          "black magic",
+          "intense character moments"
+        ],
+        "negative": [
+          "graphic violence and torture",
+          "very short — novella format",
+          "does not stand fully alone from the main series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "torture",
+        "sexual violence (referenced)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Phoenix Rising - J. A. Andrews": {
       "title": "Phoenix Rising",
       "author": "J. A. Andrews",
       "series": "The Keeper Origins",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the concluding chapter of the Keeper Origins trilogy, Sable and her troupe face a full-scale war as the Kalesh Empire makes its final move on Tallus, while corruption within the priories threatens to destroy the nation from within. Sable must unite disparate factions and embrace the full extent of her power to forge a free land.",
+      "tone": "Hopeful epic, emotionally resonant, high-stakes",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and sacrifice",
+        "found family",
+        "truth and power",
+        "nation-building",
+        "political corruption"
+      ],
+      "setting": "The fantasy continent of Tallus — a secondary world of priories, northern rebel camps, and a city under siege",
+      "comparable_books": [
+        "The Riyria Chronicles - Michael J. Sullivan",
+        "A Threat of Shadows - JA Andrews",
+        "Raven's Ruin - JA Andrews"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "hopeful epic fantasy",
+          "satisfying series conclusion",
+          "strong female protagonist",
+          "political and military stakes"
+        ],
+        "negative": [
+          "low gore — may disappoint grimdark fans",
+          "requires prior books in series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Kate Reading; the emotional payoff of this conclusion is amplified on audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Citrine Key - L. L. MacRae": {
       "title": "The Citrine Key",
       "author": "L. L. MacRae",
       "series": "Dragon Spirits",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (prequel novella)",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Life-long thief Apollo Tamlin is offered a pardon in exchange for a near-suicidal mission: travel to a distant continent and feed a stolen magical artefact to an ancient dragon spirit. A compact, action-packed introduction to the Dragon Spirits world of Tassar.",
+      "tone": "Adventurous, fast-paced, lore-rich",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "duty and freedom",
+        "dragons and spirits",
+        "trust and betrayal"
+      ],
+      "setting": "The magic-drenched world of Tassar — a secondary world where powerful dragon spirits hold supreme power, set five years before The Iron Crown",
+      "comparable_books": [
+        "The Iron Crown - L. L. MacRae",
+        "Dragon Keeper - Robin Hobb",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragons",
+          "fast-paced adventure",
+          "rich world-building in compact form",
+          "morally complex characters",
+          "self-published indie"
+        ],
+        "negative": [
+          "very short — novella/prequel format",
+          "best read before the main series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Broken Sword - L. L. MacRae": {
       "title": "The Broken Sword",
       "author": "L. L. MacRae",
       "series": "Dragon Spirits",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the Shadow Gate open and death spirits flooding Tassar, Fenn — his memories restored but at terrible cost — must forge dangerous new alliances and rely on his bond with the dragon spirit Hassen to right the catastrophe he unwittingly unleashed. The epic conclusion to the Dragon Spirits trilogy brings all threads to a decisive reckoning.",
+      "tone": "Epic, emotionally charged, dragon-centric",
+      "pacing": "Fast",
+      "themes": [
+        "memory and identity",
+        "free will and destiny",
+        "the bond between human and spirit",
+        "sacrifice",
+        "war and survival"
+      ],
+      "setting": "Tassar — a magic-drenched secondary world where dragon spirits reign supreme, now threatened by an invasion of death spirits",
+      "comparable_books": [
+        "The Iron Crown - L. L. MacRae",
+        "Dragon Keeper - Robin Hobb",
+        "The Shadow Gate - L. L. MacRae"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragons as central characters",
+          "multi-POV epic fantasy",
+          "emotional character arcs",
+          "satisfying trilogy conclusion",
+          "indie self-published"
+        ],
+        "negative": [
+          "requires reading prior books",
+          "post-training-cutoff — limited external review data at time of cataloguing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Chaos Terrain - S. A. Tholin": {
       "title": "Chaos Terrain",
       "author": "S. A. Tholin",
       "series": "Primaterre",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Primaterre's 'Moment of Clarity' sends shockwaves through the galactic protectorate, Commander Cassimer and Joy Somerset face escalating battles against the demon Skald and the RebEarth insurgency — with the covert arcship Andromache's secrets threatening to unravel everything. The third book deepens the political and cosmic horror of the series.",
+      "tone": "Tense, militaristic, cosmic horror underpinning, romantic threads",
+      "pacing": "Fast",
+      "themes": [
+        "purity and corruption",
+        "loyalty and duty",
+        "cosmic horror",
+        "political freedom vs. authoritarianism",
+        "identity"
+      ],
+      "setting": "A far-future galaxy under the Primaterre Protectorate — military installations, war-torn planets, and the shadow of alien demonic corruption",
+      "comparable_books": [
+        "Old Man's War - John Scalzi",
+        "Iron Truth - S. A. Tholin",
+        "Ninefox Gambit - Yoon Ha Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military sci-fi",
+          "cosmic horror elements",
+          "strong character development",
+          "romance subplot",
+          "self-published award-winner"
+        ],
+        "negative": [
+          "requires reading prior books",
+          "graphic violence",
+          "series-internal references may confuse new readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Iron Truth - S. A. Tholin": {
       "title": "Iron Truth",
       "author": "S. A. Tholin",
       "series": "Primaterre",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Junior botanist Joy Somerset wakes from cryo-sleep to find herself stranded on the hostile, cult-infested planet Cato instead of her garden colony — and must trust Commander Cassimer of the authoritarian Primaterre Protectorate to survive. Winner of the 2021 SPSFC, the book blends military sci-fi, cosmic horror, and slow-burn romance against a richly imagined far-future backdrop.",
+      "tone": "Tense, immersive, atmospheric, with cosmic horror undertones and romantic warmth",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "purity and corruption",
+        "civil and personal freedom",
+        "trust and loyalty",
+        "cosmic horror",
+        "identity"
+      ],
+      "setting": "A far-future galaxy — primarily the storm-lashed, sand-shrouded planet Cato, haunted by a demonic alien corruption that has reshaped human civilisation",
+      "comparable_books": [
+        "Old Man's War - John Scalzi",
+        "Ninefox Gambit - Yoon Ha Lee",
+        "Revelation Space - Alastair Reynolds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military sci-fi",
+          "cosmic horror",
+          "rich world-building",
+          "morally grey characters",
+          "slow-burn romance",
+          "self-published award-winner"
+        ],
+        "negative": [
+          "very long book with slow opening",
+          "graphic violence",
+          "authoritarian political themes may be uncomfortable"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lonely Castles - S. A. Tholin": {
       "title": "Lonely Castles",
       "author": "S. A. Tholin",
       "series": "Primaterre",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of Cato's destruction, Joy Somerset begins her mandatory military service while Commander Cassimer and the Scathach Banneret Company hunt the spreading demon Skald across the galaxy. As Skald's corruption reaches further into the Primaterre's heart, Joy uncovers an impurity at the core of the Protectorate itself.",
+      "tone": "Tense, militaristic, cosmic horror underpinning, romantic threads",
+      "pacing": "Fast",
+      "themes": [
+        "purity and corruption",
+        "loyalty and freedom",
+        "cosmic horror",
+        "political hypocrisy",
+        "identity"
+      ],
+      "setting": "A far-future galaxy under the Primaterre Protectorate — war-torn planets, a stygian prison station, and the spreading corruption of a demonic intelligence",
+      "comparable_books": [
+        "Old Man's War - John Scalzi",
+        "Iron Truth - S. A. Tholin",
+        "Ninefox Gambit - Yoon Ha Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military sci-fi",
+          "cosmic horror",
+          "strong character development",
+          "action-packed",
+          "romance subplot",
+          "self-published award-winner"
+        ],
+        "negative": [
+          "requires reading Iron Truth first",
+          "graphic violence",
+          "dark themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Death Dance - Michael Michel": {
       "title": "Death Dance",
       "author": "Michael Michel",
       "series": "Dreams of Dust and Steel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 novella (companion to A Graveyard for Heroes)",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Corporal Tyson Gallows — now the legendary Danath the Namorite — pushes deeper into Scothea's war-torn lands, freeing slaves and building a rebel force, while navigating the roles of assassin, bandit, and betrayer that revolution demands of him. A companion novella to the second book of the grimdark Dreams of Dust and Steel saga.",
+      "tone": "Grimdark, propulsive, morally unflinching",
+      "pacing": "Fast",
+      "themes": [
+        "revolution and liberation",
+        "moral cost of war",
+        "duty and sacrifice",
+        "freedom",
+        "identity under pressure"
+      ],
+      "setting": "The war-ravaged lands of Namarr and Scothea — a secondary-world grimdark setting reminiscent of bronze/iron-age empires",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "Prince of Thorns - Mark Lawrence",
+        "A Song of Ice and Fire - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "morally grey protagonist",
+          "revolution narrative",
+          "propulsive pacing",
+          "self-published"
+        ],
+        "negative": [
+          "graphic violence",
+          "requires familiarity with prior books in the series",
+          "short — novella format"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Summer Empress - S. A. Tholin": {
       "title": "Summer Empress",
       "author": "S. A. Tholin",
       "series": "Primaterre",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The story that began on Cato reaches its cataclysmic conclusion, as former enemies are forced into an uneasy alliance against the final gambit of the demon Skald and a hidden cadre within the Primaterre. All-out war erupts and everything gained since Iron Truth is put at risk in this climactic series finale.",
+      "tone": "Tense, climactic, emotionally cathartic, cosmic horror",
+      "pacing": "Fast",
+      "themes": [
+        "purity and corruption",
+        "alliance and betrayal",
+        "sacrifice",
+        "cosmic horror",
+        "freedom vs. control"
+      ],
+      "setting": "A far-future galaxy — multiple war-torn planets, alien environments, and the final battlefields of the Primaterre's existential struggle",
+      "comparable_books": [
+        "Old Man's War - John Scalzi",
+        "Iron Truth - S. A. Tholin",
+        "Ninefox Gambit - Yoon Ha Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military sci-fi",
+          "cosmic horror",
+          "earned emotional payoff",
+          "action-packed finale",
+          "self-published award-winner"
+        ],
+        "negative": [
+          "requires reading entire preceding series",
+          "graphic violence",
+          "dark themes throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Certainty of Blood - Tim Frankovich": {
       "title": "The Certainty of Blood",
       "author": "Tim Frankovich",
       "series": "The Certainty of Blood",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When young Aldan discovers he can burn another person's blood as magic, he is exiled from his clan, branded, and sold into slavery as an arena fighter — guided by a supernatural voice from his own blood as he fights year after year for the chance to buy his freedom. A gladiatorial fantasy with a unique blood-magic system, compared to Gladiator meets The Name of the Wind.",
+      "tone": "Gritty, propulsive, emotionally grounded, spiritually tinged",
+      "pacing": "Moderate",
+      "themes": [
+        "freedom and enslavement",
+        "identity and exile",
+        "love as motivation",
+        "unique magic and power",
+        "spirituality"
+      ],
+      "setting": "A secondary-world fantasy with arena combat, blood-priest religion, and a despotic Hawk King — evoking ancient Near-Eastern or Central Asian flavours",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Gladiator (film tie-in fiction)",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unique magic system",
+          "underdog protagonist",
+          "arena combat",
+          "gritty but emotionally grounded",
+          "self-published indie"
+        ],
+        "negative": [
+          "graphic violence in arena settings",
+          "slower-paced daily-grind sections for some readers",
+          "spirituality woven into the narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wolf Chosen - Tim Frankovich": {
