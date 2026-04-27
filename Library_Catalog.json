@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1760,
-  "total_pending": 2840,
+  "total_catalogued": 1780,
+  "total_pending": 2820,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -108668,351 +108668,640 @@
       "title": "Tales of the Sun Eater, Volume 3",
       "author": "Christopher Ruocchio",
       "series": "Sun Eater",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5.5",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Seven short stories set in the Sollan Empire universe, bridging the gap between Ashes of Man and Disquiet Gods. Tales range from a soldier's last stand against alien invaders to a young swordsmaster emerging from her legendary father's shadow.",
+      "tone": "lyrical, melancholy, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "war and sacrifice",
+        "identity",
+        "human vs. alien",
+        "legacy",
+        "consciousness"
+      ],
+      "setting": "Far-future interstellar Sollan Empire and surrounding space, ~20,000 CE",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "Dune - Frank Herbert",
+        "Hyperion Cantos - Dan Simmons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Sun Eater series fans",
+          "literary science fiction",
+          "short story collections",
+          "space opera with philosophical depth",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "readers who need a main-series entry point",
+          "those who dislike short fiction",
+          "action-only readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tales of the Sun Eater, Volume 2 - Christopher Ruocchio": {
       "title": "Tales of the Sun Eater, Volume 2",
       "author": "Christopher Ruocchio",
       "series": "Sun Eater",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3.5",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Six short stories set in the Sollan Empire universe between Demon in White and Kingdoms of Death, featuring both familiar and new characters. Stories range from an assassin tasked with killing a half-machine king to a girl defying alien invaders to save her brother.",
+      "tone": "lyrical, dark, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "war and sacrifice",
+        "empire and its cost",
+        "human resilience",
+        "alien conflict"
+      ],
+      "setting": "Far-future interstellar Sollan Empire and surrounding space, ~20,000 CE",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "Dune - Frank Herbert",
+        "Hyperion Cantos - Dan Simmons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Sun Eater series fans",
+          "literary science fiction",
+          "short story collections",
+          "space opera with philosophical depth"
+        ],
+        "negative": [
+          "readers who need Hadrian Marlowe's POV",
+          "those who dislike short fiction",
+          "new readers to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fall of Neverdark - Philip C. Quaintrell": {
       "title": "The Fall of Neverdark",
       "author": "Philip C. Quaintrell",
       "series": "The Echoes Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set thirty years after the first trilogy, a new generation of heroes must rise alongside grizzled veterans to face an ancient evil that has stirred once more, threatening the realm of Illian. The Dragorn dragon-riders and a roguish half-elf relic hunter find themselves at the sharp end of a crisis that may end the Third Age.",
+      "tone": "adventurous, dark, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "legacy and duty",
+        "good vs. evil",
+        "found family",
+        "dragon riders",
+        "new generation vs. old"
+      ],
+      "setting": "The fantasy world of Verda/Illian, secondary world epic fantasy with elves, dwarves, dragons, and orcs",
+      "comparable_books": [
+        "Rise of the Ranger - Philip C. Quaintrell",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Theft of Swords - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon riders",
+          "epic multi-book fantasy",
+          "accessible worldbuilding",
+          "fast-paced plots",
+          "ensemble casts"
+        ],
+        "negative": [
+          "grimdark readers",
+          "those sensitive to self-published prose quality",
+          "readers who dislike time-skip sequels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Age of the King - Philip C. Quaintrell": {
       "title": "Age of the King",
       "author": "Philip C. Quaintrell",
       "series": "The Echoes Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the second trilogy in The Echoes Saga, in which the heroes of Illian must each pursue separate quests to turn the tide of the orc war, while a would-be king and the shadowy necromancer known as the Crow conspire to reshape the realm. A bridge to the final trilogy, delivering major character payoffs.",
+      "tone": "adventurous, escalating, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "kingship and leadership",
+        "sacrifice",
+        "good vs. evil",
+        "redemption",
+        "legacy"
+      ],
+      "setting": "The fantasy world of Verda/Illian, secondary world epic fantasy",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Theft of Swords - Michael J. Sullivan",
+        "The Shadow of the Gods - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of the prior Echoes Saga books",
+          "epic multi-book fantasy",
+          "ensemble casts",
+          "satisfying trilogy conclusions"
+        ],
+        "negative": [
+          "series newcomers",
+          "grimdark readers",
+          "those who dislike self-published prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Autumn Republic - Brian McClellan": {
       "title": "The Autumn Republic",
       "author": "Brian McClellan",
       "series": "Powder Mage",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Powder Mage trilogy, in which Field Marshal Tamas returns to find his country in chaos — occupied by foreign armies, torn by internal treachery, and threatened by gods. Inspector Adamat and powder mage Taniel Two-shot must each play their part in a desperate bid to save the republic.",
+      "tone": "propulsive, gritty, politically charged",
+      "pacing": "Fast",
+      "themes": [
+        "revolution and its cost",
+        "loyalty and betrayal",
+        "power and corruption",
+        "gods and mortality",
+        "sacrifice"
+      ],
+      "setting": "Adro, a gunpowder-age fantasy nation inspired by Napoleonic-era Europe",
+      "comparable_books": [
+        "The Final Empire - Brandon Sanderson",
+        "Promise of Blood - Brian McClellan",
+        "The Crimson Campaign - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock fantasy",
+          "propulsive plotting",
+          "political intrigue",
+          "unique magic systems",
+          "military fantasy"
+        ],
+        "negative": [
+          "readers who dislike gunpowder-era settings",
+          "slow-burn readers",
+          "romance-heavy preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong narrator performance and propulsive pacing make this outstanding on audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Crimson Campaign - Brian McClellan": {
       "title": "The Crimson Campaign",
       "author": "Brian McClellan",
       "series": "Powder Mage",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Field Marshal Tamas is cut off and presumed dead behind enemy lines while Adro faces invasion; back home, powder mage Taniel Two-shot wages a brutal guerrilla war and inspector Adamat unravels a conspiracy threatening the republic from within. A relentlessly paced middle volume that escalates the stakes on every front.",
+      "tone": "propulsive, gritty, tense",
+      "pacing": "Fast",
+      "themes": [
+        "war and survival",
+        "loyalty",
+        "political corruption",
+        "sacrifice",
+        "identity"
+      ],
+      "setting": "Adro and surrounding nations in a Napoleonic-inspired gunpowder-fantasy world",
+      "comparable_books": [
+        "Promise of Blood - Brian McClellan",
+        "The Autumn Republic - Brian McClellan",
+        "The Final Empire - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock fantasy",
+          "military fantasy",
+          "propulsive plotting",
+          "unique magic systems",
+          "multiple POV"
+        ],
+        "negative": [
+          "readers who dislike gunpowder settings",
+          "slow-burn preference",
+          "series newcomers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast pacing and strong multiple POVs translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Graveyard for Heroes - Michael Michel": {
       "title": "A Graveyard for Heroes",
       "author": "Michael Michel",
       "series": "Dreams of Dust and Steel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the Scarborn's betrayal, the kingdom of Namarr descends into chaos: a drug-addicted prince fights his way back toward a throne he abandoned, a young noble struggles to survive political treachery, and a crusading religious army across the sea sets its sights on conquest. A slow-burn, politically dense sequel that expands both the world and the cast.",
+      "tone": "grimdark, slow-burn, character-driven",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "political betrayal",
+        "redemption",
+        "power and corruption",
+        "religious fanaticism",
+        "grief"
+      ],
+      "setting": "The dark secondary-world kingdoms of Namarr and Scothea, an original grimdark fantasy setting",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "A Game of Thrones - George R. R. Martin",
+        "The Price of Power - Michael Michel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "political intrigue",
+          "morally grey protagonists",
+          "character-driven epics",
+          "slow-burn payoff"
+        ],
+        "negative": [
+          "readers who want fast pacing",
+          "those new to the series",
+          "readers who dislike bleak tones"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Whispers of the Storm - Z. B. Steele": {
       "title": "Whispers of the Storm",
       "author": "Z. B. Steele",
       "series": "Song of the Damned",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Legendary soldier-assassin Redlin of the Wolves recounts his life story — from academy training to battlefield atrocities — to inquisitors as he awaits execution, in a framed narrative that traces his transformation from ambitious youth into the morally compromised legend the world now fears.",
+      "tone": "grimdark, lyrical, darkly comic, bittersweet",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and legend",
+        "war and its cost",
+        "moral ambiguity",
+        "faith and betrayal",
+        "coming of age"
+      ],
+      "setting": "A dark secondary-world fantasy empire with military academies, religious factions, and elemental magic",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Blood Song - Anthony Ryan",
+        "Empire of the Vampire - Jay Kristoff"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "framed narratives",
+          "morally grey protagonists",
+          "military fantasy",
+          "lyrical prose",
+          "found family"
+        ],
+        "negative": [
+          "readers who dislike slow-burn openers",
+          "those who prefer lighter fantasy",
+          "readers sensitive to war trauma and sexual violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Empire of the Vampire - Jay Kristoff": {
       "title": "Empire of the Vampire",
       "author": "Jay Kristoff",
       "series": "Empire of the Vampire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gabriel de León, the last of the Silversaints — half-human, half-vampire holy warriors — recounts his life story to a vampire historian as a prisoner in a world where the sun has been gone for 27 years and vampires have conquered humanity. A lavishly illustrated, framed dark fantasy epic of faith, loss, and desperate survival.",
+      "tone": "grimdark, gothic, darkly comic, visceral",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and doubt",
+        "redemption",
+        "love and loss",
+        "addiction",
+        "humanity vs. monstrosity"
+      ],
+      "setting": "A Gothic secondary-world inspired by medieval France and Spain, plunged into eternal night by the vampire apocalypse",
+      "comparable_books": [
+        "Blood Song - Anthony Ryan",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Nevernight - Jay Kristoff"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "vampire fiction with horror roots",
+          "framed narratives",
+          "morally grey protagonists",
+          "lavish illustrated editions",
+          "darkly comic banter"
+        ],
+        "negative": [
+          "romance-vampire readers",
+          "readers sensitive to extreme gore",
+          "those who dislike profane prose or purple prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The framed narrative and Gabriel's distinct voice translate superbly to audio; narrator Damian Lynch is widely praised.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Empire of the Damned - Jay Kristoff": {
       "title": "Empire of the Damned",
       "author": "Jay Kristoff",
       "series": "Empire of the Vampire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gabriel de León and the Holy Grail, Dior Lachance, must navigate an uneasy alliance with a vampire faction to learn how the eternal night can be ended, while pursued by the Blood Voss and drawn into brutal highland warfare — with Gabriel's own bloodlust threatening to consume him. A sequel that escalates every element of the first book.",
+      "tone": "grimdark, gothic, visceral, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "faith and doubt",
+        "addiction and temptation",
+        "redemption",
+        "father-daughter bonds",
+        "prophecy"
+      ],
+      "setting": "A Gothic secondary-world in eternal vampire night, expanding to new vampire territories and Highland clans",
+      "comparable_books": [
+        "Empire of the Vampire - Jay Kristoff",
+        "Blood Song - Anthony Ryan",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "vampire fiction with horror roots",
+          "framed narratives",
+          "morally grey protagonists",
+          "found family (reluctant)",
+          "escalating sequels"
+        ],
+        "negative": [
+          "readers sensitive to extreme gore",
+          "those fatigued by profane prose",
+          "readers who want a lighter tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The framed narrative and dual narrators (Damian Lynch, Shakira Shute) are exceptional; highly recommended on audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Born in Fury - Mosha Winter": {
       "title": "Born in Fury",
       "author": "Mosha Winter",
       "series": "The Tapestry of the Tarnished",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel / Book 0",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The nomadic Rhaavi people face annihilation at the hands of the Astaris Empire, and when all seems lost, the intertwining destinies of a young hero and heroine — and a chance encounter with a dragon — offer a fragile hope. A debut prequel story of failure, redemption, and dragon bonding set in a dark, war-scarred world.",
+      "tone": "dark, emotional, adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "resistance and survival",
+        "dragon bonding",
+        "grief and healing",
+        "imperialism",
+        "redemption"
+      ],
+      "setting": "The Ring — a circle of continents rife with war, magic, and mythical creatures in a dark epic fantasy world",
+      "comparable_books": [
+        "The Winds of War - Mosha Winter",
+        "The Shadow of the Gods - John Gwynne",
+        "Ascendant - Michael R. Miller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon rider fantasy",
+          "dark epic fantasy",
+          "debut indie fiction",
+          "nomadic/underdog cultures",
+          "emotional character bonds"
+        ],
+        "negative": [
+          "readers who prefer polished traditionally published prose",
+          "those who dislike dragon-focused fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sandman Slim - Richard Kadrey": {
       "title": "Sandman Slim",
       "author": "Richard Kadrey",
       "series": "Sandman Slim",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "James Stark was sent to Hell alive by a former friend who murdered his girlfriend, but after eleven years fighting as a gladiator for demons he claws his way back to LA — armed with dark magic and a vendetta. A pulpy, profane, and propulsive noir-flavored urban fantasy revenge story.",
+      "tone": "propulsive, darkly comic, pulpy, gritty",
+      "pacing": "Fast",
+      "themes": [
+        "revenge",
+        "damnation and redemption",
+        "the supernatural underground",
+        "identity",
+        "good vs. evil (blurred)"
+      ],
+      "setting": "Contemporary Los Angeles and Hell; modern urban fantasy with noir sensibility",
+      "comparable_books": [
+        "The Dresden Files - Jim Butcher",
+        "The Iron Druid Chronicles - Kevin Hearne",
+        "American Gods - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy fans",
+          "noir fiction",
+          "antihero protagonists",
+          "fast-paced plots",
+          "darkly comic tone",
+          "revenge stories"
+        ],
+        "negative": [
+          "readers who dislike profane or crude voice",
+          "those preferring high/secondary world fantasy",
+          "romance-heavy preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "MacLeod Andrews's narration perfectly captures the hardboiled, sarcastic voice of Stark; an outstanding audio experience.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ascendant - Michael R. Miller": {
       "title": "Ascendant",
       "author": "Michael R. Miller",
       "series": "Songs of Chaos",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kitchen servant Holt Cook defies the dragon-rider Order to rescue a blind dragon hatchling destined for death, forging an unlikely bond as the undead Scourge rises to devastate the land. A progression fantasy-flavored dragon-rider epic combining classic tropes with a hard, cultivation-inspired magic system.",
+      "tone": "hopeful, adventurous, warm-hearted",
+      "pacing": "Fast",
+      "themes": [
+        "underdog and found worth",
+        "human-dragon bond",
+        "order vs. chaos",
+        "compassion as strength",
+        "coming of age"
+      ],
+      "setting": "A medieval-inspired secondary world threatened by the undead Scourge, with an established dragon-rider Order",
+      "comparable_books": [
+        "Eragon - Christopher Paolini",
+        "The Echoes Saga - Philip C. Quaintrell",
+        "Cradle series - Will Wight"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon rider fantasy",
+          "progression/cultivation magic",
+          "underdog protagonists",
+          "all-ages appeal",
+          "fast-paced adventure"
+        ],
+        "negative": [
+          "grimdark readers",
+          "those who dislike familiar tropes",
+          "readers seeking heavy moral complexity"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Warm, accessible storytelling and fast pacing make this a top-tier audio listen; strong narrator performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Apollo 13 - Jim Lovell & Jeffrey Kluger": {
@@ -109020,80 +109309,146 @@
       "author": "Jim Lovell & Jeffrey Kluger",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Astronaut Jim Lovell and journalist Jeffrey Kluger recount the harrowing true story of the 1970 Apollo 13 moon mission, which became a life-or-death crisis when an oxygen tank exploded 200,000 miles from Earth. A minute-by-minute account of ingenuity, teamwork, and the human drive to survive against impossible odds.",
+      "tone": "tense, factual, inspiring",
+      "pacing": "Fast",
+      "themes": [
+        "survival and resilience",
+        "human ingenuity",
+        "teamwork",
+        "space exploration",
+        "crisis leadership"
+      ],
+      "setting": "1970 — aboard the crippled Apollo 13 spacecraft and NASA Mission Control, Houston",
+      "comparable_books": [
+        "The Right Stuff - Tom Wolfe",
+        "Endurance - Alfred Lansing",
+        "Rocket Men - Robert Kurson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space history enthusiasts",
+          "survival narratives",
+          "propulsive non-fiction",
+          "science and engineering interest",
+          "true story fans"
+        ],
+        "negative": [
+          "readers who dislike non-fiction",
+          "those seeking character-driven literary prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The real-time tension and factual drama of the Apollo 13 crisis is exceptionally gripping on audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Blacktongue Thief - Christopher Buehlman": {
       "title": "The Blacktongue Thief",
       "author": "Christopher Buehlman",
       "series": "Blacktongue",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kinch Na Shannack, a debt-ridden thief from a guild of thieves, is conscripted to escort a mysterious noblewoman through a monster-haunted world still scarred by goblin wars — told with raucous wit and a distinctly irreverent voice. A darkly comic, beautifully crafted fantasy adventure with unexpected emotional depth.",
+      "tone": "darkly comic, witty, gritty, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "debt and obligation",
+        "war's legacy",
+        "friendship",
+        "identity",
+        "the cost of magic"
+      ],
+      "setting": "A secondary-world Europe-analog recovering from devastating goblin invasions, with richly realized cultures and dark magic",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Kings of the Wyld - Nicholas Eames",
+        "A Little Hatred - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic fantasy",
+          "witty first-person narration",
+          "grimdark with humor",
+          "found family",
+          "morally grey protagonist",
+          "lyrical prose"
+        ],
+        "negative": [
+          "readers who dislike first-person unreliable narrators",
+          "those wanting straightforward epic fantasy",
+          "readers who dislike dark content mixed with humor"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Buehlman narrates his own book to extraordinary effect — widely considered one of the best author-narrated audiobooks in fantasy.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Daughters' War - Christopher Buehlman": {
       "title": "The Daughters' War",
       "author": "Christopher Buehlman",
       "series": "Blacktongue",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0 (Prequel)",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Noble-born Galva defies her family to join the Raven Knights — an all-female unit bonded to giant war corvids — as they march against the goblin horde that has enslaved cities and killed most of humanity's men. A harrowing and emotionally devastating prequel to The Blacktongue Thief, told in Galva's terse, soldier's voice.",
+      "tone": "harrowing, elegiac, grim, emotionally powerful",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its toll",
+        "sisterhood and solidarity",
+        "grief and loss",
+        "duty and honor",
+        "female soldiers"
+      ],
+      "setting": "A secondary-world Europe-analog during the height of the goblin wars, decades before The Blacktongue Thief",
+      "comparable_books": [
+        "The Blacktongue Thief - Christopher Buehlman",
+        "The Shadow of the Gods - John Gwynne",
+        "What Feasts at Night - T. Kingfisher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy fans",
+          "grimdark with heart",
+          "female-led narratives",
+          "sapphic representation",
+          "war stories with emotional depth"
+        ],
+        "negative": [
+          "readers expecting The Blacktongue Thief's humor and wit",
+          "those sensitive to extreme war atrocity",
+          "readers who haven't read the first book"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Buehlman's performance brings Galva's laconic, soldierly voice to life brilliantly, as he did with The Blacktongue Thief.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "These Silent Woods - Kimi Cunningham Grant": {
@@ -109101,107 +109456,193 @@
       "author": "Kimi Cunningham Grant",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "For eight years, former soldier Cooper and his young daughter Finch have lived off-grid in a remote Appalachian cabin, hiding from a past Cooper cannot escape — but when their only lifeline fails to arrive, a stranger in the woods threatens to unravel everything. A slow-burn, atmosphere-drenched character study of a father's desperate love and guilt.",
+      "tone": "meditative, tense, atmospheric, soulful",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fatherhood and sacrifice",
+        "guilt and redemption",
+        "survival",
+        "isolation",
+        "secrets and the past"
+      ],
+      "setting": "A remote cabin deep in the northern Appalachian mountains, contemporary United States",
+      "comparable_books": [
+        "The Hush - John Hart",
+        "Serena - Ron Rash",
+        "Before Familiar Woods - Ian Pisarcik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric slow-burn thrillers",
+          "father-daughter relationships",
+          "survivalist settings",
+          "character-driven suspense",
+          "lyrical prose"
+        ],
+        "negative": [
+          "readers wanting fast-paced action thrillers",
+          "those seeking twist-heavy mysteries",
+          "readers who dislike ambiguous resolutions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The meditative Appalachian atmosphere and intimate character voice are ideally suited to audio; dual narration praised.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "She Who Became the Sun - Shelley Parker-Chan": {
       "title": "She Who Became the Sun",
       "author": "Shelley Parker-Chan",
       "series": "The Radiant Emperor Duology",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A peasant girl assumes her dead brother's identity and destiny to survive famine and Mongol occupation in 14th-century China, rising through the ranks of a rebel army by sheer force of will as she battles to claim the greatness fate promised to another. A stunning, queer, psychologically complex retelling of the rise of the Ming Dynasty.",
+      "tone": "lyrical, intense, psychologically complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and self-determination",
+        "ambition and the cost of power",
+        "queerness and gender",
+        "fate vs. will",
+        "colonialism and resistance"
+      ],
+      "setting": "14th-century China during the collapse of the Yuan/Mongol dynasty, with subtle magical elements",
+      "comparable_books": [
+        "The Poppy War - R. F. Kuang",
+        "Babel - R. F. Kuang",
+        "He Who Drowned the World - Shelley Parker-Chan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary historical fantasy",
+          "morally complex protagonists",
+          "queer representation",
+          "Chinese history and mythology",
+          "slow-burn character arcs"
+        ],
+        "negative": [
+          "readers wanting fast-paced plots",
+          "those who dislike ambiguous morality",
+          "readers sensitive to war and brutality"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lyrical prose and deeply interior character study are especially powerful in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Babylon's Ashes - James S. A. Corey": {
       "title": "Babylon's Ashes",
       "author": "James S. A. Corey",
       "series": "The Expanse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Free Navy's devastating attack on Earth and control of the ring gates forces the crew of the Rocinante into a fragile alliance of factions fighting for survival, as Marco Inaros's belt revolution reshapes the solar system's political order. A sprawling, multi-POV entry that begins to gather threads toward the series endgame.",
+      "tone": "propulsive, politically complex, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "revolution and its consequences",
+        "survival and solidarity",
+        "political power",
+        "colonialism",
+        "leadership"
+      ],
+      "setting": "The solar system and ring-gate network, several centuries in the future; hard science fiction",
+      "comparable_books": [
+        "Nemesis Games - James S. A. Corey",
+        "Leviathan Wakes - James S. A. Corey",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction fans",
+          "political space opera",
+          "ensemble casts",
+          "multi-POV narratives",
+          "The Expanse series fans"
+        ],
+        "negative": [
+          "readers wanting standalone entry points",
+          "those who dislike slow political maneuvering",
+          "readers not already invested in the series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jefferson Mays's full-cast narration of The Expanse series is among the finest in sci-fi audiobooks.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Nemesis Games - James S. A. Corey": {
       "title": "Nemesis Games",
       "author": "James S. A. Corey",
       "series": "The Expanse",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the Rocinante in drydock, each of the crew scatters to pursue personal matters — but a catastrophic attack on Earth and the emergence of a revolutionary Belt faction called the Free Navy tears their world apart before they can reunite. A high-stakes, crew-focused entry widely considered one of the best in the series.",
+      "tone": "propulsive, tense, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "political revolution",
+        "survival",
+        "loyalty",
+        "consequences of colonialism"
+      ],
+      "setting": "The solar system, several centuries in the future; hard science fiction",
+      "comparable_books": [
+        "Babylon's Ashes - James S. A. Corey",
+        "Leviathan Wakes - James S. A. Corey",
+        "Old Man's War - John Scalzi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction fans",
+          "found family dynamics",
+          "propulsive plotting",
+          "political space opera",
+          "The Expanse series fans"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers wanting standalone novels",
+          "those who dislike political complexity"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jefferson Mays's acclaimed full-cast narration is at its emotional best in this crew-focused entry.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Invisible Life of Addie LaRue - V. E. Schwab": {
