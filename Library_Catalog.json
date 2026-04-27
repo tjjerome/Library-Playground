@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2686,
-  "total_pending": 1914,
+  "total_catalogued": 2706,
+  "total_pending": 1894,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -153695,189 +153695,337 @@
       "title": "Forge of Darkness",
       "author": "Steven Erikson",
       "series": "The Kharkanas Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set thousands of years before the Malazan Book of the Fallen, this prequel follows the founding of the Tiste world and the origins of Darkness, Light, and Shadow through the tragic fall of the demigod Anomander Rake's world. Warring factions, scheming gods, and mortal ambition spiral toward catastrophe in a story of origins and hubris.",
+      "tone": "dense, tragic, philosophically weighty, elegiac",
+      "pacing": "Slow",
+      "themes": [
+        "origins of myth",
+        "hubris and downfall",
+        "war and politics",
+        "nature of divinity",
+        "betrayal"
+      ],
+      "setting": "The ancient world of Kurald Galain (Tiste homeland), pre-Malazan mythology, secondary fantasy world",
+      "comparable_books": [
+        "Gardens of the Moon - Steven Erikson",
+        "The Blinding Knife - Brent Weeks",
+        "The Darkness That Comes Before - R. Scott Bakker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense lore and worldbuilding",
+          "tragic character arcs",
+          "philosophical depth",
+          "Malazan fan",
+          "morally grey cast"
+        ],
+        "negative": [
+          "slow openers",
+          "accessibility concerns",
+          "prefers plot over philosophy",
+          "impatient pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Last First Snow - Max Gladstone": {
       "title": "Last First Snow",
       "author": "Max Gladstone",
       "series": "Craft Sequence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4 (publication order); Book 1 (internal chronology)",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the city of Dresediel Lex, Craft-lawyer Elayne Kevarian is called in to mediate a dispute over urban development in a poor neighbourhood, but what begins as a zoning negotiation escalates into a confrontation between corporate Craft, divine power, and the rights of ordinary people. A deeply personal story of political compromise, sacrifice, and the costs of progress.",
+      "tone": "tense, politically charged, lyrical, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "gentrification and displacement",
+        "law vs. justice",
+        "faith and power",
+        "political compromise",
+        "sacrifice"
+      ],
+      "setting": "Dresediel Lex, a Mesoamerican-inspired fantasy city; post-God Wars secondary world",
+      "comparable_books": [
+        "Three Parts Dead - Max Gladstone",
+        "The City & The City - China Miéville",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "law and magic systems",
+          "political intrigue",
+          "morally complex protagonists",
+          "urban fantasy with depth",
+          "social themes"
+        ],
+        "negative": [
+          "prefers traditional quest fantasy",
+          "dislikes corporate/legal metaphors in fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Law of Innocence - Michael Connelly": {
       "title": "The Law of Innocence",
       "author": "Michael Connelly",
       "series": "Mickey Haller",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Legal Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Defence attorney Mickey Haller is himself charged with murder when a body is found in the trunk of his car, and must defend himself from behind bars while mounting the case of his life. The novel turns the courtroom drama inside out as the Lincoln Lawyer becomes the defendant.",
+      "tone": "propulsive, tense, procedural, darkly ironic",
+      "pacing": "Fast",
+      "themes": [
+        "criminal justice system",
+        "self-defence",
+        "legal procedure",
+        "corruption",
+        "innocence vs. guilt"
+      ],
+      "setting": "Contemporary Los Angeles; courtrooms and jails",
+      "comparable_books": [
+        "The Lincoln Lawyer - Michael Connelly",
+        "A Time to Kill - John Grisham",
+        "The Firm - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "courtroom drama",
+          "propulsive plotting",
+          "legal procedural",
+          "morally grey protagonist",
+          "Los Angeles setting"
+        ],
+        "negative": [
+          "dislikes series commitment",
+          "prefers literary fiction over genre thrillers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong first-person narration and rapid courtroom pacing lend themselves extremely well to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Unholy Consult - R. Scott Bakker": {
       "title": "The Unholy Consult",
       "author": "R. Scott Bakker",
       "series": "The Aspect-Emperor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Great Ordeal reaches the fell fortress of Golgotterath as Anasûrimbor Kellhus's holy war culminates in a cataclysmic siege, while beneath the surface, the No-God stirs and the Second Apocalypse draws near. Bakker's brutal, philosophically dense conclusion leaves the fate of the world in devastating ambiguity.",
+      "tone": "grimdark, philosophically oppressive, nihilistic, viscerally violent",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "free will vs. determinism",
+        "apocalypse",
+        "religious fanaticism",
+        "gnosis and damnation",
+        "power and manipulation"
+      ],
+      "setting": "Eärwa, a secondary world of deep history; the fortress of Golgotterath; far-future echoes of Tolkien",
+      "comparable_books": [
+        "The Great Ordeal - R. Scott Bakker",
+        "The Darkness That Comes Before - R. Scott Bakker",
+        "Forge of Darkness - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense philosophical fantasy",
+          "grimdark",
+          "unreliable narrators",
+          "Tolkien deconstruction",
+          "morally bankrupt characters"
+        ],
+        "negative": [
+          "graphic sexual violence",
+          "nihilistic tone",
+          "extremely slow pacing",
+          "unresolved endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Ruin of Angels - Max Gladstone": {
       "title": "The Ruin of Angels",
       "author": "Max Gladstone",
       "series": "Craft Sequence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6 (publication order and internal chronology)",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kai Pohala travels to the fractured city of Agdel Lex — built atop the ruins of a city destroyed in the God Wars — to visit her estranged sister, and is drawn into a heist involving nightmare contraband and buried secrets. The novel explores a city literally divided between two realities, colonial power, and identity.",
+      "tone": "lively, intricate, politically charged, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "colonialism and occupation",
+        "identity and self-determination",
+        "sisterhood",
+        "buried history",
+        "law vs. resistance"
+      ],
+      "setting": "Agdel Lex (built atop destroyed Alikand), a city of shifting streets under foreign occupation; post-God Wars secondary world",
+      "comparable_books": [
+        "Three Parts Dead - Max Gladstone",
+        "A Memory Called Empire - Arkady Martine",
+        "The City & The City - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "diverse queer cast",
+          "heist elements",
+          "city-as-character",
+          "political fantasy",
+          "Craft Sequence fan"
+        ],
+        "negative": [
+          "needs prior series familiarity",
+          "dislikes non-linear world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Great Ordeal - R. Scott Bakker": {
       "title": "The Great Ordeal",
       "author": "R. Scott Bakker",
       "series": "The Aspect-Emperor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Anasûrimbor Kellhus leads his massive holy army, the Great Ordeal, on a gruelling march toward Golgotterath, while his agents and loved ones navigate a world of conspiracy, sorcery, and encroaching supernatural horror. As the army descends into depravity and the No-God's influence spreads, the line between salvation and damnation blurs completely.",
+      "tone": "grimdark, relentlessly bleak, philosophically dense, visceral",
+      "pacing": "Slow",
+      "themes": [
+        "holy war and fanaticism",
+        "dehumanisation",
+        "free will",
+        "corruption of ideals",
+        "apocalypse"
+      ],
+      "setting": "Eärwa; an epic march across a secondary world of ancient, layered history",
+      "comparable_books": [
+        "The Unholy Consult - R. Scott Bakker",
+        "The Darkness That Comes Before - R. Scott Bakker",
+        "Gardens of the Moon - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense philosophical fantasy",
+          "grimdark",
+          "military epic",
+          "Bakker series reader"
+        ],
+        "negative": [
+          "graphic sexual violence",
+          "reader patience required",
+          "no heroic resolution"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Escapement - K. J. Parker": {
       "title": "Escapement",
       "author": "K. J. Parker",
       "series": "Engineer Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Engineer Ziani Vaatzes continues his calculated, long-game scheme of revenge against the Mezentine Empire, manipulating warring factions and forging alliances while those around him remain unaware of the true depth of his machinations. Parker's meticulous plotting and dark irony come to the fore as the consequences of Vaatzes's designs ripple outward.",
+      "tone": "darkly comic, cynical, meticulous, bleak",
+      "pacing": "Slow",
+      "themes": [
+        "revenge",
+        "manipulation and control",
+        "industrial ingenuity",
+        "moral cost of obsession",
+        "war as mechanism"
+      ],
+      "setting": "A secondary world loosely analogous to late-medieval/early Renaissance Europe; cities, battlefields, and workshops",
+      "comparable_books": [
+        "Devices and Desires - K. J. Parker",
+        "Evil for Evil - K. J. Parker",
+        "The Company - K. J. Parker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "meticulous plotting",
+          "anti-hero protagonists",
+          "craft and engineering detail",
+          "dark irony",
+          "morally bankrupt characters"
+        ],
+        "negative": [
+          "slow openers",
+          "dislikes nihilistic endings",
+          "prefers heroic fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Company - K. J. Parker": {
@@ -153885,26 +154033,49 @@
       "author": "K. J. Parker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Five war veterans reunite at the behest of their celebrated general, Kunessin, to colonise an abandoned island and build the peaceful life they dreamed of during the war — but one of them harbours a terrible secret, and the darkness of their shared past proves impossible to leave behind. A psychologically intense study of camaraderie, betrayal, and the impossibility of escaping one's nature.",
+      "tone": "darkly ironic, psychologically tense, cynical, claustrophobic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "brotherhood and male bonding",
+        "war's aftermath and PTSD",
+        "betrayal",
+        "the impossibility of peace",
+        "avarice and human nature"
+      ],
+      "setting": "A vaguely Grecophone, late-medieval secondary world; an isolated island colony",
+      "comparable_books": [
+        "The Folding Knife - K. J. Parker",
+        "Lord of the Flies - William Golding",
+        "Devices and Desires - K. J. Parker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonists",
+          "psychological depth",
+          "post-war fiction",
+          "craft and logistics detail",
+          "K. J. Parker fan"
+        ],
+        "negative": [
+          "no magic or fantastical elements",
+          "no sympathetic characters",
+          "slow deliberate pacing",
+          "bleak endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Some Desperate Glory - Emily Tesh": {
@@ -153912,242 +154083,428 @@
       "author": "Emily Tesh",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kyr has been raised on Gaea Station — humanity's last militant holdout after Earth was destroyed in a war against the alien majo — and trained since birth for vengeance. When she escapes the station and encounters a universe far more morally complex than she was taught, she must dismantle the ideology that formed her entire identity.",
+      "tone": "propulsive, emotionally shattering, morally urgent, queer",
+      "pacing": "Fast",
+      "themes": [
+        "radicalisation and deindoctrination",
+        "found family",
+        "fascism and authoritarianism",
+        "identity and self-discovery",
+        "the cost of vengeance"
+      ],
+      "setting": "Far-future space; Gaea Station (a militarised human remnant), alien civilisations, multiverse elements",
+      "comparable_books": [
+        "Gideon the Ninth - Tamsyn Muir",
+        "A Memory Called Empire - Arkady Martine",
+        "The Long Way to a Small, Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "queer protagonists",
+          "found family",
+          "morally complex character arc",
+          "Hugo Award winners",
+          "propulsive space opera"
+        ],
+        "negative": [
+          "unlikeable protagonist at outset",
+          "heavy themes of fascism and eugenics",
+          "prefers quieter fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Propulsive first-person-adjacent narration and intense emotional beats make this an outstanding listen.",
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Drowned Country - Emily Tesh": {
       "title": "Drowned Country",
       "author": "Emily Tesh",
       "series": "The Greenhollow Duology",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Henry Silver and the immortal wood-god Tobias are reunited when a dangerous supernatural threat emerges from the drowned ruins of a flooded town, and an unexpected figure from the past forces Henry to confront the nature of the power he carries. A quiet, lyrical conclusion to the Greenhollow Duology.",
+      "tone": "lyrical, melancholy, quietly magical, intimate",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "grief and loss",
+        "nature and myth",
+        "queer love",
+        "the past vs. the present",
+        "redemption"
+      ],
+      "setting": "Rural England, present-day with mythic underpinnings; a drowned village",
+      "comparable_books": [
+        "Silver in the Wood - Emily Tesh",
+        "The Bear and the Nightingale - Katherine Arden",
+        "A Deadly Education - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "queer romance",
+          "folklore and myth",
+          "cosy-adjacent with dark edges",
+          "nature writing",
+          "novella length"
+        ],
+        "negative": [
+          "slow pacing",
+          "prefers high action",
+          "dislikes romance subplots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lyrical, atmospheric prose and intimate character study are ideally suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Evil for Evil - K. J. Parker": {
       "title": "Evil for Evil",
       "author": "K. J. Parker",
       "series": "Engineer Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ziani Vaatzes's long scheme of engineered revenge continues to unfold across warring nations, as the collateral damage of his machinations grows and those unwittingly serving his ends edge closer to destruction. Parker ratchets up the moral horror as the full scope of Vaatzes's plan becomes clearer.",
+      "tone": "darkly ironic, cynical, coldly precise, bleak",
+      "pacing": "Slow",
+      "themes": [
+        "revenge and obsession",
+        "manipulation",
+        "war as industry",
+        "moral complicity",
+        "engineering and craft"
+      ],
+      "setting": "A secondary world of warring city-states; workshops, sieges, and political courts",
+      "comparable_books": [
+        "Devices and Desires - K. J. Parker",
+        "Escapement - K. J. Parker",
+        "The Company - K. J. Parker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anti-hero protagonist",
+          "slow-burn plotting",
+          "craft and engineering detail",
+          "dark irony"
+        ],
+        "negative": [
+          "no magic",
+          "bleak worldview",
+          "no heroic characters",
+          "requires patience"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Devices and Desires - K. J. Parker": {
       "title": "Devices and Desires",
       "author": "K. J. Parker",
       "series": "Engineer Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ziani Vaatzes, a master engineer of the Mezentine Empire, is condemned to death for a minor deviation from official specifications, and escapes to the enemy nation — where he begins a coldly calculated, far-reaching scheme of revenge using his engineering genius as a weapon. A brilliantly constructed tale in which the mechanisms of civilisation are turned against themselves.",
+      "tone": "darkly ironic, meticulous, cynical, quietly sinister",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "revenge",
+        "conformity vs. innovation",
+        "war and statecraft",
+        "the mechanics of power",
+        "moral cost of obsession"
+      ],
+      "setting": "A secondary world of city-states and empires, vaguely analogous to Renaissance Europe; workshops, courts, and battlefields",
+      "comparable_books": [
+        "Evil for Evil - K. J. Parker",
+        "Escapement - K. J. Parker",
+        "The Company - K. J. Parker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anti-hero protagonist",
+          "craft and engineering detail",
+          "meticulous world-building",
+          "dark irony",
+          "political intrigue"
+        ],
+        "negative": [
+          "no sympathetic heroes",
+          "slow deliberate pace",
+          "no magic system",
+          "bleak worldview"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Silver in the Wood - Emily Tesh": {
       "title": "Silver in the Wood",
       "author": "Emily Tesh",
       "series": "The Greenhollow Duology",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a young folklorist comes to Greenhollow Hall, he discovers that the reclusive man living in the nearby wood is far more ancient and strange than any human — and that the wood itself has a darkness stirring within it. A quiet, tender World Fantasy Award-winning novella about loneliness, nature, and connection.",
+      "tone": "lyrical, quietly magical, warm, melancholy",
+      "pacing": "Slow",
+      "themes": [
+        "folklore and myth",
+        "loneliness and connection",
+        "nature as character",
+        "queer love",
+        "identity"
+      ],
+      "setting": "Rural England, Edwardian-esque era; ancient woodland with mythic underpinnings",
+      "comparable_books": [
+        "Drowned Country - Emily Tesh",
+        "The Bear and the Nightingale - Katherine Arden",
+        "The House in the Cerulean Sea - TJ Klune"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "queer romance",
+          "folklore",
+          "cosy fantasy with dark edges",
+          "novella length",
+          "World Fantasy Award winner"
+        ],
+        "negative": [
+          "very slow pacing",
+          "minimal plot",
+          "prefers high action or complex plotting"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Atmospheric, lyrical prose reads beautifully aloud; a natural fit for audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dead Hand Rule - Max Gladstone": {
       "title": "Dead Hand Rule",
       "author": "Max Gladstone",
       "series": "The Craft Wars",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As apocalyptic forces converge on the Craft world, the great powers — empires, divinities, and corporate Craftsmen — gather in the city of Alt Coulumb for a desperate conference to forge a coalition against extinction. Old characters reunite as the fate of the world hangs on whether ancient enemies can set aside their interests long enough to cooperate.",
+      "tone": "propulsive, witty, escalating, politically charged",
+      "pacing": "Fast",
+      "themes": [
+        "coalition-building vs. self-interest",
+        "apocalypse and survival",
+        "law and power",
+        "faith and commerce",
+        "legacy"
+      ],
+      "setting": "Alt Coulumb and across the post-God Wars secondary world; a grand conference setting",
+      "comparable_books": [
+        "Dead Country - Max Gladstone",
+        "Wicked Problems - Max Gladstone",
+        "Three Parts Dead - Max Gladstone"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Craft Sequence fan",
+          "political intrigue",
+          "ensemble cast",
+          "magic-as-law systems",
+          "apocalyptic stakes"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "dislikes corporate fantasy metaphors"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Three Parts Dead - Max Gladstone": {
       "title": "Three Parts Dead",
       "author": "Max Gladstone",
       "series": "Craft Sequence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (publication order); Book 3 (internal chronology)",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young necromancer-lawyer Tara Abernathy is hired by the firm of Kelethres, Albrecht, and Ao to resurrect Kos, the fire god of Alt Coulumb, who has died under suspicious circumstances — before the city he powers collapses. Part legal thriller, part detective story, part theological mystery, in a world where magic and law are one and the same.",
+      "tone": "witty, propulsive, inventive, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "faith and commerce",
+        "law as magic",
+        "resurrection and identity",
+        "corporate power",
+        "the nature of gods"
+      ],
+      "setting": "Alt Coulumb, a city powered by a fire god; post-God Wars secondary world blending modern and mythic",
+      "comparable_books": [
+        "Last First Snow - Max Gladstone",
+        "The Goblin Emperor - Katherine Addison",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "inventive magic systems",
+          "legal thriller elements",
+          "female protagonist",
+          "propulsive pacing",
+          "witty prose"
+        ],
+        "negative": [
+          "dislikes corporate/legal metaphors in fantasy",
+          "prefers traditional quest narratives"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced, wry, dialogue-rich narration makes this an outstanding audio experience and a natural entry point for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Return of the Black Company - Glen Cook": {
       "title": "The Return of the Black Company",
       "author": "Glen Cook",
       "series": "Chronicles of The Black Company",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Omnibus 3 (collecting Books 7–8: Bleak Seasons and She Is the Darkness)",
+      "genre": "Military Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "This omnibus collects Bleak Seasons and She Is the Darkness, following the Black Company deep into the Books of Glittering Stone arc as the mercenaries push toward Khatovar under new narrator Murgen, while the supernatural threat of the Shadowlanders and the shadow of the Dominator's power loom ever larger. Tense, morally murky, and deeply immersive.",
+      "tone": "gritty, terse, darkly fatalistic, sardonic",
+      "pacing": "Moderate",
+      "themes": [
+        "survival and loyalty",
+        "the cost of war",
+        "identity and memory",
+        "moral ambiguity",
+        "destiny"
+      ],
+      "setting": "The continent of the Black Company world, deep in the Books of Glittering Stone arc; military camps, sieges, and supernatural battlefields",
+      "comparable_books": [
+        "Chronicles of the Black Company - Glen Cook",
+        "Gardens of the Moon - Steven Erikson",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "gritty realism",
+          "mercenary POV",
+          "grimdark",
+          "terse action-focused prose"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "no character redemption arcs",
+          "deliberately withheld exposition"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Two Serpents Rise - Max Gladstone": {
       "title": "Two Serpents Rise",
       "author": "Max Gladstone",
       "series": "Craft Sequence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 (publication order and internal chronology)",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Risk manager Caleb Altemoc is tasked with investigating shadow demon contamination in the water supply of Dresediel Lex, and uncovers a conspiracy that threatens to undo the entire balance of power between the Craft and the old gods. A thriller of sacrifice, gods, and corporate power set against a Mesoamerican-inspired fantasy city.",
+      "tone": "tense, propulsive, morally complex, inventive",
+      "pacing": "Fast",
+      "themes": [
+        "faith vs. modernity",
+        "sacrifice and religion",
+        "corporate power",
+        "family legacy",
+        "risk and gamble"
+      ],
+      "setting": "Dresediel Lex, a Mesoamerican-inspired fantasy city; post-God Wars secondary world",
+      "comparable_books": [
+        "Three Parts Dead - Max Gladstone",
+        "Last First Snow - Max Gladstone",
+        "The City & The City - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "inventive magic systems",
+          "morally complex characters",
+          "propulsive thriller pacing",
+          "urban fantasy"
+        ],
+        "negative": [
+          "standalone Craft Sequence entry considered weaker by some",
+          "dislikes corporate fantasy metaphors"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Your Blood and Bones - J. Patricia Anderson": {
@@ -154155,26 +154512,51 @@
       "author": "J. Patricia Anderson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A girl whose body is transforming into something monstrous — feathers growing beneath her skin, strange bones jutting out — is condemned by her community and rescued by a village boy who knows of a possible cure; together they flee across a dangerous landscape in a desperate, darkly fairytale quest for hope. A lyrical and harrowing self-published novella about otherness, acceptance, and identity.",
+      "tone": "dark, lyrical, melancholy, urgent, fairytale-like",
+      "pacing": "Fast",
+      "themes": [
+        "otherness and discrimination",
+        "hope vs. despair",
+        "acceptance of self",
+        "monstrosity and humanity",
+        "coming of age"
+      ],
+      "setting": "A Norse/Icelandic-inspired secondary fantasy world; island village, forest, and wilderness",
+      "comparable_books": [
+        "The Metamorphosis - Franz Kafka",
+        "Tender is the Flesh - Agustina Bazterrica",
+        "Silver in the Wood - Emily Tesh"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "body horror elements",
+          "dark fairytale",
+          "short and impactful reads",
+          "indie fantasy",
+          "lyrical prose"
+        ],
+        "negative": [
+          "body horror aversion",
+          "self-harm content",
+          "gore sensitivity",
+          "prefers longer novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror",
+        "self-harm"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Queen's Bodyguard - Taylor A. Green": {
@@ -154182,53 +154564,95 @@
       "author": "Taylor A. Green",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "needs_review",
+      "summary": "A goddess stripped of her powers goes undercover as a mortal bodyguard to protect a queen who is a target for a demigod seeking apotheosis, only to find herself developing feelings for the queen while navigating a celestial political conflict between rival pantheons. A fantasy romance blending divine intrigue with bodyguard-to-lover tension.",
+      "tone": "romantic, action-tinged, mythologically playful",
+      "pacing": "Fast",
+      "themes": [
+        "forbidden love",
+        "duty vs. desire",
+        "divine politics",
+        "identity and disguise",
+        "vengeance"
+      ],
+      "setting": "A secondary fantasy world with an active pantheon of gods and mortals; a royal court",
+      "comparable_books": [
+        "A Court of Thorns and Roses - Sarah J. Maas",
+        "The Jasmine Throne - Tasha Suri",
+        "From Bad to Cursed - Alexandria Warwick"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sapphic romance",
+          "goddess protagonist",
+          "political intrigue",
+          "bodyguard romance trope",
+          "fast reads"
+        ],
+        "negative": [
+          "romance-heavy",
+          "dislikes tropey fantasy",
+          "prefers grimdark or literary fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Low",
+      "research_source": "web_search",
       "audit": null
     },
     "The Revenge of Thousands - Michael Roberti": {
       "title": "The Revenge of Thousands",
       "author": "Michael Roberti",
       "series": "Crown and Tide",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel Novella (Book 0.5)",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel novella to the Crown and Tide series, following morally grey characters on both sides of a brewing war in a world where a person's written words vanish from existence upon their death. Multi-POV, propulsive, and full of betrayal and battlefield intrigue, it sets the stage for the events of the main series.",
+      "tone": "gritty, terse, politically charged, morally grey",
+      "pacing": "Fast",
+      "themes": [
+        "war and its origins",
+        "betrayal",
+        "morality of power",
+        "impermanence of legacy",
+        "loyalty"
+      ],
+      "setting": "A grimdark secondary fantasy world; military camps, courts, and battlefields among a people called the Reachmen",
+      "comparable_books": [
+        "The Traitors We Are - Michael Roberti",
+        "The First Law - Joe Abercrombie",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "multi-POV",
+          "morally grey characters",
+          "political intrigue",
+          "indie fantasy"
+        ],
+        "negative": [
+          "best read after main series novel",
+          "very short — may feel incomplete",
+          "no heroic fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Traitors We Are - Michael Roberti": {
