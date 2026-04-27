@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3324,
-  "total_pending": 1276,
+  "total_catalogued": 3344,
+  "total_pending": 1256,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -185491,27 +185491,50 @@
       "title": "Killing Pretty",
       "author": "Richard Kadrey",
       "series": "Sandman Slim",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "James Stark, aka Sandman Slim, investigates the case of a man claiming to be Death itself — stripped of his powers and left in a human body — while navigating the usual chaos of monster-filled Los Angeles.",
+      "tone": "Darkly comic, gritty, irreverent",
+      "pacing": "Fast",
+      "themes": [
+        "identity",
+        "mortality",
+        "redemption",
+        "the supernatural underground",
+        "power and corruption"
+      ],
+      "setting": "Contemporary Los Angeles, with a sprawling supernatural underworld",
+      "comparable_books": [
+        "Dead Beat - Jim Butcher",
+        "Grimnoir Chronicles - Larry Correia",
+        "The Iron Druid Chronicles - Kevin Hearne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "irreverent antihero protagonist",
+          "darkly comedic tone",
+          "fast-paced urban fantasy",
+          "monsters and noir atmosphere",
+          "Los Angeles setting"
+        ],
+        "negative": [
+          "graphic violence",
+          "crude humor",
+          "no romance focus",
+          "deeply serialized — best read in order"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Sandman Slim series has a strong, propulsive voice that translates exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Rise and Fall of the Galactic Empire - Chris Kempshall": {
@@ -185519,80 +185542,146 @@
       "author": "Chris Kempshall",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Media Tie-In / Reference",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Written by real-world historian Dr. Chris Kempshall in the voice of in-universe historian Beaumont Kin, this Star Wars reference book offers a comprehensive political history of the Galactic Empire — from Palpatine's rise through the fall of the First Order — drawing on films, books, comics, and games.",
+      "tone": "Scholarly, analytical, emotionally resonant",
+      "pacing": "Slow",
+      "themes": [
+        "authoritarianism and its rise",
+        "propaganda",
+        "resistance",
+        "complicity and apathy",
+        "the cost of empire"
+      ],
+      "setting": "The Star Wars galaxy, spanning events from the Clone Wars to the Battle of Exegol",
+      "comparable_books": [
+        "Fire and Blood - George R.R. Martin",
+        "The World of Ice and Fire - George R.R. Martin",
+        "Star Wars: Battles that Changed the Galaxy - Chris Kempshall et al."
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars deep lore",
+          "in-universe history format",
+          "academic writing style",
+          "political analysis",
+          "rich worldbuilding"
+        ],
+        "negative": [
+          "requires broad Star Wars canon familiarity",
+          "non-narrative structure",
+          "no plot or characters"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Rhythm of War - Brandon Sanderson": {
       "title": "Rhythm of War",
       "author": "Brandon Sanderson",
       "series": "The Stormlight Archive",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the war against the Fused continues, Kaladin, Shallan, Dalinar, and Navani each face personal and cosmic crises — culminating in a siege of Urithiru and revelations about the nature of the Rhythms, Fabrials, and the ancient history of Roshar.",
+      "tone": "Epic, emotionally weighty, intricately plotted",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "mental health and trauma",
+        "identity",
+        "the nature of gods and power",
+        "science vs. tradition",
+        "sacrifice"
+      ],
+      "setting": "Roshar, a world of highstorms and Shardblades, mainly in and around the flying tower-city of Urithiru",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Wheel of Time - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intricate magic systems",
+          "massive scope and lore",
+          "character-driven arcs",
+          "mental health themes handled with care",
+          "deeply serialized epic"
+        ],
+        "negative": [
+          "very long (~1200 pages)",
+          "requires reading prior books",
+          "slow-paced character-focused chapters",
+          "high investment series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The full cast Graphic Audio and Michael Kramer/Kate Reading narration are both highly regarded for this series.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Demon in White - Christopher Ruocchio": {
       "title": "Demon in White",
       "author": "Christopher Ruocchio",
       "series": "Sun Eater",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Hadrian Marlowe continues his role as an imperial hero and instrument of war, even as his secret alliance with the alien Cielcin deepens the contradictions of his life, and a new mysterious figure — the Demon in White — emerges as a terrifying new threat.",
+      "tone": "Lyrical, elegiac, sweeping and tragic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "war and its costs",
+        "mortality and legacy",
+        "humanity vs. the alien other",
+        "fate and free will",
+        "the corrupting nature of empire"
+      ],
+      "setting": "A far-future galactic empire spanning millennia, told in retrospect by an impossibly old narrator",
+      "comparable_books": [
+        "Book of the New Sun - Gene Wolfe",
+        "Hyperion - Dan Simmons",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "unreliable narrator",
+          "lyrical prose",
+          "vast scope",
+          "morally complex protagonist"
+        ],
+        "negative": [
+          "dense and slow-paced",
+          "requires previous books in series",
+          "not action-focused",
+          "baroque prose style"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Carrying the Fire: An Astronaut's Journey - Michael Collins": {
@@ -185600,53 +185689,96 @@
       "author": "Michael Collins",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir / Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Apollo 11 astronaut Michael Collins recounts his career as a test pilot and astronaut, from his early flights through the historic Moon landing mission — during which he orbited alone while Armstrong and Aldrin walked on the surface.",
+      "tone": "Witty, candid, grounded and reflective",
+      "pacing": "Moderate",
+      "themes": [
+        "exploration and ambition",
+        "solitude",
+        "teamwork",
+        "the space race",
+        "what it means to be human"
+      ],
+      "setting": "United States and outer space, primarily 1960s–1970s",
+      "comparable_books": [
+        "The Right Stuff - Tom Wolfe",
+        "Endurance - Scott Kelly",
+        "An Astronaut's Guide to Life on Earth - Chris Hadfield"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "first-person space memoir",
+          "witty and self-deprecating voice",
+          "behind-the-scenes NASA history",
+          "accessible non-fiction",
+          "genuine sense of wonder"
+        ],
+        "negative": [
+          "technical aerospace content",
+          "pre-dates modern space era",
+          "no narrative tension — outcome is known"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rose of Jericho - Alex Grecian": {
       "title": "Rose of Jericho",
       "author": "Alex Grecian",
       "series": "Sadie Grace",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Sadie Grace, Rabbit, and Rose travel to the Massachusetts town of Ascension to care for an ailing cousin, they find their new home haunted by dozens of ghosts and discover that something has gone catastrophically wrong — the dead are no longer dying — while a dangerous force rides toward them.",
+      "tone": "Darkly comic, grisly, propulsive, weird-western adjacent",
+      "pacing": "Fast",
+      "themes": [
+        "death and its necessity",
+        "grief",
+        "the supernatural",
+        "found family",
+        "the cost of interference with nature"
+      ],
+      "setting": "Nineteenth-century New England, primarily the fictional town of Ascension, Massachusetts",
+      "comparable_books": [
+        "Red Rabbit - Alex Grecian",
+        "The Good Lord Bird - James McBride",
+        "The Spite House - Johnny Compton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural horror",
+          "darkly funny",
+          "witchy protagonists",
+          "fast-paced with short chapters",
+          "weird western flavour"
+        ],
+        "negative": [
+          "graphic violence",
+          "requires familiarity with Red Rabbit",
+          "horror content",
+          "grisly imagery"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Songs of the Dark - Anthony Ryan": {
@@ -185654,377 +185786,689 @@
       "author": "Anthony Ryan",
       "series": "Raven's Shadow",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Epic Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of all four novellas set in the world of the Raven's Shadow trilogy, exploring stories of battle, magic, and intrigue that illuminate corners of the world before and alongside the events of the main series.",
+      "tone": "Gritty, tense, military-inflected",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and sacrifice",
+        "the nature of evil",
+        "war and its costs",
+        "honour",
+        "dark magic"
+      ],
+      "setting": "The Unified Realm and its surrounding territories, spanning multiple eras of the Raven's Shadow world",
+      "comparable_books": [
+        "Blood Song - Anthony Ryan",
+        "The First Law - Joe Abercrombie",
+        "The Darkness That Comes Before - R. Scott Bakker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of the Raven's Shadow trilogy",
+          "military fantasy",
+          "dark magic",
+          "short-form fiction as world-deepening supplement"
+        ],
+        "negative": [
+          "best enjoyed after reading the main trilogy",
+          "novella format may feel incomplete",
+          "no single overarching plot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blacklight Born - Alexander Darwin": {
       "title": "Blacklight Born",
       "author": "Alexander Darwin",
       "series": "The Combat Codes Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the explosive conclusion to the Combat Codes Saga, Cego is released into a war-torn empire and must choose between his brother's rebellion and the family he's found, while a seasoned fighter named Murray leads students on a pilgrimage in search of redemption.",
+      "tone": "Action-driven, emotionally earnest, martial and philosophical",
+      "pacing": "Moderate",
+      "themes": [
+        "why we fight",
+        "identity and belonging",
+        "loyalty and family",
+        "redemption",
+        "the ethics of a warrior caste"
+      ],
+      "setting": "A far-future world where single combat between warrior-class Grievar determines the fate of nations, centered on the war-ravaged Empire of Kiroth",
+      "comparable_books": [
+        "Jade City - Fonda Lee",
+        "Cradle - Will Wight",
+        "Red Rising - Pierce Brown"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "martial arts and combat focus",
+          "found family",
+          "sci-fi fantasy hybrid",
+          "underdog protagonist",
+          "MMA-inspired action"
+        ],
+        "negative": [
+          "requires reading prior books",
+          "sci-fi more than fantasy",
+          "some pacing issues in final act"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Magician King - Lev Grossman": {
       "title": "The Magician King",
       "author": "Lev Grossman",
       "series": "The Magicians",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Quentin Coldwater, now a king of Fillory, embarks on a quest that ultimately strips him of everything he's gained, while Julia's parallel story reveals the dark path she took to learn magic outside Brakebills — with devastating consequences.",
+      "tone": "Literary, melancholic, darkly satirical of fantasy tropes",
+      "pacing": "Moderate",
+      "themes": [
+        "ambition and its consequences",
+        "trauma and survival",
+        "the allure and danger of magic",
+        "coming of age",
+        "chosen-one deconstruction"
+      ],
+      "setting": "The magical world of Fillory and contemporary Earth, with flashbacks to Julia's underground magical education",
+      "comparable_books": [
+        "The Magicians - Lev Grossman",
+        "Jonathan Strange and Mr Norrell - Susanna Clarke",
+        "A Wizard of Earthsea - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "dark deconstruction of Narnia/fantasy tropes",
+          "dual narrative",
+          "morally complex characters",
+          "psychological depth"
+        ],
+        "negative": [
+          "sexual violence (Julia's storyline)",
+          "nihilistic and melancholic tone",
+          "protagonist can be unlikable",
+          "not a comfort read"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Queen of Fire - Anthony Ryan": {
       "title": "Queen of Fire",
       "author": "Anthony Ryan",
       "series": "Raven's Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Vaelin Al Sorna and his allies mount a desperate final campaign against the Volarian Empire and its dark-powered masters, while multiple POVs converge on the fate of the Unified Realm in a sprawling, climactic conclusion to the trilogy.",
+      "tone": "Gritty, military-epic, emotionally intense",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its cost",
+        "loyalty and betrayal",
+        "dark magic and sacrifice",
+        "legacy and memory",
+        "empire vs. freedom"
+      ],
+      "setting": "The Unified Realm and Volarian Empire, a gritty secondary world heavily influenced by medieval Europe and Central Asia",
+      "comparable_books": [
+        "Blood Song - Anthony Ryan",
+        "The Heroes - Joe Abercrombie",
+        "The Darkness That Comes Before - R. Scott Bakker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gritty military fantasy",
+          "earned emotional payoffs",
+          "large-scale battles",
+          "complex world with rich history"
+        ],
+        "negative": [
+          "graphic violence",
+          "multi-POV can dilute focus",
+          "requires reading prior books",
+          "darker in tone than Blood Song"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dragons of Spring Dawning - Margaret Weis & Tracy Hickman": {
       "title": "Dragons of Spring Dawning",
       "author": "Margaret Weis & Tracy Hickman",
       "series": "Dragonlance: Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The War of the Lance reaches its climax as the Heroes of the Lance face the Dragon Highlords and the dark goddess Takhisis in a final confrontation, with love, sacrifice, and the fates of gods and mortals all hanging in the balance.",
+      "tone": "Adventurous, emotionally earnest, classically heroic",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and heroism",
+        "good vs. evil",
+        "faith and redemption",
+        "love and loss",
+        "the burden of destiny"
+      ],
+      "setting": "Krynn, a high-fantasy world of dragons, gods, and knights, during the climactic War of the Lance",
+      "comparable_books": [
+        "Dragons of Autumn Twilight - Weis & Hickman",
+        "The Fellowship of the Ring - J.R.R. Tolkien",
+        "The Eye of the World - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic D&D-rooted epic fantasy",
+          "ensemble cast of heroes",
+          "emotionally resonant character arcs",
+          "dragons and high adventure"
+        ],
+        "negative": [
+          "dated prose style",
+          "binary good vs. evil morality",
+          "requires reading prior books",
+          "less morally complex than modern epic fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Magician's Land - Lev Grossman": {
       "title": "The Magician's Land",
       "author": "Lev Grossman",
       "series": "The Magicians",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Exiled from Fillory, Quentin Coldwater returns to Earth and Brakebills, where he discovers a mysterious suitcase that may hold the key to an impossible magic — all while Fillory itself faces its apocalyptic end.",
+      "tone": "Literary, bittersweet, melancholic but ultimately hopeful",
+      "pacing": "Moderate",
+      "themes": [
+        "acceptance and moving on",
+        "the nature of magic and creation",
+        "mortality",
+        "what we build vs. what we inherit",
+        "closure"
+      ],
+      "setting": "Earth (Brakebills and New York), the dying world of Fillory, and a liminal magical space",
+      "comparable_books": [
+        "The Magicians - Lev Grossman",
+        "Jonathan Strange and Mr Norrell - Susanna Clarke",
+        "The Ocean at the End of the Lane - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "satisfying series conclusion",
+          "character growth and redemption",
+          "meta-awareness of fantasy tropes",
+          "emotional depth"
+        ],
+        "negative": [
+          "requires reading prior books",
+          "melancholic tone",
+          "not action-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Many Are the Dead - Anthony Ryan": {
       "title": "Many Are the Dead",
       "author": "Anthony Ryan",
       "series": "Raven's Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.7",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel novella set ten years before Blood Song, following Brother Sollis of the Sixth Order as he leads a desperate mission to find a cure for a deadly plague, only to discover a far greater supernatural threat lurking in the frozen mountains.",
+      "tone": "Gritty, tense, action-packed",
+      "pacing": "Fast",
+      "themes": [
+        "duty and sacrifice",
+        "enemies becoming allies",
+        "the nature of evil",
+        "courage under impossible odds"
+      ],
+      "setting": "The frozen northern Dominion of the Raven's Shadow world, a generation before the main trilogy",
+      "comparable_books": [
+        "Blood Song - Anthony Ryan",
+        "The First Law - Joe Abercrombie",
+        "Gemmell's Legend - David Gemmell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "fans of Blood Song",
+          "prequel world-building",
+          "tense survival scenarios",
+          "fast read"
+        ],
+        "negative": [
+          "very short (~136 pages)",
+          "requires prior series knowledge for full appreciation",
+          "limited scope by novella format"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood Song - Anthony Ryan": {
       "title": "Blood Song",
       "author": "Anthony Ryan",
       "series": "Raven's Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Vaelin Al Sorna is given to a brutal military order as a boy and forged into one of the realm's greatest warriors, a journey narrated in retrospect by his captor as the full scope of Vaelin's extraordinary — and cursed — destiny is slowly revealed.",
+      "tone": "Gritty, propulsive, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "brotherhood and loyalty",
+        "faith and doubt",
+        "destiny vs. free will",
+        "the cost of excellence",
+        "dark power"
+      ],
+      "setting": "The Unified Realm, a gritty secondary world drawn from medieval European and Central Asian influences",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The First Law - Joe Abercrombie",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "coming-of-age military fantasy",
+          "morally complex protagonist",
+          "training academy setting",
+          "propulsive plotting",
+          "self-published success story"
+        ],
+        "negative": [
+          "graphic violence",
+          "sequels considered weaker than book one",
+          "framing narrative device may feel distancing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Steven Brand's narration is widely praised as one of the best in the genre, perfectly capturing the book's tone.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Tower Lord - Anthony Ryan": {
       "title": "Tower Lord",
       "author": "Anthony Ryan",
       "series": "Raven's Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Vaelin Al Sorna's story widening dramatically, Tower Lord introduces multiple new POVs as war and chaos engulf the Unified Realm from multiple fronts, expanding the world's political and magical landscape far beyond Blood Song's scope.",
+      "tone": "Gritty, sprawling, darker and more complex than its predecessor",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the burden of power",
+        "war and its atrocities",
+        "loyalty and betrayal",
+        "dark magic",
+        "empire and resistance"
+      ],
+      "setting": "The Unified Realm and its frontier territories, a gritty secondary world of political intrigue and brutal war",
+      "comparable_books": [
+        "Blood Song - Anthony Ryan",
+        "A Storm of Swords - George R.R. Martin",
+        "The Heroes - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "large-scale war and politics",
+          "complex world-building",
+          "dark magic systems"
+        ],
+        "negative": [
+          "graphic violence",
+          "widely considered weaker than Blood Song",
+          "Vaelin less central",
+          "slower pacing than book one"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dragon Along - Joseph John Lee": {
       "title": "Dragon Along",
       "author": "Joseph John Lee",
       "series": "The Dragons of Nóra",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Camaráin and his hatchling dragon Brían share a love of books but lack the magical Bond his sister has with her dragon; a visit to grandparents in the capital city of Mór leads to unexpected adventures involving a belligerent gnome, a secret scholarly society, and fae hunters.",
+      "tone": "Cozy, whimsical, Pratchett-esque, gently comedic",
+      "pacing": "Moderate",
+      "themes": [
+        "friendship and bonding",
+        "found family",
+        "identity and belonging",
+        "sibling relationships",
+        "the power of books"
+      ],
+      "setting": "The fantastical land of Nóra, a world where dragons were once banned; primarily the capital city of Mór",
+      "comparable_books": [
+        "Upscaled - Joseph John Lee",
+        "A Wizard's Guide to Defensive Baking - T. Kingfisher",
+        "The House in the Cerulean Sea - TJ Klune"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "dragons",
+          "light-hearted humor",
+          "low-stakes adventure",
+          "bookish protagonist"
+        ],
+        "negative": [
+          "very short novella",
+          "no grimdark or serious tension",
+          "comedy may not land for all readers",
+          "best read after book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Memory of Song - Scott Palmer": {
       "title": "A Memory of Song",
       "author": "Scott Palmer",
       "series": "The Last Ballad",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a dying Norse-inspired land overrun by armies of the dead, the displaced heir James Culdaine and the fierce warrior-leader Wulfee must confront an ancient order of blood-magic warlocks and their own desperate quests for vengeance and survival.",
+      "tone": "Grimdark, brutal, emotionally raw, fast-paced",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and its costs",
+        "loss and grief",
+        "the nature of dark magic",
+        "survival",
+        "found family"
+      ],
+      "setting": "Ardura — a dying world with strong Nordic/Celtic influences, centered on the haunted northern lands of Mal Hallow",
+      "comparable_books": [
+        "A Blade Itself - Joe Abercrombie",
+        "Bloodsworn - John Gwynne",
+        "The Darkness That Comes Before - R. Scott Bakker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark epic fantasy",
+          "dual POV",
+          "brutal action",
+          "Nordic-inspired world",
+          "indie dark fantasy"
+        ],
+        "negative": [
+          "graphic violence",
+          "very dark tone",
+          "no lightness or levity",
+          "early-series worldbuilding density"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Chorus of War - Scott Palmer": {
       "title": "A Chorus of War",
       "author": "Scott Palmer",
       "series": "The Last Ballad",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following a hard winter's shelter in the haunted castle Kallahorn, James Culdaine struggles to hold his people together as new fronts of war open across the dying world of Ardura, while Wulfee — now called Etta — seeks peace but is drawn back into the tangles of ancient prophecy.",
+      "tone": "Grimdark, expansive, emotionally devastating, horror-inflected",
+      "pacing": "Moderate",
+      "themes": [
+        "the cost of leadership",
+        "the impossibility of peace",
+        "ancient prophecy",
+        "faith vs. doubt",
+        "war as cycle"
+      ],
+      "setting": "Ardura — an expanding view of the dying world, from the northern castle of Kallahorn to the Behruvian desert",
+      "comparable_books": [
+        "A Memory of Song - Scott Palmer",
+        "The Blade Itself - Joe Abercrombie",
+        "A Dance with Dragons - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark epic fantasy",
+          "expanding multi-POV world",
+          "deep lore and worldbuilding",
+          "eldritch horror elements",
+          "fans of John Gwynne and Joe Abercrombie"
+        ],
+        "negative": [
+          "graphic violence",
+          "very dark and bleak tone",
+          "requires reading book 1 first",
+          "emotionally harrowing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Steel - A. C. Cobble": {
       "title": "Steel",
       "author": "A. C. Cobble",
       "series": "The Cartographer",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Duke Oliver Wellesley and the priestess-assassin Samantha delve deeper into a world of sorcery and secrets, traveling to haunted corners of the empire to uncover the truth behind a cabal of sorcerers, while Oliver confronts shocking betrayals that shatter everything he believed about his allies.",
+      "tone": "Dark, adventurous, fast-paced, with romantic tension",
+      "pacing": "Fast",
+      "themes": [
+        "political corruption",
+        "occult conspiracy",
+        "identity and betrayal",
+        "the cost of empire",
+        "loyalty"
+      ],
+      "setting": "A steampunk-adjacent fantasy empire (Enhover), spanning remote and haunted colonial territories",
+      "comparable_books": [
+        "Quill - A.C. Cobble",
+        "The Name of the Rose - Umberto Eco (tone)",
+        "Jade City - Fonda Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fantasy mystery-thriller",
+          "occult intrigue",
+          "steampunk world",
+          "fast-paced adventure",
+          "romantic tension between leads"
+        ],
+        "negative": [
+          "sexual content",
+          "requires reading book 1",
+          "some readers find characters morally unappealing",
+          "self-published quality inconsistency"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Spirit - A. C. Cobble": {
       "title": "Spirit",
       "author": "A. C. Cobble",
       "series": "The Cartographer",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the concluding volume, Oliver must choose between his duties to the Crown and the pursuit of answers at the edge of the world, while Samantha ventures further down a dark occult path as both face the rising tide of the underworld and treacherous spirit allies.",
+      "tone": "Dark, propulsive, occult-inflected, romantically charged",
+      "pacing": "Fast",
+      "themes": [
+        "temptation and dark power",
+        "duty vs. desire",
+        "the underworld and the spirit realm",
+        "loyalty and sacrifice",
+        "the fall of empire"
+      ],
+      "setting": "The empire of Enhover and its frontier, a gaslit steampunk-adjacent world of sorcery and industrial might",
+      "comparable_books": [
+        "Steel - A.C. Cobble",
+        "Quill - A.C. Cobble",
+        "The Stormlight Archive - Brandon Sanderson (occult investigator tone)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satisfying trilogy conclusion",
+          "fast-paced occult adventure",
+          "romantic leads",
+          "steampunk fantasy world",
+          "fans of A.C. Cobble's style"
+        ],
+        "negative": [
+          "sexual content",
+          "requires reading prior books",
+          "darker than book one",
+          "some pacing issues noted by reviewers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Remove the Shroud - A. C. Cobble": {
