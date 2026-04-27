@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2486,
-  "total_pending": 2114,
+  "total_catalogued": 2506,
+  "total_pending": 2094,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -143924,54 +143924,100 @@
       "title": "The Woman in Suite 11",
       "author": "Ruth Ware",
       "series": "Lo Blacklock",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Psychological Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Travel journalist Lo Blacklock, now married with children, attends the press opening of a luxury Swiss hotel on Lake Geneva — only to be drawn into a dangerous cat-and-mouse chase across Europe when a woman from her past appears claiming to be in mortal danger. Lo must decide how much she is willing to sacrifice to help someone she can't fully trust.",
+      "tone": "propulsive, atmospheric, twisty",
+      "pacing": "Fast",
+      "themes": [
+        "trust and deception",
+        "saviour complex",
+        "past trauma",
+        "female jeopardy",
+        "conspiracy"
+      ],
+      "setting": "Contemporary Europe — Switzerland, Paris, England; luxury hotels and international travel",
+      "comparable_books": [
+        "The Woman in Cabin 10 - Ruth Ware",
+        "One by One - Ruth Ware",
+        "The Last Thing He Told Me - Laura Dave",
+        "Behind Closed Doors - B.A. Paris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced international thriller",
+          "female protagonist in jeopardy",
+          "twisty plot with multiple turns",
+          "glamorous settings",
+          "sequel with returning characters"
+        ],
+        "negative": [
+          "requires reading book 1 first",
+          "protagonist makes frustrating decisions",
+          "some readers find twists excessive"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Golden Son - Pierce Brown": {
       "title": "Golden Son",
       "author": "Pierce Brown",
       "series": "Red Rising",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Darrow of Lykos continues his mission to bring down the Society from within, ascending to the brutal political and military arena of the Gold ruling class. Alliances are made and shattered as he fights to hold together a secret rebellion while navigating treacherous power struggles among the elite.",
+      "tone": "propulsive, brutal, high-stakes",
+      "pacing": "Fast",
+      "themes": [
+        "revolution",
+        "class warfare",
+        "sacrifice",
+        "identity and deception",
+        "loyalty and betrayal"
+      ],
+      "setting": "Distant future — the Solar System, space combat and political courts of the Gold ruling caste",
+      "comparable_books": [
+        "Red Rising - Pierce Brown",
+        "Morning Star - Pierce Brown",
+        "The Hunger Games - Suzanne Collins",
+        "Ender's Game - Orson Scott Card"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive action-heavy pacing",
+          "high-stakes political intrigue",
+          "morally complex protagonist",
+          "epic scope",
+          "devastating twists"
+        ],
+        "negative": [
+          "extremely brutal and violent",
+          "very dark tone",
+          "requires book 1 first"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds's narration is widely considered one of the best in audiobook performance; greatly enhances the epic scope.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Buffalo Hunter Hunter - Stephen Graham Jones": {
@@ -143979,80 +144025,148 @@
       "author": "Stephen Graham Jones",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1912 Montana, a Lutheran pastor transcribes the confession of a Blackfoot man named Good Stab — a man who claims to have been born in 1833 and to have survived a vampiric transformation, now stalking those responsible for the destruction of his people. Told across multiple timelines and voices, the novel is both a vampire horror story and a reckoning with the Marias Massacre and the genocide of Native Americans.",
+      "tone": "slow burn, haunting, visceral, elegiac",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "colonialism and genocide",
+        "Indigenous identity and survival",
+        "revenge and justice",
+        "religion and guilt",
+        "vampirism as metaphor"
+      ],
+      "setting": "Historical American West — Montana's Blackfeet reservation, 1870s–1912; framed by a 2012 present-day discovery",
+      "comparable_books": [
+        "The Only Good Indians - Stephen Graham Jones",
+        "Mongrels - Stephen Graham Jones",
+        "Interview with the Vampire - Anne Rice",
+        "A Head Full of Ghosts - Paul Tremblay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary horror",
+          "epistolary/multi-document format",
+          "Indigenous perspectives",
+          "historical fiction blended with horror",
+          "deeply thematic",
+          "acclaimed critical pedigree"
+        ],
+        "negative": [
+          "slow burn that demands patience",
+          "extremely dark historical subject matter",
+          "graphic violence and body horror",
+          "unconventional structure may frustrate some readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multi-narrator audiobook with distinct voices for each perspective — widely praised as a standout production that enhances the epistolary format.",
+      "content_flags": [
+        "graphic violence",
+        "genocide",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dragonsteel Prime - Brandon Sanderson": {
       "title": "Dragonsteel Prime",
       "author": "Brandon Sanderson",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Dragonsteel",
+      "series_position": "Book 1 (unpublished draft / Sanderson Curiosity)",
+      "genre": "Epic Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set on the Cosmere world of Yolen, a young man named Jerick is drawn into a conflict involving shattered landscapes and dangerous magic, alongside a mysterious fool called Topaz — a character recognisable to Cosmere readers by his many other names. This is Sanderson's early-career honours thesis draft, now released as a 'Sanderson Curiosity', containing seeds of ideas later developed into The Way of Kings and the broader Stormlight Archive.",
+      "tone": "earnest, exploratory, unpolished compared to Sanderson's modern work",
+      "pacing": "Moderate",
+      "themes": [
+        "identity",
+        "fate and prophecy",
+        "sacrifice",
+        "early Cosmere worldbuilding",
+        "coming of age"
+      ],
+      "setting": "Yolen — the foundational Cosmere world, featuring the Shattered Plains in an early form; secondary world fantasy",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "Elantris - Brandon Sanderson",
+        "The Way of Kings Prime - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "deep Cosmere lore interest",
+          "seeing Sanderson's creative origins",
+          "Hoid/Topaz early appearances",
+          "completionist Sanderson readers"
+        ],
+        "negative": [
+          "notably weaker than Sanderson's published work",
+          "not considered canon",
+          "pacing issues",
+          "not an entry point to the Cosmere",
+          "mainly of interest to dedicated fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fated Sky - Mary Robinette Kowal": {
       "title": "The Fated Sky",
       "author": "Mary Robinette Kowal",
       "series": "Lady Astronaut",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "It is 1961 in an alternate history where a meteor strike accelerated the space race, and astronaut Elma York is selected for a mission to Mars. The journey forces her to confront both the dangerous realities of deep space travel and the persistent racial and gender inequities of the era.",
+      "tone": "optimistic, thoughtful, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "feminism and gender equality",
+        "racial justice",
+        "sacrifice and duty",
+        "alternate history",
+        "exploration and the unknown"
+      ],
+      "setting": "Alternate 1960s — deep space, a mission to Mars; Cold War geopolitical backdrop",
+      "comparable_books": [
+        "The Calculating Stars - Mary Robinette Kowal",
+        "Hidden Figures - Margot Lee Shetterly",
+        "The Martian - Andy Weir",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hopepunk / optimistic science fiction",
+          "strong female protagonist",
+          "social justice themes",
+          "hard SF with emotional grounding",
+          "alternate history"
+        ],
+        "negative": [
+          "requires book 1 first for full impact",
+          "slower pace than action SF"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by the author, Mary Robinette Kowal, whose vocal performance is considered exceptional and adds significant authenticity.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "With a Vengeance - Riley Sager": {
@@ -144060,26 +144174,51 @@
       "author": "Riley Sager",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1954, Anna Matheson lures the six people responsible for destroying her family — via a wartime train explosion that killed her brother — onto a luxury overnight express from Philadelphia to Chicago. Her plan to extract confessions and hand them to the FBI is derailed when one passenger is murdered, revealing she is not the only one on board seeking revenge.",
+      "tone": "propulsive, Hitchcockian, twisty",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and justice",
+        "family legacy",
+        "secrets and deception",
+        "the cost of vengeance",
+        "wartime conspiracy"
+      ],
+      "setting": "1954 USA — a luxury overnight passenger train travelling Philadelphia to Chicago",
+      "comparable_books": [
+        "Murder on the Orient Express - Agatha Christie",
+        "And Then There Were None - Agatha Christie",
+        "The Only One Left - Riley Sager",
+        "Final Girls - Riley Sager"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room mystery",
+          "closed-environment thriller",
+          "historical setting",
+          "Agatha Christie homage",
+          "twisty plot",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "mixed reviews on plot holes and twists feeling excessive",
+          "large cast can be hard to track",
+          "some find protagonist underdeveloped"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Zero Days - Ruth Ware": {
@@ -144087,80 +144226,148 @@
       "author": "Ruth Ware",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Professional penetration tester Jack comes home from a job to find her husband murdered, and is immediately framed for the crime. On the run from the police and whoever set her up, she uses her unique hacking and infiltration skills to hunt down the real killer before time runs out.",
+      "tone": "propulsive, tense, cat-and-mouse",
+      "pacing": "Fast",
+      "themes": [
+        "framed protagonist",
+        "surveillance and privacy",
+        "female resilience",
+        "corporate conspiracy",
+        "grief and survival"
+      ],
+      "setting": "Contemporary England — urban settings, corporate tech world, safe houses",
+      "comparable_books": [
+        "In a Dark Dark Wood - Ruth Ware",
+        "The Woman in the Window - A.J. Finn",
+        "The Girl with the Dragon Tattoo - Stieg Larsson",
+        "Run Rose Run - various"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female protagonist with unusual skill set",
+          "propulsive cat-and-mouse pacing",
+          "contemporary thriller",
+          "twisty plot",
+          "unique cybersecurity premise"
+        ],
+        "negative": [
+          "suspension of disbelief required for protagonist's capabilities",
+          "some find it over-plotted"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Book of Bones - John Connolly": {
       "title": "A Book of Bones",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Private investigator Charlie Parker hunts an ancient and malevolent volume — the Fractured Atlas — whose discovery could unravel reality itself, drawing him across England in a case that blends hardboiled detective work with cosmic supernatural threat. The book serves as a direct sequel to The Woman in the Woods.",
+      "tone": "dark, atmospheric, supernaturally tinged",
+      "pacing": "Moderate",
+      "themes": [
+        "ancient evil",
+        "faith and the supernatural",
+        "obsession",
+        "good versus cosmic darkness",
+        "mortality"
+      ],
+      "setting": "Contemporary — primarily England, with Maine roots; ancient landscapes and modern crime scenes",
+      "comparable_books": [
+        "The Woman in the Woods - John Connolly",
+        "The Wolf in Winter - John Connolly",
+        "Rivers of London - Ben Aaronovitch",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural crime fiction",
+          "long-running beloved series",
+          "lyrical prose",
+          "morally complex detective",
+          "cosmic horror elements"
+        ],
+        "negative": [
+          "requires significant series investment to appreciate fully",
+          "very long book",
+          "blends genres in ways not all readers enjoy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Wicked Problems - Max Gladstone": {
       "title": "Wicked Problems",
       "author": "Max Gladstone",
       "series": "The Craft Wars",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Dawn — a young woman fused with pure Craft — threatening to destroy the structures of the world to prevent an apocalypse, Tara Abernathy and a sprawling cast of beloved characters from across the Craft Sequence must converge across a globe-spanning crisis. Gods, lawyers, and old enemies race toward an ending that could cost everything.",
+      "tone": "frenetic, inventive, witty with genuine emotional depth",
+      "pacing": "Fast",
+      "themes": [
+        "cost of revolution",
+        "power and accountability",
+        "faith vs. reason",
+        "chosen family",
+        "apocalypse and resistance"
+      ],
+      "setting": "The Craft Sequence world — a post-God-Wars secondary world blending epic fantasy with capitalist and legal metaphors; globe-trotting",
+      "comparable_books": [
+        "Dead Country - Max Gladstone",
+        "Three Parts Dead - Max Gladstone",
+        "This Is How You Lose the Time War - Amal El-Mohtar & Max Gladstone",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast of beloved returning characters",
+          "witty and inventive worldbuilding",
+          "fast-paced apocalyptic stakes",
+          "gods-and-lawyers urban fantasy",
+          "literary sensibility in genre fiction"
+        ],
+        "negative": [
+          "requires extensive prior series knowledge to fully appreciate",
+          "very dense with lore",
+          "not a good entry point"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Where the Axe Is Buried - Ray Nayler": {
@@ -144168,107 +144375,203 @@
       "author": "Ray Nayler",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future authoritarian Federation, a young woman named Lilia becomes entangled in a revolutionary plot to unseat a president who has prolonged his grip on power by downloading his mind into successive bodies. Told through multiple perspectives across a fracturing world where AI governs Western Europe and human resistance smoulders in the East, the novel is a cybernetic political thriller and meditation on power, resistance, and the fragility of all systems.",
+      "tone": "meditative, politically charged, cold and precise",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "authoritarianism and resistance",
+        "consciousness and identity",
+        "AI governance",
+        "political revolution",
+        "systemic collapse"
+      ],
+      "setting": "Near-future Earth — a thinly veiled Russia-analogue Federation and AI-governed Western Europe; taiga prisons, capital cities, underground networks",
+      "comparable_books": [
+        "The Mountain in the Sea - Ray Nayler",
+        "A Closed and Common Orbit - Becky Chambers",
+        "Blindsight - Peter Watts",
+        "The Ministry for the Future - Kim Stanley Robinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "political thriller elements",
+          "ideas-driven narrative",
+          "multiple POVs",
+          "draws on real-world geopolitics and Russian history"
+        ],
+        "negative": [
+          "slow, meditative pacing",
+          "emotionally distant style",
+          "complex structure may disorient",
+          "action-oriented SF readers may find it unsatisfying"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Warhost of Vastmark - Janny Wurts": {
       "title": "Warhost of Vastmark",
       "author": "Janny Wurts",
       "series": "Wars of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3 (Arc II: The Ships of Merior, Vol. 2)",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The cursed half-brothers Arithon (Master of Shadow) and Lysaer (Lord of Light) continue their supernatural enmity as Lysaer marshals a vast warhost to destroy Arithon, while Arithon desperately manoeuvres to avoid catastrophic bloodshed by retreating into the treacherous mountains of Vastmark. A massive military confrontation looms as Princess Talith is taken hostage.",
+      "tone": "lyrical, dense, morally complex, grimdark-adjacent",
+      "pacing": "Slow",
+      "themes": [
+        "cursed enmity",
+        "the cost of war",
+        "free will vs. fate",
+        "moral ambiguity in heroism",
+        "light and shadow as metaphor"
+      ],
+      "setting": "The secondary world of Athera — mountains and clans of Vastmark, harbour towns, a richly detailed pre-industrial fantasy world",
+      "comparable_books": [
+        "The Curse of the Mistwraith - Janny Wurts",
+        "Lord of the Rings - J.R.R. Tolkien",
+        "The Chronicles of the One - Nora Roberts",
+        "A Song of Ice and Fire - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic scale and detailed worldbuilding",
+          "deeply complex characters",
+          "subverts heroic fantasy tropes",
+          "lyrical literary prose",
+          "military tactics and strategy"
+        ],
+        "negative": [
+          "requires reading books 1–2 first",
+          "very slow and dense",
+          "demands significant reader investment",
+          "not for casual fantasy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tyrant's Throne - Sebastien de Castell": {
       "title": "Tyrant's Throne",
       "author": "Sebastien de Castell",
       "series": "The Greatcoats",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the finale of the Greatcoats series, Falcio val Mond is on the verge of fulfilling his dead king's dream — placing Aline on the throne — when a dangerous new warlord from the neighbouring land of Avares unites barbarian armies and threatens everything the Greatcoats have fought for. Falcio must face his ultimate test of principle, sacrifice, and the price of justice.",
+      "tone": "swashbuckling, emotionally charged, darkly triumphant",
+      "pacing": "Fast",
+      "themes": [
+        "justice and the law",
+        "sacrifice and duty",
+        "friendship and loyalty",
+        "the cost of idealism",
+        "chosen family"
+      ],
+      "setting": "The kingdom of Tristia and the neighbouring realm of Avares — a secondary world with a Renaissance/early-modern feel",
+      "comparable_books": [
+        "Traitor's Blade - Sebastien de Castell",
+        "The Three Musketeers - Alexandre Dumas",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Prince of Fools - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "swashbuckling action",
+          "found family",
+          "emotional character payoffs",
+          "series finale",
+          "Musketeer-esque camaraderie",
+          "witty banter alongside genuine darkness"
+        ],
+        "negative": [
+          "requires reading all prior books",
+          "some readers find the first 100 pages slow to start",
+          "bittersweet ending"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Traitor's Knot - Janny Wurts": {
       "title": "Traitor's Knot",
       "author": "Janny Wurts",
       "series": "Wars of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7 (Arc III: Alliance of Light, Vol. 4)",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Arithon, Master of Shadow, having achieved self-redemption under the tutelage of the sorcerer Davien the Betrayer, must contend with the relentless pursuit of the Koriani enchantresses and a corrupted cabal that seeks to enslave Lysaer and weaponise the Mistwraith's curse. The penultimate volume of the Alliance of Light arc builds to a devastating emotional climax.",
+      "tone": "lyrical, harrowing, relentlessly tense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "redemption and self-knowledge",
+        "corruption of power",
+        "free will vs. manipulation",
+        "sacrifice",
+        "the nature of evil"
+      ],
+      "setting": "The world of Athera — multiple kingdoms, a richly imagined pre-industrial secondary world with deep mythological history",
+      "comparable_books": [
+        "Warhost of Vastmark - Janny Wurts",
+        "Grand Conspiracy - Janny Wurts",
+        "The Farseer Trilogy - Robin Hobb",
+        "A Song of Ice and Fire - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "deeply rewarding for dedicated series readers",
+          "extraordinary character depth",
+          "complex magic system and mythology",
+          "emotionally devastating payoffs",
+          "literary prose"
+        ],
+        "negative": [
+          "absolutely requires all prior 6 books",
+          "not accessible to new readers",
+          "demanding and slow",
+          "harrowing emotional content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Time's Undoing - Cheryl A. Head": {
@@ -144276,26 +144579,48 @@
       "author": "Cheryl A. Head",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Detroit Free Press reporter Meghan McKenzie travels to Birmingham, Alabama in 2019 to uncover the truth behind the racially motivated murder of her great-grandfather Robert Harrington by local police in 1929 — a case tied to the Klan's grip on the city. Inspired by the author's own family history, the dual-timeline novel weaves Meghan's investigation through the present-day Black Lives Matter movement.",
+      "tone": "searing, tender, socially urgent",
+      "pacing": "Moderate",
+      "themes": [
+        "racial injustice and police violence",
+        "family legacy and generational trauma",
+        "truth-seeking and journalism",
+        "community solidarity",
+        "the long shadow of American history"
+      ],
+      "setting": "Dual timeline: Birmingham, Alabama 1929 (Jim Crow era) and Detroit/Birmingham 2019 (Black Lives Matter era)",
+      "comparable_books": [
+        "All Her Little Secrets - Kellye Garrett",
+        "Anywhere You Run - Wanda M. Morris",
+        "The Forest of Vanishing Stars - Kristin Harmel",
+        "The Revisioners - Margaret Wilkerson Sexton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dual timeline historical mystery",
+          "socially conscious fiction",
+          "inspired by true events",
+          "strong female journalist protagonist",
+          "exploration of American racial history"
+        ],
+        "negative": [
+          "some readers find the pacing uneven in the final act",
+          "emotionally heavy subject matter"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Three Blind Mice and Other Stories - Agatha Christie": {
@@ -144303,161 +144628,293 @@
       "author": "Agatha Christie",
       "series": "Hercule Poirot",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A collection of short mystery stories headlined by 'Three Blind Mice' — the short story that was later adapted into the long-running stage play The Mousetrap — alongside other tales featuring Hercule Poirot and other Christie sleuths investigating murders, theft, and puzzles of human nature.",
+      "tone": "genteel, puzzle-driven, witty",
+      "pacing": "Fast",
+      "themes": [
+        "deduction and logic",
+        "human nature and motive",
+        "justice",
+        "deception and identity",
+        "Golden Age mystery conventions"
+      ],
+      "setting": "Primarily mid-20th-century England — country houses, villages, and domestic settings",
+      "comparable_books": [
+        "The Mysterious Affair at Styles - Agatha Christie",
+        "Lord Edgware Dies - Agatha Christie",
+        "Ellery Queen's Mystery Magazine anthology",
+        "The Adventures of Sherlock Holmes - Arthur Conan Doyle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age mystery",
+          "Hercule Poirot",
+          "short story format",
+          "classic whodunit puzzles",
+          "light and accessible"
+        ],
+        "negative": [
+          "dated social attitudes",
+          "thin characterisation by modern standards",
+          "formula-driven"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Christie short stories work very well in audio; Hugh Fraser's Poirot narration is a popular choice.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Word Is Murder - Anthony Horowitz": {
       "title": "The Word Is Murder",
       "author": "Anthony Horowitz",
       "series": "A Hawthorne and Horowitz Mystery",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a woman arranges her own funeral and is murdered hours later, eccentric ex-detective Daniel Hawthorne recruits author Anthony Horowitz — playing himself — as his Watson to document the case. The novel plays playfully with meta-fictional conceits as the odd-couple duo unravel a murder with no apparent motive.",
+      "tone": "witty, meta, classic whodunit energy",
+      "pacing": "Moderate",
+      "themes": [
+        "meta-fiction and authorship",
+        "the detective partnership",
+        "secrets and buried pasts",
+        "justice",
+        "the nature of storytelling"
+      ],
+      "setting": "Contemporary London — the world of television production, theatre, and the literary industry",
+      "comparable_books": [
+        "The Sentence Is Death - Anthony Horowitz",
+        "Magpie Murders - Anthony Horowitz",
+        "A Study in Scarlet - Arthur Conan Doyle",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "meta-fictional conceit with Horowitz as character",
+          "classic whodunit structure",
+          "witty and self-aware",
+          "London setting",
+          "strong detective dynamic"
+        ],
+        "negative": [
+          "meta structure may frustrate readers wanting straightforward mystery",
+          "the character of Hawthorne is deliberately unlikeable"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Woman Who Died a Lot - Jasper Fforde": {
       "title": "The Woman Who Died a Lot",
       "author": "Jasper Fforde",
       "series": "Thursday Next",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Literary detective Thursday Next is recovering from injuries sustained in the previous novel and finds herself unable to Bookjump, while simultaneously dealing with a planned smiting of Swindon by a vengeful God, her daughter Friday's altered timeline, and a wave of fake Thursdays appearing to cover for her. Fforde's characteristic absurdist invention is in full flight.",
+      "tone": "absurdist, satirical, warmly comic",
+      "pacing": "Moderate",
+      "themes": [
+        "time and destiny",
+        "identity and authenticity",
+        "family",
+        "literary culture and satire",
+        "bureaucracy and officialdom"
+      ],
+      "setting": "Alternate-history England (Swindon) — a world where literature is policed, time travel is routine, and dodos are household pets",
+      "comparable_books": [
+        "The Eyre Affair - Jasper Fforde",
+        "One of Our Thursdays Is Missing - Jasper Fforde",
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Douglas Adams's Dirk Gently series"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "absurdist comedy",
+          "literary in-jokes and satire",
+          "inventive alternate history",
+          "beloved long-running series",
+          "warm humour with genuine heart"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "very dense with callbacks and in-jokes",
+          "extremely niche humour not for all tastes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Woman in the Woods - John Connolly": {
       "title": "The Woman in the Woods",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 16",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Charlie Parker is drawn into the search for a dead woman found buried in the Maine woods — a woman who gave birth before she died, leaving a missing infant and a trail of dangerous secrets. The case brings Parker into conflict with a powerful and ancient evil that will stop at nothing to recover the child.",
+      "tone": "dark, atmospheric, supernaturally charged",
+      "pacing": "Moderate",
+      "themes": [
+        "ancient evil",
+        "maternal sacrifice",
+        "hidden identity",
+        "the supernatural",
+        "justice for the vulnerable"
+      ],
+      "setting": "Contemporary Maine — rural woods, small towns, and the shadowy world of organised crime",
+      "comparable_books": [
+        "A Book of Bones - John Connolly",
+        "The Wolf in Winter - John Connolly",
+        "The Killing Kind - John Connolly",
+        "Cemetery Dance - Douglas Preston & Lincoln Child"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural crime fiction",
+          "Maine gothic atmosphere",
+          "morally complex PI",
+          "lyrical prose",
+          "strong mid-series entry"
+        ],
+        "negative": [
+          "benefits from prior series context",
+          "blends genres in ways not all crime readers enjoy",
+          "dark and disturbing content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Woman in Cabin 10 - Ruth Ware": {
       "title": "The Woman in Cabin 10",
       "author": "Ruth Ware",
       "series": "Lo Blacklock",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Psychological Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Travel journalist Lo Blacklock is covering the maiden voyage of a luxury boutique cruise ship when she witnesses a woman being thrown overboard — but when no passenger is reported missing, no one believes her. Trapped at sea with a killer, Lo must prove what she saw before she becomes the next victim.",
+      "tone": "claustrophobic, propulsive, atmospheric",
+      "pacing": "Fast",
+      "themes": [
+        "gaslighting and self-doubt",
+        "isolation",
+        "female jeopardy",
+        "class and privilege",
+        "trust and deception"
+      ],
+      "setting": "Contemporary — a small luxury cruise ship on the Norwegian fjords",
+      "comparable_books": [
+        "In a Dark Dark Wood - Ruth Ware",
+        "The Girl on the Train - Paula Hawkins",
+        "The Woman in the Window - A.J. Finn",
+        "The Silent Patient - Alex Michaelides"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "claustrophobic thriller",
+          "unreliable narrator",
+          "propulsive pacing",
+          "glamorous setting",
+          "one-sitting read"
+        ],
+        "negative": [
+          "protagonist makes frustrating choices",
+          "requires suspension of disbelief",
+          "formula-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Wolf in Winter - John Connolly": {
       "title": "The Wolf in Winter",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The disappearance of a homeless man's daughter leads Charlie Parker to the isolated Maine town of Prosperous — a community built on an ancient and terrible secret, protected by its people at any cost. Parker's investigation brings him to the edge of his own mortality in one of the most acclaimed entries in the series.",
+      "tone": "dark, gothic, atmospheric, deeply unsettling",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "ancient evil and sacrifice",
+        "community and secrecy",
+        "mortality",
+        "good versus irredeemable darkness",
+        "the cost of justice"
+      ],
+      "setting": "Contemporary Maine — the insular, sinister town of Prosperous; winter Gothic atmosphere",
+      "comparable_books": [
+        "The Woman in the Woods - John Connolly",
+        "A Song of Shadows - John Connolly",
+        "The Wicker Man (film adaptation parallel)",
+        "Harvest Home - Thomas Tryon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic horror-crime fusion",
+          "atmospheric slow burn",
+          "ancient evil mythology",
+          "strong standalone entry within the series",
+          "lyrical prose"
+        ],
+        "negative": [
+          "very dark and disturbing",
+          "graphic violence",
+          "represents a tonal shift in the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Tusks of Extinction - Ray Nayler": {
