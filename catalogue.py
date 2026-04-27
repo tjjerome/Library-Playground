@@ -97,6 +97,20 @@ def load_library(csv_path: str) -> list[dict]:
     return books
 
 
+def _parse_int(val) -> int | None:
+    try:
+        return int(val) if val else None
+    except (ValueError, TypeError):
+        return None
+
+
+def _parse_float(val) -> float | None:
+    try:
+        return float(val) if val else None
+    except (ValueError, TypeError):
+        return None
+
+
 def sync_library_to_catalog(books: list[dict], catalog: dict) -> int:
     """Add pending stubs for any library books not yet in the catalog."""
     added = 0
@@ -109,7 +123,10 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> int:
                 "series": book.get("series") or None,
                 "series_position": None,
                 "genre": book.get("genre") or None,
-                "series_status": book.get("series_type") or None,
+                "series_status": book.get("#series_type") or book.get("series_type") or None,
+                "pages": _parse_int(book.get("#pages")),
+                "goodreads_rating": _parse_float(book.get("#modrating")),
+                "goodreads_reviews": _parse_int(book.get("#grvotes")),
                 "indie": None,
                 "classic": None,
                 "status": "pending",
@@ -129,6 +146,28 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> int:
             }
             added += 1
     return added
+
+
+def backfill_csv_data(books: list[dict], catalog: dict) -> int:
+    """Populate pages/goodreads fields from CSV for existing entries where they are null."""
+    updated = 0
+    for book in books:
+        key = book_key(book["title"], book["authors"])
+        if key not in catalog["entries"]:
+            continue
+        entry = catalog["entries"][key]
+        changed = False
+        for src, dst, cast in (
+            ("#pages", "pages", _parse_int),
+            ("#modrating", "goodreads_rating", _parse_float),
+            ("#grvotes", "goodreads_reviews", _parse_int),
+        ):
+            if entry.get(dst) is None and book.get(src):
+                entry[dst] = cast(book[src])
+                changed = True
+        if changed:
+            updated += 1
+    return updated
 
 
 def get_book_csv_data(books: list[dict], key: str) -> dict:
@@ -305,10 +344,14 @@ def main():
         print(f"Error: no books found in {args.library}. Check CSV format.")
         sys.exit(1)
 
-    # Sync library
+    # Sync library and backfill CSV-sourced fields
     added = sync_library_to_catalog(books, catalog)
-    if added:
-        print(f"  Added {added} new pending entries from library.")
+    backfilled = backfill_csv_data(books, catalog)
+    if added or backfilled:
+        if added:
+            print(f"  Added {added} new pending entries from library.")
+        if backfilled:
+            print(f"  Backfilled CSV data (pages/ratings) for {backfilled} entries.")
         save_catalog(catalog, args.catalog)
 
     print_status(catalog)
