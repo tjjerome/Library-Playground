@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2586,
-  "total_pending": 2014,
+  "total_catalogued": 2606,
+  "total_pending": 1994,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -148863,81 +148863,146 @@
       "title": "Fair Warning",
       "author": "Michael Connelly",
       "series": "Jack McEvoy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Reporter Jack McEvoy investigates a series of murders with a link to DNA databases and a dark web marketplace, drawing him into a deadly web of modern predators. The case forces him to confront the terrifying misuse of personal genetic data.",
+      "tone": "propulsive, procedural, chilling",
+      "pacing": "Fast",
+      "themes": [
+        "genetic privacy",
+        "predatory violence",
+        "investigative journalism",
+        "digital ethics",
+        "obsession"
+      ],
+      "setting": "Contemporary Los Angeles and the digital underworld",
+      "comparable_books": [
+        "The Poet - Michael Connelly",
+        "The Nowhere Man - Gregg Hurwitz",
+        "I'll Be Gone in the Dark - Michelle McNamara"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "procedural detail",
+          "journalist protagonist",
+          "ripped-from-the-headlines premise",
+          "dark web / tech thriller"
+        ],
+        "negative": [
+          "little character interiority",
+          "romance-light",
+          "standalone-preferred readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Connelly's fast-paced procedurals are a staple of the audiobook format with strong narration tradition.",
+      "content_flags": [
+        "graphic violence",
+        "sexual violence (described)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Eyes of the Void - Adrian Tchaikovsky": {
       "title": "Eyes of the Void",
       "author": "Adrian Tchaikovsky",
       "series": "The Final Architecture",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As humanity and its allies face the apocalyptic threat of the Architects — moon-sized alien entities that reshape planets — engineer Idris Telemmier and the crew of the Vulture God are drawn into an increasingly desperate search for a way to stop them. The fragile coalition of species begins to fracture as the void reveals its terrible secrets.",
+      "tone": "tense, bleak, awe-inspiring",
+      "pacing": "Moderate",
+      "themes": [
+        "existential threat",
+        "found family",
+        "survival of species",
+        "sacrifice",
+        "the nature of consciousness"
+      ],
+      "setting": "Far future, interstellar space opera across multiple alien worlds",
+      "comparable_books": [
+        "Shards of Earth - Adrian Tchaikovsky",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "To Be Taught, If Fortunate - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "alien worldbuilding",
+          "found family",
+          "escalating stakes",
+          "ensemble cast"
+        ],
+        "negative": [
+          "slow meditative pacing preferred",
+          "character-over-plot readers",
+          "romance-heavy preferences"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Edgedancer - Brandon Sanderson": {
       "title": "Edgedancer",
       "author": "Brandon Sanderson",
       "series": "The Stormlight Archive",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2.5 (novella, between Words of Radiance and Oathbringer)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lift, a street-smart and irreverent Surgebinder, embarks on her own quest to track down a mysterious and dangerous Herald while navigating the city of Yeddaw. This novella expands on a fan-favourite character and bridges events between main series instalments.",
+      "tone": "whimsical, fast, heartfelt",
+      "pacing": "Fast",
+      "themes": [
+        "remembering the forgotten",
+        "compassion",
+        "identity",
+        "growing up",
+        "duty vs. freedom"
+      ],
+      "setting": "Roshar — the cosmere's storm-battered world; the city of Yeddaw",
+      "comparable_books": [
+        "The Emperor's Soul - Brandon Sanderson",
+        "Warbreaker - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "loveable unconventional protagonist",
+          "fast-paced novella",
+          "Cosmere investment",
+          "emotional payoff",
+          "humour"
+        ],
+        "negative": [
+          "wanting to skip novellas",
+          "non-Cosmere readers",
+          "grimdark preferences"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kate Reading narrates Lift brilliantly; the short length and propulsive tone make this an ideal audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Drunk on All Your Strange New Words - Eddie Robson": {
@@ -148945,26 +149010,46 @@
       "author": "Eddie Robson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future New York where humanity has made contact with a telepathic alien species called the Logi, translator Lydia wakes to find her alien employer murdered — making her the prime suspect. She must navigate an intergalactic political crisis and clear her name, while the act of telepathic translation leaves her perpetually drunk.",
+      "tone": "darkly comic, breezy, satirical",
+      "pacing": "Fast",
+      "themes": [
+        "language and power",
+        "xenophobia",
+        "class and employment",
+        "conspiracy",
+        "first contact"
+      ],
+      "setting": "Near-future New York City, partially flooded by rising sea levels, with alien embassies established on Earth",
+      "comparable_books": [
+        "The Long Way to a Small, Angry Planet - Becky Chambers",
+        "A Memory Called Empire - Arkady Martine",
+        "The Hitchhiker's Guide to the Galaxy - Douglas Adams"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dry British humour",
+          "locked-room mystery",
+          "near-future worldbuilding",
+          "underdog protagonist",
+          "genre mashup"
+        ],
+        "negative": [
+          "hard science fiction",
+          "grimdark",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast and witty; the comic tone and clear plot make it highly engaging in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Double Sin and Other Stories - Agatha Christie": {
@@ -148972,80 +149057,144 @@
       "author": "Agatha Christie",
       "series": "Hercule Poirot",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A collection of short mystery stories featuring Hercule Poirot and Miss Marple, including tales of theft, deception, and murder solved through keen observation and deductive reasoning. The title story involves Poirot investigating a theft of miniature portraits on a coach journey.",
+      "tone": "cosy, witty, elegant",
+      "pacing": "Fast",
+      "themes": [
+        "deception",
+        "greed",
+        "justice",
+        "observation",
+        "human nature"
+      ],
+      "setting": "Mid-20th century England and Europe; various domestic and travel settings",
+      "comparable_books": [
+        "The Mysterious Affair at Styles - Agatha Christie",
+        "The Tuesday Club Murders - Agatha Christie",
+        "Lord Peter Views the Body - Dorothy L. Sayers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic detective fiction",
+          "cosy mystery",
+          "short stories",
+          "golden age puzzle plots",
+          "Poirot fans"
+        ],
+        "negative": [
+          "psychological depth preferred",
+          "modern thriller pace",
+          "dark or violent content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short story format is ideal for audio; Christie's dialogue and plotting shine with good narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dead Lions - Mick Herron": {
       "title": "Dead Lions",
       "author": "Mick Herron",
       "series": "Slough House",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Spy Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a washed-up Cold War spy is found dead on a bus outside Oxford, the disgraced MI5 agents of Slough House — led by the irascible Jackson Lamb — begin pulling on a thread that unravels a web of buried Soviet-era secrets. Winner of the CWA Gold Dagger.",
+      "tone": "darkly comic, sardonic, tightly plotted",
+      "pacing": "Moderate",
+      "themes": [
+        "bureaucratic failure",
+        "Cold War legacy",
+        "loyalty and betrayal",
+        "institutional rot",
+        "mortality"
+      ],
+      "setting": "Contemporary London and Oxford; the grey corridors of MI5",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic spy fiction",
+          "ensemble cast of losers",
+          "sharp dialogue",
+          "Cold War paranoia",
+          "anti-Bond espionage"
+        ],
+        "negative": [
+          "action-heavy thriller",
+          "hero protagonist",
+          "light tone preferred"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The series is renowned in audio format; Herron's wit and voice-driven dialogue rewards a skilled narrator.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dead Country - Max Gladstone": {
       "title": "Dead Country",
       "author": "Max Gladstone",
       "series": "The Craft Wars",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Necromancer-lawyer Tara Abernathy returns to her dusty hometown after her father's death, only to find her community besieged by raiders twisted by the aftermath of the God Wars. The homecoming forces her to confront both her past and a young woman whose dangerous power threatens to change the world.",
+      "tone": "lyrical, tense, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "homecoming and identity",
+        "colonialism and capital",
+        "the cost of power",
+        "grief",
+        "mentorship"
+      ],
+      "setting": "A secondary fantasy world built on the ruins of dead gods, in a dusty, western-influenced rural landscape",
+      "comparable_books": [
+        "Three Parts Dead - Max Gladstone",
+        "The Fifth Season - N.K. Jemisin",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "inventive magic system",
+          "morally grey protagonist",
+          "dense worldbuilding",
+          "literary fantasy",
+          "necromancy"
+        ],
+        "negative": [
+          "romance-heavy",
+          "fast action preferred",
+          "light tone preferred"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Crooked House - Agatha Christie": {
@@ -149053,80 +149202,145 @@
       "author": "Agatha Christie",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "When wealthy patriarch Aristide Leonides is poisoned in his family home, every member of the eccentric Leonides household becomes a suspect. Narrated by Charles Hayward, who is in love with one of the family, the investigation forces him to confront an unsettling truth about a deeply dysfunctional family.",
+      "tone": "unsettling, claustrophobic, elegantly sinister",
+      "pacing": "Moderate",
+      "themes": [
+        "family dysfunction",
+        "greed and inheritance",
+        "moral ambiguity",
+        "guilt",
+        "the corruption of wealth"
+      ],
+      "setting": "Post-WWII England; a large, eccentric family estate",
+      "comparable_books": [
+        "And Then There Were None - Agatha Christie",
+        "The Murder of Roger Ackroyd - Agatha Christie",
+        "We Need to Talk About Kevin - Lionel Shriver"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "shocking twist ending",
+          "golden age mystery",
+          "closed-circle suspects",
+          "dark psychological undertones",
+          "Christie's personal favourite"
+        ],
+        "negative": [
+          "cosy mystery only",
+          "procedural detective required",
+          "Poirot/Marple fans exclusively"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Cataclysm - Lydia Kang": {
       "title": "Cataclysm",
       "author": "Lydia Kang",
-      "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The High Republic (Phase II)",
+      "series_position": "Phase II, Book 2 (final adult novel of Phase II)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the disaster at the peace treaty signing on Jedha, the Jedi and Republic forces converge on the planet Dalna for a climactic confrontation with the sinister Path of the Open Hand cult. The fates of warring planets Eiram and E'ronoh — and the galaxy itself — hang in the balance.",
+      "tone": "action-driven, emotionally intense, hopeful",
+      "pacing": "Fast",
+      "themes": [
+        "faith and fanaticism",
+        "love across divides",
+        "sacrifice",
+        "political manipulation",
+        "the nature of the Force"
+      ],
+      "setting": "A galaxy far, far away; set ~382 BBY, centuries before the Skywalker Saga; planets Eiram, E'ronoh, Dalna, and Coruscant",
+      "comparable_books": [
+        "Convergence - Zoraida Córdova",
+        "The Rising Storm - Cavan Scott",
+        "Light of the Jedi - Charles Soule"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "High Republic Phase II investment",
+          "enemies-to-lovers subplot",
+          "action climax payoff",
+          "Jedi at their peak"
+        ],
+        "negative": [
+          "Star Wars newcomers",
+          "standalone readers",
+          "slow-burn preferred"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The full-cast Star Wars audiobook with sound effects and Marc Thompson's narration is widely praised.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Better the Blood - Michael Bennett": {
       "title": "Better the Blood",
       "author": "Michael Bennett",
       "series": "A Hana Westerman Thriller",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Māori detective Hana Westerman of the Auckland CIB is led to a series of ritualistic murders by a mysterious video, uncovering a connection to the unjust execution of a Māori chief by British colonial soldiers 160 years earlier. As the killings continue, the case becomes terrifyingly personal when a genealogical link threatens her own family.",
+      "tone": "tense, culturally rich, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "colonial injustice",
+        "Indigenous identity",
+        "utu (rebalancing/revenge)",
+        "systemic racism",
+        "family loyalty vs. duty"
+      ],
+      "setting": "Contemporary Auckland, New Zealand; with historical flashbacks to 1863 colonial New Zealand",
+      "comparable_books": [
+        "Dark Emu - Bruce Pascoe",
+        "The Dry - Jane Harper",
+        "Winter Counts - David Heska Wanbli Weiden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Indigenous perspective",
+          "police procedural",
+          "serial killer investigation",
+          "culturally immersive",
+          "social justice themes"
+        ],
+        "negative": [
+          "cosy mystery",
+          "light tone preferred",
+          "avoiding colonial history content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Praised audiobook; the cinematic writing style (from a screenwriter/director) translates particularly well to audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual violence (referenced)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Facing the Mountain: A True Story of Japanese American Heroes in World War II - Daniel James Brown": {
@@ -149134,26 +149348,47 @@
       "author": "Daniel James Brown",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The true story of Japanese American soldiers from the 442nd Regimental Combat Team who fought valiantly in Europe during WWII, while their families were simultaneously imprisoned in internment camps back home. Brown weaves together the narratives of several families to expose one of America's most shameful injustices and most heroic episodes.",
+      "tone": "moving, urgent, patriotic, heartbreaking",
+      "pacing": "Moderate",
+      "themes": [
+        "sacrifice and honour",
+        "racial injustice",
+        "patriotism and identity",
+        "internment",
+        "family and community"
+      ],
+      "setting": "WWII-era United States (internment camps), and the European Theatre of War (France, Italy)",
+      "comparable_books": [
+        "The Boys in the Boat - Daniel James Brown",
+        "Unbroken - Laura Hillenbrand",
+        "Killers of the Flower Moon - David Grann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII history",
+          "narrative non-fiction",
+          "underdog stories",
+          "social justice history",
+          "character-driven true stories"
+        ],
+        "negative": [
+          "fiction only",
+          "aversion to heavy historical content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrative non-fiction with multiple interwoven family stories works exceptionally well in audio.",
+      "content_flags": [
+        "graphic violence (war)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "American Predator: The Hunt for the Most Meticulous Serial Killer of the 21st Century - Maureen Callahan": {
@@ -149161,26 +149396,49 @@
       "author": "Maureen Callahan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "True Crime",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A chilling account of the hunt for Israel Keyes, one of the most organised and terrifying serial killers in American history, who murdered across the country with meticulous pre-planning over years before his eventual capture. Journalist Maureen Callahan also investigates the failures of law enforcement that allowed him to operate so long.",
+      "tone": "harrowing, propulsive, investigative",
+      "pacing": "Fast",
+      "themes": [
+        "predatory evil",
+        "law enforcement failure",
+        "obsession",
+        "the banality of evil",
+        "wilderness and isolation"
+      ],
+      "setting": "Contemporary United States; Alaska, New England, and across the country",
+      "comparable_books": [
+        "I'll Be Gone in the Dark - Michelle McNamara",
+        "Lost Girls - Robert Kolker",
+        "The Monster of Florence - Douglas Preston"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime",
+          "propulsive narrative non-fiction",
+          "investigative journalism",
+          "law enforcement procedural",
+          "disturbing subject matter"
+        ],
+        "negative": [
+          "aversion to true crime",
+          "sensitive to violent content",
+          "fiction only"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "murder (detailed)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Abandon - Blake Crouch": {
@@ -149188,161 +149446,291 @@
       "author": "Blake Crouch",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On Christmas Day in 1893, every inhabitant of the remote Colorado mining town of Abandon mysteriously vanished without a trace. Over a century later, a journalist and her historian father join a small expedition to the ghost town to uncover the truth — only to discover that the past's deadly secrets are very much alive.",
+      "tone": "tense, dark, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "greed and its consequences",
+        "survival",
+        "the past haunting the present",
+        "human evil",
+        "isolation"
+      ],
+      "setting": "A remote Rocky Mountain mining town; dual timeline alternating between 1893 and 2009",
+      "comparable_books": [
+        "Dark Matter - Blake Crouch",
+        "The Terror - Dan Simmons",
+        "The Troop - Nick Cutter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dual timeline",
+          "survival thriller",
+          "remote/isolated setting",
+          "historical mystery",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "supernatural horror required",
+          "slow literary fiction",
+          "science fiction preferred"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multi-narrator audiobook praised for enhancing the dual-timeline structure.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Empire of the Dawn - Jay Kristoff": {
       "title": "Empire of the Dawn",
       "author": "Jay Kristoff",
       "series": "Empire of the Vampire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the devastating conclusion to the trilogy, the Last Silversaint Gabriel de León embarks on a final, desperate campaign against the vampire Forever King Fabien Voss, as told through his frame narrative to the historian Jean-François. Told from the rival perspectives of Gabriel and his half-sister Celene, the story races toward a brutal and hard-won reckoning.",
+      "tone": "grimdark, profane, emotionally brutal, lyrical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and disillusionment",
+        "sacrifice",
+        "found family",
+        "the cost of victory",
+        "unreliable narration"
+      ],
+      "setting": "A dark fantasy world of perpetual darkness (Daysdeath) set in a pseudo-medieval European empire overrun by vampires",
+      "comparable_books": [
+        "Empire of the Vampire - Jay Kristoff",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "morally grey protagonist",
+          "vampire lore reimagined",
+          "frame narrative",
+          "emotional payoff"
+        ],
+        "negative": [
+          "aversion to graphic content",
+          "fast pacing required",
+          "aversion to sexual content",
+          "romance-light preferred"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Time of Torment - John Connolly": {
       "title": "A Time of Torment",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Private investigator Charlie Parker is hired by a man wrongly convicted of a crime to investigate the shadowy community that destroyed his life — a place called the Cut, ruled by a terrifying force known as the Dead King. Parker and his partners Angel and Louis are drawn into a confrontation with ancient and very modern evil.",
+      "tone": "dark, supernatural, relentless",
+      "pacing": "Moderate",
+      "themes": [
+        "justice",
+        "the supernatural",
+        "rural menace",
+        "loyalty",
+        "corruption"
+      ],
+      "setting": "Contemporary United States; rural Appalachian community and wider New England",
+      "comparable_books": [
+        "Every Dead Thing - John Connolly",
+        "The Black Echo - Michael Connelly",
+        "The Reapers - John Connolly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark supernatural thriller",
+          "morally grey detective",
+          "long series investment",
+          "Angel and Louis",
+          "literary crime fiction"
+        ],
+        "negative": [
+          "procedural only",
+          "no supernatural elements",
+          "standalone preferred"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Song of Shadows - John Connolly": {
       "title": "A Song of Shadows",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A recuperating Charlie Parker uncovers a dark secret in his quiet Maine coastal town when bodies bearing connections to escaped Nazi war criminals begin to surface, drawing him into a conspiracy spanning decades. The novel blends historical evil with Parker's ever-present supernatural awareness.",
+      "tone": "brooding, melancholy, menacing",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the legacy of evil",
+        "Nazi war crimes",
+        "redemption",
+        "community and outsiders",
+        "the supernatural"
+      ],
+      "setting": "Contemporary coastal Maine; with historical flashbacks to WWII-era Germany",
+      "comparable_books": [
+        "A Time of Torment - John Connolly",
+        "The Likeness - Tana French",
+        "The Boy in the Striped Pyjamas - John Boyne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark atmospheric thriller",
+          "historical conspiracy",
+          "WWII crime",
+          "supernatural undertones",
+          "literary pacing"
+        ],
+        "negative": [
+          "fast pacing required",
+          "no supernatural elements",
+          "standalone preferred"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Murder of Quality - John le Carre": {
       "title": "A Murder of Quality",
-      "author": "John le Carre",
+      "author": "John le Carré",
       "series": "George Smiley",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "George Smiley, the unassuming intelligence officer, is asked by a friend to look into a threat made against a teacher's wife at an elite English public school — a threat that comes horribly true. What follows is a quiet, incisive examination of the English class system disguised as a murder mystery.",
+      "tone": "understated, ironic, melancholic",
+      "pacing": "Slow",
+      "themes": [
+        "class and privilege",
+        "English institutional hypocrisy",
+        "identity",
+        "loneliness",
+        "the limits of intelligence"
+      ],
+      "setting": "Post-war England; a fictional elite boarding school (Carne) in the English countryside",
+      "comparable_books": [
+        "Call for the Dead - John le Carré",
+        "Gaudy Night - Dorothy L. Sayers",
+        "A Judgement in Stone - Ruth Rendell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "English class satire",
+          "quiet procedural",
+          "character study",
+          "Smiley fans"
+        ],
+        "negative": [
+          "action-heavy thriller",
+          "fast pacing required",
+          "explicit spy tradecraft"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A River Enchanted - Rebecca Ross": {
       "title": "A River Enchanted",
       "author": "Rebecca Ross",
       "series": "Elements of Cadence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bard Jack Tamerlaine is summoned back to the magical island of Cadence after ten years away when young girls begin disappearing from his clan. Working reluctantly with his childhood rival Adaira, heir to the clan, he must use his music to summon the elemental spirits and uncover a dark secret lurking beneath the island's enchantments.",
+      "tone": "lyrical, atmospheric, romantic, slow-burn",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "music and magic",
+        "duty and belonging",
+        "enemies to lovers",
+        "clan rivalry",
+        "hidden identity"
+      ],
+      "setting": "A Scottish-inspired magical island divided between two rival clans; secondary world fantasy",
+      "comparable_books": [
+        "A Heart So Fierce and Broken - Brigid Kemmerer",
+        "The Witchwood Crown - Tad Williams",
+        "Uprooted - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "enemies-to-lovers romance",
+          "Scottish folklore inspiration",
+          "lyrical prose",
+          "elemental magic",
+          "slow-burn atmosphere"
+        ],
+        "negative": [
+          "action-focused readers",
+          "non-romance readers",
+          "grimdark preferences"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lyrical prose and folklorish atmosphere are enhanced considerably in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Haunting on the Hill - Elizabeth Hand": {
@@ -149350,53 +149738,97 @@
       "author": "Elizabeth Hand",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Struggling playwright Holly Sherwin rents the infamous Hill House in upstate New York to rehearse her witchy new play with a small cast — only for the house to begin exerting its malevolent influence on the group. The first novel authorised by the Shirley Jackson estate to return to the world of The Haunting of Hill House.",
+      "tone": "gothic, dread-soaked, atmospheric, literary",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "creative obsession",
+        "the corrupting house",
+        "paranoia and group fracture",
+        "witchcraft",
+        "the line between inspiration and possession"
+      ],
+      "setting": "Contemporary upstate New York; the isolated and supernatural Hill House",
+      "comparable_books": [
+        "The Haunting of Hill House - Shirley Jackson",
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "House of Leaves - Mark Z. Danielewski"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic horror",
+          "haunted house",
+          "literary horror",
+          "Shirley Jackson devotees",
+          "LGBTQ+ characters",
+          "slow dread"
+        ],
+        "negative": [
+          "action horror",
+          "explicit gore",
+          "wanting a direct sequel to Jackson"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The slow-building atmospheric dread and lyrical prose are highly effective in audio format.",
+      "content_flags": [
+        "sexual violence (referenced)",
+        "suicide (referenced)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Great Reckoning - Louise Penny": {
       "title": "A Great Reckoning",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Armand Gamache takes a position at the Sûreté du Québec academy, where he aims to reform a corrupt and rotten institution — but a mysterious antique map found in the walls of the Three Pines bistro and a murder among the cadets plunges him into deadly new intrigue. Questions of loyalty, betrayal, and the nature of justice run throughout.",
+      "tone": "cosy, layered, emotionally rich, occasionally dark",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional corruption",
+        "mentorship and betrayal",
+        "loyalty",
+        "the nature of evil",
+        "community"
+      ],
+      "setting": "The village of Three Pines, Québec; the Sûreté du Québec police academy",
+      "comparable_books": [
+        "Still Life - Louise Penny",
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith",
+        "An Unsuitable Job for a Woman - P.D. James"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mystery",
+          "Three Pines community",
+          "long series investment",
+          "quiet Québec setting",
+          "emotionally resonant"
+        ],
+        "negative": [
+          "fast-paced action",
+          "dark graphic content",
+          "standalone preferred"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ralph Cosham's narration is beloved; the series is considered one of the finest audio mystery experiences available.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Game of Ghosts - John Connolly": {
