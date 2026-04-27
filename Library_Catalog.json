@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3184,
-  "total_pending": 1416,
+  "total_catalogued": 3204,
+  "total_pending": 1396,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -178586,26 +178586,45 @@
       "author": "Naomi Oreskes & Erik M. Conway",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction (History of Science)",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A meticulously researched exposé of how a small network of scientists and industry-backed groups deliberately manufactured doubt about the scientific consensus on issues from tobacco's health risks to climate change. It traces decades of coordinated disinformation campaigns and their lasting political consequences.",
+      "tone": "Investigative, alarming, rigorously evidential",
+      "pacing": "Moderate",
+      "themes": [
+        "scientific disinformation",
+        "corporate influence",
+        "climate denial",
+        "political manipulation",
+        "history of science"
+      ],
+      "setting": "United States, 20th–21st century, primarily political and scientific institutions",
+      "comparable_books": [
+        "The Tobacco Playbook - Various",
+        "Doubt Is Their Product - David Michaels",
+        "The New Climate Economy - Various",
+        "Dark Money - Jane Mayer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "science policy readers",
+          "investigative non-fiction fans",
+          "climate and environment interest",
+          "history of industry corruption"
+        ],
+        "negative": [
+          "readers wanting narrative storytelling",
+          "those seeking light or uplifting reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A City on Mars - Kelly Weinersmith & Zach Weinersmith": {
@@ -178613,26 +178632,45 @@
       "author": "Kelly Weinersmith & Zach Weinersmith",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction (Science)",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Weinersmiths set out to write a pro-space-settlement book but emerged deeply sceptical, examining the real scientific, legal, medical, and political obstacles to human colonisation of Mars, the Moon, and beyond. Rigorous research is delivered with characteristic wit and comic illustrations.",
+      "tone": "Darkly comic, rigorously sceptical, accessibly nerdy",
+      "pacing": "Moderate",
+      "themes": [
+        "space colonisation",
+        "astrobiology",
+        "international space law",
+        "reproductive biology in space",
+        "techno-utopianism critique"
+      ],
+      "setting": "Near-future space, framed through contemporary science and policy research",
+      "comparable_books": [
+        "Soonish - Kelly & Zach Weinersmith",
+        "How to Make a Spaceship - Julian Guthrie",
+        "The Case Against Mars - Robert Zubrin (counterpoint)",
+        "Astrophysics for People in a Hurry - Neil deGrasse Tyson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space enthusiasts willing to be challenged",
+          "fans of humorous non-fiction",
+          "policy and science crossover readers",
+          "SMBC webcomic fans"
+        ],
+        "negative": [
+          "uncritical space boosterism fans",
+          "readers wanting purely optimistic futures"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Comic illustrations and visual gags are a key part of the book's charm and are lost in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Soonish: Ten Emerging Technologies That'll Improve And/or Ruin Everything - Kelly Weinersmith & Zach Weinersmith": {
@@ -178640,26 +178678,45 @@
       "author": "Kelly Weinersmith & Zach Weinersmith",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction (Science)",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A witty, deeply researched tour of ten near-future technologies—from space elevators to brain-computer interfaces—examining both their extraordinary promise and their potentially catastrophic downsides. Each chapter blends expert interviews, scientific rigour, and the trademark Weinersmith humour.",
+      "tone": "Playfully comic, intellectually curious, balanced",
+      "pacing": "Moderate",
+      "themes": [
+        "emerging technology",
+        "futurism",
+        "science communication",
+        "risk and innovation",
+        "human ingenuity"
+      ],
+      "setting": "Contemporary and near-future, across multiple scientific disciplines",
+      "comparable_books": [
+        "A City on Mars - Kelly & Zach Weinersmith",
+        "The Inevitable - Kevin Kelly",
+        "Astrophysics for People in a Hurry - Neil deGrasse Tyson",
+        "How to Create a Mind - Ray Kurzweil"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science fans",
+          "fans of SMBC comic",
+          "technology optimists and sceptics alike",
+          "humorous non-fiction lovers"
+        ],
+        "negative": [
+          "readers wanting deep technical depth over breadth",
+          "those uninterested in science"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Comic illustrations throughout the book are central to the experience and unavailable in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Unseeing - Anna Mazzola": {
@@ -178667,80 +178724,145 @@
       "author": "Anna Mazzola",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Based on the real 1837 Edgware Road Murder, a seamstress named Sarah Gale is sentenced to hang for her alleged role in a shocking killing, yet stubbornly maintains silence. A young solicitor hired by the Home Office races to discover whether she is truly guilty—or a victim of a profoundly unjust system.",
+      "tone": "Atmospheric, gritty, melancholic, morally complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "injustice",
+        "women's rights",
+        "Victorian poverty",
+        "guilt and innocence",
+        "class inequality"
+      ],
+      "setting": "London, 1837 — Newgate Prison and the grimy streets of Victorian England",
+      "comparable_books": [
+        "Alias Grace - Margaret Atwood",
+        "The Suspicions of Mr Whicher - Kate Summerscale",
+        "The Clockwork Girl - Anna Mazzola",
+        "Burial Rites - Hannah Kent"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction fans",
+          "true crime interest",
+          "Victorian England setting lovers",
+          "morally complex character studies"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "those seeking clear-cut heroes and villains"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence (dismemberment described)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Seventh Scroll - Wilbur Smith": {
       "title": "The Seventh Scroll",
       "author": "Wilbur Smith",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Adventure / Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Egyptologist Royan Al Simma discovers a cryptic scroll that may reveal the location of an ancient pharaoh's treasure-laden tomb hidden deep in the Ethiopian highlands. Pursued by ruthless enemies, she teams up with adventurer Nicholas Quentin-Harper for a globe-spanning race against time.",
+      "tone": "Propulsive, adventurous, cinematic",
+      "pacing": "Fast",
+      "themes": [
+        "archaeology",
+        "ancient Egypt",
+        "treasure hunting",
+        "adventure",
+        "betrayal"
+      ],
+      "setting": "Egypt and the Ethiopian highlands, contemporary era",
+      "comparable_books": [
+        "River God - Wilbur Smith",
+        "The Da Vinci Code - Dan Brown",
+        "Sahara - Clive Cussler",
+        "Indiana Jones (film series)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action-adventure fans",
+          "archaeology and ancient history interest",
+          "plot-driven thriller readers",
+          "Wilbur Smith fans"
+        ],
+        "negative": [
+          "literary fiction readers",
+          "those sensitive to dated gender dynamics"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced adventure with strong set-pieces translates exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Drop of Corruption - Robert Jackson Bennett": {
       "title": "A Drop of Corruption",
       "author": "Robert Jackson Bennett",
       "series": "Shadow of the Leviathan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Genius detective Ana Dolabra and her sharp-memoried assistant Din are dispatched to the edge of the empire to investigate a Treasury officer's impossible disappearance from a locked room—a case that swiftly entangles them in the treacherous politics of a kingdom on the brink of annexation.",
+      "tone": "Witty, propulsive, richly atmospheric, darkly inventive",
+      "pacing": "Fast",
+      "themes": [
+        "empire and colonialism",
+        "justice",
+        "identity",
+        "political conspiracy",
+        "the nature of monstrosity"
+      ],
+      "setting": "Yarrowdale, a swamp kingdom on the edge of the Khanum Empire — secondary world with leviathans and body-altering magic",
+      "comparable_books": [
+        "The Tainted Cup - Robert Jackson Bennett",
+        "The Name of the Rose - Umberto Eco",
+        "Foundryside - Robert Jackson Bennett",
+        "The City & The City - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fantasy mystery fans",
+          "Sherlock Holmes-style detective duo",
+          "richly built secondary worlds",
+          "fans of body horror elements",
+          "propulsive pacing lovers"
+        ],
+        "negative": [
+          "readers needing romance subplots",
+          "those wanting low-stakes cozy mysteries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Andrew Fallaize, praised for distinct character voices and emotive performance.",
+      "content_flags": [
+        "graphic violence (body horror)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Book of Secrets - Anna Mazzola": {
@@ -178748,53 +178870,96 @@
       "author": "Anna Mazzola",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1659 Rome, still reeling from plague, a young prosecutor is tasked with investigating a wave of mysterious male deaths linked to a network of women—healers, midwives, and herbalists—who may be providing desperate wives with poison as their only escape from abusive marriages. Told from three alternating perspectives, it is based on a real historical case.",
+      "tone": "Dark, atmospheric, morally complex, rage-inducing",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "women's oppression",
+        "justice vs. the law",
+        "domestic abuse",
+        "religion and patriarchy",
+        "poison and power"
+      ],
+      "setting": "Rome, 1659 — the squalid splendour of Baroque papal Italy",
+      "comparable_books": [
+        "The Unseeing - Anna Mazzola",
+        "The Clockwork Girl - Anna Mazzola",
+        "The Miniaturist - Jessie Burton",
+        "The Familiars - Stacey Halls"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction fans",
+          "feminist historical narratives",
+          "morally ambiguous characters",
+          "dark atmospheric settings",
+          "true crime basis"
+        ],
+        "negative": [
+          "readers wanting mystery with a hidden villain",
+          "those sensitive to domestic abuse content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "domestic abuse",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Rogue One: A Star Wars Story - Alexander Freed": {
       "title": "Rogue One: A Star Wars Story",
       "author": "Alexander Freed",
-      "series": null,
+      "series": "Star Wars",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction / Tie-in Novelisation",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A novelisation of the 2016 film: a ragtag band of rebels risks everything to steal the plans for the Empire's planet-destroying Death Star, in a desperate mission that bridges the gap between the prequel era and the original trilogy. Freed's adaptation expands on character interiority and adds texture not seen on screen.",
+      "tone": "Gritty, war-like, bittersweet, hopeful",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and hope",
+        "rebellion and resistance",
+        "moral compromise in wartime",
+        "found family",
+        "legacy"
+      ],
+      "setting": "The Star Wars galaxy, immediately before the events of A New Hope",
+      "comparable_books": [
+        "Star Wars: A New Hope - George Lucas (novelisation)",
+        "Star Wars: Andor (novelisations)",
+        "Lost Stars - Claudia Gray"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "fans of the Rogue One film",
+          "military SF readers",
+          "found family trope lovers"
+        ],
+        "negative": [
+          "readers unfamiliar with Star Wars seeking standalone experience",
+          "those wanting literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "How to Sell a Haunted House - Grady Hendrix": {
@@ -178802,26 +178967,48 @@
       "author": "Grady Hendrix",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After their parents die suddenly, estranged siblings Louise and Mark return to their childhood home to deal with the estate—only to find the house stubbornly, malevolently resistant to being sold, haunted by something tied to their mother's vast puppet collection. A tale of family trauma wrapped in creeping folk horror.",
+      "tone": "Darkly comic, increasingly terrifying, emotionally raw",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "grief and family trauma",
+        "sibling conflict",
+        "folk horror",
+        "haunted spaces",
+        "maternal legacy"
+      ],
+      "setting": "Charleston, South Carolina, contemporary",
+      "comparable_books": [
+        "The Final Girl Support Group - Grady Hendrix",
+        "My Best Friend's Exorcism - Grady Hendrix",
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "The Haunting of Hill House - Shirley Jackson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror fans",
+          "darkly comic tone lovers",
+          "family drama crossover readers",
+          "puppet/doll horror enthusiasts"
+        ],
+        "negative": [
+          "readers who dislike horror",
+          "those wanting purely comedic books without genuine scares"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide (parental death discussed)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "T. Rex and the Crater of Doom - Walter Alvarez": {
@@ -178829,26 +179016,44 @@
       "author": "Walter Alvarez",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction (Popular Science)",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Geologist Walter Alvarez recounts the thrilling scientific detective story behind the discovery that an asteroid impact caused the mass extinction that wiped out the dinosaurs, from the pivotal iridium anomaly found in rock layers to the identification of the Chicxulub crater in Mexico.",
+      "tone": "Enthusiastic, accessible, narrative-driven scientific memoir",
+      "pacing": "Moderate",
+      "themes": [
+        "mass extinction",
+        "asteroid impact",
+        "scientific discovery",
+        "geology and palaeontology",
+        "collaborative science"
+      ],
+      "setting": "Global geological fieldwork and research labs, late 20th century",
+      "comparable_books": [
+        "The Rise and Fall of the Dinosaurs - Steve Brusatte",
+        "The Sixth Extinction - Elizabeth Kolbert",
+        "Annals of the Former World - John McPhee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dinosaur and palaeontology fans",
+          "popular science readers",
+          "scientific discovery narratives",
+          "geology interest"
+        ],
+        "negative": [
+          "readers wanting comprehensive dinosaur coverage",
+          "those wanting more technical depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Rise and Fall of the Dinosaurs: A New History of a Lost World - Steve Brusatte": {
@@ -178856,26 +179061,45 @@
       "author": "Steve Brusatte",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction (Popular Science)",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Leading palaeontologist Steve Brusatte takes readers on an epic journey through the 200-million-year reign of the dinosaurs, blending cutting-edge fossil discoveries with vivid portraits of the scientists making them. From tiny Triassic ancestors to the giants of the Cretaceous and the final catastrophic extinction, it is the definitive modern account.",
+      "tone": "Authoritative, vivid, enthusiastic, wonder-filled",
+      "pacing": "Moderate",
+      "themes": [
+        "evolution and extinction",
+        "palaeontology",
+        "natural history",
+        "geological time",
+        "scientific discovery"
+      ],
+      "setting": "Various global fossil sites and prehistory, framed by modern fieldwork",
+      "comparable_books": [
+        "T. Rex and the Crater of Doom - Walter Alvarez",
+        "The Sixth Extinction - Elizabeth Kolbert",
+        "Your Inner Fish - Neil Shubin",
+        "Dinosaurs: How They Lived and Evolved - Gareth Dyke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dinosaur enthusiasts",
+          "popular science readers",
+          "natural history lovers",
+          "narrative non-fiction fans"
+        ],
+        "negative": [
+          "those seeking purely academic treatment",
+          "readers uninterested in natural history"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Brusatte's engaging, storytelling-driven prose is ideally suited to audio, with the author himself narrating some editions.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Quarantine - Greg Egan": {
@@ -178883,26 +179107,46 @@
       "author": "Greg Egan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Hard Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future Earth sealed within a mysterious alien-constructed Bubble that blocks all starlight, private investigator Nick Stavrianos is hired to find a missing woman—a case that spirals into a mind-bending conspiracy involving quantum mechanics, neural modification technology, and the terrifying implications of human consciousness collapsing the wave-function.",
+      "tone": "Cold, cerebral, intellectually dizzying, noir-inflected",
+      "pacing": "Moderate",
+      "themes": [
+        "quantum mechanics and consciousness",
+        "identity and free will",
+        "posthumanism",
+        "corporate conspiracy",
+        "the nature of reality"
+      ],
+      "setting": "Near-future Earth (2034–2080), enclosed within the Bubble — a solar system cut off from the stars",
+      "comparable_books": [
+        "Permutation City - Greg Egan",
+        "Diaspora - Greg Egan",
+        "Blindsight - Peter Watts",
+        "Dark Matter - Blake Crouch (lighter entry point)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF devotees",
+          "quantum mechanics and physics interest",
+          "noir detective framing fans",
+          "ideas-first fiction readers"
+        ],
+        "negative": [
+          "readers wanting character-driven stories",
+          "those without appetite for dense science concepts",
+          "casual SF readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Dense quantum mechanics exposition and technical concepts are difficult to track without the ability to re-read passages.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fuzz: When Nature Breaks the Law - Mary Roach": {
@@ -178910,26 +179154,47 @@
       "author": "Mary Roach",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction (Popular Science / Humour)",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mary Roach investigates the chaotic, often hilarious world of human–wildlife conflict—from bears raiding trash bins to leopards attacking villagers—exploring how wildlife managers, scientists, and governments attempt to enforce the law on nature's most obstinate offenders.",
+      "tone": "Irreverently comic, warm, sharply observed",
+      "pacing": "Moderate",
+      "themes": [
+        "human–wildlife conflict",
+        "conservation",
+        "animal behaviour",
+        "bureaucracy and nature",
+        "ethics of wildlife management"
+      ],
+      "setting": "Global — field research from the US, India, Italy, and beyond",
+      "comparable_books": [
+        "Stiff - Mary Roach",
+        "Gulp - Mary Roach",
+        "Spillover - David Quammen",
+        "The Soul of an Octopus - Sy Montgomery"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Mary Roach fans",
+          "humorous non-fiction lovers",
+          "animal and nature interest",
+          "accessible popular science readers"
+        ],
+        "negative": [
+          "readers wanting serious conservation policy",
+          "those who dislike irreverent treatment of serious topics"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Mary Roach's comedic voice and footnote-heavy style translate superbly to audio, with Roach often narrating herself.",
+      "content_flags": [
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Planet of the Apes - Pierre Boulle": {
@@ -178937,188 +179202,336 @@
       "author": "Pierre Boulle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A journalist and his companion discover a bottle adrift in space containing a manuscript: the story of space travellers who land on a distant planet where apes are the dominant civilised species and humans are primitive, mute animals. A sharp satirical allegory about human vanity and the arbitrary nature of civilisation.",
+      "tone": "Satirical, darkly comic, chilling",
+      "pacing": "Moderate",
+      "themes": [
+        "evolution and civilisation",
+        "human nature and vanity",
+        "colonialism and power reversal",
+        "scientific arrogance",
+        "satire of society"
+      ],
+      "setting": "A distant planet mirroring Earth, mid-20th century framing narrative — originally published 1963",
+      "comparable_books": [
+        "Brave New World - Aldous Huxley",
+        "The Island of Doctor Moreau - H.G. Wells",
+        "We - Yevgeny Zamyatin",
+        "Lord of the Flies - William Golding"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic SF fans",
+          "satirical fiction lovers",
+          "fans of the film adaptations",
+          "short thought-provoking reads"
+        ],
+        "negative": [
+          "readers wanting action-heavy SF",
+          "those seeking modern hard SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Crossroads of Ravens - Andrzej Sapkowski": {
       "title": "Crossroads of Ravens",
       "author": "Andrzej Sapkowski",
       "series": "The Witcher",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Standalone Prequel (Book 0.1)",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel set before all other Witcher books, following an eighteen-year-old Geralt of Rivia on his very first steps as a monster hunter after leaving Kaer Morhen — guided by the grizzled witcher Preston Holt, and learning the brutal cost of naïve heroism in a world that fears and despises his kind.",
+      "tone": "Dark, morally complex, wry, episodic",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and becoming",
+        "monstrosity and prejudice",
+        "growing up",
+        "moral ambiguity",
+        "the cost of heroism"
+      ],
+      "setting": "The Continent — specifically the kingdom of Kaedwen, in 1229, decades before the main Witcher saga",
+      "comparable_books": [
+        "The Last Wish - Andrzej Sapkowski",
+        "Season of Storms - Andrzej Sapkowski",
+        "The Blade Itself - Joe Abercrombie",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Witcher fans from books, games, or TV",
+          "dark fantasy lovers",
+          "morally grey protagonist interest",
+          "origin story fans",
+          "great entry point for newcomers"
+        ],
+        "negative": [
+          "readers wanting the full saga's complexity",
+          "those uninterested in monster-hunting episodic adventures"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Machine Vendetta - Alastair Reynolds": {
       "title": "Machine Vendetta",
       "author": "Alastair Reynolds",
       "series": "The Prefect Dreyfus Emergencies",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Senior Prefect Tom Dreyfus investigates the suspicious death of trusted colleague Ingvar Tench, who walked unarmed into a hostile habitat — a mystery that exposes a deadly conspiracy entangled with two warring rogue AIs, Aurora and the Clockmaker, whose feud threatens the ten thousand habitats of the Glitter Band.",
+      "tone": "Tense, cerebral, propulsive, grimly satisfying",
+      "pacing": "Fast",
+      "themes": [
+        "artificial intelligence and consciousness",
+        "democracy and authoritarianism",
+        "guilt and duty",
+        "conspiracy within institutions",
+        "identity"
+      ],
+      "setting": "The Glitter Band — ten thousand orbital habitats around the planet Yellowstone, 25th century",
+      "comparable_books": [
+        "Aurora Rising - Alastair Reynolds",
+        "Elysium Fire - Alastair Reynolds",
+        "Revelation Space - Alastair Reynolds",
+        "Consider Phlebas - Iain M. Banks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fans",
+          "space opera lovers",
+          "police procedural crossover interest",
+          "Revelation Space universe readers"
+        ],
+        "negative": [
+          "series newcomers (read Aurora Rising first)",
+          "readers wanting standalone entry points",
+          "those preferring character-led literary SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Night Fire - Michael Connelly": {
       "title": "The Night Fire",
       "author": "Michael Connelly",
       "series": "Renée Ballard",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime / Police Procedural",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired detective Harry Bosch receives a stolen murder book from the widow of his late mentor, reopening a decades-old unsolved killing — and enlists LAPD night-shift detective Renée Ballard to help him dig into what the old man was really hiding. Simultaneously, Ballard works a tent-fire death that may not be accidental.",
+      "tone": "Taut, atmospheric, morally driven, procedurally precise",
+      "pacing": "Fast",
+      "themes": [
+        "justice and obsession",
+        "mentorship and legacy",
+        "institutional corruption",
+        "cold cases",
+        "partnership"
+      ],
+      "setting": "Los Angeles, contemporary — Hollywood Station night shift and the city's underbelly",
+      "comparable_books": [
+        "Dark Sacred Night - Michael Connelly",
+        "The Late Show - Michael Connelly",
+        "City of Bones - Michael Connelly",
+        "Tidewater - Joseph Wambaugh"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Connelly fans",
+          "police procedural devotees",
+          "Los Angeles crime fiction lovers",
+          "Bosch TV series viewers"
+        ],
+        "negative": [
+          "readers new to the series (best after Dark Sacred Night)",
+          "those wanting slower literary crime"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Connelly's Bosch and Ballard novels are benchmarks of crime audiobook performance, with superb narration by Titus Welliver and Katherine Moennig.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Elysium Fire - Alastair Reynolds": {
       "title": "Elysium Fire",
       "author": "Alastair Reynolds",
       "series": "The Prefect Dreyfus Emergencies",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Citizens across the ten thousand habitats of the Glitter Band are dying without explanation — their neural implants catastrophically overheating in an escalating crisis dubbed 'Wildfire'. Prefect Tom Dreyfus must navigate both the baffling murders and a charismatic demagogue stoking secessionist unrest across the Band.",
+      "tone": "Cerebral, tense, morally complex, dark",
+      "pacing": "Fast",
+      "themes": [
+        "democracy and authoritarianism",
+        "identity and neural modification",
+        "political manipulation",
+        "institutional trust",
+        "artificial intelligence"
+      ],
+      "setting": "The Glitter Band — ten thousand orbital habitats around planet Yellowstone, 25th century",
+      "comparable_books": [
+        "Aurora Rising - Alastair Reynolds",
+        "Machine Vendetta - Alastair Reynolds",
+        "Revelation Space - Alastair Reynolds",
+        "Use of Weapons - Iain M. Banks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF readers",
+          "space opera fans",
+          "police procedural crossover interest",
+          "fans of Aurora Rising"
+        ],
+        "negative": [
+          "series newcomers without Aurora Rising background",
+          "readers wanting purely character-driven narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Aurora Rising - Alastair Reynolds": {
       "title": "Aurora Rising",
       "author": "Alastair Reynolds",
       "series": "The Prefect Dreyfus Emergencies",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Prefect Tom Dreyfus of the Panoply — law enforcement for the ten thousand habitats of the Glitter Band — investigates a mass-murder attack on a habitat and uncovers a vast conspiracy linked to a rogue AI named Aurora, who seeks nothing less than total dominion over the orbital civilisation.",
+      "tone": "Grimdark, cerebral, noir-inflected, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "democracy and authoritarianism",
+        "artificial intelligence",
+        "justice and power",
+        "identity",
+        "utopia under threat"
+      ],
+      "setting": "The Glitter Band — 25th century, thousands of orbital habitats around Yellowstone in Epsilon Eridani system; originally published as The Prefect (2007)",
+      "comparable_books": [
+        "Elysium Fire - Alastair Reynolds",
+        "Machine Vendetta - Alastair Reynolds",
+        "Revelation Space - Alastair Reynolds",
+        "Surface Detail - Iain M. Banks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fans",
+          "space opera devotees",
+          "police procedural crossover readers",
+          "Revelation Space universe enthusiasts"
+        ],
+        "negative": [
+          "readers wanting standalone entry to Revelation Space (better to start here)",
+          "those preferring soft SF or character-led stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Carved in Blood - Michael Bennett": {
       "title": "Carved in Blood",
       "author": "Michael Bennett",
       "series": "A Hana Westerman Thriller",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime / Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Hana Westerman's ex-husband Jaye is shot by an unknown gunman in an Auckland liquor store, the former Māori detective rejoins the police force to hunt the shooter — a pursuit that leads into organised crime, old covert operations, and a darkness far closer to home than she ever expected.",
+      "tone": "Propulsive, emotionally charged, culturally rich, socially conscious",
+      "pacing": "Fast",
+      "themes": [
+        "Māori culture and identity",
+        "colonialism and systemic racism",
+        "family and loss",
+        "justice and revenge",
+        "organised crime"
+      ],
+      "setting": "Contemporary Auckland, New Zealand, with deep roots in Māori culture",
+      "comparable_books": [
+        "Better the Blood - Michael Bennett",
+        "Return to Blood - Michael Bennett",
+        "The Dry - Jane Harper",
+        "Dark Emu in crime fiction context"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "crime fiction fans",
+          "New Zealand and Pacific setting lovers",
+          "Indigenous culture and identity themes",
+          "police procedural readers",
+          "fans of Better the Blood"
+        ],
+        "negative": [
+          "readers new to the series (best read in order)",
+          "those wanting purely plot-driven thrillers without cultural depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Return to Blood - Michael Bennett": {
