@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2189,
-  "total_pending": 2411,
+  "total_catalogued": 2209,
+  "total_pending": 2391,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -129512,137 +129512,248 @@
     },
     "The Word for World Is Forest - Ursula K. le Guin": {
       "title": "The Word for World Is Forest",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": "The Hainish Cycle",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "When Earth colonists on the forest world of Athshe begin enslaving and brutalising its indigenous inhabitants, one man's peaceful nature is shattered, igniting a violent resistance with far-reaching consequences. A searing novella-length examination of colonialism, ecological destruction, and the cycle of violence.",
+      "tone": "grave, allegorical, quietly furious",
+      "pacing": "Moderate",
+      "themes": [
+        "colonialism",
+        "ecological destruction",
+        "violence and nonviolence",
+        "indigenous resistance",
+        "exploitation"
+      ],
+      "setting": "The planet Athshe, a densely forested world; far future interstellar setting within the Hainish universe",
+      "comparable_books": [
+        "The Dispossessed - Ursula K. Le Guin",
+        "Heart of Darkness - Joseph Conrad",
+        "Avatar (thematic)",
+        "Annihilation - Jeff VanderMeer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anti-colonial themes",
+          "literary SF",
+          "ecological consciousness",
+          "morally complex antagonists",
+          "short and dense"
+        ],
+        "negative": [
+          "graphic violence",
+          "slow meditative pacing",
+          "no action-adventure focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Warcross - Marie Lu": {
       "title": "Warcross",
       "author": "Marie Lu",
       "series": "Warcross",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Teenage bounty hunter Emika Chen hacks into the global virtual-reality game Warcross to make ends meet, accidentally landing herself inside its opening tournament — and catching the eye of the game's reclusive billionaire creator, who recruits her to spy from within. A fast-paced YA cyberpunk thriller set in a near-future Tokyo.",
+      "tone": "propulsive, glitzy, romantic",
+      "pacing": "Fast",
+      "themes": [
+        "surveillance and privacy",
+        "class and inequality",
+        "identity",
+        "virtual reality",
+        "ambition"
+      ],
+      "setting": "Near-future Tokyo and the immersive virtual world of Warcross, early 21st century",
+      "comparable_books": [
+        "Ready Player One - Ernest Cline",
+        "Wildcard - Marie Lu",
+        "Caraval - Stephanie Garber",
+        "Legend - Marie Lu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced thriller",
+          "virtual reality setting",
+          "romance subplot",
+          "YA audience",
+          "heist/spy elements"
+        ],
+        "negative": [
+          "light worldbuilding",
+          "romance-heavy",
+          "YA tropes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast pacing and immersive set-pieces make this a natural fit for audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Tide of Black Steel - Anthony Ryan": {
       "title": "A Tide of Black Steel",
       "author": "Anthony Ryan",
       "series": "Age of Wrath",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the Norse-inspired realm of Ascarlia, ruled for centuries by the Sister Queens, a mysterious cult of tattooed warriors arrives by longship threatening to vanquish all before them; two rival siblings — Thera, the queens' servant, and her outcast brother Felnir — are drawn into the coming storm. A multi-POV grimdark epic set in the same world as The Covenant of Steel, beginning twenty years after those events.",
+      "tone": "grimdark, action-packed, mythologically rich",
+      "pacing": "Moderate",
+      "themes": [
+        "power and loyalty",
+        "sibling rivalry",
+        "Norse myth and legend",
+        "faith and fanaticism",
+        "war"
+      ],
+      "setting": "The fictional Viking-inspired land of Ascarlia; same world as the Covenant of Steel trilogy, set roughly 20 years later",
+      "comparable_books": [
+        "The Pariah - Anthony Ryan",
+        "The Wolf's Call - Anthony Ryan",
+        "Half a King - Joe Abercrombie",
+        "The Last Kingdom - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse-inspired fantasy",
+          "multiple POV",
+          "grimdark",
+          "rich worldbuilding",
+          "action sequences"
+        ],
+        "negative": [
+          "prior series context helpful",
+          "slow-burn opening",
+          "large cast"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Unreal and the Real - Ursula K. le Guin": {
       "title": "The Unreal and the Real",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Short Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A career-spanning author-selected collection of 39 short stories spanning realism and speculative fiction, ranging from earthbound tales set in small-town Oregon and revolutionary Europe to science-fictional Hainish and Earthsea settings. Originally published as two volumes (Where on Earth and Outer Space, Inner Lands) and later combined into one.",
+      "tone": "lyrical, humane, quietly satirical",
+      "pacing": "Slow",
+      "themes": [
+        "human connection",
+        "political resistance",
+        "gender and identity",
+        "myth and everyday life",
+        "speculative anthropology"
+      ],
+      "setting": "Various — American West, fictional Orsinia, the Hainish universe, Earthsea, and more; spanning mid-20th century to the early 21st",
+      "comparable_books": [
+        "The Wind's Twelve Quarters - Ursula K. Le Guin",
+        "Stories of Your Life and Others - Ted Chiang",
+        "Her Smoke Rose Up Forever - James Tiptree Jr."
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary short fiction",
+          "career retrospective",
+          "genre-crossing",
+          "feminist themes",
+          "lyrical prose"
+        ],
+        "negative": [
+          "no single narrative thread",
+          "some non-SFF realist stories",
+          "slow meditative pace"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Five Ways to Forgiveness - Ursula K. le Guin": {
       "title": "Five Ways to Forgiveness",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": "The Hainish Cycle",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Five linked novellas set on the twin planets Werel and Yeowe, exploring the aftermath of slavery and revolution through the eyes of those caught in the crossfire — including enslaved women, Ekumen ambassadors, and revolutionary leaders — asking what forgiveness costs and what it requires. An expanded version of the earlier Four Ways to Forgiveness, adding the fifth story 'Old Music and the Slave Women.'",
+      "tone": "lyrical, morally serious, compassionate",
+      "pacing": "Slow",
+      "themes": [
+        "slavery and abolition",
+        "patriarchy and gender",
+        "forgiveness and justice",
+        "colonialism",
+        "revolution"
+      ],
+      "setting": "The twin planets Werel and Yeowe, inhabited human colonies in the far future; part of the Hainish/Ekumen universe",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "The Dispossessed - Ursula K. Le Guin",
+        "Kindred - Octavia Butler",
+        "Parable of the Sower - Octavia Butler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist SF",
+          "interlocking novellas",
+          "anti-slavery themes",
+          "literary and philosophical",
+          "Hainish Cycle fans"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "emotionally heavy",
+          "no action-adventure focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Book Burner's Fall - Anthony Ryan": {
@@ -129650,53 +129761,96 @@
       "author": "Anthony Ryan",
       "series": "Raven's Shadow",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Epic Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set a century before the main Raven's Shadow trilogy, elite assassin Kestra Saero is lured back into service by the Seventh Order of the Faith with one mission: infiltrate a palace of horrors and kill King Lakril, history's infamous Book Burner, whose paranoid tyranny is destroying the Unified Realm. A tightly plotted dark fantasy novella of assassination and dark magic.",
+      "tone": "grimdark, tense, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "tyranny and resistance",
+        "loyalty and betrayal",
+        "dark magic",
+        "assassination",
+        "duty vs. conscience"
+      ],
+      "setting": "The Unified Realm, a medieval-inspired fantasy kingdom; set a century before the events of the Raven's Shadow trilogy",
+      "comparable_books": [
+        "Blood Song - Anthony Ryan",
+        "The Blade Itself - Joe Abercrombie",
+        "Bauchelain and Korbal Broach - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy novella",
+          "female assassin protagonist",
+          "quick read",
+          "Raven's Shadow universe"
+        ],
+        "negative": [
+          "prior series context enriches experience",
+          "very short"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Born of an Iron Storm - Anthony Ryan": {
       "title": "Born of an Iron Storm",
       "author": "Anthony Ryan",
       "series": "Age of Wrath",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the fall of the Sister Queens, Ascarlia lies exposed to conquest by the Nihlvarian invaders; Elvine works as a double agent from within the enemy's new government while Thera marshals loyalist forces and Felnir pursues a brutal path to kingship across the sea. The second book in the Norse-inspired Age of Wrath trilogy continues the multi-POV saga of bloody retribution and desperate resistance.",
+      "tone": "grimdark, action-packed, intrigue-laden",
+      "pacing": "Fast",
+      "themes": [
+        "occupation and resistance",
+        "leadership and doubt",
+        "war and its costs",
+        "loyalty",
+        "power and ambition"
+      ],
+      "setting": "The land of Ascarlia and surrounding Norse-inspired territories; same world as the Covenant of Steel trilogy",
+      "comparable_books": [
+        "A Tide of Black Steel - Anthony Ryan",
+        "The Martyr - Anthony Ryan",
+        "The Wolf's Call - Anthony Ryan",
+        "Half a War - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark Norse fantasy",
+          "multiple POV",
+          "intense battle sequences",
+          "political intrigue",
+          "series readers"
+        ],
+        "negative": [
+          "middle-book syndrome noted by some reviewers",
+          "requires Book 1 first",
+          "large ensemble cast"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Day of the Jackal - Frederick Forsyth": {
@@ -129704,26 +129858,47 @@
       "author": "Frederick Forsyth",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A meticulous, unnamed professional assassin — the Jackal — is hired by French extremists to kill President Charles de Gaulle in 1963, while a French detective races to uncover and stop the plot before it succeeds. A landmark procedural thriller celebrated for its documentary realism and unbearable suspense.",
+      "tone": "cold, propulsive, clinical",
+      "pacing": "Moderate",
+      "themes": [
+        "political assassination",
+        "cat and mouse",
+        "professional competence",
+        "institutional response",
+        "Cold War Europe"
+      ],
+      "setting": "France, England, and Europe, 1963; rooted in real historical context following the Algerian War",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Munich - Robert Harris",
+        "The Odessa File - Frederick Forsyth",
+        "From Russia with Love - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "procedural thriller",
+          "documentary realism",
+          "antihero protagonist",
+          "Cold War setting",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "slow procedural sections",
+          "emotionally detached tone",
+          "dated in places"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The procedural tension and cinematic pacing translate superbly to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The First Fifteen Lives of Harry August - Claire North": {
@@ -129731,269 +129906,489 @@
       "author": "Claire North",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Harry August is born, lives his life, dies — and wakes up at the beginning of his life again, retaining all memories of previous cycles. When a child brings a message from the future warning that the world is ending sooner with each iteration, Harry must use his centuries of accumulated knowledge to find the cause and stop it. A mind-bending, propulsive thriller about memory, time, and the nature of change.",
+      "tone": "propulsive, cerebral, melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "cyclical time",
+        "memory and identity",
+        "inevitability and free will",
+        "scientific ethics",
+        "community across time"
+      ],
+      "setting": "Primarily 20th-century England and Europe, cycled repeatedly across Harry's many lifetimes",
+      "comparable_books": [
+        "Recursion - Blake Crouch",
+        "The 7½ Deaths of Evelyn Hardcastle - Stuart Turton",
+        "Life After Life - Kate Atkinson",
+        "Dark Matter - Blake Crouch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "time loop concept",
+          "propulsive plotting",
+          "cerebral SF",
+          "emotionally resonant",
+          "standalone"
+        ],
+        "negative": [
+          "non-linear structure may disorient",
+          "slow early sections"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The reflective first-person narration and non-linear structure reward an attentive audio listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Empire of Gold - S. A. Chakraborty": {
       "title": "The Empire of Gold",
       "author": "S. A. Chakraborty",
       "series": "The Daevabad Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the conclusion to the Daevabad Trilogy, Nahri, Ali, and Dara each pursue their own desperate path as political alliances crumble and a catastrophic war threatens to consume both the magical city of Daevabad and the human world. A richly imagined epic drawing on Islamic history, mythology, and moral ambiguity.",
+      "tone": "lush, morally complex, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "colonialism and oppression",
+        "faith and disillusionment",
+        "political revolution",
+        "identity and belonging",
+        "sacrifice"
+      ],
+      "setting": "The magical city of Daevabad and 18th-century Egypt/Cairo; a world inspired by Islamic history and djinn mythology",
+      "comparable_books": [
+        "The City of Brass - S. A. Chakraborty",
+        "The Kingdom of Copper - S. A. Chakraborty",
+        "The Rage of Dragons - Evan Winter",
+        "A Master of Djinn - P. Djèlí Clark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Islamic-inspired fantasy",
+          "morally grey characters",
+          "political intrigue",
+          "rich worldbuilding",
+          "series conclusion"
+        ],
+        "negative": [
+          "requires reading Books 1–2 first",
+          "dense political plotting",
+          "slow at times"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The immersive world and multiple POV structure are beautifully served by the audio production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Coyote Road: Trickster Tales - Pat Murphy & Carolyn Dunn & Steve Berman & Nina Kiriki Hoffman & Christopher Barzak & Delia Sherman & Richard Bowes & Ellen Klages & Patricia A. McKillip & Theodora Goss & Charles de Lint & Katherine Vaz & Caroline Stevermer & Midori Snyder & Michael Cadnum & Ellen Kushner & Elizabeth Wein & Kim Antieau & Will Shetterly & Kelly Link & Holly Black & Carol Emshwiller & Jedediah Berry & Jeffrey Ford & Jane Yolen & Kij Johnson": {
       "title": "The Coyote Road: Trickster Tales",
-      "author": "Pat Murphy & Carolyn Dunn & Steve Berman & Nina Kiriki Hoffman & Christopher Barzak & Delia Sherman & Richard Bowes & Ellen Klages & Patricia A. McKillip & Theodora Goss & Charles de Lint & Katherine Vaz & Caroline Stevermer & Midori Snyder & Michael Cadnum & Ellen Kushner & Elizabeth Wein & Kim Antieau & Will Shetterly & Kelly Link & Holly Black & Carol Emshwiller & Jedediah Berry & Jeffrey Ford & Jane Yolen & Kij Johnson",
+      "author": "Ellen Datlow & Terri Windling (eds.); contributors include Kelly Link, Holly Black, Charles de Lint, Patricia A. McKillip, Jane Yolen, and others",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An anthology of 26 original stories and poems edited by Ellen Datlow and Terri Windling, each exploring trickster figures drawn from mythologies around the world — including Coyote, Loki, Anansi, Hermes, the Monkey King, and the kitsune — through the voices of some of the best contemporary fantasy writers. Sophisticated, literary, and wide-ranging in tone.",
+      "tone": "varied — playfully mischievous to pensively dark",
+      "pacing": "Slow",
+      "themes": [
+        "trickster mythology",
+        "folklore and folk tradition",
+        "transformation and chaos",
+        "identity and disguise",
+        "moral ambiguity"
+      ],
+      "setting": "Various settings worldwide — ancient Greece, the American South, Native American Southwest, Japan, modern cities, and more",
+      "comparable_books": [
+        "The Green Man - Ellen Datlow & Terri Windling (eds.)",
+        "The Faery Reel - Ellen Datlow & Terri Windling (eds.)",
+        "Trickster: Native American Tales - Matt Dembicki (ed.)",
+        "Strange Tales of the Faraway Tree - Various"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short fiction anthology",
+          "trickster mythology",
+          "diverse authors",
+          "literary fantasy",
+          "world folklore"
+        ],
+        "negative": [
+          "uneven anthology quality",
+          "some slow or obscure stories",
+          "no single narrative arc"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Helm of Midnight - Marina J. Lostetter": {
       "title": "The Helm of Midnight",
       "author": "Marina J. Lostetter",
       "series": "The Five Penalties",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the enchanted death mask of history's most notorious serial killer is stolen from the city of Lutador, Regulator Krona Hirvath must hunt a new killer who wears it — reliving Charbon's murders through three interwoven timelines. A fantasy-thriller hybrid blending police procedural, dark magic, and psychological horror.",
+      "tone": "atmospheric, dark, psychologically intense",
+      "pacing": "Moderate",
+      "themes": [
+        "evil and its origins",
+        "grief and trauma",
+        "justice and duty",
+        "magic and religion",
+        "systemic deception"
+      ],
+      "setting": "The fantastical city of Lutador, a richly imagined world reminiscent of Renaissance Europe with a unique metal-based magic system",
+      "comparable_books": [
+        "Mistborn - Brandon Sanderson",
+        "The Silence of the Lambs - Thomas Harris",
+        "City of Lies - Sam Hawke",
+        "The Bone Shard Daughter - Andrea Stewart"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fantasy-thriller hybrid",
+          "serial killer plot",
+          "multi-timeline structure",
+          "unique magic system",
+          "character-driven"
+        ],
+        "negative": [
+          "graphic murders",
+          "slow for pure epic fantasy readers",
+          "complex timeline jumping"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Left Hand of Darkness - Ursula K. le Guin": {
       "title": "The Left Hand of Darkness",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": "The Hainish Cycle",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A human envoy from the interstellar Ekumen arrives on the perpetually winter-locked planet Gethen, whose inhabitants are ambisexual — neither male nor female — to invite the world into the galactic community; his mission becomes a profound test of understanding, loyalty, and survival. A landmark Hugo and Nebula Award-winning novel interrogating gender, politics, and what it means to be human.",
+      "tone": "lyrical, philosophical, quietly profound",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "gender and sexuality",
+        "political power",
+        "loyalty and trust",
+        "the Other",
+        "human nature"
+      ],
+      "setting": "The planet Gethen (also called Winter), a permanently glaciated world; far-future interstellar context",
+      "comparable_books": [
+        "The Dispossessed - Ursula K. Le Guin",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Embassytown - China Miéville",
+        "Ancillary Justice - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gender-bending SF",
+          "literary and philosophical",
+          "world-building focused",
+          "Hugo/Nebula winner",
+          "feminist classic"
+        ],
+        "negative": [
+          "slow pacing",
+          "political intrigue over action",
+          "dense prose at times"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Le Guin's lyrical prose and the meditative journey at the heart of the novel make for a deeply immersive listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Martyr - Anthony Ryan": {
       "title": "The Martyr",
       "author": "Anthony Ryan",
       "series": "The Covenant of Steel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alwyn Scribe, now spymaster and sworn protector of Lady Evadine Courlain — a self-proclaimed risen martyr whose fanatical following has drawn the enmity of Crown and Covenant alike — is sent to suppress a rebellion in Alundia, where ancient secrets and deadly feuds spell war for the whole kingdom. A Publishers Weekly starred-review sequel blending grimdark military fantasy with religious politics.",
+      "tone": "grimdark, propulsive, intrigue-driven",
+      "pacing": "Fast",
+      "themes": [
+        "faith and fanaticism",
+        "loyalty and betrayal",
+        "war and its consequences",
+        "power and manipulation",
+        "moral ambiguity"
+      ],
+      "setting": "The Kingdom of Albermaine, a medieval-inspired fantasy world; primarily the Duchy of Alundia",
+      "comparable_books": [
+        "The Pariah - Anthony Ryan",
+        "The Traitor - Anthony Ryan",
+        "Before They Are Hanged - Joe Abercrombie",
+        "The Heroes - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "morally grey protagonist",
+          "religious intrigue",
+          "fast-paced battles",
+          "series readers"
+        ],
+        "negative": [
+          "requires Book 1 first",
+          "heavy on siege craft",
+          "darker tone throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Kingdom of Copper - S. A. Chakraborty": {
       "title": "The Kingdom of Copper",
       "author": "S. A. Chakraborty",
       "series": "The Daevabad Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Five years after the events of The City of Brass, Nahri has settled uncomfortably into life in Daevabad, while Ali is exiled to the desert and Dara is resurrected with a dangerous new power and purpose — all three drawn back into the city's boiling political and sectarian tensions. A richly layered middle volume deepening the world's Islamic-inspired mythology and moral complexity.",
+      "tone": "lush, intrigue-laden, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "oppression and resistance",
+        "identity and heritage",
+        "political power",
+        "faith and doubt",
+        "conflicting loyalties"
+      ],
+      "setting": "The magical djinn city of Daevabad; 18th-century world inspired by Islamic mythology and history",
+      "comparable_books": [
+        "The City of Brass - S. A. Chakraborty",
+        "The Empire of Gold - S. A. Chakraborty",
+        "The Rage of Dragons - Evan Winter",
+        "A Master of Djinn - P. Djèlí Clark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Islamic-inspired fantasy",
+          "lush worldbuilding",
+          "morally grey cast",
+          "political intrigue",
+          "multiple POV"
+        ],
+        "negative": [
+          "requires Book 1 first",
+          "dense political plotting",
+          "some pacing issues mid-book"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The immersive prose and world detail are greatly enhanced by the acclaimed audio production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Teeth of Dawn - Marina J. Lostetter": {
       "title": "The Teeth of Dawn",
       "author": "Marina J. Lostetter",
       "series": "The Five Penalties",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Krona Hirvath and a growing rebellion must free the ancient gods caged by the Savior in order to overthrow his grip on the valley of Arkensyre — while a parallel storyline in a distant city with its own stolen magic converges toward the same crisis. The concluding volume of The Five Penalties trilogy.",
+      "tone": "dark, ambitious, conceptually dense",
+      "pacing": "Moderate",
+      "themes": [
+        "oppression and revolution",
+        "gods and power",
+        "identity and transformation",
+        "systemic injustice",
+        "truth and illusion"
+      ],
+      "setting": "The fantastical valley of Arkensyre and a parallel technologically advanced city; the same world as The Helm of Midnight",
+      "comparable_books": [
+        "The Helm of Midnight - Marina J. Lostetter",
+        "The Cage of Dark Hours - Marina J. Lostetter",
+        "Mistborn - Brandon Sanderson",
+        "The Bone Shard Emperor - Andrea Stewart"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusion",
+          "unique magic system",
+          "dark fantasy",
+          "queer representation",
+          "ambitious worldbuilding"
+        ],
+        "negative": [
+          "requires Books 1–2",
+          "more ideas-driven than character-driven in final act",
+          "complex parallel timelines"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Telling - Ursula K. le Guin": {
       "title": "The Telling",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": "The Hainish Cycle",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ekumen observer Sutty arrives on the planet Aka to find its ancient storytelling culture nearly eradicated by a totalitarian modernisation programme, and must seek the last practitioners of the Telling in the mountains before the tradition is lost forever. A quiet, meditative novel about cultural memory, resistance, and what is lost when a society suppresses its own past.",
+      "tone": "lyrical, contemplative, quietly melancholic",
+      "pacing": "Slow",
+      "themes": [
+        "cultural erasure",
+        "storytelling and memory",
+        "totalitarianism",
+        "spiritual ecology",
+        "the role of narrative"
+      ],
+      "setting": "The planet Aka, a technologically modernised world rapidly abandoning its ancient traditions; far-future Hainish universe",
+      "comparable_books": [
+        "The Dispossessed - Ursula K. Le Guin",
+        "Five Ways to Forgiveness - Ursula K. Le Guin",
+        "Oryx and Crake - Margaret Atwood",
+        "The Memory Police - Yoko Ogawa"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "cultural anthropology themes",
+          "feminist perspective",
+          "Hainish Cycle",
+          "quiet and thoughtful"
+        ],
+        "negative": [
+          "very slow pacing",
+          "minimal plot action",
+          "introspective over dramatic"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Traitor - Anthony Ryan": {
       "title": "The Traitor",
       "author": "Anthony Ryan",
       "series": "The Covenant of Steel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alwyn Scribe, now a knight at the right hand of the Risen Martyr Evadine, must finally confront the terrifying reality of what she has become as puritanical zeal replaces her former compassion — forced to choose between the woman he loves and what is right. A Publishers Weekly starred-review conclusion to the Covenant of Steel trilogy.",
+      "tone": "grimdark, tragic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "love and betrayal",
+        "fanaticism and power",
+        "personal cost of loyalty",
+        "moral courage",
+        "redemption"
+      ],
+      "setting": "The Kingdom of Albermaine, medieval-inspired fantasy world; conclusion of the trilogy",
+      "comparable_books": [
+        "The Martyr - Anthony Ryan",
+        "Last Argument of Kings - Joe Abercrombie",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Blood Song - Anthony Ryan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark trilogy conclusion",
+          "morally grey protagonist",
+          "cult-of-personality villainy",
+          "propulsive pacing",
+          "emotional payoff"
+        ],
+        "negative": [
+          "requires full trilogy",
+          "some readers felt the ending underwhelming"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Rape of Nanking - Iris Chang": {
@@ -130001,53 +130396,98 @@
       "author": "Iris Chang",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A groundbreaking account of the 1937 Japanese Imperial Army's six-week campaign of mass murder, rape, and destruction in the then-Chinese capital of Nanking, drawing on survivor testimonies, diaries, and documentary evidence largely unknown in the West. Also covers the International Safety Zone established by Westerners that saved hundreds of thousands of lives.",
+      "tone": "harrowing, documentary, urgent",
+      "pacing": "Moderate",
+      "themes": [
+        "war crimes and atrocity",
+        "historical memory and forgetting",
+        "human rights",
+        "genocide and massacre",
+        "the politics of historical denial"
+      ],
+      "setting": "Nanking (now Nanjing), China, December 1937 – January 1938; Second Sino-Japanese War",
+      "comparable_books": [
+        "Night - Elie Wiesel",
+        "Hiroshima - John Hersey",
+        "A Long Way Gone - Ishmael Beah",
+        "The Diary of a Young Girl - Anne Frank"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative history",
+          "uncovering forgotten atrocities",
+          "essential WWII scholarship",
+          "survivor testimonies",
+          "human rights focus"
+        ],
+        "negative": [
+          "extremely graphic and disturbing content",
+          "emotionally devastating",
+          "contested by some historians on specific figures"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "And Put Away Childish Things - Adrian Tchaikovsky": {
       "title": "And Put Away Childish Things",
       "author": "Adrian Tchaikovsky",
       "series": "Terrible Worlds: Destinations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Harry Bodie, a failing children's TV presenter and grandson of the author of the beloved Underhill fantasy books, discovers that Underhill is real — and far darker and more desperate than the cosy stories described — when its denizens grow tired of waiting and come looking for the promised heir. A darkly comic, horror-tinged portal fantasy novella that interrogates childhood imagination and generational trauma.",
+      "tone": "darkly comic, creepy, humane",
+      "pacing": "Fast",
+      "themes": [
+        "portal fantasy subversion",
+        "generational trauma",
+        "childhood and growing up",
+        "the purpose of fantasy",
+        "family legacy"
+      ],
+      "setting": "Contemporary London (circa 2020) and the decaying fantasy realm of Underhill; a darkly reimagined Narnia-like world",
+      "comparable_books": [
+        "Every Heart a Doorway - Seanan McGuire",
+        "The Magicians - Lev Grossman",
+        "Piranesi - Susanna Clarke",
+        "Elder Race - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "portal fantasy deconstruction",
+          "dark comedy",
+          "novella length",
+          "BSFA award winner",
+          "Narnia-inspired"
+        ],
+        "negative": [
+          "novella — very short",
+          "COVID-era setting may date it",
+          "comedy may not suit all tastes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The comedic voice and brisk pacing make this a natural and entertaining audio listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Expert System's Brother - Adrian Tchaikovsky": {
