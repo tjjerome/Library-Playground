@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2209,
-  "total_pending": 2391,
+  "total_catalogued": 2228,
+  "total_pending": 2372,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -130493,190 +130493,336 @@
     "The Expert System's Brother - Adrian Tchaikovsky": {
       "title": "The Expert System's Brother",
       "author": "Adrian Tchaikovsky",
-      "series": "The Expert System's Brother",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Expert System",
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After an accident severs him from his village's biological control system, young Handry is cast out as an outcast and must wander a hostile world — gradually uncovering the forgotten science-fictional truth behind his seemingly fantasy society of 'ghosts' and expert systems.",
+      "tone": "Quietly unsettling, coming-of-age, science-fantasy blend",
+      "pacing": "Moderate",
+      "themes": [
+        "colonisation and cultural memory",
+        "technology mistaken for magic",
+        "exile and belonging",
+        "blind faith vs. knowledge"
+      ],
+      "setting": "A far-future human colony world where settlers have regressed to a quasi-medieval existence, unaware of their technological origins",
+      "comparable_books": [
+        "Elder Race - Adrian Tchaikovsky",
+        "Aurora - Kim Stanley Robinson",
+        "A Psalm for the Wild-Built - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "science-fantasy genre blending",
+          "unreliable world-building reveal",
+          "compact novella length",
+          "coming-of-age arc",
+          "body horror elements",
+          "ecological alien world"
+        ],
+        "negative": [
+          "thin characterisation at novella length",
+          "open-ended ending",
+          "familiar 'lost colony' premise"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by the author Adrian Tchaikovsky, who is widely praised for his self-narration across his novella line.",
+      "content_flags": [
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "One Day All This Will Be Yours - Adrian Tchaikovsky": {
       "title": "One Day All This Will Be Yours",
       "author": "Adrian Tchaikovsky",
       "series": "Terrible Worlds: Destinations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The sole survivor of the Causality War — a conflict that shattered time itself — has retreated to a farm at the end of history with his pet allosaurus, determined to prevent time travel from ever being rediscovered by cheerfully murdering every time traveller who arrives.",
+      "tone": "Darkly comic, satirical, wryly misanthropic",
+      "pacing": "Fast",
+      "themes": [
+        "futility of war",
+        "time travel paradox",
+        "misanthropy and isolation",
+        "the horror of utopia",
+        "self-appointed guardianship"
+      ],
+      "setting": "The far end of time, after the Causality War has shattered history; a pastoral farm serving as a bottleneck for all time travel",
+      "comparable_books": [
+        "This Is How You Lose the Time War - Amal El-Mohtar & Max Gladstone",
+        "The End of Eternity - Isaac Asimov",
+        "Slaughterhouse-Five - Kurt Vonnegut"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark comedy",
+          "time travel satire",
+          "unreliable/snarky first-person narrator",
+          "fast pacing",
+          "self-narrated audiobook",
+          "social commentary"
+        ],
+        "negative": [
+          "plot logic deliberately subordinate to message",
+          "slight repetitiveness mid-book",
+          "no traditional protagonist arc"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by the author himself; the snarky first-person voice is widely praised as perfectly suited to self-narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Walking to Aldebaran - Adrian Tchaikovsky": {
       "title": "Walking to Aldebaran",
       "author": "Adrian Tchaikovsky",
       "series": "Terrible Worlds: Destinations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "British astronaut Gary Rendell is lost and alone in the labyrinthine tunnels of a vast alien artefact discovered in the Oort Cloud, recounting in darkly humorous alternating chapters both how his expedition arrived and his increasingly disturbing present situation.",
+      "tone": "Darkly comic, Kafkaesque, escalating cosmic horror",
+      "pacing": "Fast",
+      "themes": [
+        "isolation and survival",
+        "cosmic horror",
+        "human hubris",
+        "the unknowable alien",
+        "unreliable narration"
+      ],
+      "setting": "Near-future; inside a moon-sized alien artefact (nicknamed 'the Frog God') at the edge of the solar system",
+      "comparable_books": [
+        "The Martian - Andy Weir",
+        "Roadside Picnic - Arkady & Boris Strugatsky",
+        "Annihilation - Jeff VanderMeer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror-inflected SF",
+          "unreliable narrator with a twist ending",
+          "wry British humour",
+          "cosmic horror",
+          "compact novella",
+          "self-narrated audiobook"
+        ],
+        "negative": [
+          "non-linear structure may disorient",
+          "twist considered predictable by some",
+          "light on hard SF detail"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by the author; widely recommended in audio format and praised as one of Tchaikovsky's best self-narrations.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Borders of Infinity - Lois McMaster Bujold": {
       "title": "Borders of Infinity",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6 (anthology; framing story set between Brothers in Arms and Mirror Dance)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A framing story — in which Miles Vorkosigan defends his expensive past missions to his suspicious boss — ties together three novellas: a murder investigation on Barrayar, an undercover rescue on the criminal planet Jackson's Whole, and a daring mass prison break from a Cetagandan POW camp.",
+      "tone": "Witty, propulsive, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "justice and moral courage",
+        "disability and ingenuity",
+        "loyalty and sacrifice",
+        "political intrigue",
+        "military ethics"
+      ],
+      "setting": "The Vorkosigan universe — spanning the feudal planet Barrayar, the criminal world of Jackson's Whole, and a Cetagandan prison camp in deep space",
+      "comparable_books": [
+        "Old Man's War - John Scalzi",
+        "A Long Way to a Small Angry Planet - Becky Chambers",
+        "The Warrior's Apprentice - Lois McMaster Bujold"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "witty dialogue",
+          "underdog protagonist",
+          "morally complex plotting",
+          "space opera with heart",
+          "Hugo/Nebula award-winning content",
+          "great entry point for the series"
+        ],
+        "negative": [
+          "anthology format feels episodic",
+          "best read with prior Vorkosigan context",
+          "framing device can feel artificial"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Grover Gardner's narration of the Vorkosigan series is legendary among audiobook fans and consistently praised.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Barrayar - Lois McMaster Bujold": {
       "title": "Barrayar",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cordelia Naismith has married Barrayaran Admiral Aral Vorkosigan and must navigate the treacherous politics of his deeply traditional, militaristic world — while carrying their unborn son Miles, whose life is threatened by a political assassination attempt.",
+      "tone": "Propulsive, emotionally charged, political thriller with warmth",
+      "pacing": "Fast",
+      "themes": [
+        "culture clash",
+        "motherhood and sacrifice",
+        "political intrigue",
+        "disability and social prejudice",
+        "outsider perspective"
+      ],
+      "setting": "The feudal, militaristic planet Barrayar, a world recently reconnected to galactic civilisation after centuries of isolation",
+      "comparable_books": [
+        "Shards of Honor - Lois McMaster Bujold",
+        "A Memory Called Empire - Arkady Martine",
+        "Ancillary Justice - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "strong female protagonist",
+          "political intrigue",
+          "propulsive pacing",
+          "Hugo Award winner (Best Novel 1992)",
+          "emotionally resonant",
+          "world-building through outsider eyes"
+        ],
+        "negative": [
+          "heavy with Barrayaran political context",
+          "less Miles-centric than main sequence",
+          "sequel to Shards of Honor"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of Grover Gardner's acclaimed Vorkosigan audiobook series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Brothers in Arms - Lois McMaster Bujold": {
       "title": "Brothers in Arms",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Miles Vorkosigan arrives on Earth for shore leave with his Dendarii mercenaries, only to discover a sinister conspiracy involving his own clone — secretly raised as an assassin to destroy him and his father.",
+      "tone": "Propulsive, witty, spy-thriller energy",
+      "pacing": "Fast",
+      "themes": [
+        "identity and the self",
+        "loyalty and betrayal",
+        "the burden of family legacy",
+        "cloning and personhood",
+        "double lives"
+      ],
+      "setting": "Earth (a somewhat backwater planet in the Vorkosigan universe) and political intrigue centred on the Barrayaran embassy",
+      "comparable_books": [
+        "The Vor Game - Lois McMaster Bujold",
+        "Mirror Dance - Lois McMaster Bujold",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "spy thriller plotting",
+          "identity drama",
+          "witty fast-paced prose",
+          "character depth",
+          "introduces Miles's clone Mark"
+        ],
+        "negative": [
+          "best appreciated mid-series",
+          "requires prior Miles context to fully land"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of Grover Gardner's acclaimed Vorkosigan audiobook series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Vor Game - Lois McMaster Bujold": {
       "title": "The Vor Game",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Newly commissioned ensign Miles Vorkosigan is posted to a remote arctic base, where a confrontation with a criminal commanding officer triggers a chain of events that lands him back with his mercenaries — and tasked with rescuing the runaway Emperor Gregor.",
+      "tone": "Witty, fast-paced, adventure-driven",
+      "pacing": "Fast",
+      "themes": [
+        "duty vs. conscience",
+        "loyalty",
+        "the chaos of improvisation",
+        "political power",
+        "growing up"
+      ],
+      "setting": "The Vorkosigan universe — from a frigid Barrayaran military outpost to the mercenary fleets of the Hegen Hub",
+      "comparable_books": [
+        "The Warrior's Apprentice - Lois McMaster Bujold",
+        "Old Man's War - John Scalzi",
+        "Ender's Game - Orson Scott Card"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Hugo Award winner (Best Novel 1991)",
+          "fast adventure pacing",
+          "charismatic protagonist",
+          "space opera",
+          "strong character voice"
+        ],
+        "negative": [
+          "two-part structure can feel disjointed",
+          "lighter in emotional depth than later books"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of Grover Gardner's acclaimed Vorkosigan audiobook series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "To Ride Hell’s Chasm - Janny Wurts": {
@@ -130710,189 +130856,336 @@
       "title": "Mirror Dance",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Miles's clone-brother Mark impulsively launches a rogue mission to free cloned children from Jackson's Whole, catastrophically triggering Miles's apparent death — leaving Mark to grapple with his own fractured identity while the Vorkosigan family searches for Miles.",
+      "tone": "Dark, emotionally intense, psychologically complex",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and selfhood",
+        "trauma and recovery",
+        "family and belonging",
+        "the nature of heroism",
+        "cloning and personhood"
+      ],
+      "setting": "The criminal planet Jackson's Whole, Barrayar, and a cryogenic fugue — spanning the broader Vorkosigan universe",
+      "comparable_books": [
+        "Memory - Lois McMaster Bujold",
+        "Brothers in Arms - Lois McMaster Bujold",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Hugo Award winner (Best Novel 1995)",
+          "deeply emotional and character-driven",
+          "psychological depth",
+          "darker than earlier Miles books",
+          "Mark as a fascinating anti-hero"
+        ],
+        "negative": [
+          "requires full series context to appreciate",
+          "significantly darker and slower than earlier Vorkosigan entries",
+          "trauma content is graphic"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of Grover Gardner's acclaimed Vorkosigan audiobook series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Cetaganda - Lois McMaster Bujold": {
       "title": "Cetaganda",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Miles and his cousin Ivan are sent on a routine diplomatic mission to the Cetagandan Empire for an imperial funeral, only to stumble into a deadly eugenic conspiracy that could destabilise an entire star empire.",
+      "tone": "Witty, light, cozy-mystery energy with space opera backdrop",
+      "pacing": "Moderate",
+      "themes": [
+        "genetic engineering and eugenics",
+        "political intrigue",
+        "diplomacy and blundering",
+        "alien social structures",
+        "hubris"
+      ],
+      "setting": "The homeworld of the Cetagandan Empire — a sophisticated, genetically stratified interstellar power and Barrayar's former enemy",
+      "comparable_books": [
+        "A Morbid Taste for Bones - Ellis Peters",
+        "The Vor Game - Lois McMaster Bujold",
+        "Shards of Honour - Lois McMaster Bujold"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy diplomatic mystery",
+          "witty Miles/Ivan banter",
+          "rich world-building",
+          "accessible side-entry point",
+          "light adventure pacing"
+        ],
+        "negative": [
+          "lighter and less emotionally impactful than core Miles novels",
+          "Ivan is comic relief rather than a deep character",
+          "can feel like a pleasant detour"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of Grover Gardner's acclaimed Vorkosigan audiobook series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Memory - Lois McMaster Bujold": {
       "title": "Memory",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a seizure causes Miles to botch a mission and then lie about it to ImpSec, he is discharged from his covert career — and must reinvent himself entirely while simultaneously solving a conspiracy within Barrayaran imperial intelligence.",
+      "tone": "Emotionally resonant, introspective, pivotal turning-point energy",
+      "pacing": "Moderate",
+      "themes": [
+        "identity crisis and reinvention",
+        "integrity and consequences of lying",
+        "loyalty and institutional trust",
+        "disability and adaptation",
+        "grief and loss"
+      ],
+      "setting": "The planet Barrayar and its imperial capital — the Vorkosigan series' political and emotional heartland",
+      "comparable_books": [
+        "A Civil Campaign - Lois McMaster Bujold",
+        "Komarr - Lois McMaster Bujold",
+        "Mirror Dance - Lois McMaster Bujold"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series-defining turning point",
+          "deep character introspection",
+          "emotionally rewarding",
+          "mystery plot with personal stakes",
+          "beloved by long-term fans"
+        ],
+        "negative": [
+          "requires full series investment to hit hardest",
+          "slower and more internal than earlier books",
+          "not a good entry point"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Part of Grover Gardner's acclaimed Vorkosigan audiobook series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Made Things - Adrian Tchaikovsky": {
       "title": "Made Things",
       "author": "Adrian Tchaikovsky",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Made Things",
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Coppelia, an orphaned street thief and puppeteer in a mage-ruled steampunk city, teams up with her tiny living homunculus companions to survive a dangerous heist — and uncovers a threat to the city itself.",
+      "tone": "Charming, fast-paced, gritty-whimsical, with class-conscious undertones",
+      "pacing": "Fast",
+      "themes": [
+        "class and power",
+        "found family",
+        "what makes us human",
+        "loyalty among outcasts",
+        "the disenfranchised fighting back"
+      ],
+      "setting": "Loretz — a grimy, mage-dominated steampunk fantasy city reminiscent of a gas-lamp Victorian setting",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Legends & Lattes - Travis Baldree",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "heist fantasy",
+          "compact novella",
+          "charming characters",
+          "witty prose",
+          "steampunk setting"
+        ],
+        "negative": [
+          "world-building depth limited by novella length",
+          "some readers want more story than its short page count allows",
+          "lighter fare by Tchaikovsky standards"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dark Sacred Night - Michael Connelly": {
       "title": "Dark Sacred Night",
       "author": "Michael Connelly",
       "series": "Renée Ballard",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "LAPD detective Renée Ballard catches a retired Harry Bosch rifling through old case files at Hollywood Station; the two forge a prickly partnership to reinvestigate the cold-case murder of a teenage runaway, uncovering a predator hiding in plain sight.",
+      "tone": "Gritty, tense, character-driven procedural",
+      "pacing": "Moderate",
+      "themes": [
+        "justice for forgotten victims",
+        "institutional barriers",
+        "unlikely partnership",
+        "obsession and justice",
+        "the cost of perseverance"
+      ],
+      "setting": "Contemporary Los Angeles — Hollywood Division night shift, cold-case archives, and the city's darker corners",
+      "comparable_books": [
+        "The Late Show - Michael Connelly",
+        "The Crossing - Michael Connelly",
+        "In the Woods - Tana French"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dual protagonist structure",
+          "procedural with character depth",
+          "LA crime atmosphere",
+          "crossover event between two beloved characters",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "requires knowledge of both Ballard and Bosch series for full impact",
+          "dark subject matter including murdered child"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Crossing - Michael Connelly": {
       "title": "The Crossing",
       "author": "Michael Connelly",
       "series": "Harry Bosch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 18",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired LAPD detective Harry Bosch reluctantly agrees to help his half-brother Mickey Haller defend a client accused of murder, crossing the line from law enforcement to defence — and uncovering a conspiracy that leads back to corruption inside the LAPD.",
+      "tone": "Taut, morally complex, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "justice vs. the system",
+        "moral compromise",
+        "loyalty to family",
+        "institutional corruption",
+        "the blurred line between guilt and innocence"
+      ],
+      "setting": "Contemporary Los Angeles — courtrooms, crime scenes, and the back corridors of the LAPD",
+      "comparable_books": [
+        "The Lincoln Lawyer - Michael Connelly",
+        "Two Kinds of Truth - Michael Connelly",
+        "The Drop - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Bosch/Haller crossover",
+          "fast procedural pacing",
+          "moral dilemma at the core",
+          "LAPD corruption thriller",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "benefits from familiarity with both Bosch and Haller series",
+          "franchise-feel crossover may not satisfy readers new to either character"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Burning Room - Michael Connelly": {
       "title": "The Burning Room",
       "author": "Michael Connelly",
       "series": "Harry Bosch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Harry Bosch, now partnered with rookie detective Lucia Soto, investigates a decades-old cold case when a man dies from a bullet wound that has been lodged in his spine for ten years — a trail that leads to a dark chapter in LA's past.",
+      "tone": "Gritty, methodical, melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "justice for the forgotten",
+        "mentorship and legacy",
+        "cold cases and buried truth",
+        "LAPD culture",
+        "the persistence of injustice"
+      ],
+      "setting": "Contemporary Los Angeles — cold-case archives, the Open-Unsolved Unit, and the city's Latinx communities",
+      "comparable_books": [
+        "The Drop - Michael Connelly",
+        "The Black Box - Michael Connelly",
+        "The Poet - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "procedural depth",
+          "strong mentorship dynamic",
+          "cold case thriller",
+          "rich LA atmosphere",
+          "emotional resonance"
+        ],
+        "negative": [
+          "slower methodical pacing than some Bosch entries",
+          "best appreciated mid-to-late series",
+          "cold case plotting may feel familiar to genre readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Dispossessed - Ursula K. le Guin": {
@@ -130900,107 +131193,195 @@
       "author": "Ursula K. le Guin",
       "series": "The Hainish Cycle",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Shevek, a brilliant physicist from the anarchist moon Anarres, travels to the opulent sister-planet Urras in hopes of sharing his revolutionary theory of time — and is forced to confront the compromises, hypocrisies, and freedoms of both worlds.",
+      "tone": "Meditative, morally serious, deeply humanist",
+      "pacing": "Slow",
+      "themes": [
+        "anarchism vs. capitalism",
+        "freedom and constraint",
+        "the nature of time and physics",
+        "exile and belonging",
+        "utopia and its costs"
+      ],
+      "setting": "Twin worlds — the barren, anarchist moon Anarres and the lush, stratified planet Urras — in the far-future Hainish universe",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. le Guin",
+        "Parable of the Sower - Octavia E. Butler",
+        "The Word for World is Forest - Ursula K. le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "philosophical depth",
+          "political thought experiment",
+          "Hugo and Nebula winner",
+          "non-linear dual narrative",
+          "timeless themes"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "ideas-driven over plot-driven",
+          "challenging political philosophy may feel didactic to some",
+          "no action thriller elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Late Show - Michael Connelly": {
       "title": "The Late Show",
       "author": "Michael Connelly",
       "series": "Renée Ballard",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "LAPD detective Renée Ballard, exiled to the unglamorous overnight 'late show' shift after filing a harassment complaint against her boss, finds herself unable to let go of two cases — a brutal nightclub shooting and the beating of a female sex worker — despite official pressure to hand them off.",
+      "tone": "Gritty, fierce, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "institutional sexism",
+        "justice for the marginalised",
+        "perseverance against the system",
+        "the human cost of policing",
+        "night-shift Los Angeles"
+      ],
+      "setting": "Contemporary Los Angeles — the Hollywood Division overnight shift, neon-lit crime scenes, and the LAPD's internal politics",
+      "comparable_books": [
+        "Dark Sacred Night - Michael Connelly",
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith",
+        "In the Woods - Tana French"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "strong female protagonist",
+          "LAPD procedural authenticity",
+          "fast pacing",
+          "LA noir atmosphere",
+          "feminist themes in crime fiction",
+          "great series entry point"
+        ],
+        "negative": [
+          "darker subject matter including sexual violence",
+          "some procedural genre conventions",
+          "Bosch universe baggage not necessary but rewarding"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Gods of Guilt - Michael Connelly": {
       "title": "The Gods of Guilt",
       "author": "Michael Connelly",
       "series": "Mickey Haller",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Defence attorney Mickey Haller takes on the murder case of a former client — a sex worker he once helped go straight — whose death may be connected to a federal drug operation and a case from his own past.",
+      "tone": "Slick, morally complex, courtroom-thriller energy",
+      "pacing": "Fast",
+      "themes": [
+        "guilt and moral responsibility",
+        "justice within a flawed system",
+        "the ethics of defence law",
+        "loyalty to clients",
+        "corruption and drug trafficking"
+      ],
+      "setting": "Contemporary Los Angeles — courtrooms, legal back-rooms, and the street-level criminal world",
+      "comparable_books": [
+        "The Lincoln Lawyer - Michael Connelly",
+        "The Brass Verdict - Michael Connelly",
+        "The Reversal - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "courtroom drama",
+          "morally grey protagonist",
+          "propulsive legal thriller",
+          "sharp plotting",
+          "LA crime atmosphere"
+        ],
+        "negative": [
+          "benefits from reading earlier Haller novels",
+          "defence attorney protagonist may frustrate readers who prefer police procedurals"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Two Kinds of Truth - Michael Connelly": {
       "title": "Two Kinds of Truth",
       "author": "Michael Connelly",
       "series": "Harry Bosch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 20",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired Harry Bosch, working cold cases for the San Fernando PD, is dragged back into his past when an old conviction is challenged — while simultaneously investigating an opioid pill-mill murder that puts him undercover and in mortal danger.",
+      "tone": "Gritty, propulsive, with an undercurrent of elegiac nostalgia",
+      "pacing": "Fast",
+      "themes": [
+        "justice vs. legal truth",
+        "the opioid crisis",
+        "past sins and accountability",
+        "retirement and purpose",
+        "institutional corruption"
+      ],
+      "setting": "Contemporary Los Angeles and the San Fernando Valley — cold-case offices, opioid pill mills, and the courtroom",
+      "comparable_books": [
+        "The Crossing - Michael Connelly",
+        "Dark Sacred Night - Michael Connelly",
+        "The Drop - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dual-plot propulsive structure",
+          "opioid crisis topicality",
+          "Bosch's personal history under threat",
+          "action-heavy undercover sequence",
+          "great late-series entry"
+        ],
+        "negative": [
+          "best read after significant series investment",
+          "some fans feel the dual plot dilutes focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Paper Towns - John Green": {
@@ -131008,26 +131389,48 @@
       "author": "John Green",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Young Adult Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After his enigmatic neighbour Margo Roth Spiegelman takes high-schooler Quentin on an all-night revenge spree, she vanishes — leaving him a trail of literary clues and obsessing over who she really is as he drives across the country to find her.",
+      "tone": "Wistful, romantic, intellectually playful, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "idealisation vs. reality in love",
+        "identity and self-knowledge",
+        "coming of age",
+        "friendship and belonging",
+        "the gap between image and person"
+      ],
+      "setting": "Contemporary suburban Orlando, Florida, and a cross-country road trip across the American South and Midwest",
+      "comparable_books": [
+        "Looking for Alaska - John Green",
+        "An Abundance of Katherines - John Green",
+        "The Perks of Being a Wallflower - Stephen Chbosky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary YA",
+          "road trip adventure",
+          "intellectual coming-of-age",
+          "mystery element",
+          "witty dialogue",
+          "emotionally resonant ending"
+        ],
+        "negative": [
+          "male gaze / manic-pixie-dream-girl critique applies",
+          "slower second act",
+          "appeal is primarily teen/young adult",
+          "not action-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Wrong Side of Goodbye - Michael Connelly": {
