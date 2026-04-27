@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2826,
-  "total_pending": 1774,
+  "total_catalogued": 2846,
+  "total_pending": 1754,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -160484,81 +160484,146 @@
       "title": "Stormbird",
       "author": "Conn Iggulden",
       "series": "Wars of the Roses",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1437, the pious and frail Henry VI ascends the English throne, dependent on his advisers to keep the kingdom together. As France is lost and rebellion stirs at home, Richard, Duke of York, begins to challenge Lancastrian rule — setting the stage for the Wars of the Roses.",
+      "tone": "gritty, visceral, politically driven",
+      "pacing": "Moderate",
+      "themes": [
+        "power and ambition",
+        "dynastic rivalry",
+        "loyalty",
+        "medieval warfare",
+        "political intrigue"
+      ],
+      "setting": "15th-century England and France, 1437–1454, during the early stirrings of the Wars of the Roses",
+      "comparable_books": [
+        "The Pale Horseman - Bernard Cornwell",
+        "The White Queen - Philippa Gregory",
+        "Wolf Hall - Hilary Mantel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV historical fiction",
+          "political intrigue",
+          "medieval battle scenes",
+          "morally grey characters",
+          "dynastic saga"
+        ],
+        "negative": [
+          "romance-focused readers",
+          "slow-burn character studies without action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tai-Pan - James Clavell": {
       "title": "Tai-Pan",
       "author": "James Clavell",
       "series": "Asian Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 (chronological Book 1)",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Hong Kong in 1841 during its founding as a British colony, Dirk Struan — the all-powerful 'Tai-Pan' of the most formidable trading company in the Far East — fights to establish his dynasty as the undisputed master of the Orient against rivals, rivals and political forces.",
+      "tone": "sweeping, epic, morally complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "empire and trade",
+        "cultural clash between East and West",
+        "power and dynasty",
+        "survival",
+        "honour"
+      ],
+      "setting": "Hong Kong, 1841, at the founding of the British colony during the First Opium War era",
+      "comparable_books": [
+        "Shogun - James Clavell",
+        "Noble House - James Clavell",
+        "The Far Pavilions - M.M. Kaye"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping epic fiction",
+          "East-West cultural collision",
+          "morally grey protagonist",
+          "rich historical detail",
+          "power and commerce"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "discomfort with colonial perspectives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Say You'll Remember Me - Abby Jimenez": {
       "title": "Say You'll Remember Me",
       "author": "Abby Jimenez",
       "series": "Say You'll Remember Me",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Contemporary Romance",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After one extraordinary date, Minnesota veterinarian Xavier Rush and marketing manager Samantha Diaz share an undeniable connection — but Samantha must move 2,000 miles away to care for her mother, who has early-onset dementia, putting their romance seemingly out of reach.",
+      "tone": "emotionally heavy, witty, heartfelt",
+      "pacing": "Moderate",
+      "themes": [
+        "long-distance love",
+        "caregiver burden and family duty",
+        "overcoming trauma",
+        "insta-connection",
+        "sacrifice"
+      ],
+      "setting": "Contemporary Minnesota and California, present day",
+      "comparable_books": [
+        "The Friend Zone - Abby Jimenez",
+        "Beach Read - Emily Henry",
+        "People We Meet on Vacation - Emily Henry"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grumpy/sunshine romance",
+          "heavy emotional themes in romance",
+          "dual POV",
+          "strong banter",
+          "found family"
+        ],
+        "negative": [
+          "readers seeking light fluffy romance",
+          "those sensitive to dementia/caregiving storylines",
+          "dislike of insta-love"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Dual narration by Christine Lakin and Matt Lanter praised as outstanding; narrators voice their respective characters throughout.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Paper Money - Ken Follett": {
@@ -160566,26 +160631,43 @@
       "author": "Ken Follett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Over the course of a single suspenseful day in 1970s London, three seemingly unrelated stories — a cash heist, a corrupt high-finance takeover, and the blackmailing of a Cabinet minister — converge as a pair of newspaper reporters uncover a web of criminality linking them all.",
+      "tone": "cynically amusing, lean, fast-moving",
+      "pacing": "Fast",
+      "themes": [
+        "corruption in finance and politics",
+        "journalism and truth",
+        "crime and consequence",
+        "moral ambiguity"
+      ],
+      "setting": "1970s London; one single action-packed day across boardrooms, newsrooms, and the criminal underworld",
+      "comparable_books": [
+        "Eye of the Needle - Ken Follett",
+        "The Modigliani Scandal - Ken Follett",
+        "Tinker Tailor Soldier Spy - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tightly plotted single-day thrillers",
+          "interweaving storylines",
+          "cynical crime fiction",
+          "early Follett fans"
+        ],
+        "negative": [
+          "readers expecting Follett's later epic scope",
+          "those wanting deep character development"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Rocket Boys - Homer Hickam": {
@@ -160593,26 +160675,45 @@
       "author": "Homer Hickam",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the late 1950s, inspired by the launch of Sputnik, a coal miner's son in a West Virginia mining town teaches himself rocketry and leads a ragtag group of friends to compete in national science fairs, dreaming of a future beyond the mines.",
+      "tone": "warm, nostalgic, inspiring",
+      "pacing": "Moderate",
+      "themes": [
+        "dreams and ambition",
+        "class and opportunity",
+        "Cold War and the Space Age",
+        "coming of age",
+        "community and family"
+      ],
+      "setting": "Coalwood, West Virginia, 1957–1960, during the early Space Age",
+      "comparable_books": [
+        "The Glass Castle - Jeannette Walls",
+        "October Sky - Homer Hickam",
+        "Educated - Tara Westover"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "uplifting true stories",
+          "American working-class history",
+          "science and ingenuity",
+          "coming-of-age memoir",
+          "nostalgic Americana"
+        ],
+        "negative": [
+          "readers seeking fast-paced narratives",
+          "those uninterested in space/engineering themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "On Wings of Eagles - Ken Follett": {
@@ -160620,26 +160721,43 @@
       "author": "Ken Follett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When two EDS executives are imprisoned in Tehran during the 1979 Iranian Revolution, billionaire Ross Perot refuses to wait for diplomacy and organises a daring private rescue operation led by a former Special Forces soldier.",
+      "tone": "propulsive, cinematic, nail-biting",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and corporate responsibility",
+        "American ingenuity vs. bureaucracy",
+        "revolution and chaos",
+        "rescue and heroism"
+      ],
+      "setting": "Tehran and Iran, 1978–1979, during the Iranian Revolution",
+      "comparable_books": [
+        "Argo - Antonio Mendez",
+        "Lone Survivor - Marcus Luttrell",
+        "The Great Train Robbery - Michael Crichton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true-life rescue missions",
+          "propulsive real-world thrillers",
+          "Cold War/Middle East geopolitics",
+          "corporate espionage"
+        ],
+        "negative": [
+          "readers expecting fiction",
+          "those seeking literary prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Reads like a thriller; strong narrator performance greatly enhances the cinematic tension.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Night Over Water - Ken Follett": {
@@ -160647,80 +160765,142 @@
       "author": "Ken Follett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aboard the last transatlantic flight of the Pan Am Clipper in September 1939 — as World War II breaks out — an unlikely collection of passengers pursue their own desperate agendas over the course of a single night-long journey from England to America.",
+      "tone": "glamorous, tense, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "escape and pursuit",
+        "wartime desperation",
+        "class and secrets",
+        "loyalty vs. self-interest"
+      ],
+      "setting": "Aboard a Pan American flying boat crossing the Atlantic, September 1939, as WWII begins",
+      "comparable_books": [
+        "Eye of the Needle - Ken Follett",
+        "The Key to Rebecca - Ken Follett",
+        "The 39 Steps - John Buchan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "single-setting thriller",
+          "WWII backdrop",
+          "multiple-POV suspense",
+          "glamour and period detail",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "readers wanting historical depth over plot",
+          "dislike of contrived coincidences"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Confined single-journey setting and multiple distinct characters translate extremely well to audio.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Noble House - James Clavell": {
       "title": "Noble House",
       "author": "James Clavell",
       "series": "Asian Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5 (chronological Book 4)",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1963 Hong Kong, Ian Dunross — the latest Tai-Pan of the Noble House trading empire — fights to save his company from financial collapse and corporate raiders while Cold War espionage, criminal conspiracies, and ruthless rivals close in from every side.",
+      "tone": "dense, propulsive, richly layered",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "corporate power and dynasty",
+        "East-West cultural collision",
+        "Cold War espionage",
+        "honour and obligation",
+        "survival"
+      ],
+      "setting": "Hong Kong, 1963, over the course of a single intense week",
+      "comparable_books": [
+        "Tai-Pan - James Clavell",
+        "Shogun - James Clavell",
+        "The Firm - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic scope",
+          "intricate plotting",
+          "corporate and espionage thriller elements",
+          "rich Asian setting",
+          "moral complexity"
+        ],
+        "negative": [
+          "readers wanting fast or light reads",
+          "those put off by very large casts and page counts"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Margaret of Anjou - Conn Iggulden": {
       "title": "Margaret of Anjou",
       "author": "Conn Iggulden",
       "series": "Wars of the Roses",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "It is 1454 and the incapacitated Henry VI is virtually imprisoned at Windsor Castle while Queen Margaret of Anjou fights to protect her husband's crown, as the powerful alliance of York, Salisbury, and Warwick threatens to tear England apart.",
+      "tone": "gritty, battle-driven, politically intense",
+      "pacing": "Moderate",
+      "themes": [
+        "queenship and female power",
+        "dynastic war",
+        "loyalty and betrayal",
+        "political ambition",
+        "the cost of war"
+      ],
+      "setting": "15th-century England, 1454 onward, during the escalating conflict between Lancaster and York",
+      "comparable_books": [
+        "Stormbird - Conn Iggulden",
+        "Bloodline - Conn Iggulden",
+        "The Kingmaker's Daughter - Philippa Gregory"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV medieval fiction",
+          "battle sequences",
+          "strong female historical figures",
+          "dynastic politics"
+        ],
+        "negative": [
+          "readers seeking lighter fare",
+          "those who dislike graphic warfare"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lie Down With Lions - Ken Follett": {
@@ -160728,53 +160908,94 @@
       "author": "Ken Follett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A love triangle involving an English doctor, her American journalist lover, and a shadowy French spy plays out against the brutal backdrop of Afghanistan during the Soviet invasion, where medicine, espionage, and survival intersect.",
+      "tone": "propulsive, romantic, politically charged",
+      "pacing": "Fast",
+      "themes": [
+        "Cold War geopolitics",
+        "love and betrayal",
+        "survival in a war zone",
+        "moral compromise",
+        "espionage"
+      ],
+      "setting": "Afghanistan during the Soviet invasion, 1980s",
+      "comparable_books": [
+        "Eye of the Needle - Ken Follett",
+        "The Kite Runner - Khaled Hosseini",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War thrillers",
+          "romantic tension amid danger",
+          "spy fiction",
+          "morally grey characters"
+        ],
+        "negative": [
+          "readers sensitive to war violence",
+          "those expecting literary depth over plot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lords of the Bow - Conn Iggulden": {
       "title": "Lords of the Bow",
       "author": "Conn Iggulden",
       "series": "Conqueror",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Genghis Khan, having united the Mongol tribes, leads his vast cavalry army across the Gobi Desert for the first time to confront the walled cities and armies of the Chin empire, testing his military genius against fortifications the nomads have never encountered.",
+      "tone": "brutal, epic, kinetic",
+      "pacing": "Fast",
+      "themes": [
+        "conquest and empire",
+        "leadership and command",
+        "cultural clash",
+        "loyalty and family",
+        "the cost of ambition"
+      ],
+      "setting": "The Mongolian steppe and northern China (Chin empire), early 13th century",
+      "comparable_books": [
+        "Wolf of the Plains - Conn Iggulden",
+        "Bones of the Hills - Conn Iggulden",
+        "Genghis Khan and the Making of the Modern World - Jack Weatherford"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "large-scale battle sequences",
+          "non-European historical settings",
+          "morally complex conquerors",
+          "multi-POV epic fiction"
+        ],
+        "negative": [
+          "readers sensitive to extreme violence and pillaging",
+          "those preferring character-driven over action-driven fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hornet Flight - Ken Follett": {
@@ -160782,53 +161003,93 @@
       "author": "Ken Follett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In German-occupied Denmark in 1941, a young amateur pilot stumbles upon secret radar technology and must escape to Britain in a salvaged biplane to deliver the intelligence, with both Nazi and British security forces in relentless pursuit.",
+      "tone": "taut, patriotic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "resistance and courage",
+        "WWII espionage",
+        "loyalty and betrayal",
+        "freedom vs. occupation",
+        "ingenuity under pressure"
+      ],
+      "setting": "Occupied Denmark and the North Sea, 1941",
+      "comparable_books": [
+        "Eye of the Needle - Ken Follett",
+        "Night Over Water - Ken Follett",
+        "The Eagle Has Landed - Jack Higgins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII resistance fiction",
+          "spy thrillers",
+          "man-on-the-run suspense",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "readers expecting complex literary characterisation",
+          "those seeking non-WWII settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tight, propulsive single-mission structure makes for a gripping listen with strong narrative momentum.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gods and Generals - Jeff Shaara": {
       "title": "Gods and Generals",
       "author": "Jeff Shaara",
       "series": "The Civil War Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel to Michael Shaara's Pulitzer Prize–winning The Killer Angels, this novel traces the lives of key Civil War commanders — Stonewall Jackson, Robert E. Lee, Joshua Chamberlain, and Winfield Scott Hancock — from the gathering clouds of war through the Battle of Chancellorsville in 1863.",
+      "tone": "reverent, immersive, tragic",
+      "pacing": "Moderate",
+      "themes": [
+        "duty and honour",
+        "the tragedy of civil war",
+        "loyalty to cause and country",
+        "leadership and faith",
+        "moral cost of war"
+      ],
+      "setting": "America, 1858–1863, from the pre-war political crisis through the major early battles of the Civil War",
+      "comparable_books": [
+        "The Killer Angels - Michael Shaara",
+        "The Last Full Measure - Jeff Shaara",
+        "Killer Angels - Michael Shaara"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "American Civil War history",
+          "multi-POV from both Union and Confederate perspectives",
+          "character-driven military fiction",
+          "human cost of war"
+        ],
+        "negative": [
+          "readers who find war fiction harrowing",
+          "those who prefer fictional characters over historical figures"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Everything All at Once: How to Unleash Your Inner Nerd, Tap Into Radical Curiosity, and Solve Any Problem - Bill Nye": {
@@ -160836,26 +161097,45 @@
       "author": "Bill Nye",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Part memoir and part manifesto, Bill Nye draws on his own journey — from engineering student to science celebrity to Planetary Society CEO — to argue that a 'nerd mindset' of radical curiosity, fact-based thinking, and relentless problem-solving is the key to addressing humanity's greatest challenges.",
+      "tone": "enthusiastic, conversational, optimistic",
+      "pacing": "Moderate",
+      "themes": [
+        "critical thinking and scientific reasoning",
+        "climate change and civic responsibility",
+        "lifelong curiosity",
+        "personal growth",
+        "science and society"
+      ],
+      "setting": "Contemporary non-fiction; draws on 20th-century American science, engineering, and pop culture",
+      "comparable_books": [
+        "The Demon-Haunted World - Carl Sagan",
+        "Undeniable - Bill Nye",
+        "Astrophysics for People in a Hurry - Neil deGrasse Tyson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "science popularisation",
+          "optimistic non-fiction",
+          "memoir-manifesto hybrid",
+          "intellectual curiosity",
+          "climate advocacy"
+        ],
+        "negative": [
+          "readers seeking hard science or technical depth",
+          "those who prefer purely narrative non-fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Midnight in Chernobyl - Adam Higginbotham": {
@@ -160863,134 +161143,234 @@
       "author": "Adam Higginbotham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drawing on years of research and interviews with survivors, Higginbotham reconstructs in gripping detail the chain of human error, institutional failure, and heroism that led to the 1986 Chernobyl nuclear disaster and its devastating aftermath.",
+      "tone": "gripping, meticulous, sobering",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Soviet bureaucracy and secrecy",
+        "human fallibility and institutional failure",
+        "heroism and sacrifice",
+        "nuclear technology and risk",
+        "catastrophe and cover-up"
+      ],
+      "setting": "Soviet Ukraine, primarily the Chernobyl nuclear power plant and the surrounding region, 1986 and aftermath",
+      "comparable_books": [
+        "Command and Control - Eric Schlosser",
+        "The Uninhabitable Earth - David Wallace-Wells",
+        "Voices from Chernobyl - Svetlana Alexievich"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "deeply researched narrative non-fiction",
+          "Soviet history",
+          "disaster and survival stories",
+          "propulsive long-form journalism",
+          "HBO Chernobyl fans"
+        ],
+        "negative": [
+          "readers seeking lighter non-fiction",
+          "those who find technical detail overwhelming"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Reads like a thriller; the narrative drive and character-based structure make it superb in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gai-Jin - James Clavell": {
       "title": "Gai-Jin",
       "author": "James Clavell",
       "series": "Asian Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3 (chronological Book 2)",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1862 Japan, Malcolm Struan — heir to the Noble House — is caught up in the violent clash between xenophobic samurai clans and foreign traders in Yokohama, while the ancient Shogunate crumbles and a beautiful French woman becomes an unlikely centre of intrigue.",
+      "tone": "dense, epic, culturally immersive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "cultural collision between Japan and the West",
+        "power and political upheaval",
+        "forbidden love and honour",
+        "the end of the Shogunate",
+        "trade and empire"
+      ],
+      "setting": "Yokohama and Japan, 1862, during the turbulent opening of Japan to the West",
+      "comparable_books": [
+        "Shogun - James Clavell",
+        "Tai-Pan - James Clavell",
+        "Noble House - James Clavell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "immersive Asian historical fiction",
+          "political intrigue",
+          "large-cast epics",
+          "East-West cultural clash"
+        ],
+        "negative": [
+          "readers preferring tight plotting",
+          "those who found Noble House or Shogun too long"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Empire of Silver - Conn Iggulden": {
       "title": "Empire of Silver",
       "author": "Conn Iggulden",
       "series": "Conqueror",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Genghis Khan is dead, and his son Ogedai must prove himself worthy to rule the vast Mongol empire — building the great city of Karakorum while his generals sweep into Russia and toward the gates of Europe, even as succession rivalries threaten to tear the empire apart.",
+      "tone": "epic, brutal, politically layered",
+      "pacing": "Moderate",
+      "themes": [
+        "succession and legacy",
+        "leadership and power",
+        "conquest and empire-building",
+        "brotherhood and rivalry",
+        "the limits of ambition"
+      ],
+      "setting": "The Mongol Empire, Russia, and Central Europe, 13th century, following the death of Genghis Khan",
+      "comparable_books": [
+        "Lords of the Bow - Conn Iggulden",
+        "Conqueror - Conn Iggulden",
+        "Genghis Khan and the Making of the Modern World - Jack Weatherford"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Mongol empire fiction",
+          "large-scale historical epics",
+          "multi-generational sagas",
+          "battle and strategy"
+        ],
+        "negative": [
+          "readers sensitive to extreme violence and historical atrocities",
+          "those wanting a focused protagonist arc"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Edge of Eternity - Ken Follett": {
       "title": "Edge of Eternity",
       "author": "Ken Follett",
       "series": "Century Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The sweeping conclusion to the Century Trilogy follows the third generation of five international families — American, German, Russian, English, and Welsh — through the tumultuous decades from 1961 to 1989, encompassing the Civil Rights movement, the Cuban Missile Crisis, the Berlin Wall, Vietnam, and the fall of communism.",
+      "tone": "sprawling, melodramatic, historically immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "freedom and oppression",
+        "Cold War geopolitics",
+        "civil rights and racial justice",
+        "family across generations",
+        "the fall of communism"
+      ],
+      "setting": "USA, East Germany, Soviet Union, and beyond; 1961–1989",
+      "comparable_books": [
+        "Fall of Giants - Ken Follett",
+        "Winter of the World - Ken Follett",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multigenerational family sagas",
+          "20th-century history lovers",
+          "sweeping epic fiction",
+          "Cold War era"
+        ],
+        "negative": [
+          "readers wanting tight plotting over breadth",
+          "those who found the first two books too long"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Death of Kings - Bernard Cornwell": {
       "title": "Death of Kings",
       "author": "Bernard Cornwell",
       "series": "The Last Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 899 AD, Alfred the Great lies dying and rivals — both Saxon and Danish — circle his throne; Uhtred of Bebbanburg, torn between his oath to Alfred and his desire to reclaim his stolen northern homeland, must decide whether to commit to the Saxon cause or finally pursue his own destiny.",
+      "tone": "gritty, melancholic, action-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "divided loyalty",
+        "duty vs. personal desire",
+        "the making of England",
+        "mortality and legacy",
+        "the conflict between paganism and Christianity"
+      ],
+      "setting": "Anglo-Saxon England, Wessex and surrounding kingdoms, 899 AD",
+      "comparable_books": [
+        "The Burning Land - Bernard Cornwell",
+        "The Pagan Lord - Bernard Cornwell",
+        "Stormbird - Conn Iggulden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Viking and Saxon historical fiction",
+          "morally grey first-person narrator",
+          "vivid battle scenes",
+          "long-running series investment"
+        ],
+        "negative": [
+          "readers new to the series — must be read in order",
+          "those who prefer faster-paced instalments"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Uhtred's first-person voice is perfectly suited to audio; the series has a devoted audio following.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Code to Zero - Ken Follett": {
@@ -160998,26 +161378,44 @@
       "author": "Ken Follett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In January 1958, a NASA scientist wakes in a Washington DC train station with total amnesia, and must piece together his identity and past in the hours before America's critical first satellite launch — uncovering a Cold War conspiracy that threatens both the space race and his own survival.",
+      "tone": "taut, paranoid, fast-moving",
+      "pacing": "Fast",
+      "themes": [
+        "amnesia and identity",
+        "Cold War espionage",
+        "betrayal and trust",
+        "the Space Race",
+        "the line between loyalty and ideology"
+      ],
+      "setting": "Washington DC, Alabama, and Cape Canaveral, January 1958, during the launch of Explorer 1",
+      "comparable_books": [
+        "Eye of the Needle - Ken Follett",
+        "The Bourne Identity - Robert Ludlum",
+        "Rocket Boys - Homer Hickam"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War thrillers",
+          "amnesia mystery plots",
+          "Space Age historical settings",
+          "man-on-the-run suspense"
+        ],
+        "negative": [
+          "readers who dislike amnesia as a device",
+          "those expecting Follett's later epic scope"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Real-time countdown structure and single-day tension make this a gripping audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Conqueror - Conn Iggulden": {
