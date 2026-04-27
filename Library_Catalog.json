@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3065,
-  "total_pending": 1535,
+  "total_catalogued": 3085,
+  "total_pending": 1515,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -172165,53 +172165,98 @@
       "author": "Stuart Turton",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a deadly fog has destroyed the world and reduced humanity to 122 villagers and 3 scientists on a Greek island, a murder triggers the deactivation of the barrier keeping the fog at bay — giving investigator Emory just over 100 hours to identify a killer no one, not even the killer, can remember. A post-apocalyptic whodunit narrated by an AI.",
+      "tone": "mind-bending, high-concept, propulsive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival",
+        "memory and identity",
+        "control vs freedom",
+        "what it means to be human",
+        "AI and technology"
+      ],
+      "setting": "Near-future post-apocalyptic Greek island, world destroyed by lethal fog",
+      "comparable_books": [
+        "The Seven Deaths of Evelyn Hardcastle - Stuart Turton",
+        "Station Eleven - Emily St. John Mandel",
+        "The Island of Doctor Moreau - H.G. Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "genre-blending",
+          "locked-room mystery",
+          "post-apocalyptic setting",
+          "mind-bending twists",
+          "AI narrator",
+          "puzzle-box plot",
+          "propulsive short chapters"
+        ],
+        "negative": [
+          "large cast with uneven character development",
+          "mechanical pacing in places",
+          "very high-concept may not suit all mystery readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Secret Commonwealth - Philip Pullman": {
       "title": "The Secret Commonwealth",
       "author": "Philip Pullman",
       "series": "The Book of Dust",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twenty years after the events of His Dark Materials, a grown-up Lyra Silvertongue finds her bond with her dæmon Pantalaimon fractured by rationalist philosophy, and must journey into the mysterious East to save herself and uncover a conspiracy involving the origin of Dust.",
+      "tone": "lyrical, melancholic, philosophical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "belief vs rationalism",
+        "identity and the self",
+        "political corruption",
+        "coming of age",
+        "the nature of the soul"
+      ],
+      "setting": "An alternate Oxford and the wider fantasy world of His Dark Materials, extending into the Middle East; contemporary timeline within Pullman's universe",
+      "comparable_books": [
+        "Northern Lights - Philip Pullman",
+        "The Amber Spyglass - Philip Pullman",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich world-building",
+          "philosophical depth",
+          "beloved characters revisited",
+          "literary fantasy",
+          "epic scope"
+        ],
+        "negative": [
+          "very long",
+          "slow pacing",
+          "deliberately unresolved as middle book in trilogy",
+          "darker and less joyful than His Dark Materials"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full-cast BBC production is acclaimed; even single-narrator versions benefit from Pullman's lyrical prose read aloud.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Lady Killer - Masako Togawa": {
@@ -172219,26 +172264,49 @@
       "author": "Masako Togawa",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1960s Tokyo, Ichiro Honda leads a double life as a devoted husband by day and a serial seducer of women by night — until women from his past begin turning up dead and he finds himself framed for murders he didn't commit. A sharp psychological thriller about predators, revenge, and moral ambiguity.",
+      "tone": "lean, menacing, darkly psychological",
+      "pacing": "Moderate",
+      "themes": [
+        "predation and revenge",
+        "gender and power",
+        "moral ambiguity",
+        "duty and shame in Japanese society",
+        "identity and deception"
+      ],
+      "setting": "Tokyo, Japan, 1960s; cabaret bars, nightclubs, and the shadowy urban underworld",
+      "comparable_books": [
+        "The Master Key - Masako Togawa",
+        "The Devotion of Suspect X - Keigo Higashino",
+        "Out - Natsuo Kirino"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese crime fiction",
+          "psychological complexity",
+          "dual perspectives",
+          "puzzle mystery",
+          "morally ambiguous protagonist",
+          "compact and precise prose"
+        ],
+        "negative": [
+          "uncomfortable sexual content and attitudes",
+          "dated misogynist worldview of protagonist",
+          "short — some readers may want more depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Devil and the Dark Water - Stuart Turton": {
@@ -172246,107 +172314,196 @@
       "author": "Stuart Turton",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aboard a 17th-century Dutch East India Company ship sailing from Batavia to Amsterdam, a condemned man is escorted to his execution when a mysterious demon and a string of impossible murders begin to terrorize the passengers and crew, forcing an unlikely detective partnership to unravel a supernatural conspiracy.",
+      "tone": "atmospheric, claustrophobic, darkly playful",
+      "pacing": "Moderate",
+      "themes": [
+        "good vs evil",
+        "superstition vs reason",
+        "identity and disguise",
+        "justice and corruption",
+        "colonial power"
+      ],
+      "setting": "A 17th-century VOC sailing ship on the open ocean, 1634",
+      "comparable_books": [
+        "The Seven Deaths of Evelyn Hardcastle - Stuart Turton",
+        "The Name of the Rose - Umberto Eco",
+        "The Witch Elm - Tana French"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical mystery",
+          "locked-room puzzle",
+          "twisty plotting",
+          "atmospheric setting",
+          "genre-blending",
+          "buddy detective dynamic"
+        ],
+        "negative": [
+          "can feel slow in the middle",
+          "requires suspension of disbelief",
+          "supernatural elements may not suit purist mystery readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Richly atmospheric nautical setting translates beautifully to audio; naval terminology and period detail reward attentive listening.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Desolation Called Peace - Arkady Martine": {
       "title": "A Desolation Called Peace",
       "author": "Arkady Martine",
       "series": "Teixcalaan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In deep space, a Teixcalaanli fleet confronts an alien enemy it cannot understand, while back in the empire, a new Three Seagrass and Mahit-adjacent diplomat investigates the mystery of an alien language — a dual narrative exploring first contact, identity, and what it means to communicate across profound difference.",
+      "tone": "lyrical, cerebral, quietly epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "first contact and alien communication",
+        "identity and empire",
+        "love and connection",
+        "language and meaning",
+        "belonging vs alienation"
+      ],
+      "setting": "Far-future interstellar empire modelled on Mesoamerican aesthetics; deep space fleet and the capital of Teixcalaan",
+      "comparable_books": [
+        "A Memory Called Empire - Arkady Martine",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Ancillary Justice - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "political intrigue",
+          "found family",
+          "lyrical prose",
+          "queer romance",
+          "alien contact",
+          "deeply humane"
+        ],
+        "negative": [
+          "slow pacing",
+          "dense world-building",
+          "requires reading Book 1 first",
+          "less action-focused than typical space opera"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Locklands - Robert Jackson Bennett": {
       "title": "Locklands",
       "author": "Robert Jackson Bennett",
       "series": "The Founders Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the cataclysmic conclusion to the Founders Trilogy, Sancia, Berenice, and their allies mount a desperate last stand against a god-like intelligence that has consumed an entire nation, using their mastery of scriving to fight an enemy that can rewrite reality itself.",
+      "tone": "propulsive, epic, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "power and corruption",
+        "freedom vs control",
+        "found family",
+        "technology as magic",
+        "sacrifice and survival"
+      ],
+      "setting": "The city of Giva and the enslaved nation of Tevanne; a secondary world with an industrial-era feel powered by scriving (engraved magical commands)",
+      "comparable_books": [
+        "Foundryside - Robert Jackson Bennett",
+        "Shorefall - Robert Jackson Bennett",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intricate magic system",
+          "heist elements",
+          "found family",
+          "fast-paced action",
+          "strong female lead",
+          "satisfying series conclusion"
+        ],
+        "negative": [
+          "must read Books 1 and 2 first",
+          "scale becomes very large and abstract in finale",
+          "some find the ending rushed"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Preacher - Rob J. Hayes": {
       "title": "The Preacher",
       "author": "Rob J. Hayes",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The God Eater Saga",
+      "series_position": "Prequel short story",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A short horror-tinged dark fantasy story set in the God Eater Saga universe, serving as a prequel to the Herald trilogy; one of three short stories released to backers of Hayes's Kickstarter for the series.",
+      "tone": "dark, atmospheric, horror-inflected",
+      "pacing": "Fast",
+      "themes": [
+        "faith and fanaticism",
+        "darkness and survival",
+        "power of belief"
+      ],
+      "setting": "The dark fantasy world of the God Eater Saga, a world where gods can be killed and their power consumed",
+      "comparable_books": [
+        "Herald - Rob J. Hayes",
+        "Never Die - Rob J. Hayes",
+        "The Heresy Within - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy",
+          "horror elements",
+          "grimdark tone",
+          "worldbuilding depth",
+          "very short — quick read"
+        ],
+        "negative": [
+          "extremely short — more a taster than a full story",
+          "requires interest in the God Eater Saga to fully appreciate",
+          "limited standalone value"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Drones - Rob J. Hayes": {
@@ -172354,350 +172511,636 @@
       "author": "Rob J. Hayes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future world where emotions can be harvested and sold as drugs, James Garrick is a 'Drone' — someone who sells his feelings to escape a traumatic past — but when his dealers start getting murdered and the practice is about to be legalised, he finds himself entangled in a corporate and government conspiracy.",
+      "tone": "noirish, gritty, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "commodification of emotion",
+        "trauma and escape",
+        "corporate power and corruption",
+        "social media and technology",
+        "identity and humanity"
+      ],
+      "setting": "Near-future Earth; a noirish, high-tech urban world where mankind has colonised the moon and emotions are a tradeable commodity",
+      "comparable_books": [
+        "Neuromancer - William Gibson",
+        "Altered Carbon - Richard K. Morgan",
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cyberpunk noir",
+          "fast-paced thriller",
+          "morally grey protagonist",
+          "anti-hero redemption arc",
+          "thought-provoking premise",
+          "short and action-packed"
+        ],
+        "negative": [
+          "shorter than expected — some readers want more depth",
+          "ending is open and polarising",
+          "protagonist is deliberately unlikable"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Two Faces of War - Rob J. Hayes": {
       "title": "The Two Faces of War",
       "author": "Rob J. Hayes",
       "series": "The Mortal Techniques",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Companion short story",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A short story set in the Mortal Techniques universe, originally published in the charity anthology Art of War (benefiting Médecins sans Frontières) and later bundled with the hardback edition of Never Die; an Asian-inspired dark fantasy tale that showcases the world's tone and mythology.",
+      "tone": "action-driven, mythic, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "war and sacrifice",
+        "honour and duty",
+        "fate and death"
+      ],
+      "setting": "The Asian-inspired fictional world of the Mortal Techniques series, drawing on wuxia and Japanese mythology",
+      "comparable_books": [
+        "Never Die - Rob J. Hayes",
+        "Pawn's Gambit - Rob J. Hayes",
+        "Twelve Days to Die - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "wuxia-inspired fantasy",
+          "fast and punchy",
+          "great entry point for the series",
+          "free with newsletter signup",
+          "unexpected ending"
+        ],
+        "negative": [
+          "very short — a brief taster only",
+          "minimal standalone weight outside the series context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Twelve Days to Die - Rob J. Hayes": {
       "title": "Twelve Days to Die",
       "author": "Rob J. Hayes",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "First Earth Saga",
+      "series_position": "Prequel short story",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A short prequel story set in the First Earth world, following Jezzet Vel'urn as an apprentice who must kill her Blademaster trainer within twelve days — or die trying — in order to earn the title of Blademaster herself.",
+      "tone": "grimdark, action-packed, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "mastery and sacrifice",
+        "teacher vs student",
+        "survival",
+        "honour and duty"
+      ],
+      "setting": "The dark fantasy world of the First Earth Saga (same world as The Ties That Bind series)",
+      "comparable_books": [
+        "The Heresy Within - Rob J. Hayes",
+        "The Color of Vengeance - Rob J. Hayes",
+        "The Two Faces of War - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark action",
+          "compact and punchy",
+          "compelling female protagonist",
+          "great gateway into the Ties That Bind series",
+          "free with newsletter signup"
+        ],
+        "negative": [
+          "very short — a brief taster only",
+          "limited beyond its role as an introduction to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Vengeful - V. E. Schwab": {
       "title": "Vengeful",
       "author": "V. E. Schwab",
       "series": "Villains",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Years after the events of Vicious, Victor Vale has escaped prison and is hunting ExtraOrdinaries, while a new and terrifyingly powerful EO named Marcella Riggins emerges to pursue her own brutal agenda, and Eli Ever remains in captivity — until all of their stories collide with explosive consequences.",
+      "tone": "darkly propulsive, morally complex, cinematic",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and morality",
+        "power and its cost",
+        "identity and reinvention",
+        "survival",
+        "what defines a villain or hero"
+      ],
+      "setting": "Contemporary USA; a grounded near-future world where near-death experiences can create individuals with extraordinary powers",
+      "comparable_books": [
+        "Vicious - V. E. Schwab",
+        "Steelheart - Brandon Sanderson",
+        "Dark Matter - Blake Crouch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey antiheroes",
+          "fast-paced action",
+          "non-linear narrative",
+          "strong female characters",
+          "superhero noir",
+          "propulsive and cinematic"
+        ],
+        "negative": [
+          "requires reading Vicious first",
+          "some find the new characters less compelling than Victor and Eli",
+          "darker and more violent than typical superhero fare"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Schwab's cinematic, punchy prose and non-linear chapter structure translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Legacy of War - Wilbur Smith & David Churchill": {
       "title": "Legacy of War",
       "author": "Wilbur Smith & David Churchill",
       "series": "Assegai",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of World War II, Saffron and Gerhard Courtney face a dangerous cat-and-mouse game with Gerhard's unrepentant Nazi brother Konrad, while in Kenya, Leon Courtney is caught between colonial forces and the stirrings of the Mau Mau rebellion in this conclusion to the Assegai sequence.",
+      "tone": "action-driven, epic, adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "legacy and family",
+        "post-war reckoning",
+        "colonialism and independence",
+        "love and loyalty",
+        "Nazi evil and its aftermath"
+      ],
+      "setting": "Post-WWII Europe and colonial Kenya, 1950s",
+      "comparable_books": [
+        "Courtney's War - Wilbur Smith & David Churchill",
+        "War Cry - Wilbur Smith & David Churchill",
+        "The Eagle Has Landed - Jack Higgins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping historical adventure",
+          "multi-generational family saga",
+          "action-packed",
+          "African settings",
+          "strong heroine in Saffron Courtney"
+        ],
+        "negative": [
+          "co-authored — some fans find quality diluted vs solo Smith",
+          "requires prior books for full impact",
+          "colonial attitudes can be uncomfortable for modern readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Nemesis - Wilbur Smith": {
       "title": "Nemesis",
-      "author": "Wilbur Smith",
+      "author": "Wilbur Smith & Tom Harper",
       "series": "Birds of Prey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5 (Courtney Series Book 22)",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set against the French Revolution's Reign of Terror in 1794 Paris and Cape Town in 1806, three strands of the Courtney family converge in a bloodthirsty pursuit of revenge as Paul Courtney watches his mother guillotined and must survive the chaos to honour her dying wish.",
+      "tone": "swashbuckling, violent, adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and justice",
+        "family loyalty",
+        "revolution and chaos",
+        "survival",
+        "colonial empire"
+      ],
+      "setting": "Paris during the Reign of Terror (1794), and Cape Town/South Africa (1806); the Napoleonic era",
+      "comparable_books": [
+        "Storm Tide - Wilbur Smith & Tom Harper",
+        "Birds of Prey - Wilbur Smith",
+        "Sharpe's Eagle - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "swashbuckling historical adventure",
+          "French Revolution setting",
+          "multiple Courtney family storylines",
+          "fast-paced action",
+          "fans of the Courtney saga"
+        ],
+        "negative": [
+          "posthumously co-written — purists may note the difference from solo Smith",
+          "requires familiarity with the Courtney saga",
+          "one of the later entries in a very long series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Testament - Wilbur Smith": {
       "title": "Testament",
-      "author": "Wilbur Smith",
+      "author": "Wilbur Smith & Mark Chadbourn",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the overthrow of the Hyksos, Pharaoh's rule remains fragile — great mage Taita sends his protégé Piay to solve a millennia-old riddle that could secure Egypt's future forever, while malevolent followers of the chaos god Seth pursue the same power for sinister ends.",
+      "tone": "epic, mythic, adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "power and destiny",
+        "good vs evil",
+        "ancient knowledge and wisdom",
+        "faith and mythology",
+        "political intrigue"
+      ],
+      "setting": "Ancient Egypt following the overthrow of the Hyksos (circa 1550 BCE); deserts, temples, and the courts of the Pharaohs",
+      "comparable_books": [
+        "Pharaoh - Wilbur Smith",
+        "Desert God - Wilbur Smith",
+        "River God - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "vivid ancient Egyptian setting",
+          "mythic adventure",
+          "fans of the long-running Egyptian series",
+          "epic scope",
+          "action and intrigue"
+        ],
+        "negative": [
+          "co-authored posthumously — may feel different from earlier solo entries",
+          "Book 9 in a long series — requires investment",
+          "some find the later Egyptian novels less compelling than River God"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Tiger's Prey - Wilbur Smith & Tom Harper": {
       "title": "The Tiger's Prey",
       "author": "Wilbur Smith & Tom Harper",
       "series": "Birds of Prey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4 (Courtney Series Book 16)",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Tom Courtney, one of Sir Hal Courtney's sons, sets sail on a treacherous 18th-century voyage from the Cape of Good Hope through the perilous Arabian Sea to the Malabar Coast of India, facing pirates, the East India Company, and dangerous family secrets involving two younger Courtneys.",
+      "tone": "swashbuckling, action-packed, adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "family loyalty and betrayal",
+        "revenge",
+        "seafaring adventure",
+        "colonial trade and power",
+        "honour"
+      ],
+      "setting": "18th century; Cape Town, the Arabian Sea, and the Indian coast (Malabar/Bombay)",
+      "comparable_books": [
+        "Monsoon - Wilbur Smith",
+        "Blue Horizon - Wilbur Smith",
+        "Captain Blood - Rafael Sabatini"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high-seas swashbuckling adventure",
+          "fast-paced action",
+          "exotic locations",
+          "fans of the Courtney saga",
+          "Tom Courtney as hero"
+        ],
+        "negative": [
+          "co-authored — some find it lacks Smith's full magic",
+          "continuation requiring prior knowledge of Monsoon",
+          "colonial-era attitudes throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "King of Kings - Wilbur Smith": {
       "title": "King of Kings",
-      "author": "Wilbur Smith",
+      "author": "Wilbur Smith & Imogen Robertson",
       "series": "Triumph of the Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 (Courtney Series Book 18)",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cairo, 1888: Penrod Ballantyne and his fiancée Amber Benbrook are separated by a jealous former lover, leading Amber and her sister Saffron to journey with Ryder Courtney to Abyssinia's new capital, where they become entangled in Menelik II's struggle against Italian invasion — while Penrod fights on the opposing side.",
+      "tone": "epic, romantic, adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "love and reunion against all odds",
+        "empire and colonialism",
+        "African independence",
+        "family loyalty",
+        "betrayal and honour"
+      ],
+      "setting": "Cairo and Addis Ababa (Abyssinia/Ethiopia), 1887–1898; the era of European colonialism and the First Italo-Ethiopian War",
+      "comparable_books": [
+        "The Triumph of the Sun - Wilbur Smith",
+        "Assegai - Wilbur Smith",
+        "Shout at the Devil - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cross-family saga (Courtneys and Ballantynes)",
+          "exotic African settings",
+          "strong female characters",
+          "sweeping romance",
+          "historical battles"
+        ],
+        "negative": [
+          "co-authored",
+          "requires familiarity with The Triumph of the Sun",
+          "romance heavy",
+          "colonial-era perspective"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Golden Lion - Wilbur Smith & Giles Kristian": {
       "title": "The Golden Lion",
       "author": "Wilbur Smith & Giles Kristian",
       "series": "Birds of Prey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1.5 (Courtney Series Book 14; set between Books 1 and 2)",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in the 1670s between Birds of Prey and Monsoon, Hal Courtney captains his own ship with his pregnant wife and warrior General Judith Nazet aboard, but his old nemesis the Buzzard — nursed back to life and enslaved by the ruler of Zanzibar — schemes a terrible revenge involving Zanzibar's slave markets and the Indian Ocean.",
+      "tone": "swashbuckling, brutal, adventure-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "revenge and nemesis",
+        "seafaring adventure",
+        "slavery and honour",
+        "love and family",
+        "betrayal"
+      ],
+      "setting": "East African coast, Zanzibar, and the Indian Ocean, 1670s; age of privateers and the slave trade",
+      "comparable_books": [
+        "Birds of Prey - Wilbur Smith",
+        "Monsoon - Wilbur Smith",
+        "The Tiger's Prey - Wilbur Smith & Tom Harper"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "pirate and seafaring adventure",
+          "Hal Courtney's story continued",
+          "Zanzibar setting",
+          "fans of Birds of Prey",
+          "action-driven plot"
+        ],
+        "negative": [
+          "first co-authored Courtney novel — stylistically different for some readers",
+          "interstitial novel — better read between Birds of Prey and Monsoon",
+          "pacing issues in the first half"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Pharaoh - Wilbur Smith": {
       "title": "Pharaoh",
       "author": "Wilbur Smith",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The ageing Pharaoh Tamose lies mortally wounded as Luxor is besieged by the Hyksos, and the slave-eunuch Taita must use all his magical and political cunning to save Egypt, crown a new Pharaoh, and defeat the invaders in what may be his final great campaign.",
+      "tone": "epic, mythic, action-packed",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty and sacrifice",
+        "power and its cost",
+        "war and survival",
+        "magic and wisdom",
+        "Egypt and its gods"
+      ],
+      "setting": "Ancient Egypt, circa 1550 BCE; Luxor, the Nile, and the battlefields of Upper Egypt under Hyksos siege",
+      "comparable_books": [
+        "Desert God - Wilbur Smith",
+        "The Quest - Wilbur Smith",
+        "Warlock - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "vivid ancient Egypt",
+          "Taita as beloved returning character",
+          "sweeping battle scenes",
+          "mythic scope",
+          "fans of the Egyptian series"
+        ],
+        "negative": [
+          "sixth book in a long series — commitment required",
+          "Taita's near-omniscience can reduce tension",
+          "last solo-written Egyptian novel before co-authoring began"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "War Cry - Wilbur Smith & David Churchill": {
       "title": "War Cry",
       "author": "Wilbur Smith & David Churchill",
       "series": "Assegai",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Big-game hunter Leon Courtney raises his headstrong daughter Saffron alone in colonial Kenya from the 1920s through to the outbreak of WWII, as they navigate espionage, dangerous politics and the rise of fascism in Europe — culminating in Saffron's recruitment to Britain's Special Operations Executive.",
+      "tone": "epic, action-driven, romantic",
+      "pacing": "Moderate",
+      "themes": [
+        "family and legacy",
+        "war and courage",
+        "coming of age",
+        "espionage and danger",
+        "colonialism in Africa"
+      ],
+      "setting": "Colonial Kenya and Europe (1920s–early WWII); from the African bush to the ski slopes of Saint Moritz and the outbreak of war",
+      "comparable_books": [
+        "Assegai - Wilbur Smith",
+        "Courtney's War - Wilbur Smith & David Churchill",
+        "The English Patient - Michael Ondaatje"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping historical epic",
+          "strong heroine in Saffron Courtney",
+          "African and European settings",
+          "espionage and action",
+          "generational family saga"
+        ],
+        "negative": [
+          "co-authored",
+          "slower first half — builds towards WWII",
+          "colonial attitudes pervasive throughout",
+          "requires Assegai for full context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Desert God - Wilbur Smith": {
       "title": "Desert God",
       "author": "Wilbur Smith",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The brilliant eunuch slave Taita stands side-by-side with the Pharaoh in a mission to forge alliances across Babylon, Arabia, and the Mediterranean, seeking to crush Egypt's Hyksos enemies and restore the kingdom to its former glory — travelling treacherous deserts and seas to achieve his queen's dying wish.",
+      "tone": "epic, adventurous, mythic",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty and devotion",
+        "empire and war",
+        "revenge and restoration",
+        "diplomacy and intrigue",
+        "love beyond death"
+      ],
+      "setting": "Ancient Egypt, Babylon, Arabia, and Crete, circa 1700 BCE; the age of Pharaohs and the Hyksos occupation",
+      "comparable_books": [
+        "The Quest - Wilbur Smith",
+        "Pharaoh - Wilbur Smith",
+        "Warlock - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic ancient world adventure",
+          "beloved Taita character",
+          "exotic multi-location journey",
+          "fans of the Egyptian series",
+          "mythic scope"
+        ],
+        "negative": [
+          "fifth book in a long series",
+          "Taita is so capable he feels almost invincible",
+          "pacing can feel slow in diplomatic sections"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Triumph of the Sun - Wilbur Smith": {
