@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1860,
-  "total_pending": 2740,
+  "total_catalogued": 1880,
+  "total_pending": 2720,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -113547,28 +113547,52 @@
     "Warlords of Wyrdwood - R. J. Barker": {
       "title": "Warlords of Wyrdwood",
       "author": "R. J. Barker",
-      "series": "Forsaken",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Forsaken Trilogy",
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After leading the village of Harn to victory against the oppressive Rai, reluctant hero Cahan must now guide his people deep into the dangerous Wyrdwood forest to avoid retaliation. A dark corruption grows within the forest's fungi and decay, threatening to claim Cahan as new enemies and old gods converge.",
+      "tone": "dark, atmospheric, weighty and brutal",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "reluctant heroism",
+        "corruption and temptation",
+        "survival",
+        "oppression and rebellion",
+        "nature as a hostile force"
+      ],
+      "setting": "The ancient, folklore-dark Wyrdwood forest in the secondary world of Crua, home to warring gods and monstrous beasts",
+      "comparable_books": [
+        "Gods of the Wyrdwood - R. J. Barker",
+        "The Bone Ships - R. J. Barker",
+        "Age of Assassins - R. J. Barker",
+        "The Green Bone Saga - Fonda Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush world-building",
+          "morally grey protagonist",
+          "dark folkloric atmosphere",
+          "multiple POV",
+          "found family under duress",
+          "lyrical prose"
+        ],
+        "negative": [
+          "slow opening chapters",
+          "dense world requiring re-immersion between books",
+          "not a standalone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Series includes a narrator-read first-book recap; praised audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Escher Man - T. R. Napper": {
@@ -113576,26 +113600,50 @@
       "author": "T. R. Napper",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Cyberpunk",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In near-future Macau, enforcer Endel 'Endgame' Ebbinghaus works for a crime syndicate whose boss repeatedly wipes his memories after each job. When his master vanishes, Endel must piece together fragments of his fractured identity while evading multiple factions — before his mind degrades beyond recovery.",
+      "tone": "gritty, noirish, propulsive, psychologically disorienting",
+      "pacing": "Fast",
+      "themes": [
+        "memory and identity",
+        "colonialism and cultural occupation",
+        "the corrupting power of capitalism",
+        "family and redemption",
+        "humanity under technology"
+      ],
+      "setting": "Near-future Macau and Southeast Asia, 2101, under Chinese military and cultural dominance",
+      "comparable_books": [
+        "36 Streets - T. R. Napper",
+        "Altered Carbon - Richard Morgan",
+        "Neuromancer - William Gibson",
+        "The Windup Girl - Paolo Bacigalupi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "propulsive action-thriller pacing",
+          "cyberpunk with soul",
+          "East Asian setting",
+          "memory-manipulation concept",
+          "social commentary"
+        ],
+        "negative": [
+          "extremely violent",
+          "unreliable/unsympathetic protagonist",
+          "repetitive prose noted by some reviewers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Starship Troopers - Robert A. Heinlein": {
@@ -113603,80 +113651,154 @@
       "author": "Robert A. Heinlein",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Military Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Young Juan Rico enlists in the futuristic Mobile Infantry and fights in an interstellar war against the alien Arachnids, while the narrative frames his military service within a deeply political examination of citizenship, civic duty, and the nature of a just society.",
+      "tone": "earnest, polemical, propulsive in action sequences, didactic",
+      "pacing": "Moderate",
+      "themes": [
+        "civic duty and citizenship",
+        "militarism and society",
+        "coming of age",
+        "the nature of democracy",
+        "sacrifice"
+      ],
+      "setting": "A future Earth and interstellar battlefields in the 23rd century; a militaristic Earth Federation",
+      "comparable_books": [
+        "The Forever War - Joe Haldeman",
+        "Old Man's War - John Scalzi",
+        "Ender's Game - Orson Scott Card",
+        "All You Need Is Kill - Hiroshi Sakurazaka"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military action sequences",
+          "philosophical and political debate",
+          "classic SF world-building",
+          "coming-of-age arc"
+        ],
+        "negative": [
+          "strongly didactic/polemical tone",
+          "pro-militarist ideology",
+          "thin characterisation outside of ideas",
+          "dated gender politics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sky's End - Marc J. Gregson": {
       "title": "Sky's End",
       "author": "Marc J. Gregson",
       "series": "Above the Black",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "YA Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sixteen-year-old Conrad, exiled to the lowest social rank under a brutal Meritocracy of floating sky-islands, enters a deadly competition called the Gauntlet to save his sister — recruiting into the Hunter trade, where skyship crews must slay colossal steel-scaled serpents called gorgantauns.",
+      "tone": "propulsive, action-packed, underdog triumph",
+      "pacing": "Fast",
+      "themes": [
+        "class and social hierarchy",
+        "found family",
+        "revenge and redemption",
+        "survival",
+        "identity under oppression"
+      ],
+      "setting": "A world of floating islands above toxic black clouds, ruled by a brutal Meritocracy; crews fight on skyships against giant monsters",
+      "comparable_books": [
+        "Red Rising - Pierce Brown",
+        "The Hunger Games - Suzanne Collins",
+        "Scythe - Neal Shusterman",
+        "Iron Gold - Pierce Brown"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "found family",
+          "underdog protagonist",
+          "monsters and skyships",
+          "competition arc",
+          "diverse cast"
+        ],
+        "negative": [
+          "YA level violence (not adult grimdark)",
+          "light romance",
+          "formula underdog arc may feel familiar"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced action sequences and strong character voice make for an engaging listen.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sons of Darkness - Gourav Mohanty": {
       "title": "Sons of Darkness",
       "author": "Gourav Mohanty",
       "series": "The Raag of Rta",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in a reimagined Vedic India, the Mathuran Republic teeters on the brink of annihilation as Krishna, a pirate princess, a doomed warrior named Karna, and a crippled torturer navigate betrayal, war, and prophecy — all while a Son of Darkness is foretold to rise and forgotten gods prepare to play their hand.",
+      "tone": "grimdark, political, epic, dense and slow-burn",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fate vs free will",
+        "caste and class",
+        "political treachery",
+        "divine intervention",
+        "war and vengeance",
+        "identity"
+      ],
+      "setting": "A reimagined ancient India (Aryavrat), inspired by the Mahabharata, with original magic systems and warring city-states",
+      "comparable_books": [
+        "A Song of Ice and Fire - George R. R. Martin",
+        "Malazan Book of the Fallen - Steven Erikson",
+        "The First Law - Joe Abercrombie",
+        "The Poppy War - R. F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey cast",
+          "non-Western mythology",
+          "political intrigue",
+          "grimdark epic scope",
+          "rich world-building",
+          "large ensemble cast"
+        ],
+        "negative": [
+          "very slow opening",
+          "overwhelming number of characters",
+          "South Asian names may initially disorient Western readers",
+          "dense lore"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Selected Stories of Philip K. Dick - Philip K. Dick": {
@@ -113684,53 +113806,97 @@
       "author": "Philip K. Dick",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A curated anthology drawing from Philip K. Dick's vast short fiction output, showcasing his recurring preoccupations with simulated reality, the nature of human identity, authoritarian control, and empathy — across paranoid, darkly comic, and deeply humanist tales.",
+      "tone": "paranoid, darkly comic, humanist, unsettling",
+      "pacing": "Fast",
+      "themes": [
+        "reality vs simulation",
+        "identity and humanity",
+        "authoritarianism and control",
+        "empathy",
+        "technology and alienation"
+      ],
+      "setting": "Varied: Cold War America, dystopian futures, alternate histories, alien worlds — mid-20th century SF settings",
+      "comparable_books": [
+        "The Complete Stories of Theodore Sturgeon - Theodore Sturgeon",
+        "I, Robot - Isaac Asimov",
+        "The Terminal Man - Michael Crichton",
+        "Stories of Your Life and Others - Ted Chiang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short punchy stories",
+          "big philosophical ideas",
+          "classic SF premise",
+          "darkly comic tone",
+          "accessible entry point to PKD"
+        ],
+        "negative": [
+          "uneven quality across individual stories",
+          "dated prose style in places",
+          "no overarching narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Tainted Khan - Taran Matharu": {
       "title": "The Tainted Khan",
       "author": "Taran Matharu",
       "series": "The Soulbound Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jai and his young dragon Winter find themselves among the Tainted — a tribe of outcasts on the Great Steppe — as Jai struggles to reclaim leadership of his father's people, the Kidara, from a usurping uncle while growing in both magical power and political cunning.",
+      "tone": "adventurous, character-driven, accessible epic fantasy",
+      "pacing": "Moderate",
+      "themes": [
+        "coming of age",
+        "leadership and responsibility",
+        "political intrigue",
+        "bond between human and dragon",
+        "freedom and self-determination"
+      ],
+      "setting": "A secondary fantasy world with Roman- and Steppe-inspired empires; the vast grasslands of the Great Steppe",
+      "comparable_books": [
+        "Dragon Rider - Taran Matharu",
+        "Cradle series - Will Wight",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Eragon - Christopher Paolini"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon bonding",
+          "cultivation/progression magic system",
+          "political intrigue",
+          "underdog hero arc",
+          "accessible epic fantasy"
+        ],
+        "negative": [
+          "lighter tone than grimdark peers",
+          "second-book bridging feeling noted by reviewers",
+          "slower pacing than first book"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Radium Girls - Kate Moore": {
@@ -113738,188 +113904,339 @@
       "author": "Kate Moore",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The true story of the young women who painted luminous watch dials with radium paint in early 20th-century America, and who — after suffering devastating radiation sickness — took on their powerful corporate employers in a landmark legal battle that helped shape modern labor and safety law.",
+      "tone": "harrowing, inspiring, investigative, emotionally devastating",
+      "pacing": "Moderate",
+      "themes": [
+        "corporate negligence",
+        "women's rights",
+        "labor rights",
+        "justice and systemic power",
+        "courage in the face of suffering",
+        "early 20th century America"
+      ],
+      "setting": "Newark and Ottawa, Illinois, USA; 1910s–1930s factory floors and courtrooms",
+      "comparable_books": [
+        "The Immortal Life of Henrietta Lacks - Rebecca Skloot",
+        "Devil in the White City - Erik Larson",
+        "Say Nothing - Patrick Radden Keefe",
+        "Killers of the Flower Moon - David Grann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime / narrative non-fiction",
+          "feminist history",
+          "injustice and triumph",
+          "deeply human subject matter",
+          "page-turning pacing for non-fiction"
+        ],
+        "negative": [
+          "deeply upsetting health and death content",
+          "slow build through large cast of workers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Highly praised in audio format; the intimate personal focus of the narrative lends itself well to performance.",
+      "content_flags": [
+        "graphic descriptions of illness and death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Bauchelain and Korbal Broach - Steven Erikson": {
       "title": "Bauchelain and Korbal Broach",
       "author": "Steven Erikson",
       "series": "The Tales of Bauchelain and Korbal Broach",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Volume 1 (collects novellas 1–3: Blood Follows, The Lees of Laughter's End, The Healthy Dead)",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three darkly comic novellas set in the Malazan universe, following the homicidal necromancers Bauchelain and Korbal Broach and their hapless, substance-addled manservant Emancipor Reese as they blunder through serial murders, haunted sea voyages, and a city's fanatical crusade for virtue.",
+      "tone": "darkly comic, satirical, grotesque, witty",
+      "pacing": "Fast",
+      "themes": [
+        "chaos vs order",
+        "satire of morality and civilisation",
+        "the comedic mundanity of evil",
+        "fate and bad luck"
+      ],
+      "setting": "The Malazan world — port cities, open seas, and peculiar towns; a secondary world of high sorcery",
+      "comparable_books": [
+        "Fafhrd and the Gray Mouser - Fritz Leiber",
+        "Malazan Book of the Fallen - Steven Erikson",
+        "Good Omens - Terry Pratchett & Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic tone",
+          "Malazan fans",
+          "fast reads",
+          "morally reprehensible protagonists played for laughs",
+          "satirical edge"
+        ],
+        "negative": [
+          "grotesque content",
+          "not accessible to non-Malazan readers",
+          "episodic with no overarching plot resolution"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Praised audiobook performance by Nicolas Boulton widely cited as exceptional.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wurms of Blearmouth - Steven Erikson": {
       "title": "The Wurms of Blearmouth",
       "author": "Steven Erikson",
       "series": "The Tales of Bauchelain and Korbal Broach",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novella 5",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bauchelain, Korbal Broach, and the long-suffering Emancipor Reese arrive at the miserable, storm-lashed fishing village of Spendrugle, where they encounter a cast of grotesque locals, a nest of ancient and terrible creatures, and the usual blend of black comedy and chaos.",
+      "tone": "darkly comic, grotesque, satirical",
+      "pacing": "Fast",
+      "themes": [
+        "the mundanity of evil",
+        "comic misfortune",
+        "isolation and desperation",
+        "satire of rural life"
+      ],
+      "setting": "The Malazan world; a bleak, wind-battered coastal fishing village",
+      "comparable_books": [
+        "Crack'd Pot Trail - Steven Erikson",
+        "Bauchelain and Korbal Broach - Steven Erikson",
+        "The Fiends of Nightmaria - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic",
+          "Malazan fans",
+          "quick reads",
+          "outrageous characters"
+        ],
+        "negative": [
+          "grotesque content",
+          "diminishing returns if reading many in sequence",
+          "not a good entry point to the Malazan universe"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Crack'd Pot Trail - Steven Erikson": {
       "title": "Crack'd Pot Trail",
       "author": "Steven Erikson",
       "series": "The Tales of Bauchelain and Korbal Broach",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novella 4",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A group of pilgrims and storytellers stranded on a trail without food begin eating their companions — specifically the artists among them — while Bauchelain and Korbal Broach watch with detached amusement, in a darkly comic satire of art, criticism, and survival.",
+      "tone": "darkly comic, satirical, literary, metafictional",
+      "pacing": "Moderate",
+      "themes": [
+        "the value of art",
+        "survival and moral compromise",
+        "satire of literary criticism",
+        "consumption — literal and figurative"
+      ],
+      "setting": "The Malazan world; a desolate trail through a barren wilderness",
+      "comparable_books": [
+        "Bauchelain and Korbal Broach - Steven Erikson",
+        "The Wurms of Blearmouth - Steven Erikson",
+        "Harlequin Valentine - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "metafictional satire",
+          "darkly comic",
+          "literary sensibility",
+          "Malazan fans",
+          "unusually structured narrative"
+        ],
+        "negative": [
+          "deliberately slow and dialogue-heavy",
+          "the satire may feel niche",
+          "not action-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The God Is Not Willing - Steven Erikson": {
       "title": "The God Is Not Willing",
       "author": "Steven Erikson",
-      "series": "The Tales of Witness",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Witness Trilogy",
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A new generation of Malazan soldiers marches north toward the Teblor lands as a god's withdrawal from the world sets off a catastrophic collision between imperial ambition, tribal upheaval, and ancient divine forces — witnessed through multiple viewpoints in classic Erikson fashion.",
+      "tone": "epic, philosophical, dense, military and mythic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the indifference of gods",
+        "empire and its human cost",
+        "trauma and legacy",
+        "the nature of witness and history",
+        "mortality"
+      ],
+      "setting": "The Malazan world; the northern frontier and Teblor territories, set after the events of the original Malazan Book of the Fallen",
+      "comparable_books": [
+        "Malazan Book of the Fallen - Steven Erikson",
+        "Fall of Light - Steven Erikson",
+        "Blood and Bone - Ian C. Esslemont"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Malazan fans",
+          "epic military fantasy",
+          "philosophical depth",
+          "multi-POV complexity",
+          "continuation of beloved world"
+        ],
+        "negative": [
+          "not accessible to newcomers",
+          "extremely dense and demanding",
+          "slow pacing",
+          "bleak tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fall of Light - Steven Erikson": {
       "title": "Fall of Light",
       "author": "Steven Erikson",
       "series": "The Kharkanas Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Deep in the prehistory of the Malazan world, civil war tears apart the Tiste Andii civilization of Kurald Galain as brother fights brother, love turns to ruin, and the seeds of darkness that will shape millennia are sown — told in Erikson's most lyrical and philosophical prose.",
+      "tone": "lyrical, tragic, philosophical, epic and slow",
+      "pacing": "Slow",
+      "themes": [
+        "the birth of darkness and light",
+        "civil war and betrayal",
+        "love and obsession",
+        "the corruption of ideals",
+        "mythogenesis"
+      ],
+      "setting": "Kurald Galain — the prehistoric Tiste Andii homeland in the Malazan world, existing in an age of myth before recorded history",
+      "comparable_books": [
+        "Forge of Darkness - Steven Erikson",
+        "The Silmarillion - J. R. R. Tolkien",
+        "God Is Not Willing - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Malazan fans",
+          "lyrical dense prose",
+          "mythic tragedy",
+          "pre-history world-building",
+          "philosophical depth"
+        ],
+        "negative": [
+          "extremely slow even by Malazan standards",
+          "requires deep prior Malazan knowledge",
+          "bleak and unrelenting tragedy",
+          "most divisive Erikson novel"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fiends of Nightmaria - Steven Erikson": {
       "title": "The Fiends of Nightmaria",
       "author": "Steven Erikson",
       "series": "The Tales of Bauchelain and Korbal Broach",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novella 6",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bauchelain and Korbal Broach arrive in a decaying kingdom beset by a terrifyingly incompetent ruling class and a horde of invading fiends, and proceed to make everything wonderfully worse in their characteristically dark and comedic fashion.",
+      "tone": "darkly comic, satirical, grotesque",
+      "pacing": "Fast",
+      "themes": [
+        "satirical politics and rulership",
+        "the banality of catastrophe",
+        "comic nihilism"
+      ],
+      "setting": "The Malazan world; the crumbling kingdom of Nightmaria",
+      "comparable_books": [
+        "The Wurms of Blearmouth - Steven Erikson",
+        "Bauchelain and Korbal Broach - Steven Erikson",
+        "Crack'd Pot Trail - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic",
+          "Malazan fans",
+          "political satire",
+          "fast and fun"
+        ],
+        "negative": [
+          "grotesque content",
+          "requires Malazan familiarity for context",
+          "not a good entry point"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Great Alone - Kristin Hannah": {
@@ -113927,161 +114244,309 @@
       "author": "Kristin Hannah",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1974, a family follows an unstable Vietnam veteran father to remote, off-grid Alaska, where the brutal wilderness tests their survival — but it is the father's escalating violence and the daughter Leni's desperate attempts to protect her mother that become the true battle for their lives.",
+      "tone": "emotionally devastating, atmospheric, tense, romantic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "domestic abuse",
+        "survival",
+        "mother-daughter bonds",
+        "love in impossible circumstances",
+        "the Alaskan wilderness as character",
+        "trauma and resilience"
+      ],
+      "setting": "Remote wilderness Alaska, 1974 and beyond; isolated homestead communities far from outside help",
+      "comparable_books": [
+        "The Nightingale - Kristin Hannah",
+        "Into the Wild - Jon Krakauer",
+        "Where the Crawdads Sing - Delia Owens",
+        "Normal People - Sally Rooney"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotional depth",
+          "atmospheric setting",
+          "strong female protagonist",
+          "survival drama",
+          "romantic subplot",
+          "deeply felt character writing"
+        ],
+        "negative": [
+          "domestic abuse — detailed and sustained",
+          "deeply distressing content",
+          "slow build",
+          "romance-heavy subplot"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Widely acclaimed in audio; the immersive atmospheric prose and emotional intensity translate powerfully to narration.",
+      "content_flags": [
+        "graphic violence",
+        "domestic abuse"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Mortal Blade - Christopher Mitchell": {
       "title": "The Mortal Blade",
       "author": "Christopher Mitchell",
       "series": "Magelands Eternal Siege",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the City of the Eternal Siege, ruled by gods and besieged without end by monstrous Greenhides, a kidnapped mortal champion, a rebellious demigod, a misfit soldier, and a captive dragon are drawn into a web of politics and power that could reshape the city's divine hierarchy forever.",
+      "tone": "action-driven, accessible, character-focused epic fantasy",
+      "pacing": "Moderate",
+      "themes": [
+        "divine power and its cost",
+        "freedom and oppression",
+        "loyalty and rebellion",
+        "class and mortality",
+        "survival under siege"
+      ],
+      "setting": "The City of the Eternal Siege — a secondary fantasy world ruled by gods and besieged by monstrous hordes, with hidden dragons beneath the walls",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "Kings of the Wyld - Nicholas Eames",
+        "The First Law - Joe Abercrombie",
+        "Shadow of the Gods - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible epic fantasy",
+          "multiple POV",
+          "dragon subplot",
+          "underdog characters",
+          "action-driven",
+          "SPFBO pedigree"
+        ],
+        "negative": [
+          "first book of a 16-book series — major commitment",
+          "slow opening before POVs converge",
+          "no resolution at book's end"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Burn Red Skies - Kerstin Espinosa Rosero": {
       "title": "Burn Red Skies",
       "author": "Kerstin Espinosa Rosero",
       "series": "Burn Red Skies",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the Summoner's army burns through her village, mute fire-elemental Dove is torn from her brother and thrust into a world of warring magic factions, sky-pirates, and elemental dragons — while her brother follows an opposite, darker path under the command of the very enemy who destroyed their home.",
+      "tone": "lyrical, atmospheric, epic, emotionally rich",
+      "pacing": "Moderate",
+      "themes": [
+        "family and separation",
+        "elemental magic and power",
+        "war and tyranny",
+        "identity and disability",
+        "opposing paths of siblings"
+      ],
+      "setting": "A secondary world with floating sky-cities, ice caverns, elemental magic tied to regions, and summoned dragons; features sky-pirates and airships",
+      "comparable_books": [
+        "The Rage of Dragons - Evan Winter",
+        "The Sword of Kaigen - M. L. Wang",
+        "Mistborn - Brandon Sanderson",
+        "The Poppy War - R. F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "unique elemental magic system",
+          "airships and sky-pirates",
+          "mute protagonist",
+          "sibling relationship",
+          "SPFBO finalist"
+        ],
+        "negative": [
+          "under-explained world-building",
+          "pacing issues in middle section",
+          "some plot motivations unclear",
+          "self-published debut roughness"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "By a Silver Thread - Rachel Aaron": {
       "title": "By a Silver Thread",
       "author": "Rachel Aaron",
       "series": "DFZ Changeling",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lola is a fairy changeling — the only one to ever reach adulthood — who has survived for twenty years as the coerced tool of a blood mage in near-future, magic-infused Detroit. When her master vanishes, she must find him before her supply of humanity-sustaining pills runs out and she reverts to the monster she was always meant to be.",
+      "tone": "propulsive, fun, action-packed, emotionally engaging",
+      "pacing": "Fast",
+      "themes": [
+        "identity and self-determination",
+        "power and abuse",
+        "fae mythology",
+        "found family",
+        "surviving the system"
+      ],
+      "setting": "The Detroit Free Zone (DFZ) — a near-future magical Detroit where spirits, dragons, and blood mages coexist in a sprawling urban landscape",
+      "comparable_books": [
+        "Minimum Wage Magic - Rachel Aaron",
+        "Nice Dragons Finish Last - Rachel Aaron",
+        "Dresden Files - Jim Butcher",
+        "The Iron Druid Chronicles - Kevin Hearne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "fun and witty voice",
+          "urban fantasy world-building",
+          "fae lore",
+          "found family",
+          "sympathetic underdog protagonist"
+        ],
+        "negative": [
+          "benefits from prior DFZ series knowledge (though readable standalone)",
+          "some magic system complexity in later books",
+          "self-published — no traditional gatekeeping"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced and character-driven; the witty first-person voice performs excellently in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "To the Bloody End - Rachel Aaron": {
       "title": "To the Bloody End",
       "author": "Rachel Aaron",
       "series": "DFZ Changeling",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the trilogy's explosive conclusion, changeling Lola — now armed with a fairy kingdom and powerful allies — launches her final assault on Victor, the blood mage who has taken over the entire DFZ and made himself nearly untouchable, in a city-destroying battle that will cost everything.",
+      "tone": "propulsive, high-stakes, emotionally cathartic",
+      "pacing": "Fast",
+      "themes": [
+        "freedom from abuse and control",
+        "identity reclaimed",
+        "sacrifice",
+        "found family",
+        "power and its corrupting use"
+      ],
+      "setting": "The Detroit Free Zone (DFZ) — a near-future magical Detroit; fairy courts and the urban landscape of a city-deity",
+      "comparable_books": [
+        "By a Silver Thread - Rachel Aaron",
+        "With a Golden Sword - Rachel Aaron",
+        "Minimum Wage Magic - Rachel Aaron"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "explosive series conclusion",
+          "cathartic payoff",
+          "fast pacing",
+          "found family",
+          "action-heavy climax"
+        ],
+        "negative": [
+          "must read books 1–2 first",
+          "complex overlapping magic systems",
+          "not accessible as a standalone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Action-packed finale translates extremely well to audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mushroom Blues - Adrian M. Gibson": {
       "title": "Mushroom Blues",
       "author": "Adrian M. Gibson",
-      "series": "Hofmann Report",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Hofmann Report",
+      "series_position": "Book 1",
+      "genre": "Noir Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the occupied island nation of Hōppon, xenophobic human detective Henrietta Hofmann is reluctantly partnered with mushroom-headed officer Koji Nameko to investigate the murders of fungal children — a case that forces her to confront her own racism and descend into a psychedelic underworld of colonial oppression and fungal mysticism.",
+      "tone": "darkly comic, gritty, psychedelic, atmospheric noir",
+      "pacing": "Moderate",
+      "themes": [
+        "racism and xenophobia",
+        "colonialism and occupation",
+        "redemption and empathy",
+        "identity",
+        "the nature of the 'other'",
+        "trauma"
+      ],
+      "setting": "Neo Kinoko, the occupied capital of the island nation of Hōppon — a fungalpunk city inspired by post-WWII Japan, full of mushroom architecture, spore-laden streets, and winter storms",
+      "comparable_books": [
+        "Legacy of the Brightwash - Krystle Matar",
+        "The City & the City - China Miéville",
+        "Annihilation - Jeff VanderMeer",
+        "District 9 (film analog)",
+        "The Black Tides of Heaven - JY Yang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unique world-building (fungalpunk)",
+          "noir detective structure",
+          "social commentary on colonialism",
+          "morally grey protagonist arc",
+          "award-winning debut",
+          "interior artwork"
+        ],
+        "negative": [
+          "initially repellent racist protagonist",
+          "body horror elements (fungal)",
+          "requires tolerance for an unlikeable POV character at the start"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Audiobook narrated by Imogen Church has been widely praised for its atmospheric performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Forest at the Heart of Her Mage - Hiyodori": {
