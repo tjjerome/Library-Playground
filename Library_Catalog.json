@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2806,
-  "total_pending": 1794,
+  "total_catalogued": 2826,
+  "total_pending": 1774,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -159507,54 +159507,98 @@
       "title": "The Pagan Lord",
       "author": "Bernard Cornwell",
       "series": "The Last Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Uhtred of Bebbanburg is cast out of his home and must rebuild his warband, while the pagan Danes and Christian Saxons clash as the dream of a united England hangs in the balance. A crisis of identity and loyalty drives Uhtred toward a fateful battle.",
+      "tone": "Gritty, propulsive, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "identity and belonging",
+        "paganism vs. Christianity",
+        "loyalty",
+        "warrior honour",
+        "the making of England"
+      ],
+      "setting": "Early 10th-century Anglo-Saxon England; Mercia and the Danelaw",
+      "comparable_books": [
+        "The Abbot's Tale - Conn Iggulden",
+        "Hild - Nicola Griffith",
+        "The Winter King - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive battle scenes",
+          "morally grey protagonist",
+          "Viking/Saxon history",
+          "long-running series investment",
+          "anti-hero narrator"
+        ],
+        "negative": [
+          "repetitive formula across series",
+          "minimal romance",
+          "heavy violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Matt Bates; Uhtred's first-person voice translates exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Lily and the Lion - Maurice Druon": {
       "title": "The Lily and the Lion",
       "author": "Maurice Druon",
       "series": "The Accursed Kings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The seventh and final instalment of The Accursed Kings concludes the saga of the cursed French royal line, as the conflict between England and France erupts and the last descendants of Philip IV meet their fates. Political intrigue, dynastic rivalry, and the weight of the Templars' curse reach their culmination.",
+      "tone": "Operatic, darkly fatalistic, politically intricate",
+      "pacing": "Moderate",
+      "themes": [
+        "dynastic power",
+        "the curse of the Templars",
+        "political corruption",
+        "fate and legacy",
+        "war between nations"
+      ],
+      "setting": "14th-century France and England; the courts of the Capetian and Plantagenet dynasties",
+      "comparable_books": [
+        "The Iron King - Maurice Druon",
+        "A Game of Thrones - George R.R. Martin",
+        "Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intricate court politics",
+          "multi-generational saga",
+          "classic European historical fiction",
+          "series payoff"
+        ],
+        "negative": [
+          "dated gender portrayal",
+          "dense political genealogy",
+          "slow by modern thriller standards"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Prague Cemetery - Umberto Eco": {
@@ -159562,134 +159606,250 @@
       "author": "Umberto Eco",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 19th-century Europe, the cynical and morally repugnant forger Simone Simonini — the only fictional character in an otherwise historically populated novel — manipulates political events from the unification of Italy to the Dreyfus Affair, ultimately fabricating what becomes the Protocols of the Elders of Zion. Told as a fragmented diary, the novel dissects the origins of anti-Semitism and conspiracy theory.",
+      "tone": "Darkly erudite, ironic, unsettling, postmodern",
+      "pacing": "Slow",
+      "themes": [
+        "conspiracy and forgery",
+        "anti-Semitism and its origins",
+        "manipulation of history",
+        "identity and split personality",
+        "the power of disinformation"
+      ],
+      "setting": "19th-century Europe — Turin, Prague, Paris; spanning the 1850s to 1890s",
+      "comparable_books": [
+        "Foucault's Pendulum - Umberto Eco",
+        "The Name of the Rose - Umberto Eco",
+        "The Secret History - Donna Tartt",
+        "V. - Thomas Pynchon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intellectual historical fiction",
+          "unreliable narrator",
+          "conspiracy and intrigue",
+          "postmodern narrative structure",
+          "erudite prose"
+        ],
+        "negative": [
+          "deeply unlikeable protagonist",
+          "no sympathetic characters",
+          "dense historical knowledge required",
+          "slow-burning and demanding"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Last Full Measure - Jeff Shaara": {
       "title": "The Last Full Measure",
       "author": "Jeff Shaara",
       "series": "The Civil War Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up where Gods and Generals left off, The Last Full Measure follows the final years of the Civil War through the perspectives of Grant, Lee, Chamberlain, and others, culminating in Appomattox. Jeff Shaara continues his father Michael's tradition of immersive, character-driven military history.",
+      "tone": "Solemn, immersive, respectful of history",
+      "pacing": "Moderate",
+      "themes": [
+        "sacrifice and duty",
+        "leadership under pressure",
+        "the cost of war",
+        "national reconciliation",
+        "honour and defeat"
+      ],
+      "setting": "Eastern Theatre of the American Civil War, 1864–1865; Virginia, including Petersburg and Appomattox",
+      "comparable_books": [
+        "The Killer Angels - Michael Shaara",
+        "Gods and Generals - Jeff Shaara",
+        "Killer Angels follow-up - Jeff Shaara",
+        "Gone for Soldiers - Jeff Shaara"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV military history",
+          "emotional depth of war narrative",
+          "historical accuracy",
+          "continuation of beloved series"
+        ],
+        "negative": [
+          "slow pacing in campaign sequences",
+          "no fictional protagonists",
+          "requires prior knowledge of Civil War"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Labyrinth of the Spirits - Carlos Ruiz Zafon": {
       "title": "The Labyrinth of the Spirits",
-      "author": "Carlos Ruiz Zafon",
+      "author": "Carlos Ruiz Zafón",
       "series": "The Cemetery of Forgotten Books",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The final and longest novel in the Cemetery of Forgotten Books cycle, bringing together all threads of the series as secret agent Alicia Gris investigates a decades-old mystery tied to Franco's Spain, the Cemetery of Forgotten Books, and the fates of the Sempere family. A sprawling, gothic conclusion to Zafón's Barcelona saga.",
+      "tone": "Gothic-noir, atmospheric, labyrinthine, lyrical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "memory and history",
+        "Francoist Spain",
+        "books and storytelling",
+        "identity",
+        "love and obsession",
+        "the legacy of secrets"
+      ],
+      "setting": "Barcelona, primarily 1959–1960, under Franco's dictatorship; with flashbacks spanning the 20th century",
+      "comparable_books": [
+        "The Shadow of the Wind - Carlos Ruiz Zafón",
+        "The Angel's Game - Carlos Ruiz Zafón",
+        "The Name of the Rose - Umberto Eco",
+        "Captain Alatriste - Arturo Pérez-Reverte"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush atmospheric prose",
+          "mystery within mystery",
+          "love of books as theme",
+          "grand series conclusion",
+          "gothic Barcelona setting"
+        ],
+        "negative": [
+          "very long and dense",
+          "requires reading earlier books",
+          "female characters as objects of desire trope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Killer Angels - Michael Shaara": {
       "title": "The Killer Angels",
       "author": "Michael Shaara",
       "series": "The Civil War Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (chronologically; published as standalone)",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A Pulitzer Prize-winning novel depicting the four days of the Battle of Gettysburg in July 1863, told through the perspectives of commanders on both sides — including Lee, Longstreet, and Chamberlain. Widely regarded as the definitive fictional account of America's most decisive Civil War battle.",
+      "tone": "Sombre, intimate, heroic, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "duty and honour",
+        "leadership and command",
+        "the tragedy of war",
+        "ideology and identity",
+        "courage under fire"
+      ],
+      "setting": "Gettysburg, Pennsylvania, July 1–4, 1863; the American Civil War",
+      "comparable_books": [
+        "The Last Full Measure - Jeff Shaara",
+        "Gods and Generals - Jeff Shaara",
+        "Confederates - Thomas Keneally",
+        "Cold Mountain - Charles Frazier"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Pulitzer Prize winner",
+          "multi-POV military fiction",
+          "deeply humanising portrait of war",
+          "essential Civil War reading"
+        ],
+        "negative": [
+          "no fictional protagonists",
+          "some may find pacing slow between battles",
+          "requires some Civil War familiarity"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "A frequently praised audiobook experience; the multi-POV structure and eloquent prose reward a skilled narrator.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Iron King - Maurice Druon": {
       "title": "The Iron King",
       "author": "Maurice Druon",
       "series": "The Accursed Kings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In 14th-century France, Philip IV — the Iron King — destroys the Knights Templar and imprisons their Grand Master Jacques de Molay, who curses the king and his line from the flames. A gripping portrait of power, betrayal, and the beginning of a dynastic doom that shaped medieval Europe.",
+      "tone": "Dark, operatic, politically ruthless",
+      "pacing": "Moderate",
+      "themes": [
+        "power and corruption",
+        "the curse of the Templars",
+        "dynastic politics",
+        "religious persecution",
+        "fate"
+      ],
+      "setting": "Early 14th-century France; Paris and the French royal court",
+      "comparable_books": [
+        "The Lily and the Lion - Maurice Druon",
+        "A Game of Thrones - George R.R. Martin",
+        "The Name of the Rose - Umberto Eco",
+        "Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "George R.R. Martin's cited inspiration for Game of Thrones",
+          "intricate medieval court intrigue",
+          "morally complex power players",
+          "classic of French literature"
+        ],
+        "negative": [
+          "dated in style and gender portrayal",
+          "dense political genealogy",
+          "translated prose may feel formal"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hammer of Eden - Ken Follett": {
@@ -159697,26 +159857,47 @@
       "author": "Ken Follett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a California hippie commune faces destruction by a government dam project, its charismatic and dangerous leader threatens to trigger man-made earthquakes using a stolen seismic vibrator unless the government backs down. FBI agent Judy Maddox races against the clock to stop them before San Francisco is devastated.",
+      "tone": "Propulsive, commercial, tense",
+      "pacing": "Fast",
+      "themes": [
+        "environmentalism vs. the state",
+        "cult psychology",
+        "obsession and desperation",
+        "institutional failure",
+        "man vs. nature"
+      ],
+      "setting": "Contemporary California — Northern California wine country, San Francisco, and the FBI; late 1990s",
+      "comparable_books": [
+        "The Third Twin - Ken Follett",
+        "Eye of the Needle - Ken Follett",
+        "The Firm - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive page-turner",
+          "dual antagonist/protagonist structure",
+          "high-stakes thriller",
+          "strong female lead"
+        ],
+        "negative": [
+          "formulaic plot",
+          "lighter than Follett's historical epics",
+          "somewhat dated premise"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fort: A Novel of the Revolutionary War - Bernard Cornwell": {
@@ -159724,26 +159905,47 @@
       "author": "Bernard Cornwell",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the summer of 1779, a small British force builds a garrison at Penobscot Bay in Maine while a vastly superior American fleet is sent to destroy it — a disastrous expedition that ends in America's worst naval defeat before Pearl Harbor, and brings contrasting fates to a young John Moore and a dishonoured Paul Revere.",
+      "tone": "Gritty, grounded, historically meticulous",
+      "pacing": "Moderate",
+      "themes": [
+        "command and incompetence",
+        "the fog of war",
+        "national myth vs. reality",
+        "courage and cowardice",
+        "clashing personalities in crisis"
+      ],
+      "setting": "Penobscot Bay, coastal Maine, summer 1779; the American Revolutionary War",
+      "comparable_books": [
+        "The Killer Angels - Michael Shaara",
+        "Agincourt - Bernard Cornwell",
+        "The Last Full Measure - Jeff Shaara"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "obscure historical episode brought to life",
+          "dual-perspective battle narrative",
+          "demythologising of American heroes",
+          "Cornwell's trademark research"
+        ],
+        "negative": [
+          "lesser-known period may deter some readers",
+          "more constrained by historical record than typical Cornwell",
+          "muted protagonist"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Indifferent Stars Above - Daniel James Brown": {
@@ -159751,107 +159953,193 @@
       "author": "Daniel James Brown",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Focused on young bride Sarah Graves, this meticulously researched narrative account follows the ill-fated Donner Party's 1846 wagon-train journey west, from their departure in Illinois to their catastrophic entrapment in the Sierra Nevada — where starvation, hypothermia, and ultimately cannibalism became the price of survival.",
+      "tone": "Harrowing, humane, unflinching but never sensationalist",
+      "pacing": "Moderate",
+      "themes": [
+        "survival and human endurance",
+        "westward expansion and its cost",
+        "community under extreme pressure",
+        "leadership failure",
+        "the fragility of hope"
+      ],
+      "setting": "The American frontier, 1846–1847; overland trail from Illinois to the Sierra Nevada mountains",
+      "comparable_books": [
+        "The Boys in the Boat - Daniel James Brown",
+        "Into Thin Air - Jon Krakauer",
+        "Endurance - Alfred Lansing",
+        "Killers of the Flower Moon - David Grann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction that reads like a novel",
+          "propulsive true survival story",
+          "humanising focus on individual experience",
+          "rich historical context"
+        ],
+        "negative": [
+          "deeply distressing content",
+          "cannibalism described",
+          "no fictional relief"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Flame Bearer - Bernard Cornwell": {
       "title": "The Flame Bearer",
       "author": "Bernard Cornwell",
       "series": "The Last Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Uhtred of Bebbanburg finally sees his chance to reclaim his ancestral home from his treacherous cousin, but the politics of a fragmenting Northumbria and the ever-present threat of the Danes threaten to unravel everything. A pivotal book in the series as Uhtred's lifelong obsession comes within reach.",
+      "tone": "Gritty, propulsive, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "homecoming and identity",
+        "obsession with legacy",
+        "Saxon-Danish conflict",
+        "loyalty and betrayal",
+        "the price of leadership"
+      ],
+      "setting": "Early 10th-century Northumbria and Northern England",
+      "comparable_books": [
+        "Sword of Kings - Bernard Cornwell",
+        "The Empty Throne - Bernard Cornwell",
+        "The Abbot's Tale - Conn Iggulden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "long-awaited series milestone",
+          "propulsive battle sequences",
+          "strong character payoff for series readers",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "requires investment in prior nine books",
+          "repetitive structural beats",
+          "heavy violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Matt Bates's narration is a highlight of the audiobook series throughout.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Empty Throne - Bernard Cornwell": {
       "title": "The Empty Throne",
       "author": "Bernard Cornwell",
       "series": "The Last Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Uhtred incapacitated by a wound, much of the action is narrated by his son, as the kingdoms of Mercia and Wessex contend over succession. The struggle for the throne of Mercia draws Uhtred back into the fight even as he heals.",
+      "tone": "Gritty, propulsive, politically tense",
+      "pacing": "Fast",
+      "themes": [
+        "succession and political power",
+        "the making of England",
+        "father and son relationships",
+        "loyalty vs. self-interest",
+        "resilience"
+      ],
+      "setting": "10th-century Mercia and Wessex; Anglo-Saxon England",
+      "comparable_books": [
+        "The Pagan Lord - Bernard Cornwell",
+        "The Flame Bearer - Bernard Cornwell",
+        "Sword of Kings - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tightly plotted series instalment",
+          "change of narrator adds freshness",
+          "rich Saxon world-building",
+          "action-driven"
+        ],
+        "negative": [
+          "requires prior series investment",
+          "narrator shift may disappoint some fans",
+          "heavy violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Matt Bates's narration continues to be a standout feature of the audiobook.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Defector - Chris Hadfield": {
       "title": "The Defector",
       "author": "Chris Hadfield",
       "series": "The Apollo Murders",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a Soviet MiG fighter vanishes during the 1973 Yom Kippur War, NASA flight controller and former test pilot Kaz Zemeckis is pulled into a high-stakes Cold War game involving a Soviet pilot seeking to defect and the secrets of the mythical Foxbat MiG-25, racing across three continents and into America's most secret test site.",
+      "tone": "Propulsive, technically authentic, espionage-taut",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Cold War espionage",
+        "trust and betrayal",
+        "technological supremacy",
+        "loyalty to nation vs. humanity",
+        "aerial combat"
+      ],
+      "setting": "Israel, the Middle East, and Area 51, October–November 1973; Cold War era",
+      "comparable_books": [
+        "The Apollo Murders - Chris Hadfield",
+        "The Hunt for Red October - Tom Clancy",
+        "The Day of the Jackal - Frederick Forsyth",
+        "Top Gun (novelisation genre)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "authentic insider technical detail from a real astronaut/pilot",
+          "Tom Clancy-style techno-thriller",
+          "Cold War espionage tension",
+          "works as standalone"
+        ],
+        "negative": [
+          "slow build in middle sections",
+          "heavy aviation/technical detail may daunt some",
+          "sequel benefits from reading Book 1 first"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Falcon of Sparta - Conn Iggulden": {
@@ -159859,80 +160147,143 @@
       "author": "Conn Iggulden",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 401 BC, a Persian prince raises an army of Greek mercenaries — including feared Spartan warriors — to challenge his brother for the throne of the Achaemenid Empire. After catastrophe at the Battle of Cunaxa, the young soldier Xenophon must lead ten thousand stranded Greeks on a desperate march home through hostile territory.",
+      "tone": "Ferociously violent, heroic, fast-paced",
+      "pacing": "Fast",
+      "themes": [
+        "leadership under impossible odds",
+        "loyalty and brotherhood",
+        "survival",
+        "empire and power",
+        "the ancient warrior code"
+      ],
+      "setting": "The Persian Empire and its western frontier, 401 BC; based on Xenophon's Anabasis",
+      "comparable_books": [
+        "Gates of Athens - Conn Iggulden",
+        "Protector - Conn Iggulden",
+        "The Killer Angels - Michael Shaara",
+        "Pressfield's Gates of Fire - Steven Pressfield"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic ancient world battle fiction",
+          "propulsive survival narrative",
+          "Iggulden's trademark vivid action",
+          "standalone entry point"
+        ],
+        "negative": [
+          "very graphic violence",
+          "limited female characters",
+          "no series to continue into"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The City of Mist - Carlos Ruiz Zafon": {
       "title": "The City of Mist",
-      "author": "Carlos Ruiz Zafon",
+      "author": "Carlos Ruiz Zafón",
       "series": "The Cemetery of Forgotten Books",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Literary Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A posthumous collection of eleven stories — most never before published in English — set in Zafón's beloved literary universe, returning to the gothic Barcelona of the Cemetery of Forgotten Books with tales of writers, books, and the mystery that permeates the city across centuries.",
+      "tone": "Gothic-noir, atmospheric, wistful, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "books and storytelling",
+        "love and loss",
+        "the mystery of Barcelona",
+        "creativity and obsession",
+        "mortality and legacy"
+      ],
+      "setting": "Primarily Barcelona, across multiple eras from medieval times to the 20th century",
+      "comparable_books": [
+        "The Shadow of the Wind - Carlos Ruiz Zafón",
+        "The Angel's Game - Carlos Ruiz Zafón",
+        "Invisible Cities - Italo Calvino"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Zafón's signature gothic-noir atmosphere",
+          "love of books as central theme",
+          "short story format allows dipping in",
+          "beautiful farewell from a beloved author"
+        ],
+        "negative": [
+          "best appreciated after reading the quartet",
+          "short story format may feel slight vs. novels",
+          "some stories more developed than others"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Apollo Murders - Chris Hadfield": {
       "title": "The Apollo Murders",
       "author": "Chris Hadfield",
       "series": "The Apollo Murders",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set during a fictional final Apollo mission in 1973, NASA flight controller and ex-test pilot Kaz Zemeckis discovers that Cold War espionage has reached the lunar surface, as Soviet and American agendas collide in space with lethal consequences far beyond the reach of law or rescue.",
+      "tone": "Propulsive, technically authentic, claustrophobic thriller",
+      "pacing": "Fast",
+      "themes": [
+        "Cold War rivalry",
+        "space exploration",
+        "espionage and deception",
+        "the cost of ambition",
+        "survival in extreme environments"
+      ],
+      "setting": "Earth orbit, the Moon, and NASA mission control, 1973; alternate history Cold War",
+      "comparable_books": [
+        "The Defector - Chris Hadfield",
+        "The Martian - Andy Weir",
+        "The Hunt for Red October - Tom Clancy",
+        "Artemis - Andy Weir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "authentic insider space detail from a real astronaut",
+          "alternate history Cold War tension",
+          "whodunit in space",
+          "fans of The Martian"
+        ],
+        "negative": [
+          "some characters thinly drawn",
+          "alternate history may not suit purists",
+          "technical detail-heavy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Highly praised audiobook edition; the immersive technical atmosphere is enhanced by strong narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Abbot's Tale - Conn Iggulden": {
@@ -159940,80 +160291,145 @@
       "author": "Conn Iggulden",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The story of Dunstan of Glastonbury — blacksmith, monk, visionary, and Abbot — told retrospectively as his memoir spanning service to seven kings of England in the tumultuous 10th century. Morally ambiguous and deeply political, it traces how one flawed man helped forge the kingdom of England.",
+      "tone": "Dark, wry, politically intricate, retrospective",
+      "pacing": "Moderate",
+      "themes": [
+        "ambition and faith",
+        "the making of England",
+        "power and manipulation",
+        "morality and hypocrisy",
+        "kingship"
+      ],
+      "setting": "10th-century England; Glastonbury, the royal courts of Wessex, Rome, and the battlefields of Brunanburh",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "The Pagan Lord - Bernard Cornwell",
+        "The Name of the Rose - Umberto Eco",
+        "Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey and unreliable narrator",
+          "richly researched Anglo-Saxon world",
+          "companion to the Last Kingdom series",
+          "fast-paced despite historical depth"
+        ],
+        "negative": [
+          "protagonist is deliberately unlikeable",
+          "single-book story with no continuation",
+          "some readers find Dunstan irritating"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sword of Kings - Bernard Cornwell": {
       "title": "Sword of Kings",
       "author": "Bernard Cornwell",
       "series": "The Last Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Uhtred of Bebbanburg is drawn into a succession crisis for the kingdom of Wessex following the death of King Edward, as rival claimants battle for the throne and the dream of a united England teeters on the brink. Uhtred must choose sides in a conflict that will decide the future of the nation.",
+      "tone": "Gritty, propulsive, politically tense",
+      "pacing": "Fast",
+      "themes": [
+        "succession and kingship",
+        "loyalty and duty",
+        "the making of England",
+        "aging warrior's legacy",
+        "family obligation"
+      ],
+      "setting": "10th-century Wessex and southern England; following the death of King Edward the Elder",
+      "comparable_books": [
+        "War of the Wolf - Bernard Cornwell",
+        "The Flame Bearer - Bernard Cornwell",
+        "The Empty Throne - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high-stakes political and military action",
+          "long series payoff",
+          "Uhtred at his most conflicted",
+          "propulsive Cornwell pacing"
+        ],
+        "negative": [
+          "deep series investment required",
+          "formula can feel repetitive by book 12",
+          "heavy violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Matt Bates's long-running narration of the series is a consistent strength across all volumes.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Angel's Game - Carlos Ruiz Zafon": {
       "title": "The Angel's Game",
-      "author": "Carlos Ruiz Zafon",
+      "author": "Carlos Ruiz Zafón",
       "series": "The Cemetery of Forgotten Books",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1920s Barcelona, struggling writer David Martín is commissioned by a mysterious and possibly supernatural publisher to write a book that will give birth to a new religion — a Faustian bargain that draws him into obsession, madness, and murder in the labyrinthine streets of the gothic quarter.",
+      "tone": "Gothic-noir, darkly romantic, unsettling, labyrinthine",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the dark power of writing",
+        "obsession and madness",
+        "Faustian bargains",
+        "the supernatural",
+        "Barcelona's hidden history"
+      ],
+      "setting": "Barcelona, 1910s–1930s; the Gothic Quarter and surrounding areas",
+      "comparable_books": [
+        "The Shadow of the Wind - Carlos Ruiz Zafón",
+        "The Labyrinth of the Spirits - Carlos Ruiz Zafón",
+        "Foucault's Pendulum - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric gothic Barcelona",
+          "darker and more gothic than Shadow of the Wind",
+          "mystery within mystery structure",
+          "love of books as theme"
+        ],
+        "negative": [
+          "more disturbing than first book",
+          "protagonist less sympathetic than Daniel Sempere",
+          "deliberately ambiguous ending"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Stonehenge - Bernard Cornwell": {
@@ -160021,26 +160437,47 @@
       "author": "Bernard Cornwell",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 2000 BC Bronze Age Britain, three rival brothers — the warrior Lengar, the sorcerer-visionary Camaban, and the builder Saban — are set on a collision course when a dying stranger brings gold to their settlement. Saban's engineering genius and reluctant devotion to his brother's vision ultimately gives rise to the great temple we know as Stonehenge.",
+      "tone": "Epic, primal, violent, mythic",
+      "pacing": "Moderate",
+      "themes": [
+        "sibling rivalry and ambition",
+        "religion and power",
+        "the quest for immortality",
+        "sacrifice",
+        "ancient engineering and wonder"
+      ],
+      "setting": "Bronze Age Britain, approximately 2000 BC; the Salisbury Plain and surrounding tribal territories",
+      "comparable_books": [
+        "Pillars of the Earth - Ken Follett",
+        "Agincourt - Bernard Cornwell",
+        "Shaman - Kim Stanley Robinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unique prehistoric setting",
+          "Cornwell's vivid action and world-building",
+          "mythic sibling rivalry",
+          "standalone novel"
+        ],
+        "negative": [
+          "slower than Cornwell's military series",
+          "some characters thinly drawn",
+          "graphic ritual violence and sacrifice"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Stormbird - Conn Iggulden": {
