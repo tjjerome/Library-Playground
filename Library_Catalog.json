@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3105,
-  "total_pending": 1495,
+  "total_catalogued": 3125,
+  "total_pending": 1475,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -174138,162 +174138,305 @@
       "title": "Tombland",
       "author": "C. J. Sansom",
       "series": "The Shardlake Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1549, Tudor lawyer Matthew Shardlake is sent to Norwich by Lady Elizabeth to investigate the murder of a distant Boleyn relation, only to become caught up in Kett's Rebellion, a massive peasant uprising engulfing Edward VI's chaotic England. A murder mystery wrapped in sweeping historical drama, it is the final published entry in the series.",
+      "tone": "atmospheric, meticulous, morally weighty",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "justice vs. loyalty",
+        "class struggle",
+        "religious upheaval",
+        "political intrigue",
+        "social inequality"
+      ],
+      "setting": "Tudor England, primarily Norwich and Norfolk, summer 1549",
+      "comparable_books": [
+        "Wolf Hall - Hilary Mantel",
+        "The Name of the Rose - Umberto Eco",
+        "An Instance of the Fingerpost - Iain Pears",
+        "Dissolution - C. J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "meticulous historical research",
+          "morally complex protagonist",
+          "rich period atmosphere",
+          "crime mystery embedded in real history",
+          "long immersive reads"
+        ],
+        "negative": [
+          "very long books",
+          "slow-building plots",
+          "grim depictions of Tudor violence and injustice"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Long, immersive prose and a reliable narrator (Steven Crossley) make the audiobook format ideal for this sprawling novel.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Heaven and Hell - John Jakes": {
       "title": "Heaven and Hell",
       "author": "John Jakes",
       "series": "The North and South Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the North and South Trilogy follows the Main and Hazard families through the turbulent Reconstruction era after the Civil War, as Charles Main attempts to rebuild his life on the Western frontier and a murderous enemy stalks both clans. The South smolders under carpetbagger rule while the nation struggles to find peace.",
+      "tone": "melodramatic, epic, emotionally bleak",
+      "pacing": "Moderate",
+      "themes": [
+        "Reconstruction",
+        "revenge",
+        "family loyalty",
+        "race and prejudice",
+        "national healing",
+        "trauma of war"
+      ],
+      "setting": "Post-Civil War America, chiefly 1865–1869, spanning the South, North, and Western frontier",
+      "comparable_books": [
+        "Gone with the Wind - Margaret Mitchell",
+        "The Killer Angels - Michael Shaara",
+        "Lonesome Dove - Larry McMurtry",
+        "Love and War - John Jakes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping family sagas",
+          "American Civil War history",
+          "multi-generational epics",
+          "historical drama with romance",
+          "large casts of characters"
+        ],
+        "negative": [
+          "melodrama",
+          "very long books",
+          "formulaic plotting",
+          "dated attitudes on race"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Love and War - John Jakes": {
       "title": "Love and War",
       "author": "John Jakes",
       "series": "The North and South Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The second volume of the trilogy follows the Main and Hazard families through the full duration of the American Civil War, depicting their divergent experiences on the battlefields of Bull Run and Fredericksburg and in the corridors of Washington and Richmond. Love, betrayal, and sacrifice define this massive saga of a nation at war with itself.",
+      "tone": "epic, dramatic, sweeping",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty vs. friendship",
+        "war's human cost",
+        "political ambition",
+        "divided families",
+        "love and sacrifice"
+      ],
+      "setting": "USA, North and South, 1861–1865, spanning battlefields, cities, and plantations",
+      "comparable_books": [
+        "North and South - John Jakes",
+        "Gone with the Wind - Margaret Mitchell",
+        "The Killer Angels - Michael Shaara",
+        "Cold Mountain - Charles Frazier"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping family sagas",
+          "American Civil War history",
+          "multi-generational epics",
+          "dual-perspective war narratives",
+          "romance woven with history"
+        ],
+        "negative": [
+          "very long books (1000+ pages)",
+          "melodrama",
+          "large ensemble casts can feel unwieldy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "North and South - John Jakes": {
       "title": "North and South",
       "author": "John Jakes",
       "series": "The North and South Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two young men — Orry Main of South Carolina and George Hazard of Pennsylvania — forge a deep friendship at West Point in the 1840s, even as the cultural and moral divide between their families' worlds over slavery and industrialization slowly tears them apart in the decades leading to the Civil War. A sweeping multi-generational family epic.",
+      "tone": "epic, dramatic, richly detailed",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "friendship across division",
+        "slavery and its moral cost",
+        "sectional identity",
+        "family dynasty",
+        "inevitability of war"
+      ],
+      "setting": "Pre-Civil War America, 1842–1861, spanning South Carolina plantations, Pennsylvania ironworks, West Point, and the Mexican–American War",
+      "comparable_books": [
+        "Gone with the Wind - Margaret Mitchell",
+        "Roots - Alex Haley",
+        "The Killer Angels - Michael Shaara",
+        "Lonesome Dove - Larry McMurtry"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping family sagas",
+          "American history epics",
+          "multi-generational storytelling",
+          "richly populated ensemble casts",
+          "romance with historical backdrop"
+        ],
+        "negative": [
+          "very long books",
+          "melodrama",
+          "dated racial attitudes",
+          "slow-building narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fire in the Hole - Elmore Leonard": {
       "title": "Fire in the Hole",
       "author": "Elmore Leonard",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Raylan Givens",
+      "series_position": "Book 4",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A short story collection originally published as When the Women Come Out to Dance, featuring nine crime tales including the novella 'Fire in the Hole', in which U.S. Marshal Raylan Givens returns to his Kentucky coal-country roots to confront Boyd Crowder, a white supremacist and tax evader who blows things up for emphasis. The title story was the basis for the FX television series Justified.",
+      "tone": "darkly comic, sharp, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "law vs. lawlessness",
+        "old loyalties",
+        "moral ambiguity",
+        "American South",
+        "crime and punishment"
+      ],
+      "setting": "Various American settings; the title story is set in Eastern Kentucky coal country",
+      "comparable_books": [
+        "Pronto - Elmore Leonard",
+        "Riding the Rap - Elmore Leonard",
+        "No Country for Old Men - Cormac McCarthy",
+        "The Friends of Eddie Coyle - George V. Higgins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "razor-sharp dialogue",
+          "darkly comic crime fiction",
+          "morally grey characters",
+          "short punchy reads",
+          "fans of the TV series Justified"
+        ],
+        "negative": [
+          "short story format may disappoint novel readers",
+          "some tonal variety across stories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Leonard's dialogue-driven prose and punchy rhythms translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Pronto - Elmore Leonard": {
       "title": "Pronto",
       "author": "Elmore Leonard",
       "series": "Raylan Givens",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "U.S. Marshal Raylan Givens is on the trail of Harry Arno, a Miami bookie who has been skimming from the mob and goes on the run to the Italian Riviera to escape both federal investigators and vengeful gangsters. An international crime caper that introduced one of crime fiction's most memorable lawmen.",
+      "tone": "darkly comic, propulsive, wry",
+      "pacing": "Fast",
+      "themes": [
+        "law and order",
+        "greed",
+        "identity",
+        "old loyalties",
+        "the mob"
+      ],
+      "setting": "Miami and Rapallo, Italy, contemporary",
+      "comparable_books": [
+        "Riding the Rap - Elmore Leonard",
+        "Get Shorty - Elmore Leonard",
+        "The Friends of Eddie Coyle - George V. Higgins",
+        "Raylan - Elmore Leonard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "razor-sharp dialogue",
+          "propulsive crime plots",
+          "morally complex lawman protagonist",
+          "dark humour",
+          "fans of Justified"
+        ],
+        "negative": [
+          "thin character interiority",
+          "plot over depth"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Leonard's snappy dialogue and breezy pacing are perfectly suited to the audiobook format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "What Is Real?: The Unfinished Quest for the Meaning of Quantum Physics - Adam Becker": {
@@ -174301,80 +174444,147 @@
       "author": "Adam Becker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Popular Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Science writer and astrophysicist Adam Becker traces the history of quantum mechanics and the long-suppressed debate over what the theory actually means about the nature of reality, arguing that the dominant Copenhagen interpretation was never the product of fair scientific debate but of political and philosophical fashion, and celebrating the dissenters like David Bohm and Hugh Everett who dared to ask deeper questions.",
+      "tone": "engaging, polemical, accessible",
+      "pacing": "Moderate",
+      "themes": [
+        "philosophy of science",
+        "the nature of reality",
+        "institutional power in science",
+        "quantum mechanics",
+        "history of physics",
+        "scientific dissent"
+      ],
+      "setting": "Non-fiction; spans 20th-century physics from Europe to America",
+      "comparable_books": [
+        "The Elegant Universe - Brian Greene",
+        "The Quantum Labyrinth - Paul Halpern",
+        "Something Deeply Hidden - Sean Carroll",
+        "The Order of Time - Carlo Rovelli"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "history of science narratives",
+          "philosophy of physics",
+          "accessible popular science",
+          "intellectual debate and controversy",
+          "character-driven scientific history"
+        ],
+        "negative": [
+          "requires tolerance for abstract physical concepts",
+          "takes a clear polemical stance not all physicists agree with"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Raylan - Elmore Leonard": {
       "title": "Raylan",
       "author": "Elmore Leonard",
       "series": "Raylan Givens",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "U.S. Marshal Raylan Givens juggles several overlapping criminal cases in Kentucky, including a body-parts black market scheme and a coal-country drug operation run by a pair of ruthless siblings. A late-career Leonard novel written partly in response to the success of the FX television series Justified.",
+      "tone": "darkly comic, propulsive, wry",
+      "pacing": "Fast",
+      "themes": [
+        "law vs. lawlessness",
+        "Appalachian crime",
+        "moral pragmatism",
+        "greed",
+        "drugs and the body trade"
+      ],
+      "setting": "Contemporary Kentucky, primarily Harlan County coal country",
+      "comparable_books": [
+        "Pronto - Elmore Leonard",
+        "Riding the Rap - Elmore Leonard",
+        "No Country for Old Men - Cormac McCarthy",
+        "Fire in the Hole - Elmore Leonard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "razor-sharp dialogue",
+          "fans of Justified",
+          "dark humour in crime fiction",
+          "propulsive multi-strand plotting",
+          "morally grey lawman protagonist"
+        ],
+        "negative": [
+          "looser structure than earlier Leonard novels",
+          "episodic rather than tightly plotted"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Leonard's trademark dialogue-driven prose is perfectly suited to audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Essex Dogs - Dan Jones": {
       "title": "Essex Dogs",
       "author": "Dan Jones",
       "series": "Essex Dogs Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In July 1346, a ragged band of English soldiers known as the Essex Dogs land on the beaches of Normandy as part of Edward III's campaign toward the Battle of Crécy, experiencing medieval warfare in all its brutal, unglamorous reality. Bestselling historian Dan Jones's fiction debut focuses on ordinary soldiers rather than kings and nobles.",
+      "tone": "gritty, visceral, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "brotherhood in war",
+        "survival",
+        "the human cost of medieval warfare",
+        "loyalty",
+        "disillusionment"
+      ],
+      "setting": "Normandy and northern France, July–August 1346, during the Hundred Years' War",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "Agincourt - Bernard Cornwell",
+        "The Name of the Rose - Umberto Eco",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gritty medieval warfare",
+          "band-of-brothers dynamics",
+          "ground-level historical fiction",
+          "black humour",
+          "fans of Bernard Cornwell"
+        ],
+        "negative": [
+          "graphic violence and brutality",
+          "episodic structure",
+          "little character interiority for some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Goldfinch - Donna Tartt": {
@@ -174382,161 +174592,298 @@
       "author": "Donna Tartt",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a bombing at a New York museum kills his mother, thirteen-year-old Theo Decker escapes with a small Dutch masterpiece — the 17th-century painting 'The Goldfinch' — and carries its secret through decades of loss, addiction, and a criminal underworld stretching from New York to Amsterdam. A Dickensian coming-of-age novel meditating on art, grief, and beauty.",
+      "tone": "lyrical, elegiac, Dickensian",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "grief and loss",
+        "the power of art",
+        "identity formation",
+        "addiction",
+        "fate and free will",
+        "belonging"
+      ],
+      "setting": "New York City, Las Vegas, and Amsterdam, spanning roughly 2001–2013",
+      "comparable_books": [
+        "A Little Life - Hanya Yanagihara",
+        "The Secret History - Donna Tartt",
+        "Great Expectations - Charles Dickens",
+        "All the Light We Cannot See - Anthony Doerr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary prose",
+          "long immersive novels",
+          "coming-of-age stories",
+          "art and aesthetics as themes",
+          "emotionally devastating narratives"
+        ],
+        "negative": [
+          "very long books",
+          "slow pacing in middle sections",
+          "some readers find the ending over-philosophical"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "David Pittu's acclaimed narration enhances Tartt's rich, layered prose and makes the lengthy runtime feel rewarding.",
+      "content_flags": [
+        "drug use and addiction",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dissolution - C. J. Sansom": {
       "title": "Dissolution",
       "author": "C. J. Sansom",
       "series": "The Shardlake Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1537, hunchbacked lawyer Matthew Shardlake is sent by Thomas Cromwell to investigate the murder of a royal commissioner at a Sussex monastery, uncovering a web of corruption, sin, and murder among the monks. A taut historical whodunit that introduces one of crime fiction's most beloved protagonists.",
+      "tone": "atmospheric, taut, intellectually rich",
+      "pacing": "Moderate",
+      "themes": [
+        "religious reformation",
+        "truth and justice",
+        "faith and doubt",
+        "power and corruption",
+        "outsider identity"
+      ],
+      "setting": "A Sussex monastery and Tudor England, 1537, during the Dissolution of the Monasteries",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Wolf Hall - Hilary Mantel",
+        "Cadfael Chronicles - Ellis Peters",
+        "Dark Fire - C. J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "meticulous historical research",
+          "locked-room mystery structure",
+          "morally complex protagonist",
+          "Tudor period",
+          "fans of Ellis Peters or Hilary Mantel"
+        ],
+        "negative": [
+          "grim depictions of Tudor cruelty",
+          "measured pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Steven Crossley's authoritative narration is widely praised and perfectly suits the atmospheric series.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dark Fire - C. J. Sansom": {
       "title": "Dark Fire",
       "author": "C. J. Sansom",
       "series": "The Shardlake Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1540, Matthew Shardlake is coerced by Thomas Cromwell into finding a cache of the legendary Greek incendiary weapon 'Greek Fire' recently discovered in London, while simultaneously defending a young woman accused of murder. Racing against a political deadline, Shardlake navigates a labyrinthine plot through the underbelly of Tudor London.",
+      "tone": "atmospheric, tense, richly detailed",
+      "pacing": "Moderate",
+      "themes": [
+        "political coercion",
+        "lost knowledge",
+        "justice",
+        "corruption",
+        "religious change"
+      ],
+      "setting": "Tudor London, summer 1540, under the shadow of Thomas Cromwell's political fall",
+      "comparable_books": [
+        "Dissolution - C. J. Sansom",
+        "Sovereign - C. J. Sansom",
+        "Wolf Hall - Hilary Mantel",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tudor period detail",
+          "dual-track mystery plotting",
+          "morally complex protagonist",
+          "historical conspiracy",
+          "fans of CWA Diamond Dagger winners"
+        ],
+        "negative": [
+          "grim period setting",
+          "multiple intertwined plotlines can feel complex"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Steven Crossley's narration brings the Tudor London atmosphere and Shardlake's interiority vividly to life.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sovereign - C. J. Sansom": {
       "title": "Sovereign",
       "author": "C. J. Sansom",
       "series": "The Shardlake Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In autumn 1541, Matthew Shardlake travels to York ahead of Henry VIII's royal progress north, tasked with managing petitions to the King, only to find himself entangled in a conspiracy involving a dangerous prisoner with royal connections and a fresh murder that threatens to draw him into the highest levels of Tudor power.",
+      "tone": "atmospheric, politically tense, immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "royal power and its abuse",
+        "political conspiracy",
+        "loyalty and betrayal",
+        "religious rebellion",
+        "justice"
+      ],
+      "setting": "York and the North of England, autumn 1541, during Henry VIII's royal progress",
+      "comparable_books": [
+        "Dark Fire - C. J. Sansom",
+        "Dissolution - C. J. Sansom",
+        "Wolf Hall - Hilary Mantel",
+        "An Instance of the Fingerpost - Iain Pears"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tudor period atmosphere",
+          "political intrigue",
+          "richly researched historical fiction",
+          "morally grounded detective protagonist",
+          "real historical events as backdrop"
+        ],
+        "negative": [
+          "slow-building plots",
+          "grim depictions of Tudor power"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Steven Crossley's acclaimed narration elevates the series' immersive historical atmosphere.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Heartstone - C. J. Sansom": {
       "title": "Heartstone",
       "author": "C. J. Sansom",
       "series": "The Shardlake Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the summer of 1545, with England at war and a French armada threatening, Matthew Shardlake is dispatched to Portsmouth to investigate an allegation of wrongdoing against a ward of court, only to uncover deadly secrets connected to the sinking of the Mary Rose. The threat of invasion gives the novel an urgent, claustrophobic backdrop.",
+      "tone": "atmospheric, tense, historically rich",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its costs",
+        "abuse of power over the vulnerable",
+        "justice",
+        "loyalty",
+        "secrets and their consequences"
+      ],
+      "setting": "Portsmouth and Hampshire, summer 1545, during the French invasion threat and the sinking of the Mary Rose",
+      "comparable_books": [
+        "Dissolution - C. J. Sansom",
+        "Lamentation - C. J. Sansom",
+        "Wolf Hall - Hilary Mantel",
+        "Sovereign - C. J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tudor naval history",
+          "morally driven detective protagonist",
+          "richly researched period detail",
+          "war as historical backdrop",
+          "long immersive mysteries"
+        ],
+        "negative": [
+          "grim period setting",
+          "slow-building plots",
+          "large cast can be hard to track"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Steven Crossley's narration brings essential depth to this longer and more expansive entry in the series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lamentation - C. J. Sansom": {
       "title": "Lamentation",
       "author": "C. J. Sansom",
       "series": "The Shardlake Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Henry VIII lies dying in 1546, Queen Catherine Parr's secret heretical manuscript is stolen, and she enlists Shardlake to recover it before it can be used to destroy her. Shardlake must navigate the most dangerous corridors of the Tudor court at its most paranoid and deadly moment.",
+      "tone": "tense, claustrophobic, atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "religious persecution",
+        "political survival",
+        "loyalty to the powerless",
+        "the price of truth",
+        "the end of an era"
+      ],
+      "setting": "Tudor London and the royal court, summer 1546, in Henry VIII's final year",
+      "comparable_books": [
+        "Heartstone - C. J. Sansom",
+        "Tombland - C. J. Sansom",
+        "Wolf Hall - Hilary Mantel",
+        "Bring Up the Bodies - Hilary Mantel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "courtly intrigue",
+          "Tudor period atmosphere",
+          "strong sense of historical stakes",
+          "morally complex protagonist",
+          "fans of Hilary Mantel"
+        ],
+        "negative": [
+          "requires prior knowledge of the series",
+          "grim depictions of religious persecution and torture"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Steven Crossley's narration gives particular resonance to the tension-laden court sequences.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Cobra - Frederick Forsyth": {
@@ -174544,53 +174891,99 @@
       "author": "Frederick Forsyth",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The U.S. President gives retired CIA operative Paul Devereaux, codenamed 'Cobra', virtually unlimited authority and resources to wage a secret, all-out war against the global cocaine trade and its Colombian cartels. A detailed procedural thriller examining whether the drug war could actually be won if all conventional constraints were removed.",
+      "tone": "procedural, propulsive, morally straightforward",
+      "pacing": "Moderate",
+      "themes": [
+        "the war on drugs",
+        "unchecked power",
+        "espionage and covert operations",
+        "moral ends vs. means",
+        "global crime"
+      ],
+      "setting": "Multiple global locations including Colombia, Guinea-Bissau, Spain, and the USA, circa 2010",
+      "comparable_books": [
+        "The Day of the Jackal - Frederick Forsyth",
+        "The Afghan - Frederick Forsyth",
+        "Clear and Present Danger - Tom Clancy",
+        "The Cartel - Don Winslow"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "detailed procedural thrillers",
+          "espionage and covert ops",
+          "fans of Forsyth",
+          "meticulous research into real-world crime",
+          "propulsive single-mission plots"
+        ],
+        "negative": [
+          "flat characters",
+          "long setup before action",
+          "considered weaker than Forsyth's best work",
+          "morally uncomplicated good vs. evil framing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Riding the Rap - Elmore Leonard": {
       "title": "Riding the Rap",
       "author": "Elmore Leonard",
       "series": "Raylan Givens",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When bookie Harry Arno — last seen fleeing the mob in Pronto — is kidnapped by an improbably eccentric gang of Florida criminals, U.S. Marshal Raylan Givens is drawn into a twisty hostage caper involving a psychopathic enforcer, a psychic con artist, and a Bahamian grifter. A darkly comic crime thriller at its Leonard best.",
+      "tone": "darkly comic, propulsive, wry",
+      "pacing": "Fast",
+      "themes": [
+        "greed",
+        "law and outlawry",
+        "trust and betrayal",
+        "improvised crime",
+        "American South"
+      ],
+      "setting": "Contemporary Florida",
+      "comparable_books": [
+        "Pronto - Elmore Leonard",
+        "Raylan - Elmore Leonard",
+        "Get Shorty - Elmore Leonard",
+        "Out of Sight - Elmore Leonard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "razor-sharp dialogue",
+          "dark humour",
+          "eccentric criminal characters",
+          "propulsive plotting",
+          "fans of Justified"
+        ],
+        "negative": [
+          "thin on emotional depth",
+          "purely plot-driven"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Leonard's dialogue-driven storytelling is ideally suited to audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Wright Brothers - David McCullough": {
@@ -174598,26 +174991,47 @@
       "author": "David McCullough",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Pulitzer Prize-winning historian David McCullough chronicles the lives of Orville and Wilbur Wright, from their Ohio bicycle shop to the windswept dunes of Kitty Hawk and beyond, revealing how two self-taught, determined brothers achieved humanity's first powered flight through methodical ingenuity and quiet perseverance.",
+      "tone": "warm, admiring, accessible",
+      "pacing": "Moderate",
+      "themes": [
+        "invention and ingenuity",
+        "perseverance",
+        "American entrepreneurialism",
+        "family bonds",
+        "the birth of aviation"
+      ],
+      "setting": "Dayton, Ohio; Kitty Hawk, North Carolina; and Europe, roughly 1890s–1910s",
+      "comparable_books": [
+        "John Adams - David McCullough",
+        "The Aviators - Winston Groom",
+        "Rocket Men - Robert Kurson",
+        "The Pioneers - David McCullough"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible narrative history",
+          "American pioneer stories",
+          "biography of inventors",
+          "hero narratives",
+          "fans of McCullough's style"
+        ],
+        "negative": [
+          "hagiographic tone",
+          "light on technical detail for engineering enthusiasts",
+          "relatively short for McCullough"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "David McCullough narrates his own audiobook, and his warm, authoritative voice is perfectly matched to the material.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Stories of Your Life and Others - Ted Chiang": {
@@ -174625,53 +175039,100 @@
       "author": "Ted Chiang",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A debut collection of eight meticulously crafted science fiction stories, including the title story about a linguist whose encounter with alien communication fundamentally alters her perception of time — the basis for the film Arrival — alongside tales exploring mathematics, theology, technology, and free will. Among the most celebrated story collections in modern science fiction.",
+      "tone": "cerebral, lyrical, emotionally resonant",
+      "pacing": "Slow",
+      "themes": [
+        "language and perception",
+        "free will vs. determinism",
+        "the nature of consciousness",
+        "faith and rationalism",
+        "mathematics and reality",
+        "grief"
+      ],
+      "setting": "Various — near-future Earth, alternative histories, and speculative settings",
+      "comparable_books": [
+        "Exhalation - Ted Chiang",
+        "The Lifecycle of Software Objects - Ted Chiang",
+        "Never Let Me Go - Kazuo Ishiguro",
+        "Flowers for Algernon - Daniel Keyes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ideas-driven science fiction",
+          "literary short stories",
+          "cerebral and philosophical SF",
+          "fans of the film Arrival",
+          "emotionally layered speculative fiction"
+        ],
+        "negative": [
+          "slow and cerebral — not plot-driven",
+          "short story format",
+          "high concept can feel cold to some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "King of Thorns - Mark Lawrence": {
       "title": "King of Thorns",
       "author": "Mark Lawrence",
       "series": "The Broken Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Teenage king Jorg of Ancrath faces a vastly superior army threatening his kingdom while simultaneously unravelling memories of the four years since his brutal journey in Prince of Thorns — memories deliberately locked away by a box that holds something deeply dangerous. A non-linear, dark, and intellectually layered grimdark fantasy.",
+      "tone": "grimdark, propulsive, darkly philosophical",
+      "pacing": "Fast",
+      "themes": [
+        "power and ambition",
+        "trauma and memory",
+        "fate vs. free will",
+        "the cost of ruthlessness",
+        "love and loss"
+      ],
+      "setting": "A post-apocalyptic far-future Europe reimagined as a medieval dark fantasy world",
+      "comparable_books": [
+        "Prince of Thorns - Mark Lawrence",
+        "Emperor of Thorns - Mark Lawrence",
+        "The First Law - Joe Abercrombie",
+        "A Little Hatred - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "morally repugnant yet compelling protagonist",
+          "non-linear narrative structure",
+          "dark humour",
+          "SF elements hidden within fantasy"
+        ],
+        "negative": [
+          "extremely dark and violent content",
+          "unreliable and deeply unpleasant narrator",
+          "non-linear structure requires patience",
+          "not suitable for readers seeking heroic fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Winter's Fire - Giles Kristian": {
