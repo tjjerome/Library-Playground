@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3377,
-  "total_pending": 1223,
+  "total_catalogued": 3396,
+  "total_pending": 1204,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -175551,80 +175551,150 @@
       "author": "Chuck Tingle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After surviving a catastrophic global event called the Low-Probability Event, a former statistics professor is recruited by a federal agent to investigate a suspiciously lucky Las Vegas casino at the heart of the disaster. The novel blends absurdist cosmic horror with an existentialist meditation on finding meaning after grief.",
+      "tone": "absurdist, darkly comic, existential, earnest",
+      "pacing": "Fast",
+      "themes": [
+        "existentialism",
+        "probability and chaos",
+        "grief and recovery",
+        "meaning-making",
+        "queer identity"
+      ],
+      "setting": "Near-future United States, primarily Chicago and Las Vegas, following a reality-shattering catastrophe",
+      "comparable_books": [
+        "Camp Damascus - Chuck Tingle",
+        "Bury Your Gays - Chuck Tingle",
+        "The Leftovers - Tom Perrotta",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "absurdist horror",
+          "queer protagonist",
+          "cosmic horror with heart",
+          "fast-paced propulsive plot",
+          "darkly comic tone",
+          "emotional payoff"
+        ],
+        "negative": [
+          "graphic carnage and surreal violence",
+          "chaotic plotting may alienate some readers",
+          "no conventional narrative tidiness"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by actress Mara Wilson, praised for deadpan delivery that suits the protagonist and tone.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Kushiel's Chosen - Jacqueline Carey": {
       "title": "Kushiel's Chosen",
       "author": "Jacqueline Carey",
       "series": "Phèdre's Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Phèdre nó Delaunay, an anguissette trained as a spy and courtesan, embarks on a dangerous quest across Terre d'Ange and beyond to unmask a treasonous plot against the realm. Her investigation draws her into deadly political intrigue, forbidden desires, and a conspiracy reaching back to the events of the first book.",
+      "tone": "lush, sensual, intricate, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "love and sacrifice",
+        "political intrigue",
+        "religion and destiny",
+        "power and sexuality",
+        "loyalty"
+      ],
+      "setting": "An alternate quasi-medieval Europe (Terre d'Ange, La Serenissima/Venice, Illyria), richly detailed secondary world",
+      "comparable_books": [
+        "Kushiel's Dart - Jacqueline Carey",
+        "The Name of the Wind - Patrick Rothfuss",
+        "A Song of Ice and Fire - George R.R. Martin",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush prose",
+          "morally complex protagonist",
+          "intricate political plotting",
+          "BDSM and sexuality as plot elements",
+          "epic scope",
+          "romance-adjacent"
+        ],
+        "negative": [
+          "explicit sexual content",
+          "slow-burn intricate plotting",
+          "second book in trilogy — requires prior reading"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lush, lyrical prose and intricate world translate exceptionally well to audio performance.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Calculating Stars - Mary Robinette Kowal": {
       "title": "The Calculating Stars",
       "author": "Mary Robinette Kowal",
       "series": "Lady Astronaut",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1952, a meteorite strike devastates the Eastern Seaboard and triggers a climate catastrophe, accelerating humanity's need to colonize space. Elma York, a brilliant mathematician and WASP pilot, fights against sexism and institutional barriers to become one of the first women astronauts.",
+      "tone": "propulsive, hopeful, emotionally resonant, socially aware",
+      "pacing": "Fast",
+      "themes": [
+        "feminism and gender equality",
+        "racism and intersectionality",
+        "climate catastrophe",
+        "ambition and perseverance",
+        "alternate history"
+      ],
+      "setting": "Alternate 1950s–60s United States, space program setting; grounded in period detail with divergent history",
+      "comparable_books": [
+        "Hidden Figures - Margot Lee Shetterly",
+        "The Long Way to a Small Angry Planet - Becky Chambers",
+        "Kindred - Octavia Butler",
+        "The Martian - Andy Weir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "strong female protagonist",
+          "alternate history",
+          "space exploration",
+          "socially conscious storytelling",
+          "propulsive plot",
+          "Hugo and Nebula Award winner"
+        ],
+        "negative": [
+          "protagonist's anxiety episodes may slow pacing for some",
+          "light on hard science detail"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by the author, Mary Robinette Kowal, who is an acclaimed audiobook narrator — widely considered a top-tier audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fox - Frederick Forsyth": {
@@ -175632,26 +175702,46 @@
       "author": "Frederick Forsyth",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When an autistic British teenager secretly hacks the Pentagon, the NSA, and the CIA, former MI6 chief Sir Adrian Weston proposes weaponising the boy's extraordinary gifts against enemy states. The resulting covert operation pits 'The Fox' against Russia, Iran, and North Korea in a high-stakes cyberwarfare thriller.",
+      "tone": "propulsive, procedural, geopolitical, matter-of-fact",
+      "pacing": "Fast",
+      "themes": [
+        "cyberwarfare",
+        "national security",
+        "intelligence tradecraft",
+        "exploitation of vulnerability",
+        "geopolitics"
+      ],
+      "setting": "Contemporary global thriller — Britain, the United States, Russia, Iran, and North Korea; circa 2018–2019",
+      "comparable_books": [
+        "The Day of the Jackal - Frederick Forsyth",
+        "The Kill List - Frederick Forsyth",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Zero Day - Mark Russinovich"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced spy thriller",
+          "authentic geopolitical detail",
+          "classic Forsyth procedural style",
+          "contemporary cyberwarfare theme"
+        ],
+        "negative": [
+          "thin character development",
+          "morally uncomplicated good-vs-evil framing",
+          "reportedly Forsyth's last novel — diminished compared to earlier work for some"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Seveneves - Neal Stephenson": {
@@ -175659,26 +175749,48 @@
       "author": "Neal Stephenson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the moon inexplicably explodes, scientists calculate humanity has roughly two years before a catastrophic bombardment renders Earth uninhabitable; a desperate global effort to preserve a remnant of the human race in orbit ensues. Five thousand years later, a radically transformed humanity returns to reclaim the planet.",
+      "tone": "dense, technical, epic, unsentimental",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "human survival",
+        "science and engineering as salvation",
+        "genetics and evolution",
+        "political conflict under existential pressure",
+        "long-term consequences of short-term choices"
+      ],
+      "setting": "Near-future Earth and near-Earth orbit, followed by a far-future post-apocalyptic Earth 5,000 years later",
+      "comparable_books": [
+        "The Martian - Andy Weir",
+        "Anathem - Neal Stephenson",
+        "Aurora - Kim Stanley Robinson",
+        "Children of Time - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "epic scope",
+          "meticulous technical detail",
+          "big ideas",
+          "world-building depth"
+        ],
+        "negative": [
+          "extremely dense technical exposition",
+          "slow first two-thirds",
+          "jarring tonal shift in final section",
+          "limited emotional character work"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Camp Damascus - Chuck Tingle": {
@@ -175686,26 +175798,49 @@
       "author": "Chuck Tingle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rose Darling is a devout young woman living in a strict religious Montana community who begins experiencing disturbing visions of demons after meeting a mysterious stranger. As she investigates the secrets of Camp Damascus — a conversion therapy camp — she is forced to confront her own identity and the monstrous evil behind her community's façade.",
+      "tone": "tense, emotionally raw, queer, unflinching",
+      "pacing": "Fast",
+      "themes": [
+        "conversion therapy and religious abuse",
+        "queer identity and self-acceptance",
+        "religious extremism",
+        "gaslighting and community control",
+        "found family"
+      ],
+      "setting": "Contemporary Montana, centred on a fundamentalist Christian community and its secretive conversion therapy camp",
+      "comparable_books": [
+        "The Haunting of Hill House - Shirley Jackson",
+        "Ring Shout - P. Djèlí Clark",
+        "Lore Olympus - Rachel Smythe",
+        "Plain Bad Heroines - Emily M. Danforth"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "queer horror",
+          "religious trauma narrative",
+          "fast-paced",
+          "emotionally affecting",
+          "Locus Award winner"
+        ],
+        "negative": [
+          "graphic body horror",
+          "deeply uncomfortable depictions of conversion therapy abuse"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "religious abuse/conversion therapy"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fist of God - Frederick Forsyth": {
@@ -175713,53 +175848,96 @@
       "author": "Frederick Forsyth",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set during the 1991 Gulf War, a British SAS officer is inserted deep into Iraq to make contact with a high-level spy codenamed 'Jericho' and uncover the secret of Saddam Hussein's ultimate weapon — the 'Fist of God'. A taut espionage thriller blending real historical events with fiction.",
+      "tone": "propulsive, procedural, tense, geopolitical",
+      "pacing": "Moderate",
+      "themes": [
+        "espionage and intelligence",
+        "military operations",
+        "Gulf War politics",
+        "betrayal and loyalty",
+        "weapons of mass destruction"
+      ],
+      "setting": "1991, primarily Iraq and the wider Middle East during the Gulf War; also London and Washington",
+      "comparable_books": [
+        "The Day of the Jackal - Frederick Forsyth",
+        "The Odessa File - Frederick Forsyth",
+        "The Kill List - Frederick Forsyth",
+        "Bravo Two Zero - Andy McNab"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "meticulously researched military thriller",
+          "Gulf War historical setting",
+          "authentic intelligence tradecraft",
+          "propulsive plot"
+        ],
+        "negative": [
+          "dated geopolitical context",
+          "thin characterisation by modern standards"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fuller Memorandum - Charles Stross": {
       "title": "The Fuller Memorandum",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bob Howard, a computational demonologist for the British intelligence agency known as the Laundry, investigates a missing classified document — the Fuller Memorandum — which may hold the key to summoning an ancient evil deity. The case pulls him into a conspiracy involving Russian occultists, rogue agents, and the apocalyptic entity known as CASE NIGHTMARE GREEN.",
+      "tone": "darkly comic, bureaucratic, Lovecraftian, espionage-inflected",
+      "pacing": "Fast",
+      "themes": [
+        "Lovecraftian cosmic horror",
+        "bureaucracy and institutional absurdity",
+        "espionage",
+        "computational demonology",
+        "impending apocalypse"
+      ],
+      "setting": "Contemporary Britain, primarily London; secret government bureaucracy operating alongside mundane civil service",
+      "comparable_books": [
+        "The Atrocity Archives - Charles Stross",
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Rivers of London - Ben Aaronovitch",
+        "Johannes Cabal the Necromancer - Jonathan L. Howard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror played for dark comedy",
+          "bureaucratic satire",
+          "spy thriller structure",
+          "fast-paced and witty",
+          "strong series progression"
+        ],
+        "negative": [
+          "requires prior series knowledge to fully appreciate",
+          "dense in-jokes and genre references"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Earth Abides - George R. Stewart": {
@@ -175767,161 +175945,299 @@
       "author": "George R. Stewart",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "When a plague wipes out nearly all of humanity, geographer Isherwood Williams emerges from isolation in the wilderness to find civilisation collapsed, and spends decades building a small community while watching society's knowledge and traditions slowly fade. A quietly devastating meditation on the fragility of human civilisation and humanity's relationship with the natural world.",
+      "tone": "elegiac, meditative, melancholy, quietly hopeful",
+      "pacing": "Slow",
+      "themes": [
+        "civilisational collapse",
+        "nature reclaiming the world",
+        "the fragility of knowledge",
+        "community and survival",
+        "what it means to be human"
+      ],
+      "setting": "Post-apocalyptic United States, primarily California, spanning several decades from the 1940s onward",
+      "comparable_books": [
+        "The Road - Cormac McCarthy",
+        "Station Eleven - Emily St. John Mandel",
+        "The Stand - Stephen King",
+        "I Am Legend - Richard Matheson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary post-apocalyptic fiction",
+          "meditative slow burn",
+          "ecological themes",
+          "seminal genre classic",
+          "deeply human and philosophical"
+        ],
+        "negative": [
+          "very slow pacing",
+          "episodic structure without a driving plot",
+          "dated gender and racial attitudes reflecting its 1949 era"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Courtney's War - Wilbur Smith": {
       "title": "Courtney's War",
       "author": "Wilbur Smith",
       "series": "Assegai",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Torn apart by World War II, Saffron Courtney — an SOE agent infiltrating Nazi-occupied Europe — and her German lover Gerhard von Meerbach, fighting reluctantly for the Third Reich at Stalingrad, must each survive impossible odds while hoping to be reunited. An epic tale of love, courage, and betrayal set across the most devastating conflict of the twentieth century.",
+      "tone": "epic, romantic, sweeping, visceral",
+      "pacing": "Moderate",
+      "themes": [
+        "love under impossible odds",
+        "war and moral compromise",
+        "espionage",
+        "courage and sacrifice",
+        "the human cost of ideology"
+      ],
+      "setting": "World War II Europe, primarily occupied Belgium, Stalingrad, and North Africa, 1939–1944",
+      "comparable_books": [
+        "War Cry - Wilbur Smith",
+        "Assegai - Wilbur Smith",
+        "All the Light We Cannot See - Anthony Doerr",
+        "The Nightingale - Kristin Hannah"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping WWII adventure",
+          "epic family saga",
+          "romantic storyline",
+          "dual POV across enemy lines",
+          "strong female protagonist"
+        ],
+        "negative": [
+          "third book in a sub-series — context helps",
+          "graphic wartime violence",
+          "co-authored later work may vary in style"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "When the Lion Feeds - Wilbur Smith": {
       "title": "When the Lion Feeds",
       "author": "Wilbur Smith",
       "series": "When the Lion Feeds",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twin brothers Sean and Garrick Courtney grow up on a Natal farm in 1860s South Africa, their bond forged and tested through the Anglo-Zulu War, the gold rush of the Witwatersrand, and personal tragedy. Sean's restless ambition and Garrick's quiet resentment drive them toward an inevitable, bitter reckoning.",
+      "tone": "epic, adventure-driven, sweeping, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "brotherhood and rivalry",
+        "ambition and consequence",
+        "colonialism and frontier life",
+        "war and coming of age",
+        "love and loss"
+      ],
+      "setting": "19th-century South Africa — the Natal farmlands, the Anglo-Zulu War battlefields, and the Witwatersrand gold rush; 1860s–1890s",
+      "comparable_books": [
+        "The Sound of Thunder - Wilbur Smith",
+        "Shout at the Devil - Wilbur Smith",
+        "Roots - Alex Haley",
+        "Wilbur Smith's own Assegai"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping adventure",
+          "vivid African setting",
+          "fast-paced action",
+          "foundational Wilbur Smith",
+          "epic family saga opener"
+        ],
+        "negative": [
+          "dated attitudes toward race and gender reflecting its 1964 origins",
+          "graphic violence",
+          "explicit sexual content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Quest - Wilbur Smith": {
       "title": "The Quest",
       "author": "Wilbur Smith",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The ancient warlock Taita — now over a hundred years old — is summoned by the Pharaoh as catastrophic plagues and the mysterious drying of the Nile threaten to destroy Egypt. He undertakes a perilous journey to the source of the Nile to battle the ancient evil fire witch Eos before the kingdom is utterly destroyed.",
+      "tone": "epic, adventurous, mythic, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "good versus evil",
+        "magic and prophecy",
+        "civilisational survival",
+        "loyalty and sacrifice",
+        "ancient Egypt mythology"
+      ],
+      "setting": "Ancient Egypt and sub-Saharan Africa, thousands of years in the past; mystical and adventure-driven world",
+      "comparable_books": [
+        "River God - Wilbur Smith",
+        "Warlock - Wilbur Smith",
+        "Pharaoh - Wilbur Smith",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic ancient Egypt adventure",
+          "mythic scope",
+          "strong series continuity",
+          "fast-paced action"
+        ],
+        "negative": [
+          "fourth book in series — context required",
+          "increasingly fantastical elements may not suit all historical fiction readers",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Warlock - Wilbur Smith": {
       "title": "Warlock",
       "author": "Wilbur Smith",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After years of solitary exile following the death of his beloved Queen Lostris, Taita has transformed himself into a warlock of formidable magical power and is called back to Egypt when a treacherous regent threatens the true heir to the throne. He must use all his gifts to protect the young prince Nefer and defeat the forces of darkness threatening to consume Egypt.",
+      "tone": "epic, mythic, action-driven, mystical",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and sacrifice",
+        "magic and power",
+        "political treachery",
+        "mentorship and legacy",
+        "good versus evil"
+      ],
+      "setting": "Ancient Egypt, many years after River God; palace intrigues, desert wilderness, and battle",
+      "comparable_books": [
+        "River God - Wilbur Smith",
+        "The Quest - Wilbur Smith",
+        "Desert God - Wilbur Smith",
+        "The Egyptian - Mika Waltari"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic ancient world adventure",
+          "mythic stakes",
+          "satisfying continuation of Taita's story",
+          "fast-paced action"
+        ],
+        "negative": [
+          "third book — requires prior reading",
+          "supernatural elements heavier than earlier entries",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "This Storm - James Ellroy": {
       "title": "This Storm",
       "author": "James Ellroy",
       "series": "Second L.A. Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Los Angeles in early 1942, following Pearl Harbor, a web of interconnected investigations — a gold heist, a murderous arson, two dead cops, and wartime Fifth Column treason — draws together corrupt Vice detective Elmer Jackson, Japanese-American forensic investigator Hideo Ashida, rogue fascist Dudley Smith, and war profiteer Joan Conville. Ellroy's maximalist noir at its most savage and densely plotted.",
+      "tone": "grimdark, feverish, staccato, morally nihilistic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "corruption and moral compromise",
+        "wartime paranoia and racism",
+        "fascism and extremism",
+        "the dark underside of American history",
+        "ambition and violence"
+      ],
+      "setting": "Los Angeles and Baja California, December 1941 – April 1942, immediately after Pearl Harbor; wartime homefront noir",
+      "comparable_books": [
+        "Perfidia - James Ellroy",
+        "L.A. Confidential - James Ellroy",
+        "The Black Dahlia - James Ellroy",
+        "The Enchanters - James Ellroy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hardboiled crime maximalism",
+          "deep historical immersion",
+          "morally grey ensemble cast",
+          "dense and rewarding prose style",
+          "Ellroy at his most ambitious"
+        ],
+        "negative": [
+          "extremely dense and demanding — requires prior Ellroy reading",
+          "extensive racist and period slang throughout",
+          "no conventional 'good guys'",
+          "graphic violence and sexual content",
+          "nearly 600 pages of labyrinthine plotting"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "The labyrinthine cast (six-page dramatis personae), dense staccato prose, and constant cross-referencing with prior Ellroy novels make print navigation essential.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Powder Mage Novella Collection #1: Stories From the Powder Mage Universe - Brian McClellan": {
@@ -175929,26 +176245,48 @@
       "author": "Brian McClellan",
       "series": "Powder Mage",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Four novellas set in the Powder Mage Universe, following beloved characters including Erika, Tamas, Adamat, Taniel, Ka-poel, and Ben Styke across different eras and storylines. The collection includes Forsworn, Servant of the Crown, Murder at the Kinnen Hotel, and Ghosts of the Tristan Basin.",
+      "tone": "action-driven, witty, flintlock adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "political intrigue",
+        "magic and gunpowder",
+        "loyalty and duty",
+        "revolution",
+        "identity and belonging"
+      ],
+      "setting": "The Powder Mage world — an analogue of revolutionary-era Europe with flintlock firearms and gunpowder-based magic",
+      "comparable_books": [
+        "Promise of Blood - Brian McClellan",
+        "The Autumn Republic - Brian McClellan",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock fantasy",
+          "Powder Mage universe fans",
+          "short readable stories",
+          "fan-service backstories for series characters",
+          "self-published quality indie fiction"
+        ],
+        "negative": [
+          "best appreciated with prior series knowledge",
+          "uneven story quality across novellas"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Return to Honor - Brian McClellan": {
@@ -187720,26 +188058,47 @@
       "author": "Nicola Griffith",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Anthropologist Marghe Taishan is sent to the planet Jeep — a world inhabited entirely by women after a virus killed all men centuries ago — to test a new vaccine and study the alien cultures that have evolved there. As she risks death to uncover the women's biological secret of reproduction, she finds herself being transformed by the world and its people.",
+      "tone": "lyrical, meditative, immersive, quietly feminist",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "gender and identity",
+        "transformation and belonging",
+        "colonialism and corporate exploitation",
+        "what it means to be human",
+        "chosen family and community"
+      ],
+      "setting": "Far-future alien planet 'Jeep' (Grenchstom's Planet), a world of all-female cultures in tribal and community settings",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Parable of the Sower - Octavia Butler",
+        "The Word for World is Forest - Ursula K. Le Guin",
+        "Slow River - Nicola Griffith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist SF classic",
+          "Lambda and Tiptree Award winner",
+          "rich anthropological world-building",
+          "queer themes handled organically",
+          "Le Guin comparables"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "light on action for some SF readers",
+          "anthropological immersion over plot drive"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Unavowed: New Tales by Masters of Fantasy - Shawn Speakman": {
@@ -187747,80 +188106,142 @@
       "author": "Shawn Speakman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "An anthology of 22 original science fiction and fantasy short stories and novellas by leading independent genre authors, including Kevin Hearne, Michael J. Sullivan, Ryan Cahill, and Sarah Chorn, among many others. Published by Grim Oak Press to celebrate indie SFF authorship, with stories ranging across epic fantasy, dark fantasy, and speculative fiction.",
+      "tone": "varied — adventure, dark, whimsical, epic across 22 contributors",
+      "pacing": "Fast",
+      "themes": [
+        "heroism and adventure",
+        "magic and the supernatural",
+        "sacrifice",
+        "discovery",
+        "indie authorship celebration"
+      ],
+      "setting": "Multiple — 22 stories spanning diverse secondary worlds and subgenres of SF&F",
+      "comparable_books": [
+        "Unfettered - Shawn Speakman",
+        "Unbound - Shawn Speakman",
+        "The Year's Best Fantasy and Horror - Ellen Datlow",
+        "Shadows & Tall Trees - Michael Kelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indie SFF showcase",
+          "diverse range of stories",
+          "familiar indie authors",
+          "anthology sampler for discovering new writers"
+        ],
+        "negative": [
+          "uneven anthology quality inevitable across 22 stories",
+          "limited if unfamiliar with indie SFF scene"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Burning White - Brent Weeks": {
       "title": "The Burning White",
       "author": "Brent Weeks",
       "series": "Lightbringer",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the climactic conclusion to the Lightbringer series, Kip Guile and his Mighty must rally to confront the White King's apocalyptic assault on the Seven Satrapies, while Gavin Guile faces the darkest truths about his own identity and power. Long-running secrets about the nature of the Chromeria, the Lightbringer prophecy, and the true history of drafting are finally revealed.",
+      "tone": "epic, propulsive, emotionally satisfying, complex",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and redemption",
+        "truth and self-deception",
+        "war and leadership",
+        "religious mythology versus reality",
+        "the cost of power"
+      ],
+      "setting": "The Seven Satrapies — a richly built secondary world where magic is derived from light and colour; epic fantasy scope",
+      "comparable_books": [
+        "The Way of Shadows - Brent Weeks",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Words of Radiance - Brandon Sanderson",
+        "The Eye of the World - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satisfying series conclusion",
+          "epic scope and action",
+          "intricate magic system",
+          "long-running mysteries resolved",
+          "strong character arcs"
+        ],
+        "negative": [
+          "fifth book — must read series in order",
+          "very long (over 1,000 pages)",
+          "slow start as it tracks numerous POVs"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Four Roads Cross - Max Gladstone": {
       "title": "Four Roads Cross",
       "author": "Max Gladstone",
       "series": "Craft Sequence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the city of Alt Coulumb, the moon goddess Seril's unexpected return triggers protests and a hostile financial takeover attempt against the Church of the fire god Kos, threatening both deities' existence. Craftswoman and in-house counsel Tara Abernathy must defend the church against the world's most powerful necromantic firm — and against her ambitious former classmate.",
+      "tone": "witty, inventive, warm, intellectually rich",
+      "pacing": "Fast",
+      "themes": [
+        "capitalism and financial power as religion",
+        "justice and institutional corruption",
+        "community solidarity",
+        "divinity and contract law",
+        "friendship and loyalty"
+      ],
+      "setting": "The city of Alt Coulumb — a secondary world where magic functions through legal contracts, souls are currency, and gods are kept alive by belief; sequel-era timeline",
+      "comparable_books": [
+        "Three Parts Dead - Max Gladstone",
+        "The Goblin Emperor - Katherine Addison",
+        "Piranesi - Susanna Clarke",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "inventive magic-as-capitalism worldbuilding",
+          "witty and intelligent prose",
+          "warm ensemble cast",
+          "Hugo-nominated series",
+          "strongest for fans of Three Parts Dead"
+        ],
+        "negative": [
+          "fifth book — direct sequel to Book 1, best read in context",
+          "dense worldbuilding may challenge new readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Blood Mirror - Brent Weeks": {
