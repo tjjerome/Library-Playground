@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2626,
-  "total_pending": 1974,
+  "total_catalogued": 2646,
+  "total_pending": 1954,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -150795,53 +150795,97 @@
       "author": "Ray Nayler",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Marine biologist Dr. Ha Nguyen is dispatched to a remote Vietnamese archipelago to investigate a potentially sapient octopus species, while parallel storylines follow a captive AI and a human slave on a fishing vessel. The novel explores the nature of intelligence, consciousness, and what it means to communicate across the gulf between minds.",
+      "tone": "cerebral, lyrical, philosophically dense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "consciousness",
+        "animal intelligence",
+        "AI sentience",
+        "colonialism",
+        "communication"
+      ],
+      "setting": "Near-future Vietnam, remote island reserve and high seas",
+      "comparable_books": [
+        "Piranesi - Susanna Clarke",
+        "Children of Time - Adrian Tchaikovsky",
+        "Annihilation - Jeff VanderMeer",
+        "The Dispossessed - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical science fiction",
+          "non-human intelligence",
+          "lyrical prose",
+          "slow meditative pacing",
+          "ideas-driven narrative"
+        ],
+        "negative": [
+          "action-driven plots",
+          "fast pacing",
+          "character-focused drama",
+          "genre adventure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Death of Dulgath - Michael J. Sullivan": {
       "title": "The Death of Dulgath",
       "author": "Michael J. Sullivan",
       "series": "The Riyria Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Royce and Hadrian are hired to prevent the assassination of the last surviving member of an ancient noble line, Lady Dulgath, in a remote and mysterious county. The heist-meets-mystery adventure digs into the duo's pasts while weaving together political intrigue and fantasy elements.",
+      "tone": "witty, swashbuckling, warmly adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty",
+        "friendship",
+        "class and power",
+        "identity and the past",
+        "redemption"
+      ],
+      "setting": "Medieval fantasy world of Elan; remote county of Dulgath",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Assassin's Apprentice - Robin Hobb",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "buddy dynamic",
+          "heist elements",
+          "fast-paced adventure",
+          "found family",
+          "accessible epic fantasy"
+        ],
+        "negative": [
+          "grimdark",
+          "slow world-building",
+          "morally complex anti-heroes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds's narration is acclaimed and widely considered one of the best fantasy audiobook performances.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Superforecasting - Philip E. Tetlock & Dan Gardner": {
@@ -150849,53 +150893,94 @@
       "author": "Philip E. Tetlock & Dan Gardner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drawing on Tetlock's landmark Good Judgment Project research, this book reveals how a small group of ordinary people with the right thinking habits dramatically outperform experts and intelligence analysts at predicting geopolitical and economic events. It provides a practical framework for thinking more clearly about uncertainty and probability.",
+      "tone": "rigorous, accessible, data-driven, optimistic",
+      "pacing": "Moderate",
+      "themes": [
+        "forecasting",
+        "rationality",
+        "probability",
+        "cognitive bias",
+        "expertise and uncertainty"
+      ],
+      "setting": "Contemporary; academic research and intelligence communities",
+      "comparable_books": [
+        "Thinking, Fast and Slow - Daniel Kahneman",
+        "The Signal and the Noise - Nate Silver",
+        "Expert Political Judgment - Philip Tetlock"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "behavioural economics",
+          "popular science",
+          "rational thinking",
+          "practical frameworks",
+          "research-backed nonfiction"
+        ],
+        "negative": [
+          "narrative-driven nonfiction",
+          "personal memoir",
+          "light reading"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Smiley's People - John le Carre": {
       "title": "Smiley's People",
-      "author": "John le Carre",
+      "author": "John le Carré",
       "series": "George Smiley",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5 (loosely; direct sequel to The Honourable Schoolboy)",
+      "genre": "Spy Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Retired spymaster George Smiley is drawn back into the shadows when an old Soviet-era contact is found murdered in London, uncovering a thread that leads to his great nemesis Karla, the Soviet intelligence chief. It becomes Smiley's final, painstaking operation to bring down the man he has pursued for decades.",
+      "tone": "melancholic, precise, morally weary",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "loyalty and betrayal",
+        "the human cost of espionage",
+        "moral ambiguity",
+        "obsession and nemesis",
+        "the Cold War"
+      ],
+      "setting": "1970s–1980s London, Paris, Hamburg; Cold War Europe",
+      "comparable_books": [
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "A Perfect Spy - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "slow burn",
+          "morally grey protagonist",
+          "Cold War atmosphere",
+          "psychological depth"
+        ],
+        "negative": [
+          "action-heavy thrillers",
+          "fast pacing",
+          "plot-driven espionage",
+          "positive endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Masterfully narrated by Michael Jayston; considered among the finest spy audiobooks ever recorded.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Cautious Traveller's Guide to the Wastelands - Sarah Brooks": {
@@ -150903,26 +150988,48 @@
       "author": "Sarah Brooks",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aboard the Great Trans-Siberian Express in 1899, a diverse cast of passengers — including a grieving woman seeking to clear her father's name and a girl born on the train — must survive a journey through the mysterious and deadly Wastelands of Siberia as something uncontrollable begins breaking in. A gothic, atmospheric blend of historical fiction, fantasy, and mystery.",
+      "tone": "atmospheric, gothic, propulsive, wonder-laced",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "capitalism and empire",
+        "nature and the uncanny",
+        "identity and transformation",
+        "secrets and memory",
+        "the limits of knowledge"
+      ],
+      "setting": "Late 19th-century alternative history; the Trans-Siberian Express traversing a supernatural Siberian wasteland",
+      "comparable_books": [
+        "Piranesi - Susanna Clarke",
+        "Annihilation - Jeff VanderMeer",
+        "The Watchmaker of Filigree Street - Natasha Pulley",
+        "Murder on the Orient Express - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric world-building",
+          "gothic horror elements",
+          "ensemble cast",
+          "trains",
+          "historical fantasy",
+          "literary sensibility"
+        ],
+        "negative": [
+          "fast-paced action",
+          "romance-heavy",
+          "clear resolution"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Oxford Soju Club - Jinwoo Park": {
@@ -150930,53 +151037,97 @@
       "author": "Jinwoo Park",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a North Korean spymaster is murdered in Oxford, his protégé Yohan, a Korean-American CIA agent named Yunah, and the unsuspecting South Korean owner of the only Korean restaurant in town find their fates entangled in a web of espionage, identity, and diaspora. As much a meditation on what it means to be Korean in the West as a taut spy thriller.",
+      "tone": "taut, introspective, psychologically rich",
+      "pacing": "Fast",
+      "themes": [
+        "Korean diaspora identity",
+        "espionage and loyalty",
+        "assimilation and belonging",
+        "North-South Korean division",
+        "masks and authenticity"
+      ],
+      "setting": "Contemporary Oxford, England",
+      "comparable_books": [
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "Slow Horses - Mick Herron",
+        "The Sympathizer - Viet Thanh Nguyen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "diaspora themes",
+          "character-driven",
+          "morally complex",
+          "fast pacing"
+        ],
+        "negative": [
+          "light genre fiction",
+          "action-only thrillers",
+          "disinterest in cultural identity themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Pines - Blake Crouch": {
       "title": "Pines",
       "author": "Blake Crouch",
       "series": "Wayward Pines",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Secret Service agent Ethan Burke wakes up in the idyllic small town of Wayward Pines, Idaho, with no memory of how he arrived, and quickly discovers that nothing about the town — or its cheerful, tight-lipped residents — is what it seems. A propulsive mystery that builds to a shocking revelation about the nature of the town itself.",
+      "tone": "propulsive, paranoid, unsettling",
+      "pacing": "Fast",
+      "themes": [
+        "surveillance and control",
+        "identity",
+        "dystopia",
+        "conformity vs. rebellion",
+        "reality and illusion"
+      ],
+      "setting": "Contemporary; seemingly idyllic small town of Wayward Pines, Idaho",
+      "comparable_books": [
+        "Dark Matter - Blake Crouch",
+        "Gone Girl - Gillian Flynn",
+        "Under the Dome - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "mystery with a twist",
+          "conspiracy",
+          "page-turner",
+          "science fiction elements in thriller"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "literary fiction",
+          "character-heavy drama"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast pacing and short chapters make this an ideal listen; Paul Michael Garcia's narration is highly rated.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Nicked - M. T. Anderson": {
@@ -150984,26 +151135,47 @@
       "author": "M. T. Anderson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1087, during a plague outbreak in the Italian city of Bari, a tender-hearted monk named Nicephorus is drafted into an unlikely scheme alongside a charismatic relic hunter named Tyun to steal the bones of Saint Nicholas from their resting place in Myra. What follows is a swashbuckling adventure, a meditation on faith, and a slow-burn queer romance.",
+      "tone": "darkly comic, swashbuckling, irreverent, surprisingly poignant",
+      "pacing": "Moderate",
+      "themes": [
+        "faith and doubt",
+        "queer identity",
+        "greed vs. devotion",
+        "medieval worldview",
+        "friendship and unlikely partnership"
+      ],
+      "setting": "1087; Bari, Italy and the Mediterranean Sea",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Pillars of the Earth - Ken Follett",
+        "Lincoln in the Bardo - George Saunders"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "darkly comic",
+          "heist elements",
+          "queer romance",
+          "literary wit",
+          "raucous adventure"
+        ],
+        "negative": [
+          "grimdark",
+          "fast-paced action only",
+          "disinterest in medieval history or religion"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice - Virginia Roberts Giuffre": {
@@ -151011,80 +151183,148 @@
       "author": "Virginia Roberts Giuffre",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Virginia Roberts Giuffre's posthumously published memoir provides her full account of being trafficked by Jeffrey Epstein and Ghislaine Maxwell, detailing the childhood vulnerabilities that made her a target, her years of abuse, and her eventual escape and fight for justice. Co-written with journalist Amy Wallace, it is both a personal testimony and a broader indictment of power and institutional failure.",
+      "tone": "raw, unflinching, courageous",
+      "pacing": "Moderate",
+      "themes": [
+        "sexual abuse and trafficking",
+        "power and institutional corruption",
+        "survival and resilience",
+        "justice",
+        "identity and reclamation"
+      ],
+      "setting": "Contemporary; United States, Europe, and Australia",
+      "comparable_books": [
+        "Know My Name - Chanel Miller",
+        "Educated - Tara Westover",
+        "I Have the Right To - Chessy Prout"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "survivor narratives",
+          "investigative memoir",
+          "social justice",
+          "courageous testimony"
+        ],
+        "negative": [
+          "readers sensitive to abuse content",
+          "looking for light reading"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Light Bringer - Pierce Brown": {
       "title": "Light Bringer",
       "author": "Pierce Brown",
       "series": "Red Rising",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the devastating events of Dark Age, Darrow and his allies fight across the solar system to turn the tide against the Republic's enemies, while Lysander au Lune consolidates power and Lyria of Lagalos navigates a war-torn Jupiter. Multiple storylines converge as the revolution faces its darkest hour and unlikely alliances are forged.",
+      "tone": "grimdark, epic, emotionally brutal, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "revolution and sacrifice",
+        "loyalty and betrayal",
+        "class warfare",
+        "identity and legacy",
+        "the cost of power"
+      ],
+      "setting": "Far-future solar system; Jupiter, Mercury, and deep space",
+      "comparable_books": [
+        "Dark Age - Pierce Brown",
+        "A Memory of Light - Robert Jordan",
+        "Empire of Silence - Christopher Ruocchio"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "epic scale",
+          "emotional stakes",
+          "military sci-fi",
+          "morally grey protagonists",
+          "propulsive action"
+        ],
+        "negative": [
+          "light tone",
+          "standalone preference",
+          "aversion to long series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds delivers one of the most celebrated performances in sci-fi audiobooks, with a massive cast voiced distinctly.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Judas Unchained - Peter F. Hamilton": {
       "title": "Judas Unchained",
       "author": "Peter F. Hamilton",
       "series": "The Commonwealth Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The second and concluding volume of the Commonwealth Saga brings the war against the Primes to a climax across a vast interstellar civilisation, while investigator Paula Myo closes in on the conspirators behind the alien invasion. Sweeping in scope, it ties together dozens of storylines across multiple worlds and centuries.",
+      "tone": "epic, sprawling, optimistic space opera",
+      "pacing": "Moderate",
+      "themes": [
+        "transhumanism",
+        "war and survival",
+        "conspiracy",
+        "the nature of humanity",
+        "interstellar civilisation"
+      ],
+      "setting": "31st-century Commonwealth of Human planets and beyond",
+      "comparable_books": [
+        "Pandora's Star - Peter F. Hamilton",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "The Reality Dysfunction - Peter F. Hamilton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic space opera",
+          "transhumanism",
+          "big ideas",
+          "intricate plotting",
+          "large cast"
+        ],
+        "negative": [
+          "short books",
+          "fast pacing",
+          "disinterest in hard SF world-building",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "James - Percival Everett": {
@@ -151092,26 +151332,48 @@
       "author": "Percival Everett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A radical reimagining of Huckleberry Finn told from the perspective of Jim, the enslaved man at the heart of Twain's novel, who reveals a rich inner life and complex mind that the original story kept hidden. Everett transforms the American classic into a searing exploration of race, freedom, literacy, and the violence of slavery.",
+      "tone": "incisive, darkly comic, subversive, profound",
+      "pacing": "Moderate",
+      "themes": [
+        "race and slavery",
+        "literacy and power",
+        "freedom and identity",
+        "the American myth",
+        "trauma and resilience"
+      ],
+      "setting": "Antebellum American South; the Mississippi River, 1840s",
+      "comparable_books": [
+        "Beloved - Toni Morrison",
+        "The Underground Railroad - Colson Whitehead",
+        "Huckleberry Finn - Mark Twain"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction",
+          "intertextuality",
+          "race and history",
+          "subversive retellings",
+          "Pulitzer Prize winners"
+        ],
+        "negative": [
+          "plot-driven genre fiction",
+          "fast pacing",
+          "avoidance of difficult historical themes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrator Dominic Hoffman's performance has been widely praised as transformative and essential to the experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Hollow Spaces - Victor Suthammanont": {
@@ -151119,26 +151381,49 @@
       "author": "Victor Suthammanont",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three decades after John Lo, the only Asian American partner at a prestigious New York law firm, was acquitted of murdering his affair partner, his estranged adult children Brennan and Hunter reunite to uncover whether their father really got away with it. A literary legal thriller that interrogates racism, family legacy, and the limits of justice.",
+      "tone": "cerebral, tense, emotionally precise",
+      "pacing": "Moderate",
+      "themes": [
+        "Asian American identity and racism",
+        "family legacy and trauma",
+        "guilt and justice",
+        "the American legal system",
+        "truth and complicity"
+      ],
+      "setting": "Contemporary New York City, with flashbacks to the 1990s",
+      "comparable_books": [
+        "Presumed Innocent - Scott Turow",
+        "Small Mercies - Dennis Lehane",
+        "The Sympathizer - Viet Thanh Nguyen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary thriller",
+          "Asian American experience",
+          "family drama",
+          "courtroom mystery",
+          "layered character study"
+        ],
+        "negative": [
+          "genre-only thriller",
+          "fast-paced action",
+          "disinterest in race and identity themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Darkenbloom - Eva Menasse": {
@@ -151146,80 +151431,146 @@
       "author": "Eva Menasse",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1989, a small Austrian border town braces as East German refugees mass at its gates, and a mysterious stranger begins asking questions about the war nobody talks about — until a body is found and long-buried secrets begin to surface. A panoramic, darkly comic novel about collective guilt, silence, and the weight of Nazi-era crimes in small-town Austria.",
+      "tone": "darkly comic, unsettling, satirical, slow-building",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "collective guilt and memory",
+        "WWII and the Holocaust",
+        "small-town complicity",
+        "secrets and silence",
+        "the fall of communism"
+      ],
+      "setting": "1989, fictional small town on the Austria–Hungary border",
+      "comparable_books": [
+        "The Reader - Bernhard Schlink",
+        "HHhH - Laurent Binet",
+        "The Tin Drum - Günter Grass"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "European literary fiction",
+          "WWII historical fiction",
+          "darkly comic",
+          "ensemble cast",
+          "slow burn",
+          "translated fiction"
+        ],
+        "negative": [
+          "fast-paced plotting",
+          "linear narrative",
+          "disinterest in European history"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Heirs of the Blade - Adrian Tchaikovsky": {
       "title": "Heirs of the Blade",
       "author": "Adrian Tchaikovsky",
       "series": "Shadows of the Apt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cheerwell 'Che' Maker travels to the Commonweal in the aftermath of war, seeking both answers and healing, only to find a broken land teetering on the edge of a new conflict with sinister forces. Meanwhile, the war between the Wasp Empire and the Lowlands continues to evolve in unexpected directions.",
+      "tone": "ambitious, gritty, politically complex",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its aftermath",
+        "cultural clash",
+        "power and imperialism",
+        "trauma and recovery",
+        "magic vs. technology"
+      ],
+      "setting": "The Lowlands and the Commonweal; insect-kinden fantasy world in an industrial-era conflict",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The First Law - Joe Abercrombie",
+        "Gardens of the Moon - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "grimdark elements",
+          "intricate world-building",
+          "political complexity",
+          "long series investment"
+        ],
+        "negative": [
+          "standalone preference",
+          "fast light fantasy",
+          "disinterest in insect-themed world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Crooked Kingdom - Leigh Bardugo": {
       "title": "Crooked Kingdom",
       "author": "Leigh Bardugo",
       "series": "Six of Crows",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After the heist gone wrong in Six of Crows, Kaz Brekker and his crew of outcasts must outmanoeuvre the enemies who have betrayed them, plotting an intricate series of schemes to reclaim what they've lost and bring down the powerful figures threatening their city. A thrilling, emotionally charged conclusion to the duology.",
+      "tone": "propulsive, darkly charming, emotionally rich",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "justice and revenge",
+        "loyalty and betrayal",
+        "trauma and healing",
+        "power and corruption"
+      ],
+      "setting": "The city of Ketterdam, a gritty fantasy analogue of Amsterdam; Ravkan world",
+      "comparable_books": [
+        "Six of Crows - Leigh Bardugo",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Mistborn - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "heist",
+          "morally grey characters",
+          "fast-paced fantasy",
+          "YA-adjacent",
+          "romance sub-plot"
+        ],
+        "negative": [
+          "grimdark only",
+          "aversion to YA sensibility",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast audio production with outstanding performances that greatly enhance the ensemble story.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Music Soothes the Shadow Beasts - Kensley Norris": {
@@ -151227,107 +151578,193 @@
       "author": "Kensley Norris",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "needs_review",
+      "summary": "Best friends Blake and Dustin venture into a deadly darkness to retrieve a magical guitar, discovering its music can calm the lethal shadow beasts — but also that the instrument's power is slowly corrupting Dustin, threatening to destroy their friendship and unleash something far worse.",
+      "tone": "eerie, tense, friendship-focused",
+      "pacing": "Fast",
+      "themes": [
+        "friendship",
+        "corruption by power",
+        "magic and music",
+        "sacrifice",
+        "darkness and light"
+      ],
+      "setting": "Contemporary or near-contemporary; a world threatened by shadow beasts",
+      "comparable_books": [
+        "The Midnight Hour - Benjamin Read",
+        "Ink and Bone - Rachel Caine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "buddy dynamics",
+          "dark fantasy",
+          "magic system",
+          "fast reads",
+          "indie fantasy"
+        ],
+        "negative": [
+          "literary prose",
+          "slow world-building",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Low",
+      "research_source": "web_search",
       "audit": null
     },
     "The Blinding End - Ian Lewis": {
       "title": "The Blinding End",
       "author": "Ian Lewis",
       "series": "The Driver Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "needs_review",
+      "summary": "The fifth and final book in the experimental Driver Series, in which the mysterious otherworldly Driver — a being who wanders between the living and the dead gathering murdered souls — is described as desperate and on the run, pushing toward the series' conclusion across a gritty noir-inflected supernatural landscape.",
+      "tone": "gritty, gothic, noir, haunting",
+      "pacing": "Moderate",
+      "themes": [
+        "the afterlife",
+        "good vs. evil",
+        "redemption",
+        "small-town desperation",
+        "justice"
+      ],
+      "setting": "Contemporary small-town America; the liminal space between the living and the dead",
+      "comparable_books": [
+        "The Dark Tower - Stephen King",
+        "Odd Thomas - Dean Koontz",
+        "Reaper Man - Terry Pratchett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural thriller",
+          "gothic noir",
+          "literary ambition",
+          "indie fiction",
+          "unique concept"
+        ],
+        "negative": [
+          "mainstream commercial thriller",
+          "fast-paced action only",
+          "large readership and reviews required"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Low",
+      "research_source": "web_search",
       "audit": null
     },
     "The Obsidian Eyes of Klief - Alex Robins": {
       "title": "The Obsidian Eyes of Klief",
       "author": "Alex Robins",
       "series": "War of the Twelve",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the climactic finale of the War of the Twelve series, an exhausted human alliance makes a desperate gamble to find and destroy the enigmatic creature known as the Weaver, converging on the remote Barony of Klief where the fate of the nine Baronies will be decided. Heroes and villains alike are drawn to the town of Klief for a final, bloody reckoning.",
+      "tone": "action-packed, epic, gritty",
+      "pacing": "Fast",
+      "themes": [
+        "war and sacrifice",
+        "heroism and its cost",
+        "ancient evil",
+        "loyalty",
+        "fate and free will"
+      ],
+      "setting": "Secondary fantasy world; the nine Baronies and the remote Barony of Klief",
+      "comparable_books": [
+        "The Broken Heart of Arelium - Alex Robins",
+        "The First Law - Joe Abercrombie",
+        "The Shadow of the Gods - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "fast-paced battles",
+          "grimdark elements",
+          "concise books",
+          "indie fantasy"
+        ],
+        "negative": [
+          "slow world-building",
+          "literary fantasy",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Battle Between Blood: A Legend of Tal Novella - J. D. L. Rosell": {
       "title": "A Battle Between Blood: A Legend of Tal Novella",
       "author": "J. D. L. Rosell",
       "series": "Legend of Tal",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novella (set after Book 4)",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set after the conclusion of the Legend of Tal series, this novella follows Garin, Wren, Rolan, and Ashelia as they attempt to take back the elven tree city of Elendol amid a bloody civil war in the land of Gladelyl. It serves as both an epilogue to the main series and a bridge to a forthcoming expanded story universe.",
+      "tone": "adventurous, epic, bittersweet",
+      "pacing": "Fast",
+      "themes": [
+        "civil war",
+        "loyalty and sacrifice",
+        "legacy and consequence",
+        "friendship",
+        "found family"
+      ],
+      "setting": "The fantasy world of Aolas; the elven lands of Gladelyl",
+      "comparable_books": [
+        "A King's Bargain - J. D. L. Rosell",
+        "The Dragonlance Chronicles - Weis & Hickman",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "fast reads",
+          "found family",
+          "series completion",
+          "indie fantasy",
+          "Kindle Unlimited"
+        ],
+        "negative": [
+          "standalone preference",
+          "literary prose",
+          "aversion to novellas"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Time Door - Shannon McDermott": {
