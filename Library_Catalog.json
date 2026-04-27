@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3125,
-  "total_pending": 1475,
+  "total_catalogued": 3145,
+  "total_pending": 1455,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -175679,162 +175679,291 @@
       "title": "Return to Honor",
       "author": "Brian McClellan",
       "series": "Powder Mage",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1.5",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set between Promise of Blood and The Crimson Campaign, Captain Vlora — a disgraced powder mage in the Adran army — is sent on a timed mission to hunt down a traitorous guard captain whose secrets could cost soldiers their lives, and her one chance at redemption.",
+      "tone": "propulsive, action-driven, military",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "loyalty",
+        "military duty",
+        "magic and warfare"
+      ],
+      "setting": "The Adran Empire; flintlock-era fantasy world with gunpowder magic",
+      "comparable_books": [
+        "Promise of Blood - Brian McClellan",
+        "The Crimson Campaign - Brian McClellan",
+        "The Guns of the Dawn - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock fantasy",
+          "military action",
+          "female protagonist",
+          "series world-building",
+          "fast short read"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "very short — novella/short story length"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Drumindor - Michael J. Sullivan": {
       "title": "Drumindor",
       "author": "Michael J. Sullivan",
       "series": "The Riyria Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Royce Melborn and Hadrian Blackwater, the rogues-for-hire known as Riyria, are hired to stop a disgruntled dwarf craftsman whose threatened revenge targets the legendary volcanic towers of Drumindor — a seemingly easy job that quickly becomes anything but.",
+      "tone": "light, adventurous, warmly humorous",
+      "pacing": "Moderate",
+      "themes": [
+        "friendship",
+        "class and inequality",
+        "duty and loyalty",
+        "dwarven culture",
+        "adventure"
+      ],
+      "setting": "The fantasy world of Elan; the resort city of Tur Del Fur and its ancient dwarven towers",
+      "comparable_books": [
+        "The Crown Tower - Michael J. Sullivan",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Among Thieves - Douglas Hulick"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "buddy duo protagonists",
+          "light adventurous tone",
+          "long-running beloved series",
+          "humor and banter",
+          "interconnected fantasy world"
+        ],
+        "negative": [
+          "requires knowledge of prior Riyria books",
+          "lighter stakes than earlier entries",
+          "slow-burn pacing in first half"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds is widely praised as the definitive narrator for this series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood of Empire - Brian McClellan": {
       "title": "Blood of Empire",
       "author": "Brian McClellan",
       "series": "Gods of Blood and Powder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Dynize Empire unlocks an ancient godstone to forge a new god, spy Michel Bravis, mercenary general Vlora Flint, and warrior Ben Styke must find desperate allies and fight on multiple fronts to prevent a catastrophe that would reshape the world.",
+      "tone": "gritty, action-driven, politically complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "war and its costs",
+        "power and corruption",
+        "loyalty",
+        "colonialism",
+        "resistance"
+      ],
+      "setting": "The colonial city of Landfall and the nation of Dynize; flintlock-era fantasy world",
+      "comparable_books": [
+        "Sins of Empire - Brian McClellan",
+        "Promise of Blood - Brian McClellan",
+        "The Autumn Republic - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock fantasy",
+          "multi-POV military fantasy",
+          "morally grey protagonists",
+          "series conclusion",
+          "action-heavy climax"
+        ],
+        "negative": [
+          "requires reading prior books in series",
+          "slow first two-thirds",
+          "large ensemble cast"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "London Rules - Mick Herron": {
       "title": "London Rules",
       "author": "Mick Herron",
       "series": "Slough House",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a string of apparently random terror attacks rocks Britain, the burned-out misfit spies of Slough House are dragged into a conspiracy that reaches into MI5's own corridors, while political farce unfolds at Westminster in the Brexit-era shadow.",
+      "tone": "darkly comic, satirical, mordantly cynical",
+      "pacing": "Moderate",
+      "themes": [
+        "bureaucratic dysfunction",
+        "political satire",
+        "espionage",
+        "Brexit and modern Britain",
+        "loyalty among misfits"
+      ],
+      "setting": "Contemporary London; MI5's Slough House satellite office and Regent's Park headquarters",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic spy fiction",
+          "ensemble cast of misfits",
+          "biting political satire",
+          "clever plotting",
+          "character-driven"
+        ],
+        "negative": [
+          "requires prior series knowledge for full impact",
+          "humor may not suit readers wanting straight thriller",
+          "British-politics-heavy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Seán Barrett's narration of the Slough House series is widely considered definitive and deeply enhances the sardonic tone.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sins of Empire - Brian McClellan": {
       "title": "Sins of Empire",
       "author": "Brian McClellan",
       "series": "Gods of Blood and Powder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the frontier colony of Fatrasta, a spy, a convicted war hero, and a mercenary general must work together to suppress a dangerous insurrection threatening the capital — while darker ancient forces begin to stir beneath the political chaos.",
+      "tone": "gritty, action-driven, politically charged",
+      "pacing": "Moderate",
+      "themes": [
+        "colonialism and oppression",
+        "political intrigue",
+        "power and loyalty",
+        "magic and gunpowder",
+        "redemption"
+      ],
+      "setting": "The young frontier nation of Fatrasta; a flintlock-era fantasy world set a decade after the Powder Mage trilogy",
+      "comparable_books": [
+        "Promise of Blood - Brian McClellan",
+        "Snakewood - Adrian Selby",
+        "The Guns of the Dawn - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock fantasy",
+          "multi-POV",
+          "morally complex characters",
+          "military intrigue",
+          "accessible entry point"
+        ],
+        "negative": [
+          "benefits from reading prior Powder Mage trilogy",
+          "slower build than Powder Mage trilogy",
+          "large cast"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Evening and the Morning - Ken Follett": {
       "title": "The Evening and the Morning",
       "author": "Ken Follett",
       "series": "Kingsbridge",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0 (Prequel)",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 997 AD England, ravaged by Viking raids and corrupt lords, a young boatbuilder, a Norman noblewoman, and a monk each pursue their ambitions and loves while struggling against a ruthless bishop — together shaping the founding of the town that will become Kingsbridge.",
+      "tone": "sweeping, propulsive, saga-like",
+      "pacing": "Moderate",
+      "themes": [
+        "ambition and survival",
+        "power and corruption",
+        "love and loyalty",
+        "the building of civilisation",
+        "faith and church politics"
+      ],
+      "setting": "Late Dark Ages England, 997–1007 AD; the pre-Norman hamlet that becomes Kingsbridge",
+      "comparable_books": [
+        "The Pillars of the Earth - Ken Follett",
+        "World Without End - Ken Follett",
+        "Shōgun - James Clavell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic historical saga",
+          "rich period detail",
+          "propulsive plotting",
+          "multi-generational sweep",
+          "accessible for new readers"
+        ],
+        "negative": [
+          "archetypal good/evil characters with limited complexity",
+          "very long",
+          "formulaic Follett structure"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "John Lee's narration is widely praised and well-suited to the epic scope and period setting.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "More Than Human - Theodore Sturgeon": {
@@ -175842,26 +175971,46 @@
       "author": "Theodore Sturgeon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Six social outcasts with extraordinary individual abilities — including a near-idiot with telepathic gifts and a pair of twin girls who can teleport — learn to merge into a single collective gestalt intelligence representing the next stage of human evolution.",
+      "tone": "lyrical, compassionate, quietly profound",
+      "pacing": "Slow",
+      "themes": [
+        "human connection and belonging",
+        "evolution and transcendence",
+        "alienation and outsiders",
+        "the nature of identity",
+        "ethics and moral responsibility"
+      ],
+      "setting": "Mid-20th century rural and suburban America",
+      "comparable_books": [
+        "Childhood's End - Arthur C. Clarke",
+        "The Demolished Man - Alfred Bester",
+        "Flowers for Algernon - Daniel Keyes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "character-driven",
+          "themes of belonging and otherness",
+          "classic SF",
+          "short and dense"
+        ],
+        "negative": [
+          "minimal plot action",
+          "meditative pacing",
+          "dated mid-century prose style for some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Schismatrix Plus - Bruce Sterling": {
@@ -175869,26 +176018,47 @@
       "author": "Bruce Sterling",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Over several centuries of posthuman future history, Abelard Lindsay navigates the fractured solar system — divided between gene-modifying Shapers and cybernetic Mechanists — pursuing personal reinvention and survival across alien-influenced civilisations.",
+      "tone": "dense, visionary, cool and detached",
+      "pacing": "Moderate",
+      "themes": [
+        "posthumanism and transhumanism",
+        "political ideology and faction",
+        "identity and transformation",
+        "mortality and reinvention",
+        "alien contact"
+      ],
+      "setting": "Far future solar system; space habitats, alien-influenced worlds, across centuries",
+      "comparable_books": [
+        "Diaspora - Greg Egan",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "The Stars Are Legion - Kameron Hurley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF ideas",
+          "posthumanism",
+          "epic scope",
+          "cyberpunk genre roots",
+          "intellectually demanding"
+        ],
+        "negative": [
+          "emotionally distant prose",
+          "very dense worldbuilding",
+          "episodic structure may feel disjointed",
+          "not plot-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Diaspora - Greg Egan": {
@@ -175896,26 +176066,47 @@
       "author": "Greg Egan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a far future where most of humanity has transcended into software citizens or engineered posthumans, a cosmic cataclysm triggers a millennia-spanning quest across the universe to understand the physics underlying existence itself.",
+      "tone": "cerebral, vast, awe-inspiring",
+      "pacing": "Slow",
+      "themes": [
+        "posthumanism and identity",
+        "the nature of consciousness",
+        "cosmology and physics",
+        "civilisation and extinction",
+        "the search for meaning"
+      ],
+      "setting": "Far future Earth and deep space; software-based civilisations and alien geometries across geological timescales",
+      "comparable_books": [
+        "Schismatrix Plus - Bruce Sterling",
+        "Blindsight - Peter Watts",
+        "Permutation City - Greg Egan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "genuinely mind-expanding ideas",
+          "posthumanism",
+          "cosmological scope",
+          "rigorous physics"
+        ],
+        "negative": [
+          "extremely demanding — heavy mathematics and physics",
+          "near-zero emotional stakes",
+          "no conventional plot",
+          "not for casual readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Dense mathematical and philosophical content requires the ability to re-read and pause; audio format loses most of the book's value.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Difference Engine - William Gibson & Bruce Sterling": {
@@ -175923,161 +176114,281 @@
       "author": "William Gibson & Bruce Sterling",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate Victorian England where Charles Babbage's mechanical computers triggered an early information revolution, a scientist's daughter, a gambler, and a spy become entangled in a conspiracy surrounding a mysterious set of punch cards that could reshape the fragile order of this steam-powered world.",
+      "tone": "atmospheric, dense, intellectually provocative",
+      "pacing": "Slow",
+      "themes": [
+        "technology and society",
+        "information and power",
+        "class and political upheaval",
+        "alternate history",
+        "the birth of computation"
+      ],
+      "setting": "Alternate 1855 Britain; a steam-driven information age with computing engines and industrialised surveillance",
+      "comparable_books": [
+        "Perdido Street Station - China Miéville",
+        "The Diamond Age - Neal Stephenson",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "steampunk founding text",
+          "rich alternate history",
+          "literary SF",
+          "intellectual ambition",
+          "Victorian atmosphere"
+        ],
+        "negative": [
+          "deliberately opaque plotting",
+          "more interested in ideas than character or plot",
+          "dense and slow",
+          "demands patient readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Uplift War - David Brin": {
       "title": "The Uplift War",
       "author": "David Brin",
       "series": "The Uplift Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the aggressive Gubru aliens invade and occupy the human colony world Garth, a guerrilla resistance led by humans and their chimpanzee clients must find a way to survive and outsmart a vastly superior occupying force.",
+      "tone": "adventurous, intelligent, optimistic",
+      "pacing": "Moderate",
+      "themes": [
+        "uplift and responsibility",
+        "resistance and occupation",
+        "intelligence and evolution",
+        "galactic politics",
+        "interspecies cooperation"
+      ],
+      "setting": "The alien-occupied human colony world of Garth; a galactic civilisation defined by the Uplift of sentient species",
+      "comparable_books": [
+        "Startide Rising - David Brin",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Speaker for the Dead - Orson Scott Card"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Hugo-winning SF",
+          "big ideas with action",
+          "alien civilisations",
+          "optimistic SF",
+          "resistance narrative"
+        ],
+        "negative": [
+          "part of a long series — some prior context helps",
+          "large cast",
+          "slower middle sections"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Heaven's Reach - David Brin": {
       "title": "Heaven's Reach",
       "author": "David Brin",
       "series": "Uplift Storm",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The crew of the Streaker and their allies face the culminating crisis of the Uplift Storm trilogy as the Five Galaxies approach a cataclysmic transformation, forcing the humans, dolphins, and chimps to make choices that will determine the fate of civilisation itself.",
+      "tone": "epic, cosmic, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "survival and sacrifice",
+        "galactic civilisation and its end",
+        "uplift and responsibility",
+        "transcendence",
+        "identity under pressure"
+      ],
+      "setting": "Deep space across the Five Galaxies; during an unprecedented cosmic upheaval",
+      "comparable_books": [
+        "Infinity's Shore - David Brin",
+        "Brightness Reef - David Brin",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grand space opera finale",
+          "pays off a long series arc",
+          "big SF ideas",
+          "dolphin and chimp POV characters"
+        ],
+        "negative": [
+          "requires reading earlier Uplift books",
+          "overwhelming amount of alien species/politics",
+          "resolution may feel rushed"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Startide Rising - David Brin": {
       "title": "Startide Rising",
       "author": "David Brin",
       "series": "The Uplift Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The dolphin-crewed starship Streaker, having stumbled upon a derelict alien fleet of staggering significance, hides in the ocean of a distant world while a war of fanatical alien species rages above them, each desperate to claim what the Streaker found.",
+      "tone": "tense, inventive, optimistic-adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "uplift and sentience",
+        "survival against impossible odds",
+        "the weight of discovery",
+        "interspecies conflict",
+        "human potential"
+      ],
+      "setting": "The water world Kithrup; far future with a multi-species galactic civilisation",
+      "comparable_books": [
+        "The Uplift War - David Brin",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Old Man's War - John Scalzi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Hugo and Nebula winner",
+          "thrilling SF adventure",
+          "dolphin protagonists",
+          "big ideas with action",
+          "optimistic SF"
+        ],
+        "negative": [
+          "large cast of alien species can be hard to track",
+          "some dated mid-80s SF sensibilities",
+          "second in a series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Infinity's Shore - David Brin": {
       "title": "Infinity's Shore",
       "author": "David Brin",
       "series": "Uplift Storm",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As multiple factions converge on the planet Jijo — home to six illegal colonist species — the crew of the Streaker must decide whether to hide or fight while a momentous secret buried in Jijo's ocean threatens to change everything.",
+      "tone": "complex, ambitious, multi-stranded",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival and hiding",
+        "galactic politics",
+        "ecological stewardship",
+        "uplift and sentience",
+        "sacrifice"
+      ],
+      "setting": "The hidden world of Jijo and its surrounding space; multiple alien civilisation perspectives",
+      "comparable_books": [
+        "Brightness Reef - David Brin",
+        "Heaven's Reach - David Brin",
+        "A Deepness in the Sky - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "large-scale SF world-building",
+          "multiple alien POVs",
+          "middle-book depth",
+          "series investment pays off"
+        ],
+        "negative": [
+          "middle book — not standalone",
+          "extremely complex multi-strand narrative",
+          "requires prior Uplift books",
+          "slow"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Brightness Reef - David Brin": {
       "title": "Brightness Reef",
       "author": "David Brin",
       "series": "Uplift Storm",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the hidden world of Jijo, six sapient species live illegally in exile from galactic society; when a starship arrives breaking their centuries of peace, a cross-species group of unlikely allies must confront terrifying visitors who threaten their fragile world.",
+      "tone": "expansive, thoughtful, multi-voiced",
+      "pacing": "Slow",
+      "themes": [
+        "exile and belonging",
+        "ecological stewardship",
+        "first contact",
+        "galactic law and outlaws",
+        "community across difference"
+      ],
+      "setting": "The hidden, pre-technological world of Jijo; far future galactic civilisation backdrop",
+      "comparable_books": [
+        "Infinity's Shore - David Brin",
+        "The Uplift War - David Brin",
+        "Speaker for the Dead - Orson Scott Card"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich alien world-building",
+          "multiple alien POVs",
+          "softer SF with ecological themes",
+          "series opener for Uplift Storm"
+        ],
+        "negative": [
+          "slow and deliberate pacing",
+          "large cast and many species to track",
+          "less action-focused than prior Uplift books",
+          "does not resolve — requires sequels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Widespread Panic - James Ellroy": {
@@ -176085,53 +176396,99 @@
       "author": "James Ellroy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Narrated from purgatory by real-life Hollywood fixer Freddy Otash — rogue cop, private eye, and enforcer for the scandal magazine Confidential — this fictionalized confession torches 1950s Hollywood, exposing blackmail, celebrity secrets, communist paranoia, and murder.",
+      "tone": "feverish, alliterative, darkly comic, transgressive",
+      "pacing": "Fast",
+      "themes": [
+        "corruption and power",
+        "celebrity and scandal",
+        "blackmail and complicity",
+        "1950s Hollywood underbelly",
+        "sin and (limited) redemption"
+      ],
+      "setting": "1950s Los Angeles; the glamorous and corrupt world of Hollywood, the LAPD, and the tabloid press",
+      "comparable_books": [
+        "L.A. Confidential - James Ellroy",
+        "American Tabloid - James Ellroy",
+        "The Big Nowhere - James Ellroy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LA noir",
+          "stylistically extreme prose",
+          "satirical and darkly funny",
+          "celebrity scandal history",
+          "Ellroy fans"
+        ],
+        "negative": [
+          "deliberately offensive and transgressive content",
+          "not plot-driven — more confessional",
+          "requires tolerance for racist/sexist period dialogue",
+          "not for Ellroy newcomers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Dark Hours - Michael Connelly": {
       "title": "The Dark Hours",
       "author": "Michael Connelly",
       "series": "Renée Ballard",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On New Year's Eve, LAPD night-shift detective Renée Ballard discovers a murder concealed within the chaos of celebratory gunfire, and teams up with Harry Bosch to connect it to a cold case — while also hunting a pair of serial rapists terrorising Hollywood.",
+      "tone": "procedural, gritty, tightly plotted",
+      "pacing": "Fast",
+      "themes": [
+        "justice and institutional failure",
+        "police work and persistence",
+        "partnership and trust",
+        "LAPD politics",
+        "crime in post-Floyd Los Angeles"
+      ],
+      "setting": "Contemporary Los Angeles; Hollywood Division, LAPD night-shift",
+      "comparable_books": [
+        "The Night Fire - Michael Connelly",
+        "Desert Star - Michael Connelly",
+        "Nine Dragons - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive police procedural",
+          "dual-protagonist chemistry",
+          "authentic LAPD detail",
+          "tight plotting",
+          "strong female lead"
+        ],
+        "negative": [
+          "requires prior Ballard/Bosch series knowledge for full impact",
+          "procedural formula may feel predictable to genre veterans",
+          "dual-plot structure divides focus"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Christine Lakin and Titus Welliver's dual narration perfectly captures Ballard and Bosch's distinct voices.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Between Two Fires - Christopher Buehlman": {
@@ -176139,80 +176496,149 @@
       "author": "Christopher Buehlman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In plague-ravaged 1348 France, a disgraced knight named Thomas and an enigmatic young girl named Delphine, who claims to see angels, journey toward Avignon alongside a troubled priest — navigating a world where the Black Death is only part of a celestial war between God and Lucifer.",
+      "tone": "lyrical, harrowing, spiritually intense, darkly hopeful",
+      "pacing": "Moderate",
+      "themes": [
+        "faith and doubt",
+        "redemption",
+        "good versus evil",
+        "the plague as cosmic judgment",
+        "hope in darkness"
+      ],
+      "setting": "1348 France; plague-devastated countryside, Paris, and the road to Avignon",
+      "comparable_books": [
+        "The Blacktongue Thief - Christopher Buehlman",
+        "The Name of the Rose - Umberto Eco",
+        "Revelation Space - Alastair Reynolds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical horror",
+          "literary prose",
+          "spiritual and theological depth",
+          "emotionally resonant",
+          "quest narrative"
+        ],
+        "negative": [
+          "graphic horror and violence",
+          "deeply bleak at times",
+          "religious themes may not suit all readers",
+          "deliberately lyrical pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Buehlman himself narrates, and his background as a performer makes the audiobook particularly powerful.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bone Shard War - Andrea Stewart": {
       "title": "The Bone Shard War",
       "author": "Andrea Stewart",
       "series": "The Drowning Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Emperor Lin Sukai, dangerously short of allies after her first hard-won victory, races to find seven mythic swords before her enemies can, while Jovis, Phalue, Ranami, and Nisong each pursue their own desperate endgames in the war for the Phoenix Empire's survival.",
+      "tone": "action-packed, emotionally resonant, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "autonomy and free will",
+        "the cost of power",
+        "loyalty and sacrifice",
+        "found family",
+        "the weight of history"
+      ],
+      "setting": "The archipelago of the Phoenix Empire; drifting islands in the Endless Sea, Asian-inspired secondary world",
+      "comparable_books": [
+        "The Bone Shard Daughter - Andrea Stewart",
+        "The Jasmine Throne - Tasha Suri",
+        "Empire of Sand - Tasha Suri"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Asian-inspired world-building",
+          "morally grey characters",
+          "animal companions",
+          "found family",
+          "multi-POV fantasy",
+          "series conclusion"
+        ],
+        "negative": [
+          "requires reading prior books",
+          "two-year time jump divides readers",
+          "some pacing issues in first half"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bone Shard Emperor - Andrea Stewart": {
       "title": "The Bone Shard Emperor",
       "author": "Andrea Stewart",
       "series": "The Drowning Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Newly crowned Emperor Lin Sukai struggles to hold a crumbling empire together amid political betrayal and a rebel army of constructs, while Jovis — now her Captain of the Guard — hides dangerous secrets, and the legendary Alanga return from myth with uncertain intentions.",
+      "tone": "tense, politically intricate, emotionally driven",
+      "pacing": "Moderate",
+      "themes": [
+        "the burden of leadership",
+        "trust and betrayal",
+        "identity and memory",
+        "free will versus control",
+        "the cost of magic"
+      ],
+      "setting": "The archipelago of the Phoenix Empire; sea voyages between drifting islands, Asian-inspired secondary world",
+      "comparable_books": [
+        "The Bone Shard Daughter - Andrea Stewart",
+        "The Bone Shard War - Andrea Stewart",
+        "The Well of Ascension - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Asian-inspired fantasy",
+          "multi-POV with morally grey characters",
+          "political intrigue",
+          "animal companions",
+          "strong sequel momentum"
+        ],
+        "negative": [
+          "middle-book syndrome for some readers",
+          "requires The Bone Shard Daughter first",
+          "heavy on political scheming over action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Veil - Jonathan Janz": {
