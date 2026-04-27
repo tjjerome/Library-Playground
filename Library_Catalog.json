@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3145,
-  "total_pending": 1455,
+  "total_catalogued": 3164,
+  "total_pending": 1436,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -176646,53 +176646,98 @@
       "author": "Jonathan Janz",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When invisible alien creatures begin abducting people across the globe, a high school teacher named John Calhoun watches helplessly as his family is taken one by one. Joining a group of survivors who have discovered a way to perceive the creatures, he embarks on a desperate mission to enter the alien world and bring them back.",
+      "tone": "propulsive, emotionally charged, blockbuster horror",
+      "pacing": "Fast",
+      "themes": [
+        "family",
+        "survival",
+        "alien invasion",
+        "sacrifice",
+        "parenthood"
+      ],
+      "setting": "Contemporary United States during a sudden, catastrophic alien invasion",
+      "comparable_books": [
+        "Bird Box - Josh Malerman",
+        "Stinger - Robert McCammon",
+        "The War of the Worlds - H.G. Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "family-stakes horror",
+          "alien invasion",
+          "emotional core",
+          "action sequences",
+          "reluctant hero"
+        ],
+        "negative": [
+          "slow burn readers",
+          "literary minimalism",
+          "ambiguous endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced, character-driven thriller with a strong narrative voice praised for its urgency.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Expert System's Champion - Adrian Tchaikovsky": {
       "title": "The Expert System's Champion",
       "author": "Adrian Tchaikovsky",
       "series": "The Expert System's Brother",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ten years on from the first novella, outcast Handry has built a community of fellow misfits wandering a far-future colony world where human settlers have long since lost knowledge of their own technological origins. When a new and deadly threat disrupts the uneasy balance between humans and the indigenous ecosystem, Handry must negotiate between old enemies to survive.",
+      "tone": "creepy, intellectually strange, quietly unsettling",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "colonisation",
+        "technology as myth",
+        "adaptation",
+        "outcasts and community",
+        "ecology"
+      ],
+      "setting": "A far-future human colony world where settlers have devolved into quasi-medieval societies governed unknowingly by ancient AI systems",
+      "comparable_books": [
+        "The Expert System's Brother - Adrian Tchaikovsky",
+        "Elder Race - Adrian Tchaikovsky",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "science-as-fantasy worldbuilding",
+          "body horror elements",
+          "big ideas in short format",
+          "found family outcasts",
+          "Tchaikovsky fans"
+        ],
+        "negative": [
+          "readers wanting fast action",
+          "simple magic systems",
+          "straightforward genre fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "We Used to Live Here - Marcus Kliewer": {
@@ -176700,53 +176745,98 @@
       "author": "Marcus Kliewer",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a family claiming to have once lived in their house arrives unannounced at the door of house-flippers Eve and Charlie, inexplicable and terrifying things begin to happen — and the visitors won't leave. As Eve's grip on reality fractures, she must determine what is real, what is supernatural, and whether the house itself is a portal to something far worse.",
+      "tone": "creeping dread, paranoid, darkly humorous, fractal",
+      "pacing": "Fast",
+      "themes": [
+        "home invasion",
+        "alternate realities",
+        "social anxiety",
+        "unreliable perception",
+        "portal horror"
+      ],
+      "setting": "Contemporary Pacific Northwest; a house that may be a dimensional portal",
+      "comparable_books": [
+        "House of Leaves - Mark Z. Danielewski",
+        "Bird Box - Josh Malerman",
+        "The House of Last Resort - Christopher Golden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "haunted house",
+          "unreliable narrator",
+          "social anxiety horror",
+          "internet/ARG aesthetics",
+          "queer protagonists",
+          "ambiguous ending"
+        ],
+        "negative": [
+          "readers needing resolution",
+          "traditional haunted house beats",
+          "gore-heavy horror"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Naked God - Peter F. Hamilton": {
       "title": "The Naked God",
       "author": "Peter F. Hamilton",
       "series": "Night's Dawn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the concluding volume of the Night's Dawn trilogy, the Confederation faces total collapse as the possessing dead spread across inhabited space, and Joshua Calvert leads a desperate last mission to find the Naked God — the only force capable of ending the possession crisis once and for all.",
+      "tone": "epic, propulsive, operatic, darkly violent",
+      "pacing": "Moderate",
+      "themes": [
+        "death and the afterlife",
+        "identity",
+        "transhumanism",
+        "galactic civilization",
+        "religious cosmology"
+      ],
+      "setting": "Far future interstellar human civilisation spanning hundreds of colonised worlds, late 27th century",
+      "comparable_books": [
+        "The Reality Dysfunction - Peter F. Hamilton",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Revelation Space - Alastair Reynolds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic space opera",
+          "massive cast",
+          "hard SF with horror elements",
+          "door-stopper fans",
+          "big idea SF"
+        ],
+        "negative": [
+          "short-form readers",
+          "minimalist prose",
+          "standalone seekers",
+          "squeamish readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Adversary - Michael Crummey": {
@@ -176754,26 +176844,51 @@
       "author": "Michael Crummey",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the isolated Newfoundland outport of Mockbeggar in the early nineteenth century, the depraved Abe Strapp and his cunning older sister the Widow Caines wage an all-consuming, decades-long war for control of the local fishery and mercantile trade. Their ruthless sibling rivalry devastates everyone around them in this Cain-and-Abel tale steeped in archaic language and brutal beauty.",
+      "tone": "darkly lyrical, Dickensian, brutal, mordantly comic",
+      "pacing": "Moderate",
+      "themes": [
+        "sibling rivalry",
+        "power and corruption",
+        "class",
+        "gender",
+        "survival",
+        "colonial brutality"
+      ],
+      "setting": "Isolated coastal Newfoundland, early 19th century",
+      "comparable_books": [
+        "The Innocents - Michael Crummey",
+        "The Luminaries - Eleanor Catton",
+        "Galore - Michael Crummey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary historical fiction",
+          "morally grey characters",
+          "lyrical prose",
+          "Newfoundland setting",
+          "power dynamics",
+          "character-driven"
+        ],
+        "negative": [
+          "readers wanting likeable protagonists",
+          "fast-paced plotting",
+          "genre fiction fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Crummey's archaic dialect and rich prose reward a skilled narrator; the rhythmic, poetic quality translates exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Death of Mrs. Westaway - Ruth Ware": {
@@ -176781,53 +176896,96 @@
       "author": "Ruth Ware",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Struggling tarot card reader Hal Westaway receives a letter informing her she has inherited a substantial estate from a grandmother she never knew — and decides to bluff her way through the family gathering and claim the money. But as she arrives at the crumbling Cornish manor, she discovers dark family secrets that may be worth killing to keep hidden.",
+      "tone": "atmospheric, twisty, gothic-tinged, suspenseful",
+      "pacing": "Moderate",
+      "themes": [
+        "identity",
+        "family secrets",
+        "inheritance",
+        "deception",
+        "grief"
+      ],
+      "setting": "Contemporary Cornwall, England; a decaying ancestral manor house",
+      "comparable_books": [
+        "In a Dark Dark Wood - Ruth Ware",
+        "The Turn of the Key - Ruth Ware",
+        "Behind Closed Doors - B.A. Paris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic atmosphere",
+          "twisty family secrets",
+          "unreliable protagonist",
+          "cosy-dark mystery",
+          "page-turner"
+        ],
+        "negative": [
+          "hard gore",
+          "action-heavy thrillers",
+          "literary minimalism"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Battle Ground - Jim Butcher": {
       "title": "Battle Ground",
       "author": "Jim Butcher",
       "series": "The Dresden Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Chicago wizard-for-hire Harry Dresden faces the apocalyptic battle with the Titan Ethniu and her army of monsters that has been building since Peace Talks, as the supernatural nations gather to defend the city — with devastating, series-changing consequences.",
+      "tone": "propulsive, high-stakes, emotionally gut-punching",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "war",
+        "power",
+        "loyalty",
+        "consequences",
+        "mortality"
+      ],
+      "setting": "Contemporary Chicago during a single night of supernatural warfare",
+      "comparable_books": [
+        "Peace Talks - Jim Butcher",
+        "Changes - Jim Butcher",
+        "Storm Front - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive action",
+          "long series payoff",
+          "found family",
+          "morally grey world",
+          "urban fantasy fans"
+        ],
+        "negative": [
+          "series newcomers",
+          "slow burn readers",
+          "literary fiction fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "James Marsters' long-running narration of the Dresden Files is widely considered one of the gold standards of audiobook performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The River Has Roots - Amal El-Mohtar": {
@@ -176835,26 +176993,47 @@
       "author": "Amal El-Mohtar",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the small town of Thistleford on the edge of Faerie, sisters Esther and Ysabel Hawthorn tend enchanted willows and sing to them in exchange for their magic — but when Esther chooses a Faerie lover and rejects a dangerous suitor, both sisters are drawn into a conflict rooted in an ancient murder ballad. A lyrical retelling of 'The Two Sisters' folk song that transforms a story of rivalry into one of unbreakable sisterly devotion.",
+      "tone": "lyrical, folkloric, tender, quietly dark",
+      "pacing": "Slow",
+      "themes": [
+        "sisterhood",
+        "language as magic",
+        "love and sacrifice",
+        "folk tradition",
+        "Faerie"
+      ],
+      "setting": "A folkloric pseudo-historical English village on the border of Faerie",
+      "comparable_books": [
+        "This is How You Lose the Time War - Amal El-Mohtar & Max Gladstone",
+        "Ink Blood Sister Scribe - Emma Törzs",
+        "A Sorceress Comes to Call - T. Kingfisher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "sisterhood",
+          "Faerie and folklore",
+          "murder ballad aesthetics",
+          "queer romance",
+          "short and beautiful"
+        ],
+        "negative": [
+          "readers needing clear magic systems",
+          "action-heavy fantasy",
+          "long-form readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The audiobook features music performed by the author and her sister, making it a uniquely immersive experience perfectly matched to the book's musical themes.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Star Maker - Olaf Stapledon": {
@@ -176862,26 +177041,46 @@
       "author": "Olaf Stapledon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A nameless narrator is transported from a hilltop in England on a vast, centuries-spanning journey through the cosmos, joining a collective consciousness that witnesses the rise and fall of countless civilisations before encountering the Star Maker — the cold, creative intelligence behind all existence. A visionary philosophical novel of cosmic scope.",
+      "tone": "visionary, cool, cosmic, philosophical",
+      "pacing": "Slow",
+      "themes": [
+        "cosmic scale",
+        "creation and destruction",
+        "consciousness",
+        "the nature of God",
+        "evolution of civilisation"
+      ],
+      "setting": "The entire cosmos across billions of years, from 1930s Earth outward",
+      "comparable_books": [
+        "Last and First Men - Olaf Stapledon",
+        "The Island of Doctor Moreau - H.G. Wells",
+        "Flowers for Algernon - Daniel Keyes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "big idea SF",
+          "philosophical SF",
+          "cosmic horror adjacent",
+          "classic SF enthusiasts",
+          "visionary worldbuilding"
+        ],
+        "negative": [
+          "character-driven readers",
+          "plot-first readers",
+          "modern pacing expectations"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Bible Says So: What We Get Right (And Wrong) About Scripture’s Most Controversial Issues - Daniel McClellan": {
@@ -176915,270 +177114,488 @@
       "title": "The Many Deaths of the Black Company",
       "author": "Glen Cook",
       "series": "Chronicles of The Black Company",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Books 7–9 (omnibus)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An omnibus collecting the seventh, eighth, and ninth volumes of the Black Company saga — Water Sleeps, Soldiers Live, and She Is the Darkness — following the mercenary band's brutal, decades-long campaigns across a dark fantasy world as they struggle to fulfil ancient prophecies and survive the machinations of godlike powers.",
+      "tone": "grimdark, weary, cynical, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty",
+        "war and its costs",
+        "prophecy",
+        "survival",
+        "moral ambiguity"
+      ],
+      "setting": "A dark secondary fantasy world spanning continents, spanning multiple decades of in-world history",
+      "comparable_books": [
+        "The Black Company - Glen Cook",
+        "The First Law - Joe Abercrombie",
+        "Malazan Book of the Fallen - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "morally grey mercenaries",
+          "long series payoff",
+          "terse military fantasy",
+          "dark epic fantasy"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers needing likeable heroes",
+          "romance-heavy fantasy",
+          "slow literary pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "An Altar on the Village Green - Nathan Hall": {
       "title": "An Altar on the Village Green",
       "author": "Nathan Hall",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Chained God",
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A warrior called only the Lance — blessed by a chained deity with the power to respawn on death — is sent into a village corrupted by a supernatural Horror, dying and reliving each cycle to unravel the mystery and free the villagers. A Dark Souls-inspired dark fantasy told through an intimate, unnamed protagonist wrestling with faith and compassion.",
+      "tone": "grimdark, atmospheric, meditative, bleakly spiritual",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and doubt",
+        "compassion",
+        "cycles of death",
+        "horror",
+        "sacrifice"
+      ],
+      "setting": "A grimdark secondary world village fallen to supernatural Horror; fantasy medieval",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "Shadow of the Torturer - Gene Wolfe",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Dark Souls fans",
+          "grimdark",
+          "respawn/death loop mechanics",
+          "atmospheric horror",
+          "unnamed narrator",
+          "indie fantasy"
+        ],
+        "negative": [
+          "readers needing named heroes",
+          "fast-paced plots",
+          "light fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Song for the Void - Andrew C. Piazza": {
       "title": "A Song for the Void",
       "author": "Andrew C. Piazza",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Cosmic Horror Cycle",
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1853, the crew of British steam frigate HMS Charger patrols the South China Sea between the Opium Wars when an ancient, malevolent entity known as the Darkstar begins driving the crew to hallucinations, mutiny, and madness. Narrated by the ship's surgeon — a man already wrestling with addiction — the novel is a slow-burn cosmic horror tale of nihilism, psychological disintegration, and existential dread.",
+      "tone": "atmospheric, existentially dread-filled, psychologically intense, literary",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "addiction",
+        "nihilism",
+        "cosmic horror",
+        "colonial history",
+        "psychological disintegration"
+      ],
+      "setting": "South China Sea, 1853, aboard a British Royal Navy steam frigate during the Opium Wars era",
+      "comparable_books": [
+        "One Last Gasp - Andrew C. Piazza",
+        "The Fisherman - John Langan",
+        "The Terror - Dan Simmons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian cosmic horror",
+          "historical horror",
+          "unreliable narrator",
+          "addiction as theme",
+          "nautical setting",
+          "slow burn"
+        ],
+        "negative": [
+          "readers needing fast payoff",
+          "jump-scare horror fans",
+          "squeamish readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The First Step - Tao Wong": {
       "title": "The First Step",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wu Ying, a young farmer's son conscripted into the army of a Chinese-inspired fantasy kingdom, is given an unexpected opportunity to join the Verdant Green Waters Sect and begin training as an immortal cultivator. Leaving behind his family, he takes his first steps on a path to immortality — while navigating the dangerous politics of sect life as a commoner among nobles.",
+      "tone": "measured, philosophical, adventure-driven, light",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation and self-improvement",
+        "class and nobility",
+        "duty vs. ambition",
+        "Eastern philosophy",
+        "identity"
+      ],
+      "setting": "A Chinese-inspired secondary fantasy world with xianxia cultivation traditions",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "Forge of Destiny - Yrsillar",
+        "A Will Eternal - Er Gen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "xianxia and wuxia fans",
+          "cultivation fantasy",
+          "progression fantasy",
+          "Eastern philosophy",
+          "slow steady character growth"
+        ],
+        "negative": [
+          "readers unfamiliar with cultivation tropes",
+          "fast-paced action seekers",
+          "Western high fantasy fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The First Stop - Tao Wong": {
       "title": "The First Stop",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two years into his cultivation training, Wu Ying pauses to take stock of his progress within the Verdant Green Waters Sect as political tensions between the kingdoms of Shen and Wei intensify around him. He must balance his growing martial arts skills and Sect duties with the looming threat of war and the karmic ties pulling him back toward his mortal family.",
+      "tone": "measured, philosophical, adventure-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation and self-improvement",
+        "loyalty",
+        "war and duty",
+        "Eastern philosophy",
+        "mortal ties vs. immortal path"
+      ],
+      "setting": "A Chinese-inspired secondary fantasy world; the Verdant Green Waters Sect and surrounding kingdoms",
+      "comparable_books": [
+        "The First Step - Tao Wong",
+        "Cradle - Will Wight",
+        "Forge of Destiny - Yrsillar"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "xianxia and wuxia fans",
+          "cultivation fantasy",
+          "progression fantasy",
+          "Eastern philosophy",
+          "slow steady character growth"
+        ],
+        "negative": [
+          "readers unfamiliar with cultivation tropes",
+          "fast-paced action seekers",
+          "series newcomers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "One Last Gasp - Andrew C. Piazza": {
       "title": "One Last Gasp",
       "author": "Andrew C. Piazza",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Cosmic Horror Cycle",
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Near the end of World War II, a US Army unit pursuing an SS panzer battalion into the Ardennes forest discovers an ancient manor house hiding a supernatural evil called The Geist. Trapped between enemy soldiers outside and an inhuman horror within, the soldiers must fight a battle for body and soul.",
+      "tone": "tense, propulsive, pulpy horror-thriller",
+      "pacing": "Fast",
+      "themes": [
+        "war",
+        "supernatural evil",
+        "survival",
+        "cosmic horror",
+        "soldiers under pressure"
+      ],
+      "setting": "Battle of the Bulge, Ardennes forest, Belgium, late WWII",
+      "comparable_books": [
+        "A Song for the Void - Andrew C. Piazza",
+        "The Keep - F. Paul Wilson",
+        "Overlord - Stuart Andrews"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII horror",
+          "Lovecraftian cosmic horror",
+          "military action with supernatural twist",
+          "pulpy horror-thriller"
+        ],
+        "negative": [
+          "literary fiction readers",
+          "slow burn preference",
+          "graphic gore aversion"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The First War - Tao Wong": {
       "title": "The First War",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the armies of the state of Wei push deeper into Shen, Wu Ying's village is caught between the warring factions, forcing him to confront a terrible choice between his duty to the Sect and his journey toward immortality, and the mortal bonds and family ties he has never fully surrendered.",
+      "tone": "measured, philosophical, emotionally grounded",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation",
+        "war and duty",
+        "mortal ties vs. immortal path",
+        "family",
+        "Eastern philosophy"
+      ],
+      "setting": "A Chinese-inspired secondary fantasy world at war, surrounding the Verdant Green Waters Sect",
+      "comparable_books": [
+        "The First Stop - Tao Wong",
+        "Cradle - Will Wight",
+        "Forge of Destiny - Yrsillar"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "xianxia and wuxia fans",
+          "cultivation fantasy",
+          "progression fantasy",
+          "war arc",
+          "character maturation"
+        ],
+        "negative": [
+          "readers unfamiliar with cultivation tropes",
+          "series newcomers",
+          "fast action seekers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Second Expedition - Tao Wong": {
       "title": "The Second Expedition",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wu Ying and Elder Yang must venture deep into enemy territory through the war-torn State of Wei to gather rare ingredients for an antidote to a poison plaguing their Sect. The perilous journey is shadowed by enemies waiting to finish what they started, as a Sect war continues to loom.",
+      "tone": "adventurous, tense, philosophically grounded",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation",
+        "loyalty and sacrifice",
+        "exploration",
+        "dark sect conflict",
+        "Eastern philosophy"
+      ],
+      "setting": "The State of Wei and surrounding wilderness in a Chinese-inspired secondary fantasy world",
+      "comparable_books": [
+        "The First War - Tao Wong",
+        "Cradle - Will Wight",
+        "A Will Eternal - Er Gen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "xianxia fans",
+          "cultivation progression",
+          "adventure arcs",
+          "mentor-student relationships",
+          "Eastern philosophy"
+        ],
+        "negative": [
+          "series newcomers",
+          "Western high fantasy fans",
+          "readers wanting romance-heavy plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Second Sect - Tao Wong": {
       "title": "The Second Sect",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a dark sect's attack leaves Wu Ying's cultivation compromised and his body altered, healers at the Verdant Green Waters Sect can do nothing for him. He is forced to travel to a new sect for treatment, where opportunity and danger await in equal measure as a dark sect continues its machinations and inter-sect politics grow ever more treacherous.",
+      "tone": "adventurous, introspective, philosophically grounded",
+      "pacing": "Moderate",
+      "themes": [
+        "cultivation and recovery",
+        "identity transformation",
+        "dark sect politics",
+        "Eastern philosophy",
+        "belonging"
+      ],
+      "setting": "A Chinese-inspired secondary fantasy world; a new sect and surrounding territories",
+      "comparable_books": [
+        "The Second Expedition - Tao Wong",
+        "Cradle - Will Wight",
+        "Forge of Destiny - Yrsillar"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "xianxia fans",
+          "cultivation progression",
+          "new sect discovery arcs",
+          "Eastern philosophy",
+          "long series investment"
+        ],
+        "negative": [
+          "series newcomers",
+          "action-first readers",
+          "Western high fantasy fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Second Storm - Tao Wong": {
       "title": "The Second Storm",
       "author": "Tao Wong",
       "series": "A Thousand Li",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two years into the ongoing war between Shen and Wei, the dark sect strikes hard against the Verdant Green Waters Sect — kidnapping Wu Ying's martial sister Fairy Yang among others. Defying his Sect's orders, Wu Ying launches a desperate rescue mission that plunges him deep into inter-sect politics and straight into a trap with tragic consequences.",
+      "tone": "emotionally intense, action-driven, philosophically grounded",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and sacrifice",
+        "cultivation",
+        "dark sect conflict",
+        "war",
+        "martial brotherhood"
+      ],
+      "setting": "A Chinese-inspired secondary fantasy world deep into a multi-kingdom war",
+      "comparable_books": [
+        "The Second Sect - Tao Wong",
+        "Cradle - Will Wight",
+        "A Will Eternal - Er Gen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "xianxia fans",
+          "cultivation progression",
+          "high emotional stakes",
+          "action arcs",
+          "long series investment"
+        ],
+        "negative": [
+          "series newcomers",
+          "slow-pace preference",
+          "Western high fantasy fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Third Kingdom - Tao Wong": {
