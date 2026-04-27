@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2965,
-  "total_pending": 1635,
+  "total_catalogued": 2985,
+  "total_pending": 1615,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -167255,53 +167255,95 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In Jefferson, Mississippi, a Black farmer named Lucas Beauchamp is accused of murdering a white man and faces mob justice; young Chick Mallison races to uncover the truth and save him. The novel is a tense moral investigation into race, justice, and conscience in the Deep South.",
+      "tone": "taut, morally urgent, Southern Gothic",
+      "pacing": "Moderate",
+      "themes": [
+        "racial injustice",
+        "moral courage",
+        "the American South",
+        "community and complicity",
+        "coming of age"
+      ],
+      "setting": "Jefferson, Yoknapatawpha County, Mississippi, 1940s",
+      "comparable_books": [
+        "To Kill a Mockingbird - Harper Lee",
+        "Native Son - Richard Wright",
+        "Go Down, Moses - William Faulkner"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally complex Southern fiction",
+          "race and justice themes",
+          "classic American literature",
+          "Faulkner fans"
+        ],
+        "negative": [
+          "readers who dislike dense prose",
+          "those seeking light or fast reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "racial violence",
+        "lynch mob threat"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Firebreak - Richard Stark": {
       "title": "Firebreak",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 20",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker is hired to rob a dot-com millionaire's Montana hunting lodge, where stolen Old Masters paintings are hidden; simultaneously, he must track down who sent a hitman to his home. Two parallel plots of theft and lethal score-settling converge in the Montana wilderness.",
+      "tone": "cold, spare, propulsive noir",
+      "pacing": "Fast",
+      "themes": [
+        "professional criminality",
+        "amorality and codes of conduct",
+        "betrayal and revenge",
+        "the digital age vs. old-school crime"
+      ],
+      "setting": "Contemporary USA — Montana wilderness and suburban New Jersey, early 2000s",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "Backflash - Richard Stark",
+        "The Friends of Eddie Coyle - George V. Higgins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir",
+          "heist fiction",
+          "amoral protagonist",
+          "stripped-down minimalist prose",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "readers seeking moral redemption arcs",
+          "those who dislike graphic violence",
+          "character-driven literary fiction fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Stark's terse, punchy prose and single-POV structure translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Go Down, Moses - William Faulkner": {
@@ -167309,161 +167351,286 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A cycle of interconnected stories spanning generations of the McCaslin family — white and Black — in Yoknapatawpha County, tracing the legacy of slavery, land ownership, and racial injustice in the American South. The centerpiece novella 'The Bear' follows young Ike McCaslin's initiation into the wilderness and his later renunciation of his family's tainted inheritance.",
+      "tone": "lyrical, elegiac, morally weighty",
+      "pacing": "Slow",
+      "themes": [
+        "race and inheritance",
+        "the legacy of slavery",
+        "wilderness and civilisation",
+        "guilt and repudiation",
+        "Southern history"
+      ],
+      "setting": "Yoknapatawpha County, Mississippi, spanning the 19th and early 20th centuries",
+      "comparable_books": [
+        "Intruder in the Dust - William Faulkner",
+        "The Sound and the Fury - William Faulkner",
+        "Big Woods - William Faulkner"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Faulkner devotees",
+          "Southern literature",
+          "interconnected story cycles",
+          "morally complex historical fiction",
+          "lyrical prose"
+        ],
+        "negative": [
+          "readers who dislike stream-of-consciousness",
+          "those seeking linear narratives",
+          "plot-driven readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "racial slurs (period language)",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Emperor of Thorns - Mark Lawrence": {
       "title": "Emperor of Thorns",
       "author": "Mark Lawrence",
       "series": "The Broken Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jorg Ancrath, the ruthless and brilliant young king, journeys to the Congression to claim the throne of the Holy Roman Empire and confront the supernatural Dead King who threatens the world. The trilogy's conclusion brings Jorg's violent, morally catastrophic arc to a dark and revelatory close.",
+      "tone": "grimdark, nihilistic, darkly propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "nihilism and will to power",
+        "fate vs. free will",
+        "the cost of ambition",
+        "violence and consequence",
+        "found meaning in a broken world"
+      ],
+      "setting": "A post-apocalyptic medieval Europe, centuries after a catastrophic collapse",
+      "comparable_books": [
+        "Prince of Thorns - Mark Lawrence",
+        "The First Law - Joe Abercrombie",
+        "Blood Song - Anthony Ryan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "morally reprehensible protagonist",
+          "fast-paced brutal action",
+          "dark world-building",
+          "unreliable narrator"
+        ],
+        "negative": [
+          "readers who require likeable protagonists",
+          "those sensitive to violence or sexual content",
+          "epic fantasy fans wanting heroic arcs"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The first-person voice and propulsive plotting are ideal for audio performance.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Elphie: A Wicked Childhood - Gregory Maguire": {
       "title": "Elphie: A Wicked Childhood",
       "author": "Gregory Maguire",
-      "series": "Wicked Years",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Wicked Years",
+      "series_position": "Book 0 (Prequel)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "This prequel to Wicked follows the childhood and adolescence of Elphaba Thropp — the future Wicked Witch of the West — from infancy through her family's dysfunction, her first encounters with Oz's persecuted Animal populations, and her arrival at Shiz University. It is an impressionistic coming-of-age portrait of a singular, green-skinned outsider.",
+      "tone": "lyrical, melancholic, philosophically dense",
+      "pacing": "Slow",
+      "themes": [
+        "identity and otherness",
+        "family dysfunction",
+        "political oppression",
+        "coming of age",
+        "the nature of wickedness"
+      ],
+      "setting": "The land of Oz, prior to the events of Wicked (2025)",
+      "comparable_books": [
+        "Wicked - Gregory Maguire",
+        "Son of a Witch - Gregory Maguire",
+        "Confessions of an Ugly Stepsister - Gregory Maguire"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Wicked Years series fans",
+          "revisionist fairy tales",
+          "lyrical literary fantasy",
+          "Oz devotees",
+          "character studies"
+        ],
+        "negative": [
+          "readers expecting plot-driven narrative",
+          "casual readers from the musical/film only",
+          "those who dislike dense prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Cynthia Erivo; the audiobook performance has been praised as a strong complement to the prose.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dirty Money: A Parker Novel - Richard Stark": {
       "title": "Dirty Money: A Parker Novel",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 24",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a botched bank robbery, Parker must retrieve cash hidden in New England before rivals and a relentless bounty hunter close in on him. The final Parker novel is a terse, propulsive chase story — a fitting and lean conclusion to the series.",
+      "tone": "cold, sparse, tightly plotted noir",
+      "pacing": "Fast",
+      "themes": [
+        "professional criminality",
+        "survival",
+        "pursuit and evasion",
+        "loyalty among thieves"
+      ],
+      "setting": "Contemporary rural New England, USA, 2008",
+      "comparable_books": [
+        "Nobody Runs Forever - Richard Stark",
+        "Ask the Parrot - Richard Stark",
+        "The Hunter - Richard Stark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir",
+          "heist fiction",
+          "amoral protagonist",
+          "minimalist crime prose"
+        ],
+        "negative": [
+          "readers seeking moral resolution",
+          "those who dislike graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Stark's terse prose and propulsive plotting work superbly in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Deadly Edge - Richard Stark": {
       "title": "Deadly Edge",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After Parker and his crew rob a rock concert, a sadistic killer begins targeting members of the team one by one, forcing Parker into a brutal cat-and-mouse game to protect himself and his partner Claire. A tense, unusually personal entry in the series that exposes Parker's ruthless survival instincts.",
+      "tone": "cold, menacing, lean noir",
+      "pacing": "Fast",
+      "themes": [
+        "professional criminality",
+        "survival and predation",
+        "the price of the criminal life",
+        "control and vulnerability"
+      ],
+      "setting": "Contemporary USA, early 1970s",
+      "comparable_books": [
+        "Slayground - Richard Stark",
+        "The Seventh - Richard Stark",
+        "The Friends of Eddie Coyle - George V. Higgins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir",
+          "heist fiction",
+          "cat-and-mouse thriller",
+          "amoral protagonist",
+          "minimalist prose"
+        ],
+        "negative": [
+          "readers seeking moral protagonists",
+          "those sensitive to graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The series' spare, propulsive style translates very well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Comeback - Richard Stark": {
       "title": "Comeback",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a 23-year absence from print, Parker returns in a story about robbing a televangelist's revival-meeting cash haul — only for the job to go sideways when a crew member betrays the team. Parker's comeback marks his re-entry into a changed world of modern crime.",
+      "tone": "cold, dry, stripped-down noir",
+      "pacing": "Fast",
+      "themes": [
+        "professional criminality",
+        "betrayal",
+        "survival",
+        "adaptation to a changed world"
+      ],
+      "setting": "Contemporary USA, mid-1990s",
+      "comparable_books": [
+        "Backflash - Richard Stark",
+        "Flashfire - Richard Stark",
+        "The Hunter - Richard Stark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir",
+          "heist fiction",
+          "amoral protagonist",
+          "minimalist crime prose"
+        ],
+        "negative": [
+          "readers seeking moral redemption arcs",
+          "those who dislike graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Stark's sparse, cinematic prose is ideal for audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Collected Stories of William Faulkner - William Faulkner": {
@@ -167471,26 +167638,49 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A National Book Award-winning collection of 42 short stories spanning Faulkner's career, including tales set in Yoknapatawpha County and beyond, covering war, race, poverty, violence, and the fading Southern way of life. It is considered one of the finest collections in American literature.",
+      "tone": "lyrical, dark, sprawling, tragicomic",
+      "pacing": "Slow",
+      "themes": [
+        "the American South",
+        "race and history",
+        "war and trauma",
+        "family and community",
+        "time and memory"
+      ],
+      "setting": "Primarily Yoknapatawpha County, Mississippi; also wartime Europe and beyond — spanning the early 20th century",
+      "comparable_books": [
+        "Big Woods - William Faulkner",
+        "Go Down, Moses - William Faulkner",
+        "Winesburg, Ohio - Sherwood Anderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Faulkner devotees",
+          "short story enthusiasts",
+          "Southern literature",
+          "canonical American literature",
+          "lyrical prose"
+        ],
+        "negative": [
+          "readers who dislike Modernist prose experiments",
+          "those seeking linear narratives",
+          "readers new to Faulkner"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "racial slurs (period language)",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Big Woods - William Faulkner": {
@@ -167498,80 +167688,141 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Four of Faulkner's finest hunting stories — including the celebrated 'The Bear' — are gathered here with connecting prose preludes, following the McCaslin family and their guide Sam Fathers across generations in the vanishing Mississippi wilderness. Together they form an elegy for nature, tradition, and a changing South.",
+      "tone": "lyrical, elegiac, reverent",
+      "pacing": "Slow",
+      "themes": [
+        "wilderness and civilisation",
+        "initiation and manhood",
+        "conservation and loss",
+        "race and inheritance",
+        "time and tradition"
+      ],
+      "setting": "The Big Woods near Oxford/Jefferson, Mississippi, spanning roughly the late 19th to mid-20th century",
+      "comparable_books": [
+        "Go Down, Moses - William Faulkner",
+        "Collected Stories - William Faulkner",
+        "The Nick Adams Stories - Ernest Hemingway"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Faulkner fans",
+          "hunting and wilderness literature",
+          "Southern literary tradition",
+          "conservationist themes",
+          "short story cycles"
+        ],
+        "negative": [
+          "readers who struggle with Modernist prose",
+          "those seeking plot-driven narratives",
+          "readers uninterested in hunting settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Barren - Peter V. Brett": {
       "title": "Barren",
       "author": "Peter V. Brett",
       "series": "The Demon Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5.5 (Novella)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set during the demon wars in Tibbet's Brook, this novella follows Selia 'Barren' Square — the town's ageing female speaker — as she rallies her community against a devastating demon threat while confronting a buried past of forbidden love. A character study of resilience, identity, and community amid apocalyptic danger.",
+      "tone": "gritty, intimate, emotionally grounded",
+      "pacing": "Fast",
+      "themes": [
+        "community and leadership",
+        "LGBTQ+ identity and acceptance",
+        "buried memory and past love",
+        "survival",
+        "small-town politics"
+      ],
+      "setting": "Tibbet's Brook, a rural village in the demon-afflicted world of the Demon Cycle, concurrent with The Core (Book 5)",
+      "comparable_books": [
+        "The Warded Man - Peter V. Brett",
+        "Messenger's Legacy - Peter V. Brett",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Demon Cycle series fans",
+          "secondary-character spotlights",
+          "LGBTQ+ representation in fantasy",
+          "gritty epic fantasy"
+        ],
+        "negative": [
+          "readers new to the Demon Cycle (requires prior knowledge)",
+          "those seeking a main-series entry point"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Backflash - Richard Stark": {
       "title": "Backflash",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 18",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker agrees to rob a Hudson River gambling boat, breaking one of his own rules — and the complications mount as crew members and outside interests threaten to derail the score. A lean, mechanically precise heist novel set against the world of riverboat casinos.",
+      "tone": "cold, efficient, dry noir",
+      "pacing": "Fast",
+      "themes": [
+        "professional criminality",
+        "rule-breaking and its consequences",
+        "loyalty and betrayal",
+        "survival"
+      ],
+      "setting": "Contemporary Hudson River region, New York State, late 1990s",
+      "comparable_books": [
+        "Comeback - Richard Stark",
+        "Firebreak - Richard Stark",
+        "The Hunter - Richard Stark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir",
+          "heist fiction",
+          "amoral protagonist",
+          "minimalist prose"
+        ],
+        "negative": [
+          "readers seeking likeable protagonists",
+          "those sensitive to graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The series' spare, propulsive style is ideal for audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "As I Lay Dying - William Faulkner": {
@@ -167579,134 +167830,238 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Told through 59 interior monologues from 15 narrators, the novel follows the poor Bundren family's harrowing journey across Mississippi to bury their matriarch Addie in her hometown of Jefferson. By turns darkly comic, tragic, and hallucinatory, it is one of the great Modernist experiments in voice and form.",
+      "tone": "darkly comic, tragic, grotesque, stream-of-consciousness",
+      "pacing": "Moderate",
+      "themes": [
+        "death and grief",
+        "family dysfunction",
+        "endurance and suffering",
+        "identity and selfhood",
+        "the American South"
+      ],
+      "setting": "Rural Mississippi, Yoknapatawpha County, 1920s–30s",
+      "comparable_books": [
+        "The Sound and the Fury - William Faulkner",
+        "Light in August - William Faulkner",
+        "Blood Meridian - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Faulkner devotees",
+          "Modernist literature fans",
+          "multi-perspective narratives",
+          "darkly comic fiction",
+          "Southern Gothic"
+        ],
+        "negative": [
+          "readers who dislike stream-of-consciousness",
+          "those seeking linear plot",
+          "readers new to Faulkner"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Jennifer Morgue - Charles Stross": {
       "title": "The Jennifer Morgue",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bob Howard, computational demonologist and reluctant spy for a secretive British agency, is entangled in a Lovecraftian James Bond parody involving a billionaire villain, deep-sea horrors, and an ancient artifact. The novel riffs brilliantly on the Bond formula while embedding genuine Cthulhu Mythos horror.",
+      "tone": "darkly comic, propulsive, affectionately satirical",
+      "pacing": "Fast",
+      "themes": [
+        "Lovecraftian cosmic horror",
+        "bureaucracy and espionage",
+        "genre parody",
+        "power and secrecy",
+        "occult technology"
+      ],
+      "setting": "Contemporary UK and the Caribbean; a secret world of computational magic and eldritch government agencies",
+      "comparable_books": [
+        "The Atrocity Archives - Charles Stross",
+        "The Fuller Memorandum - Charles Stross",
+        "Good Omens - Terry Pratchett & Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian fiction",
+          "spy thriller parody",
+          "darkly comic fantasy",
+          "bureaucratic horror",
+          "Bond fans"
+        ],
+        "negative": [
+          "readers who dislike genre pastiche",
+          "horror purists",
+          "those seeking literary seriousness"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The comic voice and Bond-pastiche structure perform extremely well on audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Apostles of Mercy - Lindsay Ellis": {
       "title": "Apostles of Mercy",
       "author": "Lindsay Ellis",
       "series": "Noumena",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With first contact rapidly deteriorating, the alien Ampersand and his human interpreter Cora Sabino have all but given up on saving a humanity bent on self-destruction — until a new threat from long-marginalized alien survivors forces a dangerous reconsideration. The third installment escalates the geopolitical and interstellar stakes while deepening the central relationship.",
+      "tone": "tense, emotionally charged, geopolitically thriller-ish",
+      "pacing": "Fast",
+      "themes": [
+        "first contact and communication",
+        "humanity's capacity for self-destruction",
+        "alien otherness",
+        "loyalty and devotion",
+        "survival of civilisations"
+      ],
+      "setting": "Alternate-history Earth, 2000s — USA and beyond, during escalating alien-human conflict",
+      "comparable_books": [
+        "Axiom's End - Lindsay Ellis",
+        "Truth of the Divine - Lindsay Ellis",
+        "Arrival - Ted Chiang (Story of Your Life)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "first contact sci-fi",
+          "character-driven sci-fi",
+          "alien-human relationships",
+          "geopolitical thriller fans",
+          "found family dynamics"
+        ],
+        "negative": [
+          "hard SF readers wanting scientific rigour",
+          "readers who prefer standalone novels",
+          "those who haven't read earlier Noumena books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Lion Among Men - Gregory Maguire": {
       "title": "A Lion Among Men",
       "author": "Gregory Maguire",
-      "series": "Wicked Years",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Wicked Years",
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Cowardly Lion — here named Brrr — is compelled to investigate the life of Elphaba, the Wicked Witch, while Oz descends further into political turmoil. A melancholy, retrospective entry that examines cowardice, regret, and what it means to bear witness to history.",
+      "tone": "melancholic, reflective, politically charged",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "cowardice and courage",
+        "complicity and witness",
+        "political oppression in Oz",
+        "identity",
+        "the legacy of Elphaba"
+      ],
+      "setting": "The land of Oz, during and after the events of Wicked and Son of a Witch",
+      "comparable_books": [
+        "Wicked - Gregory Maguire",
+        "Son of a Witch - Gregory Maguire",
+        "Out of Oz - Gregory Maguire"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Wicked Years series fans",
+          "revisionist fantasy",
+          "political allegory in fantasy",
+          "lyrical prose",
+          "character studies of minor figures"
+        ],
+        "negative": [
+          "readers seeking action-driven plots",
+          "those who haven't read Wicked",
+          "casual readers from the musical/film"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Axiom's End - Lindsay Ellis": {
       "title": "Axiom's End",
       "author": "Lindsay Ellis",
       "series": "Noumena",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate 2007, college dropout Cora Sabino is thrust into a government cover-up when she discovers that her whistleblower father's conspiracy theories are real — extraterrestrials have been on Earth for decades. Forming an unlikely alliance with a stranded alien she names Ampersand, she must navigate a world of lies and escalating danger.",
+      "tone": "propulsive, emotionally grounded, culturally aware",
+      "pacing": "Fast",
+      "themes": [
+        "first contact and communication",
+        "government secrecy and truth",
+        "family estrangement",
+        "empathy across difference",
+        "language and interpretation"
+      ],
+      "setting": "Alternate-history USA (Los Angeles area), autumn 2007",
+      "comparable_books": [
+        "Apostles of Mercy - Lindsay Ellis",
+        "The Martian - Andy Weir",
+        "Arrival - Ted Chiang (Story of Your Life)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "first contact sci-fi",
+          "accessible entry-level sci-fi",
+          "human-alien relationship",
+          "found family",
+          "government conspiracy"
+        ],
+        "negative": [
+          "hard SF readers wanting technical rigour",
+          "readers who dislike uneven pacing",
+          "literary fiction purists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Absalom, Absalom! - William Faulkner": {
@@ -167714,26 +168069,50 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Multiple narrators reconstruct the tragic rise and fall of Thomas Sutpen, a self-made Mississippi plantation owner whose ruthless dynastic ambitions are destroyed by the sins of slavery, miscegenation, and Civil War. Widely considered one of the greatest American novels, it is a labyrinthine meditation on history, memory, and the South's haunted past.",
+      "tone": "dense, obsessive, baroque, tragic",
+      "pacing": "Slow",
+      "themes": [
+        "the legacy of slavery",
+        "the American South and Civil War",
+        "obsession and self-destruction",
+        "history and memory",
+        "race and identity"
+      ],
+      "setting": "Mississippi and Haiti, spanning roughly 1807–1910, narrated from the 1930s",
+      "comparable_books": [
+        "The Sound and the Fury - William Faulkner",
+        "Go Down, Moses - William Faulkner",
+        "Blood Meridian - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Faulkner devotees",
+          "canonical American Modernism",
+          "Southern Gothic",
+          "unreliable multiple narrators",
+          "epic tragedy"
+        ],
+        "negative": [
+          "readers who dislike syntactically dense prose",
+          "those seeking accessible narratives",
+          "plot-driven readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "The novel's extreme syntactic complexity, nested narrators, and need for visual tracking of chronology make print essentially necessary for comprehension.",
+      "content_flags": [
+        "racial slurs (period language)",
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Jane Eyre - Charlotte Bronte": {
@@ -167741,26 +168120,45 @@
       "author": "Charlotte Bronte",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Orphaned Jane Eyre grows from a fiercely independent, morally principled child into a young woman who finds passionate love with the brooding Mr. Rochester — only to discover a terrible secret that forces her to choose between love and integrity. A landmark of English literature and a foundational text of the feminist and Gothic traditions.",
+      "tone": "passionate, Gothic, morally earnest",
+      "pacing": "Moderate",
+      "themes": [
+        "independence and self-determination",
+        "class and social status",
+        "morality and conscience",
+        "love and equality",
+        "Gothic mystery"
+      ],
+      "setting": "Northern England — Lowood School, Thornfield Hall, and the Yorkshire moors, early 19th century",
+      "comparable_books": [
+        "Wuthering Heights - Emily Bronte",
+        "Villette - Charlotte Bronte",
+        "The Tenant of Wildfell Hall - Anne Bronte"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic romance",
+          "Gothic fiction",
+          "feminist literary fiction",
+          "Victorian literature",
+          "strong female protagonist"
+        ],
+        "negative": [
+          "readers who dislike 19th-century prose pacing",
+          "those seeking modern or subversive takes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jane Eyre's first-person confessional voice and dramatic Gothic atmosphere are exceptionally well suited to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Fable - William Faulkner": {
@@ -167768,26 +168166,48 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Set during World War I on the Western Front, a French corporal leads a mutiny that briefly halts the war — an event that parallels the Passion of Christ on an allegorical scale. Faulkner's Pulitzer Prize-winning novel is a dense, ambitious meditation on war, sacrifice, and the nature of humanity.",
+      "tone": "dense, allegorical, tragic, grandly ambitious",
+      "pacing": "Slow",
+      "themes": [
+        "war and sacrifice",
+        "Christ allegory",
+        "institutional power vs. individual conscience",
+        "pacifism",
+        "the futility of war"
+      ],
+      "setting": "The Western Front, France, during World War I (1918)",
+      "comparable_books": [
+        "All Quiet on the Western Front - Erich Maria Remarque",
+        "The Sound and the Fury - William Faulkner",
+        "Catch-22 - Joseph Heller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Faulkner devotees",
+          "allegorical literary fiction",
+          "WWI fiction",
+          "religious and philosophical themes in fiction"
+        ],
+        "negative": [
+          "readers who dislike dense or difficult prose",
+          "those who found other Faulkner difficult",
+          "plot-driven readers",
+          "casual Faulkner readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "The novel's extraordinary density, allegorical layering, and non-linear structure make it extremely challenging to follow on audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Day of Fallen Night - Samantha Shannon": {
