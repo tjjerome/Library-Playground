@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2606,
-  "total_pending": 1994,
+  "total_catalogued": 2626,
+  "total_pending": 1974,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -149835,135 +149835,240 @@
       "title": "A Game of Ghosts",
       "author": "John Connolly",
       "series": "Charlie Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 15",
+      "genre": "Paranormal Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "FBI agent Edgar Ross assigns private investigator Charlie Parker to track down a missing PI named Jaycob Eklund, whose obsessive investigation into homicides linked to hauntings has drawn him into the sinister orbit of a decaying criminal empire ruled by a figure known as Mother.",
+      "tone": "Dark, gothic, noir with supernatural menace and dry wit",
+      "pacing": "Moderate",
+      "themes": [
+        "supernatural evil",
+        "the paranormal",
+        "family and loss",
+        "FBI corruption",
+        "justice"
+      ],
+      "setting": "Contemporary Portland, Maine; wintery atmosphere steeped in the supernatural",
+      "comparable_books": [
+        "The Dresden Files - Jim Butcher",
+        "The Rook - Daniel O'Malley",
+        "Storm Front - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "paranormal crime fiction",
+          "series with deep character continuity",
+          "dark and atmospheric tone",
+          "witty sidekicks",
+          "lyrical prose",
+          "blends horror and detective fiction"
+        ],
+        "negative": [
+          "readers who dislike supernatural elements in crime fiction",
+          "not series-entry-friendly — best read in order"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich atmospheric prose and distinctive character voices reward audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Death in Tokyo - Keigo Higashino": {
       "title": "A Death in Tokyo",
       "author": "Keigo Higashino",
       "series": "Kyoichiro Kaga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3 (English translation; Book 9 in Japanese original)",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Tokyo detective Kyoichiro Kaga investigates the murder of a man found stabbed beneath a mythic kirin statue on Nihonbashi Bridge, while the prime suspect lies in a coma — forcing Kaga to reconstruct the truth of a deceptively simple yet morally layered crime.",
+      "tone": "Quiet, cerebral, morally resonant; methodical and precise",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "truth vs. closure",
+        "moral ambiguity",
+        "Japanese urban life and tradition",
+        "duty and guilt"
+      ],
+      "setting": "Contemporary Tokyo, centred on the historic Nihonbashi district",
+      "comparable_books": [
+        "The Devotion of Suspect X - Keigo Higashino",
+        "Malice - Keigo Higashino",
+        "Six Four - Hideo Yokoyama"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "police procedurals",
+          "Japanese crime fiction",
+          "puzzle-focused mysteries",
+          "character-rich detectives",
+          "Holmesian deduction",
+          "literary tone"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "fans of graphic violence or thriller shock tactics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Poet - Michael Connelly": {
       "title": "The Poet",
       "author": "Michael Connelly",
       "series": "Jack McEvoy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Crime reporter Jack McEvoy, grieving his brother's apparent suicide, suspects a pattern linking the deaths of multiple homicide detectives across the country, drawing him into the hunt for a serial killer known as the Poet.",
+      "tone": "Taut, propulsive, dark; journalistic urgency",
+      "pacing": "Fast",
+      "themes": [
+        "grief and obsession",
+        "the media and crime",
+        "serial killers",
+        "institutional failure",
+        "truth-seeking"
+      ],
+      "setting": "Late 1990s United States — Denver, Washington D.C., Los Angeles",
+      "comparable_books": [
+        "The Silence of the Lambs - Thomas Harris",
+        "The Girl with the Dragon Tattoo - Stieg Larsson",
+        "The Lincoln Lawyer - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive crime thrillers",
+          "serial killer narratives",
+          "journalist protagonists",
+          "high-stakes investigation",
+          "dark procedurals"
+        ],
+        "negative": [
+          "readers sensitive to graphic depictions of crime against women or children",
+          "cosy mystery readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Propulsive pacing and cinematic tension translate very well to audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Taken - Benedict Jacka": {
       "title": "Taken",
       "author": "Benedict Jacka",
-      "series": "An Alex Verus Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Alex Verus",
+      "series_position": "Book 3",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "London mage and diviner Alex Verus investigates the mysterious disappearance of magical apprentices, drawing him into a dangerous confrontation with a powerful dark mage while navigating the treacherous politics of the magical Council.",
+      "tone": "Action-driven, witty, accessible; lighter urban fantasy",
+      "pacing": "Fast",
+      "themes": [
+        "power and its abuse",
+        "loyalty and friendship",
+        "morality in a grey world",
+        "mentorship"
+      ],
+      "setting": "Contemporary London, with forays into shadow realms; a hidden magical underworld",
+      "comparable_books": [
+        "Storm Front - Jim Butcher",
+        "Rivers of London - Ben Aaronovitch",
+        "Grave Peril - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "male-POV first-person narration",
+          "morally grey protagonist",
+          "fast-paced action",
+          "found family",
+          "magic systems"
+        ],
+        "negative": [
+          "readers seeking literary depth or slow character study",
+          "those who find Dresden Files derivative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Started Early, Took My Dog - Kate Atkinson": {
       "title": "Started Early, Took My Dog",
       "author": "Kate Atkinson",
       "series": "Jackson Brodie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Literary Crime",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former detective Jackson Brodie investigates a woman's search for her birth parents in Leeds, while a retired policewoman impulsively rescues a young child from an abusive situation, and an aging actress struggles with memory — three lives circling a decades-old murder.",
+      "tone": "Melancholic, sardonic, warm; literary and elliptical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and origins",
+        "the past and its haunting",
+        "memory and loss",
+        "redemption",
+        "childhood trauma"
+      ],
+      "setting": "Contemporary and 1970s Leeds, England",
+      "comparable_books": [
+        "Case Histories - Kate Atkinson",
+        "One Good Turn - Kate Atkinson",
+        "The Secret History - Donna Tartt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary crime fiction",
+          "introspective and character-driven narratives",
+          "dark humour",
+          "non-linear structure",
+          "British settings",
+          "multiple POV"
+        ],
+        "negative": [
+          "readers wanting straightforward plotting",
+          "action-thriller fans",
+          "those who need a single strong narrative thread"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Atkinson's layered prose and multiple interwoven timelines are particularly rewarding in skilled audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lost Gods - Brom": {
@@ -149971,53 +150076,100 @@
       "author": "Brom",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Freshly murdered ex-con Chet Moran descends into Purgatory — a chaotic underworld where forgotten gods battle demons over the souls of the dead — on a desperate quest to recover a sacred key that can save his pregnant wife from an ancient evil.",
+      "tone": "Grimdark, visceral, mythic; gothic horror with western and fairy-tale elements",
+      "pacing": "Moderate",
+      "themes": [
+        "redemption",
+        "love and sacrifice",
+        "the nature of belief and gods",
+        "death and the afterlife",
+        "power and corruption"
+      ],
+      "setting": "A nightmarish, lavishly imagined Purgatory populated by forgotten deities, demons, and wandering souls; framed by contemporary rural America",
+      "comparable_books": [
+        "American Gods - Neil Gaiman",
+        "The Child Thief - Brom",
+        "Anansi Boys - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy",
+          "vivid illustrated fiction",
+          "mythology and religion reimagined",
+          "grimdark worldbuilding",
+          "gothic horror",
+          "love as central motivation"
+        ],
+        "negative": [
+          "readers who prefer tight plots over atmosphere",
+          "those averse to graphic violence or religious imagery subverted"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Book features extensive author-created illustrations integral to the experience, which are lost in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "He Who Drowned the World - Shelley Parker-Chan": {
       "title": "He Who Drowned the World",
       "author": "Shelley Parker-Chan",
       "series": "The Radiant Emperor Duology",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 14th-century alternate China, Zhu Yuanzhang — the Radiant King — seeks to crown herself emperor, but faces a lethal five-way struggle for the throne involving an eunuch general consumed by revenge, a scheming scholar, and a courtesan wielding power through her husband.",
+      "tone": "Grimdark, lyrical, politically brutal; emotionally devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "ambition and its cost",
+        "gender and identity",
+        "grief and revenge",
+        "power and morality",
+        "queerness and marginalisation"
+      ],
+      "setting": "Alternate 14th-century China during the collapse of Mongol rule; the rise of the Ming dynasty reimagined",
+      "comparable_books": [
+        "She Who Became the Sun - Shelley Parker-Chan",
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "The Poppy War - R.F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark historical fantasy",
+          "queer protagonists",
+          "morally complex characters",
+          "lyrical prose",
+          "political intrigue",
+          "Asian-inspired settings",
+          "epic scope"
+        ],
+        "negative": [
+          "readers averse to graphic violence and sexual content",
+          "those wanting clear heroes and villains",
+          "readers who haven't read book one"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "And Then There Were None - Agatha Christie": {
@@ -150025,26 +150177,45 @@
       "author": "Agatha Christie",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Ten strangers with hidden guilty pasts are lured to a remote island off the Devon coast, where they are systematically murdered one by one according to a sinister nursery rhyme — with no apparent killer among them.",
+      "tone": "Suspenseful, claustrophobic, elegantly constructed",
+      "pacing": "Fast",
+      "themes": [
+        "justice and guilt",
+        "moral reckoning",
+        "trust and paranoia",
+        "isolation",
+        "punishment"
+      ],
+      "setting": "1930s, isolated Soldier Island off the Devon coast, England",
+      "comparable_books": [
+        "The Murder of Roger Ackroyd - Agatha Christie",
+        "The Seven Deaths of Evelyn Hardcastle - Stuart Turton",
+        "Curtain - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic whodunits",
+          "locked-room mysteries",
+          "plot-driven puzzles",
+          "Golden Age crime fiction",
+          "isolated settings"
+        ],
+        "negative": [
+          "readers wanting psychological depth over puzzle mechanics",
+          "those seeking modern prose styles"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "A masterclass in plotting; works superbly as audio, especially with a cast narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Short History of Nearly Everything 2.0 - Bill Bryson": {
@@ -150052,26 +150223,44 @@
       "author": "Bill Bryson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Popular Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A fully revised and updated edition of Bryson's landmark popular science book, guiding general readers through the history of the universe, Earth, and humanity — from the Big Bang to the present — with characteristic wit and accessibility.",
+      "tone": "Warm, witty, enthusiastic and accessible; conversational",
+      "pacing": "Moderate",
+      "themes": [
+        "scientific discovery",
+        "human curiosity",
+        "the history of Earth and the cosmos",
+        "the nature of knowledge"
+      ],
+      "setting": "Non-fiction; spanning the entire history of Earth and the universe",
+      "comparable_books": [
+        "The Body - Bill Bryson",
+        "Astrophysics for People in a Hurry - Neil deGrasse Tyson",
+        "A Brief History of Time - Stephen Hawking"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science readers",
+          "accessible non-fiction",
+          "wit and storytelling in non-fiction",
+          "curiosity-driven readers",
+          "science history"
+        ],
+        "negative": [
+          "readers seeking technical depth or academic rigour",
+          "those who have already read the 2003 original closely and know it well"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Read by the author; Bryson's warm, humorous narration is a signature of his audio editions.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Chip War: The Fight for the World's Most Critical Technology - Chris Miller": {
@@ -150079,26 +150268,45 @@
       "author": "Chris Miller",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Business/Economics Non-fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Economic historian Chris Miller traces the 70-year geopolitical and industrial race to dominate semiconductor manufacturing, revealing how control of chip production has become the defining contest for global economic and military supremacy.",
+      "tone": "Authoritative, narrative-driven, propulsive; accessible and urgent",
+      "pacing": "Moderate",
+      "themes": [
+        "geopolitics and technology",
+        "globalisation and supply chains",
+        "US-China rivalry",
+        "innovation and industrial power",
+        "the military-industrial complex"
+      ],
+      "setting": "Global, spanning from post-WWII America to Taiwan, Japan, South Korea, and China in the present day",
+      "comparable_books": [
+        "The Innovators - Walter Isaacson",
+        "Midnight in Chernobyl - Adam Higginbotham",
+        "Bad Blood - John Carreyrou"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tech history enthusiasts",
+          "geopolitics readers",
+          "narrative non-fiction",
+          "business and economics readers",
+          "readers interested in US-China relations"
+        ],
+        "negative": [
+          "readers seeking highly technical engineering detail",
+          "those uninterested in economic or political history"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "All the Colors of the Dark - Chris Whitaker": {
@@ -150106,80 +150314,145 @@
       "author": "Chris Whitaker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Crime",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1975 Missouri, when a local boy named Patch saves a girl from a kidnapper and is taken himself, his disappearance fractures his small Ozark town — and the story unfolds over 25 years, following him and his devoted friend Saint as the serial killer threat and its trauma reshape their lives.",
+      "tone": "Lyrical, haunting, emotionally devastating; darkly hopeful",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "childhood trauma and its long shadow",
+        "obsession and love",
+        "small-town America",
+        "justice and its limits",
+        "coming of age"
+      ],
+      "setting": "Monta Clare, Missouri (Ozark mountains), 1975 and across the following decades",
+      "comparable_books": [
+        "We Begin at the End - Chris Whitaker",
+        "The God of the Woods - Liz Moore",
+        "A Little Life - Hanya Yanagihara"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary crime fiction",
+          "emotionally resonant character studies",
+          "spanning multiple decades",
+          "small-town settings",
+          "propulsive but literary prose",
+          "love stories within dark plots"
+        ],
+        "negative": [
+          "readers wanting pure genre crime procedurals",
+          "those averse to slow-building narratives",
+          "readers sensitive to child abduction themes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Whitaker's lyrical prose and deep emotional register reward audio; widely praised in this format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Yours Truly - Abby Jimenez": {
       "title": "Yours Truly",
       "author": "Abby Jimenez",
       "series": "Part of Your World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Romance",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dr. Briana Ortiz, finalising a difficult divorce and fighting for her brother's kidney donor, clashes with the charming new doctor at her hospital — until his unexpectedly heartfelt letter changes everything, beginning an epistolary slow-burn romance built on fake dating.",
+      "tone": "Warm, funny, emotionally tender; laugh-out-loud moments alongside genuine pathos",
+      "pacing": "Moderate",
+      "themes": [
+        "enemies-to-lovers",
+        "found family",
+        "illness and medical drama",
+        "self-worth",
+        "second chances"
+      ],
+      "setting": "Contemporary Minnesota; hospital workplace setting",
+      "comparable_books": [
+        "The Hating Game - Sally Thorne",
+        "People We Meet on Vacation - Emily Henry",
+        "Part of Your World - Abby Jimenez"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "enemies-to-lovers romance",
+          "fake dating tropes",
+          "epistolary elements",
+          "funny and warm tone",
+          "medical settings",
+          "mental health representation"
+        ],
+        "negative": [
+          "readers seeking minimal romance or low-heat stories",
+          "those who dislike miscommunication tropes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "We Solve Murders - Richard Osman": {
       "title": "We Solve Murders",
       "author": "Richard Osman",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "We Solve Murders",
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When private security officer Amy Wheeler, guarding a mega-famous author on a remote island, finds herself embroiled in a murder and a bag of missing money, she calls her retired police officer father-in-law Steve — launching a globe-trotting comic mystery duo.",
+      "tone": "Warmly comic, witty, breezy; life-affirming with light thriller tension",
+      "pacing": "Fast",
+      "themes": [
+        "family dynamics",
+        "grief and loneliness",
+        "amateur sleuthing",
+        "the absurdity of crime",
+        "unlikely partnerships"
+      ],
+      "setting": "Begins on a private island, then a globe-spanning race through international locations; contemporary",
+      "comparable_books": [
+        "The Thursday Murder Club - Richard Osman",
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith",
+        "The Maid - Nita Prose"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mysteries",
+          "British humour",
+          "likeable character dynamics",
+          "globe-trotting plots",
+          "light and entertaining read",
+          "warmth alongside mystery"
+        ],
+        "negative": [
+          "readers wanting gritty crime or dark realism",
+          "those seeking complex plotting over character charm"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Nicola Walker to wide acclaim; Osman's dialogue-driven charm shines in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Waco: David Koresh, the Branch Davidians, and a Legacy of Rage - Jeff Guinn": {
@@ -150187,26 +150460,45 @@
       "author": "Jeff Guinn",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drawing on previously unpublished documents and new on-the-record interviews with ATF agents, journalist Jeff Guinn delivers a definitive account of the 1993 Branch Davidian siege — tracing the rise of David Koresh, the catastrophic failures of federal law enforcement, and the siege's lasting influence on American extremism.",
+      "tone": "Authoritative, gripping, journalistic; narrative-driven and propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "cult psychology and religious extremism",
+        "government failure and accountability",
+        "radicalism and its legacy",
+        "the militia movement",
+        "American violence"
+      ],
+      "setting": "Waco, Texas, 1993; with historical backstory tracing the Branch Davidian movement and aftermath linking to the Oklahoma City bombing and January 6th",
+      "comparable_books": [
+        "The Road to Jonestown - Jeff Guinn",
+        "Manson - Jeff Guinn",
+        "Columbine - Dave Cullen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime readers",
+          "American history enthusiasts",
+          "cult and extremism non-fiction",
+          "journalistic narrative non-fiction",
+          "political history readers"
+        ],
+        "negative": [
+          "readers seeking academic theory over narrative storytelling",
+          "those wanting detached or highly sympathetic portrayals of the Branch Davidians"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "There Is No Antimemetics Division - qntm": {
@@ -150214,26 +150506,47 @@
       "author": "qntm",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction Horror",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Antimemetics Division Director Marie Quinn wages an unrecognised war against entities that erase themselves from human memory and perception — including a lethal apex entity that kills anyone who successfully conceptualises it — fighting an enemy that cannot be remembered, tracked, or shared.",
+      "tone": "Cerebral, relentlessly unsettling, conceptually dazzling; cosmic horror with human warmth",
+      "pacing": "Fast",
+      "themes": [
+        "memory and identity",
+        "the limits of knowledge",
+        "cosmic horror",
+        "institutional secrecy",
+        "sacrifice and love"
+      ],
+      "setting": "A secret government organisation — 'the Organisation' — operating in the near-present; non-linear and fragmented",
+      "comparable_books": [
+        "House of Leaves - Mark Z. Danielewski",
+        "The Lathe of Heaven - Ursula K. Le Guin",
+        "Dark Matter - Blake Crouch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosmic and conceptual horror",
+          "high-concept science fiction",
+          "non-linear structure",
+          "SCP Foundation fans",
+          "brainy weird fiction",
+          "existential dread"
+        ],
+        "negative": [
+          "readers wanting traditional linear narrative",
+          "those averse to unreliable or fragmented storytelling",
+          "readers who dislike horror adjacent fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The book features redacted text, missing letters, and document-style formatting that are intrinsic to its effect and lost in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Tokyo Zodiac Murders - Soji Shimada": {
@@ -150241,53 +150554,97 @@
       "author": "Soji Shimada",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1979, astrologer and amateur detective Kiyoshi Mitarai sets out to solve a notorious 1936 cold case: the locked-room murder of an eccentric artist whose plan to create a 'perfect woman' from the body parts of six daughters and nieces was horrifyingly carried out — by persons unknown.",
+      "tone": "Eerie, gory, puzzle-forward; macabre with bursts of dark humour",
+      "pacing": "Moderate",
+      "themes": [
+        "logic and deduction",
+        "obsession and madness",
+        "the occult and astrology",
+        "justice delayed",
+        "the impossible crime"
+      ],
+      "setting": "1936 and 1979 Japan; Tokyo and rural locations across the country",
+      "comparable_books": [
+        "The Decagon House Murders - Yukito Ayatsuji",
+        "Death in the House of Rain - Szu-Yen Lin",
+        "The Devotion of Suspect X - Keigo Higashino"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "honkaku puzzle mysteries",
+          "locked-room mysteries",
+          "Golden Age mystery fans",
+          "Japanese crime fiction",
+          "reader-challenge format",
+          "intellectual deduction"
+        ],
+        "negative": [
+          "readers who dislike graphic violence or grotesque premises",
+          "those preferring psychological or character-led crime fiction",
+          "readers who find flat characterisation frustrating"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The book includes maps, charts, and illustrations used as puzzle clues; essential to the reading experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Thursday Murder Club - Richard Osman": {
       "title": "The Thursday Murder Club",
       "author": "Richard Osman",
       "series": "A Thursday Murder Club Mystery",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Four sharp-witted retirees in a luxury English retirement village meet weekly to review cold cases — until a real murder lands on their doorstep, and the unlikely quartet decide to investigate it themselves.",
+      "tone": "Warmly comic, charming, cosy; bittersweet observations on ageing and friendship",
+      "pacing": "Moderate",
+      "themes": [
+        "ageing and mortality",
+        "friendship and community",
+        "amateur justice",
+        "the past catching up",
+        "British wit"
+      ],
+      "setting": "Coopers Chase retirement village, contemporary rural England",
+      "comparable_books": [
+        "We Solve Murders - Richard Osman",
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith",
+        "A Great Deliverance - Elizabeth George"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mysteries",
+          "older protagonists",
+          "British humour",
+          "ensemble casts",
+          "warm and life-affirming tone",
+          "character-driven crime fiction"
+        ],
+        "negative": [
+          "readers wanting dark or gritty crime",
+          "thriller fans expecting high stakes and tension",
+          "those who find cosy mystery conventions formulaic"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lesley Manville's narration of the UK edition is particularly celebrated; character voices and wit shine in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Practice, the Horizon, and the Chain - Sofia Samatar": {
@@ -150295,26 +150652,47 @@
       "author": "Sofia Samatar",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a deep-space mining ship with a rigid caste system, a boy from the enslaved 'Chained' underclass is given a scholarship to the elite university, where he forms a bond with a weary professor descended from the Chained — together navigating a transformative journey toward liberation.",
+      "tone": "Lyrical, meditative, quietly revolutionary; luminous and humane",
+      "pacing": "Slow",
+      "themes": [
+        "oppression and liberation",
+        "class and caste",
+        "academia and institutional complicity",
+        "collective action",
+        "identity and belonging"
+      ],
+      "setting": "Far-future deep space aboard a hierarchical colony mining ship",
+      "comparable_books": [
+        "The Dispossessed - Ursula K. Le Guin",
+        "A Memory Called Empire - Arkady Martine",
+        "Parable of the Sower - Octavia Butler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "socially engaged speculative fiction",
+          "Le Guin comparisons",
+          "lyrical prose",
+          "short form / novella readers",
+          "allegory and social commentary"
+        ],
+        "negative": [
+          "readers wanting plot-driven action over philosophical exploration",
+          "those who dislike heavy allegory",
+          "readers seeking long immersive world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Reformatory - Tananarive Due": {
@@ -150322,26 +150700,48 @@
       "author": "Tananarive Due",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1950 Jim Crow Florida, twelve-year-old Black boy Robbie Stephens is sentenced to a brutal reformatory after defending his sister — where his gift for seeing ghosts reveals the school's horrifying history, while his sister fights desperately to free him through a racist legal system.",
+      "tone": "Haunting, harrowing, emotionally devastating; ultimately affirming; deeply humane",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "systemic racism and injustice",
+        "the supernatural as witness to historical trauma",
+        "sibling love and sacrifice",
+        "the carceral state",
+        "memory and reckoning"
+      ],
+      "setting": "1950, Gracetown, Florida — Jim Crow South; loosely based on the real Dozier School for Boys",
+      "comparable_books": [
+        "Kindred - Octavia Butler",
+        "The Nickel Boys - Colson Whitehead",
+        "The Good House - Tananarive Due"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Black horror and Afrofuturism",
+          "historical fiction with supernatural elements",
+          "socially engaged fiction",
+          "ghost stories with emotional depth",
+          "Bram Stoker Award winners",
+          "readers of Octavia Butler"
+        ],
+        "negative": [
+          "readers sensitive to depictions of child abuse and racial violence",
+          "those wanting escapist horror without historical weight"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Emotionally complex dual-POV narrative is particularly powerful in audio; widely praised in this format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Promised Land - Barack Obama": {
@@ -150349,26 +150749,45 @@
       "author": "Barack Obama",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir / Political Non-fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Barack Obama's first volume of presidential memoirs traces his journey from early political life through his 2008 election victory and into the first two and a half years of his presidency, including the financial crisis, healthcare reform, and the killing of Osama bin Laden.",
+      "tone": "Reflective, eloquent, candid; intellectually rigorous and personally searching",
+      "pacing": "Slow",
+      "themes": [
+        "democracy and its fragility",
+        "race in America",
+        "political compromise",
+        "leadership and doubt",
+        "historical legacy"
+      ],
+      "setting": "United States political life, 2000s–early 2010s; the White House and global diplomacy",
+      "comparable_books": [
+        "The Audacity of Hope - Barack Obama",
+        "My Own Words - Ruth Bader Ginsburg",
+        "The Years of Lyndon Johnson - Robert Caro"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political memoir readers",
+          "American history enthusiasts",
+          "readers interested in the Obama presidency",
+          "literary non-fiction",
+          "readers of reflective and honest leadership accounts"
+        ],
+        "negative": [
+          "readers wanting a fast-paced or sensationalised political narrative",
+          "those seeking partisan advocacy rather than measured reflection"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Obama himself; his cadence and emotional investment in the material make this an exceptional audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Mountain in the Sea - Ray Nayler": {
