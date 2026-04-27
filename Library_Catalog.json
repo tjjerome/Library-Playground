@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2407,
-  "total_pending": 2193,
+  "total_catalogued": 2427,
+  "total_pending": 2173,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -140050,27 +140050,51 @@
       "title": "Dark Age",
       "author": "Pierce Brown",
       "series": "Red Rising",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the bloodiest installment of the Red Rising saga, Darrow and his allies face catastrophic defeats across multiple fronts as the Society strikes back with devastating force, testing every alliance and moral boundary. The cost of revolution spirals as familiar characters face harrowing fates.",
+      "tone": "grimdark, operatic, relentlessly brutal",
+      "pacing": "Fast",
+      "themes": [
+        "revolution",
+        "sacrifice",
+        "power and corruption",
+        "loyalty",
+        "war's human cost"
+      ],
+      "setting": "Future solar system — Mars, Luna, and beyond; a caste-stratified interplanetary civilization",
+      "comparable_books": [
+        "A Storm of Swords - George R. R. Martin",
+        "The Way of Kings - Brandon Sanderson",
+        "Leviathan Wakes - James S. A. Corey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic scope",
+          "morally grey protagonist",
+          "high-stakes action",
+          "political intrigue",
+          "found family under siege"
+        ],
+        "negative": [
+          "extremely graphic violence",
+          "relentlessly bleak tone",
+          "very long books",
+          "large cast can be hard to track"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds delivers an acclaimed, energetic performance that enhances the epic scope.",
+      "content_flags": [
+        "graphic violence",
+        "character deaths"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "King of Ashes - S. A. Cosby": {
@@ -140078,26 +140102,50 @@
       "author": "S. A. Cosby",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When eldest son Roman Carruthers is called home to the dying Virginia town of Jefferson Run after his father is left in a coma, he discovers his brother Dante is in deadly debt to local criminals and the family crematorium business is on the brink. A Godfather-inspired Southern crime epic about how far one man will go to save his family.",
+      "tone": "Southern noir, viscerally dark, operatic",
+      "pacing": "Fast",
+      "themes": [
+        "family loyalty",
+        "class and inequality",
+        "the American Dream's failure",
+        "moral descent",
+        "rural decline"
+      ],
+      "setting": "Contemporary rural Virginia; the fictional town of Jefferson Run",
+      "comparable_books": [
+        "Blacktop Wasteland - S. A. Cosby",
+        "Razorblade Tears - S. A. Cosby",
+        "The Godfather - Mario Puzo",
+        "Last King of California - Jordan Harper"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "Southern noir atmosphere",
+          "morally complex characters",
+          "crime family saga",
+          "vivid sense of place"
+        ],
+        "negative": [
+          "graphic violence",
+          "unrelentingly dark tone",
+          "little redemption arc",
+          "some readers found pacing uneven"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrator Adam Lazarre-White is widely praised as a perfect match for Cosby's Southern voice.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Heaven and Hell: A History of the Afterlife - Bart D. Ehrman": {
@@ -140105,80 +140153,143 @@
       "author": "Bart D. Ehrman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History / Religious Studies",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "New Testament scholar Bart Ehrman traces how ancient Greek, Jewish, and early Christian ideas about what happens after death evolved into the modern concepts of heaven and hell, arguing these are not as old or biblical as most assume.",
+      "tone": "scholarly but accessible, demystifying, thought-provoking",
+      "pacing": "Moderate",
+      "themes": [
+        "afterlife beliefs",
+        "evolution of religion",
+        "biblical history",
+        "ancient world",
+        "death and meaning"
+      ],
+      "setting": "Nonfiction; ranges across ancient Greece, Second Temple Judaism, and early Christianity",
+      "comparable_books": [
+        "Jesus, Interrupted - Bart D. Ehrman",
+        "The History of Heaven - Jeffrey Burton Russell",
+        "When Christians Were Jews - Paula Fredriksen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible scholarship",
+          "religious history",
+          "challenges conventional beliefs",
+          "well-researched"
+        ],
+        "negative": [
+          "may unsettle readers with traditional religious faith",
+          "dense historical detail in places"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dreamsongs, Volume II - George R. R. Martin": {
       "title": "Dreamsongs, Volume II",
       "author": "George R. R. Martin",
       "series": "Dreamsongs",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Volume 2",
+      "genre": "Science Fiction / Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The second half of Martin's career-spanning retrospective collects his work from the 1980s and 1990s, including Haviland Tuf stories, Wild Cards contributions, screenplays, and the acclaimed A Song of Ice and Fire prequel novella The Hedge Knight — each section prefaced with autobiographical commentary.",
+      "tone": "wide-ranging — epic, darkly comic, melancholy, inventive",
+      "pacing": "Moderate",
+      "themes": [
+        "creativity and authorship",
+        "power and ecology",
+        "heroism",
+        "identity",
+        "the costs of ambition"
+      ],
+      "setting": "Varied — far-future space opera, Westeros precursor, contemporary America, and more",
+      "comparable_books": [
+        "Dreamsongs, Volume I - George R. R. Martin",
+        "The Magazine of Fantasy and Science Fiction Anthology",
+        "Night Shift - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ASOIAF fans wanting more GRRM",
+          "short fiction lovers",
+          "Hugo/Nebula award-winning stories",
+          "author commentary and autobiography"
+        ],
+        "negative": [
+          "uneven quality across decades",
+          "some TV scripts feel dated",
+          "not for readers wanting only ASOIAF-adjacent content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dreamsongs. Volume I - George R. R. Martin": {
-      "title": "Dreamsongs. Volume I",
+      "title": "Dreamsongs, Volume I",
       "author": "George R. R. Martin",
       "series": "Dreamsongs",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Volume 1",
+      "genre": "Science Fiction / Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The first of two volumes of Martin's comprehensive career retrospective, collecting his best early works from the 1960s–1980s including Hugo and Nebula award-winners Sandkings, A Song for Lya, and Nightflyers — each section introduced with frank autobiographical commentary by Martin himself.",
+      "tone": "wide-ranging — cosmic, eerie, melancholic, darkly fantastical",
+      "pacing": "Moderate",
+      "themes": [
+        "isolation",
+        "ambition and hubris",
+        "faith and doubt",
+        "survival",
+        "the human condition"
+      ],
+      "setting": "Varied — far-future space, alien worlds, dark fantasy realms, and contemporary America",
+      "comparable_books": [
+        "Dreamsongs, Volume II - George R. R. Martin",
+        "The Illustrated Man - Ray Bradbury",
+        "Night Shift - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "award-winning short fiction",
+          "GRRM fans",
+          "cosmic horror fans",
+          "autobiographical author context",
+          "genre-spanning stories"
+        ],
+        "negative": [
+          "some early stories feel dated",
+          "anthology format may feel scattered",
+          "not a novel"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Women - Kristin Hannah": {
@@ -140186,26 +140297,50 @@
       "author": "Kristin Hannah",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young woman from a privileged California family follows her brother to Vietnam as a combat nurse, experiencing the horrors of war firsthand — and then returns home to a country that refuses to acknowledge women as veterans, forcing her to fight for recognition and her own survival.",
+      "tone": "emotionally intense, patriotic and critical, heartbreaking",
+      "pacing": "Moderate",
+      "themes": [
+        "women in war",
+        "trauma and PTSD",
+        "female friendship",
+        "patriotism and disillusionment",
+        "being seen and heard"
+      ],
+      "setting": "1960s–1970s Vietnam and California; the Vietnam War era",
+      "comparable_books": [
+        "The Nightingale - Kristin Hannah",
+        "Matterhorn - Karl Marlantes",
+        "The Things They Carried - Tim O'Brien",
+        "Firefly Lane - Kristin Hannah"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotional storytelling",
+          "women's historical fiction",
+          "war narratives",
+          "female friendship",
+          "character-driven drama"
+        ],
+        "negative": [
+          "very emotionally heavy",
+          "readers sensitive to war trauma depictions",
+          "some find it melodramatic"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Julia Whelan's narration is widely praised as deeply moving and pitch-perfect for Hannah's emotional prose.",
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Invisible Women - Caroline Criado Perez": {
@@ -140213,80 +140348,143 @@
       "author": "Caroline Criado Perez",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / Social Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A data-driven examination of how the modern world was designed around male bodies and male lives, leaving women dangerously underserved in medicine, urban planning, tech, economics, and public policy — with far-reaching consequences for women's safety, health, and equality.",
+      "tone": "rigorous, urgent, eye-opening, occasionally enraging",
+      "pacing": "Moderate",
+      "themes": [
+        "gender bias",
+        "data and representation",
+        "systemic inequality",
+        "medicine and health",
+        "public policy"
+      ],
+      "setting": "Nonfiction; contemporary global focus, drawing on research from multiple countries",
+      "comparable_books": [
+        "Unwell Women - Elinor Cleghorn",
+        "The Second Sex - Simone de Beauvoir",
+        "Inferior - Angela Saini",
+        "Rage Becomes Her - Soraya Chemaly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "data-driven argument",
+          "feminist nonfiction",
+          "social justice readers",
+          "accessible academic research",
+          "infuriating and validating"
+        ],
+        "negative": [
+          "can feel repetitive by design",
+          "political readers may resist the framing",
+          "dense with statistics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Malice - Keigo Higashino": {
       "title": "Malice",
       "author": "Keigo Higashino",
       "series": "Kyoichiro Kaga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When bestselling novelist Kunihiko Hidaka is found murdered the night before he emigrates abroad, detective Kyoichiro Kaga investigates his friend and fellow writer, quickly solving who committed the crime — but the real puzzle is uncovering the much darker truth of why.",
+      "tone": "cerebral, cold, quietly devastating",
+      "pacing": "Moderate",
+      "themes": [
+        "jealousy and resentment",
+        "truth and deception",
+        "literary rivalry",
+        "justice vs. motive",
+        "identity"
+      ],
+      "setting": "Contemporary Tokyo; domestic and literary milieu",
+      "comparable_books": [
+        "The Devotion of Suspect X - Keigo Higashino",
+        "Out - Natsuo Kirino",
+        "Tokyo Express - Seicho Matsumoto"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "inverted mystery format",
+          "psychological depth",
+          "lean and precise prose",
+          "Japanese crime fiction fans",
+          "puzzle-solving focus"
+        ],
+        "negative": [
+          "minimal action",
+          "emotionally distant tone",
+          "very short — may feel slight"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Slow Horses - Mick Herron": {
       "title": "Slow Horses",
       "author": "Mick Herron",
       "series": "Slough House",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Disgraced MI5 agents exiled to the dead-end backwater of Slough House under the repugnant Jackson Lamb are suddenly thrust into a live crisis when a student is kidnapped by a far-right group and their forgotten unit sees a dangerous chance to matter again.",
+      "tone": "darkly comic, sharply satirical, wry and tense",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional failure",
+        "redemption",
+        "British politics and bureaucracy",
+        "espionage",
+        "belonging"
+      ],
+      "setting": "Contemporary London; MI5's seedy outpost near the Barbican",
+      "comparable_books": [
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Dead Lions - Mick Herron"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly funny",
+          "ensemble cast",
+          "le Carré fans wanting something lighter",
+          "British political satire",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "morally compromised characters throughout",
+          "grim institutional worldview",
+          "large cast to track"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Seán Barrett's universally acclaimed audiobook narration is considered one of the best in the genre.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Apple in China: The Capture of the World's Greatest Company - Patrick McGee": {
@@ -140294,26 +140492,46 @@
       "author": "Patrick McGee",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Business / Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drawing on over 200 interviews, former Financial Times Apple reporter Patrick McGee reveals how Apple's three-decade decision to anchor its supply chain in China fueled the iPhone's global dominance while inadvertently empowering a state-supported Chinese tech industry — creating an existential geopolitical vulnerability.",
+      "tone": "investigative, alarming, narrative-driven, balanced",
+      "pacing": "Moderate",
+      "themes": [
+        "US-China relations",
+        "globalization",
+        "tech industry",
+        "supply chains",
+        "national security and capitalism"
+      ],
+      "setting": "Nonfiction; Silicon Valley, Shenzhen, and the US-China tech war over three decades",
+      "comparable_books": [
+        "Chip War - Chris Miller",
+        "Steve Jobs - Walter Isaacson",
+        "The Everything Store - Brad Stone",
+        "Makers and Takers - Rana Foroohar"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "deeply reported business narrative",
+          "geopolitical stakes",
+          "Apple and tech history enthusiasts",
+          "China watchers",
+          "accessible to non-specialists"
+        ],
+        "negative": [
+          "may frustrate readers wanting clear villains",
+          "dense with corporate and supply-chain detail"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Nightingale - Kristin Hannah": {
@@ -140321,53 +140539,101 @@
       "author": "Kristin Hannah",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two French sisters take very different paths of resistance during the Nazi occupation of France in WWII — one joining the underground to guide Allied airmen to safety, the other surviving the daily horrors of occupation at home — in a story of courage, sacrifice, and love.",
+      "tone": "emotionally devastating, heroic, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "women in wartime",
+        "resistance and survival",
+        "sisterhood",
+        "sacrifice",
+        "memory and trauma"
+      ],
+      "setting": "Occupied France, 1939–1945; rural and Parisian settings during WWII",
+      "comparable_books": [
+        "The Women - Kristin Hannah",
+        "All the Light We Cannot See - Anthony Doerr",
+        "Sarah's Key - Tatiana de Rosnay",
+        "Lilac Girls - Martha Hall Kelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotional storytelling",
+          "WWII historical fiction",
+          "strong female characters",
+          "female friendship and sisterhood",
+          "propulsive narrative"
+        ],
+        "negative": [
+          "very emotionally heavy",
+          "readers sensitive to war atrocity depictions",
+          "some find it melodramatic"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Polly Stone's acclaimed dual-narrator audiobook performance is widely considered a standout listening experience.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Redemption Ark - Alastair Reynolds": {
       "title": "Redemption Ark",
       "author": "Alastair Reynolds",
       "series": "Revelation Space",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Inhibitors — ancient machines that exterminate space-faring civilizations — awaken and begin their assault, a desperate race ensues to steal a cache of doomsday weapons capable of stopping them, forcing a former Conjoiners agent and a ruthless starship captain into an uneasy alliance.",
+      "tone": "hard SF, bleak and vast, intellectually dense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the Fermi paradox",
+        "transhumanism",
+        "survival of civilization",
+        "ethics of violence",
+        "human identity"
+      ],
+      "setting": "Far future; multiple star systems, generation ships, and the collapsing colony of Resurgam",
+      "comparable_books": [
+        "Revelation Space - Alastair Reynolds",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Blindsight - Peter Watts",
+        "Leviathan Wakes - James S. A. Corey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fans",
+          "bleak cosmic scale",
+          "complex morally ambiguous characters",
+          "Fermi paradox themes",
+          "intricate world-building"
+        ],
+        "negative": [
+          "very dense and slow-starting",
+          "cold emotional register",
+          "requires reading book 1 first",
+          "not action-focused"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Longitude - Dava Sobel": {
@@ -140375,26 +140641,45 @@
       "author": "Dava Sobel",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction / History of Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The gripping true story of John Harrison, an 18th-century clockmaker who spent decades solving the greatest scientific problem of his era — how to determine a ship's longitude at sea — and the bitter establishment resistance he faced in claiming the prize he was owed.",
+      "tone": "brisk, warm, elegantly told",
+      "pacing": "Fast",
+      "themes": [
+        "scientific obsession",
+        "institutional politics",
+        "navigation and exploration",
+        "craftsmanship",
+        "the history of time"
+      ],
+      "setting": "18th-century England and the Age of Sail",
+      "comparable_books": [
+        "The Invention of Nature - Andrea Wulf",
+        "The Measure of All Things - Ken Alder",
+        "Ether Day - Julie M. Fenster",
+        "The Disappearing Spoon - Sam Kean"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible popular science history",
+          "underdog narrative",
+          "fast and short read",
+          "nautical history fans"
+        ],
+        "negative": [
+          "very short — some want more depth",
+          "little conflict beyond the one narrative thread"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Upgrade - Blake Crouch": {
@@ -140402,26 +140687,49 @@
       "author": "Blake Crouch",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After government agent Logan Ramsay is infected with a mysterious pathogen that begins enhancing his intelligence and physical abilities far beyond human limits, he must confront what he is becoming — and stop a plot that could force the same upgrade on all of humanity.",
+      "tone": "propulsive, cerebral, existentially unsettling",
+      "pacing": "Fast",
+      "themes": [
+        "genetic engineering and transhumanism",
+        "human identity and potential",
+        "ethics of improvement",
+        "family legacy",
+        "what it means to be human"
+      ],
+      "setting": "Near-future America; a world scarred by a genetic catastrophe",
+      "comparable_books": [
+        "Dark Matter - Blake Crouch",
+        "Recursion - Blake Crouch",
+        "The Terminal Man - Michael Crichton",
+        "Flowers for Algernon - Daniel Keyes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high-concept thriller",
+          "propulsive pacing",
+          "science and ethics",
+          "twisty plot",
+          "accessible SF"
+        ],
+        "negative": [
+          "some find the science hand-wavy",
+          "emotional depth secondary to ideas",
+          "some readers found ending divisive"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Will Damron's performance matches Crouch's propulsive style perfectly and is widely praised.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Man Who Died Seven Times - Yasuhiko Nishizawa": {
@@ -140429,26 +140737,48 @@
       "author": "Yasuhiko Nishizawa",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sixteen-year-old Hisataro has a strange condition: he occasionally falls into a time loop, forced to relive the same day nine times. When his wealthy grandfather is murdered on the first day of one such loop — with a sizable inheritance at stake — Hisataro must use each repetition to unravel who killed him and why.",
+      "tone": "lighthearted, witty, cleverly ingenious",
+      "pacing": "Fast",
+      "themes": [
+        "family and inheritance",
+        "truth and deception",
+        "time and fate",
+        "puzzle-solving",
+        "the cost of secrets"
+      ],
+      "setting": "Contemporary Japan; a wealthy family's mansion during a fateful family gathering",
+      "comparable_books": [
+        "The 7½ Deaths of Evelyn Hardcastle - Stuart Turton",
+        "Newcomer - Keigo Higashino",
+        "Before the Coffee Gets Cold - Toshikazu Kawaguchi",
+        "And Then There Were None - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "time-loop puzzle mysteries",
+          "cozy mystery fans",
+          "Agatha Christie fans wanting a SF twist",
+          "Japanese crime fiction",
+          "whimsical and clever"
+        ],
+        "negative": [
+          "light on character depth",
+          "some cultural elements may feel dated",
+          "twist-focused over emotional resonance",
+          "some readers noted uncomfortable relationship dynamics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Jesus, Interrupted: Revealing the Hidden Contradictions in the Bible & Why We Don't Know About Them - Bart D. Ehrman": {
@@ -140456,53 +140786,91 @@
       "author": "Bart D. Ehrman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / Religious Studies",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "New Testament scholar Bart Ehrman surveys the historical-critical approach to the Bible that is standard in seminaries but rarely reaches the pews, exposing contradictions, historical inaccuracies, and questions of authorship that challenge traditional readings of scripture.",
+      "tone": "accessible, measured, demystifying",
+      "pacing": "Moderate",
+      "themes": [
+        "biblical scholarship",
+        "history of early Christianity",
+        "faith and knowledge",
+        "religious literacy",
+        "the formation of the New Testament"
+      ],
+      "setting": "Nonfiction; focuses on the Bible and early Christian history",
+      "comparable_books": [
+        "Misquoting Jesus - Bart D. Ehrman",
+        "Heaven and Hell - Bart D. Ehrman",
+        "How Jesus Became God - Bart D. Ehrman",
+        "The Bible Unearthed - Israel Finkelstein"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible biblical scholarship",
+          "critical thinking about religion",
+          "religious history",
+          "former Christians or questioning believers"
+        ],
+        "negative": [
+          "may deeply unsettle devout readers",
+          "some find the tone too didactic",
+          "covers ground familiar to theology students"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Three Monarchs - Anthony Horowitz": {
       "title": "The Three Monarchs",
       "author": "Anthony Horowitz",
       "series": "Horowitz's Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1.5 (short story)",
+      "genre": "Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In this short Sherlock Holmes pastiche, Watson visits his old friend at 221B Baker Street, where Holmes investigates what appears to be a simple burglary — until three identical ceramic figurines of Queen Victoria connect multiple houses on the same street and reveal a much deeper mystery.",
+      "tone": "faithful Doyle pastiche, brisk, classically satisfying",
+      "pacing": "Fast",
+      "themes": [
+        "deduction and observation",
+        "hidden motives",
+        "Victorian England",
+        "friendship"
+      ],
+      "setting": "Victorian London; 221B Baker Street and its surrounding streets",
+      "comparable_books": [
+        "The House of Silk - Anthony Horowitz",
+        "Moriarty - Anthony Horowitz",
+        "The Adventures of Sherlock Holmes - Arthur Conan Doyle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Sherlock Holmes fans",
+          "classic mystery lovers",
+          "quick satisfying read",
+          "faithful Doyle style"
+        ],
+        "negative": [
+          "very short — feels slight as a standalone purchase",
+          "no new ground broken",
+          "functions mainly as a preview for Moriarty"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "She Has Her Mother's Laugh: The Powers, Perversions, and Potential of Heredity - Carl Zimmer": {
@@ -140510,26 +140878,46 @@
       "author": "Carl Zimmer",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science / Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Science journalist Carl Zimmer explores the full, startling complexity of heredity — from genes and epigenetics to cultural inheritance, chimeras, and the fraught history of eugenics — dismantling simplistic ideas of what we inherit and what we pass on.",
+      "tone": "wide-ranging, intellectually generous, humanizing",
+      "pacing": "Moderate",
+      "themes": [
+        "genetics and heredity",
+        "identity and family",
+        "history of eugenics",
+        "epigenetics",
+        "what makes us who we are"
+      ],
+      "setting": "Nonfiction; spans historical and contemporary science globally",
+      "comparable_books": [
+        "The Gene - Siddhartha Mukherjee",
+        "A Crack in Creation - Jennifer Doudna",
+        "The Epigenetics Revolution - Nessa Carey",
+        "Inheritance - Sharon Moalem"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible science writing",
+          "genetics fans",
+          "curious about nature vs nurture",
+          "history of science",
+          "beautifully structured narrative"
+        ],
+        "negative": [
+          "very long and comprehensive — can feel sprawling",
+          "some sections more technical than others"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Inspector Imanishi Investigates - Seicho Matsumoto": {
@@ -140537,26 +140925,48 @@
       "author": "Seicho Matsumoto",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "When a badly mutilated body is found beneath a Tokyo train yard with almost no leads, the quietly persistent Inspector Imanishi refuses to let the case die — a dogged investigation that eventually draws him into the world of Japan's avant-garde arts scene and uncovers a devastating secret rooted in the postwar era.",
+      "tone": "methodical, atmospheric, socially observant",
+      "pacing": "Slow",
+      "themes": [
+        "social class and identity",
+        "postwar Japan",
+        "ambition and shame",
+        "the weight of the past",
+        "justice and persistence"
+      ],
+      "setting": "1960s Japan; Tokyo and the Japanese provinces in the postwar economic boom",
+      "comparable_books": [
+        "Tokyo Express - Seicho Matsumoto",
+        "Malice - Keigo Higashino",
+        "The Inspector Maigret series - Georges Simenon",
+        "Out - Natsuo Kirino"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese crime fiction fans",
+          "slow-burn procedurals",
+          "social realism",
+          "character-driven detective fiction",
+          "postwar Japan setting"
+        ],
+        "negative": [
+          "very slow pacing",
+          "minimal action",
+          "some dated cultural attitudes toward women",
+          "not a puzzle-box mystery"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Oromay - Baalu Girma": {
@@ -140564,26 +140974,50 @@
       "author": "Baalu Girma",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Political Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A journalist dispatched to Eritrea as propaganda chief for the Ethiopian Derg regime's Red Star Campaign finds himself falling in love with a mysterious local woman while becoming increasingly disillusioned by the corruption, violence, and moral bankruptcy surrounding the occupation. Originally published in Amharic in 1983, banned within days, and believed to have cost its author his life.",
+      "tone": "darkly comic and tender, politically courageous, tragicomic",
+      "pacing": "Moderate",
+      "themes": [
+        "war and disillusionment",
+        "propaganda and truth",
+        "love amid conflict",
+        "political corruption",
+        "authoritarianism"
+      ],
+      "setting": "1981–1982 Asmara, Eritrea, and Ethiopia during the Red Star Campaign under the Derg dictatorship",
+      "comparable_books": [
+        "The Shadow King - Maaza Mengiste",
+        "A Farewell to Arms - Ernest Hemingway",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Animal Farm - George Orwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "African literature fans",
+          "political thrillers",
+          "wartime love stories",
+          "le Carré readers",
+          "historically significant fiction"
+        ],
+        "negative": [
+          "dated gender politics in the text",
+          "can feel melancholy and bleak",
+          "some translation unevenness noted by readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Point Zero - Seicho Matsumoto": {
