@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3575,
-  "total_pending": 1025,
+  "total_catalogued": 3595,
+  "total_pending": 1005,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -196957,26 +196957,52 @@
       "author": "Ania Ahlborn",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jack Winter thought he escaped the demonic evil that haunted his rural Georgia childhood, but after a car accident, the darkness returns — latching onto his youngest daughter and threatening to consume his entire family. A Southern Gothic tale of generational curses, demonic possession, and a father's desperate fight against a malevolent force he can't outrun.",
+      "tone": "atmospheric, dread-soaked, Southern Gothic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "generational trauma",
+        "demonic possession",
+        "family",
+        "parenthood",
+        "evil"
+      ],
+      "setting": "Rural Louisiana/Georgia, contemporary",
+      "comparable_books": [
+        "Brother - Ania Ahlborn",
+        "The Exorcist - William Peter Blatty",
+        "The Bad Seed - William March",
+        "Hex - Thomas Olde Heuvelt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric horror",
+          "Southern Gothic",
+          "demonic possession",
+          "creepy kids",
+          "psychological dread",
+          "family in peril"
+        ],
+        "negative": [
+          "hopeful endings",
+          "fast-paced action",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death",
+        "child peril"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Ten Thousand Doors of January - Alix E. Harrow": {
@@ -196984,26 +197010,50 @@
       "author": "Alix E. Harrow",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the early 1900s, a young woman named January discovers a mysterious book that reveals the existence of doors between worlds — and that her strange, rootless life may be connected to a vast conspiracy to close them all. A lyrical, portal-fantasy love letter to stories and the power of words.",
+      "tone": "lyrical, wonder-filled, quietly rebellious",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "storytelling",
+        "identity",
+        "colonialism",
+        "freedom",
+        "love",
+        "belonging"
+      ],
+      "setting": "Early 20th century America and other worlds accessed through magical doors",
+      "comparable_books": [
+        "The House in the Cerulean Sea - T.J. Klune",
+        "Piranesi - Susanna Clarke",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Night Circus - Erin Morgenstern"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "portal fantasy",
+          "books about books",
+          "love story",
+          "found family",
+          "wonder and magic"
+        ],
+        "negative": [
+          "grimdark",
+          "fast-paced action",
+          "hard magic systems",
+          "high body count"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lush, lyrical prose and nested story-within-a-story structure reward attentive listening.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Shuddering - Ania Ahlborn": {
@@ -197011,53 +197061,102 @@
       "author": "Ania Ahlborn",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A group of close friends gathers at a secluded Colorado mountain cabin for a final winter holiday, but when a blizzard leaves them stranded, they discover they are being hunted by savage creatures lurking in the snowy woods. A creature-feature survival horror with mounting dread and brutal violence.",
+      "tone": "visceral, claustrophobic, relentlessly tense",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "friendship",
+        "loyalty",
+        "isolation",
+        "human relationships under pressure"
+      ],
+      "setting": "Isolated mountain cabin in Colorado, winter, contemporary",
+      "comparable_books": [
+        "The Troop - Nick Cutter",
+        "Brother - Ania Ahlborn",
+        "The Cabin at the End of the World - Paul Tremblay",
+        "The Terror - Dan Simmons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "creature horror",
+          "survival horror",
+          "isolated setting",
+          "fast-paced scares",
+          "winter atmosphere",
+          "gore"
+        ],
+        "negative": [
+          "psychological complexity",
+          "slow burn",
+          "hopeful endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Deadhouse Landing - Ian C. Esslemont": {
       "title": "Deadhouse Landing",
       "author": "Ian C. Esslemont",
       "series": "Path to Ascendancy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following their failures in Li Heng, the assassin Dancer and the mage Kellanved wash up on the insignificant island of Malaz, where Kellanved immediately plots to take it over and becomes dangerously obsessed with an ancient, forbidden structure known as the Deadhouse. The second chapter in the origin story of the Malazan Empire.",
+      "tone": "grim, politically intricate, darkly witty",
+      "pacing": "Moderate",
+      "themes": [
+        "ambition",
+        "power",
+        "loyalty",
+        "empire-building",
+        "shadow and deception"
+      ],
+      "setting": "Malaz Island, in the pre-history of the Malazan Empire world",
+      "comparable_books": [
+        "Gardens of the Moon - Steven Erikson",
+        "Dancer's Lament - Ian C. Esslemont",
+        "The Blade Itself - Joe Abercrombie",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Malazan fans",
+          "morally grey protagonists",
+          "complex world-building",
+          "origin stories",
+          "political intrigue",
+          "grimdark"
+        ],
+        "negative": [
+          "standalone-friendly",
+          "simple magic systems",
+          "romance-heavy",
+          "light tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Shepherd - Frederick Forsyth": {
@@ -197065,53 +197164,100 @@
       "author": "Frederick Forsyth",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On Christmas Eve 1957, a young RAF pilot flying home from Germany suffers a complete electrical failure — no compass, no radio — and faces almost certain death above the fog-shrouded English coast, until a mysterious WWII-vintage Mosquito aircraft appears to guide him to safety. A tense, haunting novella with a supernatural twist.",
+      "tone": "tense, elegiac, quietly eerie",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "hope",
+        "faith",
+        "sacrifice",
+        "the supernatural",
+        "Christmas"
+      ],
+      "setting": "The skies over the North Sea and England, Christmas Eve 1957",
+      "comparable_books": [
+        "The Day of the Jackal - Frederick Forsyth",
+        "Fly Boys - James Bradley",
+        "Tinker Tailor Soldier Spy - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "aviation thriller",
+          "ghost story",
+          "Christmas mystery",
+          "propulsive short read",
+          "twist ending",
+          "historical fiction"
+        ],
+        "negative": [
+          "long epic narratives",
+          "fantasy world-building",
+          "romance"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "A classic BBC radio adaptation exists; the story's tense, atmospheric prose is ideally suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dancer's Lament - Ian C. Esslemont": {
       "title": "Dancer's Lament",
       "author": "Ian C. Esslemont",
       "series": "Path to Ascendancy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the city-state of Li Heng, the skilled young assassin Dorin Rav — destined to become the legendary Dancer — crosses paths with a strange, powerful mage known as Wu, and the two begin their fateful partnership amid city politics, underground wars, and supernatural threats. The origin story of two of the Malazan world's most iconic figures.",
+      "tone": "grim, propulsive, darkly witty",
+      "pacing": "Moderate",
+      "themes": [
+        "ambition",
+        "partnership",
+        "power",
+        "fate",
+        "identity"
+      ],
+      "setting": "The city of Li Heng in the pre-history of the Malazan Empire world",
+      "comparable_books": [
+        "Gardens of the Moon - Steven Erikson",
+        "Deadhouse Landing - Ian C. Esslemont",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Malazan fans",
+          "morally grey protagonists",
+          "assassin protagonists",
+          "complex world-building",
+          "origin stories",
+          "grimdark"
+        ],
+        "negative": [
+          "standalone-friendly",
+          "simple magic systems",
+          "romance-heavy",
+          "light tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "All the Light We Cannot See - Anthony Doerr": {
@@ -197119,107 +197265,206 @@
       "author": "Anthony Doerr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A blind French girl and a German orphan boy whose paths converge in occupied France during World War II — one hiding a legendary diamond with a deadly curse, the other tracking resistance radio transmissions for the Nazis. A Pulitzer Prize-winning novel of extraordinary beauty about the human cost of war.",
+      "tone": "lyrical, luminous, heartbreaking",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "war",
+        "innocence",
+        "fate",
+        "morality",
+        "resilience",
+        "wonder",
+        "duty vs conscience"
+      ],
+      "setting": "WWII-era France and Germany, 1930s–1944",
+      "comparable_books": [
+        "The Nightingale - Kristin Hannah",
+        "Suite Française - Irène Némirovsky",
+        "The Book Thief - Markus Zusak",
+        "Birdsong - Sebastian Faulks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "WWII fiction",
+          "dual narratives",
+          "literary fiction",
+          "emotional depth",
+          "Pulitzer Prize winners"
+        ],
+        "negative": [
+          "action-heavy",
+          "fast pacing",
+          "fantasy elements",
+          "happy endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Zeljko Ivanek's narration of the audiobook is widely praised; the poetic prose and dual timelines translate beautifully to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "India Muerte and the Ship of the Dead - Set Sytes": {
       "title": "India Muerte and the Ship of the Dead",
       "author": "Set Sytes",
       "series": "India Muerte",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a night of misadventure, roguish street kid India Muerte wakes up aboard a legendary ship crewed by skeletons, and sets off across a fantastical Caribbean-inspired world in search of the father he never knew — while making dangerous enemies along the way. A swashbuckling, lighthearted pirate fantasy adventure.",
+      "tone": "adventurous, whimsical, swashbuckling",
+      "pacing": "Moderate",
+      "themes": [
+        "adventure",
+        "identity",
+        "belonging",
+        "found family",
+        "father-son",
+        "freedom"
+      ],
+      "setting": "A fantastical alternate Caribbean archipelago world, pseudo-historical",
+      "comparable_books": [
+        "The Princess Bride - William Goldman",
+        "Piratica - Tanith Lee",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Treasure Island - Robert Louis Stevenson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "pirate fantasy",
+          "found family",
+          "swashbuckling adventure",
+          "lighthearted tone",
+          "YA-friendly",
+          "undead crew"
+        ],
+        "negative": [
+          "grimdark",
+          "slow burn",
+          "complex political intrigue",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Battle Mage - Peter A. Flannery": {
       "title": "Battle Mage",
       "author": "Peter A. Flannery",
       "series": "The Souls Of Wrath",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Falco Dante, the sickly, guilt-ridden son of a mage who went mad, discovers he may be the rare and powerful battle mage his war-ravaged world desperately needs — but first he must overcome his own fears and the shadow of his father's crimes. A sweeping, classic epic fantasy pitting humanity against demonic invasion.",
+      "tone": "epic, earnest, emotionally charged",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "destiny",
+        "overcoming shame",
+        "courage",
+        "good vs evil",
+        "legacy",
+        "found family",
+        "sacrifice"
+      ],
+      "setting": "A secondary medieval-style fantasy world under siege by demonic forces",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Blade Itself - Joe Abercrombie",
+        "Elantris - Brandon Sanderson",
+        "The Eye of the World - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "underdog protagonist",
+          "dragons",
+          "classic epic fantasy",
+          "coming-of-age",
+          "training sequences",
+          "large-scale battles",
+          "found family"
+        ],
+        "negative": [
+          "subversive or deconstructive fantasy",
+          "morally ambiguous endings",
+          "lean prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "India Muerte and the Indigo Caves - Set Sytes": {
       "title": "India Muerte and the Indigo Caves",
       "author": "Set Sytes",
       "series": "India Muerte",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Now a seasoned crewmember of the pirate ship Devil's Dress, India Muerte is coerced by the ruthless merchant king Hong Kong Silver into tracking down the pirate revolutionary Ebon Caesar — a mission that takes him far beyond the Caribbean into strange and dangerous new lands. A fast-paced sequel full of high-stakes adventure.",
+      "tone": "adventurous, swashbuckling, escalating stakes",
+      "pacing": "Fast",
+      "themes": [
+        "adventure",
+        "loyalty",
+        "freedom vs obligation",
+        "found family",
+        "morality of piracy"
+      ],
+      "setting": "A fantastical alternate Caribbean world and beyond, pseudo-historical",
+      "comparable_books": [
+        "India Muerte and the Ship of the Dead - Set Sytes",
+        "The Princess Bride - William Goldman",
+        "Treasure Island - Robert Louis Stevenson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "pirate fantasy",
+          "swashbuckling adventure",
+          "found family",
+          "lighthearted tone",
+          "escalating adventure"
+        ],
+        "negative": [
+          "grimdark",
+          "slow burn",
+          "graphic violence",
+          "complex political intrigue"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Frankenstein - Mary Shelley": {
@@ -197227,53 +197472,99 @@
       "author": "Mary Shelley",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Gothic Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The ambitious scientist Victor Frankenstein creates life from dead matter, only to be horrified by his creation and abandon it — setting in motion a tragic cycle of rejection, vengeance, and mutual destruction between creator and creature. A foundational Gothic novel exploring what it means to be human.",
+      "tone": "dark, philosophical, tragic",
+      "pacing": "Slow",
+      "themes": [
+        "creation and responsibility",
+        "isolation",
+        "humanity",
+        "ambition",
+        "nature vs nurture",
+        "playing God"
+      ],
+      "setting": "18th-century Europe — Geneva, the Arctic, various settings",
+      "comparable_books": [
+        "Dracula - Bram Stoker",
+        "The Strange Case of Dr Jekyll and Mr Hyde - Robert Louis Stevenson",
+        "The Island of Doctor Moreau - H.G. Wells",
+        "The Picture of Dorian Gray - Oscar Wilde"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic literature",
+          "Gothic horror",
+          "philosophical fiction",
+          "tragic narratives",
+          "monster as metaphor"
+        ],
+        "negative": [
+          "fast pacing",
+          "action-heavy",
+          "simple prose",
+          "happy endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Siege and Storm - Leigh Bardugo": {
       "title": "Siege and Storm",
       "author": "Leigh Bardugo",
       "series": "Shadow and Bone",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alina Starkov and Mal are on the run from the Darkling, but are captured and forced into a precarious alliance on the high seas — where Alina discovers new amplifiers that could make her powerful enough to challenge the darkness threatening Ravka. A middle-book that deepens the world and raises the stakes significantly.",
+      "tone": "propulsive, romantic tension, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "power and corruption",
+        "identity",
+        "leadership",
+        "sacrifice",
+        "romantic rivalry",
+        "darkness within"
+      ],
+      "setting": "The fictional Slavic-inspired kingdom of Ravka and surrounding seas",
+      "comparable_books": [
+        "Shadow and Bone - Leigh Bardugo",
+        "An Ember in the Ashes - Sabaa Tahir",
+        "The Cruel Prince - Holly Black",
+        "Red Queen - Victoria Aveyard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA fantasy",
+          "morally grey villain",
+          "romantic tension",
+          "magic systems",
+          "action-adventure",
+          "chosen one trope subverted"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "literary fiction",
+          "no romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "City of Illusions - Ursula K. le Guin": {
@@ -197281,26 +197572,50 @@
       "author": "Ursula K. le Guin",
       "series": "The Hainish Cycle",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A man with no memory is found in a distant future Earth's forests and must make a dangerous journey across a strange, post-conquest America to find his true identity and confront the mysterious alien Shing who rule humanity. A philosophical science fiction novel about truth, identity, and the nature of deception.",
+      "tone": "meditative, philosophical, quietly suspenseful",
+      "pacing": "Slow",
+      "themes": [
+        "identity",
+        "truth and deception",
+        "memory",
+        "freedom",
+        "oppression",
+        "humanity"
+      ],
+      "setting": "A far-future, post-conquest Earth covered in forest, resembling North America",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. le Guin",
+        "Rocannon's World - Ursula K. le Guin",
+        "A Canticle for Leibowitz - Walter M. Miller Jr.",
+        "The Word for World is Forest - Ursula K. le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "philosophical SF",
+          "quiet introspection",
+          "Ursula le Guin fans",
+          "post-apocalyptic journeys",
+          "alien cultures"
+        ],
+        "negative": [
+          "fast-paced action",
+          "hard SF",
+          "space opera",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dark Disciple - Christie Golden": {
@@ -197308,80 +197623,157 @@
       "author": "Christie Golden",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "During the Clone Wars, the Jedi Council pairs brash Knight Quinlan Vos with former Sith assassin Asajj Ventress to assassinate Count Dooku — but as they train and work together, a bond grows between them that complicates the mission and threatens to pull Vos toward the dark side. Based on unproduced Clone Wars scripts, it is a story of redemption, love, and sacrifice.",
+      "tone": "emotionally charged, action-packed, romantic tension",
+      "pacing": "Moderate",
+      "themes": [
+        "redemption",
+        "love",
+        "the dark side",
+        "duty vs desire",
+        "sacrifice",
+        "moral grey areas"
+      ],
+      "setting": "Star Wars galaxy during the Clone Wars era",
+      "comparable_books": [
+        "Ahsoka - E.K. Johnston",
+        "Bloodline - Claudia Gray",
+        "Lost Stars - Claudia Gray",
+        "Master and Apprentice - Claudia Gray"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "Clone Wars fans",
+          "romance subplot",
+          "morally grey protagonist",
+          "redemption arc",
+          "Asajj Ventress fans"
+        ],
+        "negative": [
+          "Star Wars newcomers",
+          "hard science fiction",
+          "no romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Those Brave, Foolish Souls From the City of Swords - Benedict Patrick": {
       "title": "Those Brave, Foolish Souls From the City of Swords",
       "author": "Benedict Patrick",
       "series": "Yarnsworld",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young and idealistic Arturo travels to the fabled City of Swords hoping to join the legendary Bravadori, only to find them far less noble than their reputation — and must join forces with an outcast and a walking legend to protect a distant village from bandit attack. A gritty, folklore-infused standalone set in the Yarnsworld.",
+      "tone": "gritty, folkloric, darkly optimistic",
+      "pacing": "Moderate",
+      "themes": [
+        "heroism and disillusionment",
+        "honour",
+        "sacrifice",
+        "courage",
+        "folklore",
+        "found family"
+      ],
+      "setting": "The Yarnsworld — a secondary world where folk tales and monsters are real, Mediterranean-flavoured",
+      "comparable_books": [
+        "They Mostly Come Out at Night - Benedict Patrick",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Painted Man - Peter V. Brett",
+        "The Bear and the Nightingale - Katherine Arden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folklore-infused fantasy",
+          "standalone novels",
+          "gritty adventure",
+          "found family",
+          "swords and action",
+          "indie fantasy"
+        ],
+        "negative": [
+          "epic multi-book series",
+          "hard magic systems",
+          "romance-heavy",
+          "grimdark nihilism"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Lords of the North - Bernard Cornwell": {
       "title": "The Lords of the North",
       "author": "Bernard Cornwell",
       "series": "The Last Kingdom",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Saxon warrior Uhtred of Bebbanburg travels north to reclaim his ancestral home and settle old scores, becoming entangled in the brutal politics of Northumbria and the power struggle between rival Viking lords. A propulsive historical adventure continuing Uhtred's long quest for his rightful inheritance.",
+      "tone": "propulsive, brutal, darkly heroic",
+      "pacing": "Fast",
+      "themes": [
+        "identity",
+        "belonging",
+        "revenge",
+        "loyalty",
+        "Viking vs Saxon conflict",
+        "paganism vs Christianity"
+      ],
+      "setting": "9th-century Northumbria, Viking-occupied England",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "Hild - Nicola Griffith",
+        "Shieldwall - Justin Hill",
+        "The Hammer and the Cross - Harry Harrison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "Viking fiction",
+          "action-adventure",
+          "morally grey protagonist",
+          "propulsive pacing",
+          "battle scenes"
+        ],
+        "negative": [
+          "slow meditative fiction",
+          "fantasy elements",
+          "romance-heavy",
+          "literary fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Last Kingdom audiobooks narrated by Jonathan Keeble are widely considered among the best historical fiction audio performances.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Aeneid - Virgil": {
@@ -197389,107 +197781,211 @@
       "author": "Virgil",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Classic Literature",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The Trojan hero Aeneas, survivor of the fall of Troy, embarks on a divinely-ordained journey across the Mediterranean to found the city that will one day become Rome — braving the wrath of Juno, a doomed love affair in Carthage, and war in Italy. The foundational epic of Roman literature.",
+      "tone": "grand, elegiac, fatalistic",
+      "pacing": "Moderate",
+      "themes": [
+        "duty and fate",
+        "empire",
+        "sacrifice",
+        "love and loss",
+        "heroism",
+        "the cost of glory",
+        "founding myths"
+      ],
+      "setting": "The ancient Mediterranean world — Troy, Carthage, Italy — mythological era",
+      "comparable_books": [
+        "The Iliad - Homer",
+        "The Odyssey - Homer",
+        "Paradise Lost - John Milton",
+        "Metamorphoses - Ovid"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classical literature",
+          "mythology",
+          "epic poetry",
+          "Roman history",
+          "fate and duty themes"
+        ],
+        "negative": [
+          "modern prose fiction",
+          "fast-paced narratives",
+          "contemporary settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Queen of the Damned - Anne Rice": {
       "title": "The Queen of the Damned",
       "author": "Anne Rice",
       "series": "The Vampire Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The ancient vampire queen Akasha rises from millennia of dormancy, unleashing a cataclysmic vision for a new world order — and all the world's vampires, led by Lestat, must unite to stop her before she destroys humankind. A sprawling, mythology-rich novel that reveals the full origin of the vampire race.",
+      "tone": "lush, operatic, darkly romantic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "power",
+        "ancient evil",
+        "mythology",
+        "feminism",
+        "the nature of evil",
+        "vampiric origins",
+        "identity"
+      ],
+      "setting": "Late 20th century, global — San Francisco, Egypt, and other locations; also deep flashbacks to ancient history",
+      "comparable_books": [
+        "Interview with the Vampire - Anne Rice",
+        "The Vampire Lestat - Anne Rice",
+        "Salem's Lot - Stephen King",
+        "Let the Right One In - John Ajvide Lindqvist"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "vampire fiction",
+          "lush Gothic prose",
+          "deep mythology",
+          "ensemble cast",
+          "operatic drama",
+          "Anne Rice fans"
+        ],
+        "negative": [
+          "lean prose",
+          "fast-paced action",
+          "hard horror",
+          "romance-averse readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Long Patrol - Brian Jacques": {
-      "title": "Long Patrol",
+      "title": "The Long Patrol",
       "author": "Brian Jacques",
       "series": "Redwall",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young hare Tammo dreams of joining the legendary Long Patrol, the elite fighting force of Salamandastron — and gets his chance when the murderous Rapscallion army marches on Redwall Abbey, threatening the peace of the entire woodland realm. A rousing adventure blending coming-of-age with Redwall's most ferocious battle yet.",
+      "tone": "rousing, cosy-then-perilous, warmly heroic",
+      "pacing": "Moderate",
+      "themes": [
+        "courage",
+        "coming of age",
+        "duty",
+        "good vs evil",
+        "community",
+        "sacrifice",
+        "honour"
+      ],
+      "setting": "Redwall Abbey and Mossflower Woods — an anthropomorphic medieval-style world",
+      "comparable_books": [
+        "Redwall - Brian Jacques",
+        "Watership Down - Richard Adams",
+        "The Hobbit - J.R.R. Tolkien",
+        "Ranger's Apprentice - John Flanagan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "animal fantasy",
+          "children's/MG fantasy",
+          "cosy adventure",
+          "good vs evil",
+          "feasts and songs",
+          "battle sequences"
+        ],
+        "negative": [
+          "adult grimdark",
+          "moral ambiguity",
+          "complex politics",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Redwall audiobooks feature full-cast narration with Brian Jacques himself and musical performances, making them an exceptional audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wrath of Empire - Brian McClellan": {
       "title": "Wrath of Empire",
       "author": "Brian McClellan",
       "series": "Gods of Blood and Powder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the capital city of Landfall occupied by the Dynize empire, three heroes — soldier-for-hire Vlora Flint, spy Michel Bravis, and the fearsome Mad Lancer Ben Styke — pursue separate missions in a desperate bid to turn the tide of an unwinnable war. A propulsive military flintlock fantasy sequel full of action, intrigue, and magic.",
+      "tone": "propulsive, gritty, action-packed",
+      "pacing": "Fast",
+      "themes": [
+        "war",
+        "resistance",
+        "loyalty",
+        "power",
+        "sacrifice",
+        "occupation"
+      ],
+      "setting": "The city of Landfall and surrounding frontier on the continent of Fatrasta — a flintlock-era secondary world",
+      "comparable_books": [
+        "Sins of Empire - Brian McClellan",
+        "Promise of Blood - Brian McClellan",
+        "The Thousand Names - Django Wexler",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock fantasy",
+          "military fantasy",
+          "multiple POVs",
+          "action-heavy",
+          "magic systems",
+          "morally grey protagonists"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "romance-heavy",
+          "literary fiction",
+          "standalone-friendly"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dragonfall - David Estes": {
