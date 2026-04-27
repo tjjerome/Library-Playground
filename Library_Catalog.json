@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2248,
-  "total_pending": 2352,
+  "total_catalogued": 2268,
+  "total_pending": 2332,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -132395,378 +132395,651 @@
       "title": "Peace Talks",
       "author": "Jim Butcher",
       "series": "The Dresden Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 16",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Harry Dresden must navigate a supernatural peace summit in Chicago while dealing with a family crisis and an emerging threat that could plunge the magical world into war. The novel is a shorter, action-driven setup for its direct sequel, Battle Ground.",
+      "tone": "propulsive, high-stakes, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "family loyalty",
+        "political intrigue",
+        "sacrifice",
+        "power and consequence"
+      ],
+      "setting": "Contemporary Chicago; the supernatural underworld of the Dresden Files universe",
+      "comparable_books": [
+        "Dead Witch Walking - Kim Harrison",
+        "Storm Front - Jim Butcher",
+        "Moon Called - Patricia Briggs"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced urban fantasy",
+          "long-running series payoff",
+          "morally grey protagonist",
+          "found family",
+          "snappy first-person narration"
+        ],
+        "negative": [
+          "requires extensive series investment",
+          "feels incomplete as a standalone",
+          "short by series standards"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "James Marsters's narration of the Dresden Files is widely considered one of the gold standards of urban fantasy audiobooks.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Skin Game - Jim Butcher": {
       "title": "Skin Game",
       "author": "Jim Butcher",
       "series": "The Dresden Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 15",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Harry Dresden is forced to work alongside his archnemesis Nicodemus Archleone on a supernatural heist to break into the vault of Hades himself. A propulsive, crowd-pleasing entry structured around a classic heist plot.",
+      "tone": "propulsive, darkly comic, fun",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "trust and betrayal",
+        "father-daughter relationships",
+        "moral compromise"
+      ],
+      "setting": "Contemporary Chicago and mythological underworld",
+      "comparable_books": [
+        "Dead Witch Walking - Kim Harrison",
+        "Moon Called - Patricia Briggs",
+        "Storm Front - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heist plot",
+          "fast-paced urban fantasy",
+          "morally grey protagonist",
+          "long-running series payoff",
+          "snappy first-person narration"
+        ],
+        "negative": [
+          "requires series investment to fully appreciate",
+          "genre conventions may feel familiar"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "James Marsters's narration is a defining feature of the series and widely acclaimed.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Red Sister - Mark Lawrence": {
       "title": "Red Sister",
       "author": "Mark Lawrence",
       "series": "Book of the Ancestor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a dying world encircled by a shrinking corridor of warmth, young Nona Grey enters a convent for warrior-nuns and must master combat, magic, and her own dark past to survive. A story of sisterhood, violence, and destiny told with lyrical prose.",
+      "tone": "lyrical, grimdark, intimate",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "sisterhood and loyalty",
+        "identity and belonging",
+        "violence and innocence",
+        "faith and power"
+      ],
+      "setting": "A dying ice world with a narrow habitable band; quasi-medieval convent setting",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Poppy War - R.F. Kuang",
+        "Assassin's Apprentice - Robin Hobb"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "female-led found family",
+          "grimdark with heart",
+          "coming-of-age",
+          "morally complex protagonist"
+        ],
+        "negative": [
+          "slow early pacing",
+          "non-linear structure may disorient",
+          "dark content including child violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Cardinal of the Kremlin - Tom Clancy": {
       "title": "The Cardinal of the Kremlin",
       "author": "Tom Clancy",
       "series": "Jack Ryan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "CIA operative Jack Ryan races to protect CARDINAL, America's most valuable Soviet mole, while both superpowers scramble to develop revolutionary directed-energy missile defense systems. A Cold War espionage thriller dense with military and intelligence detail.",
+      "tone": "tense, procedural, techno-thriller",
+      "pacing": "Moderate",
+      "themes": [
+        "Cold War espionage",
+        "loyalty and betrayal",
+        "technological arms race",
+        "patriotism"
+      ],
+      "setting": "1980s Cold War; Washington D.C., Moscow, Afghanistan, and various intelligence theatres",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Hunt for Red October - Tom Clancy",
+        "The Moscow Rules - Daniel Silva"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "techno-thriller detail",
+          "Cold War espionage",
+          "military authenticity",
+          "propulsive plot"
+        ],
+        "negative": [
+          "heavy technical exposition",
+          "large cast of characters",
+          "dated Cold War context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Eye of Darkness - George Mann": {
       "title": "The Eye of Darkness",
       "author": "George Mann",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Phase III, Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "One year after the fall of Starlight Beacon, the galaxy is split in two as the Nihil establish an impenetrable Stormwall around the Outer Rim; Jedi trapped inside fight to survive while those outside struggle to find a way to breach the barrier and reunite the Republic. A dark, ensemble-driven opening to Phase III of the High Republic initiative.",
+      "tone": "dark, desperate, action-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "hope vs. despair",
+        "occupation and resistance",
+        "sacrifice",
+        "the cost of failure"
+      ],
+      "setting": "Star Wars galaxy, approximately 228 BBY; the Outer Rim Occlusion Zone and Coruscant",
+      "comparable_books": [
+        "Light of the Jedi - Charles Soule",
+        "The Fallen Star - Claudia Gray",
+        "The Rising Storm - Cavan Scott"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars expanded universe",
+          "High Republic era",
+          "ensemble cast",
+          "high stakes galactic conflict"
+        ],
+        "negative": [
+          "requires significant prior High Republic reading",
+          "mid-series installment",
+          "some plot threads left open"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Day of Atonement - David Liss": {
       "title": "The Day of Atonement",
       "author": "David Liss",
       "series": "Benjamin Weaver",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1755 Lisbon, Sebastião Raposa — trained by thief-taker Benjamin Weaver — returns to Portugal under the alias Sebastian Foxx to hunt the Inquisitor priest who destroyed his family, only to be drawn into a deadly web of treachery, deception, and moral compromise. A revenge thriller set against the waning days of the Portuguese Inquisition.",
+      "tone": "tense, atmospheric, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance and mercy",
+        "religious persecution",
+        "identity and exile",
+        "justice vs. bloodlust"
+      ],
+      "setting": "Lisbon, Portugal, 1755; the shadow of the Portuguese Inquisition, leading up to the great earthquake",
+      "comparable_books": [
+        "A Conspiracy of Paper - David Liss",
+        "An Instance of the Fingerpost - Iain Pears",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical thriller",
+          "revenge narrative",
+          "morally grey protagonist",
+          "vivid period setting",
+          "action-packed"
+        ],
+        "negative": [
+          "protagonist shift from prior books may frustrate Weaver fans",
+          "Weaver himself has a small role"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fallen Star - Claudia Gray": {
       "title": "The Fallen Star",
       "author": "Claudia Gray",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Phase I, Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Marchion Ro and the Nihil launch their most devastating attack yet, targeting the Jedi and the Starlight Beacon — the Republic's greatest symbol of hope — in a desperate bid to extinguish the light of the Jedi. The dark, action-packed conclusion to Phase I of the High Republic initiative.",
+      "tone": "dark, intense, emotionally devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "hope and loss",
+        "sacrifice",
+        "the cost of war",
+        "leadership under pressure"
+      ],
+      "setting": "Star Wars galaxy, approximately 230 BBY; primarily aboard Starlight Beacon above the planet Eiram",
+      "comparable_books": [
+        "Light of the Jedi - Charles Soule",
+        "The Rising Storm - Cavan Scott",
+        "The Eye of Darkness - George Mann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars expanded universe",
+          "High Republic era",
+          "ensemble cast",
+          "emotional payoff after series investment"
+        ],
+        "negative": [
+          "requires Phase I investment to appreciate",
+          "darker and more character-dense than prior books",
+          "some find pacing uneven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Honourable Schoolboy - John le Carre": {
       "title": "The Honourable Schoolboy",
-      "author": "John le Carre",
+      "author": "John le Carré",
       "series": "George Smiley",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6 (Karla Trilogy, Book 2)",
+      "genre": "Espionage Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "After the humiliation of the Circus exposed in Tinker Tailor Soldier Spy, George Smiley rebuilds British intelligence and dispatches journalist Jerry Westerby to Southeast Asia to follow a trail of Soviet money that may expose the heart of Moscow Centre. A panoramic, morally complex Cold War espionage epic.",
+      "tone": "melancholic, literary, slow-burning",
+      "pacing": "Slow",
+      "themes": [
+        "institutional decay",
+        "loyalty and betrayal",
+        "Cold War geopolitics",
+        "the cost of espionage on individuals"
+      ],
+      "setting": "1970s; London, Hong Kong, Southeast Asia during the Vietnam War era",
+      "comparable_books": [
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "Smiley's People - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary espionage",
+          "Cold War atmosphere",
+          "morally grey protagonist",
+          "rich world-building",
+          "slow meditative pacing"
+        ],
+        "negative": [
+          "extremely slow pacing",
+          "large cast",
+          "bleak and downbeat tone",
+          "requires Tinker Tailor as prior reading"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hydrogen Sonata - Iain M. Banks": {
       "title": "The Hydrogen Sonata",
       "author": "Iain M. Banks",
       "series": "Culture",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Gzilt civilisation prepares to Sublime into a higher plane of existence, a centuries-old secret threatens to unravel their transcendence, and the Culture's hyperintelligent Minds scramble to uncover the truth before it's buried forever. A witty, philosophically rich final Culture novel.",
+      "tone": "witty, philosophical, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "transcendence and mortality",
+        "truth vs. comfortable lies",
+        "meaning of civilisation",
+        "artificial intelligence and consciousness"
+      ],
+      "setting": "Far-future space opera; Culture ships, alien worlds, and the edge of known space",
+      "comparable_books": [
+        "Use of Weapons - Iain M. Banks",
+        "The Player of Games - Iain M. Banks",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "philosophical depth",
+          "witty prose",
+          "AI characters",
+          "sense of wonder"
+        ],
+        "negative": [
+          "large cast of characters",
+          "deliberately slow in places",
+          "works best with prior Culture familiarity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Looking Glass War - John le Carre": {
       "title": "The Looking Glass War",
-      "author": "John le Carre",
+      "author": "John le Carré",
       "series": "George Smiley",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Espionage Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A faded, second-rate British intelligence department sends an ill-prepared agent into East Germany on a Cold War mission built on outdated information and institutional vanity — with devastating consequences. A bleak, darkly satirical dissection of espionage bureaucracy.",
+      "tone": "bleak, satirical, deeply melancholic",
+      "pacing": "Slow",
+      "themes": [
+        "institutional incompetence",
+        "sacrifice and futility",
+        "Cold War paranoia",
+        "the human cost of bureaucracy"
+      ],
+      "setting": "1960s Cold War; London and East Germany",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "Our Man in Havana - Graham Greene"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary espionage",
+          "Cold War atmosphere",
+          "dark satire",
+          "character-driven"
+        ],
+        "negative": [
+          "extremely bleak",
+          "deliberately unheroic",
+          "slow pacing",
+          "downbeat ending"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Secret Pilgrim - John le Carre": {
       "title": "The Secret Pilgrim",
-      "author": "John le Carre",
+      "author": "John le Carré",
       "series": "George Smiley",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Espionage Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retiring spy Ned looks back on a career of moral ambiguity as George Smiley delivers a valedictory address to trainee agents, triggering a series of interconnected reminiscences spanning the Cold War and its aftermath. An elegiac, episodic meditation on the spy's life.",
+      "tone": "elegiac, reflective, melancholic",
+      "pacing": "Slow",
+      "themes": [
+        "the cost of a spy's life",
+        "moral compromise",
+        "Cold War legacy",
+        "identity and loyalty"
+      ],
+      "setting": "British intelligence over several decades, from Cold War to post-Cold War; global settings",
+      "comparable_books": [
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Honourable Schoolboy - John le Carré",
+        "Smiley's People - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary espionage",
+          "character-driven",
+          "Cold War atmosphere",
+          "reflective and introspective"
+        ],
+        "negative": [
+          "episodic structure may feel disconnected",
+          "very slow pacing",
+          "works best with Smiley series familiarity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Last Command - Timothy Zahn": {
       "title": "The Last Command",
       "author": "Timothy Zahn",
       "series": "Star Wars: The Thrawn Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Grand Admiral Thrawn launches his final campaign against the New Republic, deploying a clone army from a secret facility while the heroes scramble to find and destroy it before the Empire achieves total victory. The thrilling conclusion to the foundational Legends trilogy.",
+      "tone": "propulsive, adventurous, optimistic",
+      "pacing": "Fast",
+      "themes": [
+        "leadership and strategy",
+        "loyalty and identity",
+        "freedom vs. order",
+        "heroism"
+      ],
+      "setting": "Star Wars galaxy; approximately 9 ABY, multiple planets and Imperial/New Republic fleets",
+      "comparable_books": [
+        "Heir to the Empire - Timothy Zahn",
+        "Dark Force Rising - Timothy Zahn",
+        "Thrawn - Timothy Zahn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic Star Wars feel",
+          "compelling villain",
+          "propulsive pacing",
+          "familiar characters",
+          "military strategy"
+        ],
+        "negative": [
+          "Legends continuity (non-canon)",
+          "requires Heir to the Empire and Dark Force Rising first"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Marc Thompson's narration with full Star Wars sound design makes this a standout audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Abyss - Troy Denning": {
       "title": "Abyss",
       "author": "Troy Denning",
       "series": "Star Wars: Fate of the Jedi",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Luke and Ben Skywalker venture into the Maw Cluster's labyrinth of black holes seeking the Mind Walkers — Force-users who can transcend their bodies — while on Coruscant a spreading madness afflicts Jedi Knights as tensions with the Galactic Alliance Chief of State escalate. A mid-series entry introducing the entity Abeloth.",
+      "tone": "propulsive, dark, mysterious",
+      "pacing": "Moderate",
+      "themes": [
+        "dark side temptation",
+        "political corruption",
+        "faith and doubt",
+        "parent-child bonds"
+      ],
+      "setting": "Star Wars Legends universe; approximately 43 ABY; Coruscant and the Maw Cluster",
+      "comparable_books": [
+        "Outcast - Aaron Allston",
+        "Omen - Christie Golden",
+        "Backlash - Aaron Allston"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars Legends expanded universe",
+          "Luke and Ben Skywalker dynamic",
+          "Force philosophy and lore",
+          "action-packed"
+        ],
+        "negative": [
+          "deep into a long Legends continuity",
+          "mid-series installment with no resolution",
+          "requires prior series investment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Artemis Fowl - Eoin Colfer": {
       "title": "Artemis Fowl",
       "author": "Eoin Colfer",
       "series": "Artemis Fowl",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twelve-year-old criminal mastermind Artemis Fowl discovers the existence of a secret world of fairies and hatches a plan to kidnap LEPrecon officer Captain Holly Short to extort gold from the fairy people. A fast-paced, darkly comic caper that blends fantasy with crime thriller.",
+      "tone": "darkly comic, fast-paced, playful",
+      "pacing": "Fast",
+      "themes": [
+        "intelligence vs. morality",
+        "family legacy",
+        "greed and redemption",
+        "human vs. magical world"
+      ],
+      "setting": "Contemporary Earth; Fowl Manor, Ireland, and the underground fairy world",
+      "comparable_books": [
+        "The Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Harry Potter and the Philosopher's Stone - J.K. Rowling",
+        "Percy Jackson and the Lightning Thief - Rick Riordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "clever protagonist",
+          "darkly comic tone",
+          "fast-paced plot",
+          "world-building",
+          "heist elements"
+        ],
+        "negative": [
+          "protagonist is an unsympathetic anti-hero",
+          "may feel juvenile",
+          "thin emotional depth in first book"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Nathaniel Parker's multi-voiced narration is highly regarded for bringing the book's humour and characters to life.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Bloodline - Claudia Gray": {
@@ -132774,161 +133047,277 @@
       "author": "Claudia Gray",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Six years before The Force Awakens, Senator Leia Organa navigates a deeply divided New Republic Senate while uncovering a dangerous conspiracy linked to the rising First Order — and confronting a personal revelation that will change her world forever. A politically-charged thriller that bridges Return of the Jedi and the sequel trilogy.",
+      "tone": "tense, political, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "political corruption and partisanship",
+        "identity and legacy",
+        "the cost of heroism",
+        "the seeds of tyranny"
+      ],
+      "setting": "Star Wars canon universe; New Republic era, approximately 28 ABY; Coruscant and various planetary locations",
+      "comparable_books": [
+        "Lost Stars - Claudia Gray",
+        "Aftermath - Chuck Wendig",
+        "The Thrawn Trilogy - Timothy Zahn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "strong Leia characterisation",
+          "political intrigue",
+          "Star Wars canon bridge novel",
+          "propulsive thriller plot"
+        ],
+        "negative": [
+          "less action-driven than many Star Wars novels",
+          "political focus may not suit all readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Darkness, Take My Hand - Dennis Lehane": {
       "title": "Darkness, Take My Hand",
       "author": "Dennis Lehane",
       "series": "Kenzie & Gennaro",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Boston private detectives Patrick Kenzie and Angela Gennaro are drawn into a terrifying case when a psychopathic killer with ties to Irish mob violence begins targeting people close to them. One of Lehane's darkest and most relentlessly tense thrillers.",
+      "tone": "grimdark, relentlessly tense, bleak",
+      "pacing": "Fast",
+      "themes": [
+        "violence and trauma",
+        "Boston working-class identity",
+        "the nature of evil",
+        "loyalty and loss"
+      ],
+      "setting": "1990s Boston; working-class Dorchester neighbourhoods",
+      "comparable_books": [
+        "Gone Baby Gone - Dennis Lehane",
+        "Mystic River - Dennis Lehane",
+        "A Simple Plan - Scott Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive crime thriller",
+          "vivid sense of place",
+          "morally complex protagonist",
+          "dark and unflinching"
+        ],
+        "negative": [
+          "extremely dark and violent content",
+          "bleak tone with no relief",
+          "difficult to read in isolation from series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Convergence - Zoraida Cordova": {
       "title": "Convergence",
-      "author": "Zoraida Cordova",
+      "author": "Zoraida Córdova",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Phase II, Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set generations before Phase I, Jedi Knight Gella Nattai and Republic scion Axel Greylark are thrust together to investigate an assassination attempt against the heirs of two warring planets, uncovering a conspiracy that threatens the fragile peace in a galaxy still learning to be united. A character-driven adventure blending political thriller and romance.",
+      "tone": "hopeful, romantic, politically intricate",
+      "pacing": "Moderate",
+      "themes": [
+        "peace and reconciliation",
+        "trust across divides",
+        "political corruption",
+        "faith vs. cynicism"
+      ],
+      "setting": "Star Wars galaxy, approximately 382 BBY; the warring planets of Eiram and E'ronoh",
+      "comparable_books": [
+        "Light of the Jedi - Charles Soule",
+        "The Fallen Star - Claudia Gray",
+        "Into the Dark - Claudia Gray"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars High Republic",
+          "slow-burn romance subplot",
+          "political intrigue",
+          "character-driven",
+          "strong worldbuilding"
+        ],
+        "negative": [
+          "character development criticised as thin by some",
+          "secondary to Phase I's main storyline",
+          "requires High Republic familiarity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ghost Story - Jim Butcher": {
       "title": "Ghost Story",
       "author": "Jim Butcher",
       "series": "The Dresden Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After the shocking events of Changes, Harry Dresden returns to Chicago as a ghost to investigate his own murder and protect the people he left behind from a city descending into supernatural chaos. A more introspective, melancholic entry that forces Harry to face the consequences of his choices.",
+      "tone": "melancholic, introspective, darkly comic",
+      "pacing": "Moderate",
+      "themes": [
+        "consequence and responsibility",
+        "identity and selfhood",
+        "grief and loss",
+        "the nature of heroism"
+      ],
+      "setting": "Contemporary Chicago, one year after the events of Changes; a city fractured by supernatural power vacuums",
+      "comparable_books": [
+        "Dead Witch Walking - Kim Harrison",
+        "Moon Called - Patricia Briggs",
+        "Storm Front - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "long-running series payoff",
+          "emotional depth",
+          "morally grey protagonist",
+          "found family consequences"
+        ],
+        "negative": [
+          "slower and more contemplative than most Dresden Files",
+          "requires full series investment to appreciate",
+          "protagonist in unusual passive role"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "James Marsters's narration is a defining feature of the series and especially effective in this more introspective entry.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Defiant - Brandon Sanderson": {
       "title": "Defiant",
       "author": "Brandon Sanderson",
       "series": "Skyward",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Spensa returns from the Nowhere with new cytonic powers and hard-won answers about the Delvers, reuniting with Skyward Flight for a final, all-or-nothing war against the Superiority to free humanity. A satisfying, action-packed conclusion to the Skyward series.",
+      "tone": "propulsive, hopeful, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "self-sacrifice vs. survival",
+        "power and its costs",
+        "empathy as strength"
+      ],
+      "setting": "Far-future science fiction; humanity's planet Detritus and the wider galaxy controlled by the Superiority",
+      "comparable_books": [
+        "Skyward - Brandon Sanderson",
+        "Ender's Game - Orson Scott Card",
+        "Steelheart - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced YA sci-fi",
+          "found family",
+          "satisfying series conclusion",
+          "strong female protagonist",
+          "action-packed space combat"
+        ],
+        "negative": [
+          "pacing drags in places",
+          "requires prior series investment",
+          "some find it longer than necessary"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Into the Dark - Claudia Gray": {
       "title": "Into the Dark",
       "author": "Claudia Gray",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Phase I, YA Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Reluctant Padawan Reath Silas and a band of Jedi are stranded on an eerie abandoned space station after a galaxy-wide hyperspace disaster, where they discover a dark ancient evil lurking in the station's overgrown corridors. A YA High Republic entry with horror-tinged adventure and rich Jedi philosophy.",
+      "tone": "atmospheric, adventurous, lightly spooky",
+      "pacing": "Moderate",
+      "themes": [
+        "reluctant heroism",
+        "faith and doubt",
+        "the nature of the Jedi Order",
+        "dark side temptation"
+      ],
+      "setting": "Star Wars galaxy, approximately 232 BBY; an ancient abandoned space station in the Outer Rim, concurrent with Light of the Jedi",
+      "comparable_books": [
+        "Light of the Jedi - Charles Soule",
+        "Convergence - Zoraida Córdova",
+        "A Test of Courage - Justina Ireland"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars High Republic",
+          "horror-adjacent atmosphere",
+          "Jedi philosophy",
+          "reluctant hero archetype",
+          "ensemble cast"
+        ],
+        "negative": [
+          "YA-pitched prose and sensibility",
+          "lighter stakes than adult High Republic novels",
+          "some find the villain underdeveloped"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Into the Light - Claudia Gray": {
