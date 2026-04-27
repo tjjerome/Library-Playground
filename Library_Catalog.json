@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1700,
-  "total_pending": 2900,
+  "total_catalogued": 1720,
+  "total_pending": 2880,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -105798,54 +105798,98 @@
       "title": "Parable of the Talents",
       "author": "Octavia E. Butler",
       "series": "Earthseed",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lauren Olamina continues building her Earthseed community in a near-future America torn apart by climate collapse, religious extremism, and authoritarian politics. Her daughter narrates the story from decades later, offering a fractured view of her mother's visionary struggle.",
+      "tone": "bleak, prophetic, emotionally devastating",
+      "pacing": "Moderate",
+      "themes": [
+        "religion and belief",
+        "survival",
+        "authoritarianism",
+        "motherhood",
+        "utopia vs. reality",
+        "race and power"
+      ],
+      "setting": "Near-future United States, 2030s–2090s, dystopian America",
+      "comparable_books": [
+        "The Handmaid's Tale - Margaret Atwood",
+        "Station Eleven - Emily St. John Mandel",
+        "Kindred - Octavia E. Butler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "politically charged SF",
+          "prophetic dystopia",
+          "complex female protagonists",
+          "multi-generational narrative",
+          "lyrical prose"
+        ],
+        "negative": [
+          "readers wanting escapist or hopeful SF",
+          "preference for fast action over introspection"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Butler's epistolary structure and multiple voices translate powerfully to audio performance.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Quill - A. C. Cobble": {
       "title": "Quill",
       "author": "A. C. Cobble",
       "series": "The Cartographer",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Duke Oliver Wellesley, youngest son of the king, and Samantha, a church assassin-exorcist, team up to investigate a heinous murder in a fishing hamlet that reveals dark occult rituals and sorcery thought long extinct. Their investigation pulls them across the empire and into a deeper conspiracy.",
+      "tone": "dark, adventurous, darkly sexy, Holmesian",
+      "pacing": "Fast",
+      "themes": [
+        "occult conspiracy",
+        "found partnership",
+        "empire and corruption",
+        "faith vs. arcane power"
+      ],
+      "setting": "Secondary world empire in an industrial/steampunk era, analogous to Victorian Britain with sorcery",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "Ben Aaronovitch's Rivers of London - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "buddy-cop dynamic",
+          "fast-paced mystery",
+          "steampunk fantasy blend",
+          "occult thriller",
+          "high adventure"
+        ],
+        "negative": [
+          "readers sensitive to sexual content or regressive gender portrayals",
+          "preference for deep literary character work"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Jonathan Strange & Mr Norrell - Susanna Clarke": {
@@ -105853,26 +105897,45 @@
       "author": "Susanna Clarke",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate early 19th-century England, two magicians attempt to restore practical magic to the nation — the reclusive, scholarly Mr Norrell and the dashing, daring Jonathan Strange — but their rivalry and the return of the mysterious Raven King threaten to unmake both of them.",
+      "tone": "dry, erudite, uncanny, Austenian wit with creeping dread",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "magic and knowledge",
+        "ambition and pride",
+        "English identity",
+        "folklore and the uncanny",
+        "mentorship turned rivalry"
+      ],
+      "setting": "Regency-era England (Napoleonic Wars period), with a parallel fairy otherworld",
+      "comparable_books": [
+        "Piranesi - Susanna Clarke",
+        "The Ladies of Grace Adieu - Susanna Clarke",
+        "Susanna Clarke's Piranesi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "extensive footnotes and world-building",
+          "Regency prose style",
+          "slow-burn payoff",
+          "fairy mythology"
+        ],
+        "negative": [
+          "readers wanting fast-paced plots",
+          "aversion to dense prose or footnote-heavy texts"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simon Prebble's narration is widely considered definitive — the Regency prose and dry wit are greatly enhanced by a skilled reader.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Recursion - Blake Crouch": {
@@ -105880,350 +105943,613 @@
       "author": "Blake Crouch",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "NYPD detective Barry Sutton investigates a mysterious phenomenon called False Memory Syndrome, while neuroscientist Helena Smith works on a technology to preserve memories — until it becomes clear her invention has catastrophic consequences for the timeline of reality itself.",
+      "tone": "propulsive, mind-bending, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "memory and identity",
+        "time and causality",
+        "grief",
+        "technological hubris",
+        "love across timelines"
+      ],
+      "setting": "Contemporary United States and iterative timelines; near-future",
+      "comparable_books": [
+        "Dark Matter - Blake Crouch",
+        "The First Fifteen Lives of Harry August - Claire North",
+        "Replay - Ken Grimwood"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive thriller pacing",
+          "high-concept SF",
+          "emotional stakes",
+          "time loop/memory mechanics"
+        ],
+        "negative": [
+          "readers wanting hard SF rigor",
+          "preference for literary over commercial prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast pacing and short chapters make this an ideal listening experience — the momentum carries through flawlessly in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Thorns of War - João F. Silva": {
       "title": "Thorns of War",
       "author": "João F. Silva",
       "series": "The Smokesmiths",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up after the explosive events of Seeds of War, a brief peace is shattered as ancient divine grudges reignite — Gimlore's town is threatened again, Rednow is pulled from retirement into the eye of a god-war, and Orberesis edges toward true divinity under a dangerous new master.",
+      "tone": "grimdark, action-packed, emotionally brutal",
+      "pacing": "Fast",
+      "themes": [
+        "divine power as curse or blessing",
+        "survival and sacrifice",
+        "found family under strain",
+        "addiction and cost of power"
+      ],
+      "setting": "The Known World — a gritty secondary fantasy world with smoke-based magic and monstrous creatures",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "Seeds of War - João F. Silva",
+        "Never Die - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark with heart",
+          "unique magic system",
+          "morally complex characters",
+          "high-octane action",
+          "multi-POV"
+        ],
+        "negative": [
+          "readers wanting clean or low-stakes fantasy",
+          "sensitivity to graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood Brothers Beyond - Rob J. Hayes": {
       "title": "Blood Brothers Beyond",
       "author": "Rob J. Hayes",
       "series": "The Mortal Techniques",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novella (post-Book 3)",
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Blood Subaru is dead, and his last wish is for his brothers Ichiro and Daijiro to sneak his soul into Heaven by climbing the bandit-infested, spirit-haunted Heaven's Trail — a bittersweet novella about grief, brotherhood, and letting go.",
+      "tone": "bittersweet, heartfelt, action-laced, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "grief and loss",
+        "found family",
+        "brotherhood",
+        "legacy",
+        "redemption"
+      ],
+      "setting": "The Mortal Techniques world — Asian-inspired (Japanese mythology) secondary world",
+      "comparable_books": [
+        "Never Die - Rob J. Hayes",
+        "Pawn's Gambit - Rob J. Hayes",
+        "Spirits of Vengeance - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "wuxia-inspired action",
+          "found family",
+          "emotional payoff",
+          "bittersweet tone",
+          "short punchy read"
+        ],
+        "negative": [
+          "readers wanting novel-length depth",
+          "those unfamiliar with the series may lose some context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Seeds of War - João F. Silva": {
       "title": "Seeds of War",
       "author": "João F. Silva",
       "series": "The Smokesmiths",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three morally grey protagonists — Gimlore, a single-mother crime boss and war veteran; Orberesis, a petty thief impersonating a god; and Rednow, the world's most feared aging mercenary — are caught up in a simmering war fuelled by devastating smoke magic. Winner of the FanFiAddict Best Indie Debut 2023.",
+      "tone": "grimdark, character-driven, propulsive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "power and its cost",
+        "identity and deception",
+        "survival of the outcast",
+        "addiction",
+        "war and its consequences"
+      ],
+      "setting": "The Known World — a gritty secondary fantasy world with smoke-based magic, alien creatures, and ancient secrets",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "The Blade Itself - Joe Abercrombie",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark with original magic",
+          "morally grey multi-POV",
+          "character-driven slow burn",
+          "unique magic system with addiction themes"
+        ],
+        "negative": [
+          "readers wanting lighter or heroic fantasy",
+          "preference for single-POV narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Century Blade - Rob J. Hayes": {
       "title": "The Century Blade",
       "author": "Rob J. Hayes",
       "series": "The Mortal Techniques",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (between Books 1 and 2)",
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A legendary young hero must assemble a ragtag team to stop Orochi, king of the dragons, who has ordered the destruction of humanity — the origin story of the legend referenced throughout the Mortal Techniques novels.",
+      "tone": "heroic, witty, light adventure",
+      "pacing": "Fast",
+      "themes": [
+        "legend-building",
+        "heroism",
+        "teamwork",
+        "sacrifice"
+      ],
+      "setting": "The Mortal Techniques world — Asian-inspired, Japanese mythology-flavoured secondary world",
+      "comparable_books": [
+        "Never Die - Rob J. Hayes",
+        "Pawn's Gambit - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "wuxia action",
+          "quick fun read",
+          "sampler for the Mortal Techniques world",
+          "ensemble hero team"
+        ],
+        "negative": [
+          "readers wanting novel-length depth",
+          "standalone short may feel too brief"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Spirits of Vengeance - Rob J. Hayes": {
       "title": "Spirits of Vengeance",
       "author": "Rob J. Hayes",
       "series": "The Mortal Techniques",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Immortal onmyoji Haruto, who sold his soul to the God of Death to hunt his wife's vengeful ghost, is tasked by the Imperial Throne with stopping five legendary Onryo spirits bent on releasing an ancient evil upon the Ipian Empire.",
+      "tone": "dark, emotional, action-driven, Japanese folklore-drenched",
+      "pacing": "Moderate",
+      "themes": [
+        "vengeance and its cost",
+        "grief",
+        "redemption",
+        "mortality vs. immortality",
+        "found family",
+        "spirits and humanity"
+      ],
+      "setting": "The Ipian Empire — Asian-inspired, Japanese mythology-flavoured secondary world",
+      "comparable_books": [
+        "Never Die - Rob J. Hayes",
+        "Demon Slayer (manga) - Koyoharu Gotouge",
+        "Pawn's Gambit - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "wuxia/Japanese-mythology fantasy",
+          "emotionally layered characters",
+          "kinetic action",
+          "found family",
+          "standalone entry"
+        ],
+        "negative": [
+          "readers put off by lengthy epics (500+ pages)",
+          "preference for Western medieval fantasy settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kim Bretton's narration is widely praised as an outstanding performance that elevates the series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wickwire Watch - Jacquelyn Hagen": {
       "title": "The Wickwire Watch",
       "author": "Jacquelyn Hagen",
       "series": "The Riverfall Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Street thief Inkwell Featherfield steals a magic pocket watch from a dead man and finds himself hunted by dark spirits called Spektors — rescued by a ragtag band of infamous fugitives, he must break his one golden rule and decide who to trust. Winner of the 2023 Realm Award for Best Debut Novel and SPFBO 9 Finalist.",
+      "tone": "Dickensian, cozy-to-dark tonal shift, charming with horror edges",
+      "pacing": "Moderate",
+      "themes": [
+        "trust and betrayal",
+        "found family",
+        "identity and survival",
+        "the supernatural",
+        "coming of age"
+      ],
+      "setting": "Gaslamp/Victorian-esque secondary world city of Riverfall",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Six of Crows - Leigh Bardugo",
+        "Howl's Moving Castle - Diana Wynne Jones"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "Dickensian street thief protagonist",
+          "tonal variety",
+          "cozy-to-horror blend",
+          "SPFBO pedigree"
+        ],
+        "negative": [
+          "readers wanting consistent pacing or tone throughout",
+          "aversion to genre-blending shifts"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Symphony of the Wind - Steven McKinnon": {
       "title": "Symphony of the Wind",
       "author": "Steven McKinnon",
       "series": "The Raincatcher's Ballad",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the post-war city of Dalthea, rebellious orphan Serena discovers someone wants her dead, while soldier-turned-bounty-hunter Tyson Gallows uncovers a sinister conspiracy linked to his fiancée's murder — their paths collide in a race to bring down a treasonous plot. An SPFBO 2018 finalist.",
+      "tone": "grimdark, action-packed, darkly comic, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and justice",
+        "conspiracy and corruption",
+        "identity and power",
+        "grief",
+        "political intrigue"
+      ],
+      "setting": "Dalthea — a post-steampunk, militaristic secondary world city-state with dark magic",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "Red Rising - Pierce Brown",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high-octane action",
+          "morally complex characters",
+          "grimdark with humour",
+          "multi-POV conspiracy thriller",
+          "steampunk-adjacent world"
+        ],
+        "negative": [
+          "readers wanting quieter or literary fantasy",
+          "complexity of factions may overwhelm"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Shadow Gate - L. L. MacRae": {
       "title": "The Shadow Gate",
       "author": "L. L. MacRae",
       "series": "Dragon Spirits",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fenn, corrupted by the sinister Myr and guided by dragon spirit Hassen, pursues the only thing that can restore his memories — the shadow gate — even as its opening risks destroying the world, and Calidra fights to protect those she loves as dragon spirit loyalties fracture.",
+      "tone": "dark epic, emotionally complex, adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "corruption and identity",
+        "memory and self",
+        "loyalty and sacrifice",
+        "power of spirits",
+        "found family under threat"
+      ],
+      "setting": "Tassar — a magic-drenched secondary world where dragon spirits are bound to geographic regions and human champions",
+      "comparable_books": [
+        "The Iron Crown - L. L. MacRae",
+        "Ashes of Avarin - Thiago Abdalla",
+        "Rage of Dragons - Evan Winter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon-centric fantasy",
+          "multi-POV epic",
+          "morally grey cast",
+          "rich world-building",
+          "SPFBO pedigree"
+        ],
+        "negative": [
+          "readers wanting standalone stories",
+          "preference for faster-paced books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Runelight - J. A. Andrews": {
       "title": "Runelight",
       "author": "J. A. Andrews",
       "series": "The Aenigma Lights",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Keeper Kate — a storyteller, magic-wielder, and researcher — teams up with surly elf Venn to rescue her missing brother and unlock a magical aenigma box that has haunted her for twenty years, leading them into dwarven tunnels and centuries-old conspiracies. An SPFBO X finalist.",
+      "tone": "warm, adventurous, classically epic, mysterious",
+      "pacing": "Moderate",
+      "themes": [
+        "mystery and discovery",
+        "friendship and trust",
+        "family bonds",
+        "the weight of the past",
+        "magic as knowledge"
+      ],
+      "setting": "The Keepers universe — a traditional high fantasy world with elves, dwarves, and keeper magic",
+      "comparable_books": [
+        "The Riyria Revelations - Michael J. Sullivan",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Dragon's Reach - J. A. Andrews"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy feel",
+          "puzzle-box mystery",
+          "warm character dynamics",
+          "adventure with heart",
+          "elf and dwarf worldbuilding done well"
+        ],
+        "negative": [
+          "readers wanting grimdark or subversive fantasy",
+          "chunkster length (~700 pages) may deter some"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Kate Reading, whose warm and skilled delivery is a perfect fit for Andrews' classic epic fantasy style.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fall of Erlon - Robert H. Fleming": {
       "title": "The Fall of Erlon",
       "author": "Robert H. Fleming",
       "series": "The Falling Empires Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Elisa Lannes, once heir to the Erlonian Empire, must flee the capital with the empire's last loyal soldiers as enemies converge and her father fights in exile — a Napoleonic-inspired flintlock military fantasy with divine interference and mounting supernatural stakes. An SPFBO 6 finalist.",
+      "tone": "military, sweeping, slow-building, historically-flavoured",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "empire and its fall",
+        "loyalty and duty",
+        "leadership under pressure",
+        "war and its costs",
+        "divine interference"
+      ],
+      "setting": "The Continent — a secondary world with Napoleonic-era technology (flintlock firearms, gunpowder), loosely inspired by French Revolutionary history",
+      "comparable_books": [
+        "Guns of the Dawn - Adrian Tchaikovsky",
+        "The Blade Itself - Joe Abercrombie",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock/gunpowder fantasy",
+          "Napoleonic military strategy",
+          "multi-POV epic",
+          "SPFBO pedigree"
+        ],
+        "negative": [
+          "readers wanting fast-paced or magic-heavy fantasy",
+          "aversion to many POV characters"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tales of the Sun Eater, Volume 4 - Christopher Ruocchio": {
       "title": "Tales of the Sun Eater, Volume 4",
       "author": "Christopher Ruocchio",
       "series": "Sun Eater",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Story Collection #4 (companion to main series)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Five stories from the far-future Sun Eater universe, following legendary hero Hadrian Marlowe and others through events including a father's desperate fight to save his unborn daughter, a spy's plot in Jadd, and a glimpse at humanity's empire stretched across the stars.",
+      "tone": "lyrical, epic, melancholic, literary SF",
+      "pacing": "Moderate",
+      "themes": [
+        "legacy and heroism",
+        "war and morality",
+        "humanity's place in the cosmos",
+        "sacrifice",
+        "the nature of good and evil"
+      ],
+      "setting": "The far-future Sollan Empire — a humanity spanning the stars, set against alien civilisations; across multiple planets and timelines",
+      "comparable_books": [
+        "Dune - Frank Herbert",
+        "The Book of the New Sun - Gene Wolfe",
+        "Hyperion - Dan Simmons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "epic space opera",
+          "Sun Eater series fans",
+          "philosophical depth",
+          "unreliable narrator tradition"
+        ],
+        "negative": [
+          "entry point for new readers — prior series knowledge strongly recommended",
+          "readers wanting hard SF over literary"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Ruocchio's dense, allusive prose and footnoted scholarship reward close reading; print allows re-reading of complex passages.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Iron Crown - L. L. MacRae": {
       "title": "The Iron Crown",
       "author": "L. L. MacRae",
       "series": "Dragon Spirits",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fenn wakes in a forest with no memories beyond his own name, and is reluctantly helped by Calidra, a woman fleeing her estranged family — together they discover an ancient enemy is rising again in the magic-drenched world of Tassar, threatening everything under the Iron Crown. An SPFBO 7 finalist.",
+      "tone": "epic, character-driven, atmospheric, slowly darkening",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and memory",
+        "loyalty and family",
+        "the nature of power",
+        "corruption",
+        "morally grey institutions"
+      ],
+      "setting": "Tassar — a secondary world where dragon spirits are elemental forces bonded to human champions and geographic regions",
+      "comparable_books": [
+        "The Shadow Gate - L. L. MacRae",
+        "Ashes of Avarin - Thiago Abdalla",
+        "Rage of Dragons - Evan Winter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon-centric world-building",
+          "multi-POV epic",
+          "found family",
+          "morally grey cast",
+          "SPFBO pedigree"
+        ],
+        "negative": [
+          "readers wanting action-from-page-one",
+          "preference for lean prose styles"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Oathsworn Legacy - K. R. Gangi": {
@@ -106231,107 +106557,191 @@
       "author": "K. R. Gangi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Brothers Rawley and Baelin, orphaned by monsters, grow up to become legendary monster hunters who open a school for wayward souls — but their episodic adventures gradually unravel a centuries-old conspiracy that could unmake the world. An SPFBO X finalist.",
+      "tone": "adventurous, hopeful, D&D-flavoured, emotionally earned",
+      "pacing": "Moderate",
+      "themes": [
+        "brotherhood",
+        "legacy and sacrifice",
+        "found family",
+        "good vs. evil",
+        "coming of age across a lifetime"
+      ],
+      "setting": "Centrum — a classic high fantasy secondary world with elves, dwarves, Wroughtmen, and a tyrant king",
+      "comparable_books": [
+        "The Riyria Revelations - Michael J. Sullivan",
+        "The Witcher - Andrzej Sapkowski",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy with heart",
+          "found family",
+          "episodic adventure structure",
+          "Witcher-style monster hunting",
+          "earned emotional payoff"
+        ],
+        "negative": [
+          "readers wanting grimdark or subversive fantasy",
+          "slow-starter — first half more episodic than sweeping"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "By Blood, by Salt - J. L. Odom": {
       "title": "By Blood, by Salt",
       "author": "J. L. Odom",
       "series": "Land of Exile",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Azetla, a debt soldier and pariah in the Maurowan Army, is sent on a dangerous desert mission to capture a Sahr devil — but the mission conceals a brewing imperial coup, and Azetla must choose a side or be destroyed. Winner of SPFBO X.",
+      "tone": "lyrical, slow-burn, politically tense, literary",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and belonging",
+        "power and oppression",
+        "political betrayal",
+        "outsider and exile",
+        "culture clash"
+      ],
+      "setting": "The Empire of Maurow — a Middle-Eastern-analogue desert empire with distinct cultures, jinn-devils, and military politics",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "Tigana - Guy Gavriel Kay",
+        "Transformation (Rai-Kirah) - Carol Berg"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Robin Hobb comparisons — literary, character-driven",
+          "military fantasy with nuance",
+          "rich cultural world-building",
+          "SPFBO champion pedigree",
+          "desert setting"
+        ],
+        "negative": [
+          "readers wanting fast action — this is a slow burn",
+          "preference for traditional Western fantasy settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Legacy of the Brightwash - Krystle Matar": {
       "title": "Legacy of the Brightwash",
       "author": "Krystle Matar",
       "series": "Tainted Dominion",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Tashué Blackwood, a loyal officer of the Authority in an industrial fantasy world, begins to question the system he serves when he investigates the disappearance of a tainted child — a system that strips magic-users of their rights and humanity. An SPFBO 7 finalist.",
+      "tone": "lyrical, emotionally devastating, morally complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "oppression and complicity",
+        "systemic injustice",
+        "found family",
+        "love and loyalty under pressure",
+        "moral awakening"
+      ],
+      "setting": "An industrial/gaslamp secondary world with a rigid government apparatus that controls and abuses magic-wielders",
+      "comparable_books": [
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "The City of Brass - S. A. Chakraborty",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "morally complex protagonist",
+          "found family",
+          "lyrical prose",
+          "SPFBO pedigree",
+          "romance subplot woven in"
+        ],
+        "negative": [
+          "readers wanting action-heavy plots",
+          "aversion to slow-building political narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A King in Waiting - Michael Cronk": {
       "title": "A King in Waiting",
       "author": "Michael Cronk",
       "series": "The Immortal Investigations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jason Turner's investigation takes him deeper into the hidden world of immortal vampire houses, wizards, and supernatural political intrigue when a hooded witch arrives on his doorstep begging for help — with a deadly assassin close behind. Concludes the first trilogy arc of the Immortal Investigations.",
+      "tone": "light urban fantasy, mystery-driven, accessible, romantic undertones",
+      "pacing": "Moderate",
+      "themes": [
+        "mortal among immortals",
+        "justice and investigation",
+        "loyalty and courage",
+        "the supernatural world beneath ours",
+        "identity and belonging"
+      ],
+      "setting": "Contemporary England with a hidden Immortal Imperium of vampire houses, wizards, and mythological beings",
+      "comparable_books": [
+        "Rivers of London - Ben Aaronovitch",
+        "The Dresden Files - Jim Butcher",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy urban fantasy",
+          "mystery-investigation structure",
+          "accessible and easy-reading",
+          "vampires and mythology blend",
+          "found family dynamics"
+        ],
+        "negative": [
+          "readers wanting grimdark or heavy literary fantasy",
+          "those sensitive to progressive social commentary woven into narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Mirage in the Memory - Simon Tull": {
