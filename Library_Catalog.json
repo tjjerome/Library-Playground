@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3515,
-  "total_pending": 1085,
+  "total_catalogued": 3535,
+  "total_pending": 1065,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -194030,27 +194030,48 @@
       "title": "Cold Clay",
       "author": "Juneau Black",
       "series": "Shady Hollow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a rabbit unearths the bones of a moose at Cold Clay Orchards in autumn, reporter Vera Vixen sets out to prove the local coffeeshop owner innocent of murdering his long-missing wife. Digging into buried secrets, Vera finds Shady Hollow's past is more dangerous than its cosy woodland charm suggests.",
+      "tone": "whimsical, cosy, gently sinister",
+      "pacing": "Moderate",
+      "themes": [
+        "community secrets",
+        "cold cases",
+        "justice",
+        "small-town life",
+        "anthropomorphism"
+      ],
+      "setting": "Shady Hollow — an autumnal woodland village populated by anthropomorphic animals, contemporary cosy-fantasy register",
+      "comparable_books": [
+        "Shady Hollow - Juneau Black",
+        "Three Bags Full - Leonie Swann",
+        "The Flavia de Luce series - Alan Bradley",
+        "Mrs. Murphy mysteries - Rita Mae Brown"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mystery fans",
+          "anthropomorphic animal fiction",
+          "light village-mystery atmosphere",
+          "whimsical world-building",
+          "fast reads"
+        ],
+        "negative": [
+          "dark or grimdark fantasy",
+          "readers wanting hard-boiled crime",
+          "those who dislike predictable mysteries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Cassandra Campbell; the charming animal voices and cosy tone translate beautifully to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "At Night All Blood Is Black - David Diop": {
@@ -194058,107 +194079,200 @@
       "author": "David Diop",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Senegalese soldier fighting for France in WWI descends into a savage madness after his closest friend is killed in the trenches, committing increasingly horrific acts of violence that blur the line between heroism and monstrosity. The novel is a haunting, trance-like meditation on war, brotherhood, and colonial sacrifice.",
+      "tone": "hypnotic, brutal, dreamlike, tragic",
+      "pacing": "Fast",
+      "themes": [
+        "war and trauma",
+        "colonialism",
+        "brotherhood",
+        "madness",
+        "sacrifice",
+        "identity"
+      ],
+      "setting": "WWI trenches on the Western Front and West Africa, early 20th century",
+      "comparable_books": [
+        "All Quiet on the Western Front - Erich Maria Remarque",
+        "The Things They Carried - Tim O'Brien",
+        "Slaughterhouse-Five - Kurt Vonnegut",
+        "Season of Migration to the North - Tayeb Salih"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of war literature",
+          "short intense reads",
+          "lyrical prose",
+          "translated fiction",
+          "anti-war themes",
+          "unreliable narrators"
+        ],
+        "negative": [
+          "graphic violence averse",
+          "readers wanting conventional plot structure",
+          "those who prefer uplifting fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Among the Burning Flowers - Samantha Shannon": {
       "title": "Among the Burning Flowers",
       "author": "Samantha Shannon",
       "series": "The Roots of Chaos",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.2 (prequel novella)",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set just before the events of The Priory of the Orange Tree, this illustrated novella follows three characters — a captive princess, her reformist betrothed, and a dragon-hunter — as the awakened wyrm Fýredel brings the kingdom of Yscalin to its knees. A story of resilience, faith, and the human cost of draconic conquest.",
+      "tone": "lyrical, elegiac, intimate, slow-burn",
+      "pacing": "Moderate",
+      "themes": [
+        "resilience",
+        "political intrigue",
+        "colonisation by dragon-kind",
+        "faith and ideology",
+        "sacrifice",
+        "female agency"
+      ],
+      "setting": "The kingdom of Yscalin in Shannon's Roots of Chaos world — a secondary fantasy world with dragon lore, steampunk undertones, and rich mythology",
+      "comparable_books": [
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "A Day of Fallen Night - Samantha Shannon",
+        "The Curse of Chalion - Lois McMaster Bujold",
+        "Spinning Silver - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of Priory of the Orange Tree",
+          "dragon fiction",
+          "lyrical world-building",
+          "queer-inclusive fantasy",
+          "entry points to big series"
+        ],
+        "negative": [
+          "readers wanting epic scope and length",
+          "those who dislike novella formats",
+          "series newcomers who find deep lore front-loaded"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Books of the South - Glen Cook": {
       "title": "The Books of the South",
       "author": "Glen Cook",
       "series": "Chronicles of The Black Company",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Omnibus 2 (contains Shadow Games, Dreams of Steel, and The Silver Spike)",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An omnibus collecting three novels: Shadow Games and Dreams of Steel follow the Black Company as they march south toward the mysterious homeland of Khatovar, battling the powerful Shadowmasters, while The Silver Spike follows a separate band of former Company members left behind in the north. Gritty, morally complex military fantasy told through the Company's annals.",
+      "tone": "grimdark, terse, propulsive, bleak",
+      "pacing": "Fast",
+      "themes": [
+        "war and brotherhood",
+        "loyalty and mercenary ethics",
+        "destiny and mythology",
+        "survival",
+        "morally grey conflict"
+      ],
+      "setting": "A secondary world — marching south from the Tower of Charm through unfamiliar continents toward Khatovar; the north also revisited in The Silver Spike; epic scope spanning years",
+      "comparable_books": [
+        "The First Law trilogy - Joe Abercrombie",
+        "Malazan Book of the Fallen - Steven Erikson",
+        "Prince of Thorns - Mark Lawrence",
+        "The Deed of Paksenarrion - Elizabeth Moon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "military fantasy lovers",
+          "morally grey protagonists",
+          "terse prose style",
+          "ensemble casts"
+        ],
+        "negative": [
+          "readers wanting heroic fantasy",
+          "those disliking bleak or cynical tones",
+          "readers new to the series (this is omnibus 2)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Goblin Emperor - Katherine Addison": {
       "title": "The Goblin Emperor",
       "author": "Katherine Addison",
       "series": "The Chronicles of Osreth",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Maia, the half-goblin youngest son of the Elven emperor, is unexpectedly thrust onto the throne after his father and brothers are killed in an airship crash. Entirely unprepared for court politics and surrounded by potential enemies, Maia must learn to rule with kindness and wisdom while uncovering who murdered his family.",
+      "tone": "warm, hopepunk, introspective, gentle",
+      "pacing": "Moderate",
+      "themes": [
+        "kindness and empathy in leadership",
+        "found family",
+        "racial prejudice",
+        "political intrigue",
+        "identity and belonging",
+        "coming of age"
+      ],
+      "setting": "The Elflands — a secondary world blending high fantasy with steampunk elements (airships, clockwork guilds), elaborate court culture",
+      "comparable_books": [
+        "A Memory Called Empire - Arkady Martine",
+        "The Queen's Thief series - Megan Whalen Turner",
+        "Piranesi - Susanna Clarke",
+        "The House in the Cerulean Sea - TJ Klune"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hopepunk readers",
+          "fans of kind protagonists",
+          "political intrigue without cynicism",
+          "cosy-adjacent fantasy",
+          "found family",
+          "steampunk elements"
+        ],
+        "negative": [
+          "grimdark fans",
+          "readers wanting action-heavy plots",
+          "those disliking dense invented naming conventions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Kyle McCarley to wide acclaim; the intimate first-person tone and emotional depth are greatly enhanced by audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Born to Run - Bruce Springsteen": {
@@ -194166,26 +194280,47 @@
       "author": "Bruce Springsteen",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bruce Springsteen's candid autobiography traces his working-class New Jersey childhood, his long road to rock stardom with the E Street Band, his struggles with depression, and his lifelong obsession with music as salvation. A deeply personal and literary account of American life and artistic ambition.",
+      "tone": "lyrical, confessional, reflective, American mythic",
+      "pacing": "Moderate",
+      "themes": [
+        "American working-class identity",
+        "music and identity",
+        "mental health",
+        "family and father-son conflict",
+        "fame and artistic ambition",
+        "New Jersey"
+      ],
+      "setting": "Freehold, New Jersey through the USA and worldwide; 1950s to 2010s",
+      "comparable_books": [
+        "The Storyteller - Dave Grohl",
+        "Just Kids - Patti Smith",
+        "Scar Tissue - Anthony Kiedis",
+        "Chronicles Vol. 1 - Bob Dylan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rock music fans",
+          "Springsteen devotees",
+          "literary memoir lovers",
+          "working-class American narrative fans",
+          "music history readers"
+        ],
+        "negative": [
+          "readers with no interest in rock music or celebrity memoir",
+          "those wanting light or fast reads"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Springsteen himself in his distinctive voice; widely considered one of the finest celebrity audiobooks.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dangerous Visions - Harlan Ellison": {
@@ -194193,80 +194328,153 @@
       "author": "Harlan Ellison",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A landmark 1967 anthology edited by Harlan Ellison collecting 33 original science fiction stories from the era's foremost authors — including Samuel R. Delany, Philip K. Dick, and Fritz Leiber — each deliberately pushing the boundaries of what the genre could explore in terms of politics, sex, religion, and morality.",
+      "tone": "provocative, boundary-pushing, visionary, varied",
+      "pacing": "Moderate",
+      "themes": [
+        "social transgression",
+        "political and religious satire",
+        "sexuality",
+        "humanity's future",
+        "the limits of speculative fiction",
+        "counter-culture"
+      ],
+      "setting": "Anthology — varied settings across multiple speculative futures and alternate realities",
+      "comparable_books": [
+        "Again, Dangerous Visions - Harlan Ellison",
+        "The Hugo Winners - Isaac Asimov",
+        "Orbit anthology series - Damon Knight",
+        "New Wave science fiction anthologies"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "SF history enthusiasts",
+          "short story fans",
+          "New Wave SF readers",
+          "readers interested in genre-defining moments",
+          "Philip K. Dick fans"
+        ],
+        "negative": [
+          "readers wanting a single cohesive narrative",
+          "those who dislike dated 1960s sensibilities",
+          "readers sensitive to taboo content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Woodworm - Layla Martinez": {
       "title": "Woodworm",
-      "author": "Layla Martinez",
+      "author": "Layla Martínez",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told in alternating voices by a grandmother and granddaughter living in a cursed house in rural Spain, Woodworm is a gothic horror novella about generations of women ground down by patriarchal violence, class exploitation, and the Spanish Civil War's legacy — and the house that protects them as much as it imprisons them. A short, searing meditation on inherited rage and feminist revenge.",
+      "tone": "gothic, claustrophobic, ferociously angry, unsettling",
+      "pacing": "Fast",
+      "themes": [
+        "generational trauma",
+        "class and poverty",
+        "patriarchal violence",
+        "female rage and revenge",
+        "haunted houses",
+        "Franco-era Spain",
+        "inherited guilt"
+      ],
+      "setting": "A cursed family home in an unnamed village in 20th-century Spain; spanning the Franco era to the present",
+      "comparable_books": [
+        "We Have Always Lived in the Castle - Shirley Jackson",
+        "Tender Is the Flesh - Agustina Bazterrica",
+        "Hurricane Season - Fernanda Melchor",
+        "Follow Me to Ground - Sue Rainsford"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist horror fans",
+          "literary horror readers",
+          "gothic fiction lovers",
+          "translated fiction enthusiasts",
+          "short intense reads",
+          "Shirley Jackson fans"
+        ],
+        "negative": [
+          "readers sensitive to domestic violence or sexual exploitation",
+          "those wanting conventional horror plots",
+          "readers who dislike ambiguous endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Words of Radiance - Brandon Sanderson": {
       "title": "Words of Radiance",
       "author": "Brandon Sanderson",
       "series": "The Stormlight Archive",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up after The Way of Kings, the Knights Radiant begin to re-emerge across Roshar as Shallan Davar journeys to the Shattered Plains and Kaladin grapples with his growing Radiant powers amid a looming Desolation. A vast, structurally intricate epic with multiple converging storylines and world-shattering revelations.",
+      "tone": "propulsive, epic, intricate, emotionally intense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "oaths and ideals",
+        "trauma and healing",
+        "destiny and choice",
+        "political power",
+        "war",
+        "magic systems and Cosmere lore"
+      ],
+      "setting": "Roshar — a storm-battered secondary world with unique ecology, magic, and history; primarily the Shattered Plains and Kharbranth",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "Oathbringer - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Wheel of Time - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy fans",
+          "Sanderson/Cosmere devotees",
+          "readers who love intricate magic systems",
+          "doorstop fantasy lovers",
+          "character-arc payoffs"
+        ],
+        "negative": [
+          "readers wanting concise plots",
+          "those new to Sanderson (requires Book 1 first)",
+          "readers who dislike slow-build pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Michael Kramer and Kate Reading; the dual narrators and production quality make this an outstanding listen at ~48 hours.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Underland - Robert Macfarlane": {
@@ -194274,26 +194482,48 @@
       "author": "Robert Macfarlane",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nature Writing / Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Robert Macfarlane descends into the hidden worlds beneath our feet — glaciers, catacombs, cave systems, nuclear waste repositories, and mycorrhizal networks — to explore what lies underground and what it reveals about time, memory, and the future of the planet. A lyrical, science-infused meditation on the subterranean.",
+      "tone": "lyrical, contemplative, awe-struck, occasionally eerie",
+      "pacing": "Slow",
+      "themes": [
+        "deep time",
+        "environmental crisis and geology",
+        "memory and mortality",
+        "the Anthropocene",
+        "darkness and the hidden",
+        "mycology and interconnection"
+      ],
+      "setting": "Global subterranean locations — from English limestone caves and Parisian catacombs to Finnish nuclear bunkers and Greenland ice caves",
+      "comparable_books": [
+        "The Wild Places - Robert Macfarlane",
+        "Entangled Life - Merlin Sheldrake",
+        "The Overstory - Richard Powers",
+        "H is for Hawk - Helen Macdonald"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "nature writing enthusiasts",
+          "fans of lyrical non-fiction",
+          "environmental and geological interest",
+          "deep-time and Anthropocene readers",
+          "Robert Macfarlane fans"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "those preferring fiction",
+          "science readers wanting data-heavy non-fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fahrenheit-182: A Memoir - Mark Hoppus & Dan Ozzi": {
@@ -194301,26 +194531,47 @@
       "author": "Mark Hoppus & Dan Ozzi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mark Hoppus, co-founder and bassist of blink-182, chronicles his life from a latchkey kid in the California desert through the band's chaotic rise to pop-punk superstardom, band breakups, and his very public battle with cancer. Written with music journalist Dan Ozzi, the memoir is funny, raw, and unexpectedly moving.",
+      "tone": "funny, self-deprecating, candid, heartfelt",
+      "pacing": "Fast",
+      "themes": [
+        "music and identity",
+        "mental health and illness",
+        "friendship and creative partnership",
+        "fame",
+        "mortality",
+        "coming of age"
+      ],
+      "setting": "California, USA, and worldwide; 1970s–2020s",
+      "comparable_books": [
+        "The Storyteller - Dave Grohl",
+        "Scar Tissue - Anthony Kiedis",
+        "Punk: A Glasgow Memoir - various",
+        "Just Kids - Patti Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "blink-182 fans",
+          "pop-punk music enthusiasts",
+          "celebrity memoir readers",
+          "readers who enjoy humour in non-fiction",
+          "cancer survival narratives"
+        ],
+        "negative": [
+          "readers with no interest in pop-punk or the band",
+          "those seeking literary memoir craft over fan appeal"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Hoppus himself in a droll, intimate style; widely praised as an outstanding celebrity audiobook experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Unworthy - Agustina Bazterrica": {
@@ -194328,26 +194579,51 @@
       "author": "Agustina Bazterrica",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-apocalyptic world devastated by climate catastrophe, an unnamed woman shelters in a brutal, authoritarian religious convent called the House of the Sacred Sisterhood, writing her story in secret as a diary. When a newcomer arrives, the narrator is forced to confront her buried past and the true nature of the order around her.",
+      "tone": "feverish, claustrophobic, unflinching, feminist horror",
+      "pacing": "Moderate",
+      "themes": [
+        "religious extremism and cults",
+        "patriarchal control",
+        "climate catastrophe",
+        "female solidarity and competition",
+        "bodily autonomy",
+        "survival"
+      ],
+      "setting": "A post-apocalyptic convent somewhere in a future where cities are submerged and civilization has collapsed; inspired by Argentina",
+      "comparable_books": [
+        "The Handmaid's Tale - Margaret Atwood",
+        "Tender Is the Flesh - Agustina Bazterrica",
+        "The Name of the Rose - Umberto Eco",
+        "The Sparrow - Mary Doria Russell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist horror fans",
+          "dystopian fiction readers",
+          "Bazterrica fans",
+          "readers who loved Tender Is the Flesh",
+          "short intense literary horror"
+        ],
+        "negative": [
+          "readers sensitive to graphic violence or body horror",
+          "those wanting hope or resolution",
+          "averse to religious horror content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Whisper Man - Alex North": {
@@ -194355,107 +194631,198 @@
       "author": "Alex North",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a family tragedy, a father and his young son move to the small town of Featherbank to start over — not knowing it was once the hunting ground of a notorious child killer who may now have a copycat. Two timelines and a detective's investigation interweave in this atmospheric, emotionally resonant psychological thriller.",
+      "tone": "atmospheric, tense, emotionally raw, dark",
+      "pacing": "Moderate",
+      "themes": [
+        "grief and trauma",
+        "fatherhood",
+        "childhood fear",
+        "serial killers",
+        "small-town secrets",
+        "the cycle of trauma"
+      ],
+      "setting": "Featherbank, a fictional English village; contemporary",
+      "comparable_books": [
+        "The Silent Patient - Alex Michaelides",
+        "I Am Pilgrim - Terry Hayes",
+        "The Woman in the Window - A.J. Finn",
+        "The Troop - Nick Cutter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological thriller fans",
+          "crime fiction readers",
+          "dual-timeline narratives",
+          "emotionally-driven crime fiction",
+          "UK-set thrillers"
+        ],
+        "negative": [
+          "readers sensitive to child endangerment",
+          "those wanting action-heavy plots",
+          "readers preferring hard-boiled crime"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "To Shape a Dragon's Breath - Moniquill Blackgoose": {
       "title": "To Shape a Dragon's Breath",
       "author": "Moniquill Blackgoose",
       "series": "Nampeshiweisit",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fifteen-year-old Anequs, an Indigenous girl from the island of Masquapaug, bonds with a newly hatched dragon and is forced to enrol in a coloniser-run dragon academy on the mainland — where almost no one wants her there. A coming-of-age story that uses the dragon-rider academy genre to explore colonialism, cultural survival, and resistance.",
+      "tone": "warm, politically sharp, coming-of-age, occasionally steampunk-adjacent",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "colonialism and cultural survival",
+        "Indigenous identity",
+        "education as assimilation",
+        "resistance",
+        "dragon-bonding",
+        "community and storytelling"
+      ],
+      "setting": "An alternate North America (Anglish-colonised fantasy world inspired by Norse/colonial history) with a steampunk aesthetic; primarily a dragon academy on the mainland",
+      "comparable_books": [
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "Fireborne - Rosaria Munda",
+        "Dragonflight - Anne McCaffrey",
+        "A Deadly Education - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon fiction fans",
+          "school/academy fantasy readers",
+          "own-voices Indigenous fantasy",
+          "anti-colonial fantasy",
+          "queer-inclusive fiction",
+          "character-driven fantasy"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "those expecting a traditional dragon-rider adventure without political themes",
+          "readers sensitive to racism and colonial violence (depicted on the page)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Robots of Dawn - Isaac Asimov": {
       "title": "The Robots of Dawn",
       "author": "Isaac Asimov",
       "series": "The Robot Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Earth detective Elijah Baley is dispatched to the Spacer world Aurora to investigate the apparent murder — or 'roboticide' — of a humanoid robot, teaming once again with his robot partner R. Daneel Olivaw in a politically charged mystery that probes the future relationship between humans and robots.",
+      "tone": "cerebral, measured, philosophically rich",
+      "pacing": "Slow",
+      "themes": [
+        "humanity vs. robotics",
+        "sexuality and society",
+        "political tension between Earth and Spacer worlds",
+        "the nature of intelligence",
+        "detective logic"
+      ],
+      "setting": "Aurora — one of the Spacer worlds, a distant future of advanced civilisation and extreme robot dependence",
+      "comparable_books": [
+        "The Caves of Steel - Isaac Asimov",
+        "The Naked Sun - Isaac Asimov",
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick",
+        "Foundation series - Isaac Asimov"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic SF fans",
+          "Asimov devotees",
+          "murder mystery in SF settings",
+          "readers interested in AI and robot philosophy",
+          "puzzle-driven narratives"
+        ],
+        "negative": [
+          "readers wanting action-heavy SF",
+          "those deterred by dated prose or gender attitudes",
+          "readers new to the Robot series (best read after Books 1–2)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Righteous - David Wragg": {
       "title": "The Righteous",
       "author": "David Wragg",
       "series": "Articles of Faith",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up immediately after The Black Hawks, Vedren Chel and the dysfunctional mercenaries of the Black Hawk Company are imprisoned and facing execution after a failed rebellion — until a desperate escape sends them careening across kingdoms in a riotous, chaotic quest to topple a tyrant and secure a prince's throne.",
+      "tone": "darkly comic, propulsive, profane, swaggering",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "duty vs. self-interest",
+        "rebellion and honour",
+        "what it means to do the right thing",
+        "comradeship"
+      ],
+      "setting": "A secondary fantasy world without magic — frozen wastes, opulent cities, drug-riddled slums, and opulent palaces; low fantasy register",
+      "comparable_books": [
+        "Kings of the Wyld - Nicholas Eames",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Priest of Bones - Peter McLean",
+        "The Black Hawks - David Wragg"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family fans",
+          "comedic fantasy readers",
+          "mercenary ensemble stories",
+          "fans of Abercrombie-lite tone",
+          "series finales"
+        ],
+        "negative": [
+          "readers wanting magic-heavy fantasy",
+          "those who dislike profanity",
+          "readers who haven't read Book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Righteous Mind - Jonathan Haidt": {
@@ -194463,53 +194830,94 @@
       "author": "Jonathan Haidt",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Moral psychologist Jonathan Haidt argues that human moral judgements are driven primarily by intuition rather than reason, drawing on Moral Foundations Theory to explain why people across the political spectrum hold such irreconcilably different values — and why this is rooted in evolution and culture rather than ignorance.",
+      "tone": "intellectually engaging, accessible, provocative",
+      "pacing": "Moderate",
+      "themes": [
+        "moral psychology",
+        "political polarisation",
+        "intuition vs. reason",
+        "religion and community",
+        "evolutionary basis of morality",
+        "liberal vs. conservative values"
+      ],
+      "setting": "Non-fiction — draws on psychology experiments, anthropological research, and US political culture",
+      "comparable_books": [
+        "Thinking, Fast and Slow - Daniel Kahneman",
+        "The Coddling of the American Mind - Jonathan Haidt & Greg Lukianoff",
+        "Behave - Robert Sapolsky",
+        "Sapiens - Yuval Noah Harari"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychology and social science readers",
+          "politically curious readers",
+          "fans of accessible academic non-fiction",
+          "readers interested in polarisation and tribal behaviour"
+        ],
+        "negative": [
+          "readers wanting purely political commentary",
+          "those who dislike evolutionary psychology frameworks",
+          "readers looking for fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Naked Sun - Isaac Asimov": {
       "title": "The Naked Sun",
       "author": "Isaac Asimov",
       "series": "The Robot Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Earth detective Elijah Baley travels to the Spacer world of Solaria — a planet of radical isolation where humans never physically meet — to solve a murder that could only have been committed by a human in a society where robots do everything. A clever mystery that uses SF to probe the extremes of misanthropy and human connection.",
+      "tone": "cerebral, cool, philosophically unsettling",
+      "pacing": "Moderate",
+      "themes": [
+        "isolation and society",
+        "human dependency on robots",
+        "the nature of community",
+        "detective logic",
+        "Spacer vs. Earth civilisation"
+      ],
+      "setting": "Solaria — a Spacer world of vast estates, extreme solitude, and pervasive robot servitude; a far-future Earth also depicted",
+      "comparable_books": [
+        "The Caves of Steel - Isaac Asimov",
+        "The Robots of Dawn - Isaac Asimov",
+        "I, Robot - Isaac Asimov",
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic SF fans",
+          "Asimov readers",
+          "SF mystery crossover readers",
+          "fans of AI and societal extrapolation"
+        ],
+        "negative": [
+          "readers wanting action-driven SF",
+          "those put off by dated prose conventions",
+          "readers new to the Robot series (Book 1 recommended first)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Storyteller: Tales of Life and Music - Dave Grohl": {
@@ -194517,26 +194925,48 @@
       "author": "Dave Grohl",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Foo Fighters frontman and former Nirvana drummer Dave Grohl tells his life story in a series of vivid, warmly written vignettes — from his suburban Virginia childhood through Nirvana's explosive rise, Kurt Cobain's death, and the founding and global success of the Foo Fighters. Enthusiastic, generous, and genuinely funny.",
+      "tone": "warm, enthusiastic, funny, occasionally emotional",
+      "pacing": "Fast",
+      "themes": [
+        "music and friendship",
+        "grief and loss",
+        "rock culture",
+        "fatherhood",
+        "creative persistence",
+        "community and generosity"
+      ],
+      "setting": "Virginia, Seattle, worldwide; 1970s–2010s rock music scene",
+      "comparable_books": [
+        "Born to Run - Bruce Springsteen",
+        "Fahrenheit-182 - Mark Hoppus & Dan Ozzi",
+        "Just Kids - Patti Smith",
+        "Scar Tissue - Anthony Kiedis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rock music fans",
+          "Nirvana and Foo Fighters fans",
+          "memoir readers",
+          "readers who enjoy enthusiastic voices",
+          "music history enthusiasts"
+        ],
+        "negative": [
+          "readers with no interest in rock music",
+          "those wanting deep literary introspection",
+          "readers expecting a conventional linear biography"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Grohl himself with enormous warmth and comedic timing; one of the most acclaimed celebrity audiobooks in recent years.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dogs of War - Frederick Forsyth": {
@@ -194544,26 +194974,49 @@
       "author": "Frederick Forsyth",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A ruthless British mining tycoon discovers a platinum deposit in a tiny West African nation and hires mercenary leader Cat Shannon to mount a coup and install a puppet government. A meticulously researched procedural thriller that reads as a near-operational manual for mounting a mercenary takeover.",
+      "tone": "cold, procedural, morally ambiguous, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "mercenary ethics and loyalty",
+        "corporate greed and neo-colonialism",
+        "Cold War geopolitics",
+        "African post-colonial politics",
+        "professionalism and war"
+      ],
+      "setting": "London, Hamburg, West Africa (fictional state of Zangaro), and various European cities; early 1970s",
+      "comparable_books": [
+        "The Day of the Jackal - Frederick Forsyth",
+        "The Odessa File - Frederick Forsyth",
+        "The Fourth Protocol - Frederick Forsyth",
+        "Congo - Michael Crichton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Forsyth fans",
+          "political thriller readers",
+          "procedural detail enthusiasts",
+          "Cold War fiction readers",
+          "mercenary fiction lovers"
+        ],
+        "negative": [
+          "readers wanting character-driven fiction",
+          "those sensitive to colonial Africa portrayal",
+          "readers who dislike dated gender politics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Worlds Enough & Time - Dan Simmons": {
