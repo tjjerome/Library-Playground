@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3304,
-  "total_pending": 1296,
+  "total_catalogued": 3324,
+  "total_pending": 1276,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -184489,243 +184489,450 @@
       "title": "Dread Knight",
       "author": "Andrew D. Meredith",
       "series": "Kallattian Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The conclusion to the first arc of the Kallattian Saga, in which sibling mercenaries the Clouws must decide whether to unlock a legendary and dangerous armored relic, while a paladin grapples with his faith and a young woman of dark lineage carves her own path through a world on the brink of war.",
+      "tone": "epic, contemplative, faith-driven, lyrical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith vs. doubt",
+        "duty and sacrifice",
+        "darkness rising",
+        "identity and purpose",
+        "good vs. corruption"
+      ],
+      "setting": "The fantasy world of Kallattai — medieval-inspired secondary world with paladins, mercenaries, and gods",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "The Lord of the Rings - J.R.R. Tolkien",
+        "The Traitor Baru Cormorant - Seth Dickinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tolkienesque worldbuilding",
+          "faith and theology as themes",
+          "multi-POV epic fantasy",
+          "lyrical prose",
+          "slow-burn epic",
+          "morally complex characters"
+        ],
+        "negative": [
+          "fast-paced action readers",
+          "magic-system-focused fantasy",
+          "readers who dislike religious themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Deathless Beast - Andrew D. Meredith": {
       "title": "Deathless Beast",
       "author": "Andrew D. Meredith",
       "series": "Kallattian Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two mercenary siblings hit the road seeking respect and coin after being betrayed by colleagues, while a paladin is called to deeper faith amid heresy in his holy order, and a simple guard stumbles upon a mysterious seed pod linked to a stirring darkness invisible even to the gods.",
+      "tone": "lyrical, contemplative, epic, warmly character-driven",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and personal devotion",
+        "finding one's place in the world",
+        "corruption within institutions",
+        "darkness and hidden evil",
+        "duty vs. individual desire"
+      ],
+      "setting": "The secondary world of Kallattai — a richly detailed medieval-inspired realm of paladins, mercenaries, and competing religious orders",
+      "comparable_books": [
+        "The Lord of the Rings - J.R.R. Tolkien",
+        "The Way of Kings - Brandon Sanderson",
+        "In Search of Lost Time - Marcel Proust (prose comparison)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "immersive Tolkienesque worldbuilding",
+          "slice-of-life epic fantasy",
+          "religious and theological depth",
+          "multi-POV ensemble cast",
+          "classic epic fantasy feel",
+          "lyrical prose"
+        ],
+        "negative": [
+          "fast-paced action fantasy",
+          "readers who dislike slow openings",
+          "magic-system-heavy fantasy",
+          "grimdark readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Silver Spines - Jaime Castle & Andy Peloquin": {
       "title": "Silver Spines",
       "author": "Jaime Castle & Andy Peloquin",
       "series": "Dragonblood Assassin",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "War erupts around the city of Dimvein as ancient enemies — Blood Clan pirates, the savage Hudar Horde, and the long-lost Vandil mages — converge to destroy the Empire, forcing assassin Kullen and rebel Natisse to fight together to preserve everything they have built.",
+      "tone": "propulsive, action-packed, darkly adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and alliance",
+        "enemies to lovers",
+        "war and sacrifice",
+        "power and political intrigue",
+        "found family"
+      ],
+      "setting": "The city of Dimvein and surrounding Empire — a secondary world fantasy setting with dragon-bonded warriors and political scheming",
+      "comparable_books": [
+        "Black Talon - Jaime Castle & Andy Peloquin",
+        "The Way of Kings - Brandon Sanderson",
+        "Brent Weeks - The Way of Shadows"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon-bonded protagonists",
+          "action-packed military fantasy",
+          "enemies-to-lovers romance thread",
+          "found family",
+          "propulsive pacing",
+          "dual POV"
+        ],
+        "negative": [
+          "slow-burn fantasy readers",
+          "readers seeking literary prose",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Michael Kramer and Kate Reading — a celebrated duo from the Wheel of Time series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Golden Flames - Jaime Castle & Andy Peloquin": {
       "title": "Golden Flames",
       "author": "Jaime Castle & Andy Peloquin",
       "series": "Dragonblood Assassin",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the explosive series finale, Natisse fights on believing Kullen is dead while he struggles back from mortal wounds, and together — alongside their bonded dragons — they must unite Dimvein against a power older and more terrifying than anything they have faced before.",
+      "tone": "propulsive, emotionally charged, action-saturated",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and survival",
+        "unity against overwhelming odds",
+        "enemies to lovers",
+        "loyalty",
+        "found family"
+      ],
+      "setting": "The besieged city of Dimvein and surrounding Empire — secondary world fantasy with ancient magic and dragon warfare",
+      "comparable_books": [
+        "Silver Spines - Jaime Castle & Andy Peloquin",
+        "Red Claw - Jaime Castle & Andy Peloquin",
+        "Age of Myth - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusions with high stakes",
+          "dragon battles",
+          "enemies-to-lovers payoff",
+          "action-heavy fantasy",
+          "propulsive pacing",
+          "satisfying endings"
+        ],
+        "negative": [
+          "slow-burn readers",
+          "standalone preference",
+          "literary fiction readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Michael Kramer and Kate Reading — celebrated Wheel of Time narrators.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Red Claw - Jaime Castle & Andy Peloquin": {
       "title": "Red Claw",
       "author": "Jaime Castle & Andy Peloquin",
       "series": "Dragonblood Assassin",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Powerful dragonblood vials have been stolen and a shadowy figure known only as Red Claw moves to undermine the Emperor, forcing assassin Kullen and rebel Natisse into an uneasy alliance as they hunt the kidnapped Prince and discover secrets threatening to destroy the Empire.",
+      "tone": "propulsive, darkly adventurous, action-heavy",
+      "pacing": "Fast",
+      "themes": [
+        "trust and betrayal",
+        "enemies to lovers",
+        "political conspiracy",
+        "power and loyalty",
+        "identity"
+      ],
+      "setting": "The city of Dimvein and the broader Empire — secondary world fantasy with dragon-bonding magic and court intrigue",
+      "comparable_books": [
+        "Black Talon - Jaime Castle & Andy Peloquin",
+        "Silver Spines - Jaime Castle & Andy Peloquin",
+        "The Way of Shadows - Brent Weeks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "assassin protagonists",
+          "dragon-bonded characters",
+          "action-packed plots",
+          "enemies-to-lovers dynamic",
+          "political intrigue",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "slow-burn fantasy readers",
+          "readers seeking literary prose",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Michael Kramer and Kate Reading.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Grim Solace - Ben Galley": {
       "title": "Grim Solace",
       "author": "Ben Galley",
       "series": "The Chasing Graves Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ghost-slave Caltro Basalt is torn between competing factions who all want to exploit his locksmith skills, while Nilith continues her brutal desert crossing and crime boss Temsa rises ever higher through Araxes' bloody nobility — all converging toward a shattering cliffhanger.",
+      "tone": "grimdark, darkly comic, grim, politically sharp",
+      "pacing": "Moderate",
+      "themes": [
+        "slavery and freedom",
+        "power and corruption",
+        "survival",
+        "identity under oppression",
+        "political machination"
+      ],
+      "setting": "The city of Araxes and the Dune Plains — an Egyptian-mythology-inspired fantasy world where ghosts are enslaved as currency",
+      "comparable_books": [
+        "Chasing Graves - Ben Galley",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "darkly comic tone",
+          "Egyptian-inspired setting",
+          "ghost slavery worldbuilding",
+          "multi-POV political intrigue",
+          "morally grey characters"
+        ],
+        "negative": [
+          "readers wanting heroic fantasy",
+          "readers who dislike bleak settings",
+          "romance-heavy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Breaking Chaos - Ben Galley": {
       "title": "Breaking Chaos",
       "author": "Ben Galley",
       "series": "The Chasing Graves Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the explosive finale to the Chasing Graves Trilogy, Caltro's bid for freedom collides with Temsa's reign of murder, Nilith's long-awaited arrival in Araxes, and a catastrophic omen — the River Nyx is drying up — that threatens the living and the dead alike.",
+      "tone": "grimdark, intense, darkly comic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "freedom vs. oppression",
+        "sacrifice",
+        "power and consequence",
+        "survival",
+        "the cost of choices"
+      ],
+      "setting": "The city of Araxes and surrounding Arctian Empire — Egyptian-mythology-inspired fantasy world where dead souls are enslaved",
+      "comparable_books": [
+        "Grim Solace - Ben Galley",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Best Served Cold - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark series finales",
+          "darkly comic tone",
+          "satisfying conclusions",
+          "multi-POV political fantasy",
+          "blood-soaked action",
+          "Egyptian-inspired worldbuilding"
+        ],
+        "negative": [
+          "hopeful or uplifting fantasy readers",
+          "readers who dislike morally grey casts",
+          "romance-heavy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Black Talon - Jaime Castle & Andy Peloquin": {
       "title": "Black Talon",
       "author": "Jaime Castle & Andy Peloquin",
       "series": "Dragonblood Assassin",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kullen, the Emperor's dragon-bonded assassin known as the Black Talon, and Natisse, a rebel fighter for the anti-nobility Crimson Fang, find their opposing missions converging as a shadowy conspiracy threatens to bring down the Empire from within.",
+      "tone": "propulsive, action-packed, darkly adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty vs. justice",
+        "political conspiracy",
+        "identity and belonging",
+        "enemies to lovers",
+        "found family"
+      ],
+      "setting": "The city of Dimvein and its Empire — a secondary world fantasy realm where dragonblood grants special bonds between riders and their dragons",
+      "comparable_books": [
+        "Red Claw - Jaime Castle & Andy Peloquin",
+        "The Way of Shadows - Brent Weeks",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "assassin protagonists",
+          "dragon-bonded warriors",
+          "dual POV",
+          "enemies-to-lovers setup",
+          "fast-paced action fantasy",
+          "political intrigue"
+        ],
+        "negative": [
+          "slow-burn fantasy readers",
+          "literary prose readers",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Michael Kramer and Kate Reading — celebrated Wheel of Time narrators.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Priest of Bones - Peter McLean": {
       "title": "Priest of Bones",
       "author": "Peter McLean",
       "series": "War for the Rose Throne",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Army priest and crime boss Tomas Piety returns from a brutal war to find his criminal empire stolen, and sets about reclaiming it with his gang of war-hardened veterans — only to be pulled deeper into sinister political intrigue by the shadowy Queen's Men.",
+      "tone": "grimdark, gritty, tightly plotted, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "war trauma and PTSD",
+        "loyalty and brotherhood",
+        "organized crime",
+        "moral ambiguity",
+        "power and politics",
+        "survival"
+      ],
+      "setting": "The city of Ellinburg — a gritty low-fantasy secondary world inspired by industrial-era Europe, light on magic and heavy on violence",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Prince of Thorns - Mark Lawrence",
+        "Low Town - Daniel Polansky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "gangster fiction in fantasy settings",
+          "morally grey protagonist",
+          "Peaky Blinders fans",
+          "war veterans returning home",
+          "fast-paced gritty fiction"
+        ],
+        "negative": [
+          "high magic fantasy readers",
+          "readers wanting heroic protagonists",
+          "readers who dislike violence and profanity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Night Gardener - George Pelecanos": {
@@ -184733,296 +184940,551 @@
       "author": "George Pelecanos",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a teenager is found murdered in a Washington D.C. community garden — the apparent return of a serial killer who struck twenty years earlier — three cops with shared history are drawn back together: veteran detective Gus Ramone, disgraced ex-cop Doc Holiday, and retired legend T.C. Cook.",
+      "tone": "noir, morally weighty, urban, ruminative",
+      "pacing": "Moderate",
+      "themes": [
+        "urban violence and its ripple effects",
+        "redemption",
+        "obsession",
+        "consequences of choices",
+        "family and community",
+        "race and class in America"
+      ],
+      "setting": "Washington D.C. — contemporary gritty urban America, spanning 1985 and the present day",
+      "comparable_books": [
+        "The Wire (TV) - David Simon",
+        "Mystic River - Dennis Lehane",
+        "Drama City - George Pelecanos"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary crime fiction",
+          "urban noir",
+          "morally complex characters",
+          "D.C. setting",
+          "multi-stranded plots",
+          "social realism in crime fiction"
+        ],
+        "negative": [
+          "cozy mystery readers",
+          "readers wanting clean resolutions",
+          "action-thriller readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Titans of War - Wilbur Smith & Mark Chadbourn": {
       "title": "Titans of War",
       "author": "Wilbur Smith & Mark Chadbourn",
       "series": "Ancient Egypt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Master spy Piay, trained by the legendary Taita, embarks on a perilous mission through Hyksos-occupied territory and across the sea to Mycenae to seek allies capable of saving Egypt from fifty years of brutal Hyksos conquest.",
+      "tone": "adventurous, propulsive, epic historical",
+      "pacing": "Fast",
+      "themes": [
+        "resistance and survival",
+        "loyalty to country",
+        "espionage and cunning",
+        "civilization under threat",
+        "heroism"
+      ],
+      "setting": "Ancient Egypt, Mycenae, and the Mediterranean — roughly 1550 BCE during the Hyksos occupation",
+      "comparable_books": [
+        "River God - Wilbur Smith",
+        "The New Kingdom - Wilbur Smith & Mark Chadbourn",
+        "Nefertiti - Michelle Moran"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical adventure fiction",
+          "Ancient Egypt enthusiasts",
+          "Wilbur Smith fans",
+          "spy thriller elements",
+          "epic scale"
+        ],
+        "negative": [
+          "readers seeking literary historical fiction",
+          "readers who prefer solo-authored Smith",
+          "fans of accurate historical scholarship over adventure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Firing Offense - George Pelecanos": {
       "title": "A Firing Offense",
       "author": "George Pelecanos",
       "series": "Nick Stefanos Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Washington D.C. ad man and part-time private eye Nick Stefanos investigates the disappearance of a young man, descending into the city's seedy underbelly of drugs, strip clubs, and street crime.",
+      "tone": "noir, hard-boiled, gritty, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "urban decay",
+        "addiction",
+        "identity",
+        "working-class Washington D.C.",
+        "moral compromise"
+      ],
+      "setting": "Washington D.C. — early 1990s urban landscape of advertising offices, dive bars, and street crime",
+      "comparable_books": [
+        "Nick's Trip - George Pelecanos",
+        "Low Town - Daniel Polansky",
+        "The Big Blowdown - George Pelecanos"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled crime fiction",
+          "Washington D.C. noir",
+          "flawed working-class protagonist",
+          "gritty urban atmosphere",
+          "1990s setting"
+        ],
+        "negative": [
+          "cozy mystery readers",
+          "readers wanting heroic detectives",
+          "readers who dislike substance abuse themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Nick's Trip - George Pelecanos": {
       "title": "Nick's Trip",
       "author": "George Pelecanos",
       "series": "Nick Stefanos Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Nick Stefanos is hired by an old friend to track down his missing wife, a search that draws him into a web of adultery, danger, and moral complexity across the darker corners of Washington D.C.",
+      "tone": "noir, melancholic, gritty, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "friendship and loyalty",
+        "marriage and betrayal",
+        "urban decay",
+        "moral compromise",
+        "loss"
+      ],
+      "setting": "Washington D.C. — early 1990s urban streets, bars, and suburban sprawl",
+      "comparable_books": [
+        "A Firing Offense - George Pelecanos",
+        "Down by the River Where the Dead Men Go - George Pelecanos",
+        "The Big Blowdown - George Pelecanos"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled crime fiction",
+          "Washington D.C. noir",
+          "flawed protagonist",
+          "1990s setting",
+          "friendship dynamics"
+        ],
+        "negative": [
+          "cozy mystery readers",
+          "readers wanting neat resolutions",
+          "readers who dislike bleak urban landscapes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Down by the River Where the Dead Men Go - George Pelecanos": {
       "title": "Down by the River Where the Dead Men Go",
       "author": "George Pelecanos",
       "series": "Nick Stefanos Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After witnessing a murder by the Anacostia River, Nick Stefanos digs into a case that uncovers the brutal exploitation of street youth, pushing him to his moral and physical limits in D.C.'s most desperate neighbourhoods.",
+      "tone": "bleak noir, gritty, unflinching, darkly comic",
+      "pacing": "Moderate",
+      "themes": [
+        "urban violence",
+        "exploitation of the vulnerable",
+        "moral reckoning",
+        "addiction",
+        "street life"
+      ],
+      "setting": "Washington D.C. — mid-1990s, with particular focus on the city's most impoverished and dangerous zones",
+      "comparable_books": [
+        "Nick's Trip - George Pelecanos",
+        "A Firing Offense - George Pelecanos",
+        "The Night Gardener - George Pelecanos"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir",
+          "dark urban crime fiction",
+          "social commentary",
+          "Washington D.C. setting",
+          "unflinching realism"
+        ],
+        "negative": [
+          "cozy mystery readers",
+          "readers wanting heroic detectives",
+          "readers sensitive to depictions of violence against youth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Relentless Moon - Mary Robinette Kowal": {
       "title": "The Relentless Moon",
       "author": "Mary Robinette Kowal",
       "series": "Lady Astronaut",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "While the main space program races forward, astronaut Nicole Wargin remains on Earth to combat a dangerous Earth First saboteur movement, battling both a conspiracy and her own personal demons in this alternate-history 1960s space race.",
+      "tone": "propulsive, optimistic with darkness, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "ambition and sacrifice",
+        "disability and mental health",
+        "resistance and sabotage",
+        "gender in a male-dominated world",
+        "space exploration as hope"
+      ],
+      "setting": "Alternate-history 1960s–70s America and the Moon — a world where a meteor impact accelerated the space program",
+      "comparable_books": [
+        "The Calculating Stars - Mary Robinette Kowal",
+        "The Fated Sky - Mary Robinette Kowal",
+        "The Martian - Andy Weir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "hard SF with emotional depth",
+          "strong female protagonist",
+          "1960s setting",
+          "space race",
+          "mental health representation"
+        ],
+        "negative": [
+          "readers wanting action-heavy SF",
+          "readers who dislike introspective character studies",
+          "hard SF purists"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Mary Robinette Kowal narrates her own audiobooks with exceptional skill and is an accomplished voice actor.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Bloodfever - Karen Marie Moning": {
       "title": "Bloodfever",
       "author": "Karen Marie Moning",
       "series": "Fever",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "MacKayla Lane continues her hunt for her sister's murderer in a darkening Dublin, deepening her uneasy alliance with the enigmatic Jericho Barrons as the deadly Sinsar Dubh draws ever closer and Mac's powers grow in terrifying new directions.",
+      "tone": "dark, sensual, propulsive, atmospheric",
+      "pacing": "Fast",
+      "themes": [
+        "grief and transformation",
+        "good vs. evil",
+        "identity and power",
+        "dangerous attraction",
+        "Celtic mythology"
+      ],
+      "setting": "Contemporary Dublin, Ireland — a shadowy world where the Fae lurk unseen by most humans",
+      "comparable_books": [
+        "Darkfever - Karen Marie Moning",
+        "Faefever - Karen Marie Moning",
+        "Grave Witch - Kalayna Price"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "dark and sensual tone",
+          "Celtic mythology",
+          "enemies-to-lovers tension",
+          "strong female protagonist growth",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "readers who dislike slow-burn romantic tension",
+          "readers preferring cozy urban fantasy",
+          "readers who want standalone books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "All the Flowers Are Dying - Lawrence Block": {
       "title": "All the Flowers Are Dying",
       "author": "Lawrence Block",
       "series": "Matthew Scudder",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 16",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired detective Matthew Scudder and his wife Elaine are menaced by a supremely dangerous and elusive killer who has studied Scudder's life and methods, making this one of the most personal and threatening cases of Scudder's career.",
+      "tone": "noir, contemplative, tense, melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "mortality and aging",
+        "marriage and partnership",
+        "evil and predation",
+        "urban danger",
+        "legacy"
+      ],
+      "setting": "Contemporary New York City — Hell's Kitchen and the streets of Manhattan",
+      "comparable_books": [
+        "A Walk Among the Tombstones - Lawrence Block",
+        "Eight Million Ways to Die - Lawrence Block",
+        "The Night Gardener - George Pelecanos"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled crime fiction",
+          "New York noir",
+          "aging protagonist",
+          "literary crime writing",
+          "long-running series payoff",
+          "serial killer thriller"
+        ],
+        "negative": [
+          "readers new to the series",
+          "cozy mystery readers",
+          "readers who prefer action over introspection"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Switch - Elmore Leonard": {
       "title": "The Switch",
       "author": "Elmore Leonard",
       "series": "Ordell Robbie & Louis Gara",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two small-time crooks kidnap a wealthy businessman's wife, only to discover her husband has no intention of paying the ransom — forcing everyone to improvise in increasingly darkly comedic ways.",
+      "tone": "darkly comic, sharp, breezy, wryly violent",
+      "pacing": "Fast",
+      "themes": [
+        "greed and crime",
+        "female agency",
+        "class and marriage",
+        "the absurdity of criminal schemes",
+        "unlikely alliances"
+      ],
+      "setting": "1970s Detroit and Florida — Leonard's trademark blue-collar crime milieu",
+      "comparable_books": [
+        "Rum Punch - Elmore Leonard",
+        "Get Shorty - Elmore Leonard",
+        "The Friends of Eddie Coyle - George V. Higgins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic crime fiction",
+          "sharp witty dialogue",
+          "Elmore Leonard fans",
+          "caper fiction",
+          "strong female character",
+          "1970s setting"
+        ],
+        "negative": [
+          "readers wanting serious crime fiction",
+          "readers who dislike morally absent protagonists",
+          "thriller readers wanting high tension"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Leonard's sharp dialogue and distinct character voices are especially well-suited to audio performance.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Kill the Dead - Richard Kadrey": {
       "title": "Kill the Dead",
       "author": "Richard Kadrey",
       "series": "Sandman Slim",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sandman Slim — James Stark — is hired as a bodyguard for a rock-star vampire filmmaker while a zombie plague threatens to overrun Los Angeles, and the politics of Hell grow increasingly complicated.",
+      "tone": "darkly comic, hard-boiled, irreverent, pulpy",
+      "pacing": "Fast",
+      "themes": [
+        "identity and damnation",
+        "power and corruption",
+        "monster vs. monster",
+        "redemption",
+        "supernatural politics"
+      ],
+      "setting": "Contemporary Los Angeles — a version of L.A. where monsters, demons, and the supernatural operate in the shadows",
+      "comparable_books": [
+        "Sandman Slim - Richard Kadrey",
+        "Aloha from Hell - Richard Kadrey",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "darkly comic tone",
+          "antiheroes",
+          "L.A. setting",
+          "supernatural action",
+          "hard-boiled voice"
+        ],
+        "negative": [
+          "readers who dislike profanity and violence",
+          "cozy paranormal readers",
+          "readers wanting romance subplots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Aloha From Hell - Richard Kadrey": {
-      "title": "Aloha From Hell",
+      "title": "Aloha from Hell",
       "author": "Richard Kadrey",
       "series": "Sandman Slim",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "James Stark must descend back into Hell to rescue a friend's soul and prevent a catastrophic war between Heaven and Hell that would consume the living world — facing old enemies and new betrayals at every turn.",
+      "tone": "darkly comic, propulsive, irreverent, pulpy",
+      "pacing": "Fast",
+      "themes": [
+        "damnation and redemption",
+        "war between cosmic forces",
+        "loyalty and sacrifice",
+        "identity",
+        "good vs. evil reexamined"
+      ],
+      "setting": "Contemporary Los Angeles and Hell — a mythology-rich supernatural underworld blended with L.A. street culture",
+      "comparable_books": [
+        "Kill the Dead - Richard Kadrey",
+        "Sandman Slim - Richard Kadrey",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "antiheroes",
+          "darkly comic tone",
+          "Hell as a setting",
+          "L.A. noir atmosphere",
+          "supernatural action"
+        ],
+        "negative": [
+          "readers who dislike profanity",
+          "cozy paranormal readers",
+          "readers wanting resolution-focused standalone books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Killing Pretty - Richard Kadrey": {
