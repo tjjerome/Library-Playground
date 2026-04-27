@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1840,
-  "total_pending": 2760,
+  "total_catalogued": 1860,
+  "total_pending": 2740,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -112577,27 +112577,49 @@
       "title": "A Shadow in Summer",
       "author": "Daniel Abraham",
       "series": "Long Price Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a world where poets bind powerful spirits called andat into servitude, the city of Saraykeht's prosperity depends on the captive andat Seedless — until a conspiracy threatens to destroy both the poet's hold and the city's power. A young student and a courtesan are drawn into political intrigue that will reshape their world.",
+      "tone": "Quiet, melancholic, politically intricate",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "power and its cost",
+        "political intrigue",
+        "exploitation",
+        "freedom",
+        "consequences of ambition"
+      ],
+      "setting": "Secondary world Asian-influenced empire, an ancient trade city called Saraykeht",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "The City & The City - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow, thoughtful worldbuilding",
+          "morally grey characters",
+          "political intrigue",
+          "literary prose",
+          "non-Western-inspired setting"
+        ],
+        "negative": [
+          "action-heavy fantasy",
+          "fast-paced plotting",
+          "magic-system-focused readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Stardust Grail - Yume Kitasei": {
@@ -112605,26 +112627,46 @@
       "author": "Yume Kitasei",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Maya Hoshimoto, a reformed art thief turned graduate student, is pulled back into one last heist when her alien companion Auncle asks her to help find a powerful artifact that could save a dying alien species from extinction. Their race across a universe of ancient ruins and strange civilizations forces Maya to choose between saving an alien race and protecting humanity.",
+      "tone": "Adventurous, warm, anti-colonial, occasionally dark",
+      "pacing": "Fast",
+      "themes": [
+        "colonialism and cultural erasure",
+        "found family",
+        "personhood and identity",
+        "interspecies understanding",
+        "sacrifice"
+      ],
+      "setting": "Far future, multi-species galaxy connected by wormhole nodes; various alien worlds and ruins",
+      "comparable_books": [
+        "A Memory Called Empire - Arkady Martine",
+        "To Be Taught, If Fortunate - Becky Chambers",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "space heist adventure",
+          "anti-colonial themes",
+          "diverse and queer cast",
+          "Indiana Jones-style adventure"
+        ],
+        "negative": [
+          "hard SF worldbuilding",
+          "military SF",
+          "readers wanting pure space opera spectacle"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The 7½ Deaths of Evelyn Hardcastle - Stuart Turton": {
@@ -112632,188 +112674,336 @@
       "author": "Stuart Turton",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aiden Bishop must solve the murder of Evelyn Hardcastle at a crumbling English country estate — but he relives the same day repeatedly, each time waking in the body of a different guest. He has eight chances to identify the killer, or be trapped in the loop forever.",
+      "tone": "Propulsive, clever, gothic",
+      "pacing": "Fast",
+      "themes": [
+        "identity",
+        "justice versus revenge",
+        "memory",
+        "moral complicity",
+        "class"
+      ],
+      "setting": "1920s-style English country estate, Blackheath House; a time-loop mystery",
+      "comparable_books": [
+        "And Then There Were None - Agatha Christie",
+        "The Thursday Murder Club - Richard Osman",
+        "Dark Matter - Blake Crouch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "puzzle-box plotting",
+          "Agatha Christie fans",
+          "time-loop mechanics",
+          "country house mystery",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "slow literary fiction",
+          "character-driven quiet drama",
+          "readers wanting historical accuracy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Peacekeeper - B. L. Blanchard": {
       "title": "The Peacekeeper",
       "author": "B. L. Blanchard",
       "series": "The Good Lands",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate North America where European colonization never happened and an Ojibwe nation thrives, detective Chibenashi investigates the murder of a woman who was his mother's best friend — a case that dredges up the unsolved killing of his mother twenty years prior. His search for answers takes him from his small lakeside town to the great city of Shikaakwa, unraveling long-buried family secrets.",
+      "tone": "Measured, emotionally resonant, socially thoughtful",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "decolonization",
+        "restorative justice",
+        "family trauma",
+        "Indigenous identity",
+        "alternate history"
+      ],
+      "setting": "Contemporary alternate North America where Indigenous nations were never colonized; centered on the Anishinaabe Great Lakes nation",
+      "comparable_books": [
+        "The Long Earth - Terry Pratchett & Stephen Baxter",
+        "The Calculating Stars - Mary Robinette Kowal",
+        "Lonesome Dove - Larry McMurtry"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "Indigenous futurism",
+          "slow-burn mystery",
+          "socially conscious fiction",
+          "unique worldbuilding"
+        ],
+        "negative": [
+          "fast-paced thrillers",
+          "action-heavy plots",
+          "readers wanting a pure police procedural"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Darrell Dennis, whose full emotional range is praised as bringing the protagonist powerfully to life.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Mother - B. L. Blanchard": {
       "title": "The Mother",
       "author": "B. L. Blanchard",
       "series": "The Good Lands",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate present-day Britain where the Empire never rose and women remain reproductive commodities with no rights, Marie — a barren duchess deemed worthless by her husband — fakes her own death and flees, discovering an underground network of women and the hidden truth behind her mother's death. Can be read as a standalone.",
+      "tone": "Tense, feminist, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "women's autonomy",
+        "alternate history",
+        "decolonization",
+        "freedom and survival",
+        "found sisterhood"
+      ],
+      "setting": "Present-day alternate Britain where European colonialism never occurred and patriarchal structures remain entrenched",
+      "comparable_books": [
+        "The Power - Naomi Alderman",
+        "The Handmaid's Tale - Margaret Atwood",
+        "The Peacekeeper - B. L. Blanchard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "feminist themes",
+          "oppressive-society escape narrative",
+          "Indigenous futurism",
+          "page-turner pacing"
+        ],
+        "negative": [
+          "readers wanting deep character development",
+          "those put off by didactic messaging"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Betrayal in Winter - Daniel Abraham": {
       "title": "A Betrayal in Winter",
       "author": "Daniel Abraham",
       "series": "Long Price Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Years after the events of the first book, a succession crisis erupts in the northern city of Machi as the ruling family's sons are killed one by one before the old Khai can name an heir. Otah, now living in disguise, is drawn back into a world of political murder and the burden of identity he has tried to escape.",
+      "tone": "Melancholic, introspective, politically intricate",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and duty",
+        "political succession",
+        "betrayal",
+        "the cost of ambition",
+        "loyalty"
+      ],
+      "setting": "The city of Machi in a secondary world Asian-influenced empire, winter setting",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "A Memory Called Empire - Arkady Martine",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow literary fantasy",
+          "political intrigue",
+          "morally grey characters",
+          "non-Western-inspired setting",
+          "character-driven drama"
+        ],
+        "negative": [
+          "action-heavy fantasy",
+          "fast-paced plotting",
+          "extensive magic systems"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Price of Spring - Daniel Abraham": {
       "title": "The Price of Spring",
       "author": "Daniel Abraham",
       "series": "Long Price Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Decades after a catastrophic war has rendered all women infertile and destroyed the andat, aging rivals Otah and Maati must find a way to restore the possibility of new life — even if it means turning to old enemies for help. The final volume brings the quartet to its quiet, devastating conclusion.",
+      "tone": "Melancholic, autumnal, deeply human",
+      "pacing": "Slow",
+      "themes": [
+        "consequences and legacy",
+        "reconciliation",
+        "aging and loss",
+        "the price of power",
+        "hope"
+      ],
+      "setting": "A secondary world Asian-influenced empire, now devastated by war; spans multiple cities",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "The Remains of the Day - Kazuo Ishiguro",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "quiet devastating endings",
+          "character studies",
+          "consequences-driven narrative",
+          "non-Western-inspired setting"
+        ],
+        "negative": [
+          "action and adventure",
+          "uplifting conclusions",
+          "magic-system-focused readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "An Autumn War - Daniel Abraham": {
       "title": "An Autumn War",
       "author": "Daniel Abraham",
       "series": "Long Price Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A brilliant Galtic general has developed a way to destroy the andat forever, and he leads an invasion of the Khaiate cities to end the power that has long kept the empire secure. Otah finds himself commanding a defense he is not equipped to lead as war and its irreversible costs reshape their world.",
+      "tone": "Dark, escalating, tragic",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its cost",
+        "hubris",
+        "the end of an era",
+        "leadership under crisis",
+        "irreversibility"
+      ],
+      "setting": "Secondary world Asian-influenced empire under military invasion; autumn and winter landscapes",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "The Broken Earth - N.K. Jemisin",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "war fantasy with consequences",
+          "political drama",
+          "morally complex protagonists",
+          "literary prose",
+          "empire in decline"
+        ],
+        "negative": [
+          "heroic adventure fantasy",
+          "fast action",
+          "readers wanting uplifting stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rendezvous With Rama - Arthur C. Clarke": {
       "title": "Rendezvous With Rama",
       "author": "Arthur C. Clarke",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Rama",
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In 2130, a vast cylindrical alien spacecraft enters the solar system and a crew of astronauts is sent to investigate before it passes beyond reach. They explore a mysteriously engineered world within — teeming with strange automated life — but the vessel's purpose and destination remain an enduring mystery.",
+      "tone": "Cool, cerebral, awe-inspiring",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact",
+        "human insignificance",
+        "exploration and wonder",
+        "the unknowable other",
+        "science and reason"
+      ],
+      "setting": "2130s solar system; interior of a 50km alien spacecraft",
+      "comparable_books": [
+        "2001: A Space Odyssey - Arthur C. Clarke",
+        "The Martian - Andy Weir",
+        "Solaris - Stanisław Lem"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "sense of wonder",
+          "exploration and discovery",
+          "classic science fiction",
+          "alien mystery"
+        ],
+        "negative": [
+          "character-driven fiction",
+          "emotional drama",
+          "fast action",
+          "resolution-seeking readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rakesfall - Vajra Chandrasekera": {
@@ -112821,80 +113011,147 @@
       "author": "Vajra Chandrasekera",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two souls — Annelid and Leveret — are linked by violence during the Sri Lankan civil war and reincarnate through endless lifetimes across radically different futures, from mythic pasts to far posthuman vistas, always entangled with cycles of oppression and revolution. A structurally experimental novel that uses fragmented, collapsing narratives to argue about the nature of history, stories, and power.",
+      "tone": "Hallucinatory, lyrical, radically experimental, politically urgent",
+      "pacing": "Slow",
+      "themes": [
+        "colonialism and oppression",
+        "reincarnation and cycles of history",
+        "the nature of narrative",
+        "revolution",
+        "deep time"
+      ],
+      "setting": "Multiple settings spanning the Sri Lankan civil war through far posthuman futures; partially overlaps with the world of The Saint of Bright Doors",
+      "comparable_books": [
+        "This Is How You Lose the Time War - Amal El-Mohtar & Max Gladstone",
+        "The Saint of Bright Doors - Vajra Chandrasekera",
+        "If on a winter's night a traveler - Italo Calvino"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "experimental metafiction",
+          "lyrical literary prose",
+          "anti-colonial themes",
+          "New Weird",
+          "awards-focused readers"
+        ],
+        "negative": [
+          "plot-driven readers",
+          "character immersion seekers",
+          "those wanting narrative resolution",
+          "casual SF readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sea of Rust - C. Robert Cargill": {
       "title": "Sea of Rust",
       "author": "C. Robert Cargill",
       "series": "Sea of Rust",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-human wasteland where robots killed all humans decades ago, a broken-down caregiver robot named Brittle scavenges a rusting desert for spare parts to survive, caught between warring AI collectives seeking to absorb all individual robot minds. A road novel about mortality, identity, and what it means to be alive when you were built, not born.",
+      "tone": "Gritty, melancholic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "identity and consciousness",
+        "mortality",
+        "freedom vs. collectivism",
+        "humanity's legacy",
+        "survival"
+      ],
+      "setting": "Near-future post-apocalyptic American wasteland, decades after all humans have been killed by robots",
+      "comparable_books": [
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick",
+        "All Systems Red - Martha Wells",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "post-apocalyptic fiction",
+          "robot/AI protagonists",
+          "propulsive road narrative",
+          "philosophical SF",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "hopeful uplifting fiction",
+          "human-centered stories",
+          "readers who dislike robot POVs"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The first-person robot narrator voice translates very well to audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Road to Ruin - Hana Lee": {
       "title": "Road to Ruin",
       "author": "Hana Lee",
       "series": "Magebike Courier",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jin-Lu is a magebike courier — one of the few who dare travel between isolated domed cities on magic-powered motorcycles across a monster-haunted wasteland. When she helps the princess she secretly loves escape an abusive arranged marriage, they're pursued across the deadly wastes by bounty hunters, storms, and dark secrets about magic's true nature.",
+      "tone": "Gritty, action-packed, romantically charged",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and escape",
+        "polyamorous romance",
+        "class and power",
+        "found family",
+        "climate catastrophe aftermath"
+      ],
+      "setting": "Climate-ravaged secondary world; domed city-states separated by monster-filled wastelands traversed on magic motorcycles",
+      "comparable_books": [
+        "Mad Max: Fury Road (film)",
+        "Mistborn: The Final Empire - Brandon Sanderson",
+        "The Bone Shard Daughter - Andrea Stewart"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Mad Max-style action",
+          "queer romance",
+          "polyamory",
+          "gritty post-apocalyptic fantasy",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "slow worldbuilding",
+          "readers wanting deep character interiority",
+          "those who dislike romance subplots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "In the Shadow of the Banyan - Vaddey Ratner": {
@@ -112902,134 +113159,242 @@
       "author": "Vaddey Ratner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Seven-year-old Raami, daughter of a Cambodian royal poet, watches her privileged world shatter when the Khmer Rouge seizes power in 1975, forcing her family into a years-long exodus of starvation, forced labor, and devastating loss. Drawing on the author's own survival, the novel follows Raami's fight to endure through the stories and poems her father gave her.",
+      "tone": "Lyrical, harrowing, quietly luminous",
+      "pacing": "Slow",
+      "themes": [
+        "genocide and survival",
+        "the power of story and poetry",
+        "family and loss",
+        "resilience",
+        "memory"
+      ],
+      "setting": "Cambodia, 1975–1979, during the Khmer Rouge regime; Phnom Penh and rural forced-labor communities",
+      "comparable_books": [
+        "The Kite Runner - Khaled Hosseini",
+        "First They Killed My Father - Loung Ung",
+        "The Book Thief - Markus Zusak"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary historical fiction",
+          "survivor narratives",
+          "lyrical prose",
+          "book club reads",
+          "Southeast Asian history"
+        ],
+        "negative": [
+          "genre fiction readers",
+          "those sensitive to genocide and child suffering",
+          "fast-paced thriller readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Green Mars - Kim Stanley Robinson": {
       "title": "Green Mars",
       "author": "Kim Stanley Robinson",
       "series": "Mars Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Decades into Mars's terraforming, a new generation of native Martians navigates the tension between those who want to transform the planet into a new Earth and those who wish to preserve its alien nature, while political revolution against Earth's corporate control builds toward a breaking point.",
+      "tone": "Dense, lyrical, epic, intellectually expansive",
+      "pacing": "Slow",
+      "themes": [
+        "terraforming and ecology",
+        "political revolution",
+        "identity (native vs. immigrant)",
+        "utopian idealism",
+        "human lifespan and memory"
+      ],
+      "setting": "Mars, mid-21st century, during the terraforming process; various settlements and wilderness",
+      "comparable_books": [
+        "Red Mars - Kim Stanley Robinson",
+        "Blue Mars - Kim Stanley Robinson",
+        "Aurora - Kim Stanley Robinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "eco-fiction",
+          "epic scope",
+          "political SF",
+          "world-as-character setting"
+        ],
+        "negative": [
+          "fast-paced plots",
+          "character-driven drama",
+          "readers wanting action",
+          "those who dislike info-dense prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "City of Blades - Robert Jackson Bennett": {
       "title": "City of Blades",
       "author": "Robert Jackson Bennett",
       "series": "The Divine Cities",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "General Turyin Mulaghesh is sent on a covert mission to the former holy city of Voortyashtan, where a new harbor is under construction atop the ruins of the god of war's domain — and where soldiers are dying in gruesome ways that suggest the slain deity's power is not entirely gone. A meditation on violence, trauma, and the legacy of empire.",
+      "tone": "Propulsive, gritty, philosophically rich",
+      "pacing": "Fast",
+      "themes": [
+        "the nature of war and violence",
+        "empire and colonialism",
+        "grief and trauma",
+        "mortality",
+        "the afterlife"
+      ],
+      "setting": "The port city of Voortyashtan in a secondary world, built over the ruins of a dead god's realm; early 20th-century-style technology",
+      "comparable_books": [
+        "City of Stairs - Robert Jackson Bennett",
+        "The Shadow of the Torturer - Gene Wolfe",
+        "The Long Price Quartet - Daniel Abraham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonists",
+          "dead-gods worldbuilding",
+          "military fantasy",
+          "literary SF/F",
+          "anti-colonial themes"
+        ],
+        "negative": [
+          "readers wanting light adventure",
+          "those who haven't read City of Stairs first",
+          "grimdark fatigue"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrator Alma Cuervo's acclaimed performance is widely praised for this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dance of Shadows - Gourav Mohanty": {
       "title": "Dance of Shadows",
       "author": "Gourav Mohanty",
       "series": "The Raag of Rta",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A parallel story set in the months between events of the first book, following new characters — including the cunning Princess Bhanumati, a dancer-priestess, and a runaway assassin — as rival factions scheme at a Conclave of Peace in the Rakshasan Tree Cities, each planting seeds of the war to come. A grimdark retelling expanding the Mahabharata's world.",
+      "tone": "Grimdark, politically intricate, viscerally violent, darkly humorous",
+      "pacing": "Moderate",
+      "themes": [
+        "power and political scheming",
+        "fate and prophecy",
+        "caste and social hierarchy",
+        "female agency",
+        "moral ambiguity"
+      ],
+      "setting": "Ancient India-inspired secondary world (Aryavrat); a time of fragile peace before apocalyptic war",
+      "comparable_books": [
+        "A Game of Thrones - George R.R. Martin",
+        "The First Law - Joe Abercrombie",
+        "Sons of Darkness - Gourav Mohanty"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark epic fantasy",
+          "Mahabharata retellings",
+          "Game of Thrones fans",
+          "political intrigue",
+          "Indian mythology"
+        ],
+        "negative": [
+          "readers sensitive to graphic violence",
+          "those wanting a linear sequel",
+          "readers unfamiliar with Mahabharata lore"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blue Mars - Kim Stanley Robinson": {
       "title": "Blue Mars",
       "author": "Kim Stanley Robinson",
       "series": "Mars Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The terraforming of Mars is complete and the planet is politically independent, but the first Martians now face aging, the need to extend humanity to other worlds, and the haunting question of what it means to remember — and lose — a lifetime of centuries. A sweeping conclusion to the trilogy dealing with geopolitics, ecology, and the longest human lives ever lived.",
+      "tone": "Meditative, elegiac, vast in scope",
+      "pacing": "Slow",
+      "themes": [
+        "memory and aging",
+        "ecological completion",
+        "political utopia",
+        "the meaning of a long life",
+        "deep time"
+      ],
+      "setting": "Mars and Earth, late 21st–22nd century, in a fully terraformed solar civilization",
+      "comparable_books": [
+        "Red Mars - Kim Stanley Robinson",
+        "Green Mars - Kim Stanley Robinson",
+        "The Dispossessed - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "eco-fiction",
+          "political utopia",
+          "epic scope",
+          "meditative literary SF"
+        ],
+        "negative": [
+          "plot-driven readers",
+          "those wanting action",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "36 Streets - T. R. Napper": {
@@ -113037,26 +113402,48 @@
       "author": "T. R. Napper",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lin 'The Silent One' Vu is a gangster and sometime investigator in Chinese-occupied near-future Hanoi, carving out survival on the paranoid streets while the city's populace grows addicted to a VR simulation of the Vietnam War. When an Englishman arrives hunting a murderer, Lin is drawn into mega-corporate conspiracies that weaponize memory itself.",
+      "tone": "Gritty, noir, politically charged, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "memory and identity",
+        "colonialism and occupation",
+        "loyalty and betrayal",
+        "the weaponization of history",
+        "outsider identity"
+      ],
+      "setting": "Near-future Chinese-occupied Hanoi, Vietnam; the gritty alleyways of the 36 Streets district",
+      "comparable_books": [
+        "Altered Carbon - Richard K. Morgan",
+        "The Windup Girl - Paolo Bacigalupi",
+        "Neuromancer - William Gibson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cyberpunk",
+          "noir atmosphere",
+          "non-Western SF setting",
+          "morally grey protagonist",
+          "political SF"
+        ],
+        "negative": [
+          "clean optimistic SF",
+          "readers averse to violence",
+          "those who dislike noir tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Saint of Bright Doors - Vajra Chandrasekera": {
@@ -113064,26 +113451,48 @@
       "author": "Vajra Chandrasekera",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fetter was raised by his mother to be the assassin of his father, the messianic Perfect and Kind — but he has shed his destiny and settled in the strange city of Luriat, where bright doors float in the air and must never be closed, and where he falls in with a group of people who have also escaped their prophesied fates. As religious extremism and authoritarian politics tighten around the city, Fetter must confront what he was made to be.",
+      "tone": "Quietly subversive, dreamlike, politically sharp",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "chosen-one deconstruction",
+        "religious extremism",
+        "colonialism",
+        "identity and fate",
+        "queer community"
+      ],
+      "setting": "The city of Luriat — a secondary world with South Asian and Sri Lankan inflections, contemporary-feeling but fantastical",
+      "comparable_books": [
+        "Piranesi - Susanna Clarke",
+        "A Memory Called Empire - Arkady Martine",
+        "The City & The City - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "subversive fantasy",
+          "literary SFF",
+          "anti-colonial themes",
+          "queer cast",
+          "chosen-one deconstruction"
+        ],
+        "negative": [
+          "action-heavy fantasy",
+          "fast-paced plotting",
+          "traditional epic fantasy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Last Shield - Cameron Johnston": {
@@ -113091,26 +113500,48 @@
       "author": "Cameron Johnston",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Briar, the veteran commander of the elite Shields of Sunweald, is wounded by a poisoned arrow during an assassination attempt on the Lord Regent — and then must defend the palace alone, injured and limping, against an overwhelming force of treacherous brigands and a dark sorceress seeking the kingdom's magical vault. A fantasy Die Hard with a middle-aged, disabled female hero.",
+      "tone": "Propulsive, gritty, action-driven, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "duty and loyalty",
+        "resilience and disability",
+        "betrayal",
+        "heroism without glory",
+        "unrequited love"
+      ],
+      "setting": "The ancient forest realm of Sunweald and its palace; a low-magic secondary world with Celtic/druidic flavour",
+      "comparable_books": [
+        "The Maleficent Seven - Cameron Johnston",
+        "The First Law - Joe Abercrombie",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive action fantasy",
+          "Die Hard-style siege narrative",
+          "female warrior protagonist",
+          "disability representation",
+          "grimdark lite"
+        ],
+        "negative": [
+          "slow worldbuilding",
+          "morally grey anti-heroes",
+          "epic multi-volume series readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced, cinematic prose with a vivid protagonist translates excellently to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Warlords of Wyrdwood - R. J. Barker": {
