@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2446,
-  "total_pending": 2154,
+  "total_catalogued": 2466,
+  "total_pending": 2134,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -141993,26 +141993,48 @@
       "author": "Ursula K. le Guin",
       "series": "The Hainish Cycle",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A human colony stranded on a distant planet for generations must forge an uneasy alliance with the indigenous people to survive an apocalyptic winter and an invading horde. The novel explores cultural contact, exile, and what it means to belong.",
+      "tone": "spare, elegiac, quietly tense",
+      "pacing": "Moderate",
+      "themes": [
+        "cultural contact",
+        "exile and belonging",
+        "survival",
+        "interspecies love",
+        "colonialism"
+      ],
+      "setting": "Distant planet Eltanin, a world with a years-long seasonal cycle; far future",
+      "comparable_books": [
+        "Rocannon's World - Ursula K. le Guin",
+        "City of Illusions - Ursula K. le Guin",
+        "The Left Hand of Darkness - Ursula K. le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anthropological science fiction",
+          "quiet literary SF",
+          "interspecies romance",
+          "Le Guin completionist",
+          "short and dense world-building"
+        ],
+        "negative": [
+          "action-driven plots",
+          "fast pacing",
+          "large casts"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Age of Vice - Deepti Kapoor": {
@@ -142020,26 +142042,50 @@
       "author": "Deepti Kapoor",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In contemporary India, three lives become dangerously entangled in the orbit of the Wadia crime dynasty: Ajay, a loyal servant born into poverty; Sunny, the reckless playboy heir; and Neda, a journalist caught between integrity and desire. A fatal car crash in New Delhi sets off a sweeping saga of corruption, violence, and consequence.",
+      "tone": "propulsive, cinematic, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "corruption and power",
+        "class inequality",
+        "loyalty and betrayal",
+        "the cost of ambition",
+        "modern India"
+      ],
+      "setting": "Contemporary India — New Delhi and Uttar Pradesh, early 2000s onwards",
+      "comparable_books": [
+        "The Godfather - Mario Puzo",
+        "A Suitable Boy - Vikram Seth",
+        "White Tiger - Aravind Adiga"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonists",
+          "family saga",
+          "crime dynasty narratives",
+          "cinematic pacing",
+          "literary crime fiction",
+          "non-Western settings"
+        ],
+        "negative": [
+          "clean-cut heroes",
+          "cozy mysteries",
+          "light tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Cinematic, multi-POV narrative with strong vocal differentiation across characters and social classes; suits audio well.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Cahokia Jazz - Francis Spufford": {
@@ -142047,26 +142093,49 @@
       "author": "Francis Spufford",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Alternate History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a 1922 where Native American civilisation survived and flourished into a thriving city-state on the Mississippi, mixed-race detective Joe Barrow investigates a ritualistic murder on the roof of a government building — a case that threatens to tear the fragile multicultural republic apart. Winner of the Sidewise Award for Alternate History.",
+      "tone": "atmospheric, brooding, richly layered",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "race and identity",
+        "colonialism's road not taken",
+        "corruption and power",
+        "cultural syncretism",
+        "what might have been"
+      ],
+      "setting": "Alternate 1922 America; Cahokia, a thriving Native American city-state near present-day St. Louis",
+      "comparable_books": [
+        "The Yiddish Policemen's Union - Michael Chabon",
+        "Alvin Maker series - Orson Scott Card",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "hardboiled noir",
+          "literary fiction",
+          "race and politics",
+          "jazz age atmosphere",
+          "dense world-building"
+        ],
+        "negative": [
+          "fast pacing",
+          "light reads",
+          "readers who dislike exposition-heavy world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "An Academy for Liars - Alexis Henderson": {
@@ -142074,26 +142143,51 @@
       "author": "Alexis Henderson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After her life falls apart, Lennon Carter receives a mysterious invitation to Drayton College, a hidden school of magic in Savannah, Georgia, where students are selected for their innate gift of psychological persuasion. As Lennon masters her dangerous power, she discovers that Drayton's lush campus conceals far darker secrets — and that the institution itself may be the true villain.",
+      "tone": "gothic, dread-soaked, darkly seductive",
+      "pacing": "Moderate",
+      "themes": [
+        "power and corruption",
+        "institutional manipulation",
+        "identity and self-discovery",
+        "desire and obsession",
+        "magic's moral cost"
+      ],
+      "setting": "Contemporary Savannah, Georgia; a hidden magical college",
+      "comparable_books": [
+        "Ninth House - Leigh Bardugo",
+        "The Magicians - Lev Grossman",
+        "Babel - R.F. Kuang",
+        "The Secret History - Donna Tartt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark academia",
+          "gothic atmosphere",
+          "morally grey characters",
+          "campus fantasy",
+          "female protagonist",
+          "romance subplot"
+        ],
+        "negative": [
+          "cozy fantasy",
+          "fast action-driven plots",
+          "readers fatigued by magic school trope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Death I Gave Him - Em X. Liu": {
@@ -142101,26 +142195,51 @@
       "author": "Em X. Liu",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A queer sci-fi retelling of Shakespeare's Hamlet set in a near-future research lab: when scientist Hayden Lichfield discovers his father murdered and the lab locked down, he must identify the killer from among four suspects while his only ally is the lab's AI, Horatio. A locked-room thriller steeped in questions of mortality, ambition, and revenge.",
+      "tone": "lyrical, tense, emotionally raw",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "revenge and grief",
+        "mortality and immortality",
+        "AI and humanity",
+        "queer identity",
+        "the ethics of science",
+        "Shakespearean tragedy"
+      ],
+      "setting": "Near-future research laboratory (Elsinore Lab); locked-room scenario, ~2050s",
+      "comparable_books": [
+        "Hamlet - William Shakespeare",
+        "Recursion - Blake Crouch",
+        "This Is How You Lose the Time War - Amal El-Mohtar & Max Gladstone"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Shakespeare retellings",
+          "queer science fiction",
+          "locked-room mysteries",
+          "lyrical prose",
+          "AI characters",
+          "multi-format storytelling"
+        ],
+        "negative": [
+          "action-driven SF",
+          "readers who dislike literary/experimental structure",
+          "pure thriller seekers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Nestlings - Nat Cassidy": {
@@ -142128,26 +142247,51 @@
       "author": "Nat Cassidy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a traumatic birth leaves her paralysed, Ana and her husband Reid win an apartment in the Deptford, one of Manhattan's most prestigious buildings — but something ancient and predatory nests within its walls. A creeping, body-horror-inflected take on the haunted building story, drawing on the paranoia of Rosemary's Baby and the urban dread of Salem's Lot.",
+      "tone": "creeping dread, body horror, psychologically raw",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "motherhood and identity",
+        "bodily autonomy",
+        "belonging and parasitism",
+        "postpartum trauma",
+        "antisemitism"
+      ],
+      "setting": "Contemporary Manhattan; the exclusive Deptford apartment building",
+      "comparable_books": [
+        "Rosemary's Baby - Ira Levin",
+        "'Salem's Lot - Stephen King",
+        "The Shining - Stephen King",
+        "Mary: An Awakening of Terror - Nat Cassidy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "creature horror",
+          "haunted building horror",
+          "body horror",
+          "slow-burn dread",
+          "literary horror",
+          "strong female protagonist"
+        ],
+        "negative": [
+          "cozy reads",
+          "horror-averse readers",
+          "readers who dislike body horror"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong, cinematic pacing and visceral atmosphere translate exceptionally well to audio; praised by listeners.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Note - Alafair Burke": {
@@ -142155,53 +142299,94 @@
       "author": "Alafair Burke",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three old friends reunite for a girls' weekend in the Hamptons, where a harmless prank — leaving a teasing note on a stranger's car — spirals into a murder investigation with deadly consequences for all three women. A twisty psychological thriller about the secrets, betrayals, and buried trauma that test the limits of female friendship.",
+      "tone": "propulsive, twisty, sharp",
+      "pacing": "Fast",
+      "themes": [
+        "female friendship and betrayal",
+        "secrets and lies",
+        "cancel culture and public shame",
+        "loyalty vs. self-preservation",
+        "the past catching up"
+      ],
+      "setting": "Contemporary Hamptons, New York; with flashbacks to the women's shared past",
+      "comparable_books": [
+        "The Wife - Alafair Burke",
+        "The Last Thing He Told Me - Laura Dave",
+        "Big Little Lies - Liane Moriarty"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female friendship dynamics",
+          "twisty psychological thriller",
+          "unreliable characters",
+          "fast pacing",
+          "contemporary social themes"
+        ],
+        "negative": [
+          "slow literary fiction",
+          "cozy mysteries",
+          "thriller-averse readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Karla's Choice - Nick Harkaway": {
       "title": "Karla's Choice",
       "author": "Nick Harkaway",
-      "series": null,
+      "series": "George Smiley / John le Carré",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in 1963 in the missing decade between The Spy Who Came in from the Cold and Tinker Tailor Soldier Spy, a retired George Smiley is reluctantly pulled back into the Circus when a Hungarian defection leads to a perilous game that puts him on a collision course with his greatest nemesis, Karla. Written by John le Carré's son as a continuation novel.",
+      "tone": "meditative, atmospheric, Cold War-weary",
+      "pacing": "Slow",
+      "themes": [
+        "the morality of espionage",
+        "loyalty and duty",
+        "Cold War ideological conflict",
+        "the price of service",
+        "the shadow of the past"
+      ],
+      "setting": "1963; London, West Berlin, Vienna, Eastern Europe — Cold War spy world",
+      "comparable_books": [
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "A Gentleman in Moscow - Amor Towles"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "le Carré fans",
+          "Cold War espionage",
+          "literary spy fiction",
+          "cerebral plotting",
+          "moral ambiguity",
+          "period atmosphere"
+        ],
+        "negative": [
+          "action-heavy thrillers",
+          "readers new to the Smiley universe",
+          "fast-paced spy stories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Le Carré novels are a beloved audio tradition; the measured, atmospheric prose and Cold War setting are particularly well-suited to performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Havoc - Christopher Bollen": {
@@ -142209,215 +142394,390 @@
       "author": "Christopher Bollen",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Eighty-one-year-old widow Maggie Burkhardt has settled into the faded grandeur of a Nile-side hotel in Luxor, Egypt, where she secretly orchestrates the lives of fellow guests — until she meets her match in Otto, a cunning eight-year-old boy who sees through her facade and makes her his target. A Highsmithian cat-and-mouse thriller with a deeply unreliable narrator.",
+      "tone": "darkly comic, wicked, claustrophobic",
+      "pacing": "Moderate",
+      "themes": [
+        "age and power",
+        "loneliness and control",
+        "the unreliable mind",
+        "entitlement",
+        "intergenerational conflict"
+      ],
+      "setting": "Contemporary Egypt; the Royal Karnak Palace Hotel, Luxor, during the COVID-19 era",
+      "comparable_books": [
+        "Ripley series - Patricia Highsmith",
+        "Elizabeth is Missing - Emma Healey",
+        "The Bad Seed - William March"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrator",
+          "psychological suspense",
+          "darkly comic tone",
+          "exotic hotel setting",
+          "White Lotus aesthetic",
+          "Patricia Highsmith fans"
+        ],
+        "negative": [
+          "sympathetic protagonists",
+          "cozy mysteries",
+          "readers wanting moral clarity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Serpent Daughter - D. J. Butler": {
       "title": "Serpent Daughter",
       "author": "D. J. Butler",
       "series": "Witchy War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the concluding volume of the Witchy War saga, Sarah Elytharias Penn must access the power of the Serpent Throne itself to save the city of Cahokia from Imperial siege and the ravaging beastkind, while her brother Nathaniel and allies converge on a final confrontation across a magical alternate early America.",
+      "tone": "epic, propulsive, folkloric",
+      "pacing": "Fast",
+      "themes": [
+        "destiny and inheritance",
+        "religion vs. magic",
+        "empire and resistance",
+        "found family",
+        "sacrifice"
+      ],
+      "setting": "Alternate early America; the city of Cahokia (Ohio territory), New Amsterdam, New Orleans — flintlock fantasy setting",
+      "comparable_books": [
+        "Alvin Maker series - Orson Scott Card",
+        "The Traitor Baru Cormorant - Seth Dickinson",
+        "The Powder Mage trilogy - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock fantasy",
+          "alternate history fantasy",
+          "epic multi-POV",
+          "Americana folklore",
+          "series completionists"
+        ],
+        "negative": [
+          "readers new to the series",
+          "standalone seekers",
+          "low word-count preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Witchy Eye - D. J. Butler": {
       "title": "Witchy Eye",
       "author": "D. J. Butler",
       "series": "Witchy War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate early America where magic is real and the Appalachians groan under Imperial rule, fifteen-year-old Sarah Calhoun discovers she carries royal blood and a gift for hexing — and is soon hunted by the Emperor's dragoons and darker forces. A Dragon Award–nominated flintlock fantasy steeped in Appalachian folklore.",
+      "tone": "sardonic, adventurous, gritty folkloric",
+      "pacing": "Fast",
+      "themes": [
+        "hidden identity and destiny",
+        "empire and resistance",
+        "Appalachian folklore and magic",
+        "found family",
+        "religious syncretism"
+      ],
+      "setting": "Alternate early 19th-century America; Appalachian backwoods, Nashville, Ohio territory",
+      "comparable_books": [
+        "Alvin Maker series - Orson Scott Card",
+        "The Powder Mage trilogy - Brian McClellan",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "flintlock fantasy",
+          "alternate history",
+          "Americana folklore",
+          "chosen-one with a twist",
+          "epic world-building",
+          "female protagonist"
+        ],
+        "negative": [
+          "minimalist fantasy",
+          "standalone seekers",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Witchy Winter - D. J. Butler": {
       "title": "Witchy Winter",
       "author": "D. J. Butler",
       "series": "Witchy War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sarah Calhoun rides north to reclaim the Serpent Throne of Cahokia, needing to defeat rival claimants and master her people's goddess-given power, while separate storylines follow her brother Nathaniel and a new priest rising in New Orleans. The saga deepens its multi-POV epic scope with political intrigue and old magic.",
+      "tone": "sardonic, epic, mythic undertones",
+      "pacing": "Moderate",
+      "themes": [
+        "power and legitimacy",
+        "religion and magic in conflict",
+        "sacrifice and duty",
+        "imperial politics",
+        "identity"
+      ],
+      "setting": "Alternate early 19th-century America; Cahokia (Ohio), New Orleans, the broader Empire",
+      "comparable_books": [
+        "Alvin Maker series - Orson Scott Card",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy series",
+          "flintlock fantasy",
+          "multi-POV political intrigue",
+          "Americana folklore",
+          "series readers"
+        ],
+        "negative": [
+          "standalone preference",
+          "simple plots",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Witchy Kingdom - D. J. Butler": {
       "title": "Witchy Kingdom",
       "author": "D. J. Butler",
       "series": "Witchy War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Cahokia besieged by Imperial forces and threatened by the monstrous Simon Sword's beastkind, Sarah Elytharias Penn struggles to claim the full power of the Serpent Throne while her allies race across the Empire. The penultimate volume raises the stakes across all storylines in this alternate-America epic.",
+      "tone": "sardonic, epic, escalating tension",
+      "pacing": "Fast",
+      "themes": [
+        "siege and resistance",
+        "religious authority vs. ancient power",
+        "loyalty and sacrifice",
+        "imperial tyranny",
+        "the nature of gods"
+      ],
+      "setting": "Alternate early 19th-century America; Cahokia under siege, New Amsterdam, the Ohio Empire",
+      "comparable_books": [
+        "Alvin Maker series - Orson Scott Card",
+        "The Powder Mage trilogy - Brian McClellan",
+        "Traitor's Blade - Sebastien de Castell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "flintlock fantasy",
+          "siege narratives",
+          "multi-POV",
+          "series deep-dives"
+        ],
+        "negative": [
+          "standalone seekers",
+          "light fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Quantum Thief - Hannu Rajaniemi": {
       "title": "The Quantum Thief",
       "author": "Hannu Rajaniemi",
       "series": "Jean le Flambeur",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a far-future solar system of post-human civilisations, master thief Jean le Flambeur is broken out of a simulated prison to pull one final heist — but first must recover his stolen memories in the walking city of Oubliette on Mars. A dazzlingly inventive, idea-dense SF heist novel drawing on game theory, cryptography, and French fiction.",
+      "tone": "dazzling, dense, playful yet cerebral",
+      "pacing": "Fast",
+      "themes": [
+        "identity and memory",
+        "privacy and surveillance",
+        "post-human society",
+        "free will vs. determinism",
+        "the nature of the self"
+      ],
+      "setting": "Far-future solar system; the walking Martian city of Oubliette, the Dilemma Prison, deep space",
+      "comparable_books": [
+        "Blindsight - Peter Watts",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Revelation Space - Alastair Reynolds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "idea-dense fiction",
+          "heist narrative",
+          "post-human speculation",
+          "non-linear mystery",
+          "SF fans who want to work for it"
+        ],
+        "negative": [
+          "accessible SF",
+          "slow world-building preference",
+          "readers who dislike neologism-heavy prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Vicious - V. E. Schwab": {
       "title": "Vicious",
       "author": "V. E. Schwab",
       "series": "Villains",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "College roommates Victor and Eli discover that near-death experiences can create people with extraordinary abilities — ExtraOrdinaries — and spend a decade becoming each other's nemesis. A darkly compelling superhero-adjacent story told in non-linear structure, exploring what separates the villain from the hero.",
+      "tone": "dark, propulsive, morally ambiguous",
+      "pacing": "Fast",
+      "themes": [
+        "morality and villainy",
+        "ambition and obsession",
+        "the thin line between heroism and evil",
+        "scientific hubris",
+        "revenge"
+      ],
+      "setting": "Contemporary USA; university campus and a fictional city, told non-linearly across a decade",
+      "comparable_books": [
+        "Vengeful - V. E. Schwab",
+        "Soon I Will Be Invincible - Austin Grossman",
+        "The Rook - Daniel O'Malley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonists",
+          "anti-hero narratives",
+          "non-linear storytelling",
+          "superhero-adjacent fiction",
+          "fast propulsive pacing",
+          "found nemesis dynamic"
+        ],
+        "negative": [
+          "traditional heroes",
+          "wholesome fantasy",
+          "slow pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sparkling Cyanide - Agatha Christie": {
       "title": "Sparkling Cyanide",
       "author": "Agatha Christie",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Colonel Race",
+      "series_position": "Book 4",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A year after Rosemary Barton died at a London restaurant from poisoned champagne — officially a suicide — her husband George begins receiving anonymous letters suggesting she was murdered. When he reassembles the same dinner party, a second death occurs at the same table. Colonel Race investigates.",
+      "tone": "elegant, cool, classically puzzling",
+      "pacing": "Moderate",
+      "themes": [
+        "murder and motive",
+        "the past returning",
+        "secrets in high society",
+        "guilt and obsession",
+        "marriage and betrayal"
+      ],
+      "setting": "1940s London; fashionable restaurants and upper-class social circles",
+      "comparable_books": [
+        "And Then There Were None - Agatha Christie",
+        "Five Little Pigs - Agatha Christie",
+        "Crooked House - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age mystery",
+          "Christie completionist",
+          "elegant plotting",
+          "high society setting",
+          "closed-circle mysteries"
+        ],
+        "negative": [
+          "gritty crime fiction",
+          "modern thriller readers",
+          "action-driven plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Christie's dialogue-rich, puzzle-driven prose is a staple of classic audio; multiple celebrated productions exist.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Standing by the Wall - Mick Herron": {
@@ -142425,80 +142785,147 @@
       "author": "Mick Herron",
       "series": "Slough House",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collected volume of five Slough House novellas — including the previously unpublished Christmas interlude Standing by the Wall — ranging from troubled MI5 recruitment to botched information transfers, capturing the dark humour and high stakes of Herron's spy universe in compact, propulsive form.",
+      "tone": "darkly witty, wry, atmospherically bleak",
+      "pacing": "Fast",
+      "themes": [
+        "institutional failure and cynicism",
+        "loyalty and betrayal",
+        "the human cost of espionage",
+        "Cold War legacy",
+        "outsiders and misfits"
+      ],
+      "setting": "Contemporary London; Slough House and various MI5/spy world locations",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Dead Lions - Mick Herron",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Slough House series fans",
+          "darkly comic spy fiction",
+          "character-driven espionage",
+          "British wit",
+          "novella format"
+        ],
+        "negative": [
+          "readers new to the Slough House universe",
+          "action-first thriller readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Herron's dry wit and sharp dialogue are a natural fit for audio; the Slow Horses audiobooks are widely praised for their narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ninth House - Leigh Bardugo": {
       "title": "Ninth House",
       "author": "Leigh Bardugo",
       "series": "Alex Stern",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Galaxy 'Alex' Stern, a college dropout and sole survivor of a brutal multiple murder, is given a full scholarship to Yale on the condition she monitor the secret magical societies that use the campus as their playground — and when a local girl is murdered, she is pulled into a dangerous conspiracy. A dark, unflinching adult fantasy about privilege, trauma, and power.",
+      "tone": "dark, atmospheric, unflinching",
+      "pacing": "Moderate",
+      "themes": [
+        "privilege and exploitation",
+        "trauma and survival",
+        "institutional power",
+        "the supernatural and consent",
+        "class inequality"
+      ],
+      "setting": "Contemporary New Haven, Connecticut; Yale University and its secret occult societies",
+      "comparable_books": [
+        "Hell Bent - Leigh Bardugo",
+        "The Secret History - Donna Tartt",
+        "An Academy for Liars - Alexis Henderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark academia",
+          "morally complex female protagonist",
+          "adult fantasy",
+          "campus mystery",
+          "occult world-building",
+          "survivor narratives"
+        ],
+        "negative": [
+          "cozy fantasy",
+          "YA tone preference",
+          "sensitive content averse readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Iron Gold - Pierce Brown": {
       "title": "Iron Gold",
       "author": "Pierce Brown",
       "series": "Red Rising",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A decade after the revolution, Darrow's republic is fracturing: he defies the Senate for a daring military campaign while new POV characters — including a thief, a freed slave, and a loyal soldier — reveal the moral costs and political rot eating away at the new order. The saga expands to four perspectives and a darker, more complex world.",
+      "tone": "propulsive, grimdark, politically complex",
+      "pacing": "Fast",
+      "themes": [
+        "the price of revolution",
+        "political corruption",
+        "loyalty vs. principle",
+        "freedom and its costs",
+        "the cycle of violence"
+      ],
+      "setting": "Far-future solar system; Mars, the Moon, Mercury, and beyond — post-revolutionary interplanetary civilisation",
+      "comparable_books": [
+        "Red Rising - Pierce Brown",
+        "Morning Star - Pierce Brown",
+        "A Memory of Light - Robert Jordan & Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic science fiction",
+          "grimdark",
+          "political intrigue",
+          "multi-POV",
+          "series deep-dives",
+          "propulsive action"
+        ],
+        "negative": [
+          "series newcomers",
+          "standalone seekers",
+          "grimdark-averse readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds' narration of the Red Rising series is one of the most acclaimed in modern audiobook production, and perfectly suits the epic scope.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Strangers in Time - David Baldacci": {
@@ -142506,26 +142933,46 @@
       "author": "David Baldacci",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Blitz-era London during the final year of the Second World War, fourteen-year-old East End orphan Charlie Matters and fifteen-year-old Molly Wakefield — who returns from evacuation to find her parents missing — find shelter and unexpected family with secretive bookshop owner Ignatius Oliver. A departure from Baldacci's usual thrillers: character-driven, tender, and suffused with wartime London atmosphere.",
+      "tone": "warm-hearted, melancholic, Dickensian",
+      "pacing": "Slow",
+      "themes": [
+        "found family",
+        "survival and resilience",
+        "class and war",
+        "the power of books and stories",
+        "loss and grief",
+        "secrets of the past"
+      ],
+      "setting": "London, England, 1944–45; the Blitz and V-1/V-2 rocket campaign",
+      "comparable_books": [
+        "The Nightingale - Kristin Hannah",
+        "The Guernsey Literary and Potato Peel Pie Society - Mary Ann Shaffer",
+        "A Gentleman in Moscow - Amor Towles"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII historical fiction",
+          "found family",
+          "character-driven drama",
+          "Blitz-era London",
+          "bookshop settings"
+        ],
+        "negative": [
+          "Baldacci thriller fans expecting action-driven plots",
+          "fast-paced mystery readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Performed by a full cast in the style of a BBC radio drama; praised by listeners for bringing wartime London vividly to life.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Seven Husbands of Evelyn Hugo - Taylor Jenkins Reid": {
