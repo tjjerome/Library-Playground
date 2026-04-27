@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2069,
-  "total_pending": 2531,
+  "total_catalogued": 2089,
+  "total_pending": 2511,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -123745,82 +123745,150 @@
     "Battle Mage: Aquila (Deliverance - Part 1) - Peter A. Flannery": {
       "title": "Battle Mage: Aquila (Deliverance - Part 1)",
       "author": "Peter A. Flannery",
-      "series": "The Souls Of Wrath",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Souls of Wrath",
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel-in-spirit to Battle Mage, this book follows the legendary battle mage Aquila and his dragon Calon Tân as they fight a demonic invasion and face a terrifying new enemy — while tragedy and the encroaching madness of a blackening dragon close in around them.",
+      "tone": "epic, emotionally intense, heroic tragedy",
+      "pacing": "Moderate",
+      "themes": [
+        "destiny and sacrifice",
+        "grief",
+        "loyalty",
+        "the cost of power",
+        "good vs. evil"
+      ],
+      "setting": "A secondary fantasy world under siege by demonic 'Possessed' forces; features battle mages bonded with dragons",
+      "comparable_books": [
+        "Battle Mage - Peter A. Flannery",
+        "The Rage of Dragons - Evan Winter",
+        "Battlemage - Stephen Aryan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon bonding",
+          "military fantasy",
+          "underdogs vs. overwhelming evil",
+          "classic epic fantasy feel",
+          "heroic sacrifice"
+        ],
+        "negative": [
+          "gritty or cynical tone seekers",
+          "character-driven literary fantasy",
+          "romance-heavy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Trouble With Peace - Joe Abercrombie": {
       "title": "The Trouble With Peace",
       "author": "Joe Abercrombie",
       "series": "First Law World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8 (Age of Madness #2)",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Union teeters on the brink of civil war, a conspiracy of nobles moves against the aging king, while Savine dan Glokta's ruthless ambitions and Leo dan Brock's martial pride bring the realm closer to bloody reckoning. Abercrombie gleefully subverts expectations as every character is pushed to their darkest extremes.",
+      "tone": "grimdark, cynical, propulsive, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "power and corruption",
+        "the futility of idealism",
+        "class and revolution",
+        "moral compromise",
+        "consequences"
+      ],
+      "setting": "The Union and surrounding lands of the First Law world — early industrial era, approx. 30 years after the original trilogy",
+      "comparable_books": [
+        "A Little Hatred - Joe Abercrombie",
+        "The Wisdom of Crowds - Joe Abercrombie",
+        "The Heroes - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonists",
+          "political intrigue",
+          "subverted tropes",
+          "propulsive pacing",
+          "witty cynical prose"
+        ],
+        "negative": [
+          "hopeful or uplifting fantasy",
+          "comfort reads",
+          "squeamish about violence or dark themes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Steven Pacey's multi-character narration is widely considered among the best in fantasy audiobooks.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Wisdom of Crowds - Joe Abercrombie": {
       "title": "The Wisdom of Crowds",
       "author": "Joe Abercrombie",
       "series": "First Law World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9 (Age of Madness #3)",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The revolution consuming the Union turns into a bloody terror as the mob devours its own heroes, and Savine, Leo, and Orso face the devastating consequences of the choices they've made. The trilogy's brutal, thematically rich conclusion draws devastating parallels with real-world history.",
+      "tone": "grimdark, savage, thematically weighty, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "revolution and its corruption",
+        "power's cost",
+        "class warfare",
+        "idealism vs. reality",
+        "cycles of violence"
+      ],
+      "setting": "The Union in full revolutionary collapse — early industrial First Law world",
+      "comparable_books": [
+        "The Trouble With Peace - Joe Abercrombie",
+        "A Little Hatred - Joe Abercrombie",
+        "Best Served Cold - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonists",
+          "political upheaval",
+          "subverted tropes",
+          "historical parallels",
+          "propulsive plot"
+        ],
+        "negative": [
+          "hopeful fantasy",
+          "readers who need likeable heroes",
+          "low tolerance for dark outcomes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Steven Pacey's narration is exceptional and widely considered definitive for this series.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Making History - K. J. Parker": {
@@ -123828,53 +123896,95 @@
       "author": "K. J. Parker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A tyrant king of Aelia compels a group of scholars to fabricate an ancient city from scratch to provide historical justification for a war of conquest — on pain of death. The novella is a sharp, darkly comic satire on propaganda, truth, and the malleability of history.",
+      "tone": "darkly comic, cynical, wry, politically sharp",
+      "pacing": "Fast",
+      "themes": [
+        "truth vs. propaganda",
+        "political power",
+        "academic hubris",
+        "the construction of history",
+        "complicity"
+      ],
+      "setting": "Secondary-world pseudo-ancient Mediterranean setting; university and archaeological dig",
+      "comparable_books": [
+        "Prosper's Demon - K. J. Parker",
+        "Sixteen Ways to Defend a Walled City - K. J. Parker",
+        "1984 - George Orwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark academia",
+          "political satire",
+          "wry first-person narrators",
+          "morally grey characters",
+          "ideas-driven fiction"
+        ],
+        "negative": [
+          "action-heavy fantasy",
+          "epic scope seekers",
+          "readers who prefer clear fantasy magic systems"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Forgetting Moon - Brian Lee Durfee": {
       "title": "The Forgetting Moon",
       "author": "Brian Lee Durfee",
       "series": "The Five Warrior Angels",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the Five Isles, the last unconquered kingdom of Gul Kana stands in the path of a fanatical invading army, while a diverse cast — including an orphan boy, a princess who wants to be a warrior, and a disillusioned knight — find their fates tangled in ancient prophecy and deadly conspiracies. A massive, dark, and intricate epic fantasy debut.",
+      "tone": "grimdark, dense, intricate, bleak with threads of hope",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "prophecy and deception",
+        "faith and zealotry",
+        "identity and destiny",
+        "war and its costs",
+        "political betrayal"
+      ],
+      "setting": "The Five Isles — a medieval-style secondary world with religious structures, powerful magical weapons, and warring kingdoms",
+      "comparable_books": [
+        "A Song of Ice and Fire - George R. R. Martin",
+        "The Blackest Heart - Brian Lee Durfee",
+        "Malice - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "grimdark with complexity",
+          "intricate world-building",
+          "religious/political intrigue",
+          "doorstopper fans"
+        ],
+        "negative": [
+          "fast-paced readers",
+          "readers who dislike slow first installments",
+          "light fantasy preferences"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tailored Realities - Brandon Sanderson": {
@@ -123882,134 +123992,241 @@
       "author": "Brandon Sanderson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction / Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A non-Cosmere short fiction collection spanning ten stories across science fiction and fantasy genres, anchored by the new novella 'Moment Zero' — a detective thriller involving time travel and alternate realities — alongside previously published fan favourites like 'Snapshot' and 'Perfect State'.",
+      "tone": "inventive, fast-paced, ideas-driven, varied",
+      "pacing": "Fast",
+      "themes": [
+        "simulated reality",
+        "identity",
+        "time and consequence",
+        "heroism",
+        "parallel worlds"
+      ],
+      "setting": "Multiple settings: futuristic cities, space-faring civilisations, superhero worlds, and high-tech secondary worlds",
+      "comparable_books": [
+        "Arcanum Unbounded - Brandon Sanderson",
+        "Stories of Your Life and Others - Ted Chiang",
+        "Exhalation - Ted Chiang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Sanderson fans seeking entry points",
+          "short fiction enthusiasts",
+          "science fiction and fantasy crossover readers",
+          "fans of clever premises"
+        ],
+        "negative": [
+          "Cosmere completionists seeking lore",
+          "readers who dislike short story collections",
+          "literary fiction seekers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multi-cast narration with acclaimed performances; Kirkus Earphones Award winner.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Among Serpents - Marc J. Gregson": {
       "title": "Among Serpents",
       "author": "Marc J. Gregson",
       "series": "Above the Black",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "YA Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Conrad, now commanding a squadron under the king's orders, is sent on a secret and dangerous expedition through monster-infested skies to turn the tide of war — while political betrayal and personal trauma test him at every turn. A high-octane middle volume in this sky-ships and meritocracy fantasy trilogy.",
+      "tone": "propulsive, action-heavy, adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "meritocracy and its illusions",
+        "power and corruption",
+        "loyalty",
+        "war trauma",
+        "found family"
+      ],
+      "setting": "The Skylands — a world of floating islands, sky-ships, giant monsters, and a rigid Meritocracy society",
+      "comparable_books": [
+        "Sky's End - Marc J. Gregson",
+        "Red Rising - Pierce Brown",
+        "Skyward - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA action fantasy",
+          "sky-ships and monsters",
+          "fast-paced plots",
+          "found family",
+          "political intrigue light"
+        ],
+        "negative": [
+          "adult grimdark readers",
+          "slow-burn literary fantasy",
+          "readers sensitive to war violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Call of the Bone Ships - R. J. Barker": {
       "title": "Call of the Bone Ships",
       "author": "R. J. Barker",
       "series": "Tide Child",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lucky Meas and her crew of the dead aboard the bone ship Tide Child are caught between the warring fleets of two nations while investigating a sinister arakeesian — a sea dragon — acting strangely, and the threat of a devastating new weapon that could end the world they know.",
+      "tone": "lyrical, grim, morally complex, melancholy",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty and sacrifice",
+        "the cost of war",
+        "ecology and extinction",
+        "redemption",
+        "outcasts and belonging"
+      ],
+      "setting": "A sea-dominated secondary world where ships are built from the bones of great sea dragons; nautical and island-based",
+      "comparable_books": [
+        "The Bone Ships - R. J. Barker",
+        "The Bone Ship's Wake - R. J. Barker",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "maritime fantasy",
+          "lyrical prose",
+          "morally grey protagonists",
+          "unique world-building",
+          "found family crews"
+        ],
+        "negative": [
+          "fast-paced action seekers",
+          "readers who dislike nautical settings",
+          "simple good vs. evil stories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Barker's lyrical prose and distinct character voices are particularly well-suited to audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Tyranny of Faith - Richard Swan": {
       "title": "The Tyranny of Faith",
       "author": "Richard Swan",
       "series": "Empire of the Wolf",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Justice Vonvalt and his clerk Helena return to the imperial capital of Sova, where a fanatic religious conspiracy threatens to topple the Emperor and unleash supernatural evil upon the Empire. The stakes rise dramatically as dark forces test the limits of law and morality.",
+      "tone": "atmospheric, brooding, intelligent, increasingly dark",
+      "pacing": "Moderate",
+      "themes": [
+        "justice vs. tyranny",
+        "institutional decay",
+        "faith and fanaticism",
+        "moral compromise",
+        "political power"
+      ],
+      "setting": "The Empire of the Wolf — a medieval-flavoured secondary world, centred on the imperial capital Sova",
+      "comparable_books": [
+        "The Justice of Kings - Richard Swan",
+        "The Trials of Empire - Richard Swan",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal/detective fantasy",
+          "character-driven series",
+          "atmospheric world-building",
+          "escalating dark fantasy",
+          "morally complex heroes"
+        ],
+        "negative": [
+          "action-first readers",
+          "those who dislike slow-burn second books",
+          "light fantasy preferences"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "City of Miracles - Robert Jackson Bennett": {
       "title": "City of Miracles",
       "author": "Robert Jackson Bennett",
       "series": "The Divine Cities",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sigrud je Harkvaldsson, a man of violence and grief, hunts through a world of crumbling divine power to avenge the murder of his closest friend — while forces far larger than any one person's vengeance reshape civilization itself. A thunderously emotional conclusion to the trilogy.",
+      "tone": "propulsive, melancholy, emotionally intense, mythic",
+      "pacing": "Fast",
+      "themes": [
+        "grief and vengeance",
+        "the death of gods",
+        "change and legacy",
+        "parenthood",
+        "sacrifice"
+      ],
+      "setting": "The continent of the Divine Cities world, approximately 20 years after City of Stairs — an early 20th-century-flavoured secondary world with fading divine magic",
+      "comparable_books": [
+        "City of Stairs - Robert Jackson Bennett",
+        "City of Blades - Robert Jackson Bennett",
+        "The Fifth Season - N. K. Jemisin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotionally rich fantasy",
+          "unique world-building",
+          "action and character depth",
+          "satisfying trilogy conclusions",
+          "political intrigue"
+        ],
+        "negative": [
+          "slow meditative pacing seekers",
+          "those who haven't read the prior books",
+          "hard magic system fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Three Stigmata of Palmer Eldritch - Philip K. Dick": {
@@ -124017,53 +124234,93 @@
       "author": "Philip K. Dick",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In a future where humanity colonises hostile planets using a hallucinogenic drug called Can-D to escape into a shared fantasy, a new drug called Chew-Z arrives — brought by the mysterious returning explorer Palmer Eldritch — that promises a more powerful reality but with terrifyingly ambiguous, possibly divine or demonic, consequences.",
+      "tone": "hallucinatory, paranoid, philosophically unsettling, dark",
+      "pacing": "Moderate",
+      "themes": [
+        "reality vs. illusion",
+        "drug dependency and escapism",
+        "the nature of God and evil",
+        "colonialism",
+        "identity and consciousness"
+      ],
+      "setting": "Mid-21st century Earth and Martian colony settlements; reality itself becomes unstable",
+      "comparable_books": [
+        "Ubik - Philip K. Dick",
+        "A Scanner Darkly - Philip K. Dick",
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical sci-fi",
+          "reality-bending narratives",
+          "PKD fans",
+          "fans of classic SF",
+          "existential dread"
+        ],
+        "negative": [
+          "readers wanting clear resolution",
+          "hard SF enthusiasts",
+          "action-oriented readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Trials of Empire - Richard Swan": {
       "title": "The Trials of Empire",
       "author": "Richard Swan",
       "series": "Empire of the Wolf",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the Empire of the Wolf on its knees, Justice Vonvalt and Helena must forge unlikely alliances with wolfmen and pagans while confronting the demonically empowered zealot Claver — a battle that extends beyond the mortal plane in a dark and satisfying trilogy finale.",
+      "tone": "intense, escalating horror-fantasy, thematically weighty",
+      "pacing": "Moderate",
+      "themes": [
+        "justice and its limits",
+        "the ends justifying means",
+        "faith and power",
+        "supernatural evil",
+        "legacy and sacrifice"
+      ],
+      "setting": "The Empire of the Wolf — medieval-flavoured secondary world, focused on the capital Sova and outlying territories",
+      "comparable_books": [
+        "The Tyranny of Faith - Richard Swan",
+        "The Justice of Kings - Richard Swan",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark with legal/detective roots",
+          "character arc payoffs",
+          "escalating supernatural stakes",
+          "morally complex conclusions"
+        ],
+        "negative": [
+          "readers who prefer the first book's mystery-heavy tone",
+          "light fantasy preferences"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Gone World - Tom Sweterlitsch": {
@@ -124071,26 +124328,49 @@
       "author": "Tom Sweterlitsch",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A NCIS investigator with the ability to travel to possible futures uses time travel to investigate a brutal murder in 1997 — only to discover that every possible future she visits ends in a cataclysmic event called the Terminus. A propulsive sci-fi noir thriller with apocalyptic stakes.",
+      "tone": "propulsive, noir, dread-soaked, inventive",
+      "pacing": "Fast",
+      "themes": [
+        "time travel and consequence",
+        "fate vs. free will",
+        "apocalypse",
+        "identity",
+        "justice"
+      ],
+      "setting": "1997 rural Pennsylvania and multiple near-future timelines; cold, procedural, atmospheric",
+      "comparable_books": [
+        "Dark Matter - Blake Crouch",
+        "Recursion - Blake Crouch",
+        "Tomorrow and Tomorrow - Tom Sweterlitsch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sci-fi thriller fans",
+          "time travel narratives",
+          "noir mystery readers",
+          "propulsive pacing",
+          "apocalyptic fiction"
+        ],
+        "negative": [
+          "hard science fiction purists",
+          "slow literary fiction seekers",
+          "readers who dislike graphic crime scenes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hidden Girl and Other Stories - Ken Liu": {
@@ -124098,26 +124378,46 @@
       "author": "Ken Liu",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction / Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of sixteen short stories blending science fiction, fantasy, and silkpunk aesthetics, ranging from AI and posthumanism to Chinese mythology and intimate explorations of memory, identity, and moral choice. Includes previously unpublished pieces alongside award-nominated works.",
+      "tone": "lyrical, emotionally profound, contemplative, mythic",
+      "pacing": "Slow",
+      "themes": [
+        "memory and identity",
+        "technology and humanity",
+        "cultural inheritance",
+        "grief and loss",
+        "moral complexity"
+      ],
+      "setting": "Varied — near-future Earth, ancient China, far-future civilisations, and mythological realms",
+      "comparable_books": [
+        "The Paper Menagerie and Other Stories - Ken Liu",
+        "Stories of Your Life and Others - Ted Chiang",
+        "Exhalation - Ted Chiang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "short story enthusiasts",
+          "Chinese culture and mythology",
+          "emotional depth over plot",
+          "ideas-driven fiction"
+        ],
+        "negative": [
+          "action-oriented readers",
+          "epic fantasy seekers",
+          "readers who dislike short fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Pachinko - Min Jin Lee": {
@@ -124125,161 +124425,287 @@
       "author": "Min Jin Lee",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following four generations of a Korean family who immigrate to Japan, Pachinko charts their struggles with identity, discrimination, love, and survival across the 20th century — from a forbidden romance in colonial Korea to the lives of descendants navigating prejudice in modern Osaka.",
+      "tone": "sweeping, emotionally resonant, dignified, quietly devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and belonging",
+        "immigration and discrimination",
+        "sacrifice and family",
+        "generational trauma",
+        "survival and resilience"
+      ],
+      "setting": "Early 20th-century colonial Korea through to 1980s Japan; deeply rooted in historical and cultural reality",
+      "comparable_books": [
+        "A Thousand Splendid Suns - Khaled Hosseini",
+        "The Kite Runner - Khaled Hosseini",
+        "Everything I Never Told You - Celeste Ng"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multigenerational family sagas",
+          "literary historical fiction",
+          "character-driven narratives",
+          "diaspora stories",
+          "emotional depth"
+        ],
+        "negative": [
+          "genre fantasy/sci-fi readers",
+          "action-driven plots",
+          "readers wanting short or fast reads"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The full-cast audio production is widely praised as an exceptional way to experience this multi-generational story.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gods of the Wyrdwood - R. J. Barker": {
       "title": "Gods of the Wyrdwood",
       "author": "R. J. Barker",
       "series": "Forsaken",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the world of Crua — ruled by a brutal religious empire — a disgraced former warrior called Cahan, who can navigate the monster-haunted Wyrdwood like no one else, reluctantly guides a devoted monk into the forest to find a missing child, setting in motion a destiny he has spent years fleeing.",
+      "tone": "lyrical, dark, strange, slow-burn epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "destiny and resistance",
+        "religious oppression",
+        "the natural world and its power",
+        "redemption",
+        "found community"
+      ],
+      "setting": "Crua — a fantasy world of eternal winter, dangerous forest, warring gods, and an oppressive magical empire; inspired by dark folklore",
+      "comparable_books": [
+        "The Bone Ships - R. J. Barker",
+        "Age of Assassins - R. J. Barker",
+        "Warlords of Wyrdwood - R. J. Barker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "unique world-building",
+          "dark folklore",
+          "chosen-one trope subverted",
+          "atmospheric fantasy"
+        ],
+        "negative": [
+          "fast-paced action readers",
+          "those wanting familiar epic fantasy beats",
+          "impatient readers — demands investment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Falling Free - Lois McMaster Bujold": {
       "title": "Falling Free",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Chronologically first (publication: standalone prequel)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two hundred years before Miles Vorkosigan's birth, engineer Leo Graf arrives at a space station to train the Quaddies — genetically engineered humans with four arms designed for zero-gravity labour — and finds himself morally compelled to help them escape corporate ownership when their planned exploitation becomes clear.",
+      "tone": "warm, humane, adventurous, ethically engaged",
+      "pacing": "Moderate",
+      "themes": [
+        "corporate exploitation",
+        "human rights and personhood",
+        "engineering and ingenuity",
+        "freedom",
+        "moral responsibility"
+      ],
+      "setting": "Far future space — a corporate-owned orbital facility in the Vorkosigan universe, predating the main series by centuries",
+      "comparable_books": [
+        "Shards of Honor - Lois McMaster Bujold",
+        "The Warrior's Apprentice - Lois McMaster Bujold",
+        "A Civil Campaign - Lois McMaster Bujold"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven SF",
+          "ethical dilemmas",
+          "optimistic or humane science fiction",
+          "standalone entry points to a long series",
+          "found family"
+        ],
+        "negative": [
+          "military SF action seekers",
+          "grimdark",
+          "readers wanting the main Miles story"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Flight of the Fallen - Hana Lee": {
       "title": "Flight of the Fallen",
       "author": "Hana Lee",
       "series": "Magebike Courier",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jin-Lu, now stripped of her mana abilities after saving the world, hides her secret as she scrapes by in society's lowest echelons — until worsening magical storms and a flood of refugees shatter the fragile peace, dragging her back into high-stakes adventure and the people she tried to leave behind.",
+      "tone": "gritty, queer, propulsive, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "identity and power loss",
+        "class inequality",
+        "queer love and belonging",
+        "found family",
+        "sacrifice"
+      ],
+      "setting": "A post-apocalyptic wasteland world of walled city-states called Kerinas, connected by magic-powered motorcycles and threatened by mana storms",
+      "comparable_books": [
+        "Road to Ruin - Hana Lee",
+        "The Long Way to a Small Angry Planet - Becky Chambers",
+        "An Ember in the Ashes - Sabaa Tahir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "queer/sapphic fantasy",
+          "Mad Max-inspired settings",
+          "action-packed plots",
+          "polyamorous relationships",
+          "unique world-building"
+        ],
+        "negative": [
+          "readers wanting standalone entry points",
+          "those who dislike post-apocalyptic settings",
+          "hard magic system fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Red Mars - Kim Stanley Robinson": {
       "title": "Red Mars",
       "author": "Kim Stanley Robinson",
       "series": "Mars Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The first hundred colonists arrive on Mars in 2026, but as decades pass their project to terraform the planet fractures into fierce ideological war between those who want to preserve Mars as it is and those who would transform it — a sweeping, scientifically rigorous portrait of humanity's first extraterrestrial civilization.",
+      "tone": "meditative, scientifically dense, politically epic, awe-inspiring",
+      "pacing": "Slow",
+      "themes": [
+        "terraforming and environmentalism",
+        "utopian idealism vs. corporate greed",
+        "colonisation and politics",
+        "the nature of change",
+        "human identity on a new world"
+      ],
+      "setting": "Mars, from 2026 onwards — the surface, underground habitats, and an emerging human society on a new planet",
+      "comparable_books": [
+        "Green Mars - Kim Stanley Robinson",
+        "Blue Mars - Kim Stanley Robinson",
+        "The Martian - Andy Weir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "world-building at geological scale",
+          "political and philosophical SF",
+          "epic scope",
+          "environmental themes"
+        ],
+        "negative": [
+          "action-oriented readers",
+          "those wanting fast pace or plot-driven SF",
+          "casual SF readers unfamiliar with hard SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Extinction - Douglas Preston": {
       "title": "Extinction",
       "author": "Douglas Preston",
       "series": "Cash & Colcord",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a billionaire's son is murdered at Erebus Resort — an exclusive Colorado park featuring de-extinct woolly mammoths and giant ground sloths — CBI agent Frances Cash and county sheriff James Colcord investigate, only to discover a far more ancient and malevolent force at work than eco-terrorism.",
+      "tone": "propulsive, pulpy, science-forward, page-turning",
+      "pacing": "Fast",
+      "themes": [
+        "genetic engineering and its dangers",
+        "de-extinction ethics",
+        "corporate greed",
+        "nature's revenge",
+        "human hubris"
+      ],
+      "setting": "Present-day Colorado Rockies — a vast private wilderness resort featuring de-extinct Pleistocene megafauna",
+      "comparable_books": [
+        "Jurassic Park - Michael Crichton",
+        "The Lost World - Michael Crichton",
+        "Relic - Douglas Preston & Lincoln Child"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Michael Crichton fans",
+          "science thrillers",
+          "fast-paced procedurals",
+          "creature/horror elements",
+          "strong detective duo dynamics"
+        ],
+        "negative": [
+          "literary fiction seekers",
+          "readers who dislike procedural thrillers",
+          "hard SF purists"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short chapters and propulsive pacing make this ideal for audio; strong narrator performance enhances the thriller quality.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dragon Rider - Taran Matharu": {
