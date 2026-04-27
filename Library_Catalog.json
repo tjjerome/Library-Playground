@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3264,
-  "total_pending": 1336,
+  "total_catalogued": 3284,
+  "total_pending": 1316,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -182489,27 +182489,50 @@
       "title": "In the Shadow of Lightning",
       "author": "Brian McClellan",
       "series": "Glass Immortals",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Disgraced general and glassdancer Demir Grappo is drawn back from exile when his mother is murdered, uncovering a conspiracy threatening the very source of his world's magic — godglass — which is running out. He must rebuild his shattered reputation, navigate treacherous guild-family politics, and prevent a catastrophic war.",
+      "tone": "propulsive, politically intricate, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "resource scarcity",
+        "political intrigue",
+        "redemption",
+        "found family",
+        "class and power"
+      ],
+      "setting": "An 18th-century-inspired secondary world empire where magic is powered by coloured godglass",
+      "comparable_books": [
+        "Promise of Blood - Brian McClellan",
+        "The Ruin of Kings - Jenn Lyons",
+        "The Green Bone Saga - Fonda Lee",
+        "The Shadow Campaigns - Django Wexler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard magic systems",
+          "political intrigue",
+          "military fantasy",
+          "fast-paced plotting",
+          "rival guild families",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "romance-averse readers",
+          "prefers slow literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Last Unicorn - Peter S. Beagle": {
@@ -182517,134 +182540,240 @@
       "author": "Peter S. Beagle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A unicorn, believing she may be the last of her kind, sets out on a quest to discover what has become of the others, accompanied by a bumbling magician and a woman touched by mortality. A deeply literary fairy tale about loss, identity, and the price of being human.",
+      "tone": "lyrical, melancholic, wistful, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and selfhood",
+        "mortality",
+        "loss",
+        "beauty and impermanence",
+        "the cost of love"
+      ],
+      "setting": "A timeless fairy-tale secondary world of quests, kingdoms, and magic",
+      "comparable_books": [
+        "Stardust - Neil Gaiman",
+        "The Forgotten Beasts of Eld - Patricia A. McKillip",
+        "Piranesi - Susanna Clarke",
+        "The Night Circus - Erin Morgenstern"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "fairy tale aesthetics",
+          "melancholic tone",
+          "classics of fantasy",
+          "character-driven"
+        ],
+        "negative": [
+          "prefers action-heavy fantasy",
+          "dislikes slow pacing",
+          "wants hard magic systems"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Beagle's lyrical prose rewards being read aloud; the 2010 audiobook narrated by Angela Lansbury is widely praised.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Temptation of the Force - Tessa Gratton": {
       "title": "Temptation of the Force",
       "author": "Tessa Gratton",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Star Wars: The High Republic",
+      "series_position": "Phase III, Book 2 (overall adult novel #5)",
+      "genre": "Science Fiction / Space Opera",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set during Phase III of the High Republic era, Jedi Masters Avar Kriss and Elzar Mann reunite as the Republic and Jedi push back against the Nihil's Stormwall occupation, facing a galaxy-threatening blight and a long-awaited reckoning with love and attachment. Politics, romance, and escalating war collide in the penultimate adult High Republic novel.",
+      "tone": "romantic, tense, emotionally driven, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "love and attachment",
+        "sacrifice",
+        "the Force and free will",
+        "political machinations",
+        "hope in wartime"
+      ],
+      "setting": "The Star Wars galaxy, approximately 150 years before the events of The Phantom Menace, during the Nihil occupation",
+      "comparable_books": [
+        "Light of the Jedi - Charles Soule",
+        "The Fallen Star - Claudia Gray",
+        "Eye of Darkness - George Mann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "romance-forward narratives",
+          "Jedi-centric stories",
+          "ensemble casts",
+          "fans of The High Republic"
+        ],
+        "negative": [
+          "Star Wars newcomers (requires series knowledge)",
+          "prefers standalone novels",
+          "dislikes tie-in fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lives of Bitter Rain - Adrian Tchaikovsky": {
       "title": "Lives of Bitter Rain",
       "author": "Adrian Tchaikovsky",
       "series": "The Tyrant Philosophers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2.5 (prequel novella to Book 3, Days of Shattered Faith)",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A novella tracing the life of Angilly, a child of Palleseen soldiers who grows up to join Outreach — the empire's diplomatic corps that softens enemy nations before conquest. Following her across multiple countries and decades, it explores the moral compromises of empire-building through statecraft rather than the sword.",
+      "tone": "grimdark, ironic, morally complex, quietly devastating",
+      "pacing": "Moderate",
+      "themes": [
+        "imperialism and complicity",
+        "moral compromise",
+        "identity under empire",
+        "diplomacy as violence",
+        "the cost of ideology"
+      ],
+      "setting": "The secondary world of the Palleseen Sway — a militaristic empire expanding across multiple nations through force and cultural subversion",
+      "comparable_books": [
+        "City of Last Chances - Adrian Tchaikovsky",
+        "The Traitor Baru Cormorant - Seth Dickinson",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "morally grey protagonists",
+          "literary world-building",
+          "political fiction",
+          "fans of Tchaikovsky"
+        ],
+        "negative": [
+          "prefers action-heavy narratives",
+          "dislikes novellas",
+          "wants clear-cut heroes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wolves of Winter - Dan Jones": {
       "title": "Wolves of Winter",
       "author": "Dan Jones",
       "series": "Essex Dogs Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the slaughter at Crécy, the battered Essex Dogs are dispatched to the brutal, months-long siege of Calais in 1347, where cold, disease, pirates, and political betrayal prove as deadly as any battlefield. A grim, ground-level portrait of the Hundred Years' War through the eyes of ordinary soldiers.",
+      "tone": "grim, atmospheric, darkly comic, visceral",
+      "pacing": "Moderate",
+      "themes": [
+        "the futility of war",
+        "brotherhood and loyalty",
+        "class and power",
+        "survival",
+        "the ordinary soldier in history"
+      ],
+      "setting": "Medieval France and the siege of Calais, 1347, during the Hundred Years' War",
+      "comparable_books": [
+        "Essex Dogs - Dan Jones",
+        "Sharpe's Rifles - Bernard Cornwell",
+        "In a Dark Wood Wandering - Hella Haasse",
+        "In the Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military historical fiction",
+          "gritty realism",
+          "ensemble casts",
+          "fans of Bernard Cornwell",
+          "medieval history enthusiasts"
+        ],
+        "negative": [
+          "prefers fantasy elements",
+          "dislikes graphic war content",
+          "wants heroic/glory-focused narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Life, Liberty, and the Pursuit of Sausages - Tom Holt": {
       "title": "Life, Liberty, and the Pursuit of Sausages",
       "author": "Tom Holt",
       "series": "J. W. Wells & Co.",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Comic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A reality-bending comedy in which a genius pig, human chickens, a property lawyer, and transdimensional misfunctions collide in typically chaotic J. W. Wells & Co. fashion. Space, time, and sausages are all at risk.",
+      "tone": "absurdist, darkly comic, farcical",
+      "pacing": "Fast",
+      "themes": [
+        "absurdity of corporate life",
+        "reality and perception",
+        "fate and free will",
+        "bureaucratic magic"
+      ],
+      "setting": "Contemporary Britain, with transdimensional detours",
+      "comparable_books": [
+        "The Portable Door - Tom Holt",
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Practical Magic - Alice Hoffman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "comic fantasy",
+          "absurdist humour",
+          "fans of Pratchett or Adams",
+          "light reads",
+          "office satire"
+        ],
+        "negative": [
+          "prefers serious tone",
+          "dislikes British humour",
+          "wants epic scope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Reivers - William Faulkner": {
@@ -182652,215 +182781,372 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "An elderly man recalls a raucous boyhood adventure in 1905 Mississippi, when he, the family's roguish hired hand Boon, and a young Black stablehand 'borrowed' his grandfather's automobile for a wild journey to Memphis involving a brothel, a horse race, and a great deal of trouble. Faulkner's final novel, his most comic and warmly affectionate.",
+      "tone": "warmly comic, nostalgic, picaresque, affectionate",
+      "pacing": "Moderate",
+      "themes": [
+        "coming of age",
+        "innocence and experience",
+        "race and class in the American South",
+        "honour and loyalty",
+        "nostalgia"
+      ],
+      "setting": "Mississippi and Memphis, Tennessee, 1905 — the early American South at the dawn of the automobile age",
+      "comparable_books": [
+        "Adventures of Huckleberry Finn - Mark Twain",
+        "A Confederacy of Dunces - John Kennedy Toole",
+        "The Adventures of Tom Sawyer - Mark Twain"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "American literary fiction",
+          "picaresque adventures",
+          "Southern Gothic",
+          "Faulkner fans",
+          "historical coming-of-age"
+        ],
+        "negative": [
+          "dislikes literary complexity",
+          "prefers fast-paced plots",
+          "averse to period American settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Nero - Conn Iggulden": {
       "title": "Nero",
       "author": "Conn Iggulden",
       "series": "Nero",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Beginning in AD 37 with the dying Emperor Tiberius, this novel follows Agrippina the Younger — sister to Caligula, niece to Claudius — as she fights to survive Rome's most treacherous court and protect her young son, the boy who will one day be known as Nero. A propulsive tale of maternal ambition, political survival, and imperial brutality.",
+      "tone": "propulsive, bloody, politically charged, dramatic",
+      "pacing": "Fast",
+      "themes": [
+        "political survival",
+        "maternal ambition",
+        "power and corruption",
+        "women's agency in antiquity",
+        "dynastic violence"
+      ],
+      "setting": "Ancient Rome, AD 37–54, spanning the reigns of Tiberius, Caligula, and Claudius",
+      "comparable_books": [
+        "I, Claudius - Robert Graves",
+        "Masters of Rome - Colleen McCullough",
+        "Emperor - Conn Iggulden",
+        "The Gates of Athens - Conn Iggulden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Roman historical fiction",
+          "propulsive plotting",
+          "political intrigue",
+          "strong female characters",
+          "fans of Iggulden or Graves"
+        ],
+        "negative": [
+          "squeamish about violence",
+          "prefers fantasy",
+          "wants sympathetic heroes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Better Mousetrap - Tom Holt": {
       "title": "The Better Mousetrap",
       "author": "Tom Holt",
       "series": "J. W. Wells & Co.",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Comic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Emily Spitzer, a junior employee at a magical insurance firm, keeps dying and coming back to life — which is troublesome even by J. W. Wells & Co. standards. A fast-paced comic fantasy involving death, traps, and the labyrinthine bureaucracy of the magical underworld.",
+      "tone": "absurdist, darkly comic, farcical",
+      "pacing": "Fast",
+      "themes": [
+        "death and rebirth",
+        "corporate absurdity",
+        "fate",
+        "magical bureaucracy"
+      ],
+      "setting": "Contemporary Britain, with excursions into the magical and metaphysical",
+      "comparable_books": [
+        "The Portable Door - Tom Holt",
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Hitchhiker's Guide to the Galaxy - Douglas Adams"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "comic fantasy",
+          "absurdist humour",
+          "fans of Pratchett or Adams",
+          "light reads"
+        ],
+        "negative": [
+          "prefers serious tone",
+          "dislikes British humour",
+          "wants epic scope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "You Don't Have to Be Evil to Work Here, but It Helps - Tom Holt": {
       "title": "You Don't Have to Be Evil to Work Here, but It Helps",
       "author": "Tom Holt",
       "series": "J. W. Wells & Co.",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Comic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young man takes a filing job at J. W. Wells & Co. and finds himself entangled in a love potion scheme, a pact with the devil, and the deeply sinister inner workings of a firm that is definitely not a normal magic company. Romantic misadventures and supernatural chaos ensue.",
+      "tone": "absurdist, darkly comic, farcical",
+      "pacing": "Fast",
+      "themes": [
+        "corporate satire",
+        "love and free will",
+        "diabolical contracts",
+        "magical bureaucracy"
+      ],
+      "setting": "Contemporary London, with the magically warped offices of J. W. Wells & Co.",
+      "comparable_books": [
+        "The Portable Door - Tom Holt",
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Hitchhiker's Guide to the Galaxy - Douglas Adams"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "comic fantasy",
+          "absurdist humour",
+          "fans of Pratchett or Adams",
+          "office satire",
+          "light reads"
+        ],
+        "negative": [
+          "prefers serious tone",
+          "dislikes British humour",
+          "wants epic scope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "May Contain Traces of Magic - Tom Holt": {
       "title": "May Contain Traces of Magic",
       "author": "Tom Holt",
       "series": "J. W. Wells & Co.",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Comic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A travelling salesman for J. W. Wells & Co. breaks company rules by conversing with the demonical sat-nav in his car, triggering a chain of increasingly bizarre supernatural events across Britain's back roads. A road-trip comedy with a magical menace behind the wheel.",
+      "tone": "absurdist, darkly comic, farcical",
+      "pacing": "Fast",
+      "themes": [
+        "technology and magic",
+        "bureaucratic chaos",
+        "fate and accident",
+        "corporate absurdity"
+      ],
+      "setting": "Contemporary Britain, primarily on the road between magical sales calls",
+      "comparable_books": [
+        "The Portable Door - Tom Holt",
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Hitchhiker's Guide to the Galaxy - Douglas Adams"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "comic fantasy",
+          "absurdist humour",
+          "fans of Pratchett or Adams",
+          "light reads"
+        ],
+        "negative": [
+          "prefers serious tone",
+          "dislikes British humour",
+          "wants epic scope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Earth, Air, Fire and Custard - Tom Holt": {
       "title": "Earth, Air, Fire and Custard",
       "author": "Tom Holt",
       "series": "J. W. Wells & Co.",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Comic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Paul Carpenter's chaotic tenure at J. W. Wells & Co. continues as he faces demons, interdimensional menaces, and the dawning horror that his colleagues are weirder than previously imagined — and that includes himself. The absurdity escalates in this third installment of the series.",
+      "tone": "absurdist, darkly comic, farcical",
+      "pacing": "Fast",
+      "themes": [
+        "identity",
+        "corporate absurdity",
+        "fate and coincidence",
+        "magical bureaucracy"
+      ],
+      "setting": "Contemporary London, with J. W. Wells & Co. at the centre of supernatural chaos",
+      "comparable_books": [
+        "The Portable Door - Tom Holt",
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Hitchhiker's Guide to the Galaxy - Douglas Adams"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "comic fantasy",
+          "absurdist humour",
+          "fans of Pratchett or Adams",
+          "light reads",
+          "office satire"
+        ],
+        "negative": [
+          "prefers serious tone",
+          "dislikes British humour",
+          "wants epic scope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Portable Door - Tom Holt": {
       "title": "The Portable Door",
       "author": "Tom Holt",
       "series": "J. W. Wells & Co.",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Comic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Paul Carpenter, a hapless young man, takes a filing job at the London firm J. W. Wells & Co. — only to discover it is run by magicians whose sinister agenda is concealed beneath layers of mundane office politics. A comic fantasy skewering corporate culture and the supernatural alike.",
+      "tone": "absurdist, darkly comic, sardonic",
+      "pacing": "Moderate",
+      "themes": [
+        "corporate satire",
+        "the mundane versus the magical",
+        "identity",
+        "fate"
+      ],
+      "setting": "Contemporary London, in the bafflingly magical offices of J. W. Wells & Co.",
+      "comparable_books": [
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Practical Demonkeeping - Christopher Moore"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "comic fantasy",
+          "British humour",
+          "office satire",
+          "fans of Pratchett or Adams",
+          "light reads"
+        ],
+        "negative": [
+          "prefers serious tone",
+          "dislikes absurdist fiction",
+          "wants epic scope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "In Your Dreams - Tom Holt": {
       "title": "In Your Dreams",
       "author": "Tom Holt",
       "series": "J. W. Wells & Co.",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Comic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Paul Carpenter is back at J. W. Wells & Co., this time confronting the Fey — who are using human dreams to stage an invasion of the mortal world. More supernatural mayhem, unlikely heroism, and corporate absurdity ensue.",
+      "tone": "absurdist, darkly comic, farcical",
+      "pacing": "Fast",
+      "themes": [
+        "dreams and reality",
+        "corporate satire",
+        "magical invasions",
+        "fate and incompetence"
+      ],
+      "setting": "Contemporary London and the dreamworld, with J. W. Wells & Co. at the centre of it all",
+      "comparable_books": [
+        "The Portable Door - Tom Holt",
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Hitchhiker's Guide to the Galaxy - Douglas Adams"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "comic fantasy",
+          "absurdist humour",
+          "fans of Pratchett or Adams",
+          "light reads"
+        ],
+        "negative": [
+          "prefers serious tone",
+          "dislikes British humour",
+          "wants epic scope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gulp: Adventures on the Alimentary Canal - Mary Roach": {
@@ -182868,26 +183154,47 @@
       "author": "Mary Roach",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Popular Science / Narrative Non-fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Science writer Mary Roach takes readers on an irreverent, meticulously researched tour of the human digestive system — from nose to tail — exploring the science behind eating, digestion, and everything in between with her signature blend of curiosity and dark comedy.",
+      "tone": "irreverent, darkly comic, curious, accessible",
+      "pacing": "Moderate",
+      "themes": [
+        "human biology",
+        "food science",
+        "the body and disgust",
+        "scientific curiosity",
+        "medicine and history"
+      ],
+      "setting": "Contemporary laboratories, historical archives, and the human gut",
+      "comparable_books": [
+        "Stiff - Mary Roach",
+        "Bonk - Mary Roach",
+        "The Body - Bill Bryson",
+        "Gut - Giulia Enders"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science readers",
+          "fans of Mary Roach",
+          "dark humour",
+          "curious about the body",
+          "narrative non-fiction"
+        ],
+        "negative": [
+          "easily grossed out",
+          "prefers dense academic science",
+          "fiction-only readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Roach's conversational, witty prose translates superbly to audio; she narrates some editions herself.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Triumph of Christianity: How a Forbidden Religion Swept the World - Bart D. Ehrman": {
@@ -182895,53 +183202,96 @@
       "author": "Bart D. Ehrman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History / Religious Studies",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Biblical scholar Bart Ehrman traces the remarkable rise of Christianity from a tiny persecuted Jewish sect to the dominant religion of the Roman Empire, examining the social, political, and theological forces that drove its explosive growth within three centuries.",
+      "tone": "scholarly yet accessible, analytical, measured",
+      "pacing": "Moderate",
+      "themes": [
+        "religious conversion",
+        "the fall of paganism",
+        "early Christianity",
+        "social history",
+        "power and belief"
+      ],
+      "setting": "The Roman Empire, roughly 1st–4th centuries AD",
+      "comparable_books": [
+        "How Jesus Became God - Bart D. Ehrman",
+        "The Fate of Rome - Kyle Harper",
+        "When Christians Were Jews - Paula Fredriksen",
+        "Rubicon - Tom Holland"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "religious history enthusiasts",
+          "fans of Ehrman",
+          "Roman history readers",
+          "secular approach to religion",
+          "accessible academic history"
+        ],
+        "negative": [
+          "seeking devotional or faith-affirming content",
+          "prefers narrative history over analysis",
+          "fiction-only readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Memory Called Empire - Arkady Martine": {
       "title": "A Memory Called Empire",
       "author": "Arkady Martine",
       "series": "Teixcalaan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ambassador Mahit Dzmare arrives at the capital of the vast Teixcalaanli empire to find her predecessor dead under suspicious circumstances — and carrying in her own mind a neurological implant encoding his memories. A dazzling novel about colonialism, identity, political intrigue, and the seductive power of empire.",
+      "tone": "lyrical, politically sophisticated, propulsive, emotionally rich",
+      "pacing": "Moderate",
+      "themes": [
+        "imperialism and cultural assimilation",
+        "identity and memory",
+        "political intrigue",
+        "love of literature",
+        "the seduction of empire"
+      ],
+      "setting": "A far-future interstellar empire with a Mesoamerican-inflected culture, primarily its glittering capital city",
+      "comparable_books": [
+        "A Desolation Called Peace - Arkady Martine",
+        "The Traitor Baru Cormorant - Seth Dickinson",
+        "Ancillary Justice - Ann Leckie",
+        "Translation State - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "political intrigue",
+          "colonial themes",
+          "morally complex protagonists",
+          "found family",
+          "Hugo Award readers"
+        ],
+        "negative": [
+          "hard science fiction fans",
+          "prefers action over politics",
+          "dislikes lyrical prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Lying Game - Ruth Ware": {
@@ -182949,26 +183299,47 @@
       "author": "Ruth Ware",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Psychological Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Four women who once attended the same boarding school are reunited when the body of their former art teacher is disturbed, threatening to expose a secret they buried years ago. A taut thriller unwinding the lies, loyalties, and buried guilt of a shared past.",
+      "tone": "tense, atmospheric, claustrophobic, slow-burn",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "guilt and secrets",
+        "female friendship and loyalty",
+        "the past returning",
+        "class and privilege",
+        "truth and lies"
+      ],
+      "setting": "A remote English coastal estuary — present day framed around a dark boarding school past",
+      "comparable_books": [
+        "In a Dark Dark Wood - Ruth Ware",
+        "The Woman in the Window - A. J. Finn",
+        "The Secret History - Donna Tartt",
+        "Behind Closed Doors - B. A. Paris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological thriller fans",
+          "dark secrets plots",
+          "female ensemble casts",
+          "boarding school settings",
+          "slow-burn mysteries"
+        ],
+        "negative": [
+          "prefers fast-paced action",
+          "dislikes unreliable narrators",
+          "wants genre fantasy or sci-fi"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gates of Fire - Steven Pressfield": {
@@ -182976,53 +183347,100 @@
       "author": "Steven Pressfield",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told through the sole Spartan survivor of the Battle of Thermopylae, this novel recounts the training, brotherhood, and final stand of the 300 Spartans against the Persian army of Xerxes in 480 BC — a visceral, deeply humanising account of courage, sacrifice, and the Spartan ethos.",
+      "tone": "intense, martial, deeply humanising, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "courage and sacrifice",
+        "brotherhood and belonging",
+        "war and death",
+        "the Spartan code",
+        "freedom versus tyranny"
+      ],
+      "setting": "Ancient Greece, primarily Sparta and the pass of Thermopylae, 480 BC",
+      "comparable_books": [
+        "Tides of War - Steven Pressfield",
+        "The Afghan Campaign - Steven Pressfield",
+        "The Song of Achilles - Madeline Miller",
+        "Colossus - Colin Falconer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military historical fiction",
+          "ancient world settings",
+          "brotherhood and sacrifice themes",
+          "fans of the Spartans",
+          "propulsive battle scenes"
+        ],
+        "negative": [
+          "pacifist readers",
+          "prefers character-driven literary fiction",
+          "squeamish about war violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The novel's oral storytelling conceit — narrated through a captive survivor — makes it exceptionally well-suited to audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Children of Gods and Fighting Men - Shauna Lawless": {
       "title": "The Children of Gods and Fighting Men",
       "author": "Shauna Lawless",
       "series": "Gael Song Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 981 AD Ireland, two immortal women — Gormflaith, a Fomorian fire-mage hiding among the Viking nobility of Dublin, and Fódla, a Tuatha Dé Danann healer embedded in the court of the rising king Brian Boru — navigate a decades-long political and mythological war for Ireland's soul. A debut blending Irish mythology with the brutal politics of the Viking age.",
+      "tone": "atmospheric, politically intricate, mythic, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "Irish mythology and history",
+        "female power in patriarchal society",
+        "immortality and sacrifice",
+        "political survival",
+        "religious conversion"
+      ],
+      "setting": "10th-century Ireland and Dublin, during the Viking age and the rise of Brian Boru",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "The Warlord Chronicles - Bernard Cornwell",
+        "A Song of Ice and Fire - George R. R. Martin",
+        "The Wolf and the Witch - Genevieve Gornichec"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Celtic mythology fans",
+          "historical fantasy",
+          "dual female POVs",
+          "morally grey characters",
+          "Viking age settings",
+          "low magic systems"
+        ],
+        "negative": [
+          "prefers high fantasy",
+          "wants fast action over political intrigue",
+          "unfamiliar with Irish mythology"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Glorious Exploits - Ferdia Lennon": {
