@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2328,
-  "total_pending": 2272,
+  "total_catalogued": 2348,
+  "total_pending": 2252,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -136234,107 +136234,190 @@
       "author": "Joseph Finder",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wall Street financier Paul Brightman has spent years living under a false name in rural New Hampshire after marrying the daughter of a dangerous Russian oligarch. When his cover is blown, he is forced to flee into the wilderness with both Russian operatives and the FBI on his trail.",
+      "tone": "propulsive, high-stakes, paranoid",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "betrayal",
+        "Russian oligarchy",
+        "espionage",
+        "identity"
+      ],
+      "setting": "Contemporary — New Hampshire wilderness, Manhattan, Moscow; dual timeline",
+      "comparable_books": [
+        "The Firm - John Grisham",
+        "All the Old Knives - Olen Steinhauer",
+        "The Gray Man - Mark Greaney"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "man-on-the-run thriller",
+          "dual timeline",
+          "propulsive pacing",
+          "Cold War meets modern espionage",
+          "Russia/oligarch world",
+          "page-turner"
+        ],
+        "negative": [
+          "thin character development",
+          "over-the-top plot convolutions",
+          "slow-burn readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Mercenary - Paul Vidich": {
       "title": "The Mercenary",
       "author": "Paul Vidich",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "George Mueller / CIA Cold War series",
+      "series_position": "Book 4",
+      "genre": "Espionage",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Moscow 1985, a senior KGB officer code-named GAMBIT approaches the CIA seeking exfiltration, and demands as his handler the morally ambiguous Alex Garin — a former CIA operative and ex-KGB officer whose loyalties remain dangerously unclear.",
+      "tone": "atmospheric, melancholic, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty and betrayal",
+        "dual identity",
+        "Cold War geopolitics",
+        "espionage tradecraft",
+        "moral ambiguity"
+      ],
+      "setting": "Moscow, 1985 — the Soviet Union in its final years",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Coldest Warrior - Paul Vidich",
+        "An Honorable Man - Paul Vidich"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "le Carré fans",
+          "literary spy fiction",
+          "Cold War Moscow atmosphere",
+          "morally grey protagonist",
+          "slow-burn espionage"
+        ],
+        "negative": [
+          "action-focused thriller readers",
+          "large cast can be unwieldy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Mirror & the Light - Hilary Mantel": {
       "title": "The Mirror & the Light",
       "author": "Hilary Mantel",
       "series": "Thomas Cromwell Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The final volume of Mantel's trilogy follows Thomas Cromwell from the execution of Anne Boleyn through his own political unraveling, charting his rise to the height of power and inevitable fall from Henry VIII's favour.",
+      "tone": "lyrical, stately, elegiac",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "power and its limits",
+        "loyalty and self-preservation",
+        "Tudor court politics",
+        "ambition",
+        "mortality"
+      ],
+      "setting": "Tudor England, 1536–1540",
+      "comparable_books": [
+        "Wolf Hall - Hilary Mantel",
+        "Bring Up the Bodies - Hilary Mantel",
+        "Hilary Mantel - A Place of Greater Safety"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary historical fiction",
+          "complex morally grey protagonist",
+          "dense immersive prose",
+          "character-driven",
+          "political intrigue"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "dislike of present-tense narration",
+          "readers unfamiliar with the series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ben Miles's acclaimed narration is widely considered essential to the full experience of the trilogy.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Matchmaker: A Spy in Berlin - Paul Vidich": {
       "title": "The Matchmaker: A Spy in Berlin",
       "author": "Paul Vidich",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "George Mueller / CIA Cold War series",
+      "series_position": "Book 5",
+      "genre": "Espionage",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Berlin 1989, American interpreter Anne Simpson discovers her East German husband has vanished and that she was deliberately targeted by the Matchmaker — a shadowy Stasi counterintelligence officer — whose network of 'Romeo' spies married Western women for cover.",
+      "tone": "atmospheric, understated, quietly gripping",
+      "pacing": "Moderate",
+      "themes": [
+        "deception in intimate relationships",
+        "loyalty",
+        "Cold War endgame",
+        "identity",
+        "moral ambiguity of espionage"
+      ],
+      "setting": "West and East Berlin, 1989 — the weeks surrounding the fall of the Wall",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Mercenary - Paul Vidich",
+        "The Good German - Joseph Kanon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "le Carré fans",
+          "Cold War Berlin setting",
+          "female protagonist in espionage",
+          "literary spy fiction",
+          "historical accuracy"
+        ],
+        "negative": [
+          "action-focused readers",
+          "those wanting a fast plot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Long Drop - Denise Mina": {
@@ -136342,80 +136425,142 @@
       "author": "Denise Mina",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in 1950s Glasgow, the novel reconstructs the night a suspected serial killer and the father of one of his possible victims spent drinking together in bars, intercut with the killer's eventual trial — a dark and formally innovative true-crime narrative.",
+      "tone": "darkly comic, bleak, forensically precise",
+      "pacing": "Moderate",
+      "themes": [
+        "truth and self-deception",
+        "class and gender in post-war Scotland",
+        "the nature of evil",
+        "grief",
+        "justice"
+      ],
+      "setting": "Glasgow, Scotland, 1957–1958",
+      "comparable_books": [
+        "Tartan Noir - Val McDermid",
+        "The Secret Scripture - Sebastian Barry",
+        "Black and Blue - Ian Rankin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Scottish noir",
+          "true crime inspired fiction",
+          "morally complex",
+          "literary crime",
+          "unconventional structure"
+        ],
+        "negative": [
+          "readers wanting a traditional detective story",
+          "violence-averse readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Last Town - Blake Crouch": {
       "title": "The Last Town",
       "author": "Blake Crouch",
       "series": "Wayward Pines",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the explosive conclusion to the Wayward Pines trilogy, Ethan Burke must lead the last remnants of humanity against the abbies as the carefully maintained illusion of the town collapses and the true nature of the world is finally confronted.",
+      "tone": "propulsive, tense, apocalyptic",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "the cost of utopia",
+        "free will vs. control",
+        "the future of humanity",
+        "sacrifice"
+      ],
+      "setting": "Near-future America — the secretive town of Wayward Pines, Idaho",
+      "comparable_books": [
+        "Pines - Blake Crouch",
+        "The Walking Dead (series) - Robert Kirkman",
+        "Dark Matter - Blake Crouch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast pacing",
+          "high-concept sci-fi thriller",
+          "series finale payoff",
+          "post-apocalyptic tension"
+        ],
+        "negative": [
+          "readers wanting standalone",
+          "series must be read in order"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Paul Michael Garcia's narration is highly regarded and suits the propulsive, cinematic style perfectly.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Decagon House Murders - Yukito Ayatsuji": {
       "title": "The Decagon House Murders",
       "author": "Yukito Ayatsuji",
       "series": "The Bizarre House Mysteries",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Seven members of a university mystery club travel to a remote Japanese island notorious for a recent mass murder, staying in the Decagon House — where they are soon picked off one by one in a Golden Age-style homage to Agatha Christie's And Then There Were None.",
+      "tone": "puzzle-focused, eerie, metatextual",
+      "pacing": "Moderate",
+      "themes": [
+        "revenge",
+        "metatextual references to detective fiction",
+        "isolation",
+        "the mechanics of the whodunit",
+        "identity"
+      ],
+      "setting": "Japan, 1986 — remote island of Tsunojima",
+      "comparable_books": [
+        "And Then There Were None - Agatha Christie",
+        "The Mill House Murders - Yukito Ayatsuji",
+        "The Tokyo Zodiac Murders - Soji Shimada"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age puzzle mysteries",
+          "locked-room mysteries",
+          "Japanese honkaku fiction",
+          "Christie fans",
+          "metatextual mystery"
+        ],
+        "negative": [
+          "readers expecting deep characterisation",
+          "those who dislike puzzle-over-psychology mysteries"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Chamber - Will Dean": {
@@ -136423,80 +136568,143 @@
       "author": "Will Dean",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Six saturation divers are sealed inside a hyperbaric chamber on a North Sea maintenance job — when one is found dead in his bunk, with four days of decompression remaining before the hatch can be safely opened, the survivors must determine who among them is a killer.",
+      "tone": "claustrophobic, relentlessly tense, procedurally precise",
+      "pacing": "Fast",
+      "themes": [
+        "isolation and paranoia",
+        "trust under extreme pressure",
+        "workplace danger",
+        "grief",
+        "survival"
+      ],
+      "setting": "North Sea, contemporary — inside a pressurised hyperbaric saturation diving chamber",
+      "comparable_books": [
+        "And Then There Were None - Agatha Christie",
+        "The Last Passenger - Will Dean",
+        "The Last Thing to Burn - Will Dean"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room mysteries",
+          "claustrophobic thrillers",
+          "unique settings",
+          "fast pacing",
+          "And Then There Were None fans"
+        ],
+        "negative": [
+          "readers who dislike bleak or ambiguous endings",
+          "those preferring deep characterisation over plot"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The claustrophobic first-person narration and extreme setting translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Spook Street - Mick Herron": {
       "title": "Spook Street",
       "author": "Mick Herron",
       "series": "Slough House",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Espionage",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jackson Lamb's team of intelligence washouts at Slough House are drawn into a deadly operation when a bombing tears through the heart of their world, forcing the slow horses to confront enemies from the past — and from within.",
+      "tone": "darkly comic, cynical, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional failure",
+        "loyalty and betrayal",
+        "ageing and obsolescence",
+        "the human cost of espionage",
+        "dark humour"
+      ],
+      "setting": "Contemporary London — MI5's backwater Slough House outpost",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "Dead Lions - Mick Herron"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "le Carré fans",
+          "darkly comic tone",
+          "ensemble cast",
+          "British spy fiction",
+          "morally grey characters"
+        ],
+        "negative": [
+          "readers wanting action-heavy spy thrillers",
+          "series must be read in order for full impact"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Seán Barrett's narration of the Slough House series is widely considered one of the finest audiobook performances in the genre.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Slough House - Mick Herron": {
       "title": "Slough House",
       "author": "Mick Herron",
       "series": "Slough House",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Espionage",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jackson Lamb and his team of sidelined MI5 operatives navigate a new crisis involving Russian saboteurs and treachery at the heart of the intelligence establishment, as the slow horses find themselves — as ever — expendable and essential in equal measure.",
+      "tone": "darkly comic, cynical, razor-sharp",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional cynicism",
+        "loyalty and sacrifice",
+        "political manipulation",
+        "the price of second chances",
+        "dark humour"
+      ],
+      "setting": "Contemporary London — Slough House and the wider MI5 world",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Bad Actors - Mick Herron",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "le Carré fans",
+          "dark comedy",
+          "ensemble spy drama",
+          "witty prose",
+          "long series investment"
+        ],
+        "negative": [
+          "new readers to the series — book 7 demands prior investment",
+          "action-only spy thriller fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Seán Barrett's narration is essential listening and widely acclaimed as one of the best audiobook series available.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Berlin Exchange - Joseph Kanon": {
@@ -136504,26 +136712,45 @@
       "author": "Joseph Kanon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Espionage",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An American scientist who passed nuclear secrets to the Soviets is released from a British prison as part of a Cold War spy exchange, only to find himself drawn back into the shadows of divided Berlin where his past and those he loves await.",
+      "tone": "melancholic, atmospheric, morally ambiguous",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "betrayal and consequence",
+        "love across political divides",
+        "Cold War moral compromises",
+        "identity and belonging",
+        "divided Germany"
+      ],
+      "setting": "Cold War Berlin, 1963",
+      "comparable_books": [
+        "The Good German - Joseph Kanon",
+        "Istanbul Passage - Joseph Kanon",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "Cold War atmosphere",
+          "morally complex characters",
+          "Alan Furst fans",
+          "historical setting"
+        ],
+        "negative": [
+          "readers wanting fast-paced action thrillers",
+          "those disliking melancholic endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Run - Blake Crouch": {
@@ -136531,26 +136758,48 @@
       "author": "Blake Crouch",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a mysterious event broadcasts the faces of millions across the world, turning neighbours into killers overnight, a family flees on foot through a nightmarish America in a desperate bid to reach safety.",
+      "tone": "relentlessly propulsive, apocalyptic, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "family and survival",
+        "societal collapse",
+        "mob mentality",
+        "identity",
+        "parenthood under extreme duress"
+      ],
+      "setting": "Near-future / contemporary America — a cross-country flight through chaos",
+      "comparable_books": [
+        "The Road - Cormac McCarthy",
+        "Dark Matter - Blake Crouch",
+        "Pines - Blake Crouch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "man-on-the-run thrillers",
+          "family survival stories",
+          "fast pacing",
+          "high-concept premise",
+          "apocalyptic fiction"
+        ],
+        "negative": [
+          "slow-burn readers",
+          "those disliking graphic violence",
+          "readers seeking literary prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The relentless pace and short chapters make this ideal listening; the tension escalates perfectly in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Shanghai - Joseph Kanon": {
@@ -136558,26 +136807,47 @@
       "author": "Joseph Kanon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An American arrives in 1930s Shanghai to find his brother murdered, and becomes entangled in the city's treacherous web of expatriates, gangsters, opium traders, and Japanese imperial ambitions in the years before World War II.",
+      "tone": "atmospheric, noir, melancholic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "moral compromise",
+        "colonial decadence",
+        "loyalty and betrayal",
+        "love and loss",
+        "imperialism"
+      ],
+      "setting": "Shanghai, 1930s — the cosmopolitan International Settlement on the eve of Japanese occupation",
+      "comparable_books": [
+        "The Good German - Joseph Kanon",
+        "Empire of the Sun - J.G. Ballard",
+        "Alan Furst novels"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Alan Furst fans",
+          "historical atmosphere over action",
+          "morally complex settings",
+          "noir aesthetics",
+          "pre-WWII period fiction"
+        ],
+        "negative": [
+          "fast-paced thriller readers",
+          "those disliking slow, atmosphere-heavy novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Permutation City - Greg Egan": {
@@ -136585,107 +136855,185 @@
       "author": "Greg Egan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future where digital copies of human consciousness can be run as simulations, a visionary programmer seeks to create a self-sustaining virtual universe — raising radical questions about the nature of reality, identity, and what it means to exist.",
+      "tone": "cerebral, philosophical, formally demanding",
+      "pacing": "Slow",
+      "themes": [
+        "consciousness and identity",
+        "the nature of reality and simulation",
+        "free will",
+        "immortality",
+        "the ethics of creation"
+      ],
+      "setting": "Near-future Earth and virtual reality constructs — mid-21st century",
+      "comparable_books": [
+        "Diaspora - Greg Egan",
+        "Blindsight - Peter Watts",
+        "Quarantine - Greg Egan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "philosophical SF",
+          "readers who enjoy complex ideas over character",
+          "simulation theory",
+          "transhumanism"
+        ],
+        "negative": [
+          "readers wanting character-driven narrative",
+          "those who dislike dense technical ideas",
+          "casual SF readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Dense philosophical concepts and technical SF arguments benefit greatly from the ability to pause and re-read; print allows annotation and reflection.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "One Good Turn - Kate Atkinson": {
       "title": "One Good Turn",
       "author": "Kate Atkinson",
       "series": "Jackson Brodie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Private investigator Jackson Brodie witnesses a road-rage incident in Edinburgh during the Festival, which sets off a chain of interconnected events involving a mystery writer, a corrupt property developer, and a series of crimes that converge in unexpected ways.",
+      "tone": "darkly comic, witty, structurally playful",
+      "pacing": "Moderate",
+      "themes": [
+        "coincidence and fate",
+        "crime and its ripples",
+        "class and hypocrisy",
+        "identity",
+        "the nature of storytelling"
+      ],
+      "setting": "Edinburgh, Scotland — during the Edinburgh Festival, contemporary",
+      "comparable_books": [
+        "Case Histories - Kate Atkinson",
+        "When Will There Be Good News - Kate Atkinson",
+        "The Likeness - Tana French"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary crime fiction",
+          "darkly comic tone",
+          "structurally inventive",
+          "Kate Atkinson fans",
+          "ensemble narratives"
+        ],
+        "negative": [
+          "readers wanting a traditional detective procedural",
+          "those disliking non-linear plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Marble Hall Murders - Anthony Horowitz": {
       "title": "Marble Hall Murders",
       "author": "Anthony Horowitz",
       "series": "Susan Ryeland Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Editor Susan Ryeland is hired to work on a new Atticus Pünd continuation novel by Eliot Crace, whose deceased grandmother — a world-famous children's author — he believes was murdered; as Susan reads deeper, the lines between the fictional mystery and deadly real-world events begin to blur.",
+      "tone": "clever, playful, metafictional",
+      "pacing": "Moderate",
+      "themes": [
+        "fiction and reality",
+        "hidden family secrets",
+        "literary legacy",
+        "metafiction",
+        "justice"
+      ],
+      "setting": "Contemporary England and fictional South of France (within-the-novel); 2025",
+      "comparable_books": [
+        "Magpie Murders - Anthony Horowitz",
+        "Moonflower Murders - Anthony Horowitz",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age mystery fans",
+          "metafictional structures",
+          "book-within-a-book format",
+          "cosy-adjacent mysteries",
+          "Horowitz fans"
+        ],
+        "negative": [
+          "readers who haven't read Magpie and Moonflower Murders first",
+          "those who found the series formula tired by book 3"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Murder in the Mews - Agatha Christie": {
       "title": "Murder in the Mews",
       "author": "Agatha Christie",
       "series": "Hercule Poirot",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Stories",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A collection of four Poirot novellas, led by the title story in which the great detective investigates a death that appears to be suicide on Bonfire Night — and finds the evidence pointing to murder.",
+      "tone": "elegant, witty, Golden Age puzzle",
+      "pacing": "Moderate",
+      "themes": [
+        "deception and misdirection",
+        "social propriety and its cracks",
+        "justice",
+        "human vanity"
+      ],
+      "setting": "England, 1930s — London mews and English country houses",
+      "comparable_books": [
+        "Poirot Investigates - Agatha Christie",
+        "The Labours of Hercules - Agatha Christie",
+        "Lord Edgware Dies - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age mystery fans",
+          "Poirot fans",
+          "short story readers",
+          "puzzle mystery devotees",
+          "cosy mystery readers"
+        ],
+        "negative": [
+          "readers wanting novels over short fiction",
+          "those disliking 1930s social settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "David Suchet's authoritative Poirot narrations are considered definitive and make the short novella format ideal for audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Los Alamos - Joseph Kanon": {
@@ -136693,26 +137041,47 @@
       "author": "Joseph Kanon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An OSS intelligence officer is sent to the secret Manhattan Project facility at Los Alamos to investigate a murder, and finds himself drawn into the moral and political tensions of the scientists building the world's first atomic bomb.",
+      "tone": "atmospheric, morally weighty, noir-inflected",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "moral consequences of scientific progress",
+        "secrecy and espionage",
+        "the atomic bomb",
+        "love",
+        "complicity"
+      ],
+      "setting": "Los Alamos, New Mexico, 1945 — the final months of the Manhattan Project",
+      "comparable_books": [
+        "The Good German - Joseph Kanon",
+        "The Berlin Exchange - Joseph Kanon",
+        "The Oppenheimer Alternative - Robert J. Sawyer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical atmosphere over plot",
+          "Manhattan Project history",
+          "literary crime fiction",
+          "Alan Furst fans",
+          "morally complex settings"
+        ],
+        "negative": [
+          "fast-paced thriller readers",
+          "those disliking slow atmospheric novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Friends Helping Friends - Patrick Hoffman": {
@@ -136720,26 +137089,47 @@
       "author": "Patrick Hoffman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two broke Denver friends agree to rough up a judge for a vengeful attorney, a bad decision that spirals into them being forced to go undercover inside a white supremacist group in rural Colorado — a darkly comic American noir about loyalty, desperation, and extremism.",
+      "tone": "darkly comic, gritty, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "friendship and loyalty",
+        "economic desperation",
+        "white supremacy and domestic terrorism",
+        "the criminal justice system",
+        "inherited trauma"
+      ],
+      "setting": "Contemporary Denver and rural Colorado",
+      "comparable_books": [
+        "The White Van - Patrick Hoffman",
+        "Back to the Dirt - Frank Bill",
+        "West Heart Kill - Dann McDorman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "American noir",
+          "darkly comic crime fiction",
+          "propulsive pacing",
+          "morally grey protagonists",
+          "social commentary in genre fiction"
+        ],
+        "negative": [
+          "readers wanting comfort reads",
+          "those uncomfortable with white supremacist themes or violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Leverage - Amran Gowani": {
@@ -136747,26 +137137,48 @@
       "author": "Amran Gowani",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Pakistani-American hedge fund star Ali Jafar loses $300 million in a single afternoon at the notorious Prism Capital and faces an impossible ultimatum from his menacing boss: claw the money back through increasingly dark means in three months, or be handed to the government as a scapegoat for insider trading.",
+      "tone": "darkly comic, satirical, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "race and power in finance",
+        "late-stage capitalism",
+        "moral compromise",
+        "identity and ambition",
+        "institutional corruption"
+      ],
+      "setting": "San Francisco, mid-2010s — the world of high-finance hedge funds",
+      "comparable_books": [
+        "Black Buck - Mateo Askaripour",
+        "Liar's Poker - Michael Lewis (non-fiction)",
+        "American Psycho - Bret Easton Ellis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic thrillers",
+          "Wall Street satire",
+          "morally grey protagonist",
+          "Succession and Industry fans",
+          "debut fiction with a distinctive voice"
+        ],
+        "negative": [
+          "readers unfamiliar with finance culture",
+          "those disliking suicidal ideation themes",
+          "readers wanting grounded realism"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Endless Night - Agatha Christie": {
