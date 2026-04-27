@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2368,
-  "total_pending": 2232,
+  "total_catalogued": 2388,
+  "total_pending": 2212,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -138134,26 +138134,50 @@
       "author": "Ian McEwan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 2119, a literary scholar in a climate-ravaged, flooded England becomes obsessed with reconstructing a lost poem read aloud at a dinner party in 2014, uncovering dark truths about the poet and his wife. A genre-bending literary mystery that spans a century and meditates on memory, knowledge, and ecological collapse.",
+      "tone": "Intellectually rigorous, melancholy, measured — a very British dystopia",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "memory and knowledge",
+        "climate change and ecological collapse",
+        "the value of literature and the humanities",
+        "biography and historical truth",
+        "love and betrayal",
+        "the limits of reason"
+      ],
+      "setting": "Two time periods: early 21st-century Oxford, England, and a flooded, post-catastrophe Britain in 2119",
+      "comparable_books": [
+        "Atonement - Ian McEwan",
+        "Possession - A.S. Byatt",
+        "Station Eleven - Emily St. John Mandel",
+        "Never Let Me Go - Kazuo Ishiguro",
+        "Cloud Cuckoo Land - Anthony Doerr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction with ideas",
+          "dual timeline structure",
+          "academic detective mystery",
+          "climate fiction",
+          "post-apocalyptic literary tone",
+          "McEwan fans"
+        ],
+        "negative": [
+          "fast-paced plot-driven fiction",
+          "action-heavy narratives",
+          "readers wanting warm or optimistic tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Nothing Is True and Everything Is Possible: The Surreal Heart of the New Russia - Peter Pomerantsev": {
@@ -138161,134 +138185,239 @@
       "author": "Peter Pomerantsev",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "British-Russian journalist Peter Pomerantsev draws on his years working in Moscow's television industry to expose the surreal, propaganda-saturated reality of Putin's Russia, where image and manipulation trump all truth. A vivid and unsettling portrait of a post-modern autocracy built on disinformation, excess, and performance.",
+      "tone": "Darkly comic, kaleidoscopic, unsettling, gonzo-journalistic",
+      "pacing": "Fast",
+      "themes": [
+        "propaganda and disinformation",
+        "post-Soviet Russia",
+        "authoritarianism",
+        "identity and performance",
+        "media manipulation",
+        "oligarchy and corruption"
+      ],
+      "setting": "Moscow and Russia in the 2000s–2010s, during the rise of Putinism",
+      "comparable_books": [
+        "The Future Is History - Masha Gessen",
+        "Postwar - Tony Judt",
+        "Winter Is Coming - Garry Kasparov",
+        "The Man Without a Face - Masha Gessen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction",
+          "political journalism",
+          "Russia and Eastern Europe",
+          "disinformation and media studies",
+          "propulsive reported storytelling"
+        ],
+        "negative": [
+          "dry academic analysis",
+          "fiction readers only"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Musicophilia - Oliver Sacks": {
-      "title": "Musicophilia",
+      "title": "Musicophilia: Tales of Music and the Brain",
       "author": "Oliver Sacks",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Popular Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Neurologist Oliver Sacks explores the profound and often bizarre ways music interacts with the human brain, drawing on case studies of patients with earworms, musical hallucinations, amusia, synesthesia, and more. A compassionate and wide-ranging examination of music's unique power over mind and memory.",
+      "tone": "Warm, curious, humanistic, scientifically rigorous",
+      "pacing": "Moderate",
+      "themes": [
+        "music and the brain",
+        "neurological disorders",
+        "memory and identity",
+        "the therapeutic power of music",
+        "perception and consciousness"
+      ],
+      "setting": "Case studies drawn from clinical practice; modern medical and neurological contexts",
+      "comparable_books": [
+        "The Man Who Mistook His Wife for a Hat - Oliver Sacks",
+        "This Is Your Brain on Music - Daniel J. Levitin",
+        "The Brain That Changes Itself - Norman Doidge",
+        "Phantoms in the Brain - V.S. Ramachandran"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science",
+          "neuroscience",
+          "Sacks fans",
+          "music lovers",
+          "case study narrative style"
+        ],
+        "negative": [
+          "readers wanting a linear narrative",
+          "those averse to medical case studies"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Heaven, My Home - Attica Locke": {
       "title": "Heaven, My Home",
       "author": "Attica Locke",
-      "series": "A Highway 59 Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Highway 59",
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Black Texas Ranger Darren Mathews is dispatched to a small East Texas lakeside town to investigate the disappearance of a nine-year-old boy with ties to the Aryan Brotherhood of Texas, while simultaneously battling his own demons — blackmail by his mother and a fragile personal life. A taut, atmospheric thriller steeped in racial history and contemporary political tension.",
+      "tone": "Tense, lyrical, socially charged, atmospheric",
+      "pacing": "Fast",
+      "themes": [
+        "racial injustice in the American South",
+        "white supremacy",
+        "family and loyalty",
+        "corruption and law enforcement",
+        "history and identity"
+      ],
+      "setting": "East Texas, around Caddo Lake — a small lakeside community with antebellum nostalgia; contemporary era",
+      "comparable_books": [
+        "Bluebird, Bluebird - Attica Locke",
+        "Down the River Unto the Sea - Walter Mosley",
+        "The Guilty Plea - Robert Rotenberg",
+        "Crooked Letter, Crooked Letter - Tom Franklin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern crime fiction",
+          "social justice themes",
+          "morally complex protagonist",
+          "atmospheric setting",
+          "race and history in crime fiction"
+        ],
+        "negative": [
+          "readers wanting a standalone (must read Book 1 first)",
+          "cosy mystery fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong sense of place, lyrical prose, and deeply Southern voice make this particularly effective in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Guide Me Home - Attica Locke": {
       "title": "Guide Me Home",
       "author": "Attica Locke",
-      "series": "A Highway 59 Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Highway 59",
+      "series_position": "Book 3",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In this emotionally charged conclusion to the Highway 59 trilogy, a retired and unravelling Darren Mathews is pulled back into service to investigate the disappearance of a Black college student from an all-white sorority, entangled in a web of corporate corruption, racial intolerance, and his own complicated family history. A powerful and nuanced final chapter that forces Darren to choose between personal peace and the higher call to justice.",
+      "tone": "Emotionally wrenching, socially searing, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "racial injustice",
+        "family trauma and redemption",
+        "alcoholism and self-destruction",
+        "corporate corruption",
+        "truth and justice in Trump-era America"
+      ],
+      "setting": "East Texas; contemporary Trump-era America",
+      "comparable_books": [
+        "Heaven, My Home - Attica Locke",
+        "Bluebird, Bluebird - Attica Locke",
+        "Long Bright River - Liz Moore",
+        "The Cutting Season - Attica Locke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusions",
+          "character-driven crime fiction",
+          "social commentary",
+          "morally flawed protagonist arc",
+          "Southern Gothic atmosphere"
+        ],
+        "negative": [
+          "readers wanting a standalone",
+          "those seeking a purely plot-driven mystery"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Locke's precise, lyrical prose and deep Southern voice translate exceptionally well to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Road to Jonestown - Jeff Guinn": {
-      "title": "The Road to Jonestown",
+      "title": "The Road to Jonestown: Jim Jones and Peoples Temple",
       "author": "Jeff Guinn",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A meticulously researched biography of Jim Jones and the rise and catastrophic fall of Peoples Temple, tracing Jones's origins in rural Indiana through the founding of a utopian movement and its horrifying end in the mass deaths at Jonestown, Guyana in 1978. Guinn draws on new interviews and sources to paint a nuanced portrait of charisma, manipulation, and collective tragedy.",
+      "tone": "Propulsive, investigative, sobering, authoritative",
+      "pacing": "Moderate",
+      "themes": [
+        "cults and charismatic leadership",
+        "manipulation and abuse of power",
+        "race and social justice movements",
+        "religion and politics in America",
+        "mass psychology and tragedy"
+      ],
+      "setting": "Indiana, California, and Jonestown, Guyana; mid-20th century through 1978",
+      "comparable_books": [
+        "Helter Skelter - Vincent Bugliosi",
+        "Midnight Rising - Tony Horwitz",
+        "Say Nothing - Patrick Radden Keefe",
+        "The Girls - Emma Cline"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime nonfiction",
+          "cult history",
+          "American history",
+          "narrative biography",
+          "propulsive longform journalism"
+        ],
+        "negative": [
+          "readers sensitive to mass death and suicide content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "suicide",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Framed: Astonishing True Stories of Wrongful Convictions - John Grisham & Jim McCloskey": {
@@ -138296,26 +138425,50 @@
       "author": "John Grisham & Jim McCloskey",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "True Crime",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "John Grisham and Jim McCloskey, founder of Centurion Ministries, recount ten harrowing true stories of innocent people convicted of crimes they did not commit, exploring the systemic racism, prosecutorial misconduct, coerced confessions, and junk science that make wrongful convictions so hard to reverse. An outrage-inducing, propulsively written call for justice system reform.",
+      "tone": "Propulsive, outraged, compelling, journalistic",
+      "pacing": "Fast",
+      "themes": [
+        "wrongful conviction",
+        "criminal justice reform",
+        "systemic racism",
+        "prosecutorial misconduct",
+        "innocence and exoneration",
+        "faith and perseverance"
+      ],
+      "setting": "Various US states; primarily late 20th–early 21st century",
+      "comparable_books": [
+        "Just Mercy - Bryan Stevenson",
+        "The Innocent Man - John Grisham",
+        "Hidden Valley Road - Robert Kolker",
+        "I Am Innocent! - Roger Harrington"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime",
+          "legal nonfiction",
+          "social justice",
+          "short story-style case chapters",
+          "Grisham fans"
+        ],
+        "negative": [
+          "fiction readers only",
+          "readers sensitive to descriptions of racism and child death"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Crisp, propulsive narrative prose and self-contained case chapters make this ideal for audio listening.",
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dead Wake: The Last Crossing of the Lusitania - Erik Larson": {
@@ -138323,350 +138476,635 @@
       "author": "Erik Larson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Erik Larson reconstructs the final voyage of the RMS Lusitania in May 1915, weaving together the perspectives of passengers, crew, U-boat commander Walther Schwieger, and intelligence officials, building to the devastating torpedo strike that killed nearly 1,200 people. A masterpiece of narrative nonfiction that reads with the urgency and dread of a thriller.",
+      "tone": "Propulsive, cinematic, elegiac, suspenseful",
+      "pacing": "Fast",
+      "themes": [
+        "World War I",
+        "tragedy and fate",
+        "intelligence and espionage",
+        "human vulnerability",
+        "grief and loss",
+        "political consequences of disaster"
+      ],
+      "setting": "The North Atlantic Ocean and the courts of Europe; May 1915",
+      "comparable_books": [
+        "The Devil in the White City - Erik Larson",
+        "In the Garden of Beasts - Erik Larson",
+        "Midnight in Peking - Paul French",
+        "Destiny of the Republic - Candice Millard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction",
+          "Larson fans",
+          "WWI history",
+          "maritime history",
+          "dual-perspective storytelling"
+        ],
+        "negative": [
+          "readers wanting fiction",
+          "those sensitive to mass death content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Larson's cinematic, propulsive narrative is ideally suited to audio; the building dread is particularly effective when listened to.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "City of Last Chances - Adrian Tchaikovsky": {
       "title": "City of Last Chances",
       "author": "Adrian Tchaikovsky",
       "series": "The Tyrant Philosophers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The city of Ilmar chafes under the brutal Palleseen occupation — a bureaucratic empire bent on imposing 'Perfection and Correctness' through reason and force — as a vast mosaic of characters from criminals to scholars to refugees are drawn toward revolution by the mysterious, portal-laden Anchorwood. A densely inventive grimdark portrait of a city on the edge of uprising.",
+      "tone": "Grimdark, politically rich, darkly comic, densely inventive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "colonialism and occupation",
+        "revolution and resistance",
+        "bureaucracy vs. chaos",
+        "industrialisation and class",
+        "magic vs. reason",
+        "the city as a living entity"
+      ],
+      "setting": "The fictional city of Ilmar, under occupation by the rational Palleseen empire; secondary world fantasy",
+      "comparable_books": [
+        "A Memory Called Empire - Arkady Martine",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Shadows of the Apt - Adrian Tchaikovsky",
+        "The Traitor Baru Cormorant - Seth Dickinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "ensemble mosaic narrative",
+          "political fantasy",
+          "colonialism themes",
+          "city-as-character worldbuilding"
+        ],
+        "negative": [
+          "readers wanting a single clear protagonist",
+          "those preferring fast-paced linear fantasy",
+          "readers averse to large ensemble casts"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Large ensemble cast with many POV characters and dense worldbuilding rewards attention to text; easy to lose track of characters in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Case Histories - Kate Atkinson": {
       "title": "Case Histories",
       "author": "Kate Atkinson",
       "series": "Jackson Brodie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cambridge private investigator Jackson Brodie works three seemingly unrelated cold cases — a child's disappearance, a young woman's murder, and a violent death in a family home — that gradually reveal their hidden connections. A literary crime novel of unusual emotional depth, grief, and the weight of the past.",
+      "tone": "Literary, melancholy, warmly darkly comic, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "grief and loss",
+        "the weight of the past",
+        "family secrets",
+        "justice and its limits",
+        "coincidence and fate"
+      ],
+      "setting": "Cambridge, England; spanning the 1970s through the early 2000s",
+      "comparable_books": [
+        "When Will There Be Good News? - Kate Atkinson",
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith",
+        "The Lovely Bones - Alice Sebold",
+        "Still Life - Louise Penny"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary crime fiction",
+          "emotionally rich mysteries",
+          "complex female characters",
+          "multiple interweaving storylines",
+          "Atkinson fans"
+        ],
+        "negative": [
+          "readers wanting a fast plot-driven thriller",
+          "cosy mystery fans expecting light tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Atkinson's witty, layered prose and multi-strand structure rewards the immersive quality of audio; widely praised in this format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Killers of the Flower Moon - David Grann": {
-      "title": "Killers of the Flower Moon",
+      "title": "Killers of the Flower Moon: The Osage Murders and the Birth of the FBI",
       "author": "David Grann",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the 1920s, members of the Osage Nation in Oklahoma were being systematically murdered after oil was discovered on their land; David Grann investigates the killings, the early FBI's involvement, and the vast conspiracy behind them. A devastating and gripping work of American history about racial violence, greed, and justice denied.",
+      "tone": "Sombre, propulsive, revelatory, morally outraged",
+      "pacing": "Fast",
+      "themes": [
+        "Native American history and injustice",
+        "racial violence and genocide",
+        "greed and corruption",
+        "the birth of the FBI",
+        "memory and reckoning"
+      ],
+      "setting": "Osage County, Oklahoma; 1920s America",
+      "comparable_books": [
+        "Say Nothing - Patrick Radden Keefe",
+        "The Lost City of Z - David Grann",
+        "In Cold Blood - Truman Capote",
+        "The Road to Jonestown - Jeff Guinn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction",
+          "American history",
+          "true crime",
+          "investigative journalism",
+          "propulsive page-turner nonfiction"
+        ],
+        "negative": [
+          "readers sensitive to descriptions of racial violence and murder"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Reads like a thriller — the building revelations are exceptionally effective in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Messenger's Legacy - Peter V. Brett": {
       "title": "Messenger's Legacy",
       "author": "Peter V. Brett",
       "series": "The Demon Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3.5 (novella)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set between The Daylight War and The Skull Throne, this novella follows six-year-old Briar Damaj, a bullied half-Krasian boy who flees into a demon-infested bog after a tragedy, and ageing Messenger Ragen, who risks his life to find and bring the boy home. A self-contained but enriching addition to the Demon Cycle world.",
+      "tone": "Grim, adventurous, emotionally warm, survival-focused",
+      "pacing": "Fast",
+      "themes": [
+        "survival and resilience",
+        "racism and outsiders",
+        "mentorship and found family",
+        "courage",
+        "loss and grief"
+      ],
+      "setting": "The Demon Cycle world — a secondary world where demons emerge nightly; rural villages and marshland",
+      "comparable_books": [
+        "The Warded Man - Peter V. Brett",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Brayan's Gold - Peter V. Brett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Demon Cycle series fans",
+          "epic fantasy readers",
+          "character-focused novellas",
+          "survival stories"
+        ],
+        "negative": [
+          "readers new to the series (best read after Book 3)",
+          "those wanting a full-length novel"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The World We Make - N. K. Jemisin": {
       "title": "The World We Make",
       "author": "N. K. Jemisin",
       "series": "The Great Cities",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The human avatars of New York City's five boroughs must unite with other Great Cities of the world to defeat the Enemy — a primordial force now wielding a populist mayoral candidate as a weapon of gentrification and xenophobia — before she destroys not just the city but the entire multiverse. A vibrant, politically charged conclusion to the Great Cities duology.",
+      "tone": "Vibrant, politically urgent, celebratory, action-packed",
+      "pacing": "Fast",
+      "themes": [
+        "identity and diversity",
+        "resistance to authoritarianism",
+        "gentrification and urban community",
+        "racism and xenophobia",
+        "the city as a living soul",
+        "found family"
+      ],
+      "setting": "Contemporary New York City; a world where great cities become sentient through human avatars",
+      "comparable_books": [
+        "The City We Became - N. K. Jemisin",
+        "American Gods - Neil Gaiman",
+        "A Memory Called Empire - Arkady Martine",
+        "Anansi Boys - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "Jemisin fans",
+          "New York City setting",
+          "social justice themes in SFF",
+          "found family",
+          "Lovecraftian horror subverted"
+        ],
+        "negative": [
+          "readers who haven't read Book 1 (The City We Became)",
+          "those wanting grimdark or quiet fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tales From Earthsea - Ursula K. le Guin": {
-      "title": "Tales From Earthsea",
-      "author": "Ursula K. le Guin",
+      "title": "Tales from Earthsea",
+      "author": "Ursula K. Le Guin",
       "series": "The Books of Earthsea",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5 (short story collection)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of five stories set in the Earthsea archipelago, ranging from the distant past to the period following Tehanu, exploring the world's history, its schools of magic, its peoples, and its moral textures. An ideal companion volume for readers of the Earthsea cycle, rich with worldbuilding and Le Guin's characteristically humane wisdom.",
+      "tone": "Lyrical, wise, quietly reflective, mythic",
+      "pacing": "Slow",
+      "themes": [
+        "power and its misuse",
+        "gender and equality",
+        "magic and knowledge",
+        "the nature of heroism",
+        "history and myth",
+        "change and tradition"
+      ],
+      "setting": "The archipelago of Earthsea — a secondary world of islands and sea; various historical periods",
+      "comparable_books": [
+        "A Wizard of Earthsea - Ursula K. Le Guin",
+        "Tehanu - Ursula K. Le Guin",
+        "The Other Wind - Ursula K. Le Guin",
+        "The Chronicles of Narnia - C. S. Lewis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Earthsea series readers",
+          "lyrical secondary world fantasy",
+          "short fiction fans",
+          "Le Guin devotees",
+          "feminist fantasy"
+        ],
+        "negative": [
+          "readers new to Earthsea (this is not a starting point)",
+          "those wanting plot-driven adventure fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Le Guin's lyrical, oral-storytelling prose is exceptionally well-suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Wheel of Osheim - Mark Lawrence": {
       "title": "The Wheel of Osheim",
       "author": "Mark Lawrence",
       "series": "The Red Queen's War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cowardly, roguish Prince Jalan Kendeth and his Viking companion Snorri must face the Dead King's corpse hordes and the Lady Blue's mirrors as the titular Wheel of Osheim spins ever faster, threatening to crack the world apart unless stopped. A darkly comic and thrilling conclusion to the Red Queen's War trilogy, set in the same post-apocalyptic Broken Empire world.",
+      "tone": "Darkly comic, propulsive, grimdark with wit",
+      "pacing": "Fast",
+      "themes": [
+        "cowardice and unexpected heroism",
+        "fate and free will",
+        "necromancy and death",
+        "friendship and loyalty",
+        "apocalypse"
+      ],
+      "setting": "The post-apocalyptic Broken Empire — a far-future Earth overlaid with medieval fantasy; spanning multiple kingdoms",
+      "comparable_books": [
+        "Prince of Fools - Mark Lawrence",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Joe Abercrombie's First Law series",
+        "Emperor of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy with humour",
+          "buddy adventure fantasy",
+          "morally grey / cowardly protagonist",
+          "Mark Lawrence fans",
+          "Broken Empire world readers"
+        ],
+        "negative": [
+          "readers new to the series",
+          "those wanting grimdark without levity",
+          "readers preferring epic scope over intimate adventure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tehanu - Ursula K. le Guin": {
       "title": "Tehanu",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": "The Books of Earthsea",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An older, widowed Tenar takes in a severely abused and burned child called Tehanu, and together they navigate a quieter but no less dangerous Earthsea — one where female power is overlooked and threatened — while a diminished Ged returns from his ordeal at the world's end. A deliberately slow, feminist counterpoint to the heroic arc of the earlier Earthsea novels.",
+      "tone": "Quiet, subversive, emotionally raw, feminist",
+      "pacing": "Slow",
+      "themes": [
+        "gender and power",
+        "the overlooked lives of women",
+        "trauma and healing",
+        "heroism and its aftermath",
+        "age and identity",
+        "the domestic vs. the magical"
+      ],
+      "setting": "The island of Gont in the Earthsea archipelago; following the events of The Farthest Shore",
+      "comparable_books": [
+        "The Tombs of Atuan - Ursula K. Le Guin",
+        "The Other Wind - Ursula K. Le Guin",
+        "Ancillary Justice - Ann Leckie",
+        "The Deed of Paksenarrion - Elizabeth Moon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist fantasy",
+          "literary fantasy",
+          "Le Guin devotees",
+          "quiet character-driven fantasy",
+          "Earthsea series readers"
+        ],
+        "negative": [
+          "readers expecting the adventure pace of earlier Earthsea books",
+          "those new to Earthsea"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Le Guin's quiet, lyrical prose and deeply interior character work are beautifully realised in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Warded Man - Peter V. Brett": {
       "title": "The Warded Man",
       "author": "Peter V. Brett",
       "series": "The Demon Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a world where demons rise from the earth each night to slaughter humanity, three young people — farmer Arlen, healer Leesha, and jongleur Rojer — find their own paths to resist the darkness, converging on a world where one man has tattooed himself with fighting wards and become something more than human. A gripping and inventive debut epic fantasy built on a powerful central mythology.",
+      "tone": "Grim, propulsive, epic, survival-focused",
+      "pacing": "Moderate",
+      "themes": [
+        "fear and courage",
+        "survival against overwhelming odds",
+        "the nature of heroism",
+        "community and isolation",
+        "trauma and resilience"
+      ],
+      "setting": "A secondary world resembling a post-apocalyptic medieval Europe, where demons emerge nightly from the earth",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Way of Kings - Brandon Sanderson",
+        "The Blade Itself - Joe Abercrombie",
+        "Blood Song - Anthony Ryan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "dark survival fantasy",
+          "multiple POV protagonists",
+          "inventive magic systems",
+          "grimdark with heart"
+        ],
+        "negative": [
+          "readers sensitive to violence against women and children",
+          "those wanting lighter fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Pete Bradbury's narration of the Demon Cycle is widely praised and greatly enhances the story's epic scope.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Transmigration of Timothy Archer - Philip K. Dick": {
       "title": "The Transmigration of Timothy Archer",
       "author": "Philip K. Dick",
       "series": "VALIS Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Narrated by Angel Archer, the daughter-in-law of a charismatic Episcopal bishop, the novel follows the bishop's increasingly obsessive and fatal search for the historical origins of Christianity following the discovery of ancient texts. Dick's most realistic and elegiac novel, a meditation on faith, loss, and the human cost of religious seeking.",
+      "tone": "Melancholy, philosophical, intimate, elegiac",
+      "pacing": "Slow",
+      "themes": [
+        "faith and doubt",
+        "grief and loss",
+        "the search for ultimate truth",
+        "religion and reason",
+        "death and its aftermath",
+        "obsession"
+      ],
+      "setting": "Berkeley, California and Israel; 1970s–early 1980s",
+      "comparable_books": [
+        "VALIS - Philip K. Dick",
+        "The Divine Invasion - Philip K. Dick",
+        "A Grief Observed - C. S. Lewis",
+        "The Book of the New Sun - Gene Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Philip K. Dick fans",
+          "philosophical literary fiction",
+          "religious and existential themes",
+          "female narrator",
+          "non-SF Dick readers"
+        ],
+        "negative": [
+          "readers expecting science fiction",
+          "those wanting fast-paced plot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Other Wind - Ursula K. le Guin": {
       "title": "The Other Wind",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": "The Books of Earthsea",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A sorcerer haunted by the dead seeks Ged's help, setting in motion a chain of events that leads Earthsea's leaders to confront a fundamental wrong at the heart of their world — the nature of death and the land of the dead. A quiet, wise, and deeply satisfying conclusion to the main Earthsea arc.",
+      "tone": "Lyrical, wise, contemplative, emotionally resonant",
+      "pacing": "Slow",
+      "themes": [
+        "death and the afterlife",
+        "injustice and its correction",
+        "the interconnectedness of all things",
+        "wisdom and age",
+        "the cost of magic"
+      ],
+      "setting": "The archipelago of Earthsea; following the events of Tales from Earthsea",
+      "comparable_books": [
+        "Tehanu - Ursula K. Le Guin",
+        "Tales from Earthsea - Ursula K. Le Guin",
+        "The Left Hand of Darkness - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Earthsea series readers",
+          "literary fantasy",
+          "quiet contemplative fantasy",
+          "Le Guin devotees",
+          "series conclusions"
+        ],
+        "negative": [
+          "readers new to Earthsea",
+          "those wanting action-adventure fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Le Guin's prose is at its most lyrical and incantatory here; audio enhances the dreamlike, mythic quality of the story.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Skull Throne - Peter V. Brett": {
       "title": "The Skull Throne",
       "author": "Peter V. Brett",
       "series": "The Demon Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Arlen and Jardir both missing and presumed dead, their followers, allies, and enemies scramble for power while the demon threat grows ever more catastrophic — forcing Leesha, Rojer, Renna, and Abban into increasingly desperate political and military gambits. A sprawling, war-torn fourth installment that expands the world and raises the stakes dramatically.",
+      "tone": "Grim, epic, politically complex, war-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "power and succession",
+        "war and its human cost",
+        "loyalty and betrayal",
+        "cultural clash",
+        "survival",
+        "sacrifice"
+      ],
+      "setting": "The Demon Cycle's secondary world — spanning the Hollow County, the Krasian desert empire, and beyond; mid-series",
+      "comparable_books": [
+        "The Core - Peter V. Brett",
+        "The Daylight War - Peter V. Brett",
+        "A Dance with Dragons - George R. R. Martin",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy series readers",
+          "Demon Cycle fans",
+          "large ensemble casts",
+          "political fantasy",
+          "grimdark with depth"
+        ],
+        "negative": [
+          "readers new to the series",
+          "those wanting a self-contained story",
+          "readers sensitive to violence and sexual content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Liar's Key - Mark Lawrence": {
