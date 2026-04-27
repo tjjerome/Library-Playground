@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 3344,
-  "total_pending": 1256,
+  "total_catalogued": 3364,
+  "total_pending": 1236,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -186475,486 +186475,868 @@
       "title": "Remove the Shroud",
       "author": "A. C. Cobble",
       "series": "The King's Ranger",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ranger Rew leads his young companions deeper into the kingdom's deadly political intrigue as they search for Baron Fedgley and uncover the terrible necromantic secret behind the king's power, with stakes that threaten an eternity of damnation.",
+      "tone": "action-adventure, political intrigue, escalating stakes",
+      "pacing": "Moderate",
+      "themes": [
+        "duty and sacrifice",
+        "political corruption",
+        "coming of age",
+        "necromancy",
+        "protecting the innocent"
+      ],
+      "setting": "Secondary fantasy world; the Eastern Territory and broader kingdom of a medieval-style realm",
+      "comparable_books": [
+        "The King's Ranger - A. C. Cobble",
+        "The Crown Conspiracy - Michael J. Sullivan",
+        "The Way of Shadows - Brent Weeks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "clean epic fantasy",
+          "mentor-youth dynamic",
+          "political intrigue",
+          "action-driven",
+          "mystery of protagonist's past"
+        ],
+        "negative": [
+          "dark or grimdark content",
+          "explicit violence or adult content",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Simon Vance, a highly regarded audiobook narrator well-suited to epic fantasy.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Ranger's Path - A. C. Cobble": {
       "title": "The Ranger's Path",
       "author": "A. C. Cobble",
       "series": "The King's Ranger",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rew and his young companions journey across the Eastern Territory to rescue their kidnapped father from a royal prison, facing bandits, assassins, and treacherous nobles while Rew is forced ever closer to confronting the dark secrets of his past.",
+      "tone": "action-adventure, escalating mystery, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "duty and sacrifice",
+        "family bonds",
+        "political corruption",
+        "coming of age",
+        "confronting the past"
+      ],
+      "setting": "Secondary fantasy world; the Eastern Territory of a medieval-style kingdom",
+      "comparable_books": [
+        "The King's Ranger - A. C. Cobble",
+        "The Crown Conspiracy - Michael J. Sullivan",
+        "The Warded Man - Peter V. Brett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "clean epic fantasy",
+          "mentor-youth dynamic",
+          "on-the-road adventure",
+          "mystery of protagonist's past",
+          "found family"
+        ],
+        "negative": [
+          "dark or grimdark content",
+          "explicit content",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Simon Vance, consistently praised for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Ranger's Sorrow - A. C. Cobble": {
       "title": "The Ranger's Sorrow",
       "author": "A. C. Cobble",
       "series": "The King's Ranger",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rew and his companions continue their dangerous journey through the kingdom, with the consequences of the Investiture growing ever more catastrophic and Rew's past inextricably pulling him toward a final reckoning.",
+      "tone": "action-adventure, building dread, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "duty and sacrifice",
+        "political corruption",
+        "found family",
+        "redemption",
+        "the cost of power"
+      ],
+      "setting": "Secondary fantasy world; across the kingdom in a medieval-style setting",
+      "comparable_books": [
+        "The King's Ranger - A. C. Cobble",
+        "Remove the Shroud - A. C. Cobble",
+        "The Crown Conspiracy - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "clean epic fantasy",
+          "mentor-youth dynamic",
+          "escalating stakes",
+          "found family",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "dark or grimdark content",
+          "explicit content",
+          "standalone stories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Simon Vance, consistently praised for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "A Blood of Kings - Bryce O'Connor & Luke Chmilenko": {
       "title": "A Blood of Kings",
       "author": "Bryce O'Connor & Luke Chmilenko",
       "series": "The Shattered Reigns",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mercenary Declan Idrys, barely surviving an encounter with the first dark elf seen in seven centuries, forges a tense alliance with the war-loving elves of Eserysh against their shared enemy the Endless Queen as they press toward the legendary city of Ysenden.",
+      "tone": "epic, action-driven, lore-rich, immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "unlikely alliances",
+        "ancient evil",
+        "destiny and legacy",
+        "friendship under pressure",
+        "war and survival"
+      ],
+      "setting": "Secondary epic fantasy world; the kingdom of Viridian and beyond, featuring dark elves, ancient legions of the dead, and legendary cities",
+      "comparable_books": [
+        "A Mark of Kings - Bryce O'Connor & Luke Chmilenko",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic scale battles",
+          "ancient evil antagonists",
+          "mercenary protagonist",
+          "rich lore",
+          "found family/squad dynamics"
+        ],
+        "negative": [
+          "slow contemplative pacing",
+          "low-action plots",
+          "short standalone reads"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Nick Podehl, a widely acclaimed audiobook narrator for epic fantasy.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Librarian - Casey White": {
       "title": "The Librarian",
       "author": "Casey White",
       "series": "The Librarian of Alexandria",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Owl the Librarian faces an impossible choice when his friends are exposed to the mages who have hunted Alexandria for generations — protect the Library at the cost of abandoning them, or risk handing Alexandria's limitless knowledge to those who would exploit it.",
+      "tone": "tense, character-intimate, escalating stakes",
+      "pacing": "Fast",
+      "themes": [
+        "duty vs. friendship",
+        "identity and freedom",
+        "the power of knowledge",
+        "sacrifice",
+        "trust"
+      ],
+      "setting": "A magical, dreamlike version of the Library of Alexandria existing outside normal time and space, with a contemporary waking world beyond its walls",
+      "comparable_books": [
+        "The Library - Casey White",
+        "The Book That Wouldn't Burn - Mark Lawrence",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven",
+          "magical libraries",
+          "identity crisis protagonist",
+          "fast-paced second act",
+          "found family"
+        ],
+        "negative": [
+          "slow-burn openers",
+          "large-scale military fantasy",
+          "hard magic systems without character focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Darklands - M. L. Spencer": {
       "title": "Darklands",
       "author": "M. L. Spencer",
       "series": "The Rhenwars Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Compelled by the dark god he pledged his soul to, fallen mage Darien Lauchlin journeys into the cursed Black Lands to lead a people who despise him, discovering truths that shatter every loyalty he has ever held.",
+      "tone": "grimdark, morally ambiguous, slow and deliberate, emotive",
+      "pacing": "Slow",
+      "themes": [
+        "moral ambiguity",
+        "sacrifice and damnation",
+        "loyalty and betrayal",
+        "good vs. evil (subverted)",
+        "identity"
+      ],
+      "setting": "Secondary epic fantasy world; the cursed wastelands of the Black Lands / Caladorn in a morally grey medieval-esque world",
+      "comparable_books": [
+        "Darkmage - M. L. Spencer",
+        "Gardens of the Moon - Steven Erikson",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "grimdark atmosphere",
+          "philosophical depth",
+          "subverted good vs. evil tropes",
+          "slow deliberate prose"
+        ],
+        "negative": [
+          "fast-paced action fantasy",
+          "clear hero/villain distinctions",
+          "light or cozy fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fire and Song - Bryce O'Connor": {
       "title": "Fire and Song",
       "author": "Bryce O'Connor",
       "series": "Warformed: Stormweaver",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Reidon Ward, having risen from the weakest cadet at the Galens Institute to one of his class's strongest, now faces the Sectionals tournament alongside his squadmates, competing against the best CAD users in the Astra System.",
+      "tone": "propulsive, action-driven, school-tournament adventure, underdog",
+      "pacing": "Moderate",
+      "themes": [
+        "underdog rising",
+        "teamwork and found family",
+        "identity and power",
+        "competitive excellence",
+        "overcoming adversity"
+      ],
+      "setting": "Futuristic sci-fi setting; the Galens Institute military academy and the Astra System, featuring Combat Ability Devices (CADs) — weapons bonded to users",
+      "comparable_books": [
+        "Iron Prince - Bryce O'Connor",
+        "Cradle series - Will Wight",
+        "Forge of the High Mage - J. Tanner"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "school/academy setting",
+          "underdog protagonist",
+          "found family/squad",
+          "tournament arcs"
+        ],
+        "negative": [
+          "low action or contemplative pacing",
+          "traditional secondary-world fantasy",
+          "dark grimdark tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Darkrise - M. L. Spencer": {
       "title": "Darkrise",
       "author": "M. L. Spencer",
       "series": "The Rhenwars Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Having sold his soul to the God of Chaos, Darien Lauchlin prepares to lead an invasion of his former homeland, forced to abandon his past loyalties and undergo brutal trials to become the Battlemage his people need — at the potential cost of his last shred of humanity.",
+      "tone": "grimdark, relentlessly dark, morally shattering, tense",
+      "pacing": "Moderate",
+      "themes": [
+        "moral collapse",
+        "sacrifice and corruption",
+        "war and its cost",
+        "identity",
+        "loyalty and betrayal"
+      ],
+      "setting": "Secondary epic fantasy world; spanning Malikar and the kingdom of Rhen in a morally grey medieval setting",
+      "comparable_books": [
+        "Darklands - M. L. Spencer",
+        "The Blade Itself - Joe Abercrombie",
+        "Gardens of the Moon - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "grimdark atmosphere",
+          "gray-and-gray warfare",
+          "philosophical fantasy",
+          "character deconstruction"
+        ],
+        "negative": [
+          "uplifting or hopeful narratives",
+          "clear moral heroes",
+          "light fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Darkfall - M. L. Spencer": {
       "title": "Darkfall",
       "author": "M. L. Spencer",
       "series": "The Rhenwars Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The invasion of the Rhen has begun — Darien Lauchlin presses to find refuge for his people by any means necessary, even conquest, while Kyel Archer wields the world's most powerful talisman against him as the magic field itself faces imminent destruction.",
+      "tone": "grimdark, apocalyptic, morally devastating, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "the futility of war",
+        "survival at any cost",
+        "moral collapse",
+        "sacrifice",
+        "cycles of history"
+      ],
+      "setting": "Secondary epic fantasy world; the kingdoms of Malikar and Rhen during total war, in a morally grey medieval setting",
+      "comparable_books": [
+        "Darkrise - M. L. Spencer",
+        "The Heroes - Joe Abercrombie",
+        "The Crippled God - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonists on both sides",
+          "grimdark finale",
+          "war from multiple perspectives",
+          "bittersweet resolution",
+          "philosophical fantasy"
+        ],
+        "negative": [
+          "uplifting or heroic fantasy",
+          "clear-cut good and evil",
+          "light or cozy fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Miss Percy's Travel Guide to Welsh Moors and Feral Dragons - Quenby Olson": {
       "title": "Miss Percy's Travel Guide to Welsh Moors and Feral Dragons",
       "author": "Quenby Olson",
       "series": "Miss Percy Guide",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Cozy Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Miss Mildred Percy, now responsible for a young dragon, embarks on an uncomfortable journey across Wales with her companions in search of the Nest of Dragons, encountering angry mobs, new friends, and something remarkable hidden in the Welsh mountains.",
+      "tone": "whimsical, cozy, warmly comedic, Austenesque",
+      "pacing": "Moderate",
+      "themes": [
+        "self-discovery and independence",
+        "friendship and found family",
+        "the unexpected adventure",
+        "belonging",
+        "nature and the fantastical"
+      ],
+      "setting": "Regency-era Wales; rural Welsh moors, inns, and mountainous countryside, with hidden dragons",
+      "comparable_books": [
+        "Miss Percy's Pocket Guide - Quenby Olson",
+        "Scales and Sensibility - Stephanie Burgis",
+        "Pemberley: Mr. Darcy's Dragon - C.J. Archer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "Regency-era setting",
+          "lyrical prose",
+          "dragons as companions",
+          "found family",
+          "witty humor",
+          "older female protagonist"
+        ],
+        "negative": [
+          "grimdark or dark fantasy",
+          "fast-paced action",
+          "high-stakes world-ending plots",
+          "simple spare prose style"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Zara Ramm; the lyrical, witty prose of Olson's style is particularly well-suited to audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Pursuit of Shadows - J. A. Andrews": {
       "title": "Pursuit of Shadows",
       "author": "J. A. Andrews",
       "series": "The Keeper Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Keeper Alaric continues his quest to protect the realm from a creeping darkness, delving deeper into ancient magic and shadowed histories while the threat grows and allies are tested.",
+      "tone": "lyrical, character-driven, gently epic, hopeful",
+      "pacing": "Moderate",
+      "themes": [
+        "good vs. evil",
+        "friendship and loyalty",
+        "the power of story and song",
+        "hope in darkness",
+        "redemption"
+      ],
+      "setting": "Secondary epic fantasy world; a medieval-style realm with deep history and a magic system tied to stories and song",
+      "comparable_books": [
+        "A Keeper's Tale - J. A. Andrews",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Crown Conspiracy - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "bard/storyteller protagonist",
+          "hopeful tone",
+          "found family",
+          "richly built world"
+        ],
+        "negative": [
+          "grimdark or nihilistic fantasy",
+          "fast shock-driven plotting",
+          "sparse prose style"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lyrical prose and story-driven magic system translate exceptionally well to audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "training",
       "audit": null
     },
     "Siege of Shadows - J. A. Andrews": {
       "title": "Siege of Shadows",
       "author": "J. A. Andrews",
       "series": "The Keeper Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Keeper Chronicles sees Alaric and his companions facing the full force of the encroaching darkness in a climactic confrontation that tests every bond and belief they hold.",
+      "tone": "lyrical, emotionally resonant, epic conclusion",
+      "pacing": "Moderate",
+      "themes": [
+        "good vs. evil",
+        "sacrifice and hope",
+        "the power of story",
+        "loyalty and courage",
+        "legacy"
+      ],
+      "setting": "Secondary epic fantasy world; a medieval-style realm at the height of an existential conflict",
+      "comparable_books": [
+        "Pursuit of Shadows - J. A. Andrews",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Crown Conspiracy - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "hopeful epic fantasy",
+          "satisfying series conclusion",
+          "found family",
+          "bard/storyteller protagonist"
+        ],
+        "negative": [
+          "grimdark or nihilistic fantasy",
+          "ongoing open-ended series",
+          "sparse prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The series' lyrical, story-centric style is particularly well-suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "training",
       "audit": null
     },
     "Miss Percy's Definitive Guide to the Restoration of Dragons - Quenby Olson": {
       "title": "Miss Percy's Definitive Guide to the Restoration of Dragons",
       "author": "Quenby Olson",
       "series": "Miss Percy Guide",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Cozy Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Miss Mildred Percy is forced to follow her scheming niece Belinda to London after she absconds with a newly-hatched white dragon and over a dozen dragon eggs, racing to recover them before they hatch in the middle of the city.",
+      "tone": "whimsical, cozy, warmly comedic, Austenesque, triumphant",
+      "pacing": "Moderate",
+      "themes": [
+        "self-determination",
+        "found family",
+        "the courage of ordinary people",
+        "greed vs. stewardship",
+        "love and belonging"
+      ],
+      "setting": "Regency-era London; the city's social scene, back streets, and institutions, with concealed dragons",
+      "comparable_books": [
+        "Miss Percy's Travel Guide - Quenby Olson",
+        "Scales and Sensibility - Stephanie Burgis",
+        "A Proper Dragon - E. B. Wheeler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "Regency-era setting",
+          "lyrical wit",
+          "satisfying trilogy conclusion",
+          "dragons as companions",
+          "older female protagonist"
+        ],
+        "negative": [
+          "grimdark or dark fantasy",
+          "high action or combat focus",
+          "minimal character interiority"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Zara Ramm; Olson's witty, parenthetical prose style performs exceptionally well as audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sound of Starfall - Scott Palmer": {
       "title": "The Sound of Starfall",
       "author": "Scott Palmer",
       "series": "The Last Ballad",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1.5 (Prelude Novella)",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set 3,000 years before A Memory of Song, this prelude novella follows a Warlock, an enslaved man, and a guard through the apocalyptic final hours of the golden city of Ailar as a death cult breaches its walls and a comet hurtles toward obliteration.",
+      "tone": "bleak, atmospheric, dread-soaked, intense",
+      "pacing": "Fast",
+      "themes": [
+        "the end of civilisations",
+        "freedom and slavery",
+        "fate and inevitability",
+        "sacrifice",
+        "the cost of power"
+      ],
+      "setting": "The ancient city of Ailar in the Remembered Lands, 3,000 years before the main series; under simultaneous assault from a death cult and a descending meteor",
+      "comparable_books": [
+        "A Memory of Song - Scott Palmer",
+        "The First Law - Joe Abercrombie",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark atmosphere",
+          "apocalyptic stakes",
+          "multi-POV novella",
+          "rich lore and world-building",
+          "dark fantasy"
+        ],
+        "negative": [
+          "cozy or light fantasy",
+          "happy or hopeful resolutions",
+          "long-form pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "No Life Forsaken - Steven Erikson": {
       "title": "No Life Forsaken",
       "author": "Steven Erikson",
       "series": "The Tales of Witness",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A decade after the Malazan Book of the Fallen, a goddess awakens to a changed world as Fist Arenfall struggles to crush a revived religious uprising in Seven Cities with only a handful of marine squads, while imperial politics threaten to undermine him from within.",
+      "tone": "densely layered, darkly comic, philosophically rich, military",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "cycles of violence and history",
+        "religious fanaticism",
+        "imperial politics and loyalty",
+        "the divine and mortal intertwined",
+        "consequence and legacy"
+      ],
+      "setting": "The continent of Seven Cities in the Malazan Empire, a decade after The Crippled God; a richly realised secondary world of vast scope",
+      "comparable_books": [
+        "The God Is Not Willing - Steven Erikson",
+        "Gardens of the Moon - Steven Erikson",
+        "The Darkness That Comes Before - R. Scott Bakker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense epic fantasy",
+          "military fantasy",
+          "Malazan fans",
+          "philosophical depth",
+          "multiple POVs",
+          "dark wit"
+        ],
+        "negative": [
+          "new to Malazan",
+          "preference for fast accessible fantasy",
+          "low tolerance for complexity and density"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blindsight - Peter Watts": {
       "title": "Blindsight",
       "author": "Peter Watts",
       "series": "Firefall",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A crew of posthuman specialists aboard the starship Theseus makes first contact with a radically alien intelligence in the outer solar system, forcing a harrowing reassessment of consciousness, free will, and what it means to be human.",
+      "tone": "cerebral, unsettling, cold, philosophically provocative",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "consciousness and self-awareness",
+        "first contact",
+        "evolution and predation",
+        "free will vs. determinism",
+        "the nature of intelligence"
+      ],
+      "setting": "Near-future outer solar system and deep space; hard SF setting with rigorous scientific grounding",
+      "comparable_books": [
+        "Echopraxia - Peter Watts",
+        "Solaris - Stanislaw Lem",
+        "The Sparrow - Mary Doria Russell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "philosophical SF",
+          "unreliable narrator",
+          "alien contact",
+          "dark and unsettling atmosphere"
+        ],
+        "negative": [
+          "action-driven SF",
+          "optimistic or adventure-focused SF",
+          "preference for emotional warmth or hope"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Silverblood Promise - James Logan": {
       "title": "The Silverblood Promise",
       "author": "James Logan",
       "series": "The Last Legacy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lukan Gardova, a disgraced noble cardsharp and academy dropout, swears a blood oath to find justice for his murdered father and is drawn into a deadly web of heists, murder, and ancient secrets in the city of Saphrona.",
+      "tone": "swashbuckling, witty, fast-paced, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "justice and vengeance",
+        "identity and legacy",
+        "class and privilege",
+        "loyalty and friendship",
+        "the sins of the past"
+      ],
+      "setting": "A secondary fantasy world with a pseudo-Mediterranean city of Saphrona; thieves, nobles, ancient empires, and hidden supernatural threats",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "The Crown Conspiracy - Michael J. Sullivan",
+        "Traitor's Blade - Sebastien de Castell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "caper/heist fantasy",
+          "roguish protagonist",
+          "propulsive plotting",
+          "witty banter",
+          "morally grey hero with a heart of gold"
+        ],
+        "negative": [
+          "slow meditative fantasy",
+          "grimdark nihilism",
+          "preference for serious literary tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "System Collapse - Martha Wells": {
       "title": "System Collapse",
       "author": "Martha Wells",
       "series": "The Murderbot Diaries",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Murderbot and its crew race against a corporate faction to make first contact with a recently rediscovered human colony, while Murderbot struggles with the psychological aftermath of a traumatic event that has left its systems unreliable.",
+      "tone": "darkly comic, tense, emotionally resonant, intimate",
+      "pacing": "Fast",
+      "themes": [
+        "trauma and recovery",
+        "autonomy and identity",
+        "corporate exploitation",
+        "found family",
+        "trust"
+      ],
+      "setting": "Far-future space opera setting; a colonial planet under threat from corporate interests, told through Murderbot's sarcastic first-person perspective",
+      "comparable_books": [
+        "Network Effect - Martha Wells",
+        "All Systems Red - Martha Wells",
+        "A Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "sarcastic/introverted protagonist",
+          "fast pacing",
+          "anti-corporate themes",
+          "character intimacy",
+          "anxiety/neurodivergent-coded AI"
+        ],
+        "negative": [
+          "preference for new-reader-friendly entry points",
+          "hard SF world-building focus",
+          "action over character"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Kevin R. Free, widely praised as the definitive voice of Murderbot; the first-person sarcastic narration excels in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "When Gravity Fails - George Alec Effinger": {
@@ -186962,53 +187344,99 @@
       "author": "George Alec Effinger",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In a cyberpunk future Middle East, streetwise hustler Marid Audran is drawn into a series of brutal murders where the killer uses personality-altering brain implants to adopt the identities of famous criminals, threatening the fragile peace of the Budayeen.",
+      "tone": "noir, gritty, atmospheric, cyberpunk",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and selfhood",
+        "technological body modification",
+        "crime and justice",
+        "cultural identity",
+        "addiction"
+      ],
+      "setting": "A near-future cyberpunk Budayeen (a red-light district in an unnamed Arab city); a rare non-Western cyberpunk setting with rich cultural detail",
+      "comparable_books": [
+        "Neuromancer - William Gibson",
+        "Snow Crash - Neal Stephenson",
+        "The Stars Are Legion - Kameron Hurley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cyberpunk",
+          "noir detective fiction",
+          "non-Western settings",
+          "identity-focused SF",
+          "gritty atmosphere",
+          "character-driven SF"
+        ],
+        "negative": [
+          "optimistic or cozy SF",
+          "hard science focus over character",
+          "preference for Western or Anglophone settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Desert Star - Michael Connelly": {
       "title": "Desert Star",
       "author": "Michael Connelly",
       "series": "Renée Ballard",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Detective Renée Ballard leads the LAPD's cold case unit alongside Harry Bosch, who is working pro bono to solve two haunting cases — the massacre of a family in the desert and the long-cold murder of a teenage girl.",
+      "tone": "propulsive, procedural, character-driven, emotionally grounded",
+      "pacing": "Fast",
+      "themes": [
+        "justice for the forgotten",
+        "the cost of obsession",
+        "police procedure and politics",
+        "cold case investigation",
+        "legacy and mortality"
+      ],
+      "setting": "Contemporary Los Angeles; LAPD cold case department and surrounding desert communities",
+      "comparable_books": [
+        "The Dark Hours - Michael Connelly",
+        "The Late Show - Michael Connelly",
+        "The Lincoln Lawyer - Michael Connelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "crime procedural",
+          "returning character Harry Bosch",
+          "dual-protagonist detective stories",
+          "cold case mysteries",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "preference for standalone mysteries",
+          "dislike of long ongoing series",
+          "supernatural or genre-blended crime fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Connelly audiobooks are produced to a very high standard with dedicated narrators for each POV character.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ammonite - Nicola Griffith": {
