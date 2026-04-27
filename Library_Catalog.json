@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2089,
-  "total_pending": 2511,
+  "total_catalogued": 2109,
+  "total_pending": 2491,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -124712,189 +124712,332 @@
       "title": "Dragon Rider",
       "author": "Taran Matharu",
       "series": "The Soulbound Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jai, a royal hostage serving the empire that killed his father, seizes a chance to escape during a coup—fleeing with a Dansk handmaiden and a stolen dragon hatchling. Hunted across dangerous territories, he must master cultivation magic and soulbonding to survive and seek revenge.",
+      "tone": "propulsive, action-driven, revenge-fuelled with slow-burn romance",
+      "pacing": "Fast",
+      "themes": [
+        "revenge",
+        "coming of age",
+        "power and cultivation",
+        "political betrayal",
+        "found companionship"
+      ],
+      "setting": "Secondary fantasy world with steppe peoples, empires, and dragon-bonding magic, broadly inspired by Central Asian and Roman aesthetics",
+      "comparable_books": [
+        "Eragon - Christopher Paolini",
+        "Cradle series - Will Wight",
+        "Fourth Wing - Rebecca Yarros"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon bonding",
+          "cultivation/progression magic system",
+          "underdog protagonist",
+          "political intrigue",
+          "fast-paced action",
+          "revenge arc"
+        ],
+        "negative": [
+          "readers wanting deep literary prose",
+          "anti-chosen-one subversions",
+          "slow-burn character studies"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "City of Stairs - Robert Jackson Bennett": {
       "title": "City of Stairs",
       "author": "Robert Jackson Bennett",
       "series": "The Divine Cities",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the city of Bulikov—once seat of gods now dead and forbidden—a young cultural operative investigates the murder of a historian, uncovering secrets that could overturn the world's order. A deft blend of spy thriller and secondary-world fantasy exploring colonialism, faith, and the aftermath of divine power.",
+      "tone": "atmospheric, witty, darkly thoughtful",
+      "pacing": "Moderate",
+      "themes": [
+        "colonialism and empire",
+        "religion and power",
+        "memory and history",
+        "identity",
+        "the cost of miracles"
+      ],
+      "setting": "Bulikov, a once-divine city now occupied and humbled, in a secondary world with a richly imagined colonial history",
+      "comparable_books": [
+        "The Goblin Emperor - Katherine Addison",
+        "The Killing Moon - N.K. Jemisin",
+        "Perdido Street Station - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "spy thriller elements",
+          "original worldbuilding",
+          "morally complex politics",
+          "female protagonist",
+          "gods and religion as theme"
+        ],
+        "negative": [
+          "readers wanting traditional quest fantasy",
+          "romance-heavy plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Vivid, atmospheric prose and distinct character voices reward audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "War God's Will - Matthew P. Gilbert": {
       "title": "War God's Will",
       "author": "Matthew P. Gilbert",
       "series": "Sins of the Fathers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the climactic finale of the trilogy, the fragile alliance between the Nihlosians and Xanthians is tested by political assassination and civil war as a lone warrior, Ahmed, must face the Dead God's apocalyptic agents alone. The fate of all humanity rests on whether ancient enemies and fractious sorcerers can unite in time.",
+      "tone": "grimdark, politically fraught, epic in scale",
+      "pacing": "Moderate",
+      "themes": [
+        "apocalypse and prophecy",
+        "political betrayal",
+        "faith and sacrifice",
+        "legacy and consequence",
+        "alliance and distrust"
+      ],
+      "setting": "A secondary world with desert kingdoms, sorcerer cities, and divine powers—reminiscent of ancient Near Eastern civilisations",
+      "comparable_books": [
+        "Malazan Book of the Fallen - Steven Erikson",
+        "The First Law - Joe Abercrombie",
+        "The Chronicles of the Black Gate - Phil Tucker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark tone",
+          "large-scale political fantasy",
+          "multi-POV narrative",
+          "apocalyptic stakes",
+          "morally complex characters"
+        ],
+        "negative": [
+          "readers sensitive to modernisms in dialogue",
+          "those wanting lighter fantasy",
+          "slow opening pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Dragon Haven - Robin Hobb": {
       "title": "Dragon Haven",
       "author": "Robin Hobb",
       "series": "Rain Wild Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The ragged expedition of dragon keepers and their misshapen dragons continues its perilous journey upriver through the Rain Wilds, seeking the legendary city of Kelsingra. Bonds between humans and dragons deepen while the keepers discover unsettling truths about their own changing natures.",
+      "tone": "lyrical, intimate, emotionally rich",
+      "pacing": "Slow",
+      "themes": [
+        "identity and transformation",
+        "belonging and outcasts",
+        "human-animal bonds",
+        "coming of age",
+        "nature and environment"
+      ],
+      "setting": "The treacherous Rain Wild River and its ancient, magic-soaked jungle, in Hobb's Realm of the Elderlings",
+      "comparable_books": [
+        "Ship of Magic - Robin Hobb",
+        "The Way of Kings - Brandon Sanderson",
+        "Dragon Champion - E.E. Knight"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven storytelling",
+          "slow-burn emotional arcs",
+          "dragon lore",
+          "found family",
+          "lyrical prose"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "those frustrated by slow plotting",
+          "readers wanting standalone resolutions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Hobb's lush, introspective prose and multi-character ensemble are exceptionally well-suited to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "City of Dragons - Robin Hobb": {
       "title": "City of Dragons",
       "author": "Robin Hobb",
       "series": "Rain Wild Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The dragon keepers finally reach the ruined Elderling city of Kelsingra, but it is not the salvation they hoped for; the city is vast, broken, and full of dangerous memory-saturated magic. Meanwhile, political intrigue in Bingtown and Trehaug threatens to unravel everything the expedition has achieved.",
+      "tone": "lyrical, contemplative, bittersweet",
+      "pacing": "Slow",
+      "themes": [
+        "legacy and ruins",
+        "identity transformation",
+        "power and memory",
+        "belonging",
+        "political scheming"
+      ],
+      "setting": "The ancient Elderling city of Kelsingra and the Rain Wild river settlements, in the Realm of the Elderlings",
+      "comparable_books": [
+        "Dragon Keeper - Robin Hobb",
+        "Dragon Haven - Robin Hobb",
+        "Assassin's Apprentice - Robin Hobb"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich worldbuilding",
+          "emotional character arcs",
+          "dragon and Elderling lore",
+          "slow immersive storytelling"
+        ],
+        "negative": [
+          "readers wanting standalone plots",
+          "those wanting action-heavy fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Hobb's meditative prose and multi-POV structure shine in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Blood of Dragons - Robin Hobb": {
       "title": "Blood of Dragons",
       "author": "Robin Hobb",
       "series": "Rain Wild Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Rain Wild Chronicles brings the dragon keepers and their now-magnificent dragons to a final confrontation in Kelsingra, while threads of politics, romance, and identity reach their resolution. The fates of humans transformed by their proximity to dragons, and of the dragons themselves, are decided.",
+      "tone": "lyrical, emotionally satisfying, epic in resolution",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "transformation and identity",
+        "legacy",
+        "love and loyalty",
+        "power restored",
+        "community"
+      ],
+      "setting": "Kelsingra and the Rain Wilds, culminating in the broader Realm of the Elderlings",
+      "comparable_books": [
+        "Blood of Assassins - Robin Hobb",
+        "Ship of Destiny - Robin Hobb",
+        "The Farseer Trilogy - Robin Hobb"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satisfying series conclusions",
+          "dragon lore payoff",
+          "emotional depth",
+          "lyrical prose"
+        ],
+        "negative": [
+          "impatient readers",
+          "those who disliked earlier volumes' slow pace"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The series culmination benefits enormously from continuous audio immersion established across prior volumes.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Doom Vault - C. M. Carney": {
       "title": "Doom Vault",
       "author": "C. M. Carney",
       "series": "The Realms",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the penultimate chapter of The Realms saga, Gryph must journey to the ancient and deadly Doom Vault to rescue his captured ally Lex and power up for the final reckoning against the gods who threaten to annihilate the Realms. Ancient secrets and cosmic truths are revealed as Gryph faces challenges beyond anything he has encountered before.",
+      "tone": "fast-paced, game-like, escalating stakes",
+      "pacing": "Fast",
+      "themes": [
+        "power progression",
+        "loyalty and sacrifice",
+        "divine politics",
+        "truth vs. deception",
+        "survival"
+      ],
+      "setting": "The Outer Realms—an immersive game-like fantasy universe with RPG mechanics, levelling, and stat systems",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "He Who Fights With Monsters - Jason Cheyne",
+        "The Land - Aleron Kong"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG/GameLit mechanics",
+          "power progression",
+          "fast action",
+          "long series investment",
+          "dungeon-crawling"
+        ],
+        "negative": [
+          "readers who dislike stat tables and RPG mechanics",
+          "those new to the series (entry point required)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Carpet Makers - Andreas Eschbach": {
@@ -124902,350 +125045,622 @@
       "author": "Andreas Eschbach",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a remote world, craftsmen spend entire lifetimes weaving carpets made from their wives' and daughters' hair, destined as tribute for an immortal emperor—but when the empire falls, investigators begin to unravel the true and devastating purpose behind this ancient tradition. A haunting mosaic novel told through interconnected stories spanning worlds and centuries.",
+      "tone": "melancholic, philosophical, quietly devastating",
+      "pacing": "Slow",
+      "themes": [
+        "meaning and purpose",
+        "tyranny and exploitation",
+        "faith and delusion",
+        "the nature of civilization",
+        "interconnection"
+      ],
+      "setting": "A far-future galaxy across multiple planets and civilisations, with a feudal carpet-weaving world at its heart",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Flowers for Algernon - Daniel Keyes",
+        "Hyperion - Dan Simmons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "mosaic/anthology structure",
+          "philosophical SF",
+          "quiet and literary tone",
+          "world-level tragedy",
+          "unusual premises"
+        ],
+        "negative": [
+          "readers wanting fast plot or action",
+          "those preferring character continuity across chapters"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "CryoBurn - Lois McMaster Bujold": {
       "title": "CryoBurn",
       "author": "Lois McMaster Bujold",
       "series": "Vorkosigan Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Imperial Auditor Miles Vorkosigan investigates a cryo-revival corporation on the planet Kibou-daini that is manipulating votes and profits from its vast population of the frozen dead. A mystery-adventure with a deeply emotional epilogue that reshapes Miles's world.",
+      "tone": "witty, warm, emotionally sucker-punching at the close",
+      "pacing": "Moderate",
+      "themes": [
+        "mortality and memory",
+        "corporate corruption",
+        "democracy and power",
+        "family",
+        "loyalty"
+      ],
+      "setting": "Kibou-daini, a planet with a unique culture built around cryogenic preservation, in Bujold's far-future galactic civilisation",
+      "comparable_books": [
+        "A Civil Campaign - Lois McMaster Bujold",
+        "Memory - Lois McMaster Bujold",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "clever protagonist",
+          "science fiction mystery",
+          "series investment payoff",
+          "character-driven",
+          "sharp humour"
+        ],
+        "negative": [
+          "readers new to the series (heavy series context)",
+          "those wanting hard SF or action-first stories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Vorkosigan Saga has an outstanding, long-running audio performance tradition that makes this an ideal listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hungry Gods - Adrian Tchaikovsky": {
       "title": "The Hungry Gods",
       "author": "Adrian Tchaikovsky",
       "series": "Terrible Worlds: Innovations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a post-apocalyptic Earth stripped of resources, where tribal survivors scratch out an existence, a young woman named Amri allies with a fallen 'god'—a returning tech-billionaire with advanced technology—who promises revenge on the rival gods who destroyed her tribe. A dark, compressed novella examining hubris, survival, and humanity's cycles of exploitation.",
+      "tone": "dark, taut, bleakly satirical",
+      "pacing": "Fast",
+      "themes": [
+        "technology as religion",
+        "hubris and power",
+        "ecological collapse",
+        "survival",
+        "exploitation of the weak"
+      ],
+      "setting": "Post-apocalyptic Earth, ravaged by runaway climate change and pollution, populated by tribal survivor groups",
+      "comparable_books": [
+        "Ogres - Adrian Tchaikovsky",
+        "One Day All This Will Be Yours - Adrian Tchaikovsky",
+        "Firewalkers - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "SF novellas",
+          "ecological themes",
+          "dark satire",
+          "fast reads",
+          "Adrian Tchaikovsky fans"
+        ],
+        "negative": [
+          "readers wanting long immersive novels",
+          "those preferring clear heroes and villains"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Hod King - Josiah Bancroft": {
       "title": "The Hod King",
       "author": "Josiah Bancroft",
       "series": "The Books of Babel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thomas Senlin and his allies infiltrate the grand and grotesque upper ringdoms of the Tower of Babel, each a bizarre self-contained world, while searching for Senlin's lost wife Marya who has become entangled in deadly political intrigue. Bancroft expands the cast and the Tower's strangeness to dizzying effect.",
+      "tone": "whimsical, darkly comedic, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "obsession and love",
+        "power and corruption",
+        "class and exploitation",
+        "self-reinvention",
+        "the nature of civilization"
+      ],
+      "setting": "The impossibly tall Tower of Babel, a vertical world of layered ringdoms each with its own bizarre culture and society",
+      "comparable_books": [
+        "Arm of the Sphinx - Josiah Bancroft",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unique worldbuilding",
+          "propulsive adventure",
+          "dark humour",
+          "literary quality prose",
+          "morally grey characters"
+        ],
+        "negative": [
+          "readers wanting straightforward quests",
+          "those impatient with episodic ringdom structure"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Bancroft's rich, eccentric prose and colourful cast make for exceptional audio storytelling.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Arm of the Sphinx - Josiah Bancroft": {
       "title": "Arm of the Sphinx",
       "author": "Josiah Bancroft",
       "series": "The Books of Babel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Continuing his desperate ascent of the Tower of Babel, Thomas Senlin becomes an air-pirate captain while seeking his missing wife, and encounters the mysterious Sphinx—the Tower's ancient and secretive engineer—who draws him into a larger conspiracy. The Tower's surreal depths and moral ambiguities deepen.",
+      "tone": "whimsical, darkly comic, inventive",
+      "pacing": "Moderate",
+      "themes": [
+        "obsessive love",
+        "moral compromise",
+        "found family",
+        "secrets and hidden power",
+        "adventure and reinvention"
+      ],
+      "setting": "The Tower of Babel's mid-ringdoms and airship routes, in an alt-history secondary world of steam and strangeness",
+      "comparable_books": [
+        "Senlin Ascends - Josiah Bancroft",
+        "The Hod King - Josiah Bancroft",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "original worldbuilding",
+          "literary adventure",
+          "eccentric characters",
+          "dark whimsy",
+          "series momentum"
+        ],
+        "negative": [
+          "readers wanting simple plots",
+          "those put off by moral ambiguity in protagonists"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Bancroft's elaborate, voice-driven prose rewards a skilled narrator and sustained audio immersion.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Grave Empire - Richard Swan": {
       "title": "Grave Empire",
       "author": "Richard Swan",
       "series": "The Great Silence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set two centuries after The Empire of the Wolf, a new age of exploration and industrial ambition is threatened by an ancient prophecy—the Great Silence, a severing of contact with the afterlife—and three very different characters must navigate war, diplomacy, and forbidden magic to prevent an apocalyptic end of days. A dark, lushly realised flintlock fantasy horror from the author of The Justice of Kings.",
+      "tone": "grimdark, dread-building, richly atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "colonialism and empire",
+        "the afterlife and mortality",
+        "political ambition",
+        "prophecy",
+        "supernatural horror"
+      ],
+      "setting": "The Sovan Empire, on the cusp of an industrial revolution, with frontier wars, diplomatic missions to mermen, and supernatural threats—loosely analogous to 18th-century Europe",
+      "comparable_books": [
+        "The Justice of Kings - Richard Swan",
+        "The Blade Itself - Joe Abercrombie",
+        "A Shadow in Summer - Daniel Abraham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV dark fantasy",
+          "horror elements in fantasy",
+          "flintlock aesthetic",
+          "lush worldbuilding",
+          "building dread"
+        ],
+        "negative": [
+          "readers wanting fast-paced action from the start",
+          "those unfamiliar with the Empire of the Wolf setting may find it less resonant"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Art of Legend - Wesley Chu": {
       "title": "The Art of Legend",
       "author": "Wesley Chu",
       "series": "The War Arts Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the trilogy's conclusion, Jian—the humbled false chosen one—joins forces with his grumpy grandmaster Taishi and a ragtag band of unlikely heroes for one final clash against the returning threat of the Eternal Khan. Found family, martial arts mastery, and hard-won destiny converge in a rousing finale.",
+      "tone": "energetic, witty, heartfelt",
+      "pacing": "Fast",
+      "themes": [
+        "chosen one subversion",
+        "found family",
+        "destiny vs. self-determination",
+        "mentorship",
+        "heroism earned not given"
+      ],
+      "setting": "A secondary world inspired by Chinese wuxia aesthetics, with rival kingdoms, war arts schools, and martial-magic combat",
+      "comparable_books": [
+        "The Art of Prophecy - Wesley Chu",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Jade City - Fonda Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "wuxia-inspired fantasy",
+          "found family",
+          "witty banter",
+          "action choreography",
+          "chosen one deconstructions"
+        ],
+        "negative": [
+          "readers wanting grimdark or gritty tone",
+          "those who found middle volume slow"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Art of Destiny - Wesley Chu": {
       "title": "The Art of Destiny",
       "author": "Wesley Chu",
       "series": "The War Arts Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jian—stripped of his identity as the prophesied hero—trains under the gruff grandmaster Taishi while navigating a world that still expects his greatness; meanwhile the assassin Qisami goes undercover and discovers unexpected found family, and warrior Sali leads her exiled clan in search of a new homeland. A transitional but character-deepening middle volume.",
+      "tone": "irreverent, action-filled, character-rich",
+      "pacing": "Moderate",
+      "themes": [
+        "identity after failure",
+        "chosen one deconstruction",
+        "found family",
+        "revolution and leadership",
+        "destiny self-made"
+      ],
+      "setting": "The Enlightened States, a secondary world drawing heavily on wuxia and East Asian martial arts traditions",
+      "comparable_books": [
+        "The Art of Prophecy - Wesley Chu",
+        "The Art of Legend - Wesley Chu",
+        "Jade War - Fonda Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "wuxia fantasy",
+          "multi-POV ensemble",
+          "sharp humour",
+          "strong female characters",
+          "found family"
+        ],
+        "negative": [
+          "readers who dislike slower mid-series pacing",
+          "those wanting non-stop action from start to finish"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fall of Babel - Josiah Bancroft": {
       "title": "The Fall of Babel",
       "author": "Josiah Bancroft",
       "series": "The Books of Babel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The grand, strange, and deeply human Books of Babel reach their climax as Thomas Senlin and his allies face the Tower's ultimate crisis, converging threads of love, obsession, and revolution towards a finale that redefines everything the series has built. The Tower of Babel itself becomes the ultimate antagonist.",
+      "tone": "darkly comic, emotionally resonant, epic and intimate",
+      "pacing": "Moderate",
+      "themes": [
+        "obsession and love rewarded",
+        "revolution and power",
+        "the meaning of civilization",
+        "legacy",
+        "found family"
+      ],
+      "setting": "The Tower of Babel's highest and most dangerous ringdoms, in Bancroft's richly imagined secondary world",
+      "comparable_books": [
+        "The Hod King - Josiah Bancroft",
+        "Piranesi - Susanna Clarke",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusion payoff",
+          "literary quality",
+          "dark whimsy",
+          "emotional depth",
+          "original worldbuilding"
+        ],
+        "negative": [
+          "readers new to the series (must read from Book 1)",
+          "those who want conventional fantasy resolutions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The series finale's emotional and thematic payoff is amplified by the audio format's sustained immersion.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Heart of the Wyrdwood - R. J. Barker": {
       "title": "Heart of the Wyrdwood",
       "author": "R. J. Barker",
       "series": "Forsaken",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the concluding volume of the Forsaken trilogy, Cahan Du Nahare is lost to a dark god while his scattered companions—each on desperate missions across the land of Crua—must find a way to fight back as the ancient Wyrdwood itself begins to stir and awaken. A lyrical and strange dark fantasy conclusion.",
+      "tone": "dark, lyrical, strange and folkloric",
+      "pacing": "Slow",
+      "themes": [
+        "identity and loss of self",
+        "nature and wildness",
+        "resistance against empire",
+        "warring deities",
+        "redemption"
+      ],
+      "setting": "Crua, a world dominated by vast ancient forests alive with monsters, gods, and magic—folklore-dark in atmosphere",
+      "comparable_books": [
+        "Gods of the Wyrdwood - R.J. Barker",
+        "The Bone Ships - R.J. Barker",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark folklore fantasy",
+          "unique worldbuilding",
+          "literary prose",
+          "nature as character",
+          "morally complex chosen-one subversion"
+        ],
+        "negative": [
+          "readers wanting fast-paced plots",
+          "those who prefer conventional fantasy structures",
+          "readers frustrated by slow pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Practical Guide to Conquering the World - K. J. Parker": {
       "title": "A Practical Guide to Conquering the World",
       "author": "K. J. Parker",
       "series": "The Siege",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A translator with an uncanny gift for languages and an eye for opportunity finds himself inadvertently at the centre of a world-spanning sequence of conquests, wars, and civilisational upheavals—narrated with Parker's signature dry wit and subversive intelligence. The final, darkly comedic chapter in a trilogy about competence, luck, and the absurdity of empire.",
+      "tone": "darkly comic, cynical, intellectually playful",
+      "pacing": "Moderate",
+      "themes": [
+        "empire and power",
+        "competence and luck",
+        "language and communication",
+        "morality of ambition",
+        "the absurdity of war"
+      ],
+      "setting": "A secondary world of warring empires, roughly analogous to late antiquity and the medieval Mediterranean, seen through the eyes of a reluctant world-shaper",
+      "comparable_books": [
+        "Sixteen Ways to Defend a Walled City - K.J. Parker",
+        "The Blade Itself - Joe Abercrombie",
+        "The Folding Knife - K.J. Parker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic fantasy",
+          "unreliable narrators",
+          "cynical worldview",
+          "intellectual humour",
+          "military logistics and strategy"
+        ],
+        "negative": [
+          "readers wanting earnest heroism",
+          "those preferring magic-heavy fantasy",
+          "readers who dislike sardonic narrators"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Parker's dry, witty first-person narration is ideally served by audio—the voice is everything.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "War Master's Gate - Adrian Tchaikovsky": {
       "title": "War Master's Gate",
       "author": "Adrian Tchaikovsky",
       "series": "Shadows of the Apt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the Wasp Empire's vast armies bearing down on Collegium in what may be the final, decisive conflict of the series, generals and spies on all sides manoeuvre for advantage in a war that will determine the fate of the world. A grand, operatic penultimate volume packed with military strategy, aerial combat, and character consequence.",
+      "tone": "epic, tense, militaristic",
+      "pacing": "Fast",
+      "themes": [
+        "war and its costs",
+        "leadership and sacrifice",
+        "intelligence vs. brute force",
+        "loyalty",
+        "civilisation under threat"
+      ],
+      "setting": "The Lowlands—a secondary world of insect-kinden peoples with steam-age technology blended with biological magic, centred on the siege of Collegium",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "Prince of Nothing - R. Scott Bakker",
+        "Legion of Thunder - Mark Robson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "large-scale war",
+          "political intrigue",
+          "long-series investment payoff",
+          "diverse cast"
+        ],
+        "negative": [
+          "readers new to the series (must start from Book 1)",
+          "those wanting lighter fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Sea Watch - Adrian Tchaikovsky": {
       "title": "The Sea Watch",
       "author": "Adrian Tchaikovsky",
       "series": "Shadows of the Apt",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Stenwold Maker is pulled into a conflict beneath the waves when Collegium is threatened by an enigmatic and ancient undersea civilisation with technology and abilities unlike anything the land-dwelling kinden have encountered. A mid-series detour that expands the world's mythology while deepening themes of first contact and misunderstanding.",
+      "tone": "adventurous, inventive, tense",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact and misunderstanding",
+        "power and ancient civilisation",
+        "duty and sacrifice",
+        "xenophobia",
+        "war beneath the surface"
+      ],
+      "setting": "The city of Collegium and the deep seas of the Shadows of the Apt world, introducing wholly new underwater kinden civilisations",
+      "comparable_books": [
+        "Blood of the Mantis - Adrian Tchaikovsky",
+        "The Scarab Path - Adrian Tchaikovsky",
+        "The Stormcaller - Tom Lloyd"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "inventive worldbuilding",
+          "long-series readers",
+          "unique non-human civilisations",
+          "mid-series world expansion",
+          "military and espionage elements"
+        ],
+        "negative": [
+          "readers who want the main war plotline uninterrupted",
+          "those new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Assassin's Fate - Robin Hobb": {
