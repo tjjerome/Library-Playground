@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2886,
-  "total_pending": 1714,
+  "total_catalogued": 2906,
+  "total_pending": 1694,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -163331,26 +163331,49 @@
       "author": "Stanisław Lem",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A linked story collection following Trurl and Klapaucius, two robot 'constructors' in a far-future universe, as they build increasingly impossible machines and meddle in the affairs of kings, planets, and civilizations. The stories blend satirical fable, philosophical wit, and comic invention.",
+      "tone": "Playful, satirical, philosophically rich, absurdist",
+      "pacing": "Moderate",
+      "themes": [
+        "creativity and invention",
+        "hubris",
+        "the nature of intelligence",
+        "language and poetry",
+        "ethics of creation"
+      ],
+      "setting": "A far-future universe populated entirely by robots and mechanical beings; no fixed time or place",
+      "comparable_books": [
+        "The Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Invisible Cities - Italo Calvino",
+        "The Book of the New Sun - Gene Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical wit",
+          "satirical fable",
+          "inventive language",
+          "linked story collection",
+          "robots and AI",
+          "comic absurdism",
+          "literary SF"
+        ],
+        "negative": [
+          "plot-driven readers",
+          "linear narrative",
+          "action-focused SF",
+          "character-driven drama"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Gods Themselves - Isaac Asimov": {
@@ -163358,80 +163381,146 @@
       "author": "Isaac Asimov",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "When a limitless energy source is discovered via an exchange with a parallel universe, a lone scientist suspects the process may destroy the sun — but no one wants to listen. The novel is told in three parts, one of which takes place entirely among alien beings with radically different biology and society.",
+      "tone": "Cerebral, idea-driven, quietly urgent",
+      "pacing": "Moderate",
+      "themes": [
+        "scientific hubris",
+        "alien otherness",
+        "institutional resistance to truth",
+        "energy and power",
+        "communication across difference"
+      ],
+      "setting": "Late 21st century Earth, the Moon, and a parallel universe with different physical laws",
+      "comparable_books": [
+        "The Dispossessed - Ursula K. Le Guin",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Dragon's Egg - Robert Forward"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF concepts",
+          "alien biology",
+          "idea-driven narrative",
+          "three-part structure",
+          "Hugo and Nebula winner"
+        ],
+        "negative": [
+          "character-focused readers",
+          "fast pacing",
+          "action SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The 5th Wave - Rick Yancey": {
       "title": "The 5th Wave",
       "author": "Rick Yancey",
       "series": "The 5th Wave",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Young Adult Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After successive waves of alien attacks have decimated humanity, sixteen-year-old Cassie Sullivan struggles alone to survive and find her kidnapped younger brother, while questioning who can be trusted in a world where the enemy looks human.",
+      "tone": "Propulsive, paranoid, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "trust and betrayal",
+        "alien invasion",
+        "what it means to be human",
+        "sacrifice"
+      ],
+      "setting": "Near-future post-apocalyptic America following a multi-stage alien invasion",
+      "comparable_books": [
+        "The Passage - Justin Cronin",
+        "Ender's Game - Orson Scott Card",
+        "The Hunger Games - Suzanne Collins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "alien invasion",
+          "post-apocalyptic survival",
+          "YA SF",
+          "multiple POV",
+          "romance subplot"
+        ],
+        "negative": [
+          "adult literary SF",
+          "slow meditative pacing",
+          "hard SF concepts"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multiple POV with strong voice differentiation rewards a good multi-cast audio production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Provenance - Ann Leckie": {
       "title": "Provenance",
       "author": "Ann Leckie",
       "series": "Imperial Radch",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Standalone (set after main trilogy)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ingray Aughskold, an ambitious young woman on a politically stratified world, hatches an audacious plan to steal priceless cultural artifacts and prove herself to her powerful mother, only to find herself entangled in murder, alien diplomacy, and interstellar intrigue.",
+      "tone": "Wry, politically intricate, comedic of manners",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and inheritance",
+        "cultural authenticity",
+        "political ambition",
+        "gender and social roles",
+        "colonialism"
+      ],
+      "setting": "The Hwaean star system in the broader Imperial Radch universe; set after the main trilogy",
+      "comparable_books": [
+        "Ancillary Justice - Ann Leckie",
+        "A Memory Called Empire - Arkady Martine",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "political intrigue",
+          "non-binary gender norms",
+          "comedy of manners",
+          "alien diplomacy",
+          "can be read as standalone"
+        ],
+        "negative": [
+          "action-heavy SF",
+          "readers wanting trilogy continuity",
+          "fast-paced thriller"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Black Count - Tom Reiss": {
@@ -163439,53 +163528,98 @@
       "author": "Tom Reiss",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Biography",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Pulitzer Prize-winning biography of General Alex Dumas — son of a French nobleman and an enslaved Haitian woman — who rose to become one of Napoleon's greatest generals and the real-life inspiration for his son Alexandre Dumas's swashbuckling heroes.",
+      "tone": "Vivid, adventurous, historically rich",
+      "pacing": "Moderate",
+      "themes": [
+        "race and identity in revolutionary France",
+        "father and son legacy",
+        "military heroism",
+        "slavery and freedom",
+        "Enlightenment ideals"
+      ],
+      "setting": "18th–19th century France, the Caribbean, Egypt, and Italy during the Revolutionary and Napoleonic era",
+      "comparable_books": [
+        "Napoleon - Andrew Roberts",
+        "The Hare with Amber Eyes - Edmund de Waal",
+        "Longitude - Dava Sobel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction",
+          "swashbuckling history",
+          "biography",
+          "race and power",
+          "Napoleonic era",
+          "Pulitzer Prize winner"
+        ],
+        "negative": [
+          "fiction readers",
+          "fantasy or SF audiences",
+          "abstract or theoretical nonfiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Reads like an adventure novel; excellent narrative drive makes it ideal for audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Nos4a2 - Joe Hill": {
-      "title": "Nos4a2",
+      "title": "NOS4A2",
       "author": "Joe Hill",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Victoria McQueen has a supernatural gift for finding lost things, but when it brings her into the orbit of the terrifying Charlie Manx — a century-old predator who kidnaps children and feeds off their souls in a nightmarish Christmasland — she escapes, only for the battle between them to resume decades later.",
+      "tone": "Darkly menacing, mythic, emotionally brutal",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "good vs. evil",
+        "trauma and survival",
+        "motherhood",
+        "the dark side of nostalgia and childhood",
+        "imagination as power"
+      ],
+      "setting": "Contemporary rural New England and the supernatural road between reality and 'Christmasland'; spans several decades",
+      "comparable_books": [
+        "It - Stephen King",
+        "Heart-Shaped Box - Joe Hill",
+        "The Troop - Nick Cutter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror",
+          "Stephen King-adjacent",
+          "supernatural villain",
+          "long immersive read",
+          "Christmas horror",
+          "found-family"
+        ],
+        "negative": [
+          "light reading",
+          "squeamish readers",
+          "fast pacing preferred"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The full-cast audiobook production is widely praised and greatly enhances the atmosphere and character voices.",
+      "content_flags": [
+        "graphic violence",
+        "child endangerment"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Passage - Connie Willis": {
@@ -163493,26 +163627,47 @@
       "author": "Connie Willis",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Research psychologist Joanna Lander and neurologist Richard Wright collaborate to scientifically study near-death experiences by chemically inducing them, but when Joanna becomes a test subject herself, her visions begin pointing toward a terrifying and deeply significant truth.",
+      "tone": "Screwball-to-haunting, emotionally devastating, intellectually serious",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "death and dying",
+        "scientific inquiry vs. charlatanism",
+        "grief",
+        "the nature of consciousness",
+        "communication and miscommunication"
+      ],
+      "setting": "Near-future Denver, Colorado; primarily inside the labyrinthine corridors of Mercy General Hospital",
+      "comparable_books": [
+        "Doomsday Book - Connie Willis",
+        "The Time Traveler's Wife - Audrey Niffenegger",
+        "Flowers for Algernon - Daniel Keyes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "emotional gut-punch",
+          "medical setting",
+          "literary SF",
+          "screwball comedy turning dark",
+          "NDE and consciousness",
+          "Locus Award winner"
+        ],
+        "negative": [
+          "impatient readers",
+          "fast-paced thriller fans",
+          "readers who dislike long build-ups or running gags"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "My Best Friend's Exorcism - Grady Hendrix": {
@@ -163520,107 +163675,193 @@
       "author": "Grady Hendrix",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in 1988 South Carolina, Abby Rivers becomes convinced her best friend Gretchen is possessed by a demon after a terrifying night in the woods, and launches a desperate, darkly comic crusade to save her before their friendship — and Gretchen's soul — is lost forever.",
+      "tone": "Darkly comic, nostalgic, heartfelt, increasingly horrifying",
+      "pacing": "Fast",
+      "themes": [
+        "female friendship",
+        "the 1980s and nostalgia",
+        "demonic possession",
+        "loyalty",
+        "the horrors of adolescence"
+      ],
+      "setting": "1988 Charleston, South Carolina; private school milieu",
+      "comparable_books": [
+        "Paperbacks from Hell - Grady Hendrix",
+        "The Final Girls - Riley Sager",
+        "Stranger Things (TV series)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "1980s nostalgia",
+          "female friendship",
+          "horror comedy",
+          "coming-of-age",
+          "exorcism",
+          "fast read"
+        ],
+        "negative": [
+          "pure horror purists",
+          "readers who dislike pop-culture references",
+          "slow literary fiction fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong single-narrator performance; the 1980s soundtrack references and period atmosphere translate very well to audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Means of Ascent - Robert A. Caro": {
       "title": "Means of Ascent",
       "author": "Robert A. Caro",
       "series": "The Years of Lyndon Johnson",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Biography",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The second volume of Caro's monumental LBJ biography, covering Johnson's years in the political wilderness after WWII and his razor-thin, fraud-tainted 1948 Senate primary victory over Coke Stevenson — a contest Caro frames as a morality tale about power and corruption.",
+      "tone": "Meticulous, morally grave, prosecutorial",
+      "pacing": "Slow",
+      "themes": [
+        "political ambition and corruption",
+        "electoral fraud",
+        "the machinery of power",
+        "Texas political culture",
+        "the price of winning"
+      ],
+      "setting": "Texas and Washington D.C., roughly 1941–1948",
+      "comparable_books": [
+        "The Path to Power - Robert A. Caro",
+        "Master of the Senate - Robert A. Caro",
+        "Robert Moses - Robert A. Caro"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political biography",
+          "narrative nonfiction",
+          "American history",
+          "morally complex portraits",
+          "meticulously researched"
+        ],
+        "negative": [
+          "casual readers",
+          "those wanting fast pacing",
+          "fiction readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrator Grover Gardner's acclaimed performance across the series makes this an outstanding audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Master of the Senate - Robert A. Caro": {
       "title": "Master of the Senate",
       "author": "Robert A. Caro",
       "series": "The Years of Lyndon Johnson",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Biography",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The third volume of Caro's LBJ biography details Johnson's transformation of the do-nothing Senate into a power base, culminating in the passage of the Civil Rights Act of 1957, presented as both a study of institutional power and of one man's astonishing political mastery.",
+      "tone": "Meticulous, epic, morally complex, awe-inspiring in scale",
+      "pacing": "Slow",
+      "themes": [
+        "institutional power",
+        "the U.S. Senate",
+        "civil rights",
+        "legislative mastery",
+        "political manipulation"
+      ],
+      "setting": "Washington D.C. and Texas, roughly 1949–1958; includes a landmark history of the Senate itself",
+      "comparable_books": [
+        "Means of Ascent - Robert A. Caro",
+        "The Passage of Power - Robert A. Caro",
+        "All the President's Men - Woodward & Bernstein"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political biography",
+          "narrative nonfiction",
+          "American legislative history",
+          "Pulitzer Prize winner",
+          "institutional power",
+          "civil rights"
+        ],
+        "negative": [
+          "casual readers",
+          "those wanting fast pacing",
+          "fiction readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Grover Gardner's narration is widely considered definitive; the dense political history rewards focused audio listening.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Manhattan in Reverse - Peter F. Hamilton": {
       "title": "Manhattan in Reverse",
       "author": "Peter F. Hamilton",
-      "series": null,
+      "series": "Commonwealth Universe / Revelation Space-adjacent",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of seven short stories and novellas spanning Hamilton's Commonwealth universe and standalone ideas, featuring murder mysteries across centuries, time travel paradoxes, alien contact, and two stories featuring his implacable detective Paula Myo.",
+      "tone": "Brisk, ideas-driven, darkly inventive, sociologically curious",
+      "pacing": "Fast",
+      "themes": [
+        "longevity and immortality",
+        "genetic engineering",
+        "crime and justice",
+        "colonisation",
+        "technological consequence"
+      ],
+      "setting": "Primarily the far-future Commonwealth universe; also alternate-history 19th-century Oxford and a near-future Britain",
+      "comparable_books": [
+        "Galactic North - Alastair Reynolds",
+        "Pump Six and Other Stories - Paolo Bacigalupi",
+        "Revelation Space - Alastair Reynolds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera short fiction",
+          "detective stories",
+          "Commonwealth universe fans",
+          "wormhole technology",
+          "ideas-driven SF",
+          "good entry point for Hamilton"
+        ],
+        "negative": [
+          "readers who want sprawling Hamilton epics",
+          "literary fiction fans",
+          "fantasy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "In a Lonely Place - Dorothy B. Hughes": {
@@ -163628,53 +163869,100 @@
       "author": "Dorothy B. Hughes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Dix Steele, a charming but deeply disturbed WWII veteran drifting through postwar Los Angeles, narrates his own story with frightening intimacy as detective Brub Nicolai closes in on a serial strangler whose identity the reader comes to understand long before the characters do.",
+      "tone": "Claustrophobic, psychologically chilling, noir",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "toxic masculinity and entitlement",
+        "postwar disillusionment",
+        "the banality of evil",
+        "psychological disintegration",
+        "gender and power"
+      ],
+      "setting": "Late 1940s Los Angeles; the sun-bleached noir landscape of parties, beach houses, and dark streets",
+      "comparable_books": [
+        "The Talented Mr. Ripley - Patricia Highsmith",
+        "Laura - Vera Caspary",
+        "The Big Sleep - Raymond Chandler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "noir",
+          "psychological thriller",
+          "unreliable narrator",
+          "classic crime",
+          "feminist reread",
+          "villain POV"
+        ],
+        "negative": [
+          "cozy mystery fans",
+          "readers wanting a traditional whodunit",
+          "fast-action thrillers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Imago - Octavia E. Butler": {
       "title": "Imago",
       "author": "Octavia E. Butler",
       "series": "Xenogenesis",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jodahs, the first human-Oankali ooloi construct, struggles to find its place among both species as it undergoes a terrifying and unprecedented metamorphosis, raising profound questions about identity, reproduction, and what it means to be a new kind of being.",
+      "tone": "Intimate, quietly radical, unsettling",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and transformation",
+        "hybridity and belonging",
+        "consent and power",
+        "evolution",
+        "what constitutes humanity"
+      ],
+      "setting": "Post-nuclear Earth in the far future, aboard Oankali ships and in human settlements",
+      "comparable_books": [
+        "Dawn - Octavia E. Butler",
+        "Adulthood Rites - Octavia E. Butler",
+        "The Left Hand of Darkness - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Afrofuturism",
+          "alien contact",
+          "body horror",
+          "gender and sexuality",
+          "post-apocalyptic",
+          "literary SF",
+          "third gender"
+        ],
+        "negative": [
+          "readers uncomfortable with body transformation themes",
+          "action-focused SF",
+          "standalone readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "House of Bone and Rain - Gabino Iglesias": {
@@ -163682,26 +163970,51 @@
       "author": "Gabino Iglesias",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Puerto Rico, a tight-knit group of five young men swear vengeance after one of their mothers is murdered by a drug kingpin's crew, and their violent quest for retribution unfolds against the approach of Hurricane Maria and the intrusion of supernatural forces.",
+      "tone": "Visceral, lyrical, brutal, steeped in folklore",
+      "pacing": "Fast",
+      "themes": [
+        "friendship and loyalty",
+        "grief and revenge",
+        "Puerto Rican identity and colonialism",
+        "the supernatural",
+        "coming of age through violence"
+      ],
+      "setting": "Contemporary Puerto Rico, primarily San Juan, during the period of Hurricane Maria (2017)",
+      "comparable_books": [
+        "The Devil Takes You Home - Gabino Iglesias",
+        "Blacktop Wasteland - S.A. Cosby",
+        "My Heart Is a Chainsaw - Stephen Graham Jones"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "noir horror",
+          "found family",
+          "Latin American folklore",
+          "revenge thriller",
+          "visceral prose",
+          "Puerto Rican culture",
+          "Bram Stoker Award-winning author"
+        ],
+        "negative": [
+          "readers sensitive to extreme violence",
+          "cozy or quiet horror",
+          "light genre fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "drug use"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "I'm Afraid You've Got Dragons - Peter S. Beagle": {
@@ -163709,107 +164022,190 @@
       "author": "Peter S. Beagle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the kingdom of Bellemontagne, reluctant dragon exterminator Robert, Princess Cerise, and a cowardly prince are thrown together on a dangerous quest, each forced to confront who they truly are beneath the roles their society has assigned them.",
+      "tone": "Whimsical, warmly satirical, bittersweet, fairytale-dark",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and self-discovery",
+        "class and social roles",
+        "courage",
+        "subverting fantasy tropes",
+        "found family"
+      ],
+      "setting": "A pseudo-medieval fantasy kingdom resembling France (Bellemontagne), with a rich ecosystem of dragons",
+      "comparable_books": [
+        "The Last Unicorn - Peter S. Beagle",
+        "Stardust - Neil Gaiman",
+        "Enchanted Forest Chronicles - Patricia C. Wrede"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "whimsical fantasy",
+          "fairytale subversion",
+          "cozy adventure",
+          "dragon lore",
+          "found family",
+          "Peter Beagle fans",
+          "USA Today bestseller"
+        ],
+        "negative": [
+          "grimdark readers",
+          "hard SF fans",
+          "readers wanting epic scale or high stakes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrator Shaun Taylor-Corbett is widely praised for perfectly capturing the book's whimsical tone.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Helliconia Winter - Brian W. Aldiss": {
       "title": "Helliconia Winter",
       "author": "Brian W. Aldiss",
       "series": "The Helliconia Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Helliconia's centuries-long winter closes in, Luterin Shokerandt undertakes a harrowing pilgrimage across the ice-bound northern continent, while oppressive theocracy tightens its grip on a civilization slowly being extinguished by climate and plague.",
+      "tone": "Austere, bleak, philosophically weighty, elegiac",
+      "pacing": "Slow",
+      "themes": [
+        "civilisational decline",
+        "religion and oppression",
+        "climate and ecology",
+        "endurance",
+        "the Gaia Hypothesis"
+      ],
+      "setting": "The icy northern continent of Sibornal on the planet Helliconia, during the onset of a centuries-long winter; also observed from an orbiting Earth station",
+      "comparable_books": [
+        "Helliconia Spring - Brian W. Aldiss",
+        "Helliconia Summer - Brian W. Aldiss",
+        "The Book of the New Sun - Gene Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic SF world-building",
+          "climate and ecology SF",
+          "civilisational scale",
+          "philosophical SF",
+          "literary SF"
+        ],
+        "negative": [
+          "plot-driven readers",
+          "character-centric fiction fans",
+          "those wanting narrative momentum"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Helliconia Spring - Brian W. Aldiss": {
       "title": "Helliconia Spring",
       "author": "Brian W. Aldiss",
       "series": "The Helliconia Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the planet Helliconia, emerging from a centuries-long winter, humanity slowly reclaims civilisation while locked in violent conflict with the fur-clad Phagors — all watched secretly by an orbiting Earth station transmitting events back to a distant, changed Earth.",
+      "tone": "Epic, richly textured, anthropological, vivid",
+      "pacing": "Slow",
+      "themes": [
+        "civilisational rebirth",
+        "ecology and climate",
+        "religion and knowledge",
+        "human vs. alien",
+        "the Gaia Hypothesis"
+      ],
+      "setting": "The equatorial continent of Campannlat on the planet Helliconia during the planet's great spring; also the orbiting Earth station Avernus",
+      "comparable_books": [
+        "Dune - Frank Herbert",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "A Door into Ocean - Joan Slonczewski"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic SF world-building",
+          "alien biology",
+          "civilisational scale",
+          "climate SF",
+          "Nebula Award finalist",
+          "anthropological SF"
+        ],
+        "negative": [
+          "character-focused readers",
+          "fast pacing",
+          "readers wanting a central protagonist"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Helliconia Summer - Brian W. Aldiss": {
       "title": "Helliconia Summer",
       "author": "Brian W. Aldiss",
       "series": "The Helliconia Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "At the height of Helliconia's great summer, King Borlien navigates political crisis and a ruinous divorce while an Earthman descends from the orbiting station in a doomed act of intervention, and plague reshapes the struggling civilisations below.",
+      "tone": "Passionate, politically turbulent, fatalistic",
+      "pacing": "Slow",
+      "themes": [
+        "power and political betrayal",
+        "epidemic and biological change",
+        "intervention and colonialism",
+        "the cycle of civilisation",
+        "human folly"
+      ],
+      "setting": "The continent of Campannlat on Helliconia at the height of summer; the orbiting Earth station Avernus",
+      "comparable_books": [
+        "Helliconia Spring - Brian W. Aldiss",
+        "Helliconia Winter - Brian W. Aldiss",
+        "A Canticle for Leibowitz - Walter M. Miller Jr."
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic SF world-building",
+          "political SF",
+          "civilisational scale",
+          "plague and biology",
+          "literary SF"
+        ],
+        "negative": [
+          "readers wanting linear narrative",
+          "character-driven fiction fans",
+          "fast pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Greatest Hits - Harlan Ellison": {
@@ -163817,26 +164213,50 @@
       "author": "Harlan Ellison",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A posthumous retrospective collection of Ellison's most celebrated short fiction — including \"I Have No Mouth, and I Must Scream,\" \"'Repent, Harlequin!' Said the Ticktockman,\" and \"Jeffty Is Five\" — assembled by his estate and executor J. Michael Straczynski, with a foreword by Neil Gaiman.",
+      "tone": "Furious, experimental, darkly humane, provocative",
+      "pacing": "Fast",
+      "themes": [
+        "rebellion and conformity",
+        "artificial intelligence and cruelty",
+        "time and memory",
+        "social critique",
+        "the underdog"
+      ],
+      "setting": "Various — dystopian futures, alternate presents, mid-century America; wide tonal and formal range",
+      "comparable_books": [
+        "I Have No Mouth and I Must Scream - Harlan Ellison",
+        "Dangerous Visions - Harlan Ellison (ed.)",
+        "The Stories of Ray Bradbury - Ray Bradbury"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "New Wave SF",
+          "short story collections",
+          "Hugo and Nebula Award winners",
+          "social critique SF",
+          "provocative fiction",
+          "classic SF anthology"
+        ],
+        "negative": [
+          "readers wanting a single sustained narrative",
+          "cozy SF",
+          "hard SF purists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Galactic North - Alastair Reynolds": {
@@ -163844,26 +164264,50 @@
       "author": "Alastair Reynolds",
       "series": "Revelation Space",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of eight short stories and novellas set in Reynolds's Revelation Space universe, tracing the future history of humanity's expansion into the stars — from the early Conjoiner wars to a devastating far-future chase spanning tens of thousands of years.",
+      "tone": "Dark, gothic, hard-edged, cosmically bleak",
+      "pacing": "Fast",
+      "themes": [
+        "human factionalism and posthumanism",
+        "the Fermi paradox and alien extinction",
+        "longevity and identity",
+        "crime and justice",
+        "the long arc of civilisation"
+      ],
+      "setting": "The Revelation Space universe, spanning from approximately AD 2200 to AD 40,000, across multiple star systems",
+      "comparable_books": [
+        "Revelation Space - Alastair Reynolds",
+        "Manhattan in Reverse - Peter F. Hamilton",
+        "Diamond Dogs, Turquoise Days - Alastair Reynolds"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "dark space opera",
+          "short story collection",
+          "Revelation Space fans",
+          "gothic SF",
+          "Fermi paradox",
+          "far-future history"
+        ],
+        "negative": [
+          "readers wanting a standalone entry point",
+          "light SF",
+          "character-driven fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fire Watch - Connie Willis": {
