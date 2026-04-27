@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2466,
-  "total_pending": 2134,
+  "total_catalogued": 2486,
+  "total_pending": 2114,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -142980,539 +142980,944 @@
       "author": "Taylor Jenkins Reid",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An aging Hollywood icon selects an unknown journalist to write her biography, revealing the scandalous and deeply personal truths behind her seven marriages and decades-long career in the spotlight. A story of ambition, love, and the cost of keeping secrets.",
+      "tone": "glamorous, emotionally rich, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "ambition",
+        "identity",
+        "queerness",
+        "love and sacrifice",
+        "fame",
+        "race and passing"
+      ],
+      "setting": "Hollywood and New York City, 1950s–2010s",
+      "comparable_books": [
+        "Daisy Jones and The Six - Taylor Jenkins Reid",
+        "The Women - Kristin Hannah",
+        "Beautiful Ruins - Jess Walter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "sweeping multi-decade narrative",
+          "LGBTQ+ themes",
+          "Hollywood glamour",
+          "emotional gut-punches",
+          "dual timeline"
+        ],
+        "negative": [
+          "readers averse to celebrity/fame settings",
+          "those wanting plot-driven literary fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast audio production with multiple narrators enhances the story's scope and emotional impact.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lonesome Dove - Larry McMurtry": {
       "title": "Lonesome Dove",
       "author": "Larry McMurtry",
       "series": "Lonesome Dove",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (publication order); chronologically Book 3",
+      "genre": "Western",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Two aging Texas Rangers, Gus McCrae and Woodrow Call, lead a massive cattle drive from the Texas border to Montana, navigating violence, loss, and the fading frontier. A Pulitzer Prize-winning epic of the American West.",
+      "tone": "elegiac, vast, deeply human",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "friendship",
+        "duty vs freedom",
+        "mortality",
+        "the myth of the West",
+        "regret",
+        "loyalty"
+      ],
+      "setting": "Texas and the American frontier, late 19th century",
+      "comparable_books": [
+        "Blood Meridian - Cormac McCarthy",
+        "Centennial - James Michener",
+        "True Grit - Charles Portis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic journeys",
+          "richly drawn characters",
+          "found family",
+          "Pulitzer-quality prose",
+          "morally complex protagonists",
+          "fans of Westerns"
+        ],
+        "negative": [
+          "readers who dislike slow-building epics",
+          "those sensitive to violence and death of characters"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Frequently praised audiobook; the sprawling cast of characters and period dialogue reward a great narrator.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Just for the Summer - Abby Jimenez": {
       "title": "Just for the Summer",
       "author": "Abby Jimenez",
       "series": "Part of Your World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Contemporary Romance",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two people who both have a reputation for leaving their partners find that every person they've broken up with quickly finds their soulmate afterward — so they decide to date each other just for the summer, in hopes of triggering the same effect for themselves. A fun, witty romance with emotional depth.",
+      "tone": "breezy, witty, emotionally warm",
+      "pacing": "Fast",
+      "themes": [
+        "love and self-worth",
+        "patterns and breaking cycles",
+        "found family",
+        "commitment"
+      ],
+      "setting": "Contemporary United States",
+      "comparable_books": [
+        "The Friend Zone - Abby Jimenez",
+        "Beach Read - Emily Henry",
+        "People We Meet on Vacation - Emily Henry"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "enemies-to-lovers adjacent",
+          "witty banter",
+          "fast-paced romance",
+          "emotionally satisfying HEA",
+          "light supernatural premise"
+        ],
+        "negative": [
+          "readers wanting literary or slow-burn romance",
+          "those who dislike series with recurring characters"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Part of Your World - Abby Jimenez": {
       "title": "Part of Your World",
       "author": "Abby Jimenez",
       "series": "Part of Your World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Contemporary Romance",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A high-achieving ER doctor from a wealthy Minneapolis family starts a secret fling with a small-town carpenter in rural Minnesota, and finds her perfectly planned life upended when feelings deepen into something real. A class-difference romance with sharp humour and heart.",
+      "tone": "warm, witty, emotionally grounded",
+      "pacing": "Moderate",
+      "themes": [
+        "class and privilege",
+        "identity and belonging",
+        "love vs ambition",
+        "family expectations"
+      ],
+      "setting": "Minneapolis and rural Minnesota, contemporary",
+      "comparable_books": [
+        "Beach Read - Emily Henry",
+        "It Ends with Us - Colleen Hoover",
+        "The Unhoneymooners - Christina Lauren"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "class-difference romance",
+          "witty female protagonist",
+          "small-town setting",
+          "emotionally satisfying HEA",
+          "banter-heavy dialogue"
+        ],
+        "negative": [
+          "readers who dislike angst-heavy contemporary romance",
+          "those wanting low-heat romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Darker Domain - Val McDermid": {
       "title": "A Darker Domain",
       "author": "Val McDermid",
       "series": "Inspector Karen Pirie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a young woman reports her father missing — a man who vanished during the 1984 miners' strike — DCI Karen Pirie's cold case investigation uncovers links to a decades-old kidnapping of a Scottish heiress and her baby son, with new evidence emerging from a Tuscan villa.",
+      "tone": "atmospheric, propulsive, socially engaged",
+      "pacing": "Moderate",
+      "themes": [
+        "class and labour history",
+        "family secrets",
+        "justice delayed",
+        "political betrayal"
+      ],
+      "setting": "Fife and Edinburgh, Scotland; Tuscany, Italy; 1984 and present day",
+      "comparable_books": [
+        "The Distant Echo - Val McDermid",
+        "Case Histories - Kate Atkinson",
+        "Black and Blue - Ian Rankin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tartan noir",
+          "cold case procedural",
+          "dual timeline",
+          "strong female detective",
+          "social history backdrop"
+        ],
+        "negative": [
+          "readers who dislike dark subject matter",
+          "those wanting fast-paced thrillers without procedural detail"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hangman - Louise Penny": {
       "title": "The Hangman",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6.5 (novella)",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a jogger discovers a dead man hanging from a tree in the woods near Three Pines, Chief Inspector Gamache investigates what appears to be either a suicide or murder, uncovering the dead man's hidden reasons for visiting the peaceful Quebec village.",
+      "tone": "cosy-adjacent, accessible, gentle",
+      "pacing": "Fast",
+      "themes": [
+        "mystery",
+        "secrets",
+        "justice",
+        "community"
+      ],
+      "setting": "Three Pines, Quebec, Canada; early in the Gamache series timeline",
+      "comparable_books": [
+        "Still Life - Louise Penny",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Gamache series fans",
+          "quick reads",
+          "cosy mystery feel",
+          "Three Pines setting"
+        ],
+        "negative": [
+          "readers expecting full-length novel complexity",
+          "those new to the series looking for a strong entry point"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Skeleton Road - Val McDermid": {
       "title": "The Skeleton Road",
       "author": "Val McDermid",
       "series": "Inspector Karen Pirie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When skeletal remains are discovered at the top of a derelict Edinburgh building, DCI Karen Pirie's investigation leads her across Europe and into the hidden crimes of the Balkan wars of the 1990s. A crime novel that engages directly with war crimes and international justice.",
+      "tone": "dark, atmospheric, politically engaged",
+      "pacing": "Moderate",
+      "themes": [
+        "war crimes",
+        "justice and impunity",
+        "identity",
+        "the past refusing to stay buried"
+      ],
+      "setting": "Edinburgh, Scotland, and the former Yugoslavia; contemporary and 1990s",
+      "comparable_books": [
+        "A Darker Domain - Val McDermid",
+        "The Anatomy of Evil - Michael Connelly",
+        "The Girl with the Dragon Tattoo - Stieg Larsson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tartan noir",
+          "international scope",
+          "dual timeline",
+          "war crime investigations",
+          "strong female detective"
+        ],
+        "negative": [
+          "those sensitive to war atrocity subject matter",
+          "readers wanting lighter mysteries"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Black Wolf - Louise Penny": {
       "title": "The Black Wolf",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 20",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Recovering in Three Pines after stopping a terrorist attack, Gamache realizes the man he arrested was a decoy and the real threat — a network of powerful allies feeding misinformation and hatred — is still at large, forcing him to lead a covert investigation from his quiet village.",
+      "tone": "tense, politically charged, thriller-leaning",
+      "pacing": "Fast",
+      "themes": [
+        "misinformation",
+        "political corruption",
+        "good vs evil",
+        "courage",
+        "environmental threat"
+      ],
+      "setting": "Three Pines and Quebec, Canada; 2025",
+      "comparable_books": [
+        "The Grey Wolf - Louise Penny",
+        "State of Terror - Hillary Rodham Clinton and Louise Penny",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "long-running series fans",
+          "political thriller elements",
+          "Three Pines atmosphere",
+          "topical subject matter"
+        ],
+        "negative": [
+          "readers new to the series — best read after The Grey Wolf",
+          "those preferring classic cosy mysteries over political thrillers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Grey Wolf - Louise Penny": {
       "title": "The Grey Wolf",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 19",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mysterious phone calls and a series of strange events propel Gamache, Beauvoir, and Lacoste into an urgent pursuit of an eco-terrorism plot that could devastate cities across Canada and beyond, trusting no one but each other as old friends become suspects.",
+      "tone": "tense, action-packed, politically charged",
+      "pacing": "Fast",
+      "themes": [
+        "eco-terrorism",
+        "trust and betrayal",
+        "good vs evil",
+        "environmental catastrophe",
+        "courage"
+      ],
+      "setting": "Three Pines, Quebec, and international locations; 2024",
+      "comparable_books": [
+        "The Black Wolf - Louise Penny",
+        "State of Terror - Hillary Rodham Clinton and Louise Penny",
+        "A Great Reckoning - Louise Penny"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "long-running series fans",
+          "political thriller crossover",
+          "cliffhanger ending",
+          "action-paced Gamache"
+        ],
+        "negative": [
+          "readers who prefer classic cosy Gamache with Three Pines village life",
+          "those new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Farthest Shore - Ursula K. le Guin": {
       "title": "The Farthest Shore",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": "The Books of Earthsea",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The Archmage Ged and young Prince Arren journey to the ends of the Earthsea archipelago to discover why magic is draining from the world, confronting a darkness that threatens to unravel the balance between life and death. A profound meditation on mortality and meaning.",
+      "tone": "lyrical, elegiac, philosophical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "mortality and acceptance of death",
+        "balance",
+        "power and responsibility",
+        "coming of age",
+        "meaning and nothingness"
+      ],
+      "setting": "The Earthsea archipelago, a secondary world; a timeless mythic era",
+      "comparable_books": [
+        "A Wizard of Earthsea - Ursula K. Le Guin",
+        "The Tombs of Atuan - Ursula K. Le Guin",
+        "The Last Unicorn - Peter S. Beagle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "philosophical depth",
+          "beautiful prose",
+          "classic worldbuilding",
+          "coming-of-age arcs"
+        ],
+        "negative": [
+          "readers wanting action-heavy fantasy",
+          "those new to Earthsea — this is better read after Books 1 and 2"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Le Guin's lyrical prose is well-served by audio; the world's mythic quality is enhanced by a skilled narrator.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Past Lying - Val McDermid": {
       "title": "Past Lying",
       "author": "Val McDermid",
       "series": "Inspector Karen Pirie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set during Edinburgh's COVID-19 lockdown in April 2020, DCI Karen Pirie's team investigates documents in the archive of a recently deceased crime novelist — a manuscript centring on two literary rivals that appears to be a blueprint for a real missing-person case, leading into a twisted game of betrayal and revenge.",
+      "tone": "atmospheric, propulsive, cleverly meta",
+      "pacing": "Moderate",
+      "themes": [
+        "literary rivalry and ego",
+        "deception",
+        "pandemic and isolation",
+        "justice",
+        "fact vs fiction"
+      ],
+      "setting": "Edinburgh, Scotland; April 2020 during COVID-19 lockdown",
+      "comparable_books": [
+        "Still Life - Val McDermid",
+        "Broken Ground - Val McDermid",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tartan noir",
+          "meta literary mystery",
+          "cold case procedural",
+          "pandemic-era setting",
+          "strong female detective"
+        ],
+        "negative": [
+          "readers sensitive to COVID settings",
+          "those wanting faster-paced thrillers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "If It Bleeds - Stephen King": {
       "title": "If It Bleeds",
       "author": "Stephen King",
       "series": "Holly Gibney",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 (the novella within the collection; the collection itself is a standalone)",
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of four novellas, anchored by the title story in which private investigator Holly Gibney suspects that a news reporter first on the scene at a school bombing is a supernatural shape-shifter who feeds on tragedy — a creature like the one she encountered in The Outsider. The other three stories explore technology and death, the cosmic significance of one life, and a Faustian bargain for creative success.",
+      "tone": "darkly human, suspenseful, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "grief and loss",
+        "evil hiding in plain sight",
+        "mortality",
+        "creative ambition",
+        "connection beyond death"
+      ],
+      "setting": "Contemporary United States; various locations",
+      "comparable_books": [
+        "The Outsider - Stephen King",
+        "Full Dark, No Stars - Stephen King",
+        "Different Seasons - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Stephen King fans",
+          "Holly Gibney series followers",
+          "horror-adjacent suspense",
+          "novella format",
+          "supernatural detective fiction"
+        ],
+        "negative": [
+          "readers wanting a single novel rather than a collection",
+          "best enjoyed after reading The Outsider for the title story"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multiple narrators across the audiobook production match each story's distinct tone and character.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Close to Death - Anthony Horowitz": {
       "title": "Close to Death",
       "author": "Anthony Horowitz",
       "series": "A Hawthorne and Horowitz Mystery",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Author Anthony Horowitz, lacking a current case to chronicle, revisits a past investigation with detective Daniel Hawthorne: the crossbow murder of an obnoxious new resident of an idyllic Thames-side gated community where every single neighbour had reason to want him dead. A cleverly metafictional, Christie-esque locked-community whodunnit.",
+      "tone": "witty, clever, metafictional, Christie-esque",
+      "pacing": "Moderate",
+      "themes": [
+        "community and class",
+        "secrets and appearances",
+        "justice",
+        "meta-fiction and authorship"
+      ],
+      "setting": "Riverside Close, a gated community on the Thames, England; present day with a past-case structure",
+      "comparable_books": [
+        "The Word is Murder - Anthony Horowitz",
+        "Magpie Murders - Anthony Horowitz",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age mystery fans",
+          "Agatha Christie aficionados",
+          "metafictional whodunnits",
+          "witty British crime fiction",
+          "closed-circle mysteries"
+        ],
+        "negative": [
+          "readers new to the series — best read after the earlier books",
+          "those disliking metafictional conceits"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Rory Kinnear, widely praised for capturing the series' distinctive wit and Hawthorne's voice.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Out of Bounds - Val McDermid": {
       "title": "Out of Bounds",
       "author": "Val McDermid",
       "series": "Inspector Karen Pirie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a teenage joyrider's crash puts him in a coma, a DNA test unexpectedly links him to an unsolved murder from twenty-two years earlier, drawing DCI Karen Pirie into the case — while simultaneously pursuing a separate mystery connected to the IRA and the Troubles.",
+      "tone": "atmospheric, propulsive, socially engaged",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and genetics",
+        "political violence and the Troubles",
+        "justice delayed",
+        "DNA and modern forensics"
+      ],
+      "setting": "Edinburgh and Scotland; contemporary and 1990s flashbacks",
+      "comparable_books": [
+        "The Skeleton Road - Val McDermid",
+        "Broken Ground - Val McDermid",
+        "Black and Blue - Ian Rankin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tartan noir",
+          "dual timeline cold case",
+          "strong female detective",
+          "DNA-driven procedural",
+          "political history backdrop"
+        ],
+        "negative": [
+          "those sensitive to violence and terrorism themes",
+          "readers wanting lighter mysteries"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Broken Ground - Val McDermid": {
       "title": "Broken Ground",
       "author": "Val McDermid",
       "series": "Inspector Karen Pirie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the remote Scottish Highlands, a buried inheritance leads to the discovery of a body concealed in the peat for decades — a case that quickly entangles DCI Karen Pirie in a web of coercion and domestic violence reaching into the present.",
+      "tone": "atmospheric, grounded, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "domestic violence",
+        "secrets buried in the past",
+        "justice",
+        "remote community and isolation"
+      ],
+      "setting": "Scottish Highlands and Edinburgh; contemporary and historical",
+      "comparable_books": [
+        "Out of Bounds - Val McDermid",
+        "Still Life - Val McDermid",
+        "The Long Drop - Denise Mina"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tartan noir",
+          "cold case procedural",
+          "Scottish Highland setting",
+          "strong female detective",
+          "social issues in crime fiction"
+        ],
+        "negative": [
+          "those sensitive to domestic violence subject matter",
+          "readers wanting faster-paced crime fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Still Life - Val McDermid": {
       "title": "Still Life",
       "author": "Val McDermid",
       "series": "Inspector Karen Pirie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When fishermen pull a body from the Firth of Forth — a man who was once the prime suspect in the decade-old disappearance of a prominent civil servant — DCI Karen Pirie is drawn into a shadowy world of art forgery, fake identities, and buried secrets; simultaneously her team investigates a skeleton found in an abandoned campervan.",
+      "tone": "propulsive, tightly plotted, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "art crime and forgery",
+        "identity and deception",
+        "secrets and their cost",
+        "justice"
+      ],
+      "setting": "Edinburgh, Fife, Paris, and Ireland; February 2020 (just before COVID lockdown)",
+      "comparable_books": [
+        "Broken Ground - Val McDermid",
+        "Past Lying - Val McDermid",
+        "The Rembrandt Affair - Daniel Silva"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tartan noir",
+          "art world crime",
+          "dual cold case structure",
+          "strong female detective",
+          "international travel within procedural"
+        ],
+        "negative": [
+          "those wanting a single focused mystery rather than dual plot threads",
+          "readers new to the series may miss character backstory"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sunlit Man - Brandon Sanderson": {
       "title": "The Sunlit Man",
       "author": "Brandon Sanderson",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Cosmere",
+      "series_position": "Standalone Cosmere novel (Secret Project 4); most rewarding for readers familiar with the Stormlight Archive",
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A fugitive known only as Nomad, fleeing an implacable enemy across worlds, crash-lands on the planet Canticle — where the lethal heat of the sun forces its inhabitants to live on perpetually moving floating cities — and finds himself caught up in a rebellion against a tyrant who enslaves people by burning away their personalities.",
+      "tone": "propulsive, action-driven, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "identity and redemption",
+        "home and belonging",
+        "freedom vs tyranny",
+        "sacrifice",
+        "running from the past"
+      ],
+      "setting": "The planet Canticle, far-future Cosmere universe",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "Tress of the Emerald Sea - Brandon Sanderson",
+        "Yumi and the Nightmare Painter - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cosmere fans",
+          "action-driven fantasy",
+          "creative worldbuilding",
+          "morally complex protagonist",
+          "standalone-accessible within a larger universe"
+        ],
+        "negative": [
+          "readers new to Sanderson — best after some Cosmere exposure",
+          "those who dislike science-fantasy hybrids"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Isles of the Emberdark - Brandon Sanderson": {
       "title": "Isles of the Emberdark",
       "author": "Brandon Sanderson",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Cosmere",
+      "series_position": "Standalone Cosmere novel (Secret Project 5); expands the novella 'Sixth of the Dusk'",
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a far-future Cosmere, traditional island trapper Sixth of the Dusk ventures through a mystical portal into the Emberdark — a vast cosmic realm — to find a way to save his people from star-faring invaders, where he encounters an unlikely ally: Starling, a young dragon in human form crewing a debt-ridden starship.",
+      "tone": "mythic, adventurous, wonder-filled",
+      "pacing": "Moderate",
+      "themes": [
+        "cultural survival and identity",
+        "independence",
+        "unlikely alliances",
+        "modernisation vs tradition",
+        "cosmic scale"
+      ],
+      "setting": "The island of Patji and the Emberdark (Cognitive Realm), far-future Cosmere; Polynesian-influenced culture",
+      "comparable_books": [
+        "The Sunlit Man - Brandon Sanderson",
+        "Tress of the Emerald Sea - Brandon Sanderson",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cosmere fans",
+          "dual POV narratives",
+          "mythic worldbuilding",
+          "science-fantasy hybrids",
+          "found family",
+          "Polynesian-inspired setting"
+        ],
+        "negative": [
+          "readers new to Sanderson — spoilers for Cosmere's future era",
+          "those who dislike science-fantasy blending"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood and Bone - Ian C. Esslemont": {
       "title": "Blood and Bone",
       "author": "Ian C. Esslemont",
       "series": "Novels of the Malazan Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Multiple converging forces — a mercenary company, a Crimson Guard mage, and a Seguleh warrior — make their way deep into the near-mythical jungle continent of Jacuruku, each pursuing their own agenda, while the ancient and terrible ruler of that land stirs from slumber. A deep-cut Malazan novel set in one of the world's most dangerous and mysterious regions.",
+      "tone": "grimdark, dense, epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "power and its cost",
+        "colonialism and resistance",
+        "ancient evil",
+        "loyalty",
+        "survival"
+      ],
+      "setting": "Jacuruku, a jungle continent in the Malazan world; secondary world epic fantasy",
+      "comparable_books": [
+        "Gardens of the Moon - Steven Erikson",
+        "Night of Knives - Ian C. Esslemont",
+        "The Darkness That Comes Before - R. Scott Bakker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Malazan fans",
+          "grimdark epic fantasy",
+          "dense worldbuilding",
+          "large ensemble casts",
+          "morally ambiguous characters"
+        ],
+        "negative": [
+          "readers new to Malazan — requires prior familiarity",
+          "those who dislike slow, dense fantasy",
+          "readers sensitive to extreme violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Clown Town - Mick Herron": {
       "title": "Clown Town",
       "author": "Mick Herron",
       "series": "Slough House",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Spy Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When River Cartwright investigates a mysteriously missing book from his late grandfather's library, it triggers a collision between MI5's murky past — a covert operation during the Troubles — and its present, as Diana Taverner turns an old threat into an opportunity with typically ruthless results for the slow horses of Slough House.",
+      "tone": "darkly comic, sardonic, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional cynicism",
+        "the cost of intelligence work",
+        "Britain's political decline",
+        "loyalty and sacrifice",
+        "secrets from the past"
+      ],
+      "setting": "London (Slough House, MI5's Regent's Park) and Oxford; contemporary Britain",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "A Spy Among Friends - Ben Macintyre"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of the Slough House series",
+          "mordant wit",
+          "le Carré successors",
+          "British political satire",
+          "ensemble misfit characters",
+          "Apple TV Slow Horses fans"
+        ],
+        "negative": [
+          "readers new to the series — best read after earlier books",
+          "those wanting optimistic spy fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Sean Barrett, whose long association with the series and command of the dry, sardonic tone is widely praised.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Woman in Suite 11 - Ruth Ware": {
