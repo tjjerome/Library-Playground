@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2388,
-  "total_pending": 2212,
+  "total_catalogued": 2407,
+  "total_pending": 2193,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -139111,54 +139111,96 @@
       "title": "The Liar's Key",
       "author": "Mark Lawrence",
       "series": "The Red Queen's War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Prince Jalan Kendeth and the Viking warrior Snorri ver Snagason continue their unlikely quest, pursuing a magical key that can open any door — including, perhaps, the door to the land of the dead. Their journey takes them deep into the Empire, confronting old enemies and new dangers.",
+      "tone": "darkly comic, propulsive, morally compromised",
+      "pacing": "Fast",
+      "themes": [
+        "cowardice vs. courage",
+        "fate and magic",
+        "unlikely friendship",
+        "Norse mythology",
+        "self-preservation"
+      ],
+      "setting": "A post-apocalyptic far-future Europe reimagined as a medieval fantasy world, spanning the Broken Empire",
+      "comparable_books": [
+        "Prince of Fools - Mark Lawrence",
+        "The Blade Itself - Joe Abercrombie",
+        "Best Served Cold - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrator",
+          "darkly comic tone",
+          "morally grey protagonist",
+          "propulsive adventure",
+          "Norse mythology",
+          "connected universe world-building"
+        ],
+        "negative": [
+          "cowardly/selfish protagonist may frustrate",
+          "light on introspection",
+          "requires prior series knowledge"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tim Gerard Reynolds delivers a superb performance as Jalan's sardonic first-person narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Icebound Land - John Flanagan": {
       "title": "The Icebound Land",
       "author": "John Flanagan",
       "series": "Ranger's Apprentice",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Will and Evanlyn are taken captive to the frozen land of Skandia, while Halt defies his king's orders to rescue his apprentice. Separated and suffering, both must find courage and endurance to survive.",
+      "tone": "adventurous, earnest, tense",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty",
+        "courage under hardship",
+        "mentorship",
+        "survival",
+        "friendship"
+      ],
+      "setting": "The medieval-inspired kingdom of Araluen and the frozen Norse-like land of Skandia",
+      "comparable_books": [
+        "The Ruins of Gorlan - John Flanagan",
+        "Eragon - Christopher Paolini",
+        "The Alchemyst - Michael Scott"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "young adult adventure",
+          "mentor-apprentice relationships",
+          "fast-paced action",
+          "series progression"
+        ],
+        "negative": [
+          "middle-entry cliff-hanger structure",
+          "aimed at younger readers",
+          "formulaic plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Liar’s Knot - M. A. Carrick": {
@@ -139192,297 +139234,536 @@
       "title": "The Girl and the Mountain",
       "author": "Mark Lawrence",
       "series": "The Book of the Ice",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After escaping the underground world beneath the ice, Yaz of the Ictha must confront the powerful and ruthless Priests of the Black Rock before embarking on a treacherous journey across the frozen wastes toward a green world she has only dreamed of.",
+      "tone": "grimdark, bleak, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "survival",
+        "power and religion",
+        "identity",
+        "sacrifice",
+        "the past shaping the present"
+      ],
+      "setting": "The ice-covered planet Abeth — frozen surface, underground cities, and the foreboding Black Rock fortress",
+      "comparable_books": [
+        "The Girl and the Stars - Mark Lawrence",
+        "Red Sister - Mark Lawrence",
+        "The Way of Shadows - Brent Weeks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy-sci-fi blend",
+          "strong female protagonist",
+          "immersive world-building",
+          "cross-series connections",
+          "survival stakes"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "bleak tone throughout",
+          "slower mid-section"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Girl in the Tower - Katherine Arden": {
       "title": "The Girl in the Tower",
       "author": "Katherine Arden",
       "series": "The Winternight Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Vasya flees her village disguised as a boy and travels through a wintry medieval Russia, becoming entangled with her brother's military campaign and the machinations of the sinister priest Konstantin, while her bond with the frost demon Morozko deepens.",
+      "tone": "lyrical, atmospheric, mythic",
+      "pacing": "Moderate",
+      "themes": [
+        "female agency",
+        "Russian folklore",
+        "identity and disguise",
+        "duty vs. freedom",
+        "the supernatural"
+      ],
+      "setting": "Medieval Russia — snow-blanketed forests, Moscow, and the spirit world of Slavic myth",
+      "comparable_books": [
+        "The Bear and the Nightingale - Katherine Arden",
+        "Spinning Silver - Naomi Novik",
+        "Deathless - Catherynne M. Valente"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "Slavic folklore",
+          "strong female protagonist",
+          "atmospheric winter setting",
+          "slow-burn romance"
+        ],
+        "negative": [
+          "slower pacing",
+          "requires prior series knowledge",
+          "heavy on atmosphere over plot"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kathleen Gati's narration is widely praised and perfectly matches the lyrical, fairy-tale quality of the prose.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Girl and the Moon - Mark Lawrence": {
       "title": "The Girl and the Moon",
       "author": "Mark Lawrence",
       "series": "The Book of the Ice",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Yaz finally reaches the Corridor — a thin band of habitable land — but faces execution at the hands of the nuns of the Convent of Sweet Mercy, while an ancient cosmic threat to the moon itself forces her to seek the legendary Ark of the Missing buried beneath the emperor's palace.",
+      "tone": "grimdark, epic, surprisingly hopeful in conclusion",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "survival",
+        "ancient technology vs. magic",
+        "identity",
+        "interconnectedness of fate"
+      ],
+      "setting": "The ice planet Abeth — the Corridor, the Convent of Sweet Mercy, and the imperial capital",
+      "comparable_books": [
+        "Holy Sister - Mark Lawrence",
+        "The Girl and the Mountain - Mark Lawrence",
+        "Red Sister - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cross-series payoff",
+          "epic scope",
+          "fast-paced finale",
+          "grimdark fantasy-sci-fi blend",
+          "strong female protagonist"
+        ],
+        "negative": [
+          "requires reading both prior trilogies for full impact",
+          "bleak world",
+          "complex lore demands attention"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Divine Invasion - Philip K. Dick": {
       "title": "The Divine Invasion",
       "author": "Philip K. Dick",
       "series": "VALIS Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "God, exiled from Earth, arranges to be reborn as a human child, Emmanuel, who must battle the dark forces — including a sinister entity called Belial — that have taken control of the planet, in a metaphysical struggle blending Gnostic theology with science fiction.",
+      "tone": "philosophical, visionary, strange",
+      "pacing": "Moderate",
+      "themes": [
+        "gnosticism",
+        "the nature of God and evil",
+        "reality vs. illusion",
+        "redemption",
+        "memory and identity"
+      ],
+      "setting": "A far-future colonized outer planet and a dystopian near-future Earth dominated by a theocratic empire",
+      "comparable_books": [
+        "VALIS - Philip K. Dick",
+        "The Transmigration of Timothy Archer - Philip K. Dick",
+        "A Scanner Darkly - Philip K. Dick"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical depth",
+          "theological speculation",
+          "Gnostic themes",
+          "PKD's unique visionary style",
+          "literary science fiction"
+        ],
+        "negative": [
+          "experimental and abstract",
+          "not plot-driven",
+          "prior PKD knowledge enhances appreciation"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Destroyer of Worlds - Matt Ruff": {
       "title": "The Destroyer of Worlds",
       "author": "Matt Ruff",
       "series": "Lovecraft Country",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1957 Chicago, the Turner, Berry, and Dandridge families face intertwined crises — a life-and-death pursuit in the South, a Faustian bargain with a malevolent ghost, and a trip to Nevada that opens doorways to other worlds — all while the dangerous sorcerer Caleb Braithwhite plots his return to power.",
+      "tone": "propulsive, darkly humorous, historically grounded horror",
+      "pacing": "Fast",
+      "themes": [
+        "racism and Jim Crow America",
+        "Lovecraftian horror",
+        "family and community",
+        "power and resistance",
+        "the past and present"
+      ],
+      "setting": "1957 America — Chicago, North Carolina, Nevada, and Lovecraftian alternate dimensions",
+      "comparable_books": [
+        "Lovecraft Country - Matt Ruff",
+        "The Ballad of Black Tom - Victor LaValle",
+        "Ring Shout - P. Djèlí Clark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror",
+          "historical fiction",
+          "interwoven storylines",
+          "strong ensemble cast",
+          "social commentary through genre fiction"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "less standalone than Book 1",
+          "some feel it lacks Book 1's impact"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kevin Kenerly's audiobook narration is widely praised and carries forward his acclaimed performance from the first book.",
+      "content_flags": [
+        "graphic violence",
+        "racial violence (historical)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Daughter of Odren - Ursula K. le Guin": {
       "title": "The Daughter of Odren",
-      "author": "Ursula K. le Guin",
+      "author": "Ursula K. Le Guin",
       "series": "The Books of Earthsea",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short story / standalone within the cycle",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A short tale of betrayal and patience set in Earthsea: Weed, daughter of the imprisoned Lord of Odren, spends fourteen years making offerings to the standing stone that holds her father captive, waiting for the day her wizard brother returns to exact vengeance.",
+      "tone": "lyrical, melancholy, quietly mythic",
+      "pacing": "Slow",
+      "themes": [
+        "betrayal and revenge",
+        "patience and waiting",
+        "family loyalty",
+        "the limits of justice",
+        "magic and its costs"
+      ],
+      "setting": "The island of O in the Earthsea archipelago — a rural, timeless secondary world of magic and sea",
+      "comparable_books": [
+        "Tales from Earthsea - Ursula K. Le Guin",
+        "A Wizard of Earthsea - Ursula K. Le Guin",
+        "The Tombs of Atuan - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Le Guin's lyrical prose",
+          "Earthsea setting",
+          "quiet literary fantasy",
+          "thematic depth in short form"
+        ],
+        "negative": [
+          "very short — not a full novel",
+          "no familiar Earthsea characters",
+          "minimal action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Desert Spear - Peter V. Brett": {
       "title": "The Desert Spear",
       "author": "Peter V. Brett",
       "series": "The Demon Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The story expands to reveal the origins of Jardir, the Krasian warlord who believes himself the Deliverer, as his vast army marches north to conquer the free cities — while Arlen 'the Painted Man' struggles with his own growing legend and the price of becoming something more than human.",
+      "tone": "grimdark, epic, visceral",
+      "pacing": "Moderate",
+      "themes": [
+        "religion and prophecy",
+        "cultural clash",
+        "power and leadership",
+        "sacrifice",
+        "what it means to be a hero"
+      ],
+      "setting": "A dark secondary world perpetually threatened by demons that rise from the earth each night — the free cities of the north and the desert kingdom of Krasia",
+      "comparable_books": [
+        "The Warded Man - Peter V. Brett",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic scope",
+          "complex antagonist given protagonist POV",
+          "detailed world-building",
+          "grimdark tone",
+          "religious and cultural world-building"
+        ],
+        "negative": [
+          "sexual violence content",
+          "very long",
+          "protagonist arc divides readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "sexual violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Daylight War - Peter V. Brett": {
       "title": "The Daylight War",
       "author": "Peter V. Brett",
       "series": "The Demon Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the long-awaited battle between Arlen and Jardir approaches, the narrative widens to explore the formative history of Inevera, the Krasian Damajah whose prophecies and machinations have shaped both men's destinies — and the demon mind behind all the nightly attacks begins to reveal itself.",
+      "tone": "grimdark, sprawling, political",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "prophecy and free will",
+        "gender and power in patriarchal societies",
+        "war and its costs",
+        "manipulation",
+        "destiny"
+      ],
+      "setting": "The dark secondary world of the Demon Cycle — Krasian deserts, the free cities of the north, and the demon-haunted nights",
+      "comparable_books": [
+        "The Desert Spear - Peter V. Brett",
+        "A Dance with Dragons - George R. R. Martin",
+        "Words of Radiance - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "expanded world-building",
+          "morally complex female POV",
+          "epic scope",
+          "political intrigue"
+        ],
+        "negative": [
+          "sexual violence content",
+          "divisive pacing — very slow",
+          "longest book in series to that point"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "sexual violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Core - Peter V. Brett": {
       "title": "The Core",
       "author": "Peter V. Brett",
       "series": "The Demon Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The final volume of the Demon Cycle brings humanity's war against demonkind to a climax, as Arlen leads a desperate mission into the demon core itself to destroy the mind controlling all demon-kind, while the free cities mount a last defence against annihilation.",
+      "tone": "grimdark, relentless, epic",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "the nature of evil",
+        "legacy and family",
+        "courage",
+        "humanity's will to survive"
+      ],
+      "setting": "The demon-plagued world of the Demon Cycle, culminating in the subterranean demon realm beneath the earth",
+      "comparable_books": [
+        "The Skull Throne - Peter V. Brett",
+        "The Final Empire - Brandon Sanderson",
+        "The Heroes - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satisfying series conclusion",
+          "epic scope",
+          "fast-paced action",
+          "grimdark military fantasy"
+        ],
+        "negative": [
+          "requires reading all prior books",
+          "sexual violence carried through series",
+          "some feel the series declined from Book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "sexual violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Ruins of Gorlan - John Flanagan": {
       "title": "The Ruins of Gorlan",
       "author": "John Flanagan",
       "series": "Ranger's Apprentice",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Will, a young orphan dismissed by the kingdom's military as too small for knighthood, is taken on as an apprentice by the mysterious and skilled Ranger Halt, beginning a training that will test his courage as an ancient evil stirs in the ruins of Gorlan.",
+      "tone": "adventurous, earnest, accessible",
+      "pacing": "Fast",
+      "themes": [
+        "mentorship",
+        "courage and self-belief",
+        "loyalty",
+        "identity",
+        "coming of age"
+      ],
+      "setting": "The medieval-inspired kingdom of Araluen — forests, castles, and wilderness",
+      "comparable_books": [
+        "Eragon - Christopher Paolini",
+        "The Alchemyst - Michael Scott",
+        "Redwall - Brian Jacques"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "young adult adventure",
+          "strong mentor-apprentice dynamic",
+          "fast-paced and accessible",
+          "series starter"
+        ],
+        "negative": [
+          "aimed at younger readers",
+          "straightforward plotting",
+          "thin characterisation by adult fantasy standards"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Iron Flame - Rebecca Yarros": {
       "title": "Iron Flame",
       "author": "Rebecca Yarros",
       "series": "The Empyrean",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy Romance",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Violet Sorrengail returns to Basgiath War College for her second and most brutal year as a dragon rider, facing a hostile new vice commandant determined to break her, while uncovering a centuries-old secret about Navarre that threatens everything she thought she knew.",
+      "tone": "propulsive, romantic, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "love and loyalty",
+        "truth vs. duty",
+        "survival in oppressive institutions",
+        "rebellion",
+        "secrets and betrayal"
+      ],
+      "setting": "The military war college of Basgiath and the kingdom of Navarre — a secondary world with dragons, magic, and military hierarchy",
+      "comparable_books": [
+        "Fourth Wing - Rebecca Yarros",
+        "A Court of Thorns and Roses - Sarah J. Maas",
+        "From Blood and Ash - Jennifer L. Armentrout"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "romance-heavy",
+          "enemies-to-lovers",
+          "dragons",
+          "fast-paced action",
+          "BookTok/romantasy audience",
+          "addictive series progression"
+        ],
+        "negative": [
+          "romance-heavy may not suit all fantasy readers",
+          "plot credibility criticised by some",
+          "best enjoyed as pure escapism"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Hunting Party - Lucy Foley": {
@@ -139490,53 +139771,95 @@
       "author": "Lucy Foley",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A group of old Oxford friends gather at a remote Scottish Highland hunting lodge for New Year's Eve, but old secrets, buried resentments, and festering betrayals explode when one of them turns up dead — and the reader must piece together who was killed and who did it.",
+      "tone": "tense, atmospheric, slow-burn",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the decay of friendship",
+        "secrets and resentment",
+        "social class",
+        "isolation",
+        "toxic relationships"
+      ],
+      "setting": "A remote wilderness estate at Loch Corrin in the Scottish Highlands, New Year's Eve, contemporary",
+      "comparable_books": [
+        "The Guest List - Lucy Foley",
+        "In a Dark Dark Wood - Ruth Ware",
+        "And Then There Were None - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room mystery",
+          "atmospheric isolated setting",
+          "multiple POV suspects",
+          "dark secrets in friend groups"
+        ],
+        "negative": [
+          "slow first 70%",
+          "victim identity withheld for much of the book frustrates some readers",
+          "characters seen as shallow by some"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multiple narrators for multiple POV characters make the audio format particularly effective for this novel.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bad Actors - Mick Herron": {
       "title": "Bad Actors",
       "author": "Mick Herron",
       "series": "Slough House",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the Prime Minister's superforecaster vanishes without trace, a scandal threatens to engulf the entire British intelligence community — and as the Slow Horses of Slough House are drawn into the chaos, First Desk Diana Taverner finds herself the prime suspect in a government power play.",
+      "tone": "darkly comic, cynical, wryly satirical",
+      "pacing": "Moderate",
+      "themes": [
+        "political corruption",
+        "institutional failure",
+        "espionage and loyalty",
+        "British satire",
+        "incompetence and ego"
+      ],
+      "setting": "Contemporary London — MI5's Regent's Park, the decrepit offices of Slough House, and the corridors of Downing Street",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic spy fiction",
+          "satirical portrait of British politics",
+          "sharp ensemble cast",
+          "le Carré fans",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "requires prior series context for full character investment",
+          "heavy UK political satire may not translate for all readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Seán Barrett's acclaimed narration of the full series is widely considered definitive and particularly suited to Herron's sardonic prose.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Armageddon: What the Bible Really Says About the End - Bart D. Ehrman": {
@@ -139544,53 +139867,91 @@
       "author": "Bart D. Ehrman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "New Testament scholar Bart Ehrman offers a rigorous scholarly yet accessible examination of the Book of Revelation, arguing that popular rapture scenarios are nineteenth-century innovations, that Revelation was written for its first-century audience, and exploring the dangerous social and political consequences of literalist apocalyptic readings today.",
+      "tone": "accessible scholarly, witty, provocative",
+      "pacing": "Moderate",
+      "themes": [
+        "biblical scholarship",
+        "apocalypticism",
+        "religious history",
+        "the politics of belief",
+        "the Book of Revelation"
+      ],
+      "setting": "Non-fiction — rooted in first-century Roman history and contemporary American religious culture",
+      "comparable_books": [
+        "Misquoting Jesus - Bart D. Ehrman",
+        "Heaven and Hell - Bart D. Ehrman",
+        "The Bible: A Biography - Karen Armstrong"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible biblical scholarship",
+          "challenges popular religious assumptions",
+          "historically grounded",
+          "witty and readable non-fiction"
+        ],
+        "negative": [
+          "may frustrate readers with strong evangelical commitments",
+          "not a devotional text",
+          "some scholars find it thin on new scholarship"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Battle for Skandia - John Flanagan": {
       "title": "The Battle for Skandia",
       "author": "John Flanagan",
       "series": "Ranger's Apprentice",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Will and Evanlyn, still captive in Skandia, must forge an unlikely alliance with their Norse captors when the brutal Temujai warriors threaten to invade — while Halt races across a frozen wilderness to reach them before it's too late.",
+      "tone": "adventurous, earnest, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "unlikely alliances",
+        "courage",
+        "loyalty",
+        "honour",
+        "coming of age"
+      ],
+      "setting": "The Norse-inspired frozen land of Skandia, besieged by an Eastern steppe-warrior army",
+      "comparable_books": [
+        "The Icebound Land - John Flanagan",
+        "Eragon - Christopher Paolini",
+        "Viking Academy - Zara Thick"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "young adult adventure",
+          "fast-paced battles",
+          "alliance-building between enemies",
+          "series payoff after Book 3 cliffhanger"
+        ],
+        "negative": [
+          "aimed at younger readers",
+          "straightforward moral landscape",
+          "formulaic plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Misquoting Jesus - Bart D. Ehrman": {
@@ -139598,26 +139959,44 @@
       "author": "Bart D. Ehrman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Biblical scholar Bart Ehrman introduces readers to the field of textual criticism, revealing that the New Testament manuscripts have been altered, edited, and corrupted over centuries of copying, and that many familiar passages were likely added or changed by scribes with theological agendas.",
+      "tone": "accessible, scholarly, eye-opening",
+      "pacing": "Moderate",
+      "themes": [
+        "biblical textual criticism",
+        "the transmission of scripture",
+        "human error and theological bias",
+        "religious history",
+        "the origins of Christianity"
+      ],
+      "setting": "Non-fiction — historical examination of manuscript traditions from antiquity to the present",
+      "comparable_books": [
+        "Armageddon - Bart D. Ehrman",
+        "Lost Christianities - Bart D. Ehrman",
+        "The Bible: A Biography - Karen Armstrong"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible introduction to biblical scholarship",
+          "challenges assumptions about scripture",
+          "intellectually stimulating",
+          "New York Times bestseller for good reason"
+        ],
+        "negative": [
+          "may unsettle readers with strong orthodox beliefs",
+          "purely academic for specialists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Windhaven - George R. R. Martin & Lisa Tuttle": {
@@ -139625,26 +140004,46 @@
       "author": "George R. R. Martin & Lisa Tuttle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the ocean-covered world of Windhaven, silver-winged flyers are an elite hereditary caste who carry messages between scattered islands — until a fisherman's daughter named Maris dares to challenge tradition and demand that wings be earned by merit rather than birthright, setting off a lifetime of consequence.",
+      "tone": "lyrical, bittersweet, epic in personal scope",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "class and meritocracy",
+        "the cost of changing tradition",
+        "identity and ambition",
+        "the passage of time",
+        "sacrifice and legacy"
+      ],
+      "setting": "The distant future planet Windhaven — a waterworld of scattered islands with a dense atmosphere enabling human glider flight",
+      "comparable_books": [
+        "Deerskin - Robin McKinley",
+        "The Dispossessed - Ursula K. Le Guin",
+        "Dragonflight - Anne McCaffrey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "character-driven",
+          "themes of class and social change",
+          "emotionally resonant long-view narrative",
+          "unique world-building"
+        ],
+        "negative": [
+          "slow pacing",
+          "more literary than action-driven",
+          "atypical of GRRM's better-known work"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dark Age - Pierce Brown": {
