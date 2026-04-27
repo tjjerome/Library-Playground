@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2846,
-  "total_pending": 1754,
+  "total_catalogued": 2866,
+  "total_pending": 1734,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -161422,27 +161422,48 @@
       "title": "Conqueror",
       "author": "Conn Iggulden",
       "series": "Conqueror",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The final book in Iggulden's Mongol saga follows Kublai Khan, the scholarly grandson of Genghis Khan, as he fights to build an empire stretching from sea to sea — including a brutal civil war against his own brothers.",
+      "tone": "epic, visceral, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "empire and power",
+        "succession and rivalry",
+        "war and conquest",
+        "leadership and legacy"
+      ],
+      "setting": "13th-century Mongolia, China, and Central Asia",
+      "comparable_books": [
+        "Shogun - James Clavell",
+        "Genghis Khan and the Making of the Modern World - Jack Weatherford",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic battle scenes",
+          "large cast of characters",
+          "Mongol history",
+          "dynasty and succession drama"
+        ],
+        "negative": [
+          "graphic violence",
+          "no female leads",
+          "dense multi-book commitment"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Propulsive pacing and clear linear narrative make this ideal for audio.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Chasing Space - Leland Melvin": {
@@ -161450,53 +161471,90 @@
       "author": "Leland Melvin",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former NFL wide receiver and NASA astronaut Leland Melvin recounts his remarkable journey from the football field to the International Space Station, overcoming a near-career-ending training injury that left him deaf and finding success through perseverance, community, and grace.",
+      "tone": "uplifting, inspirational, candid",
+      "pacing": "Fast",
+      "themes": [
+        "perseverance",
+        "community and mentorship",
+        "race and identity",
+        "the space program",
+        "second chances"
+      ],
+      "setting": "Late 20th–early 21st century USA; NASA facilities and the International Space Station",
+      "comparable_books": [
+        "An Astronaut's Guide to Life on Earth - Chris Hadfield",
+        "Endurance - Scott Kelly",
+        "Hidden Figures - Margot Lee Shetterly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "inspirational memoir",
+          "science and space",
+          "underdog story",
+          "accessible writing"
+        ],
+        "negative": [
+          "lacks deep introspection",
+          "episodic structure may feel list-like"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Author's warm, motivational-speaker voice translates very well to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bones of the Hills - Conn Iggulden": {
       "title": "Bones of the Hills",
       "author": "Conn Iggulden",
       "series": "Conqueror",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Genghis Khan sends his sons simultaneously into new territories as generals, testing their mettle and deciding who among his heirs might one day succeed him, while the Mongol armies extend their reach deep into Persia and beyond.",
+      "tone": "epic, brutal, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "conquest and empire",
+        "succession and rivalry",
+        "loyalty and betrayal",
+        "war"
+      ],
+      "setting": "Early 13th-century Central Asia and Persia",
+      "comparable_books": [
+        "Shogun - James Clavell",
+        "The Pillars of the Earth - Ken Follett",
+        "Azincourt - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic battle scenes",
+          "large-scale historical sweep",
+          "Mongol saga fans"
+        ],
+        "negative": [
+          "graphic violence",
+          "requires reading earlier books in series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced and linearly plotted; works very well in audio format.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Challenger - Adam Higginbotham": {
@@ -161504,53 +161562,91 @@
       "author": "Adam Higginbotham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drawing on extensive archival research and original reporting, Higginbotham delivers the definitive account of the 1986 Space Shuttle Challenger disaster, tracing the political cynicism, budget cuts, and institutional hubris that led to the deaths of all seven crew members.",
+      "tone": "propulsive, meticulous, tragic",
+      "pacing": "Fast",
+      "themes": [
+        "institutional failure",
+        "hubris and bureaucracy",
+        "heroism",
+        "the space program",
+        "whistleblowing"
+      ],
+      "setting": "USA, 1970s–1986; NASA and the space shuttle program",
+      "comparable_books": [
+        "Midnight in Chernobyl - Adam Higginbotham",
+        "The Right Stuff - Tom Wolfe",
+        "Endurance - Scott Kelly"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction that reads like a thriller",
+          "disaster history",
+          "investigative journalism",
+          "space program fans"
+        ],
+        "negative": [
+          "outcome is known",
+          "technical detail-heavy sections"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Reads like a thriller with mounting tension; the audio format amplifies the suspense.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wolf of the Plains - Conn Iggulden": {
       "title": "Wolf of the Plains",
       "author": "Conn Iggulden",
       "series": "Conqueror",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The origin story of Temujin — the boy who would become Genghis Khan — left to die on the Mongolian steppe after his father's murder, who survives through cunning and ferocity and begins his long rise to unite the Mongol tribes.",
+      "tone": "visceral, epic, gritty",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "ambition and destiny",
+        "tribal warfare",
+        "leadership",
+        "identity"
+      ],
+      "setting": "Late 12th-century Mongolian steppe",
+      "comparable_books": [
+        "Shogun - James Clavell",
+        "Azincourt - Bernard Cornwell",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "origin story",
+          "underdog protagonist",
+          "epic historical sweep",
+          "visceral battle scenes"
+        ],
+        "negative": [
+          "graphic violence",
+          "sparse female characters"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong propulsive narrative ideal for audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "An Astronaut's Guide to Life on Earth - Chris Hadfield": {
@@ -161558,26 +161654,44 @@
       "author": "Chris Hadfield",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Canadian astronaut Chris Hadfield distills the lessons learned from decades of astronaut training and three spaceflights — including command of the International Space Station — into practical wisdom about preparation, humility, and what it means to be ready for any challenge.",
+      "tone": "warm, pragmatic, reflective",
+      "pacing": "Moderate",
+      "themes": [
+        "preparation and mindset",
+        "teamwork",
+        "humility",
+        "the space program",
+        "leadership"
+      ],
+      "setting": "Canada, Russia, USA, and the International Space Station; late 20th–early 21st century",
+      "comparable_books": [
+        "Chasing Space - Leland Melvin",
+        "Endurance - Scott Kelly",
+        "The Right Stuff - Tom Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "practical life philosophy",
+          "space memoir",
+          "accessible and warm voice",
+          "Canadian perspective"
+        ],
+        "negative": [
+          "more reflective than action-driven",
+          "less dramatic than some astronaut memoirs"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Hadfield's conversational, engaging tone makes this outstanding on audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Place Called Freedom - Ken Follett": {
@@ -161585,107 +161699,190 @@
       "author": "Ken Follett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1766 Scotland, coal miner Mack McAsh defies the system of bonded labour that enslaves him, embarking on a transatlantic journey through London and into colonial Virginia in a quest for freedom alongside the spirited noblewoman Lizzie Hallim.",
+      "tone": "propulsive, romantic, adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and class",
+        "slavery and labour rights",
+        "romance",
+        "adventure",
+        "social injustice"
+      ],
+      "setting": "1766–1770s Scotland, London, and colonial Virginia",
+      "comparable_books": [
+        "The Pillars of the Earth - Ken Follett",
+        "Outlander - Diana Gabaldon",
+        "Hawaii - James Michener"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping historical adventure",
+          "romance subplot",
+          "social justice themes",
+          "page-turner pacing"
+        ],
+        "negative": [
+          "somewhat formulaic characters",
+          "lighter than Follett's Kingsbridge epics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "1356 - Bernard Cornwell": {
       "title": "1356",
       "author": "Bernard Cornwell",
       "series": "Grail Quest",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Veteran mercenary archer Thomas of Hookton is tasked with finding la Malice — the fabled sword of Saint Peter — as England's Black Prince leads a vastly outnumbered army toward a fateful confrontation with France at the Battle of Poitiers in 1356.",
+      "tone": "gritty, action-packed, medievally vivid",
+      "pacing": "Fast",
+      "themes": [
+        "war and honour",
+        "holy relics and faith",
+        "loyalty and betrayal",
+        "the Hundred Years' War"
+      ],
+      "setting": "France and Gascony, September 1356; the Battle of Poitiers",
+      "comparable_books": [
+        "Agincourt - Bernard Cornwell",
+        "The Pillars of the Earth - Ken Follett",
+        "Wolf of the Plains - Conn Iggulden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "masterful battle scenes",
+          "medieval warfare",
+          "can be read as standalone",
+          "propulsive pace"
+        ],
+        "negative": [
+          "more rewarding with prior series knowledge",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Cornwell's battle scenes and propulsive plotting are ideal for audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Column of Fire - Ken Follett": {
       "title": "A Column of Fire",
       "author": "Ken Follett",
       "series": "Kingsbridge",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Elizabethan England, Ned Willard and his doomed love Margery Fitzgerald find themselves on opposing sides of the Catholic-Protestant divide, as Ned becomes a spy for Queen Elizabeth I and battles conspiracies — including the Spanish Armada and the Gunpowder Plot — spanning half a century.",
+      "tone": "sweeping, romantic, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "religious conflict and tolerance",
+        "espionage",
+        "love across divides",
+        "political power",
+        "Reformation Europe"
+      ],
+      "setting": "England, France, Scotland, and the Netherlands, 1558–1605",
+      "comparable_books": [
+        "The Pillars of the Earth - Ken Follett",
+        "World Without End - Ken Follett",
+        "A Place Called Freedom - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping epic saga",
+          "Elizabethan history",
+          "romance and espionage",
+          "Kingsbridge series fans"
+        ],
+        "negative": [
+          "very long",
+          "sprawling cast may overwhelm new readers",
+          "less intimate than earlier Kingsbridge books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Whirlwind - James Clavell": {
       "title": "Whirlwind",
       "author": "James Clavell",
       "series": "Asian Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the chaos of Iran's 1979 Islamic Revolution, a British helicopter company's multinational crews — caught between revolutionary forces, political intrigue, and personal loyalties — must attempt a desperate escape from the country with their aircraft.",
+      "tone": "sprawling, tense, richly detailed",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "revolution and political upheaval",
+        "loyalty and sacrifice",
+        "East-West cultural clash",
+        "love and duty",
+        "survival"
+      ],
+      "setting": "Iran, February–March 1979, during the Islamic Revolution",
+      "comparable_books": [
+        "Shogun - James Clavell",
+        "Noble House - James Clavell",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "immersive epic",
+          "rich political and cultural detail",
+          "large ensemble cast",
+          "Clavell fans"
+        ],
+        "negative": [
+          "extremely long (1,200+ pages)",
+          "rewards familiarity with the Asian Saga",
+          "dense subplots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Endurance: A Year in Space, a Lifetime of Discovery - Scott Kelly & Margaret Lazarus Dean": {
@@ -161693,53 +161890,91 @@
       "author": "Scott Kelly & Margaret Lazarus Dean",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Astronaut Scott Kelly recounts his record-breaking 340-day mission aboard the International Space Station, alternating between the gruelling realities of long-duration spaceflight and the colorful life story that took him from a directionless New Jersey kid to an American hero.",
+      "tone": "candid, irreverent, gripping",
+      "pacing": "Moderate",
+      "themes": [
+        "endurance and sacrifice",
+        "science and exploration",
+        "isolation",
+        "family and duty",
+        "human limits in space"
+      ],
+      "setting": "International Space Station and USA, 2015–2016; with biographical flashbacks",
+      "comparable_books": [
+        "An Astronaut's Guide to Life on Earth - Chris Hadfield",
+        "Chasing Space - Leland Melvin",
+        "The Right Stuff - Tom Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "candid and irreverent voice",
+          "space science and day-to-day ISS life",
+          "twin study element",
+          "adventure memoir"
+        ],
+        "negative": [
+          "alternating timeline structure may frustrate some",
+          "technical detail-heavy passages"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bloodline - Conn Iggulden": {
       "title": "Bloodline",
       "author": "Conn Iggulden",
       "series": "Wars of the Roses",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of York's defeat at Wakefield, his sons Edward and Richard rise to avenge their father, leading to the catastrophic and decisive Battle of Towton — the bloodiest ever fought on English soil — as the friendship between Edward and the Earl of Warwick begins to fracture.",
+      "tone": "brutal, propulsive, politically charged",
+      "pacing": "Fast",
+      "themes": [
+        "dynastic war",
+        "loyalty and betrayal",
+        "power and ambition",
+        "friendship and rivalry",
+        "succession"
+      ],
+      "setting": "England, 1461; the Wars of the Roses",
+      "comparable_books": [
+        "Stormbird - Conn Iggulden",
+        "The Sunne in Splendour - Sharon Kay Penman",
+        "Wolf Hall - Hilary Mantel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "medieval political intrigue",
+          "visceral battle scenes",
+          "Game of Thrones-style dynastic drama"
+        ],
+        "negative": [
+          "requires prior books in series",
+          "graphic violence",
+          "complex cast of historical figures"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Thread of Grace - Mary Doria Russell": {
@@ -161747,26 +161982,47 @@
       "author": "Mary Doria Russell",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Beginning in September 1943 as Jewish refugees scramble over the Alps into Italy after its armistice, the novel traces a large ensemble of characters — Italian partisans, priests, Jewish families, and one guilt-ridden German doctor — through the dangerous underground network that saved forty-three thousand lives.",
+      "tone": "harrowing, morally complex, luminous",
+      "pacing": "Moderate",
+      "themes": [
+        "moral courage",
+        "resistance and complicity",
+        "faith and grace",
+        "survival",
+        "the Holocaust"
+      ],
+      "setting": "Northern Italy, September 1943–May 1945; German occupation and Italian resistance",
+      "comparable_books": [
+        "All the Light We Cannot See - Anthony Doerr",
+        "The Nightingale - Kristin Hannah",
+        "Schindler's Ark - Thomas Keneally"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "meticulous historical research",
+          "ensemble cast",
+          "morally complex",
+          "WWII Italy"
+        ],
+        "negative": [
+          "high death toll among characters",
+          "large cast can be hard to track",
+          "emotionally demanding"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dreamers of the Day - Mary Doria Russell": {
@@ -161774,26 +162030,44 @@
       "author": "Mary Doria Russell",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Agnes Shanklin, a middle-aged Ohio schoolteacher narrating from beyond the grave, recounts how she stumbled into the 1921 Cairo Peace Conference and found herself in the company of Churchill, T. E. Lawrence, and Lady Gertrude Bell as they casually invented the modern Middle East.",
+      "tone": "wry, intimate, quietly haunting",
+      "pacing": "Moderate",
+      "themes": [
+        "nation-building and its consequences",
+        "female awakening",
+        "imperialism",
+        "history and memory",
+        "personal transformation"
+      ],
+      "setting": "Egypt and the Holy Land, 1921; the Cairo Peace Conference",
+      "comparable_books": [
+        "Paris 1919 - Margaret MacMillan",
+        "A Thread of Grace - Mary Doria Russell",
+        "The English Patient - Michael Ondaatje"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unusual narrator (posthumous voice)",
+          "historical-political insight",
+          "quiet romance",
+          "the Middle East's origins"
+        ],
+        "negative": [
+          "understated pace",
+          "whimsical ending divides readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The posthumous first-person voice is uniquely suited to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Women of the Copper Country - Mary Doria Russell": {
@@ -161801,161 +162075,284 @@
       "author": "Mary Doria Russell",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In July 1913, twenty-five-year-old 'Big Annie' Clements — 'America's Joan of Arc' — leads a wildcat strike by nine thousand copper miners against the powerful Calumet & Hecla Mining Company in Michigan, at enormous personal cost.",
+      "tone": "fierce, compassionate, socially urgent",
+      "pacing": "Moderate",
+      "themes": [
+        "labour rights",
+        "women's courage and leadership",
+        "class struggle",
+        "community solidarity",
+        "personal sacrifice"
+      ],
+      "setting": "Calumet, Michigan, 1913–1914; the copper mining strike",
+      "comparable_books": [
+        "The Grapes of Wrath - John Steinbeck",
+        "A Thread of Grace - Mary Doria Russell",
+        "News of the World - Paulette Jiles"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist historical fiction",
+          "labour movement history",
+          "strong female protagonist",
+          "meticulously researched"
+        ],
+        "negative": [
+          "multiple perspectives may reduce emotional focus",
+          "somewhat didactic at times"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Children of God - Mary Doria Russell": {
       "title": "Children of God",
       "author": "Mary Doria Russell",
       "series": "The Sparrow Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A sweeping three-generation sequel to The Sparrow, following the broken Jesuit priest Emilio Sandoz as he is reluctantly forced back to the alien world of Rakhat, where political and religious upheaval has transformed the society he once knew.",
+      "tone": "philosophical, emotionally dense, lyrical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and suffering",
+        "colonialism and unintended consequences",
+        "redemption",
+        "alien culture",
+        "the nature of God"
+      ],
+      "setting": "Near future Earth and the alien world Rakhat; spanning multiple decades",
+      "comparable_books": [
+        "The Sparrow - Mary Doria Russell",
+        "Hyperion - Dan Simmons",
+        "A Case of Conscience - James Blish"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "theology and ethics",
+          "deeply character-driven",
+          "alien first contact"
+        ],
+        "negative": [
+          "requires reading The Sparrow first",
+          "extremely emotionally demanding",
+          "slow philosophical pace"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Epitaph - Mary Doria Russell": {
       "title": "Epitaph",
       "author": "Mary Doria Russell",
       "series": "Doc Holliday",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Continuing from Doc, this richly researched novel follows Wyatt Earp and Doc Holliday to Tombstone, Arizona, excavating the political, social, and personal forces that exploded in the infamous Gunfight at the O.K. Corral — told partly through the eyes of Josephine Marcus, the woman who shaped Wyatt's legend.",
+      "tone": "epic, morally nuanced, elegiac",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "myth-making and history",
+        "loyalty and violence",
+        "love and loss",
+        "law and justice",
+        "the American West"
+      ],
+      "setting": "Tombstone, Arizona, 1880s; the Wild West",
+      "comparable_books": [
+        "Doc - Mary Doria Russell",
+        "Lonesome Dove - Larry McMurtry",
+        "The Sisters Brothers - Patrick deWitt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "revisionist Western history",
+          "meticulously researched",
+          "strong female perspective",
+          "morally complex"
+        ],
+        "negative": [
+          "better with prior reading of Doc",
+          "slower than typical Westerns",
+          "dense historical cast"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sparrow - Mary Doria Russell": {
       "title": "The Sparrow",
       "author": "Mary Doria Russell",
       "series": "The Sparrow Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the near future, a Jesuit mission becomes the first to make contact with an alien civilization on the planet Rakhat — a story told in retrospect as the sole survivor, priest Emilio Sandoz, returns to Earth utterly broken, and a church inquiry tries to understand what went catastrophically wrong.",
+      "tone": "lyrical, devastating, philosophically rich",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and theodicy",
+        "first contact and colonialism",
+        "suffering and grace",
+        "good intentions and catastrophe",
+        "alien culture"
+      ],
+      "setting": "Near future Earth and the alien world Rakhat; dual timeline structure",
+      "comparable_books": [
+        "Children of God - Mary Doria Russell",
+        "Hyperion - Dan Simmons",
+        "A Case of Conscience - James Blish"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "theological depth",
+          "devastating emotional impact",
+          "alien world-building"
+        ],
+        "negative": [
+          "extremely dark and harrowing ending",
+          "slow meditative pace early on",
+          "not action-oriented SF"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The dual-timeline structure and deeply interior prose reward attentive audio listening.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "I Married a Communist - Philip Roth": {
       "title": "I Married a Communist",
       "author": "Philip Roth",
       "series": "American Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Narrated by Roth's alter-ego Nathan Zuckerman as he listens to an old teacher's account over several nights, the novel traces the rise and fall of Ira Ringold — a Newark roughneck turned 1940s radio star destroyed by the McCarthy-era Communist witch hunt and a vengeful wife's exposé.",
+      "tone": "fierce, darkly comic, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "McCarthyism and political betrayal",
+        "the American dream and its corruption",
+        "private rage in public life",
+        "idealism and disillusionment",
+        "postwar America"
+      ],
+      "setting": "Newark, New Jersey, and New York City, 1930s–1950s",
+      "comparable_books": [
+        "American Pastoral - Philip Roth",
+        "The Human Stain - Philip Roth",
+        "The Plot Against America - Philip Roth"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction",
+          "American political history",
+          "Roth completists",
+          "complex unreliable narration"
+        ],
+        "negative": [
+          "less celebrated than American Pastoral",
+          "misanthropic register throughout",
+          "male-centric worldview"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "End of Watch - Stephen King": {
       "title": "End of Watch",
       "author": "Stephen King",
       "series": "Bill Hodges",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired detective Bill Hodges — newly diagnosed with terminal cancer — is drawn into one final case when the brain-damaged Mercedes Killer Brady Hartsfield awakens with supernatural powers and begins using a hypnotic video game app to drive his victims to suicide.",
+      "tone": "propulsive, darkly comic, genre-blending",
+      "pacing": "Fast",
+      "themes": [
+        "mortality and legacy",
+        "revenge",
+        "good vs. evil",
+        "technology and control",
+        "friendship"
+      ],
+      "setting": "A mid-sized American city, contemporary; the final book of the trilogy",
+      "comparable_books": [
+        "Mr. Mercedes - Stephen King",
+        "Finders Keepers - Stephen King",
+        "The Outsider - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced thriller",
+          "beloved characters returning",
+          "King's supernatural trademark blended with crime",
+          "satisfying trilogy conclusion"
+        ],
+        "negative": [
+          "requires reading prior books",
+          "supernatural element jars with earlier realistic tone",
+          "suicide content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Will Patton's narration of this trilogy is widely acclaimed; audio strongly recommended.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Holly - Stephen King": {
