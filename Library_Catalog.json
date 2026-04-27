@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2288,
-  "total_pending": 2312,
+  "total_catalogued": 2308,
+  "total_pending": 2292,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -134266,189 +134266,336 @@
       "title": "Wool",
       "author": "Hugh Howey",
       "series": "Silo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-apocalyptic future, thousands of people live in a massive underground silo, forbidden from questioning their confined existence. When a sheriff begins to uncover the truth about the world outside, everything the silo's residents believe is put at risk.",
+      "tone": "tense, atmospheric, propulsive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "truth vs. control",
+        "survival",
+        "totalitarianism",
+        "community",
+        "rebellion"
+      ],
+      "setting": "Post-apocalyptic near-future; a vast underground silo in a devastated America",
+      "comparable_books": [
+        "The Hunger Games - Suzanne Collins",
+        "Station Eleven - Emily St. John Mandel",
+        "The Road - Cormac McCarthy",
+        "Oryx and Crake - Margaret Atwood"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive mystery",
+          "dystopian world-building",
+          "slow-burn revelations",
+          "ensemble cast",
+          "claustrophobic atmosphere"
+        ],
+        "negative": [
+          "action-heavy readers",
+          "those who dislike slow openings",
+          "romance-focused readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong narrative momentum and vivid world-building translate very well to audio",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Shift - Hugh Howey": {
       "title": "Shift",
       "author": "Hugh Howey",
       "series": "Silo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel and companion to Wool, Shift reveals the origins of the silo project and the catastrophic decisions made by those who built and designed humanity's underground prisons. Told across multiple timelines, it traces the men who created the silos and the terrible costs of their choices.",
+      "tone": "dark, conspiratorial, melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "power and corruption",
+        "origins of oppression",
+        "moral compromise",
+        "sacrifice",
+        "memory"
+      ],
+      "setting": "Pre- and post-apocalyptic America; underground silos and the world before the catastrophe",
+      "comparable_books": [
+        "Oryx and Crake - Margaret Atwood",
+        "The Road - Cormac McCarthy",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "prequel world-building",
+          "political intrigue",
+          "moral ambiguity",
+          "multiple timelines"
+        ],
+        "negative": [
+          "readers wanting to continue Wool's story immediately",
+          "those who dislike non-linear narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dust - Hugh Howey": {
       "title": "Dust",
       "author": "Hugh Howey",
       "series": "Silo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Silo trilogy brings together the storylines of Wool and Shift as Juliette fights to expose the truth about the silos and find a way to give humanity a future beyond their underground prisons.",
+      "tone": "tense, hopeful, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "freedom vs. safety",
+        "truth",
+        "sacrifice",
+        "hope",
+        "resistance"
+      ],
+      "setting": "Post-apocalyptic America; the underground silos and the devastated world above",
+      "comparable_books": [
+        "The Hunger Games - Suzanne Collins",
+        "Oryx and Crake - Margaret Atwood",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satisfying series conclusions",
+          "propulsive pacing",
+          "character payoff",
+          "dystopian fiction"
+        ],
+        "negative": [
+          "those who dislike ambiguous endings",
+          "readers looking for standalone entry points"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Divergent - Veronica Roth": {
       "title": "Divergent",
       "author": "Veronica Roth",
       "series": "Divergent",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Young Adult Dystopia",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a future Chicago divided into five factions based on virtue, sixteen-year-old Tris Prior discovers she is Divergent — she doesn't fit into any single faction — and uncovers a conspiracy threatening her entire society.",
+      "tone": "propulsive, action-driven, romantic",
+      "pacing": "Fast",
+      "themes": [
+        "identity and belonging",
+        "conformity vs. individuality",
+        "courage",
+        "faction loyalty",
+        "coming of age"
+      ],
+      "setting": "Dystopian future Chicago, divided into five ideologically distinct factions",
+      "comparable_books": [
+        "The Hunger Games - Suzanne Collins",
+        "The Maze Runner - James Dashner",
+        "Legend - Marie Lu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA dystopia fans",
+          "romance subplot",
+          "fast action",
+          "chosen-one narrative",
+          "strong female protagonist"
+        ],
+        "negative": [
+          "adult literary fiction readers",
+          "those who dislike faction/sorting tropes",
+          "grimdark fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Insurgent - Veronica Roth": {
       "title": "Insurgent",
       "author": "Veronica Roth",
       "series": "Divergent",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Young Adult Dystopia",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of a brutal war, Tris Prior grapples with grief and guilt while searching for the truth behind a secret that could change the fate of her society. Factions are fracturing, loyalties are tested, and the conflict escalates.",
+      "tone": "intense, emotionally turbulent, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "grief and trauma",
+        "loyalty and betrayal",
+        "truth",
+        "power and control",
+        "sacrifice"
+      ],
+      "setting": "Dystopian future Chicago; factional strongholds and factionless territories",
+      "comparable_books": [
+        "Catching Fire - Suzanne Collins",
+        "The Maze Runner - James Dashner",
+        "Legend - Marie Lu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA dystopia fans",
+          "series continuers",
+          "romance and action blend",
+          "morally complex protagonist"
+        ],
+        "negative": [
+          "readers put off by emotionally volatile protagonists",
+          "those seeking standalone stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Allegiant - Veronica Roth": {
       "title": "Allegiant",
       "author": "Veronica Roth",
       "series": "Divergent",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Young Adult Dystopia",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Tris and Four escape the fractured Chicago factions and discover the shocking truth about the world beyond the city's borders, forcing them to confront what it truly means to be Divergent and what they are willing to sacrifice.",
+      "tone": "intense, emotionally devastating, conclusive",
+      "pacing": "Moderate",
+      "themes": [
+        "free will vs. genetic determinism",
+        "sacrifice",
+        "truth and deception",
+        "identity",
+        "love and loss"
+      ],
+      "setting": "Post-faction dystopian Chicago and the world beyond its borders",
+      "comparable_books": [
+        "Mockingjay - Suzanne Collins",
+        "The Death Cure - James Dashner"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series completionists",
+          "readers who appreciate bold authorial choices",
+          "thematic depth in YA"
+        ],
+        "negative": [
+          "readers averse to tragic endings",
+          "those who dislike dual POV",
+          "fans expecting a triumphant conclusion"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Artificial Condition - Martha Wells": {
       "title": "Artificial Condition",
       "author": "Martha Wells",
       "series": "The Murderbot Diaries",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Murderbot, a self-aware SecUnit who has hacked its own governor module, travels to the mining facility where a massacre occurred in its past, seeking answers while reluctantly helping a group of human researchers who hire it for protection.",
+      "tone": "wryly comic, action-driven, unexpectedly warm",
+      "pacing": "Fast",
+      "themes": [
+        "identity and autonomy",
+        "trauma and memory",
+        "found family",
+        "humanity of non-humans",
+        "trust"
+      ],
+      "setting": "Far-future space; corporate-controlled space stations and mining facilities",
+      "comparable_books": [
+        "A Long Way to a Small Angry Planet - Becky Chambers",
+        "Ancillary Justice - Ann Leckie",
+        "Record of a Spaceborn Few - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "socially anxious protagonist",
+          "darkly comic",
+          "fast-paced novella format",
+          "non-human POV",
+          "character-driven SF"
+        ],
+        "negative": [
+          "readers wanting hard science focus",
+          "those who dislike short formats",
+          "epic-scale space opera fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kevin R. Free's narration is widely praised as perfectly capturing Murderbot's dry, deadpan voice",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Asunder - Kerstin Hall": {
@@ -134456,323 +134603,588 @@
       "author": "Kerstin Hall",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Karys Eska, a deathspeaker bound to a terrifying eldritch entity, accidentally tethers a dying stranger named Ferain to her shadow, forcing the two to journey across a faded empire haunted by arcane horrors while learning to trust each other. A dark secondary-world fantasy blending cosmic horror, slow-burn connection, and intricate mythology.",
+      "tone": "eerie, lyrical, emotionally intense, darkly wondrous",
+      "pacing": "Moderate",
+      "themes": [
+        "trust and connection",
+        "trauma and healing",
+        "divine power and corruption",
+        "knowledge and memory",
+        "found family"
+      ],
+      "setting": "Richly imagined secondary world with a faded empire, eldritch gods, and uncanny magic systems",
+      "comparable_books": [
+        "Witch King - Martha Wells",
+        "Sabriel - Garth Nix",
+        "Winter Tide - Ruthanna Emrys",
+        "The City We Became - N.K. Jemisin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow-burn relationships",
+          "eldritch/cosmic horror",
+          "lyrical prose",
+          "morally complex protagonist",
+          "found family",
+          "queer representation",
+          "weird fiction"
+        ],
+        "negative": [
+          "readers wanting fast action from page one",
+          "those who dislike ambiguous world-building",
+          "romance-heavy readers expecting resolved romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Last Devil to Die - Richard Osman": {
       "title": "The Last Devil to Die",
       "author": "Richard Osman",
       "series": "A Thursday Murder Club Mystery",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Thursday Murder Club — four sharp retirees living in a Kent retirement village — investigates the murder of an antiques dealer connected to a missing consignment of heroin, while one of their own faces a devastating personal crisis.",
+      "tone": "warmly comic, gently poignant, witty",
+      "pacing": "Moderate",
+      "themes": [
+        "friendship and ageing",
+        "mortality",
+        "justice",
+        "loyalty",
+        "grief"
+      ],
+      "setting": "Contemporary England; a retirement village in Kent and surrounding areas",
+      "comparable_books": [
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith",
+        "A Gentleman in Moscow - Amor Towles",
+        "Magpie Murders - Anthony Horowitz"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "older protagonists",
+          "cozy mystery",
+          "gentle humour",
+          "British setting",
+          "heartwarming tone"
+        ],
+        "negative": [
+          "grimdark fans",
+          "readers wanting dark or graphic crime",
+          "those who dislike ensemble casts"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lesley Manville's narration is exceptionally well-suited to the warm, character-rich tone of the series",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "What It Was - George Pelecanos": {
       "title": "What It Was",
       "author": "George Pelecanos",
       "series": "Derek Strange and Terry Quinn Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Washington D.C. in 1972, private investigator Derek Strange — newly off the police force — is hired to find a stolen ring, a seemingly minor case that draws him into the orbit of a ruthless killer named Red Fury and into the unofficial investigation of his former partner Frank Vaughn.",
+      "tone": "hardboiled, atmospheric, richly period-detailed",
+      "pacing": "Moderate",
+      "themes": [
+        "race and justice",
+        "loyalty",
+        "honour among criminals",
+        "the weight of history",
+        "street life"
+      ],
+      "setting": "Washington D.C., 1972; framed as a story told by Strange in the present day",
+      "comparable_books": [
+        "Devil in a Blue Dress - Walter Mosley",
+        "The Big Sleep - Raymond Chandler",
+        "A Drink Before the War - Dennis Lehane"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hardboiled noir",
+          "period atmosphere",
+          "race and social commentary",
+          "Washington D.C. setting",
+          "character-driven crime"
+        ],
+        "negative": [
+          "readers wanting contemporary settings",
+          "those who dislike frame narratives",
+          "cozy mystery fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bullet That Missed - Richard Osman": {
       "title": "The Bullet That Missed",
       "author": "Richard Osman",
       "series": "A Thursday Murder Club Mystery",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Thursday Murder Club takes on a cold case involving a TV journalist who disappeared years ago, while a dangerous criminal enterprise closes in on their village and threatens the Club itself.",
+      "tone": "warmly comic, gently suspenseful, witty",
+      "pacing": "Moderate",
+      "themes": [
+        "justice and the past",
+        "friendship and ageing",
+        "loyalty",
+        "corruption",
+        "mortality"
+      ],
+      "setting": "Contemporary England; a retirement village in Kent and the broader British media world",
+      "comparable_books": [
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith",
+        "Magpie Murders - Anthony Horowitz",
+        "A Gentleman in Moscow - Amor Towles"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery",
+          "older protagonists",
+          "found family",
+          "British humour",
+          "gentle pacing",
+          "warmhearted tone"
+        ],
+        "negative": [
+          "grimdark readers",
+          "those wanting graphic crime",
+          "impatient readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lesley Manville's narration is a consistent highlight of the series in audio format",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Right as Rain - George Pelecanos": {
       "title": "Right as Rain",
       "author": "George Pelecanos",
       "series": "Derek Strange and Terry Quinn Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Black private investigator Derek Strange is hired by a grieving mother to investigate the death of her son, a police officer shot by white ex-cop Terry Quinn — officially exonerated but haunted by the incident. The two unlikely partners navigate D.C.'s drug-soaked underworld together.",
+      "tone": "gritty, soulful, hardboiled",
+      "pacing": "Moderate",
+      "themes": [
+        "race and policing",
+        "guilt and redemption",
+        "justice",
+        "the D.C. underworld",
+        "unlikely partnership"
+      ],
+      "setting": "Contemporary Washington D.C.; the city's streets, drug corridors, and underworld",
+      "comparable_books": [
+        "Devil in a Blue Dress - Walter Mosley",
+        "A Drink Before the War - Dennis Lehane",
+        "The Big Sleep - Raymond Chandler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hardboiled crime fiction",
+          "race and social commentary",
+          "D.C. atmosphere",
+          "buddy detective dynamic",
+          "morally complex characters"
+        ],
+        "negative": [
+          "cozy mystery fans",
+          "readers wanting nonstop action",
+          "those averse to frank depictions of race"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hell to Pay - George Pelecanos": {
       "title": "Hell to Pay",
       "author": "George Pelecanos",
       "series": "Derek Strange and Terry Quinn Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Strange and Quinn are hired to find a teenage runaway now working as a prostitute in D.C., while a senseless drive-by killing pulls Strange deeper into the city's most dangerous streets as he seeks justice for an innocent child caught in the crossfire.",
+      "tone": "gritty, urgent, socially conscious",
+      "pacing": "Moderate",
+      "themes": [
+        "poverty and violence",
+        "race and justice",
+        "community responsibility",
+        "exploitation",
+        "redemption"
+      ],
+      "setting": "Contemporary Washington D.C.; the city's impoverished neighbourhoods and criminal underworld",
+      "comparable_books": [
+        "Devil in a Blue Dress - Walter Mosley",
+        "A Drink Before the War - Dennis Lehane",
+        "The Wire (TV) companion reading"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hardboiled noir",
+          "social commentary crime fiction",
+          "D.C. atmosphere",
+          "morally driven protagonist",
+          "Wire fans"
+        ],
+        "negative": [
+          "cozy mystery fans",
+          "readers wanting lighter crime",
+          "those averse to depictions of child harm"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Testaments - Margaret Atwood": {
       "title": "The Testaments",
       "author": "Margaret Atwood",
-      "series": "The Handmaid’s Tale",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Handmaid's Tale",
+      "series_position": "Book 2",
+      "genre": "Dystopian Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set fifteen years after The Handmaid's Tale, three women — including the formidable Aunt Lydia — narrate the secret history of Gilead's inner workings and a daring act of resistance that could bring the regime crashing down.",
+      "tone": "tense, sharply observed, darkly hopeful",
+      "pacing": "Moderate",
+      "themes": [
+        "authoritarianism and resistance",
+        "complicity and survival",
+        "female power",
+        "testimony and truth",
+        "generational trauma"
+      ],
+      "setting": "Gilead (a theocratic future North America) and Canada, approximately fifteen years after the original novel",
+      "comparable_books": [
+        "1984 - George Orwell",
+        "Never Let Me Go - Kazuo Ishiguro",
+        "Parable of the Sower - Octavia Butler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist dystopia",
+          "multiple POV narratives",
+          "political thriller elements",
+          "literary fiction",
+          "compelling villain POV"
+        ],
+        "negative": [
+          "readers who found the original too bleak",
+          "those who dislike sequels to classics",
+          "action-heavy readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Three-narrator audiobook with Ann Dowd, Mae Whitman, and Derek Jacobi is widely considered outstanding",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Critical Mass - Daniel Suarez": {
       "title": "Critical Mass",
       "author": "Daniel Suarez",
       "series": "A Delta-v Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After an unsanctioned commercial asteroid-mining mission leaves two crew members stranded in space, those who returned to Earth must build a next-generation spacecraft capable of mounting a rescue, all while navigating Cold War-style geopolitical tensions and a climate-imperilled world.",
+      "tone": "propulsive, optimistic, technically detailed",
+      "pacing": "Fast",
+      "themes": [
+        "space exploration and privatisation",
+        "climate change",
+        "human ingenuity",
+        "geopolitical competition",
+        "rescue and loyalty"
+      ],
+      "setting": "Near-future Earth (circa 2038) and deep space; asteroid belt and cislunar space",
+      "comparable_books": [
+        "The Martian - Andy Weir",
+        "Red Mars - Kim Stanley Robinson",
+        "Seveneves - Neal Stephenson",
+        "Delta-v - Daniel Suarez"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "space engineering detail",
+          "optimistic SF",
+          "near-future realism",
+          "techno-thriller fans"
+        ],
+        "negative": [
+          "readers who dislike heavy technical exposition",
+          "those wanting character-first narratives",
+          "fantasy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Book That Held Her Heart - Mark Lawrence": {
       "title": "The Book That Held Her Heart",
       "author": "Mark Lawrence",
       "series": "The Library Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The final volume of the Library Trilogy reunites Livira and Evar, now scattered across time and space, as they race to resolve the ancient war that threatens the infinite Athenaeum — while a new POV character, a Jewish girl living under Nazi rule in prewar Germany, reveals the stakes of what the library truly means.",
+      "tone": "lyrical, emotionally devastating, intellectually playful",
+      "pacing": "Moderate",
+      "themes": [
+        "knowledge vs. ignorance",
+        "memory",
+        "love across time",
+        "book burning and censorship",
+        "sacrifice"
+      ],
+      "setting": "An infinite, timeless library (the Athenaeum) spanning multiple worlds and eras, including prewar Nazi Germany",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "bibliophile readers",
+          "literary fantasy",
+          "time-spanning narratives",
+          "emotionally impactful endings",
+          "lyrical prose"
+        ],
+        "negative": [
+          "readers wanting straightforward plots",
+          "those who dislike non-linear timelines",
+          "grimdark-only readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Valor - John Gwynne": {
       "title": "Valor",
       "author": "John Gwynne",
       "series": "The Faithful and the Fallen",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "War has erupted across the Banished Lands as the forces of darkness grow bolder and prophecy begins to be fulfilled. Corban and his companions are tested to their limits as kingdoms fall, alliances fracture, and the cost of loyalty becomes devastatingly real.",
+      "tone": "grimdark, epic, emotionally intense",
+      "pacing": "Moderate",
+      "themes": [
+        "good vs. evil",
+        "loyalty and betrayal",
+        "faith and doubt",
+        "duty and sacrifice",
+        "prophecy and free will"
+      ],
+      "setting": "The Banished Lands — a richly detailed secondary world with warring kingdoms, giant clans, and ancient prophecy",
+      "comparable_books": [
+        "A Game of Thrones - George R.R. Martin",
+        "The Blade Itself - Joe Abercrombie",
+        "The Shadow of the Gods - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic battles",
+          "grimdark",
+          "multi-POV fantasy",
+          "prophecy-driven narrative",
+          "morally rich characters",
+          "emotional investment in cast"
+        ],
+        "negative": [
+          "readers wanting tight, fast plots",
+          "those who dislike large casts",
+          "cozy or light fantasy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Trespasser - Tana French": {
       "title": "The Trespasser",
       "author": "Tana French",
       "series": "Dublin Murder Squad",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Detective Antoinette Conway, hated by most of her squad, investigates what looks like a domestic murder but suspects is something far more dangerous — a case that may be a setup designed to destroy her career and her partner.",
+      "tone": "tense, paranoid, psychologically intense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "institutional misogyny",
+        "paranoia and trust",
+        "identity and belonging",
+        "corruption",
+        "perseverance"
+      ],
+      "setting": "Contemporary Dublin; the Murder Squad offices, crime scenes, and working-class neighbourhoods",
+      "comparable_books": [
+        "In the Woods - Tana French",
+        "The Likeness - Tana French",
+        "Still Life - Louise Penny"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological crime fiction",
+          "unreliable atmosphere",
+          "strong female protagonist",
+          "slow-burn reveals",
+          "literary crime"
+        ],
+        "negative": [
+          "readers wanting fast action",
+          "those who dislike unreliable narrators",
+          "cozy mystery fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "French's immersive prose and strong first-person voice are exceptionally well-served by audio narration",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Secret Place - Tana French": {
       "title": "The Secret Place",
       "author": "Tana French",
       "series": "Dublin Murder Squad",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Detective Stephen Moran is pulled into a year-old murder case at an elite Dublin girls' boarding school when a student brings him a cryptic clue. Alternating between the detectives' present-day investigation and the girls' past year of intense friendships and hidden secrets.",
+      "tone": "atmospheric, psychologically rich, tension-laden",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "female friendship and rivalry",
+        "adolescent power",
+        "secrets and loyalty",
+        "class",
+        "the supernatural vs. the rational"
+      ],
+      "setting": "Contemporary Dublin; a prestigious girls' boarding school and its grounds",
+      "comparable_books": [
+        "In the Woods - Tana French",
+        "The Likeness - Tana French",
+        "The Virgin Suicides - Jeffrey Eugenides"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric literary crime",
+          "psychological depth",
+          "ensemble character dynamics",
+          "slow-burn mysteries",
+          "boarding school setting"
+        ],
+        "negative": [
+          "readers wanting action-heavy plots",
+          "those who dislike dual timelines",
+          "cozy mystery fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The dual-timeline structure and ensemble cast particularly benefit from skilled audio performance",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Man Who Came Uptown - George Pelecanos": {
@@ -134780,26 +135192,49 @@
       "author": "George Pelecanos",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Michael Hudson is released from a D.C. jail thanks to a morally ambiguous private detective who manipulated a witness, he must navigate a changed city — balancing his newfound love of books, his debt to the man who freed him, and the pull of the criminal world he's trying to leave behind.",
+      "tone": "soulful, character-driven, gritty yet hopeful",
+      "pacing": "Moderate",
+      "themes": [
+        "redemption and second chances",
+        "the power of books",
+        "moral debt",
+        "gentrification",
+        "the cycle of crime"
+      ],
+      "setting": "Contemporary Washington D.C.; the city's jails, streets, and gentrifying neighbourhoods",
+      "comparable_books": [
+        "The Cut - George Pelecanos",
+        "A Simple Plan - Scott Smith",
+        "The Outsider - Richard Wright"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "bibliophile readers",
+          "character-driven crime",
+          "redemption arcs",
+          "D.C. atmosphere",
+          "Wire fans",
+          "soulful noir"
+        ],
+        "negative": [
+          "readers wanting fast-paced action thrillers",
+          "cozy mystery fans",
+          "those uninterested in social commentary"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hard Revolution - George Pelecanos": {
