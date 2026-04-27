@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2945,
-  "total_pending": 1655,
+  "total_catalogued": 2965,
+  "total_pending": 1635,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -166269,53 +166269,96 @@
       "author": "Richard Condon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Political Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A Korean War veteran is brainwashed by Communist forces and programmed as an unwitting assassin, while his mother and stepfather scheme to exploit him for political power. A paranoid, satirical thriller about mind control, McCarthyism, and American political corruption.",
+      "tone": "paranoid, satirical, darkly comic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "brainwashing and mind control",
+        "political corruption",
+        "Cold War paranoia",
+        "media and propaganda",
+        "identity and free will"
+      ],
+      "setting": "1950s United States and Korea; Cold War era",
+      "comparable_books": [
+        "1984 - George Orwell",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Seven Days in May - Fletcher Knebel",
+        "American War - Omar El Akkad"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War thriller fan",
+          "political satire",
+          "propulsive plotting",
+          "morally complex characters",
+          "classic American fiction"
+        ],
+        "negative": [
+          "reader sensitive to graphic content",
+          "prefers straightforward realism without satire"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Passage of Power - Robert A. Caro": {
       "title": "The Passage of Power",
       "author": "Robert A. Caro",
       "series": "The Years of Lyndon Johnson",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Biography",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The fourth volume of Caro's monumental biography of Lyndon Johnson, covering the years 1958–1964: his failed presidential campaign against JFK, his humiliating tenure as Vice President, and his sudden, transformative ascension to the presidency following Kennedy's assassination. Widely considered the most gripping volume in the series.",
+      "tone": "meticulous, dramatic, magisterial, character-driven",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "power and ambition",
+        "political maneuvering",
+        "grief and trauma",
+        "the American presidency",
+        "race and civil rights legislation"
+      ],
+      "setting": "Washington D.C. and Texas, 1958–1964",
+      "comparable_books": [
+        "The Power Broker - Robert A. Caro",
+        "An Unfinished Life - Robert Dallek",
+        "Nixon Agonistes - Garry Wills",
+        "The Bully Pulpit - Doris Kearns Goodwin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "American political history",
+          "long-form narrative nonfiction",
+          "character studies of power",
+          "meticulous research",
+          "Kennedy era"
+        ],
+        "negative": [
+          "reader who prefers short books",
+          "dislikes slow build-up",
+          "not interested in 20th-century American politics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Moby Dick - Herman Melville": {
@@ -166323,26 +166366,47 @@
       "author": "Herman Melville",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Ishmael, a sailor, narrates the obsessive quest of Captain Ahab, who pursues the great white whale Moby Dick across the seas in a doomed voyage of vengeance. An epic meditation on obsession, fate, nature, and the human condition.",
+      "tone": "epic, philosophical, lyrical, digressive",
+      "pacing": "Slow",
+      "themes": [
+        "obsession and revenge",
+        "man vs. nature",
+        "fate and free will",
+        "the sublime",
+        "knowledge and limits of understanding"
+      ],
+      "setting": "Mid-19th century; the open oceans, primarily the Pacific",
+      "comparable_books": [
+        "Billy Budd - Herman Melville",
+        "The Old Man and the Sea - Ernest Hemingway",
+        "Lord Jim - Joseph Conrad",
+        "Leviathan - Paul Auster"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic literature enthusiast",
+          "philosophical fiction",
+          "epic scope",
+          "interest in 19th-century America",
+          "nature writing"
+        ],
+        "negative": [
+          "reader who dislikes digressive or dense prose",
+          "prefers plot-driven narratives",
+          "impatient with slow pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Melville's rich, oratorical prose is particularly suited to a strong narrator; the rhythmic, sermon-like passages reward the spoken word.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rainbows End - Vernor Vinge": {
@@ -166350,80 +166414,144 @@
       "author": "Vernor Vinge",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 2025 San Diego, Robert Gu — a once-celebrated poet recovering from Alzheimer's disease — must adapt to a world saturated with augmented reality and ubiquitous computing, while unwittingly becoming entangled in a global espionage conspiracy. A Hugo Award-winning post-cyberpunk thriller about technology, identity, and surveillance.",
+      "tone": "ideas-driven, propulsive, technically dense, optimistic-yet-unsettling",
+      "pacing": "Moderate",
+      "themes": [
+        "technological singularity",
+        "augmented reality and identity",
+        "surveillance vs. privacy",
+        "aging and reinvention",
+        "geopolitical power in the digital age"
+      ],
+      "setting": "Near-future San Diego, 2025; a world of pervasive augmented reality and networked computing",
+      "comparable_books": [
+        "A Deepness in the Sky - Vernor Vinge",
+        "Accelerando - Charles Stross",
+        "The Diamond Age - Neal Stephenson",
+        "Daemon - Daniel Suarez"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fan",
+          "near-future tech speculation",
+          "Hugo Award books",
+          "ideas over character",
+          "post-cyberpunk"
+        ],
+        "negative": [
+          "reader who prefers character-driven literary fiction",
+          "dislikes technical jargon",
+          "not interested in surveillance themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wuthering Heights - Emily Bronte": {
       "title": "Wuthering Heights",
-      "author": "Emily Bronte",
+      "author": "Emily Brontë",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "On the windswept Yorkshire moors, the foundling Heathcliff and Catherine Earnshaw forge an intense, destructive bond that warps both their lives and those of the next generation. A gothic tale of obsessive love, class, revenge, and social cruelty.",
+      "tone": "brooding, gothic, passionate, dark romantic",
+      "pacing": "Moderate",
+      "themes": [
+        "obsessive love",
+        "class and social mobility",
+        "revenge and cruelty",
+        "nature and the sublime",
+        "the destructive power of desire"
+      ],
+      "setting": "Late 18th–early 19th century Yorkshire, England; the moors and two neighbouring estates",
+      "comparable_books": [
+        "Jane Eyre - Charlotte Brontë",
+        "Rebecca - Daphne du Maurier",
+        "Tess of the d'Urbervilles - Thomas Hardy",
+        "The Mill on the Floss - George Eliot"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic fiction",
+          "classic literature",
+          "dark romance",
+          "morally complex protagonists",
+          "Victorian fiction"
+        ],
+        "negative": [
+          "reader who prefers likeable characters",
+          "dislikes non-linear narratives",
+          "wants a happy ending"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The layered frame narrative and varied Yorkshire voices reward a skilled audio narrator enormously.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Score - Richard Stark": {
       "title": "The Score",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker leads a crew of a dozen professional thieves in an audacious scheme to rob an entire isolated North Dakota mining town — every bank, every store, the plant payroll — in a single night. Widely regarded as one of the series' high-water marks of heist ambition.",
+      "tone": "cold, terse, amoral, precise",
+      "pacing": "Fast",
+      "themes": [
+        "professional criminality",
+        "planning and execution",
+        "trust and betrayal among thieves",
+        "amorality as a code"
+      ],
+      "setting": "1960s America; the fictional town of Copper Canyon, North Dakota",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "Pop. 1280 - Jim Thompson",
+        "The Friends of Eddie Coyle - George V. Higgins",
+        "Plunder Squad - Richard Stark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir",
+          "heist fiction",
+          "morally grey protagonist",
+          "stripped-down prose",
+          "fast reads"
+        ],
+        "negative": [
+          "reader who needs sympathetic heroes",
+          "dislikes amoral fiction",
+          "prefers psychological depth over plot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Anna Karenina - Leo Tolstoy": {
@@ -166431,26 +166559,49 @@
       "author": "Leo Tolstoy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Anna Karenina, a married aristocrat in Imperial Russia, abandons her husband and social standing for a passionate affair with Count Vronsky, with tragic consequences. Running in parallel is the spiritual and domestic journey of Levin, a landowner searching for meaning.",
+      "tone": "lyrical, expansive, tragic, psychologically penetrating",
+      "pacing": "Slow",
+      "themes": [
+        "adultery and social consequence",
+        "love vs. duty",
+        "meaning and faith",
+        "Russian society and class",
+        "freedom and constraint"
+      ],
+      "setting": "1870s Imperial Russia; Moscow, St. Petersburg, and the countryside",
+      "comparable_books": [
+        "War and Peace - Leo Tolstoy",
+        "Madame Bovary - Gustave Flaubert",
+        "The Brothers Karamazov - Fyodor Dostoevsky",
+        "Middlemarch - George Eliot"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic literature enthusiast",
+          "Russian fiction",
+          "psychological realism",
+          "sweeping social novels",
+          "tragedy"
+        ],
+        "negative": [
+          "reader who dislikes slow pacing",
+          "impatient with digressive philosophical passages",
+          "wants a tight plot"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The novel's epic scope, multiple storylines, and rich interiority are greatly aided by a strong audio narrator who can differentiate the large cast.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Sound and the Fury - William Faulkner": {
@@ -166458,296 +166609,547 @@
       "author": "William Faulkner",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The decline of the Compson family, a once-proud Southern dynasty, is told through four radically different narrative voices — including the stream-of-consciousness of the intellectually disabled Benjy and the suicidal Quentin — across different time periods. A landmark of American modernism.",
+      "tone": "dense, fragmented, elegiac, demanding",
+      "pacing": "Slow",
+      "themes": [
+        "decay of the Southern aristocracy",
+        "memory and time",
+        "race in the American South",
+        "family dysfunction",
+        "loss and grief"
+      ],
+      "setting": "Jefferson, Mississippi, 1910–1928; the fictional Yoknapatawpha County",
+      "comparable_books": [
+        "As I Lay Dying - William Faulkner",
+        "Absalom, Absalom! - William Faulkner",
+        "Light in August - William Faulkner",
+        "Go Down, Moses - William Faulkner"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "modernist literature",
+          "challenging prose",
+          "Southern Gothic",
+          "American classics",
+          "experimental narrative structure"
+        ],
+        "negative": [
+          "reader who prefers clear linear narratives",
+          "dislikes stream-of-consciousness",
+          "not interested in American South themes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "The fragmented, time-shifting structure and stream-of-consciousness sections — especially Benjy's section — require visual reference and re-reading to follow; extremely difficult to process on audio alone.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Jugger - Richard Stark": {
       "title": "The Jugger",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a retired safecracker who knows Parker's real identity sends a distress letter, Parker travels to a small Nebraska town to find the man already dead — and himself caught between a corrupt small-town police chief and a local thug. Unusually for the series, there is no heist; the book is a tense cat-and-mouse survival story.",
+      "tone": "cold, terse, bleak, Jim Thompson-esque",
+      "pacing": "Fast",
+      "themes": [
+        "self-preservation over loyalty",
+        "corruption in small-town America",
+        "identity and exposure",
+        "professional amorality"
+      ],
+      "setting": "1960s rural Nebraska; a small American town",
+      "comparable_books": [
+        "The Hunter - Richard Stark",
+        "The Getaway - Jim Thompson",
+        "After Dark, My Sweet - Jim Thompson",
+        "Slayground - Richard Stark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir",
+          "cat-and-mouse thriller",
+          "morally grey protagonist",
+          "fast lean prose",
+          "crime fiction"
+        ],
+        "negative": [
+          "reader expecting a heist novel",
+          "needs sympathetic heroes",
+          "dislikes amorality"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Rhesus Chart - Charles Stross": {
       "title": "The Rhesus Chart",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bob Howard discovers that a group of London investment bankers have accidentally infected themselves with a vampiric parasite via a financial algorithm, presenting the Laundry with a supernatural threat it has no official protocol to handle. A darkly comic and ultimately gut-punch installment that reshapes the series' status quo.",
+      "tone": "darkly comic, bureaucratic, Lovecraftian, increasingly grim",
+      "pacing": "Fast",
+      "themes": [
+        "bureaucracy and institutional inertia",
+        "financial industry satire",
+        "the nature of vampirism",
+        "trust and betrayal",
+        "the cost of secrecy"
+      ],
+      "setting": "Contemporary London; the Laundry's offices and the City's financial district",
+      "comparable_books": [
+        "The Atrocity Archives - Charles Stross",
+        "Rivers of London - Ben Aaronovitch",
+        "The Dresden Files - Jim Butcher",
+        "The Jennifer Morgue - Charles Stross"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror",
+          "urban fantasy",
+          "British spy thriller pastiche",
+          "workplace comedy",
+          "series readers"
+        ],
+        "negative": [
+          "reader who wants standalone novels",
+          "dislikes bureaucratic humour",
+          "prefers action over wit"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Atrocity Archives - Charles Stross": {
       "title": "The Atrocity Archives",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bob Howard, an IT support worker for a top-secret British government agency, discovers that mathematics can summon Lovecraftian horrors from beyond spacetime, and is reluctantly drawn into field work to prevent an occult catastrophe. This first volume collects the debut novella and the Hugo Award-winning 'The Concrete Jungle'.",
+      "tone": "darkly comic, geeky, deadpan, Lovecraftian-bureaucratic",
+      "pacing": "Fast",
+      "themes": [
+        "occult meets office life",
+        "Lovecraftian horror",
+        "Cold War espionage legacy",
+        "computational demonology",
+        "institutional absurdity"
+      ],
+      "setting": "Early 2000s Britain; London offices, universities, and covert field locations",
+      "comparable_books": [
+        "The Jennifer Morgue - Charles Stross",
+        "Rivers of London - Ben Aaronovitch",
+        "Declare - Tim Powers",
+        "The Rhesus Chart - Charles Stross"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror fan",
+          "spy thriller pastiche",
+          "geek humour",
+          "urban fantasy",
+          "British settings"
+        ],
+        "negative": [
+          "reader who wants pure horror without comedy",
+          "dislikes technical/IT humour",
+          "prefers character-driven literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Apocalypse Codex - Charles Stross": {
       "title": "The Apocalypse Codex",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bob Howard is tasked with overseeing two freelance occult agents — including the formidable Persephone Hazard — as they investigate an American televangelist whose prosperity gospel ministry conceals a plan to bring about the end of the world. Written in the style of a Peter O'Donnell Modesty Blaise novel.",
+      "tone": "darkly comic, propulsive, espionage-flavoured, increasingly ominous",
+      "pacing": "Fast",
+      "themes": [
+        "religious extremism and occult exploitation",
+        "the nature of faith",
+        "freelance intelligence work",
+        "bureaucratic oversight",
+        "apocalyptic threat"
+      ],
+      "setting": "Contemporary Britain and the United States; the Laundry bureaucracy and evangelical America",
+      "comparable_books": [
+        "The Fuller Memorandum - Charles Stross",
+        "The Rhesus Chart - Charles Stross",
+        "The Jennifer Morgue - Charles Stross",
+        "Rivers of London - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror",
+          "spy fiction pastiche",
+          "darkly comic urban fantasy",
+          "series readers",
+          "religious satire"
+        ],
+        "negative": [
+          "standalone book reader",
+          "dislikes religious themes even in satire",
+          "prefers literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Annihilation Score - Charles Stross": {
       "title": "The Annihilation Score",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "For the first time, the narrative shifts from Bob Howard to his wife Mo, a Laundry field agent tasked with setting up a secret government department to handle ordinary citizens spontaneously developing supernatural powers — while her relationship with Bob frays under the strain of her demon-possessed violin. A superhero-parody-meets-Lovecraftian-horror instalment.",
+      "tone": "darkly comic, increasingly grim, introspective, satirical",
+      "pacing": "Fast",
+      "themes": [
+        "superhero mythology deconstructed",
+        "relationship strain under extraordinary pressure",
+        "institutional creation and politics",
+        "Case Nightmare Green escalation",
+        "gender and visibility in the workplace"
+      ],
+      "setting": "Contemporary London and the Laundry's organisational bureaucracy",
+      "comparable_books": [
+        "The Rhesus Chart - Charles Stross",
+        "The Nightmare Stacks - Charles Stross",
+        "Rivers of London - Ben Aaronovitch",
+        "Broken Homes - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Laundry Files series reader",
+          "superhero fiction with a twist",
+          "female protagonist",
+          "Lovecraftian horror",
+          "office satire"
+        ],
+        "negative": [
+          "reader who strongly prefers Bob Howard as narrator",
+          "wants pure action over bureaucratic comedy",
+          "standalone book reader"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Son of a Witch - Gregory Maguire": {
       "title": "Son of a Witch",
       "author": "Gregory Maguire",
-      "series": "Wicked Years",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Wicked Years",
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Liir, a young man who may be the son of the Wicked Witch, wanders the dystopian land of Oz in the aftermath of Dorothy's departure, seeking his own identity and purpose while a dark religious theocracy rises to power. A darker and more introspective companion to Wicked.",
+      "tone": "dark, lyrical, melancholic, morally ambiguous",
+      "pacing": "Slow",
+      "themes": [
+        "identity and parentage",
+        "political and religious tyranny",
+        "coming of age",
+        "war and its aftermath",
+        "the nature of wickedness"
+      ],
+      "setting": "The land of Oz, reimagined as a politically turbulent dystopia; post-Dorothy era",
+      "comparable_books": [
+        "Wicked - Gregory Maguire",
+        "A Lion Among Men - Gregory Maguire",
+        "Out of Oz - Gregory Maguire",
+        "The Golem and the Djinni - Helene Wecker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Wicked Years series reader",
+          "dark revisionist fantasy",
+          "morally complex worlds",
+          "lyrical prose",
+          "fairytale retellings"
+        ],
+        "negative": [
+          "reader who wants the same energy as Wicked",
+          "dislikes slow introspective pacing",
+          "prefers upbeat fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Slayground - Richard Stark": {
       "title": "Slayground",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a heist goes catastrophically wrong, Parker escapes alone with the loot into a closed-for-winter amusement park called Fun Island — and finds himself trapped there, hunted by corrupt cops and the local mob. A nearly real-time siege thriller widely regarded as one of the finest books in the series.",
+      "tone": "taut, cold, minimalist, relentless",
+      "pacing": "Fast",
+      "themes": [
+        "survival against overwhelming odds",
+        "isolation and ingenuity",
+        "predator and prey",
+        "professional amorality"
+      ],
+      "setting": "1970s America; a shuttered amusement park ('Fun Island') in an unnamed Midwestern city, winter",
+      "comparable_books": [
+        "Plunder Squad - Richard Stark",
+        "The Hunter - Richard Stark",
+        "The Outfit - Richard Stark",
+        "No Country for Old Men - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard-boiled noir",
+          "siege/survival thriller",
+          "propulsive minimalist prose",
+          "Parker series fan",
+          "fast reads"
+        ],
+        "negative": [
+          "reader who needs sympathetic protagonists",
+          "prefers complex character psychology",
+          "dislikes amoral fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Plunder Squad - Richard Stark": {
       "title": "Plunder Squad",
       "author": "Richard Stark",
       "series": "Parker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 15",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Parker endures a string of failed and aborted jobs — including two heists that never come off — before finally settling on an art theft involving a truck of stolen paintings, while simultaneously hunting down an old enemy from a previous book. A structurally unusual entry notable for its staccato rhythms and Parker's uncharacteristic run of bad luck.",
+      "tone": "cold, terse, episodic, darkly comedic",
+      "pacing": "Fast",
+      "themes": [
+        "professional failure and persistence",
+        "vengeance and loose ends",
+        "the mechanics of theft",
+        "amorality as code"
+      ],
+      "setting": "1970s America; California and various anonymous locations",
+      "comparable_books": [
+        "Slayground - Richard Stark",
+        "The Hunter - Richard Stark",
+        "Butcher's Moon - Richard Stark",
+        "The Outfit - Richard Stark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Parker series completist",
+          "hard-boiled noir",
+          "heist fiction",
+          "minimalist prose",
+          "crime fiction fan"
+        ],
+        "negative": [
+          "reader new to the Parker series",
+          "wants a perfect standalone heist novel",
+          "prefers tightly unified plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Saint's Blood - Sebastien de Castell": {
       "title": "Saint's Blood",
       "author": "Sebastien de Castell",
       "series": "The Greatcoats",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Falcio, Kest, and Brasti discover that someone has found a way to murder the Saints of Tristia, threatening to topple Aline's claim to the throne by suggesting the Gods themselves oppose her — and only Falcio can find and stop the killer before the country falls to theocracy. A penultimate instalment praised for its emotional and action-packed storytelling.",
+      "tone": "swashbuckling, darkly comic, emotionally charged, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "justice and the rule of law",
+        "found family",
+        "political intrigue and theocracy",
+        "faith and doubt",
+        "loyalty under impossible odds"
+      ],
+      "setting": "The fictional kingdom of Tristia; a pseudo-medieval secondary world",
+      "comparable_books": [
+        "Traitor's Blade - Sebastien de Castell",
+        "Knight's Shadow - Sebastien de Castell",
+        "The Three Musketeers - Alexandre Dumas",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "swashbuckling fantasy",
+          "found family",
+          "witty dialogue",
+          "Three Musketeers-style adventure",
+          "morally complex heroes"
+        ],
+        "negative": [
+          "reader who dislikes ongoing series mid-entries",
+          "prefers grimdark without humour",
+          "not a fantasy reader"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Out of Oz - Gregory Maguire": {
       "title": "Out of Oz",
       "author": "Gregory Maguire",
-      "series": "Wicked Years",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Wicked Years",
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Elphaba's young granddaughter Rain comes of age amid the Emerald City's brutal civil war against Munchkinland, accompanied by the Cowardly Lion and an unlikely band of companions, as the saga of Oz comes full circle. The concluding volume of Maguire's dark Oz reimagining.",
+      "tone": "dark, lyrical, sprawling, elegiac",
+      "pacing": "Slow",
+      "themes": [
+        "war and political oppression",
+        "identity and inheritance",
+        "coming of age",
+        "the cyclical nature of history",
+        "magic and loss"
+      ],
+      "setting": "The land of Oz, in the grip of civil war; a dark reimagining of Baum's world",
+      "comparable_books": [
+        "Wicked - Gregory Maguire",
+        "Son of a Witch - Gregory Maguire",
+        "A Lion Among Men - Gregory Maguire",
+        "The Book of the New Sun - Gene Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Wicked Years series completionist",
+          "dark revisionist fantasy",
+          "lyrical prose",
+          "political fantasy",
+          "Oz mythology"
+        ],
+        "negative": [
+          "reader who dislikes slow sprawling endings",
+          "wants a triumphant conclusion",
+          "not familiar with the earlier series books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Man's Search for Meaning - Viktor E. Frankl": {
@@ -166755,53 +167157,97 @@
       "author": "Viktor E. Frankl",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Psychiatrist Viktor Frankl recounts his experiences as a prisoner in Nazi concentration camps and derives from them the principles of logotherapy — the idea that the primary human drive is not pleasure but the pursuit of meaning. One of the most influential books of the 20th century.",
+      "tone": "measured, profound, harrowing yet hopeful, philosophical",
+      "pacing": "Fast",
+      "themes": [
+        "the search for meaning",
+        "human resilience",
+        "suffering and transcendence",
+        "existentialism and psychology",
+        "the Holocaust"
+      ],
+      "setting": "Nazi concentration camps (Auschwitz, Dachau), 1940s; framed within a broader philosophical argument",
+      "comparable_books": [
+        "Night - Elie Wiesel",
+        "The Diary of a Young Girl - Anne Frank",
+        "Being and Nothingness - Jean-Paul Sartre",
+        "The Road - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophy and psychology",
+          "Holocaust memoir",
+          "existentialism",
+          "self-help and meaning-making",
+          "short impactful books"
+        ],
+        "negative": [
+          "reader who finds concentration camp narratives too harrowing",
+          "prefers fiction",
+          "dislikes psychological theory"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The book's intimate, testimonial first-person voice and philosophical clarity make it exceptionally well-suited to audio; the spoken word heightens its emotional and moral force.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Knight's Shadow - Sebastien de Castell": {
       "title": "Knight's Shadow",
       "author": "Sebastien de Castell",
       "series": "The Greatcoats",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Falcio val Mond, slowly dying from a poison coursing through his veins, races to protect the young heir to Tristia's throne from assassins, traitorous Dukes, and a ruthless would-be queen, while uncovering a conspiracy that may implicate the Greatcoats themselves. Often cited as the best book in the series.",
+      "tone": "swashbuckling, darkly comic, emotionally charged, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and betrayal",
+        "justice in a corrupt world",
+        "sacrifice",
+        "found family",
+        "political intrigue"
+      ],
+      "setting": "The kingdom of Tristia; a pseudo-medieval secondary world of political intrigue and duels",
+      "comparable_books": [
+        "Traitor's Blade - Sebastien de Castell",
+        "Saint's Blood - Sebastien de Castell",
+        "The Three Musketeers - Alexandre Dumas",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "swashbuckling fantasy",
+          "witty banter and found family",
+          "dark but humorous",
+          "morally complex heroes",
+          "Three Musketeers fans"
+        ],
+        "negative": [
+          "reader who dislikes mid-series books without reading Book 1",
+          "prefers grimdark without levity",
+          "not a fantasy reader"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Intruder in the Dust - William Faulkner": {
