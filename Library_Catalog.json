@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1989,
-  "total_pending": 2611,
+  "total_catalogued": 2009,
+  "total_pending": 2591,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -119855,540 +119855,962 @@
       "title": "Death or Glory",
       "author": "Sandy Mitchell",
       "series": "Ciaphas Cain",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After crash-landing behind enemy lines following a disastrous space battle, Commissar Ciaphas Cain and his aide Jurgen must fight their way through hundreds of thousands of Orks to reach Imperial lines, accruing a ragtag band of rebels and civilian refugees along the way.",
+      "tone": "darkly comic, propulsive, self-deprecating",
+      "pacing": "Fast",
+      "themes": [
+        "reluctant heroism",
+        "survival",
+        "reputation vs reality",
+        "accidental greatness",
+        "cowardice masking courage"
+      ],
+      "setting": "Warhammer 40,000 universe, 41st millennium — an Ork-occupied Imperial world, early in Cain's career",
+      "comparable_books": [
+        "For the Emperor - Sandy Mitchell",
+        "Flashman - George MacDonald Fraser",
+        "Caves of Ice - Sandy Mitchell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic tone",
+          "unreliable narrator",
+          "propulsive action",
+          "anti-hero protagonist",
+          "military sci-fi",
+          "fish out of water"
+        ],
+        "negative": [
+          "grimdark without levity",
+          "serious military fiction",
+          "slow character studies"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Cain's wry first-person memoir voice translates superbly to audio; full cast narration available.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Beguiling - Sandy Mitchell": {
       "title": "The Beguiling",
       "author": "Sandy Mitchell",
       "series": "Ciaphas Cain",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (pre-series, collected in Hero of the Imperium omnibus)",
+      "genre": "Military Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A bored Commissar Cain, stationed far from the front lines on Slawkenberg, accepts an invitation to investigate strange reports — and finds himself the target of a Slaaneshi Chaos cult hiding behind the façade of a finishing school.",
+      "tone": "darkly comic, wry, lightly sinister",
+      "pacing": "Fast",
+      "themes": [
+        "cowardice as survival instinct",
+        "Chaos corruption",
+        "reputation",
+        "temptation"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — the planet Slawkenberg, early in Cain's career",
+      "comparable_books": [
+        "Fight or Flight - Sandy Mitchell",
+        "Echoes of the Tomb - Sandy Mitchell",
+        "For the Emperor - Sandy Mitchell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short punchy read",
+          "Cain's signature wit",
+          "Chaos horror with comedic framing",
+          "series fans"
+        ],
+        "negative": [
+          "looking for a full novel",
+          "no Amberley Vail footnotes",
+          "low stakes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ravenor Returned - Dan Abnett": {
       "title": "Ravenor Returned",
       "author": "Dan Abnett",
       "series": "Ravenor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Inquisitor Gideon Ravenor and his band of operatives press deeper into their investigation of the illegal narcotic 'flect' and its daemonic connections, operating on the wild frontiers of human space while drawing ever closer to a terrible truth.",
+      "tone": "tense, noir-inflected, ensemble-driven, dark",
+      "pacing": "Moderate",
+      "themes": [
+        "duty vs obsession",
+        "corruption",
+        "found family",
+        "the cost of the Inquisition",
+        "moral ambiguity"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — the Scarus Sector and frontier worlds",
+      "comparable_books": [
+        "Ravenor - Dan Abnett",
+        "Ravenor Rogue - Dan Abnett",
+        "Malleus - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast",
+          "noir investigation",
+          "found family",
+          "morally grey characters",
+          "dark 40k fiction"
+        ],
+        "negative": [
+          "entry point to 40k fiction",
+          "standalone reads",
+          "action-only"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Playing Patience - Dan Abnett": {
       "title": "Playing Patience",
       "author": "Dan Abnett",
       "series": "Ravenor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (between Hereticus and Ravenor novel; collected in Ravenor Omnibus)",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the grim world of Sameter, a young woman named Patience Kys — gifted with telekinesis and precognition — struggles to survive poverty and danger, until a chance encounter with Inquisitor Ravenor offers her a new purpose.",
+      "tone": "bleak, character-driven, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "origin story",
+        "untapped power",
+        "poverty and survival",
+        "recruitment",
+        "fate"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — the dismal hive world of Sameter",
+      "comparable_books": [
+        "Ravenor - Dan Abnett",
+        "Thorn Wishes Talon - Dan Abnett",
+        "Xenos - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character origin story",
+          "dark 40k fiction",
+          "strong female character",
+          "action-paced short fiction"
+        ],
+        "negative": [
+          "entry point to 40k",
+          "light tone preferred",
+          "looking for a full novel"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Strange Demise of Titus Endor - Dan Abnett": {
       "title": "The Strange Demise of Titus Endor",
       "author": "Dan Abnett",
       "series": "Eisenhorn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (between Malleus and Hereticus; collected in The Magos)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former Inquisitor Titus Endor, a one-time contemporary of Gregor Eisenhorn, pursues an elusive heretic on a backwater world — but the hunt grows increasingly strange, raising troubling questions about Endor's own mind and fate.",
+      "tone": "bleak, melancholic, quietly horrifying, literary",
+      "pacing": "Slow",
+      "themes": [
+        "memory and identity",
+        "obsession",
+        "the cost of service",
+        "isolation",
+        "psychological horror"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — a remote backwater Imperial world",
+      "comparable_books": [
+        "The Strange Demise of Titus Endor - Dan Abnett",
+        "Missing in Action - Dan Abnett",
+        "Hereticus - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological horror",
+          "literary 40k",
+          "character tragedy",
+          "unique tone",
+          "slow burn mystery"
+        ],
+        "negative": [
+          "action-driven fiction",
+          "Eisenhorn as protagonist",
+          "upbeat tone preferred"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Backcloth for a Crown Additional - Dan Abnett": {
       "title": "Backcloth for a Crown Additional",
       "author": "Dan Abnett",
       "series": "Eisenhorn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (between Malleus and Hereticus; collected in Eisenhorn Omnibus and The Magos)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The death of an old noble friend draws Inquisitor Eisenhorn and Alizebeth Bequin to a travelling fair on Gudrun, where a seemingly routine investigation into a suspicious death uncovers a sinister warp-tainted artefact.",
+      "tone": "low-key, personal, paranormal detective, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "friendship",
+        "Chaos in quiet places",
+        "investigation",
+        "the personal cost of the Inquisition"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — the planet Gudrun, a travelling carnival",
+      "comparable_books": [
+        "Missing in Action - Dan Abnett",
+        "Regia Occulta - Dan Abnett",
+        "Malleus - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "paranormal detective story",
+          "low-stakes character moments",
+          "Eisenhorn and Bequin dynamic",
+          "short fiction"
+        ],
+        "negative": [
+          "high action required",
+          "looking for a full novel",
+          "grand scale stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hereticus - Dan Abnett": {
       "title": "Hereticus",
       "author": "Dan Abnett",
       "series": "Eisenhorn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the final act of the trilogy, Eisenhorn hunts one of the Imperium's most dangerous rogue inquisitors while the moral compromises of his long career — most notably his use of the daemonhost Cherubael — bring him to a devastating reckoning.",
+      "tone": "dark, tense, morally complex, tragic",
+      "pacing": "Fast",
+      "themes": [
+        "the ends justifying the means",
+        "radicalism vs puritanism",
+        "moral corruption",
+        "loyalty and betrayal",
+        "the Inquisition's inner wars"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — multiple Imperial worlds across the Scarus Sector",
+      "comparable_books": [
+        "Malleus - Dan Abnett",
+        "Xenos - Dan Abnett",
+        "Ravenor - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "series conclusion payoff",
+          "dark character arcs",
+          "first-person thriller"
+        ],
+        "negative": [
+          "entry point to 40k",
+          "light tone preferred",
+          "happy endings required"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Eisenhorn's intimate first-person voice is perfectly suited to audio; the series has a full cast production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Missing in Action - Dan Abnett": {
       "title": "Missing in Action",
       "author": "Dan Abnett",
       "series": "Eisenhorn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (between Xenos and Malleus; collected in Eisenhorn Omnibus and The Magos)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Returning to active duty after the Necroteuch affair, Inquisitor Eisenhorn investigates a series of brutal murders in a hive city, hunting what appears to be a Chaos cult — but the truth proves far more human and haunting.",
+      "tone": "noir, procedural, bittersweet",
+      "pacing": "Fast",
+      "themes": [
+        "war's human cost",
+        "PTSD",
+        "justice vs mercy",
+        "investigation",
+        "the forgotten soldiers of the Imperium"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — a decaying Imperial hive city",
+      "comparable_books": [
+        "Backcloth for a Crown Additional - Dan Abnett",
+        "Regia Occulta - Dan Abnett",
+        "Xenos - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic detective story",
+          "emotional depth",
+          "social commentary",
+          "tight short fiction",
+          "Eisenhorn character work"
+        ],
+        "negative": [
+          "high action required",
+          "large-scale plots",
+          "looking for a full novel"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Malleus - Dan Abnett": {
       "title": "Malleus",
       "author": "Dan Abnett",
       "series": "Eisenhorn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Eisenhorn is drawn into a vast heretical conspiracy reaching into the highest levels of the Inquisition itself, and his pursuit of a centuries-old rogue inquisitor forces him to make compromises that will define — and darken — the rest of his career.",
+      "tone": "dark, conspiratorial, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional corruption",
+        "the Inquisition's inner wars",
+        "moral compromise",
+        "power and responsibility",
+        "heresy within orthodoxy"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — multiple Imperial worlds and the halls of power",
+      "comparable_books": [
+        "Xenos - Dan Abnett",
+        "Hereticus - Dan Abnett",
+        "Ravenor - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "conspiracy thriller",
+          "escalating darkness",
+          "first-person voice",
+          "political intrigue"
+        ],
+        "negative": [
+          "entry point to 40k",
+          "light tone preferred",
+          "action-only readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Eisenhorn's distinctive first-person voice is a highlight of the audio adaptation.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Regia Occulta - Dan Abnett": {
       "title": "Regia Occulta",
       "author": "Dan Abnett",
       "series": "Eisenhorn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (earliest in internal chronology, set 223.M41; collected in The Magos and Thorn and Talon audio)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young Eisenhorn, newly minted as a full Inquisitor, is stranded on a storm-wracked world and must investigate a series of bizarre murders with only local officials to assist, uncovering a natural warp phenomenon — a 'regia occulta' — at the heart of the killings.",
+      "tone": "atmospheric, investigative, character-establishing",
+      "pacing": "Moderate",
+      "themes": [
+        "investigation",
+        "the early Inquisitor",
+        "warp phenomena",
+        "idealism",
+        "the ordinary in the extraordinary"
+      ],
+      "setting": "Warhammer 40,000, early 41st millennium — a remote storm-wracked Imperial world",
+      "comparable_books": [
+        "Missing in Action - Dan Abnett",
+        "Backcloth for a Crown Additional - Dan Abnett",
+        "Xenos - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "good entry point to Eisenhorn",
+          "atmospheric mystery",
+          "character origin story",
+          "tight short fiction"
+        ],
+        "negative": [
+          "looking for a full novel",
+          "high action required",
+          "large-scale 40k battles"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Originally written as an audio drama; the full cast production is the definitive version.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Penitent - Dan Abnett": {
       "title": "Penitent",
       "author": "Dan Abnett",
       "series": "Bequin",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alizebeth Bequin continues her dangerous existence in the city of Queen Mab, caught between the opposing forces of Inquisitors Eisenhorn and Ravenor as she seeks to unravel the mysteries of the Cognitae and her own enigmatic past.",
+      "tone": "dark, mysterious, labyrinthine, tense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and self-determination",
+        "loyalty",
+        "the nature of blankness",
+        "conspiracy",
+        "trust"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — the Gothic city of Queen Mab",
+      "comparable_books": [
+        "Pariah - Dan Abnett",
+        "Hereticus - Dan Abnett",
+        "Ravenor Rogue - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrator",
+          "labyrinthine conspiracy",
+          "Eisenhorn vs Ravenor",
+          "dark Gothic atmosphere",
+          "series deep cut"
+        ],
+        "negative": [
+          "entry point to the Inquisition arc",
+          "action-first readers",
+          "needing prior context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Xenos - Dan Abnett": {
       "title": "Xenos",
       "author": "Dan Abnett",
       "series": "Eisenhorn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Inquisitor Gregor Eisenhorn investigates a heretical text known as the Necroteuch, drawing him into a deadly conspiracy involving alien xenarchs, rogue traders, and a hunt across the Scarus Sector that will change him forever.",
+      "tone": "noir, propulsive, atmospheric, intimate",
+      "pacing": "Fast",
+      "themes": [
+        "duty",
+        "the nature of heresy",
+        "obsession",
+        "the cost of the Inquisition",
+        "first encounters with corruption"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — multiple worlds of the Scarus Sector, 240.M41",
+      "comparable_books": [
+        "Malleus - Dan Abnett",
+        "Hereticus - Dan Abnett",
+        "Ravenor - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "strong entry point",
+          "first-person thriller",
+          "rich world-building",
+          "character-driven",
+          "noir tone"
+        ],
+        "negative": [
+          "action-only readers",
+          "large-scale military sci-fi",
+          "prior 40k knowledge required"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Eisenhorn's first-person voice is gripping in audio; widely cited as one of the best Black Library audio productions.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Pariah - Dan Abnett": {
       "title": "Pariah",
       "author": "Dan Abnett",
       "series": "Bequin",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alizebeth Bequin — a blank, invisible to the warp — narrates her dangerous life in the shadowy city of Queen Mab, where she becomes entangled in a covert war between two legendary Inquisitors: Eisenhorn and Ravenor.",
+      "tone": "mysterious, gothic, tense, slow-burn",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity",
+        "blankness and the warp",
+        "espionage",
+        "loyalty",
+        "the Inquisition's long shadow"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — the sprawling Gothic city of Queen Mab",
+      "comparable_books": [
+        "Penitent - Dan Abnett",
+        "Hereticus - Dan Abnett",
+        "Ravenor Rogue - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrator",
+          "Gothic atmosphere",
+          "new POV character",
+          "Eisenhorn vs Ravenor premise",
+          "mystery-thriller"
+        ],
+        "negative": [
+          "entry point to the Inquisition arc",
+          "action-first readers",
+          "requires trilogy context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Perihelion - Dan Abnett": {
       "title": "Perihelion",
       "author": "Dan Abnett",
       "series": "Ravenor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (post-Ravenor Rogue, prequel to Pariah; collected in Ravenor Omnibus)",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "At an Inquisitorial conclave, a sudden outbreak of psychic violence throws Eisenhorn into a deadly confrontation — and a charged, bittersweet reunion with his former pupil Ravenor — setting the stage for the Bequin trilogy.",
+      "tone": "bittersweet, tense, elegiac",
+      "pacing": "Fast",
+      "themes": [
+        "reunion and estrangement",
+        "loyalty under strain",
+        "the passage of time",
+        "prophecy",
+        "the Inquisition's divisions"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — an Inquisitorial conclave, 470.M41",
+      "comparable_books": [
+        "Thorn Wishes Talon - Dan Abnett",
+        "Pariah - Dan Abnett",
+        "Ravenor Rogue - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Eisenhorn and Ravenor dynamic",
+          "emotional payoff",
+          "series connective tissue",
+          "tightly plotted short fiction"
+        ],
+        "negative": [
+          "entry point to the series",
+          "looking for a full novel",
+          "action-only readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Magos - Dan Abnett": {
       "title": "The Magos",
       "author": "Dan Abnett",
       "series": "Eisenhorn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4 (plus anthology of Eisenhorn short stories)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Both an anthology collecting virtually all the Eisenhorn short fiction and a novel in its own right, The Magos follows Eisenhorn in a late-career adventure while also bridging the gap between the Eisenhorn trilogy and the Bequin series.",
+      "tone": "dark, retrospective, conspiratorial",
+      "pacing": "Moderate",
+      "themes": [
+        "legacy and consequence",
+        "radicalism",
+        "the long game of the Inquisition",
+        "identity",
+        "loose ends"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — multiple worlds, set around 475.M41",
+      "comparable_books": [
+        "Hereticus - Dan Abnett",
+        "Pariah - Dan Abnett",
+        "Ravenor Rogue - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series completionists",
+          "anthology format",
+          "long-form arc payoff",
+          "Eisenhorn fans",
+          "Magos Drusher character"
+        ],
+        "negative": [
+          "standalone reading",
+          "entry point to 40k",
+          "looking for a focused single narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Keeler Image - Dan Abnett": {
       "title": "The Keeler Image",
       "author": "Dan Abnett",
       "series": "Eisenhorn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (late-career Eisenhorn; collected in The Magos)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Eisenhorn attends a dangerous underground auction on the world of Pallik, where a rare artefact — a photograph taken by the legendary remembrancer Euphrati Keeler during the Horus Heresy — draws out an old enemy and plunges him into deadly intrigue.",
+      "tone": "tense, intrigue-driven, cross-series fan service",
+      "pacing": "Fast",
+      "themes": [
+        "the Horus Heresy's long shadow",
+        "relics and heresy",
+        "the past as threat",
+        "cross-era connections",
+        "cat and mouse"
+      ],
+      "setting": "Warhammer 40,000, late 41st millennium — the world of Pallik",
+      "comparable_books": [
+        "Regia Occulta - Dan Abnett",
+        "Missing in Action - Dan Abnett",
+        "The Magos - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Horus Heresy crossover",
+          "short punchy fiction",
+          "Eisenhorn fans",
+          "auction/heist tension"
+        ],
+        "negative": [
+          "entry point to the series",
+          "requires Horus Heresy context for full impact",
+          "looking for a full novel"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ravenor Rogue - Dan Abnett": {
       "title": "Ravenor Rogue",
       "author": "Dan Abnett",
       "series": "Ravenor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the trilogy's climax, Ravenor and his warband — now operating outside sanctioned authority and hunted by their own Inquisition — must face a daemonic threat and personal betrayal while racing to prevent a catastrophic prophecy from being fulfilled.",
+      "tone": "dark, relentless, tragic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "going rogue for the greater good",
+        "found family under siege",
+        "sacrifice",
+        "prophecy",
+        "the cost of obsession"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — the Scarus Sector",
+      "comparable_books": [
+        "Ravenor Returned - Dan Abnett",
+        "Ravenor - Dan Abnett",
+        "Hereticus - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive thriller",
+          "ensemble tragedy",
+          "series payoff",
+          "morally grey choices",
+          "dark conclusions"
+        ],
+        "negative": [
+          "entry point to the series",
+          "upbeat endings required",
+          "standalone reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Thorn Wishes Talon - Dan Abnett": {
       "title": "Thorn Wishes Talon",
       "author": "Dan Abnett",
       "series": "Ravenor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short Story (between Ravenor and Ravenor Returned; collected in Ravenor Omnibus and The Magos)",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Responding to a cryptic coded message, Inquisitor Ravenor leads his warband to a remote world where they battle a Chaos cult, and Ravenor receives a clandestine warning from a shadowy old friend — his former master, Eisenhorn.",
+      "tone": "action-driven, mysterious, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "old loyalties",
+        "secrets and codes",
+        "Chaos cults",
+        "mentors and pupils",
+        "reunion"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — the backwater world of Malinter, circa 402.M41",
+      "comparable_books": [
+        "Perihelion - Dan Abnett",
+        "Playing Patience - Dan Abnett",
+        "Ravenor Returned - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Eisenhorn and Ravenor crossover",
+          "action-packed short fiction",
+          "series connective tissue",
+          "full cast audio available"
+        ],
+        "negative": [
+          "entry point to the series",
+          "looking for a full novel",
+          "requires prior series context"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Originally produced as a full cast audio drama; the audio version is widely considered the definitive format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ravenor - Dan Abnett": {
       "title": "Ravenor",
       "author": "Dan Abnett",
       "series": "Ravenor",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Inquisitor Gideon Ravenor — a powerful psyker confined to a life-support throne after a cataclysmic injury — leads his band of lethal operatives in investigating a dangerous narcotic trade called 'flect' that proves to have terrifyingly daemonic origins.",
+      "tone": "dark, propulsive, noir-inflected, ensemble-driven",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "the cost of duty",
+        "daemonic corruption",
+        "disability and agency",
+        "loyalty"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — the Scarus Sector, principally Eustis Majoris, circa 401.M41",
+      "comparable_books": [
+        "Xenos - Dan Abnett",
+        "Ravenor Returned - Dan Abnett",
+        "Malleus - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast",
+          "propulsive thriller",
+          "unique protagonist",
+          "found family",
+          "dark 40k fiction"
+        ],
+        "negative": [
+          "entry point for those unfamiliar with Eisenhorn",
+          "standalone reads",
+          "action-only"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ravenor's unique POV — a psyker projecting his consciousness — is rendered particularly effectively in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Void Stalker - Aaron Dembski-Bowden": {
       "title": "Void Stalker",
       "author": "Aaron Dembski-Bowden",
       "series": "Night Lords",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Military Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Talos and the remnants of First Claw flee to the carrion world of Tsagualsa — where their primarch once died — pursued by the vengeful Eldar of Craftworld Ulthwé, and face a destiny that will prove impossible to escape.",
+      "tone": "grimdark, elegiac, brutal, tragic",
+      "pacing": "Fast",
+      "themes": [
+        "fate and prophecy",
+        "legacy and death",
+        "loyalty among monsters",
+        "the Long War",
+        "tragedy"
+      ],
+      "setting": "Warhammer 40,000, 41st millennium — deep space and the carrion world of Tsagualsa",
+      "comparable_books": [
+        "Soul Hunter - Aaron Dembski-Bowden",
+        "Blood Reaver - Aaron Dembski-Bowden",
+        "The First Heretic - Aaron Dembski-Bowden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "villain protagonist",
+          "grimdark tragedy",
+          "series finale payoff",
+          "morally complex Chaos Space Marines",
+          "brutal action"
+        ],
+        "negative": [
+          "hero protagonist required",
+          "upbeat endings",
+          "entry point to the series",
+          "action without character depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood Reaver - Aaron Dembski-Bowden": {
