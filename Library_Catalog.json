@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 1740,
-  "total_pending": 2860,
+  "total_catalogued": 1760,
+  "total_pending": 2840,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -107698,486 +107698,872 @@
       "title": "The Ice",
       "author": "Ryan Cahill",
       "series": "The Bound and the Broken",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3.5 (companion novella)",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set a year before the main series begins, Aeson Virandr ventures into the deadly frozen wasteland of Valacia on a desperate mission to find hope for a rebellion against an occupying empire — but there is a reason no soul has ever returned from Valacia alive. A companion novella best read after the main series novels.",
+      "tone": "action-packed, emotionally resonant, high-stakes",
+      "pacing": "Fast",
+      "themes": [
+        "hope vs sacrifice",
+        "loyalty",
+        "rebellion",
+        "dragon bonds"
+      ],
+      "setting": "The icy wastes of Valacia, a frozen wilderness in the world of Epheria; set ~400 years after The Fall and one year before Book 1",
+      "comparable_books": [
+        "Of Blood and Fire - Ryan Cahill",
+        "The Shadow of the Gods - John Gwynne",
+        "Rise of the Ranger - Philip C. Quaintrell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragons",
+          "found family",
+          "action-driven pacing",
+          "character backstory novellas",
+          "indie epic fantasy"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "short novella format",
+          "not a standalone entry point"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Exile - Ryan Cahill": {
       "title": "The Exile",
       "author": "Ryan Cahill",
       "series": "The Bound and the Broken",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2.5 (companion novella)",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dayne Ateres — a man whose family, home, and people were destroyed by the Lorian Empire — carves a bloody path of vengeance across Epheria in the twelve years before his appearance in the main novels. A prequel novella told in four parts, each covering a pivotal moment in Dayne's exile.",
+      "tone": "brutal, emotionally charged, revenge-driven",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance",
+        "loss",
+        "identity",
+        "exile"
+      ],
+      "setting": "The continent of Epheria, across multiple locations, spanning 12 years prior to Book 2",
+      "comparable_books": [
+        "Of Darkness and Light - Ryan Cahill",
+        "The Shadow of the Gods - John Gwynne",
+        "Empire of Dirt - Philip C. Quaintrell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "revenge narrative",
+          "morally complex protagonist",
+          "action-heavy",
+          "character-focused novella",
+          "indie epic fantasy"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "short novella format",
+          "very dark tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fall - Ryan Cahill": {
       "title": "The Fall",
       "author": "Ryan Cahill",
       "series": "The Bound and the Broken",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (prequel novella)",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set 400 years before the main series, The Fall plunges into the chaotic siege of the city of Ilnaen as dragons fill the sky, traitors fill the streets, and the ancient Order that has guarded the continent of Epheria for millennia finally crumbles. A short, action-packed prequel introducing the world's history.",
+      "tone": "propulsive, chaotic, world-building-rich",
+      "pacing": "Fast",
+      "themes": [
+        "the fall of institutions",
+        "betrayal",
+        "sacrifice",
+        "legacy"
+      ],
+      "setting": "The city of Ilnaen, Epheria, 400 years before the main series",
+      "comparable_books": [
+        "Of Blood and Fire - Ryan Cahill",
+        "The Shadow of the Gods - John Gwynne",
+        "Rise of the Ranger - Philip C. Quaintrell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragons",
+          "in media res action",
+          "world-building prequel",
+          "free entry point to series",
+          "indie epic fantasy"
+        ],
+        "negative": [
+          "very short (95 pages)",
+          "no resolution to wider conflict",
+          "thin characterisation at novella length"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Song of Legends Lost - M. H. Ayinde": {
       "title": "A Song of Legends Lost",
       "author": "M. H. Ayinde",
       "series": "Invoker Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the Nine Lands, only noble warriors called invokers can summon their ancestors to battle against a relentless enemy called the greybloods — but when a commoner accidentally invokes a powerful and dangerous spirit, she may hold the key to ending a centuries-long war. Told across five POV characters, this Africa-inspired science-fantasy debut blends ancestor magic with ancient lost technology.",
+      "tone": "propulsive, intricate, imaginative, politically layered",
+      "pacing": "Moderate",
+      "themes": [
+        "class and power",
+        "ancestral legacy",
+        "identity and heritage",
+        "rebellion",
+        "lost history"
+      ],
+      "setting": "The Nine Lands, a richly built Africa-inspired secondary world blending spirit magic with mysterious ancient technology",
+      "comparable_books": [
+        "The Rage of Dragons - Evan Winter",
+        "The Bone Shard Daughter - Andrea Stewart",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Africa-inspired worldbuilding",
+          "multi-POV",
+          "magic system depth",
+          "science-fantasy blend",
+          "class struggle themes",
+          "debut series"
+        ],
+        "negative": [
+          "large cast can be uneven",
+          "some POVs more gripping than others",
+          "answers slow to arrive"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Throne of Glass - Sarah J. Maas": {
       "title": "Throne of Glass",
       "author": "Sarah J. Maas",
       "series": "Throne of Glass",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Celaena Sardothien, a legendary assassin imprisoned in a brutal salt mine, is offered her freedom in exchange for competing as the king's champion in a deadly tournament — but as she fights for survival, a dark evil stirs within the palace. A YA-rooted fantasy that grows darker with each instalment.",
+      "tone": "fast-paced, witty, romantic, increasingly dark",
+      "pacing": "Fast",
+      "themes": [
+        "freedom vs servitude",
+        "identity",
+        "power",
+        "survival",
+        "female agency"
+      ],
+      "setting": "The kingdom of Adarlan, a secondary world empire with suppressed magic",
+      "comparable_books": [
+        "An Ember in the Ashes - Sabaa Tahir",
+        "Red Queen - Victoria Aveyard",
+        "A Court of Thorns and Roses - Sarah J. Maas"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female protagonist",
+          "romance threads",
+          "action-driven",
+          "series with epic scope",
+          "assassin protagonist"
+        ],
+        "negative": [
+          "YA tone in early books",
+          "romance-heavy",
+          "slow magic reveal",
+          "very long series commitment"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Elizabeth Evans's narration is widely praised and enhances the series' dramatic tone.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content (later books)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Crown of Midnight - Sarah J. Maas": {
       "title": "Crown of Midnight",
       "author": "Sarah J. Maas",
       "series": "Throne of Glass",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Now the king's champion, Celaena must carry out royal assassinations while secretly protecting those she's ordered to kill — but uncovering a forbidden truth about her own identity will shatter everything she thinks she knows. The series' tone darkens significantly here.",
+      "tone": "darker, emotionally devastating, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "identity and destiny",
+        "loyalty vs duty",
+        "secrets and truth",
+        "grief"
+      ],
+      "setting": "The kingdom of Adarlan; palaces, catacombs, and a world on the edge of magical resurgence",
+      "comparable_books": [
+        "An Ember in the Ashes - Sabaa Tahir",
+        "The Cruel Prince - Holly Black",
+        "A Court of Mist and Fury - Sarah J. Maas"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "escalating stakes",
+          "shocking reveals",
+          "morally complex protagonist",
+          "romance and action balance"
+        ],
+        "negative": [
+          "romance-heavy",
+          "YA conventions",
+          "cliffhanger ending"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Consistent, acclaimed narration by Elizabeth Evans across the series.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Heir of Fire - Sarah J. Maas": {
       "title": "Heir of Fire",
       "author": "Sarah J. Maas",
       "series": "Throne of Glass",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Celaena travels to a distant land to train with a warrior-witch and uncover the true extent of her magical heritage, while back in Adarlan a new threat emerges that will change the shape of the war forever. The book significantly expands the world and casts.",
+      "tone": "expansive, emotionally heavy, training-arc-driven",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "heritage and power",
+        "self-acceptance",
+        "grief and trauma",
+        "friendship"
+      ],
+      "setting": "Wendlyn and Adarlan — a Celtic-inspired land and the empire's capital; a world waking to suppressed magic",
+      "comparable_books": [
+        "Empire of Storms - Sarah J. Maas",
+        "An Ember in the Ashes - Sabaa Tahir",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "expanded world",
+          "found family",
+          "magic training arc",
+          "multiple POVs",
+          "emotional depth"
+        ],
+        "negative": [
+          "slower pace than prior books",
+          "large cast introduction",
+          "less romance focus"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Elizabeth Evans's narration continues to be highly regarded through this instalment.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Queen of Shadows - Sarah J. Maas": {
       "title": "Queen of Shadows",
       "author": "Sarah J. Maas",
       "series": "Throne of Glass",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aelin Galathynius returns to Rifthold to rescue her friends, dismantle the king's power, and begin assembling the allies she will need to reclaim her throne — even as the forces arrayed against her grow more terrifying. The series shifts fully into adult epic fantasy territory.",
+      "tone": "bold, action-packed, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "reclaiming power",
+        "alliance-building",
+        "identity",
+        "sacrifice"
+      ],
+      "setting": "Rifthold, capital of Adarlan, and surrounding territories; a world of intrigue and suppressed magic",
+      "comparable_books": [
+        "Empire of Storms - Sarah J. Maas",
+        "An Ember in the Ashes - Sabaa Tahir",
+        "A Court of Wings and Ruin - Sarah J. Maas"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political intrigue",
+          "ensemble cast",
+          "action-heavy",
+          "romance",
+          "empire-toppling narrative"
+        ],
+        "negative": [
+          "romance-heavy",
+          "requires full series investment",
+          "POV sprawl"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Elizabeth Evans's narration is a consistent series highlight.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Empire of Storms - Sarah J. Maas": {
       "title": "Empire of Storms",
       "author": "Sarah J. Maas",
       "series": "Throne of Glass",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aelin and her companions race across continents to forge alliances, unlock ancient magic, and prepare for a war against a god-like evil — even as forces of darkness close in on every front. The penultimate main volume is sprawling in scope and devastating in its ending.",
+      "tone": "sweeping, romantic, high-stakes, devastating",
+      "pacing": "Fast",
+      "themes": [
+        "destiny and sacrifice",
+        "love and loss",
+        "war and alliance",
+        "ancient evil"
+      ],
+      "setting": "Multiple kingdoms across the continent of Erilea, seas, and ancient ruins",
+      "comparable_books": [
+        "Kingdom of Ash - Sarah J. Maas",
+        "A Court of Wings and Ruin - Sarah J. Maas",
+        "An Ember in the Ashes - Sabaa Tahir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multiple romance threads",
+          "ensemble cast",
+          "epic scope",
+          "action and intrigue",
+          "shocking cliffhanger"
+        ],
+        "negative": [
+          "romance-heavy",
+          "very long",
+          "requires full series investment",
+          "explicit sexual content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Elizabeth Evans's acclaimed narration continues, particularly effective in dramatic moments.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Tower of Dawn - Sarah J. Maas": {
       "title": "Tower of Dawn",
       "author": "Sarah J. Maas",
       "series": "Throne of Glass",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Chaol Westfall travels to the Southern Continent to seek an army and healers for the war effort, embarking on a journey of physical and emotional recovery that reshapes him — and uncovers a threat lurking at the heart of a foreign empire. Intended to be read alongside Empire of Storms.",
+      "tone": "introspective, romantic, slower-paced political thriller",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "disability and recovery",
+        "honour and duty",
+        "political intrigue",
+        "healing and redemption"
+      ],
+      "setting": "The Southern Continent, particularly the desert empire of the khagan — a richly built secondary world",
+      "comparable_books": [
+        "Empire of Storms - Sarah J. Maas",
+        "An Ember in the Ashes - Sabaa Tahir",
+        "The Jasmine Throne - Tasha Suri"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven",
+          "disability representation",
+          "political intrigue",
+          "romance",
+          "world expansion"
+        ],
+        "negative": [
+          "slower pacing",
+          "removed from main cast for much of the book",
+          "requires prior series context"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Elizabeth Evans narrates the full series to consistent acclaim.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Kingdom of Ash - Sarah J. Maas": {
       "title": "Kingdom of Ash",
       "author": "Sarah J. Maas",
       "series": "Throne of Glass",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In this massive, multi-threaded conclusion, Aelin and her allies wage the final war against Erawan and Maeve — testing every bond, every sacrifice, and every hope forged across the series. At nearly 1,000 pages, it is the epic culmination of all prior storylines.",
+      "tone": "epic, emotionally exhausting, triumphant",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "sacrifice and destiny",
+        "love and war",
+        "freedom",
+        "the cost of heroism"
+      ],
+      "setting": "Multiple kingdoms across Erilea and beyond, from frozen north to scorched south, during a war for the world",
+      "comparable_books": [
+        "A Court of Wings and Ruin - Sarah J. Maas",
+        "Empire of Storms - Sarah J. Maas",
+        "An Ember in the Ashes - Sabaa Tahir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satisfying series conclusion",
+          "epic battles",
+          "emotional payoff for long-running arcs",
+          "romance resolution"
+        ],
+        "negative": [
+          "very long (~1000 pages)",
+          "requires full series investment",
+          "romance-heavy",
+          "can feel padded"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Elizabeth Evans's narration is considered one of the best in fantasy audio — essential for this emotional finale.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Assassin's Blade - Sarah J. Maas": {
       "title": "The Assassin's Blade",
       "author": "Sarah J. Maas",
       "series": "Throne of Glass",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel novellas (0.1–0.5)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of five prequel novellas following a young Celaena Sardothien on assassin missions across the world before the events of the main series — revealing her friendships, loves, and losses that haunt her throughout the saga. Best read after the first few main series novels.",
+      "tone": "action-packed, bittersweet, character-building",
+      "pacing": "Fast",
+      "themes": [
+        "friendship and betrayal",
+        "identity",
+        "loss",
+        "the price of loyalty"
+      ],
+      "setting": "Various locations across Erilea — ports, deserts, and assassins' guilds — years before the main series",
+      "comparable_books": [
+        "Throne of Glass - Sarah J. Maas",
+        "Crown of Midnight - Sarah J. Maas",
+        "An Ember in the Ashes - Sabaa Tahir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character backstory",
+          "action-driven novellas",
+          "emotional resonance",
+          "Celaena at her most free"
+        ],
+        "negative": [
+          "requires series context for full impact",
+          "anthology format",
+          "emotionally devastating if you know what follows"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Elizabeth Evans narrates the collection with the same acclaimed quality as the main series.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fury of the Gods - John Gwynne": {
       "title": "The Fury of the Gods",
       "author": "John Gwynne",
       "series": "Bloodsworn Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the dragon goddess Lik-Rifa marshals her forces for a final assault on Snakavik, Varg, Elvar, and Orka each converge on an earth-shattering conclusion — a titanic battle that will determine who, if anyone, inherits this Norse-inspired world. The concluding volume of the Bloodsworn Saga.",
+      "tone": "gritty, heroic, emotionally resonant, brutal",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance and redemption",
+        "found family",
+        "the cost of war",
+        "gods and mortality"
+      ],
+      "setting": "The Norse-inspired world of Vigrið — fjords, frozen north, mead halls, and mythological creatures; concluding at the fortress of Snakavik",
+      "comparable_books": [
+        "The Shadow of the Gods - John Gwynne",
+        "The Hunger of the Gods - John Gwynne",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse mythology",
+          "found family",
+          "brutal action",
+          "heroic fantasy",
+          "satisfying series conclusion"
+        ],
+        "negative": [
+          "requires reading Books 1–2 first",
+          "some find the pacing formulaic by Book 3",
+          "grimdark violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Praised for Icelandic pronunciation in audio; highly recommended to listen alongside or after reading.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Children of Memory - Adrian Tchaikovsky": {
       "title": "Children of Memory",
       "author": "Adrian Tchaikovsky",
       "series": "Children of Time",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thousands of years after humanity's desperate seeding of the stars, a terraforming mission to a new world produces unexpected results — as crows, and other uplifted species, struggle toward sentience and encounter representatives of the spider and octopus civilisations. A more meditative, experimental entry in the series.",
+      "tone": "cerebral, philosophical, quietly unsettling",
+      "pacing": "Slow",
+      "themes": [
+        "consciousness and selfhood",
+        "evolution and uplift",
+        "memory and identity",
+        "what makes a mind"
+      ],
+      "setting": "A partially terraformed colony world in the far future; multiple alien and human perspectives across vast timescales",
+      "comparable_books": [
+        "Children of Time - Adrian Tchaikovsky",
+        "Children of Ruin - Adrian Tchaikovsky",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF ideas",
+          "non-human POVs",
+          "philosophical depth",
+          "evolutionary biology themes"
+        ],
+        "negative": [
+          "slower than prior entries",
+          "more experimental structure",
+          "less action",
+          "requires prior series context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Children of Ruin - Adrian Tchaikovsky": {
       "title": "Children of Ruin",
       "author": "Adrian Tchaikovsky",
       "series": "Children of Time",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A long-ago terraforming mission accidentally uplifted octopuses into intelligence on a water world — and now their civilisation encounters a far stranger, more alien intelligence lurking in the system, one with the power to rewrite minds. A companion to Children of Time exploring different forms of non-human consciousness.",
+      "tone": "tense, alien, intellectually dazzling",
+      "pacing": "Moderate",
+      "themes": [
+        "non-human consciousness",
+        "first contact",
+        "symbiosis and parasitism",
+        "communication across the incomprehensible"
+      ],
+      "setting": "A distant water world and a spider-civilisation ark ship; far future colonisation era",
+      "comparable_books": [
+        "Children of Time - Adrian Tchaikovsky",
+        "Blindsight - Peter Watts",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alien perspectives",
+          "hard SF",
+          "non-human civilisations",
+          "first contact",
+          "ideas-driven"
+        ],
+        "negative": [
+          "dense SF concepts",
+          "less approachable than Book 1",
+          "octopus POVs disorient some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Children of Time - Adrian Tchaikovsky": {
       "title": "Children of Time",
       "author": "Adrian Tchaikovsky",
       "series": "Children of Time",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The last desperate survivors of humanity aboard a generation ship seek a new home — and find a planet where spiders have been uplifted to full civilisation by an ancient nanovirus. Two civilisations on a collision course across millennia, told in alternating threads. Winner of the Arthur C. Clarke Award.",
+      "tone": "epic, intellectually thrilling, quietly awe-inspiring",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "evolution and civilisation",
+        "first contact",
+        "what it means to be human",
+        "the nature of consciousness",
+        "survival"
+      ],
+      "setting": "A terraformed world of giant spiders and their civilisation, and a decrepit generation ship carrying the last of humanity; spanning thousands of years",
+      "comparable_books": [
+        "Children of Ruin - Adrian Tchaikovsky",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Blindsight - Peter Watts"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "non-human civilisation POVs",
+          "hard SF",
+          "evolutionary biology",
+          "Arthur C. Clarke Award winner",
+          "grand scope"
+        ],
+        "negative": [
+          "spider POVs disorient some readers",
+          "slow to start",
+          "little conventional action",
+          "dense SF concepts"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Bear Head - Adrian Tchaikovsky": {
       "title": "Bear Head",
       "author": "Adrian Tchaikovsky",
       "series": "Dogs of War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a colonised Mars ruled by a rising authoritarian demagogue, an uplifted bear named Honey and a human man with a covert AI implant must navigate a society on the brink of fascism. A sharp political thriller that expands the world of Dogs of War into a dark near-future.",
+      "tone": "darkly satirical, tense, politically sharp",
+      "pacing": "Moderate",
+      "themes": [
+        "authoritarianism and resistance",
+        "AI consciousness",
+        "corporate control",
+        "identity"
+      ],
+      "setting": "Near-future Mars colony; an authoritarian state echoing contemporary political anxieties",
+      "comparable_books": [
+        "Dogs of War - Adrian Tchaikovsky",
+        "Blindsight - Peter Watts",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political SF",
+          "uplifted animal POVs",
+          "AI themes",
+          "near-future dystopia",
+          "sharp satire"
+        ],
+        "negative": [
+          "requires Dogs of War for context",
+          "political allegory can feel heavy-handed",
+          "more cerebral than action-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dogs of War - Adrian Tchaikovsky": {
       "title": "Dogs of War",
       "author": "Adrian Tchaikovsky",
       "series": "Dogs of War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rex is a bioform — a genetically engineered dog-soldier built to obey — who begins to question the orders of his master as he and his squad of uplifted animals are deployed in a brutal near-future war. A powerful meditation on free will, moral responsibility, and what it means to be a person.",
+      "tone": "emotionally raw, propulsive, morally searching",
+      "pacing": "Fast",
+      "themes": [
+        "free will and obedience",
+        "personhood and rights",
+        "war and atrocity",
+        "corporate ethics"
+      ],
+      "setting": "Near-future Earth during a corporate-backed military conflict; told partly in a war-crime tribunal",
+      "comparable_books": [
+        "Bear Head - Adrian Tchaikovsky",
+        "Old Man's War - John Scalzi",
+        "Blindsight - Peter Watts"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally complex",
+          "uplifted animal protagonist",
+          "fast-paced",
+          "SF with heart",
+          "thought-provoking"
+        ],
+        "negative": [
+          "graphic battlefield violence",
+          "animal suffering",
+          "bleak moments"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Cage of Souls - Adrian Tchaikovsky": {
@@ -108185,53 +108571,97 @@
       "author": "Adrian Tchaikovsky",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Stefan Advani — rebel, outlaw, and prisoner — narrates his memoir from a jungle swamp prison in the dying days of Earth's last city, Shadrapar, as humanity clings to existence beneath a bloated, dying sun, surrounded by evolved monsters and the ruins of lost civilisations. Shortlisted for the Arthur C. Clarke Award 2020.",
+      "tone": "bleak, sardonic, lyrical, densely imagined",
+      "pacing": "Slow",
+      "themes": [
+        "human resilience and decay",
+        "ecology and evolution",
+        "societal collapse",
+        "memory and testimony",
+        "the end of humanity"
+      ],
+      "setting": "Far-future dying Earth — the last city of Shadrapar, a surrounding jungle prison, deserts, and caverns; the sun is failing",
+      "comparable_books": [
+        "Children of Time - Adrian Tchaikovsky",
+        "The Book of the New Sun - Gene Wolfe",
+        "Viriconium - M. John Harrison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dying earth subgenre",
+          "literary SF",
+          "unreliable narrator",
+          "evolutionary biology",
+          "world-building density"
+        ],
+        "negative": [
+          "no conventional plot arc",
+          "slow and meditative",
+          "protagonist can be unlikeable",
+          "no redemptive payoff for some readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The memoir-style prose and dense, layered world-building rewards close reading rather than passive listening.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Rise of the Ranger - Philip C. Quaintrell": {
       "title": "Rise of the Ranger",
       "author": "Philip C. Quaintrell",
       "series": "The Echoes Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the land of Illian, humanity has ruled for a thousand years over the ruins the elves left behind — but the elves believe their world was stolen from them, and as the fractured six kingdoms of man squabble amongst themselves, an ancient threat stirs in the east. At the heart of it all is Asher: a ranger of unknown origin with a century of brutal history he cannot fully remember.",
+      "tone": "classic heroic fantasy, action-driven, Tolkienesque",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "destiny and prophecy",
+        "humanity vs elves",
+        "hidden identity",
+        "war and unity"
+      ],
+      "setting": "Illian, a secondary world built on elven ruins, spanning six human kingdoms and ancient wilderness",
+      "comparable_books": [
+        "The Shadow of the Gods - John Gwynne",
+        "The Faithful and the Fallen - John Gwynne",
+        "Of Blood and Fire - Ryan Cahill"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "Tolkienesque world-building",
+          "morally complex ranger protagonist",
+          "self-published success story",
+          "long series with escalating quality"
+        ],
+        "negative": [
+          "slow first act",
+          "traditional tropes without major subversion",
+          "large nine-book commitment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tales of the Sun Eater, Volume 3 - Christopher Ruocchio": {
