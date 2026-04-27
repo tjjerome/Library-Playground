@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-27",
   "total_in_library": 4600,
-  "total_catalogued": 2308,
-  "total_pending": 2292,
+  "total_catalogued": 2328,
+  "total_pending": 2272,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -135241,162 +135241,298 @@
       "title": "Hard Revolution",
       "author": "George Pelecanos",
       "series": "Derek Strange and Terry Quinn Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Washington D.C. in 1959 and 1968, this prequel follows a young Derek Strange as a rookie cop navigating racial tension, a family in crisis, and the assassination of Martin Luther King Jr., while hunting his brother's killer through a city erupting in riots.",
+      "tone": "gritty, socially urgent, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "race and racism",
+        "civil rights",
+        "brotherhood",
+        "police and community",
+        "urban decay",
+        "moral redemption"
+      ],
+      "setting": "Washington D.C., 1959 and 1968 — the riots following the King assassination",
+      "comparable_books": [
+        "The Wire (TV source material) - George Pelecanos",
+        "Clockers - Richard Price",
+        "The Big Nowhere - James Ellroy",
+        "Devil in a Blue Dress - Walter Mosley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical crime fiction",
+          "social realism",
+          "vivid sense of place",
+          "morally complex characters",
+          "literary crime writing",
+          "working-class milieu",
+          "music and cultural detail"
+        ],
+        "negative": [
+          "action-heavy plots",
+          "cosy mysteries",
+          "fast pacing preferred"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Narrow Road Between Desires - Patrick Rothfuss": {
       "title": "The Narrow Road Between Desires",
       "author": "Patrick Rothfuss",
       "series": "The Kingkiller Chronicle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (novella)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A richly illustrated, expanded reimagining of 'The Lightning Tree,' following Bast — the charming fae companion of Kvothe — over the course of a single midsummer day as he trades favours with village children, is thrown off balance by an unexpected gift, and must reckon with a debt he doesn't know how to repay.",
+      "tone": "lyrical, whimsical, intimate",
+      "pacing": "Slow",
+      "themes": [
+        "fae magic and bargaining",
+        "desire and obligation",
+        "identity",
+        "compassion",
+        "the nature of gifts"
+      ],
+      "setting": "The village of Newarre, in the world of Temerant — a quiet rural setting in the Kingkiller Chronicle universe",
+      "comparable_books": [
+        "The Slow Regard of Silent Things - Patrick Rothfuss",
+        "The Ocean at the End of the Lane - Neil Gaiman",
+        "Stardust - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "illustrated editions",
+          "fae mythology",
+          "character studies",
+          "Kingkiller Chronicle fans"
+        ],
+        "negative": [
+          "plot-driven readers",
+          "readers waiting for The Doors of Stone",
+          "non-series readers unfamiliar with the world"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Features Nate Taylor illustrations that are integral to the experience; loses significant value without them.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Soul Circus - George Pelecanos": {
       "title": "Soul Circus",
       "author": "George Pelecanos",
       "series": "Derek Strange and Terry Quinn Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Washington D.C. private investigators Derek Strange and Terry Quinn are hired to protect a key witness in a drug-murder trial, pulling them deep into the city's brutal crack cocaine trade and gang violence.",
+      "tone": "gritty, propulsive, socially conscious",
+      "pacing": "Fast",
+      "themes": [
+        "drug trade",
+        "urban violence",
+        "loyalty",
+        "justice vs. the law",
+        "community"
+      ],
+      "setting": "Contemporary Washington D.C. — the inner-city drug and gang underworld",
+      "comparable_books": [
+        "Clockers - Richard Price",
+        "The Cocaine Chronicles - Gary Phillips",
+        "Hell to Pay - George Pelecanos"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban crime fiction",
+          "propulsive plotting",
+          "vivid sense of place",
+          "morally complex heroes",
+          "The Wire fans"
+        ],
+        "negative": [
+          "cosy mysteries",
+          "slow-burn literary fiction",
+          "rural settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Fire Endless - Rebecca Ross": {
       "title": "A Fire Endless",
       "author": "Rebecca Ross",
       "series": "Elements of Cadence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy Romance",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the stunning conclusion to the Elements of Cadence duology, the Isle of Cadence is thrown into crisis as Bane, the spirit of the North Wind, seeks dominion over human and spirit alike, forcing bard Jack, warrior Adaira, healer Sidra, and clan chief Torin to make devastating sacrifices to restore balance.",
+      "tone": "lyrical, atmospheric, romantically urgent",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "sacrifice",
+        "elemental magic",
+        "healing",
+        "love and loyalty",
+        "music",
+        "Scottish/Celtic folklore",
+        "the balance between worlds"
+      ],
+      "setting": "The Isle of Cadence — a lush, Scottish-folklore-inspired island split between two warring clans and populated by elemental spirits",
+      "comparable_books": [
+        "A River Enchanted - Rebecca Ross",
+        "The Witch's Heart - Genevieve Gornichec",
+        "For the Wolf - Hannah Whitten",
+        "One Dark Window - Rachel Gillig"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Celtic/Scottish-inspired fantasy",
+          "romantasy",
+          "lyrical prose",
+          "elemental magic",
+          "found family",
+          "folklore",
+          "music as magic"
+        ],
+        "negative": [
+          "grimdark",
+          "plot-heavy action fantasy",
+          "readers who dislike romance-forward narratives"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lyrical, musical prose and atmospheric world are well served by a strong narrator.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "King Suckerman - George Pelecanos": {
       "title": "King Suckerman",
       "author": "George Pelecanos",
       "series": "D.C. Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Washington D.C. in the summer of 1976, two friends — a record store owner and a low-level drug dealer — cross paths with a pair of savage criminals after a drug deal goes wrong, setting off a violent chain of events against a backdrop of blaxploitation culture, music, and the city's mean streets.",
+      "tone": "gritty, darkly nostalgic, kinetic",
+      "pacing": "Fast",
+      "themes": [
+        "friendship",
+        "violence and consequence",
+        "1970s urban America",
+        "race",
+        "working-class life",
+        "pop culture"
+      ],
+      "setting": "Washington D.C., summer of 1976 — record stores, drug corners, and the streets",
+      "comparable_books": [
+        "The Sweet Forever - George Pelecanos",
+        "Devil in a Blue Dress - Walter Mosley",
+        "Clockers - Richard Price"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "1970s period crime fiction",
+          "propulsive plotting",
+          "vivid sense of place",
+          "music and pop culture detail",
+          "hard-boiled noir"
+        ],
+        "negative": [
+          "cosy mysteries",
+          "slow literary pacing",
+          "readers who dislike violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Light of the Jedi - Charles Soule": {
       "title": "Light of the Jedi",
       "author": "Charles Soule",
       "series": "The High Republic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (Phase 1, Adult)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set 200 years before the events of The Phantom Menace, a catastrophic hyperspace disaster threatens the galaxy, and the Jedi Order — at the height of its power — must race to contain the chaos while a sinister threat known as the Nihil lurks in the shadows.",
+      "tone": "optimistic, epic, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "heroism and sacrifice",
+        "unity",
+        "the Force",
+        "corruption vs. idealism",
+        "disaster and resilience"
+      ],
+      "setting": "The Star Wars galaxy, approximately 232 BBY — a golden age of the Republic, the Outer Rim, and aboard the Starlight Beacon space station",
+      "comparable_books": [
+        "The Rising Storm - Cavan Scott",
+        "Master and Apprentice - Claudia Gray",
+        "Thrawn - Timothy Zahn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "action-heavy ensemble casts",
+          "optimistic tone",
+          "large-scale galactic stakes",
+          "Jedi at peak power"
+        ],
+        "negative": [
+          "Star Wars newcomers without context",
+          "readers seeking character-focused slow burns",
+          "non-franchise readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full-cast Star Wars audiobooks with sound design and music; a highly immersive listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Ferryman - Justin Cronin": {
@@ -135404,53 +135540,100 @@
       "author": "Justin Cronin",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the isolated utopian archipelago of Prospera, a ferryman named Proctor Bennett helps ageing citizens retire to be reborn — until ferrying his own father exposes cracks in his perfect world and sets him on a dangerous quest to uncover the terrifying truth behind the society he serves.",
+      "tone": "literary, mysterious, increasingly propulsive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and memory",
+        "utopia and dystopia",
+        "class and inequality",
+        "parenthood and loss",
+        "free will",
+        "the nature of reality"
+      ],
+      "setting": "The archipelago of Prospera — a hidden, near-future utopian island society isolated from the outside world",
+      "comparable_books": [
+        "The Passage - Justin Cronin",
+        "Dark Matter - Blake Crouch",
+        "Never Let Me Go - Kazuo Ishiguro",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary sci-fi",
+          "twisty dystopian mysteries",
+          "character-driven world-building",
+          "emotional depth",
+          "slow burn reveals"
+        ],
+        "negative": [
+          "hard science fiction",
+          "action-first pacing",
+          "readers who dislike unreliable reality narratives"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Atmospheric prose and complex plot work very well in audio; the gradual unravelling of the mystery is highly engaging.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sweet Forever - George Pelecanos": {
       "title": "The Sweet Forever",
       "author": "George Pelecanos",
       "series": "D.C. Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Washington D.C. in 1986 during the crack cocaine epidemic, a record store employee and a police detective become entangled in a murder and missing drug money after witnessing a fatal car accident outside a basketball game.",
+      "tone": "gritty, melancholic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "the crack epidemic",
+        "urban decay",
+        "working-class struggle",
+        "race and policing",
+        "loyalty",
+        "1980s D.C. culture"
+      ],
+      "setting": "Washington D.C., 1986 — the crack era, record stores, basketball courts, and street corners",
+      "comparable_books": [
+        "King Suckerman - George Pelecanos",
+        "Clockers - Richard Price",
+        "Homicide: A Year on the Killing Streets - David Simon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "period crime fiction",
+          "urban noir",
+          "social realism",
+          "music and pop culture texture",
+          "the crack era"
+        ],
+        "negative": [
+          "cosy mysteries",
+          "non-violent thrillers",
+          "readers disliking period settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Clockers - Richard Price": {
@@ -135458,107 +135641,202 @@
       "author": "Richard Price",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a New Jersey housing project, Strike, a young low-level drug dealer known as a 'clocker', finds himself caught between his violent boss and a homicide detective investigating a murder that Strike's brother has confessed to — forcing a moral reckoning on all sides.",
+      "tone": "gritty, compassionate, socially incisive",
+      "pacing": "Moderate",
+      "themes": [
+        "the drug trade",
+        "poverty and systemic inequality",
+        "race and policing",
+        "brotherhood",
+        "moral complexity",
+        "urban America"
+      ],
+      "setting": "A fictional New Jersey housing project, early 1990s",
+      "comparable_books": [
+        "The Wire (TV) - David Simon",
+        "King Suckerman - George Pelecanos",
+        "The Bonfire of the Vanities - Tom Wolfe",
+        "Wire in the Blood - Val McDermid"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "social realist crime fiction",
+          "morally grey characters on all sides",
+          "immersive world-building",
+          "The Wire fans",
+          "literary crime writing"
+        ],
+        "negative": [
+          "plot-twist driven thrillers",
+          "cosy mysteries",
+          "fast-paced action crime"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rotten Gods - Jeremy Bruce Adams": {
       "title": "Rotten Gods",
       "author": "Jeremy Bruce Adams",
       "series": "The Dream Stalker Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the caste-stratified city of Sonanarth on the continent of Asodhra, a privileged young priest named Pyoshara stumbles upon a secret order of assassin-priests waging war against ancient, soul-devouring entities called rotten gods, and must forsake his comfortable life to save his friend Zafira from one that has claimed her soul.",
+      "tone": "dark, world-building-heavy, action-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "religion and corruption",
+        "duty and sacrifice",
+        "privilege and awakening",
+        "good vs. ancient evil",
+        "self-discovery",
+        "caste and society"
+      ],
+      "setting": "The planet Kiru, continent of Asodhra — a theocratic, caste-based fantasy world with elemental magic",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Blade Itself - Joe Abercrombie",
+        "The Killing Moon - N.K. Jemisin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "assassin-priest protagonists",
+          "dark fantasy",
+          "religion-based magic systems",
+          "unique world-building",
+          "indie fantasy readers"
+        ],
+        "negative": [
+          "readers who require polished prose",
+          "casual fantasy readers",
+          "those unfamiliar with dense world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Design of Darkness - R. D. Pires": {
       "title": "Design of Darkness",
       "author": "R. D. Pires",
       "series": "The Tides That Reign",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the tyrannical usurper King Fogosombre tightens his grip on the realm, twin siblings Mariana and Arsenio are forced to flee across the Great Ocean, becoming entangled in the courts and conflicts of foreign empires while the king pursues a dark pact with shadow magic to cement his reign forever.",
+      "tone": "epic, character-driven, politically layered",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "tyranny and resistance",
+        "forbidden love",
+        "identity and belonging",
+        "queer identity",
+        "political intrigue",
+        "sacrifice",
+        "Southeast Asian-inspired mythology"
+      ],
+      "setting": "A multi-continental secondary world drawing on Southeast Asian mythology — from the jewelled city of Sonanarth to foreign empires across the ocean",
+      "comparable_books": [
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "A Deadly Education - Naomi Novik",
+        "The Traitor Baru Cormorant - Seth Dickinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "queer protagonists",
+          "political intrigue",
+          "non-Western-inspired world-building",
+          "indie fantasy readers",
+          "slow-burn character arcs"
+        ],
+        "negative": [
+          "readers seeking fast-paced action",
+          "traditional Western fantasy aesthetics",
+          "readers who dislike ensemble casts"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Sparrows Sing of Dying - R. D. Pires": {
       "title": "Sparrows Sing of Dying",
       "author": "R. D. Pires",
       "series": "The Tides That Reign",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With war looming after the attack on Kailon, Queen Yiscel calls on her allies while Arsenio races southward to find the legendary assassin known as the Jade Dagger — the only hope of stopping Fogosombre before blood is spilled across multiple continents.",
+      "tone": "epic, emotionally intense, action-forward",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its consequences",
+        "alliance and sacrifice",
+        "identity and belonging",
+        "queer love",
+        "political complexity",
+        "survival"
+      ],
+      "setting": "A multi-continental secondary world — island kingdoms, naval warfare, and foreign empires rooted in Southeast Asian mythology",
+      "comparable_books": [
+        "Design of Darkness - R. D. Pires",
+        "The Priory of the Orange Tree - Samantha Shannon",
+        "The Traitor Baru Cormorant - Seth Dickinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "queer protagonists",
+          "naval and warfare settings",
+          "political intrigue",
+          "indie fantasy readers"
+        ],
+        "negative": [
+          "standalone readers",
+          "readers new to the series",
+          "those unfamiliar with book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Martian - Andy Weir": {
@@ -135566,53 +135844,99 @@
       "author": "Andy Weir",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a sudden emergency forces his crew to evacuate Mars and leave him behind for dead, astronaut Mark Watney must use his ingenuity, botany skills, and irreverent humour to survive alone on the Red Planet until a daring rescue can be mounted.",
+      "tone": "darkly comic, propulsive, optimistic",
+      "pacing": "Fast",
+      "themes": [
+        "survival and ingenuity",
+        "human resilience",
+        "science and problem-solving",
+        "isolation",
+        "teamwork and cooperation"
+      ],
+      "setting": "Mars and Earth, near-future — NASA habitats and the barren Martian surface",
+      "comparable_books": [
+        "Project Hail Mary - Andy Weir",
+        "Seveneves - Neal Stephenson",
+        "The Martian (film tie-in)",
+        "Packing for Mars - Mary Roach"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard sci-fi",
+          "survival stories",
+          "humorous narration",
+          "problem-solving protagonists",
+          "optimistic endings",
+          "science enthusiasm"
+        ],
+        "negative": [
+          "readers who dislike technical detail",
+          "character-introspection heavy readers",
+          "grimdark fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "First-person log format is highly engaging in audio; Wil Wheaton's narration of the original audiobook is widely praised.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The City of Mirrors - Justin Cronin": {
       "title": "The City of Mirrors",
       "author": "Justin Cronin",
       "series": "The Passage",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the apocalyptic conclusion to The Passage trilogy, Amy and her companions must face Zero, the original and most powerful viral, as the last remnants of humanity make their final stand in a world overrun by vampire-like monsters.",
+      "tone": "epic, emotional, deeply literary",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival and hope",
+        "sacrifice",
+        "love and loss",
+        "memory and history",
+        "humanity's resilience",
+        "redemption"
+      ],
+      "setting": "Post-apocalyptic North America, far future — ruined cities and besieged human settlements",
+      "comparable_books": [
+        "The Passage - Justin Cronin",
+        "The Twelve - Justin Cronin",
+        "Station Eleven - Emily St. John Mandel",
+        "The Stand - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic post-apocalyptic fiction",
+          "literary horror",
+          "long-form series finales",
+          "emotional depth",
+          "ensemble casts"
+        ],
+        "negative": [
+          "horror-averse readers",
+          "those wanting standalone reads",
+          "fast-paced action-only readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Great Train Robbery - Michael Crichton": {
@@ -135620,53 +135944,95 @@
       "author": "Michael Crichton",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Inspired by the 1855 Folkestone-to-London gold robbery, a charming and brilliant Victorian criminal masterminds an audacious heist — stealing a gold shipment from a moving train — navigating a labyrinthine series of obstacles, disguises, and double-crosses.",
+      "tone": "witty, propulsive, playfully Victorian",
+      "pacing": "Fast",
+      "themes": [
+        "crime and ingenuity",
+        "Victorian society and class",
+        "deception",
+        "adventure",
+        "historical verisimilitude"
+      ],
+      "setting": "Victorian England, 1855 — London underworld, railways, and country estates",
+      "comparable_books": [
+        "Sherlock Holmes stories - Arthur Conan Doyle",
+        "The Italian Secretary - Caleb Carr",
+        "The Alienist - Caleb Carr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical heist fiction",
+          "clever plotting",
+          "Victorian atmosphere",
+          "entertaining page-turners",
+          "Crichton fans"
+        ],
+        "negative": [
+          "readers preferring character-driven literary fiction",
+          "grimdark",
+          "science fiction fans expecting Crichton's usual genre"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The clever, wry Victorian narrative voice is exceptionally well suited to audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Return of the Crimson Guard - Ian C. Esslemont": {
       "title": "Return of the Crimson Guard",
       "author": "Ian C. Esslemont",
       "series": "Novels of the Malazan Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Empress Laseen's grip on the Malazan Empire weakens amid civil unrest and rebellion, the legendary mercenary company known as the Crimson Guard returns to fulfil their ancient vow — threatening to tear the Empire apart from within and without.",
+      "tone": "grimdark, vast in scope, dense",
+      "pacing": "Moderate",
+      "themes": [
+        "empire and rebellion",
+        "loyalty and vows",
+        "power and its corruption",
+        "war and its cost",
+        "arcane scheming"
+      ],
+      "setting": "The Malazan world — primarily the Empire's heartland of Quon Tali, set during the events following The Bonehunters",
+      "comparable_books": [
+        "Night of Knives - Ian C. Esslemont",
+        "Deadhouse Gates - Steven Erikson",
+        "The Bonehunters - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Malazan series devotees",
+          "grimdark epic fantasy",
+          "enormous ensemble casts",
+          "military fantasy",
+          "complex magic systems"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers new to the Malazan world",
+          "those preferring accessible entry points"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Extremely dense world with a vast cast of characters; the complexity is difficult to track without the ability to re-read passages.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dark Matter - Blake Crouch": {
@@ -135674,26 +136040,48 @@
       "author": "Blake Crouch",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Chicago physicist is abducted, drugged, and wakes up in an alternate version of his life, where he is celebrated for a revolutionary scientific achievement he never made — and must fight his way through a labyrinth of parallel realities to return to his wife and son.",
+      "tone": "propulsive, mind-bending, emotionally urgent",
+      "pacing": "Fast",
+      "themes": [
+        "quantum multiverse",
+        "identity",
+        "love and choice",
+        "the road not taken",
+        "free will",
+        "sacrifice"
+      ],
+      "setting": "Chicago and multiple parallel versions of Chicago — near-future with contemporary technology",
+      "comparable_books": [
+        "Recursion - Blake Crouch",
+        "The Peripheral - William Gibson",
+        "The One - John Marrs",
+        "The Anomaly - Hervé Le Tellier"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high-concept sci-fi thrillers",
+          "fast pacing",
+          "multiverse/parallel worlds",
+          "emotional stakes",
+          "page-turner quality"
+        ],
+        "negative": [
+          "hard science fiction purists",
+          "slow literary pace preferred",
+          "readers who dislike high-concept premises"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The propulsive, first-person thriller narrative is ideally suited to audio; the momentum carries listeners through effortlessly.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Prodigal Spy - Joseph Kanon": {
@@ -135701,26 +136089,48 @@
       "author": "Joseph Kanon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a mysterious woman tells Nick Kotlar that his father — branded a Communist spy and defector during the Red Scare of 1950 — is alive in Czechoslovakia and wants to come home, Nick follows her into Soviet-occupied Prague for a reunion that forces him to untangle a lethal conspiracy buried in his own past.",
+      "tone": "atmospheric, melancholic, slow-burning",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Cold War paranoia",
+        "family and betrayal",
+        "McCarthyism",
+        "father-son relationships",
+        "loyalty and identity",
+        "historical culpability"
+      ],
+      "setting": "Washington D.C. (1950), London, and Soviet-occupied Prague (1969) — at the tail end of the Prague Spring",
+      "comparable_books": [
+        "The Good German - Joseph Kanon",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Istanbul Passage - Joseph Kanon",
+        "The Defector - Daniel Silva"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War espionage",
+          "historical fiction",
+          "literary spy novels",
+          "atmospheric European settings",
+          "le Carré fans"
+        ],
+        "negative": [
+          "action-heavy thrillers",
+          "readers seeking fast pacing",
+          "those unfamiliar with the 1950s-60s political context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Poet's Game - Paul Vidich": {
@@ -135728,53 +136138,95 @@
       "author": "Paul Vidich",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alex Matthews, a former CIA Moscow station chief turned venture capitalist, is pulled back into the game to exfiltrate a Russian asset code-named Byron, only to find the operation unravelling as the FSB closes in and the CIA suspects a mole is leaking secrets from within.",
+      "tone": "cerebral, restrained, le Carré-esque",
+      "pacing": "Moderate",
+      "themes": [
+        "betrayal and loyalty",
+        "double-dealing",
+        "US-Russia geopolitics",
+        "moral cost of espionage",
+        "guilt and redemption",
+        "marriage under pressure"
+      ],
+      "setting": "Moscow and post-Soviet Russia, contemporary — the world of venture capital and Cold War-era espionage tradecraft",
+      "comparable_books": [
+        "The Coldest Warrior - Paul Vidich",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Good Assassin - Paul Vidich",
+        "Moscow Rules - Daniel Silva"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "le Carré admirers",
+          "Moscow/Russia settings",
+          "morally complex protagonists",
+          "understated prose style"
+        ],
+        "negative": [
+          "action-heavy thrillers",
+          "readers preferring pulpy pacing",
+          "those unfamiliar with CIA tradecraft fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Seven Dials Mystery - Agatha Christie": {
       "title": "The Seven Dials Mystery",
       "author": "Agatha Christie",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Superintendent Battle",
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "After a young man is found dead at a country house party following an elaborate prank involving eight alarm clocks, plucky aristocrat Bundle Brent stumbles into a dangerous web of secret societies, spies, and murder that even Superintendent Battle can't easily untangle.",
+      "tone": "light, whimsical, puzzle-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "secret societies",
+        "country house mysteries",
+        "amateur detection",
+        "class and manners",
+        "deception and disguise"
+      ],
+      "setting": "English country houses and London, 1920s",
+      "comparable_books": [
+        "The Secret Adversary - Agatha Christie",
+        "The Man in the Brown Suit - Agatha Christie",
+        "Whose Body? - Dorothy L. Sayers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age mysteries",
+          "country house settings",
+          "amateur detective heroines",
+          "light-hearted puzzles",
+          "Christie fans"
+        ],
+        "negative": [
+          "readers wanting dark crime fiction",
+          "psychological thrillers",
+          "character-driven literary fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Christie's brisk, dialogue-rich prose is ideally suited to audio performance; a classic listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Oligarch's Daughter - Joseph Finder": {
