@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3773,
-  "total_pending": 827,
+  "total_catalogued": 3793,
+  "total_pending": 807,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -206738,432 +206738,808 @@
       "title": "Fatemarked",
       "author": "David Estes",
       "series": "The Fatemarked Epic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a world embroiled in a century-long war across four kingdoms, a few individuals are born with magical birthmarks that grant them godlike powers. When kings begin dying, Roan Loren and other fatemarked must step out of hiding and fulfil an ancient prophecy that promises peace—or doom.",
+      "tone": "action-driven, multi-POV, prophecy-heavy epic",
+      "pacing": "Fast",
+      "themes": [
+        "prophecy and destiny",
+        "political intrigue",
+        "war and peace",
+        "identity and power",
+        "religious intolerance"
+      ],
+      "setting": "Secondary world medieval fantasy; the Four Kingdoms spanning extreme climates, from frozen north to tropical south",
+      "comparable_books": [
+        "Truthmarked - David Estes",
+        "The Way of Kings - Brandon Sanderson",
+        "Throne of Glass - Sarah J. Maas",
+        "A Game of Thrones - George R.R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "prophecy and chosen-one arc",
+          "fast-moving plot",
+          "magic marked at birth",
+          "gender-inclusive cast",
+          "coming-of-age elements"
+        ],
+        "negative": [
+          "grimdark fans seeking heavy darkness",
+          "readers wanting literary prose",
+          "those avoiding YA-adjacent tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Magpie Lord - K. J. Charles": {
       "title": "The Magpie Lord",
       "author": "K. J. Charles",
       "series": "A Charm of Magpies",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Victorian England, dissolute nobleman Lucien Vaudrey returns from China to find himself under a deadly curse; to survive, he must rely on Stephen Day, a reluctant and principled magician whose attraction to Vaudrey complicates an already dangerous situation.",
+      "tone": "witty, romantic, darkly atmospheric",
+      "pacing": "Fast",
+      "themes": [
+        "class and power",
+        "trust and vulnerability",
+        "magic and mortality",
+        "forbidden attraction",
+        "redemption"
+      ],
+      "setting": "Victorian England; London and the English countryside, late 19th century",
+      "comparable_books": [
+        "A Case of Possession - K. J. Charles",
+        "Think of England - K. J. Charles",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "A Gentleman's Guide to Vice and Virtue - Mackenzi Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "M/M romance",
+          "Victorian setting",
+          "witty banter",
+          "magic system",
+          "fast-paced plot",
+          "found family"
+        ],
+        "negative": [
+          "readers avoiding romance as a central element",
+          "those wanting hard magic systems",
+          "grimdark readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Witty dialogue and strong character voices reward audio; the Victorian atmosphere translates well to a skilled narrator.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Song of the First Blade - T. C. Edge": {
       "title": "The Song of the First Blade",
       "author": "T. C. Edge",
       "series": "The Bladeborn Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the realm of Vandar, gifted Bladeborn knight Elyon Daecar must abandon a life of ease as dark forces threaten his family's survival, while a servant girl with a mysterious past is forced to flee a ruthless lord and an ancient power is unleashed from the Shadowfort.",
+      "tone": "grand, traditional epic, slow burn with payoff",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "duty vs. freedom",
+        "legacy and heritage",
+        "gods and ancient power",
+        "war and sacrifice",
+        "coming of age"
+      ],
+      "setting": "Secondary world high fantasy; the kingdoms of Vandar and Tukor, a world shaped by fallen gods and warring continents",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "The Night Angel Trilogy - Brent Weeks",
+        "The Red Knight - Miles Cameron",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic",
+          "rich world-building",
+          "chosen hero resisting destiny",
+          "political intrigue",
+          "god-touched magic",
+          "fans of doorstoppers"
+        ],
+        "negative": [
+          "readers wanting fast pacing from page one",
+          "those avoiding slow-burn openers",
+          "readers seeking grimdark tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Barrow King - C. M. Carney": {
       "title": "Barrow King",
       "author": "C. M. Carney",
       "series": "The Realms",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Betrayed ex-spy Finn Caldwell enters The Realms—an advanced holographic reality game—to rescue his sister, only to find himself trapped in a deadly sentient dungeon ruled by an ancient revenant called the Barrow King, where the game may be far more real than anyone knows.",
+      "tone": "propulsive, humorous, game-mechanics-driven",
+      "pacing": "Fast",
+      "themes": [
+        "family loyalty",
+        "progression and self-improvement",
+        "hidden truths of virtual reality",
+        "betrayal and trust",
+        "survival"
+      ],
+      "setting": "Near-future sci-fi framing with full-immersion VR; inside The Realms, a fantasy dungeon world with RPG game mechanics",
+      "comparable_books": [
+        "The Land: Chaos Seeds - Aleron Kong",
+        "Viridian Gate Online - James A. Hunter",
+        "He Who Fights with Monsters - Jason Cheyne",
+        "Ascend Online - Luke Chmilenko"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG / GameLit fans",
+          "dungeon-crawling",
+          "stat progression and levelling",
+          "propulsive pacing",
+          "humour",
+          "family-as-motivation"
+        ],
+        "negative": [
+          "readers who dislike stat tables and RPG mechanics",
+          "those seeking literary prose",
+          "romance-focused readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Of Blood and Fire - Ryan Cahill": {
       "title": "Of Blood and Fire",
       "author": "Ryan Cahill",
       "series": "The Bound and the Broken",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the divided land of Epheria, young Calen Bryer prepares for a dangerous coming-of-age rite when three strangers arrive bearing a world-altering secret, thrusting him into a centuries-old war he never asked for—and a bond with a dragon that will change everything.",
+      "tone": "hopeful, traditional, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "friendship and found family",
+        "fate vs. choice",
+        "courage and sacrifice",
+        "empire and resistance",
+        "dragon bonds"
+      ],
+      "setting": "Secondary world high fantasy; the land of Epheria, a divided continent of warring lords, a northern empire, and ancient dragon riders",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Eye of the World - Robert Jordan",
+        "Eragon - Christopher Paolini",
+        "The Shadow of the Gods - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "traditional high fantasy",
+          "dragon riders",
+          "found family / friendship trio",
+          "hopeful tone",
+          "fans of Tolkien and Jordan",
+          "coming of age"
+        ],
+        "negative": [
+          "grimdark fans",
+          "readers wanting subverted tropes",
+          "those tired of farmboy-to-hero arcs"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Warmly paced, character-driven storytelling with a strong emotional core makes this an ideal audiobook experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Into the Labyrinth - John Bierce": {
       "title": "Into the Labyrinth",
       "author": "John Bierce",
       "series": "Mage Errant",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Hugh of Emblin, the worst student at the mage academy of Skyhold, is unexpectedly chosen as an apprentice by an eccentric Librarian Errant—then must face his first real test when all first-years are sent into the terrifying magical labyrinth beneath the school.",
+      "tone": "light, cosy, character-driven, progression-focused",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "self-belief and overcoming failure",
+        "magical education",
+        "friendship",
+        "personal growth"
+      ],
+      "setting": "Secondary world high fantasy; Skyhold, a vast mage academy built atop an ancient labyrinth, in the world of the Aetheriad",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "The Name of the Wind - Patrick Rothfuss",
+        "He Who Fights with Monsters - Jason Cheyne",
+        "Arcane Ascension - Andrew Rowe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy / magic school",
+          "found family",
+          "underdog protagonist",
+          "cosy tone",
+          "short digestible read",
+          "fans of Sanderson-style magic systems"
+        ],
+        "negative": [
+          "readers wanting grimdark or adult content",
+          "those expecting epic scope from book one",
+          "romance-heavy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Voice of War - Zack Argyle": {
       "title": "Voice of War",
       "author": "Zack Argyle",
       "series": "Threadlight",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three lives converge as a veteran general hunts the group kidnapping magic-users called threadweavers, a sheltered young woman from a hidden city is enslaved, and a young man from the desert is transformed by death—together they will reshape their world whether they intend to or not.",
+      "tone": "propulsive, Sanderson-influenced, family-focused",
+      "pacing": "Fast",
+      "themes": [
+        "family and loyalty",
+        "power and its cost",
+        "identity",
+        "prejudice based on ability",
+        "sacrifice"
+      ],
+      "setting": "Secondary world; the nation of Alchea and surrounding regions, a world where magic is colour-coded by eye and governed by threadlight",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "The Witchlands - Susan Dennard",
+        "Shadow and Bone - Leigh Bardugo",
+        "Stones of Light - Zack Argyle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Sanderson-lite magic systems",
+          "multi-POV",
+          "family as central theme",
+          "propulsive pacing",
+          "cliffhanger endings",
+          "SPFBO finalist"
+        ],
+        "negative": [
+          "readers wanting very long doorstoppers",
+          "those who dislike Sanderson-style magic",
+          "grimdark fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fortune's Fool - Angela Boord": {
       "title": "Fortune's Fool",
       "author": "Angela Boord",
       "series": "Eterean Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kyrra d'Aliente, once a pawn in a deadly game of feuding Houses, now lives in male disguise as a metal-armed mercenary; when she is offered the chance to assassinate the man who betrayed her, she must choose between the seductive pull of revenge and the slim hope that her lost love still lives.",
+      "tone": "lyrical, emotionally devastating, slow burn",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "revenge vs. redemption",
+        "love and loss",
+        "identity and disguise",
+        "political intrigue",
+        "trust and betrayal",
+        "resilience"
+      ],
+      "setting": "Renaissance-inspired secondary world; the Eterean Empire, an Italian-flavoured society of warring Houses, scheming gods, and wild magic",
+      "comparable_books": [
+        "Assassin's Apprentice - Robin Hobb",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Promise of Blood - Brian McClellan",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Robin Hobb fans",
+          "slow-burn romance",
+          "dual timeline narrative",
+          "morally grey protagonist",
+          "lyrical prose",
+          "SPFBO finalist",
+          "female-led",
+          "political intrigue"
+        ],
+        "negative": [
+          "readers who want fast pacing throughout",
+          "those avoiding romance as a major element",
+          "grimdark-only readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Boord's lyrical, cadenced prose and deeply emotional character work is exceptionally well-suited to audio narration.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Threat of Shadows - J. A. Andrews": {
       "title": "A Threat of Shadows",
       "author": "J. A. Andrews",
       "series": "The Keeper Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alaric, a Keeper who uses magic to preserve histories and protect the realm, abandons his sacred duties to search for a cure for his dying wife; his quest draws him into a ragtag fellowship and toward an ancient evil he believed long defeated.",
+      "tone": "warm, hopeful, classic-fantasy-inspired, witty",
+      "pacing": "Moderate",
+      "themes": [
+        "love and sacrifice",
+        "duty vs. personal loyalty",
+        "redemption",
+        "evil resurgent",
+        "friendship and trust"
+      ],
+      "setting": "Secondary world high fantasy; a Tolkien-inspired land of humans, elves, and dwarves called Queensland and surrounding territories",
+      "comparable_books": [
+        "The Fellowship of the Ring - J. R. R. Tolkien",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Sword of Kaigen - M. L. Wang",
+        "The Chronicles of Shannara - Terry Brooks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic high fantasy tropes",
+          "elves and dwarves",
+          "ragtag companions",
+          "heartfelt romance",
+          "clean content",
+          "hopeful tone",
+          "SPFBO semifinalist"
+        ],
+        "negative": [
+          "grimdark fans",
+          "readers wanting subverted or deconstructed tropes",
+          "those tired of Tolkien-adjacent fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Eleventh Cycle - Kian N. Ardalan": {
       "title": "Eleventh Cycle",
       "author": "Kian N. Ardalan",
       "series": "Mistland",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the mist-strangled world of Minethria, where a new divine Seed is born after a thousand years of waiting, four mortals—a farmer girl, a refugee warrior, a highborn torn between worlds, and a soldier fleeing home—must each play their part in determining whether the eleventh cycle can finally break the rot consuming all life.",
+      "tone": "grimdark, haunting, Berserk/Dark Souls-inspired, bleak yet purposeful",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "cyclical suffering and hope",
+        "disability and perseverance",
+        "gods and mortality",
+        "war and identity",
+        "finding meaning in hopelessness"
+      ],
+      "setting": "Secondary world dark fantasy; the mist-shrouded land of Minethria, a world of warring races, corrupt gods, and encroaching supernatural rot",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "The Court of Broken Knives - Anna Smith Spark",
+        "Prince of Thorns - Mark Lawrence",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "Berserk / Dark Souls aesthetic",
+          "multi-POV with diverse non-human characters",
+          "deep world-building",
+          "shocking content warning",
+          "indie darling"
+        ],
+        "negative": [
+          "readers sensitive to abuse, mental illness, or sexual content",
+          "those wanting hopeful or clean fantasy",
+          "readers seeking light tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Dense world-building, multi-POV structure with mixed first/third person, and heavy content warnings make print the preferred format.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "abuse"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Jedi Search - Kevin J. Anderson": {
       "title": "Jedi Search",
       "author": "Kevin J. Anderson",
       "series": "Jedi Academy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in the New Republic era after Return of the Jedi, Luke Skywalker sets out across the galaxy to find Force-sensitive individuals and establish a new Jedi Academy, while Han Solo and Chewbacca are captured by an Imperial warlord running a brutal spice mining operation.",
+      "tone": "adventure-driven, optimistic, pulpy Star Wars action",
+      "pacing": "Fast",
+      "themes": [
+        "rebuilding from destruction",
+        "training the next generation",
+        "good vs. evil",
+        "loyalty and friendship",
+        "the Force and its responsibilities"
+      ],
+      "setting": "Star Wars galaxy, New Republic era; Coruscant, Kessel spice mines, Yavin 4, and various planet-hopping locations",
+      "comparable_books": [
+        "Dark Apprentice - Kevin J. Anderson",
+        "Champions of the Force - Kevin J. Anderson",
+        "Heir to the Empire - Timothy Zahn",
+        "X-Wing: Rogue Squadron - Michael A. Stackpole"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars EU fans",
+          "Legends continuity readers",
+          "fast adventure pacing",
+          "Luke Skywalker focus",
+          "Expanded Universe completionists"
+        ],
+        "negative": [
+          "readers wanting literary depth",
+          "those preferring the new Disney canon",
+          "non-Star Wars readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Outcast - Aaron Allston": {
       "title": "Outcast",
       "author": "Aaron Allston",
       "series": "Star Wars: Fate of the Jedi",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the Second Galactic Civil War, Luke Skywalker is exiled from the Jedi Order and the Galactic Alliance, setting out with his son Ben to investigate the circumstances that led Jacen Solo to the dark side, while a mysterious Force psychosis afflicts Jedi Knights across the galaxy.",
+      "tone": "political, introspective, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "exile and redemption",
+        "political corruption",
+        "Jedi identity and purpose",
+        "the nature of the dark side",
+        "father-son dynamics"
+      ],
+      "setting": "Star Wars Legends galaxy, post-Second Galactic Civil War; Coruscant and various galactic locations",
+      "comparable_books": [
+        "Omen - Christie Golden",
+        "Abyss - Troy Denning",
+        "Legacy of the Force: Betrayal - Aaron Allston",
+        "Dark Nest Trilogy - Troy Denning"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars Legends EU fans",
+          "Aaron Allston's humour and action balance",
+          "political intrigue in Star Wars",
+          "long-form serialised storytelling",
+          "Luke and Ben Skywalker dynamics"
+        ],
+        "negative": [
+          "casual Star Wars fans unfamiliar with the EU",
+          "Disney canon purists",
+          "non-sci-fi readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gunmetal Gods - Zamil Akhtar": {
       "title": "Gunmetal Gods",
       "author": "Zamil Akhtar",
       "series": "Gunmetal Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a Crusades-inspired world of janissaries and gun-toting paladins, retired warrior Kevah is called back to defend his holy city against Micah the Metal, a fanatical conqueror who massacres in the name of his god—a clash of faith, vengeance, and Lovecraftian divine horror told through dual enemy perspectives.",
+      "tone": "grimdark, visceral, lyrical, philosophically dark",
+      "pacing": "Fast",
+      "themes": [
+        "religious fanaticism and war",
+        "faith and doubt",
+        "vengeance and grief",
+        "gods as indifferent cosmic forces",
+        "the human cost of holy war"
+      ],
+      "setting": "Secondary world inspired by the medieval Islamic world and the Crusades; the city of Kostany and surrounding territories, a world of gunpowder, djinns, and Lovecraftian angels",
+      "comparable_books": [
+        "A Song of Ice and Fire - George R. R. Martin",
+        "The First Law - Joe Abercrombie",
+        "Prince of Thorns - Mark Lawrence",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "Arabian Nights aesthetic",
+          "Crusades-inspired fantasy",
+          "morally grey dual POV",
+          "Lovecraftian horror elements",
+          "indie dark fantasy"
+        ],
+        "negative": [
+          "readers sensitive to religious violence or torture",
+          "those wanting hopeful or clean fantasy",
+          "readers who prefer linear single-POV narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "An Inkling of Flame - Z. B. Steele": {
       "title": "An Inkling of Flame",
       "author": "Z. B. Steele",
       "series": "Song of the Damned",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (prequel novella)",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told through a backwards framing narrative, conscripted soldier Layne recounts to inquisitors every detail of his training and his ragtag band of friends as they march in service of a vengeful deity called the Fox—ending in a bloody duel that changes everything.",
+      "tone": "grimdark, bittersweet, darkly comedic, Anna Smith Spark-influenced",
+      "pacing": "Fast",
+      "themes": [
+        "found family in war",
+        "blind devotion and religious war",
+        "heroism as perspective",
+        "friendship and loss",
+        "the boredom and horror of military life"
+      ],
+      "setting": "Secondary world dark fantasy; a world of warring gods and conscripted armies, specific geography lightly sketched",
+      "comparable_books": [
+        "The Court of Broken Knives - Anna Smith Spark",
+        "The First Law - Joe Abercrombie",
+        "The Fool's Assassin - Robin Hobb",
+        "Malazan Book of the Fallen - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "military fantasy with found family",
+          "framing narrative structure",
+          "Anna Smith Spark / Abercrombie fans",
+          "soldiers-eye-view of war",
+          "indie short fiction"
+        ],
+        "negative": [
+          "readers wanting a full novel",
+          "those preferring hopeful or optimistic tone",
+          "readers wanting extensive world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Assassins of Brush and Blade - J. C. Kang": {
       "title": "Assassins of Brush and Blade",
       "author": "J. C. Kang",
       "series": "Scions of the Black Lotus",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (prequel novella)",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a shipment of magical Dragon Art commissioned by the Emperor goes missing, the elite Black Lotus Clan—imperial assassins and spies—is dispatched to track down the thieves and deliver swift punishment.",
+      "tone": "action-packed, light, Asian-inspired intrigue",
+      "pacing": "Fast",
+      "themes": [
+        "duty and loyalty",
+        "clan honour",
+        "espionage and deception",
+        "love and forbidden relationships"
+      ],
+      "setting": "Asian-inspired secondary world (the Legends of Tivara setting); a feudal empire of courtesans, assassins, and imperial intrigue",
+      "comparable_books": [
+        "Thorn of the Night Blossoms - J. C. Kang",
+        "Empire of Sand - Tasha Suri",
+        "The Bone Shard Daughter - Andrea Stewart",
+        "Memoirs of a Geisha - Arthur Golden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Asian-inspired fantasy",
+          "assassin protagonists",
+          "court intrigue and espionage",
+          "short digestible reads",
+          "fans of the Scions of the Black Lotus series"
+        ],
+        "negative": [
+          "readers wanting a full-length novel",
+          "those seeking western-style epic fantasy",
+          "readers needing extensive world-building up front"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Betrayal - Aaron Allston": {
       "title": "Betrayal",
       "author": "Aaron Allston",
       "series": "Star Wars: Legacy of the Force",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A generation after the Yuuzhan Vong War, tensions fracture the Galactic Alliance as member worlds begin to secede; Jacen Solo's growing embrace of Sith philosophy and his covert missions set in motion a galactic civil war and a path toward the dark side.",
+      "tone": "political, action-driven, darkly foreboding",
+      "pacing": "Fast",
+      "themes": [
+        "political corruption and secession",
+        "the seduction of the dark side",
+        "loyalty and betrayal",
+        "the cost of pragmatism",
+        "legacy and family"
+      ],
+      "setting": "Star Wars Legends galaxy, post-Yuuzhan Vong War era; Coruscant, Corellia, and various galactic systems",
+      "comparable_books": [
+        "Outcast - Aaron Allston",
+        "Bloodlines - Karen Traviss",
+        "Tempest - Troy Denning",
+        "Dark Nest Trilogy - Troy Denning"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars Legends EU fans",
+          "Jacen Solo / dark side arc",
+          "political Star Wars storytelling",
+          "Aaron Allston's writing style",
+          "long-form EU series readers"
+        ],
+        "negative": [
+          "casual Star Wars fans",
+          "Disney canon readers",
+          "those unfamiliar with the New Jedi Order / Dark Nest backstory"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Darth Plagueis - James Luceno": {
@@ -207171,107 +207547,200 @@
       "author": "James Luceno",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The definitive account of Darth Plagueis the Wise and his apprentice Palpatine, chronicling their decades-long conspiracy to manipulate the midi-chlorians themselves to achieve immortality, culminating in Palpatine's rise to political power and his eventual betrayal of his master.",
+      "tone": "dark, meticulous, political, Sith-mythology-focused",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the pursuit of immortality",
+        "master and apprentice betrayal",
+        "political manipulation",
+        "the nature of the dark side",
+        "midi-chlorian philosophy"
+      ],
+      "setting": "Star Wars prequel-era galaxy; Coruscant and various worlds, spanning decades leading into The Phantom Menace",
+      "comparable_books": [
+        "Darth Bane: Path of Destruction - Drew Karpyshyn",
+        "Plagueis - James Luceno",
+        "Tarkin - James Luceno",
+        "Darth Maul: Shadow Hunter - Michael Reaves"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars lore enthusiasts",
+          "Sith/dark side fans",
+          "prequel trilogy fans",
+          "long-form political plotting",
+          "Legends continuity readers",
+          "fans of Luceno's detailed style"
+        ],
+        "negative": [
+          "action-first Star Wars readers",
+          "those unfamiliar with the prequel era",
+          "Disney canon purists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Voyager - Andy Peloquin": {
       "title": "Voyager",
       "author": "Andy Peloquin",
       "series": "Darkblade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The immortal half-demon assassin known as the Hunter pursues the escaped Groebus Dayblood across the Frozen Sea, but finds himself trapped aboard a ship with unknown parties plotting murder, while pirates, cutthroats, and dark arcane magic threaten the one person he cannot afford to lose—his daughter.",
+      "tone": "grimdark, relentless action, brooding, nautical",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance and justice",
+        "identity and monstrosity",
+        "the burden of protection",
+        "past vs. present self",
+        "parental love"
+      ],
+      "setting": "Secondary world dark fantasy; the world of Einan, specifically a sea voyage across the Frozen Sea and coastal regions",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "Assassin - Andy Peloquin",
+        "Brent Weeks' Night Angel - Brent Weeks",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy / grimdark fans",
+          "immortal assassin protagonists",
+          "morally complex antiheroes",
+          "non-stop action",
+          "long ongoing series readers",
+          "nautical / sea voyage settings"
+        ],
+        "negative": [
+          "readers new to the series (book 9 requires prior reading)",
+          "those wanting hopeful or uplifting fantasy",
+          "romance-focused readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Chaos Rising - C. M. Carney": {
       "title": "Chaos Rising",
       "author": "C. M. Carney",
       "series": "The Realms",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As war approaches the Realms and Gryph races to rescue his sister—a spy with critical intelligence—an unknown enemy rips him from the game, forcing his NPC companion Lex to lead a ragtag group of allies while the extra-dimensional Princes of Chaos turn their eyes on the Mortal Realms.",
+      "tone": "humorous, action-heavy, escalating stakes, sarcastic banter",
+      "pacing": "Fast",
+      "themes": [
+        "friendship and unlikely allies",
+        "family loyalty",
+        "good vs. cosmic evil",
+        "progression and growth",
+        "leadership under pressure"
+      ],
+      "setting": "The Realms—a near-future full-immersion VR game world that is also a real alternate universe; primary action in various Realms zones and a chaos dimension",
+      "comparable_books": [
+        "Barrow King - C. M. Carney",
+        "He Who Fights with Monsters - Jason Cheyne",
+        "The Land: Chaos Seeds - Aleron Kong",
+        "Life Reset - Shemer Kuznits"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG / GameLit fans",
+          "long ongoing series readers",
+          "humorous banter and NPC comedy",
+          "high-stakes cosmic conflict",
+          "fans of books 1–5 in the series"
+        ],
+        "negative": [
+          "readers new to LitRPG (book 6 requires series context)",
+          "those preferring literary prose",
+          "grimdark fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Protector - Andy Peloquin": {
       "title": "Protector",
       "author": "Andy Peloquin",
       "series": "Darkblade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The immortal half-demon Hunter, haunted by centuries of violence he cannot remember, sets off into desert wastelands bound by an oath to protect Hailen—a boy touched by gods and hunted by demons—while fragments of his terrible past slowly resurface and his enemies close in.",
+      "tone": "grimdark, introspective, action-driven, darkly emotional",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "redemption and monstrosity",
+        "identity and lost memory",
+        "guardian and ward dynamics",
+        "good vs. evil in shades of grey",
+        "the past's hold on the present"
+      ],
+      "setting": "Secondary world dark fantasy; the world of Einan, traversing desolate wastelands and desert regions beyond Voramis",
+      "comparable_books": [
+        "Assassin - Andy Peloquin",
+        "The First Law - Joe Abercrombie",
+        "The Night Angel Trilogy - Brent Weeks",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy / grimdark fans",
+          "immortal antihero protagonists",
+          "father/guardian figure arcs",
+          "morally ambiguous characters",
+          "deep character introspection",
+          "action-heavy second acts"
+        ],
+        "negative": [
+          "readers wanting fast action from start to finish (slow first half)",
+          "those seeking hopeful or clean fantasy",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wrath - Alex Raizman": {
