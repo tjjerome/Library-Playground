@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4391,
-  "total_pending": 209,
+  "total_catalogued": 4411,
+  "total_pending": 189,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -236901,53 +236901,96 @@
       "author": "Richard Rhodes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A comprehensive, Pulitzer Prize-winning account of the Manhattan Project, tracing the scientific, political, and human story behind the development of the first atomic bomb from the discovery of fission through the bombings of Hiroshima and Nagasaki.",
+      "tone": "authoritative, epic, deeply humanistic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "science and power",
+        "war and ethics",
+        "human ingenuity",
+        "political decision-making",
+        "destruction"
+      ],
+      "setting": "Primarily the United States, Europe, and Japan, 1930s–1945",
+      "comparable_books": [
+        "The Bomb - Fred Kaplan",
+        "American Prometheus - Kai Bird & Martin J. Sherwin",
+        "Hiroshima - John Hersey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction",
+          "deep historical research",
+          "science history",
+          "WWII history",
+          "Pulitzer Prize winners",
+          "morally complex true stories"
+        ],
+        "negative": [
+          "fast reads",
+          "light nonfiction",
+          "fiction readers only"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "mass civilian death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Beside the Syrian Sea - James Wolff": {
       "title": "Beside the Syrian Sea",
       "author": "James Wolff",
       "series": "Discipline Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "British intelligence analyst Jonas, out in the cold with his agency, steals classified secrets and travels to Beirut to ransom his father who has been kidnapped by ISIS in Syria, forcing him into a deadly dance between the CIA, Hezbollah, and his own government.",
+      "tone": "taut, morally ambiguous, quietly dark",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty vs. conscience",
+        "family",
+        "espionage ethics",
+        "faith",
+        "Middle Eastern conflict"
+      ],
+      "setting": "Beirut and Syria, contemporary",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Spy and the Traitor - Ben Macintyre"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "morally grey protagonist",
+          "insider authenticity",
+          "le Carré comparisons",
+          "Middle Eastern setting"
+        ],
+        "negative": [
+          "action-heavy thrillers",
+          "James Bond-style escapism"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Works of Vermin - Hiron Ennes": {
@@ -236955,26 +236998,50 @@
       "author": "Hiron Ennes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the decadent city of Tiliard — carved into the stump of an ancient tree — a debt-ridden exterminator named Guy hunts a colossal, venomous centipede whose toxin is reshaping the city's political and social future from the sewers to the opera houses.",
+      "tone": "grotesque, opulent, densely literary, darkly satirical",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "class and revolution",
+        "exploitation",
+        "corruption",
+        "art and destruction",
+        "systemic oppression"
+      ],
+      "setting": "Tiliard, a fantastical decadent city carved into an ancient tree stump — secondary world",
+      "comparable_books": [
+        "Leech - Hiron Ennes",
+        "Piranesi - Susanna Clarke",
+        "The City & The City - China Miéville"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "New Weird",
+          "dense prose",
+          "grotesque worldbuilding",
+          "queer characters",
+          "political satire",
+          "Miéville and VanderMeer fans"
+        ],
+        "negative": [
+          "fast pacing",
+          "straightforward plotting",
+          "light reads",
+          "squeamish readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Extremely dense prose with intricate worldbuilding rewards close reading and rereading; audio may make it harder to track layered intertextual details.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Under Alien Skies: A Sightseer's Guide to the Universe - Philip Plait": {
@@ -236982,107 +237049,187 @@
       "author": "Philip Plait",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Popular Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Astronomer and science communicator Philip Plait takes readers on a vivid, immersive tour of ten spectacular locations across the cosmos — from the Moon and Mars to Saturn, Pluto, black holes, and beyond — describing what a human visitor would actually see, feel, and experience at each destination.",
+      "tone": "enthusiastic, wonder-filled, accessible, humorous",
+      "pacing": "Moderate",
+      "themes": [
+        "astronomy",
+        "space exploration",
+        "scientific wonder",
+        "human perspective in the cosmos"
+      ],
+      "setting": "The Moon, Mars, Saturn, Pluto, and locations across the universe",
+      "comparable_books": [
+        "Astrophysics for People in a Hurry - Neil deGrasse Tyson",
+        "A Short History of Nearly Everything - Bill Bryson",
+        "Death from the Skies - Philip Plait"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science",
+          "astronomy enthusiasts",
+          "immersive narrative nonfiction",
+          "science communication",
+          "space travel dreams"
+        ],
+        "negative": [
+          "purely technical readers",
+          "those wanting hard academic science"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Raven Scholar - Antonia Hodgson": {
       "title": "The Raven Scholar",
       "author": "Antonia Hodgson",
       "series": "Eternal Path Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the empire of Orrun, when one of seven contenders competing to replace the retiring emperor is murdered, the brilliant but out-of-her-depth High Scholar Neema Kraa is tasked with solving the killing — all while being thrust into the deadly competition for the throne herself, guided by the wry, mercurial Raven guardian.",
+      "tone": "propulsive, clever, witty, politically thrilling, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "political intrigue",
+        "guilt and consequence",
+        "power and ambition",
+        "identity",
+        "found family",
+        "justice"
+      ],
+      "setting": "The empire of Orrun — a richly built secondary world with a 1500-year tradition of peaceful succession",
+      "comparable_books": [
+        "The Jasmine Throne - Tasha Suri",
+        "Ancillary Justice - Ann Leckie",
+        "A Chorus of Dragons - Jenn Lyons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "murder mystery in fantasy",
+          "tournament arcs",
+          "political intrigue",
+          "non-human POV character",
+          "emotionally complex characters"
+        ],
+        "negative": [
+          "grimdark-averse readers may note some dark content",
+          "readers who dislike long books"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Highly immersive 24-hour narration praised by reviewers; the Raven's distinctive voice translates exceptionally well to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Hunters - David Wragg": {
       "title": "The Hunters",
       "author": "David Wragg",
       "series": "Tales of the Plains",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ree, a woman with a violent past trying to live quietly on the edge of the desert with her niece Javani, is forced to flee when professional killers arrive in their town — setting off a breathless chase across deserts, mountains, and mines as multiple factions close in.",
+      "tone": "fast, action-packed, darkly comic, heartfelt",
+      "pacing": "Fast",
+      "themes": [
+        "motherhood",
+        "freedom",
+        "chosen family",
+        "identity and the past",
+        "self-discovery"
+      ],
+      "setting": "A fantasy desert world with wild-west vibes — arid plains, mountains, mines",
+      "comparable_books": [
+        "The Black Hawks - David Wragg",
+        "Kings of the Wyld - Nicholas Eames",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced action fantasy",
+          "female protagonist",
+          "wild-west fantasy",
+          "witty dialogue",
+          "found family",
+          "chase narrative"
+        ],
+        "negative": [
+          "slow meditative fantasy",
+          "character-depth-first readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Highly praised audio pairing between Wragg's action-driven prose and narrator Sara Powell; reviewers specifically recommend the audiobook.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Man in the Corduroy Suit - James Wolff": {
       "title": "The Man in the Corduroy Suit",
       "author": "James Wolff",
       "series": "Discipline Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Blunt MI5 interrogator Leonard Flood is recruited into the secretive Gatekeepers unit and tasked with investigating the suspected poisoning of a retired vetting officer, only to discover that the case leads back to himself — and to a truth that forces him to choose between duty and conscience.",
+      "tone": "dry, witty, unsettling, cerebral",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty",
+        "betrayal",
+        "institutional paranoia",
+        "conscience vs. orders",
+        "identity"
+      ],
+      "setting": "Contemporary London and rural England; MI5 bureaucracy",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Tinker, Tailor, Soldier, Spy - John le Carré",
+        "Beside the Syrian Sea - James Wolff"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "Herron/le Carré fans",
+          "cerebral plotting",
+          "darkly comic tone",
+          "insider authenticity"
+        ],
+        "negative": [
+          "action-first thriller readers",
+          "those wanting series continuity (each Wolff novel is standalone)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Christmas Thingy - F. Paul Wilson": {
@@ -237090,26 +237237,44 @@
       "author": "F. Paul Wilson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Children's Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Eight-year-old Jessica, lonely and longing for a friend, wishes for a small monster for Christmas — and gets the mysterious Christmas Thingy, a creature compelled by nature to steal presents, until an act of kindness changes everything.",
+      "tone": "warm, whimsical, lightly spooky",
+      "pacing": "Fast",
+      "themes": [
+        "friendship",
+        "loneliness",
+        "the power of giving",
+        "childhood wonder"
+      ],
+      "setting": "A large old house in London, Christmas season",
+      "comparable_books": [
+        "Where the Wild Things Are - Maurice Sendak",
+        "The Nightmare Before Christmas (film)",
+        "Peef: The Christmas Bear - Tom Hegg"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "children's picture books",
+          "Christmas stories",
+          "lightly spooky holiday reads",
+          "F. Paul Wilson fans",
+          "illustrated fiction"
+        ],
+        "negative": [
+          "adult-only readers",
+          "those expecting horror"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Lavishly illustrated oversized picture book with more than 30 full-colour paintings by Alan M. Clark; the visual art is central to the experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bad Astronomy - Philip Plait": {
@@ -237117,26 +237282,45 @@
       "author": "Philip Plait",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Popular Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Astronomer and science communicator Philip Plait entertainingly debunks widespread misconceptions about astronomy and space — from moon-landing conspiracy theories to astrology to Hollywood's depiction of space — while teaching accurate science along the way.",
+      "tone": "witty, skeptical, enthusiastic, accessible",
+      "pacing": "Moderate",
+      "themes": [
+        "scientific literacy",
+        "critical thinking",
+        "debunking myths",
+        "astronomy",
+        "pseudoscience"
+      ],
+      "setting": "Earth and the wider cosmos; the book is rooted in contemporary science communication",
+      "comparable_books": [
+        "The Demon-Haunted World - Carl Sagan",
+        "Under Alien Skies - Philip Plait",
+        "Death by Black Hole - Neil deGrasse Tyson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science",
+          "science skeptics",
+          "astronomy enthusiasts",
+          "myth-busting",
+          "accessible nonfiction"
+        ],
+        "negative": [
+          "purely academic readers",
+          "those resistant to skeptical worldviews"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Executioner's Song - Norman Mailer": {
@@ -237144,26 +237328,51 @@
       "author": "Norman Mailer",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A monumental Pulitzer Prize-winning 'true life novel' chronicling the life and 1977 execution of Gary Gilmore, the first person executed in the United States after the reinstatement of the death penalty, told through the voices of hundreds of people who knew him.",
+      "tone": "spare, journalistic, tragic, cold",
+      "pacing": "Slow",
+      "themes": [
+        "capital punishment",
+        "violence and society",
+        "American West",
+        "media and celebrity",
+        "crime and justice",
+        "love and obsession"
+      ],
+      "setting": "Utah and the American West, 1970s",
+      "comparable_books": [
+        "In Cold Blood - Truman Capote",
+        "American Tabloid - James Ellroy",
+        "Blood Meridian - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary true crime",
+          "narrative nonfiction",
+          "Pulitzer Prize winners",
+          "American literature",
+          "morally complex storytelling",
+          "long ambitious books"
+        ],
+        "negative": [
+          "fast reads",
+          "genre fiction readers",
+          "those uncomfortable with capital punishment themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sunward - William Alexander": {
@@ -237171,80 +237380,145 @@
       "author": "William Alexander",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In humanity's far future, planetary courier Captain Tova Lir mentors adolescent AI 'baby bots' when a chance encounter with a derelict spaceship and a lurking assassin triggers a chase across the solar system that puts her fractured AI child and her scattered family at lethal risk.",
+      "tone": "cozy, warm, propulsive, humorous",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "AI personhood and rights",
+        "identity",
+        "parenting",
+        "interplanetary conflict"
+      ],
+      "setting": "Far future solar system; Earth is a wasteland, humanity spread across Luna, Phoebe, and beyond",
+      "comparable_books": [
+        "A Long Way to a Small Angry Planet - Becky Chambers",
+        "The Spare Man - Mary Robinette Kowal",
+        "Emergent Properties - Aimee Ogden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy science fiction",
+          "found family",
+          "AI characters",
+          "Becky Chambers fans",
+          "fast novella-length reads",
+          "warm optimistic SF"
+        ],
+        "negative": [
+          "hard SF purists",
+          "readers wanting epic scope",
+          "grimdark tastes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "At approximately 5.5 hours, it is a compact, propulsive audio experience with warmly reviewed narration perfectly suited to the cosy tone.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Pretenders to the Throne of God - Adrian Tchaikovsky": {
       "title": "Pretenders to the Throne of God",
       "author": "Adrian Tchaikovsky",
       "series": "The Tyrant Philosophers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Palleseen hegemony's campaign of 'Perfection' rolls onward, the city of Eres Ffenegh — built on the back of a colossal crab — faces a brutal winter siege, with desperate defenders, renegade Pal soldiers, demon-bargaining apprentices, and shifting alliances all colliding in a powder keg of dark magic and political violence.",
+      "tone": "grimdark, darkly comic, politically sharp, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "colonialism and imperialism",
+        "cultural destruction",
+        "resistance",
+        "faith vs. reason",
+        "moral compromise",
+        "ends justifying means"
+      ],
+      "setting": "Eres Ffenegh, a fantastical city built on a giant crab — secondary world besieged in winter",
+      "comparable_books": [
+        "City of Last Chances - Adrian Tchaikovsky",
+        "A Little Hatred - Joe Abercrombie",
+        "The Darkness That Comes Before - R. Scott Bakker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "political fantasy",
+          "Tchaikovsky fans",
+          "anti-colonial themes",
+          "episodic series",
+          "darkly comic writing"
+        ],
+        "negative": [
+          "series newcomers (entry point is Book 1)",
+          "readers preferring single protagonist arcs"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Silent Bones - Val McDermid": {
       "title": "Silent Bones",
       "author": "Val McDermid",
       "series": "Inspector Karen Pirie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a motorway landslide in Scotland exposes a skeleton buried in the tarmac eleven years earlier, DCI Karen Pirie's Historic Cases Unit must untangle the murder of a missing investigative journalist — while a second death in Edinburgh implicates a shadowy book club of Scotland's elite.",
+      "tone": "propulsive, methodical, socially sharp",
+      "pacing": "Moderate",
+      "themes": [
+        "elite corruption",
+        "buried truth",
+        "justice",
+        "institutional power",
+        "cold cases",
+        "Scottish identity"
+      ],
+      "setting": "Contemporary Scotland — Glasgow motorway, Edinburgh, Scottish Highlands",
+      "comparable_books": [
+        "Past Lying - Val McDermid",
+        "Still Life - Val McDermid",
+        "The Distant Echo - Val McDermid"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "police procedurals",
+          "Scottish crime fiction",
+          "Tartan Noir",
+          "strong female detective",
+          "cold case mysteries",
+          "elite corruption thrillers"
+        ],
+        "negative": [
+          "cozy mystery readers",
+          "those averse to institutional critique themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "River of Bones and Other Stories - Rebecca Roanhorse": {
@@ -237252,53 +237526,95 @@
       "author": "Rebecca Roanhorse",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A career-spanning collection of Hugo and Nebula Award-winning short fiction by Rebecca Roanhorse — spanning contemporary horror, science fiction, and fantasy rooted in Indigenous and Black American experience — anchored by a new novella set in the world of her Sixth World series featuring Maggie and Kai.",
+      "tone": "varied — by turns eerie, propulsive, heartfelt, and satirical",
+      "pacing": "Moderate",
+      "themes": [
+        "Indigenous identity",
+        "colonialism",
+        "monsters and the monstrous",
+        "virtual reality and identity",
+        "horror",
+        "belonging"
+      ],
+      "setting": "Multiple — from near-future sci-fi settings to 1880s New Mexico to the post-apocalyptic Sixth World",
+      "comparable_books": [
+        "Trail of Lightning - Rebecca Roanhorse",
+        "Black Sun - Rebecca Roanhorse",
+        "Out There Screaming - ed. Jordan Peele"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short story collections",
+          "Indigenous speculative fiction",
+          "award-winning fiction",
+          "diverse SFF",
+          "Roanhorse fans",
+          "Sixth World completionists"
+        ],
+        "negative": [
+          "readers wanting novel-length narrative",
+          "unfamiliar with short fiction format"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "How to Betray Your Country - James Wolff": {
       "title": "How to Betray Your Country",
       "author": "James Wolff",
       "series": "Discipline Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Disgraced and grief-stricken former MI5 officer August Drummond, on a flight to Istanbul for a dull civilian job, spots a suspicious passenger and impulsively assumes his identity — plunging himself into a deadly ISIS conspiracy and forcing him to play British and Turkish intelligence against each other to survive.",
+      "tone": "darkly comic, melancholic, morally ambiguous, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty and betrayal",
+        "grief",
+        "conscience vs. orders",
+        "espionage ethics",
+        "identity"
+      ],
+      "setting": "Istanbul and Turkey, contemporary",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Beside the Syrian Sea - James Wolff",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary spy fiction",
+          "morally grey protagonist",
+          "Herron/le Carré fans",
+          "insider authenticity",
+          "Middle Eastern settings"
+        ],
+        "negative": [
+          "action-first thriller readers",
+          "those wanting series continuity (standalone)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "More Everything Forever - Adam Becker": {
@@ -237306,26 +237622,48 @@
       "author": "Adam Becker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Popular Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Science journalist and astrophysicist Adam Becker investigates the ideological foundations and factual claims behind Silicon Valley's grand obsessions — AI superintelligence, space colonisation, immortality, and longtermism — exposing them as scientifically baseless visions that serve oligarchic power rather than humanity's future.",
+      "tone": "incisive, witty, sharply critical, urgent",
+      "pacing": "Moderate",
+      "themes": [
+        "technology and power",
+        "oligarchy",
+        "longtermism",
+        "scientific literacy",
+        "AI ethics",
+        "wealth inequality",
+        "effective altruism critique"
+      ],
+      "setting": "Contemporary Silicon Valley and global tech culture",
+      "comparable_books": [
+        "What Is Real? - Adam Becker",
+        "AI Snake Oil - Arvind Narayanan & Sayash Kapoor",
+        "A City on Mars - Kelly & Zach Weinersmith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tech criticism",
+          "popular science",
+          "AI sceptics",
+          "political nonfiction",
+          "readers concerned about billionaire power"
+        ],
+        "negative": [
+          "strong tech optimists",
+          "longtermists",
+          "readers wanting balanced 'both sides' treatment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Grace - A. M. Shine": {
@@ -237333,53 +237671,97 @@
       "author": "A. M. Shine",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Grace — adopted at four and never knowing her origins — is called back to the remote island off Ireland's west coast where she was born, she discovers a community haunted by a decades-old evil rooted in Irish mythology that her return has awakened.",
+      "tone": "atmospheric, dread-soaked, gothic, folkloric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and origins",
+        "Irish mythology",
+        "isolation",
+        "community secrets",
+        "ancient evil",
+        "faith"
+      ],
+      "setting": "Croaghnakeela Island, off Ireland's west coast — isolated, fog-shrouded, present day",
+      "comparable_books": [
+        "The Watchers - A. M. Shine",
+        "The Reddening - Adam Nevill",
+        "Starve Acre - Andrew Michael Hurley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folk horror",
+          "Irish gothic",
+          "atmospheric horror",
+          "slow-burn dread",
+          "mythology-based horror",
+          "Shine fans"
+        ],
+        "negative": [
+          "jump-scare horror fans",
+          "readers wanting fast pacing throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Liar's Game - Jack Beaumont": {
       "title": "Liar's Game",
       "author": "Jack Beaumont",
       "series": "The Frenchman",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "French DGSE operative Alec de Payns is tasked with exfiltrating a North Korean defector claiming to know details of a world-crippling cyberattack — but when the defector dies in his arms and de Payns is framed for murder and disavowed, he must survive alone across South-East Asia while protecting his family and untangling a deadly conspiracy.",
+      "tone": "tense, action-driven, authentic, emotionally raw",
+      "pacing": "Fast",
+      "themes": [
+        "espionage tradecraft",
+        "loyalty",
+        "family sacrifice",
+        "geopolitical conspiracy",
+        "moral cost of intelligence work"
+      ],
+      "setting": "France, Beijing, South-East Asia — contemporary international espionage",
+      "comparable_books": [
+        "The Frenchman - Jack Beaumont",
+        "Dark Arena - Jack Beaumont",
+        "The Asset - Saul Herzog"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action spy thrillers",
+          "insider authenticity",
+          "le Carré comparisons",
+          "French intelligence",
+          "geopolitical thrillers"
+        ],
+        "negative": [
+          "literary/cerebral spy fiction fans",
+          "those new to the series (best to start at Book 1)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Eye in the Sky - Philip K. Dick": {
@@ -237387,26 +237769,45 @@
       "author": "Philip K. Dick",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "After a particle accelerator accident, eight people are trapped cycling through each other's subjective realities — each a warped, totalitarian version of the world shaped by that person's beliefs and obsessions — in a sharp satirical novel about ideology, paranoia, and McCarthyism.",
+      "tone": "satirical, darkly comic, paranoid, inventive",
+      "pacing": "Moderate",
+      "themes": [
+        "subjective reality",
+        "ideology and belief",
+        "McCarthyism and paranoia",
+        "conformity",
+        "identity"
+      ],
+      "setting": "1950s America — shifting through subjective alternate realities",
+      "comparable_books": [
+        "The Man in the High Castle - Philip K. Dick",
+        "Time Out of Joint - Philip K. Dick",
+        "The Demolished Man - Alfred Bester"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic science fiction",
+          "Philip K. Dick fans",
+          "reality-bending fiction",
+          "political satire",
+          "Cold War era SF"
+        ],
+        "negative": [
+          "readers wanting action-driven plots",
+          "those unfamiliar with 1950s American context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fight Oligarchy - Bernie Sanders": {
@@ -237414,26 +237815,47 @@
       "author": "Bernie Sanders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Politics",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a series of concise, punchy chapters, Senator Bernie Sanders diagnoses the United States as an oligarchy controlled by a handful of billionaires, documents the economic and political damage this has caused ordinary Americans, and calls for a grassroots political revolution to reclaim democracy from the super-rich.",
+      "tone": "impassioned, urgent, plainspoken, rallying",
+      "pacing": "Fast",
+      "themes": [
+        "wealth inequality",
+        "oligarchy",
+        "democracy",
+        "authoritarianism",
+        "labour rights",
+        "political activism"
+      ],
+      "setting": "Contemporary United States; Trump-era politics and economics",
+      "comparable_books": [
+        "Our Revolution - Bernie Sanders",
+        "The Price of Inequality - Joseph Stiglitz",
+        "More Everything Forever - Adam Becker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progressive politics",
+          "political activism",
+          "inequality economics",
+          "Sanders supporters",
+          "short punchy manifestos"
+        ],
+        "negative": [
+          "conservative readers",
+          "those seeking academic or nuanced political analysis",
+          "readers wanting narrative nonfiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Sanders narrates his own audiobook; his well-known oratorical passion and distinctive voice make this a highly engaging listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Daemon - Daniel Suarez": {
