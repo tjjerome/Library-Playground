@@ -80,13 +80,10 @@ INDEX_FIELDS = (
     "title",
     "author",
     "series",
-    "series_position",
     "series_status",
     "primary_genre",
-    "secondary_genre",
-    "tone",
-    "pacing",
     "audio_suitability",
+    "comparable_books",
 )
 
 
