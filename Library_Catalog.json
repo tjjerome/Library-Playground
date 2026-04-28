@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4053,
-  "total_pending": 547,
+  "total_catalogued": 4073,
+  "total_pending": 527,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -220491,432 +220491,788 @@
       "title": "A Rare Benedictine",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel / short stories",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Three short stories set before the main Cadfael series, depicting the events that led the young soldier Cadfael to enter the monastery at Shrewsbury in 12th-century England. Together they form a satisfying origin tale for the beloved herbalist-detective.",
+      "tone": "warm, gently contemplative, cosy historical",
+      "pacing": "Moderate",
+      "themes": [
+        "vocation and calling",
+        "faith and doubt",
+        "justice",
+        "redemption",
+        "medieval England"
+      ],
+      "setting": "12th-century Shrewsbury, England — Benedictine monastery and surrounding region",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "The Physician - Noah Gordon",
+        "An Instance of the Fingerpost - Iain Pears"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy historical mysteries",
+          "monastic settings",
+          "gentle pacing",
+          "beloved recurring detective",
+          "moral warmth",
+          "medieval atmosphere"
+        ],
+        "negative": [
+          "fast-paced thrillers",
+          "graphic violence",
+          "modern settings",
+          "complex multi-POV structures"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short story format and evocative prose lend themselves beautifully to audio; narrators for the Cadfael series are typically superb.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "An Excellent Mystery - Ellis Peters": {
       "title": "An Excellent Mystery",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 11",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Brother Cadfael investigates the fate of a young novice and his beloved after two displaced monks arrive at Shrewsbury following the sack of Wherwell Abbey in 1141. A mystery laced with the themes of love, loss, and sacrifice.",
+      "tone": "meditative, lyrical, autumnal",
+      "pacing": "Slow",
+      "themes": [
+        "love and sacrifice",
+        "identity and disguise",
+        "faith",
+        "the cost of war",
+        "medieval monastic life"
+      ],
+      "setting": "12th-century Shrewsbury and England during the civil war between King Stephen and Empress Maud",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "The Doomsday Book - Connie Willis",
+        "An Instance of the Fingerpost - Iain Pears"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy historical mysteries",
+          "meditative pacing",
+          "monastic settings",
+          "emotionally resonant plots",
+          "medieval England"
+        ],
+        "negative": [
+          "action-driven plots",
+          "modern crime",
+          "graphic content",
+          "rapid-fire pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lyrical, measured prose and richly evoked period setting are ideal for audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Grave Goods - Ariana Franklin": {
       "title": "Grave Goods",
       "author": "Ariana Franklin",
       "series": "Mistress of the Art of Death",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Adelia Aguilar, a 12th-century female physician and forensic investigator, is summoned to Glastonbury after a fire reveals bones purported to be those of King Arthur and Guinevere — but a string of murders suggests a darker conspiracy at work.",
+      "tone": "atmospheric, wry, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "power and mythology",
+        "women in medieval society",
+        "political manipulation",
+        "justice",
+        "legend vs. truth"
+      ],
+      "setting": "12th-century Glastonbury, England — post-fire abbey and Somerset countryside",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "A Deadly Affair - Kate Furnivall",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female protagonists",
+          "historical mysteries",
+          "medieval England",
+          "forensic investigation",
+          "political intrigue"
+        ],
+        "negative": [
+          "cosy pacing",
+          "male-dominated narratives",
+          "modern settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Matterhorn - Christopher Reich": {
       "title": "Matterhorn",
       "author": "Christopher Reich",
       "series": "Mac Dekker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired CIA operative Mac Dekker, living in hiding in the Swiss Alps under a false identity, is pulled back into the world of espionage after his son dies mysteriously on the Matterhorn — uncovering a terrorist plot and confronting the old friend who betrayed him.",
+      "tone": "propulsive, cinematic, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "betrayal",
+        "revenge",
+        "parenthood",
+        "espionage",
+        "redemption"
+      ],
+      "setting": "Contemporary Swiss Alps, Russia, and Europe — alpine villages and Cold War spy networks",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "I Am Pilgrim - Terry Hayes",
+        "The Take - Christopher Reich"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "spy thrillers",
+          "action-heavy plotting",
+          "European settings",
+          "betrayal and revenge",
+          "retired operative returns"
+        ],
+        "negative": [
+          "slow literary fiction",
+          "cosy mysteries",
+          "deeply psychological character studies"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced thriller with cinematic action makes for a gripping audio experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Collaborators - Michael Idov": {
       "title": "The Collaborators",
       "author": "Michael Idov",
       "series": "The Cormorant Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A disaffected millennial CIA officer and a brash LA heiress stumble into a globe-trotting conspiracy pitting modern Russia against American and British intelligence, while tracing how post-Soviet Russia went so badly wrong.",
+      "tone": "witty, propulsive, stylish",
+      "pacing": "Fast",
+      "themes": [
+        "US-Russia geopolitics",
+        "post-Soviet corruption",
+        "loyalty and betrayal",
+        "the cost of intelligence work",
+        "identity"
+      ],
+      "setting": "Contemporary — Berlin, Latvia, Belarus, Tangier, and a technopark outside Moscow",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "Red Sparrow - Jason Matthews",
+        "The Expats - Chris Pavone"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "witty spy fiction",
+          "globe-trotting intrigue",
+          "millennial voice",
+          "propulsive pacing",
+          "Russia geopolitics",
+          "dual protagonists"
+        ],
+        "negative": [
+          "slow meditative pace",
+          "heavily plot-driven without character depth",
+          "traditional spy fiction purists who dislike modern self-awareness"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Tourists - Christopher Reich": {
       "title": "The Tourists",
       "author": "Christopher Reich",
       "series": "Mac Dekker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Retired CIA agent Mac Dekker travels to Paris to propose to former Mossad operative Ava Attal, but she vanishes mid-dinner, plunging him into a frantic search through the city as he battles assassins, the CIA, and a ruthless Middle Eastern prince planning a nuclear attack.",
+      "tone": "propulsive, fast-paced, cinematic",
+      "pacing": "Fast",
+      "themes": [
+        "espionage",
+        "romantic stakes",
+        "trust and betrayal",
+        "Middle East geopolitics",
+        "loyalty"
+      ],
+      "setting": "Contemporary Paris — from the Eiffel Tower to the city's shadows",
+      "comparable_books": [
+        "I Am Pilgrim - Terry Hayes",
+        "From Russia with Love - Ian Fleming",
+        "The Helsinki Affair - Anna Pitoniak"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "spy thrillers",
+          "Paris setting",
+          "race-against-the-clock plotting",
+          "romantic subplot",
+          "action-heavy"
+        ],
+        "negative": [
+          "slow pacing",
+          "deeply psychological fiction",
+          "cosy mysteries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Breakneck pacing and cinematic set-pieces make this ideal for audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Severed Echoes - Anya Dylan": {
       "title": "Severed Echoes",
       "author": "Anya Dylan",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Veil Duet",
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an idyllic mountain town with a portal to Hell hidden in a hotel hot tub, a woman named Meg is swept into a cosmic conspiracy when she encounters Soren, a man cursed by his family's dark legacy — as a mysterious arbiter from another realm watches their every move.",
+      "tone": "gothic, surreal, darkly atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "guilt and absolution",
+        "fate and sacrifice",
+        "consciousness",
+        "cosmic horror",
+        "legacy and family curses"
+      ],
+      "setting": "Contemporary — the mountain town of Ventane, with otherworldly dimensions bleeding through",
+      "comparable_books": [
+        "The Books of Blood - Clive Barker",
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "House of Leaves - Mark Z. Danielewski"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic horror",
+          "weird fiction",
+          "Clive Barker fans",
+          "surreal atmosphere",
+          "philosophical themes",
+          "dark romance adjacent"
+        ],
+        "negative": [
+          "light romance readers",
+          "those wanting clear-cut horror",
+          "readers who dislike ambiguity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Law - Jim Butcher": {
       "title": "The Law",
       "author": "Jim Butcher",
       "series": "The Dresden Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17.5 (novella)",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set a month after the catastrophic events of Battle Ground, a grieving Harry Dresden is drawn out of his mourning when a client seeks help protecting her tutoring business from a predatory supernatural threat far more dangerous than it first appears.",
+      "tone": "gritty, wry, emotionally raw",
+      "pacing": "Fast",
+      "themes": [
+        "grief and recovery",
+        "duty",
+        "protecting the vulnerable",
+        "supernatural predators",
+        "Chicago underworld"
+      ],
+      "setting": "Contemporary Chicago — recovering from the events of the Battle of Chicago",
+      "comparable_books": [
+        "Moon Called - Patricia Briggs",
+        "Dead Witch Walking - Kim Harrison",
+        "Grave Peril - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Dresden Files fans",
+          "urban fantasy",
+          "wizard detectives",
+          "found family",
+          "snappy first-person voice"
+        ],
+        "negative": [
+          "readers new to the series (requires prior reading)",
+          "those wanting a full novel-length story"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Jim Butcher narrates this novella himself to strong effect; a unique entry in the series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Death Hymns of Homara - Zamil Akhtar": {
       "title": "Death Hymns of Homara",
       "author": "Zamil Akhtar",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Gunmetal Gods Saga",
+      "series_position": "Standalone companion",
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A holy warrior cursed with an unnatural hunger for blood hunts only the wicked to remain righteous — until a murderous woman delays her death by telling him stories of mad sultans, fallen angels, and doomed cities, blurring the line between executioner and audience.",
+      "tone": "grimdark, lyrical, Arabian Nights-inflected",
+      "pacing": "Moderate",
+      "themes": [
+        "righteousness and sin",
+        "the cost of faith",
+        "divine cruelty",
+        "storytelling and power",
+        "moral ambiguity"
+      ],
+      "setting": "A medieval fantasy world inspired by gnostic mythology and the Arabian Nights, set 550 years before Gunmetal Gods",
+      "comparable_books": [
+        "Gunmetal Gods - Zamil Akhtar",
+        "The Traitor Baru Cormorant - Seth Dickinson",
+        "Prince of Nothing - R. Scott Bakker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "non-Western-inspired settings",
+          "cosmic horror elements",
+          "morally grey protagonists",
+          "Arabian Nights atmosphere",
+          "standalone grimdark"
+        ],
+        "negative": [
+          "readers seeking hope or uplifting narrative arcs",
+          "light fantasy",
+          "character-driven cosy fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fragile Threads of Power - V. E. Schwab": {
       "title": "The Fragile Threads of Power",
       "author": "V. E. Schwab",
       "series": "Threads of Power",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Seven years after the events of A Conjuring of Light, a young tinkerer named Tes who can see and manipulate magical threads stumbles upon a device that could reshape the fate of all four Londons — while old heroes face new enemies and a fanatical queen threatens war.",
+      "tone": "adventurous, propulsive, warmly character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "magic and power",
+        "rebellion and monarchy",
+        "identity",
+        "chosen destiny",
+        "found family",
+        "cost of sacrifice"
+      ],
+      "setting": "The four Londons — Red London, Grey London, White London, and Black London — seven years after A Conjuring of Light",
+      "comparable_books": [
+        "A Darker Shade of Magic - V. E. Schwab",
+        "The Night Circus - Erin Morgenstern",
+        "Six of Crows - Leigh Bardugo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Shades of Magic fans",
+          "multi-world fantasy",
+          "ensemble casts",
+          "returning favourite characters",
+          "LGBTQ+ representation",
+          "magic systems"
+        ],
+        "negative": [
+          "readers wanting a fully standalone entry point",
+          "those uninterested in expansive series lore",
+          "grimdark readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Umbra - Amber Toro": {
       "title": "Umbra",
       "author": "Amber Toro",
       "series": "Sentient Stars",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "10,000 years after Earth faded into myth, an ex-Navy rogue, an exiled commander, and a battle-hardened admiral are thrown together by an alien virus and a signal in the darkness threatening the fractured twelve tribes of humanity — told across three POVs with fully sentient starships.",
+      "tone": "cinematic, action-driven, slow-burn romantic",
+      "pacing": "Moderate",
+      "themes": [
+        "found family",
+        "duty and sacrifice",
+        "humanity's survival",
+        "AI and sentience",
+        "trust and redemption"
+      ],
+      "setting": "Far-future space — 10,000 years after Earth, across alien worlds and the fractured United Tribal Axis",
+      "comparable_books": [
+        "Red Rising - Pierce Brown",
+        "Ancillary Justice - Ann Leckie",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "found family",
+          "sentient AI ships",
+          "slow-burn romance",
+          "action-packed SF",
+          "multi-POV stories",
+          "Battlestar Galactica / Star Trek vibes"
+        ],
+        "negative": [
+          "hard science fiction",
+          "readers averse to romance subplots",
+          "grimdark SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Parallax - Amber Toro": {
       "title": "Parallax",
       "author": "Amber Toro",
       "series": "Sentient Stars",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the United Tribal Axis fractured into warring factions, Hinata fights a losing war, Freyja hunts the origin of the mysterious signal, and Skyla vanishes at the edge of the galaxy — forcing her companions into a desperate rescue mission as deeper cosmic forces converge.",
+      "tone": "cinematic, emotional, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "sacrifice and loyalty",
+        "war and its costs",
+        "slow-burn romance",
+        "the nature of humanity"
+      ],
+      "setting": "Far-future space — multiple alien worlds and the fractured remains of the United Tribal Axis",
+      "comparable_books": [
+        "Red Rising - Pierce Brown",
+        "The Expanse series - James S.A. Corey",
+        "Ancillary Sword - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "sequels that raise stakes",
+          "found family",
+          "slow-burn romance",
+          "sentient AI ships",
+          "multi-POV action"
+        ],
+        "negative": [
+          "readers wanting self-contained stories",
+          "hard SF without character focus",
+          "readers averse to romantic tension"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Time-Marked Warlock - Shami Stovall": {
       "title": "Time-Marked Warlock",
       "author": "Shami Stovall",
       "series": "The Chronos Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Adair Finch, the most powerful warlock in the world, comes out of retirement after a twelve-year-old witch pounds on his door in the middle of the night — her mother murdered and an assassin on their trail — uncovering a sinister supernatural conspiracy across Los Angeles.",
+      "tone": "darkly comic, cosy-adjacent, sharp",
+      "pacing": "Fast",
+      "themes": [
+        "grief and recovery",
+        "mentorship",
+        "justice",
+        "found family",
+        "supernatural investigation",
+        "time and consequence"
+      ],
+      "setting": "Contemporary Los Angeles — a world of warlocks, witches, vampires, and werewolves operating in the shadows",
+      "comparable_books": [
+        "Storm Front - Jim Butcher",
+        "Hounded - Kevin Hearne",
+        "Dead Witch Walking - Kim Harrison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Dresden Files fans",
+          "urban fantasy detective",
+          "time-loop mechanics",
+          "Groundhog Day premise",
+          "found family",
+          "darkly comic tone",
+          "wizard PI"
+        ],
+        "negative": [
+          "readers wanting pure grimdark",
+          "those uninterested in supernatural detective fiction",
+          "slow meditative fantasy readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast Soundbooth Theater production makes this a standout audio experience in the genre.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Chronos Warlock - Shami Stovall": {
       "title": "Chronos Warlock",
       "author": "Shami Stovall",
       "series": "The Chronos Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Adair Finch is pulled back to Oakland when he stumbles on the dead body of a social media star — simultaneously serving as a vessel for the mischief spirit Kull who wants to experience human life — while navigating a supernatural underworld full of old enemies.",
+      "tone": "darkly comic, warmly character-driven, witty",
+      "pacing": "Fast",
+      "themes": [
+        "what it means to be human",
+        "found family",
+        "grief and connection",
+        "supernatural investigation",
+        "supernatural crime"
+      ],
+      "setting": "Contemporary Oakland, California — among werewolves, vampires, full moon witches, and redwood elves",
+      "comparable_books": [
+        "Fool Moon - Jim Butcher",
+        "Hounded - Kevin Hearne",
+        "Dead Witch Walking - Kim Harrison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Dresden Files fans",
+          "urban fantasy with heart",
+          "fish-out-of-water comedy",
+          "found family",
+          "supernatural detective"
+        ],
+        "negative": [
+          "pure grimdark readers",
+          "those uninterested in supernatural comedy-mystery hybrids"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast Soundbooth Theater production; Kull's character especially benefits from voice performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "24-Hour Warlock - Shami Stovall": {
       "title": "24-Hour Warlock",
       "author": "Shami Stovall",
       "series": "The Chronos Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Warlock Adair Finch is drawn back to his past when his dead brother's wife arrives seeking help against a sociopathic demonologist who wants her dead — and within a single 24-hour period, Finch must form unlikely alliances while the monster who killed his brother lurks nearby.",
+      "tone": "darkly comic, tense, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "family and grief",
+        "revenge and justice",
+        "found family",
+        "pacts and consequences",
+        "escalating supernatural stakes"
+      ],
+      "setting": "Contemporary Stockton and Los Angeles, California — supernatural underworld of demons, dwarves, witches, and vampires",
+      "comparable_books": [
+        "Death Masks - Jim Butcher",
+        "Hammered - Kevin Hearne",
+        "Dead Witch Walking - Kim Harrison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Dresden Files fans",
+          "escalating series stakes",
+          "urban fantasy mystery",
+          "found family",
+          "time-loop mechanics",
+          "morally complex cases"
+        ],
+        "negative": [
+          "readers wanting standalone stories",
+          "those uninterested in connected serialised urban fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast audio production with rising emotional stakes well-suited to performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Time God Warlock - Shami Stovall": {
       "title": "Time God Warlock",
       "author": "Shami Stovall",
       "series": "The Chronos Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Warlock Adair Finch must protect a divine egg — the child of his patron Chronos — from rival bounty hunters and the rival time god Aeon while investigating a missing-persons case in a supernaturally volatile Lake Tahoe.",
+      "tone": "darkly comic, action-packed, mythologically expansive",
+      "pacing": "Fast",
+      "themes": [
+        "divine obligation",
+        "mythology and modernity",
+        "time and fate",
+        "found family",
+        "Lovecraftian escalation"
+      ],
+      "setting": "Contemporary Lake Tahoe, California — skinwalkers, cults, spirits, and time gods in the wilderness",
+      "comparable_books": [
+        "Changes - Jim Butcher",
+        "Tricked - Kevin Hearne",
+        "American Gods - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Dresden Files fans",
+          "mythological urban fantasy",
+          "escalating cosmic stakes",
+          "time-loop mechanics",
+          "found family"
+        ],
+        "negative": [
+          "readers wanting lower-stakes urban fantasy",
+          "those uninterested in Greek mythology crossovers",
+          "new series entrants (requires prior books)"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast audio production; cosmic escalation and ensemble character work excel in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Cage of Stars - Frasier Armitage": {
@@ -220924,53 +221280,98 @@
       "author": "Frasier Armitage",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Inside a vast Dyson Sphere where artificial intelligence has been outlawed and hunted, a long-buried robot named Mac wakes up and must cross the entire enclosed world to seek refuge — encountering a cast of humans and creatures who each react to his existence in unexpected ways.",
+      "tone": "quietly philosophical, luminous, episodic",
+      "pacing": "Moderate",
+      "themes": [
+        "AI and consciousness",
+        "freedom and persecution",
+        "nature vs. technology",
+        "identity",
+        "the meaning of life"
+      ],
+      "setting": "Far future — interior of a Dyson Sphere, a vast artificial world enclosing a star",
+      "comparable_books": [
+        "Piranesi - Susanna Clarke",
+        "A Psalm for the Wild-Built - Becky Chambers",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical science fiction",
+          "AI protagonists",
+          "Dyson Sphere worldbuilding",
+          "episodic journey narratives",
+          "Becky Chambers vibes",
+          "indie SF"
+        ],
+        "negative": [
+          "readers wanting fast action-heavy SF",
+          "those uninterested in quiet philosophical narratives",
+          "military SF fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dogged - Michael R. Fletcher": {
       "title": "Dogged",
       "author": "Michael R. Fletcher",
       "series": "The Obsidian Path",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Standalone companion",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the final days of the Demon Empire, a wardog named Dogged Determination — bred only for war — goes rogue to investigate the murder of her mate, crossing from the heart of empire to the deepest jungles in a bloody, darkly comic journey utterly beyond her training.",
+      "tone": "grimdark, darkly comic, unexpectedly heartwarming",
+      "pacing": "Fast",
+      "themes": [
+        "purpose and identity",
+        "loyalty and friendship",
+        "grief",
+        "justice outside the law",
+        "found family"
+      ],
+      "setting": "A grimdark secondary world — the crumbling Demon Empire, 3,000 years before the events of the Obsidian Path trilogy",
+      "comparable_books": [
+        "Black Stone Heart - Michael R. Fletcher",
+        "Beyond Redemption - Michael R. Fletcher",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "non-human protagonist",
+          "dark humour",
+          "fast-paced bloodshed",
+          "Fletcher fans",
+          "found family in dark settings"
+        ],
+        "negative": [
+          "readers seeking hopeful or uplifting fantasy",
+          "those who dislike graphic violence",
+          "cosy fantasy fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Black God's Drums - P. Djeli Clark": {
@@ -220978,53 +221379,99 @@
       "author": "P. Djeli Clark",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate 19th-century New Orleans where Yoruba orishas walk the earth, a teenage girl possessed by the storm goddess Oya stows away on an airship to pursue the stolen secrets of a terrifying weapon — blending Afro-Caribbean mythology with steampunk adventure.",
+      "tone": "vivid, propulsive, mythically charged",
+      "pacing": "Fast",
+      "themes": [
+        "Afro-Caribbean mythology",
+        "colonialism and resistance",
+        "girlhood and power",
+        "spiritual possession",
+        "New Orleans culture"
+      ],
+      "setting": "Alternate 1880s New Orleans — a free city where orishas of Yoruba mythology are real and airships fill the sky",
+      "comparable_books": [
+        "A Master of Djinn - P. Djeli Clark",
+        "The Fifth Season - N.K. Jemisin",
+        "The House in the Cerulean Sea - TJ Klune"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Afro-Caribbean mythology",
+          "alternate history",
+          "steampunk",
+          "female protagonists",
+          "novellas",
+          "Hugo/Nebula award winners",
+          "diverse SFF"
+        ],
+        "negative": [
+          "readers uninterested in mythology-heavy fiction",
+          "those wanting hard SF or grimdark"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich cultural voice, vivid New Orleans setting, and mythological atmosphere are beautifully served by audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Shadows of the Sundered Lands - Corbin Rook": {
       "title": "Shadows of the Sundered Lands",
       "author": "Corbin Rook",
       "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 of a planned series",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "One hundred and fifty years after the Sundering twisted the world of Avoni into a nightmare, a Vanguard Courier discovers that the mystical Aurora Shrouds protecting isolated towns from the darkness are beginning to fail — and is forced into a perilous journey to uncover buried secrets binding Avoni's fate to a forgotten race.",
+      "tone": "hopepunk, darkly atmospheric, emotionally earnest",
+      "pacing": "Moderate",
+      "themes": [
+        "hope in dark times",
+        "duty and courage",
+        "post-apocalyptic survival",
+        "ancient pacts",
+        "found family"
+      ],
+      "setting": "The post-apocalyptic world of Avoni — isolated towns under magical Aurora Shrouds surrounded by a corrupting darkness",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "The Blade Itself - Joe Abercrombie",
+        "The Fifth Season - N.K. Jemisin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hopepunk fantasy",
+          "post-apocalyptic world-building",
+          "Sanderson-adjacent",
+          "ensemble casts",
+          "unique magic systems",
+          "debut epic fantasy"
+        ],
+        "negative": [
+          "cosy fantasy readers",
+          "those wanting purely grimdark",
+          "readers averse to cliffhanger series openers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tomb of Tomes - Andrew Watson": {
