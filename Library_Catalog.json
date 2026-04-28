@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4192,
-  "total_pending": 408,
+  "total_catalogued": 4212,
+  "total_pending": 388,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -227264,135 +227264,251 @@
       "title": "The Silence of the Girls",
       "author": "Pat Barker",
       "series": "The Women of Troy Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A radical retelling of the Iliad from the perspective of Briseis, a Trojan queen enslaved by Achilles, laying bare the brutal cost of the Trojan War on the women who bore it. Barker gives voice to the silenced, exposing the horror and indignity of war from below.",
+      "tone": "Unflinching, lyrical, feminist, harrowing",
+      "pacing": "Moderate",
+      "themes": [
+        "Slavery and captivity",
+        "Female agency",
+        "War and its costs",
+        "Mythology retold",
+        "Power and patriarchy"
+      ],
+      "setting": "Ancient Greece and Troy, during the Trojan War (circa 1200 BCE)",
+      "comparable_books": [
+        "The Women of Troy - Pat Barker",
+        "Circe - Madeline Miller",
+        "The Song of Achilles - Madeline Miller",
+        "A Thousand Ships - Natalie Haynes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Feminist retellings of myth",
+          "Literary fiction",
+          "Morally complex characters",
+          "Strong female perspectives",
+          "Ancient world settings"
+        ],
+        "negative": [
+          "Readers wanting heroic war narrative",
+          "Graphic violence averse readers",
+          "Those seeking traditional mythology retelling"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lyrical prose and a strong first-person voice translate exceptionally well to audio.",
+      "content_flags": [
+        "Graphic violence",
+        "Sexual violence (rape, slavery)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Damascus Station - David McCloskey": {
       "title": "Damascus Station",
       "author": "David McCloskey",
       "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "CIA case officer Sam Joseph is sent to Paris to recruit Syrian Palace official Mariam Haddad, and the two enter a forbidden relationship before travelling to Damascus to hunt a killer inside Assad's brutal regime. A tense, authentic espionage thriller grounded in the early years of the Syrian civil war.",
+      "tone": "Tense, authentic, emotionally driven, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "Espionage and tradecraft",
+        "Forbidden love",
+        "Political violence",
+        "Loyalty and betrayal",
+        "The human cost of intelligence work"
+      ],
+      "setting": "Paris and Damascus, Syria, 2011–2013, during the early Syrian uprising",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Moscow X - David McCloskey",
+        "Silva - Daniel Silva Gabriel Allon series",
+        "Slow Horses - Mick Herron"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Authentic spy tradecraft",
+          "Insider CIA perspective",
+          "Morally complex characters",
+          "Propulsive pacing",
+          "Romance woven into thriller"
+        ],
+        "negative": [
+          "Readers wanting light action-adventure",
+          "Those uncomfortable with Middle East political violence",
+          "Readers who prefer courtroom/detective fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Praised in audio format with strong narration; the propulsive plot and authentic dialogue suit the medium well.",
+      "content_flags": [
+        "Graphic violence",
+        "Torture"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Women of Troy - Pat Barker": {
       "title": "The Women of Troy",
       "author": "Pat Barker",
       "series": "The Women of Troy Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up where The Silence of the Girls left off, Briseis navigates the Greek camp in the smouldering aftermath of Troy's fall, as the enslaved Trojan women wait for the Greeks to sail home. A searing feminist continuation of the Iliad's silenced stories.",
+      "tone": "Grim, unflinching, feminist, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "Slavery and female subjugation",
+        "War's aftermath",
+        "Grief and survival",
+        "Female solidarity",
+        "Power and powerlessness"
+      ],
+      "setting": "The Greek camp outside the ruins of Troy, shortly after the fall of the city (ancient Greece)",
+      "comparable_books": [
+        "The Silence of the Girls - Pat Barker",
+        "A Thousand Ships - Natalie Haynes",
+        "Circe - Madeline Miller",
+        "The Penelopiad - Margaret Atwood"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Feminist mythological retellings",
+          "Literary historical fiction",
+          "Strong female narrators",
+          "Ancient world settings"
+        ],
+        "negative": [
+          "Graphic violence averse readers",
+          "Those wanting traditional myth heroics",
+          "Readers wanting plot-driven action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence",
+        "Sexual violence (slavery, rape)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Voyage Home - Pat Barker": {
       "title": "The Voyage Home",
       "author": "Pat Barker",
       "series": "The Women of Troy Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Narrated by Ritsa, a slave attendant to the prophesying Cassandra, this concluding volume follows the Greek fleet's stormy voyage home to Mycenae, where Queen Clytemnestra waits to avenge herself on Agamemnon. A fierce, feminist finale drawing on the Oresteia.",
+      "tone": "Brutal, lyrical, ominous, colloquial",
+      "pacing": "Moderate",
+      "themes": [
+        "Revenge and justice",
+        "Female rage",
+        "Prophecy and fate",
+        "War's aftermath",
+        "Slavery and survival"
+      ],
+      "setting": "The sea voyage from Troy to Mycenae, and the palace of Mycenae, ancient Greece (loosely adapted from Aeschylus's Oresteia)",
+      "comparable_books": [
+        "The Silence of the Girls - Pat Barker",
+        "The Women of Troy - Pat Barker",
+        "A Thousand Ships - Natalie Haynes",
+        "The Penelopiad - Margaret Atwood"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Feminist mythological retellings",
+          "Literary historical fiction",
+          "Tragic female protagonists",
+          "Unflinching depiction of war"
+        ],
+        "negative": [
+          "Readers who require Briseis as narrator (she is largely absent)",
+          "Those wanting narrative closure from earlier books",
+          "Graphic violence averse readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Reviewers specifically praised the audiobook narrator as exceptional, noting expressive narration adds significantly to the experience.",
+      "content_flags": [
+        "Graphic violence",
+        "Sexual violence (slavery, rape)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "You Only Live Twice - Ian Fleming": {
       "title": "You Only Live Twice",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A grief-stricken James Bond is sent on a diplomatic mission to Japan, where he uncovers a sinister plot by the mysterious Dr. Shatterhand — who has created a garden of death to lure suicidal Japanese citizens. One of Fleming's most atmospheric and culturally rich entries in the series.",
+      "tone": "Exotic, melancholic, violent, stylish",
+      "pacing": "Moderate",
+      "themes": [
+        "Death and grief",
+        "Cultural clash",
+        "Espionage",
+        "Revenge",
+        "Identity"
+      ],
+      "setting": "Japan, 1960s — Tokyo, rural Japan, and a fortified volcanic island",
+      "comparable_books": [
+        "The Man with the Golden Gun - Ian Fleming",
+        "On Her Majesty's Secret Service - Ian Fleming",
+        "Trigger Mortis - Anthony Horowitz"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Classic spy fiction",
+          "Exotic settings",
+          "Cold War atmosphere",
+          "Fleming fans"
+        ],
+        "negative": [
+          "Readers seeking modern pacing",
+          "Those sensitive to dated attitudes toward women and race",
+          "Action-first readers (slow build)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence",
+        "Sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Hole in the Sky - Daniel H. Wilson": {
@@ -227400,80 +227516,149 @@
       "author": "Daniel H. Wilson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When an enormous unidentified object is detected approaching Earth from beyond the heliopause, four characters — a Cherokee father and daughter in Oklahoma, a NASA astrophysicist, a shadowy government threat forecaster, and a military investigator — converge on first contact told through a Native American lens. A propulsive sci-fi thriller that blends Indigenous mythology with cosmic horror.",
+      "tone": "Eerie, propulsive, thought-provoking, occasionally horrifying",
+      "pacing": "Fast",
+      "themes": [
+        "First contact",
+        "Indigenous cosmology and knowledge",
+        "Government and military response",
+        "Family and reconnection",
+        "Human understanding of reality"
+      ],
+      "setting": "Contemporary Oklahoma (Cherokee Nation), Houston NASA HQ, and an underground government bunker — USA, 2025",
+      "comparable_books": [
+        "Robopocalypse - Daniel H. Wilson",
+        "The Southern Reach Trilogy - Jeff VanderMeer",
+        "The Road to Roswell - Connie Willis",
+        "Three Miles Down - Harry Turtledove"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "First contact sci-fi",
+          "Indigenous perspectives in genre fiction",
+          "Multi-POV thrillers",
+          "Cosmic horror elements",
+          "Propulsive short reads"
+        ],
+        "negative": [
+          "Readers wanting hard scientific rigour throughout",
+          "Those preferring a single cohesive POV",
+          "Readers expecting spectacle over atmosphere"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence",
+        "Body horror",
+        "Animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Daughter of Time - Josephine Tey": {
       "title": "The Daughter of Time",
       "author": "Josephine Tey",
       "series": "Inspector Alan Grant",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Inspector Alan Grant, bedridden in hospital, becomes obsessed with the historical mystery of whether Richard III truly murdered the Princes in the Tower, conducting a rigorous detective investigation entirely from his hospital bed through books and research. A witty, intellectual meditation on truth, history, and the nature of evidence.",
+      "tone": "Witty, cerebral, gently satirical, leisurely",
+      "pacing": "Slow",
+      "themes": [
+        "Truth vs. received history",
+        "The nature of evidence",
+        "Historical revisionism",
+        "Obsession",
+        "Intellectual inquiry"
+      ],
+      "setting": "A London hospital, 1950s — with historical excursions into 15th-century England and the court of Richard III",
+      "comparable_books": [
+        "Brat Farrar - Josephine Tey",
+        "The Name of the Rose - Umberto Eco",
+        "An Instance of the Fingerpost - Iain Pears",
+        "The Sweetness at the Bottom of the Pie - Alan Bradley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Armchair detective fiction",
+          "Historical mysteries",
+          "Intellectual puzzles",
+          "Literary mystery fans",
+          "Classic crime enthusiasts"
+        ],
+        "negative": [
+          "Readers wanting physical action",
+          "Those seeking conventional detective procedurals",
+          "Readers impatient with slow-burn reflection"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Sparrow Falls - Wilbur Smith": {
       "title": "A Sparrow Falls",
       "author": "Wilbur Smith",
       "series": "When the Lion Feeds",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Returning from the horrors of WWI, General Sean Courtney watches over three potential heirs — his spoiled daughter Storm, his corrupt son Dirk, and young veteran Mark Anders — as post-war South Africa seethes with industrial unrest and personal vendettas. A sweeping conclusion to the original Courtney trilogy.",
+      "tone": "Epic, adventurous, dramatic, romantic",
+      "pacing": "Moderate",
+      "themes": [
+        "Legacy and inheritance",
+        "War's aftermath",
+        "Political and social upheaval",
+        "Loyalty and betrayal",
+        "Love and rivalry"
+      ],
+      "setting": "South Africa and WWI France, 1910s–1920s; spans from the trenches of the Western Front to the African wilderness and mining strikes of the Rand Revolt",
+      "comparable_books": [
+        "When the Lion Feeds - Wilbur Smith",
+        "The Sound of Thunder - Wilbur Smith",
+        "Shout at the Devil - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "African adventure sagas",
+          "Epic multigenerational stories",
+          "Action and romance blend",
+          "Historical Africa settings",
+          "Wilbur Smith fans"
+        ],
+        "negative": [
+          "Readers sensitive to dated colonial attitudes",
+          "Those preferring literary fiction over plot-driven adventures",
+          "Readers new to series (best read in order)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence",
+        "Sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Listener - Robert McCammon": {
@@ -227481,26 +227666,50 @@
       "author": "Robert McCammon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Depression-era New Orleans, 1934, a pair of ruthless grifters kidnap two children of a wealthy shipping magnate, not knowing that one child — nine-year-old Nilla — shares a rare psychic bond with Curtis Mayhew, a young Black man with a supernatural gift for listening. Curtis must navigate the brutal racial landscape of the Jim Crow South to answer her silent cry for help.",
+      "tone": "Tense, atmospheric, emotionally rich, darkly hopeful",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Race and racism in 1930s America",
+        "Psychic connection",
+        "Good vs. evil",
+        "Desperation and survival",
+        "Redemption"
+      ],
+      "setting": "New Orleans and the American South, 1934, during the Great Depression",
+      "comparable_books": [
+        "Boy's Life - Robert McCammon",
+        "Swan Song - Robert McCammon",
+        "Odd Thomas - Dean Koontz",
+        "The Green Mile - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Supernatural noir",
+          "Historical thrillers with social commentary",
+          "Propulsive finales",
+          "Character-driven horror",
+          "Fans of Dean Koontz or early Stephen King"
+        ],
+        "negative": [
+          "Readers sensitive to racial violence and Jim Crow themes",
+          "Those wanting gore-forward horror",
+          "Readers impatient with deliberate pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence",
+        "Racial violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sea of Tranquility - Emily St. John Mandel": {
@@ -227508,107 +227717,194 @@
       "author": "Emily St. John Mandel",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A time-traveling investigator from the distant future probes an anomaly that appears across centuries — in early 20th-century Canada, in a pandemic-era novel-within-a-novel, and on a lunar colony — weaving together questions about simulation, memory, and the nature of time. A slim, luminous speculative novel connecting Station Eleven's thematic DNA with literary time travel.",
+      "tone": "Lyrical, melancholic, quietly wondrous, meditative",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Time and repetition",
+        "Pandemic and isolation",
+        "Simulation theory",
+        "Art and memory",
+        "Human connection across time"
+      ],
+      "setting": "Multiple eras — British Columbia 1912, a pandemic 2020s, and a moon colony in the 24th century",
+      "comparable_books": [
+        "Station Eleven - Emily St. John Mandel",
+        "The Glass Hotel - Emily St. John Mandel",
+        "Cloud Atlas - David Mitchell",
+        "This Is How You Lose the Time War - Amal El-Mohtar & Max Gladstone"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Literary science fiction",
+          "Time travel with emotional resonance",
+          "Interconnected narrative structures",
+          "Quiet, reflective pacing",
+          "Pandemic fiction"
+        ],
+        "negative": [
+          "Readers wanting hard sci-fi world-building",
+          "Those seeking action-driven plots",
+          "Readers wanting definitive answers over ambiguity"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Mandel's lyrical, meditative prose and short chapters suit audio very well; the shifting timelines benefit from vocal differentiation.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Forever and a Day - Anthony Horowitz": {
       "title": "Forever and a Day",
       "author": "Anthony Horowitz",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (prequel)",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel to Casino Royale, chronicling how James Bond earned his 00 status after being sent to investigate the death of the previous 007 on the Côte d'Azur, becoming entangled with drug smugglers and a femme fatale in the south of France. Horowitz channels Fleming's style in an origin story that illuminates Bond's formative ruthlessness.",
+      "tone": "Stylish, sun-drenched, glamorous, occasionally brutal",
+      "pacing": "Fast",
+      "themes": [
+        "Origin and identity",
+        "Espionage",
+        "Moral ambiguity",
+        "Glamour and danger",
+        "Cold War crime"
+      ],
+      "setting": "The French Riviera (Nice, Monaco), late 1950s",
+      "comparable_books": [
+        "Casino Royale - Ian Fleming",
+        "Trigger Mortis - Anthony Horowitz",
+        "With a Mind to Kill - Anthony Horowitz",
+        "Devil May Care - Sebastian Faulks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Fleming-style Bond fiction",
+          "Glamorous European settings",
+          "Origin stories",
+          "Classic spy thriller pacing",
+          "Fans of the Bond canon"
+        ],
+        "negative": [
+          "Readers wanting modern Bond",
+          "Those tired of Bond formula",
+          "Readers wanting more complex moral ambiguity than Fleming allows"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Violence",
+        "Sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Twilight Falls - Juneau Black": {
       "title": "Twilight Falls",
       "author": "Juneau Black",
       "series": "Shady Hollow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the anthropomorphic woodland community of Shady Hollow, reporter Vera Vixen investigates the apparent murder of a local handyman at the titular falls during a spring festival, with all evidence pointing to a star-crossed young beaver accused of killing her lover's otter father. A charming, whimsical cozy mystery full of animal-world puns and cosy small-town warmth.",
+      "tone": "Warm, whimsical, cosy, gently humorous",
+      "pacing": "Moderate",
+      "themes": [
+        "Community and belonging",
+        "Star-crossed love",
+        "Truth and justice",
+        "Small-town life",
+        "Found family"
+      ],
+      "setting": "Shady Hollow, a fictional woodland village of anthropomorphic animals — a timeless, cosy small-town setting",
+      "comparable_books": [
+        "Shady Hollow - Juneau Black",
+        "Cold Clay - Juneau Black",
+        "Hamish Macbeth series - M.C. Beaton",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cosy mystery fans",
+          "Anthropomorphic animal fiction",
+          "Agatha Christie-style whodunnits",
+          "Low-stakes comfort reads",
+          "Romantic subplot in mysteries"
+        ],
+        "negative": [
+          "Readers wanting dark or gritty crime",
+          "Those who dislike whimsy or anthropomorphism",
+          "Readers seeking complex literary fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The playful, whimsical tone and character voices of anthropomorphic animals make for a delightful listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Exchange - John Grisham": {
       "title": "The Exchange",
       "author": "John Grisham",
       "series": "The Firm",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Legal Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fifteen years after escaping the corrupt Memphis law firm, Mitch McDeere is now a partner at the world's largest law firm in Manhattan, but when a colleague is kidnapped in Libya by terrorists demanding a $100 million ransom, he is once again thrust into a deadly international crisis with no safe way out.",
+      "tone": "Globetrotting, tense, procedural, occasionally slow",
+      "pacing": "Moderate",
+      "themes": [
+        "International law and crime",
+        "Kidnapping and ransom",
+        "Loyalty",
+        "Power and corruption",
+        "Marriage under pressure"
+      ],
+      "setting": "New York, Rome, Libya, and multiple international locations, c. 2005",
+      "comparable_books": [
+        "The Firm - John Grisham",
+        "The Pelican Brief - John Grisham",
+        "The Bourne Identity - Robert Ludlum"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Grisham fans",
+          "Fans of The Firm wanting a sequel",
+          "International thriller readers",
+          "Legal procedural enthusiasts"
+        ],
+        "negative": [
+          "Readers expecting a courtroom thriller",
+          "Those seeking The Firm's original tension level",
+          "Readers new to Mitch McDeere (requires background)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Gods of Jade and Shadow - Silvia Moreno-Garcia": {
@@ -227616,26 +227912,47 @@
       "author": "Silvia Moreno-Garcia",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1920s Jazz Age Mexico, a young Mayan woman named Casiopea accidentally frees the imprisoned Mayan god of death, Hun-Kamé, and is bound to accompany him on a quest to reclaim his throne from his treacherous brother — discovering her own power along the way. A lush, mythologically rich fantasy with a bittersweet romance.",
+      "tone": "Lush, bittersweet, atmospheric, mythological",
+      "pacing": "Moderate",
+      "themes": [
+        "Mayan mythology",
+        "Self-discovery and female agency",
+        "Death and mortality",
+        "Class and social constraints",
+        "Forbidden romance"
+      ],
+      "setting": "1920s Mexico — from rural Yucatán to Jazz Age cities including Mérida, Mexico City, and Tijuana",
+      "comparable_books": [
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "Circe - Madeline Miller",
+        "American Gods - Neil Gaiman",
+        "The Star-Touched Queen - Roshani Chokshi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Mythology-based fantasy",
+          "Latin American settings",
+          "Strong female protagonist finding her power",
+          "Bittersweet romance",
+          "Lush atmospheric writing"
+        ],
+        "negative": [
+          "Readers wanting action-heavy fantasy",
+          "Those seeking hard magic systems",
+          "Readers who dislike romantic subplots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The lyrical, atmospheric prose and strong narrative voice are particularly well-suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "One Yellow Eye - Leigh Radford": {
@@ -227643,161 +227960,294 @@
       "author": "Leigh Radford",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a zombie outbreak is contained in near-future London, scientist Dr. Kesta Shelley is secretly harbouring the last infected person — her husband Tim — tied to a bed in her flat, as she desperately searches for a cure through her work on the government's Project Dawn initiative. A literary, emotionally devastating spin on zombie horror, exploring grief, love, and the ethics of obsession.",
+      "tone": "Darkly comedic, aching, claustrophobic, literary",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Grief and love",
+        "Medical ethics",
+        "Obsession and sacrifice",
+        "Government and individual",
+        "What it means to be human"
+      ],
+      "setting": "Near-future London (c. 2023), shortly after a contained zombie pandemic",
+      "comparable_books": [
+        "Our Wives under the Sea - Julia Armfield",
+        "The Last of Us (novelisation)",
+        "Sister Maiden Monster - Lucy A. Snyder",
+        "In the Flesh (TV series analogue)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Literary horror",
+          "Zombie fiction with emotional depth",
+          "Morally grey unreliable protagonists",
+          "Grief narratives",
+          "Fans of Our Wives Under the Sea"
+        ],
+        "negative": [
+          "Readers wanting action-heavy zombie horror",
+          "Those seeking traditional genre thrills",
+          "Animal cruelty sensitive readers (monkey experimentation)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Graphic violence",
+        "Animal death (monkey experimentation)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "With a Mind to Kill - Anthony Horowitz": {
       "title": "With a Mind to Kill",
       "author": "Anthony Horowitz",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3 (Horowitz)",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set directly after the events of The Man with the Golden Gun, Bond is sent deep undercover into Soviet Russia, posing as a brainwashed agent controlled by a mind-control programme — a Cold War thriller that takes 007 behind the Iron Curtain into the heart of enemy territory.",
+      "tone": "Tense, Cold War-paranoid, dark, methodical",
+      "pacing": "Moderate",
+      "themes": [
+        "Cold War espionage",
+        "Identity and brainwashing",
+        "Trust and deception",
+        "Psychological manipulation",
+        "Loyalty"
+      ],
+      "setting": "Cold War-era Soviet Russia and East Germany, 1960s",
+      "comparable_books": [
+        "Trigger Mortis - Anthony Horowitz",
+        "Forever and a Day - Anthony Horowitz",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Moscow X - David McCloskey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War spy fiction",
+          "Faithful Fleming continuation",
+          "Psychological thriller elements",
+          "Deep cover spy plots"
+        ],
+        "negative": [
+          "Readers wanting exotic/glamorous Bond",
+          "Those not familiar with the Fleming canon",
+          "Readers wanting romance-forward Bond"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Trigger Mortis - Anthony Horowitz": {
       "title": "Trigger Mortis",
       "author": "Anthony Horowitz",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (Horowitz)",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set immediately after the events of Goldfinger, Bond is recruited to infiltrate a deadly Grand Prix motor race while investigating a plot by a brilliant Korean villain to destroy New York with a rocket. Featuring original material from Ian Fleming and a Bond girl carried over from the previous novel, it is the most faithful of the Horowitz continuations to the Fleming template.",
+      "tone": "Stylish, action-packed, glamorous, faithful to Fleming",
+      "pacing": "Fast",
+      "themes": [
+        "Cold War geopolitics",
+        "Racing and speed",
+        "Espionage",
+        "Pride and obsession",
+        "Destruction and power"
+      ],
+      "setting": "Germany (Nürburgring), New York City, and Korea, 1950s–60s Cold War era",
+      "comparable_books": [
+        "Goldfinger - Ian Fleming",
+        "Forever and a Day - Anthony Horowitz",
+        "With a Mind to Kill - Anthony Horowitz",
+        "Devil May Care - Sebastian Faulks"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Fleming-faithful Bond adventures",
+          "Motor racing settings",
+          "Cold War thrillers",
+          "Action-forward spy fiction",
+          "Bond canon enthusiasts"
+        ],
+        "negative": [
+          "Readers wanting psychological depth over action",
+          "Those unfamiliar with the Goldfinger storyline",
+          "Readers wanting fully original Bond stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Violence",
+        "Sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Sign of the Four - Arthur Conan Doyle": {
       "title": "The Sign of the Four",
       "author": "Arthur Conan Doyle",
       "series": "Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novel 2",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Sherlock Holmes and Dr. Watson are engaged by a young woman who has been receiving mysterious pearls, leading them on a chase across London and the Thames involving hidden treasure, a pact among four convicts, and the shadowy consequences of the Indian Rebellion of 1857. Watson also falls in love with the client.",
+      "tone": "Atmospheric, adventurous, Gothic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "Greed and treasure",
+        "Imperial guilt and legacy",
+        "Friendship and loyalty",
+        "Justice",
+        "Romance"
+      ],
+      "setting": "Victorian London, 1888, with flashbacks to India during the 1857 Rebellion",
+      "comparable_books": [
+        "A Study in Scarlet - Arthur Conan Doyle",
+        "The Hound of the Baskervilles - Arthur Conan Doyle",
+        "The Adventures of Sherlock Holmes - Arthur Conan Doyle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Classic mystery fans",
+          "Victorian detective fiction",
+          "Holmes canon completists",
+          "Adventure-mystery blend"
+        ],
+        "negative": [
+          "Readers wanting modern pacing",
+          "Those seeking character depth over plot",
+          "Readers sensitive to Victorian-era colonial attitudes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Victorian prose and strong narrative voice work beautifully in audio; many distinguished recordings exist.",
+      "content_flags": [
+        "Racial stereotyping (Victorian-era)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hound of the Baskervilles - Arthur Conan Doyle": {
       "title": "The Hound of the Baskervilles",
       "author": "Arthur Conan Doyle",
       "series": "Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novel 3",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "When Sir Henry Baskerville inherits a cursed Devon estate haunted by a demonic hound, Holmes sends Watson ahead to investigate while he secretly manoeuvres behind the scenes on Dartmoor. Widely considered the finest Sherlock Holmes novel, blending Gothic atmosphere with brilliant detective work.",
+      "tone": "Gothic, atmospheric, suspenseful, classic",
+      "pacing": "Moderate",
+      "themes": [
+        "Ancient curses and superstition vs. rational inquiry",
+        "Inheritance and greed",
+        "Identity and deception",
+        "Fear",
+        "Loyalty"
+      ],
+      "setting": "Dartmoor, Devon and London, England, late Victorian era",
+      "comparable_books": [
+        "The Sign of the Four - Arthur Conan Doyle",
+        "The Valley of Fear - Arthur Conan Doyle",
+        "Rebecca - Daphne du Maurier",
+        "The Woman in White - Wilkie Collins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Gothic mystery fans",
+          "Classic detective fiction",
+          "Atmospheric moorland settings",
+          "Holmes at his most legendary",
+          "Fans of Victorian suspense"
+        ],
+        "negative": [
+          "Readers wanting courtroom drama",
+          "Those expecting fast-paced action throughout",
+          "Modern thriller readers unaccustomed to Victorian prose"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Gothic atmosphere and suspense of Dartmoor are powerfully enhanced by audio narration; many exceptional recordings available.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Valley of Fear - Arthur Conan Doyle": {
       "title": "The Valley of Fear",
       "author": "Arthur Conan Doyle",
       "series": "Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novel 4",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Holmes investigates the puzzling murder of a country squire at his moated manor house, only to uncover a conspiracy stretching back to the violent Molly Maguires labour movement in 1880s Pennsylvania. Structured in two halves — a classic Holmes mystery followed by a sweeping American historical thriller.",
+      "tone": "Gripping, adventurous, dual-toned, vivid",
+      "pacing": "Fast",
+      "themes": [
+        "Labour conflict and violence",
+        "Justice and vigilantism",
+        "Organised crime",
+        "Identity and disguise",
+        "Moriarty's shadow"
+      ],
+      "setting": "A Sussex manor house, England (1890s), and the coal mining districts of Pennsylvania, USA (1880s)",
+      "comparable_books": [
+        "The Hound of the Baskervilles - Arthur Conan Doyle",
+        "The Sign of the Four - Arthur Conan Doyle",
+        "A Study in Scarlet - Arthur Conan Doyle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Holmes canon readers",
+          "Fans of historical adventure sections",
+          "Victorian detective fiction",
+          "American Gilded Age historical fiction fans"
+        ],
+        "negative": [
+          "Readers who dislike the structural split between mystery and flashback",
+          "Those wanting Holmes present throughout",
+          "Modern thriller readers unaccustomed to Victorian prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "Violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Return of Sherlock Holmes - Arthur Conan Doyle": {
