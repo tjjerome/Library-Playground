@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4471,
-  "total_pending": 129,
+  "total_catalogued": 4491,
+  "total_pending": 109,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -240752,27 +240752,47 @@
       "title": "Forgotten Life",
       "author": "Brian W. Aldiss",
       "series": "The Squire Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Clement Winter, a psychotherapist in Oxford, sorts through the diaries of his recently deceased brother Josephs, a former soldier and adventurer, confronting uncomfortable truths about family, memory, and the legacies of violence. The novel interweaves the brothers' contrasting lives to explore how the past shapes the present.",
+      "tone": "reflective, melancholic, quietly ironic",
+      "pacing": "Slow",
+      "themes": [
+        "memory and the past",
+        "brotherhood and rivalry",
+        "war trauma",
+        "marriage and fidelity",
+        "identity"
+      ],
+      "setting": "Contemporary Oxford and flashbacks to post-WWII Asia; late 1980s England",
+      "comparable_books": [
+        "The Remains of the Day - Kazuo Ishiguro",
+        "Life in the West - Brian W. Aldiss",
+        "Moon Tiger - Penelope Lively"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven literary fiction",
+          "exploration of memory and regret",
+          "British domestic realism",
+          "sibling dynamics",
+          "post-war reflection"
+        ],
+        "negative": [
+          "plot-driven readers",
+          "genre fantasy or SF",
+          "fast-paced thrillers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Super-State - Brian W. Aldiss": {
@@ -240780,296 +240800,530 @@
       "author": "Brian W. Aldiss",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set forty years in the future, a unified European super-state grapples with global warming, impending war, and social decay, while a crew aboard a spacecraft approaches Jupiter's moon Europa for a fateful first contact. A wide cast of characters — politicians, artists, androids, and ordinary citizens — reflect Aldiss's darkly comic view of humanity's unchanging follies.",
+      "tone": "darkly comic, satirical, curmudgeonly",
+      "pacing": "Slow",
+      "themes": [
+        "European politics and unity",
+        "human nature as unchanging",
+        "technology and its discontents",
+        "global warming",
+        "war and governance"
+      ],
+      "setting": "Near-future Europe (approximately 40 years hence), with a parallel spaceship mission to Europa; early 2000s publication",
+      "comparable_books": [
+        "Stand on Zanzibar - John Brunner",
+        "The Drowned World - J.G. Ballard",
+        "The Years of Rice and Salt - Kim Stanley Robinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satirical SF",
+          "ensemble casts and mosaic narratives",
+          "literary science fiction",
+          "European political themes",
+          "fans of Aldiss"
+        ],
+        "negative": [
+          "readers wanting a strong single protagonist",
+          "plot-driven action SF",
+          "those preferring conventional chapter structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Remembrance Day - Brian W. Aldiss": {
       "title": "Remembrance Day",
       "author": "Brian W. Aldiss",
       "series": "The Squire Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a crumbling seaside English town, a disparate group of characters converges around themes of memory, mortality, and the fading of post-war certainties. The novel examines how individuals reckon with the past and Britain's changing cultural identity.",
+      "tone": "elegiac, introspective, quietly satirical",
+      "pacing": "Slow",
+      "themes": [
+        "memory and loss",
+        "British decline",
+        "mortality",
+        "community and isolation",
+        "the weight of the past"
+      ],
+      "setting": "Contemporary England, a faded English coastal town; late 1980s/early 1990s",
+      "comparable_books": [
+        "Life in the West - Brian W. Aldiss",
+        "Forgotten Life - Brian W. Aldiss",
+        "The Remains of the Day - Kazuo Ishiguro"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary British fiction",
+          "character-driven ensemble narratives",
+          "meditation on mortality",
+          "fans of the Squire Quartet"
+        ],
+        "negative": [
+          "genre SF fans expecting Aldiss's speculative work",
+          "plot-driven readers",
+          "those seeking upbeat or comedic tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "training",
       "audit": null
     },
     "Life in the West - Brian W. Aldiss": {
       "title": "Life in the West",
       "author": "Brian W. Aldiss",
       "series": "The Squire Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thomas Squire, a British intellectual and TV producer, attends an academic conference in Sicily while his marriage crumbles back home, navigating the political and cultural fault lines of Cold War Europe. The novel blends wit and melancholy as Squire confronts the contradictions of Western liberal values.",
+      "tone": "witty, melancholic, politically engaged",
+      "pacing": "Moderate",
+      "themes": [
+        "Cold War politics",
+        "Western liberal identity",
+        "marriage and infidelity",
+        "intellectualism and its limits",
+        "cultural decline"
+      ],
+      "setting": "1970s Sicily and England; Cold War Europe",
+      "comparable_books": [
+        "The Radiant Way - Margaret Drabble",
+        "The Information - Martin Amis",
+        "Changing Places - David Lodge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "campus/intellectual novels",
+          "Cold War literary fiction",
+          "British social comedy",
+          "character-driven drama"
+        ],
+        "negative": [
+          "SF genre readers",
+          "fast-paced plotting",
+          "those seeking emotional warmth over irony"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Somewhere East of Life - Brian W. Aldiss": {
       "title": "Somewhere East of Life",
       "author": "Brian W. Aldiss",
       "series": "The Squire Quartet",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Roy Burnell, an architectural historian, discovers that ten years of his memories have been stolen and sold, and travels through the turbulent post-Soviet Caucasus region attempting to recover both his past and his sense of self. The novel blends thriller elements with Aldiss's characteristic literary meditation on identity and memory.",
+      "tone": "unsettled, lyrical, darkly comic",
+      "pacing": "Moderate",
+      "themes": [
+        "memory and identity theft",
+        "post-Soviet chaos",
+        "travel and displacement",
+        "human nature",
+        "the commodification of experience"
+      ],
+      "setting": "Post-Soviet Caucasus and Central Asia; early 1990s",
+      "comparable_books": [
+        "The Unconsoled - Kazuo Ishiguro",
+        "Forgotten Life - Brian W. Aldiss",
+        "The Map and the Territory - Michel Houellebecq"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF crossover",
+          "travel narrative",
+          "identity and memory themes",
+          "fans of Aldiss's Squire Quartet"
+        ],
+        "negative": [
+          "pure genre SF readers",
+          "those wanting resolved plotting",
+          "readers averse to experimental structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ironbound - Andrew Givler": {
       "title": "Ironbound",
       "author": "Andrew Givler",
       "series": "Ironbound",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a Roman-inspired empire where only the strongest may Ascend, young Castor's home is destroyed and his family endangered, forcing him to be conscripted into the Legions — bound to a Symbol he never wanted and driven by a hunger for revenge. A gritty progression fantasy following his rise through a brutal military hierarchy.",
+      "tone": "propulsive, grimdark-adjacent, adrenaline-fuelled",
+      "pacing": "Fast",
+      "themes": [
+        "revenge",
+        "power and ambition",
+        "survival",
+        "loyalty and betrayal",
+        "coming of age"
+      ],
+      "setting": "Roman-inspired fantasy empire with a progression magic system; secondary world",
+      "comparable_books": [
+        "Red Rising - Pierce Brown",
+        "The Will of the Many - James Islington",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "Roman-inspired worldbuilding",
+          "revenge plots",
+          "military fantasy",
+          "fast-paced action",
+          "underdog protagonists"
+        ],
+        "negative": [
+          "slow-burn literary fantasy",
+          "romance-heavy fantasy",
+          "low-stakes cosy fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced action-driven narrative with propulsive momentum suits audio well.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Library of Amorlin - Kalyn Josephson": {
       "title": "The Library of Amorlin",
       "author": "Kalyn Josephson",
       "series": "The Age of Beasts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former con artist Kasira, serving out her prison sentence by hunting magical creatures, is coerced into her most dangerous job yet: infiltrating the politically neutral Library of Amorlin as a spy to bring down its secretive Librarian, Allaster — whose own monstrous secrets complicate her mission. A slow-burn romantic fantasy with heists, magical beasts, and political intrigue.",
+      "tone": "whimsical, romantic, twisty",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "deception and identity",
+        "redemption",
+        "wonder and magic",
+        "political power",
+        "slow-burn romance"
+      ],
+      "setting": "Secondary fantasy world with six kingdoms centred on a magically neutral Library; contemporary-feeling pre-industrial",
+      "comparable_books": [
+        "The Wren in the Holly Library - Haruki Murakami",
+        "The Stardust Thief - Chelsea Abdullah",
+        "The Phoenix Keeper - S.A. McLean"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow-burn romance",
+          "con artist protagonists",
+          "cosy fantasy",
+          "magical creature lore",
+          "grumpy/sunshine dynamic",
+          "political intrigue"
+        ],
+        "negative": [
+          "grimdark or brutal fantasy",
+          "action-first pacing",
+          "romance-averse readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Heaven's Chains - Jeremy Bruce Adams": {
       "title": "Heaven's Chains",
       "author": "Jeremy Bruce Adams",
       "series": "The Dream Stalker Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dream stalker Pyoshara Zanesh, recovering from his first deadly hunt, begins to suspect that the Sorkarian Order itself has been corrupted by a rotten god, and enlists his mentor Getayu to uncover the conspiracy — only to be torn apart when the enemy strikes first. A dark fantasy of assassin priests, divine corruption, and desperate wilderness pursuit.",
+      "tone": "dark, tense, mythologically dense",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional corruption",
+        "loyalty and mentorship",
+        "faith and doubt",
+        "duty vs. personal bonds",
+        "the nature of gods"
+      ],
+      "setting": "The fantasy world of Asodhra; wilderness and monastery environments",
+      "comparable_books": [
+        "Rotten Gods - Jeremy Bruce Adams",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Priest-Kings of Gor - John Norman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "assassin-priest protagonists",
+          "dark fantasy",
+          "religious/mythological worldbuilding",
+          "mentor-student dynamics",
+          "conspiracy plots"
+        ],
+        "negative": [
+          "light fantasy",
+          "cosy or comedic tone",
+          "romance-heavy fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Stormblood - Jeremy Szal": {
       "title": "Stormblood",
       "author": "Jeremy Szal",
       "series": "The Common",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former biosoldier Vakov Fukasawa carries alien DNA called stormtech in his veins — a drug that makes him crave violence and adrenaline — and finds himself drawn back into the underworld of the asteroid city Compass when his former squadmates begin turning up dead and his estranged brother is implicated. A gritty military space opera about addiction, brotherhood, and the cost of war.",
+      "tone": "grimdark, propulsive, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "addiction and the body",
+        "war trauma",
+        "brotherhood",
+        "corporate and governmental corruption",
+        "identity and violence"
+      ],
+      "setting": "Futuristic space opera setting centred on Compass, a vast hollowed-out asteroid functioning as a galactic hub; far future",
+      "comparable_books": [
+        "Altered Carbon - Richard Morgan",
+        "Red Rising - Pierce Brown",
+        "Leviathan Wakes - James S.A. Corey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military SF",
+          "space opera",
+          "grimdark SF",
+          "addiction as theme",
+          "propulsive action",
+          "found family",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "cosy SF",
+          "hard SF focused on science",
+          "romance-heavy narratives",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast first-person narration with visceral action scenes plays extremely well in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wolfskin - Jeremy Szal": {
       "title": "Wolfskin",
       "author": "Jeremy Szal",
       "series": "The Common",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Captured and broken by his enemies the House of Suns, Vakov Fukasawa must escape captivity and rebuild himself to lead the final war against the Jackal and prevent the alien stormtech from consuming the galaxy. The concluding volume of the trilogy delivers large-scale space and land battles, political intrigue, and hard-earned emotional payoffs for the found family.",
+      "tone": "grimdark, heroic, emotionally intense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "resilience and recovery",
+        "leadership",
+        "brotherhood and found family",
+        "the cost of victory",
+        "addiction"
+      ],
+      "setting": "The Common universe — Compass asteroid, alien worlds, and deep space; far future",
+      "comparable_books": [
+        "Blindspace - Jeremy Szal",
+        "Stormblood - Jeremy Szal",
+        "Red Rising - Pierce Brown"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series finales with big payoffs",
+          "military space opera",
+          "found family",
+          "grimdark SF",
+          "epic battles"
+        ],
+        "negative": [
+          "standalone SF",
+          "cosy or low-stakes SF",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Big emotional climaxes and propulsive action sequences reward audio listening.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blindspace - Jeremy Szal": {
       "title": "Blindspace",
       "author": "Jeremy Szal",
       "series": "The Common",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Reaper Vakov Fukasawa faces a new threat as the surviving House of Suns cult, led by the vicious Jackal, hunts him and abducts those closest to him, while Vakov fights to free his imprisoned brother and uncover an alien conspiracy that could shatter the galaxy. The second novel expands the scope into full-blown space opera while centering on the theme of brotherhood.",
+      "tone": "grimdark, expansive, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "brotherhood",
+        "addiction",
+        "found family",
+        "fanaticism",
+        "PTSD"
+      ],
+      "setting": "The Common universe — expanding beyond Compass to alien worlds and deep space; far future",
+      "comparable_books": [
+        "Stormblood - Jeremy Szal",
+        "Altered Carbon - Richard Morgan",
+        "The Expanse series - James S.A. Corey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military space opera sequels",
+          "alien technology",
+          "grimdark SF",
+          "found family",
+          "action-heavy SF"
+        ],
+        "negative": [
+          "standalone SF",
+          "cosy or light SF",
+          "romance-heavy narratives"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Punchy first-person narration and intense battle sequences excel in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Daylight - David Baldacci": {
       "title": "Daylight",
       "author": "David Baldacci",
       "series": "Atlee Pine",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "FBI agent Atlee Pine and her colleague Carol Blum continue the search for Pine's twin sister Mercy, who was abducted in childhood, following threads into a vast international conspiracy involving a secret government program. The investigation spans continents and escalates into a high-stakes confrontation with a shadowy global network.",
+      "tone": "propulsive, tense, emotionally driven",
+      "pacing": "Fast",
+      "themes": [
+        "family trauma and loss",
+        "government conspiracy",
+        "justice vs. the law",
+        "sisterhood",
+        "identity"
+      ],
+      "setting": "Contemporary USA and international locations; modern day",
+      "comparable_books": [
+        "Long Road to Mercy - David Baldacci",
+        "The Survivor - Vince Flynn",
+        "The Last Mile - David Baldacci"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "FBI procedural thrillers",
+          "conspiracy plots",
+          "strong female protagonists",
+          "propulsive pacing",
+          "family-driven mystery"
+        ],
+        "negative": [
+          "literary fiction readers",
+          "cosy mystery fans",
+          "those averse to action-thriller conventions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Baldacci thrillers are consistently produced as high-quality audiobooks and suit the propulsive pacing of the format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Mother Tongue: English and How It Got That Way - Bill Bryson": {
@@ -241077,26 +241331,46 @@
       "author": "Bill Bryson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A witty and wide-ranging exploration of the English language — its origins, quirks, spelling chaos, global spread, and the peculiarities that make it both maddening and marvellous. Bryson traces how English absorbed influences from Norse, Norman French, Latin, and beyond to become the world's lingua franca.",
+      "tone": "witty, conversational, enthusiastic",
+      "pacing": "Moderate",
+      "themes": [
+        "linguistics and language history",
+        "cultural history",
+        "the quirks of English",
+        "globalisation of language",
+        "etymology"
+      ],
+      "setting": "Historical survey spanning ancient Britain to the modern era; global in scope",
+      "comparable_books": [
+        "The Story of English - Robert McCrum",
+        "Wordly Wise - William Allison",
+        "At Home - Bill Bryson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular linguistics",
+          "Bryson fans",
+          "language enthusiasts",
+          "accessible nonfiction",
+          "light educational reading"
+        ],
+        "negative": [
+          "academic linguists seeking rigour",
+          "readers averse to popular nonfiction",
+          "those wanting narrative nonfiction over topical surveys"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Bryson narrates his own audiobooks with charm and comic timing that significantly enhance the text.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "At Home: A Short History of Private Life - Bill Bryson": {
@@ -241104,80 +241378,144 @@
       "author": "Bill Bryson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Using the rooms of his Victorian rectory as a structural device, Bryson digresses through the surprisingly rich history behind everyday domestic objects and spaces — from the invention of the fork to the social history of the bedroom — uncovering centuries of ingenuity, squalor, and human ingenuity. A sprawling, anecdote-packed social history of private life in the Western world.",
+      "tone": "witty, digressive, warmly curious",
+      "pacing": "Moderate",
+      "themes": [
+        "social and domestic history",
+        "material culture",
+        "invention and technology",
+        "class and labour",
+        "the everyday and the overlooked"
+      ],
+      "setting": "Primarily Victorian Britain and America, with sweeping digressions across world history",
+      "comparable_books": [
+        "A Short History of Nearly Everything - Bill Bryson",
+        "The Mother Tongue - Bill Bryson",
+        "The Warmth of Other Suns - Isabel Wilkerson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Bryson fans",
+          "social history",
+          "accessible popular nonfiction",
+          "digressive anecdote-driven writing",
+          "history of everyday life"
+        ],
+        "negative": [
+          "readers wanting tight thematic argument",
+          "academic history readers",
+          "those preferring narrative biography"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Bryson narrates his own audiobooks; his delivery and comic timing make the digressive format especially enjoyable in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mercy - David Baldacci": {
       "title": "Mercy",
       "author": "David Baldacci",
       "series": "Atlee Pine",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "FBI agent Atlee Pine finally closes in on her long-lost twin sister Mercy, whose decades of captivity have left her radically changed and entangled in a dangerous underworld — forcing Atlee to race against deadly enemies to bring Mercy home alive. The fourth and final book in the series delivers an emotionally charged conclusion to the sisters' story.",
+      "tone": "tense, emotionally charged, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "sisterhood and reunion",
+        "trauma and survival",
+        "justice",
+        "identity",
+        "family bonds"
+      ],
+      "setting": "Contemporary USA and international; modern day",
+      "comparable_books": [
+        "Daylight - David Baldacci",
+        "Long Road to Mercy - David Baldacci",
+        "The Last Mile - David Baldacci"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusions",
+          "FBI thriller",
+          "strong female protagonist",
+          "emotional family stakes",
+          "conspiracy thriller"
+        ],
+        "negative": [
+          "standalone thriller readers",
+          "literary fiction readers",
+          "cosy mystery fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Baldacci audiobooks are consistently well-produced and the propulsive pace suits the format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Long Road to Mercy - David Baldacci": {
       "title": "Long Road to Mercy",
       "author": "David Baldacci",
       "series": "Atlee Pine",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "FBI agent Atlee Pine, stationed near the Grand Canyon, investigates the disappearance of a mule rider from the canyon floor, which unravels into a conspiracy with national security implications — all while she carries the private burden of her twin sister's abduction decades earlier. A taut thriller introducing a compelling new protagonist.",
+      "tone": "tense, atmospheric, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "loss and family trauma",
+        "federal law enforcement",
+        "government conspiracy",
+        "determination and justice",
+        "the American West"
+      ],
+      "setting": "Grand Canyon area and surroundings, contemporary USA",
+      "comparable_books": [
+        "Daylight - David Baldacci",
+        "The Fallen - David Baldacci",
+        "I Am Pilgrim - Terry Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "FBI procedural",
+          "strong female protagonist",
+          "American wilderness setting",
+          "propulsive thriller",
+          "conspiracy plots"
+        ],
+        "negative": [
+          "cosy mystery fans",
+          "literary fiction readers",
+          "those averse to thriller conventions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Well-produced Baldacci audiobook; propulsive pacing and atmospheric setting work well in the format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All - Eliezer Yudkowsky & Nate Soares": {
@@ -241185,53 +241523,97 @@
       "author": "Eliezer Yudkowsky & Nate Soares",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two leading AI safety researchers at MIRI argue that building superhuman artificial intelligence will almost certainly result in humanity losing control of it, with existential consequences — and call for an immediate global halt to its development. The book makes the case that current AI training methods cannot reliably produce systems aligned with human values.",
+      "tone": "urgent, polemical, technically grounded",
+      "pacing": "Moderate",
+      "themes": [
+        "AI alignment and safety",
+        "existential risk",
+        "technological ethics",
+        "AI policy",
+        "loss of control"
+      ],
+      "setting": "Contemporary nonfiction; global AI development landscape",
+      "comparable_books": [
+        "Superintelligence - Nick Bostrom",
+        "The Alignment Problem - Brian Christian",
+        "Human Compatible - Stuart Russell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "AI safety and ethics",
+          "existential risk",
+          "tech-scepticism",
+          "rationalist community readers",
+          "policy-minded nonfiction"
+        ],
+        "negative": [
+          "AI optimists",
+          "readers wanting balanced perspectives",
+          "those averse to polemical certainty",
+          "purely technical AI readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Downfall - Marc J. Gregson": {
       "title": "Downfall",
       "author": "Marc J. Gregson",
       "series": "Above the Black",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Disowned and sent on a near-suicidal invasion of the Below's colonies, teenage hero Conrad is left for dead, rescued by old enemies, and forced to rebuild himself under a new identity in the dueling pits — gathering strength for a final challenge against his tyrannical uncle and the civil war consuming the Skylands. The explosive conclusion to the Above the Black trilogy.",
+      "tone": "propulsive, action-packed, YA-heroic",
+      "pacing": "Fast",
+      "themes": [
+        "justice and tyranny",
+        "found family",
+        "identity and reinvention",
+        "loyalty and betrayal",
+        "coming of age"
+      ],
+      "setting": "The Skylands — a world of floating islands above a deadly Below; secondary fantasy world",
+      "comparable_books": [
+        "Sky's End - Marc J. Gregson",
+        "Red Rising - Pierce Brown",
+        "An Ember in the Ashes - Sabaa Tahir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA fantasy",
+          "underdog protagonists",
+          "found family",
+          "monster battles",
+          "action-adventure",
+          "series conclusions"
+        ],
+        "negative": [
+          "adult grimdark fantasy",
+          "slow-burn literary fantasy",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced YA action-adventure with high momentum suits audio perfectly.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Body: A Guide for Occupants - Bill Bryson": {
@@ -241239,26 +241621,46 @@
       "author": "Bill Bryson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bryson takes readers on a guided tour of the human body — its organs, systems, diseases, and extraordinary biological complexity — weaving scientific history and current medical knowledge together with characteristic wit and wonder. A celebration of how much (and how little) we understand about the bodies we inhabit.",
+      "tone": "witty, wonder-filled, accessible",
+      "pacing": "Moderate",
+      "themes": [
+        "biology and medicine",
+        "human anatomy",
+        "medical history",
+        "the nature of health and disease",
+        "scientific wonder"
+      ],
+      "setting": "Contemporary and historical; the human body as territory",
+      "comparable_books": [
+        "A Short History of Nearly Everything - Bill Bryson",
+        "At Home - Bill Bryson",
+        "Being Mortal - Atul Gawande"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular science",
+          "Bryson fans",
+          "medical history enthusiasts",
+          "accessible nonfiction",
+          "science for general readers"
+        ],
+        "negative": [
+          "medical professionals seeking clinical depth",
+          "readers wanting narrative nonfiction",
+          "those averse to biological content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Bryson narrates his own audiobooks with warmth and comic timing that elevate the material.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Katabasis - R. F. Kuang": {
@@ -241266,26 +241668,48 @@
       "author": "R. F. Kuang",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alice Law, a Cambridge PhD student in analytical magic, accidentally causes the death of her thesis advisor and descends into Hell alongside her brilliant rival Peter Murdoch to bring him back — navigating eight courts that mirror the corruptions of academic life. A dark-academia fantasy satire blending Dante's Inferno with sharp commentary on ambition, mentorship, and institutional power.",
+      "tone": "darkly comic, intellectually dense, satirical",
+      "pacing": "Slow",
+      "themes": [
+        "academic ambition and its costs",
+        "institutional corruption",
+        "mentorship and power",
+        "ambition vs. ethics",
+        "slow-burn romance"
+      ],
+      "setting": "1980s Cambridge and a Hell that mirrors academic life; contemporary fantasy",
+      "comparable_books": [
+        "Babel - R. F. Kuang",
+        "The Magicians - Lev Grossman",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark academia",
+          "literary fantasy",
+          "Dante-inspired fiction",
+          "academic satire",
+          "Kuang fans",
+          "slow-burn romance",
+          "philosophical fiction"
+        ],
+        "negative": [
+          "action-driven fantasy",
+          "readers wanting fast pacing",
+          "those averse to academic settings or heavy philosophical content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Philosophically dense prose and layered references reward close reading and re-reading that print enables.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "When Jackals Storm the Walls - Bradley P. Beaulieu": {
