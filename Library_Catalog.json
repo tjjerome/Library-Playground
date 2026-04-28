@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4411,
-  "total_pending": 189,
+  "total_catalogued": 4431,
+  "total_pending": 169,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -237862,27 +237862,50 @@
       "title": "Daemon",
       "author": "Daniel Suarez",
       "series": "Daemon",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Techno-Thriller",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the obituary of legendary game developer Matthew Sobol is published online, a dormant computer daemon activates, recruiting human agents, ordering assassinations, and beginning to unravel modern society's networked infrastructure. Detective Pete Sebeck races to stop a self-replicating, seemingly unstoppable AI program whose ultimate purpose goes far beyond anything he could have imagined.",
+      "tone": "propulsive, paranoid, technologically prescient",
+      "pacing": "Fast",
+      "themes": [
+        "technology and society",
+        "AI autonomy",
+        "surveillance capitalism",
+        "corporate power",
+        "freedom vs. control"
+      ],
+      "setting": "Contemporary United States; the interconnected digital and physical world of the mid-2000s",
+      "comparable_books": [
+        "Freedom™ - Daniel Suarez",
+        "Influx - Daniel Suarez",
+        "Snow Crash - Neal Stephenson",
+        "Kill Decision - Daniel Suarez"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tech-savvy readers",
+          "propulsive pacing",
+          "real-world tech extrapolation",
+          "Michael Crichton fans",
+          "cyberpunk adjacent"
+        ],
+        "negative": [
+          "character-driven literary fiction",
+          "slow meditative pacing",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bullshit Jobs - David Graeber": {
@@ -237890,53 +237913,96 @@
       "author": "David Graeber",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Sociology / Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Anthropologist David Graeber argues that a vast proportion of modern work — from middle management to corporate law to PR — is economically and socially meaningless, exploring why these jobs exist and what their proliferation means for society. Drawing on worker testimony and economic theory, he traces the psychological harm and political consequences of mass employment in purposeless roles.",
+      "tone": "polemical, witty, anthropologically grounded",
+      "pacing": "Moderate",
+      "themes": [
+        "labor",
+        "capitalism",
+        "meaning and work",
+        "bureaucracy",
+        "political economy"
+      ],
+      "setting": "Contemporary global economy; largely Western workplace contexts",
+      "comparable_books": [
+        "Debt: The First 5,000 Years - David Graeber",
+        "The Utopia of Rules - David Graeber",
+        "24/7 - Jonathan Crary",
+        "The Big Sort - Bill Bishop"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anti-capitalist politics",
+          "pop-sociology",
+          "essay-style non-fiction",
+          "darkly comic",
+          "fans of Graeber's Debt"
+        ],
+        "negative": [
+          "empirical economics readers",
+          "pro-business perspectives",
+          "narrative non-fiction preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Empire - Conn Iggulden": {
       "title": "Empire",
       "author": "Conn Iggulden",
       "series": "The Golden Age",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Pericles returns to Athens as its undisputed leader, but the ever-present threat of Sparta looms on the horizon. When catastrophe weakens the Spartan war machine, Pericles seizes the moment to reshape the balance of power in the ancient world — only to find that lasting peace may require waging a brutal and costly war.",
+      "tone": "propulsive, vivid, battle-driven",
+      "pacing": "Fast",
+      "themes": [
+        "empire and power",
+        "democracy and leadership",
+        "war and peace",
+        "political ambition",
+        "ancient rivalry"
+      ],
+      "setting": "Ancient Greece, approximately 465–425 BC; Athens, Sparta, and surrounding territories",
+      "comparable_books": [
+        "Lion - Conn Iggulden",
+        "Gates of Athens - Conn Iggulden",
+        "The Falcon of Sparta - Conn Iggulden",
+        "Tyrant - Christian Cameron"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient history fans",
+          "battle-heavy historical fiction",
+          "propulsive pacing",
+          "fans of Conn Iggulden"
+        ],
+        "negative": [
+          "literary fiction preference",
+          "slow meditative pacing",
+          "fantasy preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Battle-heavy historical fiction with vivid action translates exceptionally well to audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "God's Junk Drawer - Peter Clines": {
@@ -237944,26 +238010,49 @@
       "author": "Peter Clines",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Decades after a family vanished on a whitewater rafting trip, the surviving son — now an astrophysicist working under a false name — has finally calculated how to re-enter the mysterious primordial valley that swallowed them. When his graduate students follow him into it, a ragtag ensemble finds themselves stranded in a strange realm populated by dinosaurs, Neanderthals, aliens, and androids, forced to solve its impossible mysteries to survive.",
+      "tone": "adventurous, puzzle-driven, witty and heartfelt",
+      "pacing": "Moderate",
+      "themes": [
+        "family and sacrifice",
+        "scientific curiosity",
+        "memory vs. reality",
+        "survival",
+        "lost worlds"
+      ],
+      "setting": "A timeless primordial valley outside normal space-time, drawing from Earth's past, present, and future",
+      "comparable_books": [
+        "The Fold - Peter Clines",
+        "14 - Peter Clines",
+        "Timeline - Michael Crichton",
+        "Jurassic Park - Michael Crichton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble casts",
+          "puzzle-box mysteries",
+          "genre mashup",
+          "Michael Crichton fans",
+          "lost world adventure"
+        ],
+        "negative": [
+          "romance-heavy",
+          "grimdark",
+          "literary fiction preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Empire of AI - Karen Hao": {
@@ -237971,26 +238060,46 @@
       "author": "Karen Hao",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Investigative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Journalist Karen Hao offers an exhaustive, deeply reported account of the rise of OpenAI — from its founding as a safety-first nonprofit through its transformation into a profit-driven tech juggernaut under Sam Altman — drawing on hundreds of interviews and internal documents. The book exposes the human and environmental costs of the AI arms race, including the exploitation of low-wage data workers in the Global South and the enormous energy demands of AI infrastructure.",
+      "tone": "investigative, incisive, critical",
+      "pacing": "Moderate",
+      "themes": [
+        "AI ethics",
+        "corporate power",
+        "colonialism and tech",
+        "labor exploitation",
+        "governance and accountability"
+      ],
+      "setting": "Contemporary; Silicon Valley, Global South data-annotation hubs, OpenAI offices",
+      "comparable_books": [
+        "Supremacy - Parmy Olson",
+        "Unmasking AI - Joy Buolamwini",
+        "The Age of Surveillance Capitalism - Shoshana Zuboff",
+        "Zucked - Roger McNamee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "AI and tech ethics readers",
+          "investigative journalism",
+          "anti-tech-industry perspectives",
+          "policy and governance interest"
+        ],
+        "negative": [
+          "AI boosters",
+          "tech hagiography fans",
+          "narrative non-fiction preference over policy analysis"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Libertarian Walks Into a Bear: The Utopian Plot to Liberate an American Town - Matthew Hongoltz-Hetling": {
@@ -237998,26 +238107,44 @@
       "author": "Matthew Hongoltz-Hetling",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Journalist Matthew Hongoltz-Hetling chronicles the bizarre true story of the Free Town Project — a libertarian movement that successfully recruited hundreds of ideologues to take over Grafton, New Hampshire and dismantle local government — only to discover that the resulting power vacuum attracted an alarming population of bears. A darkly comic examination of radical ideology colliding with rural reality.",
+      "tone": "darkly comic, sardonic, journalistic",
+      "pacing": "Moderate",
+      "themes": [
+        "libertarianism",
+        "political ideology vs. reality",
+        "community and governance",
+        "nature vs. civilization",
+        "American eccentricity"
+      ],
+      "setting": "Grafton, New Hampshire; contemporary rural America",
+      "comparable_books": [
+        "Destiny of the Republic - Candice Millard",
+        "The Feather Thief - Kirk Wallace Johnson",
+        "Killers of the Flower Moon - David Grann"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic non-fiction",
+          "political satire",
+          "quirky true stories",
+          "narrative journalism"
+        ],
+        "negative": [
+          "libertarian sympathizers",
+          "dry academic policy writing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Darkly comic narrative non-fiction with strong voice and absurdist pacing — ideal for audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Miracle Creek - Angie Kim": {
@@ -238025,26 +238152,48 @@
       "author": "Angie Kim",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a hyperbaric oxygen therapy chamber explodes in rural Virginia, killing two people — including a child with autism — a Korean immigrant family at the center of the business is accused of murder, and their trial unravels a web of secrets among the patients, parents, and families involved. Told from multiple perspectives, the novel dissects the explosive intersection of grief, desperate parenting, immigration, and moral culpability.",
+      "tone": "tense, emotionally layered, morally complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "parenthood",
+        "disability and autism",
+        "immigration",
+        "guilt and complicity",
+        "the American dream"
+      ],
+      "setting": "Rural Virginia, contemporary; a courtroom and the lives surrounding a medical trial",
+      "comparable_books": [
+        "My Sister's Keeper - Jodi Picoult",
+        "Little Fires Everywhere - Celeste Ng",
+        "The Sympathizer - Viet Thanh Nguyen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multiple-POV literary fiction",
+          "courtroom drama",
+          "morally grey characters",
+          "immigrant experience",
+          "slow burn with payoff"
+        ],
+        "negative": [
+          "propulsive genre thrillers",
+          "romance-heavy",
+          "action-focused"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Happiness Falls - Angie Kim": {
@@ -238052,26 +238201,46 @@
       "author": "Angie Kim",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a Korean-American father goes missing during a morning walk with his son — who has a rare genetic condition affecting speech — the family's eldest daughter narrates their frantic search for answers, slowly uncovering unsettling truths about her father's secret life. The novel braids mystery with meditations on happiness, disability, communication, and the hidden lives of those we love most.",
+      "tone": "introspective, emotionally gripping, darkly curious",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "family secrets",
+        "disability and communication",
+        "happiness and meaning",
+        "identity",
+        "Korean-American experience"
+      ],
+      "setting": "Contemporary suburban Virginia; Korean-American family life",
+      "comparable_books": [
+        "Miracle Creek - Angie Kim",
+        "The Vegetarian - Han Kang",
+        "Little Fires Everywhere - Celeste Ng"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary mystery",
+          "family dynamics",
+          "immigrant experience",
+          "disability representation",
+          "emotionally layered fiction"
+        ],
+        "negative": [
+          "fast-paced genre thrillers",
+          "romance-heavy",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "How to Hide an Empire: A History of the Greater United States - Daniel Immerwahr": {
@@ -238079,107 +238248,192 @@
       "author": "Daniel Immerwahr",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History / Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Historian Daniel Immerwahr reframes American history to include the territories — Puerto Rico, Guam, the Philippines, and dozens of other islands — that the United States has controlled but rarely acknowledged, arguing that the conventional map of America systematically erases a vast imperial project. Witty and revelatory, the book explores how the US built, exploited, and eventually concealed its overseas empire.",
+      "tone": "witty, revisionist, accessible and revelatory",
+      "pacing": "Moderate",
+      "themes": [
+        "American imperialism",
+        "colonialism",
+        "forgotten history",
+        "nation and territory",
+        "race and power"
+      ],
+      "setting": "Global; US territories from the Pacific to the Caribbean, spanning the 19th–21st centuries",
+      "comparable_books": [
+        "The Anarchy - William Dalrymple",
+        "Empire of the Summer Moon - S.C. Gwynne",
+        "Overthrow - Stephen Kinzer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "revisionist history",
+          "American history",
+          "anti-imperial perspectives",
+          "accessible narrative non-fiction",
+          "eye-opening scope"
+        ],
+        "negative": [
+          "nationalistic or pro-empire perspectives",
+          "highly technical academic history"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrative-driven, witty prose with a strong authorial voice — well-suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gamechanger - L. X. Beckett": {
       "title": "Gamechanger",
       "author": "L. X. Beckett",
       "series": "The Bounceback",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 2101, after environmental and economic collapse have devastated civilization, lawyer and VR gamer Rubi Whiting is assigned a provocative dissident named Luciano Pox as a client — and finds herself drawn into a global conspiracy that could determine whether humanity's fragile recovery survives. A hopepunk cyberpunk novel blending alien contact, social capital economics, and diverse LGBTQ+ characters.",
+      "tone": "hopepunk, fast-paced, richly imagined",
+      "pacing": "Fast",
+      "themes": [
+        "climate recovery",
+        "democracy and governance",
+        "social capital",
+        "found family",
+        "LGBTQ+ identity"
+      ],
+      "setting": "Year 2101; a near-future Earth recovering from ecological and social collapse, with rich virtual reality infrastructure",
+      "comparable_books": [
+        "Dealbreaker - L. X. Beckett",
+        "The Water Knife - Paolo Bacigalupi",
+        "Rainbows End - Vernor Vinge",
+        "New York 2140 - Kim Stanley Robinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hopepunk",
+          "cyberpunk",
+          "LGBTQ+ characters",
+          "complex world-building",
+          "climate fiction"
+        ],
+        "negative": [
+          "grimdark",
+          "simple plotting",
+          "romance-light readers who dislike polyamory subplots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "God's Demon - Wayne Barlowe": {
       "title": "God's Demon",
       "author": "Wayne Barlowe",
       "series": "God's Demon",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Hell's vast infernal empire, the powerful Demon Major Sargatanas has grown sickened by his millennia of torment and servitude to Beelzebub, and hatches an impossible rebellion — to fight his way through the legions of Hell and ascend back to Heaven. Inspired by Paradise Lost, the novel is a visually stunning epic of war, redemption, and atonement set in a grotesquely detailed underworld.",
+      "tone": "grimdark, epic, visually vivid, philosophically weighty",
+      "pacing": "Slow",
+      "themes": [
+        "redemption and atonement",
+        "free will",
+        "rebellion against authority",
+        "the nature of good and evil",
+        "Milton and Christian mythology"
+      ],
+      "setting": "Hell; a vast, grotesque infernal empire modelled on Paradise Lost's underworld",
+      "comparable_books": [
+        "The Heart of Hell - Wayne Barlowe",
+        "Paradise Lost - John Milton",
+        "The Sundering - Walter Mosely",
+        "Inferno - Larry Niven & Jerry Pournelle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy",
+          "Milton / Paradise Lost fans",
+          "grimdark",
+          "morally complex protagonists",
+          "epic world-building"
+        ],
+        "negative": [
+          "light fantasy",
+          "romance-heavy",
+          "fast-paced action readers",
+          "content-sensitive readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Null States - Malka Ann Older": {
       "title": "Null States",
       "author": "Malka Ann Older",
       "series": "The Centenal Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future world governed by microdemocracy — where 100,000-person centenals choose governments by policy rather than geography — Information operative Mishima investigates a political assassination in the newly incorporated DarFur while a war between Central Asian states threatens global stability. The second entry in the Centenal Cycle deepens the political thriller stakes as the global infomocracy begins to crack.",
+      "tone": "kinetic, politically cerebral, globe-trotting",
+      "pacing": "Moderate",
+      "themes": [
+        "democracy and governance",
+        "information and power",
+        "geopolitics",
+        "microdemocracy",
+        "post-nationalism"
+      ],
+      "setting": "Near-future Earth; DarFur, Central Asia, Geneva — a world governed by a data-driven microdemocracy",
+      "comparable_books": [
+        "Infomocracy - Malka Older",
+        "State Tectonics - Malka Older",
+        "The Ministry for the Future - Kim Stanley Robinson",
+        "A Closed and Common Orbit - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political SF",
+          "world-building depth",
+          "globe-trotting thriller",
+          "speculative governance",
+          "female protagonists"
+        ],
+        "negative": [
+          "romance-heavy",
+          "action-first readers",
+          "those who haven't read Infomocracy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Confederacy of Dunces - John Kennedy Toole": {
@@ -238187,161 +238441,293 @@
       "author": "John Kennedy Toole",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The magnificently obese, outrageously pompous Ignatius J. Reilly blunders through 1960s New Orleans, clashing with his put-upon mother, a scheming barmaid, idealistic activists, and the wider world he views with supreme contempt — all while writing his magnum opus in Big Chief tablets. A Pulitzer Prize-winning comic masterpiece of character, place, and satirical outrage.",
+      "tone": "riotously comic, absurdist, satirical",
+      "pacing": "Moderate",
+      "themes": [
+        "social satire",
+        "eccentricity and outsiderdom",
+        "New Orleans culture",
+        "class and ambition",
+        "self-delusion"
+      ],
+      "setting": "New Orleans, Louisiana, early 1960s",
+      "comparable_books": [
+        "Lucky Jim - Kingsley Amis",
+        "The Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Catch-22 - Joseph Heller",
+        "The Adventures of Augie March - Saul Bellow"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "comic masterpiece fans",
+          "character-driven fiction",
+          "Southern Gothic",
+          "absurdist humor",
+          "Pulitzer Prize readers"
+        ],
+        "negative": [
+          "plot-driven genre fiction",
+          "readers who dislike unreliable/insufferable protagonists"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ignatius's voice and the rich New Orleans dialogue are electrifying in audio — widely considered one of the great audiobook performances.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Desert Torn Asunder - Bradley P. Beaulieu": {
       "title": "A Desert Torn Asunder",
       "author": "Bradley P. Beaulieu",
       "series": "The Song of the Shattered Sands",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the climactic final volume, Çeda and Emre sail for their ancestral home to confront the traitor Hamid, only to find the desert tribes united against Sharakhai in a holy crusade — while the deposed queen Meryam plots to raise an elder god whose resurrection would bring ruin to the entire desert. All threads of the six-book saga converge in a sweeping conclusion.",
+      "tone": "epic, Arabian Nights-inspired, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "freedom and oppression",
+        "destiny and sacrifice",
+        "desert tribes and culture",
+        "divine power",
+        "revolution"
+      ],
+      "setting": "The fictional Great Shangazi desert and the city of Sharakhai; an Arabian Nights-inspired secondary world",
+      "comparable_books": [
+        "Twelve Kings in Sharakhai - Bradley P. Beaulieu",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Shadow of the Wind - Carlos Ruiz Zafón",
+        "The Jasmine Throne - Tasha Suri"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arabian Nights-inspired fantasy",
+          "epic fantasy",
+          "female protagonists",
+          "rich world-building",
+          "long series completionists"
+        ],
+        "negative": [
+          "standalone readers",
+          "grimdark aversion",
+          "slow-pacing aversion"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Veil of Spears - Bradley P. Beaulieu": {
       "title": "A Veil of Spears",
       "author": "Bradley P. Beaulieu",
       "series": "The Song of the Shattered Sands",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Exiled from Sharakhai after a brutal battle, Çeda seeks out the remnants of the Moonless Host — now known as the Thirteenth Tribe — and hatches a plan to return to the city and free the enslaved asirim, while the King of Swords hunts her and the surviving kings begin maneuvering against one another. The series' midpoint deepens the political fractures and mythological mysteries of the Shattered Sands.",
+      "tone": "epic, Arabian Nights-inspired, politically complex",
+      "pacing": "Moderate",
+      "themes": [
+        "freedom and enslavement",
+        "political intrigue",
+        "tribal identity",
+        "mythology and gods",
+        "revolution"
+      ],
+      "setting": "The Great Shangazi desert and Sharakhai; an Arabian Nights-inspired secondary world",
+      "comparable_books": [
+        "Twelve Kings in Sharakhai - Bradley P. Beaulieu",
+        "With Blood Upon the Sand - Bradley P. Beaulieu",
+        "The Jasmine Throne - Tasha Suri"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arabian Nights-inspired fantasy",
+          "epic fantasy",
+          "female protagonists",
+          "rich world-building"
+        ],
+        "negative": [
+          "standalone readers",
+          "fast-paced thrillers",
+          "light fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Titanium Noir - Nick Harkaway": {
       "title": "Titanium Noir",
       "author": "Nick Harkaway",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Titanium Noir",
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the near-future city of Chersenesos, where the ultra-wealthy can buy biological immortality and physical gigantism via the drug Titanium 7, freelance detective Cal Sounder is called to investigate the murder of a seemingly ordinary techie — who turns out to be a 91-year-old, seven-foot-tall Titan. His investigation pulls him into the terrifying family web of the man who controls the T7 treatment.",
+      "tone": "hardboiled noir, sardonic, darkly comic, stylish",
+      "pacing": "Fast",
+      "themes": [
+        "inequality and class",
+        "immortality and power",
+        "corruption",
+        "identity and transformation",
+        "justice"
+      ],
+      "setting": "The near-future city of Chersenesos; a stratified society where only the super-rich can afford biological immortality",
+      "comparable_books": [
+        "Gnomon - Nick Harkaway",
+        "The Gone-Away World - Nick Harkaway",
+        "The Big Sleep - Raymond Chandler",
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "noir crime fiction",
+          "sci-fi crime crossover",
+          "Philip K. Dick fans",
+          "Raymond Chandler fans",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "straightforward hard SF",
+          "romance-heavy",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Harkaway's razor-sharp noir voice and sardonic first-person narration are ideally suited to audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "With Blood Upon the Sand - Bradley P. Beaulieu": {
       "title": "With Blood Upon the Sand",
       "author": "Bradley P. Beaulieu",
       "series": "The Song of the Shattered Sands",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Now serving as a Blade Maiden — the elite warriors of Sharakhai's immortal kings — Çeda must walk a dangerous double life, gathering secrets while fighting covert missions for the kings and feeling the growing anguish of the enslaved asirim through their psychic bond. The kings, hungry for revenge after a bloody rebel attack, tighten their grip on the city as Çeda's rebellion grows.",
+      "tone": "epic, Arabian Nights-inspired, tense and intricate",
+      "pacing": "Moderate",
+      "themes": [
+        "double life and deception",
+        "freedom and enslavement",
+        "sacrifice",
+        "mythological power",
+        "identity"
+      ],
+      "setting": "Sharakhai, the great desert city; an Arabian Nights-inspired secondary world",
+      "comparable_books": [
+        "Twelve Kings in Sharakhai - Bradley P. Beaulieu",
+        "A Veil of Spears - Bradley P. Beaulieu",
+        "The Jasmine Throne - Tasha Suri"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arabian Nights-inspired fantasy",
+          "epic fantasy",
+          "female protagonists",
+          "rich world-building",
+          "political intrigue"
+        ],
+        "negative": [
+          "standalone readers",
+          "light fantasy",
+          "fast-paced thrillers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Twelve Kings in Sharakhai - Bradley P. Beaulieu": {
       "title": "Twelve Kings in Sharakhai",
       "author": "Bradley P. Beaulieu",
       "series": "The Song of the Shattered Sands",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Sharakhai, a magnificent desert city ruled by twelve cruel and immortal kings, a young pit fighter named Çeda defies the holy laws of Beht Zha'ir and discovers a devastating secret that sets her on a path of rebellion against the kings' ancient, blood-stained rule. Drawing on Arabian Nights traditions, the series opener establishes a richly mythologised desert world of gods, enslaved spirits, and revolution.",
+      "tone": "epic, richly mythologised, Arabian Nights-inspired",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "revolution and oppression",
+        "mythology and fate",
+        "identity and heritage",
+        "sacrifice",
+        "desert culture"
+      ],
+      "setting": "Sharakhai, a vast desert metropolis; an Arabian Nights-inspired secondary world",
+      "comparable_books": [
+        "With Blood Upon the Sand - Bradley P. Beaulieu",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Jasmine Throne - Tasha Suri",
+        "The City of Brass - S.A. Chakraborty"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arabian Nights-inspired fantasy",
+          "epic fantasy",
+          "female protagonists",
+          "rich world-building",
+          "mythology-heavy"
+        ],
+        "negative": [
+          "standalone readers",
+          "fast-paced thriller preference",
+          "low-magic fantasy preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tigerman - Nick Harkaway": {
@@ -238349,26 +238735,49 @@
       "author": "Nick Harkaway",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sergeant Lester Ferris, a burned-out British soldier serving out his posting on the doomed island of Mancreu — a former colony in legal limbo, host to a Black Fleet of illicit ships and on the brink of destruction — befriends a brilliant, comic-book-obsessed street kid and finds himself reluctantly becoming a real-world superhero. A deeply human novel about parenthood, post-colonialism, and the nature of heroism.",
+      "tone": "witty, heartfelt, genre-mixing, bittersweet",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "parenthood and found family",
+        "post-colonialism",
+        "heroism and identity",
+        "comic book mythology",
+        "duty vs. conscience"
+      ],
+      "setting": "The fictional island of Mancreu, a former British colony in the Arabian Sea; contemporary geopolitical limbo",
+      "comparable_books": [
+        "Angelmaker - Nick Harkaway",
+        "The Gone-Away World - Nick Harkaway",
+        "The Quiet American - Graham Greene",
+        "Cat's Cradle - Kurt Vonnegut"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary genre-mashup",
+          "found family",
+          "post-colonial themes",
+          "comic book intertextuality",
+          "Nick Harkaway fans"
+        ],
+        "negative": [
+          "straightforward superhero fiction",
+          "action-first readers",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "This Is Your Brain on Music - Daniel J. Levitin": {
@@ -238376,26 +238785,46 @@
       "author": "Daniel J. Levitin",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Popular Science / Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Neuroscientist and former music producer Daniel Levitin explores the science of how and why humans respond to music — from the neural mechanisms of rhythm, melody, and emotion to the evolutionary origins of musicality — making cutting-edge cognitive science accessible to general readers. The book bridges music theory, evolutionary biology, and neuroscience to reveal why music is so deeply wired into human experience.",
+      "tone": "accessible, enthusiastic, conversational",
+      "pacing": "Moderate",
+      "themes": [
+        "music and the brain",
+        "neuroscience",
+        "emotion and cognition",
+        "evolution of music",
+        "what makes us human"
+      ],
+      "setting": "Non-fiction; contemporary neuroscience research with historical and evolutionary context",
+      "comparable_books": [
+        "Musicophilia - Oliver Sacks",
+        "The Music Instinct - Philip Ball",
+        "Proust Was a Neuroscientist - Jonah Lehrer",
+        "How Music Works - David Byrne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "music lovers",
+          "popular science readers",
+          "neuroscience interest",
+          "accessible non-fiction",
+          "cross-disciplinary curiosity"
+        ],
+        "negative": [
+          "highly technical academic readers",
+          "narrative-only non-fiction preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Unspoken Name - A. K. Larkwood": {
