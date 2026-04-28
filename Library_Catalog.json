@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4551,
-  "total_pending": 49,
+  "total_catalogued": 4571,
+  "total_pending": 29,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -244606,243 +244606,457 @@
       "title": "Leviathan",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1704, Matthew Corbett and companions pursue the mystery of a supernaturally powerful mirror across Sardinia and into Venice, facing both Spanish authorities and a rival crime family while contending with the treacherous Professor Fell. This is the epic final installment of the series, bringing Matthew's long struggle to a close.",
+      "tone": "swashbuckling, atmospheric, darkly adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "good vs. evil",
+        "justice",
+        "perseverance",
+        "colonial-era history",
+        "crime and villainy"
+      ],
+      "setting": "Early 18th-century Europe — Sardinia and Venice, 1704",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "The Alienist - Caleb Carr",
+        "Speaks the Nightbird - Robert McCammon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical mystery",
+          "long-running series payoff",
+          "swashbuckling adventure",
+          "colonial-era setting",
+          "morally driven protagonist",
+          "cat-and-mouse with a mastermind villain"
+        ],
+        "negative": [
+          "requires prior series investment",
+          "very long series to catch up on",
+          "some supernatural elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Guilt - Keigo Higashino": {
       "title": "Guilt",
       "author": "Keigo Higashino",
       "series": "Detective Godai",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Tokyo homicide detective Godai investigates a lawyer's murder that leads to a suspect who spontaneously confesses to both this crime and an unsolved killing from thirty years ago — yet the confession rings false, drawing Godai into a complex web of guilt, innocence, and long-buried consequences. A slow-burn moral mystery steeped in Japanese cultural nuance.",
+      "tone": "measured, psychologically rich, morally reflective",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "guilt and innocence",
+        "justice",
+        "the weight of the past",
+        "Japanese culture and judicial system",
+        "redemption"
+      ],
+      "setting": "Contemporary Tokyo, Japan (2017)",
+      "comparable_books": [
+        "The Devotion of Suspect X - Keigo Higashino",
+        "Newcomer - Keigo Higashino",
+        "Confessions - Kanae Minato"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese crime fiction",
+          "slow-burn mystery",
+          "psychological depth",
+          "moral ambiguity",
+          "procedural detail",
+          "literary feel"
+        ],
+        "negative": [
+          "very slow opening pace",
+          "not action-driven",
+          "dense cultural specificity may not suit all readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Thunderhead - Neal Shusterman": {
       "title": "Thunderhead",
       "author": "Neal Shusterman",
       "series": "Arc of a Scythe",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Young Adult Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-mortal world governed by the all-knowing AI Thunderhead and the powerful order of Scythes who control death, Citra and Rowan find themselves on opposing sides as political corruption within the Scythedom grows. The Thunderhead watches but is forbidden to intervene, even as catastrophe looms.",
+      "tone": "propulsive, darkly philosophical, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "power and corruption",
+        "mortality",
+        "artificial intelligence",
+        "morality",
+        "justice",
+        "political intrigue"
+      ],
+      "setting": "Far-future post-scarcity Earth where death has been conquered",
+      "comparable_books": [
+        "The Hunger Games - Suzanne Collins",
+        "Scythe - Neal Shusterman",
+        "Legend - Marie Lu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high-stakes dystopia",
+          "morally grey factions",
+          "fast pacing",
+          "thought-provoking premise",
+          "strong world-building",
+          "teen protagonists with agency"
+        ],
+        "negative": [
+          "YA label may deter some adult readers",
+          "requires reading Book 1 first"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multi-narrator audio production enhances the dual-POV structure and the Thunderhead's distinct narrative voice.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Too Like the Lightning - Ada Palmer": {
       "title": "Too Like the Lightning",
       "author": "Ada Palmer",
       "series": "Terra Ignota",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the 25th century, an unreliable narrator named Mycroft Canner recounts a political crisis threatening the fragile global order of nation-free Hives, centred on a miraculous child with apparently impossible powers. Dense, intellectually dazzling, and deliberately written in 18th-century Enlightenment prose style.",
+      "tone": "erudite, provocative, baroque, morally unsettling",
+      "pacing": "Slow",
+      "themes": [
+        "Enlightenment philosophy",
+        "gender and power",
+        "political order",
+        "religion and miracle",
+        "free will",
+        "unreliable narration"
+      ],
+      "setting": "25th-century Earth, a post-nation-state utopia with Hive allegiances",
+      "comparable_books": [
+        "A Fire Upon the Deep - Vernor Vinge",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "philosophical depth",
+          "unconventional narrative structure",
+          "Enlightenment-era prose pastiche",
+          "political complexity",
+          "rewards re-reading"
+        ],
+        "negative": [
+          "extremely dense and challenging",
+          "deliberately archaic prose style",
+          "slow and demanding opener",
+          "ends mid-story (continues in Book 2)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Will to Battle - Ada Palmer": {
       "title": "The Will to Battle",
       "author": "Ada Palmer",
       "series": "Terra Ignota",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the fragile global peace of the Hive system crumbles toward inevitable war, Mycroft Canner and the world's leaders grapple with how humanity might relearn to wage conflict. A philosophical meditation on war, justice, and the nature of civilization told through the series' signature Enlightenment-inflected prose.",
+      "tone": "erudite, ominous, meditative, philosophically charged",
+      "pacing": "Slow",
+      "themes": [
+        "war and peace",
+        "justice",
+        "political philosophy",
+        "the nature of civilization",
+        "Enlightenment thought",
+        "fate and free will"
+      ],
+      "setting": "25th-century Earth, on the precipice of global war",
+      "comparable_books": [
+        "Seven Surrenders - Ada Palmer",
+        "A Deepness in the Sky - Vernor Vinge",
+        "The Dispossessed - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "philosophical depth",
+          "political complexity",
+          "rewards investment in the series",
+          "intellectually ambitious"
+        ],
+        "negative": [
+          "requires reading Books 1–2 first",
+          "extremely dense and demanding",
+          "slow and cerebral",
+          "deliberately archaic prose style"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Minute to Midnight - David Baldacci": {
       "title": "A Minute to Midnight",
       "author": "David Baldacci",
       "series": "Atlee Pine",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "FBI agent Atlee Pine returns to her Georgia hometown on leave to investigate a series of murders and continue her search for her twin sister Mercy, who was abducted in childhood. The investigation forces Pine to confront painful truths about her past.",
+      "tone": "propulsive, tense, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "family trauma",
+        "identity",
+        "justice",
+        "childhood abduction",
+        "FBI procedural",
+        "small-town secrets"
+      ],
+      "setting": "Rural Georgia, USA, contemporary",
+      "comparable_books": [
+        "Long Road to Mercy - David Baldacci",
+        "The Last Thing He Told Me - Laura Dave",
+        "The Silent Patient - Alex Michaelides"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive thriller pacing",
+          "strong female FBI protagonist",
+          "emotional backstory",
+          "mystery-within-a-thriller structure",
+          "easy to read"
+        ],
+        "negative": [
+          "plot can be formulaic",
+          "light on character depth",
+          "requires reading Book 1 for full context"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced commercial thriller translates exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Abandoned - W. Michael Gear": {
       "title": "Abandoned",
       "author": "W. Michael Gear",
       "series": "Donovan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As a Corporate ship arrives to assess the struggling colony on the deadly alien planet Donovan, security officer Talina Perez risks everything to save a hidden community of settlers while a hotheaded lieutenant threatens to destabilize the precarious peace. Resources dwindle and the planet's lethal wildlife closes in.",
+      "tone": "gritty, survivalist, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "colonialism",
+        "corporate power vs. individual freedom",
+        "human nature",
+        "alien ecology"
+      ],
+      "setting": "Donovan, a deadly alien colony planet in the far future",
+      "comparable_books": [
+        "Outpost - W. Michael Gear",
+        "Children of Time - Adrian Tchaikovsky",
+        "Old Man's War - John Scalzi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alien planet survival",
+          "strong ensemble cast",
+          "morally complex characters",
+          "action-packed",
+          "fast pacing",
+          "sci-fi horror elements"
+        ],
+        "negative": [
+          "requires reading Book 1 (Outpost) first",
+          "some one-dimensional antagonists",
+          "graphic creature violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Unreconciled - W. Michael Gear": {
       "title": "Unreconciled",
       "author": "W. Michael Gear",
       "series": "Donovan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a ship arrives at Donovan carrying survivors of a decade-long journey who have formed a cannibalistic messianic cult called the Unreconciled, Supervisor Kalico Aguila must manage this terrifying new threat to the colony while Talina Perez races to prevent catastrophe. A dark exploration of how humans break under extreme duress.",
+      "tone": "gritty, dark, survivalist, psychologically disturbing",
+      "pacing": "Fast",
+      "themes": [
+        "survival and extremism",
+        "religious fanaticism",
+        "human nature under duress",
+        "redemption",
+        "colonialism"
+      ],
+      "setting": "Donovan, a deadly alien colony planet; Tyson Station outpost",
+      "comparable_books": [
+        "Pariah - W. Michael Gear",
+        "The Road - Cormac McCarthy",
+        "Children of Time - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alien planet survival",
+          "dark thriller elements",
+          "strong ensemble cast",
+          "escalating stakes",
+          "morally complex antagonist"
+        ],
+        "negative": [
+          "requires reading earlier books in series",
+          "cannibalism themes",
+          "very dark content",
+          "graphic violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "cannibalism"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Adrift - W. Michael Gear": {
       "title": "Adrift",
       "author": "W. Michael Gear",
       "series": "Donovan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A team of oceanographers stationed on a reef five hundred kilometres offshore discover that Donovan's seas are just as lethal as its land, when an alien intelligence begins possessing their children and using them as weapons. Back on the mainland, Talina Perez navigates an evolving relationship with Dek Taglioni as new dangers multiply.",
+      "tone": "gritty, tense, darkly horrifying",
+      "pacing": "Fast",
+      "themes": [
+        "alien intelligence",
+        "survival",
+        "parenthood",
+        "colonialism",
+        "nature as adversary",
+        "body horror"
+      ],
+      "setting": "Donovan, alien planet; deep-sea research station on a remote reef",
+      "comparable_books": [
+        "Unreconciled - W. Michael Gear",
+        "The Ruins - Scott Smith",
+        "Annihilation - Jeff VanderMeer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alien planet survival",
+          "horror sci-fi crossover",
+          "fast-paced action",
+          "strong female leads",
+          "escalating dread"
+        ],
+        "negative": [
+          "requires reading earlier books in series",
+          "disturbing content involving children",
+          "very dark and graphic"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child death",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Widow - John Grisham": {
@@ -244850,26 +245064,47 @@
       "author": "John Grisham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Legal Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Simon Latch, a debt-ridden small-town Virginia lawyer, thinks his luck has turned when an 85-year-old widow hires him to manage her secret multimillion-dollar fortune — until she dies under suspicious circumstances and he finds himself accused of murder. To clear his name he must step outside the law and find the real killer.",
+      "tone": "tense, character-driven, morally ambiguous",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "greed",
+        "justice and injustice",
+        "moral compromise",
+        "small-town law",
+        "innocence vs. guilt"
+      ],
+      "setting": "Rural Virginia, USA, contemporary",
+      "comparable_books": [
+        "The Lincoln Lawyer - Michael Connelly",
+        "A Time to Kill - John Grisham",
+        "All the Colors of the Dark - Chris Whitaker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal thriller with whodunit twist",
+          "morally flawed but sympathetic protagonist",
+          "courtroom drama",
+          "small-town atmosphere",
+          "Grisham's accessible prose"
+        ],
+        "negative": [
+          "whodunit elements are relatively thin",
+          "ending viewed as abrupt by some readers",
+          "slower first half",
+          "not Grisham's typical high-concept legal drama"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Praised audiobook narration by Michael Beck enhances the character-driven story.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Plague of Doves - Louise Erdrich": {
@@ -244877,26 +245112,51 @@
       "author": "Louise Erdrich",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in a small North Dakota town, multiple narrators across generations unravel the legacy of a brutal historical injustice — the lynching of innocent Native Americans accused of a farmhouse murder — and the way that original sin has shaped every family in the community. A lyrical, multi-voiced novel about race, guilt, and the long shadow of the past.",
+      "tone": "lyrical, haunting, multi-voiced, quietly devastating",
+      "pacing": "Slow",
+      "themes": [
+        "racial injustice",
+        "historical trauma",
+        "community and memory",
+        "guilt and redemption",
+        "Native American identity",
+        "love and obsession"
+      ],
+      "setting": "Pluto, North Dakota; spanning decades from the early 20th century to the present",
+      "comparable_books": [
+        "Love Medicine - Louise Erdrich",
+        "Beloved - Toni Morrison",
+        "A Visit from the Goon Squad - Jennifer Egan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical literary prose",
+          "multi-generational saga",
+          "Native American perspectives",
+          "historical depth",
+          "literary prizes pedigree",
+          "non-linear structure"
+        ],
+        "negative": [
+          "fragmented non-linear narrative can be disorienting",
+          "slow pacing",
+          "no single protagonist",
+          "can be emotionally heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Mighty Red - Louise Erdrich": {
@@ -244904,53 +245164,99 @@
       "author": "Louise Erdrich",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a small North Dakota farming community during the 2008 financial crisis, a fraught love triangle — football star Gary, impulsive Kismet, and gentle giant Hugo — unfolds against a backdrop of industrial agriculture, environmental decline, and the slow erosion of the land and livelihoods that once defined the region. A tender, wry, and deeply humane novel from a Pulitzer Prize winner.",
+      "tone": "tender, wry, lyrical, bittersweet",
+      "pacing": "Slow",
+      "themes": [
+        "love and marriage",
+        "environmental degradation",
+        "economic hardship",
+        "community",
+        "climate and land",
+        "coming of age"
+      ],
+      "setting": "Red River Valley, North Dakota, 2008 financial crisis era",
+      "comparable_books": [
+        "The Night Watchman - Louise Erdrich",
+        "Olive Kitteridge - Elizabeth Strout",
+        "Plainsong - Kent Haruf"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical literary prose",
+          "small-town community portrait",
+          "environmental themes",
+          "multi-perspective storytelling",
+          "Pulitzer-winning author",
+          "warmth and humour amid hardship"
+        ],
+        "negative": [
+          "slow pacing",
+          "multiple subplots may feel diffuse",
+          "literary rather than plot-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Knife of Never Letting Go - Patrick Ness": {
       "title": "The Knife of Never Letting Go",
       "author": "Patrick Ness",
       "series": "Chaos Walking",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Young Adult Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a distant colony world where a germ has made all men's thoughts audible as 'Noise,' 13-year-old Todd Hewitt is the last boy in a settlement of only men — until he stumbles on a patch of silence that changes everything and sends him fleeing across a hostile world. A relentless, propulsive dystopian opener about truth, violence, and growing up.",
+      "tone": "propulsive, brutal, emotionally intense, urgent",
+      "pacing": "Fast",
+      "themes": [
+        "truth and lies",
+        "coming of age",
+        "power and control",
+        "war",
+        "identity",
+        "colonialism"
+      ],
+      "setting": "Prentisstown and beyond, an alien colony planet, indeterminate future",
+      "comparable_books": [
+        "The Ask and the Answer - Patrick Ness",
+        "The Hunger Games - Suzanne Collins",
+        "Ender's Game - Orson Scott Card"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "relentless propulsive pacing",
+          "innovative world-building (Noise)",
+          "emotionally devastating",
+          "strong moral complexity for YA",
+          "unique narrative voice"
+        ],
+        "negative": [
+          "brutal and unrelenting — not for sensitive readers",
+          "ends on a cliffhanger requiring Book 2",
+          "can feel punishingly bleak"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The unique Noise conceit and Todd's distinctive first-person voice make for a remarkably immersive audio experience.",
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Night Watchman - Louise Erdrich": {
@@ -244958,107 +245264,200 @@
       "author": "Louise Erdrich",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Inspired by Erdrich's own grandfather, this 2021 Pulitzer Prize–winning novel follows Thomas Wazhashk, a Chippewa Council member and night watchman in 1950s North Dakota, as he fights against a Congressional bill that would terminate his tribe's rights and land. Woven through his story is that of a young woman, Patrice, searching for her missing sister.",
+      "tone": "lyrical, quietly powerful, humane, historically grounded",
+      "pacing": "Slow",
+      "themes": [
+        "Indigenous rights and sovereignty",
+        "resistance",
+        "family and community",
+        "political injustice",
+        "identity",
+        "1950s America"
+      ],
+      "setting": "Turtle Mountain Reservation, North Dakota, 1953",
+      "comparable_books": [
+        "The Plague of Doves - Louise Erdrich",
+        "Killers of the Flower Moon - David Grann",
+        "There There - Tommy Orange"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Pulitzer Prize winner",
+          "Native American history and perspective",
+          "lyrical literary prose",
+          "biographical inspiration",
+          "ensemble of memorable characters",
+          "quiet emotional power"
+        ],
+        "negative": [
+          "slow literary pace",
+          "not plot-driven",
+          "can feel dense with historical detail"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Girl With All the Gifts - M. R. Carey": {
       "title": "The Girl With All the Gifts",
       "author": "M. R. Carey",
       "series": "The Girl With All the Gifts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-apocalyptic Britain devastated by a fungal plague that has turned most of humanity into mindless 'hungries,' a remarkably gifted and empathetic child named Melanie lives under military guard at a research base — until a catastrophic attack sends her fleeing with a small group of survivors. A subversive, deeply humane take on the zombie genre.",
+      "tone": "tense, thought-provoking, emotionally devastating, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "humanity and otherness",
+        "survival",
+        "scientific ethics",
+        "evolution",
+        "maternal bonds",
+        "what it means to be human"
+      ],
+      "setting": "Post-apocalyptic Britain, near future",
+      "comparable_books": [
+        "The Road - Cormac McCarthy",
+        "Station Eleven - Emily St. John Mandel",
+        "I Am Legend - Richard Matheson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "subversive zombie fiction",
+          "deeply empathetic child protagonist",
+          "propulsive pacing",
+          "literary quality within genre",
+          "shocking and resonant ending",
+          "sci-fi horror crossover"
+        ],
+        "negative": [
+          "graphic violence and body horror",
+          "zombie genre — not for all readers",
+          "ending is deliberately unsettling"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Melanie's distinct and compelling narrative voice is particularly well-suited to audio performance.",
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fourth Door - Paul Halter": {
       "title": "The Fourth Door",
       "author": "Paul Halter",
       "series": "Dr. Twist",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A man is found dead in a haunted sealed room — the door pressed shut with a unique coin that never left a witness's possession — and a second impossible murder occurs in a house surrounded by virgin snow. Master detective Dr. Alan Twist is called upon to find the rational explanation behind a succession of seemingly miraculous crimes.",
+      "tone": "puzzly, atmospheric, Golden Age pastiche",
+      "pacing": "Moderate",
+      "themes": [
+        "impossible crimes",
+        "deception and illusion",
+        "rationalism vs. the supernatural",
+        "Golden Age detection"
+      ],
+      "setting": "England, mid-20th century",
+      "comparable_books": [
+        "The Hollow Man - John Dickson Carr",
+        "And Then There Were None - Agatha Christie",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room mystery",
+          "Golden Age puzzle plotting",
+          "multiple impossibilities",
+          "John Dickson Carr comparisons",
+          "cerebral and surprising",
+          "fair-play cluing"
+        ],
+        "negative": [
+          "plot mechanics can feel overly contrived",
+          "character depth secondary to puzzle",
+          "translated from French — style may feel slightly uneven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Boy on the Bridge - M. R. Carey": {
       "title": "The Boy on the Bridge",
       "author": "M. R. Carey",
       "series": "The Girl With All the Gifts",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in the same post-apocalyptic fungal-plague Britain as the first book, a military-scientific expedition aboard an armoured vehicle travels north through the ruined country searching for a cure, carrying an exceptional autistic boy whose discoveries may change everything. A prequel-companion that explores the origins of the Rosalind Franklin and expands the world of the first novel.",
+      "tone": "tense, grim, action-driven, emotionally intense",
+      "pacing": "Moderate",
+      "themes": [
+        "survival",
+        "humanity and otherness",
+        "scientific ethics",
+        "military duty and conscience",
+        "what it means to be human"
+      ],
+      "setting": "Post-apocalyptic Britain, slightly before the events of The Girl With All the Gifts",
+      "comparable_books": [
+        "The Girl With All the Gifts - M. R. Carey",
+        "The Road - Cormac McCarthy",
+        "Children of Men - P. D. James"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "companion to a beloved novel",
+          "propulsive tense survival story",
+          "autistic POV protagonist",
+          "sci-fi horror crossover",
+          "expands compelling world-building"
+        ],
+        "negative": [
+          "not a direct sequel — different cast",
+          "less emotionally gripping than the first book for many readers",
+          "graphic violence and body horror",
+          "bleaker tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Spies and Other Gods - James Wolff": {
@@ -245066,80 +245465,150 @@
       "author": "James Wolff",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Espionage Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When parliamentary researcher Aphra McQueen is brought in to investigate an internal complaint at MI6, she uncovers the murders of nine Iranian dissidents and a trail leading to an elusive assassin — while the ageing, fog-brained head of British Intelligence makes one last foray into the field. Narrated by a wry metaphysical 'spirit of spying,' this darkly comic literary thriller skewers the inner workings of British intelligence.",
+      "tone": "darkly comic, atmospheric, wry, melancholy, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "institutional loyalty and betrayal",
+        "accountability",
+        "ageing and identity",
+        "the ethics of espionage",
+        "British intelligence culture",
+        "memory and truth"
+      ],
+      "setting": "Contemporary London, Birmingham, Paris, and Lausanne",
+      "comparable_books": [
+        "Slow Horses - Mick Herron",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "How to Betray Your Country - James Wolff"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary espionage fiction",
+          "darkly comic tone",
+          "insider authenticity (author is ex-MI6)",
+          "unique omniscient narrator device",
+          "character-driven rather than action-driven",
+          "Slow Horses comparables"
+        ],
+        "negative": [
+          "not a traditional action thriller",
+          "unconventional narrative voice may not suit all readers",
+          "deliberately ambiguous at points"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Ask and the Answer - Patrick Ness": {
       "title": "The Ask and the Answer",
       "author": "Patrick Ness",
       "series": "Chaos Walking",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Young Adult Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up where Book 1 ends, Todd and Viola are separated and trapped in Prentisstown under the authoritarian Mayor Prentiss, who has seized control; each must navigate collaboration, resistance, and moral compromise as an underground rebellion forms. A darker, more politically complex instalment told in alternating voices.",
+      "tone": "brutal, morally complex, politically charged, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "power and oppression",
+        "resistance and complicity",
+        "trust and betrayal",
+        "war",
+        "identity",
+        "moral compromise"
+      ],
+      "setting": "New Prentisstown, an alien colony planet, in the aftermath of Book 1",
+      "comparable_books": [
+        "Monsters of Men - Patrick Ness",
+        "The Knife of Never Letting Go - Patrick Ness",
+        "The Hunger Games - Suzanne Collins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dual POV structure",
+          "relentless moral complexity",
+          "emotionally devastating",
+          "powerful political allegory",
+          "propulsive despite its weight"
+        ],
+        "negative": [
+          "requires reading Book 1 first",
+          "unrelentingly dark",
+          "cliff-hanger ending",
+          "brutal content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Dual-narrator audio production perfectly suits the alternating Viola/Todd POV structure.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Monsters of Men - Patrick Ness": {
       "title": "Monsters of Men",
       "author": "Patrick Ness",
       "series": "Chaos Walking",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Young Adult Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the trilogy's devastating conclusion, three armies converge on New Prentisstown — the Mayor's forces, human settlers, and the indigenous Spackle — while Todd and Viola struggle to find a path to peace amid all-out war. A profound examination of war, forgiveness, and what makes us human, awarded the Carnegie Medal.",
+      "tone": "brutal, emotionally devastating, redemptive, epic",
+      "pacing": "Fast",
+      "themes": [
+        "war and peace",
+        "forgiveness",
+        "humanity",
+        "identity",
+        "power",
+        "sacrifice",
+        "what makes a monster"
+      ],
+      "setting": "An alien colony planet, immediate continuation of Book 2",
+      "comparable_books": [
+        "The Ask and the Answer - Patrick Ness",
+        "The Hunger Games - Suzanne Collins",
+        "Ender's Game - Orson Scott Card"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Carnegie Medal winner",
+          "powerful trilogy conclusion",
+          "genuinely earned emotional payoff",
+          "triple POV structure",
+          "profound moral themes"
+        ],
+        "negative": [
+          "requires reading Books 1–2 first",
+          "extremely dark and violent",
+          "deeply emotionally demanding — not a comfortable read"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Three-narrator audio production brings the triple POV (including Spackle voice) to vivid life.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Jumpnauts - Hao Jingfang": {
