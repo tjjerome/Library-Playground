@@ -82,6 +82,17 @@ def save_catalog(catalog: dict, path: str):
 def book_key(title: str, author: str) -> str:
     return f"{title.strip()} - {author.strip()}"
 
+
+_QUOTE_NORMALIZE = str.maketrans({
+    "‘": "'", "’": "'", "‚": "'", "‛": "'",
+    "“": '"', "”": '"', "„": '"', "‟": '"',
+    "–": "-", "—": "-", "−": "-",
+})
+
+
+def normalize_key(s: str) -> str:
+    return s.translate(_QUOTE_NORMALIZE).lower()
+
 # ---------------------------------------------------------------------------
 # Library CSV loading
 # ---------------------------------------------------------------------------
@@ -236,15 +247,21 @@ def catalogue_chunk(
 
     catalogued = 0
 
+    normalized_index = {normalize_key(ck): ck for ck in catalog["entries"]}
+
     for key, entry_data in results.items():
         matched_key = None
         if key in catalog["entries"]:
             matched_key = key
+        elif normalize_key(key) in normalized_index:
+            matched_key = normalized_index[normalize_key(key)]
         else:
-            for ck in catalog["entries"]:
-                if entry_data.get("title", "").lower() in ck.lower():
-                    matched_key = ck
-                    break
+            title_norm = normalize_key(entry_data.get("title", ""))
+            if title_norm:
+                for nck, ck in normalized_index.items():
+                    if title_norm in nck:
+                        matched_key = ck
+                        break
 
         if matched_key:
             existing = catalog["entries"][matched_key]
