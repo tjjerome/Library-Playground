@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4451,
-  "total_pending": 149,
+  "total_catalogued": 4471,
+  "total_pending": 129,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -239795,54 +239795,101 @@
       "title": "A Time for Mercy",
       "author": "John Grisham",
       "series": "Jake Brigance",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Legal Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Small-town Mississippi lawyer Jake Brigance reluctantly takes on the defence of a young man accused of murdering a local deputy, stirring dangerous divisions in Clanton. The case forces Jake to navigate community rage, courtroom politics, and his own principles.",
+      "tone": "measured, humanistic, Southern-gothic warmth",
+      "pacing": "Moderate",
+      "themes": [
+        "justice",
+        "community and prejudice",
+        "small-town politics",
+        "moral courage",
+        "domestic abuse"
+      ],
+      "setting": "Clanton, Ford County, Mississippi, USA — contemporary",
+      "comparable_books": [
+        "A Time to Kill - John Grisham",
+        "The Summons - John Grisham",
+        "The Last Juror - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal procedural",
+          "small-town Southern drama",
+          "morally complex cases",
+          "recurring cast of characters",
+          "accessible literary fiction"
+        ],
+        "negative": [
+          "action-heavy thrillers",
+          "fantasy or speculative fiction",
+          "fast-paced espionage"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Grisham's dialogue-driven Southern storytelling translates exceptionally well to audio, and the Jake Brigance books have strong narration traditions.",
+      "content_flags": [
+        "domestic abuse",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Daughter of Crows - Mark Lawrence": {
       "title": "Daughter of Crows",
       "author": "Mark Lawrence",
       "series": "The Academy of Kindness",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rue sold herself to the brutal Academy of Kindness as a girl, surviving a decade-long nightmare to become an avatar of vengeance. Now an elderly woman who thought she had found peace, war comes to her doorstep — forcing her to exhume her violent past.",
+      "tone": "grimdark, emotionally resonant, darkly lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "aging and identity",
+        "vengeance and survival",
+        "memory and trauma",
+        "female power",
+        "guilt and redemption"
+      ],
+      "setting": "A dark secondary world drawing on Greek and other mythologies — multiple timelines spanning Rue's long life",
+      "comparable_books": [
+        "Prince of Thorns - Mark Lawrence",
+        "Red Sister - Mark Lawrence",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "morally grey protagonist",
+          "older female lead",
+          "dual-timeline narrative",
+          "brutal academy setting",
+          "lyrical prose"
+        ],
+        "negative": [
+          "light or hopeful fantasy",
+          "romance-forward stories",
+          "chosen hero tropes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child trauma"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "No Man's Land - Richard K. Morgan": {
@@ -239850,107 +239897,186 @@
       "author": "Richard K. Morgan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate post-WWI Britain overrun by ancient fae, war veteran Duncan Silver works as a 'woodsman' retrieving children stolen by the monstrous Huldu from the encroaching Forest. A hardboiled noir sensibility meets dark fairy-tale horror as Silver pursues a kidnapped girl into the heart of Elfland.",
+      "tone": "hardboiled, gritty, noir-inflected dark fantasy",
+      "pacing": "Fast",
+      "themes": [
+        "war trauma",
+        "mythology vs modernity",
+        "moral ambiguity",
+        "humanity vs the uncanny",
+        "violence and purpose"
+      ],
+      "setting": "Alternate post-WWI Britain, countryside overrun by ancient enchanted forests — 1920s",
+      "comparable_books": [
+        "The Steel Remains - Richard K. Morgan",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "Rivers of London - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hardboiled prose",
+          "WWI historical backdrop",
+          "dark fae mythology",
+          "morally complex protagonist",
+          "standalone fantasy"
+        ],
+        "negative": [
+          "cosy fantasy",
+          "slow meditative pacing",
+          "romance-forward stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "State Tectonics - Malka Ann Older": {
       "title": "State Tectonics",
       "author": "Malka Ann Older",
       "series": "The Centenal Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the concluding volume of the Centenal Cycle, the micro-democratic global political system faces existential threats as information wars and sabotage destabilise the fragile order. Centenal election officials and activists scramble to preserve democracy against forces seeking to tear it apart.",
+      "tone": "cerebral, politically urgent, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "democracy and governance",
+        "information warfare",
+        "political fragmentation",
+        "global cooperation",
+        "technology and power"
+      ],
+      "setting": "Near-future Earth under a micro-democratic global government — early 21st century",
+      "comparable_books": [
+        "Infomocracy - Malka Ann Older",
+        "The Ministry for the Future - Kim Stanley Robinson",
+        "Rainbows End - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political science fiction",
+          "near-future worldbuilding",
+          "systemic thinking",
+          "fast-paced thriller structure"
+        ],
+        "negative": [
+          "epic fantasy",
+          "space opera",
+          "romance-heavy stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Descent of Dragons - Jasmine Young": {
       "title": "A Descent of Dragons",
       "author": "Jasmine Young",
       "series": "Realm Breaker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel short story to the Realm Breaker series in which a hatchling of a rare and forbidden creature falls from another world into the land of men, setting in motion events that will break a continent and change the fate of one rider forever.",
+      "tone": "adventurous, epic, world-building focused",
+      "pacing": "Fast",
+      "themes": [
+        "destiny",
+        "forbidden bonds",
+        "power and consequence",
+        "loyalty"
+      ],
+      "setting": "The continent of Elondria — a secondary world with dragons, elves, and dwarves",
+      "comparable_books": [
+        "A Breaking of Realms - Jasmine Young",
+        "Fourth Wing - Rebecca Yarros",
+        "Eragon - Christopher Paolini"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon rider fantasy",
+          "series preview/prequel",
+          "action-focused",
+          "indie epic fantasy"
+        ],
+        "negative": [
+          "standalone stories",
+          "grimdark",
+          "slow literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Morrow Fall - Jasmine Young": {
       "title": "The Morrow Fall",
       "author": "Jasmine Young",
       "series": "Four Kingdoms: Origins",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel novella to the Four Kingdoms: Origins series, following the reign of beloved King Lairdos Ascaerii and the events that led to his downfall when an ancient call from a long-fallen throne threatens the survival of his bloodline.",
+      "tone": "epic, melancholic, world-building focused",
+      "pacing": "Moderate",
+      "themes": [
+        "legacy and dynasty",
+        "power and sacrifice",
+        "fate",
+        "ancient evil"
+      ],
+      "setting": "The Four Kingdoms — a secondary world of elemental sages and ancient magic, set thousands of years before the main series",
+      "comparable_books": [
+        "Stormfire - Jasmine Young",
+        "A Breaking of Realms - Jasmine Young",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "prequel novellas",
+          "elemental magic systems",
+          "epic fantasy",
+          "world-building depth",
+          "indie fantasy"
+        ],
+        "negative": [
+          "standalone stories",
+          "contemporary fiction",
+          "slow literary pace"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "ETHOS - The Arcanist Guild & E J Doble & James Lloyd Dulin & B. S. H. Garcia & Jonathan Neves Mayers & Morgan Shank": {
@@ -239958,26 +240084,48 @@
       "author": "The Arcanist Guild & E J Doble & James Lloyd Dulin & B. S. H. Garcia & Jonathan Neves Mayers & Morgan Shank",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A dark fantasy anthology of six novelettes by the Arcanist Guild, each exploring what happens when an idea — a philosophy, a belief, an ethos — takes root and becomes all-consuming, driving characters to morally devastating extremes across distinct dark fantasy worlds.",
+      "tone": "grimdark, morally complex, thematically driven",
+      "pacing": "Fast",
+      "themes": [
+        "ideology and extremism",
+        "morality and sacrifice",
+        "the greater good",
+        "power and corruption",
+        "identity"
+      ],
+      "setting": "Multiple distinct secondary dark fantasy worlds, each unique to its novelette",
+      "comparable_books": [
+        "Shadows for Silence in the Forests of Hell - Brandon Sanderson",
+        "The Alchemy of Air - Mary Doria Russell",
+        "Grimdark Magazine anthologies"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy anthology",
+          "morally black storytelling",
+          "indie authors",
+          "thematically linked short fiction",
+          "grimdark"
+        ],
+        "negative": [
+          "light or hopeful fantasy",
+          "long series commitments",
+          "romance-heavy fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Monsters & Morality - The Arcanist Guild & James Lloyd Dulin & B. S. H. Garcia & Jonathan Neves Mayers": {
@@ -239985,161 +240133,282 @@
       "author": "The Arcanist Guild & James Lloyd Dulin & B. S. H. Garcia & Jonathan Neves Mayers",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "needs_review",
       "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
+      "tone": "grimdark, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "morality",
+        "monsters and humanity",
+        "dark fantasy"
+      ],
       "setting": null,
-      "comparable_books": [],
+      "comparable_books": [
+        "ETHOS - The Arcanist Guild",
+        "Grimdark Magazine anthologies"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy anthology",
+          "indie authors",
+          "grimdark",
+          "morally complex fiction"
+        ],
+        "negative": [
+          "light fantasy",
+          "romance-heavy fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Low",
+      "research_source": "web_search",
       "audit": null
     },
     "Strange Buildings - Uketsu": {
       "title": "Strange Buildings",
       "author": "Uketsu",
       "series": "Strange Houses",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A writer fascinated by the occult receives eleven case files, each featuring a strange building with a disturbing architectural quirk — from disappearing rooms to apartments with no means of escape — and discovers a terrible secret connecting them all.",
+      "tone": "eerie, creepy, puzzle-box, methodical",
+      "pacing": "Fast",
+      "themes": [
+        "architecture as horror",
+        "hidden secrets",
+        "obsession",
+        "crime and mystery",
+        "the uncanny"
+      ],
+      "setting": "Contemporary Japan — various unsettling buildings and locations",
+      "comparable_books": [
+        "Strange Houses - Uketsu",
+        "Strange Pictures - Uketsu",
+        "The Decagon House Murders - Yukito Ayatsuji"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese mystery-horror",
+          "interactive puzzle-box narrative",
+          "floor plan illustrations",
+          "architectural horror",
+          "quick reads"
+        ],
+        "negative": [
+          "traditional linear mystery",
+          "slow literary fiction",
+          "character-driven drama"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "The book is built around visual floor plans and architectural illustrations that are central to solving the mystery — these are entirely lost in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Infomocracy - Malka Ann Older": {
       "title": "Infomocracy",
       "author": "Malka Ann Older",
       "series": "The Centenal Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future world governed by micro-democracy — where any group of 100,000 people can choose their own government — election workers and activists navigate information warfare, propaganda, and political sabotage ahead of the first global election in a decade.",
+      "tone": "cerebral, propulsive, politically inventive",
+      "pacing": "Fast",
+      "themes": [
+        "democracy and governance",
+        "information control",
+        "political theory",
+        "technology and society",
+        "global cooperation"
+      ],
+      "setting": "Near-future Earth under a micro-democratic global political system",
+      "comparable_books": [
+        "State Tectonics - Malka Ann Older",
+        "The Ministry for the Future - Kim Stanley Robinson",
+        "Rainbows End - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political science fiction",
+          "near-future worldbuilding",
+          "intellectual thriller",
+          "systems thinking",
+          "debut novels"
+        ],
+        "negative": [
+          "space opera",
+          "epic fantasy",
+          "slow character studies"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Prey of Angels - J. C. M. Berne": {
       "title": "Prey of Angels",
       "author": "J. C. M. Berne",
       "series": "Hybrid Helix",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the penultimate volume of the Black Gold arc, Rohan joins an ally on a quest to rescue a kidnapped girlfriend while simultaneously facing the threat of Hyperion — the most powerful being in the galaxy — gone dangerously unhinged. Rohan must hold together his alliances as new threats emerge from unexpected directions.",
+      "tone": "action-packed, witty, hopeful, superhero-inflected",
+      "pacing": "Fast",
+      "themes": [
+        "power and responsibility",
+        "found family",
+        "compassion",
+        "leadership",
+        "sacrifice"
+      ],
+      "setting": "Far-future space opera setting centred on the space station Wistful — interstellar empire",
+      "comparable_books": [
+        "Wistful Ascending - J. C. M. Berne",
+        "Cradle series - Will Wight",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "superhero space opera",
+          "found family",
+          "action and humour",
+          "power progression",
+          "optimistic tone",
+          "indie series"
+        ],
+        "negative": [
+          "grimdark",
+          "slow literary fiction",
+          "romance-heavy stories",
+          "standalone books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Winter's Blade - Jasmine Young": {
       "title": "Winter's Blade",
       "author": "Jasmine Young",
       "series": "Four Kingdoms: Origins",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lady Eridene Swansea, a half-blood warrior in the war-ravaged Water Kingdom, takes up her ancestral claymore and brands herself a traitor in her desperate bid to end a decades-long conflict — only to discover an ancient immortal evil pulling the strings behind the war.",
+      "tone": "adventurous, political, epic, nobledark",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and heritage",
+        "war and betrayal",
+        "ancient evil",
+        "loyalty vs duty",
+        "political intrigue"
+      ],
+      "setting": "The Four Kingdoms — a secondary world of elemental magic, spanning Air, Water, and Fire kingdoms",
+      "comparable_books": [
+        "Stormfire - Jasmine Young",
+        "A Breaking of Realms - Jasmine Young",
+        "An Ember in the Ashes - Sabaa Tahir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "elemental magic systems",
+          "female warrior protagonist",
+          "political intrigue",
+          "epic fantasy",
+          "indie series"
+        ],
+        "negative": [
+          "grimdark",
+          "slow literary fiction",
+          "standalone books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Stormfire - Jasmine Young": {
       "title": "Stormfire",
       "author": "Jasmine Young",
       "series": "Four Kingdoms: Origins",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fourteen-year-old Jaime Pappas discovers he can wield storms — an extinct and forbidden magic — and is thrust into a prophecy that names him a destined king-killer, forcing him to race to master his powers while an ancient evil wakes from the shadows.",
+      "tone": "adventurous, YA-epic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "chosen hero",
+        "destiny vs free will",
+        "elemental magic",
+        "political corruption",
+        "coming-of-age"
+      ],
+      "setting": "The Four Kingdoms — a secondary world of elemental sages, inspired by Greek, Roman, and Japanese cultures",
+      "comparable_books": [
+        "Avatar: The Last Airbender (media tie-in novels)",
+        "An Ember in the Ashes - Sabaa Tahir",
+        "Eragon - Christopher Paolini"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA epic fantasy",
+          "elemental magic",
+          "chosen hero narrative",
+          "Avatar: The Last Airbender fans",
+          "indie series"
+        ],
+        "negative": [
+          "adult grimdark",
+          "slow literary fiction",
+          "non-fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hellmouth - Giles Kristian": {
@@ -240147,26 +240416,48 @@
       "author": "Giles Kristian",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 14th-century Bohemia, a battle-scarred mercenary named Galien leads a company on a mission for Mother Church into the dark forests of central Europe, where a cursed fortress — inspired by the real legend of Houska Castle — conceals a gateway to Hell.",
+      "tone": "atmospheric, dread-laden, gritty, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "faith and damnation",
+        "war trauma and redemption",
+        "the supernatural",
+        "duty and horror",
+        "paranoia"
+      ],
+      "setting": "Bohemia, 1370 — dark medieval forests and a cursed mountain fortress",
+      "comparable_books": [
+        "Between Two Fires - Christopher Buehlman",
+        "Lancelot - Giles Kristian",
+        "The Witcher - Andrzej Sapkowski"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical horror",
+          "medieval setting",
+          "atmospheric novella",
+          "mercenary band",
+          "Witcher-adjacent grit"
+        ],
+        "negative": [
+          "long series commitment",
+          "slow pacing",
+          "light or hopeful tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Highly praised audio narration that elevates the atmospheric horror and dread of the novella.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wandering Earth - Liu Cixin": {
@@ -240174,26 +240465,46 @@
       "author": "Liu Cixin",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of short stories by Liu Cixin showcasing his range from the titular novella about humanity's audacious plan to move the Earth to a new star system, to tales of alien contact, post-apocalyptic survival, and the grandeur and terror of the cosmos.",
+      "tone": "vast, philosophical, awe-inspiring, coldly rational",
+      "pacing": "Moderate",
+      "themes": [
+        "humanity's survival",
+        "cosmic scale",
+        "sacrifice",
+        "civilisation and extinction",
+        "scientific ingenuity"
+      ],
+      "setting": "Multiple settings — Earth's far future, deep space, various civilisations across time",
+      "comparable_books": [
+        "The Three-Body Problem - Liu Cixin",
+        "Blindsight - Peter Watts",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "grand cosmic scale",
+          "Chinese sci-fi",
+          "big ideas",
+          "short fiction"
+        ],
+        "negative": [
+          "character-driven intimate fiction",
+          "fantasy",
+          "romance-heavy stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mountain Fast: A Gothic Tale of Medieval Horror - S. J. Shank": {
@@ -240201,26 +240512,48 @@
       "author": "S. J. Shank",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Horror",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 15th-century Hungary, a bishop's messenger named András arrives at the long-abandoned mountain fortress of Kuszkol, said to be haunted, only for the garrison to be missing and a strange voice — his dead wife's — to begin speaking through him.",
+      "tone": "gothic, bleak, atmospheric, glacially dread-filled",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "grief and possession",
+        "isolation",
+        "the supernatural",
+        "PTSD and trauma",
+        "faith and madness"
+      ],
+      "setting": "Hungary, 1468 — a remote, snow-bound mountain fortress",
+      "comparable_books": [
+        "Between Two Fires - Christopher Buehlman",
+        "Hellmouth - Giles Kristian",
+        "The Keep - F. Paul Wilson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic historical horror",
+          "atmospheric dread",
+          "medieval setting",
+          "debut novel",
+          "indie horror"
+        ],
+        "negative": [
+          "action-heavy stories",
+          "fast pacing",
+          "light or hopeful tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sarvàn - Douglass Hoover": {
@@ -240228,26 +240561,49 @@
       "author": "Douglass Hoover",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "During World War I, a group of Allied POWs escape Germany's most brutal internment camp only to become stranded in a remote Alpine village — where the insular locals worship ancient gods and protect a monstrous creature called the Sarvàn that roams the frozen mountains.",
+      "tone": "gritty, atmospheric, folk-horror dread, slow-burn brutal",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "war and survival",
+        "folk horror",
+        "mythology and ancient religion",
+        "isolation",
+        "nature vs humanity"
+      ],
+      "setting": "World War I era — remote Alpine mountains and a snowbound village",
+      "comparable_books": [
+        "Midsommar (film)",
+        "The Terror - Dan Simmons",
+        "The Ritual - Adam Nevill"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWI historical fiction",
+          "folk horror",
+          "isolated setting",
+          "creature feature",
+          "slow-burn tension",
+          "indie horror"
+        ],
+        "negative": [
+          "fast-paced action",
+          "light tone",
+          "urban settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Supernova Era - Liu Cixin": {
@@ -240255,26 +240611,46 @@
       "author": "Liu Cixin",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a nearby star goes supernova and bathes Earth in lethal radiation, all adults will die within a year, leaving only children to inherit and run civilisation. The novel follows the last generation of adults as they desperately prepare children to take over the world.",
+      "tone": "vast, melancholic, philosophical, bleak",
+      "pacing": "Moderate",
+      "themes": [
+        "civilisational collapse",
+        "childhood and innocence",
+        "legacy and responsibility",
+        "human nature",
+        "survival"
+      ],
+      "setting": "Near-future Earth — following a global catastrophe that kills all adults",
+      "comparable_books": [
+        "The Three-Body Problem - Liu Cixin",
+        "Lord of the Flies - William Golding",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "grand civilisational stakes",
+          "Chinese sci-fi",
+          "philosophical depth",
+          "standalone novels"
+        ],
+        "negative": [
+          "character-driven intimate fiction",
+          "fantasy",
+          "action thrillers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Non-Stop - Brian W. Aldiss": {
@@ -240282,26 +240658,46 @@
       "author": "Brian W. Aldiss",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A man living in a savage tribal society within what he believes to be a vast wilderness sets out on a journey of discovery, only to uncover a shocking truth about the true nature of his world in this landmark generation-ship novel.",
+      "tone": "tense, claustrophobic, revelatory",
+      "pacing": "Moderate",
+      "themes": [
+        "enclosed worlds",
+        "truth and illusion",
+        "civilisational regression",
+        "exploration",
+        "human adaptability"
+      ],
+      "setting": "The interior of a generation ship — long-future, in space, though initially disguised as an overgrown wilderness",
+      "comparable_books": [
+        "Orphans of the Sky - Robert A. Heinlein",
+        "Rendezvous with Rama - Arthur C. Clarke",
+        "Greybeard - Brian W. Aldiss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic science fiction",
+          "generation ship",
+          "big reveal structure",
+          "British SF",
+          "world-building mystery"
+        ],
+        "negative": [
+          "fantasy",
+          "contemporary fiction",
+          "romance-heavy stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Greybeard - Brian W. Aldiss": {
@@ -240309,26 +240705,47 @@
       "author": "Brian W. Aldiss",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Following an accident that has rendered humanity sterile, an ageing man known as Greybeard journeys through a slowly depopulating, overgrown Britain with a dwindling band of survivors, reflecting on a world without children or a future.",
+      "tone": "elegiac, melancholic, lyrical, quietly devastating",
+      "pacing": "Slow",
+      "themes": [
+        "extinction and mortality",
+        "memory and nostalgia",
+        "environmental collapse",
+        "the end of civilisation",
+        "human connection"
+      ],
+      "setting": "Post-catastrophe Britain — a slowly emptying, overgrown England several decades after a global sterilisation event",
+      "comparable_books": [
+        "The Road - Cormac McCarthy",
+        "Children of Men - P. D. James",
+        "On the Beach - Nevil Shute"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "post-apocalyptic literary fiction",
+          "elegiac tone",
+          "British SF classics",
+          "quiet dread",
+          "humanistic storytelling"
+        ],
+        "negative": [
+          "action-heavy fiction",
+          "fast-paced thrillers",
+          "fantasy",
+          "hopeful endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The novel's lyrical, meditative prose and elegiac tone are beautifully served by audio, making it an especially moving listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Forgotten Life - Brian W. Aldiss": {
