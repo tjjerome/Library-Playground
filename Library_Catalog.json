@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4212,
-  "total_pending": 388,
+  "total_catalogued": 4232,
+  "total_pending": 368,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -228254,162 +228254,273 @@
       "title": "The Return of Sherlock Holmes",
       "author": "Arthur Conan Doyle",
       "series": "Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Collection 3",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Thirteen short stories chronicling Holmes's return from his apparent death at the Reichenbach Falls, including his reunion with Watson and a string of baffling new cases. The collection opens with 'The Adventure of the Empty House' and reestablishes Holmes as London's foremost consulting detective.",
+      "tone": "Brisk, ingenious, classically plotted",
+      "pacing": "Fast",
+      "themes": [
+        "detection and deduction",
+        "justice outside the law",
+        "friendship and loyalty",
+        "Victorian society"
+      ],
+      "setting": "Late Victorian and Edwardian England, primarily London, early 1900s",
+      "comparable_books": [
+        "The Adventures of Sherlock Holmes - Arthur Conan Doyle",
+        "The Memoirs of Sherlock Holmes - Arthur Conan Doyle",
+        "The Complete Father Brown - G.K. Chesterton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic detective fiction",
+          "puzzle-driven plots",
+          "iconic duo dynamic",
+          "episodic short stories",
+          "Victorian atmosphere"
+        ],
+        "negative": [
+          "no romantic subplots",
+          "formulaic structure",
+          "dated social attitudes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short story format and theatrical Holmes/Watson dynamic make it ideal for audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Memoirs of Sherlock Holmes - Arthur Conan Doyle": {
       "title": "The Memoirs of Sherlock Holmes",
       "author": "Arthur Conan Doyle",
       "series": "Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Collection 2",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Eleven short stories featuring Holmes at the height of his powers, culminating in his dramatic confrontation with arch-nemesis Professor Moriarty at the Reichenbach Falls. The collection includes some of the most celebrated cases in the Holmes canon.",
+      "tone": "Brisk, ingenious, with a tragic finale",
+      "pacing": "Fast",
+      "themes": [
+        "detection and deduction",
+        "good versus evil",
+        "the criminal underworld",
+        "friendship"
+      ],
+      "setting": "Victorian England, primarily London and the English countryside, 1890s",
+      "comparable_books": [
+        "The Adventures of Sherlock Holmes - Arthur Conan Doyle",
+        "The Return of Sherlock Holmes - Arthur Conan Doyle",
+        "The Complete Father Brown - G.K. Chesterton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic detective fiction",
+          "puzzle-driven plots",
+          "iconic villain Moriarty",
+          "episodic short stories",
+          "Victorian atmosphere"
+        ],
+        "negative": [
+          "no romantic subplots",
+          "formulaic structure",
+          "dated social attitudes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short story format and theatrical Holmes/Watson dynamic make it ideal for audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Adventures of Sherlock Holmes - Arthur Conan Doyle": {
       "title": "The Adventures of Sherlock Holmes",
       "author": "Arthur Conan Doyle",
       "series": "Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Collection 1",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Twelve short stories introducing Holmes and Watson to a wide audience, featuring some of the most iconic cases in detective fiction including 'A Scandal in Bohemia' and 'The Red-Headed League'. The collection established the template for the classic detective story.",
+      "tone": "Brisk, clever, witty",
+      "pacing": "Fast",
+      "themes": [
+        "detection and deduction",
+        "justice",
+        "disguise and identity",
+        "Victorian society"
+      ],
+      "setting": "Victorian London and English countryside, early 1890s",
+      "comparable_books": [
+        "The Memoirs of Sherlock Holmes - Arthur Conan Doyle",
+        "The Return of Sherlock Holmes - Arthur Conan Doyle",
+        "The Complete Father Brown - G.K. Chesterton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic detective fiction",
+          "puzzle-driven plots",
+          "iconic duo dynamic",
+          "episodic short stories",
+          "Victorian atmosphere"
+        ],
+        "negative": [
+          "no romantic subplots",
+          "formulaic structure",
+          "dated social attitudes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short story format and theatrical Holmes/Watson dynamic make it ideal for audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "His Last Bow - Arthur Conan Doyle": {
       "title": "His Last Bow",
       "author": "Arthur Conan Doyle",
       "series": "Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Collection 4",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Eight short stories spanning the later years of Holmes's career, including a prequel and the WWI spy thriller title story in which a retired Holmes is recruited for a final mission against German intelligence. The collection shows a more reflective, historically-aware side of the canon.",
+      "tone": "Varied — wistful, patriotic, classically plotted",
+      "pacing": "Moderate",
+      "themes": [
+        "detection and deduction",
+        "patriotism and duty",
+        "ageing and retirement",
+        "espionage"
+      ],
+      "setting": "Victorian and Edwardian England, with WWI-era framing story, 1880s–1914",
+      "comparable_books": [
+        "The Case-Book of Sherlock Holmes - Arthur Conan Doyle",
+        "The Adventures of Sherlock Holmes - Arthur Conan Doyle",
+        "The Complete Father Brown - G.K. Chesterton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic detective fiction",
+          "episodic short stories",
+          "historical flavour",
+          "WWI espionage angle"
+        ],
+        "negative": [
+          "uneven collection quality",
+          "dated social attitudes",
+          "formulaic structure"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short story format and varied dramatic tones reward audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Study in Scarlet - Arthur Conan Doyle": {
       "title": "A Study in Scarlet",
       "author": "Arthur Conan Doyle",
       "series": "Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novel 1",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The novel that introduced Sherlock Holmes and Dr. Watson to the world, following their first meeting and Holmes's brilliant solution of a baffling London murder that has roots in the Utah frontier decades earlier. A landmark of detective fiction.",
+      "tone": "Brisk and inventive, with a melodramatic flashback section",
+      "pacing": "Moderate",
+      "themes": [
+        "detection and deduction",
+        "revenge",
+        "religious fanaticism",
+        "friendship and partnership"
+      ],
+      "setting": "Victorian London and Utah frontier, 1870s–1880s",
+      "comparable_books": [
+        "The Sign of the Four - Arthur Conan Doyle",
+        "The Adventures of Sherlock Holmes - Arthur Conan Doyle",
+        "The Big Bow Mystery - Israel Zangwill"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "origin story appeal",
+          "classic detective fiction",
+          "Victorian atmosphere",
+          "iconic character introductions"
+        ],
+        "negative": [
+          "disruptive flashback structure",
+          "anti-Mormon content may be off-putting",
+          "slow middle section"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Case-Book of Sherlock Holmes - Arthur Conan Doyle": {
       "title": "The Case-Book of Sherlock Holmes",
       "author": "Arthur Conan Doyle",
       "series": "Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Collection 5",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The final collection of twelve Holmes stories, showing Doyle experimenting more boldly with structure and darker themes, including stories narrated by Holmes himself and a villain. Often considered uneven but contains several gems.",
+      "tone": "Darker and more experimental than earlier collections",
+      "pacing": "Moderate",
+      "themes": [
+        "detection and deduction",
+        "mortality and endings",
+        "crime and punishment",
+        "social change"
+      ],
+      "setting": "Edwardian and post-WWI England, 1920s",
+      "comparable_books": [
+        "His Last Bow - Arthur Conan Doyle",
+        "The Memoirs of Sherlock Holmes - Arthur Conan Doyle",
+        "The Complete Father Brown - G.K. Chesterton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic detective fiction",
+          "structural experimentation",
+          "darker tone",
+          "completionist appeal for Holmes fans"
+        ],
+        "negative": [
+          "widely considered weakest collection",
+          "uneven quality",
+          "dated social attitudes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Persian - David McCloskey": {
@@ -228417,26 +228528,50 @@
       "author": "David McCloskey",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Persian-Jewish dentist living in Stockholm is recruited by Mossad to spy inside Iran, opening a dental practice as cover for sabotage and surveillance operations. When he's captured after a mission goes wrong, he must write a full confession — but he's kept one final secret.",
+      "tone": "Taut, tragic, emotionally charged",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "betrayal and deception",
+        "moral cost of espionage",
+        "love and forgiveness",
+        "the Iran–Israel shadow war",
+        "identity and loyalty"
+      ],
+      "setting": "Contemporary Middle East and Europe — Tehran, Tel Aviv, Stockholm, Istanbul",
+      "comparable_books": [
+        "Damascus Station - David McCloskey",
+        "The Sympathizer - Viet Thanh Nguyen",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Fallen Angel - Daniel Silva"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally complex protagonist",
+          "authentic tradecraft",
+          "literary spy fiction",
+          "confession/retrospective structure",
+          "geopolitically timely"
+        ],
+        "negative": [
+          "unconventional narrative structure may disorient",
+          "no action-hero protagonist",
+          "slower opening"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Defector: The Untold Story of the KGB Agent Who Changed the Cold War and Saved MI5 - Richard Kerbaj": {
@@ -228444,350 +228579,623 @@
       "author": "Richard Kerbaj",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The true story of KGB officer Oleg Lyalin's 1971 defection in London, which led to the mass expulsion of over a hundred Soviet 'diplomats' from Britain and helped expose a Soviet disinformation campaign that had paralysed Western intelligence with mole-hunt paranoia. Drawing on declassified files and interviews with spymasters, journalist Richard Kerbaj reconstructs one of the Cold War's most pivotal intelligence coups.",
+      "tone": "Gripping and propulsive, reads like a spy thriller",
+      "pacing": "Moderate",
+      "themes": [
+        "Cold War espionage",
+        "disinformation and paranoia",
+        "institutional trust and betrayal",
+        "transatlantic intelligence relations",
+        "Soviet deception"
+      ],
+      "setting": "Cold War-era London, Washington, and Moscow, primarily 1960s–1970s",
+      "comparable_books": [
+        "The Spy and the Traitor - Ben Macintyre",
+        "A Spy Among Friends - Ben Macintyre",
+        "The Secret History of the Five Eyes - Richard Kerbaj"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction",
+          "Cold War history",
+          "spy tradecraft",
+          "reads like fiction",
+          "newly declassified sources"
+        ],
+        "negative": [
+          "non-fiction format",
+          "dense cast of real-world figures",
+          "niche Cold War subject matter"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Dark at the End - F. Paul Wilson": {
       "title": "The Dark at the End",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 15",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the cosmic war between the Ally and the Otherness nears its endgame, Repairman Jack hunts the ancient evil Rasalom in a desperate bid to prevent the coming apocalypse. The penultimate novel in the series brings the supernatural conflict to a crisis point.",
+      "tone": "Tense, dark, apocalyptic",
+      "pacing": "Fast",
+      "themes": [
+        "cosmic horror",
+        "good versus evil",
+        "sacrifice",
+        "fate and free will"
+      ],
+      "setting": "Contemporary New York City and surrounding areas",
+      "comparable_books": [
+        "Nightworld - F. Paul Wilson",
+        "Fatal Error - F. Paul Wilson",
+        "The Tomb - F. Paul Wilson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "cosmic horror",
+          "propulsive pacing",
+          "long-running series payoff",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "requires extensive series investment",
+          "graphic violence",
+          "supernatural elements throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fatal Error - F. Paul Wilson": {
       "title": "Fatal Error",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Repairman Jack investigates a tech mogul whose company may be unwittingly enabling the Otherness to destroy the internet and plunge civilisation into chaos. Meanwhile, the cosmic endgame accelerates as Jack is forced deeper into his reluctant role as champion of the Ally.",
+      "tone": "Tense, conspiratorial, darkly comic at times",
+      "pacing": "Fast",
+      "themes": [
+        "cosmic horror",
+        "technology and society",
+        "good versus evil",
+        "free will versus fate"
+      ],
+      "setting": "Contemporary New York City",
+      "comparable_books": [
+        "The Dark at the End - F. Paul Wilson",
+        "Ground Zero - F. Paul Wilson",
+        "The Tomb - F. Paul Wilson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "cosmic horror",
+          "propulsive pacing",
+          "contemporary tech angles",
+          "long-running series"
+        ],
+        "negative": [
+          "requires extensive series investment",
+          "graphic violence",
+          "supernatural elements throughout"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Keep - F. Paul Wilson": {
       "title": "The Keep",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Adversary Cycle Book 1",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In WWII Romania, a German garrison occupying a medieval fortress begins dying one by one, as something ancient and evil awakens within the Keep's walls. A Jewish scholar and a mysterious stranger are drawn into the supernatural conflict.",
+      "tone": "Atmospheric, dread-laden, gothic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "ancient evil",
+        "WWII and Nazi occupation",
+        "good versus evil",
+        "the nature of monsters",
+        "sacrifice"
+      ],
+      "setting": "WWII Romania, 1941, in a remote Carpathian mountain fortress",
+      "comparable_books": [
+        "Reborn - F. Paul Wilson",
+        "The Tomb - F. Paul Wilson",
+        "Ghost Story - Peter Straub"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII historical setting",
+          "gothic atmosphere",
+          "cosmic horror",
+          "slow-burn dread",
+          "Lovecraftian undertones"
+        ],
+        "negative": [
+          "very slow pacing",
+          "graphic violence",
+          "disturbing content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "Nazi atrocities"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Touch - F. Paul Wilson": {
       "title": "The Touch",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Adversary Cycle Book 3",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Long Island physician suddenly discovers he has the power to heal any illness with a touch, but the miraculous gift quickly draws dangerous attention from both exploitative humans and supernatural forces. A standalone-feeling entry in Wilson's broader Secret History.",
+      "tone": "Thoughtful, suspenseful, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "miraculous healing",
+        "exploitation and faith",
+        "cosmic forces",
+        "medical ethics",
+        "good versus evil"
+      ],
+      "setting": "Contemporary suburban Long Island, New York",
+      "comparable_books": [
+        "The Keep - F. Paul Wilson",
+        "Reborn - F. Paul Wilson",
+        "Odd Thomas - Dean Koontz"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural thriller",
+          "moral complexity",
+          "Adversary Cycle world-building",
+          "medical setting"
+        ],
+        "negative": [
+          "less action-driven than core Repairman Jack books",
+          "some pacing lulls"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Nightworld - F. Paul Wilson": {
       "title": "Nightworld",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 16 / Adversary Cycle Book 6 (finale)",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The apocalyptic finale of both the Repairman Jack saga and the Adversary Cycle, as bottomless holes tear open across the Earth and unearthly creatures emerge each night. Jack and the immortal Glaeken must assemble a ragtag last stand against the ultimate evil Rasalom and the encroaching Otherness.",
+      "tone": "Apocalyptic, relentless, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "cosmic horror",
+        "apocalypse",
+        "sacrifice and heroism",
+        "good versus evil",
+        "found family"
+      ],
+      "setting": "Contemporary New York City and global, during a supernatural apocalypse",
+      "comparable_books": [
+        "The Dark at the End - F. Paul Wilson",
+        "Fatal Error - F. Paul Wilson",
+        "Swan Song - Robert McCammon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic finale",
+          "cosmic horror",
+          "found family",
+          "apocalyptic stakes",
+          "long-running series payoff"
+        ],
+        "negative": [
+          "requires full series investment to be meaningful",
+          "graphic violence",
+          "extremely dark tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Panacea - F. Paul Wilson": {
       "title": "Panacea",
       "author": "F. Paul Wilson",
       "series": "The ICE Sequence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Medical examiner Laura Fanning is hired by a terminally ill billionaire to investigate the legendary panacea — a substance that cures all ills — while his bodyguard Rick Hayden, a mercenary with secrets of his own, must keep her alive against a murderous cult determined to suppress the discovery.",
+      "tone": "Propulsive, mysterious, adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "miraculous healing",
+        "secret societies",
+        "cosmic interference",
+        "science versus faith",
+        "conspiracy"
+      ],
+      "setting": "Contemporary United States",
+      "comparable_books": [
+        "The God Gene - F. Paul Wilson",
+        "The Tomb - F. Paul Wilson",
+        "Micro - Michael Crichton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "medical thriller",
+          "conspiracy plot",
+          "fast pacing",
+          "supernatural elements",
+          "Crichton-esque adventure"
+        ],
+        "negative": [
+          "requires willingness to accept supernatural premises",
+          "some genre-blending may disorient"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Reborn - F. Paul Wilson": {
       "title": "Reborn",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Adversary Cycle Book 4",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young man adopted at birth inherits a mysterious estate and discovers that his true father may be something inhuman — a Satanic conspiracy has been engineering his birth for a terrible purpose. An Adversary Cycle novel set decades before the main Repairman Jack series.",
+      "tone": "Dread-laden, conspiratorial, gothic",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and inheritance",
+        "Satanic conspiracy",
+        "good versus evil",
+        "cosmic horror",
+        "nature versus nurture"
+      ],
+      "setting": "Contemporary New England, late 1960s",
+      "comparable_books": [
+        "The Keep - F. Paul Wilson",
+        "The Touch - F. Paul Wilson",
+        "Rosemary's Baby - Ira Levin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic horror",
+          "cosmic conspiracy",
+          "Adversary Cycle world-building",
+          "Satanic thriller"
+        ],
+        "negative": [
+          "graphic violence",
+          "disturbing concepts",
+          "less action-driven than core Jack novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The God Gene - F. Paul Wilson": {
       "title": "The God Gene",
       "author": "F. Paul Wilson",
       "series": "The ICE Sequence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rick Hayden and Laura Fanning return to investigate the disappearance of Rick's brother Keith, a zoologist who had been tracking a mysterious gene tied to human creativity — the so-called 'God Gene' — and was last seen with a strange blue-eyed primate from East Africa.",
+      "tone": "Propulsive, globe-trotting, scientifically inventive",
+      "pacing": "Fast",
+      "themes": [
+        "evolution and human origins",
+        "cosmic interference",
+        "science and discovery",
+        "family loyalty",
+        "the nature of humanity"
+      ],
+      "setting": "Contemporary New York City and East Africa / Indian Ocean island",
+      "comparable_books": [
+        "Panacea - F. Paul Wilson",
+        "The Tomb - F. Paul Wilson",
+        "Congo - Michael Crichton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Crichton-esque science thriller",
+          "globe-trotting adventure",
+          "evolutionary science angle",
+          "returning characters"
+        ],
+        "negative": [
+          "requires reading Panacea first",
+          "supernatural premises require suspension of disbelief"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Legacies - F. Paul Wilson": {
       "title": "Legacies",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Repairman Jack is hired by a pediatrician who treats children with AIDS and has inherited a mysterious house that holds a deadly secret — one that her scheming brother will kill to control. A case that draws Jack into a web of supernatural menace beneath a seemingly ordinary domestic dispute.",
+      "tone": "Tense, dark, conspiratorial",
+      "pacing": "Fast",
+      "themes": [
+        "secrets and inheritance",
+        "greed and exploitation",
+        "urban mercenary justice",
+        "supernatural menace"
+      ],
+      "setting": "Contemporary New York City and surroundings",
+      "comparable_books": [
+        "Hosts - F. Paul Wilson",
+        "The Haunted Air - F. Paul Wilson",
+        "The Tomb - F. Paul Wilson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban thriller",
+          "vigilante hero",
+          "supernatural elements",
+          "fast pacing",
+          "morally grey protagonist"
+        ],
+        "negative": [
+          "graphic violence",
+          "darker themes including AIDS-affected children"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Hosts - F. Paul Wilson": {
       "title": "Hosts",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Repairman Jack is drawn into a terrifying case when a friend alerts him that something is very wrong with a mutual acquaintance — an investigation that reveals a mutated virus infecting human brains and bending its victims to a collective alien will. Jack's own sister becomes entangled in the outbreak.",
+      "tone": "Tense, visceral, body-horror inflected",
+      "pacing": "Fast",
+      "themes": [
+        "body horror",
+        "loss of self",
+        "family loyalty",
+        "cosmic infection",
+        "urban survival"
+      ],
+      "setting": "Contemporary New York City",
+      "comparable_books": [
+        "The Haunted Air - F. Paul Wilson",
+        "Legacies - F. Paul Wilson",
+        "The Puppet Masters - Robert A. Heinlein"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "body horror",
+          "fast-paced thriller",
+          "family stakes",
+          "supernatural infection premise",
+          "action-driven"
+        ],
+        "negative": [
+          "graphic violence",
+          "body horror may disturb",
+          "requires some series familiarity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Haunted Air - F. Paul Wilson": {
       "title": "The Haunted Air",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Repairman Jack investigates a seemingly routine haunting in Queens for a pair of fake psychics, only to discover that genuine supernatural evil is lurking within the house — including a ghost with a dark history and forces tied to the ongoing Otherness conflict.",
+      "tone": "Creepy, atmospheric, darkly comic",
+      "pacing": "Moderate",
+      "themes": [
+        "the supernatural versus the mundane",
+        "exploitation and con artistry",
+        "genuine evil",
+        "cosmic horror",
+        "urban decay"
+      ],
+      "setting": "Contemporary Queens, New York City",
+      "comparable_books": [
+        "Gateways - F. Paul Wilson",
+        "Hosts - F. Paul Wilson",
+        "Ghost Story - Peter Straub"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "haunted house",
+          "supernatural investigation",
+          "darkly comic moments",
+          "creepy atmosphere",
+          "urban setting"
+        ],
+        "negative": [
+          "graphic violence",
+          "some pacing lulls in the middle"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Gateways - F. Paul Wilson": {
       "title": "Gateways",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Repairman Jack's estranged father is beaten into a coma in a Florida retirement community, Jack travels south to investigate — uncovering bizarre mutations in the local wildlife and a strange woman who hires him to protect an ancient object of obscure power.",
+      "tone": "Suspenseful, weird, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "father-son estrangement",
+        "cosmic horror",
+        "nature corrupted",
+        "the Otherness",
+        "family reconciliation"
+      ],
+      "setting": "Contemporary rural Florida",
+      "comparable_books": [
+        "The Haunted Air - F. Paul Wilson",
+        "Hosts - F. Paul Wilson",
+        "Harbingers - F. Paul Wilson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "family drama alongside supernatural thriller",
+          "unusual Florida setting",
+          "cosmic horror",
+          "character development"
+        ],
+        "negative": [
+          "graphic violence",
+          "some readers find the Florida setting jarring after NYC focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Conspiracies - F. Paul Wilson": {
