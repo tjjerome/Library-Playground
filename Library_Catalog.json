@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4431,
-  "total_pending": 169,
+  "total_catalogued": 4451,
+  "total_pending": 149,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -238831,27 +238831,49 @@
       "title": "The Unspoken Name",
       "author": "A. K. Larkwood",
       "series": "The Serpent Gates",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Csorwe, a young orc priestess destined to be sacrificed, is rescued by a scheming wizard and trained as his ruthless agent — until a fateful mission forces her to choose between loyalty and her own freedom. A fast-paced epic fantasy blending found-family dynamics with portal-world adventure.",
+      "tone": "propulsive, darkly comic, emotionally warm",
+      "pacing": "Fast",
+      "themes": [
+        "identity and self-determination",
+        "loyalty and betrayal",
+        "found family",
+        "power and manipulation",
+        "queerness"
+      ],
+      "setting": "A multiverse of dying worlds connected by ancient gates, secondary fantasy setting with decaying civilisations",
+      "comparable_books": [
+        "The Traitor Baru Cormorant - Seth Dickinson",
+        "The Jasmine Throne - Tasha Suri",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "found family",
+          "queer romance",
+          "propulsive pacing",
+          "portal fantasy",
+          "orc protagonist subverting tropes"
+        ],
+        "negative": [
+          "readers wanting pure grimdark",
+          "readers disliking fast-paced plotting over deep worldbuilding"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Gone-Away World - Nick Harkaway": {
@@ -238859,26 +238881,50 @@
       "author": "Nick Harkaway",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-apocalyptic world ravaged by a weapon that unmakes reality, a group of mercenaries and mimes must confront the chaos spawned by the 'Go-Away War' and their own intertwined pasts. A wildly inventive, genre-blending novel combining action, satire, and a stunning structural twist.",
+      "tone": "darkly comic, exuberant, propulsive, satirical",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and self",
+        "friendship and loyalty",
+        "corporate and governmental corruption",
+        "the nature of reality",
+        "war and its consequences"
+      ],
+      "setting": "A near-future post-apocalyptic Earth where a reality-dissolving weapon has reshaped civilisation",
+      "comparable_books": [
+        "Gnomon - Nick Harkaway",
+        "The Raw Shark Texts - Steven Hall",
+        "Catch-22 - Joseph Heller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "maximalist prose",
+          "structural twists",
+          "darkly comic tone",
+          "genre-blending",
+          "action-adventure",
+          "satire of capitalism"
+        ],
+        "negative": [
+          "readers wanting clean linear narrative",
+          "readers who dislike digressive storytelling",
+          "slow-burn averse readers may find middle sections dense"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Neon Bible - John Kennedy Toole": {
@@ -238886,161 +238932,283 @@
       "author": "John Kennedy Toole",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A teenage boy in the rural American South narrates his impoverished, isolated childhood, shaped by a fervid religious community, a spirited aunt, and a suffocating small-town world. Written when Toole was a teenager, it is a melancholic coming-of-age story about longing and escape.",
+      "tone": "melancholic, spare, quietly devastating",
+      "pacing": "Slow",
+      "themes": [
+        "religious hypocrisy",
+        "poverty and class",
+        "coming-of-age",
+        "isolation",
+        "the American South"
+      ],
+      "setting": "Rural American South, 1940s",
+      "comparable_books": [
+        "A Confederacy of Dunces - John Kennedy Toole",
+        "To Kill a Mockingbird - Harper Lee",
+        "The Heart is a Lonely Hunter - Carson McCullers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern Gothic atmosphere",
+          "literary coming-of-age",
+          "spare prose",
+          "character-driven"
+        ],
+        "negative": [
+          "readers expecting the comic energy of A Confederacy of Dunces",
+          "readers wanting plot-driven narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Thousand Eyes - A. K. Larkwood": {
       "title": "The Thousand Eyes",
       "author": "A. K. Larkwood",
       "series": "The Serpent Gates",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Years after the events of The Unspoken Name, Csorwe and her companions face a new cosmic threat as an ancient and malevolent presence stirs across the dying worlds of the Serpent Gates. The sequel deepens the multiverse mythology while raising the emotional and political stakes.",
+      "tone": "propulsive, emotionally resonant, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "identity and change",
+        "found family under strain",
+        "power and corruption",
+        "sacrifice",
+        "queerness"
+      ],
+      "setting": "The same multiverse of decaying worlds and ancient gates as the first book, with new locations explored",
+      "comparable_books": [
+        "The Jasmine Throne - Tasha Suri",
+        "A Memory Called Empire - Arkady Martine",
+        "The Traitor Baru Cormorant - Seth Dickinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey characters",
+          "queer romance",
+          "found family",
+          "fast-paced portal fantasy",
+          "expanding mythology"
+        ],
+        "negative": [
+          "readers who haven't read book 1",
+          "those wanting standalone entries"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Frenchman - Jack Beaumont": {
       "title": "The Frenchman",
       "author": "Jack Beaumont",
       "series": "The Frenchman",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alec de Payns, a clandestine operative for the French intelligence service DGSE, is drawn into a deadly web of betrayal when a routine mission goes wrong and he suspects a mole within his own team. Written by a pseudonymous former French spy, the novel blends authentic tradecraft with high-stakes personal drama.",
+      "tone": "tense, propulsive, authentic, grounded",
+      "pacing": "Fast",
+      "themes": [
+        "espionage and tradecraft",
+        "loyalty and betrayal",
+        "the human cost of intelligence work",
+        "family vs duty",
+        "terrorism"
+      ],
+      "setting": "Contemporary Paris, Europe, and Pakistan; the clandestine world of French foreign intelligence",
+      "comparable_books": [
+        "Damascus Station - David McCloskey",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Volunteer - Michael Ross"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "authentic spy tradecraft",
+          "insider perspective",
+          "morally complex protagonist",
+          "propulsive pacing",
+          "le Carré comparisons"
+        ],
+        "negative": [
+          "readers wanting high-tech James Bond action",
+          "readers disliking procedural detail"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Propulsive, cinematic pacing and strong narrative voice make this a natural fit for audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Black Swan Mystery - Tetsuya Ayukawa": {
       "title": "The Black Swan Mystery",
       "author": "Tetsuya Ayukawa",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Inspector Onitsura",
+      "series_position": "Book 1",
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "When a mill owner is found shot dead near a railway station in 1950s Japan, Chief Inspector Onitsura and his assistant traverse the country unravelling a web of elaborate alibis while successive murders complicate the case. A prize-winning railway alibi mystery celebrated as one of Japan's finest examples of the honkaku tradition.",
+      "tone": "methodical, puzzle-driven, playful, socially observant",
+      "pacing": "Moderate",
+      "themes": [
+        "alibi and deception",
+        "post-war Japanese society",
+        "class and labour",
+        "justice",
+        "the nature of chance"
+      ],
+      "setting": "1950s Japan, spanning Tokyo, Kyoto, Osaka, and Kyushu; post-war social upheaval",
+      "comparable_books": [
+        "Tokyo Express - Seicho Matsumoto",
+        "4.50 from Paddington - Agatha Christie",
+        "The Honjin Murders - Seishi Yokomizo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "puzzle mystery fans",
+          "fair-play whodunnit",
+          "Japanese crime fiction",
+          "alibi deconstruction",
+          "Agatha Christie comparisons",
+          "social historical backdrop"
+        ],
+        "negative": [
+          "readers wanting psychological suspense over puzzle",
+          "readers disliking technical timetable analysis"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Slaughtered Gods - Thilde Kold Holdt": {
       "title": "Slaughtered Gods",
       "author": "Thilde Kold Holdt",
       "series": "The Hanged God Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ragnarok is at hand as the half-giant Einer leads an army of the dead toward Asgard, while a storyteller and a shieldmaiden without destiny must make the choices that could prevent the annihilation of the nine worlds. The epic, battle-heavy conclusion to the Hanged God Trilogy.",
+      "tone": "ferocious, mythic, dreamlike, epic",
+      "pacing": "Fast",
+      "themes": [
+        "fate vs free will",
+        "sacrifice",
+        "the end of the world",
+        "loyalty",
+        "Norse mythology reinterpreted"
+      ],
+      "setting": "The nine worlds of Norse mythology — Midgard, Asgard, Niflheim, Muspelheim — at the time of Ragnarok",
+      "comparable_books": [
+        "The Children of Ash and Elm - Neil Price",
+        "The Gospel of Loki - Joanne Harris",
+        "A Little Hatred - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse mythology",
+          "epic battle sequences",
+          "multi-POV saga",
+          "mythological reimagining",
+          "ferocious pacing"
+        ],
+        "negative": [
+          "readers who haven't read books 1–2",
+          "readers wanting low-violence fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Talonsister - Jen Williams": {
       "title": "Talonsister",
       "author": "Jen Williams",
       "series": "Talon Duology",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A former soldier with her memory erased, a morally compromised imperial envoy, and a feral girl raised by griffins are drawn toward a collision of old magic and imperial ambition on the wild island of Brittletain. A slow-burn folk-inflected fantasy that builds to an explosive conclusion.",
+      "tone": "lyrical, folk-infused, slow-burn with payoff",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and memory",
+        "found family",
+        "imperial power and resistance",
+        "the wild vs civilisation",
+        "belonging"
+      ],
+      "setting": "A secondary world fantasy — the island of Brittletain, an untamed land of ancient magic, griffins, and warring powers, in tension with a vast Imperium",
+      "comparable_books": [
+        "The Ninth Rain - Jen Williams",
+        "The Bear and the Nightingale - Katherine Arden",
+        "The Priory of the Orange Tree - Samantha Shannon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "non-human companions",
+          "found family",
+          "folk fantasy atmosphere",
+          "strong female leads",
+          "patience rewarded endings"
+        ],
+        "negative": [
+          "readers wanting fast-paced action from the start",
+          "readers disliking slow first halves"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Blind Giant: Being Human in a Digital World - Nick Harkaway": {
@@ -239048,53 +239216,91 @@
       "author": "Nick Harkaway",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A wide-ranging, optimistic examination of how digital technology is reshaping human identity, society, and creativity, arguing that we can and must actively shape our digital future rather than merely react to it. Written with Harkaway's characteristically witty, essayistic style.",
+      "tone": "witty, wide-ranging, hopeful, essayistic",
+      "pacing": "Moderate",
+      "themes": [
+        "digital technology and society",
+        "human identity",
+        "creativity and culture",
+        "democracy and power",
+        "the future of the internet"
+      ],
+      "setting": "Contemporary digital world; no fixed setting",
+      "comparable_books": [
+        "You Are Not a Gadget - Jaron Lanier",
+        "The Shallows - Nicholas Carr",
+        "Future Perfect - Steven Johnson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "technology and society readers",
+          "witty essayistic nonfiction",
+          "optimistic tech criticism",
+          "fans of Harkaway's fiction voice"
+        ],
+        "negative": [
+          "readers wanting rigorous academic analysis",
+          "readers wanting pessimistic tech critique"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Shackled Fates - Thilde Kold Holdt": {
       "title": "Shackled Fates",
       "author": "Thilde Kold Holdt",
       "series": "The Hanged God Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Loki freed from his chains and Ragnarok looming, the scattered survivors of Ash-hill journey across the nine worlds — from Asgard to Niflheim — while gods and giants scheme and mortals discover that the divine realm is far more dangerous and morally ambiguous than legend suggests. A blockbuster middle volume that expands the trilogy's mythological scope.",
+      "tone": "ferocious, mythic, expansive, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "fate and free will",
+        "sacrifice and loyalty",
+        "divine politics",
+        "the nine worlds of Norse myth",
+        "found family under pressure"
+      ],
+      "setting": "The nine worlds of Norse mythology — from Viking Age Midgard to Asgard, Niflheim, Muspelheim, and beyond",
+      "comparable_books": [
+        "The Gospel of Loki - Joanne Harris",
+        "Norse Mythology - Neil Gaiman",
+        "A Little Hatred - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse mythology deep-dive",
+          "expanding multi-world scope",
+          "multi-POV epic fantasy",
+          "ferocious battle sequences"
+        ],
+        "negative": [
+          "readers who haven't read Northern Wrath",
+          "low-violence fantasy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sisters in Yellow - Mieko Kawakami": {
@@ -239102,80 +239308,146 @@
       "author": "Mieko Kawakami",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fifteen-year-old Hana, living in poverty in 1990s Tokyo, falls under the charismatic spell of older woman Kimiko and their makeshift bar-world community — a found family that gradually slides toward crime and betrayal, recounted decades later from the shadow of Kimiko's arrest. A gripping, unflinching noir about poverty, female solidarity, and survival.",
+      "tone": "understated, bleak, propulsive, emotionally devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "poverty and class",
+        "female solidarity and betrayal",
+        "coming-of-age",
+        "crime and survival",
+        "Japanese social invisibility"
+      ],
+      "setting": "1990s Tokyo (primarily Sangenjaya), with a framing narrative set during the COVID-19 pandemic",
+      "comparable_books": [
+        "Breasts and Eggs - Mieko Kawakami",
+        "Convenience Store Woman - Sayaka Murata",
+        "Heaven - Mieko Kawakami"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese literary fiction",
+          "feminist noir",
+          "character-driven crime",
+          "unflinching social realism",
+          "propulsive despite quiet surface"
+        ],
+        "negative": [
+          "readers wanting redemptive endings",
+          "readers disliking slow opening acts",
+          "readers sensitive to depictions of poverty and crime"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "self-harm"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Of Sand and Malice Made - Bradley P. Beaulieu": {
       "title": "Of Sand and Malice Made",
       "author": "Bradley P. Beaulieu",
       "series": "The Song of the Shattered Sands",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Companion novella (prequel)",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A standalone prequel novella set in the desert city of Sharakhai: young pit-fighter Çeda crosses paths with Rümayesh, a terrifying demonic ehrekh who becomes dangerously obsessed with her, threatening Çeda's secret identity and the lives of everyone she loves. An atmospheric, fast-paced companion to the main series.",
+      "tone": "atmospheric, dark, tense, Arabian Nights-inflected",
+      "pacing": "Fast",
+      "themes": [
+        "power and obsession",
+        "identity and secrecy",
+        "survival",
+        "demonic predation",
+        "desert mythology"
+      ],
+      "setting": "The desert city of Sharakhai; an Arabian Nights-inspired secondary fantasy world",
+      "comparable_books": [
+        "Twelve Kings in Sharakhai - Bradley P. Beaulieu",
+        "The City of Brass - S. A. Chakraborty",
+        "The Golem and the Jinni - Helene Wecker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "desert fantasy",
+          "strong female protagonist",
+          "dark mythology",
+          "fast novella-length read",
+          "Arabian Nights atmosphere"
+        ],
+        "negative": [
+          "readers wanting a full-length novel",
+          "readers needing series context to enjoy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short, atmospheric, and propulsive — ideal listening length for commutes or single sittings.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Northern Wrath - Thilde Kold Holdt": {
       "title": "Northern Wrath",
       "author": "Thilde Kold Holdt",
       "series": "The Hanged God Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a Viking village is slaughtered by Christian raiders, survivors including a shieldmaiden, a dead man walking between worlds, and a chief's son are set on paths that will entangle them with Norse gods and the coming of Ragnarok. A ferocious debut blending authentic Viking history with Norse mythology.",
+      "tone": "savage, mythic, epic, ferocious",
+      "pacing": "Fast",
+      "themes": [
+        "revenge and justice",
+        "faith and the gods",
+        "the clash of religions",
+        "fate vs agency",
+        "Viking identity"
+      ],
+      "setting": "Viking Age Scandinavia and the mythological nine worlds; late first millennium CE",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "The Half-Drowned King - Linnea Hartsuyker",
+        "Norse Mythology - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse mythology",
+          "Viking history",
+          "multi-POV epic",
+          "ferocious battle sequences",
+          "strong female warriors",
+          "Neil Gaiman and Joanne Harris comparisons"
+        ],
+        "negative": [
+          "readers wanting subtle character interiority over action",
+          "readers disliking large casts"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Gnomon - Nick Harkaway": {
@@ -239183,134 +239455,242 @@
       "author": "Nick Harkaway",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future surveillance state, an investigator examining the mind of a dead woman finds herself immersed in four layered narratives — an Athenian banker, an Ethiopian mystic, an ancient alchemist, and a financial shark — that may be the key to understanding a vast conspiracy. A maximalist, labyrinthine novel about democracy, power, and the nature of identity.",
+      "tone": "dense, labyrinthine, philosophical, darkly comic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "surveillance and democracy",
+        "identity and consciousness",
+        "the nature of narrative",
+        "power and control",
+        "faith and myth"
+      ],
+      "setting": "A near-future UK surveillance state; nested historical and mythological settings including Ancient Athens and early Christianity",
+      "comparable_books": [
+        "The Gone-Away World - Nick Harkaway",
+        "The Raw Shark Texts - Steven Hall",
+        "Cloud Atlas - David Mitchell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "maximalist literary SF",
+          "nested narratives",
+          "surveillance state critique",
+          "philosophical depth",
+          "David Mitchell comparisons"
+        ],
+        "negative": [
+          "readers wanting linear plot",
+          "readers disliking density and length",
+          "casual SF readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Extremely dense, layered narrative with nested stories and philosophical argument; requires active reading and re-reading that audio does not support well.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Children of Strife - Adrian Tchaikovsky": {
       "title": "Children of Strife",
       "author": "Adrian Tchaikovsky",
       "series": "Children of Time",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After Earth fell, ark ships sought lost terraformed worlds; now a crew of humans, uplifted spiders, and a belligerent mantis-shrimp captain rediscovers one such world — only to wake and find the rest of the crew has vanished into a planet that has developed a dangerous, hostile consciousness. The fourth entry in Tchaikovsky's acclaimed Children of Time universe.",
+      "tone": "ambitious, wryly humorous, philosophically dense, tragic",
+      "pacing": "Moderate",
+      "themes": [
+        "the nature of intelligence and consciousness",
+        "playing god",
+        "post-scarcity society",
+        "survival",
+        "uplifted species and personhood"
+      ],
+      "setting": "Far future, spanning multiple time periods; a newly rediscovered terraformed planet and an ark ship in deep space",
+      "comparable_books": [
+        "Children of Time - Adrian Tchaikovsky",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Blindsight - Peter Watts"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "alien intelligence",
+          "big-ideas science fiction",
+          "uplifted animals",
+          "philosophical speculation",
+          "Hugo Award-winning series"
+        ],
+        "negative": [
+          "readers who haven't read earlier books",
+          "readers wanting character-driven over ideas-driven SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Debatable Space - Philip Palmer": {
       "title": "Debatable Space",
       "author": "Philip Palmer",
-      "series": null,
+      "series": "Debatable Space Universe",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Space pirate captain Flanagan kidnaps Lena, believing her to be the daughter of the galaxy's despotic ruler the Cheo — but nothing is as it seems, and Lena's thousand-year-long diary reveals a far more complex truth. A pulpy, hyperkinetic space opera with satirical bite and a wry British sense of humour.",
+      "tone": "hyperkinetic, satirical, darkly comic, pulpy",
+      "pacing": "Fast",
+      "themes": [
+        "power and tyranny",
+        "identity and deception",
+        "the human cost of immortality",
+        "piracy and rebellion",
+        "corporate dystopia"
+      ],
+      "setting": "Far future interstellar civilisation, roughly 1,000 years from now, spanning space and a dystopian galaxy-spanning empire",
+      "comparable_books": [
+        "Red Claw - Philip Palmer",
+        "Consider Phlebas - Iain M. Banks",
+        "Old Man's War - John Scalzi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "darkly comic",
+          "anti-hero protagonist",
+          "pulpy action",
+          "British SF satire"
+        ],
+        "negative": [
+          "readers disliking long expository diaries mid-action",
+          "readers wanting tight plotting over maximalist ideas"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Detour - Jeff Rake & Rob Hart": {
       "title": "Detour",
       "author": "Jeff Rake & Rob Hart",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Detour",
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A civilian cop and a team of astronauts complete the first crewed mission to Saturn's moon Titan — only to return and discover that the Earth they left behind is subtly but disturbingly different. A Twilight Zone-esque conspiracy thriller that ends on a cliffhanger.",
+      "tone": "propulsive, paranoid, cinematic, accessible",
+      "pacing": "Fast",
+      "themes": [
+        "alternate reality",
+        "government conspiracy",
+        "survival",
+        "the cost of ambition",
+        "identity and home"
+      ],
+      "setting": "Near-future, 2031; a mission to Titan and a subtly altered contemporary Earth",
+      "comparable_books": [
+        "The Martian - Andy Weir",
+        "Dark Matter - Blake Crouch",
+        "The Fold - Peter Clines"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Twilight Zone vibes",
+          "cinematic pacing",
+          "conspiracy thriller",
+          "accessible SF",
+          "fans of Manifest"
+        ],
+        "negative": [
+          "hardcore SF readers wanting scientific rigour",
+          "readers disliking cliffhanger endings",
+          "readers wanting full resolution in book 1"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Cinematic, TV-episode pacing and multi-character structure make this extremely well-suited to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Beneath the Twisted Trees - Bradley P. Beaulieu": {
       "title": "Beneath the Twisted Trees",
       "author": "Bradley P. Beaulieu",
       "series": "The Song of the Shattered Sands",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Çeda, now leading the Shieldwives, fights to free her enslaved ancestors the asirim from their ancient curse, even as foreign armies close in on Sharakhai and the gods' plans begin to intersect with mortal politics in increasingly dangerous ways. The fourth volume of this six-book desert epic, widening its multi-POV cast and raising the stakes toward endgame.",
+      "tone": "richly atmospheric, complex, politically intricate, pulse-pounding",
+      "pacing": "Moderate",
+      "themes": [
+        "liberation and oppression",
+        "identity and ancestry",
+        "war and political power",
+        "divine intervention",
+        "sacrifice"
+      ],
+      "setting": "The desert city-state of Sharakhai and surrounding Shangazi desert; an Arabian Nights-inspired secondary world",
+      "comparable_books": [
+        "The City of Brass - S. A. Chakraborty",
+        "Twelve Kings in Sharakhai - Bradley P. Beaulieu",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "desert fantasy",
+          "multi-POV epic",
+          "rich worldbuilding",
+          "complex political intrigue",
+          "strong female protagonist"
+        ],
+        "negative": [
+          "readers who haven't read books 1–3",
+          "readers wanting fast single-POV narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Angelmaker - Nick Harkaway": {
@@ -239318,53 +239698,97 @@
       "author": "Nick Harkaway",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Joe Spork, a mild-mannered clockwork repairman and son of a legendary gangster, accidentally activates a doomsday device hidden inside a mechanical beehive — unleashing a chain of events involving aged spies, secret organisations, and a villain who can literally make people tell the truth. A riotously inventive, warmly comic adventure.",
+      "tone": "warmly comic, riotous, inventive, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "legacy and family",
+        "heroism and ordinariness",
+        "truth and lies",
+        "clockwork and technology",
+        "secret histories"
+      ],
+      "setting": "Contemporary London and a hidden world of criminal underworlds, ageing Cold War spy networks, and steampunk secrets",
+      "comparable_books": [
+        "The Gone-Away World - Nick Harkaway",
+        "Mort(e) - Robert Repino",
+        "Declare - Tim Powers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "riotous comic adventure",
+          "inventive worldbuilding",
+          "London criminal underworld",
+          "steampunk flavour",
+          "warmly humane"
+        ],
+        "negative": [
+          "readers wanting hard SF",
+          "readers disliking maximalist digressive style"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Harkaway's comic, digressive voice is richly performative and thrives in audio; the novel's warm energy is amplified by a skilled narrator.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Red Claw - Philip Palmer": {
       "title": "Red Claw",
       "author": "Philip Palmer",
-      "series": null,
+      "series": "Debatable Space Universe",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the hostile alien planet of New Amazon, a team of scientists and genetically engineered space marines must survive an ecosystem where literally everything — plants, animals, and the very weather — is lethal, while secrets and tensions within the group prove equally dangerous. A hyperkinetic, satirical action-SF novel often compared to a dark Starship Troopers.",
+      "tone": "hyperkinetic, darkly comic, pulpy, satirical",
+      "pacing": "Fast",
+      "themes": [
+        "humans vs alien nature",
+        "military vs science",
+        "colonial exploitation",
+        "survival",
+        "caste and social conditioning"
+      ],
+      "setting": "A distant alien planet, New Amazon, in the same far-future universe as Debatable Space; a jungle world where the entire ecosystem is aggressively lethal",
+      "comparable_books": [
+        "Debatable Space - Philip Palmer",
+        "Old Man's War - John Scalzi",
+        "Annihilation - Jeff VanderMeer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "pulpy action SF",
+          "alien jungle survival",
+          "darkly comic",
+          "Starship Troopers comparisons",
+          "fast-paced set pieces"
+        ],
+        "negative": [
+          "readers wanting tight plotting and character depth",
+          "readers sensitive to graphic violence and profanity",
+          "those expecting hard SF rigour"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Time for Mercy - John Grisham": {
