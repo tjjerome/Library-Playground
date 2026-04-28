@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3813,
-  "total_pending": 787,
+  "total_catalogued": 3833,
+  "total_pending": 767,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -208725,513 +208725,880 @@
       "title": "Roman Blood",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the twilight of Sulla's dictatorship, private investigator Gordianus the Finder is hired by a young Cicero to uncover the truth behind a parricide charge against Sextus Roscius — a case whose real answers lie in the darkest corners of Roman power.",
+      "tone": "atmospheric, intricately plotted, historically immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "justice vs. corruption",
+        "class and power in Rome",
+        "truth-seeking",
+        "political manipulation"
+      ],
+      "setting": "Ancient Rome, circa 80 BC, under the dictatorship of Sulla",
+      "comparable_books": [
+        "The Venus Throw - Steven Saylor",
+        "The Silver Pigs - Lindsey Davis",
+        "Rubicon - Steven Saylor"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical mystery fans",
+          "ancient Rome setting",
+          "morally complex protagonist",
+          "legal intrigue",
+          "richly researched atmosphere"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "readers averse to dense historical detail"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich period dialogue and atmospheric prose lend themselves very well to audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Arms of Nemesis - Steven Saylor": {
       "title": "Arms of Nemesis",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "During the slave revolt of Spartacus, Gordianus the Finder has three days to identify the real murderer of an overseer on the estate of Marcus Crassus — or 99 innocent slaves will be executed in accordance with Roman law.",
+      "tone": "tense, morally charged, historically vivid",
+      "pacing": "Fast",
+      "themes": [
+        "slavery and justice",
+        "class inequality",
+        "moral courage",
+        "Roman law"
+      ],
+      "setting": "Ancient Rome and the Bay of Naples region, circa 72 BC, during the Spartacus revolt",
+      "comparable_books": [
+        "Roman Blood - Steven Saylor",
+        "The Silver Pigs - Lindsey Davis",
+        "A Gladiator Dies Only Once - Steven Saylor"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient Rome setting",
+          "ticking-clock mystery",
+          "historical slavery narratives",
+          "morally grey protagonist",
+          "action-driven plot"
+        ],
+        "negative": [
+          "readers averse to depictions of slavery and Roman brutality"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced plot and vivid period atmosphere translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The House of the Vestals - Steven Saylor": {
       "title": "The House of the Vestals",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6 (publication order); short story collection",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Nine short mystery stories featuring Gordianus the Finder, each set against a different backdrop of late Republican Rome — from senatorial intrigues to the sacred precincts of the Vestal Virgins.",
+      "tone": "episodic, wry, richly atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "Roman religion and society",
+        "gender and power",
+        "justice",
+        "secrets of the ruling class"
+      ],
+      "setting": "Ancient Rome, circa 80–72 BC, spanning various Roman social strata",
+      "comparable_books": [
+        "A Gladiator Dies Only Once - Steven Saylor",
+        "The Exploits of Sherlock Holmes - Adrian Conan Doyle",
+        "SPQR - Mary Beard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short story format",
+          "ancient Rome setting",
+          "variety of Roman settings and characters",
+          "self-contained episodes"
+        ],
+        "negative": [
+          "readers wanting a single continuous narrative",
+          "readers new to the series — better read after Roman Blood"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Gladiator Dies Only Once - Steven Saylor": {
       "title": "A Gladiator Dies Only Once",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 11 (publication order); short story collection",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A second collection of short mysteries featuring Gordianus the Finder, ranging from a gladiator's suspicious death to a locked-room puzzle involving a talking statue — each illuminating a different facet of Roman life.",
+      "tone": "episodic, witty, historically playful",
+      "pacing": "Moderate",
+      "themes": [
+        "Roman spectacle and violence",
+        "deception and illusion",
+        "justice among the powerless",
+        "Roman daily life"
+      ],
+      "setting": "Ancient Rome, spanning roughly 80–46 BC",
+      "comparable_books": [
+        "The House of the Vestals - Steven Saylor",
+        "Sub Rosa - Lindsey Davis",
+        "The Exploits of Sherlock Holmes - Adrian Conan Doyle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short story format",
+          "ancient Rome setting",
+          "puzzle-driven mysteries",
+          "episodic variety"
+        ],
+        "negative": [
+          "readers wanting a continuous novel-length narrative",
+          "those new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Mist of Prophecies - Steven Saylor": {
       "title": "A Mist of Prophecies",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a mysterious prophetess is found dead in Rome, Gordianus the Finder investigates her past and her many powerful admirers — set against the civil war between Caesar and Pompey.",
+      "tone": "melancholy, politically charged, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "fate and prophecy",
+        "Roman civil war",
+        "women's power and vulnerability",
+        "political violence"
+      ],
+      "setting": "Ancient Rome, 48 BC, during the war between Caesar and Pompey",
+      "comparable_books": [
+        "The Judgment of Caesar - Steven Saylor",
+        "Last Seen in Massilia - Steven Saylor",
+        "The Venus Throw - Steven Saylor"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient Rome civil war backdrop",
+          "female-centred mystery",
+          "morally complex investigation",
+          "historical figures as characters"
+        ],
+        "negative": [
+          "readers wanting fast pacing or action-focused plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Murder on the Appian Way - Steven Saylor": {
       "title": "A Murder on the Appian Way",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gordianus the Finder is tasked with investigating the politically explosive murder of the demagogue Clodius Pulcher on the Appian Way — a case that could ignite civil war and destroy his own family.",
+      "tone": "tense, politically explosive, gripping",
+      "pacing": "Fast",
+      "themes": [
+        "political violence",
+        "mob politics",
+        "truth vs. narrative",
+        "loyalty and family"
+      ],
+      "setting": "Ancient Rome, 52 BC, during the volatile final years of the Republic",
+      "comparable_books": [
+        "Rubicon - Steven Saylor",
+        "Catilina's Riddle - Steven Saylor",
+        "Conspirata - Robert Harris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political thriller elements",
+          "ancient Rome setting",
+          "real historical events",
+          "morally grey protagonist",
+          "high-stakes mystery"
+        ],
+        "negative": [
+          "readers who prefer quieter domestic mysteries",
+          "readers averse to Roman mob violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Propulsive political thriller pacing and vivid street-level Roman atmosphere make it an outstanding audio experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Seven Wonders - Steven Saylor": {
       "title": "The Seven Wonders",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel (Book 0)",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young Gordianus embarks on a grand tour of the Seven Wonders of the Ancient World with his tutor Antipater of Sidon, encountering a mystery at each stop — a coming-of-age prequel that ends with his fateful meeting with Bethesda in Alexandria.",
+      "tone": "adventurous, episodic, warmly literary",
+      "pacing": "Moderate",
+      "themes": [
+        "coming of age",
+        "wonder and exploration",
+        "justice and truth",
+        "the ancient world's grandeur"
+      ],
+      "setting": "The ancient Mediterranean world, circa 92 BC — Greece, Asia Minor, Babylon, and Egypt",
+      "comparable_books": [
+        "Raiders of the Nile - Steven Saylor",
+        "The House of the Vestals - Steven Saylor",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "travel and adventure",
+          "ancient wonders setting",
+          "short story format within a novel frame",
+          "origin story appeal",
+          "historical atmosphere"
+        ],
+        "negative": [
+          "readers wanting a single propulsive mystery",
+          "readers new to Gordianus — best read after the main series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The travelogue structure and vivid ancient settings make this an immersive listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Last Seen in Massilia - Steven Saylor": {
       "title": "Last Seen in Massilia",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gordianus travels to the besieged Greek city of Massilia — a neutral city-state caught between Caesar and Pompey's forces — to find his missing adopted son Meto, uncovering betrayal and sacrifice in a city under siege.",
+      "tone": "tense, politically fraught, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty and family",
+        "neutrality in civil war",
+        "siege and sacrifice",
+        "Roman politics"
+      ],
+      "setting": "Massilia (modern Marseille), 49 BC, during Julius Caesar's civil war",
+      "comparable_books": [
+        "A Mist of Prophecies - Steven Saylor",
+        "Rubicon - Steven Saylor",
+        "The Judgment of Caesar - Steven Saylor"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Roman civil war setting",
+          "family drama within historical mystery",
+          "Greek city backdrop",
+          "morally complex choices"
+        ],
+        "negative": [
+          "readers wanting self-contained mysteries — requires familiarity with earlier books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Triumph of Caesar - Steven Saylor": {
       "title": "The Triumph of Caesar",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Julius Caesar celebrates his four great triumphs in Rome, Gordianus the Finder is drawn into a conspiracy to prevent an assassination — while shadowed by his own conflicted loyalties and the spectre of Rome's dying Republic.",
+      "tone": "elegiac, historically sweeping, suspenseful",
+      "pacing": "Moderate",
+      "themes": [
+        "the end of the Republic",
+        "assassination and conspiracy",
+        "loyalty",
+        "the price of ambition"
+      ],
+      "setting": "Ancient Rome, 46 BC, during Caesar's triumphal celebrations",
+      "comparable_books": [
+        "The Throne of Caesar - Steven Saylor",
+        "Dictator - Robert Harris",
+        "A Mist of Prophecies - Steven Saylor"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Julius Caesar as a character",
+          "political intrigue",
+          "Roman Republic's twilight",
+          "long-running series payoff",
+          "historical mystery"
+        ],
+        "negative": [
+          "new readers — requires deep familiarity with earlier books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Echoes of Chaos - J. D. L. Rosell": {
       "title": "Echoes of Chaos",
       "author": "J. D. L. Rosell",
       "series": "The Famine Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As her city of Oedija collapses into civil war and the daemon god Famine breaks free of his prison, Airene the Finch races to find a mythical weapon capable of stopping him — while enemy armies close in from without and rogue sorcerers tear the city apart from within.",
+      "tone": "epic, urgent, politically complex",
+      "pacing": "Moderate",
+      "themes": [
+        "political collapse",
+        "divine threat",
+        "sacrifice",
+        "power and corruption",
+        "magic and identity"
+      ],
+      "setting": "The fantasy world of Telae — the city of Oedija and surrounding realms, in a pseudo-ancient Greek/Roman world",
+      "comparable_books": [
+        "Whispers of Ruin - J.D.L. Rosell",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Mistborn - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy with political intrigue",
+          "female protagonist",
+          "world-ending stakes",
+          "magic systems",
+          "found family"
+        ],
+        "negative": [
+          "readers wanting romance-heavy fantasy",
+          "those who haven't read Book 1 — not a standalone",
+          "readers sensitive to implied sexual violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Requiem of Silence - J. D. L. Rosell": {
       "title": "Requiem of Silence",
       "author": "J. D. L. Rosell",
       "series": "The Famine Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the trilogy's conclusion, Airene must make her greatest sacrifice yet to stop the God of Famine from consuming the last of the living world — a final reckoning that will cost her everything she is.",
+      "tone": "epic, emotionally intense, conclusive",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "the cost of power",
+        "survival",
+        "hope against annihilation",
+        "identity"
+      ],
+      "setting": "The world of Telae — the besieged Four Realms in their final hour",
+      "comparable_books": [
+        "Echoes of Chaos - J.D.L. Rosell",
+        "The Hero of Ages - Brandon Sanderson",
+        "Whispers of Ruin - J.D.L. Rosell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusion",
+          "high-stakes epic fantasy",
+          "character-driven sacrifice",
+          "world-ending conflicts"
+        ],
+        "negative": [
+          "new readers — requires all prior books",
+          "readers preferring lighter fantasy tones"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Secret Seller - J. D. L. Rosell": {
       "title": "Secret Seller",
       "author": "J. D. L. Rosell",
       "series": "The Famine Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel novella (Book 0)",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Airene the Finch, a street-level peddler of rumors and secrets in the city of Oedija, finds herself drawn into a dangerous murder investigation that will set her on the path toward the events of the main trilogy.",
+      "tone": "brisk, roguish, mystery-infused",
+      "pacing": "Fast",
+      "themes": [
+        "secrets and truth",
+        "ambition and justice",
+        "political corruption",
+        "magic and society"
+      ],
+      "setting": "The city of Oedija in the world of Telae — a pseudo-ancient Mediterranean fantasy setting",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Whispers of Ruin - J.D.L. Rosell",
+        "The Final Empire - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "roguish protagonist",
+          "urban fantasy mystery",
+          "short and fast read",
+          "good series entry point",
+          "political intrigue"
+        ],
+        "negative": [
+          "readers wanting a full novel",
+          "those seeking a self-contained complete story"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Phantom Heist - J. D. L. Rosell": {
       "title": "The Phantom Heist",
       "author": "J. D. L. Rosell",
       "series": "The Famine Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Novella (Book 1.5)",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Talan Wraithsbane, a down-on-his-luck thief, takes on one last desperate heist — breaking into a vault guarded by imperial soldiers, unearthly spirits, and the mysterious powers of a temple — in this standalone side-story set in the world of The Famine Cycle.",
+      "tone": "roguish, fast-paced, darkly playful",
+      "pacing": "Fast",
+      "themes": [
+        "desperation and risk",
+        "magic and the supernatural",
+        "loyalty among thieves",
+        "survival"
+      ],
+      "setting": "The world of Telae — an exotic temple city in the Famine Cycle universe",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "The Final Empire - Brandon Sanderson",
+        "Secret Seller - J.D.L. Rosell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heist fantasy",
+          "roguish anti-hero",
+          "fast short read",
+          "supernatural action",
+          "Famine Cycle world-building"
+        ],
+        "negative": [
+          "readers wanting the main plot to advance",
+          "those unfamiliar with the Famine Cycle world"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Banishing of Kings - Jasmine Young": {
       "title": "A Banishing of Kings",
       "author": "Jasmine Young",
       "series": "Realm Breaker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Betrayed by the Republic and hunted across the Deep North, Skálda Branwright must become the first rider in history to take a fearsome Bael dragon into battle — while a new continental war ignites around her and her bond with Bale deepens into something world-shaking.",
+      "tone": "nobledark, action-driven, politically epic",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and betrayal",
+        "dragon rider bonds",
+        "rebellion",
+        "political power",
+        "identity"
+      ],
+      "setting": "The continent of Elondria — a Scandinavian-flavoured high fantasy world with dragons, elves, and dwarves",
+      "comparable_books": [
+        "A Breaking of Realms - Jasmine Young",
+        "Eragon - Christopher Paolini",
+        "Fourth Wing - Rebecca Yarros"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon rider fantasy",
+          "female protagonist",
+          "action-heavy battle scenes",
+          "political intrigue",
+          "fast-paced epic"
+        ],
+        "negative": [
+          "readers wanting standalone or romance-heavy fantasy",
+          "those who haven't read Book 1"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Reviewers specifically praise the audiobook as enhancing the Game of Thrones-like epic atmosphere.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Breaking of Realms - Jasmine Young": {
       "title": "A Breaking of Realms",
       "author": "Jasmine Young",
       "series": "Realm Breaker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the continent of Elondria, an ordinary woman named Skálda Branwright rescues a wild dragon hatchling — inadvertently bonding with the most dangerous creature in the world and becoming a fugitive hunted by elves, the state, and a sinister Order, all while the continent teeters on the brink of war.",
+      "tone": "nobledark, propulsive, epic",
+      "pacing": "Fast",
+      "themes": [
+        "dragon rider bonds",
+        "rebellion against empire",
+        "freedom and sovereignty",
+        "destiny vs. choice"
+      ],
+      "setting": "The continent of Elondria — a Scandinavian-flavoured high fantasy world with a Realm-Building political system, elves, dragons, and dwarves",
+      "comparable_books": [
+        "A Banishing of Kings - Jasmine Young",
+        "Eragon - Christopher Paolini",
+        "Dragonflight - Anne McCaffrey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon rider fantasy",
+          "female protagonist",
+          "political intrigue",
+          "underdog rebel narrative",
+          "fast-paced world-building"
+        ],
+        "negative": [
+          "readers wanting romance-heavy fantasy",
+          "those preferring slow-burn character studies",
+          "readers overwhelmed by dense multi-POV world-building"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The audiobook is widely praised for enhancing the series' epic, Game of Thrones-like atmosphere.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Battling of Continents - Jasmine Young": {
       "title": "A Battling of Continents",
       "author": "Jasmine Young",
       "series": "Realm Breaker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The conflict between Skálda and the forces arrayed against her escalates to a full continental scale, as the Kvael-Akar faces an impossible choice between defying Bale's influence to save Elondria or surrendering to the Realm-Breaker's will — with catastrophic consequences either way.",
+      "tone": "grimdark, epic, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "war at continental scale",
+        "the cost of power",
+        "rider-dragon bond",
+        "sacrifice",
+        "political collapse"
+      ],
+      "setting": "The continent of Elondria and beyond — an expansive high fantasy world in its most desperate hour",
+      "comparable_books": [
+        "A Building of Empires - Jasmine Young",
+        "A Banishing of Kings - Jasmine Young",
+        "Words of Radiance - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "large-scale epic fantasy battles",
+          "dragon-centred storytelling",
+          "series continuation payoff",
+          "nobledark tone"
+        ],
+        "negative": [
+          "new readers — requires all prior books",
+          "readers preferring lighter or romance-focused fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "A Building of Empires - Jasmine Young": {
       "title": "A Building of Empires",
       "author": "Jasmine Young",
       "series": "Realm Breaker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Hunted across the continent as elves, dragons, and dwarves mobilise for the largest war in Elondrian history, Skálda and Bale must choose between flight and helping Bale ascend to his full, terrifying power — while two rival claimants race to forge the next great empire.",
+      "tone": "nobledark, epic, politically expansive",
+      "pacing": "Fast",
+      "themes": [
+        "empire-building",
+        "dragon power and destiny",
+        "war and betrayal",
+        "competing ambitions",
+        "rider bonds"
+      ],
+      "setting": "The continent of Elondria — spanning the Deep North to the southern realms, in a full-scale continental war",
+      "comparable_books": [
+        "A Battling of Continents - Jasmine Young",
+        "A Banishing of Kings - Jasmine Young",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon rider epic",
+          "large-scale political fantasy",
+          "multi-POV narrative",
+          "escalating stakes"
+        ],
+        "negative": [
+          "new readers — requires prior books",
+          "readers wanting self-contained stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Freedom of the Mask - Robert McCammon": {
       "title": "Freedom of the Mask",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Historical Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1703, Matthew Corbett wakes without his memories — shackled, accused of murder, and en route to London's notorious Newgate Prison — while his allies race across the Atlantic to save him from Professor Fell and a city teeming with danger, masked vigilantes, and historical figures including Daniel Defoe.",
+      "tone": "propulsive, atmospheric, darkly adventurous",
+      "pacing": "Fast",
+      "themes": [
+        "identity and memory",
+        "justice vs. power",
+        "the criminal underworld",
+        "friendship and loyalty",
+        "early 18th-century London"
+      ],
+      "setting": "Early 18th century — colonial America and London, primarily Newgate Prison and the streets of early 1700s Londontown",
+      "comparable_books": [
+        "Cardinal Black - Robert McCammon",
+        "The River of Souls - Robert McCammon",
+        "Speaks the Nightbird - Robert McCammon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical thriller fans",
+          "early 18th-century setting",
+          "propulsive pacing",
+          "morally grey protagonist",
+          "long-running series payoff",
+          "Sherlock Holmes-adjacent detective"
+        ],
+        "negative": [
+          "new readers — must start from Book 1",
+          "readers averse to graphic violence and prison horror"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Edoardo Ballerini, the series is widely praised as an outstanding audio experience with vivid period atmosphere.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Kingdoms of Death - Christopher Ruocchio": {
       "title": "Kingdoms of Death",
       "author": "Christopher Ruocchio",
       "series": "Sun Eater",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Trapped for nearly a century as the Emperor's unwilling advisor, Hadrian Marlowe is given one last impossible mission: journey across the galaxy to the authoritarian Lothrian Commonwealth to recruit them as allies against the alien Cielcin — a journey that will take him far beyond any human space and into the darkest chapter of his legend.",
+      "tone": "grimdark, lyrical, philosophically dense, emotionally devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the cost of survival",
+        "totalitarianism vs. freedom",
+        "identity and legend",
+        "alien encounter",
+        "sacrifice"
+      ],
+      "setting": "The far future Sollan Empire and beyond — including the totalitarian Lothrian Commonwealth and deep behind Cielcin enemy lines",
+      "comparable_books": [
+        "Demon in White - Christopher Ruocchio",
+        "Dune - Frank Herbert",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary space opera",
+          "Dune-like scope and philosophy",
+          "morally grey anti-hero",
+          "slow-burn epic",
+          "rich prose",
+          "alien civilisation worldbuilding"
+        ],
+        "negative": [
+          "readers wanting fast-paced action SF",
+          "those new to the series — requires all prior books",
+          "readers averse to deeply dark and oppressive narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Caribbean - James A. Michener": {
@@ -209239,26 +209606,48 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A sweeping, multi-generational epic spanning 700 years of Caribbean history — from the Arawak peoples' conquest in 1310 through Columbus, the age of buccaneers, the Haitian slave revolt, and the rise of Fidel Castro — told through a succession of interconnected stories and vivid fictional and historical characters.",
+      "tone": "expansive, elegiac, richly researched, occasionally uneven",
+      "pacing": "Slow",
+      "themes": [
+        "colonialism and its legacy",
+        "slavery and resistance",
+        "cultural identity",
+        "revolution",
+        "the clash of civilisations"
+      ],
+      "setting": "The Caribbean islands, from 1310 to the late 20th century — spanning the full breadth of the region's history",
+      "comparable_books": [
+        "Hawaii - James A. Michener",
+        "Chesapeake - James A. Michener",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping historical epics",
+          "richly researched fiction",
+          "multi-generational sagas",
+          "colonial history",
+          "immersive geography"
+        ],
+        "negative": [
+          "readers wanting a single protagonist or continuous narrative",
+          "readers who prefer fast pacing",
+          "those averse to very long, episodic novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Centennial - James A. Michener": {
