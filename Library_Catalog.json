@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3673,
-  "total_pending": 927,
+  "total_catalogued": 3693,
+  "total_pending": 907,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -201832,540 +201832,969 @@
       "title": "Manflayer",
       "author": "Joshua Reynolds",
       "series": "Fabius Bile",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Centuries after his return from Commorragh, the rogue apothecary Fabius Bile sees his Homo Novus project threatened by the monstrous haemonculi of the Thirteen Scars, forcing him to seek unlikely allies and confront old enemies to preserve his life's work.",
+      "tone": "darkly philosophical, action-packed, twisted humour",
+      "pacing": "Fast",
+      "themes": [
+        "creation and legacy",
+        "fatherhood and responsibility",
+        "identity",
+        "loyalty",
+        "evolution"
+      ],
+      "setting": "The Warhammer 40,000 universe — the 41st millennium, spanning Chaos Space and alien territories",
+      "comparable_books": [
+        "Eisenhorn - Dan Abnett",
+        "Night Lords Trilogy - Aaron Dembski-Bowden",
+        "Horus Rising - Dan Abnett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Warhammer 40K fans",
+          "morally grey protagonist",
+          "dark philosophical underpinning",
+          "fast-paced action",
+          "villain POV"
+        ],
+        "negative": [
+          "requires series knowledge",
+          "grimdark violence",
+          "no traditional heroism"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by John Banks; Black Library audiobooks are well-produced with strong narration for this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Stone of Iron and Omen - J. D. L. Rosell": {
       "title": "The Stone of Iron and Omen",
       "author": "J. D. L. Rosell",
       "series": "The Runewar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Runewar engulfs the continent of Enea, Aelthena marches east to reclaim her homeland of Oakharrow from the Jotun, while Bjorn follows an ancient king's visions seeking alliance among his foes, and the southern karah Sehdra rebels against her shadow ruler.",
+      "tone": "adventurous, Norse-inspired, war-epic",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its cost",
+        "prophecy",
+        "political intrigue",
+        "heroism",
+        "sacrifice"
+      ],
+      "setting": "The Norse-inspired fantasy continent of Enea — a world once ruled by giants, now fractured by human kingdoms and rune magic",
+      "comparable_books": [
+        "The Throne of Ice and Ash - J.D.L. Rosell",
+        "The Shattered Sea - Joe Abercrombie",
+        "Bloodsworn - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse mythology fans",
+          "multi-POV epic fantasy",
+          "political intrigue",
+          "morally complex characters"
+        ],
+        "negative": [
+          "ongoing series mid-book",
+          "large cast to track",
+          "some pacing issues noted by reviewers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Relic of the Gods - Philip C. Quaintrell": {
       "title": "Relic of the Gods",
       "author": "Philip C. Quaintrell",
       "series": "The Echoes Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the kingdoms of Illian stand on the brink of ruin before the armies of Valanis, ex-assassin Asher and his companions race north while the newly returned Dragorn — bonded riders of dragons — may be the world of Verda's last hope.",
+      "tone": "action-driven, epic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "destiny and prophecy",
+        "good vs evil",
+        "redemption",
+        "dragon riders",
+        "sacrifice"
+      ],
+      "setting": "The ancient world of Verda — a high fantasy realm of fractured kingdoms, immortal elves, and dragon-bonded warriors",
+      "comparable_books": [
+        "Rise of the Ranger - Philip C. Quaintrell",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Eragon - Christopher Paolini"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon riders",
+          "epic battles",
+          "fast-paced plotting",
+          "classic high fantasy feel",
+          "Tolkien-adjacent"
+        ],
+        "negative": [
+          "large ongoing series commitment",
+          "traditional good-vs-evil framing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Steven Brand; highly praised narration is a major draw for this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Dance of Fang and Claw - Philip C. Quaintrell": {
       "title": "A Dance of Fang and Claw",
       "author": "Philip C. Quaintrell",
       "series": "The Ranger Archives",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a werewolf encounter transforms Russell Maybury, ranger Asher must choose whether to train him or hunt him down; together they are drawn into a centuries-old shadow war between werewolves and the blood-fiend Vorska while battling the machinations of ancient mages.",
+      "tone": "action-driven, horror-tinged, atmospheric",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "monster-hunting",
+        "mentorship",
+        "identity",
+        "the nature of monsters"
+      ],
+      "setting": "The world of Verda (prequel to The Echoes Saga) — ranger wilds populated by monsters, mages, and ancient shadow wars",
+      "comparable_books": [
+        "The Witcher - Andrzej Sapkowski",
+        "Rise of the Ranger - Philip C. Quaintrell",
+        "Monster Hunter International - Larry Correia"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "monster-hunting action",
+          "morally grey protagonist",
+          "camaraderie and banter",
+          "horror elements",
+          "prequel lore payoff"
+        ],
+        "negative": [
+          "best read after The Echoes Saga",
+          "series context required for full impact"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Steven Brand; the same acclaimed narrator as The Echoes Saga.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Outcasts - Robert J. Power": {
       "title": "The Outcasts",
       "author": "Robert J. Power",
       "series": "Spark City Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Exiled from Spark City, warrior Erroh and his band of outcasts must find a way to defend a city they can never return to, as the warlord Uden's march threatens all while an assassin and internal treachery hasten the city's collapse.",
+      "tone": "dark humour, emotionally intense, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "exile and identity",
+        "duty and loyalty",
+        "war",
+        "found family",
+        "coming of age"
+      ],
+      "setting": "A post-apocalyptic matriarchal fantasy world on the brink of war, centred on Spark City and the surrounding Wastes",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "Legend - David Gemmell",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow-burn romance",
+          "flawed heroes",
+          "dark humour",
+          "sword-fights",
+          "fans of Abercrombie or Gemmell"
+        ],
+        "negative": [
+          "mid-series setup book",
+          "some character regression noted by reviewers",
+          "no magic system"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Steel and Valor - Andy Peloquin": {
       "title": "Steel and Valor",
       "author": "Andy Peloquin",
       "series": "The Silent Champions",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Captain Aravon and his elite Silent Champions hunt a traitor selling secrets to the enemy while confronting a rampaging foe, forced to rely on mysterious masked warriors as they fight to protect their kingdom against overwhelming odds.",
+      "tone": "propulsive, military, tense",
+      "pacing": "Fast",
+      "themes": [
+        "honour and betrayal",
+        "brotherhood",
+        "sacrifice",
+        "military tactics",
+        "identity"
+      ],
+      "setting": "A Viking/Roman Legion-inspired secondary world fantasy at war with savage northern barbarians",
+      "comparable_books": [
+        "The Black Company - Glen Cook",
+        "Stiger's Tigers - Marc Alan Edelheit",
+        "Shields in Shadow - Andy Peloquin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "elite special forces unit",
+          "band of brothers dynamic",
+          "intricate tactics",
+          "fast-paced battles"
+        ],
+        "negative": [
+          "series context required",
+          "light on world-building depth",
+          "straightforward good-vs-evil framing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Rise of Darth Vader - James Luceno": {
       "title": "The Rise of Darth Vader",
       "author": "James Luceno",
       "series": "Dark Lord Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set immediately after Revenge of the Sith, the novel follows Anakin Skywalker's painful transformation into Darth Vader as he serves Palpatine's new Empire and hunts down surviving Jedi, while a group of Jedi refugees fight to evade him.",
+      "tone": "dark, character-driven, tragic",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and transformation",
+        "loss",
+        "survival",
+        "power and corruption",
+        "the fall of the Jedi"
+      ],
+      "setting": "The Star Wars galaxy immediately after Order 66 — the early days of the Galactic Empire",
+      "comparable_books": [
+        "Tarkin - James Luceno",
+        "Labyrinth of Evil - James Luceno",
+        "Lords of the Sith - Paul S. Kemp"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "villain origin/development",
+          "dark character study",
+          "post-prequel era"
+        ],
+        "negative": [
+          "Legends continuity (non-canon)",
+          "requires Star Wars knowledge",
+          "supporting characters less developed"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Slayer - Andy Peloquin": {
       "title": "Slayer",
       "author": "Andy Peloquin",
       "series": "Darkblade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The immortal assassin known as the Hunter pursues demon Abiarazi to a mountaintop peak where he discovers a forgotten city, becoming entangled in a millennia-old war while protecting the god-touched boy Hailen, whose power could either shatter or save the world.",
+      "tone": "dark, action-driven, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "morality and redemption",
+        "good vs evil",
+        "protector bonds",
+        "dark nature vs humanity",
+        "ancient history"
+      ],
+      "setting": "The dark fantasy world of Einan — spanning plains, mountain peaks, and a lost ancient city",
+      "comparable_books": [
+        "Brent Weeks' Night Angel Trilogy",
+        "Prince of Thorns - Mark Lawrence",
+        "Assassin (Darkblade #1) - Andy Peloquin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy",
+          "morally grey assassin protagonist",
+          "fast-paced action",
+          "found-family dynamic",
+          "vivid fight scenes"
+        ],
+        "negative": [
+          "graphic violence",
+          "series context strongly recommended",
+          "lengthy books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood Oath - Christer Lende": {
       "title": "Blood Oath",
       "author": "Christer Lende",
       "series": "The Beast Hunter of Ashbourn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A dark new king seizes Ashbourn and spreads a mind-breaking plague through the city's population; beast hunter Ara must use her dark connection to the king to find a way to defeat him before the last resistant district falls.",
+      "tone": "dark, fast-paced, monster-horror",
+      "pacing": "Fast",
+      "themes": [
+        "corruption and plague",
+        "resistance",
+        "dark power and its costs",
+        "sacrifice",
+        "found family"
+      ],
+      "setting": "The city-state of Ashbourn — a dark fantasy world with a unique bestiary of creatures and god-like monsters",
+      "comparable_books": [
+        "Baru Cormorant - Seth Dickinson",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "The Beast Hunters - Christer Lende"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy",
+          "monster-hunting",
+          "strong female protagonist",
+          "fast-paced plotting",
+          "unique bestiary"
+        ],
+        "negative": [
+          "requires previous books",
+          "graphic dark content",
+          "some slow opening chapters noted"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fleet Champions - Rob J. Hayes": {
       "title": "Fleet Champions",
       "author": "Rob J. Hayes",
       "series": "Titan Hoppers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Newly minted heroes Iro and Emil are thrust into a high-stakes martial tournament between the Home Fleet and the hostile Raider Fleet, even as the mysterious Black Cloaks watch the outcome with unsettling interest.",
+      "tone": "propulsive, coming-of-age, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "growth and power",
+        "found family",
+        "survival",
+        "identity",
+        "ancient mysteries"
+      ],
+      "setting": "A space-faring sci-fantasy setting — humanity lives aboard a crumbling fleet of ships, scavenging from colossal space-dwelling titans",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "Iron Prince - Brian Guthrie",
+        "Titan Hoppers - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "found family",
+          "sci-fantasy hybrid",
+          "tournament arc",
+          "coming-of-age"
+        ],
+        "negative": [
+          "requires series reading in order",
+          "progression fantasy power-scaling may not suit all readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "From Cold Ashes Risen - Rob J. Hayes": {
       "title": "From Cold Ashes Risen",
       "author": "Rob J. Hayes",
       "series": "The War Eternal",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Having lost everything to the Iron Legion, the vengeful Corpse Queen Eskara Helsene sets her sights on the Emperor of Terrelan, fighting both her external enemies and her inner nightmare demon Ssserakis as she ascends toward terrible power.",
+      "tone": "grimdark, propulsive, emotionally raw",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance vs peace",
+        "trauma and survival",
+        "power and corruption",
+        "identity",
+        "inner demons"
+      ],
+      "setting": "The dark fantasy world of Ovaeris — a scarred world of warring factions, necromancy, and ancient god-wars",
+      "comparable_books": [
+        "Prince of Thorns - Mark Lawrence",
+        "Along the Razor's Edge - Rob J. Hayes",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "morally grey female protagonist",
+          "villainous POV",
+          "necromancy and dark magic",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "dark and brutal content",
+          "first-person unreliable narrator may frustrate some",
+          "requires series reading in order"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dead Stars - Part One - Ben Galley": {
       "title": "Dead Stars - Part One",
       "author": "Ben Galley",
       "series": "Emaneska",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the wake of the Battle of Krauslung, magic runs wild and a deadly girl hunts down and murders the Written mages; the disgraced warrior mage Farden is lost in bitter exile while the city he once protected teeters on the edge of ruin from within.",
+      "tone": "dark, lyrical, epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "exile and redemption",
+        "power and corruption",
+        "fatherhood",
+        "apocalypse",
+        "magic's cost"
+      ],
+      "setting": "The Norse-influenced world of Emaneska — spanning the city of Krauslung, the wilds of Albion, and a frozen north",
+      "comparable_books": [
+        "The Written - Ben Galley",
+        "The Blade Itself - Joe Abercrombie",
+        "A Chorus of Dragons - Jenn Lyons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "dark epic fantasy",
+          "redemption arc",
+          "Norse-inspired world",
+          "magic systems"
+        ],
+        "negative": [
+          "split volume (requires Part Two for resolution)",
+          "slow opening",
+          "some character representation issues noted"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sin and Sorrow - Michael R. Fletcher": {
       "title": "Sin and Sorrow",
       "author": "Michael R. Fletcher",
       "series": "City of Sacrifice",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With half the pantheon dead and the underworld scoured clean, Nuru wields the Staff of the Fifth Sun to destroy the remaining gods of Bastion while Akachi races to stop her before the last god falls and the city is utterly doomed.",
+      "tone": "grimdark, frenetic, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "religion and fanaticism",
+        "gods and mortals",
+        "sacrifice",
+        "power's corruption",
+        "apocalypse"
+      ],
+      "setting": "Eternal Bastion — a last walled city of mankind built in a post-apocalyptic world inspired by Mesoamerican mythology",
+      "comparable_books": [
+        "Smoke and Stone - Michael R. Fletcher",
+        "Beyond Redemption - Michael R. Fletcher",
+        "The Traitor God - Cameron Johnston"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "Mesoamerican mythology",
+          "street sorcery and narcotics-fuelled magic",
+          "god-war stakes",
+          "unconventional world-building"
+        ],
+        "negative": [
+          "very graphic and disturbing content",
+          "requires series reading in order",
+          "nihilistic themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Empire of War - Robert H. Fleming": {
       "title": "Empire of War",
       "author": "Robert H. Fleming",
       "series": "The Falling Empires Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Kurakin Horde invades deeper into Erlon, young officer Elisa Lannes and Marshal Lauriston's last army must hold the line against General Duroc's forces while the emperor races to rejoin them, and unknown divine powers complicate the conflict.",
+      "tone": "military, Napoleonic-inspired, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its cost",
+        "duty and honour",
+        "empire and collapse",
+        "divine intervention",
+        "leadership"
+      ],
+      "setting": "The secondary world empire of Erlon — a gunpowder fantasy setting with strong Napoleonic War resonances",
+      "comparable_books": [
+        "The Fall of Erlon - Robert H. Fleming",
+        "The Voice of War - Zack Argyle",
+        "The Emperor's Blades - Brian Staveley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "Napoleonic era feel",
+          "large-scale battles",
+          "fans of historical military fiction"
+        ],
+        "negative": [
+          "prose repetition noted by reviewers",
+          "gods and magic system underdeveloped at this point",
+          "character arcs described as flat"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Soulmarked - David Estes": {
       "title": "Soulmarked",
       "author": "David Estes",
       "series": "The Fatemarked Epic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Across the Four Kingdoms, the fatemarked pursue their separate quests — from Annise's search for legendary Sleeping Knights to Raven's growing army of dragons — while the shadowy Bane plots destruction and ancient prophecy draws ever closer to fulfilment.",
+      "tone": "epic, propulsive, multi-POV",
+      "pacing": "Fast",
+      "themes": [
+        "destiny and prophecy",
+        "war and diplomacy",
+        "power and responsibility",
+        "slavery and freedom",
+        "sacrifice"
+      ],
+      "setting": "The Four Kingdoms — a high fantasy world with dragons, godlike powers, and warring nations locked in ancient conflict",
+      "comparable_books": [
+        "Fatemarked - David Estes",
+        "Throne of Glass - Sarah J. Maas",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic multi-POV fantasy",
+          "dragons",
+          "prophecy-driven plotting",
+          "fast chapter cliffhangers",
+          "large cast"
+        ],
+        "negative": [
+          "very long series commitment (5 books)",
+          "some POVs feel weaker than others",
+          "YA-adjacent tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Harlequin Tartan - Raymond St. Elmo": {
       "title": "The Harlequin Tartan",
       "author": "Raymond St. Elmo",
       "series": "Quest of the Five Clans",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rayne Gray finds himself unknowingly ensorcelled by the Harlequin Tartan clan, losing his grip on reality in a psychosis-laced ordeal that forces him to confront the ghosts of men he has killed, while wrestling with vampires and the machinations of mad magical families.",
+      "tone": "darkly comic, surreal, literary",
+      "pacing": "Slow",
+      "themes": [
+        "identity and madness",
+        "magic and industrial apocalypse",
+        "family legacy",
+        "violence and morality",
+        "illusion and reality"
+      ],
+      "setting": "A gaslit alternate 19th-century 'Londonish' — a not-quite-Victorian England populated by five clans of magical mad geniuses, vampires, and industrial conspiracies",
+      "comparable_books": [
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Night Circus - Erin Morgenstern",
+        "The Malevolent Seven - Sebastian de Castell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "darkly comic",
+          "surreal and philosophical",
+          "Victorian/steampunk adjacent",
+          "unique voice"
+        ],
+        "negative": [
+          "non-linear dreamlike structure is challenging",
+          "not plot-driven — character and language first",
+          "small audience niche"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The dense, philosophical first-person narration and surreal structure reward close reading rather than passive listening.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tempest - Troy Denning": {
       "title": "Tempest",
       "author": "Troy Denning",
       "series": "Star Wars: Legacy of the Force",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As civil war threatens the Galactic Alliance, Jacen Solo takes increasingly dark steps down the path to the Sith while his twin sister Jaina and cousin Ben Skywalker struggle to pull him back from the brink.",
+      "tone": "action-driven, dark, politically tense",
+      "pacing": "Fast",
+      "themes": [
+        "fall from grace",
+        "family loyalty vs duty",
+        "political corruption",
+        "the dark side",
+        "war"
+      ],
+      "setting": "The Star Wars expanded universe — set approximately 40 years after the original trilogy, spanning various planets and the Galactic Alliance",
+      "comparable_books": [
+        "Betrayal - Aaron Allston",
+        "Bloodlines - Karen Traviss",
+        "Sacrifice - Karen Traviss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Star Wars fans",
+          "dark character arcs",
+          "post-NJO storylines",
+          "villain origin",
+          "political intrigue"
+        ],
+        "negative": [
+          "Legends continuity (non-canon)",
+          "requires deep Star Wars EU knowledge",
+          "part of a long 9-book series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "An Echo of Titans - T. C. Edge": {
       "title": "An Echo of Titans",
       "author": "T. C. Edge",
       "series": "The Bladeborn Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Saska travels south toward the city of Aram as her mysterious past unravels, while Jonik discovers his holy purpose and the Daecar family navigates treacherous political waters, all as ancient titan powers begin to stir across a world teetering on cataclysm.",
+      "tone": "cinematic, epic, politically charged",
+      "pacing": "Moderate",
+      "themes": [
+        "destiny and divine gifts",
+        "political treachery",
+        "ancient powers awakening",
+        "identity",
+        "war"
+      ],
+      "setting": "A secondary world of warring northern and southern kingdoms — Vandar, Tukor, Rasalan, and Agarath — with ancient gods, titans, and divine weapons",
+      "comparable_books": [
+        "A Game of Thrones - George R.R. Martin",
+        "The Wheel of Time - Robert Jordan",
+        "Song of the First Blade - T.C. Edge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "political intrigue",
+          "ancient mysteries",
+          "large-scale world-building",
+          "action-packed"
+        ],
+        "negative": [
+          "very long series (7 books)",
+          "large cast requires investment",
+          "slow pacing in this instalment for some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Magefall - David Estes": {
       "title": "Magefall",
       "author": "David Estes",
       "series": "The Kingfall Histories",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Across the continent of Kingfall, imprisoned mages Quill and Rondo uncover dangerous secrets in the mage prison Lockspell, while kings, queens, dragonmasters, and scattered tribes each face mounting crises as the ancient evil of the Thousands stirs in the shadows.",
+      "tone": "epic, propulsive, multi-POV",
+      "pacing": "Moderate",
+      "themes": [
+        "power and corruption",
+        "ancient evil",
+        "dragons and bonding",
+        "rebellion",
+        "destiny"
+      ],
+      "setting": "The continent of Kingfall — a richly built world in the same universe as The Fatemarked Epic, featuring godblades, dragon riders, mage prisons, and warring kingdoms",
+      "comparable_books": [
+        "The Stormlight Archive - Brandon Sanderson",
+        "Fatemarked - David Estes",
+        "Legends of the First Empire - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic multi-POV fantasy",
+          "dragons",
+          "magic systems",
+          "massive world-building",
+          "fast audiobook narration (Tim Gerard Reynolds)"
+        ],
+        "negative": [
+          "large cast to track across many POVs",
+          "requires series reading in order",
+          "very long total series commitment"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Tim Gerard Reynolds, widely praised as one of the best audiobook narrators in fantasy.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Flight of Magpies - K. J. Charles": {
       "title": "Flight of Magpies",
       "author": "K. J. Charles",
       "series": "A Charm of Magpies",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Magical law enforcer Stephen Day faces occult murders, a wayward student, and the mounting strain on his relationship with aristocratic Lord Crane, as old enemies close in and a devastating loss threatens to tear the lovers apart for good.",
+      "tone": "witty, romantic, darkly charming",
+      "pacing": "Fast",
+      "themes": [
+        "love and commitment",
+        "duty vs personal happiness",
+        "magical law enforcement",
+        "class and society",
+        "Victorian constraints"
+      ],
+      "setting": "A Victorian-era alternate England with an established magical underworld, practitioners, and a justiciary of magical law enforcers",
+      "comparable_books": [
+        "A Case of Possession - K.J. Charles",
+        "The Magpie Lord - K.J. Charles",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "M/M romance",
+          "Victorian setting",
+          "magic and mystery",
+          "established couple dynamics",
+          "witty banter"
+        ],
+        "negative": [
+          "romance-heavy",
+          "requires series reading in order",
+          "short novella length may feel unsubstantial to some"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Audiobook performance highly praised; the witty dialogue and character chemistry translate exceptionally well to audio.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Killing Time - C. M. Carney": {
