@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4599,
-  "total_pending": 1,
+  "total_catalogued": 4600,
+  "total_pending": 0,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -198882,30 +198882,57 @@
       "audit": null
     },
     "Wild ​Reverence - Rebecca Ross": {
-      "title": "Wild ​Reverence",
+      "title": "Wild Reverence",
       "author": "Rebecca Ross",
       "series": "Letters of Enchantment",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel",
+      "genre": "Fantasy Romance",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Matilda, the youngest goddess of her clan and a messenger between realms, harbours a dangerous secret in a world where gods kill one another to steal power. Her fate becomes intertwined with Vincent, a mortal man she once befriended in dreams, as divine politics and forbidden love collide.",
+      "tone": "lyrical, romantic, mythologically lush, bittersweet",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "forbidden love",
+        "divine politics and power",
+        "coming of age",
+        "sacrifice",
+        "vulnerability and trust",
+        "mortality vs. immortality"
+      ],
+      "setting": "A secondary-world fantasy set 600 years before Divine Rivals, spanning the Underling realm, the Skyward realm, and the mortal world",
+      "comparable_books": [
+        "Circe - Madeline Miller",
+        "A River Enchanted - Rebecca Ross",
+        "Divine Rivals - Rebecca Ross",
+        "Lore - Alexandra Bracken"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "enemies-to-lovers / fated romance",
+          "goddess/mortal romance",
+          "Greek myth-inspired worldbuilding",
+          "slow-burn romance with emotional payoff",
+          "rich divine politics",
+          "found family"
+        ],
+        "negative": [
+          "slow opening acts",
+          "heavy world-building front-load",
+          "limited action focus",
+          "immortal protagonist difficult to relate to"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence (gods killing gods)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Iron Keys - Ben Galley": {
