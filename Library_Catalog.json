@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4292,
-  "total_pending": 308,
+  "total_catalogued": 4312,
+  "total_pending": 288,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -232102,351 +232102,647 @@
       "title": "Revenge",
       "author": "A. C. Cobble",
       "series": "Wahrheit",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With a new ruler on Wahrheit's throne, old enemies sense weakness and foreign nations rise in defiance; within the kingdom, those who suffered under the conspiracy now pursue bloody vengeance, threatening to undo everything that was won.",
+      "tone": "adventurous, politically charged, consequences-heavy",
+      "pacing": "Moderate",
+      "themes": [
+        "revenge and consequence",
+        "political instability",
+        "power",
+        "loyalty",
+        "war"
+      ],
+      "setting": "The kingdom of Wahrheit — secondary-world fantasy nation with dragons, fae, and warring political factions",
+      "comparable_books": [
+        "A Clash of Kings - George R. R. Martin",
+        "The Blinding Knife - Brent Weeks",
+        "Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "political intrigue",
+          "high stakes",
+          "dragons",
+          "consequences-driven narrative"
+        ],
+        "negative": [
+          "single-protagonist focus",
+          "romance-heavy",
+          "cozy pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Conspiracy - A. C. Cobble": {
       "title": "Conspiracy",
       "author": "A. C. Cobble",
       "series": "Wahrheit",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the king of Wahrheit dies without an heir, a small band of conspirators — a dragon knight, a spy, a quartermaster, and two orphaned youths — must race to hold the fractured kingdom together against foreign armies, scheming noble houses, and the treacherous fae.",
+      "tone": "adventurous, politically charged, ensemble-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "political intrigue",
+        "loyalty",
+        "power and succession",
+        "found family",
+        "war"
+      ],
+      "setting": "The kingdom of Wahrheit — a secondary-world fantasy nation with dragons, magic, and feudal politics, reminiscent of early modern Europe",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Blade Itself - Joe Abercrombie",
+        "A Game of Thrones - George R. R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "political intrigue",
+          "dragons",
+          "spies and assassins",
+          "ensemble cast",
+          "adventurous pacing"
+        ],
+        "negative": [
+          "single-protagonist focus",
+          "romance-heavy",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree, a well-regarded audiobook narrator.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Deception - A. C. Cobble": {
       "title": "Deception",
       "author": "A. C. Cobble",
       "series": "Wahrheit",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The third instalment of the Wahrheit saga continues the struggle to hold a fractured kingdom together as conspiracies deepen, deceptions multiply, and new threats emerge from within and beyond the kingdom's borders.",
+      "tone": "adventurous, politically charged, intrigue-heavy",
+      "pacing": "Moderate",
+      "themes": [
+        "deception and truth",
+        "political intrigue",
+        "power",
+        "loyalty",
+        "war"
+      ],
+      "setting": "The kingdom of Wahrheit — secondary-world fantasy nation with dragons, fae, and rival factions",
+      "comparable_books": [
+        "A Storm of Swords - George R. R. Martin",
+        "The Hero of Ages - Brandon Sanderson",
+        "Traitor's Blade - Sebastien de Castell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "political intrigue",
+          "dragons",
+          "ensemble cast",
+          "high-stakes plotting"
+        ],
+        "negative": [
+          "single-protagonist focus",
+          "romance-heavy",
+          "slow world-building"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Dark Bloom - Molly Macabre": {
       "title": "Dark Bloom",
       "author": "Molly Macabre",
-      "series": "The Tangled Elegies",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Songs of the Tangled Elegies",
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After escaping sadistic captivity during a zombie apocalypse, Kate teams up with Nick, a Marine haunted by war trauma; together they navigate a world overrun with laughing, cannibalistic infected while battling the inner darkness that threatens to consume them both.",
+      "tone": "darkly atmospheric, emotionally raw, romantically charged",
+      "pacing": "Fast",
+      "themes": [
+        "trauma and survival",
+        "PTSD",
+        "trust and healing",
+        "love under duress",
+        "humanity in crisis"
+      ],
+      "setting": "Post-apocalyptic United States during a pandemic that turns victims into cannibalistic, laughing creatures",
+      "comparable_books": [
+        "The Walking Dead (comics) - Robert Kirkman",
+        "Zone One - Colson Whitehead",
+        "Swan Song - Robert McCammon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow-burn romance",
+          "character-driven horror",
+          "dual POV",
+          "trauma-informed storytelling",
+          "emotional depth",
+          "zombie apocalypse"
+        ],
+        "negative": [
+          "pure horror without romance",
+          "fast-paced action without character depth",
+          "gore for its own sake"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Betrayal - A. C. Cobble": {
       "title": "Betrayal",
       "author": "A. C. Cobble",
       "series": "Wahrheit",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The fourth book in the Wahrheit series escalates the long conflict as alliances fracture and betrayals unravel what the conspirators have fought to protect, pushing characters toward the limits of loyalty and sacrifice.",
+      "tone": "adventurous, dark, consequence-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "betrayal and loyalty",
+        "political power",
+        "sacrifice",
+        "war",
+        "identity"
+      ],
+      "setting": "The kingdom of Wahrheit — secondary-world epic fantasy setting with dragons, magic, and complex political factions",
+      "comparable_books": [
+        "A Dance with Dragons - George R. R. Martin",
+        "The Autumn Republic - Brian McClellan",
+        "The Sword of Kaigen - M. L. Wang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "political intrigue",
+          "high-stakes consequences",
+          "dragons",
+          "ensemble cast"
+        ],
+        "negative": [
+          "single-protagonist focus",
+          "romance-heavy",
+          "cozy pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Travis Baldree.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Without a Whisper - Molly Macabre": {
       "title": "Without a Whisper",
       "author": "Molly Macabre",
-      "series": "The Tangled Elegies",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Songs of the Tangled Elegies",
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kate and Nick have found temporary shelter within the walls of Fort Vanguard, but peace is fragile in a world crawling with the infected; each foray beyond the gates is a fight for survival, and the greatest monsters may still be the ones within.",
+      "tone": "darkly atmospheric, tense, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "safety and vulnerability",
+        "love under pressure",
+        "humanity vs monstrosity",
+        "survival",
+        "trauma"
+      ],
+      "setting": "Post-apocalyptic United States, centred on a fortified survivor settlement",
+      "comparable_books": [
+        "The Walking Dead (comics) - Robert Kirkman",
+        "World War Z - Max Brooks",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow-burn romance",
+          "character-driven horror",
+          "zombie apocalypse",
+          "found family",
+          "survival thriller"
+        ],
+        "negative": [
+          "pure gore horror",
+          "action-only survival",
+          "no emotional depth"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Banners of Wrath - Michael Michel": {
       "title": "Banners of Wrath",
       "author": "Michael Michel",
       "series": "Dreams of Dust and Steel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "War erupts across the nation of Namarr as a Kurgish host ravages the mountain clans, the Scarborn consolidate power in the east, and a fanatical cult leader mobilises Scothea for holy conquest; a sprawling cast of characters struggles to survive, resist, or exploit the chaos.",
+      "tone": "grimdark, morally complex, emotionally bruising",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "cost of power",
+        "war and its consequences",
+        "belief and fanaticism",
+        "betrayal",
+        "redemption"
+      ],
+      "setting": "The nation of Namarr — a secondary-world epic fantasy setting with magic powered by pain, warring factions, and political collapse",
+      "comparable_books": [
+        "A Game of Thrones - George R. R. Martin",
+        "The Malazan Book of the Fallen - Steven Erikson",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "multi-POV",
+          "morally grey characters",
+          "political scheming",
+          "large-scale war",
+          "epic scope"
+        ],
+        "negative": [
+          "cozy fantasy",
+          "clear-cut heroes and villains",
+          "fast light reads",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wise Men of Gotham - Craig Schaefer": {
       "title": "The Wise Men of Gotham",
       "author": "Craig Schaefer",
       "series": "The Midnight Scoop",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a witch is gunned down outside a Brooklyn bodega, a curse spreads across New York City plunging victims into inescapable sleep; dream-witch Seelie Rose must battle alien intelligences invading the city's dreamscape while reporters Nell and Tyler investigate a murder tied to police corruption and dark money.",
+      "tone": "noir-inflected, propulsive, occult-rich",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "identity and belonging",
+        "occult conspiracy",
+        "justice",
+        "LGBTQ identity"
+      ],
+      "setting": "Contemporary New York City, with a richly developed occult underworld drawing on Greek mythology and dream magic",
+      "comparable_books": [
+        "Ghosts of Gotham - Craig Schaefer",
+        "Rivers of London - Ben Aaronovitch",
+        "Greywalker - Kat Richardson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "found family",
+          "LGBTQ protagonists",
+          "occult mystery",
+          "fast-paced plotting",
+          "multi-layered plots"
+        ],
+        "negative": [
+          "secondary-world fantasy",
+          "slow burn",
+          "romance-centric"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Hungry Dreaming - Craig Schaefer": {
       "title": "The Hungry Dreaming",
       "author": "Craig Schaefer",
       "series": "The Midnight Scoop",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Hard-nosed Brooklyn reporter Nell Bluth and her partner Tyler stumble into a centuries-old conspiracy dating to the Revolutionary War when transgender runaway Seelie Rose — an eyewitness to murder — is revealed to carry a secret that draws them all into the hidden world of New York's witches.",
+      "tone": "noir-inflected, propulsive, layered",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and self-discovery",
+        "conspiracy and history",
+        "found family",
+        "LGBTQ identity",
+        "occult mythology"
+      ],
+      "setting": "Contemporary New York City — Brooklyn and Manhattan — with a deep occult underworld rooted in Greek mythology",
+      "comparable_books": [
+        "Ghosts of Gotham - Craig Schaefer",
+        "Rivers of London - Ben Aaronovitch",
+        "The Devil You Know - Mike Carey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "LGBTQ protagonists",
+          "found family",
+          "occult mystery",
+          "multi-layered plotting",
+          "mythology"
+        ],
+        "negative": [
+          "secondary-world fantasy",
+          "action-only pacing",
+          "romance-centric"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "King of Ashes - Raymond E. Feist": {
       "title": "King of Ashes",
       "author": "Raymond E. Feist",
       "series": "The Firemane Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After the last of the legendary Firemane kings is betrayed and slaughtered, two young men from very different walks of life — one a street thief, one a noble ward — find their fates intertwined with the secret survival of the royal bloodline and a conspiracy that spans kingdoms.",
+      "tone": "classic epic, adventure-driven, expansive",
+      "pacing": "Moderate",
+      "themes": [
+        "destiny and legacy",
+        "political conspiracy",
+        "loyalty and betrayal",
+        "coming of age",
+        "survival"
+      ],
+      "setting": "The world of Garn — a secondary-world with multiple feuding kingdoms, seafaring nations, and ancient magic, created fresh by Feist outside of Midkemia",
+      "comparable_books": [
+        "Magician - Raymond E. Feist",
+        "The Eye of the World - Robert Jordan",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "political intrigue",
+          "adventure",
+          "coming-of-age",
+          "multiple POV"
+        ],
+        "negative": [
+          "grimdark",
+          "subversive fantasy",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Queen of Storms - Raymond E. Feist": {
       "title": "Queen of Storms",
       "author": "Raymond E. Feist",
       "series": "The Firemane Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The second instalment of the Firemane Saga expands the conflict as the conspiracy against the last royal heir deepens, war threatens the coastal nation of Marquensas, and the young protagonists are drawn into a struggle that will decide the fate of the known world.",
+      "tone": "classic epic, adventure-driven, expansive",
+      "pacing": "Moderate",
+      "themes": [
+        "war and strategy",
+        "political conspiracy",
+        "loyalty",
+        "destiny",
+        "survival"
+      ],
+      "setting": "The world of Garn — multiple feuding kingdoms and naval powers, with growing supernatural threats",
+      "comparable_books": [
+        "A Clash of Kings - George R. R. Martin",
+        "A Memory of Light - Robert Jordan",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "political intrigue",
+          "adventure",
+          "naval warfare",
+          "multiple POV"
+        ],
+        "negative": [
+          "grimdark",
+          "subversive fantasy",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Master of Furies - Raymond E. Feist": {
       "title": "Master of Furies",
       "author": "Raymond E. Feist",
       "series": "The Firemane Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Firemane Saga brings the struggle over Garn's royal legacy to a climax as ancient powers are unleashed, great battles are fought, and the survivors of the long conspiracy must finally confront the forces that have moved against them from the shadows.",
+      "tone": "classic epic, climactic, adventure-driven",
+      "pacing": "Fast",
+      "themes": [
+        "destiny fulfilled",
+        "sacrifice",
+        "power and corruption",
+        "war",
+        "legacy"
+      ],
+      "setting": "The world of Garn — secondary-world fantasy with multiple kingdoms and ancient, world-threatening magic",
+      "comparable_books": [
+        "Into a Dark Realm - Raymond E. Feist",
+        "The Hero of Ages - Brandon Sanderson",
+        "The Sword of Kaigen - M. L. Wang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "satisfying series conclusions",
+          "large-scale battles",
+          "adventure",
+          "multiple POV"
+        ],
+        "negative": [
+          "grimdark",
+          "subversive fantasy",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Kingdom Besieged - Raymond E. Feist": {
       "title": "A Kingdom Besieged",
       "author": "Raymond E. Feist",
       "series": "The Chaoswar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A terrible new invasion threatens the Kingdom of the Isles as forces from beyond the rift pour into Midkemia; a new generation of heroes, including Martin conDoin and the magician Amirantha, must unravel the source of the chaos before the kingdom falls.",
+      "tone": "classic epic, expansive, nostalgic for long-time series readers",
+      "pacing": "Moderate",
+      "themes": [
+        "invasion and defence",
+        "legacy and new generations",
+        "magic and chaos",
+        "duty and sacrifice",
+        "war"
+      ],
+      "setting": "Midkemia — the long-running secondary-world fantasy setting of Feist's Riftwar cycle, including the Kingdom of the Isles and surrounding lands",
+      "comparable_books": [
+        "Magician - Raymond E. Feist",
+        "The Eye of the World - Robert Jordan",
+        "The Fires of Heaven - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "long-running series continuations",
+          "classic epic fantasy",
+          "familiar world revisited",
+          "war and strategy",
+          "adventure"
+        ],
+        "negative": [
+          "standalone-friendly entry points",
+          "grimdark",
+          "subversive fantasy",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Autonomous - Annalee Newitz": {
@@ -232454,26 +232750,48 @@
       "author": "Annalee Newitz",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a future where pharmaceutical patents are ruthlessly enforced, pirate scientist Jack races to distribute life-saving drugs while a military agent and his newly self-aware robot partner track her across a world where the boundary between human autonomy and indentured servitude has dangerously blurred.",
+      "tone": "propulsive, thought-provoking, queer-positive",
+      "pacing": "Fast",
+      "themes": [
+        "autonomy and intellectual property",
+        "identity and personhood",
+        "drug patents and capitalism",
+        "robot consciousness",
+        "queer identity"
+      ],
+      "setting": "Near-future Earth (circa 2144), spanning North Africa, Canada, and the Arctic — a world of pharmaceutical megacorporations and widespread automation",
+      "comparable_books": [
+        "The Peripheral - William Gibson",
+        "Schismatrix Plus - Bruce Sterling",
+        "A Psalm for the Wild-Built - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "near-future SF",
+          "queer protagonists",
+          "robot consciousness",
+          "pharmaceutical capitalism critique",
+          "propulsive thriller structure"
+        ],
+        "negative": [
+          "hard science focus only",
+          "traditional SF without social commentary",
+          "romance-absent readers who dislike queer content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fermi Paradox Is Our Business Model - Charlie Jane Anders": {
@@ -232481,26 +232799,45 @@
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two alien agents, Jon and Toku, wake from stasis to harvest the remains of a civilisation they seeded long ago — only to discover that humanity has inconveniently survived its own 'Closure', comically upending their interstellar business model.",
+      "tone": "darkly comic, satirical, breezy",
+      "pacing": "Fast",
+      "themes": [
+        "capitalism and exploitation",
+        "alien perspectives on humanity",
+        "extinction and survival",
+        "bureaucratic absurdity"
+      ],
+      "setting": "Deep space and a post-Closure Earth, in the far future",
+      "comparable_books": [
+        "The Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Six Months, Three Days - Charlie Jane Anders",
+        "Even Greater Mistakes - Charlie Jane Anders"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic SF",
+          "satirical short fiction",
+          "alien perspectives",
+          "anti-capitalist themes",
+          "witty banter"
+        ],
+        "negative": [
+          "hard SF without humour",
+          "long-form narrative",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The City in the Middle of the Night - Charlie Jane Anders": {
@@ -232508,26 +232845,46 @@
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a tidally locked planet where humans cling to a narrow habitable band between eternal day and eternal night, a young woman is exiled into the darkness and discovers that the creatures beyond the city's walls are not what her society believes — upending everything she thought she knew about survival and belonging.",
+      "tone": "lyrical, politically charged, strange and intimate",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "colonialism and survival",
+        "identity and belonging",
+        "queer love",
+        "revolution and conformity",
+        "alien nature"
+      ],
+      "setting": "January — a tidally locked planet where humanity lives in city-states along a narrow twilight zone, with alien darkness on one side and burning light on the other",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "A Memory Called Empire - Arkady Martine",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "queer protagonists",
+          "alien world-building",
+          "political commentary",
+          "lyrical prose"
+        ],
+        "negative": [
+          "hard SF",
+          "fast action-driven pacing",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Even Greater Mistakes - Charlie Jane Anders": {
@@ -232535,26 +232892,49 @@
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Nineteen genre-bending short stories spanning Anders's entire career — from a Hugo Award-winning romance between two clairvoyants to vampire zombies, time travel mishaps, and post-apocalyptic genies — united by darkly comic wit, queer characters, and incisive social commentary.",
+      "tone": "darkly comic, inventive, emotionally resonant, satirical",
+      "pacing": "Fast",
+      "themes": [
+        "queer identity and transformation",
+        "capitalism and power",
+        "resistance and survival",
+        "found community",
+        "love and fate"
+      ],
+      "setting": "Ranges widely: near-future Earth, deep space, post-apocalyptic scenarios, alternate realities, and beyond",
+      "comparable_books": [
+        "Six Months, Three Days, Five Others - Charlie Jane Anders",
+        "Her Body and Other Parties - Carmen Maria Machado",
+        "Stories of Your Life and Others - Ted Chiang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short story collections",
+          "darkly comic SF/F",
+          "queer fiction",
+          "social satire",
+          "inventive premises",
+          "emotional depth alongside humour"
+        ],
+        "negative": [
+          "long-form narrative only",
+          "hard SF without character focus",
+          "grimdark"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Terraformers - Annalee Newitz": {
@@ -232562,26 +232942,48 @@
       "author": "Annalee Newitz",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Over thousands of years and three timelines, the Environmental Rescue Team and their descendants struggle to transform, settle, and ultimately liberate the terraformed planet Sask-E from corporate ownership — a story of land rights, labour, and what it means to belong to a place.",
+      "tone": "optimistic, meditative, politically engaged",
+      "pacing": "Slow",
+      "themes": [
+        "land rights and colonialism",
+        "corporate power",
+        "labour and autonomy",
+        "queer identity",
+        "community and belonging",
+        "environmentalism"
+      ],
+      "setting": "The planet Sask-E over thousands of years of terraforming — a far-future science fiction world with sentient animals, engineered humans, and interplanetary corporate governance",
+      "comparable_books": [
+        "A Psalm for the Wild-Built - Becky Chambers",
+        "Autonomous - Annalee Newitz",
+        "The Dispossessed - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hopepunk SF",
+          "queer protagonists",
+          "anti-capitalist themes",
+          "found community",
+          "environmentalism",
+          "multi-generational stories"
+        ],
+        "negative": [
+          "fast-paced action",
+          "grimdark",
+          "hard military SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Intestate - Charlie Jane Anders": {
@@ -232589,26 +232991,46 @@
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "At a family reunion, a narrator grapples with how to relate to her father, a brilliant inventor who has progressively replaced his failing body parts with mechanical upgrades until it is hard to say how much of him remains human — yet the family bond, however strange, endures.",
+      "tone": "wry, warmly melancholic, quietly speculative",
+      "pacing": "Slow",
+      "themes": [
+        "family and identity",
+        "transhumanism",
+        "what it means to be human",
+        "forgiveness",
+        "belonging"
+      ],
+      "setting": "Near-future domestic United States — a family gathering at an ordinary home, with the strangeness creeping in through technology",
+      "comparable_books": [
+        "Six Months, Three Days - Charlie Jane Anders",
+        "The Lifecycle of Software Objects - Ted Chiang",
+        "Even Greater Mistakes - Charlie Jane Anders"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "quiet speculative fiction",
+          "family drama with SF premise",
+          "transhumanism",
+          "short fiction",
+          "character-focused"
+        ],
+        "negative": [
+          "action-driven SF",
+          "hard science focus",
+          "long-form narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Six Months, Three Days - Charlie Jane Anders": {
@@ -232616,26 +233038,46 @@
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Doug can see the one fixed future; Judy can see all possible futures — and when they fall in love, both know their relationship will last exactly six months and three days and end badly, setting up a bittersweet meditation on fate, free will, and the pain of a love that can't be changed.",
+      "tone": "bittersweet, philosophically playful, romantically devastating",
+      "pacing": "Moderate",
+      "themes": [
+        "fate vs. free will",
+        "love and foreknowledge",
+        "determinism",
+        "grief and loss",
+        "the nature of the future"
+      ],
+      "setting": "Contemporary United States — an ordinary romantic relationship made extraordinary by the protagonists' precognitive abilities",
+      "comparable_books": [
+        "The Time Traveler's Wife - Audrey Niffenegger",
+        "Slaughterhouse-Five - Kurt Vonnegut",
+        "Even Greater Mistakes - Charlie Jane Anders"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "romantic tragedy",
+          "philosophical speculation",
+          "short fiction",
+          "Hugo Award-winning work"
+        ],
+        "negative": [
+          "action-driven SF",
+          "hard science focus",
+          "happy endings required"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Future of Another Timeline - Annalee Newitz": {
