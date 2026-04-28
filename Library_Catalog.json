@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3873,
-  "total_pending": 727,
+  "total_catalogued": 3893,
+  "total_pending": 707,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -211686,54 +211686,98 @@
       "title": "Firewalkers",
       "author": "Adrian Tchaikovsky",
       "series": "Terrible Worlds: Revolutions",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future Earth scorched by runaway climate change, three young 'Firewalkers' are sent into the lethal desert to repair failing solar panels that power a space elevator serving the ultra-rich — but what they uncover is far more than a technical fault. A taut climate-dystopia novella about class, survival, and revolution.",
+      "tone": "Bleak, propulsive, socially furious",
+      "pacing": "Fast",
+      "themes": [
+        "class inequality",
+        "climate change",
+        "exploitation",
+        "revolution",
+        "artificial intelligence"
+      ],
+      "setting": "Near-future equatorial Africa; a dying, heat-blasted Earth beneath a space elevator serving the wealthy",
+      "comparable_books": [
+        "Children of Time - Adrian Tchaikovsky",
+        "The Water Knife - Paolo Bacigalupi",
+        "Binti - Nnedi Okofor"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "climate fiction",
+          "class-rage dystopia",
+          "fast pacing",
+          "short read",
+          "found family",
+          "diverse cast",
+          "SF with a message"
+        ],
+        "negative": [
+          "prefers long epic narratives",
+          "avoids novellas",
+          "dislikes heavy social commentary"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ogres - Adrian Tchaikovsky": {
       "title": "Ogres",
       "author": "Adrian Tchaikovsky",
       "series": "Terrible Worlds: Revolutions",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a pseudo-feudal world ruled by physically towering 'ogres', a headman's rebellious son dares to strike back against the landlord class and discovers the horrifying genetic truth behind the world's power structure. A second-person dark satire of class, oppression, and engineered inequality.",
+      "tone": "Darkly sardonic, slow-burn, disquieting",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "class oppression",
+        "genetic engineering",
+        "revolution",
+        "power structures",
+        "identity"
+      ],
+      "setting": "Far-future dystopian world resembling a feudal village society, eventually revealed as post-ecological-collapse Earth",
+      "comparable_books": [
+        "The Dispossessed - Ursula K. Le Guin",
+        "Firewalkers - Adrian Tchaikovsky",
+        "Brave New World - Aldous Huxley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "social satire",
+          "second-person narration",
+          "reveals-driven plot",
+          "grimdark undertones",
+          "thought-provoking SF"
+        ],
+        "negative": [
+          "dislikes second-person narration",
+          "prefers action-first pacing",
+          "avoids novellas"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dust and Shadow - Lyndsay Faye": {
@@ -211741,53 +211785,96 @@
       "author": "Lyndsay Faye",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told as a newly-discovered manuscript by Dr. Watson, Sherlock Holmes investigates the Whitechapel murders of 1888, pitting Victorian fiction's greatest detective against history's most notorious serial killer, Jack the Ripper. A meticulous and atmospheric pastiche written with the blessing of the Conan Doyle estate.",
+      "tone": "Atmospheric, propulsive, faithful to the source",
+      "pacing": "Fast",
+      "themes": [
+        "justice",
+        "class and gender in Victorian society",
+        "celebrity and vilification",
+        "the nature of truth"
+      ],
+      "setting": "1888 London — Whitechapel, Baker Street, and the fog-drenched streets of the Victorian East End",
+      "comparable_books": [
+        "The Alienist - Caleb Carr",
+        "A Study in Scarlet - Arthur Conan Doyle",
+        "Mortal Love - Elizabeth Hand"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Sherlock Holmes pastiche",
+          "historical mystery",
+          "Victorian setting",
+          "Jack the Ripper",
+          "authentic period voice"
+        ],
+        "negative": [
+          "dislikes derivative fiction",
+          "prefers original characters",
+          "avoids graphic crime detail"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong Watson-voice narration suits audio well; atmospheric Victorian prose rewards listening.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Missing - Sarah Langan": {
       "title": "The Missing",
       "author": "Sarah Langan",
       "series": "Keeper",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a third-grade teacher takes her class on a field trip to the abandoned town of Bedford, a boy left behind uncovers an ancient viral evil that transforms the infected into ravenous, savage creatures — and the contagion rapidly spreads to consume the affluent neighboring town of Corpus Christi. A Bram Stoker Award–winning creature-horror novel in the tradition of early Stephen King.",
+      "tone": "Dread-soaked, visceral, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "contagion and epidemic",
+        "class and community",
+        "small-town secrets",
+        "survival"
+      ],
+      "setting": "Contemporary rural Maine — the affluent Corpus Christi and the ghost town of Bedford",
+      "comparable_books": [
+        "Salem's Lot - Stephen King",
+        "The Keeper - Sarah Langan",
+        "The Troop - Nick Cutter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "creature horror",
+          "plague narrative",
+          "Stephen King comparisons",
+          "character depth",
+          "small-town horror"
+        ],
+        "negative": [
+          "averse to graphic body horror",
+          "prefers psychological horror",
+          "dislikes bleak endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Points of Departure - Pat Murphy": {
@@ -211795,26 +211882,46 @@
       "author": "Pat Murphy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Philip K. Dick Award–winning collection of nineteen stories spanning SF, fantasy, and magic realism, anchored by the Nebula Award–winning novella 'Rachel in Love' — in which a chimpanzee carries the implanted memories of a deceased human girl. The collection alternates between hope and despair, exploring what it means to be human, to love, and to survive.",
+      "tone": "Lyrical, quietly subversive, humane",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and humanity",
+        "feminism",
+        "grief and transformation",
+        "otherness",
+        "nature vs. nurture"
+      ],
+      "setting": "Varies widely — deserts, futures, historical settings, domestic spaces",
+      "comparable_books": [
+        "The Unreal and the Real - Ursula K. Le Guin",
+        "Stories of Your Life and Others - Ted Chiang",
+        "Her Smoke Rose Up Forever - James Tiptree Jr."
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "feminist SF",
+          "short fiction collections",
+          "award-winners",
+          "humane storytelling"
+        ],
+        "negative": [
+          "prefers novels over short fiction",
+          "dislikes quiet/slow-burn stories",
+          "wants hard SF action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Woman of the Iron People - Eleanor Arnason": {
@@ -211822,107 +211929,190 @@
       "author": "Eleanor Arnason",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Anthropologist Li Lixia is part of the first human expedition to the planet of Sigma Draconis II, where she travels with Nia, a female smith of the Iron People, learning their culture while political tensions aboard the orbiting human ship threaten to destabilize the fragile contact mission. A James Tiptree Jr. Award and Mythopoeic Award–winning anthropological SF novel in the tradition of Ursula K. Le Guin.",
+      "tone": "Meditative, culturally rich, quietly absorbing",
+      "pacing": "Slow",
+      "themes": [
+        "first contact",
+        "anthropology and cultural understanding",
+        "gender roles",
+        "community vs. individualism",
+        "the observer effect"
+      ],
+      "setting": "Far future; an unnamed planet orbiting Sigma Draconis, featuring a pre-industrial alien society of furred humanoids",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Hellspark - Janet Kagan",
+        "Golden Witchbreed - Mary Gentle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anthropological SF",
+          "Le Guin fans",
+          "alien culture deep-dives",
+          "feminist SF",
+          "slow contemplative reads"
+        ],
+        "negative": [
+          "prefers fast-paced adventure",
+          "dislikes dense worldbuilding",
+          "wants human-centric plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Stone Mad - Elizabeth Bear": {
       "title": "Stone Mad",
       "author": "Elizabeth Bear",
       "series": "Karen Memory",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Karen Memery and her partner Priya are out for a celebratory night on the town in steampunk Rapid City when they stumble into the orbit of the Arcadia Sisters, spiritualist performers who accidentally unleash an angry tommy-knocker — a magical creature kidnapped from Alaskan gold mines. A charming gaslamp fantasy novella set in the world of Karen Memory.",
+      "tone": "Warm, whimsical, breezy",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "queer love",
+        "folklore and magic",
+        "working-class community"
+      ],
+      "setting": "Late 19th-century steampunk Pacific Northwest; an alternate Seattle-like Rapid City",
+      "comparable_books": [
+        "Karen Memory - Elizabeth Bear",
+        "Swordheart - T. Kingfisher",
+        "The Goblin Emperor - Katherine Addison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "steampunk",
+          "gaslamp fantasy",
+          "f/f romance",
+          "cozy adventure",
+          "strong female protagonist",
+          "folksy voice"
+        ],
+        "negative": [
+          "dislikes novellas",
+          "wants grimdark",
+          "needs complex political plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Karen's distinctive first-person voice in thick period dialect is particularly well-suited to audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Feedback - Mira Grant": {
       "title": "Feedback",
       "author": "Mira Grant",
       "series": "Newsflesh",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A companion novel to Feed, told from the perspective of a scrappy team of underdog journalists covering the Democratic presidential campaign in a zombie-infected America — running parallel to the events of the original trilogy and uncovering their own dangerous conspiracy. A standalone-accessible entry that expands the Newsflesh world with a new diverse cast.",
+      "tone": "Propulsive, politically sharp, emotionally punchy",
+      "pacing": "Fast",
+      "themes": [
+        "truth and journalism",
+        "political conspiracy",
+        "survival",
+        "chosen family",
+        "trust"
+      ],
+      "setting": "Near-future zombie-apocalypse America; presidential campaign trail, approximately 20 years after the Rising",
+      "comparable_books": [
+        "Feed - Mira Grant",
+        "World War Z - Max Brooks",
+        "Deadline - Mira Grant"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "zombie fiction",
+          "political thriller",
+          "media and journalism themes",
+          "ensemble cast",
+          "action-driven",
+          "diverse characters"
+        ],
+        "negative": [
+          "zombie fatigue",
+          "wants series read in order",
+          "dislikes political settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Passage of Stars - Kate Elliott": {
       "title": "A Passage of Stars",
       "author": "Kate Elliott",
       "series": "The Highroad Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lily Ransome, a willful young martial artist on a colonial planet, launches herself into the wider galaxy to rescue her kidnapped mentor, becoming entangled in a galactic rebellion and the struggles of an oppressed minority class called the Ridani. An early space opera with a strong female protagonist, originally published under the pen name Alis A. Rasmussen.",
+      "tone": "Adventurous, fast-paced, romantically charged",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and oppression",
+        "self-determination",
+        "rebellion",
+        "loyalty",
+        "first love"
+      ],
+      "setting": "Far-future interstellar civilization — colonial planet Unruli and the wider Reft, a galactic bureaucratic empire",
+      "comparable_books": [
+        "A Warrior's Apprentice - Lois McMaster Bujold",
+        "Revelation Space - Alastair Reynolds",
+        "Court of Fives - Kate Elliott"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "strong female lead",
+          "rebellion narratives",
+          "martial arts",
+          "romance subplot"
+        ],
+        "negative": [
+          "dislikes slow worldbuilding",
+          "wants more character depth",
+          "prefers later Elliott works"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fathom - Cherie Priest": {
@@ -211930,26 +212120,48 @@
       "author": "Cherie Priest",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An ageless water witch named Arahab schemes for centuries to awaken the Leviathan and restore the ancient gods, recruiting human pawns — including the immortal, murderous Bernice and her transformed cousin Nia — in a Florida-set mythic battle between elemental forces. A lush, strange mix of Southern Gothic, horror, and myth-bending rural fantasy.",
+      "tone": "Lush, strange, dreamily atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "mythology and ancient gods",
+        "immortality",
+        "good vs. evil",
+        "transformation",
+        "Southern Gothic"
+      ],
+      "setting": "1920s–1930s Florida — rural islands, coastline, and Bok Tower; spanning centuries via flashback",
+      "comparable_books": [
+        "American Gods - Neil Gaiman",
+        "Last Call - Tim Powers",
+        "Four and Twenty Blackbirds - Cherie Priest"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern Gothic",
+          "mythology-based horror",
+          "literary dark fantasy",
+          "Florida setting",
+          "female protagonists"
+        ],
+        "negative": [
+          "dislikes non-linear narratives",
+          "wants tighter plots",
+          "prefers pure horror over fantasy blends"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The City, Not Long After - Pat Murphy": {
@@ -211957,107 +212169,193 @@
       "author": "Pat Murphy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Decades after a plague has decimated the population, the survivors of San Francisco — mostly artists, dreamers, and misfits — have transformed the city into a living work of art, and must defend their pacifist community against a military general determined to rebuild America by force. A lyrical post-apocalyptic novel with strong elements of magic realism.",
+      "tone": "Lyrical, hopeful, surreal",
+      "pacing": "Slow",
+      "themes": [
+        "art as resistance",
+        "pacifism vs. violence",
+        "community",
+        "post-apocalyptic rebuilding",
+        "the power of creativity"
+      ],
+      "setting": "Post-plague near-future San Francisco, approximately 20 years after a global pandemic; magic-realist in texture",
+      "comparable_books": [
+        "Station Eleven - Emily St. John Mandel",
+        "The Road - Cormac McCarthy",
+        "The Dispossessed - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "post-apocalyptic fiction",
+          "magic realism",
+          "artistic protagonists",
+          "anti-war themes",
+          "San Francisco setting",
+          "quiet hopeful tone"
+        ],
+        "negative": [
+          "wants fast-paced survival action",
+          "dislikes magical realism",
+          "prefers grimdark post-apocalypse"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Just City - Jo Walton": {
       "title": "The Just City",
       "author": "Jo Walton",
       "series": "Thessaly",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The goddess Athena assembles ten thousand children from across history on the island of Thera to build Plato's ideal Republic — but the experiment in justice, consent, and equality grows complicated when Socrates arrives to question everything, and the robots built to serve begin to develop their own desires. A philosophical fantasy steeped in classical ideas about the good life.",
+      "tone": "Intellectually playful, warm, thought-provoking",
+      "pacing": "Moderate",
+      "themes": [
+        "Platonic philosophy",
+        "consent and equality",
+        "utopia vs. reality",
+        "education",
+        "the nature of the good life"
+      ],
+      "setting": "Ancient Thera (Santorini), c. 450 BCE; a deliberately constructed utopian city populated from across time",
+      "comparable_books": [
+        "Piranesi - Susanna Clarke",
+        "The Philosopher Kings - Jo Walton",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical fiction",
+          "classical mythology",
+          "ideas-driven narrative",
+          "feminist perspective",
+          "robots with interiority"
+        ],
+        "negative": [
+          "dislikes philosophy-heavy fiction",
+          "wants action over ideas",
+          "avoids multi-POV novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Spirit Gate - Kate Elliott": {
       "title": "Spirit Gate",
       "author": "Kate Elliott",
       "series": "Crossroads",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the land of the Hundred, the divine Guardians who once enforced justice have vanished and a fanatical army is spreading darkness across the realm — while eagle-riding Reeve Joss and newlywed outlander Mai are pulled into a conflict that will shake the foundations of their world. An immersive epic fantasy with an Asian-inspired setting and a large ensemble cast.",
+      "tone": "Epic, immersive, slowly building",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "justice and corruption",
+        "religious fanaticism",
+        "cultural collision",
+        "duty and sacrifice",
+        "gender and power"
+      ],
+      "setting": "Secondary world 'the Hundred' — an Asian-influenced pre-industrial fantasy land with eagle-riders, complex polytheism, and empire",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "Cold Magic - Kate Elliott",
+        "The Goblin Emperor - Katherine Addison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "Asian-inspired worldbuilding",
+          "ensemble cast",
+          "strong female characters",
+          "political intrigue"
+        ],
+        "negative": [
+          "dislikes slow openers",
+          "wants grimdark action",
+          "avoids multi-POV sprawl"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Probability Moon - Nancy Kress": {
       "title": "Probability Moon",
       "author": "Nancy Kress",
       "series": "The Probability Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A human anthropological expedition arrives on the planet World — a pre-industrial society whose inhabitants share a collective 'reality' that makes dissent physically painful — but the mission is secretly military, hoping to weaponize a mysterious ancient artifact orbiting the planet against humanity's genocidal enemy, the Fallers. A literary hard-SF novel blending first-contact anthropology with military thriller.",
+      "tone": "Cerebral, measured, idea-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "shared reality and consensus",
+        "colonialism and exploitation",
+        "military ethics",
+        "first contact",
+        "physics and quantum phenomena"
+      ],
+      "setting": "Far future; the planet World, orbiting Sigma Draconis, and the Solar Alliance military complex in a star-gate-connected galaxy",
+      "comparable_books": [
+        "A Woman of the Iron People - Eleanor Arnason",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Beggars in Spain - Nancy Kress"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "anthropological SF",
+          "military SF undertones",
+          "ideas-first fiction",
+          "alien sociology"
+        ],
+        "negative": [
+          "wants character-driven emotional depth",
+          "dislikes physics info-dumps",
+          "prefers standalone novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dreamsnake - Vonda N. McIntyre": {
@@ -212065,26 +212363,47 @@
       "author": "Vonda N. McIntyre",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Snake, a healer in a post-apocalyptic future, travels the devastated landscape with her three serpents — including the rare, mind-altering dreamsnake — and must find a replacement for her lost dreamsnake while navigating a world of isolated communities, strange cults, and desert nomads. A Nebula and Hugo Award–winning landmark of feminist SF.",
+      "tone": "Quiet, humane, meditative",
+      "pacing": "Moderate",
+      "themes": [
+        "healing and medicine",
+        "community and isolation",
+        "loss and resilience",
+        "sexuality and autonomy",
+        "post-apocalyptic rebuilding"
+      ],
+      "setting": "Post-nuclear-apocalypse Earth — scattered settlements, deserts, and walled cities of a far future; loosely pastoral",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "A Woman of the Iron People - Eleanor Arnason",
+        "Always Coming Home - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist SF",
+          "post-apocalyptic",
+          "quiet heroism",
+          "healing protagonist",
+          "classic SF award-winners",
+          "humane worldbuilding"
+        ],
+        "negative": [
+          "wants fast-paced action",
+          "dislikes quiet introspective pacing",
+          "prefers grimdark apocalypse"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Black Light - Elizabeth Hand": {
@@ -212092,53 +212411,100 @@
       "author": "Elizabeth Hand",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Teenage Lit Moylan lives in a small New York town populated by eccentric celebrities, but when her Warholian godfather — an avant-garde film director with ties to ancient gods — returns to his decaying mansion and throws a Halloween party, Lit discovers she has a far darker destiny entangled with warring occult forces. A decadent, mythologically rich dark fantasy prequel to Waking the Moon.",
+      "tone": "Lush, decadent, dreamily sinister",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "ancient gods and secret societies",
+        "coming-of-age",
+        "art and decadence",
+        "occultism",
+        "teenage identity"
+      ],
+      "setting": "Late 1990s upstate New York; a celebrity-filled small town, a decaying mansion called Bolerium, and glimpses of a mythic underworld",
+      "comparable_books": [
+        "Waking the Moon - Elizabeth Hand",
+        "American Gods - Neil Gaiman",
+        "The Secret History - Donna Tartt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary dark fantasy",
+          "mythological horror",
+          "lush prose",
+          "coming-of-age",
+          "secret society narratives",
+          "occult fiction"
+        ],
+        "negative": [
+          "wants overt horror scares",
+          "dislikes slow atmospheric build",
+          "prefers plot-driven genre fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Tempering of Men - Sarah Monette & Elizabeth Bear": {
       "title": "The Tempering of Men",
       "author": "Sarah Monette & Elizabeth Bear",
       "series": "Iskryne World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the troll war won, the wolfcarls of Iskryne and their psychically-bonded trellwolves must forge an uneasy peace — but internal rival-ship between two war-leaders bonded to the same queen-wolf is tested when the expansionist Rhean Empire threatens from the south. A grimdark military fantasy sequel exploring the aftermath of victory and the politics of survival.",
+      "tone": "Grim, dense, character-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "war and its aftermath",
+        "brotherhood and rivalry",
+        "gender and sexuality",
+        "loyalty",
+        "political survival"
+      ],
+      "setting": "The frozen northern world of Iskryne — Norse-inflected secondary world of wolf-bonded warriors, svartalfar, and troll enemies",
+      "comparable_books": [
+        "A Companion to Wolves - Sarah Monette & Elizabeth Bear",
+        "The Lord of the Rings - J.R.R. Tolkien",
+        "Warrior's Apprentice - Lois McMaster Bujold"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "animal companions",
+          "Norse-inflected fantasy",
+          "military fantasy",
+          "queer themes",
+          "grimdark",
+          "found family"
+        ],
+        "negative": [
+          "triggered by sexual content involving power imbalance",
+          "dislikes dense invented terminology",
+          "prefers standalone reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Family Plot - Cherie Priest": {
@@ -212146,26 +212512,48 @@
       "author": "Cherie Priest",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dahlia Dutton leads a small salvage crew to strip a crumbling Tennessee mansion before demolition, but the house's malevolent ghost — a woman with unfinished business from the WWI era — has no intention of letting them leave peacefully. A modern, atmospheric haunted house story praised for its compelling characters and escalating dread.",
+      "tone": "Atmospheric, creeping dread, Southern Gothic",
+      "pacing": "Moderate",
+      "themes": [
+        "haunted spaces",
+        "family legacy",
+        "grief and trauma",
+        "working-class survival",
+        "Southern history"
+      ],
+      "setting": "Contemporary rural Tennessee; an isolated Victorian mansion on an overgrown estate",
+      "comparable_books": [
+        "The Haunting of Hill House - Shirley Jackson",
+        "Maplecroft - Cherie Priest",
+        "A Head Full of Ghosts - Paul Tremblay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "haunted house horror",
+          "female protagonist",
+          "Southern Gothic",
+          "atmospheric dread",
+          "ghost story with mystery"
+        ],
+        "negative": [
+          "wants jump-scare action horror",
+          "dislikes slow atmospheric builds",
+          "prefers supernatural action over mystery"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Atmospheric Southern Gothic setting and mounting dread are particularly effective in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Salt Roads - Nalo Hopkinson": {
@@ -212173,26 +212561,50 @@
       "author": "Nalo Hopkinson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Afro-Caribbean goddess Ezili, awakened by the grief of enslaved women burying a stillborn child in pre-revolutionary Saint Domingue, inhabits the bodies of three women across time: a healer-slave in Haiti c. 1804, the mixed-race dancer and Baudelaire's mistress Jeanne Duval in 19th-century Paris, and a sex worker turned saint in ancient Alexandria. A lyrical, ambitious novel of diaspora, desire, and the divine.",
+      "tone": "Lyrical, raw, sensual, unflinching",
+      "pacing": "Slow",
+      "themes": [
+        "African diaspora",
+        "slavery and resistance",
+        "women's autonomy and desire",
+        "spirituality and religion",
+        "history and myth"
+      ],
+      "setting": "Three time periods and continents: Saint Domingue/Haiti c. 1804, 19th-century Paris, and late Roman-era Alexandria",
+      "comparable_books": [
+        "Beloved - Toni Morrison",
+        "Midnight Robber - Nalo Hopkinson",
+        "The Fifth Season - N.K. Jemisin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Afro-Caribbean mythology",
+          "historical fiction",
+          "feminist SF",
+          "literary prose",
+          "non-linear narrative",
+          "diaspora stories"
+        ],
+        "negative": [
+          "prefers linear plots",
+          "avoids explicit sexual content",
+          "dislikes non-Western mythology"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Deerskin - Robin McKinley": {
@@ -212200,26 +212612,50 @@
       "author": "Robin McKinley",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After the death of her mother, a princess is violated by her own father, and flees into the wilderness with her greyhound Ash — beginning a slow, harrowing journey toward survival, healing, and selfhood. A dark fairy tale retelling (loosely based on Perrault's 'Donkeyskin') that deals candidly with trauma and recovery.",
+      "tone": "Dark, devastating, ultimately redemptive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "trauma and recovery",
+        "identity and selfhood",
+        "sexual violence and survival",
+        "the healing power of animals",
+        "fairy tale darkness"
+      ],
+      "setting": "A secondary-world fairy-tale kingdom; later wild forests and distant provinces, timeless in feel",
+      "comparable_books": [
+        "Beauty - Robin McKinley",
+        "Spinning Silver - Naomi Novik",
+        "Tender Morsels - Margo Lanagan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fairy tale retellings",
+          "recovery narrative",
+          "animal companions",
+          "feminist fantasy",
+          "lyrical prose",
+          "emotional depth"
+        ],
+        "negative": [
+          "triggered by depictions of sexual violence",
+          "prefers light fantasy",
+          "avoids dark/bleak content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Deals with sexual violence and deeply interior trauma in ways many readers prefer to process in print at their own pace.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Venus of Dreams - Pamela Sargent": {
