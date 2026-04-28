@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4252,
-  "total_pending": 348,
+  "total_catalogued": 4272,
+  "total_pending": 328,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -230157,134 +230157,246 @@
       "author": "Conn Iggulden",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Narrated in the first person by the man himself, Dunstan charts the rise of the 10th-century monk Dunstan of Glastonbury — priest, inventor, and kingmaker — through the courts of seven Saxon kings as he schemes, survives exile, and shapes the unification of England. A portrait of an unreliable, morally compromised genius who insists on telling his own story.",
+      "tone": "darkly witty, intimate, morally ambiguous",
+      "pacing": "Moderate",
+      "themes": [
+        "ambition and power",
+        "faith vs. self-interest",
+        "unreliable memory",
+        "the making of England",
+        "sin and redemption"
+      ],
+      "setting": "10th-century Anglo-Saxon England, from Glastonbury to the royal courts and Rome, 930s–980s AD",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "Wolf Hall - Hilary Mantel",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "unreliable narrator",
+          "historical political intrigue",
+          "first-person intimate voice",
+          "lesser-known period of English history"
+        ],
+        "negative": [
+          "readers wanting sympathetic heroes",
+          "readers who dislike misogynistic viewpoint characters",
+          "action-first readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong first-person voice lends itself naturally to audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sword Triumphant - Gareth Ryder-Hanrahan": {
       "title": "The Sword Triumphant",
       "author": "Gareth Ryder-Hanrahan",
       "series": "Lands of the Firstborn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Decades after defeating the Dark Lord and later dismantling the corrupt rule of the immortal Erlking, an aging and retired Aelfric 'Alf' is called back for one final quest when a cryptic message from an old companion arrives. The concluding volume of the Lands of the Firstborn trilogy grapples with cyclical evil, fate, and the weight of a hero's legacy.",
+      "tone": "grimdark, elegiac, trope-subversive",
+      "pacing": "Moderate",
+      "themes": [
+        "the cyclical nature of good and evil",
+        "legacy and heroism",
+        "fate vs. free will",
+        "the cost of violence",
+        "aging and mortality"
+      ],
+      "setting": "A secondary fantasy world of dark myth — the realm of Summerswell and the dread city of Necrad, decades after the events of Book 1",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "The Heroes - Joe Abercrombie",
+        "The Last Wish - Andrzej Sapkowski"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "post-quest deconstruction of epic fantasy",
+          "morally grey protagonist",
+          "Tolkien subversion",
+          "found family",
+          "talking sentient weapon"
+        ],
+        "negative": [
+          "readers wanting straightforward heroic fantasy",
+          "readers sensitive to uneven pacing",
+          "readers who dislike heavy-handed thematic messaging"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sword Unbound - Gareth Hanrahan": {
       "title": "The Sword Unbound",
-      "author": "Gareth Hanrahan",
+      "author": "Gareth Ryder-Hanrahan",
       "series": "Lands of the Firstborn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Twenty years after slaying the Dark Lord, Alf and the remnants of the Nine find themselves branded as traitors and hunted by both the mortal lords they once served and the immortal Erlking — the secret architect of their world. As desperate rebellion ignites across the land, Alf wields the evil sword Spellbreaker in search of the right path through conspiracy and corruption.",
+      "tone": "grimdark, trope-subversive, morally complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "cyclical evil",
+        "heroism vs. villainy",
+        "rebellion and power",
+        "the burden of legend",
+        "corruption"
+      ],
+      "setting": "The Lands of the Firstborn — the city of Necrad and the realm of Summerswell, twenty years after the defeat of Lord Bone",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "The Black Company - Glen Cook",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "post-quest deconstruction of epic fantasy",
+          "morally grey protagonist",
+          "sentient weapon as character",
+          "Tolkien subversion",
+          "complex politics"
+        ],
+        "negative": [
+          "readers wanting fast propulsive plotting",
+          "readers who dislike meandering middle-book pacing",
+          "action-first readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sword Defiant - Gareth Hanrahan": {
       "title": "The Sword Defiant",
-      "author": "Gareth Hanrahan",
+      "author": "Gareth Ryder-Hanrahan",
       "series": "Lands of the Firstborn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Many years after Sir Aelfric and his eight companions defeated the Dark Lord and seized his cursed weapons and dread city of Necrad, a new threat emerges. Alf, keeper of the evil talking sword Spellbreaker, must reassemble his old companions — but yesterday's heroes are now weary leaders, and some have turned to darkness themselves.",
+      "tone": "grimdark, darkly humorous, RPG-inflected",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "aftermath of heroism",
+        "the corruption of power",
+        "trope subversion",
+        "loyalty and betrayal",
+        "the cost of victory"
+      ],
+      "setting": "A secondary fantasy world of dark myth — the freed city of Necrad and the surrounding Lands of the Firstborn, fifteen years after the fall of Lord Bone",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "Kings of the Wyld - Nicholas Eames",
+        "The Black Company - Glen Cook"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "post-quest deconstruction",
+          "morally grey protagonist",
+          "sentient evil weapon",
+          "Tolkien subversion",
+          "RPG-flavored worldbuilding",
+          "found family"
+        ],
+        "negative": [
+          "readers wanting straightforward heroic fantasy",
+          "readers sensitive to slow worldbuilding openings",
+          "readers wanting romance"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Second Chance at Eden - Peter F. Hamilton": {
       "title": "A Second Chance at Eden",
       "author": "Peter F. Hamilton",
-      "series": null,
+      "series": "Night's Dawn / Commonwealth",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of novellas and short stories set in Hamilton's Night's Dawn universe, exploring the culture of the Edenists and their living habitats, with the title novella following a murder investigation aboard the orbital habitat Eden at its founding. Stories span the universe's history and illuminate its social and technological landscape.",
+      "tone": "propulsive, expansive, ideas-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "biotechnology and identity",
+        "utopian societies and their limits",
+        "murder and justice",
+        "humanity's future in space",
+        "consciousness and continuity"
+      ],
+      "setting": "The Night's Dawn universe — various locations including orbital habitats and colony worlds, spanning different eras of the future",
+      "comparable_books": [
+        "The Reality Dysfunction - Peter F. Hamilton",
+        "Revelation Space - Alastair Reynolds",
+        "Startide Rising - David Brin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF worldbuilding",
+          "space opera setting",
+          "interlinked stories",
+          "biotechnology themes",
+          "fans of Hamilton's wider universe"
+        ],
+        "negative": [
+          "readers wanting a standalone novel structure",
+          "readers new to Hamilton without prior universe knowledge",
+          "short story skeptics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Short Stay in Hell - Steven L. Peck": {
@@ -230292,26 +230404,46 @@
       "author": "Steven L. Peck",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Philosophical Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After death, a devout Mormon man finds himself in a Borges-inspired Hell — a vast library containing every possible book that has ever or will ever be written — and must find the single volume that contains his life story in order to escape. A short, devastating meditation on infinity, meaning, and the nature of existence.",
+      "tone": "quietly devastating, philosophical, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "infinity and meaninglessness",
+        "faith and doubt",
+        "the nature of Hell and punishment",
+        "existentialism",
+        "identity over time"
+      ],
+      "setting": "A Borges-style afterlife Hell — an infinite library containing every possible book; contemporary American backdrop pre-death",
+      "comparable_books": [
+        "The Library of Babel - Jorge Luis Borges",
+        "The Death of Ivan Ilyich - Leo Tolstoy",
+        "Sum - David Eagleman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical SF/fantasy",
+          "Borges-style premises",
+          "short punchy reads",
+          "existentialist themes",
+          "fans of unusual afterlife fiction"
+        ],
+        "negative": [
+          "readers wanting plot-driven narratives",
+          "readers uncomfortable with religious deconstruction",
+          "epic fantasy/space opera readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Compact, intensely immersive novella-length work that rewards the intimate quality of audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "City - Clifford D. Simak": {
@@ -230319,26 +230451,46 @@
       "author": "Clifford D. Simak",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Presented as a collection of ancient legends told by Dogs about the mythical race of Men, City traces the Webster family and humanity's gradual abandonment of cities, Earth, and ultimately corporeal existence itself over thousands of years, as dogs and robots inherit civilization. A quietly melancholy elegy for humanity.",
+      "tone": "elegiac, pastoral, quietly melancholy",
+      "pacing": "Slow",
+      "themes": [
+        "humanity's self-obsolescence",
+        "the pastoral ideal",
+        "evolution of consciousness",
+        "legacy and memory",
+        "the bond between humans and animals"
+      ],
+      "setting": "Earth and beyond, spanning thousands of years of far-future history told as mythology",
+      "comparable_books": [
+        "Way Station - Clifford D. Simak",
+        "The Martian Chronicles - Ray Bradbury",
+        "Flowers for Algernon - Daniel Keyes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic SF",
+          "pastoral and meditative tone",
+          "linked story collections",
+          "fans of Bradbury",
+          "philosophical SF"
+        ],
+        "negative": [
+          "readers wanting action or hard SF",
+          "readers who dislike episodic structures",
+          "propulsive-pacing readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The gentle, mythic framing and meditative prose make this an ideal audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Final Problem - Arturo Pérez-Reverte": {
@@ -230346,26 +230498,47 @@
       "author": "Arturo Pérez-Reverte",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In June 1960, a group of strangers are stranded on a small Greek island after rough weather. When a guest is found dead, the other survivors turn to Ormond Basil — a washed-up actor famous for playing Sherlock Holmes on screen — to investigate, and a second murder confirms a killer is among them, one staging crimes as an elaborate literary game referencing Conan Doyle. A meta locked-room mystery and love letter to the Golden Age of detective fiction.",
+      "tone": "clever, witty, nostalgic, slightly melancholy",
+      "pacing": "Moderate",
+      "themes": [
+        "performance vs. reality",
+        "literary self-awareness",
+        "Golden Age detective fiction",
+        "aging and identity",
+        "the game between detective and killer"
+      ],
+      "setting": "A small Greek island near Corfu, June 1960 — isolated hotel during a storm",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "And Then There Were None - Agatha Christie",
+        "The Club Dumas - Arturo Pérez-Reverte"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room mysteries",
+          "meta-fiction",
+          "Golden Age homage",
+          "Sherlock Holmes fans",
+          "literary name-dropping",
+          "Knives Out-style ensemble mystery"
+        ],
+        "negative": [
+          "readers wanting fast-paced thrillers",
+          "readers who dislike heavy literary reference-dropping",
+          "readers expecting modern settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Way Station - Clifford D. Simak": {
@@ -230373,26 +230546,46 @@
       "author": "Clifford D. Simak",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Enoch Wallace, a Civil War veteran who has not aged since the 1860s, maintains a secret interstellar transit station in his Wisconsin farmhouse for the Galactic Federation. When government agents begin investigating his impossible longevity, he must protect both his station and humanity's hope for joining a wider civilization. Winner of the Hugo Award for Best Novel (1964).",
+      "tone": "gentle, pastoral, quietly hopeful",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "solitude and connection",
+        "humanity's place in the cosmos",
+        "time and loss",
+        "pastoral America",
+        "the longing for peace"
+      ],
+      "setting": "Rural Wisconsin, 1960s, with passages into an alien transit network spanning the galaxy",
+      "comparable_books": [
+        "City - Clifford D. Simak",
+        "The Martian Chronicles - Ray Bradbury",
+        "Flowers for Algernon - Daniel Keyes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic SF",
+          "pastoral and contemplative",
+          "Hugo winners",
+          "first contact themes",
+          "gentle protagonists"
+        ],
+        "negative": [
+          "readers wanting hard SF or action",
+          "readers who dislike slow character studies",
+          "fans of modern grimdark"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simak's measured, pastoral prose translates beautifully to audio; this is a quiet, immersive listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Time and Again - Clifford D. Simak": {
@@ -230400,53 +230593,94 @@
       "author": "Clifford D. Simak",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A man discovers he is an android whose human host-mind has only recently awakened, and becomes entangled in a conflict between competing galactic powers who each want to use him as a weapon in their ancient war. A metaphysical SF adventure examining the nature of the soul, identity, and free will.",
+      "tone": "contemplative, adventure-tinged, philosophical",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and the soul",
+        "free will vs. predetermination",
+        "what it means to be human",
+        "cosmic conflict",
+        "memory and selfhood"
+      ],
+      "setting": "Far-future Earth and interstellar space in a universe shaped by ancient competing civilizations",
+      "comparable_books": [
+        "City - Clifford D. Simak",
+        "Do Androids Dream of Electric Sheep? - Philip K. Dick",
+        "Way Station - Clifford D. Simak"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic SF",
+          "philosophical themes of identity",
+          "android/consciousness themes",
+          "fans of Simak's gentle style"
+        ],
+        "negative": [
+          "readers wanting fast action",
+          "hard SF readers expecting scientific rigor",
+          "readers who dislike loose plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ground Zero - F. Paul Wilson": {
       "title": "Ground Zero",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On September 11, 2001, a shadowy figure detonates explosives to bring down the Twin Towers as part of a millennia-old cosmic scheme. Years later, Repairman Jack's childhood friend Weezy Connell has pieced together the truth and is posting it online — making her a target. Jack must protect her while confronting the deeper plot that threatens all life on Earth.",
+      "tone": "dark, conspiratorial, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "cosmic conspiracy",
+        "9/11 and its aftermath",
+        "the nature of evil",
+        "cosmic shadow war",
+        "loyalty and sacrifice"
+      ],
+      "setting": "Contemporary New York City, in the aftermath of September 11th, 2001",
+      "comparable_books": [
+        "The Tomb - F. Paul Wilson",
+        "The Keep - F. Paul Wilson",
+        "Needful Things - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural thriller",
+          "long-running series payoff",
+          "conspiracy themes",
+          "urban horror",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "new readers unfamiliar with the series — requires prior knowledge",
+          "readers uncomfortable with 9/11 fictionalization",
+          "readers wanting standalone horror"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Only Good Indians - Stephen Graham Jones": {
@@ -230454,26 +230688,49 @@
       "author": "Stephen Graham Jones",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Four Blackfeet men are hunted by a vengeful supernatural entity arising from a terrible act they committed during an illegal elk hunt a decade earlier. As the creature works its way through their lives, the novel becomes both a relentless slasher and a meditation on Indigenous identity, tradition, and guilt.",
+      "tone": "visceral, propulsive, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "Indigenous identity and culture",
+        "guilt and consequence",
+        "tradition and modernity",
+        "vengeance and justice",
+        "survival horror"
+      ],
+      "setting": "Contemporary Montana and a Blackfeet reservation — present day",
+      "comparable_books": [
+        "My Heart Is a Chainsaw - Stephen Graham Jones",
+        "Pet Sematary - Stephen King",
+        "Mongrels - Stephen Graham Jones"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror fans",
+          "literary horror",
+          "Indigenous perspectives",
+          "character-driven scares",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "readers sensitive to graphic violence and animal death",
+          "readers who dislike tonal shifts",
+          "cozy horror readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Through the Glass Ceiling to the Stars: The Story of the First American Woman to Command a Space Mission - Eileen M. Collins & Jonathan H. Ward": {
@@ -230481,134 +230738,239 @@
       "author": "Eileen M. Collins & Jonathan H. Ward",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir / Biography",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The memoir of astronaut Eileen Collins — the first woman to pilot and then command an American space shuttle mission — tracing her journey from a difficult childhood in upstate New York through her pioneering Air Force career to commanding the first shuttle mission after the Columbia disaster. A story of perseverance, leadership, and breaking barriers.",
+      "tone": "inspiring, candid, no-nonsense",
+      "pacing": "Moderate",
+      "themes": [
+        "women in aviation and space",
+        "perseverance and ambition",
+        "leadership",
+        "breaking barriers",
+        "the Columbia disaster and its aftermath"
+      ],
+      "setting": "USA, late 20th–early 21st century — Air Force bases, NASA, and outer space",
+      "comparable_books": [
+        "Endurance - Scott Kelly",
+        "Riding Rockets - Mike Mullane",
+        "The Astronaut Wives Club - Lily Koppel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space exploration enthusiasts",
+          "inspirational memoirs",
+          "women's history",
+          "aviation fans",
+          "NASA history buffs"
+        ],
+        "negative": [
+          "readers wanting literary prose",
+          "readers expecting deep technical detail about spaceflight mechanics",
+          "fiction readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Shadowed Blade: A Keeper's Tale - J. A. Andrews": {
       "title": "The Shadowed Blade: A Keeper's Tale",
       "author": "J. A. Andrews",
-      "series": null,
+      "series": "The Keeper Chronicles",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Keeper Chesavia is sent to spy on the feared warrior Naj, but as she gets to know him she discovers that his terrifying reputation stems from two corrupting swords — cursed blades that sow destruction and corrode the soul of whoever wields them. A self-contained short story set in the world of the Keeper Chronicles.",
+      "tone": "hopeful, warmly adventurous, character-focused",
+      "pacing": "Fast",
+      "themes": [
+        "corruption and temptation",
+        "moral courage",
+        "the cost of power",
+        "duty vs. compassion",
+        "cursed artifacts"
+      ],
+      "setting": "The world of the Keeper Chronicles — a classic secondary fantasy world with elves, dwarves, and magic",
+      "comparable_books": [
+        "A Threat of Shadows - J. A. Andrews",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Assassin's Apprentice - Robin Hobb"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "clean epic fantasy",
+          "character-driven short fiction",
+          "self-published fantasy",
+          "Keeper Chronicles fans",
+          "hopeful tone"
+        ],
+        "negative": [
+          "readers wanting grimdark",
+          "readers seeking novel-length scope",
+          "hard SF readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Accelerando - Charles Stross": {
       "title": "Accelerando",
       "author": "Charles Stross",
       "series": "Singularity",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Spanning three generations of the Macx family, Accelerando traces humanity's headlong rush into and through the Singularity — from the near-future information economy to a post-human solar system where uploaded minds and alien economics have rendered biological humanity nearly obsolete. A dense, ideas-saturated novel assembled from linked stories.",
+      "tone": "dizzying, darkly comic, ideas-saturated",
+      "pacing": "Fast",
+      "themes": [
+        "the Technological Singularity",
+        "post-humanism",
+        "economics and capitalism taken to extremes",
+        "identity and continuity of self",
+        "the fate of biological humanity"
+      ],
+      "setting": "Solar system and beyond, near-future through far-future, roughly 2010–2100+",
+      "comparable_books": [
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Rainbows End - Vernor Vinge",
+        "Blindsight - Peter Watts"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF and transhumanism fans",
+          "ideas-first SF readers",
+          "Singularity fiction",
+          "dense worldbuilding",
+          "darkly comic SF"
+        ],
+        "negative": [
+          "readers wanting character-first fiction",
+          "readers who dislike info-dense prose",
+          "fantasy readers",
+          "readers who prefer linear narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Archangels Fall - Andrew Bryan": {
       "title": "Archangels Fall",
       "author": "Andrew Bryan",
       "series": "Lightbearer",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the Archangel Gabriel crashes into a London hospital, nurse Grace discovers she possesses a rare spiritual gift that could save humanity. Meanwhile, the Damned and his dark angels — who have come to admire humanity — must choose a side as Archangel Michael's forces descend to cleanse creation of humankind. A supernatural drama blending biblical mythology with modern urban fantasy.",
+      "tone": "atmospheric, action-driven, philosophically ambitious",
+      "pacing": "Moderate",
+      "themes": [
+        "free will vs. predestination",
+        "good vs. evil's moral complexity",
+        "angel mythology and theology",
+        "humanity's worth",
+        "unlikely alliances"
+      ],
+      "setting": "Contemporary London and a parallel ethereal/spiritual realm",
+      "comparable_books": [
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "This Present Darkness - Frank E. Peretti",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "angel/demon mythology fans",
+          "urban fantasy readers",
+          "Good Omens fans",
+          "morally complex supernatural drama",
+          "readers who enjoy theological fantasy"
+        ],
+        "negative": [
+          "readers wanting hard fantasy worldbuilding",
+          "readers sensitive to religious themes",
+          "fast-paced thriller readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Deeper - Jeff Long": {
       "title": "Deeper",
       "author": "Jeff Long",
       "series": "The Descent",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A decade after humanity's armies descended into the vast subterranean underworld to destroy its savage hadal inhabitants, the creatures exact revenge — stealing children from the surface. Multiple groups plunge back into the depths to rescue them, while linguist Ali von Schade discovers a far older and greater evil lurking at the planet's core.",
+      "tone": "dark, visceral, apocalyptic",
+      "pacing": "Moderate",
+      "themes": [
+        "humanity's hubris",
+        "survival horror",
+        "the nature of evil",
+        "sacrifice and obsession",
+        "the abyss as hell"
+      ],
+      "setting": "Near-future Earth — underground subterranean world of tunnels and caverns beneath the continents and oceans, with surface scenes in America and China",
+      "comparable_books": [
+        "The Descent - Jeff Long",
+        "The Road - Cormac McCarthy",
+        "Sphere - Michael Crichton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror readers",
+          "fans of The Descent",
+          "underground/subterranean fiction",
+          "apocalyptic fiction",
+          "action-horror"
+        ],
+        "negative": [
+          "readers wanting a standalone — requires reading The Descent first",
+          "readers sensitive to extreme violence and dark content",
+          "literary fiction readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Only One Left - Riley Sager": {
@@ -230616,80 +230978,143 @@
       "author": "Riley Sager",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1983, teenage Lenora Hope allegedly murdered her entire family and has been confined to a crumbling seaside manor ever since. When a new nurse arrives to care for the now-elderly, mute Lenora, the two begin to communicate through a typewriter, slowly unearthing the truth of what really happened that bloody night. A Gothic thriller inspired by the Lizzie Borden legend.",
+      "tone": "Gothic, propulsive, claustrophobic",
+      "pacing": "Fast",
+      "themes": [
+        "truth and memory",
+        "guilt and innocence",
+        "female rage and survival",
+        "Gothic atmosphere",
+        "the reliability of narrative"
+      ],
+      "setting": "A decaying cliff-top Maine mansion, present day and in flashback to 1983",
+      "comparable_books": [
+        "Final Girls - Riley Sager",
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "Rebecca - Daphne du Maurier"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Gothic thriller fans",
+          "unreliable narrator",
+          "propulsive page-turners",
+          "Lizzie Borden-style mysteries",
+          "atmospheric setting"
+        ],
+        "negative": [
+          "readers who dislike twist-heavy plotting",
+          "readers wanting literary depth over plot",
+          "cozy mystery readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Gothic atmosphere and dual-timeline revelations are heightened by a strong audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Descent - Jeff Long": {
       "title": "The Descent",
       "author": "Jeff Long",
       "series": "The Descent",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Explorers discover a vast subterranean network beneath the Earth's surface inhabited by Homo hadalis — an ancient, degenerate, and savage hominid species that forms the historical basis for legends of demons and the Devil. As humanity's armies descend into this underground world, a scholar's group races to determine if Satan himself truly exists at its heart.",
+      "tone": "dark, visceral, epic, ideas-driven",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the nature of evil",
+        "humanity's origins and fate",
+        "scientific rationalism vs. the supernatural",
+        "colonialism and exploitation",
+        "the abyss as hell"
+      ],
+      "setting": "Late 20th-century Earth — underground subterranean world beneath all continents; multiple surface locations including Tibet, USA, Europe",
+      "comparable_books": [
+        "The Terror - Dan Simmons",
+        "Sphere - Michael Crichton",
+        "Deeper - Jeff Long"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "horror readers",
+          "SF-horror crossover fans",
+          "underground/hollow earth fiction",
+          "big-ideas horror",
+          "fans of epic scope"
+        ],
+        "negative": [
+          "readers sensitive to extreme violence and dark content",
+          "readers wanting supernatural explained as supernatural — not rationalized"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Resurrection Walk - Michael Connelly": {
       "title": "Resurrection Walk",
       "author": "Michael Connelly",
       "series": "A Lincoln Lawyer Novel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Legal Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Defense attorney Mickey Haller takes on the case of a woman convicted of murdering her sheriff's deputy husband, believing she may be innocent, while his half-brother Harry Bosch — now retired and ailing — works the investigative side of the case. A legal thriller exploring wrongful conviction and the fragility of justice.",
+      "tone": "propulsive, procedural, morally engaged",
+      "pacing": "Fast",
+      "themes": [
+        "wrongful conviction",
+        "the fallibility of the justice system",
+        "family and partnership",
+        "truth vs. legal victory",
+        "mortality"
+      ],
+      "setting": "Contemporary Los Angeles — courtrooms, jails, and the suburban sprawl of Southern California",
+      "comparable_books": [
+        "The Lincoln Lawyer - Michael Connelly",
+        "The Reversal - Michael Connelly",
+        "Presumed Innocent - Scott Turow"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal thriller fans",
+          "procedural readers",
+          "Connelly fans",
+          "Bosch/Haller crossover appeal",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "readers new to the Lincoln Lawyer series — best read in order",
+          "readers wanting literary fiction",
+          "readers who dislike courtroom drama"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Connelly's Lincoln Lawyer novels have a celebrated audio tradition with a standout narrator, making this an ideal listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Evergreen Chase - Juneau Black": {
