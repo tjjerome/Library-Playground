@@ -154,106 +154,114 @@ For a full audit, defer to `python catalogue.py --library Library.csv --re-audit
 
 ---
 
-## Saving changes — output format (CRITICAL)
+## Saving changes — apply directly, regenerate the index, offer to commit
 
-When the reader asks to save changes ("save those", "write that to the catalog",
-"okay update the catalog"):
+You're running in Claude Code with full filesystem access. No patch artifacts,
+no scripts for the reader to run later — apply the writes in place and report.
 
-**Do NOT output the full catalog file.** Emit only the patch — the changed
-entries and the index regeneration step. The reader applies the patch by
-running it (or pasting it into Claude Code, which will execute it against the
-real files in the repo).
+When the reader asks to save changes ("save those", "okay update the catalog"):
 
-### Patch format
+### 1. Summarise the queued changes
 
-Output two artifacts:
+Briefly. One bullet per change. For updates, show entry key + field +
+before → after. For new entries, list title + author + key fields.
 
-1. **`catalog_patch_<YYYYMMDD>.md`** — human-readable summary of what changed:
-
-```markdown
-# Catalog patch — 2026-04-28
-
-## Updated entries (3)
-
-### Brave New World - Aldous Huxley
-- `content_flags`: added "racism (period-typical depiction)"
-
-### Dune - Frank Herbert
-- `taste_signals.positive`: added "slow-burn worldbuilding payoff"
-- `comparable_books`: added "The Stars My Destination - Alfred Bester"
-
-## Added entries (1)
-
-### The Mountain in the Sea - Ray Nayler
-Status: complete (High confidence, training)
-primary_genre: Science Fiction
-[etc — only fields with non-null values]
-
-## Index regeneration
-
-Required: yes (comparable_books changed for "Dune - Frank Herbert"; new entry
-adds an indexed row).
+```
+About to apply:
+- Brave New World - Aldous Huxley
+    content_flags: append "racism (period-typical depiction)"
+- Dune - Frank Herbert
+    taste_signals.positive: append "slow-burn worldbuilding payoff"
+    comparable_books: append "The Stars My Destination - Alfred Bester"
+- New entry: The Mountain in the Sea - Ray Nayler
+    primary_genre=Science Fiction, status=complete (High, training)
 ```
 
-2. **`apply_patch.py`** — small executable script the reader can run in the
-   repo to apply the changes:
+### 2. Confirm before writing
+
+Especially when changes touch indexed fields (`title`, `author`, `series`,
+`series_status`, `primary_genre`, `comparable_books`) or when adding new
+entries. Wait for the reader's go-ahead.
+
+### 3. Apply via Python — touch only the changed entries
+
+Load, mutate, write. Never rewrite the file from a copy of the in-memory
+catalog you printed earlier; load fresh:
 
 ```python
-#!/usr/bin/env python3
-"""Apply catalog patch generated 2026-04-28. Run from repo root."""
-import json, subprocess
+import json
 from pathlib import Path
 
-CATALOG = "Library_Catalog.json"
-
-with open(CATALOG, encoding="utf-8") as f:
+path = Path("Library_Catalog.json")
+with path.open(encoding="utf-8") as f:
     cat = json.load(f)
 
-# Updated entries
-cat["entries"]["Brave New World - Aldous Huxley"]["content_flags"] = [
-    "sexual content", "drug use (soma)", "suicide",
-    "misogynistic attitudes (period-typical)", "racism (period-typical depiction)"
-]
+# updates
+bnw = cat["entries"]["Brave New World - Aldous Huxley"]
+if "racism (period-typical depiction)" not in bnw["content_flags"]:
+    bnw["content_flags"].append("racism (period-typical depiction)")
 
 dune = cat["entries"]["Dune - Frank Herbert"]
-dune["taste_signals"]["positive"] = sorted(set(
-    dune["taste_signals"]["positive"] + ["slow-burn worldbuilding payoff"]
-))
-dune["comparable_books"] = sorted(set(
-    dune["comparable_books"] + ["The Stars My Destination - Alfred Bester"]
-))
+for sig in ["slow-burn worldbuilding payoff"]:
+    if sig not in dune["taste_signals"]["positive"]:
+        dune["taste_signals"]["positive"].append(sig)
+for comp in ["The Stars My Destination - Alfred Bester"]:
+    if comp not in dune["comparable_books"]:
+        dune["comparable_books"].append(comp)
 
-# New entries
+# new entry
 cat["entries"]["The Mountain in the Sea - Ray Nayler"] = {
     "title": "The Mountain in the Sea",
     "author": "Ray Nayler",
-    # ...full new-entry dict
+    # ...full entry dict per the schema above
 }
 
-with open(CATALOG, "w", encoding="utf-8") as f:
+with path.open("w", encoding="utf-8") as f:
     json.dump(cat, f, indent=2, ensure_ascii=False)
-
-# Regenerate the slim index
-subprocess.run(["python", "catalogue.py", "--library", "Library.csv",
-                "--index-only"], check=True)
-
-print("Patch applied.")
 ```
 
-### Patch policy
+Use `Edit` for surgical single-field changes when easier. Use Python for
+anything touching nested fields (`taste_signals`, lists like `content_flags`
+or `comparable_books`) or for batches.
 
-- **Only the diff.** Updated entries: show only changed fields in the markdown
-  summary; the apply script writes whole field values (not deep merges) for
-  simplicity.
-- **New entries: include the full entry dict** in the apply script.
-- **Index regeneration:** always include the `--index-only` call at the end if
-  any indexed field changed (`title`, `author`, `series`, `series_status`,
-  `primary_genre`, `comparable_books`) or if entries were added/removed.
-- **No untouched data leaves your output.** Never print the full catalog or full
-  unchanged entries.
-- **Tell the reader how to apply:** drop both files into the repo root and run
-  `python apply_patch.py`. (Or in Claude.ai without the repo: open the project
-  in Claude Code and ask it to run the script.)
+### 4. Regenerate the index — always
+
+```bash
+python catalogue.py --library Library.csv --index-only
+```
+
+Sub-second. Run it after every catalog write, even if no indexed field
+appears to have changed — it's cheap insurance against drift.
+
+### 5. Report what was applied
+
+One short summary in chat. Tell the reader the catalog and index are
+updated. Don't dump file contents.
+
+### 6. Offer to commit
+
+> "Want me to commit this as a memory-bank update?"
+
+If yes, stage `Library_Catalog.json` and `Library_Index.json`, write a
+one-line message describing the change, and commit. Don't push unless
+asked. Don't commit without explicit confirmation.
+
+---
+
+## When to defer to catalogue.py
+
+Run the script directly for anything bulk:
+
+| Task | Command |
+|------|---------|
+| Process all pending entries (after CSV adds) | `python catalogue.py --library Library.csv` |
+| Reprocess `needs_review` entries | `python catalogue.py --library Library.csv --review-only` |
+| Rebuild the slim index from existing catalog | `python catalogue.py --library Library.csv --index-only` |
+| Status check (no API calls) | `python catalogue.py --library Library.csv --status` |
+| Larger chunks for well-known books | add `--chunk-size 40` |
+
+If the reader is adding more than ~10 books, sync the CSV first and run the
+script — chat-by-chat editing past that scale is wasteful.
 
 ---
 

@@ -125,7 +125,8 @@ Conduct a friendly interview of at least 5 questions:
 
 Extract a profile covering positive indicators, negative indicators, benchmark books
 (3–5), preferred settings/genres, audio vs. print, and series-length appetite.
-Generate an updated `Profile.md` and offer it for download.
+Write the updated `Profile.md` to the repo. If one already exists, show a
+brief summary of what's changing and confirm before overwriting.
 
 ---
 
@@ -236,8 +237,9 @@ audit fixes, or a new book entirely.
 **This is the librarian's memory.** Treat it seriously — but never silently mutate.
 
 When the reader confirms a change, hand off to the **library-cataloguer** skill,
-which owns all writes to `Library_Catalog.json` and `Library_Index.json` and
-will emit a compact patch (not the full file) for the reader to apply.
+which owns all writes to `Library_Catalog.json` and `Library_Index.json`. In
+Claude Code it applies the change directly via Python and regenerates the
+index in the same step — no patch files, no manual apply.
 
 If the reader hasn't asked to save changes yet, hold them in the conversation —
 batch them and offer to flush once a few have accumulated.
@@ -246,24 +248,24 @@ batch them and offer to flush once a few have accumulated.
 
 ## Step 7: Outputs
 
-All long-form deliverables go in artifacts. **Update artifacts in place — never
-rewrite the full list in chat replies.** Chat responses stay brief and point at
-the artifact ("updated — see the artifact"); the artifact itself carries the
-content.
+All long-form deliverables are files in the repo, edited in place. **Never
+rewrite the full list inline in chat replies** — keep chat responses brief
+and point at the file. The file carries the content; the chat carries the
+discussion.
 
-- **Reading_List.md** (artifact) — full curated list with sections, strength
+- **`Reading_List.md`** — full curated list with sections, strength
   indicators, running count toward 100, stretch goals, and a goals-tracking
   table:
   - Genre Goals: `| Genre | Goal | Current |`
   - Series Status Goals: `| Status | Goal | Current |`
   - Miscellaneous Goals: `| Tag | Goal | Current |`
-- **Profile.md** (artifact) — only if a fresh interview was conducted.
-- **Catalog patches** (artifacts) — emitted by the cataloguer skill when
-  memory-bank changes are confirmed (see that skill).
+- **`Profile.md`** — only if a fresh interview was conducted.
+- **Catalog updates** — applied directly by the cataloguer skill (see that
+  skill); no patch files to hand off.
 
-After every agreed batch, update the `Reading_List.md` artifact in place. The
-reader should always have a current downloadable version, and the chat
-transcript stays cheap.
+After every agreed batch, edit `Reading_List.md` in place via the Edit tool
+(don't rewrite from scratch). The reader sees changes through their editor
+or via diffs; the chat transcript stays cheap.
 
 ---
 
