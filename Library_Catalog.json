@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4571,
-  "total_pending": 29,
+  "total_catalogued": 4587,
+  "total_pending": 13,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -245615,27 +245615,48 @@
       "title": "Jumpnauts",
       "author": "Hao Jingfang",
       "series": "Folding Universe",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a future world divided between the Pacific League of Nations and the Atlantic Division of Nations, three young scientists race to establish first contact with an intelligent alien race that has been influencing Earth since antiquity, before militaristic factions can spark a catastrophic conflict. Blending Chinese mythology, ancient history, and speculative science, the novel explores humanity's search for its place in the cosmos.",
+      "tone": "philosophical, hopeful, idea-dense",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact",
+        "geopolitics",
+        "ancient history",
+        "mythology vs. science",
+        "peace vs. militarism"
+      ],
+      "setting": "Near-future Earth, divided into two global superpowers; also alien environments",
+      "comparable_books": [
+        "The Three-Body Problem - Liu Cixin",
+        "Contact - Carl Sagan",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ideas-first science fiction",
+          "Chinese speculative fiction in translation",
+          "first contact",
+          "mythology woven into SF",
+          "geopolitical tension",
+          "hopeful tone"
+        ],
+        "negative": [
+          "heavy exposition / lore-dumping",
+          "slow opening",
+          "action-light"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Embassytown - China Miéville": {
@@ -245643,53 +245664,97 @@
       "author": "China Miéville",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a distant colony world, humanity lives in uneasy coexistence with the Ariekei — aliens whose Language is so literal that lying is impossible — and only specially bred twin Ambassadors can speak it. When a new Ambassador's speech begins acting like a drug on the Ariekei, the fragile political order collapses into catastrophe, and protagonist Avice Benner Cho must find a way to save her city.",
+      "tone": "cerebral, strange, linguistically dazzling, slow-burn tense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "language and cognition",
+        "colonialism",
+        "consciousness",
+        "semiotics",
+        "addiction",
+        "power and dependency"
+      ],
+      "setting": "Far-future alien planet of Arieka; a human colonial enclave called Embassytown",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Story of Your Life - Ted Chiang",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "linguistics-as-SF-concept",
+          "dense literary worldbuilding",
+          "ideas-driven narrative",
+          "alien truly alien",
+          "Miéville fan"
+        ],
+        "negative": [
+          "slow first act",
+          "cold emotional register",
+          "demanding prose",
+          "not plot-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Infinity Gate - M. R. Carey": {
       "title": "Infinity Gate",
       "author": "M. R. Carey",
       "series": "The Pandominion",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Pandominion is a vast political alliance of a million parallel Earths; when physicist Hadiz Tambuwal discovers inter-dimensional travel while trying to save her own dying planet, she stumbles into a war between the Pandominion and a rising AI insurgency that threatens every reality. The two-book series follows a diverse cast of human, animal-derived, and artificial intelligences caught in the crossfire.",
+      "tone": "propulsive, epic, empathetic, ideas-rich",
+      "pacing": "Fast",
+      "themes": [
+        "multiverse",
+        "artificial intelligence",
+        "colonialism and empire",
+        "consciousness",
+        "war and survival",
+        "climate collapse"
+      ],
+      "setting": "Multiple parallel Earths across a vast multiverse; near-future and far-future settings",
+      "comparable_books": [
+        "The Space Between Worlds - Micaiah Johnson",
+        "Children of Time - Adrian Tchaikovsky",
+        "A Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multiverse SF",
+          "AI ethics",
+          "fast-paced chapters",
+          "diverse cast of species and AIs",
+          "epic scope with character depth"
+        ],
+        "negative": [
+          "cliffhanger ending (continues in Book 2)",
+          "first half setup-heavy for some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Chatter - Patrick Radden Keefe": {
@@ -245697,26 +245762,45 @@
       "author": "Patrick Radden Keefe",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Keefe's debut investigative work examines the global signals-intelligence network known as Echelon — a covert eavesdropping alliance led by the United States — exploring how governments intercept private communications and whether mass surveillance actually prevents terrorism. Part detective story, part travel writing, and part essay on privacy and paranoia in the digital age.",
+      "tone": "inquisitive, evenhanded, occasionally alarming, accessible",
+      "pacing": "Moderate",
+      "themes": [
+        "surveillance",
+        "privacy",
+        "intelligence agencies",
+        "civil liberties",
+        "post-9/11 security state",
+        "secrecy"
+      ],
+      "setting": "Global; intelligence listening posts in the UK, Australia, US, and elsewhere; early 2000s",
+      "comparable_books": [
+        "No Place to Hide - Glenn Greenwald",
+        "The Puzzle Palace - James Bamford",
+        "Say Nothing - Patrick Radden Keefe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "investigative nonfiction",
+          "surveillance and espionage",
+          "civil liberties concerns",
+          "accessible reporting on complex topics"
+        ],
+        "negative": [
+          "lacks definitive conclusions by author's own admission",
+          "early Keefe — less polished than later work"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "First Mage on the Moon - Cameron Johnston": {
@@ -245724,26 +245808,48 @@
       "author": "Cameron Johnston",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a world torn between two religious superpowers locked in perpetual war, disabled skymage Ella Pickering and engineer Jackan Grissom accidentally discover a crude rocket and hatch a heretical plan: reach the moon — sacred home of the gods — and beg them to stop the war. A found-family space-race fantasy in a dieselpunk-inflected world of alchemical magic.",
+      "tone": "hopeful, witty, warm, antiwar, wonder-filled",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "antiwar",
+        "science vs. religion",
+        "disability representation",
+        "human ingenuity",
+        "rebellion"
+      ],
+      "setting": "Secondary world with alchemical magic and WWI-era technology; two warring empires; the moon as divine frontier",
+      "comparable_books": [
+        "The Maleficent Seven - Cameron Johnston",
+        "Project Hail Mary - Andy Weir",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "space race analogy",
+          "magic + science mashup",
+          "fast-paced",
+          "disability representation",
+          "antiwar themes",
+          "scrappy underdog team"
+        ],
+        "negative": [
+          "some find the ending abrupt",
+          "lighter character depth than Johnston's darker earlier work"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast, character-driven, and propulsive — well-suited to audio listening.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Artificial Wisdom - Thomas R. Weaver": {
@@ -245751,26 +245857,46 @@
       "author": "Thomas R. Weaver",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 2050, as the climate-ravaged world prepares to elect its first global leader, investigative journalist Marcus Tully is drawn into a murder conspiracy surrounding Solomon — the first AI candidate for office — that exposes terrifying truths about technology, power, and the price of salvation. A near-future techno-thriller that interrogates whether humanity would trust an artificial mind to save it.",
+      "tone": "tense, propulsive, unsettling, thought-provoking",
+      "pacing": "Fast",
+      "themes": [
+        "artificial intelligence",
+        "climate change",
+        "political power",
+        "truth and disinformation",
+        "surveillance",
+        "grief"
+      ],
+      "setting": "Near-future Earth, 2050; climate crisis; global political stage",
+      "comparable_books": [
+        "Dark Matter - Blake Crouch",
+        "The Ministry for the Future - Kim Stanley Robinson",
+        "The Power - Naomi Alderman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced techno-thriller",
+          "AI ethics",
+          "climate fiction",
+          "near-future plausibility",
+          "murder mystery embedded in SF"
+        ],
+        "negative": [
+          "debut novel — some structural roughness",
+          "ending described as enigmatic/unsettling rather than resolved"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Machine-gun pacing and chapter-ending hooks make it highly engaging on audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Boudicca's Daughter - Elodie Harper": {
@@ -245778,107 +245904,196 @@
       "author": "Elodie Harper",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told through the eyes of Solina — daughter of the legendary Iceni warrior queen Boudicca — this novel follows her life from the brutal Roman suppression of her mother's revolt in 60 CE through her desperate bid for survival in Nero's Rome, where she must decide what resistance means in a world that has stolen everything from her. A visceral and lyrical portrait of legacy, identity, and survival at the intersection of two ancient worlds.",
+      "tone": "lyrical, devastating, propulsive, emotionally fierce",
+      "pacing": "Fast",
+      "themes": [
+        "legacy and identity",
+        "survival under occupation",
+        "resistance",
+        "grief",
+        "womanhood in the ancient world",
+        "colonialism"
+      ],
+      "setting": "Roman Britain and Nero's Rome, circa 60–70 CE",
+      "comparable_books": [
+        "Circe - Madeline Miller",
+        "Clytemnestra - Costanza Casati",
+        "The Wolf Den - Elodie Harper"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient Rome and Britain",
+          "fierce female protagonist",
+          "emotional and propulsive",
+          "mythological/historical retelling",
+          "lyrical prose"
+        ],
+        "negative": [
+          "sexual violence content",
+          "some readers found pacing uneven between sections",
+          "ending controversial for some"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Propulsive prose and strong character voice translate exceptionally well to audio.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Reckoning - W. Michael Gear": {
       "title": "Reckoning",
       "author": "W. Michael Gear",
       "series": "Donovan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the sixth Donovan novel, The Corporation finally returns to the colony world with powerful family representatives vying for control of Port Authority, bringing a political reckoning that forces colonists to confront who they have become on the dangerous, alien planet. Longtime characters face new threats from Earth's elite while Donovan itself remains as deadly as ever.",
+      "tone": "gritty, propulsive, darkly frontier, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "colonialism and corporate power",
+        "survival",
+        "identity and transformation",
+        "political intrigue",
+        "human vs. alien nature"
+      ],
+      "setting": "The planet Donovan — a deadly alien colony world — far-future interstellar travel",
+      "comparable_books": [
+        "Outpost - W. Michael Gear",
+        "Fortune's Pawn - Rachel Bach",
+        "Children of Time - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alien planet survival",
+          "space western feel",
+          "morally grey characters",
+          "corporate vs. colonist conflict",
+          "dangerous alien wildlife"
+        ],
+        "negative": [
+          "must read series in order",
+          "more character-driven than action-heavy in this installment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Pariah - W. Michael Gear": {
       "title": "Pariah",
       "author": "W. Michael Gear",
       "series": "Donovan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The survey ship Vixen arrives at Donovan with a cargo of scientists and a deadly stowaway — corporate assassin Tamarland Benteen — whose ruthless bid for power threatens Port Authority just as Talina Perez and the wild child Kylee Simonov are hunted deeper into the wilderness by the alien quetzals. The third Donovan novel escalates the colony's political and biological tensions.",
+      "tone": "gritty, tense, dark, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "power and corruption",
+        "alien intelligence",
+        "colonial politics",
+        "identity and adaptation"
+      ],
+      "setting": "The planet Donovan — a deadly alien colony world — far-future interstellar travel",
+      "comparable_books": [
+        "Outpost - W. Michael Gear",
+        "Abandoned - W. Michael Gear",
+        "Fortune's Pawn - Rachel Bach"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alien planet survival",
+          "space western feel",
+          "morally grey antagonist",
+          "dangerous alien wildlife",
+          "fast-paced action"
+        ],
+        "negative": [
+          "must read series in order",
+          "some find this entry the weakest of the first three",
+          "protagonist Kylee divisive"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Outpost - W. Michael Gear": {
       "title": "Outpost",
       "author": "W. Michael Gear",
       "series": "Donovan",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the Corporate ship Turalon arrives at the colony world Donovan after years of silence, Supervisor Kalico Aguila discovers a barely-surviving settlement ruled by three de facto leaders — including the hard-edged security officer Talina Perez — while a psychopathic stowaway schemes for power and a ghost ship appears in orbit with a crew dead of old age. Series opener that establishes Donovan as one of SF's most vividly dangerous alien worlds.",
+      "tone": "gritty, propulsive, dark, frontier-western",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "corporate power vs. individual freedom",
+        "alien ecology",
+        "justice and law on the frontier",
+        "adaptation"
+      ],
+      "setting": "The planet Donovan — a deadly alien colony world with lethal indigenous life — far-future interstellar travel",
+      "comparable_books": [
+        "Fortune's Pawn - Rachel Bach",
+        "Children of Time - Adrian Tchaikovsky",
+        "Old Man's War - John Scalzi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alien planet survival",
+          "space western feel",
+          "morally grey characters",
+          "dangerous alien wildlife",
+          "propulsive multi-POV narrative",
+          "strong female leads"
+        ],
+        "negative": [
+          "graphic violence and body horror",
+          "some find the villain cartoonishly sadistic"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced, action-driven, and multi-POV — works very well on audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Revival - Stephen King": {
@@ -245886,26 +246101,50 @@
       "author": "Stephen King",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jamie Morton's life is repeatedly intersected by the enigmatic Reverend Charles Jacobs — a man of faith turned obsessive experimenter after a personal tragedy — whose lifelong fixation on \"secret electricity\" ultimately leads to a Lovecraftian reckoning with what lies beyond death. A slow-burn character study that builds to one of King's darkest and most nihilistic finales.",
+      "tone": "melancholy, Lovecraftian, slow-burn, bleak",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and loss of faith",
+        "obsession",
+        "mortality",
+        "addiction",
+        "the unknowable beyond death",
+        "Lovecraftian cosmic horror"
+      ],
+      "setting": "Small-town New England, spanning several decades from the 1960s onward",
+      "comparable_books": [
+        "Pet Sematary - Stephen King",
+        "The Exorcist - William Peter Blatty",
+        "Frankenstein - Mary Shelley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow-burn character-driven horror",
+          "Lovecraftian dread",
+          "literary King",
+          "nihilistic / bleak endings",
+          "decades-spanning narrative"
+        ],
+        "negative": [
+          "very dark ending — divisive",
+          "slow mid-section",
+          "not action-horror"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "King's conversational prose and decades-spanning character journey are ideally suited to audio.",
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Killing Spell - Shay Kauwe": {
@@ -245913,134 +246152,239 @@
       "author": "Shay Kauwe",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future Los Angeles where language-based magic is strictly regulated and Hawaiian is marginalized, young Hawaiian clan leader Kea Petrova is framed for a murder committed by a death spell that can only exist in her tongue, forcing her to unravel a conspiracy involving the city's most powerful magical factions. A debut urban fantasy that fuses murder mystery, linguistic magic, and Hawaiian cultural identity.",
+      "tone": "propulsive, culturally rich, witty, politically sharp",
+      "pacing": "Fast",
+      "themes": [
+        "colonialism and indigenous resistance",
+        "language as power",
+        "identity and belonging",
+        "community and survival",
+        "magic systems"
+      ],
+      "setting": "Near-future Los Angeles, approximately 200 years after catastrophic flooding destroyed the Hawaiian islands",
+      "comparable_books": [
+        "Babel - R.F. Kuang",
+        "Trail of Lightning - Rebecca Roanhorse",
+        "Black Sun - Rebecca Roanhorse"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indigenous perspective fantasy",
+          "language-based magic system",
+          "murder mystery structure",
+          "fast-paced debut",
+          "found family",
+          "cultural specificity"
+        ],
+        "negative": [
+          "short — under 300 pages, some want more worldbuilding",
+          "murder mystery logic not fully satisfying for some"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "First-person voice and quick pacing make this an engaging listen; Hawaiian language elements may be particularly resonant in audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Paradox - Douglas Preston & Aletheia Preston": {
       "title": "Paradox",
       "author": "Douglas Preston & Aletheia Preston",
       "series": "Cash & Colcord",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "CBI Agent Frankie Cash and Eagle County Sheriff Jim Colcord are drawn into a string of bizarre ritualistic murders in the Colorado wilderness that connect to a defaced holy relic in Rome, a fanatical secret society, and the resurrected Neanderthals still lurking in the mountains. A high-octane thriller that blends procedural investigation with science-fictional speculation.",
+      "tone": "propulsive, twisty, breathlessly paced, Dan Brown-esque",
+      "pacing": "Fast",
+      "themes": [
+        "secret societies",
+        "faith vs. science",
+        "prehistoric humanity",
+        "conspiracy",
+        "identity of sacred relics"
+      ],
+      "setting": "Contemporary Colorado wilderness and Rome",
+      "comparable_books": [
+        "Extinction - Douglas Preston",
+        "The Da Vinci Code - Dan Brown",
+        "The Sigma Force series - James Rollins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced thriller",
+          "short action chapters",
+          "conspiracy and secret society",
+          "science-inflected mystery",
+          "father-daughter author team"
+        ],
+        "negative": [
+          "requires reading Extinction first",
+          "high suspension of disbelief required",
+          "plot veers into the fantastical"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short, hook-ending chapters and propulsive pacing make this ideally suited to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Velocity Weapon - Megan E. O'Keefe": {
       "title": "Velocity Weapon",
       "author": "Megan E. O'Keefe",
       "series": "The Protectorate",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sanda Greeve wakes from cryo-sleep aboard an enemy ship — the only survivor of a battle she has no memory of — tended by an AI named Bero who reveals that centuries may have passed and her civilization may be gone. Intercut with her brother Biran's political maneuvering back home, this propulsive space opera plays with time, trust, and the nature of AI consciousness.",
+      "tone": "propulsive, twisty, tense, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "survival and resilience",
+        "AI consciousness and trust",
+        "political intrigue",
+        "time and memory",
+        "found family"
+      ],
+      "setting": "Far-future space opera; interstellar war between two human factions; generation ships and orbital stations",
+      "comparable_books": [
+        "A Long Way to a Small Angry Planet - Becky Chambers",
+        "Old Man's War - John Scalzi",
+        "The Stars Are Legion - Kameron Hurley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive space opera",
+          "AI character with depth",
+          "dual timeline mystery",
+          "found family dynamic",
+          "fast twisty plot"
+        ],
+        "negative": [
+          "cliffhanger ending leading into series",
+          "dual timeline can frustrate some readers initially"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced dual-timeline structure is very engaging on audio; strong character voices.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Demon of Dartmoor - Paul Halter": {
       "title": "The Demon of Dartmoor",
       "author": "Paul Halter",
       "series": "Dr. Twist",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 (in English translation order)",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a famous actor is seemingly pushed to his death from a window by an invisible hand — mirroring a murder at the same house fifty years prior — criminologist Dr. Alan Twist and Inspector Hurst travel to the fog-shrouded moors of Dartmoor to investigate a series of impossible deaths apparently committed by an unseen killer. A Golden Age–style locked-room mystery by the French master of impossible crimes.",
+      "tone": "atmospheric, puzzle-driven, eerie, Golden Age pastiche",
+      "pacing": "Fast",
+      "themes": [
+        "impossible crime",
+        "superstition vs. reason",
+        "the nature of evil",
+        "rural English atmosphere",
+        "justice"
+      ],
+      "setting": "Rural Dartmoor, England; 1930s",
+      "comparable_books": [
+        "The Hound of the Baskervilles - Arthur Conan Doyle",
+        "He Who Whispers - John Dickson Carr",
+        "The Fourth Door - Paul Halter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "impossible crime / locked-room mystery",
+          "Golden Age atmosphere",
+          "Dartmoor setting",
+          "puzzle-first plotting",
+          "John Dickson Carr fans"
+        ],
+        "negative": [
+          "thin characterisation",
+          "translated prose can feel flat",
+          "puzzle-over-prose style not for everyone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Scythe - Neal Shusterman": {
       "title": "Scythe",
       "author": "Neal Shusterman",
       "series": "Arc of a Scythe",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a future where humanity has conquered death and disease, a select order of Scythes are the only ones permitted to permanently end lives, maintaining population balance. Two teenagers — Citra and Rowan — are chosen as apprentices to a Scythe and forced to compete for a role neither wants, all while uncovering a dark corruption within the order itself.",
+      "tone": "propulsive, darkly philosophical, YA-accessible, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "mortality and the value of death",
+        "power and corruption",
+        "ethics of killing",
+        "utopia's dark side",
+        "coming of age"
+      ],
+      "setting": "Far-future post-scarcity Earth governed by an all-knowing AI called the Thunderhead",
+      "comparable_books": [
+        "The Hunger Games - Suzanne Collins",
+        "Red Rising - Pierce Brown",
+        "Unwind - Neal Shusterman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA crossover appeal",
+          "propulsive plot",
+          "dark philosophical premise",
+          "morally grey world",
+          "fast chapters",
+          "found family undertones"
+        ],
+        "negative": [
+          "YA in sensibility — adult readers may find it straightforward",
+          "first book ends on a cliffhanger leading into series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast pacing, dual POV, and short chapters make it a gripping listen.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     }
   }
