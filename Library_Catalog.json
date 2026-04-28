@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4073,
-  "total_pending": 527,
+  "total_catalogued": 4093,
+  "total_pending": 507,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -221478,27 +221478,48 @@
       "title": "Tomb of Tomes",
       "author": "Andrew Watson",
       "series": "Shadowbinders",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1.5 (companion novella)",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A companion novella to the Shadowbinders trilogy, following scholar Yeru as she races to uncover the secrets of a legendary lost library buried beneath the desert sands. What begins as a quest for knowledge quickly turns deadly when the ancient library reveals it holds far more than books.",
+      "tone": "Dark, atmospheric, tense",
+      "pacing": "Fast",
+      "themes": [
+        "forbidden knowledge",
+        "ancient history",
+        "danger of discovery",
+        "scholarship"
+      ],
+      "setting": "A desert-buried ancient library in the dark epic fantasy world of Tarris; set between Books 1 and 2 of the Shadowbinders trilogy",
+      "comparable_books": [
+        "Harbinger of Justice - Andrew Watson",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Black Mantle - Andrew Watson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "library settings",
+          "dark epic fantasy",
+          "Egyptian-inspired world",
+          "atmospheric horror",
+          "fast pacing",
+          "standalone-accessible companion novella"
+        ],
+        "negative": [
+          "readers who dislike novellas",
+          "those who need series entry point"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Diavola - Jennifer Marie Thorne": {
@@ -221506,80 +221527,147 @@
       "author": "Jennifer Marie Thorne",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Anna Pace dreads the annual family vacation, but this year the dysfunctional Pace clan's stay at a historic Tuscan villa turns genuinely nightmarish when a malevolent supernatural presence begins targeting them. A darkly comic gothic that uses toxic family dynamics as a mirror for the haunting.",
+      "tone": "Darkly comic, atmospheric, wickedly sharp",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "family dysfunction",
+        "belonging and identity",
+        "the supernatural",
+        "guilt and sin",
+        "toxic relationships"
+      ],
+      "setting": "Rural Tuscany, Italy; a historic haunted villa; contemporary",
+      "comparable_books": [
+        "The Haunting of Hill House - Shirley Jackson",
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "Lute - Jennifer Thorne",
+        "The House of Last Resort - Christopher Golden"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "vacation gothic",
+          "darkly comic horror",
+          "family drama",
+          "atmospheric Italian setting",
+          "haunted house",
+          "unreliable narrator"
+        ],
+        "negative": [
+          "readers who dislike slow burns",
+          "those wanting purely supernatural horror without family drama",
+          "squeamish readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Andi Arndt, widely praised as perfectly suited to Anna's voice and the comedic-horror tone.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "animal death",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Children of the Gods - S. A. Klopfenstein": {
       "title": "Children of the Gods",
       "author": "S. A. Klopfenstein",
       "series": "Age of Fire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the Isle of Faltara, a gifted people called the Faltari guard the secret source of dragon eggs, but when the expansionist Attican Empire closes in, four very different characters — a shaman, a huntress, a soldier, and a rebel spy — must reckon with buried truths and choose sides in a coming war. A multi-POV dragon fantasy epic blending classic and modern sensibilities.",
+      "tone": "Epic, action-driven, wonder-filled",
+      "pacing": "Fast",
+      "themes": [
+        "empire vs. freedom",
+        "destiny",
+        "coming of age",
+        "rebellion",
+        "hidden heritage"
+      ],
+      "setting": "A secondary world at war; an isolated island and the broader Attican Empire; secondary world fantasy",
+      "comparable_books": [
+        "The Blood of Gods and Royals - Ryan Cahill",
+        "Of Blood and Bone - John Gwynne",
+        "Embers of War - Philip C. Quaintrell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragons and dragon riders",
+          "multi-POV epic fantasy",
+          "LGBTQ-inclusive",
+          "high stakes action",
+          "Kickstarter indie fantasy"
+        ],
+        "negative": [
+          "readers who prefer intimate character studies over action",
+          "those who dislike large casts"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Tim Campbell, widely praised for distinct character voices and emotional delivery.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Monstrous Regiment of Women - Laurie R. King": {
       "title": "A Monstrous Regiment of Women",
       "author": "Laurie R. King",
       "series": "Mary Russell and Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1921 London, Mary Russell investigates a charismatic female religious leader whose wealthy young followers have a troubling habit of dying after making her their sole beneficiary. As the case deepens, Russell must also navigate her evolving relationship with Holmes.",
+      "tone": "Witty, intellectually sharp, warmly feminist",
+      "pacing": "Moderate",
+      "themes": [
+        "feminism and women's agency",
+        "faith and manipulation",
+        "identity",
+        "partnership and love",
+        "1920s social change"
+      ],
+      "setting": "London and surroundings, 1921; post-WWI England",
+      "comparable_books": [
+        "The Beekeeper's Apprentice - Laurie R. King",
+        "Maisie Dobbs - Jacqueline Winspear",
+        "The Alienist - Caleb Carr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female-led mysteries",
+          "Sherlock Holmes pastiche",
+          "intellectual protagonist",
+          "historical England",
+          "slow-building romance"
+        ],
+        "negative": [
+          "readers wanting faithful Holmes canon",
+          "those who dislike romantic subplots in mysteries"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Boys From Biloxi - John Grisham": {
@@ -221587,188 +221675,333 @@
       "author": "John Grisham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Legal Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two boys grow up on the Gulf Coast of Mississippi — one the son of a respected lawyer, the other the son of a crime boss — and their fates collide decades later when one becomes a crusading district attorney determined to shut down the criminal empire the other now runs. A generational saga set against the backdrop of Biloxi's notorious vice trade.",
+      "tone": "Propulsive, morally charged, Southern gothic-tinged",
+      "pacing": "Moderate",
+      "themes": [
+        "crime and justice",
+        "family legacy",
+        "friendship and rivalry",
+        "corruption",
+        "the American South"
+      ],
+      "setting": "Biloxi, Mississippi Gulf Coast; 1960s–1980s",
+      "comparable_books": [
+        "A Time to Kill - John Grisham",
+        "The Pelican Brief - John Grisham",
+        "Midnight in the Garden of Good and Evil - John Berendt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal drama",
+          "Southern setting",
+          "generational saga",
+          "moral dilemmas",
+          "crime fiction"
+        ],
+        "negative": [
+          "readers wanting courtroom-heavy Grisham",
+          "those who dislike slow generational build-ups"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Impossible Fortune - Richard Osman": {
       "title": "The Impossible Fortune",
       "author": "Richard Osman",
       "series": "A Thursday Murder Club Mystery",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a distressed wedding guest approaches Elizabeth at Joyce's daughter's wedding and then promptly vanishes, the Thursday Murder Club is drawn into a mystery involving a missing man, an uncrackable Bitcoin code, a car bombing, and a ruthless villain who will stop at nothing. The gang must untangle codes and murder while navigating grief, family, and friendship.",
+      "tone": "Warmly comic, emotionally rich, wryly British",
+      "pacing": "Fast",
+      "themes": [
+        "friendship in old age",
+        "grief and resilience",
+        "justice",
+        "found family",
+        "cryptography and hidden wealth"
+      ],
+      "setting": "Coopers Chase retirement village, Kent, England; contemporary",
+      "comparable_books": [
+        "The Thursday Murder Club - Richard Osman",
+        "The Last Devil to Die - Richard Osman",
+        "Alexander McCall Smith's No. 1 Ladies' Detective Agency series"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery",
+          "elderly amateur sleuths",
+          "dry British humour",
+          "emotional depth",
+          "found family",
+          "character-driven"
+        ],
+        "negative": [
+          "readers wanting gritty crime",
+          "those unfamiliar with the series who prefer to start at book 1"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Fiona Shaw; the series is celebrated for its audio performances that perfectly capture the characters' wit and warmth.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Execution - S. J. Parris": {
       "title": "Execution",
       "author": "S. J. Parris",
       "series": "Giordano Bruno",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "England, 1586: Giordano Bruno returns with intelligence that a band of young Catholic gentlemen are plotting to assassinate Queen Elizabeth and free Mary Queen of Scots. Embedded inside the Babington Plot, Bruno must balance his spymaster Walsingham's ruthless strategy with his own conscience as the body count rises.",
+      "tone": "Dark, propulsive, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "espionage and betrayal",
+        "religious conflict",
+        "moral compromise",
+        "loyalty",
+        "Elizabethan politics"
+      ],
+      "setting": "London, England, 1586; Elizabethan era",
+      "comparable_books": [
+        "Dissolution - C. J. Sansom",
+        "The Name of the Rose - Umberto Eco",
+        "Heresy - S. J. Parris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tudor historical fiction",
+          "spy thriller",
+          "morally grey protagonist",
+          "religious intrigue",
+          "plot-driven mystery"
+        ],
+        "negative": [
+          "readers who dislike heavy historical detail",
+          "those wanting standalone mysteries"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Heresy - S. J. Parris": {
       "title": "Heresy",
       "author": "S. J. Parris",
       "series": "Giordano Bruno",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Oxford, 1583: Fugitive Italian philosopher and heretic Giordano Bruno arrives in England and is recruited by Queen Elizabeth's spymaster to go undercover at Oxford University to expose a Catholic assassination plot. His mission is derailed when a series of grisly murders erupt across the college.",
+      "tone": "Dark, intellectually charged, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "religious persecution",
+        "free thought vs. orthodoxy",
+        "espionage",
+        "murder and justice",
+        "Renaissance science"
+      ],
+      "setting": "Oxford University, England, 1583; Elizabethan era",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Dissolution - C. J. Sansom",
+        "The Dante Club - Matthew Pearl"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tudor historical fiction",
+          "intellectual detective",
+          "historical spy thriller",
+          "university setting",
+          "religious intrigue"
+        ],
+        "negative": [
+          "readers who dislike dense historical detail",
+          "those wanting light mystery"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Prophecy - S. J. Parris": {
       "title": "Prophecy",
       "author": "S. J. Parris",
       "series": "Giordano Bruno",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Autumn 1583, London: A rare planetary alignment feeds prophecies of Queen Elizabeth's imminent death, and when her maids of honour begin turning up dead with occult symbols carved into their flesh, Bruno is called in to investigate alongside royal astrologer John Dee. The killer may be someone inside the queen's own court.",
+      "tone": "Dark, occult-tinged, courtly, tense",
+      "pacing": "Fast",
+      "themes": [
+        "prophecy and the occult",
+        "court intrigue",
+        "religious fanaticism",
+        "women in danger",
+        "political conspiracy"
+      ],
+      "setting": "London and the royal court of Queen Elizabeth I, 1583; Elizabethan era",
+      "comparable_books": [
+        "Heresy - S. J. Parris",
+        "Sacrilege - S. J. Parris",
+        "The Magician's Lie - Greer Macallister"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tudor historical fiction",
+          "occult mystery",
+          "court politics",
+          "serial killer mystery",
+          "Elizabethan England"
+        ],
+        "negative": [
+          "readers who dislike superstition/occult elements",
+          "those wanting standalone mysteries"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Secret Dead - S. J. Parris": {
       "title": "The Secret Dead",
       "author": "S. J. Parris",
       "series": "Giordano Bruno",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.5 (prequel novella)",
+      "genre": "Historical Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Naples, 1566: Eighteen-year-old novice monk Giordano Bruno assists with a forbidden autopsy on a young woman and becomes convinced she was murdered. Forced to choose between protecting his future in the Order and exposing the truth, this prequel novella shows the origins of Bruno's defiant, questioning nature.",
+      "tone": "Dark, atmospheric, morally taut",
+      "pacing": "Fast",
+      "themes": [
+        "forbidden knowledge",
+        "justice vs. self-preservation",
+        "religious authority",
+        "origins of a detective"
+      ],
+      "setting": "Naples, Italy, 1566; a Dominican monastery",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Heresy - S. J. Parris",
+        "The Academy of Secrets - S. J. Parris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Bruno series fans",
+          "prequel novellas",
+          "monastic mystery",
+          "Italian Renaissance setting",
+          "short and accessible"
+        ],
+        "negative": [
+          "readers wanting a full-length novel",
+          "those new to the series who prefer starting with Book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sacrilege - S. J. Parris": {
       "title": "Sacrilege",
       "author": "S. J. Parris",
       "series": "Giordano Bruno",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "London, 1584: Bruno is shocked to find himself followed by Sophia Underhill, a woman he once loved who now stands accused of murdering her husband. Following her to Canterbury, he uncovers a deadly conspiracy tied to the cult of Saint Thomas Becket and the secret of the archbishop's missing remains.",
+      "tone": "Dark, conspiratorial, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "religious cults and relics",
+        "love and betrayal",
+        "conspiracy",
+        "medieval vs. Protestant England",
+        "justice"
+      ],
+      "setting": "London and Canterbury, England, 1584; Elizabethan era",
+      "comparable_books": [
+        "Heresy - S. J. Parris",
+        "The Relic Master - Christopher Buckley",
+        "Dissolution - C. J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Tudor historical fiction",
+          "religious conspiracy",
+          "romantic subplot",
+          "Canterbury setting",
+          "series fans"
+        ],
+        "negative": [
+          "readers wanting standalone mysteries",
+          "those who dislike religious history-heavy plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Anthropocene Reviewed: Essays on a Human-Centered Planet - John Green": {
@@ -221776,80 +222009,142 @@
       "author": "John Green",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Essays / Creative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "John Green rates various facets of the human-centred world — from Diet Dr Pepper to the Tuskegee Syphilis Study, from Halley's Comet to Scratch 'n' Sniff stickers — on a five-star scale, weaving personal memoir, cultural history, and reflections on what it means to be alive during the Anthropocene epoch.",
+      "tone": "Contemplative, tender, wryly funny, deeply personal",
+      "pacing": "Slow",
+      "themes": [
+        "human experience and meaning",
+        "grief and wonder",
+        "culture and history",
+        "environmental awareness",
+        "gratitude"
+      ],
+      "setting": "Wide-ranging — historical, scientific, cultural, and personal; the human-shaped world of the 21st century",
+      "comparable_books": [
+        "A Supposedly Fun Thing I'll Never Do Again - David Foster Wallace",
+        "Braiding Sweetgrass - Robin Wall Kimmerer",
+        "Consider the Lobster - David Foster Wallace"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "essay collections",
+          "reflective and philosophical nonfiction",
+          "wry humour with emotional depth",
+          "John Green fans",
+          "short chapter format"
+        ],
+        "negative": [
+          "readers wanting narrative nonfiction",
+          "those who dislike personal memoir in essay form",
+          "non-fiction sceptics"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Originally a podcast; narrated by John Green himself, whose warmth and voice are integral to the material.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Apothecary Melchior and the Mystery of St Olaf's Church - Indrek Hargla": {
       "title": "Apothecary Melchior and the Mystery of St Olaf's Church",
       "author": "Indrek Hargla",
       "series": "Apothecary Melchior",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In fifteenth-century Tallinn, respected apothecary Melchior Wakenstede is drawn into investigation when a Teutonic Knight is gruesomely murdered in the castle, revealing a serial killer at large in the city and a secret society that has controlled the town for years. A richly atmospheric debut in a beloved Estonian series.",
+      "tone": "Atmospheric, methodical, historically immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "justice and detection",
+        "medieval power and religion",
+        "secret societies",
+        "science vs. superstition",
+        "civic life"
+      ],
+      "setting": "Tallinn (Reval), Estonia, 15th century; a Hanseatic League merchant town on the edge of Christendom",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "A Morbid Taste for Bones - Ellis Peters",
+        "Dissolution - C. J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "medieval historical mystery",
+          "unique European setting",
+          "scholar-detective",
+          "Brother Cadfael fans",
+          "atmospheric historical fiction"
+        ],
+        "negative": [
+          "readers wanting fast-paced mysteries",
+          "those put off by unfamiliar settings or translated fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Apothecary Melchior and the Ghost of Rataskaevu Street - Indrek Hargla": {
       "title": "Apothecary Melchior and the Ghost of Rataskaevu Street",
       "author": "Indrek Hargla",
       "series": "Apothecary Melchior",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Tallinn, 1419: Three people — a tower keeper, a prostitute, and a Flemish painter — each claim to have seen a ghost near a haunted house on Rataskaevu Street, and each is found dead shortly after. Melchior, now assistant bailiff, investigates whether ghosts can truly take revenge on the living, uncovering a truth far more sinister than superstition.",
+      "tone": "Atmospheric, methodical, eerie",
+      "pacing": "Moderate",
+      "themes": [
+        "superstition vs. reason",
+        "medieval justice",
+        "guild and religious rivalries",
+        "death and the supernatural",
+        "civic corruption"
+      ],
+      "setting": "Tallinn (Reval), Estonia, 1419; a medieval Hanseatic town",
+      "comparable_books": [
+        "Apothecary Melchior and the Mystery of St Olaf's Church - Indrek Hargla",
+        "A Morbid Taste for Bones - Ellis Peters",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "medieval historical mystery",
+          "ghost story mystery",
+          "Hanseatic setting",
+          "scholar-detective",
+          "atmospheric fiction"
+        ],
+        "negative": [
+          "readers wanting fast-paced thrillers",
+          "those put off by translated fiction or unfamiliar settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Calamity of Souls - David Baldacci": {
@@ -221857,161 +222152,285 @@
       "author": "David Baldacci",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Legal Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1968 Virginia, a white lawyer and a Black attorney reluctantly team up to defend a Black man accused of murdering a wealthy white couple, in a case that exposes the brutal realities of race, justice, and the American South at the height of the Civil Rights era. A standalone courtroom drama with historical weight.",
+      "tone": "Weighty, emotionally charged, socially urgent",
+      "pacing": "Moderate",
+      "themes": [
+        "racial injustice",
+        "the American legal system",
+        "civil rights",
+        "moral courage",
+        "Southern history"
+      ],
+      "setting": "Virginia, USA, 1968; the Civil Rights era",
+      "comparable_books": [
+        "To Kill a Mockingbird - Harper Lee",
+        "A Time to Kill - John Grisham",
+        "Just Mercy - Bryan Stevenson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "courtroom drama",
+          "Civil Rights era fiction",
+          "moral stakes",
+          "Southern historical fiction",
+          "social justice themes"
+        ],
+        "negative": [
+          "readers wanting Baldacci's typical thriller pace",
+          "those who dislike courtroom-heavy narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Long Shadows - David Baldacci": {
       "title": "Long Shadows",
       "author": "David Baldacci",
       "series": "Amos Decker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Amos Decker, the FBI consultant with a perfect memory, heads to a Florida retirement community for the country's elite when a retired federal judge is murdered and a former general goes missing. As Decker investigates, he uncovers a far-reaching conspiracy threatening national security.",
+      "tone": "Propulsive, plot-driven, character-anchored",
+      "pacing": "Fast",
+      "themes": [
+        "national security",
+        "memory and identity",
+        "conspiracy",
+        "justice and power",
+        "ageing"
+      ],
+      "setting": "A luxury retirement community in Florida; contemporary USA",
+      "comparable_books": [
+        "Memory Man - David Baldacci",
+        "The Fix - David Baldacci",
+        "The Last Mile - David Baldacci"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "procedural thriller",
+          "unique protagonist ability",
+          "conspiracy plots",
+          "FBI/government intrigue",
+          "fast-paced reads"
+        ],
+        "negative": [
+          "readers who dislike long-running series",
+          "those wanting standalone thrillers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Last Mile - David Baldacci": {
       "title": "The Last Mile",
       "author": "David Baldacci",
       "series": "Amos Decker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a Death Row inmate is exonerated at the last possible moment after another man confesses to the crime, Amos Decker is brought in to investigate the unlikely reprieve. As he digs into the case, he discovers it may connect to the unsolved murder of his own family.",
+      "tone": "Propulsive, emotionally stakes-laden, tightly plotted",
+      "pacing": "Fast",
+      "themes": [
+        "justice and wrongful conviction",
+        "memory and trauma",
+        "family and grief",
+        "crime and conspiracy"
+      ],
+      "setting": "Texas and beyond; contemporary USA",
+      "comparable_books": [
+        "Memory Man - David Baldacci",
+        "The Fix - David Baldacci",
+        "The Innocent Man - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "procedural thriller",
+          "wrongful conviction plot",
+          "emotionally invested protagonist",
+          "conspiracy thriller",
+          "fast pacing"
+        ],
+        "negative": [
+          "readers who dislike series-dependent character arcs",
+          "those wanting standalone mysteries"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "To Die For - David Baldacci": {
       "title": "To Die For",
       "author": "David Baldacci",
       "series": "6:20 Man",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former Army Ranger turned Homeland Security operative Travis Devine is sent to Seattle to escort an orphaned twelve-year-old girl to meetings with her powerful but criminally connected uncle, only to discover that her parents' deaths were no overdose — and that his own nemesis is closing in. A twisty thriller balancing a murder investigation with Devine's fight for survival.",
+      "tone": "Propulsive, action-driven, suspenseful",
+      "pacing": "Fast",
+      "themes": [
+        "corruption and conspiracy",
+        "protecting the innocent",
+        "government secrecy",
+        "crime and family",
+        "survival"
+      ],
+      "setting": "Pacific Northwest (Seattle area); contemporary USA",
+      "comparable_books": [
+        "The 6:20 Man - David Baldacci",
+        "The Edge - David Baldacci",
+        "Memory Man - David Baldacci"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action thriller",
+          "government operative protagonist",
+          "fast-paced",
+          "twisty plot",
+          "Baldacci fans"
+        ],
+        "negative": [
+          "readers who dislike series-dependent backstory",
+          "those wanting standalone thrillers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Fix - David Baldacci": {
       "title": "The Fix",
       "author": "David Baldacci",
       "series": "Amos Decker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Amos Decker witnesses a shooting outside FBI headquarters — a man guns down a woman, then turns the weapon on himself — and the case that unravels involves government secrets, an international conspiracy, and a mystery that Decker's perfect memory may be the only thing capable of solving.",
+      "tone": "Propulsive, conspiratorial, tightly plotted",
+      "pacing": "Fast",
+      "themes": [
+        "government conspiracy",
+        "surveillance and secrets",
+        "justice",
+        "memory",
+        "international intrigue"
+      ],
+      "setting": "Washington D.C. and beyond; contemporary USA",
+      "comparable_books": [
+        "Memory Man - David Baldacci",
+        "The Last Mile - David Baldacci",
+        "Long Shadows - David Baldacci"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "FBI procedural",
+          "conspiracy thriller",
+          "unique protagonist ability",
+          "fast-paced Washington D.C. thriller"
+        ],
+        "negative": [
+          "readers wanting standalone thrillers",
+          "those who dislike government intrigue plots"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Memory Man - David Baldacci": {
       "title": "Memory Man",
       "author": "David Baldacci",
       "series": "Amos Decker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Amos Decker, a former NFL player turned detective whose traumatic brain injury gave him a perfect, indelible memory, returns to his hometown to find his entire family has been murdered — and that the killer has left clues meant only for him. As a mass shooting at the local high school follows, Decker must use his extraordinary gift to stop a deeply personal evil.",
+      "tone": "Dark, emotionally raw, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "grief and loss",
+        "memory and identity",
+        "justice and revenge",
+        "trauma",
+        "small-town crime"
+      ],
+      "setting": "Burlington, Ohio (small Midwestern town); contemporary USA",
+      "comparable_books": [
+        "The Fix - David Baldacci",
+        "The Last Mile - David Baldacci",
+        "I Am Pilgrim - Terry Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unique protagonist ability",
+          "emotionally stakes-laden thriller",
+          "crime procedural",
+          "series launch",
+          "fast-paced"
+        ],
+        "negative": [
+          "readers sensitive to depictions of mass violence",
+          "those wanting light crime fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fallen - David Baldacci": {
