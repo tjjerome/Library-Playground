@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3853,
-  "total_pending": 747,
+  "total_catalogued": 3873,
+  "total_pending": 727,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -210716,54 +210716,97 @@
       "title": "Citadel of Fire",
       "author": "Matthew Wolf",
       "series": "The Ronin Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Seventeen-year-old Gray, descended from a legendary elemental hero known as a Ronin, must brave a dangerous desert journey to return to his wizard's keep — unaware he has been branded a murderous traitor. Along the way he discovers living family and confronts a fanatical evil spreading across the magical world of Farhaven.",
+      "tone": "adventurous, fast-paced, coming-of-age",
+      "pacing": "Fast",
+      "themes": [
+        "destiny",
+        "identity",
+        "good vs evil",
+        "elemental magic",
+        "heroism"
+      ],
+      "setting": "Farhaven — a richly built secondary world of elemental magic, wizard keeps, and dangerous deserts",
+      "comparable_books": [
+        "The Wheel of Time - Robert Jordan",
+        "The Knife's Edge - Matthew Wolf",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "chosen-one narrative",
+          "found family",
+          "ensemble cast",
+          "fast-paced action",
+          "elemental magic system",
+          "YA-friendly tone"
+        ],
+        "negative": [
+          "readers who dislike YA tropes",
+          "those who prefer grimdark or subversive fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Tim Gerard Reynolds, a highly acclaimed audiobook narrator well suited to epic fantasy.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bastion of Sun - Matthew Wolf": {
       "title": "Bastion of Sun",
       "author": "Matthew Wolf",
       "series": "The Ronin Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gray and his friends, now knowing themselves to be reborn elemental heroes, travel to the City of Sun to unite the legendary Ronin and end a growing evil — but a deadly plague, a missing sword, and a blood pact threaten to tear them apart before they can even begin.",
+      "tone": "adventurous, ensemble-driven, escalating stakes",
+      "pacing": "Moderate",
+      "themes": [
+        "unity",
+        "elemental powers",
+        "destiny",
+        "sacrifice",
+        "good vs evil"
+      ],
+      "setting": "Farhaven — the magical realm's City of Sun and surrounding territories",
+      "comparable_books": [
+        "The Wheel of Time - Robert Jordan",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Mistborn - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast",
+          "elemental magic system",
+          "quest narrative",
+          "found family",
+          "expanding world-building"
+        ],
+        "negative": [
+          "readers bothered by large ensemble casts with many POVs",
+          "those who prefer tighter single-protagonist narratives"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Tim Gerard Reynolds, consistent with the series' acclaimed audio production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Visions of a Hidden - Matthew Wolf": {
@@ -210771,134 +210814,234 @@
       "author": "Matthew Wolf",
       "series": "The Ronin Saga",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Epic Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A novella set in the Ronin Saga world following Rydel, an elf training to join the mythic rank of warriors known as the Hidden — an elite order of near-mythical combatants. He must endure brutal trials and venture into a deadly enchanted forest to earn his place, while protecting the person he loves from unspeakable danger.",
+      "tone": "action-driven, romantic, lore-expanding",
+      "pacing": "Fast",
+      "themes": [
+        "belonging",
+        "sacrifice",
+        "brotherhood",
+        "proving oneself",
+        "love"
+      ],
+      "setting": "Farhaven — including the perilous Drymaus Forest, a place no elf or man has returned from",
+      "comparable_books": [
+        "Legends - Matthew Wolf",
+        "The Knife's Edge - Matthew Wolf"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "training arcs",
+          "stoic warrior protagonists",
+          "lore-expanding side stories",
+          "romance subplots",
+          "fans of the Ronin Saga"
+        ],
+        "negative": [
+          "readers unfamiliar with the main series",
+          "those who dislike novellas or short fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Legends - Matthew Wolf": {
       "title": "Legends",
       "author": "Matthew Wolf",
       "series": "The Ronin Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0 (Prequel)",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A short story prequel to the Ronin Saga, uncovering the origin of the legendary Ronin and their final breaking. Kail, leader of the Ronin and wielder of wind, discovers that a traitor lurks within his inner circle — and that the darkness threatening them is far closer than any of them imagined.",
+      "tone": "tense, mythic, revelatory",
+      "pacing": "Fast",
+      "themes": [
+        "betrayal",
+        "heroism",
+        "legend and myth",
+        "elemental powers",
+        "downfall"
+      ],
+      "setting": "Farhaven at its height — the Hall of Winds and the world of the original Ronin, set centuries before the main series",
+      "comparable_books": [
+        "Visions of a Hidden - Matthew Wolf",
+        "The Knife's Edge - Matthew Wolf"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lore-hungry series fans",
+          "prequel enthusiasts",
+          "mythic origin stories",
+          "short story format"
+        ],
+        "negative": [
+          "readers new to the series",
+          "those who dislike short fiction without full novel context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tides of Fate - Matthew Wolf": {
       "title": "Tides of Fate",
       "author": "Matthew Wolf",
       "series": "The Ronin Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gray is dying from a blood pact while the world of Farhaven faces a new threat: the thief-lord Mathelstan seeks dominion over all the thiefdoms by stealing the Ronin's blades, as an ancient evil moves to extinguish the Ronin's quest once and for all. The group splits across treacherous seas in pursuit of the remaining elemental heroes.",
+      "tone": "swashbuckling, adventurous, high-stakes",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "fate",
+        "unity",
+        "power and corruption",
+        "elemental magic"
+      ],
+      "setting": "Farhaven — the ocean city of Median, the fallen Great Kingdom of Metal, and the open seas",
+      "comparable_books": [
+        "The Wheel of Time - Robert Jordan",
+        "Mistborn - Brandon Sanderson",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sea adventure",
+          "pirates",
+          "ensemble cast",
+          "escalating stakes",
+          "elemental magic"
+        ],
+        "negative": [
+          "readers fatigued by large casts",
+          "those who dislike maritime settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Tim Gerard Reynolds, consistent with the series' acclaimed audio production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Heart of Flesh - Matthew Wolf": {
       "title": "Heart of Flesh",
       "author": "Matthew Wolf",
       "series": "The Ronin Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gray, Ayva, and Helix arrive in a city of hedonism and political scheming, where they must compete in a brutal Grand Tournament — fighting for their lives in an arena where each victor absorbs the elemental spark of the defeated. Time is running out as they race to collect nine elemental stones and unite the Great Kingdoms before a rising shadow consumes the world.",
+      "tone": "action-packed, politically charged, epic culmination",
+      "pacing": "Fast",
+      "themes": [
+        "power and corruption",
+        "sacrifice",
+        "unity",
+        "good vs evil",
+        "identity"
+      ],
+      "setting": "Farhaven — the City of Flesh, a decadent arena-city ruled by a scheming Queen",
+      "comparable_books": [
+        "The Wheel of Time - Robert Jordan",
+        "Mistborn - Brandon Sanderson",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "arena combat",
+          "power progression",
+          "ensemble payoff",
+          "epic fantasy conclusions",
+          "elemental magic"
+        ],
+        "negative": [
+          "readers who haven't read prior books in the series",
+          "those who dislike arena/tournament tropes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Michael Kramer, a top-tier epic fantasy narrator.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dark Theory - Wick Welker": {
       "title": "Dark Theory",
       "author": "Wick Welker",
       "series": "Dark Law",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the fringe of a broken civilization, an amnesiac robot named Beetro awakens with one directive — find his creator — and teams up with Miree, a tormented thief, to pull off an impossible heist for a flake of dark matter. As they journey through a feudal wasteland, they discover the stars are vanishing from the sky and the entire galaxy is unraveling.",
+      "tone": "ambitious, cerebral, propulsive, darkly fun",
+      "pacing": "Fast",
+      "themes": [
+        "artificial consciousness",
+        "identity",
+        "survival",
+        "morality",
+        "cosmic scale catastrophe"
+      ],
+      "setting": "A far-future feudal world blending science fiction and fantasy trappings — radioactive wastelands, warlord fiefdoms, and a galaxy on the verge of collapse",
+      "comparable_books": [
+        "The Remembrance of Earth's Past - Liu Cixin",
+        "The Martian - Andy Weir",
+        "Wool - Hugh Howey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "science fantasy blend",
+          "robot/AI protagonist",
+          "hard SF concepts",
+          "quest narrative",
+          "morally complex characters",
+          "big-scope world-building"
+        ],
+        "negative": [
+          "readers who dislike lengthy books (800+ pages)",
+          "those who prefer pure fantasy or pure SF without blending",
+          "pacing issues noted by some reviewers mid-book"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "War and Peace - Leo Tolstoy": {
@@ -210906,80 +211049,150 @@
       "author": "Leo Tolstoy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Set against the backdrop of Napoleon's invasion of Russia, this sweeping epic follows aristocratic Russian families — including the Bezukhovs, Bolkonskys, and Rostovs — across war, love, and spiritual awakening during one of history's most tumultuous periods. Tolstoy weaves intimate personal drama with grand historical panorama to create one of literature's greatest novels.",
+      "tone": "panoramic, philosophical, deeply humanist",
+      "pacing": "Slow",
+      "themes": [
+        "war and peace",
+        "fate vs free will",
+        "love and marriage",
+        "class and society",
+        "spiritual redemption",
+        "history"
+      ],
+      "setting": "Russia and Europe, primarily 1805–1820, spanning Napoleonic battlefields, St. Petersburg salons, and Russian country estates",
+      "comparable_books": [
+        "Anna Karenina - Leo Tolstoy",
+        "Les Misérables - Victor Hugo",
+        "The Brothers Karamazov - Fyodor Dostoevsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping historical epics",
+          "philosophical depth",
+          "large ensemble casts",
+          "classic literature enthusiasts",
+          "character-driven narrative"
+        ],
+        "negative": [
+          "readers who dislike slow pacing or philosophical digressions",
+          "those daunted by very long books",
+          "casual readers unfamiliar with Russian names"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fugitive Telemetry - Martha Wells": {
       "title": "Fugitive Telemetry",
       "author": "Martha Wells",
       "series": "The Murderbot Diaries",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Murderbot, the lovably antisocial part-human, part-robot security construct, must investigate an unexplained dead body found on Preservation Station — a murder mystery that forces it to collaborate with the local security team it would rather avoid. A compact, witty procedural in the Murderbot universe.",
+      "tone": "darkly comic, wry, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "identity and autonomy",
+        "reluctant cooperation",
+        "trust",
+        "found family",
+        "what it means to be human"
+      ],
+      "setting": "Preservation Station — a human-run space habitat in a far-future interstellar civilization",
+      "comparable_books": [
+        "All Systems Red - Martha Wells",
+        "A Long Way to a Small Angry Planet - Becky Chambers",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "social-anxiety protagonist",
+          "compact fast reads",
+          "SF mystery",
+          "lovable introverted POV character",
+          "darkly comic tone"
+        ],
+        "negative": [
+          "readers who dislike novellas",
+          "those wanting standalone entry points (requires series context)",
+          "readers who dislike first-person close POV"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kevin R. Free's narration is widely praised as the definitive voice of Murderbot and greatly enhances the character's comedic and emotional depth.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Shadow of the Wind - Carlos Ruiz Zafon": {
       "title": "The Shadow of the Wind",
-      "author": "Carlos Ruiz Zafon",
+      "author": "Carlos Ruiz Zafón",
       "series": "The Cemetery of Forgotten Books",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Literary Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In post-Civil War Barcelona, young Daniel Sempere discovers a mysterious novel by a forgotten author, Julián Carax, and becomes obsessed with uncovering the truth about the man's life and death — only to discover that someone is hunting down and destroying every last copy of Carax's books. A labyrinthine, atmospheric tale of books, obsession, and dark secrets.",
+      "tone": "lyrical, atmospheric, gothic, romantic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "books and obsession",
+        "memory and loss",
+        "love and betrayal",
+        "the power of stories",
+        "war and its aftermath"
+      ],
+      "setting": "Barcelona, primarily 1940s–1950s, in the repressive shadow of Franco's regime",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "The Book Thief - Markus Zusak",
+        "Perfume - Patrick Süskind"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "bibliophiles",
+          "atmospheric literary fiction",
+          "gothic mystery",
+          "historical settings",
+          "lyrical prose",
+          "slow-burn revelations"
+        ],
+        "negative": [
+          "readers who prefer fast-paced thrillers",
+          "those who dislike baroque or ornate prose",
+          "plot-first readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Brother - Ania Ahlborn": {
@@ -210987,26 +211200,50 @@
       "author": "Ania Ahlborn",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in the Appalachian backwoods of 1980s West Virginia, nineteen-year-old Michael Morrow has grown up as the adopted son of a murderous family — forced to participate in their brutal rituals, but yearning for escape. When he meets a girl in a nearby town and glimpses a life beyond his nightmare family, his domineering brother Rebel moves to keep him trapped in the darkness.",
+      "tone": "oppressively dreadful, visceral, psychologically intense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "family trauma and abuse",
+        "cycles of violence",
+        "identity and escape",
+        "free will vs coercion",
+        "survival"
+      ],
+      "setting": "Rural West Virginia Appalachia, 1980s — an isolated farmhouse far from any road",
+      "comparable_books": [
+        "The Troop - Nick Cutter",
+        "Seed - Ania Ahlborn",
+        "The Devil All the Time - Donald Ray Pollock"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "extreme horror",
+          "psychological depth",
+          "slow-building dread",
+          "Southern Gothic atmosphere",
+          "shocking twists"
+        ],
+        "negative": [
+          "readers averse to graphic gore or violence",
+          "those who dislike cannibal/murder family tropes",
+          "not for the faint of heart"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Guardians - John Grisham": {
@@ -211014,53 +211251,94 @@
       "author": "John Grisham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Legal Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Cullen Post, a former priest turned innocence attorney with a small nonprofit called Guardian Ministries, takes on the case of Quincy Miller — a Black man who has spent twenty-two years in prison for a murder he insists he did not commit. As Post digs deeper, he uncovers corruption reaching from a local sheriff to a dangerous drug cartel.",
+      "tone": "propulsive, righteous, tense",
+      "pacing": "Fast",
+      "themes": [
+        "wrongful conviction",
+        "justice and injustice",
+        "institutional corruption",
+        "race and the legal system",
+        "perseverance"
+      ],
+      "setting": "Contemporary Deep South USA — small-town Florida courthouses, prisons, and the corridors of the criminal justice system",
+      "comparable_books": [
+        "The Innocent Man - John Grisham",
+        "Just Mercy - Bryan Stevenson",
+        "A Time to Kill - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal thriller fans",
+          "wrongful conviction narratives",
+          "propulsive plotting",
+          "social justice themes",
+          "Grisham fans"
+        ],
+        "negative": [
+          "readers who prefer courtroom drama over investigation",
+          "those who find legal procedurals dry"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Michael Beck in a performance widely praised as one of the best Grisham audiobook experiences.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Better Man - Louise Penny": {
       "title": "A Better Man",
       "author": "Louise Penny",
       "series": "Chief Inspector Armand Gamache",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 15",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Chief Inspector Gamache returns to the Sûreté du Québec under a cloud of public suspicion and internal hostility, while investigating the disappearance of a young woman during catastrophic spring flooding in the Québec countryside. The case is entangled with a volatile husband, rising floodwaters, and Gamache's own precarious standing.",
+      "tone": "contemplative, emotionally rich, suspenseful",
+      "pacing": "Moderate",
+      "themes": [
+        "justice and redemption",
+        "community",
+        "marriage and domestic violence",
+        "institutional loyalty",
+        "the weight of leadership"
+      ],
+      "setting": "Three Pines village and the Québec countryside, during a spring flood — contemporary Canada",
+      "comparable_books": [
+        "Still Life - Louise Penny",
+        "The Long Call - Ann Cleeves",
+        "Inspector Morse - Colin Dexter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery with depth",
+          "recurring beloved characters",
+          "strong sense of place",
+          "morally complex detective",
+          "emotional resonance"
+        ],
+        "negative": [
+          "readers who want fast-paced thrillers",
+          "those who dislike lengthy series",
+          "readers new to the series (best experienced in order)"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ralph Cosham's narration (and later Adam Sims) is beloved by series fans and greatly enhances the atmospheric Québec setting.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Chesapeake - James A. Michener": {
@@ -211068,26 +211346,49 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Spanning four centuries from 1583 to 1978, this sweeping novel traces the lives of the families, tribes, and animals that inhabit the Chesapeake Bay region of Maryland — weaving together Native American history, colonial settlement, slavery, the Civil War, and the modern era into a rich tapestry of American life.",
+      "tone": "expansive, lyrical, generational",
+      "pacing": "Slow",
+      "themes": [
+        "American history",
+        "nature and the environment",
+        "race and slavery",
+        "family legacy",
+        "place as identity"
+      ],
+      "setting": "The Chesapeake Bay region of Maryland, spanning 1583 to 1978",
+      "comparable_books": [
+        "Hawaii - James A. Michener",
+        "Centennial - James A. Michener",
+        "The Source - James A. Michener"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping generational sagas",
+          "deep historical immersion",
+          "sense of place",
+          "nature writing",
+          "American history enthusiasts"
+        ],
+        "negative": [
+          "readers who prefer tight plotting",
+          "those averse to very long books",
+          "readers who dislike omnibus-style multi-era narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Path Between the Seas - David McCullough": {
@@ -211095,107 +211396,190 @@
       "author": "David McCullough",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A magisterial account of the creation of the Panama Canal, from the failed French attempt in the 1880s through the American triumph completed in 1914, exploring the engineering heroics, political intrigue, disease, and human drama behind one of the greatest construction projects in history.",
+      "tone": "narrative, authoritative, compelling",
+      "pacing": "Moderate",
+      "themes": [
+        "ambition and ingenuity",
+        "imperialism and power",
+        "engineering and human achievement",
+        "disease and medicine",
+        "American expansionism"
+      ],
+      "setting": "Panama and the United States, approximately 1870–1914",
+      "comparable_books": [
+        "The Great Bridge - David McCullough",
+        "Devil in the White City - Erik Larson",
+        "Empire of the Summer Moon - S.C. Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction fans",
+          "history enthusiasts",
+          "engineering and infrastructure stories",
+          "McCullough fans",
+          "readers who like character-driven history"
+        ],
+        "negative": [
+          "readers who prefer academic or dry historical accounts",
+          "those uninterested in American political history"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "David McCullough himself narrated this title; his warm, authoritative voice is considered one of the finest in non-fiction audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Ark and the Empire - Michael Livingston": {
       "title": "The Ark and the Empire",
       "author": "Michael Livingston",
       "series": "The Shards of Heaven",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Julius Caesar's assassination plunges Rome into civil war and Octavian battles Marc Antony and Cleopatra for supremacy, Juba — Numidian prince and adopted brother of Octavian — pursues the legendary Shards of Heaven, divine artifacts of devastating power. Caught in the chaos are Roman legionnaires, a Greek librarian, spies, and Cleopatra's young daughter.",
+      "tone": "epic, historically grounded, action-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "power and empire",
+        "religion and myth",
+        "vengeance",
+        "loyalty",
+        "the hidden forces behind history"
+      ],
+      "setting": "Ancient Rome and Alexandria, circa 31 BCE — the fall of the Roman Republic and rise of the Empire",
+      "comparable_books": [
+        "Gates of Fire - Steven Pressfield",
+        "Conn Iggulden's Emperor series",
+        "The Shards of Heaven - Michael Livingston (original trilogy)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fantasy fans",
+          "ancient Rome enthusiasts",
+          "artifact-quest narratives",
+          "ensemble casts",
+          "mythology blended with history"
+        ],
+        "negative": [
+          "readers who prefer pure history without fantasy elements",
+          "those unfamiliar with the period who find it dense"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Saturation Point - Adrian Tchaikovsky": {
       "title": "Saturation Point",
       "author": "Adrian Tchaikovsky",
       "series": "Terrible Worlds: Transformations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dr. Jasmine Marks is sent back into the 'Zone' — a growing equatorial band of lethal rainforest created by climate change, where warm-blooded animals cannot survive — twenty years after a disastrous first expedition. What begins as a corporate-sponsored research mission rapidly becomes something far stranger and more dangerous.",
+      "tone": "claustrophobic, cerebral, tense, speculative",
+      "pacing": "Fast",
+      "themes": [
+        "climate change and human adaptation",
+        "evolution and transformation",
+        "corporate exploitation",
+        "survival",
+        "what it means to be human"
+      ],
+      "setting": "A near-future Earth, centred on a lethal equatorial climate zone — part Heart of Darkness expedition narrative, part speculative biology thriller",
+      "comparable_books": [
+        "Annihilation - Jeff VanderMeer",
+        "A Roadside Picnic - Strugatsky Brothers",
+        "Children of Time - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "speculative biology",
+          "climate fiction",
+          "novella format",
+          "weird fiction fans",
+          "Tchaikovsky fans",
+          "tense expedition narratives"
+        ],
+        "negative": [
+          "readers who prefer hard SF without horror elements",
+          "those who dislike ambiguous or philosophical endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Flames of Mira - Clay Harmon": {
       "title": "Flames of Mira",
       "author": "Clay Harmon",
       "series": "Rift Walker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the subterranean volcanic world of Mira, Ig — a powerful elemental enslaved by a flesh-binding curse that will kill him if he disobeys — serves as enforcer to the ruthless Magnate Sorrelo Adriann. When Sorrelo is overthrown in a political coup, Ig must navigate impossible choices: break his bond or commit atrocities to keep his master from reclaiming the throne.",
+      "tone": "grimdark, morally complex, tense",
+      "pacing": "Fast",
+      "themes": [
+        "slavery and freedom",
+        "redemption",
+        "moral compromise",
+        "power and corruption",
+        "found identity"
+      ],
+      "setting": "Ra Thuzan — a subterranean world of volcanic caverns, underground cities, and frozen wastelands on the surface",
+      "comparable_books": [
+        "Mistborn - Brandon Sanderson",
+        "The Hand of the Sun King - J.T. Greathouse",
+        "The Two-Faced Queen - Nick Martell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "hard magic systems",
+          "morally grey protagonists",
+          "unique underground world-building",
+          "political intrigue"
+        ],
+        "negative": [
+          "readers who prefer hopeful or light fantasy",
+          "those who dislike morally compromised protagonists forced into violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Poland - James A. Michener": {
@@ -211203,53 +211587,99 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A sweeping multi-generational saga spanning seven centuries of Polish history, following three fictional families — noble, peasant, and Jewish — through the Mongol invasions, the Partitions, the world wars, the Nazi occupation, and the rise of the Solidarity movement, painting a panoramic portrait of a nation repeatedly tested and reborn.",
+      "tone": "expansive, tragic, resilient, generational",
+      "pacing": "Slow",
+      "themes": [
+        "national identity and resilience",
+        "oppression and survival",
+        "class struggle",
+        "war and occupation",
+        "the Jewish experience in Poland"
+      ],
+      "setting": "Poland, from the 13th century through the early 1980s",
+      "comparable_books": [
+        "Chesapeake - James A. Michener",
+        "The Painted Bird - Jerzy Kosiński",
+        "Centennial - James A. Michener"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping historical epics",
+          "Eastern European history",
+          "multi-generational sagas",
+          "WWII and Holocaust-adjacent narratives",
+          "Michener fans"
+        ],
+        "negative": [
+          "readers who prefer tight plots",
+          "those averse to sprawling, very long books",
+          "readers who want character-focused rather than history-focused narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ironclads - Adrian Tchaikovsky": {
       "title": "Ironclads",
       "author": "Adrian Tchaikovsky",
       "series": "Terrible Worlds: Revolutions",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future corporate dystopia, Sergeant Ted Regan leads a small, ill-equipped squad behind enemy lines to find a missing Scion — the armoured, near-invulnerable heir of a powerful corporate family — and uncover why his supposedly impenetrable Ironclad battle suit failed. A fast, satirical military SF novella about class, war, and expendable lives.",
+      "tone": "satirical, propulsive, darkly comic, bleakly humane",
+      "pacing": "Fast",
+      "themes": [
+        "class inequality",
+        "corporate power",
+        "expendability of the poor in war",
+        "military satire",
+        "the rich vs the rest"
+      ],
+      "setting": "A near-future battlefield — a dystopian world where governments are puppets of mega-corporations and war is fought by proxy",
+      "comparable_books": [
+        "Old Man's War - John Scalzi",
+        "Starship Troopers - Robert Heinlein",
+        "Firewalkers - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military SF fans",
+          "satirical SF",
+          "novella format",
+          "class warfare themes",
+          "Tchaikovsky fans",
+          "fast propulsive reads"
+        ],
+        "negative": [
+          "readers who prefer longer novels",
+          "those who dislike military fiction",
+          "readers wanting optimistic SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Firewalkers - Adrian Tchaikovsky": {
