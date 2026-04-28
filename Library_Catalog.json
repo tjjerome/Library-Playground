@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4232,
-  "total_pending": 368,
+  "total_catalogued": 4252,
+  "total_pending": 348,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -229202,243 +229202,423 @@
       "title": "Conspiracies",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Horror/Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Repairman Jack infiltrates a convention of conspiracy theorists to investigate the disappearance of a prominent figure in the movement, only to discover that some conspiracies are disturbingly real. The case pulls him deeper into the hidden cosmic war between supernatural forces.",
+      "tone": "darkly comic, propulsive, paranoid",
+      "pacing": "Fast",
+      "themes": [
+        "conspiracy theories",
+        "cosmic horror",
+        "urban mercenary",
+        "the supernatural beneath the mundane"
+      ],
+      "setting": "Contemporary New York City; a conspiracy theorist convention",
+      "comparable_books": [
+        "The Tomb - F. Paul Wilson",
+        "Nightworld - F. Paul Wilson",
+        "Blood Music - Greg Bear"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "Lovecraftian undertones",
+          "action-thriller pacing",
+          "contemporary setting with supernatural twist",
+          "serial series with overarching mythology"
+        ],
+        "negative": [
+          "readers who dislike genre-blending",
+          "readers seeking standalone novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Crisscross - F. Paul Wilson": {
       "title": "Crisscross",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Horror/Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Repairman Jack juggles two simultaneous fix-it jobs — one involving a blackmailed nun, the other requiring him to infiltrate a dangerous cult — as both cases spiral into each other with deadly consequences. The cosmic war between the Ally and the Otherness continues to close in around him.",
+      "tone": "propulsive, darkly comic, noir-inflected",
+      "pacing": "Fast",
+      "themes": [
+        "cult manipulation",
+        "moral compromise",
+        "cosmic evil",
+        "personal loyalty"
+      ],
+      "setting": "Contemporary New York City",
+      "comparable_books": [
+        "The Haunted Air - F. Paul Wilson",
+        "Infernal - F. Paul Wilson",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "fast-paced action",
+          "supernatural thriller",
+          "series with growing mythology"
+        ],
+        "negative": [
+          "readers who dislike ongoing series obligations",
+          "pure horror readers expecting no thriller elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Harbingers - F. Paul Wilson": {
       "title": "Harbingers",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Horror/Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After the devastating events of the previous novel, a seemingly simple request to find a missing teenager plunges Repairman Jack into a chain of events that represent the darkest days of his life, as the cosmic forces of the Otherness tighten their grip. This entry marks a pivotal, emotionally brutal turn in the series arc.",
+      "tone": "bleak, propulsive, emotionally bruising",
+      "pacing": "Fast",
+      "themes": [
+        "loss and grief",
+        "cosmic war",
+        "personal sacrifice",
+        "fate vs. free will"
+      ],
+      "setting": "Contemporary New York City",
+      "comparable_books": [
+        "Bloodline - F. Paul Wilson",
+        "Ground Zero - F. Paul Wilson",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high emotional stakes",
+          "series mythology payoff",
+          "morally grey protagonist",
+          "Lovecraftian cosmic horror"
+        ],
+        "negative": [
+          "readers sensitive to character death",
+          "readers who prefer lighter tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hunter - K. Aagard": {
       "title": "The Hunter",
       "author": "K. Aagard",
       "series": "The Hunter of Fareldin",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A death-wishing veteran warrior called Strider, his loyal dire wolf companion Greer, and a desperate teenage girl named Addy form an unlikely alliance as she hires him to escort her home — only for the journey to reveal a dark conspiracy threatening her homeland. The novel is as much a story of found purpose and healing as it is of action and intrigue.",
+      "tone": "emotionally resonant, character-driven, adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "found family",
+        "grief and the will to live",
+        "loyalty",
+        "political betrayal",
+        "cost of magic"
+      ],
+      "setting": "Secondary world fantasy; medieval-inspired Fareldin with multiple races and political factions",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "morally grey protagonist",
+          "animal companion",
+          "character-driven fantasy",
+          "indie debut",
+          "grimdark-adjacent with emotional warmth"
+        ],
+        "negative": [
+          "readers who dislike large page counts",
+          "readers seeking fast-paced plot over character"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Bloodline - F. Paul Wilson": {
       "title": "Bloodline",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 11",
+      "genre": "Horror/Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Repairman Jack investigates a case involving a pregnant young woman whose unborn child may have sinister supernatural significance, entangling him further in the escalating cosmic war between the Ally and the Otherness. Dark genetic and occult secrets are at the heart of the mystery.",
+      "tone": "propulsive, dark, conspiratorial",
+      "pacing": "Fast",
+      "themes": [
+        "genetics and identity",
+        "cosmic war",
+        "protection of the innocent",
+        "secret history"
+      ],
+      "setting": "Contemporary New York City",
+      "comparable_books": [
+        "By the Sword - F. Paul Wilson",
+        "Ground Zero - F. Paul Wilson",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "supernatural thriller",
+          "propulsive pacing",
+          "series mythology"
+        ],
+        "negative": [
+          "readers who dislike Lovecraftian mythology",
+          "readers seeking standalone stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dandelion Wine - Ray Bradbury": {
       "title": "Dandelion Wine",
       "author": "Ray Bradbury",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Green Town",
+      "series_position": "Book 1",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Twelve-year-old Douglas Spaulding experiences the summer of 1928 in the small town of Green Town, Illinois, discovering the miraculous and melancholy rhythms of life, death, and memory. A lyrical and nostalgic portrait of childhood and the passage of time.",
+      "tone": "lyrical, nostalgic, bittersweet",
+      "pacing": "Slow",
+      "themes": [
+        "childhood and growing up",
+        "mortality",
+        "memory and nostalgia",
+        "the magic of the ordinary",
+        "community"
+      ],
+      "setting": "Small-town Illinois (Green Town), summer 1928",
+      "comparable_books": [
+        "Something Wicked This Way Comes - Ray Bradbury",
+        "To Kill a Mockingbird - Harper Lee",
+        "A Tree Grows in Brooklyn - Betty Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "nostalgia",
+          "quiet introspective pacing",
+          "coming-of-age",
+          "classic American literature"
+        ],
+        "negative": [
+          "readers who prefer plot-driven fiction",
+          "readers seeking genre thrills"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Bradbury's lyrical, poetic prose is exceptionally well-suited to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Moscow X - David McCloskey": {
       "title": "Moscow X",
       "author": "David McCloskey",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Damascus Station",
+      "series_position": "Book 2",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "CIA officers Sia and Max go undercover in Putin's Russia to recruit the private banker of the Kremlin, only to discover his wife Anna is a Russian intelligence officer playing her own dangerous game. The novel is a layered espionage thriller about deception, loyalty, and the shadow war between the US and Russia.",
+      "tone": "propulsive, morally complex, tense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "espionage and tradecraft",
+        "loyalty and betrayal",
+        "US-Russia relations",
+        "the cost of deception",
+        "identity under cover"
+      ],
+      "setting": "Contemporary Russia, Mexico, and CIA headquarters at Langley; Putin-era oligarchic world",
+      "comparable_books": [
+        "Damascus Station - David McCloskey",
+        "The Spy Who Came In from the Cold - John le Carré",
+        "Red Sparrow - Jason Matthews"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "authentic CIA tradecraft",
+          "morally complex characters",
+          "geopolitical thriller",
+          "propulsive pacing with depth"
+        ],
+        "negative": [
+          "readers who prefer action-heavy spy thrillers over psychological ones",
+          "readers who dislike morally ambiguous outcomes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Last Christmas - F. Paul Wilson": {
       "title": "The Last Christmas",
       "author": "F. Paul Wilson",
       "series": "Repairman Jack",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 16",
+      "genre": "Horror/Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set between Ground Zero and Fatal Error, Repairman Jack takes on a missing-person case during Christmas week that turns out to involve a creature unlike anything ever seen, while simultaneously being hired to safeguard a mysterious and dangerous object. A return to form for the series, weaving cosmic horror and thriller elements in classic Jack fashion.",
+      "tone": "propulsive, darkly comic, nostalgic",
+      "pacing": "Fast",
+      "themes": [
+        "cosmic war",
+        "found family",
+        "secrets and deception",
+        "duty and sacrifice"
+      ],
+      "setting": "Contemporary New York City, Christmas week",
+      "comparable_books": [
+        "Ground Zero - F. Paul Wilson",
+        "Fatal Error - F. Paul Wilson",
+        "The Dresden Files - Jim Butcher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series mythology payoff",
+          "morally grey protagonist",
+          "holiday setting",
+          "cosmic horror thriller"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "readers new to Repairman Jack"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Regicide Report - Charles Stross": {
       "title": "The Regicide Report",
       "author": "Charles Stross",
       "series": "Laundry Files",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bob Howard and Mo O'Brien are reluctantly pressed into service protecting Queen Elizabeth II, who has accumulated dangerous magical power, from an occult assassin dispatched by the Elder God recently installed as Prime Minister. This is the thrilling and darkly comic conclusion to the Hugo Award-winning Laundry Files series.",
+      "tone": "darkly comic, Lovecraftian, satirical",
+      "pacing": "Moderate",
+      "themes": [
+        "bureaucracy vs. cosmic horror",
+        "loyalty to the state",
+        "the monstrous nature of power",
+        "sacrifice",
+        "British politics"
+      ],
+      "setting": "Contemporary Britain; Buckingham Palace and government corridors, circa 2015 in-world timeline",
+      "comparable_books": [
+        "The Atrocity Archives - Charles Stross",
+        "The Nightmare Stacks - Charles Stross",
+        "Rivers of London - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror",
+          "workplace satire",
+          "British setting",
+          "series finale payoff",
+          "dry wit"
+        ],
+        "negative": [
+          "new readers (requires extensive series knowledge)",
+          "readers who dislike Lovecraftian mythology",
+          "readers who prefer fast pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bonk - Mary Roach": {
@@ -229446,134 +229626,239 @@
       "author": "Mary Roach",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Science writer Mary Roach explores the history and science of human sexuality research with her trademark blend of meticulous reporting and irreverent humor, visiting labs and interviewing scientists worldwide. A fascinating and funny look at what researchers have discovered — and endured — in the pursuit of understanding sex.",
+      "tone": "darkly comic, witty, curious",
+      "pacing": "Moderate",
+      "themes": [
+        "human sexuality",
+        "scientific inquiry",
+        "history of medicine",
+        "the absurdity of research",
+        "taboo and society"
+      ],
+      "setting": "Various research labs, historical records, and field visits worldwide; contemporary",
+      "comparable_books": [
+        "Stiff - Mary Roach",
+        "Gulp - Mary Roach",
+        "I Contain Multitudes - Ed Yong"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction",
+          "humor",
+          "popular science",
+          "taboo topics handled lightly",
+          "curious minds"
+        ],
+        "negative": [
+          "readers who prefer dry academic writing",
+          "readers uncomfortable with frank sexual content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Mary Roach's comedic timing and digressive footnotes translate brilliantly to audio; she narrates herself.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Casino Royale - Ian Fleming": {
       "title": "Casino Royale",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "James Bond, Agent 007, is sent to the casino at Royale-les-Eaux to bankrupt Le Chiffre, the paymaster of a Soviet terror organization, at the baccarat table before he can recoup his losses. The mission becomes intensely personal when Bond is captured and tortured, forcing a reckoning with his own profession.",
+      "tone": "cool, tense, cynical",
+      "pacing": "Moderate",
+      "themes": [
+        "Cold War espionage",
+        "good vs. evil",
+        "romanticism and disillusionment",
+        "masculinity and vulnerability",
+        "betrayal"
+      ],
+      "setting": "Post-WWII France; casino and resort town of Royale-les-Eaux, 1953",
+      "comparable_books": [
+        "Live and Let Die - Ian Fleming",
+        "The Spy Who Came In from the Cold - John le Carré",
+        "The Day of the Jackal - Frederick Forsyth"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic spy fiction",
+          "Cold War setting",
+          "iconic character",
+          "brisk plotting",
+          "period atmosphere"
+        ],
+        "negative": [
+          "readers sensitive to dated gender politics",
+          "readers expecting modern moral complexity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Under the Blood-Red Sun - Graham Salisbury": {
       "title": "Under the Blood-Red Sun",
       "author": "Graham Salisbury",
       "series": "Prisoners of the Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thirteen-year-old Tomi Nakaji, a Japanese-American boy in Hawaii, watches his life shatter when Japan attacks Pearl Harbor on December 7, 1941, and his father and grandfather are imprisoned by the U.S. government. Tomi must find the courage to hold his family together amid a tide of fear and racial prejudice.",
+      "tone": "earnest, emotional, historically grounded",
+      "pacing": "Moderate",
+      "themes": [
+        "racial prejudice",
+        "loyalty and identity",
+        "family bonds",
+        "war and its consequences",
+        "coming of age"
+      ],
+      "setting": "Honolulu, Hawaii; December 1941 and aftermath of Pearl Harbor attack",
+      "comparable_books": [
+        "Snow Falling on Cedars - David Guterson",
+        "Farewell to Manzanar - Jeanne Wakatsuki Houston",
+        "When the Emperor Was Divine - Julie Otsuka"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "middle grade / YA",
+          "WWII setting",
+          "Japanese-American experience",
+          "Scott O'Dell Award winner"
+        ],
+        "negative": [
+          "readers seeking adult fiction",
+          "readers who dislike historical settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Empire of Silence - Christopher Ruocchio": {
       "title": "Empire of Silence",
       "author": "Christopher Ruocchio",
       "series": "Sun Eater",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Hadrian Marlowe, the scion of a powerful noble house in a distant galactic feudal empire, narrates in retrospect how he fled his destined path to become a soldier-scholar, setting him on a course toward an alien war and an act of devastating consequence. A deliberately paced space opera in the tradition of Dune, told as a tragic memoir.",
+      "tone": "lyrical, melancholic, epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fate and free will",
+        "the nature of humanity vs. the alien",
+        "class and empire",
+        "sacrifice",
+        "the cost of knowledge"
+      ],
+      "setting": "Far-future galactic empire with feudal politics; spanning multiple worlds over decades",
+      "comparable_books": [
+        "Dune - Frank Herbert",
+        "The Book of the New Sun - Gene Wolfe",
+        "A Memory of Light - Robert Jordan & Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic space opera",
+          "literary SF",
+          "unreliable narrator",
+          "slow burn with payoff",
+          "Dune fans"
+        ],
+        "negative": [
+          "readers who prefer fast-paced SF",
+          "readers who dislike dense world-building",
+          "readers who dislike tragic narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "To Ride a Rising Storm - Moniquill Blackgoose": {
       "title": "To Ride a Rising Storm",
       "author": "Moniquill Blackgoose",
       "series": "Nampeshiweisit",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Anequs and her dragon Kasaqua return home to Masquapaug for the summer after her first year at the Anglish-run dragon academy, only to find colonial encroachment threatening her community for the first time. She must fight not only for her people's right to self-governance but also navigate widening political fractures between factions.",
+      "tone": "thoughtful, politically engaged, emotionally invested",
+      "pacing": "Moderate",
+      "themes": [
+        "colonialism and resistance",
+        "indigenous sovereignty",
+        "identity and belonging",
+        "dragon bonding",
+        "political power"
+      ],
+      "setting": "Alternate history North America with Wampanoag-inspired indigenous culture; pseudo-colonial fantasy world with dragons",
+      "comparable_books": [
+        "To Shape a Dragon's Breath - Moniquill Blackgoose",
+        "The Fifth Season - N.K. Jemisin",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "own voices indigenous fantasy",
+          "dragon bonding",
+          "anti-colonial themes",
+          "YA-accessible but adult-friendly",
+          "Nebula Award winning series"
+        ],
+        "negative": [
+          "readers who prefer action-heavy fantasy",
+          "readers who dislike political themes in fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Pay the Piper - George A. Romero & Daniel Kraus": {
@@ -229581,134 +229866,240 @@
       "author": "George A. Romero & Daniel Kraus",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the tiny town of Alligator Point, Louisiana, children begin disappearing and turning up gruesomely murdered — victims of a legendary swamp entity known as the Piper. Young Renée Pontiac leads the town's desperate reckoning with the sins of their slave-trading ancestors to stop the killings. A Southern gothic horror novel completed by Daniel Kraus from George Romero's unfinished manuscript.",
+      "tone": "Southern gothic, atmospheric, socially conscious",
+      "pacing": "Moderate",
+      "themes": [
+        "ancestral sin and reckoning",
+        "community and complicity",
+        "folklore and the supernatural",
+        "childhood and innocence",
+        "racial injustice"
+      ],
+      "setting": "Alligator Point, Louisiana; contemporary small-town bayou",
+      "comparable_books": [
+        "It - Stephen King",
+        "American Gods - Neil Gaiman",
+        "The Troop - Nick Cutter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern gothic",
+          "folk horror",
+          "George Romero fans",
+          "socially conscious horror",
+          "ensemble cast"
+        ],
+        "negative": [
+          "readers who dislike graphic content involving children",
+          "readers seeking fast-paced horror"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Red City - Marie Lu": {
       "title": "Red City",
       "author": "Marie Lu",
       "series": "The New Alchemists",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate Los Angeles where alchemy is wielded by rival crime syndicates who sell a perfection-enhancing drug called sand, two childhood friends — Sam and Ari — climb the ranks of opposing factions on a collision course. Marie Lu's adult debut is a crime-fantasy epic about ambition, star-crossed loyalty, and the cost of perfection.",
+      "tone": "dark, propulsive, emotionally charged",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "ambition vs. loyalty",
+        "immigrant identity",
+        "moral compromise",
+        "star-crossed love",
+        "the corrupting pursuit of perfection"
+      ],
+      "setting": "Alternate-history contemporary Los Angeles (\"Angel City\"); magical crime syndicate underworld",
+      "comparable_books": [
+        "Jade City - Fonda Lee",
+        "Vicious - V.E. Schwab",
+        "The Atlas Six - Olivie Blake"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey characters",
+          "crime-fantasy",
+          "slow burn romance",
+          "adult urban fantasy debut",
+          "rival factions",
+          "Godfather-esque drama"
+        ],
+        "negative": [
+          "readers who dislike slow-burn pacing",
+          "readers expecting lighter YA tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "House of the Red Fish - Graham Salisbury": {
       "title": "House of the Red Fish",
       "author": "Graham Salisbury",
       "series": "Prisoners of the Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two years after Pearl Harbor, Tomi Nakaji works to raise his father's fishing sampan from the harbor bottom where the Army sank it during the war, facing community prejudice and bureaucratic obstacles as a Japanese-American boy in still-tense Hawaii. A story of perseverance, family loyalty, and quiet resistance.",
+      "tone": "earnest, hopeful, emotionally grounded",
+      "pacing": "Moderate",
+      "themes": [
+        "perseverance",
+        "racial prejudice",
+        "family loyalty",
+        "post-war recovery",
+        "community"
+      ],
+      "setting": "Honolulu, Hawaii, 1943; post-Pearl Harbor wartime America",
+      "comparable_books": [
+        "Under the Blood-Red Sun - Graham Salisbury",
+        "Eyes of the Emperor - Graham Salisbury",
+        "Farewell to Manzanar - Jeanne Wakatsuki Houston"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "WWII",
+          "middle grade / YA",
+          "Japanese-American experience",
+          "family-driven narrative"
+        ],
+        "negative": [
+          "readers seeking adult fiction",
+          "readers who dislike quiet, character-driven stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Hunt for the Bamboo Rat - Graham Salisbury": {
       "title": "Hunt for the Bamboo Rat",
       "author": "Graham Salisbury",
       "series": "Prisoners of the Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Based on a true story, seventeen-year-old Zenji Watanabe is recruited from Hawaii as a Japanese-American army translator and sent undercover to the Philippines to spy on Japanese forces before WWII; when captured, he must endure torture while protecting his identity as an American soldier. A gripping tale of courage, identity, and survival.",
+      "tone": "tense, earnest, harrowing",
+      "pacing": "Moderate",
+      "themes": [
+        "identity under threat",
+        "courage and endurance",
+        "war and its costs",
+        "duty and sacrifice",
+        "racial identity in the military"
+      ],
+      "setting": "Hawaii and the Philippines, early World War II (pre-Pearl Harbor through occupation)",
+      "comparable_books": [
+        "Eyes of the Emperor - Graham Salisbury",
+        "Under the Blood-Red Sun - Graham Salisbury",
+        "The Things They Carried - Tim O'Brien"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "WWII",
+          "true story basis",
+          "Japanese-American experience",
+          "YA/middle grade war narrative"
+        ],
+        "negative": [
+          "readers who dislike scenes of torture and captivity",
+          "readers seeking adult fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Eyes of the Emperor - Graham Salisbury": {
       "title": "Eyes of the Emperor",
       "author": "Graham Salisbury",
       "series": "Prisoners of the Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sixteen-year-old Eddie Okubo lies about his age to enlist in the U.S. Army after Pearl Harbor, only to be segregated with other Japanese-American soldiers, subjected to racist degradation, and used in a secret and morally disturbing military experiment involving attack dogs trained to hunt by scent. A frank account of a little-known chapter of WWII history.",
+      "tone": "unflinching, earnest, historically resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "racism and military discrimination",
+        "patriotism and its limits",
+        "duty and dignity",
+        "Japanese-American experience in WWII",
+        "resilience"
+      ],
+      "setting": "U.S. military bases in the South and Pacific, 1941–1942",
+      "comparable_books": [
+        "Under the Blood-Red Sun - Graham Salisbury",
+        "House of the Red Fish - Graham Salisbury",
+        "When the Emperor Was Divine - Julie Otsuka"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "WWII",
+          "YA/middle grade",
+          "own voices adjacent",
+          "little-known history"
+        ],
+        "negative": [
+          "readers sensitive to racial discrimination content",
+          "readers seeking adult fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "An Instance of the Fingerpost - Iain Pears": {
@@ -229716,26 +230107,49 @@
       "author": "Iain Pears",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in Restoration Oxford, the same series of events — centered on the suspicious death of a don and the fate of a young woman accused of witchcraft — is narrated by four unreliable witnesses, each presenting their own radically different account of what truly happened. A masterful and labyrinthine novel about truth, perspective, and the limits of knowledge.",
+      "tone": "erudite, labyrinthine, unsettling",
+      "pacing": "Slow",
+      "themes": [
+        "truth and subjectivity",
+        "unreliable narration",
+        "religion and science in conflict",
+        "power and gender",
+        "justice and persecution"
+      ],
+      "setting": "Oxford, England, 1660s; Restoration period amid tensions between religion and early science",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Crimson Petal and the White - Michel Faber"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrator",
+          "historical fiction",
+          "literary mystery",
+          "erudite prose",
+          "puzzle-box structure"
+        ],
+        "negative": [
+          "readers who prefer linear narratives",
+          "readers who dislike ambiguous endings",
+          "readers who want fast-paced plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dunstan - Conn Iggulden": {
