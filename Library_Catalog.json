@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3993,
-  "total_pending": 607,
+  "total_catalogued": 4013,
+  "total_pending": 587,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -217626,53 +217626,101 @@
       "author": "George Saunders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the night Abraham Lincoln visits the crypt where his young son Willie has been buried, a host of ghosts in an in-between realm bear witness to a father's grief and their own unresolved lives. Told through an innovative polyphonic structure blending historical sources with invented voices, the novel explores mortality, loss, and political darkness.",
+      "tone": "Elegiac, experimental, darkly comic, deeply moving",
+      "pacing": "Moderate",
+      "themes": [
+        "grief",
+        "mortality",
+        "the afterlife",
+        "political leadership",
+        "history",
+        "parenthood"
+      ],
+      "setting": "Washington DC, 1862 — a graveyard bardo populated by Civil War-era ghosts",
+      "comparable_books": [
+        "The Lovely Bones - Alice Sebold",
+        "A Visit from the Goon Squad - Jennifer Egan",
+        "Cloud Atlas - David Mitchell",
+        "Here I Am - Jonathan Safran Foer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "experimental narrative structure",
+          "literary fiction",
+          "polyphonic voices",
+          "historical setting",
+          "Booker Prize winner",
+          "darkly comic tone",
+          "meditation on grief"
+        ],
+        "negative": [
+          "conventional narrative",
+          "straightforward prose",
+          "genre plot-driven fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast audiobook with over 160 voice actors is widely considered the definitive way to experience the polyphonic structure.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lancelot - Giles Kristian": {
       "title": "Lancelot",
       "author": "Giles Kristian",
       "series": "The Arthurian Tales",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in 5th-century Britain beset by Saxon invaders and the dying reign of Uther Pendragon, the novel tells the story of Lancelot — the most revered yet reviled of Arthur's knights — from boyhood refugee to lord of war, in his own words. It weaves his fateful relationships with Arthur and Guinevere into a visceral, tragic retelling of the Arthurian legend.",
+      "tone": "Lyrical, epic, tragic, visceral",
+      "pacing": "Moderate",
+      "themes": [
+        "honour and betrayal",
+        "love and loyalty",
+        "coming of age",
+        "identity",
+        "fate"
+      ],
+      "setting": "Post-Roman Britain, 5th century — moors, fortresses, and battlefields of a fractured island",
+      "comparable_books": [
+        "The Winter King - Bernard Cornwell",
+        "The Once and Future King - T.H. White",
+        "Camelot - Giles Kristian",
+        "Uther - Jack Whyte"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arthurian legend retelling",
+          "first-person historical voice",
+          "lyrical prose",
+          "visceral battle scenes",
+          "tragic love story",
+          "morally complex protagonist"
+        ],
+        "negative": [
+          "light or cosy historical fiction",
+          "fantasy magic systems",
+          "happy endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Philip Stevens to high praise; the intimate first-person voice translates beautifully to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "North American Lake Monsters - Nathan Ballingrud": {
@@ -217680,26 +217728,51 @@
       "author": "Nathan Ballingrud",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Shirley Jackson Award-winning debut story collection following working-class Americans — bartenders, single mothers, drifters — confronted by monsters both supernatural and deeply human. The nine stories use horror as a lens on love, desperation, and the darkest recesses of the American psyche.",
+      "tone": "Bleak, literary, emotionally brutal, understated",
+      "pacing": "Moderate",
+      "themes": [
+        "class and poverty",
+        "monstrousness of humanity",
+        "love and ruin",
+        "American Gothic",
+        "isolation"
+      ],
+      "setting": "Contemporary American South — New Orleans bars, lakeside towns, Antarctic outposts, suburban decay",
+      "comparable_books": [
+        "Wounds - Nathan Ballingrud",
+        "Dark Gods - T.E.D. Klein",
+        "Jesus' Son - Denis Johnson",
+        "Magic Terror - Peter Straub"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary horror",
+          "working-class characters",
+          "understated dread",
+          "Shirley Jackson Award winner",
+          "short story collections",
+          "Raymond Carver comparisons"
+        ],
+        "negative": [
+          "action-heavy horror",
+          "gore-focused horror",
+          "uplifting endings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Winter Warriors - Olivier Norek": {
@@ -217707,26 +217780,50 @@
       "author": "Olivier Norek",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In November 1939, the Soviet Union invades Finland and a small group of friends from the farming village of Rautjärvi are drafted into an impossible defence — among them the legendary sniper Simo Häyhä, 'The White Death'. Drawing on diaries, journals and meticulous research, Norek captures the 98-day Winter War in a propulsive, deeply human narrative of courage, friendship, and brutal cold.",
+      "tone": "Propulsive, immersive, harrowing, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "courage and resilience",
+        "war and its costs",
+        "friendship and solidarity",
+        "resistance against overwhelming odds",
+        "national identity"
+      ],
+      "setting": "Finland, November 1939–March 1940 — snow-bound forests, front-line trenches, and frozen battlefields of the Winter War",
+      "comparable_books": [
+        "All Quiet on the Western Front - Erich Maria Remarque",
+        "The Frozen Hours - Jeff Shaara",
+        "Between Two Worlds - Olivier Norek",
+        "Snowblind - Robert Sigurðsson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive historical thrillers",
+          "WWII-era fiction",
+          "real historical figures",
+          "underdog war narratives",
+          "international translated fiction",
+          "fans of Ben Macintyre and Robert Harris"
+        ],
+        "negative": [
+          "slow meditative fiction",
+          "fictional fantasy worlds",
+          "cosy reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Halcyon Years - Alastair Reynolds": {
@@ -217734,26 +217831,48 @@
       "author": "Alastair Reynolds",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Aboard the generation starship Halcyon — centuries into its voyage — a down-at-heel private investigator named Yuri Gagarin is hired to probe the mysterious death of a member of one of the ship's most powerful families, only to find himself caught between two dangerous patrons and a conspiracy that goes back generations. A sci-fi noir murder mystery packed with Reynolds's signature hard-SF depth.",
+      "tone": "Noir, witty, intellectually playful, mystery-driven",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and memory",
+        "power and conspiracy",
+        "isolation",
+        "class hierarchy",
+        "AI and consciousness"
+      ],
+      "setting": "Aboard the generation starship Halcyon, centuries into deep-space transit — modelled on 1940s noir aesthetics",
+      "comparable_books": [
+        "Century Rain - Alastair Reynolds",
+        "Chasm City - Alastair Reynolds",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sci-fi noir",
+          "generation ship stories",
+          "murder mystery in space",
+          "hard SF",
+          "Alastair Reynolds fans",
+          "locked-room mysteries"
+        ],
+        "negative": [
+          "soft science fiction",
+          "action-first space opera",
+          "readers wanting Revelation Space continuation"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wounds - Nathan Ballingrud": {
@@ -217761,26 +217880,51 @@
       "author": "Nathan Ballingrud",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Six stories of escalating terror from Ballingrud's award-winning second collection, including the novella 'The Visible Filth' — about a New Orleans bartender who discovers a dropped phone containing images of unspeakable horror — and 'The Butcher's Table', an epic Satanist pirate voyage to the borders of Hell. The collection blurs the line between the mundane and the monstrous with literary precision.",
+      "tone": "Darkly beautiful, grotesque, atmospheric, unsettling",
+      "pacing": "Moderate",
+      "themes": [
+        "the supernatural intruding on ordinary life",
+        "hell and damnation",
+        "human monstrousness",
+        "obsession",
+        "the uncanny"
+      ],
+      "setting": "Primarily contemporary American South — New Orleans bars, Louisiana bayou — plus 19th-century high seas",
+      "comparable_books": [
+        "North American Lake Monsters - Nathan Ballingrud",
+        "Songs of a Dead Dreamer - Thomas Ligotti",
+        "The Beautiful Thing That Awaits Us All - Laird Barron",
+        "Books of Blood - Clive Barker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary horror",
+          "short story collections",
+          "hell and occult horror",
+          "Shirley Jackson Award winner",
+          "Clive Barker comparisons",
+          "darkly beautiful prose"
+        ],
+        "negative": [
+          "light or cosy horror",
+          "conventional ghost stories",
+          "plot-driven genre fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast production with multiple standout narrators widely praised for enhancing the collection.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hawaii - James A. Michener": {
@@ -217788,26 +217932,48 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "An epic saga tracing the history of the Hawaiian Islands from their volcanic geological birth through the arrival of Polynesian settlers, American missionaries, Chinese and Japanese immigrants, and into the 20th century. Michener weaves multiple family sagas across centuries to portray the forces of culture, religion, and race that shaped the islands.",
+      "tone": "Sweeping, immersive, expansive, humanistic",
+      "pacing": "Slow",
+      "themes": [
+        "cultural collision and assimilation",
+        "immigration and identity",
+        "colonialism",
+        "religion",
+        "the land and its history"
+      ],
+      "setting": "Hawaiian Islands, from prehistoric geological formation through the mid-20th century",
+      "comparable_books": [
+        "Texas - James A. Michener",
+        "Shogun - James Clavell",
+        "Centennial - James A. Michener",
+        "The Source - James A. Michener"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping multi-generational sagas",
+          "historical epics",
+          "place-as-protagonist narratives",
+          "rich worldbuilding",
+          "Michener fans"
+        ],
+        "negative": [
+          "fast-paced thrillers",
+          "tight plot-driven fiction",
+          "short books",
+          "readers impatient with slow openings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Anxious Generation - Jonathan Haidt": {
@@ -217815,26 +217981,47 @@
       "author": "Jonathan Haidt",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Social psychologist Jonathan Haidt argues that the rapid adoption of smartphones and social media in the early 2010s has caused a mental health crisis among adolescents, rewiring childhood and replacing a play-based upbringing with a phone-based one. He draws on extensive data to diagnose the problem and offers concrete recommendations for parents, schools, and policymakers.",
+      "tone": "Urgent, data-driven, accessible, prescriptive",
+      "pacing": "Moderate",
+      "themes": [
+        "adolescent mental health",
+        "technology and society",
+        "social media",
+        "parenting",
+        "public policy"
+      ],
+      "setting": "Contemporary America and the West — sociological and psychological study",
+      "comparable_books": [
+        "The Coddling of the American Mind - Jonathan Haidt & Greg Lukianoff",
+        "Stolen Focus - Johann Hari",
+        "iGen - Jean Twenge",
+        "Indistractable - Nir Eyal"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular social science",
+          "parenting concerns",
+          "technology critique",
+          "data-driven arguments",
+          "accessible non-fiction"
+        ],
+        "negative": [
+          "fiction readers",
+          "deep academic theory",
+          "pro-social media perspectives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Texas - James A. Michener": {
@@ -217842,26 +218029,50 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A mammoth multi-generational saga tracing Texas from its prehistoric origins through Spanish colonisation, the fight for independence from Mexico, the Civil War, oil booms, and into the 20th century, following fictional and real families across four centuries. Michener presents the state as a world unto itself, defined by violence, pride, and reinvention.",
+      "tone": "Sweeping, epic, richly detailed, humanistic",
+      "pacing": "Slow",
+      "themes": [
+        "settlement and conquest",
+        "cultural identity",
+        "independence and pride",
+        "immigration",
+        "the land as destiny"
+      ],
+      "setting": "Texas, spanning from prehistoric times through the late 20th century",
+      "comparable_books": [
+        "Hawaii - James A. Michener",
+        "Lonesome Dove - Larry McMurtry",
+        "Centennial - James A. Michener",
+        "Shogun - James Clavell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping historical epics",
+          "multi-generational sagas",
+          "place-as-protagonist narratives",
+          "American history",
+          "Michener fans"
+        ],
+        "negative": [
+          "fast-paced thrillers",
+          "tight plot structure",
+          "short books",
+          "readers who dislike historical preamble"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "(Don't) Call Mum - Matt Wesolowski": {
@@ -217869,26 +218080,48 @@
       "author": "Matt Wesolowski",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A folk horror novella following Leo, a burnt-out postgraduate student on a familiar train journey home to his mother, whose mundane comfort is shattered when reality shifts and folk legend closes in. Published as part of Wild Hunt Books' Northern Weird Project.",
+      "tone": "Creepy, intimate, folk-inflected, quietly dreadful",
+      "pacing": "Fast",
+      "themes": [
+        "folk horror",
+        "home and belonging",
+        "maternal bonds",
+        "the uncanny in the everyday",
+        "psychological dread"
+      ],
+      "setting": "A train journey through the north of England — present day, with a folk legend encroaching",
+      "comparable_books": [
+        "This House Isn't Haunted But We Are - Stephen Howard",
+        "Good Boy - Neil McRobert",
+        "Hex - Thomas Olde Heuvelt",
+        "The Off Season - Jodie Robins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folk horror",
+          "novellas",
+          "Northern English setting",
+          "creeping dread",
+          "Matt Wesolowski's Six Stories fans",
+          "Wild Hunt Books Northern Weird Project"
+        ],
+        "negative": [
+          "epic fantasy",
+          "action horror",
+          "long reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "This House Isn't Haunted but We Are - Stephen Howard": {
@@ -217896,26 +218129,48 @@
       "author": "Stephen Howard",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After the death of their young daughter, a grieving couple — Simon and Priya — retreat to a dilapidated cottage on the North Yorkshire Moors to rebuild their fractured marriage, only to be confronted by increasingly eerie events. Told partly from the perspective of the house itself, this gothic novella explores whether the haunting is supernatural or the couple's own unprocessed grief.",
+      "tone": "Tender, uncanny, mournful, quietly terrifying",
+      "pacing": "Moderate",
+      "themes": [
+        "grief",
+        "marriage under strain",
+        "haunted house",
+        "parenthood and loss",
+        "the nature of haunting"
+      ],
+      "setting": "North Yorkshire Moors, contemporary — a remote, dilapidated rural cottage",
+      "comparable_books": [
+        "Starve Acre - Andrew Michael Hurley",
+        "Linghun - Ai Jiang",
+        "The Turn of the Screw - Henry James",
+        "Good Boy - Neil McRobert"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grief horror",
+          "haunted house fiction",
+          "novellas",
+          "Northern English setting",
+          "literary horror",
+          "Wild Hunt Books Northern Weird Project"
+        ],
+        "negative": [
+          "action horror",
+          "graphic gore",
+          "long epics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Turbine 34 - Katherine Clements": {
@@ -217923,26 +218178,48 @@
       "author": "Katherine Clements",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the near future, during England's hottest summer on record, an unnamed environmental scientist camps alone at the base of Turbine 34 — the most remote turbine of a controversial new West Yorkshire wind farm built over an ancient peat bog — and begins to see and hear things that shouldn't be there. A folk horror novella published as the sixth and final entry in Wild Hunt Books' Northern Weird Project.",
+      "tone": "Atmospheric, slow-burning, eerie, ecologically charged",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "ecological horror",
+        "folk horror",
+        "isolation",
+        "the past haunting the present",
+        "climate and landscape"
+      ],
+      "setting": "West Yorkshire Moors, near future — a remote peat bog beneath a wind turbine",
+      "comparable_books": [
+        "Dark Matter - Michelle Paver",
+        "Wuthering Heights - Emily Brontë",
+        "The Coffin Path - Katherine Clements",
+        "Turbine 34 is for readers of those two"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folk horror",
+          "ecological horror",
+          "atmospheric novellas",
+          "Northern English landscape",
+          "slow-burn dread",
+          "Wild Hunt Books Northern Weird Project"
+        ],
+        "negative": [
+          "fast-paced action horror",
+          "long series",
+          "urban settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Good Boy - Neil McRobert": {
@@ -217950,26 +218227,51 @@
       "author": "Neil McRobert",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a boy vanishes on the outskirts of a small Northern English village, a woman discovers an old man digging a grave at the site of the disappearance — and the tale he tells her goes back decades, implicating the village's history of missing children and the loyal dog who has stood between the town and something ancient. A folk-cosmic horror novella steeped in Northern warmth, humour, and genuine dread.",
+      "tone": "Heartfelt, darkly comic, deeply moving, creeping cosmic dread",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and sacrifice",
+        "the bond between humans and dogs",
+        "ancient evil in small communities",
+        "love and grief",
+        "small-town secrets"
+      ],
+      "setting": "A small Northern English village, contemporary — fields, pubs, and ordinary streets haunted by something inhuman",
+      "comparable_books": [
+        "IT - Stephen King",
+        "The Body - Stephen King",
+        "The Fisherman - John Langan",
+        "This House Isn't Haunted but We Are - Stephen Howard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folk horror",
+          "cosmic horror",
+          "novellas",
+          "Stephen King fans",
+          "Northern English setting",
+          "animal companions in fiction",
+          "Wild Hunt Books Northern Weird Project"
+        ],
+        "negative": [
+          "readers who cannot handle animal jeopardy",
+          "grimdark",
+          "long series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Retreat - Gemma Fairclough": {
@@ -217977,26 +218279,50 @@
       "author": "Gemma Fairclough",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told through letters, blog posts, interview transcripts, and a framing non-fiction manuscript, a man named Richard investigates the mysterious wellness retreat in the Lake District that preceded his sister Julie's suicide — uncovering a cult-like institution and its charismatic, manipulative leader. Part four of Wild Hunt Books' Northern Weird Project.",
+      "tone": "Eerie, epistolary, paranoia-inducing, Shirley Jackson-esque",
+      "pacing": "Moderate",
+      "themes": [
+        "wellness culture and exploitation",
+        "cults and manipulation",
+        "grief and sisterhood",
+        "illness",
+        "the horror of the mundane"
+      ],
+      "setting": "Remote Cumbria, Lake District, 1994 and present day — a secluded wellness retreat facility",
+      "comparable_books": [
+        "The Lottery - Shirley Jackson",
+        "Come Join Our Disease - Cameron Tung",
+        "Bear Season - Gemma Fairclough",
+        "The Retreat - Mark Edwards (different book)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epistolary horror",
+          "cult fiction",
+          "wellness culture satire",
+          "Shirley Jackson fans",
+          "Northern English setting",
+          "Wild Hunt Books Northern Weird Project"
+        ],
+        "negative": [
+          "action horror",
+          "graphic gore",
+          "straightforward narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Night Birds - Christopher Golden": {
@@ -218004,53 +218330,102 @@
       "author": "Christopher Golden",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When wildlife researcher Charlie Book's ex-girlfriend Ruby shows up at his research base — a half-sunken 19th-century freighter off the coast of Galveston — with a mysterious woman and infant in tow, he harbours them as a massive storm rolls in. What the women are fleeing proves to be far more ancient and dangerous than he imagined, as 'night birds' and shadowed figures close in through the tempest.",
+      "tone": "Propulsive, claustrophobic, atmospheric, folklore-drenched",
+      "pacing": "Fast",
+      "themes": [
+        "power and its corruption",
+        "grief and trauma",
+        "witchcraft and ancient evil",
+        "sacrifice and love",
+        "isolation"
+      ],
+      "setting": "A half-sunken 19th-century freighter off Galveston, Texas, contemporary — during a hurricane",
+      "comparable_books": [
+        "Ararat - Christopher Golden",
+        "All Hallows - Christopher Golden",
+        "Road of Bones - Christopher Golden",
+        "The Fervor - Alma Katsu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "atmospheric horror-thrillers",
+          "witchcraft horror",
+          "Slavic folklore",
+          "isolated settings",
+          "propulsive pacing",
+          "Christopher Golden fans"
+        ],
+        "negative": [
+          "slow meditative horror",
+          "cosy reads",
+          "readers seeking originality over genre craft"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bone Raiders - Jackson Ford": {
       "title": "The Bone Raiders",
       "author": "Jackson Ford",
       "series": "The Rakada",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the harsh grassland steppe of the Tapestry, a fearsome band of female raiders — the Rakada, known as the Bone Raiders for wearing the bones of their kills — face extinction when a new Great Khan moves to wipe out all raider clans. Scout Sayana's desperate plan to save her people involves taming a massive fire-breathing lizard, if she can survive long enough to do it.",
+      "tone": "Irreverent, action-packed, darkly comic, found-family warm",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "cultural oppression and resistance",
+        "survival",
+        "loyalty",
+        "anti-imperialism"
+      ],
+      "setting": "The Tapestry — a Mongolian-steppe-inspired fantasy landscape of grasslands, mountains, and nomadic clans",
+      "comparable_books": [
+        "The Girl Who Could Move Sh*t With Her Mind - Jackson Ford",
+        "Kings of the Wyld - Nicholas Eames",
+        "The First Law - Joe Abercrombie",
+        "How to Train Your Dragon - Cressida Cowell (thematic)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "all-female casts",
+          "darkly comic epic fantasy",
+          "dragon-rider adjacent",
+          "fast-paced action",
+          "Mongol-inspired settings",
+          "Jackson Ford fans"
+        ],
+        "negative": [
+          "slow world-building-heavy fantasy",
+          "grimdark despair",
+          "romance-heavy fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Daedalus Is Dead - Seamus Sullivan": {
@@ -218058,26 +218433,48 @@
       "author": "Seamus Sullivan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After his death, Daedalus — greatest architect of the ancient world and father of Icarus — wanders the Greek Underworld seeking to reunite with his son, revisiting his memories of Crete, the Minotaur's labyrinth, and Icarus's fatal flight, while confronting the uncomfortable truth about what kind of man he really was. A slim, poetic, and devastating debut novella from Tor.com Publishing.",
+      "tone": "Elegiac, poetic, intimate, morally piercing",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fatherhood and failure",
+        "grief and guilt",
+        "mythology reimagined",
+        "masculinity",
+        "memory and self-deception"
+      ],
+      "setting": "The Greek Underworld (Tartarus and Hades) and flashbacks to ancient Crete — mythological antiquity",
+      "comparable_books": [
+        "Circe - Madeline Miller",
+        "The Song of Achilles - Madeline Miller",
+        "The Silence of the Girls - Pat Barker",
+        "The Penelopiad - Margaret Atwood"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Greek mythology retellings",
+          "novellas",
+          "literary fantasy",
+          "morally complex protagonists",
+          "poetic prose",
+          "fatherhood and grief themes"
+        ],
+        "negative": [
+          "action-heavy fantasy",
+          "happy resolutions",
+          "readers wanting extensive plot"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The poetic, confessional first-person prose is exceptionally well served by audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Witch of Willow Sound - Vanessa F. Penney": {
@@ -218085,80 +218482,154 @@
       "author": "Vanessa F. Penney",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When her elderly Aunt Madeline goes missing, estranged niece Fade returns to the remote Nova Scotian forest of Willow Sound, where local villagers have long blamed her aunt for their misfortunes and called her a witch. As a hurricane approaches and dark secrets emerge, Fade must untangle generations of fear, folklore, and violence against women. A fast-paced, feminist gothic debut inspired by real East Coast Canadian witch lore.",
+      "tone": "Atmospheric, darkly comic, feminist, cosy-gothic",
+      "pacing": "Fast",
+      "themes": [
+        "feminist horror",
+        "generational trauma",
+        "folk magic and witch lore",
+        "rural prejudice",
+        "family and forgiveness"
+      ],
+      "setting": "Willow Sound, Nova Scotia, Canada — a remote coastal forest and fictional village, contemporary",
+      "comparable_books": [
+        "The Crucible - Arthur Miller",
+        "The Very Secret Society of Irregular Witches - Sangu Mandanna",
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "The Coffin Path - Katherine Clements"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist horror",
+          "Canadian gothic",
+          "folklore and witch fiction",
+          "cosy horror",
+          "debut novels",
+          "atmospheric mysteries"
+        ],
+        "negative": [
+          "traditional scary horror",
+          "grimdark",
+          "readers wanting hard scares over atmosphere"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Strength of the Few - James Islington": {
       "title": "The Strength of the Few",
       "author": "James Islington",
       "series": "Hierarchy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the shocking events of The Will of the Many, Vis Telimus finds himself fractured across three separate worlds — Res, Obiteum, and Luceum — each version of himself shaped differently by circumstance as he races to prevent an oncoming Cataclysm. An instant #1 New York Times bestseller that expands Islington's Roman-inspired multiverse into an ambitious science-fantasy epic.",
+      "tone": "Intricate, propulsive, ambitious, emotionally devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity and self",
+        "power and complicity",
+        "sacrifice",
+        "political oppression",
+        "multiverse and consequence"
+      ],
+      "setting": "Three alternate worlds — Res (Roman Republic-inspired), Obiteum, and Luceum — pre-industrial fantasy civilisations with pre-Cataclysm technology",
+      "comparable_books": [
+        "The Will of the Many - James Islington",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Words of Radiance - Brandon Sanderson",
+        "The Shadow of What Was Lost - James Islington"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "intricate plotting",
+          "dark academia",
+          "morally grey protagonists",
+          "James Islington fans",
+          "Sanderson-style magic systems",
+          "multiverse fiction"
+        ],
+        "negative": [
+          "standalone fantasy",
+          "low-magic settings",
+          "readers unwilling to commit to a quartet",
+          "light cosy fantasy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Euan Morton, reached #1 on Audible's bestseller list on release day across three fantasy categories.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Symbiote - Michael Nayak": {
       "title": "Symbiote",
       "author": "Michael Nayak",
       "series": "Ice Plague Wars",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As World War III rages, American and Chinese scientists at an Antarctic research station are thrown into chaos when a visiting Chinese team arrives with a dead body — and an extremophile parasite that spreads by touch, triggering violent madness and a growing hive-mind telepathy. With rescue months away and the infected turning on each other, a small group of survivors must contain the biological weapon before summer planes carry it back to civilisation.",
+      "tone": "Propulsive, claustrophobic, terrifying, hyper-realistic",
+      "pacing": "Fast",
+      "themes": [
+        "biological horror",
+        "isolation and paranoia",
+        "geopolitical conflict",
+        "survival",
+        "scientific hubris"
+      ],
+      "setting": "Amundsen-Scott South Pole Station, Antarctica, near-future (2028) — during a World War III backdrop",
+      "comparable_books": [
+        "The Thing - John W. Campbell Jr (Who Goes There?)",
+        "The Troop - Nick Cutter",
+        "The Hot Zone - Richard Preston",
+        "Contagion (film)",
+        "The Queen - Nick Cutter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "body horror",
+          "isolated setting thrillers",
+          "sci-fi horror hybrids",
+          "Michael Crichton fans",
+          "Tom Clancy fans",
+          "The Thing comparisons",
+          "Antarctic survival fiction"
+        ],
+        "negative": [
+          "slow-paced literary fiction",
+          "readers averse to graphic violence",
+          "cosy reads"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bones of Our Stars, Blood of Our World - Cullen Bunn": {
