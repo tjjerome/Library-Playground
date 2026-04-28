@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4312,
-  "total_pending": 288,
+  "total_catalogued": 4331,
+  "total_pending": 269,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -233085,26 +233085,49 @@
       "author": "Annalee Newitz",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two timelines converge as a geologist time-traveler and a 1990s teenage girl race to prevent misogynist factions from rewriting history to erase women's rights. The novel explores how history is contested and how ordinary people can reshape the future.",
+      "tone": "urgent, feminist, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "feminism",
+        "time travel",
+        "activism",
+        "bodily autonomy",
+        "history as contested territory"
+      ],
+      "setting": "Multiple historical eras via time travel, anchored in 1990s Midwest USA and late 19th-century America; a world where time machines exist at geological sites",
+      "comparable_books": [
+        "The Power - Naomi Alderman",
+        "All Our Wrong Todays - Elan Mastai",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist SF",
+          "time travel",
+          "political urgency",
+          "dual timeline",
+          "propulsive plot",
+          "morally complex protagonists"
+        ],
+        "negative": [
+          "violence against women (content)",
+          "readers wanting light escapism"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual violence (historical)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Cartography of Sudden Death - Charlie Jane Anders": {
@@ -233112,107 +233135,175 @@
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young woman bound in servitude is swept into a time-travel adventure when her mistress is suddenly killed, as doorways through time open only at the moment of historically significant deaths. A brief but densely imagined Tor.com original.",
+      "tone": "inventive, immersive, bittersweet",
+      "pacing": "Fast",
+      "themes": [
+        "time travel",
+        "causality",
+        "servitude and agency",
+        "historical contingency"
+      ],
+      "setting": "A richly imagined alternate-world future empire, spanning multiple historical eras via time-travel \"torsions\"",
+      "comparable_books": [
+        "Six Months, Three Days - Charlie Jane Anders",
+        "Even Greater Mistakes - Charlie Jane Anders"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "inventive time travel mechanics",
+          "compact worldbuilding",
+          "queer characters",
+          "short fiction"
+        ],
+        "negative": [
+          "readers wanting closure or novel length",
+          "casual readers unfamiliar with short fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Originally released as an audiobook on Scribd with praised narration; very short run time makes audio ideal",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "If You Take My Meaning - Charlie Jane Anders": {
       "title": "If You Take My Meaning",
       "author": "Charlie Jane Anders",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The City in the Middle of the Night",
+      "series_position": "Coda / 1.5",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set after the events of The City in the Middle of the Night, ex-smuggler and revolutionary Alyssa seeks out the alien Gelet to undergo a profound transformation, becoming a new kind of being bridging humanity and the alien. A bittersweet space opera coda.",
+      "tone": "intimate, hopeful, quietly transformative",
+      "pacing": "Slow",
+      "themes": [
+        "transformation",
+        "identity",
+        "human-alien relations",
+        "survival",
+        "belonging"
+      ],
+      "setting": "The tidally locked planet of Xiosphant from The City in the Middle of the Night; far-future colony world",
+      "comparable_books": [
+        "The City in the Middle of the Night - Charlie Jane Anders",
+        "Even Greater Mistakes - Charlie Jane Anders"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alien contact",
+          "transformation themes",
+          "space opera",
+          "queer characters",
+          "short fiction"
+        ],
+        "negative": [
+          "not accessible without reading the parent novel",
+          "readers wanting standalone stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Clover - Charlie Jane Anders": {
       "title": "Clover",
       "author": "Charlie Jane Anders",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "All the Birds in the Sky",
+      "series_position": "1.5",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A companion story to All the Birds in the Sky answering the question of what happened to Patricia's cat Berkeley; a same-sex couple receives a cat as a good-luck gift on their wedding day, with quietly magical consequences spanning nine years.",
+      "tone": "gentle, fairy-tale, warmly wistful",
+      "pacing": "Slow",
+      "themes": [
+        "luck and fate",
+        "queer relationships",
+        "magic in everyday life",
+        "companionship"
+      ],
+      "setting": "Contemporary urban USA, same world as All the Birds in the Sky",
+      "comparable_books": [
+        "All the Birds in the Sky - Charlie Jane Anders",
+        "Even Greater Mistakes - Charlie Jane Anders"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy fantasy",
+          "queer relationships",
+          "fairy-tale tone",
+          "companion stories",
+          "cats"
+        ],
+        "negative": [
+          "readers unfamiliar with All the Birds in the Sky",
+          "readers wanting plot-driven stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Old Media - Annalee Newitz": {
       "title": "Old Media",
       "author": "Annalee Newitz",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Autonomous",
+      "series_position": "companion story",
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 22nd-century Canada, a formerly enslaved man now living under a new identity bonds with a robot professor over old 21st-century anime, exploring what it means to find safety, home, and the possibility of love in a world of indentured servitude and sentient bots.",
+      "tone": "quiet, reflective, bittersweet",
+      "pacing": "Slow",
+      "themes": [
+        "slavery and freedom",
+        "AI sentience",
+        "identity",
+        "found home",
+        "nostalgia"
+      ],
+      "setting": "Near-future Canada, 2145; the world of the novel Autonomous",
+      "comparable_books": [
+        "Autonomous - Annalee Newitz",
+        "Ancillary Justice - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "robot characters",
+          "future world-building",
+          "quiet character studies",
+          "AI and humanity"
+        ],
+        "negative": [
+          "readers wanting standalone stories (functions best as Autonomous companion)",
+          "readers wanting plot over mood"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "As Good as New - Charlie Jane Anders": {
@@ -233220,80 +233311,138 @@
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The world ends while Marisol, a former playwright turned pre-med student, shelters in a panic room; emerging to find a fungus-covered wasteland, she discovers a bottle containing a theater-critic genie who offers her three wishes. A post-apocalyptic spin on the three-wishes trope about the importance of art.",
+      "tone": "darkly comic, hopeful, whimsical",
+      "pacing": "Fast",
+      "themes": [
+        "art and survival",
+        "post-apocalypse",
+        "creativity",
+        "the value of storytelling",
+        "second chances"
+      ],
+      "setting": "Post-apocalyptic near-future Earth, fungus-devastated wasteland",
+      "comparable_books": [
+        "Even Greater Mistakes - Charlie Jane Anders",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "clever post-apocalypse",
+          "darkly comic",
+          "short fiction",
+          "art and creativity themes",
+          "hopeful ending"
+        ],
+        "negative": [
+          "readers wanting gritty apocalypse fiction",
+          "readers wanting longer works"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short, punchy, and comic — ideal for a single audio sitting; has been read publicly by the author",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Promises Stronger Than Darkness - Charlie Jane Anders": {
       "title": "Promises Stronger Than Darkness",
       "author": "Charlie Jane Anders",
       "series": "Unstoppable",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the conclusion of the Unstoppable trilogy, Tina and Rachael must rally a fractured galaxy against an overwhelming enemy, testing the bonds of friendship and the courage needed to fight for a future worth having. A YA space opera finale.",
+      "tone": "hopeful, emotionally charged, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "friendship",
+        "resistance",
+        "found family",
+        "sacrifice",
+        "growing up",
+        "LGBTQ+ identity"
+      ],
+      "setting": "Far-future galaxy-spanning space opera setting",
+      "comparable_books": [
+        "Victories Greater Than Death - Charlie Jane Anders",
+        "Dreams Bigger Than Heartbreak - Charlie Jane Anders",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA space opera",
+          "found family",
+          "queer protagonists",
+          "hopeful tone",
+          "fast-paced action"
+        ],
+        "negative": [
+          "readers wanting adult SF",
+          "must read series in order"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dreams Bigger Than Heartbreak - Charlie Jane Anders": {
       "title": "Dreams Bigger Than Heartbreak",
       "author": "Charlie Jane Anders",
       "series": "Unstoppable",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rachael struggles to find her artistic voice and her place among the stars while Tina is drawn deeper into galactic politics; the two friends must navigate heartbreak, identity, and an escalating threat to the universe in this YA space opera sequel.",
+      "tone": "emotional, coming-of-age, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "identity",
+        "creativity and art",
+        "friendship",
+        "queer identity",
+        "found family",
+        "grief"
+      ],
+      "setting": "Far-future interstellar space opera universe",
+      "comparable_books": [
+        "Victories Greater Than Death - Charlie Jane Anders",
+        "Promises Stronger Than Darkness - Charlie Jane Anders",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA space opera",
+          "queer protagonists",
+          "found family",
+          "emotional depth",
+          "art and creativity themes"
+        ],
+        "negative": [
+          "readers wanting adult SF",
+          "must read Book 1 first"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lessons in Magic and Disaster - Charlie Jane Anders": {
@@ -233301,26 +233450,48 @@
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jamie, a trans PhD student in New England who secretly practices witchcraft, decides to teach her grief-stricken, reclusive mother Serena magic — with disastrous consequences that ripple through Jamie's dissertation, her relationship, and her sense of family. A queer contemporary fantasy about grief, love, and the costs of magic.",
+      "tone": "warm, queer, emotionally complex with bracing anger",
+      "pacing": "Moderate",
+      "themes": [
+        "grief and recovery",
+        "mother-daughter relationships",
+        "queer community",
+        "magic as ambiguous force",
+        "academia",
+        "trans identity",
+        "18th-century women's history"
+      ],
+      "setting": "Contemporary New England, USA; present day; includes a fictional 18th-century novel-within-a-novel",
+      "comparable_books": [
+        "All the Birds in the Sky - Charlie Jane Anders",
+        "Practical Magic - Alice Hoffman",
+        "A Marvellous Light - Freya Marske"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "queer fantasy",
+          "cozy academic setting",
+          "trans protagonist",
+          "ambiguous magic",
+          "mother-daughter dynamics",
+          "literary mystery"
+        ],
+        "negative": [
+          "readers wanting high-stakes plot",
+          "readers wanting hard magic systems"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "#Selfcare - Annalee Newitz": {
@@ -233328,26 +233499,46 @@
       "author": "Annalee Newitz",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future San Francisco dominated by gig economy precarity, a young woman scrambles to keep her job at a skin care brand — until her awful boss makes the fatal mistake of angering the fae on social media, setting off supernatural consequences.",
+      "tone": "darkly comic, satirical, whimsical",
+      "pacing": "Fast",
+      "themes": [
+        "gig economy",
+        "workplace satire",
+        "urban fantasy",
+        "fae mythology",
+        "social media",
+        "worker solidarity"
+      ],
+      "setting": "Near-future San Francisco; contemporary urban fantasy world",
+      "comparable_books": [
+        "Autonomous - Annalee Newitz",
+        "The Future of Another Timeline - Annalee Newitz"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy",
+          "workplace satire",
+          "fae stories",
+          "near-future SF",
+          "short fiction",
+          "darkly comic"
+        ],
+        "negative": [
+          "readers wanting hard SF",
+          "readers wanting long-form fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Never Say You Can’t Survive - Charlie Jane Anders": {
@@ -233381,27 +233572,47 @@
       "title": "Victories Greater Than Death",
       "author": "Charlie Jane Anders",
       "series": "Unstoppable",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Tina, a teenager who carries the dormant memories of a legendary alien hero inside her, is recruited into an interstellar war and must forge new alliances to live up to her impossible destiny — while staying true to who she is on her own terms.",
+      "tone": "joyful, action-driven, queer-affirming",
+      "pacing": "Fast",
+      "themes": [
+        "identity vs. destiny",
+        "found family",
+        "queer identity",
+        "interstellar politics",
+        "courage",
+        "growing up"
+      ],
+      "setting": "Contemporary Earth transitioning to a galaxy-spanning space opera universe",
+      "comparable_books": [
+        "Dreams Bigger Than Heartbreak - Charlie Jane Anders",
+        "A Memory Called Empire - Arkady Martine",
+        "Gideon the Ninth - Tamsyn Muir"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA space opera",
+          "queer protagonists",
+          "found family",
+          "action-driven",
+          "fun and joyful tone"
+        ],
+        "negative": [
+          "readers wanting adult SF",
+          "readers who dislike YA voice"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Paper Menagerie and Other Stories - Ken Liu": {
@@ -233409,80 +233620,145 @@
       "author": "Ken Liu",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A landmark short fiction collection blending science fiction, fantasy, and myth, drawing heavily on Chinese history and culture; stories explore immigration, memory, family, and identity with profound emotional depth and technical virtuosity.",
+      "tone": "lyrical, emotionally devastating, humane",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "immigration",
+        "family and memory",
+        "cultural identity",
+        "technology and humanity",
+        "history and myth",
+        "grief"
+      ],
+      "setting": "Varied — contemporary USA, ancient China, far-future space, alternate histories",
+      "comparable_books": [
+        "Exhalation - Ted Chiang",
+        "Her Body and Other Parties - Carmen Maria Machado",
+        "Worlds Seen in Passing - Irene Gallo (ed.)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "award-winning short fiction",
+          "emotionally resonant",
+          "lyrical prose",
+          "cultural specificity",
+          "speculative fiction"
+        ],
+        "negative": [
+          "readers wanting light or escapist reading",
+          "readers who find short fiction unsatisfying"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lyrical, emotionally intense prose translates beautifully to audio; several stories have been praised in audio format",
+      "content_flags": [
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Assegai - Wilbur Smith": {
       "title": "Assegai",
       "author": "Wilbur Smith",
       "series": "Assegai",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1913 British East Africa on the eve of World War I, ex-soldier turned big-game hunter Leon Courtney is recruited by his uncle to spy on the German industrialist Count Otto von Meerbach — but complicates his mission by falling for the Count's beautiful mistress.",
+      "tone": "propulsive, romantic, adventure-driven",
+      "pacing": "Fast",
+      "themes": [
+        "war and espionage",
+        "loyalty",
+        "forbidden love",
+        "colonialism",
+        "adventure in Africa",
+        "duty vs. desire"
+      ],
+      "setting": "British East Africa (Kenya), 1913, on the eve of World War I; lush African wilderness",
+      "comparable_books": [
+        "The Triumph of the Sun - Wilbur Smith",
+        "The Pillars of the Earth - Ken Follett",
+        "Flashman - George MacDonald Fraser"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical adventure",
+          "African setting",
+          "espionage",
+          "propulsive pacing",
+          "romantic subplot"
+        ],
+        "negative": [
+          "readers sensitive to colonial-era attitudes",
+          "readers wanting literary fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Darkest Sin - D. V. Bishop": {
       "title": "The Darkest Sin",
       "author": "D. V. Bishop",
       "series": "Cesare Aldo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Florence, Spring 1537, Officer Cesare Aldo investigates the impossible murder of a naked man found inside a closed convent — while his partner Constable Strocchi pursues the mysterious remains of a missing officer of the law. Winner of the CWA Historical Dagger Award.",
+      "tone": "atmospheric, tense, richly detailed",
+      "pacing": "Moderate",
+      "themes": [
+        "justice vs. the law",
+        "religious hypocrisy",
+        "sexuality in Renaissance Italy",
+        "political intrigue",
+        "class and power"
+      ],
+      "setting": "Renaissance Florence, Italy, Spring 1537",
+      "comparable_books": [
+        "City of Vengeance - D.V. Bishop",
+        "Shardlake series - C.J. Sansom",
+        "Dissolution - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical crime fiction",
+          "Renaissance Italy",
+          "atmospheric setting",
+          "morally complex protagonist",
+          "queer protagonist"
+        ],
+        "negative": [
+          "readers wanting modern settings",
+          "readers who find period detail slow"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Worlds Seen in Passing - Irene Gallo": {
@@ -233490,26 +233766,45 @@
       "author": "Irene Gallo",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A World Fantasy Award-winning anthology collecting 40 of the best science fiction, fantasy, and horror short stories published on Tor.com during its first ten years (2008–2018), featuring Hugo and Nebula Award-winning work from authors including N.K. Jemisin, Charlie Jane Anders, Ken Liu, Leigh Bardugo, and many more.",
+      "tone": "varied — spans grimdark to whimsical to lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "diverse speculative fiction",
+        "identity and transformation",
+        "love and loss",
+        "alternate histories",
+        "science and humanity"
+      ],
+      "setting": "Varies across 40 stories — from contemporary Earth to far futures, alternate histories, and secondary worlds",
+      "comparable_books": [
+        "The Best of the Best: 20 Years of the Year's Best Science Fiction - Gardner Dozois (ed.)",
+        "The Paper Menagerie - Ken Liu",
+        "Exhalation - Ted Chiang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "award-winning short fiction",
+          "diverse voices",
+          "genre breadth",
+          "anthology lovers",
+          "SFF community touchstone"
+        ],
+        "negative": [
+          "readers who dislike anthologies",
+          "readers wanting a single sustained narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ice - Jacek Dukaj": {
@@ -233517,26 +233812,48 @@
       "author": "Jacek Dukaj",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate 1924 Warsaw where the 1908 Tunguska event unleashed the Gleissen — alien beings whose spread freezes both landscape and history, preserving the Tsarist order and preventing WWI — a dissolute young Polish mathematician is sent on the Trans-Siberian Express to find his exiled father and uncover the truth about the Ice. A 1,200-page epic blending alternate history, speculative physics, and philosophical inquiry.",
+      "tone": "dense, intellectually demanding, epic, bleak",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "alternate history",
+        "logic and reality",
+        "imperialism and resistance",
+        "identity and transformation",
+        "philosophy of history",
+        "colonial frontiers"
+      ],
+      "setting": "Alternate 1924 Central Europe and Siberia; a world where WWI never happened and a mysterious \"Ice\" has frozen history and physics",
+      "comparable_books": [
+        "Ash - Mary Gentle",
+        "The Baroque Cycle - Neal Stephenson",
+        "Solaris - Stanisław Lem"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense literary SF",
+          "alternate history",
+          "philosophical fiction",
+          "epic scale",
+          "European SF",
+          "challenging reads"
+        ],
+        "negative": [
+          "readers wanting fast-paced fiction",
+          "readers put off by 1200-page books",
+          "casual genre readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Extremely dense prose, complex philosophical discourse, and demanding alternate history require active engagement; print allows re-reading and annotation",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "One Day, Everyone Will Have Always Been Against This - Omar El Akkad": {
@@ -233544,26 +233861,48 @@
       "author": "Omar El Akkad",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Winner of the 2025 National Book Award for Nonfiction, this is El Akkad's debut work of nonfiction — a memoir-manifesto and moral reckoning with Western complicity, originating from a viral 2023 tweet about Gaza, expanding into a searing critique of imperialism, liberal hypocrisy, and the cost of silence in the face of atrocity.",
+      "tone": "furious, elegiac, morally urgent, poetic",
+      "pacing": "Fast",
+      "themes": [
+        "Western imperialism",
+        "Gaza and Palestine",
+        "moral complicity",
+        "journalism and truth",
+        "immigrant identity",
+        "political conscience"
+      ],
+      "setting": "Contemporary; essay/memoir — spans the author's career as a journalist and his life in North America",
+      "comparable_books": [
+        "The Wretched of the Earth - Frantz Fanon",
+        "The Argonauts - Maggie Nelson",
+        "Between the World and Me - Ta-Nehisi Coates"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political essays",
+          "lyrical nonfiction",
+          "moral urgency",
+          "journalism",
+          "National Book Award winners"
+        ],
+        "negative": [
+          "readers wanting balanced political perspectives",
+          "readers seeking escapism"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Intensely lyrical prose and the author's journalistic background make this powerful in audio; short length suits a single listening",
+      "content_flags": [
+        "graphic violence (discussed)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "In This Economy? - Kyla Scanlon": {
@@ -233571,53 +233910,97 @@
       "author": "Kyla Scanlon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A New York Times bestselling illustrated guide to understanding how money and markets really work, written by the financial educator who coined the term \"vibecession,\" blending creative analogies, witty illustrations, behavioral economics, and pop culture references to demystify macroeconomics for general readers.",
+      "tone": "witty, accessible, conversational, energetic",
+      "pacing": "Fast",
+      "themes": [
+        "macroeconomics",
+        "monetary policy",
+        "inflation",
+        "labor markets",
+        "financial literacy",
+        "behavioral economics",
+        "\"vibes\" and sentiment"
+      ],
+      "setting": "Non-fiction; contemporary USA economic landscape",
+      "comparable_books": [
+        "The Psychology of Money - Morgan Housel",
+        "Freakonomics - Steven Levitt & Stephen Dubner",
+        "Naked Economics - Charles Wheelan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible economics",
+          "witty nonfiction",
+          "illustrated books",
+          "Gen Z perspective",
+          "financial literacy"
+        ],
+        "negative": [
+          "professional economists wanting rigour",
+          "readers who prefer dense academic treatment"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sordaneon - L. L. Stephens": {
       "title": "Sordaneon",
       "author": "L. L. Stephens",
       "series": "The Triempery Revelations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a fallen world littered with the corpses of broken god-machines, proud young Dorilian Sordaneon is blood-bound to the Rill — a quasi-living continent-spanning artifact — and must navigate political treachery and a fraught relationship with the king who controls his destiny if he is to awaken the Rill's power and survive.",
+      "tone": "epic, politically dense, immersive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "political intrigue",
+        "destiny vs. agency",
+        "power and inheritance",
+        "god-machines and divinity",
+        "coming of age",
+        "enmity and respect"
+      ],
+      "setting": "A secondary world in a post-divine-collapse era, spanning multiple empire-states (the Triempery); richly detailed secondary world fantasy",
+      "comparable_books": [
+        "A Game of Thrones - George R.R. Martin",
+        "The Blade Itself - Joe Abercrombie",
+        "The Priory of the Orange Tree - Samantha Shannon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "politically complex worlds",
+          "morally grey protagonist",
+          "deep world-building",
+          "indie fantasy",
+          "slow burn"
+        ],
+        "negative": [
+          "readers wanting fast-paced action from page one",
+          "readers wanting simple good vs. evil narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The God Spear - L. L. Stephens": {
