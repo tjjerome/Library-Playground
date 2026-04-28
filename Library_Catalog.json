@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4013,
-  "total_pending": 587,
+  "total_catalogued": 4033,
+  "total_pending": 567,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -218637,26 +218637,51 @@
       "author": "Cullen Bunn",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On Wilson Island, a small North Carolina coastal community, a masked killer known as Mr. No-Face begins committing increasingly ritualistic murders, drawing a motley cast of residents into a desperate struggle against an ancient and cosmic evil. What begins as a murder mystery escalates into full-blown Lovecraftian horror as the town is enveloped by an otherworldly threat.",
+      "tone": "visceral, cinematic, Lovecraftian dread, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "small-town secrets",
+        "cosmic horror",
+        "community under siege",
+        "ancient evil",
+        "survival"
+      ],
+      "setting": "Contemporary Wilson Island, North Carolina — a tourist island community in the Outer Banks",
+      "comparable_books": [
+        "It - Stephen King",
+        "Chasing the Boogeyman - Richard Chizmar",
+        "The Troop - Nick Cutter",
+        "My Best Friend's Exorcism - Grady Hendrix"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast horror",
+          "Stephen King-style small-town terror",
+          "cosmic/Lovecraftian horror",
+          "propulsive pacing",
+          "high body count",
+          "comics-creator prose debut"
+        ],
+        "negative": [
+          "large cast with limited individual depth",
+          "graphic gore",
+          "readers preferring psychological subtlety over visceral horror"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "graphic gore"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Death on the Caldera - Emily Paxman": {
@@ -218664,26 +218689,48 @@
       "author": "Emily Paxman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three royal siblings board a luxury express train to rush home to their dying father, but when the engine explodes and strands them atop a volcanic caldera, murders begin among the survivors — complicated by the accidental awakening of one sibling's dangerous witch powers. A Agatha Christie-style whodunit set in a richly built secondary fantasy world blending gaslamp aesthetics, witchcraft, and political intrigue.",
+      "tone": "atmospheric, tense, lightly adventurous, darkly witty",
+      "pacing": "Moderate",
+      "themes": [
+        "family loyalty and secrets",
+        "discrimination against witches and women",
+        "political intrigue and empire",
+        "identity",
+        "survival"
+      ],
+      "setting": "A secondary fantasy world with gaslamp/Victoriana aesthetics — aboard a stranded luxury train atop a volcanic caldera in a contested imperial territory",
+      "comparable_books": [
+        "Murder on the Orient Express - Agatha Christie",
+        "The Tainted Cup - Robert Jackson Bennett",
+        "The Cautious Traveller's Guide to the Wastelands - Sarah Brooks",
+        "A Case of Possession - K.J. Charles"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fantasy murder mystery",
+          "Agatha Christie fans",
+          "ensemble cast of suspects",
+          "sibling dynamics",
+          "magic system integrated with world politics",
+          "debut novel with strong worldbuilding"
+        ],
+        "negative": [
+          "readers wanting a pure mystery without fantasy elements",
+          "those preferring a single POV",
+          "pacing occasionally uneven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Daisy Jones & the Six - Taylor Jenkins Reid": {
@@ -218691,53 +218738,99 @@
       "author": "Taylor Jenkins Reid",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told in oral-history format, the novel traces the meteoric rise and sudden, mysterious breakup of a fictional 1970s rock band, exploring the creative tensions, love affairs, and personal demons that fuelled their music and ultimately tore them apart. It reads as a vivid, immersive document of a lost era of sex, drugs, and rock and roll.",
+      "tone": "propulsive, nostalgic, emotionally charged, compulsively readable",
+      "pacing": "Fast",
+      "themes": [
+        "artistic ambition and creative partnership",
+        "addiction",
+        "love and desire",
+        "fame and its costs",
+        "identity and self-destruction"
+      ],
+      "setting": "Los Angeles and the American rock music scene, primarily the 1970s",
+      "comparable_books": [
+        "The Seven Husbands of Evelyn Hugo - Taylor Jenkins Reid",
+        "Almost Famous - Cameron Crowe (film)",
+        "Daisy Jones & the Six (TV adaptation)",
+        "Scar Tissue - Anthony Kiedis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "oral-history narrative format",
+          "1970s rock nostalgia",
+          "female protagonist with strong voice",
+          "propulsive plot",
+          "romance and creative tension",
+          "found family/band dynamics"
+        ],
+        "negative": [
+          "readers who dislike epistolary/interview-style narration",
+          "those wanting traditional prose structure",
+          "readers wanting resolution over ambiguity"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast audio production with different narrators per character perfectly suits the oral-history format.",
+      "content_flags": [
+        "sexual content",
+        "drug use"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Witness for the Dead - Katherine Addison": {
       "title": "The Witness for the Dead",
       "author": "Katherine Addison",
       "series": "The Chronicles of Osreth",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Thara Celehar, a cleric with the rare ability to speak briefly with the recently dead, works as a Witness for the Dead in the city of Amalo — resolving disputes, investigating murders, and navigating the city's complex social strata. A quiet, episodic mystery set in the same elven-goblin world as The Goblin Emperor, emphasising character and atmosphere over action.",
+      "tone": "quiet, melancholic, compassionate, gently atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "justice for the powerless",
+        "grief and loss",
+        "duty and vocation",
+        "social inequality",
+        "found community"
+      ],
+      "setting": "The city of Amalo in a secondary world empire inspired by Victorian aesthetics, populated by elves and goblins — same world as The Goblin Emperor",
+      "comparable_books": [
+        "The Goblin Emperor - Katherine Addison",
+        "The Grief of Stones - Katherine Addison",
+        "Piranesi - Susanna Clarke",
+        "The Long Way to a Small Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "quietly hopeful fantasy",
+          "protagonist driven by compassion",
+          "episodic mystery structure",
+          "rich secondary world",
+          "fans of The Goblin Emperor"
+        ],
+        "negative": [
+          "readers wanting action-heavy plots",
+          "those requiring a prior read of The Goblin Emperor for full context",
+          "readers disliking slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The quiet, meditative tone and single-POV narration lend themselves exceptionally well to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Incandescent - Emily Tesh": {
@@ -218745,26 +218838,48 @@
       "author": "Emily Tesh",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dr. Saphire 'Saffy' Walden is the Director of Magic at Chetwood School, an elite English boarding school where she teaches A-Level Invocation and keeps demonic incursions at bay — until an ancient demon beyond the school's wards and her own students' recklessness push her abilities and self-perception to their limits. A sharp, witty dark academia fantasy told from the teacher's perspective, exploring class, power, and institutional rot.",
+      "tone": "darkly comic, wry, sharply observational, English and class-conscious",
+      "pacing": "Moderate",
+      "themes": [
+        "class and privilege in elite institutions",
+        "duty of care and teaching",
+        "power and hubris",
+        "sapphic romance",
+        "the cost of self-deception"
+      ],
+      "setting": "Contemporary England — Chetwood School, a centuries-old elite boarding school where magic is real and demons are a genuine occupational hazard",
+      "comparable_books": [
+        "A Deadly Education - Naomi Novik",
+        "Plain Bad Heroines - Emily M. Danforth",
+        "The Magicians - Lev Grossman",
+        "The Secret History - Donna Tartt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark academia from the teacher's POV",
+          "competence porn",
+          "sapphic romance subplot",
+          "British class satire",
+          "demons in mundane settings",
+          "wry dry humour"
+        ],
+        "negative": [
+          "readers wanting a student-POV magic school story",
+          "those expecting a fast-paced action narrative",
+          "readers who dislike commentary on institutional elitism"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Praised by multiple reviewers for an audiobook narrator who captures the story's dry wit and understated humour exceptionally well.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Coldest Warrior - Paul Vidich": {
@@ -218772,404 +218887,678 @@
       "author": "Paul Vidich",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Espionage Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1975, as the Rockefeller Commission exposes illegal CIA activities, retiring agent Jack Gabriel is tasked with investigating the 1953 death of government bioscientist Charles Wilson — a man who 'jumped or fell' from a hotel window — and finds himself uncovering a deep institutional cover-up that puts his own family in danger. Inspired by the true story of Frank Olson, it is a taut moral thriller in the tradition of John le Carré.",
+      "tone": "taut, morally complex, noirish, paranoid",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "government accountability and secrecy",
+        "moral complicity",
+        "Cold War espionage ethics",
+        "truth vs. institutional self-preservation",
+        "personal cost of spycraft"
+      ],
+      "setting": "Washington D.C. and CIA circles, primarily 1975 with flashbacks to 1953 — the twilight of the Cold War era",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "Our Man in Havana - Graham Greene",
+        "An Honorable Man - Paul Vidich",
+        "The Spy and the Traitor - Ben Macintyre"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "le Carré-style moral ambiguity",
+          "Cold War history",
+          "true-crime inspiration",
+          "slow-burn tension with explosive finale",
+          "character-driven espionage"
+        ],
+        "negative": [
+          "readers wanting action-heavy spy thrillers",
+          "those who prefer faster pacing throughout",
+          "readers not interested in institutional/political themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "To Love and Be Wise - Josephine Tey": {
       "title": "To Love and Be Wise",
       "author": "Josephine Tey",
       "series": "Inspector Alan Grant",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Inspector Alan Grant investigates the mysterious disappearance of a charming young American photographer from a fashionable artistic village, a case that begins as a missing-persons puzzle and deepens into questions of identity, desire, and whether a crime has even been committed. A quietly subversive Golden Age mystery that probes the gap between appearance and reality.",
+      "tone": "dry, witty, understated, elegantly subversive",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and performance",
+        "desire and attraction",
+        "the literary bohemian milieu",
+        "appearances vs. reality",
+        "gender"
+      ],
+      "setting": "1950s England — a fashionable artistic village outside London, pub society and drawing rooms",
+      "comparable_books": [
+        "The Daughter of Time - Josephine Tey",
+        "The Singing Sands - Josephine Tey",
+        "A Murder is Announced - Agatha Christie",
+        "Gaudy Night - Dorothy L. Sayers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age mystery fans",
+          "character-driven detective fiction",
+          "dry British wit",
+          "gender-subversive plotting",
+          "literary milieu"
+        ],
+        "negative": [
+          "readers wanting action-heavy mysteries",
+          "those expecting graphic crime",
+          "readers who require fast plot momentum"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Morbid Taste for Bones - Ellis Peters": {
       "title": "A Morbid Taste for Bones",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In 1137, Welsh Benedictine monk Brother Cadfael accompanies a party from Shrewsbury Abbey on a mission to acquire the bones of Saint Winifred from the Welsh village of Gwytherin — but a murder among the villagers draws him into his first investigation. A cosy, richly atmospheric medieval mystery that established one of crime fiction's most beloved detectives.",
+      "tone": "warm, gently atmospheric, historically immersive, humane",
+      "pacing": "Moderate",
+      "themes": [
+        "faith and doubt",
+        "justice vs. institutional authority",
+        "Welsh identity and English power",
+        "the sacred and the political",
+        "human fallibility"
+      ],
+      "setting": "12th-century England and Wales — Shrewsbury Abbey and the Welsh village of Gwytherin, 1137, during the reign of King Stephen",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "One Corpse Too Many - Ellis Peters",
+        "The Cloister and the Hearth - Charles Reade",
+        "A Great Deliverance - Elizabeth George"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical mystery lovers",
+          "cosy mystery fans",
+          "medieval history enthusiasts",
+          "patient atmospheric reading",
+          "series starters"
+        ],
+        "negative": [
+          "readers wanting modern-paced plots",
+          "those averse to religious/monastic settings",
+          "readers expecting graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed audiobook narration is widely considered definitive and greatly enhances the series' atmosphere.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Summer of the Danes - Ellis Peters": {
       "title": "The Summer of the Danes",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 18",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Brother Cadfael travels to Wales on a diplomatic mission and becomes embroiled in the factional conflict between Welsh princes Owain Gwynedd and his treacherous brother Cadwaladr, while also investigating a murder. A later-series entry that foregrounds Welsh political history alongside Cadfael's customary sleuthing.",
+      "tone": "warm, historically immersive, gently adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "Welsh political conflict",
+        "loyalty and treachery",
+        "justice",
+        "the intersection of faith and politics",
+        "honour"
+      ],
+      "setting": "12th-century Wales, 1144 — the Welsh court of Owain Gwynedd during a period of civil and dynastic strife",
+      "comparable_books": [
+        "The Raven in the Foregate - Ellis Peters",
+        "The Holy Thief - Ellis Peters",
+        "The Name of the Rose - Umberto Eco",
+        "A Morbid Taste for Bones - Ellis Peters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "established Cadfael series fans",
+          "Welsh history enthusiasts",
+          "cosy historical mystery readers",
+          "series completionists"
+        ],
+        "negative": [
+          "series newcomers — better to start at Book 1",
+          "readers wanting tighter mystery plotting",
+          "those who find Welsh names and politics unfamiliar"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Virgin in the Ice - Ellis Peters": {
       "title": "The Virgin in the Ice",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In the bitter winter of 1139, Brother Cadfael searches for two young noble wards and a novice nun who have fled the chaos of civil war, only to discover a frozen body in the snow — and a personal secret from his own past. One of the most emotionally resonant entries in the series, with a revelation that deepens Cadfael's character significantly.",
+      "tone": "atmospheric, melancholic, emotionally poignant, wintry",
+      "pacing": "Moderate",
+      "themes": [
+        "the cost of civil war on innocents",
+        "past sins and redemption",
+        "parenthood and responsibility",
+        "justice",
+        "faith"
+      ],
+      "setting": "12th-century England — the Shropshire countryside and surrounding area, winter 1139, during the civil war between King Stephen and Empress Maud",
+      "comparable_books": [
+        "The Leper of Saint Giles - Ellis Peters",
+        "The Sanctuary Sparrow - Ellis Peters",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series readers seeking emotional depth",
+          "historical mystery fans",
+          "wintry atmospheric fiction",
+          "character revelation arcs"
+        ],
+        "negative": [
+          "series newcomers — prior context strongly enhances this entry",
+          "readers preferring light cosy mysteries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Singing Sands - Josephine Tey": {
       "title": "The Singing Sands",
       "author": "Josephine Tey",
       "series": "Inspector Alan Grant",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "On sick leave from Scotland Yard and travelling to the Scottish Highlands, Inspector Alan Grant discovers the body of a fellow passenger in a train compartment, and becomes obsessed by a cryptic fragment of verse left behind — leading him into a quiet, haunting investigation far from official police channels. Published posthumously, it is the final Grant novel.",
+      "tone": "melancholic, quiet, introspective, haunting",
+      "pacing": "Slow",
+      "themes": [
+        "obsession and recovery",
+        "identity",
+        "the fragility of mental health",
+        "Scotland and landscape as character",
+        "dogged truth-seeking"
+      ],
+      "setting": "1950s Scotland — a Highland estate and the rugged Scottish landscape, beginning on a night train from London",
+      "comparable_books": [
+        "The Daughter of Time - Josephine Tey",
+        "To Love and Be Wise - Josephine Tey",
+        "Five Red Herrings - Dorothy L. Sayers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Josephine Tey completionists",
+          "Golden Age mystery fans",
+          "Scottish landscape lovers",
+          "introspective detective fiction"
+        ],
+        "negative": [
+          "readers expecting a brisk plot",
+          "those new to the series — best read after other Grant novels",
+          "readers wanting conventional mystery structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Sanctuary Sparrow - Ellis Peters": {
       "title": "The Sanctuary Sparrow",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A young jongleur fleeing a mob seeks sanctuary in Shrewsbury Abbey after being accused of robbery and murder, and Brother Cadfael must unravel the truth behind the crimes before the young man loses the protection of sanctuary. The novel explores medieval law, the rights of sanctuary, and the trades of a market town.",
+      "tone": "warm, gently suspenseful, humanistic",
+      "pacing": "Moderate",
+      "themes": [
+        "the right of sanctuary",
+        "false accusation and justice",
+        "merchant trades and town society",
+        "compassion for the vulnerable",
+        "medieval law"
+      ],
+      "setting": "12th-century Shrewsbury, 1140 — the abbey and surrounding town, during England's civil war period",
+      "comparable_books": [
+        "The Leper of Saint Giles - Ellis Peters",
+        "The Virgin in the Ice - Ellis Peters",
+        "A Morbid Taste for Bones - Ellis Peters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "established Cadfael readers",
+          "historical mystery fans",
+          "cosy mystery readers",
+          "medieval social history enthusiasts"
+        ],
+        "negative": [
+          "series newcomers — better to start at Book 1",
+          "readers wanting fast-paced plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Rose Rent - Ellis Peters": {
       "title": "The Rose Rent",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "The murder of a young monk collecting a symbolic rose as annual rent from a widow draws Brother Cadfael into a mystery involving inheritance, a missing woman, and the wool and cloth trades of Shrewsbury. A particularly elegant entry in the series, with a romance at its heart.",
+      "tone": "warm, elegantly plotted, gently romantic, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "inheritance and property rights",
+        "widowhood and women's autonomy",
+        "the cloth trade in medieval England",
+        "loyalty and betrayal",
+        "love"
+      ],
+      "setting": "12th-century Shrewsbury, 1142 — the abbey and the town's wool-trade community during the civil war period",
+      "comparable_books": [
+        "The Raven in the Foregate - Ellis Peters",
+        "The Hermit of Eyton Forest - Ellis Peters",
+        "The Sanctuary Sparrow - Ellis Peters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "established Cadfael series fans",
+          "fans of romance-threaded historical mysteries",
+          "medieval economic history enthusiasts"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers wanting darker or grittier mysteries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Raven in the Foregate - Ellis Peters": {
       "title": "The Raven in the Foregate",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A zealous new priest is appointed to the parish of the Holy Cross in Shrewsbury and quickly alienates his flock with his harsh, unforgiving manner — until he is found dead in the mill pond, leaving Cadfael to determine whether his death was murder or something else. The novel is a nuanced examination of faith, pastoral care, and the abuse of religious authority.",
+      "tone": "thoughtful, morally nuanced, quietly tense",
+      "pacing": "Moderate",
+      "themes": [
+        "religious authority and pastoral responsibility",
+        "community and belonging",
+        "forgiveness and harshness",
+        "justice",
+        "the nature of faith"
+      ],
+      "setting": "12th-century Shrewsbury, 1141 — the Holy Cross parish and surrounding Foregate district",
+      "comparable_books": [
+        "The Rose Rent - Ellis Peters",
+        "The Pilgrim of Hate - Ellis Peters",
+        "An Excellent Mystery - Ellis Peters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "established Cadfael series fans",
+          "readers interested in medieval religious life",
+          "character-driven mystery fans"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers wanting action-driven plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Potter's Field - Ellis Peters": {
       "title": "The Potter's Field",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 17",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "When Shrewsbury Abbey acquires a plot of land from a potter, a woman's body is unearthed — and the investigation leads Cadfael into the mystery of a missing wife, a devoted husband suspected of murder, and questions of guilt, sainthood, and earthly justice. A late-series entry widely praised for its emotional depth.",
+      "tone": "reflective, emotionally resonant, elegantly plotted",
+      "pacing": "Moderate",
+      "themes": [
+        "guilt and innocence",
+        "marriage and fidelity",
+        "redemption",
+        "earthly justice vs. divine mercy",
+        "the past's grip on the present"
+      ],
+      "setting": "12th-century Shrewsbury and environs, 1143 — Shrewsbury Abbey and the surrounding farmland",
+      "comparable_books": [
+        "The Holy Thief - Ellis Peters",
+        "The Heretic's Apprentice - Ellis Peters",
+        "The Confession of Brother Haluin - Ellis Peters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "long-term Cadfael series fans",
+          "readers who value emotional resonance over plot complexity",
+          "historical mystery enthusiasts"
+        ],
+        "negative": [
+          "series newcomers — best appreciated after many prior entries",
+          "readers wanting brisk plotting"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Marriage of Mary Russell - Laurie R. King": {
       "title": "The Marriage of Mary Russell",
       "author": "Laurie R. King",
       "series": "Mary Russell and Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short story (between Books 2 and 3)",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "This ebook short story fills in the details of the wedding of Mary Russell and Sherlock Holmes — a ceremony that is skipped over in the main novels — as Holmes's sentimental wish to be married in his ancestral manor chapel leads to an elaborate scheme involving angry dogs, armed butlers, and family secrets. Light, charming, and character-driven.",
+      "tone": "light, charming, affectionate, gently comic",
+      "pacing": "Fast",
+      "themes": [
+        "partnership and marriage",
+        "Holmes family secrets",
+        "romantic pragmatism vs. sentiment",
+        "tradition"
+      ],
+      "setting": "1920s England — the Sussex Downs and Holmes's ancestral manor",
+      "comparable_books": [
+        "The Beekeeper's Apprentice - Laurie R. King",
+        "A Monstrous Regiment of Women - Laurie R. King",
+        "The Murder of Mary Russell - Laurie R. King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Mary Russell series fans",
+          "Sherlockian fiction enthusiasts",
+          "readers who love series-companion short fiction",
+          "romantic subplot fans"
+        ],
+        "negative": [
+          "series newcomers — requires familiarity with at least the first two novels",
+          "readers wanting a full mystery plot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Pilgrim of Hate - Ellis Peters": {
       "title": "The Pilgrim of Hate",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "As thousands of pilgrims flock to Shrewsbury Abbey for the feast of Saint Winifred, Brother Cadfael suspects that one pilgrim amid the crowd harbours a murderous secret — and that another carries a desperate need for a different kind of justice. The novel explores the medieval cult of saints, pilgrimage, and the complex motives that drive people to seek miracles.",
+      "tone": "atmospheric, thoughtful, humane",
+      "pacing": "Moderate",
+      "themes": [
+        "pilgrimage and faith",
+        "vengeance vs. forgiveness",
+        "the cult of saints",
+        "healing and miracles",
+        "community"
+      ],
+      "setting": "12th-century Shrewsbury, 1141 — Shrewsbury Abbey during the great summer pilgrimage feast of Saint Winifred",
+      "comparable_books": [
+        "The Sanctuary Sparrow - Ellis Peters",
+        "An Excellent Mystery - Ellis Peters",
+        "The Raven in the Foregate - Ellis Peters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "established Cadfael readers",
+          "religious history enthusiasts",
+          "readers interested in medieval pilgrimage culture"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers wanting secular or action-driven plots"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Leper of Saint Giles - Ellis Peters": {
       "title": "The Leper of Saint Giles",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "An arranged marriage between an elderly lord and a young noblewoman sets the scene in Shrewsbury, 1139, when the groom is murdered and the woman's young lover is the prime suspect — leaving Cadfael to navigate the leper colony of Saint Giles and the intrigues of the nobility to find the truth. A compassionate study of medieval social outcasts alongside a deftly plotted mystery.",
+      "tone": "compassionate, atmospherically rich, socially observant",
+      "pacing": "Moderate",
+      "themes": [
+        "social outcasts and the marginalised",
+        "forced marriage and women's autonomy",
+        "class and power",
+        "compassion",
+        "true vs. false accusation"
+      ],
+      "setting": "12th-century Shrewsbury, 1139 — Shrewsbury Abbey and the Saint Giles leper colony on the outskirts of town",
+      "comparable_books": [
+        "The Virgin in the Ice - Ellis Peters",
+        "The Sanctuary Sparrow - Ellis Peters",
+        "Saint Peter's Fair - Ellis Peters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "established Cadfael readers",
+          "fans of socially conscious historical fiction",
+          "cosy mystery enthusiasts"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers sensitive to depictions of leprosy and medieval disease"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Holy Thief - Ellis Peters": {
       "title": "The Holy Thief",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 19",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "During a summer flood that forces the monks of Shrewsbury Abbey to move their precious relics, the reliquary of Saint Winifred is stolen — and the theft soon leads Cadfael to a murder. A near-series-closing entry that brings the cult of Saint Winifred full circle from the very first book.",
+      "tone": "warm, reflective, gently tense",
+      "pacing": "Moderate",
+      "themes": [
+        "the value and veneration of relics",
+        "institutional competition between monasteries",
+        "faith and doubt",
+        "theft and its consequences",
+        "redemption"
+      ],
+      "setting": "12th-century Shrewsbury, 1144 — Shrewsbury Abbey during a flooding of the River Severn",
+      "comparable_books": [
+        "The Potter's Field - Ellis Peters",
+        "Brother Cadfael's Penance - Ellis Peters",
+        "A Morbid Taste for Bones - Ellis Peters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "long-term Cadfael series fans",
+          "readers who enjoyed A Morbid Taste for Bones",
+          "historical mystery enthusiasts interested in relic culture"
+        ],
+        "negative": [
+          "series newcomers — will miss the resonance of the Saint Winifred thread",
+          "readers wanting fast-paced plotting"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Heretic's Apprentice - Ellis Peters": {
       "title": "The Heretic's Apprentice",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 16",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A young man arrives at Shrewsbury Abbey bearing the body of a pilgrim who was his master, and his frank, questioning approach to theological questions quickly earns him powerful enemies — leading to his accusation of heresy and, soon after, murder. An unusually intellectually engaged entry in the series, exploring the boundaries of medieval religious orthodoxy.",
+      "tone": "thoughtful, intellectually curious, warmly humane",
+      "pacing": "Moderate",
+      "themes": [
+        "heresy and religious orthodoxy",
+        "the freedom of conscience",
+        "institutional power and persecution",
+        "pilgrimage",
+        "youth and idealism"
+      ],
+      "setting": "12th-century Shrewsbury, 1143 — Shrewsbury Abbey and the surrounding pilgrimage routes",
+      "comparable_books": [
+        "The Potter's Field - Ellis Peters",
+        "The Pilgrim of Hate - Ellis Peters",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "established Cadfael readers",
+          "readers interested in medieval theology and heresy",
+          "character-driven historical mystery fans"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers not interested in theological debate as plot driver"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Patrick Tull's acclaimed narration is considered definitive for the series.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Hermit of Eyton Forest - Ellis Peters": {
