@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3893,
-  "total_pending": 707,
+  "total_catalogued": 3913,
+  "total_pending": 687,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -212662,54 +212662,96 @@
       "title": "Venus of Dreams",
       "author": "Pamela Sargent",
       "series": "Venus",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Iris Angharads, a determined woman set seven centuries in the future, devotes her life to the terraforming of Venus, dreaming of making its poisonous atmosphere hospitable to humanity and building a dynastic legacy in the process.",
+      "tone": "epic, feminist, meditative, multigenerational",
+      "pacing": "Slow",
+      "themes": [
+        "terraforming",
+        "feminism",
+        "ambition",
+        "dynastic legacy",
+        "gender and society",
+        "colonization"
+      ],
+      "setting": "Far-future Earth and Venus, approximately 700 years ahead, under a quasi-Islamic Earth state",
+      "comparable_books": [
+        "Red Mars - Kim Stanley Robinson",
+        "The Shore of Women - Pamela Sargent",
+        "Herland - Charlotte Perkins Gilman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multigenerational saga",
+          "hard SF terraforming",
+          "feminist themes",
+          "ambitious world-building",
+          "Kim Stanley Robinson fans"
+        ],
+        "negative": [
+          "fast-paced plotting",
+          "action-driven narrative",
+          "romance-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Necessity - Jo Walton": {
       "title": "Necessity",
       "author": "Jo Walton",
       "series": "Thessaly",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Decades after Athena's city of philosophers has been transplanted to a distant planet, the gods themselves arrive, and the city must grapple with first contact, divine politics, and the nature of time itself.",
+      "tone": "philosophical, warm, playful with ideas, quietly moving",
+      "pacing": "Moderate",
+      "themes": [
+        "philosophy",
+        "free will vs necessity",
+        "divine intervention",
+        "utopia",
+        "time",
+        "justice"
+      ],
+      "setting": "A utopian city of ancient Greeks transplanted to a distant planet in the far future, plus Olympus and time-spanning perspectives",
+      "comparable_books": [
+        "The Just City - Jo Walton",
+        "Philosopher Kings - Jo Walton",
+        "Small Gods - Terry Pratchett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophy and ideas",
+          "classical mythology",
+          "found family",
+          "quiet literary SF",
+          "gods as characters"
+        ],
+        "negative": [
+          "action-heavy plotting",
+          "grimdark",
+          "fast-paced thriller"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Burning Girls - Veronica Schanoes": {
@@ -212717,26 +212759,50 @@
       "author": "Veronica Schanoes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Jewish girl in late-nineteenth-century Poland is raised by her grandmother as a healer and witch, navigating an increasingly hostile world, with her story eventually intertwining with Jewish immigrant experience in America.",
+      "tone": "darkly lyrical, angry, mournful, feminist, folkloric",
+      "pacing": "Moderate",
+      "themes": [
+        "Jewish folklore and identity",
+        "immigration",
+        "women's power",
+        "historical trauma",
+        "vengeance",
+        "heritage"
+      ],
+      "setting": "Late nineteenth-century Poland and immigrant America, steeped in Jewish folk tradition",
+      "comparable_books": [
+        "The Bloody Chamber - Angela Carter",
+        "Get in Trouble - Kelly Link",
+        "Witchmark - C.L. Polk"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Jewish mythology and folklore",
+          "dark feminist fairy tales",
+          "lyrical prose",
+          "historical fantasy",
+          "short fiction"
+        ],
+        "negative": [
+          "fast-paced action",
+          "epic fantasy world-building",
+          "light tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Lyrical, atmospheric prose rewards a strong narrator; short-form makes for a compelling single listen.",
+      "content_flags": [
+        "graphic violence",
+        "historical persecution"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Glimmering - Elizabeth Hand": {
@@ -212744,134 +212810,249 @@
       "author": "Elizabeth Hand",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the millennium approaches and Earth's atmosphere burns with a strange, unearthly glow caused by environmental catastrophe, an AIDS-stricken publisher, a rock idol, and a shadowy sociopath are drawn together in a hallucinatory dance of death and longing.",
+      "tone": "bleak, psychedelic, elegiac, decadent",
+      "pacing": "Slow",
+      "themes": [
+        "environmental apocalypse",
+        "AIDS epidemic",
+        "art and obsession",
+        "fin de siècle despair",
+        "mortality"
+      ],
+      "setting": "1999 near-future New York, amid environmental collapse and the approaching millennium",
+      "comparable_books": [
+        "Waking the Moon - Elizabeth Hand",
+        "The Drowning Girl - Caitlín R. Kiernan",
+        "White Noise - Don DeLillo"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "psychedelic atmosphere",
+          "decadent prose",
+          "apocalyptic fiction",
+          "AIDS-era fiction"
+        ],
+        "negative": [
+          "plot-driven narrative",
+          "fast pacing",
+          "hopeful endings",
+          "action-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Day the Dead Came to Show and Tell - Mira Grant": {
       "title": "The Day the Dead Came to Show and Tell",
       "author": "Mira Grant",
       "series": "Newsflesh",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3.6",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set during the early days of the Rising, this novella follows teacher Elaine Oldenburg as the zombie outbreak shatters the supposed safety of her elementary school, with researchers in the future piecing together what really happened.",
+      "tone": "harrowing, emotionally devastating, tense",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "sacrifice",
+        "innocence lost",
+        "institutional failure",
+        "zombie apocalypse"
+      ],
+      "setting": "Post-Rising America, primarily an elementary school during the early zombie outbreak, with future-framing sequences",
+      "comparable_books": [
+        "Feed - Mira Grant",
+        "World War Z - Max Brooks",
+        "The Girl with All the Gifts - M.R. Carey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "zombie horror",
+          "emotional gut-punch",
+          "character-driven horror",
+          "Newsflesh universe fans",
+          "short fiction"
+        ],
+        "negative": [
+          "light tone",
+          "gore-averse readers",
+          "standalone-only readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "How Green This Land, How Blue This Sea - Mira Grant": {
       "title": "How Green This Land, How Blue This Sea",
       "author": "Mira Grant",
       "series": "Newsflesh",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3.3",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In post-Rising Australia, a member of the government-sponsored Australia Conservation Corps must navigate zombie kangaroos, infected wildlife, and the constant threat of the undead while striving to preserve the continent's natural heritage.",
+      "tone": "darkly comic, tense, unexpectedly charming",
+      "pacing": "Fast",
+      "themes": [
+        "conservation",
+        "survival",
+        "humanity's relationship with nature",
+        "zombie ecology",
+        "duty"
+      ],
+      "setting": "Post-Rising Australia, focusing on wildlife conservation zones and remote wilderness",
+      "comparable_books": [
+        "Feed - Mira Grant",
+        "World War Z - Max Brooks",
+        "All Systems Red - Martha Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "zombie horror",
+          "Newsflesh universe fans",
+          "nature and wildlife themes",
+          "short fiction",
+          "darkly comic tone"
+        ],
+        "negative": [
+          "standalone-only readers",
+          "gore-averse readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Companion to Wolves - Sarah Monette & Elizabeth Bear": {
       "title": "A Companion to Wolves",
       "author": "Sarah Monette & Elizabeth Bear",
       "series": "Iskryne World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a Norse-inspired world, a young nobleman bonds with a giant telepathic wolf and joins a warrior brotherhood defending the land from trolls, but the deep psychic bond with his wolf carries profound and unexpected personal costs.",
+      "tone": "gritty, emotionally complex, Norse-flavored, unflinching",
+      "pacing": "Moderate",
+      "themes": [
+        "bonding and identity",
+        "masculinity and sexuality",
+        "duty and sacrifice",
+        "war",
+        "found family",
+        "Norse mythology"
+      ],
+      "setting": "A Norse-inspired secondary world, cold northern lands beset by troll invasions",
+      "comparable_books": [
+        "Dragonflight - Anne McCaffrey",
+        "The Deed of Paksenarrion - Elizabeth Moon",
+        "The Goblin Emperor - Katherine Addison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "animal companion bonds",
+          "Norse fantasy",
+          "morally complex world-building",
+          "queer themes",
+          "dark fantasy"
+        ],
+        "negative": [
+          "explicit content averse readers",
+          "light tone seekers",
+          "readers wanting a female-centred story"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Black Helicopters - Caitlín R. Kiernan": {
       "title": "Black Helicopters",
       "author": "Caitlín R. Kiernan",
       "series": "Tinfoil Dossier",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rival occult intelligence agencies clash over a Lovecraftian outbreak on the shores of New England, while two genetically-engineered twin sisters desperately evade their hunters, and an agent outside of time struggles to prevent catastrophe.",
+      "tone": "fragmented, dense, cosmically bleak, avant-garde",
+      "pacing": "Slow",
+      "themes": [
+        "cosmic horror",
+        "government conspiracy",
+        "identity and experimentation",
+        "apocalypse",
+        "rival agencies"
+      ],
+      "setting": "Contemporary New England and post-apocalyptic future fragments, within a Lovecraftian conspiracy thriller framework",
+      "comparable_books": [
+        "Agents of Dreamland - Caitlín R. Kiernan",
+        "The Laundry Files - Charles Stross",
+        "Annihilation - Jeff VanderMeer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror",
+          "experimental prose",
+          "spy thriller horror",
+          "cosmic dread",
+          "fragmented narrative"
+        ],
+        "negative": [
+          "plot clarity seekers",
+          "fast-paced action readers",
+          "readers new to Kiernan"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Highly fragmented, non-linear prose and dense intertextuality reward close visual reading.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Toll - Cherie Priest": {
@@ -212879,80 +213060,146 @@
       "author": "Cherie Priest",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On their honeymoon drive through the Georgia swamps, Titus and Melanie cross a mysterious seventh bridge that appears on no map — and Titus wakes up alone, with Melanie vanished and the nearby town of Staywater hiding dark, cyclical secrets.",
+      "tone": "atmospheric, slow-building dread, Southern Gothic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "supernatural folklore",
+        "Southern Gothic",
+        "small-town secrets",
+        "loss and grief",
+        "cyclical evil"
+      ],
+      "setting": "Rural Georgia, near the Okefenokee Swamp, contemporary",
+      "comparable_books": [
+        "The Family Plot - Cherie Priest",
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "A Head Full of Ghosts - Paul Tremblay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Southern Gothic",
+          "atmospheric horror",
+          "mystery-horror blend",
+          "small-town dread",
+          "ghost stories"
+        ],
+        "negative": [
+          "fast-paced horror",
+          "gore-heavy horror",
+          "readers wanting clear resolutions"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Atmospheric prose and Southern setting are powerfully enhanced by a skilled audio narrator.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "An Apprentice to Elves - Sarah Monette & Elizabeth Bear": {
       "title": "An Apprentice to Elves",
       "author": "Sarah Monette & Elizabeth Bear",
       "series": "Iskryne World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Alfgyfa, daughter of the wolfcarl Isolfr, has been raised between the world of the wolf-bonded warriors and the svartalfar elves, and must navigate both cultures as a Roman-analogue empire threatens to invade from the south.",
+      "tone": "richly detailed, introspective, epic in scope, emotionally complex",
+      "pacing": "Slow",
+      "themes": [
+        "cultural identity",
+        "belonging and otherness",
+        "war and diplomacy",
+        "coming of age",
+        "Norse mythology"
+      ],
+      "setting": "A Norse-inspired secondary world, with additional elven underworld society and looming Roman-styled invasion",
+      "comparable_books": [
+        "A Companion to Wolves - Monette & Bear",
+        "The Goblin Emperor - Katherine Addison",
+        "The Lord of the Rings - J.R.R. Tolkien"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "rich world-building",
+          "feminist fantasy",
+          "Norse setting",
+          "animal companions",
+          "multi-culture diplomacy stories"
+        ],
+        "negative": [
+          "fast-paced action",
+          "simple plots",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Revolution's Shore - Kate Elliott": {
       "title": "Revolution's Shore",
       "author": "Kate Elliott",
       "series": "The Highroad Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lily Ransome is drawn deeper into an intergalactic rebellion against a tyrannical empire, leading a motley crew of outcasts and pirates into a conflict where honor, freedom, and love are all at stake.",
+      "tone": "adventurous, propulsive, politically engaged",
+      "pacing": "Fast",
+      "themes": [
+        "revolution",
+        "freedom vs. empire",
+        "found family",
+        "sacrifice",
+        "political idealism"
+      ],
+      "setting": "Interstellar space opera setting, multiple colonized planets and space stations, 1990s SF era",
+      "comparable_books": [
+        "A Passage of Stars - Kate Elliott",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Ancillary Justice - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "female-led adventure",
+          "found family",
+          "political revolution",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "hard SF",
+          "slow meditative pacing",
+          "readers wanting standalone entry points"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wylding Hall - Elizabeth Hand": {
@@ -212960,53 +213207,99 @@
       "author": "Elizabeth Hand",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young British acid-folk band retreats to an ancient country manor to record their landmark album, but the house has dark secrets — and their lead singer Julian Blake disappears within it, never to be seen again, leaving only unreliable memories and unanswered questions.",
+      "tone": "elegiac, atmospheric, folk-horror, hauntingly ambiguous",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "folklore and the supernatural",
+        "artistic creation and loss",
+        "memory and unreliable narration",
+        "faerie",
+        "the 1970s counterculture"
+      ],
+      "setting": "Rural England, 1970s, in an ancient crumbling manor; told retrospectively by survivors",
+      "comparable_books": [
+        "The Haunting of Hill House - Shirley Jackson",
+        "The Little Stranger - Sarah Waters",
+        "Daisy Jones & The Six - Taylor Jenkins Reid (but horror)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "folk horror",
+          "atmospheric dread",
+          "music and art settings",
+          "unreliable narrators",
+          "1970s aesthetic",
+          "short fiction"
+        ],
+        "negative": [
+          "fast-paced horror",
+          "gore",
+          "clear resolutions",
+          "readers wanting explicit answers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The documentary interview structure and multiple voices make this ideal for audio, evoking a real oral history.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Price of Ransom - Kate Elliott": {
       "title": "The Price of Ransom",
       "author": "Kate Elliott",
       "series": "The Highroad Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Abandoned by the revolution they fought to support, Lily Ransome and her crew of outcasts and pirates set course for the farthest reaches of space to find the fabled highroad — humanity's ancient origin worlds — in a breathtaking and hard-won conclusion.",
+      "tone": "adventurous, bittersweet, expansive",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and its costs",
+        "revolution's aftermath",
+        "belonging and home",
+        "identity",
+        "first contact"
+      ],
+      "setting": "Deep space, ancient human empire worlds, spanning the far reaches of the galaxy",
+      "comparable_books": [
+        "Revolution's Shore - Kate Elliott",
+        "Ancillary Mercy - Ann Leckie",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "female-led adventure",
+          "found family",
+          "series conclusions",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "hard SF",
+          "standalone-only readers",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Beauty - Robin McKinley": {
@@ -213014,107 +213307,195 @@
       "author": "Robin McKinley",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A thoughtful, bookish young woman named Beauty volunteers to live with the monstrous Beast to save her father, and gradually discovers that the enchanted palace and its inhabitant are far more complex than they first appear.",
+      "tone": "warm, gentle, lyrical, quietly romantic",
+      "pacing": "Slow",
+      "themes": [
+        "inner beauty vs. outer appearance",
+        "love and transformation",
+        "courage",
+        "family loyalty",
+        "enchantment"
+      ],
+      "setting": "Fairy-tale medieval Europe, a merchant family's village, and an enchanted magical palace",
+      "comparable_books": [
+        "Rose Daughter - Robin McKinley",
+        "Uprooted - Naomi Novik",
+        "East - Edith Pattou"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fairy tale retellings",
+          "gentle romance",
+          "bookish protagonists",
+          "lyrical prose",
+          "classic fantasy"
+        ],
+        "negative": [
+          "grimdark",
+          "action-heavy fantasy",
+          "readers wanting subversive deconstruction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Warm, lyrical prose and a fairy-tale structure make this a particularly satisfying audio experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Agents of Dreamland - Caitlín R. Kiernan": {
       "title": "Agents of Dreamland",
       "author": "Caitlín R. Kiernan",
       "series": "Tinfoil Dossier",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A world-weary government agent meets a mysterious woman in an Arizona diner to exchange intelligence about a desert cult whose members have been consumed by alien fungal infection — while something beyond Pluto's orbit has made contact.",
+      "tone": "noirish, cosmically bleak, dense, hallucinatory",
+      "pacing": "Slow",
+      "themes": [
+        "cosmic horror",
+        "government conspiracy",
+        "cults and manipulation",
+        "alien contact",
+        "apocalypse"
+      ],
+      "setting": "Contemporary American Southwest desert and near-future, with Lovecraftian cosmic overlay",
+      "comparable_books": [
+        "Black Helicopters - Caitlín R. Kiernan",
+        "Annihilation - Jeff VanderMeer",
+        "The Laundry Files - Charles Stross"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror",
+          "spy thriller horror",
+          "cosmic dread",
+          "dense literary prose",
+          "short fiction"
+        ],
+        "negative": [
+          "plot clarity seekers",
+          "light tone",
+          "action-driven pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Karen Memory - Elizabeth Bear": {
       "title": "Karen Memory",
       "author": "Elizabeth Bear",
       "series": "Karen Memory",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Karen Memery, a young seamstress-of-leisure in a steampunk Pacific Northwest boomtown, narrates a riotous adventure involving a serial killer, a mind-control device, U.S. Marshal Bass Reeves, and a fierce cast of women fighting back against exploitation.",
+      "tone": "propulsive, warmhearted, witty, pulpy",
+      "pacing": "Fast",
+      "themes": [
+        "female solidarity",
+        "sex work and dignity",
+        "race and justice in the Old West",
+        "steampunk technology",
+        "found family"
+      ],
+      "setting": "Steampunk 1880s Pacific Northwest boomtown (analogue to Seattle), with advanced Victorian technology",
+      "comparable_books": [
+        "Boneshaker - Cherie Priest",
+        "The Buntline Special - Mike Resnick",
+        "Swordspoint - Ellen Kushner"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "steampunk",
+          "female-led ensemble",
+          "found family",
+          "propulsive plotting",
+          "queer characters",
+          "historical fantasy"
+        ],
+        "negative": [
+          "grimdark",
+          "hard SF",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Karen's distinctive first-person voice and propulsive plot are ideally suited to audio narration.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Please Do Not Taunt the Octopus - Mira Grant": {
       "title": "Please Do Not Taunt the Octopus",
       "author": "Mira Grant",
       "series": "Newsflesh",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3.7",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Dr. Shannon Abbey runs her underground virology lab in post-Rising America with an iron fist, a massive dog, and a zombie-infected octopus — until an unexpected visitor forces her to confront both a dangerous neighbour and painful connections to the past.",
+      "tone": "darkly comic, character-driven, wry",
+      "pacing": "Moderate",
+      "themes": [
+        "scientific ethics",
+        "survival",
+        "grief and trauma",
+        "unorthodox community",
+        "zombie ecology"
+      ],
+      "setting": "Post-Rising America, an underground virology lab in the Pacific Northwest wilderness",
+      "comparable_books": [
+        "Feed - Mira Grant",
+        "The Day the Dead Came to Show and Tell - Mira Grant",
+        "All Systems Red - Martha Wells"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "zombie horror",
+          "darkly comic tone",
+          "Newsflesh universe fans",
+          "scientist protagonist",
+          "short fiction"
+        ],
+        "negative": [
+          "standalone-only readers",
+          "gore-averse readers",
+          "unfamiliar with Newsflesh"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Shore of Women - Pamela Sargent": {
@@ -213122,26 +213503,48 @@
       "author": "Pamela Sargent",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After a nuclear holocaust, women rule the world from walled high-tech cities while men roam the wilderness in primitive bands — until an exiled woman named Birana and a hunter named Arvil find each other and fall in love, threatening the entire social order.",
+      "tone": "meditative, passionate, politically provocative, lyrical",
+      "pacing": "Slow",
+      "themes": [
+        "feminist dystopia",
+        "gender and power",
+        "love across social barriers",
+        "post-apocalyptic society",
+        "sexual politics"
+      ],
+      "setting": "Post-nuclear future Earth, divided between high-tech women's cities and primitive male wilderness societies",
+      "comparable_books": [
+        "The Gate to Women's Country - Sheri S. Tepper",
+        "The Handmaid's Tale - Margaret Atwood",
+        "Always Coming Home - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist science fiction",
+          "dystopian world-building",
+          "political SF",
+          "star-crossed romance",
+          "post-apocalyptic fiction"
+        ],
+        "negative": [
+          "fast-paced action",
+          "readers opposed to sexual content",
+          "light tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Catseye - Andre Norton": {
@@ -213149,26 +213552,46 @@
       "author": "Andre Norton",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a futuristic world, a destitute young man named Troy Horan discovers he has an uncanny telepathic bond with a group of exotic animals in a luxury pet shop, a gift that soon draws him into a dangerous criminal conspiracy.",
+      "tone": "adventure-driven, quietly tense, humane",
+      "pacing": "Fast",
+      "themes": [
+        "telepathy and animal bonds",
+        "class and social inequality",
+        "identity and belonging",
+        "conspiracy",
+        "coming of age"
+      ],
+      "setting": "Far-future planet Korwar, a resort world with sharp class divisions between wealthy elites and impoverished refugees",
+      "comparable_books": [
+        "The Beast Master - Andre Norton",
+        "Dragonflight - Anne McCaffrey",
+        "A Wizard of Earthsea - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "animal telepathy bonds",
+          "classic SF adventure",
+          "young protagonist",
+          "Andre Norton fans",
+          "compact plotting"
+        ],
+        "negative": [
+          "literary prose seekers",
+          "grimdark",
+          "romance-heavy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Shadow Hunter - Pat Murphy": {
@@ -213176,26 +213599,46 @@
       "author": "Pat Murphy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A young Neanderthal boy, summoned by the spirit of a cave bear in a dream, is transported 30,000 years into the future and must reconcile the shamanic beliefs of his people with the bewildering technology and damaged souls of his new world.",
+      "tone": "lyrical, quietly wondrous, melancholy, humane",
+      "pacing": "Slow",
+      "themes": [
+        "displacement and identity",
+        "shamanism vs. technology",
+        "spiritual belief",
+        "humanity across time",
+        "belonging"
+      ],
+      "setting": "Prehistoric past (30,000 BCE Neanderthal) and near-future Earth with a reconstructed Pleistocene oasis project",
+      "comparable_books": [
+        "The City, Not Long After - Pat Murphy",
+        "Clan of the Cave Bear - Jean M. Auel",
+        "Always Coming Home - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "time travel",
+          "anthropology and prehistory",
+          "spiritual themes",
+          "lyrical prose"
+        ],
+        "negative": [
+          "fast-paced plotting",
+          "hard SF",
+          "action-heavy readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Sam's distinctive Neanderthal perspective and voice translate exceptionally well to skilled audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Child of Venus - Pamela Sargent": {
