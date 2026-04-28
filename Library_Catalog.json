@@ -107344,40 +107344,22 @@
       "indie": true,
       "classic": false,
       "status": "needs_review",
-      "summary": "A 2024 short story collection by indie fantasy author Michael Michel, set within the dark, war-torn world of his Dreams of Dust and Steel universe. The stories explore themes of power, fate, and survival across multiple perspectives.",
-      "tone": "dark, atmospheric, myth-inflected",
-      "pacing": "Moderate",
-      "themes": [
-        "power and ambition",
-        "fate",
-        "war",
-        "gods and mortals"
-      ],
-      "setting": "A dark secondary-world fantasy setting shared with Michel's Dreams of Dust and Steel series",
-      "comparable_books": [
-        "The Price of Power - Michael Michel",
-        "Way of the Wizard - Michael Michel"
-      ],
+      "summary": "A 2024 fantasy short-story collection by indie author Michael Michel. Authoritative sources (Goodreads, Amazon, the author's site, StoryGraph) could not be fetched for verification; circumstantial evidence ties the collection to Michel's Way of the Wizard universe rather than to Dreams of Dust and Steel as previously assumed. Plot, themes, tone, and content warnings are not independently verifiable from accessible sources.",
+      "tone": null,
+      "pacing": null,
+      "themes": [],
+      "setting": "Likely set in Michael Michel's Way of the Wizard universe (the same opening line appears in promotional material for both works); not confirmed.",
+      "comparable_books": [],
       "taste_signals": {
-        "positive": [
-          "dark fantasy short fiction",
-          "world-building depth",
-          "violence and consequence",
-          "myth-like tone"
-        ],
-        "negative": [
-          "readers who prefer single-POV novels",
-          "light or cozy fantasy readers"
-        ]
+        "positive": [],
+        "negative": []
       },
-      "audio_suitability": "Good",
+      "audio_suitability": "Unknown",
       "audio_notes": null,
-      "content_flags": [
-        "graphic violence"
-      ],
+      "content_flags": [],
       "confidence": "Low",
-      "research_source": "web_search",
-      "audit": null
+      "research_source": "deep_research_opus",
+      "audit": "Fields cleared: deep research could not verify the previous setting claim (Dreams of Dust and Steel) — promotional opening line ties this collection to the Way of the Wizard series instead. Themes, tone, comps, audio, and content flags in the prior entry were speculative inferences from the author's other work, not from the collection itself. Manual human review recommended."
     },
     "The Amber Dame - Brendan Noble": {
       "title": "The Amber Dame",
@@ -117748,9 +117730,9 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "needs_review",
-      "summary": "In this fourth installment of the Broken Stone Chronicle, the mastermind behind a demonic conspiracy has been revealed, and witch hunters Adelko and Horskram race to stop him before he can summon an ancient evil and plunge the world into ruin, while holy war erupts across the Free Kingdoms. The series is a slow-burn dark epic combining medieval worldbuilding, theological horror, and pagan folklore.",
-      "tone": "grimdark, slow-burn, atmospheric, theologically dense",
+      "status": "complete",
+      "summary": "The fourth installment of the Broken Stone Chronicle picks up after a five-year hiatus, returning to witch hunters Horskram and his apprentice Adelko. With the mastermind behind the demonic conspiracy now revealed, the protagonists must confront the cabal before they can reunite the anti-relic known as the Headstone of Ma'amun and use it to summon the Fallen One. Meanwhile, holy war and civil conflict continue to engulf the Free Kingdoms.",
+      "tone": "grimdark, slow-burn, atmospheric, theologically dense, gothic",
       "pacing": "Slow burn with payoff",
       "themes": [
         "faith and doubt",
@@ -117758,36 +117740,42 @@
         "good vs evil",
         "demonology",
         "holy war",
-        "sacrifice"
+        "sacrifice",
+        "loss of innocence"
       ],
-      "setting": "A detailed, immersive pseudo-medieval world with strong Gothic horror and Lovecraftian undertones",
+      "setting": "Pseudo-medieval Urovia (Free Kingdoms) with Gothic horror, religious mysticism, pagan folklore, and Lovecraftian undertones; spans the Pilgrim Kingdoms / Sassanian lands established in Book 3",
       "comparable_books": [
         "Devil's Night Dawning - Damien Black",
+        "Warlock's Sun Rising - Damien Black",
         "The Black Company - Glen Cook",
-        "The Name of the Wind - Patrick Rothfuss"
+        "A Song of Ice and Fire - George R. R. Martin"
       ],
       "taste_signals": {
         "positive": [
-          "slow-burn epic fantasy",
-          "religious and theological themes",
-          "Gothic horror elements",
-          "detailed world-building",
-          "multiple POVs",
-          "SPFBO fans"
+          "fans of grimdark and sword & sorcery",
+          "theologically dense epic fantasy",
+          "Gothic horror and religious mysticism",
+          "long-form, immersive medieval worldbuilding",
+          "multi-POV epic fantasy"
         ],
         "negative": [
-          "readers who dislike slow pacing",
-          "those who prefer minimal exposition",
-          "readers new to the series"
+          "readers wanting fast pacing or short books",
+          "readers sensitive to graphic violence or sexual assault",
+          "readers who require an audiobook (none exists for Book 4)",
+          "readers who prefer completed series (Book 5 still unreleased)"
         ]
       },
-      "audio_suitability": "Excellent",
-      "audio_notes": "The series has professionally narrated audiobooks via Podium Audio with Ralph Lister; dense prose suits immersive listening.",
+      "audio_suitability": "Poor",
+      "audio_notes": "No audiobook for Book 4. Per the author's Goodreads Q&A, Podium Audio discontinued the series after Book 3. Books 1-3 were narrated by Ralph Lister (Podium, 2018-2020); no audio edition of Witch's Moon Calling has been produced or announced.",
       "content_flags": [
-        "graphic violence"
+        "graphic violence",
+        "sexual violence",
+        "torture",
+        "demonic / occult horror imagery",
+        "religious extremism"
       ],
-      "confidence": "Medium",
-      "research_source": "web_search",
+      "confidence": "High",
+      "research_source": "deep_research_opus",
       "audit": null
     },
     "Death's Beating Heart - Rob J. Hayes": {
@@ -151922,48 +151910,55 @@
       "author": "Ian Lewis",
       "series": "The Driver Series",
       "series_position": "Book 5",
-      "genre": "Thriller",
+      "genre": "Supernatural Fiction",
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "needs_review",
-      "summary": "The fifth and apparently concluding entry in the experimental Driver Series, following the otherworldly Driver — a figure who wanders between the living and the dead — as he reaches a desperate reckoning in his haunting duties among the souls he has gathered and loved.",
-      "tone": "gritty, haunting, literary-experimental",
-      "pacing": "Moderate",
+      "status": "complete",
+      "summary": "The fifth and concluding entry in Ian Lewis's experimental Driver Series, completing an in-series trilogy that began with Beacon Road Bedlam and continued through Winterfield Nights. The novel brings the storylines of the Driver — a murdered soul who wanders between the living and the dead, gathering other murdered souls — together with the long-running antagonism between Sheriff Eustace Hildersham (now in possession of his father's lost revolver) and Tad Ozzel, a reporter-turned-villain whose obsessive search for suppressed truth drives the characters to a reckoning.",
+      "tone": "gritty, haunting, literary-experimental, rural noir",
+      "pacing": "Slow burn with payoff",
       "themes": [
         "death and duty",
         "haunting",
-        "love and loss",
         "the supernatural",
-        "redemption"
+        "redemption",
+        "truth and obsession",
+        "small-town secrets",
+        "loss"
       ],
-      "setting": "Contemporary small-town America, where the worlds of the living and the dead overlap",
+      "setting": "Contemporary small-town/rural America (poverty-stricken rural county) where the worlds of the living and the dead overlap",
       "comparable_books": [
+        "The Dark Tower - Stephen King",
         "The Lovely Bones - Alice Sebold",
-        "Joe Hill short fiction",
-        "The Dark Tower - Stephen King"
+        "NOS4A2 - Joe Hill"
       ],
       "taste_signals": {
         "positive": [
-          "experimental narrative structure",
-          "supernatural fiction",
-          "literary thriller",
-          "gritty realism",
-          "multi-POV storytelling"
+          "multi-POV narration including a voice from beyond the grave",
+          "blends rural noir with ghost story",
+          "experimental structure",
+          "atmospheric and haunting prose",
+          "completes a long-running character arc"
         ],
         "negative": [
-          "genre purists expecting straightforward thriller plotting",
-          "readers new to the series",
-          "action-heavy thriller fans"
+          "very small readership / few reviews",
+          "rewards readers who have read books 1-4",
+          "non-linear structure may frustrate readers wanting a straightforward thriller",
+          "no audiobook edition"
         ]
       },
-      "audio_suitability": "Good",
-      "audio_notes": null,
+      "audio_suitability": "Unknown",
+      "audio_notes": "No audiobook edition was found on Audible, Amazon, or any retailer. Only Kindle and paperback editions are confirmed.",
       "content_flags": [
-        "graphic violence"
+        "murder",
+        "child in peril",
+        "supernatural / ghosts",
+        "violence",
+        "death"
       ],
-      "confidence": "Low",
-      "research_source": "web_search",
+      "confidence": "Medium",
+      "research_source": "deep_research_opus",
       "audit": null
     },
     "The Obsidian Eyes of Klief - Alex Robins": {
@@ -240428,32 +240423,24 @@
       "indie": true,
       "classic": false,
       "status": "needs_review",
-      "summary": null,
+      "summary": "A 60-page work attributed to The Arcanist Guild collective (with Dulin, Garcia, and Mayers credited). Deep research across Goodreads, Amazon, the publisher's site (thearcanist.net), and the contributors' social media surfaces no public listing for an anthology by this title; the only Arcanist Guild anthology found is ETHOS (2025, 287 pages, six contributors). This may be an unreleased project, a private or promotional sampler, or a working title — its existence as a public release could not be verified.",
       "tone": null,
       "pacing": null,
-      "themes": [
-        "morality",
-        "monsters",
-        "dark fantasy"
-      ],
+      "themes": [],
       "setting": null,
       "comparable_books": [
-        "Ethos - The Arcanist Guild"
+        "ETHOS - The Arcanist Guild"
       ],
       "taste_signals": {
-        "positive": [
-          "dark fantasy anthology",
-          "Arcanist Guild readers",
-          "morally complex short fiction"
-        ],
+        "positive": [],
         "negative": []
       },
-      "audio_suitability": "Good",
+      "audio_suitability": "Unknown",
       "audio_notes": null,
       "content_flags": [],
       "confidence": "Low",
-      "research_source": "web_search",
-      "audit": null
+      "research_source": "deep_research_opus",
+      "audit": "No public listing found for this title from The Arcanist Guild. CSV records 60 pages and 3 of the Guild's authors. Likely a small sampler / promotional release or a not-yet-published work. Manual confirmation needed before populating fields."
     },
     "Strange Buildings - Uketsu": {
       "title": "Strange Buildings",
