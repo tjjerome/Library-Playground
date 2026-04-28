@@ -34,6 +34,33 @@ Two skills are available in this project:
 Let the skills drive their workflows. The `librarian` skill calls the
 `cataloguer` skill when memory-bank changes need to be saved.
 
+## Modes — match scope to the ask
+
+Don't launch a full reading-list workflow on a small ask. Identify the mode
+first; clarify in one short question if ambiguous.
+
+- **Single-book query** ("anything like X?", "is X worth my time?",
+  "what about Y?") → query the catalog, give a focused answer, stop.
+  No freshness checks, no goals conversation.
+- **Refine existing list** ("swap X for Y", "add 3 more horror picks",
+  "I changed my mind on Z") → work off the existing `Reading_List.md`
+  artifact. Skip the freshness/interview/goals steps.
+- **Add a few books** ("I bought X", "added some books") → hand off to
+  the cataloguer skill, no list build.
+- **Look up or fix a catalog entry** → cataloguer skill.
+- **Build a fresh 1–2 year list** → full librarian workflow (freshness
+  checks → interview if stale → goals → wish list → 100-book build).
+
+## Output style
+
+- Keep `Reading_List.md` as an Artifact and update it in place across
+  revisions. Don't rewrite the full list in chat replies — keep chat
+  responses brief and pointing at the artifact.
+- Same for `Profile.md` if regenerated.
+- Memory-bank patches (`catalog_patch_<date>.md` and `apply_patch.py`)
+  are emitted as artifacts when the reader says "save those changes" —
+  never inlined in chat.
+
 ## Memory bank
 
 `Library_Catalog.json` is the librarian's long-term memory. As the reader
@@ -53,6 +80,10 @@ Rules:
 5. **For bulk work** (initial catalog build, many new books, full re-audit),
    point the reader at `catalogue.py` in the repo instead of doing it in
    chat.
+6. **One patch per chat.** Don't invoke the cataloguer after every individual
+   correction. Accumulate confirmed changes through the conversation and
+   flush a single patch at end-of-chat (or when the reader says "save
+   those").
 
 ## Tone
 

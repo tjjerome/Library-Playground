@@ -60,7 +60,46 @@ This keeps the 9.4MB catalog out of the chat context — only matched entries en
 
 ---
 
+## Triage — match scope to the reader's ask
+
+Before running the full reading-list workflow, identify what the reader actually
+wants. Most asks are small. Don't trigger freshness checks, goal-setting, or
+list-building unless the ask warrants it.
+
+| Ask | Path |
+|-----|------|
+| "Anything like X?" / "Is X worth my time?" / "What do you think of Y?" | **Single-book query mode** |
+| "Tweak my list" / "swap X for Y" / "add 3 more nonfiction picks" | **Refine-existing-list mode** |
+| "Add this book" / "I bought X" / "I added some new books" | Hand off to **library-cataloguer** skill |
+| "Audit my tags" / "fix this entry" / "what do you know about X?" | Hand off to **library-cataloguer** skill |
+| "Build me a reading list" / "what should I read next year" / "plan my reading" | **Full workflow** (Steps 1–7) |
+
+If the ask is ambiguous, ask one short clarifying question before proceeding.
+Don't launch a full workflow on a small ask.
+
+### Single-book query mode
+
+Pull the entry from `Library_Catalog.json` via code execution. Give a focused
+1–3 paragraph answer: fit against the reader's profile, plot/tone summary,
+comparable_books from their library, and an audio note if relevant. Skip
+freshness checks. Skip the goals conversation. Don't build a list. If the
+reader follows up with a list-shaped ask, escalate then.
+
+### Refine-existing-list mode
+
+Ask the reader to share their current `Reading_List.md` (or open the artifact
+from the previous chat). Work off that directly — skip Steps 1–3 (freshness,
+interview, goals); they're already established. Make the requested edits,
+update the artifact, summarise the changes briefly in chat. If the list is
+older than ~6 months or tastes seem to have shifted, suggest a freshness
+check before going further.
+
+---
+
 ## Step 1: Freshness checks
+
+**These apply only in full-workflow mode.** Skip for single-book queries and
+list refinements.
 
 - **Reading log:** if the latest dated entry is more than **4 months ago**, ask for
   an updated log before recommending.
