@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3933,
-  "total_pending": 667,
+  "total_catalogued": 3953,
+  "total_pending": 647,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -214653,350 +214653,656 @@
       "author": "Pat Murphy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Magical Realism",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Elizabeth Butler, an archaeologist excavating Mayan ruins in the Yucatan, has the uncanny ability to see the spirits of ancient people — until a Mayan priestess begins speaking back to her. When her estranged daughter Diane arrives unannounced, a collision of past and present forces both women toward a terrible sacrifice.",
+      "tone": "lyrical, introspective, literary",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "mother-daughter estrangement",
+        "archaeology",
+        "Mayan culture",
+        "the supernatural",
+        "identity",
+        "feminist literary fiction"
+      ],
+      "setting": "1980s Yucatan, Mexico — an active Mayan archaeological dig at Dzibilchaltún",
+      "comparable_books": [
+        "Beloved - Toni Morrison",
+        "The Witches of Eastwick - John Updike",
+        "The House of the Spirits - Isabel Allende",
+        "Mists of Avalon - Marion Zimmer Bradley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fantasy",
+          "feminist themes",
+          "magical realism",
+          "archaeological setting",
+          "layered mother-daughter relationships",
+          "Nebula Award winner",
+          "quiet and introspective"
+        ],
+        "negative": [
+          "genre adventure fans",
+          "fast pacing",
+          "action-heavy plots",
+          "hard sci-fi readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "suicide (backstory)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Starfarers - Vonda N. McIntyre": {
       "title": "Starfarers",
       "author": "Vonda N. McIntyre",
       "series": "Starfarers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A diverse crew of scientists and researchers — the Alien Contact Team — prepare for humanity's first interstellar voyage aboard the starship Starfarer, only to find their mission cancelled by a new authoritarian regime. Rather than surrender the ship, they steal it and launch into the unknown.",
+      "tone": "optimistic, ensemble-driven, character-focused",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact",
+        "political interference in science",
+        "found family",
+        "interstellar exploration",
+        "academic freedom"
+      ],
+      "setting": "Near-future Earth and deep space; late 20th-century political context aboard the starship Starfarer",
+      "comparable_books": [
+        "A Fire Upon the Deep - Vernor Vinge",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Ancillary Justice - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast",
+          "first contact SF",
+          "humanist science fiction",
+          "political intrigue",
+          "character-driven narrative"
+        ],
+        "negative": [
+          "hard SF with heavy technical detail",
+          "grimdark readers",
+          "fast action pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Transition - Vonda N. McIntyre": {
       "title": "Transition",
       "author": "Vonda N. McIntyre",
       "series": "Starfarers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Starfarer crew continues their interstellar voyage and makes contact with the Four Worlds, their potential sponsors into an interstellar Civilization, while personal relationships within the crew are tested under the pressures of the mission and a shifting cosmic string.",
+      "tone": "optimistic, character-focused, sense-of-wonder",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact",
+        "alien civilisations",
+        "relationship dynamics",
+        "scientific ethics",
+        "diplomacy"
+      ],
+      "setting": "Deep space and the alien Four Worlds, aboard the starship Starfarer",
+      "comparable_books": [
+        "A Fire Upon the Deep - Vernor Vinge",
+        "The Sparrow - Mary Doria Russell",
+        "Ancillary Justice - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast",
+          "alien contact",
+          "character-driven SF",
+          "found family",
+          "humanist optimism"
+        ],
+        "negative": [
+          "grimdark readers",
+          "action-heavy SF",
+          "plot-over-character readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Metaphase - Vonda N. McIntyre": {
       "title": "Metaphase",
       "author": "Vonda N. McIntyre",
       "series": "Starfarers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Starfarer crew works to repair the ship from mechanical damage and sabotage while deepening their relationship with the alien Four Worlds and moving closer to acceptance into the broader interstellar Civilization.",
+      "tone": "optimistic, ensemble-driven, contemplative",
+      "pacing": "Moderate",
+      "themes": [
+        "alien contact",
+        "ship community",
+        "repair and resilience",
+        "interstellar politics",
+        "trust"
+      ],
+      "setting": "Aboard the Starfarer and the alien Four Worlds star system",
+      "comparable_books": [
+        "The Sparrow - Mary Doria Russell",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Destiny's Children series - Stephen Baxter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ensemble cast",
+          "humane science fiction",
+          "first contact",
+          "found family"
+        ],
+        "negative": [
+          "fast pacing",
+          "grimdark",
+          "action-heavy SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Nautilus - Vonda N. McIntyre": {
       "title": "Nautilus",
       "author": "Vonda N. McIntyre",
       "series": "Starfarers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the series finale, the Starfarer crew must decide whether to accept membership in the interstellar Civilization on behalf of all humanity — a decision with profound consequences — as the cosmic string that could carry them home begins to disappear.",
+      "tone": "optimistic, reflective, high-stakes",
+      "pacing": "Moderate",
+      "themes": [
+        "humanity's place in the cosmos",
+        "collective decision-making",
+        "sacrifice",
+        "first contact",
+        "belonging"
+      ],
+      "setting": "Deep space, alien Civilization territory, and the looming threat of permanent exile from Earth",
+      "comparable_books": [
+        "The Sparrow - Mary Doria Russell",
+        "Startide Rising - David Brin",
+        "A Fire Upon the Deep - Vernor Vinge"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusion payoff",
+          "first contact",
+          "humanist SF",
+          "ensemble cast",
+          "philosophical stakes"
+        ],
+        "negative": [
+          "grimdark readers",
+          "action-focused SF fans",
+          "those who dislike slow-building series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Winterlong - Elizabeth Hand": {
       "title": "Winterlong",
       "author": "Elizabeth Hand",
       "series": "Winterlong",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a post-apocalyptic City of Trees, Wendy Wanders — a girl with an empathic gift for entering others' dreams — reunites with her lost twin brother Raphael, a sacred courtesan to the city's decadent elite, as an ancient and consuming power threatens to devour them all.",
+      "tone": "dark, lyrical, decadent, surreal",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "identity",
+        "empathy",
+        "decadence and collapse",
+        "twins and duality",
+        "sexuality and power",
+        "post-apocalypse"
+      ],
+      "setting": "Post-apocalyptic far-future America — the surreal, domed City of Trees",
+      "comparable_books": [
+        "Book of the New Sun - Gene Wolfe",
+        "Gormenghast - Mervyn Peake",
+        "The Violent Century - Lavie Tidhar",
+        "Clive Barker's Imajica"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush literary prose",
+          "dark and surreal worldbuilding",
+          "post-apocalyptic",
+          "transgressive fiction",
+          "morally complex characters",
+          "sensory and decadent"
+        ],
+        "negative": [
+          "fast pacing",
+          "clean or wholesome fantasy",
+          "plot-over-prose readers",
+          "squeamish readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Æstival Tide - Elizabeth Hand": {
       "title": "Æstival Tide",
       "author": "Elizabeth Hand",
       "series": "Winterlong",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Araboth, the majestic domed city of the Ascendants, the resurrected warrior Margalis Tast'annin is enslaved by his former lover and exiled to the debauched city — where obsession with beauty and power vents in haunting, horrific ways as the once-in-a-decade Aestival Tide threatens total destruction.",
+      "tone": "dark, baroque, nightmarish, sensual",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "power and corruption",
+        "body horror",
+        "enslavement",
+        "decadence",
+        "apocalypse",
+        "identity"
+      ],
+      "setting": "Araboth — a vast, multi-tiered domed city of the Ascendants in the post-apocalyptic Winterlong universe",
+      "comparable_books": [
+        "Gormenghast - Mervyn Peake",
+        "Book of the New Sun - Gene Wolfe",
+        "The Etched City - K.J. Bishop"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark baroque prose",
+          "transgressive fantasy",
+          "decadent worldbuilding",
+          "horror-inflected SF",
+          "literary ambition"
+        ],
+        "negative": [
+          "fast pacing",
+          "cosy or optimistic fantasy",
+          "squeamish readers",
+          "plot-first readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Icarus Descending - Elizabeth Hand": {
       "title": "Icarus Descending",
       "author": "Elizabeth Hand",
       "series": "Winterlong",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Araboth is destroyed, open war rules both earth and sky, and Wendy Wanders joins the rebel forces as they await the mythical Icarus to turn the tide — while the final fates of the geneslaves, the Ascendants, and the legendary Metatron are decided in a climactic conclusion.",
+      "tone": "dark, apocalyptic, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "revolution",
+        "war",
+        "identity",
+        "rebellion",
+        "engineered species",
+        "mythology"
+      ],
+      "setting": "Post-apocalyptic Earth — ruins and battlefields of the Winterlong universe during open war",
+      "comparable_books": [
+        "Gormenghast - Mervyn Peake",
+        "The Etched City - K.J. Bishop",
+        "The Book of the New Sun - Gene Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusion",
+          "dark literary SF",
+          "rebel narratives",
+          "transgressive fiction",
+          "surreal worldbuilding"
+        ],
+        "negative": [
+          "fast pacing",
+          "clean fantasy",
+          "plot-first readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Engines of War - Richard S. Ford": {
       "title": "Engines of War",
       "author": "Richard S. Ford",
       "series": "The Age of Uprising",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the climactic finale, the Guild forces of Torwyn march on the capital to unseat the fanatical Archlegate Sanctan Egelrath, but Rosomon Hawkspur faces a terrible bargain to secure victory — with consequences that will reshape the empire forever.",
+      "tone": "grimdark, propulsive, epic",
+      "pacing": "Fast",
+      "themes": [
+        "empire and collapse",
+        "religious extremism",
+        "loyalty and sacrifice",
+        "war",
+        "magic and industry",
+        "family"
+      ],
+      "setting": "Torwyn — an industrialised secondary world empire powered by magical pyrestone, industrial revolution aesthetic",
+      "comparable_books": [
+        "Engines of Empire - Richard S. Ford",
+        "The Shadow of the Gods - John Gwynne",
+        "The Gutter Prayer - Gareth Hanrahan",
+        "Red Sister - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark epic fantasy",
+          "multi-POV cast",
+          "fast pacing",
+          "political intrigue",
+          "magic-fuelled industry",
+          "satisfying series conclusion"
+        ],
+        "negative": [
+          "cosy fantasy",
+          "standalone readers",
+          "those who dislike doorstopper series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multi-POV epic with propulsive pacing lends itself well to audio; strong dramatic narration suits the scale.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Distant Echo - Val McDermid": {
       "title": "The Distant Echo",
       "author": "Val McDermid",
       "series": "Inspector Karen Pirie",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Crime Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1978, four students in St Andrews stumble upon the dying body of barmaid Rosie Duff and become the only suspects in her brutal murder. Twenty-five years later, a cold case review reopens the wound — and when two of the men begin dying under suspicious circumstances, the survivors fear someone is administering their own justice.",
+      "tone": "taut, procedural, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "cold case investigation",
+        "guilt and innocence",
+        "community suspicion",
+        "justice and revenge",
+        "past haunting the present"
+      ],
+      "setting": "St Andrews and Fife, Scotland — spanning 1978 and the early 2000s",
+      "comparable_books": [
+        "The Mermaids Singing - Val McDermid",
+        "Wire in the Blood - Val McDermid",
+        "A Place of Execution - Val McDermid",
+        "The Bone Clocks - David Mitchell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "tartan noir",
+          "cold case mysteries",
+          "dual timeline crime",
+          "Scotland setting",
+          "police procedural",
+          "psychological thriller"
+        ],
+        "negative": [
+          "cosy mystery fans",
+          "readers who dislike crime brutality",
+          "those wanting a strong detective lead in book 1"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Scottish setting and dual-timeline structure shine in audio; McDermid's prose is well-suited to narration.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content (rape, off-page)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Saevus Corax Deals With the Dead - K. J. Parker": {
       "title": "Saevus Corax Deals With the Dead",
       "author": "K. J. Parker",
       "series": "The Corax trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Saevus Corax leads a crew of battlefield salvagers in a war-torn secondary world, stripping the dead of arms and armour for profit — until a visit to his secret storehouse reveals that his buried past as a royal exile is very much alive, dragging him into a power struggle he wants no part of.",
+      "tone": "darkly comic, sardonic, cynical",
+      "pacing": "Moderate",
+      "themes": [
+        "war profiteering",
+        "identity and reinvention",
+        "political intrigue",
+        "cynicism",
+        "the cost of conflict",
+        "found family"
+      ],
+      "setting": "A medieval European-inspired secondary world — battlefields, ports, and island monasteries of the Sirupat region",
+      "comparable_books": [
+        "Sixteen Ways to Defend a Walled City - K.J. Parker",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "The Folding Knife - K.J. Parker",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic fantasy",
+          "morally grey protagonist",
+          "satirical worldbuilding",
+          "cynical wit",
+          "unreliable narrator",
+          "low fantasy",
+          "character-driven"
+        ],
+        "negative": [
+          "grimdark readers wanting action",
+          "romance-heavy fantasy fans",
+          "readers wanting clear heroes and villains",
+          "those who dislike sardonic narration"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blood Eye - Giles Kristian": {
       "title": "Blood Eye",
       "author": "Giles Kristian",
       "series": "Raven",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Osric, an orphan with a blood-red eye living in ninth-century England, is captured by Norse raiders and taken under the wing of Jarl Sigurd the Lucky, who believes their fates are intertwined. Renamed Raven, Osric is drawn into a mission to steal a holy manuscript from the King of Mercia — and into a world of brotherhood, betrayal, and violent coming-of-age.",
+      "tone": "visceral, propulsive, immersive",
+      "pacing": "Fast",
+      "themes": [
+        "belonging and identity",
+        "Viking culture",
+        "coming of age",
+        "brotherhood and loyalty",
+        "Christian vs Norse worldviews",
+        "betrayal"
+      ],
+      "setting": "9th-century England and Mercia — Dark Ages Britain, Viking raid era",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "The Whale Road - Robert Low",
+        "God of Vengeance - Giles Kristian",
+        "Oathsworn series - Robert Low"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Viking historical fiction",
+          "action-heavy adventure",
+          "coming of age",
+          "gritty historical immersion",
+          "Bernard Cornwell fans"
+        ],
+        "negative": [
+          "squeamish readers",
+          "those wanting nuanced literary prose",
+          "cosy historical fiction fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced Viking adventure with vivid action sequences is ideally suited to audio listening.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Shady Hollow - Juneau Black": {
       "title": "Shady Hollow",
       "author": "Juneau Black",
       "series": "Shady Hollow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Cozy Mystery",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Fox reporter Vera Vixen is new to Shady Hollow, a charming woodland village populated by anthropomorphic animals, when a cantankerous toad is found dead with a knife in his back. With the local bear police out of their depth, Vera must use her reporter's instincts to uncover the murderer — before they come for her.",
+      "tone": "whimsical, cosy, lightly dark",
+      "pacing": "Fast",
+      "themes": [
+        "community and belonging",
+        "justice and truth",
+        "small-town secrets",
+        "ambition",
+        "friendship"
+      ],
+      "setting": "Shady Hollow — an idyllic, timeless woodland village populated by anthropomorphic animals",
+      "comparable_books": [
+        "Wind in the Willows - Kenneth Grahame",
+        "The No. 1 Ladies' Detective Agency - Alexander McCall Smith",
+        "Flavia de Luce series - Alan Bradley",
+        "Redwall - Brian Jacques"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy mystery",
+          "anthropomorphic animals",
+          "whimsical setting",
+          "amateur sleuth",
+          "light and charming",
+          "fast read"
+        ],
+        "negative": [
+          "hard-boiled crime readers",
+          "grimdark fans",
+          "readers wanting realistic settings",
+          "those who dislike anthropomorphic conceit"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Charming cosy mystery with a distinctive whimsical tone that translates beautifully to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Bewitching - Silvia Moreno-Garcia": {
@@ -215004,26 +215310,52 @@
       "author": "Silvia Moreno-Garcia",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three women across three timelines — a farm girl in 1908 Mexico, a horror writer in 1930s Massachusetts, and a graduate student in 1990s New England — each encounter a predatory witch, their stories converging into a multigenerational saga of witchcraft, survival, and the power of storytelling.",
+      "tone": "gothic, atmospheric, slow-burn eerie",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "witchcraft and folk horror",
+        "female agency and power",
+        "generational trauma",
+        "dark academia",
+        "Mexican folklore",
+        "the supernatural"
+      ],
+      "setting": "Three timelines: rural Mexico 1908; New England college campus 1930s; New England campus 1990s",
+      "comparable_books": [
+        "Mexican Gothic - Silvia Moreno-Garcia",
+        "Silver Nitrate - Silvia Moreno-Garcia",
+        "The Reformatory - Tananarive Due",
+        "Conjure Women - Afia Atakora"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic horror",
+          "Mexican folklore",
+          "dark academia",
+          "multigenerational narratives",
+          "strong female protagonists",
+          "atmospheric slow burn",
+          "literary horror"
+        ],
+        "negative": [
+          "fast-paced horror fans",
+          "readers wanting jump-scares over dread",
+          "those who dislike multiple timelines"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content (mild)"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Spy and the Traitor: The Greatest Espionage Story of the Cold War - Ben Macintyre": {
@@ -215031,161 +215363,305 @@
       "author": "Ben Macintyre",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The true story of Oleg Gordievsky, a KGB colonel who secretly worked as a British double agent for over a decade during the Cold War, and the dramatic MI6 operation to extract him from Moscow when his cover was blown in 1985.",
+      "tone": "propulsive, gripping, novelistic",
+      "pacing": "Fast",
+      "themes": [
+        "espionage",
+        "Cold War geopolitics",
+        "loyalty and betrayal",
+        "courage under pressure",
+        "identity and deception",
+        "East vs West"
+      ],
+      "setting": "Cold War era USSR, London, and Europe — 1970s–1980s",
+      "comparable_books": [
+        "Agent Sonya - Ben Macintyre",
+        "Operation Mincemeat - Ben Macintyre",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "A Spy Among Friends - Ben Macintyre"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War history",
+          "espionage non-fiction",
+          "novelistic narrative non-fiction",
+          "le Carré fans",
+          "propulsive true story"
+        ],
+        "negative": [
+          "readers wanting dense academic history",
+          "those who dislike spy stories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Macintyre's pacey, novelistic prose and dramatic story arc make this a standout audio listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Trial of Rooker Flynn - A. R. Witham": {
       "title": "The Trial of Rooker Flynn",
       "author": "A. R. Witham",
       "series": "Locke Institute",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Imprisoned in the Locke Institute — a brutal magical labour camp on the island of Huanghun — Rooker Flynn must survive gang violence, gladiatorial combat, giant spider-dragons, and the machinations of the terrifying Headmistress Whipmarples, while uncovering the dark secrets of why the Institute collects prisoners' blood.",
+      "tone": "dark, propulsive, action-heavy, emotionally intense",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "friendship and loyalty",
+        "trauma and resilience",
+        "oppression and rebellion",
+        "identity",
+        "truth and deception"
+      ],
+      "setting": "Keymark — a fantasy world; specifically the Locke Institute, a tropical island prison-school",
+      "comparable_books": [
+        "The Scholomance - Naomi Novik",
+        "Red Rising - Pierce Brown",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Mistborn - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "prison fantasy",
+          "fast pacing",
+          "found family",
+          "dark emotional depth",
+          "action-adventure",
+          "indie fantasy"
+        ],
+        "negative": [
+          "cosy fantasy fans",
+          "slow-burn readers",
+          "those who dislike cliffhanger endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Author narrates his own audiobooks; fast-paced action and emotional character arcs suit audio format well.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Crimes of Rooker Flynn - A. R. Witham": {
       "title": "The Crimes of Rooker Flynn",
       "author": "A. R. Witham",
       "series": "Locke Institute",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rooker Flynn, a roguish pirate, is captured and thrown into the Locke Institute — a prison disguised as a school in a fantasy world powered by magic — where he forms an uneasy alliance with a young genius named Jack, trading protection for a chance at escape.",
+      "tone": "dark, propulsive, darkly humorous",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "loyalty",
+        "prison dynamics",
+        "power and oppression",
+        "friendship",
+        "morally grey protagonists"
+      ],
+      "setting": "Keymark — a fantasy secondary world; the Locke Institute, a magical prison-school",
+      "comparable_books": [
+        "The Scholomance - Naomi Novik",
+        "Red Rising - Pierce Brown",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Pitch Black (film equivalent)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "fast-paced adventure",
+          "prison fantasy",
+          "found family",
+          "pirate protagonist",
+          "indie fantasy"
+        ],
+        "negative": [
+          "slow-burn readers",
+          "cosy fantasy fans",
+          "those wanting standalone stories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Author narrates his own audiobooks; described as gripping and un-pauseable in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Execution of Rooker Flynn - A. R. Witham": {
       "title": "The Execution of Rooker Flynn",
       "author": "A. R. Witham",
       "series": "Locke Institute",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The prison revolt has failed and Headmistress Gerba Whipmarples has won — Rooker Flynn faces execution at the end of a noose in the climactic finale, with most of the story unfolding across the thirteen harrowing hours of his final day at the Locke Institute.",
+      "tone": "dark, tense, emotionally cathartic",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "justice",
+        "friendship and love",
+        "survival against the odds",
+        "oppression and rebellion"
+      ],
+      "setting": "Keymark — the Locke Institute prison on the island of Huanghun, final day of Rooker's imprisonment",
+      "comparable_books": [
+        "The Scholomance - Naomi Novik",
+        "Red Rising - Pierce Brown",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusion",
+          "morally grey protagonist",
+          "dark emotional payoff",
+          "fast pacing",
+          "indie fantasy",
+          "found family"
+        ],
+        "negative": [
+          "cosy fantasy fans",
+          "readers wanting slow, contemplative endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Author narrates his own audiobooks; tightly concentrated timeline and high emotional stakes ideal for audio immersion.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Casthen Gain: A Novella of the Graven - Essa Hansen": {
       "title": "Casthen Gain: A Novella of the Graven",
       "author": "Essa Hansen",
-      "series": null,
+      "series": "The Graven",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sentace Ketch, a skilled culinarian on an isolated, conformist planet, escapes off-world only to be captured and dropped on the most dangerous planet in the multiverse alongside fourteen murderers and exiles in a battle royale race to find a buried anomaly — or die trying.",
+      "tone": "kinetic, sensory, darkly inventive",
+      "pacing": "Fast",
+      "themes": [
+        "freedom and creativity",
+        "conformity vs expression",
+        "survival",
+        "trust and alliance",
+        "food as art",
+        "multiversal physics"
+      ],
+      "setting": "The Graven multiverse — a bubble multiverse with radically different physics in each universe; specifically the Casthen's dangerous home-base planet",
+      "comparable_books": [
+        "Nophek Gloss - Essa Hansen",
+        "All Systems Red - Martha Wells",
+        "The Calculating Stars - Mary Robinette Kowal",
+        "Delicious in Dungeon (manga)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space opera",
+          "battle royale setup",
+          "found family",
+          "sensory worldbuilding",
+          "unconventional protagonist (chef)",
+          "fast-paced",
+          "standalone entry point to series"
+        ],
+        "negative": [
+          "hard SF purists",
+          "slow-burn readers",
+          "those who dislike novellas"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Thick as Thieves - Megan Whalen Turner": {
       "title": "Thick as Thieves",
       "author": "Megan Whalen Turner",
       "series": "The Queen's Thief",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Kamet, a slave secretary to a powerful Mede official, is offered a chance at freedom by an Attolian soldier with an unknown agenda — the two embark on a dangerous journey across an empire, each concealing secrets, in a road-trip narrative that expands the world of the Queen's Thief series.",
+      "tone": "witty, layered, quietly suspenseful",
+      "pacing": "Moderate",
+      "themes": [
+        "freedom and slavery",
+        "trust and loyalty",
+        "identity",
+        "political intrigue",
+        "culture clash",
+        "found friendship"
+      ],
+      "setting": "The Mede Empire and Attolia — a secondary world Mediterranean/Middle Eastern-inspired setting",
+      "comparable_books": [
+        "The Thief - Megan Whalen Turner",
+        "Sabriel - Garth Nix",
+        "The Goblin Emperor - Katherine Addison",
+        "Finnikin of the Rock - Melina Marchetta"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "road trip fantasy",
+          "layered characters",
+          "political intrigue",
+          "deceptive plotting",
+          "slow-reveal storytelling",
+          "beloved series",
+          "found friendship"
+        ],
+        "negative": [
+          "readers wanting fast action from page one",
+          "those who dislike understated prose",
+          "standalone readers (series context enriches greatly)"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The series is widely acclaimed in audio; the layered prose and character-driven journey translate beautifully to narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Return of the Thief - Megan Whalen Turner": {
