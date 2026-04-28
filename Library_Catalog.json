@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3833,
-  "total_pending": 767,
+  "total_catalogued": 3853,
+  "total_pending": 747,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -209655,53 +209655,101 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A sweeping epic spanning millions of years, Centennial traces the history of a fictional Colorado town from prehistoric times through the twentieth century, weaving together the stories of Native Americans, fur trappers, settlers, cattlemen, and farmers. Each era is rendered in rich detail, exploring humanity's relationship with the land.",
+      "tone": "epic, panoramic, meditative",
+      "pacing": "Slow",
+      "themes": [
+        "American West",
+        "land and nature",
+        "cycles of history",
+        "immigration and settlement",
+        "cultural change"
+      ],
+      "setting": "Fictional Centennial, Colorado, USA — prehistoric era through the 1970s",
+      "comparable_books": [
+        "Hawaii - James A. Michener",
+        "Lonesome Dove - Larry McMurtry",
+        "The Pillars of the Earth - Ken Follett",
+        "Chesapeake - James A. Michener"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-generational saga",
+          "deep historical research",
+          "sweeping scope",
+          "sense of place",
+          "American frontier history"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "episodic structure",
+          "no single protagonist",
+          "very long"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mister Slaughter - Robert McCammon": {
       "title": "Mister Slaughter",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1702 New York, problem-solver Matthew Corbett and his partner Hudson Greathouse are hired to escort the notorious mass murderer Tyranthus Slaughter from an asylum outside Philadelphia to the docks of New York — a simple prisoner transfer that spirals into a catastrophic ordeal when Slaughter makes his captors a tempting offer. A propulsive portrait of an archetypal serial killer set against the backdrop of colonial America.",
+      "tone": "atmospheric, visceral, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "good vs. evil",
+        "colonial America",
+        "justice",
+        "predator and prey",
+        "psychological cat-and-mouse"
+      ],
+      "setting": "Colonial America — New York City and Pennsylvania, 1702",
+      "comparable_books": [
+        "Speaks the Nightbird - Robert McCammon",
+        "The Queen of Bedlam - Robert McCammon",
+        "The Alienist - Caleb Carr",
+        "Dissolution - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "vivid villain",
+          "historical atmosphere",
+          "action-adventure thriller",
+          "serial killer procedural"
+        ],
+        "negative": [
+          "graphic violence",
+          "horror elements",
+          "less mystery-puzzle than earlier entries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Edoardo Ballerini, who is widely praised as an exceptional narrator for this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Space - James A. Michener": {
@@ -209709,26 +209757,47 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following several American families and astronauts from the end of World War II through the early Space Age, Space chronicles the U.S. space program with Michener's characteristic panoramic scope, blending technical detail, personal drama, and political intrigue. It is both a celebration of human ambition and an examination of what drives people to explore the unknown.",
+      "tone": "sweeping, earnest, celebratory",
+      "pacing": "Slow",
+      "themes": [
+        "American ambition",
+        "space exploration",
+        "Cold War",
+        "scientific progress",
+        "sacrifice and heroism"
+      ],
+      "setting": "USA — mid-20th century through the early Space Age (1940s–1980s)",
+      "comparable_books": [
+        "The Right Stuff - Tom Wolfe",
+        "Centennial - James A. Michener",
+        "Hawaii - James A. Michener",
+        "Carrying the Fire - Michael Collins"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic historical scope",
+          "space history enthusiasts",
+          "multi-character ensemble",
+          "research-driven fiction"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "very long",
+          "episodic structure",
+          "dense with detail"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mexico - James A. Michener": {
@@ -209736,53 +209805,98 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An American journalist covering a bullfighting competition in a Mexican city finds himself drawn into his own family history spanning centuries, from the ancient Aztec and colonial Spanish eras to the modern day. Michener weaves together the strands of Mexican history through generations of two rival families.",
+      "tone": "sweeping, richly detailed, contemplative",
+      "pacing": "Slow",
+      "themes": [
+        "Mexican history and culture",
+        "clash of civilizations",
+        "identity and heritage",
+        "tradition vs. modernity",
+        "bullfighting"
+      ],
+      "setting": "Mexico — ancient Aztec civilization through the 20th century",
+      "comparable_books": [
+        "Centennial - James A. Michener",
+        "The Old Man and the Sea - Ernest Hemingway",
+        "The Power and the Glory - Graham Greene",
+        "The Lacuna - Barbara Kingsolver"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-generational saga",
+          "deep cultural immersion",
+          "sweeping historical scope",
+          "Mexican history enthusiasts"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "episodic structure",
+          "very long"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Speaks the Nightbird - Robert McCammon": {
       "title": "Speaks the Nightbird",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1699 colonial Carolina, young magistrate's clerk Matthew Corbett investigates the case of a woman accused of witchcraft and murder — a case that troubles him deeply, as the evidence points to a set-up rather than guilt. A gothic whodunit set against the superstition and brutality of early colonial America.",
+      "tone": "atmospheric, gothic, suspenseful",
+      "pacing": "Moderate",
+      "themes": [
+        "witchcraft and superstition",
+        "justice vs. mob rule",
+        "colonial America",
+        "moral courage",
+        "truth-seeking"
+      ],
+      "setting": "Colonial North Carolina, USA — 1699",
+      "comparable_books": [
+        "The Alienist - Caleb Carr",
+        "Dissolution - C.J. Sansom",
+        "The Name of the Rose - Umberto Eco",
+        "The Crucible - Arthur Miller (play)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical whodunit",
+          "gothic atmosphere",
+          "morally upright protagonist",
+          "colonial America setting",
+          "slow-burn mystery"
+        ],
+        "negative": [
+          "slower pace than later entries",
+          "heavy exposition",
+          "period detail density"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Edoardo Ballerini, widely praised as an exceptional performer for this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Covenant - James A. Michener": {
@@ -209790,242 +209904,447 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A sprawling epic tracing South Africa's history from prehistoric times through the height of apartheid, following three families — Boer, English, and Zulu — whose fates become intertwined across centuries. Michener examines colonialism, racial injustice, and the enduring covenant between people and their land.",
+      "tone": "sweeping, morally serious, richly detailed",
+      "pacing": "Slow",
+      "themes": [
+        "apartheid and racism",
+        "colonialism",
+        "South African history",
+        "land and belonging",
+        "cultural conflict"
+      ],
+      "setting": "South Africa — prehistoric era through the 1970s",
+      "comparable_books": [
+        "Centennial - James A. Michener",
+        "Cry, the Beloved Country - Alan Paton",
+        "Hawaii - James A. Michener",
+        "Chesapeake - James A. Michener"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-generational saga",
+          "political and social history",
+          "sweeping scope",
+          "South African history enthusiasts"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "very long",
+          "episodic structure",
+          "difficult subject matter"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The King of Shadows - Robert McCammon": {
       "title": "The King of Shadows",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In January 1704, Matthew Corbett travels to Italy with Hudson Greathouse and the reformed criminal Professor Fell, seeking a sorcerer's mirror said to summon demons — but their ship is disabled and they are marooned on a mysterious island called Golgotha, where nothing is as it seems and the castaways struggle to maintain their very identities. A blend of history, mystery, adventure, and paranormal terror.",
+      "tone": "atmospheric, paranormal, swashbuckling",
+      "pacing": "Fast",
+      "themes": [
+        "identity and reality",
+        "good vs. evil",
+        "nature vs. nurture",
+        "redemption",
+        "the occult"
+      ],
+      "setting": "Mediterranean — Italy and a mysterious island, January 1704",
+      "comparable_books": [
+        "Cardinal Black - Robert McCammon",
+        "The Providence Rider - Robert McCammon",
+        "The Alienist - Caleb Carr",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action-adventure thriller",
+          "paranormal elements",
+          "morally grey allies",
+          "series with escalating stakes",
+          "swashbuckling"
+        ],
+        "negative": [
+          "paranormal/horror elements",
+          "requires series knowledge",
+          "over-the-top action"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Edoardo Ballerini, who is consistently praised as outstanding across this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Queen of Bedlam - Robert McCammon": {
       "title": "The Queen of Bedlam",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Matthew Corbett, now a young problem-solver for the Herrald Agency in New York City, investigates a series of brutal street murders while simultaneously seeking to unravel the identity of a mysterious woman held in an asylum outside Philadelphia — and the sinister thread connecting both cases to the shadowy criminal mastermind Professor Fell.",
+      "tone": "atmospheric, detective-thriller, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "justice and corruption",
+        "criminal conspiracy",
+        "colonial New York",
+        "identity and memory",
+        "good vs. evil"
+      ],
+      "setting": "New York City and colonial America, early 1700s",
+      "comparable_books": [
+        "Speaks the Nightbird - Robert McCammon",
+        "The Alienist - Caleb Carr",
+        "Mister Slaughter - Robert McCammon",
+        "Dissolution - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical mystery",
+          "building serial villain",
+          "detective procedural",
+          "colonial America atmosphere"
+        ],
+        "negative": [
+          "graphic violence",
+          "horror elements",
+          "requires Book 1 for best experience"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Edoardo Ballerini, widely praised as an outstanding series narrator.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Providence Rider - Robert McCammon": {
       "title": "The Providence Rider",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1703, Matthew Corbett is abducted from New York and transported to the island stronghold of the criminal mastermind Professor Fell, who forces him to unmask a traitor leaking his plans to England. Matthew meets the 'Emperor of Crime' face-to-face for the first time, navigating a Bermuda island populated by rogues, killers, and exotic dangers.",
+      "tone": "swashbuckling, propulsive, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "crime and power",
+        "loyalty and betrayal",
+        "colonial America",
+        "good vs. evil",
+        "coercion and courage"
+      ],
+      "setting": "New York City and Pendulum Island (Bermuda), 1703",
+      "comparable_books": [
+        "Mister Slaughter - Robert McCammon",
+        "The Queen of Bedlam - Robert McCammon",
+        "The Alienist - Caleb Carr",
+        "Dr. No - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "action-adventure thriller",
+          "larger-than-life villain",
+          "propulsive pacing",
+          "exotic locations",
+          "swashbuckling"
+        ],
+        "negative": [
+          "graphic violence",
+          "requires series context",
+          "increasingly over-the-top plotting"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Edoardo Ballerini, consistently praised as an outstanding performer for this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Order in Chaos - Jack Whyte": {
       "title": "Order in Chaos",
       "author": "Jack Whyte",
       "series": "Templar Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Beginning just before the catastrophic arrests of Friday the 13th, October 1307 — when King Philip IV of France destroyed the Knights Templar in a single morning — Sir William St. Clair flees France with the Order's legendary treasure and several hundred knights, eventually fighting alongside Robert the Bruce at Bannockburn before seeking a legendary land beyond the Western Ocean.",
+      "tone": "epic, measured, historically immersive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "betrayal and persecution",
+        "end of an era",
+        "honour and loyalty",
+        "faith and disillusionment",
+        "survival"
+      ],
+      "setting": "France, Scotland, and medieval Europe — early 14th century (1307 onward)",
+      "comparable_books": [
+        "Standard of Honor - Jack Whyte",
+        "Knights of the Black and White - Jack Whyte",
+        "The Last Templar - Raymond Khoury",
+        "Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Knights Templar history",
+          "medieval historical fiction",
+          "epic scope",
+          "detailed world-building"
+        ],
+        "negative": [
+          "slow pacing",
+          "very long and dense",
+          "limited action scenes",
+          "requires series knowledge"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The River of Souls - Robert McCammon": {
       "title": "The River of Souls",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Charles Town, Carolina (1703), Matthew Corbett is drawn into a manhunt for escaped slaves accused of murder — but his doubts about their guilt lead him on a treacherous journey up the Solstice River known as 'the River of Souls', where alligators, Native American warriors, and something far more terrifying await. A dark adventure that tests Matthew's endurance and alters his life forever.",
+      "tone": "atmospheric, gothic, adventure-horror",
+      "pacing": "Fast",
+      "themes": [
+        "racial injustice",
+        "survival",
+        "the American wilderness",
+        "the supernatural vs. the rational",
+        "justice"
+      ],
+      "setting": "Charles Town (Charleston), Carolina colony and surrounding swamps, 1703",
+      "comparable_books": [
+        "The Providence Rider - Robert McCammon",
+        "Mister Slaughter - Robert McCammon",
+        "Heart of Darkness - Joseph Conrad",
+        "The Alienist - Caleb Carr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "adventure-thriller",
+          "colonial wilderness setting",
+          "survival narrative",
+          "paranormal atmosphere"
+        ],
+        "negative": [
+          "graphic violence",
+          "horror elements",
+          "racial themes handled in period context",
+          "less mystery-focused than earlier books"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Edoardo Ballerini, consistently praised as an outstanding performer throughout this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Divine Fury - D. V. Bishop": {
       "title": "A Divine Fury",
       "author": "D. V. Bishop",
       "series": "Cesare Aldo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In autumn 1539 Florence, Cesare Aldo — demoted to night patrol after a period of exile — discovers a body posed in crucifixion position beneath Michelangelo's statue of David, the first victim of a religious serial killer stalking the city. A darkly atmospheric thriller blending Renaissance politics, the Church's power, and a chilling murder investigation.",
+      "tone": "atmospheric, darkly elegant, suspenseful",
+      "pacing": "Fast",
+      "themes": [
+        "religion and fanaticism",
+        "justice and power",
+        "Renaissance Florence",
+        "identity and persecution",
+        "secrecy and corruption"
+      ],
+      "setting": "Florence, Medici Italy — autumn 1539",
+      "comparable_books": [
+        "The Shardlake Series - C.J. Sansom",
+        "City of Vengeance - D.V. Bishop",
+        "The Darkest Sin - D.V. Bishop",
+        "Midnight at Malabar House - Vaseem Khan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Renaissance Italy setting",
+          "gay protagonist",
+          "award-winning historical crime",
+          "atmospheric world-building",
+          "serial killer mystery"
+        ],
+        "negative": [
+          "graphic violence",
+          "some series context required",
+          "period-typical homophobia depicted"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Standard of Honor - Jack Whyte": {
       "title": "Standard of Honor",
       "author": "Jack Whyte",
       "series": "Templar Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Templars at the peak of their power: set during the Third Crusade, this novel follows the Order as they serve as the standing army of Christianity alongside Richard the Lionheart in his battles against Saladin's forces. A detailed portrait of crusading warfare, honour, and the moral complexities of holy war.",
+      "tone": "epic, historically immersive, morally serious",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "holy war and its costs",
+        "honour and loyalty",
+        "faith vs. reality",
+        "religious conflict",
+        "chivalry"
+      ],
+      "setting": "The Holy Land during the Third Crusade — late 12th century",
+      "comparable_books": [
+        "Knights of the Black and White - Jack Whyte",
+        "Order in Chaos - Jack Whyte",
+        "Pillars of the Earth - Ken Follett",
+        "Kingdom of Heaven - Ridley Scott novelisation"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Crusades history",
+          "medieval military fiction",
+          "detailed historical research",
+          "Knights Templar enthusiasts"
+        ],
+        "negative": [
+          "slow pacing",
+          "dense historical exposition",
+          "limited female characters",
+          "requires Book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Cardinal Black - Robert McCammon": {
       "title": "Cardinal Black",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In December 1703, Matthew Corbett's beloved Berry Grigsby is slowly losing her mind to a drug administered by Professor Fell; the only cure lies in a stolen book of potions held by a deranged villain known as Cardinal Black, who plans to auction it to a cabal of international criminals in London's underworld. Matthew teams with one of Fell's own assassins in a relentless race to save Berry.",
+      "tone": "relentlessly paced, gritty, darkly vivid",
+      "pacing": "Fast",
+      "themes": [
+        "love and sacrifice",
+        "criminal underworld",
+        "good vs. evil",
+        "redemption",
+        "18th-century London"
+      ],
+      "setting": "London, England — December 1703",
+      "comparable_books": [
+        "The King of Shadows - Robert McCammon",
+        "The Providence Rider - Robert McCammon",
+        "The Alienist - Caleb Carr",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive action thriller",
+          "memorable grotesque villains",
+          "historical London underworld",
+          "series with deep mythology"
+        ],
+        "negative": [
+          "graphic violence",
+          "requires series context",
+          "over-the-top plotting"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Edoardo Ballerini, consistently praised as an outstanding performer throughout this series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Alaska - James A. Michener": {
@@ -210033,53 +210352,100 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A panoramic saga tracing Alaska's history from prehistoric geological formation through the era of Russian and American settlement, following Indigenous peoples, explorers, fur traders, gold-rush prospectors, and fishermen across millennia. Michener's characteristic blend of exhaustive research and multigenerational storytelling.",
+      "tone": "epic, panoramic, elemental",
+      "pacing": "Slow",
+      "themes": [
+        "American expansion",
+        "Indigenous peoples",
+        "nature's power",
+        "gold and greed",
+        "survival in extreme environments"
+      ],
+      "setting": "Alaska — prehistoric times through the 20th century",
+      "comparable_books": [
+        "Centennial - James A. Michener",
+        "Hawaii - James A. Michener",
+        "The Call of the Wild - Jack London",
+        "Snow Falling on Cedars - David Guterson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic historical scope",
+          "Alaskan wilderness enthusiasts",
+          "multi-generational saga",
+          "deep research"
+        ],
+        "negative": [
+          "slow meditative pacing",
+          "very long",
+          "episodic structure",
+          "no single protagonist"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Knights of the Black and White - Jack Whyte": {
       "title": "Knights of the Black and White",
       "author": "Jack Whyte",
       "series": "Templar Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1088, young knight Hugh de Payens is initiated into a secret society that believes the Christian Church is built on myth and that ancient truths lie buried under the Temple Mount in Jerusalem. When the Pope calls a Crusade, Hugh travels to the Holy Land and, horrified by the slaughter, founds a monastic order of warrior monks — the Poor Fellow-Soldiers of Christ, who will become the Knights Templar — as cover for their true mission: excavating Jerusalem's greatest secret.",
+      "tone": "historically immersive, conspiratorial, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "secret societies",
+        "faith vs. truth",
+        "founding of the Templars",
+        "crusading warfare",
+        "honour and duty"
+      ],
+      "setting": "France and the Holy Land (Jerusalem) — late 11th to early 12th century",
+      "comparable_books": [
+        "Standard of Honor - Jack Whyte",
+        "Order in Chaos - Jack Whyte",
+        "The Last Templar - Raymond Khoury",
+        "Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Knights Templar enthusiasts",
+          "medieval historical fiction",
+          "secret society conspiracies",
+          "First Crusade history"
+        ],
+        "negative": [
+          "dense historical exposition",
+          "slow pacing",
+          "heavy dialogue",
+          "limited action for the length"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tell No One - Harlan Coben": {
@@ -210153,54 +210519,99 @@
       "title": "Dark Kingdom",
       "author": "Wick Welker",
       "series": "Dark Law",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1.5",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A novella set between Dark Theory and Dark Prophet: cyborg slave Ria, commanded by an implanted chip to track down dark matter, travels with Haldane — a hardened warrior from a parallel dimension — to the fabled Fifth Kingdom, a nightmarish prison state of dark matter mines ruled by an iron-fisted despot. Their struggle to win the kingdom may hold the key to saving Earth's place in a dying cosmos.",
+      "tone": "dark, epic, hard sci-fi flavoured",
+      "pacing": "Fast",
+      "themes": [
+        "freedom vs. slavery",
+        "dark matter and cosmology",
+        "parallel dimensions",
+        "survival",
+        "human resilience"
+      ],
+      "setting": "A post-catastrophe Earth and the Fifth Kingdom — far future",
+      "comparable_books": [
+        "Dark Theory - Wick Welker",
+        "Dark Prophet - Wick Welker",
+        "The Stars Are Legion - Kameron Hurley",
+        "Collapsing Empire - John Scalzi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard science fiction",
+          "epic fantasy crossover",
+          "self-published indie gem",
+          "complex world-building"
+        ],
+        "negative": [
+          "requires Dark Theory first",
+          "very complex mythology",
+          "dense and demanding"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Dark Prophet - Wick Welker": {
       "title": "Dark Prophet",
       "author": "Wick Welker",
       "series": "Dark Law",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "With Earth unmoored from the galaxy and blighted by drought, the fellowship of Dark Theory — including the drunken astrocyst Galiaro, underground cult member Arym, thief Miree, time traveler Hawera, and street rat Ribcage — must individually seek out the ancient Alchean prophet's quest to save the world, while the escaped dark matter robots Curse and Beetro close in with knowledge of the prophecy already in hand.",
+      "tone": "epic, sprawling, darkly intense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "prophecy and fate",
+        "survival of humanity",
+        "good vs. evil on a cosmic scale",
+        "sacrifice",
+        "parallel dimensions"
+      ],
+      "setting": "A dying post-catastrophe Earth and multiple dimensions — far future",
+      "comparable_books": [
+        "Dark Theory - Wick Welker",
+        "Dark Kingdom - Wick Welker",
+        "Howling Dark - Christopher Ruocchio",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic science fantasy",
+          "complex multi-POV narrative",
+          "Tolkienesque scope in sci-fi",
+          "indie self-published gem"
+        ],
+        "negative": [
+          "very complex and demanding",
+          "requires previous books",
+          "dozens of POV characters",
+          "dense world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "Refraction - Wick Welker": {
@@ -210208,53 +210619,97 @@
       "author": "Wick Welker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three interconnected stories span from 1986 to 2155: a physicist hears voices that teach him to build a space-warping engine; a fighter pilot in a post-nuclear 2098 fights an authoritarian corporatist regime; and in 2155, the only self-aware robot on Mars tries to steer humanity away from a demagogue — all three connected by the multiverse in ways they can't foresee. A kaleidoscopic hard sci-fi novel exploring whether one person can truly save the world.",
+      "tone": "propulsive, philosophical, inventive",
+      "pacing": "Moderate",
+      "themes": [
+        "free will vs. determinism",
+        "the individual vs. the collective",
+        "multiverse and causality",
+        "authoritarianism",
+        "artificial intelligence"
+      ],
+      "setting": "Earth (1986, post-apocalyptic 2098) and terraformed Mars (2155)",
+      "comparable_books": [
+        "Dark Matter - Blake Crouch",
+        "Recursion - Blake Crouch",
+        "The Long Earth - Terry Pratchett & Stephen Baxter",
+        "Dark Theory - Wick Welker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-timeline narrative",
+          "hard science fiction concepts",
+          "philosophical depth",
+          "propulsive plotting",
+          "self-published indie"
+        ],
+        "negative": [
+          "complex and demanding",
+          "non-linear storytelling",
+          "hard science can be inaccessible"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Knife's Edge - Matthew Wolf": {
       "title": "The Knife's Edge",
       "author": "Matthew Wolf",
       "series": "The Ronin Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the world of Daerval, eighteen-year-old Gray wakes with no memory of his past, only a mysterious tattoo and a sword — and discovers he wields the forsaken elemental power of wind, making him both legendary and feared. As the shadow-force known as the Kagé threatens to destroy the world, Gray and an unlikely band of companions must seek out the ancient Ronin before it's too late.",
+      "tone": "epic, adventurous, fast-paced",
+      "pacing": "Fast",
+      "themes": [
+        "identity and memory",
+        "good vs. evil",
+        "elemental magic",
+        "destiny and legend",
+        "found family"
+      ],
+      "setting": "The fictional world of Daerval — a secondary world blending medieval European and feudal Japanese aesthetics",
+      "comparable_books": [
+        "The Eye of the World - Robert Jordan",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Dragonbone Chair - Tad Williams",
+        "The Way of Kings - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "elemental magic systems",
+          "amnesiac chosen one",
+          "found family",
+          "self-published indie"
+        ],
+        "negative": [
+          "familiar chosen-one tropes",
+          "complex world-building from the outset",
+          "first entry in very long series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Citadel of Fire - Matthew Wolf": {
