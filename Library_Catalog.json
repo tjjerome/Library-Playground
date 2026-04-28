@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3653,
-  "total_pending": 947,
+  "total_catalogued": 3673,
+  "total_pending": 927,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -200862,540 +200862,970 @@
       "title": "The She Wolf",
       "author": "Maurice Druon",
       "series": "The Accursed Kings",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Charles IV rules France while his sister Isabella, unhappy queen of England's Edward II, embarks on a scandalous love affair with the exiled rebel Roger Mortimer, earning her the epithet 'She-Wolf of France' as their alliance threatens to upend two kingdoms.",
+      "tone": "richly political, intrigue-laden, coolly dramatic",
+      "pacing": "Moderate",
+      "themes": [
+        "political intrigue",
+        "betrayal",
+        "power and succession",
+        "adultery",
+        "medieval monarchy",
+        "the Templar curse"
+      ],
+      "setting": "14th-century France and England, during the final reigns of the direct Capetian dynasty",
+      "comparable_books": [
+        "The Iron King - Maurice Druon",
+        "I, Claudius - Robert Graves",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical accuracy",
+          "court intrigue",
+          "morally complex characters",
+          "real history as plot",
+          "Game of Thrones comparisons"
+        ],
+        "negative": [
+          "fantasy readers expecting magic",
+          "readers wanting action over politics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Actions of Gods - Robert J. Power": {
       "title": "The Actions of Gods",
       "author": "Robert J. Power",
       "series": "Spark City Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the epic finale of the Spark City Cycle, the Outcasts must face their greatest challenges yet after the fall of Raven Rock, with multiple heroes and anti-heroes converging in a post-apocalyptic fantasy world for a climactic battle to determine the fate of all.",
+      "tone": "emotional, action-packed, darkly humorous",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "sacrifice",
+        "war",
+        "heroism and failure",
+        "coming of age",
+        "redemption"
+      ],
+      "setting": "A post-apocalyptic world that functions like a medieval fantasy setting, with warring factions and a besieged city",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "Legend - David Gemmell",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "slow-burn romance",
+          "propulsive pacing",
+          "morally grey protagonist",
+          "epic battle sequences",
+          "SPFBO finalist series"
+        ],
+        "negative": [
+          "readers sensitive to profanity",
+          "those wanting lighter tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Savior - Andy Peloquin": {
       "title": "Savior",
       "author": "Andy Peloquin",
       "series": "Darkblade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Hunter races to find the lost city of Enarium before the demonic Sage can free the Devourer of Worlds, while also seeking a cure for his ward Hailen's worsening illness and trying to reunite with his wife and long-lost daughter.",
+      "tone": "grimdark, intense, emotionally heavy",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "identity",
+        "humanity vs. demon nature",
+        "sacrifice",
+        "found family"
+      ],
+      "setting": "The dark fantasy world of Einan, spanning cities, wastelands, and the lost ancient city of Enarium",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "Prince of Thorns - Mark Lawrence",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "grimdark tone",
+          "half-demon assassin hero",
+          "fast pacing",
+          "emotional stakes"
+        ],
+        "negative": [
+          "very dark content",
+          "high violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Courage to Sacrifice - Andy Peloquin": {
       "title": "Courage to Sacrifice",
       "author": "Andy Peloquin",
       "series": "The Silent Champions",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Military Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Captain Aravon and his elite Grim Reavers undertake a suicidal mission across frozen enemy territory to assassinate Tyr Farbjodr, the ruthless commander leading the Eirdkilr barbarian horde that threatens to destroy the Princelands.",
+      "tone": "heroic, intense, camaraderie-driven",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "brotherhood",
+        "duty",
+        "courage",
+        "war's cost"
+      ],
+      "setting": "A frozen fantasy world of mountains, wastelands, and tundra, reminiscent of Viking-era settings",
+      "comparable_books": [
+        "The Black Company - Glen Cook",
+        "Sharpe's Rifles - Bernard Cornwell",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "band of brothers",
+          "action-heavy",
+          "special forces unit dynamics",
+          "heart-pounding battles"
+        ],
+        "negative": [
+          "repetitive emotional beats noted by some reviewers",
+          "not for those wanting complex politics"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Ralph Lister for Podium Audio; well-suited to the propulsive military pacing.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Keraunani - Rachel Neumeier": {
       "title": "Keraunani",
       "author": "Rachel Neumeier",
       "series": "Tuyo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Elite soldier Esau Karuma volunteers to marry a young woman in desperate trouble—Keraunani—and spirit her to safety, but the mission proves far more complicated than expected, told across two intertwined timelines set in the clash-of-cultures world of Tuyo.",
+      "tone": "lyrical, thoughtful, quietly adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "cross-cultural understanding",
+        "loyalty",
+        "trust",
+        "duty",
+        "identity"
+      ],
+      "setting": "The Tuyo world's contrasting winter and summer lands, with their clashing military cultures and distinct magical metaphysics",
+      "comparable_books": [
+        "Tuyo - Rachel Neumeier",
+        "Curse of Chalion - Lois McMaster Bujold",
+        "Transformation - Carol Berg"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven",
+          "rich world-building",
+          "cross-cultural dynamics",
+          "found family",
+          "standalone-friendly"
+        ],
+        "negative": [
+          "non-linear timeline frustrates some readers",
+          "slow build"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mother of Learning: ARC 4 - Domagoj Kurmaić": {
       "title": "Mother of Learning: ARC 4",
       "author": "Domagoj Kurmaić",
       "series": "Mother of Learning",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the concluding arc of the time-loop fantasy, Zorian and Zach face their final restarts as they prepare for simultaneous confrontations with the lich Quatach-Ichl, the mysterious Red Robe, a primordial being, and the invaders threatening to destroy Cyoria—with Zorian hiding a secret plan from his allies.",
+      "tone": "methodical, intelligent, satisfying",
+      "pacing": "Moderate",
+      "themes": [
+        "time loops",
+        "growth through repetition",
+        "magic mastery",
+        "identity",
+        "friendship",
+        "family"
+      ],
+      "setting": "Cyoria's magical academy and surrounding world, a secondary fantasy setting inspired by D&D and Planescape",
+      "comparable_books": [
+        "The Licanius Trilogy - James Islington",
+        "Cradle - Will Wight",
+        "A Wizard's Guide to Defensive Baking - T. Kingfisher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "time loop mechanics",
+          "intricate plotting",
+          "character growth",
+          "web serial origin",
+          "satisfying conclusion"
+        ],
+        "negative": [
+          "prose noted as functional rather than literary",
+          "web serial pacing quirks"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Jack Voraces for Podium Audio; widely praised for excellent narration of the intricate magic system and time-loop mechanics.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Sins of the Mother - Rob J. Hayes": {
       "title": "Sins of the Mother",
       "author": "Rob J. Hayes",
       "series": "The War Eternal",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Corpse Queen Eskara Helsene has vanished for a decade, but when someone begins murdering Sourcerers and tearing holes in reality that let monsters through from the Other World, an old acquaintance drags her back into a deadly investigation.",
+      "tone": "grimdark, sardonic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "power and consequence",
+        "identity",
+        "motherhood",
+        "trauma",
+        "war's eternal cost",
+        "morality"
+      ],
+      "setting": "The dark fantasy world of Ovaeris, spanning the scarred landscape of Isha and the Other World a decade after the second Cataclysm",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "Prince of Thorns - Mark Lawrence",
+        "Best Served Cold - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey female protagonist",
+          "grimdark",
+          "propulsive first-person narration",
+          "self-published gem",
+          "series pivot point"
+        ],
+        "negative": [
+          "very dark content",
+          "requires reading previous books in series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Consistently praised audiobook narration throughout the series significantly enhances the first-person voice.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dead Stars - Part Two - Ben Galley": {
       "title": "Dead Stars - Part Two",
       "author": "Ben Galley",
       "series": "Emaneska",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Champion Farden leads a warship north to the frozen Spine of the World to seek legendary armour and venture into the underworld of Hel, even as Krauslung crumbles from within through greed and ambition, racing toward a final apocalyptic battle against a daemon-commanding enemy.",
+      "tone": "epic, Norse-tinged, emotionally sweeping",
+      "pacing": "Fast",
+      "themes": [
+        "heroism",
+        "sacrifice",
+        "destiny",
+        "ambition vs. loyalty",
+        "underworld mythology"
+      ],
+      "setting": "The dark fantasy world of Emaneska: a war-torn city, an iron-clad warship, and the frozen far north beyond the Spine of the World",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The First Law - Joe Abercrombie",
+        "The Stormlight Archive - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic battles",
+          "Norse mythology influences",
+          "character-driven finale",
+          "underworld sequences",
+          "self-published series"
+        ],
+        "negative": [
+          "some loose ends not fully resolved",
+          "prose occasionally noted as uneven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Realms of Tomorrow - Robert H. Fleming": {
       "title": "Realms of Tomorrow",
       "author": "Robert H. Fleming",
       "series": "The Falling Empires Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Military Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Elisa, Lannes, and the last Erlonian warriors pursue what they believe to be the remnants of the Kurakin Horde across their homeland, only to encounter a new and ancient evil that forces two old friends into a desperate final battle to save their empire.",
+      "tone": "heroic, military-focused, straightforward",
+      "pacing": "Fast",
+      "themes": [
+        "empire and collapse",
+        "duty",
+        "sacrifice",
+        "war",
+        "friendship",
+        "ancient evil"
+      ],
+      "setting": "The war-torn Continent of a secondary fantasy world inspired by Napoleonic-era military history, with magic and gods layered over historical tropes",
+      "comparable_books": [
+        "Kings & Generals - AC Cobble",
+        "The Fall of Erlon - Robert H. Fleming",
+        "Legend - David Gemmell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "Napoleonic-inspired",
+          "action-heavy",
+          "SPFBO finalist",
+          "complete series"
+        ],
+        "negative": [
+          "characters noted as not particularly deep by some reviewers",
+          "straightforward plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ice & Ivy - J. D. Evans": {
       "title": "Ice & Ivy",
       "author": "J. D. Evans",
       "series": "Mages of the Wheel",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy Romance",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A woman of humble origins is thrust into a political marriage arranged by the Grand Vizier to humiliate Ihsan, a broken ice-mage of the court, but as the Blight starves their nations and a deadly conspiracy unfolds, the unlikely pair find themselves drawn together despite their differences.",
+      "tone": "lush, slow-burn romantic, politically charged",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "political intrigue",
+        "found family",
+        "healing from trauma",
+        "class",
+        "magic and identity",
+        "slow-burn romance"
+      ],
+      "setting": "The Middle Eastern–inspired kingdom of Tamar and surrounding lands, a Levant-flavoured secondary world with elemental magic tied to a Wheel system",
+      "comparable_books": [
+        "A River Enchanted - Rebecca Ross",
+        "The Jasad Heir - Sara Hashem",
+        "Daughter of the Moon Goddess - Sue Lynn Tan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow-burn romance",
+          "found family",
+          "political intrigue",
+          "grumpy/sunshine pairing",
+          "lush world-building",
+          "Middle Eastern-inspired setting"
+        ],
+        "negative": [
+          "romance-heavy",
+          "series must be read in order",
+          "ongoing series (not yet complete)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Deathmarked - David Estes": {
       "title": "Deathmarked",
       "author": "David Estes",
       "series": "The Fatemarked Epic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the war across the Four Kingdoms drags on and a new threat emerges from across the sea, Annise Gäric fights to retake her throne, Lisbeth Lorne struggles to control an army of Sleeping Knights, and Rhea Loren faces a crossroads that could either destroy her or redeem her.",
+      "tone": "propulsive, multi-POV, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "prophecy and destiny",
+        "power and its cost",
+        "redemption",
+        "war",
+        "political succession"
+      ],
+      "setting": "The Four Kingdoms — a multi-climate secondary fantasy world of kingdoms ranging from icy north to tropical south",
+      "comparable_books": [
+        "Throne of Glass - Sarah J. Maas",
+        "The Way of Kings - Brandon Sanderson",
+        "A Game of Thrones - George R. R. Martin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multiple POVs",
+          "prophecy-driven plot",
+          "propulsive pacing",
+          "self-published epic",
+          "dragons and magic marks"
+        ],
+        "negative": [
+          "prose noted as functional rather than literary by some",
+          "large cast can feel unwieldy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Clockwork Tartan - Raymond St. Elmo": {
       "title": "The Clockwork Tartan",
       "author": "Raymond St. Elmo",
       "series": "Quest of the Five Clans",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rayne Gray, sword-for-hire and reluctant husband to a woman from a magical clan family, enters the Halls of Time through the doors of the mysterious Clockmaker clan, wandering through past and future in a single wild day while carrying his own obituary in his pocket.",
+      "tone": "darkly comic, whimsical, literary",
+      "pacing": "Fast",
+      "themes": [
+        "time and mortality",
+        "identity",
+        "fate",
+        "love and marriage",
+        "magic and madness"
+      ],
+      "setting": "A pseudo-Victorian/alternate-historical fantasy city and the Halls of Time, where doors lead to different pasts and futures",
+      "comparable_books": [
+        "The Princess Bride - William Goldman",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "darkly comic",
+          "witty prose",
+          "literary voice",
+          "time travel",
+          "unique tone",
+          "SPFBO semi-finalist author"
+        ],
+        "negative": [
+          "unusual style not for all readers",
+          "requires reading previous books",
+          "whimsy may not suit grimdark fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "The highly distinctive, stylised prose and wit are best appreciated on the page.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Scourge of Souls - C. M. Carney": {
       "title": "Scourge of Souls",
       "author": "C. M. Carney",
       "series": "The Realms",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Gryph and his companions continue their quest to rescue his sister Brynn, navigating a mysterious crime syndicate and an infallible bounty hunter, only to face off against Brynn herself — now a goddess with no memory of who she truly is.",
+      "tone": "fun, action-packed, humorous",
+      "pacing": "Fast",
+      "themes": [
+        "family bonds",
+        "friendship",
+        "power and responsibility",
+        "identity",
+        "progression and levelling"
+      ],
+      "setting": "The Realms — a LitRPG fantasy world with game mechanics, dungeons, gods, and sprawling strange lands",
+      "comparable_books": [
+        "Barrow King - C.M. Carney",
+        "The Ritualist - Dakota Krout",
+        "Dungeon Crawler Carl - Matt Dinniman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG mechanics",
+          "fast pacing",
+          "humorous tone",
+          "found family",
+          "D&D inspiration",
+          "beginner-friendly LitRPG"
+        ],
+        "negative": [
+          "stat tables and game mechanics may alienate non-LitRPG readers",
+          "immature humour at times noted by reviewers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dark Drinker - Zamil Akhtar": {
       "title": "Dark Drinker",
       "author": "Zamil Akhtar",
       "series": "Gunmetal Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the blood-soaked fourth entry of the Gunmetal Gods saga, the aftermath of Micah the Metal's reconquest of the holy land is explored through new characters and a new form of dark magic called wormrot, as the elaborate world expands with morally shifting allegiances and Lovecraftian horror.",
+      "tone": "grimdark, Lovecraftian horror, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "faith and fanaticism",
+        "power and its corruption",
+        "identity",
+        "horror",
+        "war and conquest",
+        "shifting morality"
+      ],
+      "setting": "A dark secondary fantasy world inspired by the Crusades, Arabian Nights, and Lovecraftian mythology, with guns, djinns, and astral magic",
+      "comparable_books": [
+        "Gunmetal Gods - Zamil Akhtar",
+        "The Black Company - Glen Cook",
+        "A Shadow in Summer - Daniel Abraham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "Middle Eastern-inspired",
+          "Lovecraftian elements",
+          "morally grey cast",
+          "unique magic system",
+          "Crusades-inspired setting"
+        ],
+        "negative": [
+          "very dark and violent",
+          "requires previous books",
+          "noted as feeling setup-heavy by some"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Blood That Burns the Winter Snow - Ryan Cahill": {
       "title": "The Blood That Burns the Winter Snow",
       "author": "Ryan Cahill",
       "series": "The Bound and the Broken",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.6 (short story, between Books 3 and 4)",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A short story set in the world of The Bound and the Broken, following Vars Bryer — father of protagonist Calen — as a violent confrontation with his past forces him to fight to protect his family, illuminating his backstory and the world of Epheria.",
+      "tone": "visceral, heartfelt, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "family",
+        "sacrifice",
+        "the past catching up",
+        "fatherhood",
+        "courage"
+      ],
+      "setting": "The Glade in the world of Epheria, a secondary epic fantasy world with dragons and warring factions",
+      "comparable_books": [
+        "Of Blood and Fire - Ryan Cahill",
+        "A Little Hatred - Joe Abercrombie",
+        "The Ruin of Kings - Jenn Lyons"
+      ],
       "taste_signals": {
         "positive": [],
         "negative": []
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Of Empires and Dust - Ryan Cahill": {
       "title": "Of Empires and Dust",
       "author": "Ryan Cahill",
       "series": "The Bound and the Broken",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Blood Moon taints the sky of Epheria, Calen Bryer and his allies battle on multiple fronts — from the Aravell woodland to the mountains of Lodhar and the plains of Valtara — while gods awaken and the shadow threatens to consume the world in this massive penultimate volume.",
+      "tone": "epic, emotionally devastating, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "family and loyalty",
+        "sacrifice",
+        "gods and mortals",
+        "war",
+        "dragons",
+        "found family",
+        "hope"
+      ],
+      "setting": "The world of Epheria: a richly detailed secondary fantasy world of kingdoms, mountain holds, and ancient magic, under the rising Blood Moon",
+      "comparable_books": [
+        "The Way of Kings - Brandon Sanderson",
+        "A Storm of Swords - George R. R. Martin",
+        "Malice - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic",
+          "dragons",
+          "found family",
+          "propulsive pacing",
+          "emotionally devastating",
+          "self-published titan",
+          "Sunday Times bestselling"
+        ],
+        "negative": [
+          "requires reading previous 3 books",
+          "very long",
+          "some readers found complexity overwhelming"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Podium Audio production; the multi-POV epic scale translates exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blackflame - Will Wight": {
       "title": "Blackflame",
       "author": "Will Wight",
       "series": "Cradle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Progression Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sacred artist Lindon continues his accelerated training under the Mad King's deadly techniques, pushing himself to master the destructive Blackflame Path before his enemies close in — a milestone book in his rapid climb through the Cradle's magical hierarchy.",
+      "tone": "propulsive, power-fantasy, optimistic",
+      "pacing": "Fast",
+      "themes": [
+        "self-improvement",
+        "power and mastery",
+        "ambition",
+        "loyalty",
+        "the cost of strength"
+      ],
+      "setting": "The world of Cradle, a richly layered secondary world where sacred arts allow humans to pursue almost limitless magical advancement",
+      "comparable_books": [
+        "Mother of Learning - Domagoj Kurmaić",
+        "Sufficiently Advanced Magic - Andrew Rowe",
+        "Dungeon Crawler Carl - Matt Dinniman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "power fantasy",
+          "fast pacing",
+          "satisfying levelling",
+          "beloved series",
+          "binge-worthy"
+        ],
+        "negative": [
+          "thin literary prose",
+          "early books can feel simple",
+          "not for readers wanting political complexity"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Travis Baldree's narration for the Cradle series is widely considered one of the best in fantasy audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Empire of Shadows - Alicia Wanstall-Burke": {
       "title": "Empire of Shadows",
       "author": "Alicia Wanstall-Burke",
       "series": "The Coraidic Sagas",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lidan and Ranoth pursue a common enemy — an architect of horrors who has bargained with the gods — as the barrier between the mortal realm and the unseen world of ancient feuds collapses, forcing them toward the centre of an eternal war that could consume all of Coraidin.",
+      "tone": "intense, intimate, dark",
+      "pacing": "Fast",
+      "themes": [
+        "intergenerational trauma",
+        "coming of age",
+        "gods and mortals",
+        "toxic parenthood",
+        "war",
+        "identity"
+      ],
+      "setting": "The continent of Coraidin, a secondary fantasy world with tribal clans, southern kingdoms, and a veil between the living and unseen realms that is tearing apart",
+      "comparable_books": [
+        "Blood of Heirs - Alicia Wanstall-Burke",
+        "The Blade Itself - Joe Abercrombie",
+        "Jade City - Fonda Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "female protagonists",
+          "grimdark-adjacent",
+          "intergenerational conflict",
+          "SPFBO5 finalist series",
+          "intimate epic fantasy",
+          "strong character arcs"
+        ],
+        "negative": [
+          "some convenience moments in plotting noted",
+          "Australian indie author — limited availability"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Tomb of Merellien - J. R. Snyder": {
       "title": "Tomb of Merellien",
       "author": "J. R. Snyder",
       "series": "Sin Eater Tales",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a routine monster contract lands sin eater Asher Norwood facing the hangman's noose, a renowned historian offers him freedom in exchange for unravelling a sinister murder mystery — drawing Asher and his ragtag crew into ancient secrets that could reshape their world.",
+      "tone": "adventurous, folklore-tinged, cosy-dark",
+      "pacing": "Moderate",
+      "themes": [
+        "dark magic",
+        "found family",
+        "ancient secrets",
+        "justice",
+        "mystery"
+      ],
+      "setting": "A dark secondary fantasy world with a medieval folklore feel, featuring mages called sin eaters who combat supernatural threats",
+      "comparable_books": [
+        "The Witcher - Andrzej Sapkowski",
+        "A Wizard's Guide to Defensive Baking - T. Kingfisher",
+        "The Expert System's Brother - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Witcher-like monster hunting",
+          "folklore atmosphere",
+          "found family crew",
+          "standalone-friendly",
+          "cosy-dark tone"
+        ],
+        "negative": [
+          "niche series with limited reviews",
+          "low profile indie release"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Living End - Craig Schaefer": {
       "title": "The Living End",
       "author": "Craig Schaefer",
       "series": "Daniel Faust",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Las Vegas con man and diabolist Daniel Faust is drawn into a deadly conspiracy involving a sinister televangelist whose megachurch is a front for something far more evil, forcing Faust and his crew to navigate supernatural dangers and criminal underworlds in Sin City.",
+      "tone": "darkly comic, noir-inflected, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "con artistry",
+        "supernatural crime",
+        "loyalty",
+        "faith vs. corruption",
+        "found family"
+      ],
+      "setting": "Contemporary Las Vegas — a neon-lit urban fantasy setting layered with demon deals, criminal syndicates, and supernatural threats",
+      "comparable_books": [
+        "The Dresden Files - Jim Butcher",
+        "The Gentleman Bastards - Scott Lynch",
+        "Rivers of London - Ben Aaronovitch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heist elements",
+          "morally grey protagonist",
+          "urban fantasy",
+          "propulsive pacing",
+          "found family",
+          "Las Vegas setting"
+        ],
+        "negative": [
+          "requires reading earlier books in series",
+          "adult content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Manflayer - Joshua Reynolds": {
