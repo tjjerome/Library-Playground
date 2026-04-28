@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4272,
-  "total_pending": 328,
+  "total_catalogued": 4292,
+  "total_pending": 308,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -231121,81 +231121,145 @@
       "title": "Evergreen Chase",
       "author": "Juneau Black",
       "series": "Shady Hollow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3.5",
+      "genre": "Cozy Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "It's the winter solstice in Shady Hollow, and reporter Vera Vixen is looking forward to the unveiling of the town's beloved solstice tree — until it vanishes without a trace. She and her friends must solve the mystery before the season is ruined.",
+      "tone": "warm, whimsical, cozy",
+      "pacing": "Fast",
+      "themes": [
+        "community",
+        "holiday tradition",
+        "found family",
+        "small-town life"
+      ],
+      "setting": "Shady Hollow, a rural anthropomorphic-animal village; winter solstice",
+      "comparable_books": [
+        "Shady Hollow - Juneau Black",
+        "The Purrfect Murder - Rita Mae Brown",
+        "Murder at the Vicarage - Agatha Christie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy mystery",
+          "anthropomorphic animals",
+          "holiday reads",
+          "charming ensemble cast",
+          "low-stakes mystery"
+        ],
+        "negative": [
+          "graphic content",
+          "dark themes",
+          "complex plotting"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Warm, character-driven cozy — an ideal listen for commutes or background listening.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Rose Field - Philip Pullman": {
       "title": "The Rose Field",
       "author": "Philip Pullman",
       "series": "The Book of Dust",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Lyra Silvertongue and Malcolm Polstead race toward a mysterious desert and a red building at the heart of it, where allies and enemies converge in a final confrontation over the secret of Dust and the fate of their world.",
+      "tone": "lyrical, epic, philosophically rich",
+      "pacing": "Moderate",
+      "themes": [
+        "imagination",
+        "consciousness",
+        "authoritarianism",
+        "the nature of Dust",
+        "coming of age",
+        "faith vs reason"
+      ],
+      "setting": "Alternate Oxford and the Near East; parallel-world fantasy timeline following The Secret Commonwealth",
+      "comparable_books": [
+        "The Amber Spyglass - Philip Pullman",
+        "The Secret Commonwealth - Philip Pullman",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy trilogy conclusion",
+          "philosophical depth",
+          "beloved returning characters",
+          "rich world-building",
+          "lyrical prose"
+        ],
+        "negative": [
+          "slow-building middle act",
+          "requires prior series knowledge"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Pullman's work has a long tradition of acclaimed full-cast and single-narrator audio productions.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Blue Horizon - Wilbur Smith": {
       "title": "Blue Horizon",
       "author": "Wilbur Smith",
       "series": "Birds of Prey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Adventure Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The next generation of the Courtney family — Jim and Mansur — carve out lives in Southern Africa, until Jim rescues Louisa, a prisoner of the Dutch East India Company, and together they flee across the continent while war rages around them.",
+      "tone": "swashbuckling, romantic, action-packed",
+      "pacing": "Fast",
+      "themes": [
+        "adventure",
+        "family legacy",
+        "colonialism",
+        "love and loyalty",
+        "survival"
+      ],
+      "setting": "18th-century Dutch-controlled Cape Colony and the African interior",
+      "comparable_books": [
+        "Monsoon - Wilbur Smith",
+        "Birds of Prey - Wilbur Smith",
+        "The Far Pavilions - M.M. Kaye"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic adventure",
+          "sweeping historical saga",
+          "action-packed battles",
+          "romantic subplot",
+          "African setting"
+        ],
+        "negative": [
+          "dated colonial attitudes",
+          "formulaic plotting",
+          "requires series context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Book of Guilt - Catherine Chidgey": {
@@ -231203,26 +231267,50 @@
       "author": "Catherine Chidgey",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate 1979 England where WWII ended by treaty rather than victory, three orphaned triplets live under the mysterious care of 'Mothers' in a government home, their dreams and misdeeds recorded — until they begin to question everything they've been told.",
+      "tone": "unsettling, propulsive, creeping dread",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "ethics of science",
+        "state power",
+        "childhood innocence",
+        "eugenics",
+        "nature vs nurture",
+        "collective guilt"
+      ],
+      "setting": "Alternate England, 1979 — a Britain shaped by a post-WWII German treaty; the New Forest",
+      "comparable_books": [
+        "Never Let Me Go - Kazuo Ishiguro",
+        "The Handmaid's Tale - Margaret Atwood",
+        "All the Light We Cannot See - Anthony Doerr"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary speculative fiction",
+          "slow-burn dread",
+          "multi-POV narrative",
+          "morally complex",
+          "page-turner literary thriller"
+        ],
+        "negative": [
+          "deeply disturbing subject matter",
+          "child abuse themes",
+          "no straightforward resolution"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child abuse"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "This Is How You Lose the Time War - Amal El-Mohtar & Max Gladstone": {
@@ -231230,107 +231318,194 @@
       "author": "Amal El-Mohtar & Max Gladstone",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two rival time-travelling agents on opposite sides of a war across history begin exchanging secret letters, their correspondence slowly flowering into something dangerous and forbidden.",
+      "tone": "lyrical, romantic, intricate",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "forbidden love",
+        "identity",
+        "time travel",
+        "war",
+        "communication and language",
+        "sacrifice"
+      ],
+      "setting": "Across time and multiple timelines — from ancient civilizations to far-future worlds",
+      "comparable_books": [
+        "The Time Traveler's Wife - Audrey Niffenegger",
+        "Cloud Atlas - David Mitchell",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush prose",
+          "enemies-to-lovers",
+          "unconventional structure",
+          "epistolary format",
+          "award-winning novella"
+        ],
+        "negative": [
+          "minimal action",
+          "highly literary style",
+          "opaque world-building"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The dual-narrator epistolary format is ideally suited to audio performance.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sons of Thunder - Giles Kristian": {
       "title": "Sons of Thunder",
       "author": "Giles Kristian",
       "series": "Raven",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Raven and his Viking brotherhood pursue the treacherous Ealdred into the heart of Charlemagne's Frankish empire, seeking revenge and the recovery of a stolen holy book, while navigating a hostile Christian world determined to wipe out their kind.",
+      "tone": "visceral, propulsive, brutal",
+      "pacing": "Fast",
+      "themes": [
+        "brotherhood",
+        "revenge",
+        "honour",
+        "clash of faiths",
+        "identity"
+      ],
+      "setting": "9th-century Frankish Empire; rivers and strongholds of Charlemagne's realm",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "Odin's Wolves - Giles Kristian",
+        "Outlaw - Angus Donald"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Viking historical fiction",
+          "propulsive action",
+          "brotherhood dynamics",
+          "immersive dark-age world"
+        ],
+        "negative": [
+          "graphic violence",
+          "heavily male-cast",
+          "straightforward plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Sound of Thunder - Wilbur Smith": {
       "title": "The Sound of Thunder",
       "author": "Wilbur Smith",
       "series": "When the Lion Feeds",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Adventure Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sean Courtney, having made and lost a fortune on the Witwatersrand goldfields, fights his way through the bloody battlefields of the Anglo-Boer War, navigating love, rivalry, and the brutal transformation of South Africa.",
+      "tone": "epic, sweeping, melodramatic",
+      "pacing": "Moderate",
+      "themes": [
+        "war",
+        "family rivalry",
+        "fortune and loss",
+        "colonialism",
+        "masculinity"
+      ],
+      "setting": "Late 19th–early 20th century South Africa; the Anglo-Boer War",
+      "comparable_books": [
+        "When the Lion Feeds - Wilbur Smith",
+        "A Soldier of the Great War - Mark Helprin",
+        "Shout at the Devil - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic historical adventure",
+          "sweeping African saga",
+          "war narrative",
+          "larger-than-life protagonist"
+        ],
+        "negative": [
+          "dated colonial attitudes",
+          "melodramatic romance",
+          "requires series context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Arthur - Giles Kristian": {
       "title": "Arthur",
       "author": "Giles Kristian",
       "series": "The Arthurian Tales",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Years after the fall of Camelot, an aged mercenary named Beran is tasked with murdering a boy who may be the last hope of Britain, forcing him to confront both a dangerous journey across Saxon-held lands and the buried truth of his own legendary past.",
+      "tone": "atmospheric, elegiac, emotionally resonant",
+      "pacing": "Moderate",
+      "themes": [
+        "legacy",
+        "redemption",
+        "loss",
+        "Arthurian legend reimagined",
+        "fate and duty",
+        "the cost of heroism"
+      ],
+      "setting": "Post-Roman, Saxon-era Britain; a grittily realistic Dark Age reimagining of Arthurian legend",
+      "comparable_books": [
+        "The Winter King - Bernard Cornwell",
+        "Lancelot - Giles Kristian",
+        "The Crystal Cave - Mary Stewart"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arthurian legend",
+          "dark historical fiction",
+          "dual timeline",
+          "emotional depth",
+          "lyrical prose"
+        ],
+        "negative": [
+          "requires series familiarity for full payoff",
+          "bittersweet ending",
+          "slow-building first act"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "To Reign in Hell - Steven Brust": {
@@ -231338,53 +231513,99 @@
       "author": "Steven Brust",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A retelling of the War in Heaven from the perspective of the angels, exploring the political machinations, factions, and moral ambiguities that led to Lucifer's fall — reimagined as a tragedy of competing loyalties rather than clear-cut good and evil.",
+      "tone": "philosophical, darkly comic, subversive",
+      "pacing": "Moderate",
+      "themes": [
+        "mythology reimagined",
+        "power and politics",
+        "betrayal",
+        "free will",
+        "moral ambiguity"
+      ],
+      "setting": "The mythological realm of Heaven, before and during the War in Heaven",
+      "comparable_books": [
+        "Good Omens - Neil Gaiman & Terry Pratchett",
+        "Paradise Lost - John Milton",
+        "American Gods - Neil Gaiman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "mythology retelling",
+          "morally grey characters",
+          "political intrigue",
+          "darkly comedic",
+          "subversive theology"
+        ],
+        "negative": [
+          "minimal action",
+          "deliberately anachronistic tone",
+          "niche appeal"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Big Machine - Victor Lavalle": {
       "title": "Big Machine",
-      "author": "Victor Lavalle",
+      "author": "Victor LaValle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ricky Rice, a former addict and petty criminal, is mysteriously summoned to a remote Vermont library to join a group of former junkies investigating strange supernatural occurrences on behalf of an enigmatic organisation called the Unlikely Scholars.",
+      "tone": "darkly comic, unsettling, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "faith and doubt",
+        "race in America",
+        "addiction",
+        "redemption",
+        "the supernatural",
+        "institutional power"
+      ],
+      "setting": "Contemporary America — Vermont backwoods and urban California",
+      "comparable_books": [
+        "The Ballad of Black Tom - Victor LaValle",
+        "American Gods - Neil Gaiman",
+        "The Devil in Silver - Victor LaValle"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark literary fantasy",
+          "unreliable narrator",
+          "American Gothic",
+          "morally complex protagonist",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "graphic content",
+          "bleak subject matter",
+          "non-linear structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Man Called Ove - Fredrik Backman": {
@@ -231392,269 +231613,489 @@
       "author": "Fredrik Backman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Contemporary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ove, a curmudgeonly and rigid Swedish widower intent on ending his life, finds his plans repeatedly disrupted by the arrival of a chaotic new family next door, gradually pulling him back into the world of the living.",
+      "tone": "warmly comic, quietly devastating, life-affirming",
+      "pacing": "Moderate",
+      "themes": [
+        "grief",
+        "community",
+        "loneliness",
+        "love",
+        "purpose",
+        "friendship"
+      ],
+      "setting": "Contemporary suburban Sweden",
+      "comparable_books": [
+        "Eleanor Oliphant is Completely Fine - Gail Honeyman",
+        "The Hundred-Year-Old Man Who Climbed Out the Window - Jonas Jonasson",
+        "The House in the Cerulean Sea - TJ Klune"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven",
+          "life-affirming",
+          "found family",
+          "emotional but humorous",
+          "wide mainstream appeal"
+        ],
+        "negative": [
+          "predictable arc",
+          "sentimental",
+          "slow early chapters"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "A warm, character-centred story that translates beautifully to audio narration.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Final Orbit - Chris Hadfield": {
       "title": "Final Orbit",
       "author": "Chris Hadfield",
       "series": "The Apollo Murders",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1975, during the historic Apollo-Soyuz docking mission, a catastrophic accident and a covert Chinese spacecraft throw NASA flight controller Kaz Zemeckis into a deadly race to save his crew and prevent an international crisis.",
+      "tone": "propulsive, technical, cinematic",
+      "pacing": "Fast",
+      "themes": [
+        "Cold War geopolitics",
+        "space exploration",
+        "survival",
+        "espionage",
+        "US-Soviet-Chinese relations"
+      ],
+      "setting": "1975 — Mission Control in Houston and Earth orbit; alternate Cold War history",
+      "comparable_books": [
+        "The Apollo Murders - Chris Hadfield",
+        "Project Hail Mary - Andy Weir",
+        "Red Storm Rising - Tom Clancy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space thriller",
+          "Cold War alternate history",
+          "authentic technical detail",
+          "fast-paced action",
+          "procedural realism"
+        ],
+        "negative": [
+          "heavy technical jargon",
+          "character depth secondary to plot",
+          "requires series context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Magician: Apprentice - Raymond E. Feist": {
       "title": "Magician: Apprentice",
       "author": "Raymond E. Feist",
       "series": "The Riftwar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young Pug, an orphan in the Kingdom of the Isles, discovers a remarkable talent for magic just as an alien invasion tears open a rift between worlds, setting him on a journey that will transform both him and his world forever.",
+      "tone": "classic epic fantasy, adventurous, warm",
+      "pacing": "Moderate",
+      "themes": [
+        "coming of age",
+        "war between worlds",
+        "friendship",
+        "destiny",
+        "magic and power"
+      ],
+      "setting": "The medieval fantasy world of Midkemia; the Kingdom of the Isles and the alien world of Kelewan",
+      "comparable_books": [
+        "The Eye of the World - Robert Jordan",
+        "Assassin's Apprentice - Robin Hobb",
+        "The Fellowship of the Ring - J.R.R. Tolkien"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "coming-of-age hero",
+          "portal fantasy",
+          "world-building",
+          "beloved gateway series"
+        ],
+        "negative": [
+          "dated prose style",
+          "traditional genre conventions",
+          "slow opening act"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Voice of the Kami - Baptiste Pinson Wu": {
       "title": "Voice of the Kami",
       "author": "Baptiste Pinson Wu",
       "series": "Yaseki Monogatari",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the queen of the yōkai unleashes her full wrath upon the kami, Ren and his companions must seek out a legendary power known as the Voice of the Kami — which means returning to Aokigahara and the ghosts of Ren's past.",
+      "tone": "action-driven, emotionally charged, folklore-drenched",
+      "pacing": "Fast",
+      "themes": [
+        "Japanese mythology",
+        "good vs evil",
+        "redemption",
+        "brotherhood",
+        "the cost of power"
+      ],
+      "setting": "Mythological feudal Japan — the realm of kami, yōkai, and Yomi",
+      "comparable_books": [
+        "Blood of the Kami - Baptiste Pinson Wu",
+        "Undead Samurai - Baptiste Pinson Wu",
+        "Rin - Amélie Wen Zhao"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese mythology",
+          "fast-paced action",
+          "indie fantasy",
+          "found family",
+          "grumpy loveable characters"
+        ],
+        "negative": [
+          "requires prior book",
+          "niche setting may limit broad appeal"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Crown Imperiled - Raymond E. Feist": {
       "title": "A Crown Imperiled",
       "author": "Raymond E. Feist",
       "series": "The Chaoswar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As civil war tears the Kingdom of the Isles apart and an ancient demonic threat rises, the heroes of Midkemia scramble to hold together both a kingdom and a world on the brink of destruction.",
+      "tone": "epic, action-heavy, familiar",
+      "pacing": "Fast",
+      "themes": [
+        "civil war",
+        "political intrigue",
+        "friendship",
+        "duty and sacrifice",
+        "cosmic conflict"
+      ],
+      "setting": "Midkemia — the Kingdom of the Isles; late in the Riftwar continuity",
+      "comparable_books": [
+        "Magician's End - Raymond E. Feist",
+        "Into a Dark Realm - Raymond E. Feist",
+        "The Gathering Storm - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "long-running saga payoff",
+          "familiar beloved characters",
+          "action-driven"
+        ],
+        "negative": [
+          "requires extensive prior series knowledge",
+          "sprawling character cast",
+          "late-series diminishing returns for some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Magician's End - Raymond E. Feist": {
       "title": "Magician's End",
       "author": "Raymond E. Feist",
       "series": "The Chaoswar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the final chapter of the entire Riftwar Cycle, Pug and his allies face the ultimate confrontation with the demons of the Void, as the fate of Midkemia and all existence hangs in the balance.",
+      "tone": "epic, conclusive, elegiac",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "legacy",
+        "friendship across decades",
+        "the end of an era",
+        "cosmic stakes"
+      ],
+      "setting": "Midkemia and beyond — the culmination of the entire Riftwar continuity",
+      "comparable_books": [
+        "A Crown Imperiled - Raymond E. Feist",
+        "A Memory of Light - Robert Jordan & Brandon Sanderson",
+        "The Last Battle - C.S. Lewis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "satisfying saga conclusion",
+          "beloved characters",
+          "epic scale",
+          "long-running series payoff"
+        ],
+        "negative": [
+          "inaccessible without prior series knowledge",
+          "late-series pacing issues",
+          "emotionally demanding for long-time fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Child of the Greenwood - Joshua Walker": {
       "title": "The Child of the Greenwood",
       "author": "Joshua Walker",
       "series": "Echoes of the Four-Front War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told across two timelines, the story follows Jilo — an anthropomorphic Aobian — from a traumatic childhood to his later quest to recover a stolen magical heirloom that holds the key to his people's survival.",
+      "tone": "dark, emotionally gutpunching, immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "coming of age",
+        "grief and loss",
+        "identity",
+        "war's aftermath",
+        "magic and legacy"
+      ],
+      "setting": "The fantasy world of Q'ara — a Japanese-influenced region of the continent, across two time periods",
+      "comparable_books": [
+        "The Rest to the Gods - Joshua Walker",
+        "Mistborn - Brandon Sanderson",
+        "An Exile of Water & Gold - Joshua Walker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indie epic fantasy",
+          "dual-timeline structure",
+          "emotional depth",
+          "unique world-building",
+          "fast novellas"
+        ],
+        "negative": [
+          "requires some series context",
+          "dark tone",
+          "anthropomorphic characters may not suit all readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Celestial Tears of Dying Light - Joshua Walker": {
       "title": "The Celestial Tears of Dying Light",
       "author": "Joshua Walker",
       "series": "Echoes of the Four-Front War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Four-Front War winds down, an Aobian Sleeper is sent north to investigate legends of another population of tree-dwellers, while a zealous priest pursues a fearsome magical artefact — two quests on a collision course with eldritch consequences.",
+      "tone": "dark, foreboding, lyrical",
+      "pacing": "Moderate",
+      "themes": [
+        "exile",
+        "forbidden knowledge",
+        "religious fanaticism",
+        "sacrifice",
+        "world mythology"
+      ],
+      "setting": "The deep north of Q'ara and the Theradoran Empire; the Song of the Sleepers world",
+      "comparable_books": [
+        "The Child of the Greenwood - Joshua Walker",
+        "An Exile of Water & Gold - Joshua Walker",
+        "The Final Empire - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indie epic fantasy",
+          "dark world-building",
+          "lore-bomb reveals",
+          "emotionally impactful",
+          "fast novellas"
+        ],
+        "negative": [
+          "not a standalone entry point",
+          "eldritch horror elements",
+          "requires prior series knowledge"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Rest to the Gods - Joshua Walker": {
       "title": "The Rest to the Gods",
       "author": "Joshua Walker",
       "series": "Echoes of the Four-Front War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Four-Front War reaches its bloody conclusion on a mountain pass, Aobian Sleeper Nischia must lead a tiny squad of fourteen warriors against two hundred enemy soldiers — a desperate, near-impossible last stand told across two timelines.",
+      "tone": "tense, emotional, military-focused",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice",
+        "war",
+        "duty",
+        "identity",
+        "belonging",
+        "the cost of power"
+      ],
+      "setting": "The fantasy world of Q'ara — a mountain pass at the close of the Four-Front War",
+      "comparable_books": [
+        "An Exile of Water & Gold - Joshua Walker",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Final Empire - Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indie military fantasy",
+          "compact and impactful novella",
+          "character origin story",
+          "dual-timeline",
+          "emotional depth"
+        ],
+        "negative": [
+          "world-building-heavy opening",
+          "short length may frustrate readers wanting more",
+          "dark tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "An Exile of Water & Gold - Joshua Walker": {
       "title": "An Exile of Water & Gold",
       "author": "Joshua Walker",
       "series": "The Song of the Sleepers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drift, a cynical young Aobian, is exiled from his homeland forever for reasons unknown, while his betrothed Tarri works to bring him home and an unknown organisation schemes to weaponise Luminosity — the magical blessing of the Great Tree — for its own ends.",
+      "tone": "dark, epic, emotionally complex",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "exile",
+        "political intrigue",
+        "magic and power",
+        "betrayal",
+        "identity",
+        "belonging"
+      ],
+      "setting": "The fantasy continent of Q'ara — a bioluminescent forest world shared by humans and the tree-dwelling Aobians",
+      "comparable_books": [
+        "The Rhythm of War - Brandon Sanderson",
+        "The Faithful and the Fallen - John Gwynne",
+        "Gods of the Wyrdwood - Robert J. Barker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indie epic fantasy",
+          "unique world-building",
+          "multi-POV",
+          "strong female characters",
+          "rich magic system"
+        ],
+        "negative": [
+          "slow-building first half",
+          "large cast to track",
+          "dark tone"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Revenge - A. C. Cobble": {
