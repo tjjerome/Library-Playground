@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3913,
-  "total_pending": 687,
+  "total_catalogued": 3933,
+  "total_pending": 667,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -213645,81 +213645,151 @@
       "title": "Child of Venus",
       "author": "Pamela Sargent",
       "series": "Venus",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mahala Liangharad, the artificially conceived daughter of former Venusian rebels, grows up under the domes of a still-terraforming Venus and is drawn toward a mysterious alien signal from across space that may change humanity's destiny forever. The concluding volume of Sargent's multigenerational saga of the Venus Project resolves the tensions between Earth's rulers, the colonists, and the cybernetically enhanced Habbers.",
+      "tone": "thoughtful, slow-burning, humanistic",
+      "pacing": "Slow",
+      "themes": [
+        "terraforming",
+        "colonialism",
+        "generational legacy",
+        "identity",
+        "humanity's future",
+        "political power"
+      ],
+      "setting": "Far future; Venus under terraforming domes and floating islands, with Earth and asteroid habitats",
+      "comparable_books": [
+        "Kim Stanley Robinson's Mars trilogy",
+        "Venus of Dreams - Pamela Sargent",
+        "The Long Way to a Small, Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multigenerational epic",
+          "hard SF terraforming",
+          "feminist science fiction",
+          "political intrigue",
+          "character-driven",
+          "hopeful ending"
+        ],
+        "negative": [
+          "slow pacing",
+          "light on action",
+          "requires investment in prior books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Philosopher Kings - Jo Walton": {
       "title": "The Philosopher Kings",
       "author": "Jo Walton",
       "series": "Thessaly",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Decades after the events of The Just City, the original utopian experiment has fractured into rival city-states, and Apollo — still living as a mortal — must navigate loss, violence, and the competing philosophies of the cities while grappling with what justice truly means. The novel blends Greek myth, Platonic philosophy, and personal grief in an unusual far-future setting.",
+      "tone": "philosophical, elegiac, intimate",
+      "pacing": "Moderate",
+      "themes": [
+        "philosophy",
+        "grief",
+        "justice",
+        "myth",
+        "free will",
+        "utopia and its failures"
+      ],
+      "setting": "Far future; an isolated island in the ancient Mediterranean, a time-travel experiment replicating Plato's Republic",
+      "comparable_books": [
+        "The Just City - Jo Walton",
+        "Piranesi - Susanna Clarke",
+        "The Long Earth - Terry Pratchett & Stephen Baxter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical fiction",
+          "Greek mythology",
+          "character-driven",
+          "female perspectives",
+          "gods as characters",
+          "literary SF"
+        ],
+        "negative": [
+          "heavy on philosophical dialogue",
+          "requires reading Book 1 first",
+          "not plot-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rise: A Newsflesh Collection - Mira Grant": {
       "title": "Rise: A Newsflesh Collection",
       "author": "Mira Grant",
-      "series": null,
+      "series": "Newsflesh",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A complete collection of every piece of short fiction set in the Newsflesh zombie-apocalypse universe, including two previously unpublished novellas and six previously released short works, ranging from the origins of the Kellis-Amberlee virus to the aftermath of the trilogy's events. Stories span the entire timeline of the Rising and its consequences, with major spoilers for the main novels.",
+      "tone": "tense, propulsive, emotionally brutal",
+      "pacing": "Fast",
+      "themes": [
+        "zombie apocalypse",
+        "media and truth",
+        "survival",
+        "grief",
+        "science gone wrong",
+        "family"
+      ],
+      "setting": "Post-Rising United States (and beyond), spanning multiple decades of the Newsflesh universe",
+      "comparable_books": [
+        "Feed - Mira Grant",
+        "World War Z - Max Brooks",
+        "The Girl with All the Gifts - M.R. Carey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "zombie horror",
+          "science-driven apocalypse",
+          "compulsive readability",
+          "emotional punch",
+          "series completionist appeal"
+        ],
+        "negative": [
+          "major spoilers for the trilogy",
+          "not a standalone entry point",
+          "horror content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Skin Folk - Nalo Hopkinson": {
@@ -213727,26 +213797,52 @@
       "author": "Nalo Hopkinson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Hopkinson's debut short fiction collection gathers fifteen stories drawing on Caribbean folklore, fairy tale retellings, and speculative fiction, ranging from the horror of skin-shedding soucouyants to postapocalyptic science fantasy and tales of bodily transformation. The collection won the 2002 World Fantasy Award for Best Collection.",
+      "tone": "sensual, lyrical, darkly folkloric",
+      "pacing": "Moderate",
+      "themes": [
+        "Caribbean folklore",
+        "identity and transformation",
+        "race and colonialism",
+        "gender and sexuality",
+        "the body",
+        "myth retelling"
+      ],
+      "setting": "Varied — contemporary Caribbean, Canada, postapocalyptic futures, and mythic spaces",
+      "comparable_books": [
+        "Her Body and Other Parties - Carmen Maria Machado",
+        "Bloodchild - Octavia E. Butler",
+        "Brown Girl in the Ring - Nalo Hopkinson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Caribbean folklore",
+          "short story collections",
+          "afrofuturism",
+          "lyrical prose",
+          "myth retellings",
+          "body horror",
+          "queer themes"
+        ],
+        "negative": [
+          "uneven quality across stories",
+          "some horror content",
+          "not plot-driven"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Hopkinson's rhythmic, dialect-rich prose and Caribbean voices are particularly vivid when performed aloud.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Female Man - Joanna Russ": {
@@ -213754,26 +213850,51 @@
       "author": "Joanna Russ",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Four versions of the same woman — Joanna, Janet, Jeannine, and Jael — from alternate timelines converge, each shaped by radically different gender relations, from a woman-only utopia to a world locked in literal war between the sexes. A landmark of feminist SF, the novel is formally experimental and furiously satirical.",
+      "tone": "furious, satirical, experimental, polemical",
+      "pacing": "Slow",
+      "themes": [
+        "feminism",
+        "gender politics",
+        "parallel worlds",
+        "identity",
+        "rage and resistance",
+        "utopia"
+      ],
+      "setting": "Multiple alternate Earths spanning the mid-20th century to far-future societies",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "Herland - Charlotte Perkins Gilman",
+        "Kindred - Octavia E. Butler"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "landmark feminist SF",
+          "formally experimental",
+          "politically charged",
+          "challenging and rewarding",
+          "canonical SF"
+        ],
+        "negative": [
+          "non-linear and fragmented narrative",
+          "polemical tone",
+          "dated references",
+          "not plot-driven"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Where Late the Sweet Birds Sang - Kate Wilhelm": {
@@ -213781,26 +213902,47 @@
       "author": "Kate Wilhelm",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "As ecological catastrophe and disease destroy civilization, a wealthy family survives by mastering cloning — but over generations, the clones develop a rigid group consciousness that suppresses individuality, and a uniquely born individual must challenge their conformity to ensure humanity's survival. A Hugo and Locus Award-winning novel that explores what makes us human.",
+      "tone": "contemplative, quietly unsettling, humanistic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "cloning and identity",
+        "individuality vs. conformity",
+        "ecological collapse",
+        "survival",
+        "what makes us human"
+      ],
+      "setting": "Near-future and post-collapse rural America, spanning several generations",
+      "comparable_books": [
+        "Never Let Me Go - Kazuo Ishiguro",
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "The Sheep Look Up - John Brunner"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Hugo Award winner",
+          "classic feminist SF",
+          "quiet literary SF",
+          "character-driven",
+          "generational saga",
+          "ecological themes"
+        ],
+        "negative": [
+          "slow pacing",
+          "episodic structure",
+          "older prose style"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Trouble the Saints - Alaya Dawn Johnson": {
@@ -213808,188 +213950,352 @@
       "author": "Alaya Dawn Johnson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate 1940s New York, Phyllis LeBlanc — a light-skinned Black assassin gifted with supernaturally deadly hands — works for a Russian mob boss while trying to escape her violent past, alongside her half-Indian lover Dev and her best friend Tamara, as World War II looms and old debts come due. Winner of the 2021 World Fantasy Award for Best Novel.",
+      "tone": "lyrical, blood-soaked, melancholic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "race and racism",
+        "colorism",
+        "identity and passing",
+        "violence and complicity",
+        "love and sacrifice",
+        "WWII-era America"
+      ],
+      "setting": "Alternate 1940s New York City — Harlem underworld, jazz clubs, and the Hudson Valley",
+      "comparable_books": [
+        "The Underground Railroad - Colson Whitehead",
+        "The Night Circus - Erin Morgenstern",
+        "Passing - Nella Larsen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "World Fantasy Award winner",
+          "historical fantasy",
+          "lyrical prose",
+          "morally grey protagonist",
+          "race and identity themes",
+          "noir atmosphere"
+        ],
+        "negative": [
+          "dense and challenging structure",
+          "slow-building",
+          "literary over plot-driven",
+          "no clean resolution"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The musical, lyrical prose and noir atmosphere translate particularly well to audio performance.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Tindalos Asset - Caitlín R. Kiernan": {
       "title": "The Tindalos Asset",
       "author": "Caitlín R. Kiernan",
       "series": "Tinfoil Dossier",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Burned-out occult government agent Ellison Nicodemo is pulled from her drug-addled isolation by the enigmatic Signalman for one last mission: deploy her unique ability to summon a Hound of Tindalos against a Welsh sea-witch cultist threatening to unleash cosmic catastrophe. The most accessible entry in Kiernan's Lovecraftian espionage novella trilogy.",
+      "tone": "darkly literary, cosmically bleak, stylistically dense",
+      "pacing": "Moderate",
+      "themes": [
+        "cosmic horror",
+        "Lovecraftian mythology",
+        "government conspiracy",
+        "trauma and burnout",
+        "apocalypse prevention",
+        "time and angles"
+      ],
+      "setting": "Contemporary Los Angeles and shifting timeframes, in a world of shadow government agencies and Cthulhu Mythos entities",
+      "comparable_books": [
+        "Agents of Dreamland - Caitlín R. Kiernan",
+        "The Dispatcher - John Scalzi",
+        "The Laundry Files - Charles Stross"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Lovecraftian horror",
+          "espionage thriller",
+          "literary horror",
+          "cosmic bleakness",
+          "novella length",
+          "LGBTQ characters"
+        ],
+        "negative": [
+          "requires prior series knowledge",
+          "non-linear narrative",
+          "experimental prose style",
+          "cosmic horror ambiguity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Countdown - Mira Grant": {
       "title": "Countdown",
       "author": "Mira Grant",
       "series": "Newsflesh",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.25",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A novella prequel to Feed tracing the origins of the Kellis-Amberlee virus through multiple perspectives — from the scientists whose well-intentioned research accidentally created the zombie plague, to the ordinary people caught in the first days of the Rising. Approximately 19,500 words.",
+      "tone": "tense, propulsive, dread-filled",
+      "pacing": "Fast",
+      "themes": [
+        "science gone wrong",
+        "pandemic origins",
+        "unintended consequences",
+        "media and misinformation",
+        "survival"
+      ],
+      "setting": "2014 United States, in the days immediately before and during the beginning of the zombie Rising",
+      "comparable_books": [
+        "Feed - Mira Grant",
+        "The Stand - Stephen King",
+        "Station Eleven - Emily St. John Mandel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "zombie horror",
+          "science-driven worldbuilding",
+          "multiple POV",
+          "prequel backstory",
+          "quick read"
+        ],
+        "negative": [
+          "novella length only",
+          "horror content",
+          "best read with series context"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Keeper - Sarah Langan": {
       "title": "The Keeper",
       "author": "Sarah Langan",
       "series": "Keeper",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the dying mill town of Bedford, Maine, the strange and silent Susan Marley haunts the dreams of every resident with visions of violence and horror, and when darkness finally descends on the town, those who cannot escape face a supernatural reckoning tied to its bloody past. A Bram Stoker Award–nominated debut drawing comparisons to early Stephen King.",
+      "tone": "bleak, atmospheric, dread-soaked",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "small-town decay",
+        "cursed communities",
+        "family trauma",
+        "supernatural evil",
+        "class and poverty"
+      ],
+      "setting": "Contemporary Bedford, Maine — a dying industrial town",
+      "comparable_books": [
+        "Needful Things - Stephen King",
+        "The Haunting of Hill House - Shirley Jackson",
+        "The Troop - Nick Cutter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "small-town horror",
+          "atmospheric dread",
+          "King-esque",
+          "strong character work",
+          "supernatural mystery"
+        ],
+        "negative": [
+          "bleak tone",
+          "graphic content",
+          "slow build"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Venus of Shadows - Pamela Sargent": {
       "title": "Venus of Shadows",
       "author": "Pamela Sargent",
       "series": "Venus",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A second generation of colonists on terraforming Venus — including Risa and Benzi, the children of Iris Angharads — find themselves torn apart by the rising influence of the theocratic Cult of Ishtar and the widening rift between the planet's settlers and the technologically advanced Habbers. A multigenerational saga of political and personal conflict on humanity's second world.",
+      "tone": "measured, humanistic, politically rich",
+      "pacing": "Slow",
+      "themes": [
+        "terraforming",
+        "colonialism",
+        "religion and fanaticism",
+        "family loyalty",
+        "political power",
+        "generational change"
+      ],
+      "setting": "Far future Venus — enclosed domed settlements and floating island platforms, during an ongoing centuries-long terraforming project",
+      "comparable_books": [
+        "Kim Stanley Robinson's Mars trilogy",
+        "Venus of Dreams - Pamela Sargent",
+        "The Dispossessed - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multigenerational epic",
+          "hard SF terraforming",
+          "feminist science fiction",
+          "political and social drama",
+          "character-driven"
+        ],
+        "negative": [
+          "slow pacing",
+          "dense world-building",
+          "requires reading Book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Shadow Gate - Kate Elliott": {
       "title": "Shadow Gate",
       "author": "Kate Elliott",
       "series": "Crossroads",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the Hundred, slain reeve Marit awakens as a Guardian — one of the immortal beings thought extinct — and must uncover the source of corruption spreading through their ranks as a vast invading army ravages the land, while eagle-rider Joss and the outlander Anji struggle to hold the peace. The corruption of the Guardians deepens and new alliances are tested.",
+      "tone": "epic, intricate, action-driven with lulls",
+      "pacing": "Moderate",
+      "themes": [
+        "corruption of power",
+        "justice and law",
+        "colonization and belonging",
+        "death and rebirth",
+        "political intrigue",
+        "diverse cultures"
+      ],
+      "setting": "The Hundred — a richly detailed pre-industrial fantasy world with Asian-influenced cultures, giant eagles, and immortal Guardians",
+      "comparable_books": [
+        "Spirit Gate - Kate Elliott",
+        "The Way of Kings - Brandon Sanderson",
+        "Kushiel's Dart - Jacqueline Carey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "diverse cast",
+          "strong worldbuilding",
+          "political complexity",
+          "morally complex characters",
+          "non-Western-flavored setting"
+        ],
+        "negative": [
+          "requires reading Book 1",
+          "large cast can overwhelm",
+          "slow mid-section",
+          "700+ pages"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Traitors' Gate - Kate Elliott": {
       "title": "Traitors' Gate",
       "author": "Kate Elliott",
       "series": "Crossroads",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the thunderous conclusion to the Crossroads trilogy, the forces of the Hundred rally their Guardians, reeves, and outlander allies for a final confrontation against the invading horde — but a traitor with imperial ambitions threatens everything from within, delivering a shocking and bittersweet ending. Elliott brings her vast cast to a dramatic close.",
+      "tone": "epic, escalating, bittersweet",
+      "pacing": "Moderate",
+      "themes": [
+        "betrayal",
+        "war and peace",
+        "justice",
+        "ambition and power",
+        "alliance and loyalty",
+        "sacrifice"
+      ],
+      "setting": "The Hundred and surrounding lands — pre-industrial fantasy world at war, with eagle-riding reeves and immortal Guardians",
+      "comparable_books": [
+        "Shadow Gate - Kate Elliott",
+        "A Memory of Light - Robert Jordan & Brandon Sanderson",
+        "The Darkness That Comes Before - R. Scott Bakker"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy conclusion",
+          "morally complex",
+          "diverse cast",
+          "satisfying payoff",
+          "politically rich"
+        ],
+        "negative": [
+          "requires prior books",
+          "large cast",
+          "some readers found ending divisive"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "My Real Children - Jo Walton": {
@@ -213997,26 +214303,49 @@
       "author": "Jo Walton",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An elderly woman with dementia in a care home simultaneously remembers two entirely different lives — one happy, one difficult — each of which led to a different version of the 21st century, one more hopeful and one more dystopian. A quietly devastating novel about the weight of personal choices and alternate history.",
+      "tone": "tender, melancholic, intimate",
+      "pacing": "Slow",
+      "themes": [
+        "alternate history",
+        "women's lives",
+        "motherhood and marriage",
+        "identity and memory",
+        "personal vs. historical change",
+        "LGBTQ lives"
+      ],
+      "setting": "England (and Italy), spanning from the 1940s to the near future in two parallel timelines",
+      "comparable_books": [
+        "The Time Traveler's Wife - Audrey Niffenegger",
+        "Among Others - Jo Walton",
+        "The Hours - Michael Cunningham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "women's lives",
+          "quiet and emotional",
+          "LGBTQ themes",
+          "Jo Walton fans",
+          "alternate history"
+        ],
+        "negative": [
+          "very slow pacing",
+          "no action",
+          "deliberately mundane",
+          "emotionally heavy"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The intimate, domestic tone and dual-timeline structure work beautifully in audio, making the emotional contrasts land powerfully.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "China Mountain Zhang - Maureen F. McHugh": {
@@ -214024,26 +214353,49 @@
       "author": "Maureen F. McHugh",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a future North America under Chinese cultural dominance, Rafael 'China Mountain' Zhang — a mixed-race, gay man — navigates a society where his heritage and sexuality force him to construct multiple identities, following him through New York, China, and the Martian frontier in a series of interconnected vignettes. A Hugo and Nebula Award finalist celebrated for its quiet humanism.",
+      "tone": "quiet, humane, contemplative",
+      "pacing": "Slow",
+      "themes": [
+        "identity and passing",
+        "sexuality and society",
+        "race and cultural dominance",
+        "belonging and alienation",
+        "future China",
+        "class"
+      ],
+      "setting": "Mid-22nd century — New York City, mainland China, and Mars, in a world where China is the dominant global superpower",
+      "comparable_books": [
+        "The Dispossessed - Ursula K. Le Guin",
+        "A Closed and Common Orbit - Becky Chambers",
+        "Babel-17 - Samuel R. Delany"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF",
+          "LGBTQ protagonist",
+          "Asian-influenced future",
+          "quiet and character-driven",
+          "Hugo/Nebula finalist",
+          "vignette structure"
+        ],
+        "negative": [
+          "minimal plot",
+          "episodic structure",
+          "slow pacing",
+          "no action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Audrey's Door - Sarah Langan": {
@@ -214051,53 +214403,99 @@
       "author": "Sarah Langan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Architect Audrey Lucas moves into the suspiciously affordable Breviary — a unique Manhattan apartment building designed in a style called Chaotic Naturalism — only to be haunted by dark visions and an insistent voice demanding she build a door, as her already fragile sanity begins to slip. A Bram Stoker Award–winning psychological haunted-house novel.",
+      "tone": "psychologically unsettling, claustrophobic, atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "haunted buildings",
+        "mental illness",
+        "architectural uncanny",
+        "chaos and control",
+        "trauma",
+        "New York City"
+      ],
+      "setting": "Contemporary New York City, Upper West Side — the eccentric, history-laden Breviary apartment building",
+      "comparable_books": [
+        "The Haunting of Hill House - Shirley Jackson",
+        "Rosemary's Baby - Ira Levin",
+        "The Shining - Stephen King"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "haunted house horror",
+          "psychological suspense",
+          "Bram Stoker Award winner",
+          "literary horror",
+          "strong atmosphere",
+          "female protagonist"
+        ],
+        "negative": [
+          "slow pacing",
+          "ambiguous horror",
+          "protagonist's passivity frustrates some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Coming to You Live - Mira Grant": {
       "title": "Coming to You Live",
       "author": "Mira Grant",
       "series": "Newsflesh",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5.5",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Newsflesh novella following Shaun and Georgia Mason in their post-trilogy exile in Canada, forced to return to what they left behind when circumstances demand they face the consequences of their actions and those of others. Contains major spoilers for the entire Newsflesh trilogy.",
+      "tone": "tense, emotionally charged, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "aftermath and survival",
+        "identity",
+        "media and truth",
+        "chosen family",
+        "accountability"
+      ],
+      "setting": "Post-Rising North America — Canada and the United States, after the events of the Newsflesh trilogy",
+      "comparable_books": [
+        "Feed - Mira Grant",
+        "Deadline - Mira Grant",
+        "Blackout - Mira Grant"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fan closure for series protagonists",
+          "Newsflesh completionist",
+          "fast read",
+          "emotionally satisfying"
+        ],
+        "negative": [
+          "major spoilers for the full trilogy",
+          "not a standalone",
+          "novella length only"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Larque on the Wing - Nancy Springer": {
@@ -214105,80 +214503,149 @@
       "author": "Nancy Springer",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Middle-aged housewife and painter Larque Harootunian generates psychic doppelgangers her whole life — and when a manifestation of her ten-year-old self runs away with her artistic talent, Larque embarks on a surreal journey that transforms her into a young, gay man and forces her to reckon with her true identity. Winner of the 1994 James Tiptree Jr. Award.",
+      "tone": "whimsical, surreal, warmly eccentric",
+      "pacing": "Moderate",
+      "themes": [
+        "gender and identity",
+        "midlife crisis",
+        "self-transformation",
+        "queer identity",
+        "magical realism",
+        "art and authenticity"
+      ],
+      "setting": "Contemporary small-town Pennsylvania and the magical 'Popular Street', an otherworldly district outside ordinary reality",
+      "comparable_books": [
+        "Orlando - Virginia Woolf",
+        "Piranesi - Susanna Clarke",
+        "The Left Hand of Darkness - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "James Tiptree Jr. Award winner",
+          "gender-bending fantasy",
+          "magical realism",
+          "queer themes",
+          "warmly humane",
+          "feminist"
+        ],
+        "negative": [
+          "surreal and eccentric plot",
+          "light on conventional plotting",
+          "may feel slight to some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "All the Pretty Little Horses - Mira Grant": {
       "title": "All the Pretty Little Horses",
       "author": "Mira Grant",
       "series": "Newsflesh",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.75",
+      "genre": "Horror",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Newsflesh prequel novella following Stacy and Michael Mason — the future adoptive parents of Georgia and Shaun — as Stacy battles deep depression after being forced to shoot their infected biological son, and the couple begins documenting post-Rising recovery efforts that eventually lead them toward adoption. Provides crucial backstory on the series' central family.",
+      "tone": "sombre, emotionally raw, quietly hopeful",
+      "pacing": "Moderate",
+      "themes": [
+        "trauma and grief",
+        "post-apocalyptic recovery",
+        "parenthood",
+        "resilience",
+        "media and documentation"
+      ],
+      "setting": "Post-Rising United States, in the years immediately after the zombie apocalypse",
+      "comparable_books": [
+        "Feed - Mira Grant",
+        "Countdown - Mira Grant",
+        "The Road - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Newsflesh worldbuilding",
+          "character backstory",
+          "emotional depth",
+          "zombie post-apocalypse",
+          "quick read"
+        ],
+        "negative": [
+          "novella length only",
+          "best appreciated with series context",
+          "emotionally heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Probability Sun - Nancy Kress": {
       "title": "Probability Sun",
       "author": "Nancy Kress",
       "series": "The Probability Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A joint military-scientific expedition travels to the planet World — home to aliens who experience 'shared reality' — to investigate a powerful alien artifact that may be humanity's best weapon against the genocidal Fallers, but scientists and soldiers clash over the artifact's nature and over the cost of using it. A tightly paced hard-SF novel wrestling with the ethics of war.",
+      "tone": "propulsive, morally complex, hard-SF",
+      "pacing": "Fast",
+      "themes": [
+        "military vs. science ethics",
+        "alien contact",
+        "war and genocide",
+        "shared consciousness",
+        "weapons of mass destruction",
+        "human cooperation"
+      ],
+      "setting": "Far future — the alien planet World and its solar system, during humanity's desperate war against the Fallers",
+      "comparable_books": [
+        "Probability Moon - Nancy Kress",
+        "The Forever War - Joe Haldeman",
+        "Speaker for the Dead - Orson Scott Card"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF",
+          "military SF ethics",
+          "alien contact",
+          "strong pacing",
+          "morally unresolved ending",
+          "science-forward"
+        ],
+        "negative": [
+          "requires reading Book 1",
+          "thin characterization noted by some",
+          "middle-book placement"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Falling Woman - Pat Murphy": {
