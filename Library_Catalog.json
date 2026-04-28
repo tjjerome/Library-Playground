@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4371,
-  "total_pending": 229,
+  "total_catalogued": 4391,
+  "total_pending": 209,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -235930,272 +235930,492 @@
     },
     "His Black Tongue - Mitchell Luthi": {
       "title": "His Black Tongue",
-      "author": "Mitchell Luthi",
+      "author": "Mitchell Lüthi",
       "series": "In the Name of the Worm",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A Franciscan friar and his ward take shelter in the plague-scarred town of Enfaire in 14th-century France, where they encounter twisted, unholy creatures and have their faith violently tested. The main novel is accompanied by a bonus novella and two short stories.",
+      "tone": "Grimdark, atmospheric, religiously unsettling",
+      "pacing": "Moderate",
+      "themes": [
+        "faith and doubt",
+        "plague and death",
+        "evil and corruption",
+        "medieval religion",
+        "cosmic horror"
+      ],
+      "setting": "14th-century France during the Black Death; a small town on the edge of civilisation",
+      "comparable_books": [
+        "Between Two Fires - Christopher Buehlman",
+        "Pilgrim: A Medieval Horror - Mitchell Lüthi",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "medieval horror",
+          "religious dread",
+          "Lovecraftian undertones",
+          "atmospheric historical setting",
+          "short story bonus content"
+        ],
+        "negative": [
+          "slow character development",
+          "mixed story anthology format",
+          "bleak with no redemption arc"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Has a dramatised audiobook adaptation that reviewers praised highly.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Ritual - Mitchell Luthi": {
       "title": "The Ritual",
-      "author": "Mitchell Luthi",
+      "author": "Mitchell Lüthi",
       "series": "The Plagueborne Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the plague-ravaged continent of Greater Virren, warrior Lady Katarina Lorenz leaves the safety of her city to investigate rumours of the resurgent plague, and encounters a banished religious extremist group hunting an accused witch who may hold a miraculous secret. A short high-fantasy novelette.",
+      "tone": "Gritty, tense, fast-paced",
+      "pacing": "Fast",
+      "themes": [
+        "plague and survival",
+        "religious fanaticism",
+        "witch hysteria",
+        "truth and power"
+      ],
+      "setting": "The fantasy continent of Greater Virren, a world in the aftermath of revolution and plague",
+      "comparable_books": [
+        "The Zealot - Mitchell Lüthi",
+        "His Black Tongue - Mitchell Lüthi",
+        "The Black Company - Glen Cook"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced action",
+          "gritty atmosphere",
+          "short novelette format",
+          "plague fantasy"
+        ],
+        "negative": [
+          "minimal world-building",
+          "very short — novelette length only",
+          "abrupt ending"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "In the Name of the Worm - Mitchell Luthi": {
       "title": "In the Name of the Worm",
-      "author": "Mitchell Luthi",
+      "author": "Mitchell Lüthi",
       "series": "In the Name of the Worm",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in the desolate years after the Black Death, friar Pierre and his ward Remi venture into the Black Forest following trails of false relics and forged indulgences, descending into the heart of a rotting empire where new heresies fester and something ancient stirs. A direct sequel to His Black Tongue.",
+      "tone": "Grimdark, cosmically unsettling, gritty and atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "heresy and faith",
+        "cosmic evil",
+        "post-plague society",
+        "good versus evil",
+        "identity and duality"
+      ],
+      "setting": "Post-Black Death medieval Central Europe, including the Black Forest and the Holy Roman Empire",
+      "comparable_books": [
+        "His Black Tongue - Mitchell Lüthi",
+        "Between Two Fires - Christopher Buehlman",
+        "Pilgrim: A Medieval Horror - Mitchell Lüthi"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "medieval cosmic horror",
+          "returning characters with emotional depth",
+          "rich historical detail",
+          "biblically accurate demons"
+        ],
+        "negative": [
+          "cliffhanger ending — series status uncertain",
+          "requires reading His Black Tongue first"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Price of Fear - Miles Lyon": {
       "title": "The Price of Fear",
       "author": "Miles Lyon",
       "series": "The Wretched Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Azreal the Wretched — an infamous mage whose magical blades feast on his emotions — is imprisoned and awaiting execution for the murder of a crown prince, and spends his final hours recounting his story to criminal investigator Anamira Lestrade in hopes of staving off both their deaths. A grimdark fantasy told through a framed narrative.",
+      "tone": "Darkly comic, snarky, emotionally brutal, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "morally grey heroism",
+        "love and sacrifice",
+        "cost of magic",
+        "betrayal",
+        "political conspiracy"
+      ],
+      "setting": "A gritty secondary world fantasy setting — a divided Northern kingdom and its rival empire, Inath",
+      "comparable_books": [
+        "Empire of the Vampire - Jay Kristoff",
+        "Best Served Cold - Joe Abercrombie",
+        "The First Law - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey anti-hero",
+          "framed narrative / interrogation structure",
+          "dark humour",
+          "magic with emotional cost",
+          "propulsive pacing",
+          "strong female characters"
+        ],
+        "negative": [
+          "very grimdark — graphic violence throughout",
+          "can feel self-consciously genre-aware early on",
+          "explicit sexual content (referenced in reviews)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Zealot - Mitchell Luthi": {
       "title": "The Zealot",
-      "author": "Mitchell Luthi",
+      "author": "Mitchell Lüthi",
       "series": "The Plagueborne Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up directly after The Ritual, Katarina and Tannhauser press west in search of the plague's mysterious source, while the fanatical Ezekiel — wrenched from death — pursues them relentlessly for vengeance. Nearly three times the length of the first novelette, it deepens both world and stakes considerably.",
+      "tone": "Gritty, suspenseful, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "plague and survival",
+        "religious fanaticism",
+        "vengeance",
+        "ancient evil",
+        "corruption of power"
+      ],
+      "setting": "The fantasy continent of Greater Virren — cities, countryside outposts, and collapsing social structures",
+      "comparable_books": [
+        "The Ritual - Mitchell Lüthi",
+        "His Black Tongue - Mitchell Lüthi",
+        "The Black Company - Glen Cook"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced action",
+          "escalating stakes",
+          "character-driven",
+          "gritty secondary world fantasy"
+        ],
+        "negative": [
+          "novelette length — short",
+          "must read The Ritual first",
+          "incomplete trilogy (Book 3 status unclear)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Cure for Living - Part One - Nicolas Lietzau": {
       "title": "The Cure for Living - Part One",
       "author": "Nicolas Lietzau",
       "series": "The Twelfth World",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the oasis city of Qurrâb, veteran Jespar tre Moreste arrives searching for his long-abandoned sister, only to discover the city's dark underbelly of crime syndicates, death cults, and forbidden philosophy beneath its utopian surface. This is the first half of a single novel split across two volumes, closing Jespar's saga with a blend of mystery, dark fantasy, and thriller.",
+      "tone": "Dark, psychologically complex, lyrical, brooding",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "obsession and identity",
+        "morality and virtue",
+        "the dark side of utopia",
+        "trauma and redemption",
+        "cost of idealism"
+      ],
+      "setting": "Qurrâb — a fabled desert oasis city called the City of Sages, in the richly built Twelfth World secondary fantasy setting",
+      "comparable_books": [
+        "Dreams of the Dying - Nicolas Lietzau",
+        "Nevernight - Jay Kristoff",
+        "Gunmetal Gods - Zamil Akhtar"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychologically rich dark fantasy",
+          "complex world-building",
+          "morally nuanced protagonist",
+          "literary quality prose",
+          "mental illness themes handled with care"
+        ],
+        "negative": [
+          "very long — 644 pages for Part One alone",
+          "requires reading Dreams of the Dying first",
+          "split novel — story continues in Part Two",
+          "slow pacing early"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dungeon Crawler Carl - Matt Dinniman": {
       "title": "Dungeon Crawler Carl",
       "author": "Matt Dinniman",
       "series": "Dungeon Crawler Carl",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After aliens abruptly destroy the Earth's surface, former military man Carl and his ex-girlfriend's cat Princess Donut are forced into a massive, televised subterranean dungeon where they must fight monsters and level up to survive — and entertain billions of alien viewers. A breakout LitRPG sensation with irreverent humour and surprising emotional depth.",
+      "tone": "Irreverent, darkly comic, propulsive, unexpectedly heartfelt",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "found family",
+        "media and spectacle",
+        "resistance against oppression",
+        "class and exploitation"
+      ],
+      "setting": "Post-apocalyptic Earth — a multi-level alien-designed dungeon beneath the destroyed surface",
+      "comparable_books": [
+        "Carl's Doomsday Scenario - Matt Dinniman",
+        "He Who Fights With Monsters - Jason Cheyne",
+        "Dungeon Crawler Carl (series) - Matt Dinniman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG / GameLit",
+          "found family",
+          "dark humour",
+          "propulsive action",
+          "underdog protagonist",
+          "cat companion"
+        ],
+        "negative": [
+          "LitRPG mechanics may feel alienating to non-genre readers",
+          "very long series",
+          "crude humour throughout"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The audiobook narrated by Jeff Hays with full cast is widely considered one of the best in the genre — a benchmark production.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Carl's Doomsday Scenario - Matt Dinniman": {
       "title": "Carl's Doomsday Scenario",
       "author": "Matt Dinniman",
       "series": "Dungeon Crawler Carl",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Carl and Princess Donut descend deeper into the dungeon's second floor, facing escalating threats, new allies, and increasingly dangerous political machinations among the alien viewing public as the stakes for their survival rise dramatically.",
+      "tone": "Irreverent, darkly comic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "found family",
+        "media and spectacle",
+        "resistance",
+        "class warfare"
+      ],
+      "setting": "The multi-level alien dungeon beneath destroyed Earth — second floor",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "The Dungeon Anarchist's Cookbook - Matt Dinniman",
+        "He Who Fights With Monsters - Jason Cheyne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG / GameLit",
+          "escalating stakes",
+          "dark humour",
+          "found family",
+          "propulsive pacing"
+        ],
+        "negative": [
+          "LitRPG mechanics",
+          "crude humour",
+          "must read Book 1 first"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast audiobook production by Jeff Hays is acclaimed as one of the best audiobook experiences in genre fiction.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Dungeon Anarchist's Cookbook - Matt Dinniman": {
       "title": "The Dungeon Anarchist's Cookbook",
       "author": "Matt Dinniman",
       "series": "Dungeon Crawler Carl",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Carl and Princess Donut continue their televised dungeon crawl on the third floor, where the political intrigue among alien factions deepens and Carl's growing celebrity status becomes both a weapon and a liability.",
+      "tone": "Irreverent, darkly comic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "resistance and subversion",
+        "media manipulation",
+        "found family",
+        "class warfare"
+      ],
+      "setting": "The multi-level alien dungeon — third floor",
+      "comparable_books": [
+        "Carl's Doomsday Scenario - Matt Dinniman",
+        "The Gate of the Feral Gods - Matt Dinniman",
+        "He Who Fights With Monsters - Jason Cheyne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG / GameLit",
+          "dark humour",
+          "subversive protagonist",
+          "escalating action",
+          "strong series momentum"
+        ],
+        "negative": [
+          "LitRPG mechanics",
+          "best read in series order",
+          "crude humour"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Acclaimed full cast audiobook production continues from Books 1–2.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Gate of the Feral Gods - Matt Dinniman": {
       "title": "The Gate of the Feral Gods",
       "author": "Matt Dinniman",
       "series": "Dungeon Crawler Carl",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Carl and Princess Donut reach the fourth floor of the dungeon, where factions of crawlers must cooperate — or compete — to survive ancient, city-scale challenges while Carl's notoriety among alien viewers continues to shape the game against him.",
+      "tone": "Irreverent, darkly comic, propulsive, increasingly emotionally complex",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "cooperation versus competition",
+        "found family",
+        "media and spectacle",
+        "resistance"
+      ],
+      "setting": "The multi-level alien dungeon — fourth floor",
+      "comparable_books": [
+        "The Dungeon Anarchist's Cookbook - Matt Dinniman",
+        "He Who Fights With Monsters - Jason Cheyne",
+        "Cradle - Will Wight"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG / GameLit",
+          "escalating world-building",
+          "dark humour",
+          "emotional character development",
+          "found family"
+        ],
+        "negative": [
+          "LitRPG mechanics",
+          "series must be read in order",
+          "crude humour throughout"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Acclaimed full cast audiobook production continues — widely regarded as the gold standard of LitRPG audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Autumn Springs Retirement Home Massacre - Philip Fracassi": {
@@ -236203,26 +236423,48 @@
       "author": "Philip Fracassi",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rose DuBois, a woman in her late seventies living at the Autumn Springs Retirement Home, begins to suspect foul play as residents die one by one — and finds herself drawn into a deadly investigation where she becomes the killer's next target. A darkly humorous slasher with a subverted 'final girl' trope.",
+      "tone": "Darkly comic, tense, emotionally resonant, bloody",
+      "pacing": "Fast",
+      "themes": [
+        "aging and mortality",
+        "society's treatment of the elderly",
+        "survival and resilience",
+        "found community",
+        "good vs evil"
+      ],
+      "setting": "Contemporary America — a retirement home with a gothic, claustrophobic atmosphere",
+      "comparable_books": [
+        "Boys in the Valley - Philip Fracassi",
+        "The Troop - Nick Cutter",
+        "The Pallbearers Club - Paul Tremblay"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "subverted slasher tropes",
+          "elderly protagonist",
+          "dark humour",
+          "mystery elements",
+          "fast-paced horror",
+          "emotionally grounded characters"
+        ],
+        "negative": [
+          "graphic violence and gore",
+          "slasher genre conventions may not suit all horror readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by seven-time Audie Award-winner January LaVoy; Kirkus and Library Journal specifically praised her nuanced performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Director - Daniel Kehlmann": {
@@ -236230,53 +236472,94 @@
       "author": "Daniel Kehlmann",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Inspired by the life of acclaimed silent-film director G.W. Pabst, who fled to Hollywood to escape the Nazis only to find himself trapped back in Austria and slowly coerced into making propaganda films for the Third Reich. A tragicomic novel about artistic complicity, moral compromise, and the seductions of power.",
+      "tone": "Darkly comic, morally unsettling, propulsive, absurdist-realist",
+      "pacing": "Fast",
+      "themes": [
+        "artistic complicity",
+        "fascism and moral compromise",
+        "art vs. power",
+        "survival and self-deception",
+        "beauty and barbarism"
+      ],
+      "setting": "1930s–1940s Europe and Hollywood — Germany, Austria (Ostmark), France, and California during the Nazi era",
+      "comparable_books": [
+        "Mephisto - Klaus Mann",
+        "Tyll - Daniel Kehlmann",
+        "HHhH - Laurent Binet"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction with moral weight",
+          "darkly comic",
+          "propulsive literary fiction",
+          "based on true events",
+          "International Booker shortlist"
+        ],
+        "negative": [
+          "not a redemption narrative — morally uncomfortable throughout",
+          "episodic structure may feel fragmented to some readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Edge - David Baldacci": {
       "title": "The Edge",
       "author": "David Baldacci",
       "series": "6:20 Man",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former Army Ranger and government operative Travis Devine is sent to a small coastal town in Maine to investigate the murder of CIA operative Jenny Silkwell, whose laptop and phone contained classified secrets — but the tight-knit community closes ranks and someone wants Devine dead. A fast-paced espionage-mystery thriller.",
+      "tone": "Propulsive, suspenseful, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "national security and espionage",
+        "community secrets",
+        "conspiracy",
+        "justice and duty",
+        "trust and betrayal"
+      ],
+      "setting": "Contemporary rural Maine — a small, insular coastal community; government espionage backdrop",
+      "comparable_books": [
+        "The 6:20 Man - David Baldacci",
+        "To Die For - David Baldacci",
+        "The Escape - David Baldacci"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced thriller",
+          "espionage and mystery blend",
+          "competent military protagonist",
+          "plot twists",
+          "series with strong momentum"
+        ],
+        "negative": [
+          "formulaic Baldacci structure",
+          "character depth lighter than literary thrillers",
+          "best read after Book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Food for Thought: Essays and Ruminations - Alton Brown": {
@@ -236284,26 +236567,45 @@
       "author": "Alton Brown",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Celebrity chef and food scientist Alton Brown shares a collection of personal essays and reflections on food, cooking, culture, and life — blending his trademark wit and intellectual curiosity with memoir and culinary philosophy.",
+      "tone": "Witty, conversational, intellectually curious",
+      "pacing": "Moderate",
+      "themes": [
+        "food and culture",
+        "identity and memoir",
+        "science of cooking",
+        "American food culture",
+        "personal philosophy"
+      ],
+      "setting": "Non-fiction essays — contemporary America; food culture broadly",
+      "comparable_books": [
+        "My Life in France - Julia Child",
+        "Consider the Fork - Bee Wilson",
+        "Medium Raw - Anthony Bourdain"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "food writing",
+          "witty essays",
+          "celebrity chef voice",
+          "culinary science",
+          "personal memoir elements"
+        ],
+        "negative": [
+          "not a cookbook — no recipes",
+          "episodic essay format may not suit all readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Essay collections by the author himself tend to be highly entertaining in audio; Alton Brown's charismatic voice is well-suited to the format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "Medium",
+      "research_source": "training",
       "audit": null
     },
     "Suspicion - Seicho Matsumoto": {
@@ -236311,26 +236613,46 @@
       "author": "Seicho Matsumoto",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A masterwork of Japanese crime fiction in which a woman becomes the prime suspect in a murder case, and the novel dissects the legal system, public opinion, and the nature of guilt and innocence through a meticulously constructed psychological investigation.",
+      "tone": "Cold, methodical, psychologically acute, bleak",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "guilt and innocence",
+        "social judgment",
+        "justice and the legal system",
+        "truth and perception",
+        "gender and power"
+      ],
+      "setting": "Post-war Japan — courtrooms, domestic spaces, and the machinery of the Japanese legal system",
+      "comparable_books": [
+        "Inspector Imanishi Investigates - Seicho Matsumoto",
+        "A Quiet Place - Seicho Matsumoto",
+        "Confessions - Kanae Minato"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic Japanese crime fiction",
+          "psychological depth",
+          "slow-burn procedural",
+          "social critique",
+          "literary crime"
+        ],
+        "negative": [
+          "very slow pacing",
+          "cold and emotionally detached tone",
+          "dated in some social contexts"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mindhunter - John E. Douglas & Mark Olshaker": {
@@ -236338,26 +236660,48 @@
       "author": "John E. Douglas & Mark Olshaker",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "FBI special agent and pioneer criminal profiler John Douglas recounts his career developing the science of criminal profiling through landmark interviews with serial killers including Ted Bundy, Charles Manson, and Ed Kemper, revealing the psychological methods used to catch the most dangerous criminals in America.",
+      "tone": "Clinical, gripping, unflinching, occasionally harrowing",
+      "pacing": "Moderate",
+      "themes": [
+        "criminal psychology",
+        "serial killers",
+        "law enforcement",
+        "the nature of evil",
+        "institutional bureaucracy"
+      ],
+      "setting": "1970s–1990s USA — FBI headquarters, prisons, and crime scenes across America",
+      "comparable_books": [
+        "The Anatomy of Evil - Michael H. Stone",
+        "I'll Be Gone in the Dark - Michelle McNamara",
+        "The Stranger Beside Me - Ann Rule"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime",
+          "criminal profiling",
+          "FBI insider account",
+          "gripping case studies",
+          "foundational text of criminal psychology"
+        ],
+        "negative": [
+          "graphic case descriptions — disturbing content",
+          "some dated language and perspectives",
+          "Douglas's self-presentation can feel self-aggrandising"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Quiet Place - Seicho Matsumoto": {
@@ -236365,26 +236709,46 @@
       "author": "Seicho Matsumoto",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "After his wife dies unexpectedly while he is away on a business trip, a bureaucrat becomes obsessed with investigating her secret life and the true circumstances of her death, uncovering a hidden world of deception that implicates him in ways he never imagined.",
+      "tone": "Measured, melancholic, coldly precise, psychologically piercing",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "marriage and secrets",
+        "obsession and grief",
+        "guilt and complicity",
+        "appearance versus reality",
+        "post-war Japanese society"
+      ],
+      "setting": "1960s Japan — Tokyo and rural areas; post-war social milieu",
+      "comparable_books": [
+        "Suspicion - Seicho Matsumoto",
+        "Inspector Imanishi Investigates - Seicho Matsumoto",
+        "Confessions - Kanae Minato"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic Japanese crime fiction",
+          "psychological depth",
+          "slow-burn mystery",
+          "literary and measured prose",
+          "domestic suspense"
+        ],
+        "negative": [
+          "very slow pacing",
+          "emotionally detached protagonist",
+          "dated gender dynamics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Atmosphere - Taylor Jenkins Reid": {
@@ -236392,53 +236756,97 @@
       "author": "Taylor Jenkins Reid",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the early 1980s, physicist Joan Goodwin joins NASA's Space Shuttle program as one of the first women scientists, training alongside a remarkable cohort while navigating ambition, identity, and a secret love affair with fellow astronaut Vanessa Ford — leading up to a life-altering mission crisis 250 miles above Earth.",
+      "tone": "Emotionally charged, romantic, propulsive, hopeful yet heartbreaking",
+      "pacing": "Fast",
+      "themes": [
+        "female ambition and pioneering",
+        "queer love and secrecy",
+        "identity and self-discovery",
+        "sacrifice and duty",
+        "found family among astronauts"
+      ],
+      "setting": "1980s America — NASA's Johnson Space Center, Houston, and outer space; the Space Shuttle era",
+      "comparable_books": [
+        "Daisy Jones & The Six - Taylor Jenkins Reid",
+        "The Seven Husbands of Evelyn Hugo - Taylor Jenkins Reid",
+        "The Women - Kristin Hannah"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "LGBTQ+ romance",
+          "strong female protagonist",
+          "1980s setting",
+          "NASA and space",
+          "emotionally resonant",
+          "dual-timeline structure"
+        ],
+        "negative": [
+          "romance-heavy — some readers wanted more technical/space focus",
+          "TJR formula recognisable across books",
+          "not high literary fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "TJR novels are consistently excellent in audio format; Atmosphere's emotional and propulsive pacing translates very well.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ritual of Fire - D. V. Bishop": {
       "title": "Ritual of Fire",
       "author": "D. V. Bishop",
       "series": "Cesare Aldo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Florence in the summer of 1538, a wealthy merchant is found hanged and burned in the main square in an echo of the execution of the monk Savonarola forty years prior — leaving Officer Cesare Aldo and Constable Strocchi to separately investigate a ritualistic killing that threatens to ignite the whole city.",
+      "tone": "Atmospheric, richly detailed, tense, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "religious fanaticism",
+        "justice and corruption",
+        "Renaissance power politics",
+        "partnership and trust",
+        "historical legacy and violence"
+      ],
+      "setting": "Renaissance Florence and Tuscany, summer 1538 — the world of the Medicis and the shadow of Savonarola",
+      "comparable_books": [
+        "City of Vengeance - D. V. Bishop",
+        "Shardlake series - C. J. Sansom",
+        "Giordano Bruno series - S. J. Parris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical mystery",
+          "richly researched Renaissance Italy",
+          "dual investigator structure",
+          "award-winning series",
+          "complex religious/political intrigue"
+        ],
+        "negative": [
+          "best read in series order",
+          "slower pace than modern thrillers",
+          "dense historical detail may not suit all"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "1929: Inside the Greatest Crash in History – and How It Shattered a Nation - Andrew Ross Sorkin": {
@@ -236446,26 +236854,46 @@
       "author": "Andrew Ross Sorkin",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drawing on unparalleled access to historical records and newly uncovered documents, Sorkin reconstructs the 1929 Wall Street crash through vivid character portraits of the bankers, speculators, journalists, and officials whose greed, blind optimism, and hubris ignited the Great Depression.",
+      "tone": "Propulsive, narrative-driven, richly detailed, sobering",
+      "pacing": "Moderate",
+      "themes": [
+        "greed and speculation",
+        "financial hubris",
+        "economic collapse",
+        "power and politics",
+        "human folly and systemic failure"
+      ],
+      "setting": "America 1929–1933 — Wall Street, Washington D.C., and the broader landscape of the Roaring Twenties collapsing into the Great Depression",
+      "comparable_books": [
+        "Too Big to Fail - Andrew Ross Sorkin",
+        "Lords of Finance - Liaquat Ahamed",
+        "The Big Short - Michael Lewis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction",
+          "financial history",
+          "character-driven history",
+          "propulsive 'reads like a novel' style",
+          "contemporary relevance",
+          "#1 NYT Bestseller"
+        ],
+        "negative": [
+          "heavy financial and political detail",
+          "critical reviews suggest focus on wealthy protagonists over broader human cost"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Making of the Atomic Bomb - Richard Rhodes": {
