@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4511,
-  "total_pending": 89,
+  "total_catalogued": 4531,
+  "total_pending": 69,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -242670,26 +242670,51 @@
       "author": "Tim O'Brien",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A linked collection of semi-autobiographical stories following a platoon of American soldiers before, during, and after the Vietnam War, blurring the line between memory, truth, and fiction. O'Brien meditates on the moral weight of war, storytelling, and survival.",
+      "tone": "elegiac, haunting, metafictional",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "war and its aftermath",
+        "truth and storytelling",
+        "memory and grief",
+        "moral burden",
+        "camaraderie"
+      ],
+      "setting": "Vietnam War-era Vietnam and small-town Minnesota, 1960s–1980s",
+      "comparable_books": [
+        "Slaughterhouse-Five - Kurt Vonnegut",
+        "A Farewell to Arms - Ernest Hemingway",
+        "Matterhorn - Karl Marlantes",
+        "If I Die in a Combat Zone - Tim O'Brien"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction fans",
+          "war narratives",
+          "metafiction",
+          "linked short stories",
+          "Vietnam War history",
+          "morally complex protagonist"
+        ],
+        "negative": [
+          "readers wanting plot-driven narrative",
+          "those seeking resolution or closure",
+          "action-focused war fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "O'Brien's lyrical, repetitive prose style translates powerfully to audio; frequently praised in audio format.",
+      "content_flags": [
+        "graphic violence",
+        "death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Subtle Art of Folding Space - John Chu": {
@@ -242697,26 +242722,47 @@
       "author": "John Chu",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ellie, a physics student, must navigate a shadowy conspiracy threatening the 'skunkworks' — the hidden machinery maintaining the laws of each universe — while her mother lies comatose and her toxic sister stages relentless attacks. Together with her cousin Daniel, she races to save both her mother and the multiverse.",
+      "tone": "witty, emotionally intense, cerebrally inventive",
+      "pacing": "Fast",
+      "themes": [
+        "family dysfunction and trauma",
+        "identity and cultural belonging",
+        "the ethics of survival",
+        "generational trauma",
+        "multiverse and physics"
+      ],
+      "setting": "A near-future multiverse setting where engineers maintain the physical laws of reality; interwoven with Chinese-American family dynamics",
+      "comparable_books": [
+        "The Remembrance of Earth's Past - Cixin Liu",
+        "The Jean le Flambeur Trilogy - Hannu Rajaniemi",
+        "This Is How You Lose the Time War - Amal El-Mohtar & Max Gladstone"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF with big ideas",
+          "dysfunctional family drama",
+          "witty and propulsive prose",
+          "Chinese-American characters and culture",
+          "quantum physics",
+          "food descriptions"
+        ],
+        "negative": [
+          "readers wanting slow meditative SF",
+          "those put off by complex physics worldbuilding",
+          "readers wanting purely plot-driven story"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Secret History - Donna Tartt": {
@@ -242724,53 +242770,102 @@
       "author": "Donna Tartt",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Richard Papen transfers to an elite Vermont college where he falls under the spell of a charismatic classics professor and his small, secretive group of students — a relationship that culminates in murder. Told in reverse chronology, the novel dissects guilt, beauty, obsession, and moral collapse.",
+      "tone": "dark, lush, morally unsettling",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "obsession and beauty",
+        "moral corruption",
+        "class and privilege",
+        "guilt and consequence",
+        "the allure of the past"
+      ],
+      "setting": "A small elite liberal arts college in Vermont, 1980s",
+      "comparable_books": [
+        "If We Were Villains - M. L. Rio",
+        "The Goldfinch - Donna Tartt",
+        "Special Topics in Calamity Physics - Marisha Pessl",
+        "Brideshead Revisited - Evelyn Waugh"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark academia",
+          "morally grey protagonists",
+          "lush literary prose",
+          "college/campus settings",
+          "slow-burn tension",
+          "unreliable narrator"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "those needing sympathetic protagonists",
+          "plot-first readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich, immersive prose and a strong sense of atmosphere translate exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Rill Lord - L. L. Stephens": {
       "title": "The Rill Lord",
       "author": "L. L. Stephens",
       "series": "The Triempery Revelations",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the culminating volume of the Triempery Revelations, Dorilian Sordaneon's restoration of the Wall has left the allied army mutinous and fearful of his godborn powers, allowing the sorcerer Nammuor to spring a deadly trap. Prince Handurin and Dorilian must face Nammuor's full sorcery in a final, cataclysmic confrontation.",
+      "tone": "grand, politically complex, epic in scope",
+      "pacing": "Moderate",
+      "themes": [
+        "power and godhood",
+        "political betrayal",
+        "sacrifice and destiny",
+        "empire and legacy",
+        "identity and belonging"
+      ],
+      "setting": "A secondary-world fantasy setting with Roman-flavored empires, god-machines called Entities, and competing royal houses; final battle across the Triempery",
+      "comparable_books": [
+        "Sordaneon - L. L. Stephens",
+        "A Game of Thrones - George R. R. Martin",
+        "Dune - Frank Herbert",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy with political complexity",
+          "morally grey protagonists",
+          "god-touched characters",
+          "long series payoff",
+          "intricate worldbuilding",
+          "found family"
+        ],
+        "negative": [
+          "readers new to the series",
+          "those preferring standalone fantasy",
+          "impatient readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Other People - C. B. Everett": {
@@ -242778,53 +242873,100 @@
       "author": "C. B. Everett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ten strangers wake up inside a locked country house with no memory of how they got there, tasked with solving the disappearance of a young woman buried alive — before a killer begins picking them off one by one. A darkly comic, self-aware homage to Agatha Christie's locked-room mysteries with an audacious twist ending.",
+      "tone": "darkly comic, claustrophobic, self-aware",
+      "pacing": "Fast",
+      "themes": [
+        "identity and memory",
+        "justice and punishment",
+        "the nature of guilt",
+        "the conventions of mystery fiction"
+      ],
+      "setting": "A sealed English country house, contemporary",
+      "comparable_books": [
+        "And Then There Were None - Agatha Christie",
+        "The Seven Deaths of Evelyn Hardcastle - Stuart Turton",
+        "Shutter Island - Dennis Lehane"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room mysteries",
+          "Agatha Christie fans",
+          "darkly comic thrillers",
+          "ensemble casts",
+          "twist endings",
+          "self-referential genre fiction"
+        ],
+        "negative": [
+          "readers wanting traditional clue-based mysteries",
+          "those disliking implausible premises",
+          "readers seeking realistic thriller plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Mercy of Gods - James S. A. Corey": {
       "title": "The Mercy of Gods",
       "author": "James S. A. Corey",
       "series": "The Captive's War",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When the godlike Carryx empire invades the planet Anjiin and abducts its scientific elite, research assistant Dafyd Alkhor and his colleagues must prove their worth in a deadly interspecies competition or face extinction. Dafyd must navigate impossible loyalties — between human rebellion, alien overlords, and a mysterious entity living within one of his companions.",
+      "tone": "tense, intimate, foreboding",
+      "pacing": "Moderate",
+      "themes": [
+        "colonization and survival",
+        "the ethics of collaboration",
+        "what makes us human",
+        "loyalty and betrayal",
+        "power and dehumanization"
+      ],
+      "setting": "The far-future planet Anjiin and the Carryx world-palace, a vast alien city-world spanning a planet",
+      "comparable_books": [
+        "Leviathan Wakes - James S. A. Corey",
+        "The Three-Body Problem - Cixin Liu",
+        "A Memory Called Empire - Arkady Martine",
+        "Children of Time - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "The Expanse fans",
+          "alien invasion stories",
+          "ensemble casts",
+          "space opera",
+          "morally complex characters",
+          "massive worldbuilding"
+        ],
+        "negative": [
+          "readers wanting fast action from page one",
+          "those preferring character-driven over worldbuilding-driven SF"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Corey's audiobooks have a strong production history; AudioFile awarded it Earphones recognition.",
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mathletics - Wayne L. Winston": {
@@ -242832,53 +242974,97 @@
       "author": "Wayne L. Winston",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A sports analytics textbook/popular nonfiction hybrid that applies mathematical and statistical methods to evaluate player performance, team strategy, and wagering across major American sports. Winston shows how data-driven thinking can illuminate what wins and loses games.",
+      "tone": "accessible, analytical, enthusiastic",
+      "pacing": "Moderate",
+      "themes": [
+        "sports analytics",
+        "statistics and probability",
+        "decision-making",
+        "competitive strategy",
+        "quantitative reasoning"
+      ],
+      "setting": "Contemporary American professional sports (NFL, NBA, MLB, etc.)",
+      "comparable_books": [
+        "Moneyball - Michael Lewis",
+        "The Hidden Game of Baseball - John Thorn & Pete Palmer",
+        "Basketball on Paper - Dean Oliver"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sports analytics enthusiasts",
+          "math and statistics fans",
+          "sports fans wanting deeper analysis",
+          "data science readers",
+          "Moneyball fans"
+        ],
+        "negative": [
+          "casual sports fans with no interest in statistics",
+          "readers looking for narrative nonfiction",
+          "those without quantitative background"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Keeper - Tana French": {
       "title": "The Keeper",
       "author": "Tana French",
       "series": "Cal Hooper",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the remote Irish village of Ardnakelty, a young woman is found dead in the river and the community fractures along lines of loyalty, land, and old grudges. Retired Chicago detective Cal Hooper — now settled into village life with his fiancée Lena and their ward Trey — is drawn into investigating a death that may be connected to a local businessman's scheme to devour the farmland around them.",
+      "tone": "lyrical, slow-burn, atmospheric Irish noir",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "community and belonging",
+        "land and heritage",
+        "power and corruption",
+        "loyalty vs. justice",
+        "the cost of change"
+      ],
+      "setting": "A remote rural village in western Ireland, contemporary",
+      "comparable_books": [
+        "The Searcher - Tana French",
+        "The Hunter - Tana French",
+        "In the Woods - Tana French",
+        "The Secret Place - Tana French"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary crime fiction",
+          "Irish noir",
+          "atmospheric settings",
+          "slow burn",
+          "character-driven mysteries",
+          "found family"
+        ],
+        "negative": [
+          "readers wanting fast-paced procedural thrillers",
+          "those preferring urban settings",
+          "readers who dislike ambiguous endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tana French's prose is widely praised in audio format; the Irish vernacular and atmospheric dialogue reward a skilled narrator.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Joy Luck Club - Amy Tan": {
@@ -242886,26 +243072,47 @@
       "author": "Amy Tan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Sixteen interlocking stories told by four Chinese immigrant mothers and their American-born daughters, exploring the tensions of cultural identity, generational expectation, and what is lost and found in translation between worlds. The novel circles themes of sacrifice, memory, and the long shadow of the past on the present.",
+      "tone": "lyrical, poignant, generationally layered",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "immigration and cultural identity",
+        "mother-daughter relationships",
+        "generational trauma",
+        "the American Dream",
+        "memory and storytelling"
+      ],
+      "setting": "San Francisco's Chinese-American community and pre-revolution China, mid-to-late 20th century",
+      "comparable_books": [
+        "Pachinko - Min Jin Lee",
+        "Everything I Never Told You - Celeste Ng",
+        "A Thousand Splendid Suns - Khaled Hosseini",
+        "When the Emperor Was Divine - Julie Otsuka"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multigenerational sagas",
+          "immigrant narratives",
+          "literary fiction",
+          "mother-daughter stories",
+          "Chinese-American culture",
+          "linked stories"
+        ],
+        "negative": [
+          "readers wanting linear plot-driven fiction",
+          "those seeking action or thriller pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The multi-voice structure and oral storytelling quality of the novel rewards audio performance greatly.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Devil & Sherlock Holmes: Tales of Murder, Madness & Obsession - David Grann": {
@@ -242913,107 +243120,199 @@
       "author": "David Grann",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of long-form narrative nonfiction pieces from The New Yorker, each profiling an extraordinary real-world obsession — from a Sherlockian scholar found dead under mysterious circumstances to a giant squid hunter, a master counterfeiter, and a wilderness survivalist. Grann investigates the nature of obsession, identity, and the stories we construct around ourselves.",
+      "tone": "propulsive, literary, journalistic",
+      "pacing": "Fast",
+      "themes": [
+        "obsession and identity",
+        "truth and deception",
+        "the nature of mystery",
+        "survival",
+        "crime and justice"
+      ],
+      "setting": "Various real-world locations and time periods across America and beyond",
+      "comparable_books": [
+        "Killers of the Flower Moon - David Grann",
+        "The Lost City of Z - David Grann",
+        "The Feather Thief - Kirk Wallace Johnson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative nonfiction fans",
+          "true crime",
+          "New Yorker-style journalism",
+          "short essay/story collections",
+          "obsession narratives",
+          "propulsive nonfiction"
+        ],
+        "negative": [
+          "readers wanting sustained single-story narrative",
+          "those disliking essay collections",
+          "genre fiction readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Dead Can't Make a Living - Ed Lin": {
       "title": "The Dead Can't Make a Living",
       "author": "Ed Lin",
       "series": "Taipei Night Market",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jing-nan, owner of the popular Unknown Pleasures food stall in Taipei's Shilin Night Market, finds a dead Filipino migrant worker by the dumpsters and is pressured by his gangster uncle to go undercover inside a food processing plant suspected of cover-up and labor abuses. A crime novel that serves as pointed social commentary on Taiwan's treatment of migrant workers.",
+      "tone": "wry, humorous, socially sharp",
+      "pacing": "Moderate",
+      "themes": [
+        "migrant labor and exploitation",
+        "justice and corruption",
+        "Taiwanese identity and culture",
+        "food and community",
+        "family obligation"
+      ],
+      "setting": "Contemporary Taipei, Taiwan — the Shilin Night Market and a large food processing plant",
+      "comparable_books": [
+        "Ghost Month - Ed Lin",
+        "Incensed - Ed Lin",
+        "Murder and Mamon - Mia P. Manansala"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy-adjacent crime fiction",
+          "international settings",
+          "food-centered fiction",
+          "social commentary in genre fiction",
+          "Taiwanese culture",
+          "humor in mysteries"
+        ],
+        "negative": [
+          "readers wanting gritty noir",
+          "those preferring American settings",
+          "readers new to the series without back knowledge"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Cormorant Hunt - Michael Idov": {
       "title": "The Cormorant Hunt",
       "author": "Michael Idov",
       "series": "The Cormorant Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Disillusioned CIA officer Ari Falk, hiding in the Republic of Georgia after exposing a massive conspiracy, is pulled back into action when a new mission demands his particular brand of jaded unpredictability. Working with brilliant, neurodivergent CIA officer Asha Tamaskar, Falk must hunt an extremist with radical alliances capable of reshaping global power.",
+      "tone": "propulsive, witty, geopolitically sharp",
+      "pacing": "Fast",
+      "themes": [
+        "espionage and betrayal",
+        "identity and conscience",
+        "post-Cold War geopolitics",
+        "loyalty and idealism",
+        "the ethics of intelligence work"
+      ],
+      "setting": "Contemporary Europe — Republic of Georgia, Prague, Andorra, and Bethesda; set against Russia's invasion of Ukraine",
+      "comparable_books": [
+        "The Collaborators - Michael Idov",
+        "Slow Horses - Mick Herron",
+        "Red Sparrow - Jason Matthews",
+        "The Helsinki Affair - Anna Pitoniak"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "modern spy thrillers",
+          "morally grey protagonists",
+          "propulsive pacing",
+          "sharp dialogue",
+          "European settings",
+          "geopolitical intrigue"
+        ],
+        "negative": [
+          "readers wanting classic Cold War spy fiction",
+          "those preferring slower character studies",
+          "readers new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Devils - Joe Abercrombie": {
       "title": "The Devils",
       "author": "Joe Abercrombie",
       "series": "The Devils",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a plague-ridden alternate medieval Europe where elves hunger at the borders and the Eastern and Western Churches are in schism, naive monk Brother Diaz is tasked with leading the Chapel of the Holy Expediency — a secret church unit staffed by convicted monsters including a vampire, werewolf, necromancer, elf, and cursed knight. Together they must escort a petty thief who may be heir to the throne of Troy.",
+      "tone": "darkly comic, raucous, grimdark-adjacent",
+      "pacing": "Fast",
+      "themes": [
+        "redemption and monstrosity",
+        "religion and hypocrisy",
+        "found family",
+        "the cost of idealism",
+        "humanity amid violence"
+      ],
+      "setting": "An alternate medieval Europe descended from Carthage and mythical Troy, under constant threat from flesh-eating elves; fantasy-historical setting",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "The Blacktongue Thief - Christopher Buehlman",
+        "Kings of the Wyld - Nicholas Eames",
+        "A Marvellous Light - Freya Marske"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "ensemble casts of misfits",
+          "dark humor",
+          "propulsive action",
+          "Abercrombie fans",
+          "found family",
+          "morally grey protagonists"
+        ],
+        "negative": [
+          "readers wanting deep political intrigue like First Law",
+          "those avoiding graphic violence",
+          "readers who prefer slow character studies"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Read by Steven Pacey, who won an AudioFile Earphones Award for this performance; Pacey is the definitive voice of Abercrombie's work.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Forest of Stolen Girls - June Hur": {
@@ -243021,26 +243320,47 @@
       "author": "June Hur",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 15th-century Joseon Korea, Hwani returns to the remote island where her police inspector father disappeared years ago while investigating a series of missing girls — only to find the case unsolved and her sister among those who may be in danger. A YA historical mystery steeped in Korean folklore and culture.",
+      "tone": "atmospheric, tense, historically immersive",
+      "pacing": "Moderate",
+      "themes": [
+        "justice for the vulnerable",
+        "sisterhood and family loyalty",
+        "colonial power and class",
+        "folklore and ritual",
+        "female agency in historical settings"
+      ],
+      "setting": "15th-century Joseon (Korea) — a remote island village and the royal capital",
+      "comparable_books": [
+        "The Silence of Bones - June Hur",
+        "A Vow So Bold and Deadly - Brigid Kemmerer",
+        "These Violent Delights - Chloe Gong"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "YA historical fiction",
+          "East Asian history and culture",
+          "mystery plots",
+          "atmospheric settings",
+          "female protagonists",
+          "Korean folklore"
+        ],
+        "negative": [
+          "readers wanting adult fiction",
+          "those preferring contemporary settings",
+          "readers not interested in historical mystery"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "In the Shadow of Their Dying - Michael R. Fletcher & Anna Smith Spark": {
@@ -243048,53 +243368,100 @@
       "author": "Michael R. Fletcher & Anna Smith Spark",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the besieged city of Sharaam, a second-rate mercenary crew hires the third-best assassin in the city to kill the king — only to find the king protected by a bound demon named Iananr whose hunger for blood is barely contained. A co-written grimdark novella blending dark humor, lyrical prose, and relentless violence.",
+      "tone": "grimdark, darkly comic, viscerally violent",
+      "pacing": "Fast",
+      "themes": [
+        "war and its futility",
+        "addiction and self-destruction",
+        "loyalty and betrayal",
+        "survival at any cost",
+        "redemption's impossibility"
+      ],
+      "setting": "A dark secondary fantasy world — the siege of a crumbling city-state, Sharaam",
+      "comparable_books": [
+        "Beyond Redemption - Michael R. Fletcher",
+        "The Court of Broken Knives - Anna Smith Spark",
+        "Best Served Cold - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fans",
+          "dark fantasy",
+          "morally irredeemable characters",
+          "novella-length fiction",
+          "co-authored fiction",
+          "dark humor"
+        ],
+        "negative": [
+          "readers sensitive to graphic violence",
+          "those wanting redemption arcs",
+          "readers preferring epic scope over tight focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Dirge for Cascius: Part I - Calum Lott": {
       "title": "A Dirge for Cascius: Part I",
       "author": "Calum Lott",
       "series": "A Dirge For Cascius",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the vast Valsollas Galaxy, centuries-old detective Cascius Carcyde — brilliant but nearly destroyed by his addiction to reliving his grief — is forced to take on a new partner and hunt the elusive Red Hand killer, whose dissolved victims signal a galactic catastrophe. A noir detective story fused with richly dense science-fantasy worldbuilding.",
+      "tone": "noir-inflected, bleak, imaginatively dense",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "grief and addiction",
+        "mental health and recovery",
+        "justice and obsession",
+        "partnership and trust",
+        "the scale of the cosmos"
+      ],
+      "setting": "The Valsollas Galaxy — a richly imagined science-fantasy universe with diverse alien races, ancient politics, and surreal technology",
+      "comparable_books": [
+        "Hyperion - Dan Simmons",
+        "Red Rising - Pierce Brown",
+        "Disco Elysium (game)",
+        "The Sun Eater Series - Christopher Ruocchio"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense worldbuilding fans",
+          "science-fantasy hybrids",
+          "noir detective fiction in space",
+          "morally complex protagonists",
+          "mental health representation",
+          "indie SFF"
+        ],
+        "negative": [
+          "readers wanting light entry-level SF",
+          "those impatient with extensive worldbuilding",
+          "readers wanting fast plot over character depth"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Extremely dense worldbuilding with invented terminology; print allows readers to re-read and absorb at their own pace.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Valuable Humans in Transit and Other Stories - qntm": {
@@ -243102,26 +243469,48 @@
       "author": "qntm",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ten hard SF short stories exploring radical technological hypotheticals — brain uploads, infinite computing power, parallel universes, and AI — often through horror or darkly comic lenses. The collection includes the acclaimed 'Lena,' written as a future Wikipedia article about the first executable human brain image.",
+      "tone": "cerebral, darkly comic, existentially unsettling",
+      "pacing": "Fast",
+      "themes": [
+        "AI and consciousness",
+        "transhumanism and its costs",
+        "the ethics of digital minds",
+        "the nature of identity",
+        "existential dread"
+      ],
+      "setting": "Various near-future and speculative settings, from near-Earth orbit to simulated realities and parallel universes",
+      "comparable_books": [
+        "There Is No Antimemetics Division - qntm",
+        "Ra - qntm",
+        "Exhalation - Ted Chiang",
+        "Stories of Your Life and Others - Ted Chiang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fans",
+          "short story collections",
+          "AI ethics fiction",
+          "Ted Chiang fans",
+          "existential SF",
+          "cerebral horror"
+        ],
+        "negative": [
+          "readers wanting character-driven fiction",
+          "those disliking short story collections",
+          "readers who prefer uplifting SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ra - qntm": {
@@ -243129,80 +243518,147 @@
       "author": "qntm",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future world where magic was discovered in the 1970s and is now treated as a rigorous engineering discipline, physics student Sam Hughes investigates a conspiracy that unravels into something far larger and stranger than the rules of magic itself. A hard SF novel that takes the tropes of fantasy — spells, incantations, power — and subjects them to the logic of computer science and physics.",
+      "tone": "cerebral, escalating, wildly inventive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "the nature of reality and simulation",
+        "scientific inquiry and discovery",
+        "power and control",
+        "identity and consciousness",
+        "the limits of human knowledge"
+      ],
+      "setting": "A near-future Earth where magic is a known physical phenomenon, with flashbacks to mythologized prehistory; originally published as a web serial",
+      "comparable_books": [
+        "Gödel, Escher, Bach - Douglas Hofstadter",
+        "There Is No Antimemetics Division - qntm",
+        "Anathem - Neal Stephenson",
+        "The Magicians - Lev Grossman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fans",
+          "magic-as-science worldbuilding",
+          "cerebral escalating narratives",
+          "web serial readers",
+          "Neal Stephenson fans",
+          "computer science analogies in fiction"
+        ],
+        "negative": [
+          "readers wanting fast pacing from the start",
+          "those preferring character-driven fiction",
+          "casual fantasy readers expecting magic systems"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Exceptionally dense logical and technical prose; reading at one's own pace with the ability to re-read complex passages is strongly advantageous.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Titan Revenant - J. D. L. Rosell": {
       "title": "The Titan Revenant",
       "author": "J. D. L. Rosell",
       "series": "Ranger of the Titan Wilds",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Captured and stripped of her powers following a disastrous raid, ranger Leiyn Firebrand must find a way to escape her captors and return to her companions before the war for the Veiled Lands is lost — bringing the saga of war, found family, and sorcery to its conclusion. A fast-paced climax to the series.",
+      "tone": "adventurous, emotionally earnest, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "resilience and identity",
+        "colonialism and indigenous rights",
+        "magic and self-acceptance",
+        "sacrifice"
+      ],
+      "setting": "The Veiled Lands — a colonized continent teeming with giant elemental creatures called titans, shapeshifters, and indigenous peoples; secondary fantasy world",
+      "comparable_books": [
+        "The Last Ranger - J. D. L. Rosell",
+        "The Blade Itself - Joe Abercrombie",
+        "Realm of the Elderlings - Robin Hobb"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indie epic fantasy",
+          "badass female protagonists",
+          "found family",
+          "revenge plots",
+          "magic systems",
+          "SPFBO fans"
+        ],
+        "negative": [
+          "readers new to the series",
+          "those preferring slower political fantasy",
+          "readers wanting morally grey protagonists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Bereket - Rachel Neumeier": {
       "title": "Bereket",
       "author": "Rachel Neumeier",
       "series": "Tuyo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 12",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prequel and companion novel to Rihasi, Bereket follows a morally ambiguous mercenary whose indifference to legality conceals a deeper code of justice, as he takes on a highly unusual — and thoroughly illegal — job that draws him into events at the western edge of the Summer Country. Set in the richly developed world of the Tuyo series.",
+      "tone": "warm, character-focused, quietly adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "loyalty and justice",
+        "moral ambiguity and personal code",
+        "cross-cultural understanding",
+        "honor and duty",
+        "the complexity of belonging"
+      ],
+      "setting": "The Tuyo world — a secondary fantasy setting divided between harsh winter lands and fertile summer lands, with distinct cultures, magic, and metaphysics",
+      "comparable_books": [
+        "Tuyo - Rachel Neumeier",
+        "Rihasi - Rachel Neumeier",
+        "The Goblin Emperor - Katherine Addison",
+        "Paladin of Souls - Lois McMaster Bujold"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "indie fantasy",
+          "character-driven fantasy",
+          "Tuyo series fans",
+          "moral complexity",
+          "low-violence fantasy",
+          "rich secondary worlds"
+        ],
+        "negative": [
+          "readers new to the Tuyo world",
+          "those wanting action-first fantasy",
+          "readers unfamiliar with the large cast"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Cure for Living - Part Two - Nicolas Lietzau": {
