@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3713,
-  "total_pending": 887,
+  "total_catalogued": 3733,
+  "total_pending": 867,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -203798,540 +203798,960 @@
       "title": "Kings of Ash",
       "author": "Richard Nell",
       "series": "Ash and Sand",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ruka, son of Beyla, continues his long and bloody journey through the islands of Pyu and the frozen wastes of the Ascom, while Kale Alaku—the Sorcerer-Prince—returns home and unleashes terrifying miracles, as ancient connections unfold and a shocking history unravels.",
+      "tone": "grimdark, brutal, character-driven, hauntingly emotional",
+      "pacing": "Moderate",
+      "themes": [
+        "vengeance",
+        "power and its cost",
+        "identity",
+        "cultural clash",
+        "coming of age"
+      ],
+      "setting": "Low-magic secondary world spanning frozen northern wastelands and tropical island paradises; quasi-medieval era",
+      "comparable_books": [
+        "The Prince of Thorns - Mark Lawrence",
+        "Blood Song - Anthony Ryan",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally complex anti-hero protagonist",
+          "grimdark violence",
+          "character-driven narrative",
+          "intricate plotting with payoffs",
+          "multi-POV",
+          "stunning prose for indie fiction"
+        ],
+        "negative": [
+          "graphic violence and brutality",
+          "deeply dark themes",
+          "slow-building first entry required"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Veiled Intentions - Michael R. Miller": {
       "title": "Veiled Intentions",
       "author": "Michael R. Miller",
       "series": "The Dragon's Blade",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As a demonic invasion led by Rectar gains momentum and a traitorous wizard declares himself King of Humans from his impenetrable fortress, Darnuir—now King of Dragons—must unite dragons, humans, and fairies, turning to unlikely new allies while a world-changing secret is revealed.",
+      "tone": "adventurous, Tolkienesque, fast-paced, hopeful",
+      "pacing": "Fast",
+      "themes": [
+        "unity against common evil",
+        "prejudice",
+        "duty",
+        "leadership",
+        "sacrifice"
+      ],
+      "setting": "Secondary world of Tenalp with dragon kingdoms, human realms, and fairy lands; classic high-fantasy medieval-esque setting",
+      "comparable_books": [
+        "Eragon - Christopher Paolini",
+        "The Way of Kings - Brandon Sanderson",
+        "The Lord of the Rings - J.R.R. Tolkien"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic good vs. evil",
+          "multiple races and factions",
+          "rich character arcs",
+          "fast-paced adventure",
+          "dragon riders"
+        ],
+        "negative": [
+          "traditional fantasy tropes",
+          "less moral ambiguity",
+          "underdeveloped villains noted by some reviewers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Unbound - Michael R. Miller": {
       "title": "Unbound",
       "author": "Michael R. Miller",
       "series": "Songs of Chaos",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Progression Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After saving the kingdom of Feorlen, Holt and his dragon Ash embark on an impossible quest to unite the Elder Dragons while queen Talia faces political turmoil at home, and the dragon Sovereign's unwilling servant Osric scours the land for dragon eggs to fuel his master's growing power.",
+      "tone": "propulsive, heartwarming, expansive, progressively epic",
+      "pacing": "Fast",
+      "themes": [
+        "bond between rider and dragon",
+        "progression and growth",
+        "duty vs. freedom",
+        "political intrigue",
+        "redemption"
+      ],
+      "setting": "Secondary world of Feorlen and beyond; medieval-esque with a hard progression magic system",
+      "comparable_books": [
+        "Eragon - Christopher Paolini",
+        "Cradle - Will Wight",
+        "Pern - Anne McCaffrey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dragon rider fantasy",
+          "progression/power system",
+          "found family",
+          "multiple POV",
+          "food and cooking elements unique to series"
+        ],
+        "negative": [
+          "training montage pacing in first half",
+          "clear-cut good vs. evil morality",
+          "lengthy books"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wolf Lords - F. T. McKinstry": {
       "title": "The Wolf Lords",
       "author": "F. T. McKinstry",
       "series": "The Fylking",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As a wounded immortal warlock gathers his army and a corrupted ancient brotherhood of sorcerers unleashes demons and lets a destroyer into the realm, an outcast sorcerer, a grief-stricken ranger, and a hedge witch holding dark secrets must rally to prevent the veil between worlds from falling.",
+      "tone": "lyrical, grim, atmospheric, Norse-mythic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "corruption of power",
+        "grief and trauma",
+        "ancient evil",
+        "interdimensional war",
+        "redemption"
+      ],
+      "setting": "Norse-mythology-inspired secondary world with an immortal race (the Fylking) guarding a gate between worlds; swords-and-sorcery medieval feel",
+      "comparable_books": [
+        "The Lies of Locke Lamora - Scott Lynch",
+        "Outpost - F.T. McKinstry",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush world-building and lore",
+          "Norse mythology",
+          "gorgeous prose",
+          "complex characters",
+          "adult dark themes"
+        ],
+        "negative": [
+          "dense and slow pacing",
+          "heavy inner monologue at times",
+          "requires patience with world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wrath of Storms - Steven McKinnon": {
       "title": "Wrath of Storms",
       "author": "Steven McKinnon",
       "series": "The Raincatcher's Ballad",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Serena's terrifying powers grow more dangerous after she stumbles into a sky pirate's trap aboard a luxury airship, while assassin Damien Fieri battles his bloodlust as shadowy forces conspire to keep them both as weapons in a much deadlier game.",
+      "tone": "high-octane, darkly comic, action-packed, gritty",
+      "pacing": "Fast",
+      "themes": [
+        "power and control",
+        "identity",
+        "government conspiracy",
+        "found family",
+        "redemption"
+      ],
+      "setting": "Secondary world of Dalthea with airships, psychic powers, and gritty political factions; industrialised fantasy setting",
+      "comparable_books": [
+        "The Final Empire - Brandon Sanderson",
+        "Best Served Cold - Joe Abercrombie",
+        "The Riyria Revelations - Michael J. Sullivan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive action-adventure",
+          "airships and unique world",
+          "dry humour",
+          "diverse cast",
+          "gritty adventure"
+        ],
+        "negative": [
+          "some middle-book pacing drag",
+          "requires reading Book 1 first",
+          "not for readers wanting low-violence stories"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Spitting Image - Patrick Leclerc": {
       "title": "Spitting Image",
       "author": "Patrick Leclerc",
       "series": "The Immortal Vagabond Healer",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Urban Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Immortal healer and paramedic Sean Danet has finally built a stable life with friends and a woman he loves, but when a sinister new adversary targets his abilities and shapeshifters make him unable to trust what he sees, he must choose between defending what he has found or retreating back into lonely solitude.",
+      "tone": "fast-paced, witty, breezy, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "identity and belonging",
+        "immortality and loneliness",
+        "trust and paranoia",
+        "found home",
+        "self-acceptance"
+      ],
+      "setting": "Contemporary Boston, USA; modern urban fantasy world with hidden supernatural communities",
+      "comparable_books": [
+        "The Dresden Files - Jim Butcher",
+        "Rivers of London - Ben Aaronovitch",
+        "Highlander (thematic)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "immortal protagonist",
+          "urban fantasy",
+          "witty banter",
+          "fast read",
+          "medical/paramedic setting"
+        ],
+        "negative": [
+          "lighter tone not for grimdark readers",
+          "small-scale plot",
+          "slightly two-dimensional secondary characters noted"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dark Sovereign - Christer Lende": {
       "title": "Dark Sovereign",
       "author": "Christer Lende",
       "series": "The Beast Hunter of Ashbourn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Beast hunter apprentice Ara and her mentors Khendric and Topper follow a trail of beastly assassins and dissolving corpses that leads them toward the coronation of a monstrous candidate for the throne of Ashbourn, while a dark venom-born power inside Ara seems unnervingly connected to the creature threatening to be crowned king.",
+      "tone": "dark, investigative, fast-paced, darkly humorous",
+      "pacing": "Fast",
+      "themes": [
+        "political corruption",
+        "coming of age",
+        "power and sacrifice",
+        "identity",
+        "found family"
+      ],
+      "setting": "Secondary world capital city of Ashbourn; a fantastical city filled with monsters, guilds, and political intrigue",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The Lies of Locke Lamora - Scott Lynch",
+        "A Deadly Education - Naomi Novik"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "mystery-fantasy blend",
+          "monster hunting",
+          "female protagonist",
+          "fast-paced",
+          "banter and humour balanced with dark themes"
+        ],
+        "negative": [
+          "graphic violence and grotesque monster descriptions",
+          "shorter books may feel slight to some"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mother of Learning: ARC 2 - Domagoj Kurmaić": {
       "title": "Mother of Learning: ARC 2",
       "author": "Domagoj Kurmaić",
       "series": "Mother of Learning",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Progression Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Still trapped in a one-month time loop, mage student Zorian Kazinski broadens his approach—forming alliances, exploring beyond Cyoria's magical academy, and pursuing advanced magic—while battling necromancers and cultists and trying to evade a powerful lich who could kill him permanently.",
+      "tone": "cerebral, methodical, progressively tense, wonder-filled",
+      "pacing": "Moderate",
+      "themes": [
+        "time loops",
+        "personal growth",
+        "mastery through repetition",
+        "mystery",
+        "chosen destiny"
+      ],
+      "setting": "Secondary world of Cyoria; a fantasy city with a prestigious magical academy, originally a web serial",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Sufficiently Advanced Magic - Andrew Rowe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "time loop mechanics",
+          "intelligent protagonist",
+          "complex magic system",
+          "rich world-building",
+          "progression fantasy"
+        ],
+        "negative": [
+          "slow opening sections",
+          "repetitive by nature of the loop",
+          "very long combined series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Temple of Sand - Barbara Kloss": {
       "title": "Temple of Sand",
       "author": "Barbara Kloss",
       "series": "The Gods of Men",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Imari—illegitimate princess and wielder of forbidden Shah power—returns home after ten years hiding in the Wilds, but faces danger when an anonymous Liagé leader burns temples and her awakened power grows uncontrollable, as she fights to liberate the oppressed Sol Velorian people and keep her identity from destroying everything.",
+      "tone": "adventurous, romantic, propulsive, layered",
+      "pacing": "Fast",
+      "themes": [
+        "forbidden power",
+        "identity and belonging",
+        "oppression and liberation",
+        "romance",
+        "faith"
+      ],
+      "setting": "Secondary world spanning frozen northern Wilds and desert kingdoms of the Five Provinces; richly detailed cultures",
+      "comparable_books": [
+        "The Bone Witch - Rin Chupeco",
+        "The Gilded Wolves - Roshani Chokshi",
+        "Red Queen - Victoria Aveyard"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "romance subplot",
+          "forbidden magic",
+          "strong heroine",
+          "fast action",
+          "rich world-building"
+        ],
+        "negative": [
+          "romance-heavy",
+          "protagonist returns home trope",
+          "requires Book 1 first"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Female narrator Kim Churchill praised; strong emotional character work suits audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Spire Climbers - Rob J. Hayes": {
       "title": "Spire Climbers",
       "author": "Rob J. Hayes",
       "series": "Titan Hoppers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "No longer trainees, Iro and Emil join a new squad and plunge deeper into a monster-filled titan, discovering pitch-black oceans, nests of swarming creatures, and mysterious Spires ripping through the hull—while racing to reach the top and uncover what purpose the Spires serve.",
+      "tone": "breakneck, wonder-filled, tense, action-packed",
+      "pacing": "Fast",
+      "themes": [
+        "progression and power",
+        "teamwork",
+        "mystery of the titans",
+        "survival",
+        "duty"
+      ],
+      "setting": "Nomadic fleet of spaceships harvesting resources from enormous derelict starships called Titans; science-fantasy setting with hard magic system",
+      "comparable_books": [
+        "Cradle - Will Wight",
+        "Iron Prince - Bryce O'Connor",
+        "Mage Errant - John Bierce"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "progression fantasy",
+          "sci-fantasy blend",
+          "non-stop action",
+          "mystery world-building",
+          "found family squad dynamics"
+        ],
+        "negative": [
+          "action fatigue possible for some readers",
+          "thin secondary characters in places",
+          "requires Book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Lessons Never Learned - Rob J. Hayes": {
       "title": "The Lessons Never Learned",
       "author": "Rob J. Hayes",
       "series": "The War Eternal",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Free from the Pit but haunted by ghosts and possessed by an ancient horror, Eskara Helsen is hunted by enemies determined to destroy the last Orran Sourcerer, and must seek refuge and power in Ro'shan—the flying city of a god—though she will learn that all power comes at a terrible price.",
+      "tone": "grimdark, visceral, emotionally raw, unreliable-narrator introspective",
+      "pacing": "Moderate",
+      "themes": [
+        "survival and vengeance",
+        "the cost of power",
+        "identity and trauma",
+        "war and its aftermath",
+        "gods and mortality"
+      ],
+      "setting": "Secondary world scarred by imperial war; features floating cities, gods, Djinn, and hard source-stone magic",
+      "comparable_books": [
+        "The Prince of Thorns - Mark Lawrence",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Along the Razor's Edge - Rob J. Hayes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey female protagonist",
+          "grimdark",
+          "unreliable narrator",
+          "hard magic system",
+          "emotional depth"
+        ],
+        "negative": [
+          "graphic violence and dark themes",
+          "slow opening third noted by some",
+          "requires Book 1"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Gates of Sorrow - J. E. Hannaford": {
       "title": "Gates of Sorrow",
       "author": "J. E. Hannaford",
       "series": "Aulirean Gates",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Picking up immediately after the dramatic conclusion of Gates of Hope, three heroes navigate their separated worlds—the planet Lieus and its two moons—as Elissa desperately seeks a way to reopen the shattered Aulirean Gates and rescue her people from alien enslavement, while Darin and Suriin face mounting dangers and world-shaking consequences.",
+      "tone": "hopeful, emotionally rich, wonder-filled, hopepunk",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "hope in despair",
+        "found family",
+        "sacrifice",
+        "connection across worlds",
+        "biological wonder"
+      ],
+      "setting": "Multi-world system of linked planets Lieus, Mythos, and Tebein, once connected by magical gates; biology-rich world-building",
+      "comparable_books": [
+        "The Fifth Season - N.K. Jemisin",
+        "The Stormlight Archive - Brandon Sanderson",
+        "Gates of Hope - J.E. Hannaford"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hopepunk tone",
+          "found family",
+          "emotion-based magic system",
+          "animal companions (moonhounds)",
+          "incredible world-building"
+        ],
+        "negative": [
+          "slow first half",
+          "multiple separated POVs take time to converge",
+          "lighter on action than grimdark readers may want"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mad God's Muse - Matthew P. Gilbert": {
       "title": "Mad God's Muse",
       "author": "Matthew P. Gilbert",
       "series": "Sins of the Fathers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Young Ahmed must step up to lead hardened warriors and forge an alliance with the dangerously unpredictable sorcerers of Nihlos to thwart a Dead God's apocalyptic prophecy, journeying toward an ancient city of evil where no one has survived.",
+      "tone": "dark, sweeping, mythic, intrigue-laden",
+      "pacing": "Fast",
+      "themes": [
+        "faith and doubt",
+        "leadership under pressure",
+        "prophecy",
+        "good vs. ancient evil",
+        "political scheming"
+      ],
+      "setting": "Secondary world inspired by desert/Middle Eastern cultures; a world on the brink of divine apocalypse with ancient sorcerers and scheming nobility",
+      "comparable_books": [
+        "Malazan Book of the Fallen - Steven Erikson",
+        "The First Law - Joe Abercrombie",
+        "Prince of Thorns - Mark Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark with a mythic twist",
+          "multiple political plotlines",
+          "morally complex characters",
+          "deep mythology"
+        ],
+        "negative": [
+          "multiple POVs can be overwhelming",
+          "some reviewers found character interactions skipped over",
+          "requires Book 1"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Ralph Lister, whose performance is widely praised as top-notch.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Pale Kings - Ben Galley": {
       "title": "Pale Kings",
       "author": "Ben Galley",
       "series": "Emaneska",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Long Winter tightens its grip on Emaneska, the Written mage Farden digs up his past in foreign deserts while his companions face the encroaching machinations of a new Arkmage and the arrival of something far deadlier than war—the rising of the Pale Kings.",
+      "tone": "dark, action-driven, Norse-mythic, dramatic",
+      "pacing": "Fast",
+      "themes": [
+        "identity and past",
+        "war and survival",
+        "gods and power",
+        "loyalty",
+        "sacrifice"
+      ],
+      "setting": "Emaneska—a frozen Norse-inspired secondary world with dragon-riders, Written mages, and ancient gods; medieval sword-and-sorcery setting",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "The First Law - Joe Abercrombie",
+        "The Written - Ben Galley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse mythology and atmosphere",
+          "morally grey anti-hero",
+          "dragon-riders",
+          "fast-paced action",
+          "dark epic fantasy"
+        ],
+        "negative": [
+          "grimdark themes",
+          "requires Book 1",
+          "some prose stylistic choices divide readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ash and Bones - Michael R. Fletcher": {
       "title": "Ash and Bones",
       "author": "Michael R. Fletcher",
       "series": "City of Sacrifice",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Dark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Following the return of Mother Death to the city of Bastion, Nuru flees deeper into the rings contemplating a world without gods, while a broken Akachi, armed with divine power, hunts her through the city, as Smoking Mirror—god of discord—manipulates gods and mortals alike in an ancient game.",
+      "tone": "grimdark, frenzied, theologically unsettling, relentless",
+      "pacing": "Moderate",
+      "themes": [
+        "faith vs. heresy",
+        "the cost of divine power",
+        "violence and sacrifice",
+        "gods as tyrants",
+        "war of ideologies"
+      ],
+      "setting": "Bastion—the last walled city of humanity after a catastrophic war of gods, inspired by Mesoamerican mythology; a ringed city decaying under divine conflict",
+      "comparable_books": [
+        "Beyond Redemption - Michael R. Fletcher",
+        "The Darkness That Comes Before - R. Scott Bakker",
+        "City of Stairs - Robert Jackson Bennett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Mesoamerican-inspired world",
+          "grimdark",
+          "theological complexity",
+          "morally grey opposing protagonists",
+          "unique magic and mythology"
+        ],
+        "negative": [
+          "extremely dark and violent",
+          "graphic sacrifice and death",
+          "some pacing drag in the middle",
+          "not for sensitive readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Truthmarked - David Estes": {
       "title": "Truthmarked",
       "author": "David Estes",
       "series": "The Fatemarked Epic",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the Hundred Years War continues across the Four Kingdoms, multiple heroes and anti-heroes—including Annise Gäric, Roan Loren, and the assassin Bane—pursue their conflicting paths, while civil war erupts in the south and a rebel slave-master risks his life for freedom, all orbiting the mysterious fatemarked prophecy.",
+      "tone": "propulsive, sweeping, morally complex, multi-POV epic",
+      "pacing": "Fast",
+      "themes": [
+        "prophecy and destiny",
+        "war and its costs",
+        "slavery and liberation",
+        "power and corruption",
+        "chosen heroes"
+      ],
+      "setting": "Secondary world of the Four Kingdoms; a pseudo-medieval continent at war, with ancient prophecy-linked magic marks",
+      "comparable_books": [
+        "A Game of Thrones - George R.R. Martin",
+        "The Way of Kings - Brandon Sanderson",
+        "Throne of Glass - Sarah J. Maas"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "fast-paced action",
+          "multiple storylines converging",
+          "morally complex characters",
+          "accessible style"
+        ],
+        "negative": [
+          "large cast can overwhelm",
+          "series requires full commitment (5 books)",
+          "some darker themes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ghost of the Shadowfort - T. C. Edge": {
       "title": "Ghost of the Shadowfort",
       "author": "T. C. Edge",
       "series": "The Bladeborn Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "War rages in the north as Elyon Daecar is thrust into a world of treachery and mutiny among the Varin Knights, would-be assassin Saska goes dangerously in over her head inside an enemy warcamp, and Jonik—driven by a dead god's whispers—seeks new purpose while hunted by the order he betrayed.",
+      "tone": "cinematic, dramatic, epic, treachery-laden",
+      "pacing": "Moderate",
+      "themes": [
+        "war and duty",
+        "betrayal",
+        "divine legacy",
+        "redemption",
+        "identity and purpose"
+      ],
+      "setting": "Secondary world of Vandar, Tukor, and Rasalan; a continent on the brink of total war, with godsteel weapons and ancient divine power",
+      "comparable_books": [
+        "The Stormlight Archive - Brandon Sanderson",
+        "The Wheel of Time - Robert Jordan",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic saga",
+          "divine swords and artefacts",
+          "political intrigue",
+          "cinematic battles",
+          "long-form epic"
+        ],
+        "negative": [
+          "slower middle section noted by some",
+          "very long series commitment (8 books planned)",
+          "requires Book 1"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Steven Brand via Podium Audio; widely praised for delivery in this epic fantasy format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Case of Possession - K. J. Charles": {
       "title": "A Case of Possession",
       "author": "K. J. Charles",
       "series": "A Charm of Magpies",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Victorian London, aristocratic magician Lord Stephen Day and his lover, journalist Crane, face a terrifying new crisis when Crane is possessed by a supernatural entity and Day must race through London's dangerous magical underworld to save him before the possession kills him.",
+      "tone": "witty, romantic, propulsive, darkly charming",
+      "pacing": "Fast",
+      "themes": [
+        "love and sacrifice",
+        "magic and responsibility",
+        "class in Victorian England",
+        "identity",
+        "trust"
+      ],
+      "setting": "Alternate Victorian London with a hidden magical community; gas-lit streets and upper-class drawing rooms",
+      "comparable_books": [
+        "The Magpie Lord - K.J. Charles",
+        "A Gentleman's Guide to Vice and Virtue - Mackenzi Lee",
+        "Sorcerer to the Crown - Zen Cho"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "m/m romance",
+          "Victorian setting",
+          "witty banter",
+          "fast-paced mystery-fantasy",
+          "morally complex protagonist"
+        ],
+        "negative": [
+          "romance-central (not for readers who dislike love subplots)",
+          "requires Book 1 for context"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Strong dialogue and banter-driven narrative makes this ideal for audio; well-suited to the format.",
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Heroes: The Greek Myths Reimagined - Stephen Fry": {
       "title": "Heroes: The Greek Myths Reimagined",
       "author": "Stephen Fry",
       "series": "Stephen Fry's Great Mythology",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mythology",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Stephen Fry retells the great hero myths of ancient Greece—including the stories of Perseus, Heracles, Bellerophon, Atalanta, and Jason—bringing wit, warmth, and modern sensibility to the extraordinary adventures of mortals who dared to strive alongside the gods.",
+      "tone": "witty, warm, conversational, enthusiastic",
+      "pacing": "Moderate",
+      "themes": [
+        "heroism and hubris",
+        "divine intervention",
+        "mortality and legacy",
+        "adventure and quest",
+        "fate"
+      ],
+      "setting": "Ancient Greece and the mythological world; from Mount Olympus to the edges of the known world",
+      "comparable_books": [
+        "Mythos - Stephen Fry",
+        "Norse Mythology - Neil Gaiman",
+        "Circe - Madeline Miller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible mythology retelling",
+          "witty humorous prose",
+          "educational-yet-entertaining",
+          "standalone stories within framework"
+        ],
+        "negative": [
+          "not narrative fiction (episodic myth retellings)",
+          "readers wanting deep plot arcs may find it light"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Stephen Fry himself; his theatrical voice and wit make this one of the finest audiobook experiences in the genre.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Lost City - C. M. Carney": {
       "title": "The Lost City",
       "author": "C. M. Carney",
       "series": "The Realms",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "After escaping the Barrow with a ragtag group of companions, player-character Gryph is forced to accept a quest to stop a world-conquering zealot from seizing an ancient weapon of incredible power—navigating an ancient Elven city overrun by crazed cultists and an army of deadly magical machines, all while no closer to finding his missing sister.",
+      "tone": "adventurous, humorous, action-driven, game-mechanical",
+      "pacing": "Fast",
+      "themes": [
+        "leveling and progression",
+        "found family and trust",
+        "leadership reluctantly accepted",
+        "family and loyalty",
+        "corruption of power"
+      ],
+      "setting": "The Realms—an immersive fantasy VRMMO world with RPG mechanics, leveling, skill trees, and a D&D-esque secondary world setting",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "He Who Fights With Monsters - Jason Cheyne",
+        "Ascend Online - Luke Chmilenko"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG/GameLit fans",
+          "RPG video game nostalgia",
+          "fast action",
+          "D&D sensibility",
+          "leveling and stats"
+        ],
+        "negative": [
+          "heavy game mechanics can overwhelm non-LitRPG readers",
+          "plot secondary to game-play structure",
+          "episodic villain-of-the-book arcs"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dead Man's Tide - D. J. Bodden": {
