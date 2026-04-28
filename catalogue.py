@@ -82,7 +82,6 @@ INDEX_FIELDS = (
     "series",
     "series_status",
     "primary_genre",
-    "audio_suitability",
     "comparable_books",
 )
 
