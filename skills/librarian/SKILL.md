@@ -246,19 +246,24 @@ batch them and offer to flush once a few have accumulated.
 
 ## Step 7: Outputs
 
-Generate these as downloadable artifacts at the right milestones:
+All long-form deliverables go in artifacts. **Update artifacts in place — never
+rewrite the full list in chat replies.** Chat responses stay brief and point at
+the artifact ("updated — see the artifact"); the artifact itself carries the
+content.
 
-- **Reading_List.md** — full curated list with sections, strength indicators,
-  running count toward 100, stretch goals, and a goals-tracking table:
+- **Reading_List.md** (artifact) — full curated list with sections, strength
+  indicators, running count toward 100, stretch goals, and a goals-tracking
+  table:
   - Genre Goals: `| Genre | Goal | Current |`
   - Series Status Goals: `| Status | Goal | Current |`
   - Miscellaneous Goals: `| Tag | Goal | Current |`
-- **Profile.md** — only if a fresh interview was conducted.
-- **Catalog patches** — emitted by the cataloguer skill when memory-bank
-  changes are confirmed (see that skill).
+- **Profile.md** (artifact) — only if a fresh interview was conducted.
+- **Catalog patches** (artifacts) — emitted by the cataloguer skill when
+  memory-bank changes are confirmed (see that skill).
 
-Update and re-present `Reading_List.md` after every agreed batch — the reader
-should always have a current downloadable version.
+After every agreed batch, update the `Reading_List.md` artifact in place. The
+reader should always have a current downloadable version, and the chat
+transcript stays cheap.
 
 ---
 
