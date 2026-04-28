@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3793,
-  "total_pending": 807,
+  "total_catalogued": 3813,
+  "total_pending": 787,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -207747,54 +207747,101 @@
       "title": "Wrath",
       "author": "Alex Raizman",
       "series": "Dinosaur Dungeon",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "LitRPG",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Executed for forgotten crimes, Tira is reborn as a dungeon core who binds herself to the Primeval Terror, granting her the ability to summon dinosaurs against adventurers and enemies. She must build her dungeon, grow in power, and pursue the vengeance that drives her.",
+      "tone": "fast-paced, darkly humorous, inventive",
+      "pacing": "Fast",
+      "themes": [
+        "revenge",
+        "rebirth",
+        "power growth",
+        "dungeon-building",
+        "prehistoric creatures"
+      ],
+      "setting": "Secondary fantasy world with a dungeon-core magic system; prehistoric creatures inhabit a labyrinthine dungeon",
+      "comparable_books": [
+        "Divine Dungeon - Travis Bagwell",
+        "He Who Fights with Monsters - Jason Cheyne",
+        "Dungeon Crawler Carl - Matt Dinniman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dungeon-core LitRPG",
+          "dinosaurs",
+          "fast pacing",
+          "game mechanics",
+          "power fantasy",
+          "humorous tone"
+        ],
+        "negative": [
+          "no interest in LitRPG game stats",
+          "prefers literary prose",
+          "dislikes isekai tropes"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full cast Soundbooth Theater production with multiple narrators received strong praise.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Winds of War - Mosha Winter": {
       "title": "The Winds of War",
       "author": "Mosha Winter",
       "series": "The Tapestry of the Tarnished",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a world called the Ring—a circle of continents rife with war—the fracturing Astaris Empire threatens to annihilate the proud Rhaavi people, while dragonrider Yuei, shadow guardian Rizu, and scholar Hatsun follow intertwining paths that converge on a secret capable of transforming the world.",
+      "tone": "grimdark, epic, emotionally brutal",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "empire vs. resistance",
+        "fate and prophecy",
+        "political intrigue",
+        "war and its costs",
+        "dragons"
+      ],
+      "setting": "The Ring — a circular world of diverse continents, decadent empires, and warrior cultures; secondary fantasy world",
+      "comparable_books": [
+        "A Game of Thrones - George R. R. Martin",
+        "Gardens of the Moon - Steven Erikson",
+        "The Bound and the Broken - Ryan Cahill"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "multi-POV epic fantasy",
+          "grimdark tone",
+          "political intrigue",
+          "dragon battles",
+          "morally grey characters",
+          "detailed world-building"
+        ],
+        "negative": [
+          "dislikes sexual content",
+          "prefers single protagonist",
+          "dislikes slow openings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Reckoning - John Grisham": {
@@ -207802,188 +207849,344 @@
       "author": "John Grisham",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Legal Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1946 Mississippi, decorated war hero Pete Banning walks into his church and shoots the pastor dead, then refuses to give any explanation to anyone — even as he faces execution. His family and community are left to unravel the mystery, while flashbacks reveal the horrors of his WWII captivity in the Philippines.",
+      "tone": "measured, somber, slow-burning mystery",
+      "pacing": "Slow",
+      "themes": [
+        "war trauma",
+        "family secrets",
+        "justice and vengeance",
+        "Southern Gothic",
+        "racial injustice",
+        "silence and shame"
+      ],
+      "setting": "Clanton, Mississippi, 1946; and the Philippines during WWII",
+      "comparable_books": [
+        "A Time to Kill - John Grisham",
+        "Sycamore Row - John Grisham",
+        "The Secret History - Donna Tartt"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal drama",
+          "WWII history",
+          "Southern Gothic atmosphere",
+          "mystery with delayed answers",
+          "family saga"
+        ],
+        "negative": [
+          "expects a fast-paced thriller",
+          "dislikes extended war sequences",
+          "prefers clear protagonist motivation"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Burning the Water - Robert Low": {
       "title": "Burning the Water",
       "author": "Robert Low",
       "series": "Border Reivers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "One-armed mercenary Batty Coalhouse is tasked with finding a group of stray nuns in the war-ravaged Scottish-English Borders under Henry VIII, a mission that brings him ever closer to his nemesis Maramaldo and into the heart of the Debatable Lands' brutal conflict.",
+      "tone": "lyrical, brutal, gritty historical",
+      "pacing": "Moderate",
+      "themes": [
+        "vengeance",
+        "survival",
+        "lawlessness",
+        "Tudor-era border conflict",
+        "loyalty"
+      ],
+      "setting": "The Scottish-English Borders and Cheviot Hills, 1540s; the turbulent reign of Henry VIII",
+      "comparable_books": [
+        "A Dish of Spurs - Robert Low",
+        "Sharpe's Rifles - Bernard Cornwell",
+        "Whores of the Conquerors - Christian Cameron"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "gritty atmosphere",
+          "morally grey protagonist",
+          "dense dialect and period language",
+          "fans of Cornwell or Iggulden"
+        ],
+        "negative": [
+          "dislikes dense dialect",
+          "expects fast pacing",
+          "no interest in Tudor-era Scotland"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Fall of Kings - David Gemmell & Stella Gemmell": {
       "title": "Fall of Kings",
       "author": "David Gemmell & Stella Gemmell",
       "series": "Troy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The final volume of the Troy trilogy follows the climactic fall of the great city as Helikaon, Andromache, and the heroes of Troy face the Greek armies in a last desperate stand, resolving threads of love, honour, and betrayal woven across the whole series.",
+      "tone": "epic, elegiac, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "heroism and sacrifice",
+        "love and loss",
+        "the cost of war",
+        "fate and legacy",
+        "honour"
+      ],
+      "setting": "Ancient Troy and the Greek world, Bronze Age; mythologised historical setting",
+      "comparable_books": [
+        "Lord of the Silver Bow - David Gemmell",
+        "Shield of Thunder - David Gemmell",
+        "The Song of Troy - Colleen McCullough"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heroic fantasy",
+          "ancient world setting",
+          "Gemmell fans",
+          "action-packed",
+          "emotional depth",
+          "myth retelling"
+        ],
+        "negative": [
+          "prefers pure myth over historical realism",
+          "dislikes bittersweet endings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Gemmell's propulsive, visceral prose translates extremely well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Dish of Spurs - Robert Low": {
       "title": "A Dish of Spurs",
       "author": "Robert Low",
       "series": "Border Reivers",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1542, fifteen-year-old Mintie Henderson witnesses her father's murder in the lawless Scottish-English Debatable Lands and enlists the help of one-armed mercenary Batty Coalhouse in a quest for revenge, soon drawn into the larger political struggle between Henry VIII and the Scottish court.",
+      "tone": "brutal, lyrical, atmospheric",
+      "pacing": "Moderate",
+      "themes": [
+        "revenge",
+        "survival",
+        "lawlessness",
+        "loyalty",
+        "16th-century Border politics"
+      ],
+      "setting": "The Scottish-English Borders, 1542–1543; the Debatable Lands under Henry VIII and a newly dead Scottish king",
+      "comparable_books": [
+        "Burning the Water - Robert Low",
+        "The Whale Road - Robert Low",
+        "Hereward - James Wilde"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "morally complex protagonist",
+          "period authenticity",
+          "dark and gritty",
+          "fans of Cornwell or Iggulden"
+        ],
+        "negative": [
+          "dislikes heavy dialect",
+          "prefers fast pacing",
+          "no interest in Scottish history"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Howling Dark - Christopher Ruocchio": {
       "title": "Howling Dark",
       "author": "Christopher Ruocchio",
       "series": "Sun Eater",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Hadrian Marlowe continues his decades-long search for the alien Cielcin, pushing deep into uncharted space and encountering impossible secrets about the universe's past and the nature of his own destiny, all narrated from the perspective of his ancient future self.",
+      "tone": "lyrical, philosophical, epic, elegiac",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "humanity vs. alien other",
+        "fate and free will",
+        "memory and identity",
+        "the cost of immortality",
+        "empire and violence"
+      ],
+      "setting": "Far-future galactic civilisation spanning millennia; alien worlds, feudal starfaring society",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Hyperion - Dan Simmons"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary science fiction",
+          "unreliable narrator",
+          "epic scope",
+          "philosophical depth",
+          "fans of Gene Wolfe",
+          "slow meditative pacing"
+        ],
+        "negative": [
+          "expects fast space opera",
+          "dislikes dense prose",
+          "prefers action over introspection"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simon Vance's narration is widely praised as a perfect match for the lyrical, classical register of the prose.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Lord of the Silver Bow - David Gemmell": {
       "title": "Lord of the Silver Bow",
       "author": "David Gemmell",
       "series": "Troy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A reimagining of the Trojan War cycle follows the young hero Helikaon, the Trojan prince Aeneas, and the archer Argurios as ancient grudges, piracy, and the politics of the Bronze Age Aegean set the world on a collision course toward the legendary siege of Troy.",
+      "tone": "heroic, action-packed, emotionally resonant",
+      "pacing": "Fast",
+      "themes": [
+        "heroism and honour",
+        "fate",
+        "love and sacrifice",
+        "war and its origins",
+        "loyalty"
+      ],
+      "setting": "Bronze Age Aegean, pre-Trojan War; trading cities, islands, and courts of ancient Greece and Troy",
+      "comparable_books": [
+        "Shield of Thunder - David Gemmell",
+        "Fall of Kings - David Gemmell & Stella Gemmell",
+        "The Song of Troy - Colleen McCullough"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heroic fantasy",
+          "ancient world setting",
+          "myth retelling",
+          "propulsive action",
+          "Gemmell fans"
+        ],
+        "negative": [
+          "expects strict myth adherence",
+          "dislikes revisionist retellings",
+          "prefers pure fantasy over historical grounding"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "High-energy prose and strong characterisation make this a natural fit for audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Shield of Thunder - David Gemmell": {
       "title": "Shield of Thunder",
       "author": "David Gemmell",
       "series": "Troy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The second Troy novel expands the cast of characters—including the warrior Argurios, the Mykene prince, and the priestess Andromache—as old alliances fracture and the gathering storm of war draws ever closer to the fated city of Troy.",
+      "tone": "heroic, sweeping, emotionally driven",
+      "pacing": "Fast",
+      "themes": [
+        "honour and sacrifice",
+        "the inevitability of war",
+        "love across divides",
+        "political betrayal",
+        "destiny"
+      ],
+      "setting": "Bronze Age Aegean and Troy; a mythologised ancient world",
+      "comparable_books": [
+        "Lord of the Silver Bow - David Gemmell",
+        "Fall of Kings - David Gemmell & Stella Gemmell",
+        "Gates of Fire - Steven Pressfield"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "heroic fantasy",
+          "ancient world setting",
+          "action-driven",
+          "emotional depth",
+          "Gemmell fans"
+        ],
+        "negative": [
+          "dislikes ensemble casts",
+          "prefers single-hero narratives",
+          "no interest in Bronze Age settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Gemmell's vivid, propulsive style performs exceptionally well in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Misery - Stephen King": {
@@ -207991,107 +208194,193 @@
       "author": "Stephen King",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Novelist Paul Sheldon survives a car crash in a Colorado blizzard only to be rescued by his self-described 'number one fan,' Annie Wilkes, who imprisons him in her remote farmhouse and forces him to resurrect the character he had killed off — while his situation becomes increasingly terrifying.",
+      "tone": "claustrophobic, tense, darkly psychological",
+      "pacing": "Fast",
+      "themes": [
+        "obsession and fandom",
+        "creative captivity",
+        "survival",
+        "the writer's craft",
+        "psychological manipulation"
+      ],
+      "setting": "Remote Colorado farmhouse, 1980s; almost entirely a single confined location",
+      "comparable_books": [
+        "The Shining - Stephen King",
+        "Room - Emma Donoghue",
+        "Gone Girl - Gillian Flynn"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological horror",
+          "claustrophobic suspense",
+          "fast pacing",
+          "propulsive thriller",
+          "meta commentary on writing"
+        ],
+        "negative": [
+          "dislikes horror",
+          "sensitive to violence and torture",
+          "prefers expansive settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Intimate single-location story with a gripping dramatic voice; performs superbly in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Blood of Midgard - Baptiste Pinson Wu": {
       "title": "Blood of Midgard",
       "author": "Baptiste Pinson Wu",
       "series": "The Army of One",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "As Ragnarök's shadow looms, Odin sends his elite Einherjar warriors—fallen heroes led by Drake—to Midgard to spark conflicts and fill Valhöll's benches, but Drake would rather prevent the apocalypse than hasten it, especially as a treacherous plan set in motion by someone close to him draws the end ever nearer.",
+      "tone": "gritty, action-packed, mythologically rich",
+      "pacing": "Fast",
+      "themes": [
+        "Norse mythology",
+        "fate vs. free will",
+        "loyalty and brotherhood",
+        "the nature of the gods",
+        "love and duty"
+      ],
+      "setting": "Viking-age Midgard and the Norse realms of Asgard; mythological pre-Ragnarök world",
+      "comparable_books": [
+        "The Shadow of the Gods - John Gwynne",
+        "Norse Mythology - Neil Gaiman",
+        "Undead Samurai - Baptiste Pinson Wu"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse mythology",
+          "found family / band of brothers",
+          "gritty action",
+          "morally grey gods",
+          "fast pacing"
+        ],
+        "negative": [
+          "dislikes mythology retellings",
+          "prefers non-linear narrative",
+          "expects high literary prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Vengeance of Asgard - Baptiste Pinson Wu": {
       "title": "Vengeance of Asgard",
       "author": "Baptiste Pinson Wu",
       "series": "The Army of One",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drake and his Wolves must prepare a paralysed Asgard for Ragnarök while undertaking a final mission into the Elven realm to retrieve Freyja's exiled brother—the one fated to kill the fire giant Surtr—as Drake's own actions against prophecy threaten to fulfil it.",
+      "tone": "epic, action-packed, fatalistic",
+      "pacing": "Fast",
+      "themes": [
+        "prophecy and free will",
+        "sacrifice",
+        "the twilight of the gods",
+        "brotherhood",
+        "vengeance"
+      ],
+      "setting": "Asgard and the Elven realm; the Norse mythological cosmos on the eve of Ragnarök",
+      "comparable_books": [
+        "Blood of Midgard - Baptiste Pinson Wu",
+        "Beasts of Jötunheimr - Baptiste Pinson Wu",
+        "The Shadow of the Gods - John Gwynne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Norse mythology",
+          "action climax",
+          "band of brothers",
+          "apocalyptic stakes",
+          "series conclusions"
+        ],
+        "negative": [
+          "dislikes mythology settings",
+          "prefers standalone novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Beasts of Jötunheimr - Baptiste Pinson Wu": {
       "title": "Beasts of Jötunheimr",
       "author": "Baptiste Pinson Wu",
       "series": "The Army of One",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Stranded in the frozen realm of Jötunheimr after the events of the first book, Drake and two companions must battle giant wolves, blizzards, and starvation to escape and warn Asgard that Loki is free and Ragnarök is imminent, driven as much by personal vengeance as by duty.",
+      "tone": "gritty, survival-driven, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "revenge",
+        "loyalty",
+        "Ragnarök's approach",
+        "man vs. nature"
+      ],
+      "setting": "Jötunheimr — the frozen Norse realm of giants and monsters",
+      "comparable_books": [
+        "Blood of Midgard - Baptiste Pinson Wu",
+        "Vengeance of Asgard - Baptiste Pinson Wu",
+        "The Last Kingdom - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "survival adventure",
+          "Norse mythology",
+          "action-driven",
+          "fast pacing",
+          "band of brothers"
+        ],
+        "negative": [
+          "dislikes mythology settings",
+          "prefers large ensemble casts"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wolf of Wessex - Matthew Harffy": {
@@ -208099,134 +208388,243 @@
       "author": "Matthew Harffy",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In AD 838 Wessex, retired warrior Dunston — living as a hermit with his one-eyed dog — stumbles upon a mutilated corpse and is accused of the murder; to clear his name and protect the dead man's daughter Aedwen, he must hunt down the real killers and confront a violent past he swore to leave behind.",
+      "tone": "dark, gritty, tense, atmospheric",
+      "pacing": "Fast",
+      "themes": [
+        "redemption",
+        "honour and vows",
+        "the price of violence",
+        "found family",
+        "justice"
+      ],
+      "setting": "Forests and settlements of 9th-century Anglo-Saxon Wessex, England",
+      "comparable_books": [
+        "The Last Kingdom - Bernard Cornwell",
+        "The Serpent Sword - Matthew Harffy",
+        "True Grit - Charles Portis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Anglo-Saxon setting",
+          "grizzled protagonist",
+          "quest narrative",
+          "gritty historical fiction",
+          "man protecting a child",
+          "standalone"
+        ],
+        "negative": [
+          "dislikes animal jeopardy",
+          "prefers female protagonists",
+          "no interest in Dark Ages England"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tight, propulsive thriller plot and vivid forest atmosphere translate superbly to audio.",
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Strange Pictures - Uketsu": {
       "title": "Strange Pictures",
       "author": "Uketsu",
       "series": "Strange Houses",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A shifting cast of amateur investigators — including a student, a nursery teacher, and a journalist — each separately encounter a series of disturbing drawings that hide evidence of abuse and murder, with seemingly unrelated storylines that converge in a jaw-dropping interconnected finale.",
+      "tone": "eerie, puzzle-driven, minimalist",
+      "pacing": "Moderate",
+      "themes": [
+        "hidden evil in the mundane",
+        "amateur detection",
+        "family trauma",
+        "secrets and obsession",
+        "the gaze as evidence"
+      ],
+      "setting": "Contemporary Japan; ordinary domestic and institutional settings rendered uncanny",
+      "comparable_books": [
+        "Strange Houses - Uketsu",
+        "Hidden Pictures - Jason Rekulak",
+        "The Decagon House Murders - Yukito Ayatsuji"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "puzzle mysteries",
+          "Japanese crime fiction",
+          "visual storytelling gimmick",
+          "interlocking narratives",
+          "eerie atmosphere"
+        ],
+        "negative": [
+          "expects rich characterisation",
+          "dislikes thin prose",
+          "prefers traditional whodunits with a detective"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "The book's central device — analysing embedded drawings and diagrams as clues — is entirely lost in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wastes of Keldora - Alex Raizman": {
       "title": "The Wastes of Keldora",
       "author": "Alex Raizman",
       "series": "Factory of the Gods",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Failed inventor Julian is accidentally summoned to a dying medieval world where his smartphone merges with a divine power source called a Godcore; to save the people who summoned him from annihilation by a mad god, he must use his engineering knowledge to build a factory — and a future — from scratch.",
+      "tone": "light, inventive, problem-solving focused",
+      "pacing": "Moderate",
+      "themes": [
+        "innovation and ingenuity",
+        "isekai / summoned hero",
+        "community-building",
+        "technology vs. magic",
+        "crafting"
+      ],
+      "setting": "Keldora — a dying secondary fantasy world with game-like mechanics; medieval backdrop with industrial ambitions",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "He Who Fights with Monsters - Jason Cheyne",
+        "A Touch of Power - Jay Boyce"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG crafting",
+          "isekai",
+          "engineering / factory building",
+          "Factorio fans",
+          "underdog protagonist"
+        ],
+        "negative": [
+          "dislikes game-stat heavy fiction",
+          "expects literary prose",
+          "dislikes self-deprecating protagonists"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Strange Houses - Uketsu": {
       "title": "Strange Houses",
       "author": "Uketsu",
       "series": "Strange Houses",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A freelance writer is consulted by a friend about a Tokyo house with a bewildering floor plan containing hidden dead spaces; together with an architect, he unravels a dark family history of murder, captivity, and generational trauma hidden behind the house's sinister architectural anomalies.",
+      "tone": "eerie, puzzle-driven, unsettling",
+      "pacing": "Moderate",
+      "themes": [
+        "hidden evil in domestic spaces",
+        "family secrets and trauma",
+        "architecture as narrative",
+        "the mundane made sinister"
+      ],
+      "setting": "Contemporary suburban Tokyo and surrounding areas; ordinary houses made terrifying",
+      "comparable_books": [
+        "Strange Pictures - Uketsu",
+        "The Labyrinth House Murders - Yukito Ayatsuji",
+        "The Night of Baba Yaga - Akira Otani"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese crime fiction",
+          "puzzle mysteries",
+          "floor-plan gimmick",
+          "eerie domestic horror",
+          "short reads"
+        ],
+        "negative": [
+          "expects rich character depth",
+          "dislikes convoluted plots",
+          "prefers traditional detectives"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Floor plan diagrams and architectural sketches are central to solving the mystery and are completely inaccessible in audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Kellanved's Reach - Ian C. Esslemont": {
       "title": "Kellanved's Reach",
       "author": "Ian C. Esslemont",
       "series": "Path to Ascendancy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As the war between bickering city-states of Quon Tali rages, the enigmatic sorcerer Kellanved pursues an ancient mystery involving the Elder races and the mythic Army of Dust and Bone, while his partner Dancer grows ever more sceptical — together completing the founding arc of the Malazan Empire.",
+      "tone": "dense, darkly comic, epic",
+      "pacing": "Moderate",
+      "themes": [
+        "empire-building",
+        "power and ambition",
+        "ancient mystery",
+        "friendship and partnership",
+        "the weight of destiny"
+      ],
+      "setting": "The Malazan world — Quon Tali continent and beyond; a sprawling secondary world with warrens of magic and Elder races",
+      "comparable_books": [
+        "Dancer's Lament - Ian C. Esslemont",
+        "Deadhouse Landing - Ian C. Esslemont",
+        "Gardens of the Moon - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Malazan fans",
+          "dense epic fantasy",
+          "prequel lore",
+          "morally ambiguous characters",
+          "complex world-building"
+        ],
+        "negative": [
+          "new to Malazan — requires prior reading",
+          "dislikes dense multi-threaded plots",
+          "expects accessible world-building"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Riding Rockets: The Outrageous Tales of a Space Shuttle Astronaut - Mike Mullane": {
@@ -208234,26 +208632,46 @@
       "author": "Mike Mullane",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "NASA astronaut Mike Mullane recounts his selection as part of the first class of Space Shuttle astronauts in 1978 and his three shuttle missions, blending riveting technical detail about spaceflight with irreverent, candid observations about the culture, ego, danger, and dark humour of the astronaut corps.",
+      "tone": "irreverent, candid, thrilling, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "ambition and risk",
+        "bureaucracy vs. individual",
+        "masculinity in extreme environments",
+        "the Challenger disaster",
+        "Cold War space race legacy"
+      ],
+      "setting": "NASA from the late 1970s through 1980s; Kennedy Space Center, Houston, and orbit",
+      "comparable_books": [
+        "The Right Stuff - Tom Wolfe",
+        "Endurance - Scott Kelly",
+        "An Astronaut's Guide to Life on Earth - Chris Hadfield"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "space exploration",
+          "candid memoir",
+          "dark humour",
+          "military culture",
+          "behind-the-scenes institutional critique"
+        ],
+        "negative": [
+          "expects inspirational tone",
+          "dislikes crude humour",
+          "no interest in spaceflight"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Mullane's irreverent, conversational storytelling voice is a natural fit for audio; the memoir reads like a stand-up routine at times.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Roma - Steven Saylor": {
@@ -208261,26 +208679,46 @@
       "author": "Steven Saylor",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An epic multigenerational saga tracing the rise of Rome from a small settlement on the Tiber through its early kings and Republic, following a single family across a thousand years of Roman history — wars, political intrigue, and the forging of a civilisation.",
+      "tone": "sweeping, immersive, historically rich",
+      "pacing": "Slow",
+      "themes": [
+        "the rise of civilisation",
+        "family legacy",
+        "power and ambition",
+        "Roman identity",
+        "myth and history"
+      ],
+      "setting": "Rome and the Italian peninsula, from roughly 1000 BC to 1 BC; the full arc of Rome's rise",
+      "comparable_books": [
+        "Masters of Rome - Colleen McCullough",
+        "SPQR - Mary Beard",
+        "Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Roman history",
+          "multigenerational sagas",
+          "historical sweep",
+          "fans of McCullough or Massie",
+          "slow immersive reads"
+        ],
+        "negative": [
+          "expects fast pacing",
+          "dislikes ensemble / dynasty narratives",
+          "no interest in ancient Rome"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Roman Blood - Steven Saylor": {
