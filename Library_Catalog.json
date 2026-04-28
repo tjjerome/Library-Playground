@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 3973,
-  "total_pending": 627,
+  "total_catalogued": 3993,
+  "total_pending": 607,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -216639,26 +216639,51 @@
       "author": "Sungju Lee & Susan Elizabeth McClelland",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The true memoir of Sungju Lee, who at age twelve was abandoned by his parents in North Korea during the 1990s famine and forced to survive on the streets, forming a gang of street boys to endure poverty, violence, and fear of arrest before eventually escaping the country.",
+      "tone": "harrowing, resilient, eye-opening",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "found family",
+        "government oppression",
+        "identity",
+        "extreme poverty",
+        "North Korean politics"
+      ],
+      "setting": "North Korea, 1990s–early 2000s; primarily Pyongyang and Gyeong-Seong",
+      "comparable_books": [
+        "Escape from Camp 14 - Blaine Harden",
+        "The Girl with Seven Names - Hyeonseo Lee",
+        "In Order to Live - Yeonmi Park"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true survival stories",
+          "memoir",
+          "found family",
+          "political oppression narratives",
+          "accessible YA nonfiction",
+          "short chapters"
+        ],
+        "negative": [
+          "readers who prefer fiction",
+          "those sensitive to child suffering and drug use"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "child drug and alcohol use",
+        "death of children"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Proud Tower - Barbara W. Tuchman": {
@@ -216666,26 +216691,46 @@
       "author": "Barbara W. Tuchman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A rich portrait of the Western world in the decades before World War I (1890–1914), examining the social, political, and cultural forces — from anarchism to aristocracy — that shaped the era and made the coming catastrophe possible.",
+      "tone": "authoritative, vivid, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "pre-war society",
+        "class",
+        "politics",
+        "nationalism",
+        "cultural decline",
+        "anarchism"
+      ],
+      "setting": "Europe and the United States, 1890–1914",
+      "comparable_books": [
+        "The Guns of August - Barbara W. Tuchman",
+        "Dreadnought - Robert K. Massie",
+        "The Sleepwalkers - Christopher Clark"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative history",
+          "pre-WWI era",
+          "social history",
+          "character-driven nonfiction",
+          "broad scope"
+        ],
+        "negative": [
+          "readers who prefer linear chronological narrative",
+          "those wanting a single-subject focus"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Guns of August - Barbara W. Tuchman": {
@@ -216693,26 +216738,47 @@
       "author": "Barbara W. Tuchman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A Pulitzer Prize-winning account of the opening weeks of World War I, tracing the military decisions, diplomatic failures, and miscalculations that turned the conflict into a catastrophic world war.",
+      "tone": "propulsive, authoritative, tragic",
+      "pacing": "Fast",
+      "themes": [
+        "military strategy",
+        "political miscalculation",
+        "nationalism",
+        "the origins of WWI",
+        "leadership failure"
+      ],
+      "setting": "Europe, August 1914",
+      "comparable_books": [
+        "The Proud Tower - Barbara W. Tuchman",
+        "The Sleepwalkers - Christopher Clark",
+        "Catastrophe 1914 - Max Hastings"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative history",
+          "military history",
+          "WWI",
+          "propulsive nonfiction",
+          "Pulitzer Prize winners"
+        ],
+        "negative": [
+          "readers seeking social rather than military history",
+          "those wanting post-1914 coverage"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Reads like a thriller; Tuchman's propulsive prose translates exceptionally well to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mockingbird - Walter Tevis": {
@@ -216720,26 +216786,49 @@
       "author": "Walter Tevis",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "In a far-future New York City where literacy has vanished and humanity is in narcotic decline, a man secretly teaches himself to read and, alongside an android who longs for death, must confront questions of meaning, love, and human survival.",
+      "tone": "melancholic, philosophical, hopeful",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "literacy",
+        "humanity",
+        "artificial intelligence",
+        "existentialism",
+        "societal decline",
+        "love and connection"
+      ],
+      "setting": "Far-future 25th-century New York City, dystopian post-technological collapse",
+      "comparable_books": [
+        "Fahrenheit 451 - Ray Bradbury",
+        "Brave New World - Aldous Huxley",
+        "The Road - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary dystopia",
+          "quiet introspective SF",
+          "books about books and reading",
+          "character-driven SF",
+          "melancholic tone"
+        ],
+        "negative": [
+          "action-heavy SF readers",
+          "hard science fiction enthusiasts",
+          "readers wanting plot-driven narrative"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Tevis's lyrical, introspective prose rewards attentive listening; well-suited to audio format.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The March of Folly - Barbara W. Tuchman": {
@@ -216747,26 +216836,46 @@
       "author": "Barbara W. Tuchman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "An examination of recurring governmental self-defeat throughout history — from the Trojan War to America in Vietnam — arguing that rulers have persistently pursued policies contrary to their own interests despite clear warnings.",
+      "tone": "analytical, mordant, sweeping",
+      "pacing": "Moderate",
+      "themes": [
+        "political folly",
+        "government failure",
+        "leadership",
+        "historical patterns",
+        "hubris",
+        "Vietnam War"
+      ],
+      "setting": "Multiple eras and locations: ancient Troy, Renaissance Rome, revolutionary America, Vietnam",
+      "comparable_books": [
+        "The Guns of August - Barbara W. Tuchman",
+        "Thinking, Fast and Slow - Daniel Kahneman",
+        "On the Psychology of Military Incompetence - Norman Dixon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "thematic history",
+          "political analysis",
+          "multi-era nonfiction",
+          "strong authorial voice",
+          "history of leadership failure"
+        ],
+        "negative": [
+          "readers preferring deep single-subject history",
+          "those seeking chronological narrative rather than argument-driven structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Force - Don Winslow": {
@@ -216774,26 +216883,50 @@
       "author": "Don Winslow",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "NYPD detective sergeant Denny Malone, king of Manhattan North's elite task force, is a hero and a criminal — skimming millions from drug busts and caught between loyalty to his crew, his family, and the federal agents closing in on him.",
+      "tone": "visceral, morally complex, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "police corruption",
+        "race and inequality",
+        "loyalty",
+        "moral compromise",
+        "the war on drugs",
+        "justice"
+      ],
+      "setting": "Contemporary New York City, primarily Manhattan North",
+      "comparable_books": [
+        "The Power of the Dog - Don Winslow",
+        "American Tabloid - James Ellroy",
+        "Mystic River - Dennis Lehane"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "propulsive pacing",
+          "urban crime fiction",
+          "police procedural",
+          "gritty realism",
+          "social commentary"
+        ],
+        "negative": [
+          "readers sensitive to graphic violence and language",
+          "those wanting a clear moral hero"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Winslow's staccato, vernacular-heavy prose is electrifying in audio; strong narrator choices enhance the experience.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Broken - Don Winslow": {
@@ -216801,80 +216934,146 @@
       "author": "Don Winslow",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Six intense crime novellas — featuring thieves, corrupt cops, bounty hunters, and fugitives — united by themes of crime, corruption, vengeance, guilt, and redemption across the American criminal landscape.",
+      "tone": "darkly comic, visceral, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "crime",
+        "corruption",
+        "redemption",
+        "loyalty",
+        "vengeance",
+        "moral ambiguity"
+      ],
+      "setting": "Various American cities and settings, contemporary",
+      "comparable_books": [
+        "The Force - Don Winslow",
+        "Get Shorty - Elmore Leonard",
+        "Night at the Fiestas - Kirstin Valdez Quade"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "crime novellas",
+          "darkly comic",
+          "propulsive short fiction",
+          "Elmore Leonard fans",
+          "anthologies of interconnected stories"
+        ],
+        "negative": [
+          "readers wanting a single sustained narrative",
+          "those sensitive to graphic violence"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Multiple narrators across the collection enhance the varied tones of each novella; Winslow's staccato style is ideal for audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Seventh Floor - David McCloskey": {
       "title": "The Seventh Floor",
       "author": "David McCloskey",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Artemis Procter / Damascus Station",
+      "series_position": "Book 3",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a Russian asset is killed in Singapore and CIA officer Sam Joseph disappears, veteran operative Artemis Procter is fired and disgraced — then forced back into action to hunt a mole buried deep within CIA leadership.",
+      "tone": "tense, insider-authentic, character-driven",
+      "pacing": "Fast",
+      "themes": [
+        "espionage",
+        "loyalty and betrayal",
+        "institutional politics",
+        "friendship",
+        "CIA culture",
+        "mole hunting"
+      ],
+      "setting": "Langley, Moscow, Paris, Singapore — contemporary",
+      "comparable_books": [
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "Moscow X - David McCloskey",
+        "The Peacock and the Sparrow - I.S. Berry"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "CIA insider perspective",
+          "mole-hunt thriller",
+          "strong female protagonist",
+          "authentic tradecraft",
+          "character-driven espionage"
+        ],
+        "negative": [
+          "readers wanting non-stop action over atmosphere",
+          "those new to the series without prior McCloskey experience"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wayward - Blake Crouch": {
       "title": "Wayward",
       "author": "Blake Crouch",
       "series": "Wayward Pines",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Now sheriff of Wayward Pines and privy to its terrifying secret, Ethan Burke must enforce the town's brutal laws while a murder investigation pulls him deeper into the darkness beneath its perfect facade.",
+      "tone": "propulsive, paranoid, darkly surreal",
+      "pacing": "Fast",
+      "themes": [
+        "secrets and truth",
+        "surveillance and control",
+        "human evolution",
+        "dystopia",
+        "survival",
+        "freedom vs. safety"
+      ],
+      "setting": "Wayward Pines, Idaho — a sealed, surveilled small town, far-future setting disguised as contemporary",
+      "comparable_books": [
+        "Pines - Blake Crouch",
+        "The Last Town - Blake Crouch",
+        "Dark Matter - Blake Crouch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "mystery-thriller hybrid",
+          "sci-fi thriller",
+          "TV adaptation fans",
+          "cliffhanger endings"
+        ],
+        "negative": [
+          "readers who haven't read Pines first",
+          "those preferring slow-burn mysteries"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast-paced and cinematic; highly effective as audio, especially for commuting.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Distant Mirror: The Calamitous 14th Century - Barbara W. Tuchman": {
@@ -216882,134 +217081,248 @@
       "author": "Barbara W. Tuchman",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Using the life of French knight Enguerrand de Coucy as a lens, Tuchman paints a sweeping, intimate portrait of 14th-century Europe ravaged by the Black Death, the Hundred Years' War, peasant revolts, and papal schism.",
+      "tone": "vivid, elegiac, panoramic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "plague",
+        "war",
+        "medieval society",
+        "chivalry",
+        "political collapse",
+        "human resilience"
+      ],
+      "setting": "14th-century Europe, primarily France and England",
+      "comparable_books": [
+        "The Guns of August - Barbara W. Tuchman",
+        "The Black Death - John Kelly",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative history",
+          "medieval history",
+          "character-driven nonfiction",
+          "broad social history",
+          "lyrical prose nonfiction"
+        ],
+        "negative": [
+          "readers wanting academic history",
+          "those preferring tightly focused single-event history"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Sparring Partners - John Grisham": {
       "title": "Sparring Partners",
       "author": "John Grisham",
       "series": "Jake Brigance",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Legal Thriller",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three novellas united by legal themes: Jake Brigance helps a disgraced former lawyer return home; a young death-row inmate faces his last hours; and two feuding lawyer brothers struggle to hold their father's firm together after he is imprisoned for murder.",
+      "tone": "warm, humane, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "justice and the law",
+        "family dysfunction",
+        "redemption",
+        "death penalty",
+        "small-town life",
+        "moral compromise"
+      ],
+      "setting": "Ford County, Mississippi; a death-row prison; St. Louis, Missouri — contemporary",
+      "comparable_books": [
+        "A Time to Kill - John Grisham",
+        "A Time for Mercy - John Grisham",
+        "The Confession - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal fiction",
+          "novella collections",
+          "Jake Brigance fans",
+          "Southern small-town fiction",
+          "fast reads"
+        ],
+        "negative": [
+          "readers wanting a full-length courtroom thriller",
+          "those new to Grisham who may miss context"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Three-novella format narrated by different celebrity readers (including Jeff Daniels and Ethan Hawke) makes this a standout audio experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Gutter Prayer - Gareth Hanrahan": {
       "title": "The Gutter Prayer",
       "author": "Gareth Hanrahan",
       "series": "The Black Iron Legacy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Three misfit thieves — Carillon, Spar, and Rat — are betrayed and swept into a centuries-old war between ancient gods, mages, and humanity in the teeming, corrupt city of Guerdon, where dark powers stir beneath the streets.",
+      "tone": "grimdark, inventive, feverish",
+      "pacing": "Fast",
+      "themes": [
+        "found family",
+        "religion and power",
+        "identity",
+        "betrayal",
+        "urban decay",
+        "survival"
+      ],
+      "setting": "Guerdon, a dark secondary-world industrial city under divine and alchemical siege",
+      "comparable_books": [
+        "City of Stairs - Robert Jackson Bennett",
+        "The Shadow of the Gods - John Gwynne",
+        "Kings of the Wyld - Nicholas Eames"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark fantasy",
+          "inventive worldbuilding",
+          "found family",
+          "Lovecraftian horror elements",
+          "China Miéville fans",
+          "thieves and rogues"
+        ],
+        "negative": [
+          "readers who prefer high/epic fantasy over grim urban fantasy",
+          "those wanting a straightforward hero's journey"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Planetfall - Emma Newman": {
       "title": "Planetfall",
       "author": "Emma Newman",
       "series": "Planetfall",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a distant planet, 3D-printer engineer Ren has kept a devastating secret since the founding of her colony — but the arrival of a mysterious stranger forces her to confront the lie that underpins everything her community believes.",
+      "tone": "haunting, psychological, melancholic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "secrets and truth",
+        "faith and science",
+        "mental illness",
+        "colonialism and community",
+        "grief",
+        "isolation"
+      ],
+      "setting": "A human colony on an alien planet, near an enigmatic alien structure; far future",
+      "comparable_books": [
+        "The Sparrow - Mary Doria Russell",
+        "Station Eleven - Emily St. John Mandel",
+        "Ancillary Justice - Ann Leckie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "psychological SF",
+          "literary science fiction",
+          "unreliable narrator",
+          "character-driven",
+          "science vs. faith themes",
+          "quiet introspective tone"
+        ],
+        "negative": [
+          "readers wanting hard SF or action-heavy narrative",
+          "those who dislike ambiguous or slow-paced openings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by the author herself, whose audiobook narration work is award-winning; exceptional match of voice to material.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Given Day - Dennis Lehane": {
       "title": "The Given Day",
       "author": "Dennis Lehane",
       "series": "Coughlin",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set against the volatile backdrop of post-WWI Boston, the novel follows Irish cop Danny Coughlin and Black laborer Luther Laurence as their lives collide amid labor strikes, racial violence, and the 1919 Boston Police Strike.",
+      "tone": "expansive, gritty, morally rich",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "class struggle",
+        "race and racism",
+        "labor rights",
+        "family loyalty",
+        "identity",
+        "American history"
+      ],
+      "setting": "Boston, Massachusetts, 1918–1919; also Tulsa, Oklahoma",
+      "comparable_books": [
+        "Live by Night - Dennis Lehane",
+        "World's Fair - E.L. Doctorow",
+        "The Plot Against America - Philip Roth"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical fiction",
+          "sweeping epic narrative",
+          "social history",
+          "morally complex characters",
+          "labor history",
+          "Boston setting"
+        ],
+        "negative": [
+          "readers wanting a fast-paced thriller",
+          "those who find long ensemble casts difficult"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "racial violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Invincible - Stanisław Lem": {
@@ -217017,53 +217330,96 @@
       "author": "Stanisław Lem",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A powerful interstellar cruiser lands on a dead planet to investigate the disappearance of a sister ship and discovers a form of mechanical 'evolution' that has produced an entity beyond human understanding or defeat.",
+      "tone": "cerebral, existential, austere",
+      "pacing": "Moderate",
+      "themes": [
+        "limits of human knowledge",
+        "evolution and intelligence",
+        "technology vs. nature",
+        "futility of exploration",
+        "survival"
+      ],
+      "setting": "The barren planet Regis III, far future",
+      "comparable_books": [
+        "Solaris - Stanisław Lem",
+        "Blindsight - Peter Watts",
+        "Annihilation - Jeff VanderMeer"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "philosophical SF",
+          "hard SF",
+          "first contact",
+          "Lem fans",
+          "alien intelligence that defies comprehension",
+          "existentialist themes"
+        ],
+        "negative": [
+          "readers wanting character-driven emotional narrative",
+          "those who prefer fast-paced adventure SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Ararat - Christopher Golden": {
       "title": "Ararat",
       "author": "Christopher Golden",
       "series": "Ben Walker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Horror",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When adventurers discover a massive cave on Mount Ararat containing what may be Noah's Ark — and inside it, a coffin holding a twisted, horned corpse — a blizzard traps the expedition team with an awakening demonic force.",
+      "tone": "claustrophobic, tense, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "religion vs. science",
+        "evil and possession",
+        "isolation",
+        "archaeology and discovery",
+        "faith"
+      ],
+      "setting": "Mount Ararat, Turkey, contemporary; snowbound cave high-altitude environment",
+      "comparable_books": [
+        "The Ruins - Scott Smith",
+        "The Terror - Dan Simmons",
+        "The Troop - Nick Cutter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "supernatural horror",
+          "claustrophobic thriller",
+          "archaeological horror",
+          "Bram Stoker Award winners",
+          "The Thing fans",
+          "fast-paced horror"
+        ],
+        "negative": [
+          "readers sensitive to graphic violence and possession horror",
+          "those wanting literary or quiet horror"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Crusaders - Dan Jones": {
@@ -217071,26 +217427,48 @@
       "author": "Dan Jones",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A sweeping, character-driven history of the Crusades spanning the eighth to the fifteenth centuries, told through intimate portraits of individuals on all sides — Christian and Muslim, king and slave — revealing a story of faith, conquest, and complicated coexistence.",
+      "tone": "vivid, propulsive, pluralist",
+      "pacing": "Moderate",
+      "themes": [
+        "religion and warfare",
+        "Christian-Muslim relations",
+        "power and gold",
+        "medieval society",
+        "cultural exchange",
+        "legacy of violence"
+      ],
+      "setting": "Medieval Europe, the Holy Land, Spain, North Africa, and the Baltic, 8th–15th centuries",
+      "comparable_books": [
+        "The Templars - Dan Jones",
+        "Holy War - Karen Armstrong",
+        "God's War - Christopher Tyerman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "popular narrative history",
+          "medieval history",
+          "character portraits in nonfiction",
+          "multi-perspective history",
+          "readable scholarship"
+        ],
+        "negative": [
+          "academic historians seeking footnote-heavy analysis",
+          "those wanting a single Crusade in depth"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Dan Jones narrates his own audiobooks with a natural, engaging delivery that significantly enhances the experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mexican Gothic - Silvia Moreno-Garcia": {
@@ -217098,26 +217476,50 @@
       "author": "Silvia Moreno-Garcia",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Gothic Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1950s Mexico, glamorous socialite Noemí Taboada travels to a crumbling mansion in the countryside to rescue her cousin from a mysterious illness and a sinister English family, uncovering a dark legacy of eugenics and fungal horror.",
+      "tone": "lush, atmospheric, unsettling",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "colonialism",
+        "eugenics and race",
+        "female agency",
+        "body horror",
+        "family legacy",
+        "Mexican history"
+      ],
+      "setting": "1950s Mexico; a decaying English-built mansion in the Mexican countryside",
+      "comparable_books": [
+        "Rebecca - Daphne du Maurier",
+        "The Haunting of Hill House - Shirley Jackson",
+        "Piranesi - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "gothic atmosphere",
+          "slow-burn horror",
+          "strong female protagonist",
+          "lush prose",
+          "colonial horror",
+          "historical setting"
+        ],
+        "negative": [
+          "readers wanting fast-paced horror",
+          "those sensitive to body horror and fungal/biological horror"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The atmospheric, gothic prose and 1950s Mexican setting are richly evoked in audio; widely praised audiobook production.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Exorcist - William Peter Blatty": {
@@ -217125,53 +217527,98 @@
       "author": "William Peter Blatty",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A twelve-year-old girl in Washington D.C. becomes increasingly and terrifyingly possessed by a demonic entity, and her desperate mother turns to two priests — one a psychiatrist losing his faith — for help.",
+      "tone": "terrifying, theologically earnest, relentless",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "faith and doubt",
+        "good vs. evil",
+        "possession",
+        "motherhood",
+        "sacrifice",
+        "the nature of evil"
+      ],
+      "setting": "Washington D.C., 1970s; also Iraq in the prologue",
+      "comparable_books": [
+        "Rosemary's Baby - Ira Levin",
+        "The Haunting of Hill House - Shirley Jackson",
+        "Beloved - Toni Morrison"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic horror",
+          "theological horror",
+          "faith and doubt themes",
+          "literary horror",
+          "intense and disturbing content"
+        ],
+        "negative": [
+          "readers sensitive to extreme content involving children",
+          "those who dislike overt religious themes in fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Navigator's Children - Tad Williams": {
       "title": "The Navigator's Children",
       "author": "Tad Williams",
       "series": "The Last King of Osten Ard",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The epic conclusion to The Last King of Osten Ard: as the Norns besiege the Hayholt and their deathless queen reaches for a fateful valley, Simon, Miriamele, and their allies race to stop an ancient secret from destroying everything they have built.",
+      "tone": "sweeping, melancholic, epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "legacy and memory",
+        "war and sacrifice",
+        "love across divides",
+        "mortality",
+        "the cost of power",
+        "found family"
+      ],
+      "setting": "The world of Osten Ard — a richly detailed secondary-world high fantasy setting, sequel-era",
+      "comparable_books": [
+        "The Witchwood Crown - Tad Williams",
+        "The Lord of the Rings - J.R.R. Tolkien",
+        "A Memory of Light - Robert Jordan & Brandon Sanderson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy",
+          "series conclusions",
+          "Tolkien-influenced worldbuilding",
+          "multi-POV ensemble casts",
+          "emotionally resonant endings"
+        ],
+        "negative": [
+          "readers new to Osten Ard who haven't read prior books",
+          "those who find 700+ page conclusions intimidating"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lincoln in the Bardo - George Saunders": {
