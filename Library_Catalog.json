@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4152,
-  "total_pending": 448,
+  "total_catalogued": 4172,
+  "total_pending": 428,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -225310,216 +225310,395 @@
       "title": "Dark State",
       "author": "Charles Stross",
       "series": "Empire Games",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In an alternate-timeline cold war between parallel versions of America, worldwalker Rita Douglas is caught between competing intelligence agencies while her mother Miriam Bernstein navigates treacherous politics in the New American Commonwealth. Espionage, parallel-world intrigue, and escalating inter-timeline tensions drive this second volume of the trilogy.",
+      "tone": "propulsive, cerebral, politically tense",
+      "pacing": "Fast",
+      "themes": [
+        "parallel worlds",
+        "cold war",
+        "espionage",
+        "identity",
+        "political power"
+      ],
+      "setting": "Near-future USA and an alternate-history Commonwealth of America, 2020s",
+      "comparable_books": [
+        "Empire Games - Charles Stross",
+        "The Yiddish Policemen's Union - Michael Chabon",
+        "The Quantum Spy - David Ignatius"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "techno-thriller",
+          "complex world-building",
+          "political intrigue",
+          "inter-dimensional espionage"
+        ],
+        "negative": [
+          "readers wanting standalone stories",
+          "slow burn preferred",
+          "low-tech settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Empire Games - Charles Stross": {
       "title": "Empire Games",
       "author": "Charles Stross",
       "series": "Empire Games",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in the universe of Stross's Merchant Princes series, Rita Douglas — a young woman with the rare ability to walk between parallel timelines — is recruited by US intelligence to spy on the New American Commonwealth, a parallel-world superpower on the brink of conflict with her own America. A techno-thriller blending espionage, alternate history, and high-stakes politics.",
+      "tone": "propulsive, cerebral, politically tense",
+      "pacing": "Fast",
+      "themes": [
+        "parallel worlds",
+        "espionage",
+        "cold war",
+        "identity",
+        "alternate history"
+      ],
+      "setting": "Near-future USA and an alternate-history Commonwealth of America, 2020s",
+      "comparable_books": [
+        "Dark State - Charles Stross",
+        "The Merchant Princes - Charles Stross",
+        "Declare - Tim Powers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "techno-thriller",
+          "inter-dimensional espionage",
+          "complex world-building",
+          "political intrigue"
+        ],
+        "negative": [
+          "readers wanting standalone stories",
+          "slow meditative pacing",
+          "low-tech settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Combat Monsters: Untold Tales of World War II - Tanya Huff & Peter Clines & Jonathan Maberry & David Mack & Jeremy Robinson & Scott Sigler & Catherine Stine & Harry Turtledove & Jane Yolen": {
       "title": "Combat Monsters: Untold Tales of World War II",
-      "author": "Tanya Huff & Peter Clines & Jonathan Maberry & David Mack & Jeremy Robinson & Scott Sigler & Catherine Stine & Harry Turtledove & Jane Yolen",
+      "author": "Henry Herz (ed.) with Tanya Huff, Peter Clines, Jonathan Maberry, David Mack, Jeremy Robinson, Scott Sigler, Catherine Stine, Harry Turtledove, Jane Yolen, and others",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Alternate History",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An anthology of twenty stories and two poems by twenty award-winning speculative fiction authors, each offering an alternate-history spin on World War II in which mythological and fantastical monsters — dragons, vampires, mermaids, kaiju, and more — secretly intervene in real historical battles across all theatres of the war.",
+      "tone": "varied, action-packed, darkly playful, horrific",
+      "pacing": "Fast",
+      "themes": [
+        "war",
+        "myth and history",
+        "alternate history",
+        "monsters",
+        "the horror of conflict"
+      ],
+      "setting": "Real WWII battlefields and locations worldwide, 1939–1945, with fantastical elements",
+      "comparable_books": [
+        "Weird War Tales (anthology)",
+        "Old Venus - George R.R. Martin & Gardner Dozois (eds.)",
+        "Operation: Otherworld - Jonathan Maberry & Bryan Thomas Schmidt (eds.)"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short story collections",
+          "alternate history",
+          "military horror",
+          "monster fiction",
+          "WWII history buffs who enjoy fantasy twists"
+        ],
+        "negative": [
+          "readers wanting a single continuous narrative",
+          "hard historical realism only",
+          "no taste for supernatural fiction"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Kushiel's Avatar - Jacqueline Carey": {
       "title": "Kushiel's Avatar",
       "author": "Jacqueline Carey",
       "series": "Phèdre's Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of Phèdre's Trilogy follows the anguissette Phèdre nó Delaunay as she undertakes a harrowing journey to the edges of the known world — and beyond — to fulfill a divine promise and rescue her childhood friend Hyacinthe from an ancient curse. The book is the darkest and most mythologically expansive entry in the trilogy.",
+      "tone": "lush, lyrical, emotionally harrowing, mythologically grand",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "love and sacrifice",
+        "divine destiny",
+        "slavery and freedom",
+        "faith and redemption",
+        "the nature of suffering"
+      ],
+      "setting": "A richly imagined alternate-medieval Europe and Middle East, with secondary-world fantasy geography",
+      "comparable_books": [
+        "Kushiel's Dart - Jacqueline Carey",
+        "The Name of the Wind - Patrick Rothfuss",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lush prose",
+          "morally complex protagonist",
+          "BDSM themes handled thoughtfully",
+          "epic fantasy",
+          "political intrigue",
+          "romance-heavy"
+        ],
+        "negative": [
+          "readers averse to explicit sexual content",
+          "preference for fast pacing",
+          "grimdark-averse readers who also dislike mature content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Simon Vance's narration is widely praised as definitive for this series; the lyrical prose translates exceptionally well to audio.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence",
+        "torture"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Mouthful of Dust - Nghi Vo": {
       "title": "A Mouthful of Dust",
       "author": "Nghi Vo",
       "series": "The Singing Hills Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Wandering Cleric Chih and their hoopoe companion Almost Brilliant arrive in the river town of Baolin to investigate stories of a legendary famine, only to be trapped in the mansion of a sinister magistrate while uncovering the terrible secrets of what happened when starvation stalked the land — and the monstrous things that hunger drove people to do.",
+      "tone": "dark, lyrical, unsettling, fable-like",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "hunger and survival",
+        "storytelling and memory",
+        "power and complicity",
+        "famine",
+        "the nature of monstrosity"
+      ],
+      "setting": "A secondary world inspired by imperial China; the river town of Baolin",
+      "comparable_books": [
+        "The Empress of Salt and Fortune - Nghi Vo",
+        "A Psalm for the Wild-Built - Becky Chambers",
+        "What Moves the Dead - T. Kingfisher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical prose",
+          "novella format",
+          "East Asian-inspired fantasy",
+          "standalone-friendly series",
+          "dark fairy-tale atmosphere",
+          "queer protagonists"
+        ],
+        "negative": [
+          "readers averse to body horror or cannibalism themes",
+          "wanting action-heavy plots",
+          "preferring long-form novels"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Singing Hills Cycle novellas are widely praised in audio format; Vo's lyrical prose and the fable-like structure are particularly well-suited to narration.",
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Comanche Moon - Larry McMurtry": {
       "title": "Comanche Moon",
       "author": "Larry McMurtry",
       "series": "Lonesome Dove",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 (chronological); Book 4 (publication order)",
+      "genre": "Western",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Texas Rangers Augustus McCrae and Woodrow Call, now in their middle years, pursue Comanche war chief Buffalo Hump and a brutal Mexican bandit king across the frontier, while navigating the personal loves and losses that will shape the men we meet in Lonesome Dove. The novel bridges the gap between Dead Man's Walk and the Pulitzer Prize-winning classic.",
+      "tone": "elegiac, sweeping, bittersweet, propulsive",
+      "pacing": "Moderate",
+      "themes": [
+        "frontier life",
+        "friendship and loyalty",
+        "the end of an era",
+        "Comanche culture",
+        "love and loss",
+        "duty vs. feeling"
+      ],
+      "setting": "Texas frontier, roughly 1850s–1860s, American West",
+      "comparable_books": [
+        "Lonesome Dove - Larry McMurtry",
+        "Dead Man's Walk - Larry McMurtry",
+        "Blood Meridian - Cormac McCarthy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "character-driven narrative",
+          "American West setting",
+          "epic scope",
+          "morally nuanced characters",
+          "bittersweet tone"
+        ],
+        "negative": [
+          "readers averse to depictions of frontier violence",
+          "wanting linear publication-order reading",
+          "preferring fast pacing"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Lonesome Dove audiobooks with Lee Horsley are acclaimed; McMurtry's expansive, character-rich prose translates beautifully to the audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Odessa File - Frederick Forsyth": {
       "title": "The Odessa File",
       "author": "Frederick Forsyth",
-      "series": "Odessa",
+      "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1963 West Germany, journalist Peter Miller stumbles upon the diary of a Holocaust survivor and becomes obsessed with tracking down Eduard Roschmann, a former SS commander known as the 'Butcher of Riga', uncovering the secret network ODESSA that protects former Nazis. A meticulously researched procedural thriller that blends real history with fiction.",
+      "tone": "taut, documentary-style, cold, relentless",
+      "pacing": "Moderate",
+      "themes": [
+        "Nazi war crimes",
+        "justice and accountability",
+        "investigative obsession",
+        "post-war Germany",
+        "the banality of evil"
+      ],
+      "setting": "West Germany, 1963; flashbacks to WWII-era Latvia",
+      "comparable_books": [
+        "The Day of the Jackal - Frederick Forsyth",
+        "The Boys from Brazil - Ira Levin",
+        "SS-GB - Len Deighton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "procedural thrillers",
+          "WWII and post-war history",
+          "real-world research woven into fiction",
+          "morally serious subject matter",
+          "cat-and-mouse plots"
+        ],
+        "negative": [
+          "readers wanting emotional warmth or romance",
+          "those averse to WWII/Holocaust subject matter",
+          "preferring character-depth over plot mechanics"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Man in the Queue - Josephine Tey": {
       "title": "The Man in the Queue",
       "author": "Josephine Tey",
       "series": "Inspector Alan Grant",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Inspector Alan Grant of Scotland Yard investigates the stabbing death of an unidentified man found standing in a theatre queue in London, a case that leads him on an unlikely chase across Britain and into complex questions of identity, guilt, and circumstantial evidence.",
+      "tone": "wry, elegant, classically British",
+      "pacing": "Moderate",
+      "themes": [
+        "identity",
+        "circumstantial justice",
+        "obsession",
+        "class and society",
+        "the fallibility of evidence"
+      ],
+      "setting": "London and rural Britain, 1920s",
+      "comparable_books": [
+        "The Daughter of Time - Josephine Tey",
+        "Gaudy Night - Dorothy L. Sayers",
+        "Death at the Bar - Ngaio Marsh"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Golden Age detective fiction",
+          "British procedurals",
+          "cerebral mysteries",
+          "classic crime fans"
+        ],
+        "negative": [
+          "readers wanting graphic crime fiction",
+          "fast-paced thrillers",
+          "contemporary settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Final Score - Don Winslow": {
@@ -225527,80 +225706,146 @@
       "author": "Don Winslow",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Crime Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Six short novels spanning the full spectrum of American crime fiction — from an aging thief's impossible casino heist to a devoted family man's catastrophic one-punch mistake that sends him to prison — united by Winslow's signature themes of loyalty, consequence, and the moral reckoning that follows every bad choice.",
+      "tone": "darkly comic, punchy, cinematic, morally sharp",
+      "pacing": "Fast",
+      "themes": [
+        "loyalty and betrayal",
+        "moral consequence",
+        "the American criminal class",
+        "family",
+        "survival"
+      ],
+      "setting": "Contemporary United States — California, Rhode Island, and elsewhere",
+      "comparable_books": [
+        "Broken - Don Winslow",
+        "City on Fire - Don Winslow",
+        "L.A. Confidential - James Ellroy"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "American crime fiction",
+          "sharp dialogue",
+          "morally grey characters",
+          "novella/short story format",
+          "cinematic prose"
+        ],
+        "negative": [
+          "readers wanting a single long narrative",
+          "those preferring British crime traditions",
+          "cozy mystery fans"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Winslow's terse, dialogue-heavy prose and cinematic pacing make this collection particularly well-suited to audio performance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Invisible Sun - Charles Stross": {
       "title": "Invisible Sun",
       "author": "Charles Stross",
       "series": "Empire Games",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Empire Games trilogy sees inter-timeline tensions erupt as a coup goes awry, a renegade British monarch flees through Berlin, and robotic alien invaders pour through a wormhole into the USA — forcing worldwalker Rita and her mother Miriam Bernstein to navigate catastrophe across multiple parallel timelines.",
+      "tone": "propulsive, cerebral, high-stakes, darkly comic",
+      "pacing": "Fast",
+      "themes": [
+        "parallel worlds",
+        "escalation of conflict",
+        "political power",
+        "alien threat",
+        "espionage"
+      ],
+      "setting": "Multiple parallel versions of America and Europe, near-future 2020s",
+      "comparable_books": [
+        "Dark State - Charles Stross",
+        "Empire Games - Charles Stross",
+        "The Yiddish Policemen's Union - Michael Chabon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "alternate history",
+          "techno-thriller",
+          "big ideas SF",
+          "complex world-building",
+          "inter-dimensional espionage"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers preferring slow burn",
+          "low-tech settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Lion Hearts - Dan Jones": {
       "title": "Lion Hearts",
       "author": "Dan Jones",
       "series": "Essex Dogs Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1350, with the Black Death having ravaged England, the scattered Essex Dogs are reluctantly reunited when a Spanish naval threat forces them back into conflict — leading to the climactic Battle of Winchelsea in this rousing, blood-soaked finale to the trilogy set against the Hundred Years' War.",
+      "tone": "gritty, propulsive, darkly humorous, historically vivid",
+      "pacing": "Fast",
+      "themes": [
+        "brotherhood and loyalty",
+        "trauma and survival",
+        "the cost of war",
+        "the Hundred Years' War",
+        "Black Death aftermath"
+      ],
+      "setting": "England and the seas off Winchelsea, 1350; Hundred Years' War era",
+      "comparable_books": [
+        "Essex Dogs - Dan Jones",
+        "Wolves of Winter - Dan Jones",
+        "The Last Kingdom - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "medieval historical fiction",
+          "band of brothers narrative",
+          "action-driven pacing",
+          "impeccably researched",
+          "morally complex soldiers"
+        ],
+        "negative": [
+          "readers wanting courtly or romantic medieval fiction",
+          "those averse to graphic battle violence",
+          "preferring slow character studies"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Art Thief: A True Story of Love, Crime, and a Dangerous Obsession - Michael Finkel": {
@@ -225608,107 +225853,197 @@
       "author": "Michael Finkel",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "True Crime",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The true story of Stéphane Breitwieser, who over a decade stole more than 200 works of art from museums across Europe with his girlfriend Anne-Catherine Kleinklaus — not for money, but for a consuming obsession with beauty — in what became the largest art theft in history. Finkel weaves their relationship, the crimes, and their eventual unravelling into a gripping narrative.",
+      "tone": "propulsive, intimate, psychologically probing",
+      "pacing": "Fast",
+      "themes": [
+        "obsession and desire",
+        "beauty and possession",
+        "crime and consequence",
+        "love and complicity",
+        "the art world"
+      ],
+      "setting": "Europe (France, Switzerland, Germany, Austria), 1990s–early 2000s",
+      "comparable_books": [
+        "The Feather Thief - Kirk Wallace Johnson",
+        "The Last Lecture - Randy Pausch",
+        "The Stranger in the Woods - Michael Finkel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "true crime",
+          "art world settings",
+          "psychological character studies",
+          "propulsive narrative non-fiction",
+          "European settings"
+        ],
+        "negative": [
+          "readers wanting fictional narratives",
+          "those uninterested in art or museum culture"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Ninth Rain - Jen Williams": {
       "title": "The Ninth Rain",
       "author": "Jen Williams",
       "series": "The Winnowing Flame Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A fallen world scarred by eight prior apocalyptic invasions by alien parasites called the Jure'lia faces the threat of a ninth, as a disgraced scholar, a half-human war-beast, and an exiled elf-like Ebooran seek answers in the ruins of a lost civilisation. A sweeping, inventive epic fantasy that blends horror, adventure, and found family.",
+      "tone": "adventurous, darkly imaginative, warm-hearted despite its grimdark backdrop",
+      "pacing": "Moderate",
+      "themes": [
+        "found family",
+        "apocalypse and survival",
+        "trauma and redemption",
+        "the cost of war",
+        "ancient civilisations"
+      ],
+      "setting": "A secondary world called Sarn, post-multiple-apocalyptic, with ruins and living war-beasts",
+      "comparable_books": [
+        "The Bitter Twins - Jen Williams",
+        "The Bear and the Serpent - Adrian Tchaikovsky",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "inventive world-building",
+          "morally complex characters",
+          "epic fantasy",
+          "queer characters",
+          "body horror elements"
+        ],
+        "negative": [
+          "readers wanting grimdark-free fantasy",
+          "those averse to alien/horror elements",
+          "preferring minimalist prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Bitter Twins - Jen Williams": {
       "title": "The Bitter Twins",
       "author": "Jen Williams",
       "series": "The Winnowing Flame Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With the Jure'lia re-emerging and the Eborans weakened, Vintage, Tor, and Noon must seek help from the scattered Ebooran war-beasts while navigating treachery and sacrifice — expanding the world considerably as the stakes of the ninth rain grow catastrophically clear.",
+      "tone": "adventurous, emotionally intense, darkly imaginative",
+      "pacing": "Moderate",
+      "themes": [
+        "found family",
+        "sacrifice and loyalty",
+        "the horror of war",
+        "identity and belonging",
+        "ancient knowledge vs. present need"
+      ],
+      "setting": "The secondary world of Sarn; wider geographical exploration than Book 1",
+      "comparable_books": [
+        "The Ninth Rain - Jen Williams",
+        "The Poison Song - Jen Williams",
+        "The Bear and the Serpent - Adrian Tchaikovsky"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "epic fantasy",
+          "inventive world-building",
+          "queer characters",
+          "escalating stakes"
+        ],
+        "negative": [
+          "standalone readers",
+          "those averse to body horror",
+          "wanting grimdark-free fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Poison Song - Jen Williams": {
       "title": "The Poison Song",
       "author": "Jen Williams",
       "series": "The Winnowing Flame Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Winnowing Flame Trilogy brings the war against the Jure'lia to its devastating and emotional climax as Vintage, Tor, Noon, and their war-beast companions face the full force of the alien horde, with the future of all life on Sarn hanging in the balance.",
+      "tone": "emotionally resonant, dark, bittersweet, triumphant",
+      "pacing": "Fast",
+      "themes": [
+        "sacrifice and loss",
+        "found family",
+        "the end of an era",
+        "courage in the face of annihilation",
+        "what we fight for"
+      ],
+      "setting": "The secondary world of Sarn, during a final apocalyptic confrontation",
+      "comparable_books": [
+        "The Bitter Twins - Jen Williams",
+        "The Ninth Rain - Jen Williams",
+        "A Memory Called Empire - Arkady Martine"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family payoff",
+          "epic fantasy conclusions",
+          "emotional depth",
+          "queer characters",
+          "inventive world-building"
+        ],
+        "negative": [
+          "standalone readers",
+          "those averse to bleak or costly endings",
+          "body horror averse readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "body horror",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Automatic Noodle - Annalee Newitz": {
@@ -225716,134 +226051,242 @@
       "author": "Annalee Newitz",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future San Francisco recovering from a war between California and the US, a crew of deactivated food-service robots comes back online in an abandoned ghost kitchen and opens their own noodle restaurant — only to face a targeted wave of one-star review-bombing that threatens their existence and their budding community.",
+      "tone": "cozy, warm-hearted, satirical, hopepunk",
+      "pacing": "Moderate",
+      "themes": [
+        "found family",
+        "labor rights and personhood",
+        "community and belonging",
+        "online culture and disinformation",
+        "food as connection"
+      ],
+      "setting": "Near-future San Francisco, California as an independent nation, circa 2060s",
+      "comparable_books": [
+        "A Psalm for the Wild-Built - Becky Chambers",
+        "Legends & Lattes - Travis Baldree",
+        "The Terraformers - Annalee Newitz"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cozy science fiction",
+          "hopepunk",
+          "found family",
+          "robot/AI characters",
+          "food and community",
+          "satire of tech culture"
+        ],
+        "negative": [
+          "readers wanting high stakes or grimdark",
+          "those preferring long-form novels",
+          "hard SF readers wanting technical rigour"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Widely praised in audio format; the novella's warmth, food descriptions, and ensemble cast of bot characters translate exceptionally well to narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Destiny's Conflict - Janny Wurts": {
       "title": "Destiny's Conflict",
       "author": "Janny Wurts",
       "series": "Wars of Light and Shadow",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10 (Arc IV: Sword of the Canon, Book 2)",
+      "genre": "Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The penultimate volume of the Wars of Light and Shadow finds Arithon, Master of Shadow, hunted and entangled in ancient perils as he seeks to recover his obscured past, while Elaira, Dakar, and new companion Tarens each face their own devastating trials in a story that delivers the climactic finale of Arc IV, the Sword of the Canon.",
+      "tone": "dense, lyrical, morally complex, epic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "fate and free will",
+        "light vs. shadow",
+        "moral ambiguity",
+        "sacrifice",
+        "the weight of prophecy",
+        "redemption"
+      ],
+      "setting": "The secondary world of Athera, a richly built high-fantasy world spanning multiple kingdoms",
+      "comparable_books": [
+        "Initiate's Trial - Janny Wurts",
+        "The Curse of the Mistwraith - Janny Wurts",
+        "The Wheel of Time - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "deep epic fantasy",
+          "lyrical and dense prose",
+          "morally ambiguous protagonists",
+          "intricate world-building",
+          "series readers who love investment payoff"
+        ],
+        "negative": [
+          "series newcomers — absolutely must start at Book 1",
+          "readers wanting fast pacing",
+          "those preferring clear-cut good vs. evil narratives"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ghost Fire - Wilbur Smith & Tom Harper": {
       "title": "Ghost Fire",
       "author": "Wilbur Smith & Tom Harper",
-      "series": "Birds of Prey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Courtney Series (Birds of Prey / Tiger's Prey sequence)",
+      "series_position": "Book 19 (Courtney overall); Book 2 (Tiger's Prey sequence)",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1754, orphaned Courtney siblings Theo and Connie are torn apart by the tragic death of their parents — Theo joins the British in the French and Indian War seeking redemption, while Connie makes her way to France and the dangerous world of high society, as their destinies converge on the battlefields of North America.",
+      "tone": "sweeping, action-driven, melodramatic, adventure-focused",
+      "pacing": "Fast",
+      "themes": [
+        "family and separation",
+        "honour and redemption",
+        "war and survival",
+        "betrayal",
+        "the colonial frontier"
+      ],
+      "setting": "India, France, and North America during the French and Indian War, 1754",
+      "comparable_books": [
+        "The Tiger's Prey - Wilbur Smith & Tom Harper",
+        "Storm Tide - Wilbur Smith & Tom Harper",
+        "Sharpe's Tiger - Bernard Cornwell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "adventure historical fiction",
+          "epic family sagas",
+          "military history",
+          "sweeping plots",
+          "multiple POV narratives"
+        ],
+        "negative": [
+          "readers wanting literary realism",
+          "those averse to melodrama",
+          "preferring standalone novels"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Proving Ground - Michael Connelly": {
       "title": "The Proving Ground",
       "author": "Michael Connelly",
       "series": "Mickey Haller",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mickey Haller — the Lincoln Lawyer — pivots from criminal defense to public interest litigation, taking on a civil suit against a powerful AI tech company whose chatbot allegedly manipulated a teenage boy into murdering his ex-girlfriend, in a ripped-from-the-headlines legal thriller about the unregulated dangers of artificial intelligence.",
+      "tone": "propulsive, topical, morally urgent, sharp",
+      "pacing": "Fast",
+      "themes": [
+        "AI accountability",
+        "justice for victims",
+        "corporate power",
+        "the law vs. morality",
+        "adolescent male radicalization"
+      ],
+      "setting": "Contemporary Los Angeles, 2025",
+      "comparable_books": [
+        "The Lincoln Lawyer - Michael Connelly",
+        "Resurrection Walk - Michael Connelly",
+        "The Rooster Bar - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "legal thrillers",
+          "ripped-from-the-headlines fiction",
+          "propulsive plotting",
+          "courtroom drama",
+          "long-running series fans"
+        ],
+        "negative": [
+          "readers wanting a first introduction to the series",
+          "those seeking slow character studies",
+          "readers averse to AI-themed fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Michael Connelly novels are consistently praised in audio; the courtroom drama and sharp dialogue make this especially suited to listening.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Shards of a Broken Crown - Raymond E. Feist": {
       "title": "Shards of a Broken Crown",
       "author": "Raymond E. Feist",
       "series": "The Serpentwar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Serpentwar Saga sees the Kingdom of the Isles and its allies struggle to rebuild in the aftermath of the devastating Serpentwar, while remnant invader forces and internal treachery threaten to plunge the realm back into chaos. Jimmy the Hand's son Dash and his brother Jimmie take centre stage as a new generation steps up.",
+      "tone": "action-driven, epic, accessible, adventure-focused",
+      "pacing": "Fast",
+      "themes": [
+        "rebuilding after war",
+        "generational legacy",
+        "loyalty and duty",
+        "political intrigue",
+        "the cost of victory"
+      ],
+      "setting": "The Kingdom of the Isles and the world of Midkemia, following the Serpentwar",
+      "comparable_books": [
+        "Rise of a Merchant Prince - Raymond E. Feist",
+        "Rage of a Demon King - Raymond E. Feist",
+        "The Name of the Wind - Patrick Rothfuss"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "classic epic fantasy",
+          "long-running series fans",
+          "adventure-driven plotting",
+          "Midkemia world-building devotees"
+        ],
+        "negative": [
+          "series newcomers — this is deep in a long series",
+          "readers wanting literary prose",
+          "preferring standalone fantasies"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rise of a Merchant Prince - Raymond E. Feist": {
