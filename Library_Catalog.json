@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4491,
-  "total_pending": 109,
+  "total_catalogued": 4511,
+  "total_pending": 89,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -241716,243 +241716,430 @@
       "title": "When Jackals Storm the Walls",
       "author": "Bradley P. Beaulieu",
       "series": "The Song of the Shattered Sands",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the desert city of Sharakhai, blood mage Queen Meryam consolidates her grip on power while warrior Çeda seeks a reborn goddess whose resurrection may be the only hope of saving the city — and the world. All the series' fractured factions are finally forced into uneasy alliance.",
+      "tone": "epic, mythic, action-packed, intricate",
+      "pacing": "Moderate",
+      "themes": [
+        "political power",
+        "gods and mortals",
+        "sacrifice",
+        "alliances of necessity",
+        "identity"
+      ],
+      "setting": "The desert city of Sharakhai and surrounding Shangazi desert; inspired by Arabian Nights",
+      "comparable_books": [
+        "Twelve Kings in Sharakhai - Bradley P. Beaulieu",
+        "The Name of the Wind - Patrick Rothfuss",
+        "The City of Brass - S. A. Chakraborty"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arabian Nights-inspired setting",
+          "multi-POV epic fantasy",
+          "strong female protagonist",
+          "rich worldbuilding",
+          "political intrigue",
+          "gods and mythology"
+        ],
+        "negative": [
+          "very large cast, easy to lose track",
+          "requires reading prior books",
+          "not entry-point friendly"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Dragon of Black Glass - James Rollins": {
       "title": "A Dragon of Black Glass",
       "author": "James Rollins",
       "series": "Moonfall",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "With moonfall looming, Nyx and her companions race across sunblasted glass deserts in search of an ancient weapon, while an ancient bronze war-machine is awakened with a single purpose: to end all life on Urth. Prince Kanthe meanwhile navigates a world-spanning war as consort to a new Empress.",
+      "tone": "propulsive, adventurous, high-stakes",
+      "pacing": "Fast",
+      "themes": [
+        "apocalypse",
+        "prophecy",
+        "sacrifice",
+        "power",
+        "survival"
+      ],
+      "setting": "The world of Urth — a tidally locked planet blending science-fantasy; vast deserts, frozen wastes, warring empires",
+      "comparable_books": [
+        "The Starless Crown - James Rollins",
+        "The Eye of the World - Robert Jordan",
+        "Gardens of the Moon - Steven Erikson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced action",
+          "epic multi-POV fantasy",
+          "science-fantasy blend",
+          "ensemble cast",
+          "world-ending stakes"
+        ],
+        "negative": [
+          "very large cast of characters",
+          "requires reading prior books",
+          "exposition lag noted by reviewers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Cradle of Ice - James Rollins": {
       "title": "The Cradle of Ice",
       "author": "James Rollins",
       "series": "Moonfall",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The fellowship formed to stop the apocalyptic moonfall must split up, some venturing into vast frozen wastes and others to a distant imperial capital, as hostile armies close around them and alliances are forged in blood and heartbreak. Time is running out.",
+      "tone": "adventurous, propulsive, cinematic",
+      "pacing": "Fast",
+      "themes": [
+        "apocalypse",
+        "fellowship",
+        "sacrifice",
+        "prophecy",
+        "betrayal"
+      ],
+      "setting": "The world of Urth — icy regions, sprawling capitals, a tidally locked science-fantasy world",
+      "comparable_books": [
+        "The Starless Crown - James Rollins",
+        "A Dragon of Black Glass - James Rollins",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fast-paced action fantasy",
+          "ensemble fellowship quest",
+          "richly detailed worldbuilding",
+          "science-fantasy blend"
+        ],
+        "negative": [
+          "very large character roster",
+          "requires reading Book 1",
+          "some reviewer frustration with pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Starless Crown - James Rollins": {
       "title": "The Starless Crown",
       "author": "James Rollins",
       "series": "Moonfall",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On a tidally locked world facing apocalyptic moonfall, a young woman named Nyx with a rare gift bonds with a winged creature and joins a ragtag fellowship — soldier, thief, and lost prince — racing to uncover the truth behind the prophecy before the moon destroys their world.",
+      "tone": "adventurous, cinematic, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "prophecy",
+        "apocalypse",
+        "found family",
+        "science vs. magic",
+        "survival"
+      ],
+      "setting": "Urth — a science-fantasy world tidally locked to its sun, spanning frozen wastes, sun-blasted deserts, and feudal empires",
+      "comparable_books": [
+        "The Eye of the World - Robert Jordan",
+        "The Blade Itself - Joe Abercrombie",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "science-fantasy blend",
+          "multi-POV ensemble cast",
+          "propulsive quest narrative",
+          "richly imagined world",
+          "winged creatures"
+        ],
+        "negative": [
+          "large cast can be hard to track",
+          "thriller author's debut in fantasy — style shift noted"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Book of Fallen Leaves - A. S. Tamaki": {
       "title": "The Book of Fallen Leaves",
       "author": "A. S. Tamaki",
       "series": "The Autumn Empire",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An exiled prince determined to restore his clan's honor and a low-born girl marked by the gods are swept into a civil war tearing apart a feudal Japanese-inspired empire, as vengeful demons rise and political betrayals multiply. A debut inspired by ancient samurai sagas.",
+      "tone": "lyrical, epic, brutal, atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "honor and vengeance",
+        "civil war",
+        "fate and free will",
+        "class and power",
+        "the cost of war"
+      ],
+      "setting": "A feudal Japan-inspired secondary world empire on the brink of civil war, suffused with gods and demons",
+      "comparable_books": [
+        "The Green Bone Saga - Fonda Lee",
+        "Shogun - James Clavell",
+        "Jade City - Fonda Lee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese mythology and feudal setting",
+          "morally grey characters",
+          "political intrigue",
+          "slow-burn epic",
+          "lyrical prose"
+        ],
+        "negative": [
+          "slow pacing early on",
+          "large faction cast can be confusing",
+          "graphic war violence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Steel Gods - Richard Swan": {
       "title": "Steel Gods",
       "author": "Richard Swan",
       "series": "The Great Silence",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "As a mind-plague of soul-devouring interdimensional beings spreads across the Empire of the Wolf, Ambassador Renata Rainer races to secure allies while Lieutenant Peter Kleist — slowly losing his humanity — returns to the haunted frontier, and a mad count raises an army of thralls to seize the capital.",
+      "tone": "grimdark, creeping horror, grim-grotesque",
+      "pacing": "Moderate",
+      "themes": [
+        "apocalypse",
+        "political power",
+        "the nature of the afterlife",
+        "humanity and transformation",
+        "institutional failure"
+      ],
+      "setting": "The Empire of the Wolf — a flintlock-era secondary world approximately two centuries after the events of the Empire of the Wolf trilogy",
+      "comparable_books": [
+        "Grave Empire - Richard Swan",
+        "The Justice of Kings - Richard Swan",
+        "Promise of Blood - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark flintlock fantasy",
+          "supernatural horror elements",
+          "body horror",
+          "political intrigue",
+          "naval adventure"
+        ],
+        "negative": [
+          "large multi-POV cast",
+          "benefits from reading prior trilogy",
+          "graphic body horror"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Incensed - Ed Lin": {
       "title": "Incensed",
       "author": "Ed Lin",
       "series": "Taipei Night Market",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "During Taipei's Mid-Autumn Festival, night-market food stall owner Jing-nan is coerced by his gangster uncle to babysit a rebellious teenage cousin — only to discover the girl is hiding a dangerous secret that draws him deep into family crime and Taiwanese politics.",
+      "tone": "darkly comic, atmospheric, wry",
+      "pacing": "Moderate",
+      "themes": [
+        "family loyalty",
+        "Taiwanese identity and politics",
+        "organized crime",
+        "cultural tradition"
+      ],
+      "setting": "Contemporary Taipei, Taiwan; the Shilin Night Market and surrounding city during the Mid-Autumn Festival",
+      "comparable_books": [
+        "Ghost Month - Ed Lin",
+        "99 Ways to Die - Ed Lin",
+        "The Devotion of Suspect X - Keigo Higashino"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "international crime fiction",
+          "strong sense of place",
+          "darkly comic voice",
+          "Taiwanese culture immersion",
+          "food detail"
+        ],
+        "negative": [
+          "lighter on plot than character",
+          "some reviewers found pacing episodic"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Gleanings - Neal Shusterman & David Yoon & Jarrod Shusterman & Joelle Shusterman & Michael H. Payne & Michelle Knowlden & Sofía Lapuente": {
       "title": "Gleanings",
       "author": "Neal Shusterman & David Yoon & Jarrod Shusterman & Joelle Shusterman & Michael H. Payne & Michelle Knowlden & Sofía Lapuente",
       "series": "Arc of a Scythe",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4 (anthology)",
+      "genre": "Science Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A multi-author anthology of short stories spanning the full timeline of the Arc of a Scythe universe, revealing origin stories for beloved scythes, glimpses of the post-Toll world, and new corners of the Scythedom — from darkly comic to genuinely chilling.",
+      "tone": "varied — darkly comic, eerie, contemplative",
+      "pacing": "Fast",
+      "themes": [
+        "mortality and immortality",
+        "power and responsibility",
+        "art and humanity",
+        "institutional corruption",
+        "identity"
+      ],
+      "setting": "The post-mortal Earth of the Arc of a Scythe universe, across multiple time periods and global locations",
+      "comparable_books": [
+        "Scythe - Neal Shusterman",
+        "Thunderhead - Neal Shusterman",
+        "The Toll - Neal Shusterman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arc of a Scythe fans",
+          "short story anthology",
+          "world-expansion",
+          "origin stories",
+          "collaborative fiction"
+        ],
+        "negative": [
+          "requires familiarity with the trilogy",
+          "uneven story quality across contributors",
+          "main characters largely absent"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Ghost Month - Ed Lin": {
       "title": "Ghost Month",
       "author": "Ed Lin",
       "series": "Taipei Night Market",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When night-market food stall owner Jing-nan learns that his childhood sweetheart has been murdered during Taiwan's superstitious Ghost Month, he is drawn into a web of underground politics, organized crime, and Taiwanese-Chinese tensions as he tries to uncover the truth.",
+      "tone": "darkly comic, atmospheric, wry",
+      "pacing": "Moderate",
+      "themes": [
+        "Taiwanese identity",
+        "grief and loss",
+        "organized crime",
+        "cultural superstition and tradition"
+      ],
+      "setting": "Contemporary Taipei, Taiwan; the Shilin Night Market during the annual Ghost Month festival",
+      "comparable_books": [
+        "Incensed - Ed Lin",
+        "99 Ways to Die - Ed Lin",
+        "The Devotion of Suspect X - Keigo Higashino"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "international crime fiction",
+          "vivid Taiwanese setting",
+          "darkly comic voice",
+          "food culture immersion",
+          "amateur sleuth"
+        ],
+        "negative": [
+          "more character-driven than plot-driven",
+          "light on traditional detective work"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Fingersmith - Sarah Waters": {
@@ -241960,53 +242147,94 @@
       "author": "Sarah Waters",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Victorian London, a young thief named Sue is recruited to assist in a con targeting a sheltered heiress — but as her deception deepens, she finds herself entangled in multiple layers of betrayal, identity, and forbidden love. A twisting neo-Victorian thriller full of shocking reversals.",
+      "tone": "gothic, propulsive, dark, atmospheric",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "deception and identity",
+        "class and gender",
+        "forbidden love",
+        "female agency",
+        "Victorian institutions"
+      ],
+      "setting": "Victorian England — London's criminal underworld and a remote country estate; mid-19th century",
+      "comparable_books": [
+        "Tipping the Velvet - Sarah Waters",
+        "The Crimson Petal and the White - Michel Faber",
+        "The Dress Lodger - Sheri Holman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unreliable narrator",
+          "plot twists",
+          "queer romance",
+          "Victorian Gothic atmosphere",
+          "morally complex characters"
+        ],
+        "negative": [
+          "slow opening sections",
+          "dark content including institutional abuse"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Dual-narrator structure and propulsive twists are exceptionally well-suited to audio performance.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Death Doesn't Forget - Ed Lin": {
       "title": "Death Doesn't Forget",
       "author": "Ed Lin",
       "series": "Taipei Night Market",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jing-nan, proprietor of the Unknown Pleasures night market stall, finds himself framed for the back-to-back murders of a lottery winner and a police captain during Taipei's Austronesian Cultural Festival, and must clear his name while navigating indigenous rights politics and his fraught relationship with Nancy.",
+      "tone": "darkly comic, mordant, socially aware",
+      "pacing": "Moderate",
+      "themes": [
+        "Taiwanese indigenous rights",
+        "political marginalization",
+        "justice",
+        "identity",
+        "community"
+      ],
+      "setting": "Contemporary Taipei, Taiwan; the Shilin Night Market and surrounding city during the Austronesian Cultural Festival",
+      "comparable_books": [
+        "Ghost Month - Ed Lin",
+        "Incensed - Ed Lin",
+        "99 Ways to Die - Ed Lin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "international crime fiction",
+          "Taiwanese culture immersion",
+          "social commentary",
+          "darkly comic voice",
+          "amateur sleuth"
+        ],
+        "negative": [
+          "can be read standalone but benefits from series context",
+          "picaresque structure over tight mystery"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Number Go Up: Inside Crypto's Wild Rise and Staggering Fall - Zeke Faux": {
@@ -242014,53 +242242,92 @@
       "author": "Zeke Faux",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Bloomberg journalist Zeke Faux embeds himself in the cryptocurrency world to investigate the characters and con-artistry behind crypto's spectacular boom and bust, from FTX's Sam Bankman-Fried to Tether's murky billions and a Cambodian scam-compound. A gonzo, darkly comic account of financial absurdity.",
+      "tone": "darkly comic, investigative, propulsive",
+      "pacing": "Fast",
+      "themes": [
+        "financial fraud",
+        "greed",
+        "technology and society",
+        "regulatory failure",
+        "human credulity"
+      ],
+      "setting": "Global — the Bahamas, Cambodia, El Salvador, Wall Street trading floors; 2021–2023",
+      "comparable_books": [
+        "Bad Blood - John Carreyrou",
+        "Empire of Pain - Patrick Radden Keefe",
+        "Going Infinite - Michael Lewis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "narrative non-fiction",
+          "financial crime",
+          "investigative journalism",
+          "darkly comic voice",
+          "fast-paced reporting"
+        ],
+        "negative": [
+          "readers wanting deep technical crypto analysis",
+          "those sympathetic to crypto"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Faux's first-person gonzo reporting style translates brilliantly to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Dark Arena: The Frenchman Returns - Jack Beaumont": {
       "title": "Dark Arena: The Frenchman Returns",
       "author": "Jack Beaumont",
       "series": "The Frenchman",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "DGSE operative Alec de Payns, still haunted by the events of The Frenchman, investigates a deadly conspiracy aligning the West against Russia — a trail that leads him to infiltrate a clandestine meeting of mercenaries and terrorists on a superyacht in the Mediterranean, with catastrophic consequences for Europe.",
+      "tone": "taut, authentic, methodical, chillingly plausible",
+      "pacing": "Moderate",
+      "themes": [
+        "espionage and tradecraft",
+        "loyalty and family",
+        "Russia-West tensions",
+        "moral cost of intelligence work",
+        "PTSD"
+      ],
+      "setting": "Contemporary Europe — Paris, the Mediterranean, pre-invasion Ukraine context; real-world geopolitical backdrop of early 2022",
+      "comparable_books": [
+        "The Frenchman - Jack Beaumont",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Red Sparrow - Jason Matthews"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "authentic insider espionage detail",
+          "real-world geopolitics",
+          "morally complex protagonist",
+          "spy thriller fans"
+        ],
+        "negative": [
+          "heavy jargon and tradecraft detail may alienate casual readers",
+          "methodical pacing not for action-first readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Black as Diamond - U. M. Agoawike": {
@@ -242068,26 +242335,49 @@
       "author": "U. M. Agoawike",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "needs_review",
+      "summary": "A cursed winged warrior named Asaru and a disgraced healer named Wren are magically bound together against their will, and must flee assassins while questing to find the Chronicler — the only one who can break the curse threatening to destroy Asaru's people and unravel the secrets of the world.",
+      "tone": "dark, lyrical, harrowing, found-family warmth",
+      "pacing": "Moderate",
+      "themes": [
+        "queer identity",
+        "found family",
+        "history and power",
+        "curses and redemption",
+        "colonial legacy"
+      ],
+      "setting": "A dark secondary-world fantasy setting with winged humanoid peoples, human realms, and intricate magic systems",
+      "comparable_books": [
+        "The Stardust Thief - Chelsea Abdullah",
+        "A Song of Legends Lost - M. H. Ayinde",
+        "The Bone Shard Daughter - Andrea Stewart"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "found family",
+          "queer romance",
+          "intensive worldbuilding",
+          "morally grey characters",
+          "debut dark fantasy"
+        ],
+        "negative": [
+          "dense worldbuilding terminology without index",
+          "cliffhanger ending — sequel status uncertain",
+          "some pacing issues noted"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "suicide"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "A Thousand Ships - Natalie Haynes": {
@@ -242095,26 +242385,48 @@
       "author": "Natalie Haynes",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A feminist retelling of the Trojan War told from the perspectives of the women — goddesses, queens, soldiers' wives, and slaves — who shaped, suffered, and were erased from the story. Muse Calliope insists that a war cannot be about one man alone.",
+      "tone": "sharp, elegiac, feminist, witty",
+      "pacing": "Moderate",
+      "themes": [
+        "female experience in war",
+        "myth retelling",
+        "grief and survival",
+        "women's erasure from history",
+        "power and powerlessness"
+      ],
+      "setting": "Ancient Greece and Troy — the period of the Trojan War and its aftermath; polyphonic perspectives across multiple locations",
+      "comparable_books": [
+        "Circe - Madeline Miller",
+        "The Song of Achilles - Madeline Miller",
+        "Stone Blind - Natalie Haynes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "feminist myth retelling",
+          "multiple female POVs",
+          "classical antiquity",
+          "lyrical prose",
+          "witty narrative voice"
+        ],
+        "negative": [
+          "non-linear structure may frustrate some",
+          "multiple POVs with little connective tissue"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Haynes's polyphonic, lecture-hall voice is brilliantly suited to audio — she is also a classicist and BBC broadcaster.",
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Long Petal of the Sea - Isabel Allende": {
@@ -242122,80 +242434,140 @@
       "author": "Isabel Allende",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Spanning decades from the Spanish Civil War to Pinochet's Chile, this sweeping novel follows Roser and Victor — two refugees fleeing Franco's Spain — as they are carried by Pablo Neruda's SS Winnipeg to Chile, where they build a life only to face another brutal dictatorship.",
+      "tone": "sweeping, lyrical, melancholic, humane",
+      "pacing": "Moderate",
+      "themes": [
+        "exile and belonging",
+        "love and sacrifice",
+        "political violence",
+        "resilience",
+        "memory"
+      ],
+      "setting": "Spain (1930s), France (refugee camps), Chile (1940s–1970s); spanning the Spanish Civil War, World War II, and Pinochet's coup",
+      "comparable_books": [
+        "The House of the Spirits - Isabel Allende",
+        "The Shadow of the Wind - Carlos Ruiz Zafón",
+        "Like Water for Elephants - Sara Gruen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping historical fiction",
+          "political history",
+          "love across adversity",
+          "South American literary tradition",
+          "Isabel Allende fans"
+        ],
+        "negative": [
+          "readers wanting tight plot over panoramic sweep",
+          "those sensitive to political violence and displacement"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Allende's sweeping, oral storytelling tradition translates beautifully to audio.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A History of What Comes Next - Sylvain Neuvel": {
       "title": "A History of What Comes Next",
       "author": "Sylvain Neuvel",
       "series": "Take Them to the Stars",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Mother-and-daughter pair Mia and Sarah are the 99th generation of the Kibsu — a secret matrilineal lineage of alien-descended women whose millennia-long mission is to push humanity to the stars. Set in 1945–1961, they manipulate history's real rocket scientists while hunted by a relentless enemy.",
+      "tone": "darkly satirical, propulsive, morally ambiguous",
+      "pacing": "Fast",
+      "themes": [
+        "progress and its moral cost",
+        "female agency",
+        "alien interference in history",
+        "the space race",
+        "generational sacrifice"
+      ],
+      "setting": "Post-WWII Europe and the United States, 1945–1961; historical settings blending real figures and events with secret alien history",
+      "comparable_books": [
+        "Sleeping Giants - Sylvain Neuvel",
+        "The Calculating Stars - Mary Robinette Kowal",
+        "The Space Between Worlds - Micaiah Johnson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "historical science fiction",
+          "strong female protagonists",
+          "space race setting",
+          "secret history thriller",
+          "morally complex action"
+        ],
+        "negative": [
+          "choppy narrative style noted by some reviewers",
+          "more thriller than character study"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "99 Ways to Die - Ed Lin": {
       "title": "99 Ways to Die",
       "author": "Ed Lin",
       "series": "Taipei Night Market",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Night-market food stall owner Jing-nan is blackmailed by his bullying high school frenemy Peggy Lee into finding her kidnapped billionaire father — the ransom the kidnappers demand being not money, but a stolen high-tech memory chip coveted by mainland China.",
+      "tone": "darkly comic, wry, fast-moving",
+      "pacing": "Fast",
+      "themes": [
+        "Taiwan-China political tensions",
+        "class and corporate power",
+        "family obligation",
+        "technology and espionage"
+      ],
+      "setting": "Contemporary Taipei, Taiwan; the Shilin Night Market and the city's tech and business world",
+      "comparable_books": [
+        "Ghost Month - Ed Lin",
+        "Incensed - Ed Lin",
+        "Death Doesn't Forget - Ed Lin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "international crime fiction",
+          "darkly comic voice",
+          "Taiwanese culture and politics",
+          "fast-paced mystery",
+          "kidnapping thriller"
+        ],
+        "negative": [
+          "some tonal inconsistency noted by reviewers",
+          "conventional thriller plot beneath the cultural colour"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Gentleman in Moscow - Amor Towles": {
@@ -242203,26 +242575,45 @@
       "author": "Amor Towles",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1922 Moscow, aristocrat Count Alexander Rostov is sentenced to permanent house arrest in the grand Metropol Hotel — and over the following decades finds that a life of confinement can still be full of friendship, love, purpose, and quiet resistance as the Soviet Union transforms around him.",
+      "tone": "warm, witty, elegant, quietly melancholic",
+      "pacing": "Slow",
+      "themes": [
+        "grace under constraint",
+        "friendship and love",
+        "history and change",
+        "identity and purpose",
+        "Russian culture"
+      ],
+      "setting": "The Metropol Hotel, Moscow; 1922–1954, spanning the early Soviet era through the Stalin years",
+      "comparable_books": [
+        "Rules of Civility - Amor Towles",
+        "The Grand Budapest Hotel (film) - Wes Anderson",
+        "The Magician's Assistant - Ann Patchett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "elegant literary prose",
+          "warmly optimistic tone",
+          "confined setting",
+          "historical backdrop",
+          "witty and charming protagonist"
+        ],
+        "negative": [
+          "slow meditative pacing — no thriller elements",
+          "plot-light character study"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The novel's elegant, conversational prose and charming protagonist make it an outstanding listen.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Voidverse - Damien Ober": {
@@ -242230,26 +242621,48 @@
       "author": "Damien Ober",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "needs_review",
+      "summary": "The Sinker, a veteran wanderer of the Void — an infinite dark expanse where people survive on floating vertical rocks — speeds through the darkness toward a reckoning with the monstrous Construct that destroyed her home, while a second protagonist named Emery is cast into the Void by catastrophe.",
+      "tone": "strange, propulsive, existential, inventive",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "survival and revenge",
+        "capitalism and resource exploitation",
+        "identity",
+        "found community",
+        "the unknown"
+      ],
+      "setting": "The Void — a unique science-fantasy universe where civilizations exist on vertically stacked floating rocks in an infinite nothingness",
+      "comparable_books": [
+        "Dune - Frank Herbert",
+        "Wool - Hugh Howey",
+        "The Long Way to a Small, Angry Planet - Becky Chambers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "wholly original worldbuilding",
+          "science-fantasy blend",
+          "stoic female protagonist",
+          "anti-capitalist themes",
+          "quest narrative"
+        ],
+        "negative": [
+          "slow start (75–100 pages)",
+          "heavy original terminology without index",
+          "cliffhanger — series status uncertain"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "web_search",
       "audit": null
     },
     "The Things They Carried - Tim O'Brien": {
