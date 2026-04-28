@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4132,
-  "total_pending": 468,
+  "total_catalogued": 4152,
+  "total_pending": 448,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -224340,189 +224340,335 @@
       "title": "Carnival of Lies",
       "author": "D. V. Bishop",
       "series": "Cesare Aldo",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In winter 1539, officer Cesare Aldo is hired to protect Duke Cosimo de' Medici after uncovering an assassination conspiracy, only for a stolen journal of dangerous secrets to send him deep into Venice—a city of masks and enemies he has sworn to avoid.",
+      "tone": "atmospheric, politically tense, swashbuckling",
+      "pacing": "Fast",
+      "themes": [
+        "political intrigue",
+        "loyalty and betrayal",
+        "identity and disguise",
+        "Renaissance power struggles"
+      ],
+      "setting": "Florence and Venice, Italy, during Carnival season, 1539",
+      "comparable_books": [
+        "City of Vengeance - D. V. Bishop",
+        "Midnight at Malabar House - Vaseem Khan",
+        "The Ashes of London - Andrew Taylor",
+        "What Angels Fear - C. S. Harris"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "vivid Renaissance Italy setting",
+          "gay protagonist",
+          "political intrigue",
+          "fast-paced plotting",
+          "award-winning historical crime"
+        ],
+        "negative": [
+          "readers wanting standalone entry points",
+          "those averse to series continuity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Camelot - Giles Kristian": {
       "title": "Camelot",
       "author": "Giles Kristian",
       "series": "The Arthurian Tales",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set ten years after the fall of Camelot, young novice monk Galahad—son of Lancelot—is pulled from his monastery by the aging warrior Gawain and the wild huntress Iselle to find the legendary Patera Silk, raise an army, and resist the advancing Saxons who threaten to extinguish the last light of Britain.",
+      "tone": "lyrical, elegiac, emotionally intense",
+      "pacing": "Moderate",
+      "themes": [
+        "legacy and living in a parent's shadow",
+        "faith vs. duty",
+        "loss and grief",
+        "the end of an age",
+        "found family"
+      ],
+      "setting": "Post-Roman Britain, dark ages, late 5th/early 6th century; marshes of Avalon, Saxon-ravaged countryside",
+      "comparable_books": [
+        "Lancelot - Giles Kristian",
+        "The Winter King - Bernard Cornwell",
+        "The Once and Future King - T. H. White",
+        "The Mists of Avalon - Marion Zimmer Bradley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "lyrical literary prose",
+          "Arthurian myth retelling",
+          "emotionally resonant",
+          "vivid battle scenes",
+          "character-driven"
+        ],
+        "negative": [
+          "readers wanting plot-driven action over prose",
+          "those who haven't read Lancelot first"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Kristian's lyrical, emotionally rich prose rewards an attentive listening experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Catilina's Riddle - Steven Saylor": {
       "title": "Catilina's Riddle",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 63 BC, Gordianus the Finder has retired to an Etruscan farm, but is dragged back into Roman politics when Cicero asks him to spy on the radical populist Catilina; a series of headless corpses on his property forces him deeper into a deadly conspiracy that could tear the Republic apart.",
+      "tone": "richly atmospheric, historically dense, morally ambivalent",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "political corruption",
+        "justice vs. power",
+        "loyalty and conscience",
+        "Roman Republican politics"
+      ],
+      "setting": "Ancient Rome and the Etruscan countryside, 63 BC",
+      "comparable_books": [
+        "Roman Blood - Steven Saylor",
+        "The Judgment of Caesar - Steven Saylor",
+        "Masters of Rome - Colleen McCullough",
+        "The Silver Pigs - Lindsey Davis"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Roman history enthusiasts",
+          "morally complex protagonists",
+          "literary historical fiction",
+          "real historical figures as characters"
+        ],
+        "negative": [
+          "readers expecting a conventional mystery-forward plot",
+          "those new to the series (context-heavy)"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Raiders of the Nile - Steven Saylor": {
       "title": "Raiders of the Nile",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Prequel 2",
+      "genre": "Historical Adventure",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 88 BC Alexandria, young Gordianus—not yet 'the Finder'—must venture into the dangerous Nile Delta to rescue his kidnapped slave and lover Bethesda, becoming entangled along the way in a daring plot to steal the golden sarcophagus of Alexander the Great.",
+      "tone": "adventurous, propulsive, vividly ancient",
+      "pacing": "Fast",
+      "themes": [
+        "love and loyalty",
+        "youthful adventure",
+        "ancient world politics",
+        "identity and becoming"
+      ],
+      "setting": "Alexandria and the Nile Delta, Egypt, 88 BC",
+      "comparable_books": [
+        "The Seven Wonders - Steven Saylor",
+        "Wrath of the Furies - Steven Saylor",
+        "Eye of Isis - David Wishart",
+        "The Sherlockian - Graham Moore"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient world settings",
+          "action-adventure tone",
+          "accessible series entry point",
+          "historically grounded"
+        ],
+        "negative": [
+          "readers seeking the political depth of the main series",
+          "those wanting Gordianus at full maturity"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Time to Die - Wilbur Smith": {
       "title": "A Time to Die",
       "author": "Wilbur Smith",
       "series": "Burning Shore",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4 (Courtney #7)",
+      "genre": "Adventure",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sean Courtney, now a professional big-game hunter and soldier of fortune in Mozambique, finds himself drawn into a dangerous bush war alongside a beautiful journalist, battling both RENAMO guerrillas and his own complex loyalties.",
+      "tone": "muscular, propulsive, morally charged",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "war and its costs",
+        "loyalty",
+        "Africa and colonialism",
+        "masculinity"
+      ],
+      "setting": "Mozambique and southern Africa, late 20th century",
+      "comparable_books": [
+        "Power of the Sword - Wilbur Smith",
+        "Rage - Wilbur Smith",
+        "The Leopard Hunts in Darkness - Wilbur Smith",
+        "Shout at the Devil - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "high-octane adventure",
+          "African settings",
+          "military action",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "readers sensitive to dated gender or colonial attitudes",
+          "literary fiction seekers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Birds of Prey - Wilbur Smith": {
       "title": "Birds of Prey",
       "author": "Wilbur Smith",
       "series": "Birds of Prey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (Courtney #9)",
+      "genre": "Historical Adventure",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1667, Sir Francis Courtney and his son Hal are privateers hunting Dutch East India Company ships off the African coast; when Sir Francis is betrayed and executed, young Hal must fight for survival, vengeance, and his family's honour across the seas of southern Africa.",
+      "tone": "swashbuckling, epic, high-seas adventure",
+      "pacing": "Fast",
+      "themes": [
+        "father and son",
+        "honour and vengeance",
+        "empire and piracy",
+        "coming of age"
+      ],
+      "setting": "The seas off southern Africa and the Cape of Good Hope, 1667",
+      "comparable_books": [
+        "Monsoon - Wilbur Smith",
+        "Master and Commander - Patrick O'Brian",
+        "Hornblower - C. S. Forester",
+        "Shogun - James Clavell"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "maritime historical adventure",
+          "high-seas action",
+          "dynastic family saga",
+          "vivid period detail"
+        ],
+        "negative": [
+          "readers sensitive to dated attitudes",
+          "those wanting modern pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Golden Fox - Wilbur Smith": {
       "title": "Golden Fox",
       "author": "Wilbur Smith",
       "series": "Burning Shore",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3 (Courtney #8)",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Isabella Courtney, daughter of Shasa, falls for a charming KGB agent and is drawn into Cold War espionage and betrayal that threatens both her family's empire and the stability of apartheid South Africa.",
+      "tone": "propulsive, melodramatic, Cold War-tense",
+      "pacing": "Fast",
+      "themes": [
+        "betrayal",
+        "Cold War espionage",
+        "family loyalty",
+        "South African politics",
+        "women and power"
+      ],
+      "setting": "South Africa and Europe, 1980s Cold War era",
+      "comparable_books": [
+        "Rage - Wilbur Smith",
+        "Power of the Sword - Wilbur Smith",
+        "A Time to Die - Wilbur Smith",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Cold War thriller elements",
+          "South African dynastic saga",
+          "strong female protagonist",
+          "propulsive plotting"
+        ],
+        "negative": [
+          "readers sensitive to dated gender or racial politics",
+          "those new to the Courtney saga"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Whalefall - Daniel Kraus": {
@@ -224530,26 +224676,48 @@
       "author": "Daniel Kraus",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Jay Gardiner dives into the Pacific Ocean to recover the remains of his estranged, recently deceased father, only to be swallowed whole by a massive sperm whale—and given one hour of oxygen to escape before he dies inside the beast.",
+      "tone": "propulsive, visceral, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "father-son relationships",
+        "grief and guilt",
+        "survival",
+        "nature's indifference",
+        "redemption"
+      ],
+      "setting": "The Pacific Ocean off Monastery Beach, California, present day",
+      "comparable_books": [
+        "The Martian - Andy Weir",
+        "Life of Pi - Yann Martel",
+        "The Terror - Dan Simmons",
+        "Alive - Piers Paul Read"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "man-vs-nature survival thriller",
+          "scientifically grounded",
+          "emotionally resonant",
+          "propulsive short chapters",
+          "award-winning"
+        ],
+        "negative": [
+          "readers wanting purely horror",
+          "those averse to heavy father-son emotional content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Short chapters, relentless tension, and the claustrophobic underwater setting make for a gripping listening experience.",
+      "content_flags": [
+        "suicide"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Owl Cries - Hye-young Pyun": {
@@ -224557,26 +224725,49 @@
       "author": "Hye-young Pyun",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "An alcoholic forest ranger in Korea becomes entangled in the investigation of a missing predecessor and a suspicious death, as the surrounding forest exerts an increasingly uncanny and oppressive influence on those who live near it.",
+      "tone": "Kafkaesque, slow-burn dread, psychologically suffocating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "isolation and loneliness",
+        "institutional complicity",
+        "the uncanny",
+        "self-knowledge",
+        "nature as threat"
+      ],
+      "setting": "A remote forested region of South Korea, contemporary",
+      "comparable_books": [
+        "The Hole - Hye-young Pyun",
+        "The Law of Lines - Hye-young Pyun",
+        "The Secret History - Donna Tartt",
+        "The Vegetarian - Han Kang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Korean literary fiction",
+          "Kafkaesque atmosphere",
+          "psychological horror",
+          "slow-burn mystery",
+          "genre-defying"
+        ],
+        "negative": [
+          "readers wanting conventional mystery payoff",
+          "those averse to ambiguous endings",
+          "plot-driven readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Living Dead - George A. Romero & Daniel Kraus": {
@@ -224584,26 +224775,49 @@
       "author": "George A. Romero & Daniel Kraus",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Horror",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Beginning with a single corpse that refuses to stay dead, the zombie plague spreads across America in an epic multi-POV narrative spanning the full arc of the undead apocalypse—from the first rising to the fall of humankind—as Romero's unfinished novel was completed posthumously by Daniel Kraus.",
+      "tone": "sprawling, socially satirical, grimly humanistic",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "human nature and social collapse",
+        "faith and fanaticism",
+        "survival and sacrifice",
+        "race and inequality",
+        "legacy"
+      ],
+      "setting": "Contemporary United States, spanning coast to coast",
+      "comparable_books": [
+        "World War Z - Max Brooks",
+        "The Stand - Stephen King",
+        "Station Eleven - Emily St. John Mandel",
+        "Rot and Ruin - Jonathan Maberry"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "zombie fiction devotees",
+          "Romero fans",
+          "social commentary horror",
+          "ensemble multi-POV epics",
+          "morally complex horror"
+        ],
+        "negative": [
+          "readers wanting lean, fast horror",
+          "those averse to very long books",
+          "readers who dislike incomplete-feeling works"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Accomplice - Joseph Kanon": {
@@ -224611,53 +224825,95 @@
       "author": "Joseph Kanon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1962, CIA desk analyst Aaron Wiley travels to Buenos Aires to track down a Nazi war criminal believed dead—a Mengele associate who has reinvented himself in Argentine high society—becoming entangled with the man's morally conflicted daughter and the murky boundaries between justice and revenge.",
+      "tone": "atmospheric, morally complex, quietly suspenseful",
+      "pacing": "Moderate",
+      "themes": [
+        "justice vs. revenge",
+        "moral complicity",
+        "the weight of the past",
+        "Cold War espionage",
+        "Holocaust legacy"
+      ],
+      "setting": "Hamburg, Germany and Buenos Aires, Argentina, 1962",
+      "comparable_books": [
+        "Istanbul Passage - Joseph Kanon",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "The Odessa File - Frederick Forsyth",
+        "The Defectors - Joseph Kanon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Graham Greene-style espionage",
+          "WWII aftermath themes",
+          "morally grey characters",
+          "historical atmosphere",
+          "dialogue-driven tension"
+        ],
+        "negative": [
+          "readers wanting fast-paced action thriller",
+          "those expecting tidy moral resolution"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Power of the Sword - Wilbur Smith": {
       "title": "Power of the Sword",
       "author": "Wilbur Smith",
       "series": "Burning Shore",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 (Courtney #5)",
+      "genre": "Historical Adventure",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Centaine's two sons—the privileged Shasa and the illegitimate Manfred—grow up on opposite sides of South Africa's racial and class divide, their rivalry and ambition playing out against the turbulent rise of apartheid and the coming of World War II.",
+      "tone": "epic, sweeping, melodramatic",
+      "pacing": "Moderate",
+      "themes": [
+        "brotherhood and rivalry",
+        "identity and heritage",
+        "apartheid",
+        "ambition and power",
+        "South African history"
+      ],
+      "setting": "South Africa, 1920s–1940s",
+      "comparable_books": [
+        "Rage - Wilbur Smith",
+        "The Burning Shore - Wilbur Smith",
+        "Golden Fox - Wilbur Smith",
+        "Cry, the Beloved Country - Alan Paton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping family sagas",
+          "South African history",
+          "epic generational storytelling",
+          "adventure with political backdrop"
+        ],
+        "negative": [
+          "readers sensitive to dated racial or gender attitudes",
+          "those unfamiliar with the Centaine sequence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Istanbul Passage - Joseph Kanon": {
@@ -224665,80 +224921,144 @@
       "author": "Joseph Kanon",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1945, American expat Leon Bauer is given one last intelligence job in postwar Istanbul—but when it goes fatally wrong and he ends up sheltering a Romanian defector who is also a war criminal, he is drawn into a labyrinth of shifting loyalties and moral uncertainty that threatens his life and his values.",
+      "tone": "atmospheric, morally weighty, Casablanca-esque",
+      "pacing": "Moderate",
+      "themes": [
+        "moral ambiguity",
+        "loyalty and betrayal",
+        "postwar displacement",
+        "justice vs. survival",
+        "love in wartime"
+      ],
+      "setting": "Istanbul, Turkey, 1945—the bazaars, mosques, and Bosphorus of a city straddling East and West",
+      "comparable_books": [
+        "The Accomplice - Joseph Kanon",
+        "The Third Man - Graham Greene",
+        "The Mask of Dimitrios - Eric Ambler",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Graham Greene-style moral thrillers",
+          "postwar historical atmosphere",
+          "vivid sense of place",
+          "literary espionage",
+          "complex protagonist"
+        ],
+        "negative": [
+          "readers wanting fast action spy thrillers",
+          "those put off by slow-build dialogue-heavy narratives"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The atmospheric prose and morally complex dialogue reward a careful audio listen; a strong narrator greatly enhances the sense of place.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Monsoon - Wilbur Smith": {
       "title": "Monsoon",
       "author": "Wilbur Smith",
       "series": "Birds of Prey",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2 (Courtney #10)",
+      "genre": "Historical Adventure",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A now-older Hal Courtney is sent by the King to Madagascar to suppress pirates terrorising the East India Trading Company, sailing alongside his three young sons in a swashbuckling tale of brotherhood, betrayal, and coming of age on the high seas.",
+      "tone": "swashbuckling, epic, action-driven",
+      "pacing": "Fast",
+      "themes": [
+        "father and sons",
+        "brotherhood",
+        "coming of age",
+        "piracy and empire",
+        "loyalty"
+      ],
+      "setting": "The Indian Ocean, Madagascar, and East African coast, late 17th century",
+      "comparable_books": [
+        "Birds of Prey - Wilbur Smith",
+        "Master and Commander - Patrick O'Brian",
+        "Captain Blood - Rafael Sabatini",
+        "Hornblower - C. S. Forester"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "maritime historical adventure",
+          "high-seas action",
+          "dynastic saga",
+          "swashbuckling set-pieces"
+        ],
+        "negative": [
+          "readers sensitive to dated attitudes",
+          "those wanting literary prose over plot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Burning Shore - Wilbur Smith": {
       "title": "The Burning Shore",
       "author": "Wilbur Smith",
       "series": "Burning Shore",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (Courtney #4)",
+      "genre": "Historical Adventure",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "French noblewoman Centaine de Thiry falls in love with South African WWI fighter pilot Michael Courtney, but after his death she finds herself shipwrecked and pregnant on Africa's deadly Skeleton Coast, where she must survive the Namib Desert with the help of San Bushmen.",
+      "tone": "sweeping, romantic, survival-epic",
+      "pacing": "Moderate",
+      "themes": [
+        "survival against the odds",
+        "love and loss",
+        "colonialism and Africa",
+        "female resilience",
+        "found family"
+      ],
+      "setting": "WWI France, the Skeleton Coast of South West Africa, and the Namib Desert",
+      "comparable_books": [
+        "Power of the Sword - Wilbur Smith",
+        "Out of Africa - Karen Blixen",
+        "Shout at the Devil - Wilbur Smith",
+        "The Sunbird - Wilbur Smith"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "sweeping African adventure",
+          "strong female protagonist",
+          "romantic-epic storytelling",
+          "survival fiction"
+        ],
+        "negative": [
+          "readers sensitive to dated colonial perspectives",
+          "those who prefer literary prose"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hungry as the Sea - Wilbur Smith": {
@@ -224746,53 +225066,97 @@
       "author": "Wilbur Smith",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Adventure",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Disgraced maritime salvage expert Nicholas Berg races across the world's most dangerous waters to rescue a crippled supertanker in a polar storm, pitting himself against his ruthless former partner—now his greatest rival—in a battle of wills, seamanship, and survival.",
+      "tone": "propulsive, high-stakes, rugged",
+      "pacing": "Fast",
+      "themes": [
+        "rivalry and redemption",
+        "man vs. nature",
+        "ambition and honour",
+        "the sea",
+        "survival"
+      ],
+      "setting": "The North Atlantic and Antarctic seas, 1970s",
+      "comparable_books": [
+        "Shout at the Devil - Wilbur Smith",
+        "The Poseidon Adventure - Paul Gallico",
+        "Ice Station - Matthew Reilly",
+        "Alistair MacLean sea novels"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "maritime action-adventure",
+          "man-vs-nature survival",
+          "propulsive thriller",
+          "macho rivalry narratives"
+        ],
+        "negative": [
+          "readers wanting literary depth",
+          "those sensitive to dated gender portrayals"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rage - Wilbur Smith": {
       "title": "Rage",
       "author": "Wilbur Smith",
       "series": "Burning Shore",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3 (Courtney #6)",
+      "genre": "Historical Adventure",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Shasa Courtney, now a powerful politician in apartheid South Africa, faces a web of treachery from inside his own family as forces both within and outside the ANC work to bring down the system he both serves and struggles to reconcile himself with.",
+      "tone": "sweeping, politically charged, melodramatic",
+      "pacing": "Moderate",
+      "themes": [
+        "apartheid",
+        "political ambition",
+        "family and betrayal",
+        "racial justice",
+        "power and corruption"
+      ],
+      "setting": "South Africa, 1948–1960s, the height of apartheid",
+      "comparable_books": [
+        "Power of the Sword - Wilbur Smith",
+        "Golden Fox - Wilbur Smith",
+        "Cry, the Beloved Country - Alan Paton",
+        "A Dry White Season - André Brink"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "South African historical fiction",
+          "sweeping family sagas",
+          "political intrigue",
+          "epic storytelling"
+        ],
+        "negative": [
+          "readers sensitive to dated racial attitudes",
+          "those new to the Courtney sequence"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Trees - Percival Everett": {
@@ -224800,80 +225164,146 @@
       "author": "Percival Everett",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a series of brutal, racially charged murders erupt in Money, Mississippi—each accompanied by the mysteriously reappearing corpse of a mutilated Black man resembling Emmett Till—two Black MBI detectives investigate a pattern that soon spreads across the entire country, in a darkly comic satire about America's unburied history of racial violence.",
+      "tone": "darkly comic, satirical, horrifying, genre-defying",
+      "pacing": "Fast",
+      "themes": [
+        "racial violence and American history",
+        "justice and retribution",
+        "the legacy of lynching",
+        "Black Lives Matter",
+        "absurdism and horror"
+      ],
+      "setting": "Money, Mississippi and across the United States, near-contemporary",
+      "comparable_books": [
+        "James - Percival Everett",
+        "Beloved - Toni Morrison",
+        "Get Out (film) - Jordan Peele",
+        "Erasure - Percival Everett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark social satire",
+          "genre-bending literary fiction",
+          "racial justice themes",
+          "Booker Prize-shortlisted",
+          "darkly funny"
+        ],
+        "negative": [
+          "readers wanting conventional mystery resolution",
+          "those averse to graphic racial violence or disturbing content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Seven Shades of Evil - Robert McCammon": {
       "title": "Seven Shades of Evil",
       "author": "Robert McCammon",
       "series": "Matthew Corbett",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of eight short stories (four original, four previously limited) set in the colonial American world of problem-solver Matthew Corbett and his associates, spanning murder plots, supernatural menace, and swashbuckling adventure between the main novels.",
+      "tone": "atmospheric, darkly adventurous, colonial-era gothic",
+      "pacing": "Fast",
+      "themes": [
+        "justice and moral order",
+        "the supernatural vs. reason",
+        "loyalty and camaraderie",
+        "colonial American life"
+      ],
+      "setting": "Colonial America, late 17th/early 18th century",
+      "comparable_books": [
+        "Speaks the Nightbird - Robert McCammon",
+        "Cardinal Black - Robert McCammon",
+        "The Name of the Rose - Umberto Eco",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "colonial-era historical mystery",
+          "short story collections between novels",
+          "McCammon devotees",
+          "mix of mystery and supernatural",
+          "series completionists"
+        ],
+        "negative": [
+          "readers new to the series (context essential)",
+          "those preferring full novels over story collections"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "On Blue's Waters - Gene Wolfe": {
       "title": "On Blue's Waters",
       "author": "Gene Wolfe",
       "series": "The Book of the Short Sun",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the newly colonised planet of Blue, Horn—narrator of the earlier Long Sun series—sets sail on a perilous sea voyage to find the legendary leader Patera Silk and persuade him to return and guide their struggling community, in a densely layered narrative blending memoir, unreliable narration, and mythic quest.",
+      "tone": "meditative, allusive, densely literary",
+      "pacing": "Slow",
+      "themes": [
+        "identity and the unreliable self",
+        "faith and leadership",
+        "quest and sacrifice",
+        "memory and narrative",
+        "colonisation"
+      ],
+      "setting": "The planet Blue, a water-world colonised by settlers from the generation starship Whorl; far future science-fantasy",
+      "comparable_books": [
+        "In Green's Jungles - Gene Wolfe",
+        "The Book of the New Sun - Gene Wolfe",
+        "Nightside the Long Sun - Gene Wolfe",
+        "Urth of the New Sun - Gene Wolfe"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dense literary SF",
+          "unreliable narrators",
+          "Gene Wolfe devotees",
+          "philosophical science fantasy",
+          "intricate puzzle-narratives"
+        ],
+        "negative": [
+          "readers new to Wolfe (prior series knowledge essential)",
+          "those wanting clear linear plots",
+          "casual SF readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Wolfe's notoriously dense, allusive, and nonlinear prose demands close attention and re-reading; audio risks losing crucial textual nuance.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dark State - Charles Stross": {
