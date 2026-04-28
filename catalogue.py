@@ -15,7 +15,6 @@ Requirements:
     ANTHROPIC_API_KEY must be set (Claude Code handles this automatically)
 """
 
-import anthropic
 import argparse
 import csv
 import json
@@ -25,17 +24,12 @@ import time
 from datetime import date
 from pathlib import Path
 
-from catalogue_prompts import (
-    build_system_prompt,
-    build_batch_prompt,
-    parse_catalog_response,
-)
-
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
 
 CATALOG_FILE = "Library_Catalog.json"
+INDEX_FILE = "Library_Index.json"
 MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 16000
 DEFAULT_CHUNK_SIZE = 20
@@ -77,6 +71,43 @@ def save_catalog(catalog: dict, path: str):
     )
     with open(path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
+
+
+# Fields kept in the slim index. Everything else (summary, themes, comparables,
+# taste_signals, audit, etc.) is fetched on demand from the full catalog via
+# code execution so it never sits in the project's auto-loaded context.
+INDEX_FIELDS = (
+    "title",
+    "author",
+    "series",
+    "series_position",
+    "series_status",
+    "primary_genre",
+    "secondary_genre",
+    "tone",
+    "pacing",
+    "audio_suitability",
+)
+
+
+def build_index(catalog: dict) -> dict:
+    slim_entries = {}
+    for key, entry in catalog["entries"].items():
+        slim_entries[key] = {f: entry.get(f) for f in INDEX_FIELDS}
+    return {
+        "index_version": 1,
+        "last_updated": str(date.today()),
+        "total": len(slim_entries),
+        "fields": list(INDEX_FIELDS),
+        "note": "Slim browse index. For summary/themes/comparables/taste_signals, query Library_Catalog.json via code execution.",
+        "entries": slim_entries,
+    }
+
+
+def save_index(catalog: dict, path: str):
+    index = build_index(catalog)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
 
 
 def book_key(title: str, author: str) -> str:
@@ -153,7 +184,7 @@ def get_book_csv_data(books: list[dict], key: str) -> dict:
 # API call with tool-use loop
 # ---------------------------------------------------------------------------
 
-def call_api_with_tools(client: anthropic.Anthropic, messages: list, system: str) -> str:
+def call_api_with_tools(client, messages: list, system: str) -> str:
     """Runs the multi-turn tool-use loop. Returns final assistant text."""
     # Cache the system prompt + tool list so they aren't re-billed on every call.
     # Note: Haiku 4.5 requires a >=4096-token prefix to actually cache; this prompt
@@ -225,7 +256,7 @@ def call_api_with_tools(client: anthropic.Anthropic, messages: list, system: str
 # ---------------------------------------------------------------------------
 
 def catalogue_chunk(
-    client: anthropic.Anthropic,
+    client,
     chunk: list[dict],
     catalog: dict,
     system: str
@@ -234,6 +265,8 @@ def catalogue_chunk(
     Send a chunk of book dicts to Claude. Updates catalog entries in place.
     Returns n_catalogued.
     """
+    from catalogue_prompts import build_batch_prompt, parse_catalog_response
+
     print(f"\n  Sending {len(chunk)} books to Claude...")
 
     prompt = build_batch_prompt(chunk)
@@ -309,13 +342,23 @@ def main():
     parser = argparse.ArgumentParser(description="Autonomously catalogue a book library.")
     parser.add_argument("--library", required=True, help="Path to Library.csv")
     parser.add_argument("--catalog", default=CATALOG_FILE)
+    parser.add_argument("--index", default=INDEX_FILE,
+                        help="Slim browse index regenerated alongside the catalog")
     parser.add_argument("--chunk-size", type=int, default=DEFAULT_CHUNK_SIZE)
     parser.add_argument("--status", action="store_true", help="Print progress and exit")
     parser.add_argument("--review-only", action="store_true",
                         help="Only reprocess needs_review entries")
+    parser.add_argument("--index-only", action="store_true",
+                        help="Rebuild the slim index from the existing catalog and exit")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
+
+    if args.index_only:
+        save_index(catalog, args.index)
+        print(f"  Wrote slim index → {args.index} ({len(catalog['entries'])} entries)")
+        sys.exit(0)
+
     books = load_library(args.library)
 
     if not books:
@@ -327,6 +370,7 @@ def main():
     if added:
         print(f"  Added {added} new pending entries from library.")
         save_catalog(catalog, args.catalog)
+        save_index(catalog, args.index)
 
     print_status(catalog)
 
@@ -355,6 +399,10 @@ def main():
     total_to_process = len(pending_entries)
     estimated_chunks = -(-total_to_process // args.chunk_size)
     print(f"  {total_to_process} entries to process in ~{estimated_chunks} chunks of {args.chunk_size}.\n")
+
+    # Heavy imports only needed for the API path
+    import anthropic
+    from catalogue_prompts import build_system_prompt
 
     # Support Claude Code OAuth when no API key is set
     if not os.environ.get("ANTHROPIC_API_KEY") and not os.environ.get("ANTHROPIC_AUTH_TOKEN"):
@@ -396,13 +444,17 @@ def main():
             print("  Saving progress and continuing...")
 
         save_catalog(catalog, args.catalog)
-        print(f"  Saved → {args.catalog}")
+        save_index(catalog, args.index)
+        print(f"  Saved → {args.catalog} (+ {args.index})")
 
         processed += len(chunk_slice)
         remaining = total_to_process - processed
         if remaining > 0:
             print(f"  {remaining} entries remaining.")
             time.sleep(RATE_LIMIT_DELAY)
+
+    save_index(catalog, args.index)
+    print(f"  Wrote slim index → {args.index}")
 
     print("\nCataloguing complete.")
     print_status(catalog)
