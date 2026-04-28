@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4587,
-  "total_pending": 13,
+  "total_catalogued": 4599,
+  "total_pending": 1,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -11085,30 +11085,53 @@
       "goodreads_reviews": null
     },
     "Foucault’s Pendulum - Umberto Eco": {
-      "title": "Foucault’s Pendulum",
+      "title": "Foucault's Pendulum",
       "author": "Umberto Eco",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Literary Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Three editors at a Milan publishing house, bored with manuscripts about occult conspiracy theories, invent their own grand unified conspiracy — only to find reality begins to mirror their elaborate fiction. A labyrinthine meditation on semiotics, secret societies, and the human desire for hidden meaning.",
+      "tone": "erudite, darkly comic, paranoid",
+      "pacing": "Slow",
+      "themes": [
+        "semiotics and meaning-making",
+        "conspiracy and paranoia",
+        "intellectual hubris",
+        "secret societies",
+        "the danger of interpretation"
+      ],
+      "setting": "Contemporary Milan and Paris, with extensive historical flashbacks spanning centuries of esoteric tradition",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "The Raw Shark Texts - Steven Hall",
+        "Illuminatus! - Robert Shea & Robert Anton Wilson",
+        "The Club Dumas - Arturo Pérez-Reverte"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intellectually demanding",
+          "encyclopaedic erudition",
+          "unreliable narrator",
+          "postmodern meta-fiction",
+          "occult and esoteric themes",
+          "darkly comic"
+        ],
+        "negative": [
+          "extremely dense and digressive",
+          "minimal plot momentum",
+          "requires broad humanistic knowledge to fully appreciate",
+          "not plot-driven"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Highly allusive text with extensive citations, wordplay, and multilingual references that benefit from reader-controlled pacing and the ability to cross-reference.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Triss - Brian Jacques": {
@@ -75324,30 +75347,51 @@
       "audit": null
     },
     "The Hitchhiker’s Guide to the Galaxy - Douglas Adams": {
-      "title": "The Hitchhiker’s Guide to the Galaxy",
+      "title": "The Hitchhiker's Guide to the Galaxy",
       "author": "Douglas Adams",
       "series": "The Hitchhiker's Guide to the Galaxy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Science Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Moments before Earth is demolished to make way for a hyperspace bypass, hapless Arthur Dent is whisked off the planet by his alien friend Ford Prefect. What follows is an absurdist tour of the universe guided by a wholly remarkable book.",
+      "tone": "absurdist, satirical, warmly comic",
+      "pacing": "Fast",
+      "themes": [
+        "absurdity of existence",
+        "bureaucracy",
+        "the search for meaning",
+        "technology and hubris",
+        "the insignificance of humanity"
+      ],
+      "setting": "Earth (briefly) and across a surreal, satirically rendered galaxy, late 20th century",
+      "comparable_books": [
+        "Good Omens - Terry Pratchett & Neil Gaiman",
+        "Red Dwarf - Rob Grant & Doug Naylor",
+        "Catch-22 - Joseph Heller",
+        "Discworld - Terry Pratchett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "laugh-out-loud comedy",
+          "British wit",
+          "fast and breezy",
+          "iconic characters",
+          "satirical worldbuilding"
+        ],
+        "negative": [
+          "plot is largely incidental",
+          "no serious emotional stakes",
+          "very episodic"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The BBC radio drama origins make this ideal for audio; Stephen Fry's narration of the audiobook is definitive.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Last Chance to See - Douglas Adams & Mark Carwardine": {
@@ -98361,30 +98405,53 @@
       "audit": null
     },
     "The Book That Wouldn’t Burn - Mark Lawrence": {
-      "title": "The Book That Wouldn’t Burn",
+      "title": "The Book That Wouldn't Burn",
       "author": "Mark Lawrence",
       "series": "The Library Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two characters separated by centuries — a boy from a brutal, post-apocalyptic world and a girl trapped in an impossibly vast library — find their stories converging around a collection of books that may hold the secrets of reality itself. A mystery-laced fantasy about the power of stories and the nature of time.",
+      "tone": "atmospheric, mysterious, contemplative",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "power of stories and books",
+        "identity and memory",
+        "time and fate",
+        "knowledge vs. ignorance",
+        "survival"
+      ],
+      "setting": "A post-apocalyptic earth-like world and an ancient, labyrinthine library of unknowable extent",
+      "comparable_books": [
+        "The Name of the Wind - Patrick Rothfuss",
+        "The House in the Cerulean Sea - TJ Klune",
+        "Piranesi - Susanna Clarke",
+        "Babel - R.F. Kuang"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "bibliophile themes",
+          "dual timeline mystery",
+          "rich atmospheric worldbuilding",
+          "slow-burn reveals",
+          "character-driven"
+        ],
+        "negative": [
+          "slow opening",
+          "some readers find dual timeline frustrating before convergence",
+          "not action-heavy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Book of Dragons - Jonathan Strahan": {
@@ -116341,30 +116408,51 @@
       "audit": null
     },
     "Deliverance at Van Demon’s Deep - Shaun Paul Stevens": {
-      "title": "Deliverance at Van Demon’s Deep",
+      "title": "Deliverance at Van Demon's Deep",
       "author": "Shaun Paul Stevens",
-      "series": null,
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "The Feyrlands Collection (Ranker's Charge)",
+      "series_position": "Prequel novella",
+      "genre": "Fantasy",
+      "series_status": "Short Stories",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Elite soldier Kiprik leads his squad into a monster-infested mine to rescue trapped miners before his commanders resort to poison gas, but the deeper they descend, the darker and more supernatural the threat becomes. A tightly plotted grimdark military fantasy novella set in the world of the Feyrlands.",
+      "tone": "grimdark, claustrophobic, visceral",
+      "pacing": "Fast",
+      "themes": [
+        "camaraderie and loyalty",
+        "survival against impossible odds",
+        "corruption and chaos",
+        "prejudice and faith"
+      ],
+      "setting": "The Feyrlands — a gritty secondary-world fantasy setting; primarily subterranean in a dangerous mine",
+      "comparable_books": [
+        "The Black Company - Glen Cook",
+        "Raven's Mark - Ed McDonald",
+        "Powder Mage Trilogy - Brian McClellan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "military fantasy",
+          "grimdark tone",
+          "fast and action-packed",
+          "tight plotting",
+          "ensemble cast of soldiers"
+        ],
+        "negative": [
+          "very short — novella length (~113 pages)",
+          "horror elements may not suit all",
+          "limited worldbuilding as a prequel"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "An End to Sorrow - Michael R. Fletcher": {
@@ -130967,30 +131055,53 @@
       "audit": null
     },
     "To Ride Hell’s Chasm - Janny Wurts": {
-      "title": "To Ride Hell’s Chasm",
+      "title": "To Ride Hell's Chasm",
       "author": "Janny Wurts",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When Princess Anja of Sessalie vanishes on the eve of her betrothal, two very different warriors — the xenophobically distrusted Captain Mykkael and the rigid Commander Taskin — must race to uncover a demonic conspiracy lurking behind her disappearance. A dense, lyrical standalone epic that builds from political intrigue into monster-haunted action.",
+      "tone": "lyrical, intense, richly literary",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "prejudice and racism",
+        "integrity under pressure",
+        "demonic corruption",
+        "duty and loyalty",
+        "the cost of bigotry"
+      ],
+      "setting": "The isolated medieval kingdom of Sessalie and the monster-haunted terrain of Hell's Chasm, secondary world fantasy",
+      "comparable_books": [
+        "The Wars of Light and Shadow - Janny Wurts",
+        "Malazan Book of the Fallen - Steven Erikson",
+        "Daughter of the Empire - Janny Wurts & Raymond E. Feist",
+        "The Deed of Paksenarrion - Elizabeth Moon"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "richly literary prose",
+          "complex morally-tested characters",
+          "standalone complete story",
+          "themes of prejudice and justice",
+          "political intrigue into action"
+        ],
+        "negative": [
+          "very dense prose requiring patience",
+          "slow start (~150 pages to acclimate)",
+          "not accessible for casual fantasy readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Mirror Dance - Lois McMaster Bujold": {
@@ -139345,30 +139456,51 @@
       "audit": null
     },
     "The Liar’s Knot - M. A. Carrick": {
-      "title": "The Liar’s Knot",
+      "title": "The Liar's Knot",
       "author": "M. A. Carrick",
       "series": "Rook & Rose",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Ren continues her double life as both a Vraszenian con artist and a noble lady embedded in Nadežra's elite, navigating deadly political factions while a curse-spreading conspiracy threatens to tear the city apart. The second instalment deepens the world's intricate pattern-magic system and escalating political stakes.",
+      "tone": "intricate, propulsive, morally complex",
+      "pacing": "Moderate",
+      "themes": [
+        "identity and deception",
+        "political corruption",
+        "colonialism and resistance",
+        "fate and pattern magic",
+        "trust and loyalty"
+      ],
+      "setting": "Nadežra, a richly imagined secondary-world city reminiscent of Renaissance Venice, under political occupation",
+      "comparable_books": [
+        "The Mask of Mirrors - M.A. Carrick (Book 1)",
+        "Piranesi - Susanna Clarke",
+        "The Shadow of the Wind - Carlos Ruiz Zafón",
+        "Lies of Locke Lamora - Scott Lynch"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "intricate plot and worldbuilding",
+          "morally grey protagonist",
+          "rich secondary world",
+          "identity and disguise",
+          "strong political intrigue"
+        ],
+        "negative": [
+          "requires prior knowledge of Book 1",
+          "very complex — demands attentive reading",
+          "not recommended as series entry point"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Girl and the Mountain - Mark Lawrence": {
@@ -142103,30 +142235,52 @@
       "audit": null
     },
     "Rocannon’s World - Ursula K. le Guin": {
-      "title": "Rocannon’s World",
-      "author": "Ursula K. le Guin",
+      "title": "Rocannon's World",
+      "author": "Ursula K. Le Guin",
       "series": "The Hainish Cycle",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1 (publication order)",
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Ethnologist Rocannon is stranded on a pre-technological alien world after enemy forces destroy his ship and kill his survey team, and must undertake an epic overland quest to reach a transmitter that will allow him to warn the League of Worlds. An early, myth-infused SF novel blending space opera with Tolkienesque high fantasy.",
+      "tone": "mythic, elegiac, quietly adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "cultural contact and anthropology",
+        "sacrifice and loss",
+        "identity and belonging",
+        "myth and legend",
+        "technology vs. tradition"
+      ],
+      "setting": "A pre-industrial alien world of forests, mountains, and varied non-human peoples; far future",
+      "comparable_books": [
+        "The Left Hand of Darkness - Ursula K. Le Guin",
+        "The Dispossessed - Ursula K. Le Guin",
+        "A Wizard of Earthsea - Ursula K. Le Guin",
+        "Lord of Light - Roger Zelazny"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "anthropological SF",
+          "myth-infused storytelling",
+          "Le Guin's prose",
+          "short and elegant",
+          "classic SF"
+        ],
+        "negative": [
+          "very short and slender",
+          "dated as an early work",
+          "less developed than Le Guin's mature novels",
+          "pacing feels episodic"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Planet of Exile - Ursula K. le Guin": {
@@ -177698,30 +177852,51 @@
       "audit": null
     },
     "The Bible Says So: What We Get Right (And Wrong) About Scripture’s Most Controversial Issues - Daniel McClellan": {
-      "title": "The Bible Says So: What We Get Right (And Wrong) About Scripture’s Most Controversial Issues",
+      "title": "The Bible Says So: What We Get Right (And Wrong) About Scripture's Most Controversial Issues",
       "author": "Daniel McClellan",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction — Religion",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Biblical scholar and viral TikToker Dan McClellan applies a rigorous 'data over dogma' approach to 19 of the Bible's most contested issues — from homosexuality and abortion to the Virgin Birth and hell — showing where popular religious claims misrepresent what Scripture actually says. Accessible, conversational, and grounded in academic scholarship.",
+      "tone": "accessible, conversational, iconoclastic",
+      "pacing": "Fast",
+      "themes": [
+        "biblical interpretation and hermeneutics",
+        "religion and culture",
+        "scholarly vs. popular readings of scripture",
+        "power and religious authority",
+        "deconstruction of faith"
+      ],
+      "setting": "Nonfiction — no narrative setting; contemporary public religious debate, with deep dives into ancient textual history",
+      "comparable_books": [
+        "Misquoting Jesus - Bart Ehrman",
+        "The Bible Tells Me So - Peter Enns",
+        "A History of God - Karen Armstrong",
+        "Inspired - Rachel Held Evans"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "accessible scholarship",
+          "challenges received religious wisdom",
+          "conversational voice",
+          "data-driven approach",
+          "relevant to deconstruction journeys"
+        ],
+        "negative": [
+          "will frustrate conservative evangelicals",
+          "chapter-per-topic structure is survey-level, not deep-dive",
+          "familiar ground for those already versed in critical biblical studies"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Many Deaths of the Black Company - Glen Cook": {
@@ -189565,30 +189740,51 @@
       "audit": null
     },
     "Emily Wilde’s Map of the Otherlands - Heather Fawcett": {
-      "title": "Emily Wilde’s Map of the Otherlands",
+      "title": "Emily Wilde's Map of the Otherlands",
       "author": "Heather Fawcett",
       "series": "Emily Wilde",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Prickly faerie scholar Emily Wilde and her infuriating colleague Wendell Bambleby travel to the Austrian Alps to investigate hidden doorways to the faerie realms, while Wendell's past — and the enemies who want him back — close in. A cosy, witty romantic fantasy told through Emily's dry academic journal entries.",
+      "tone": "cosy, witty, warmly romantic",
+      "pacing": "Moderate",
+      "themes": [
+        "academic obsession vs. human connection",
+        "faerie mythology and folklore",
+        "identity and belonging",
+        "romance between opposites",
+        "sacrifice"
+      ],
+      "setting": "Early 20th-century Europe (Austria and Cambridge), with forays into the magical faerie Otherlands",
+      "comparable_books": [
+        "Emily Wilde's Encyclopaedia of Faeries - Heather Fawcett (Book 1)",
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The House in the Cerulean Sea - TJ Klune",
+        "A Discovery of Witches - Deborah Harkness"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy academia",
+          "slow-burn romance",
+          "faerie folklore",
+          "witty epistolary-style narration",
+          "found family"
+        ],
+        "negative": [
+          "slow plotted",
+          "romance is understated — not steamy",
+          "sequel requires Book 1 context"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The dry, witty first-person journal format translates exceptionally well to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Dragonbone Chair - Tad Williams": {
@@ -198040,30 +198236,51 @@
       "audit": null
     },
     "Inquisitor’s Foil - D. J. Bodden": {
-      "title": "Inquisitor’s Foil",
+      "title": "Inquisitor's Foil",
       "author": "D. J. Bodden",
       "series": "The Illusionist",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "LitRPG",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Illusionist and reluctant spy Alan Campbell navigates a corrupt thieves' syndicate, a dangerous new romantic entanglement with an Imperial Inquisitor, and the political machinations of Viridian Gate Online's overminds, while in the real world his employer Osmark fights to save his company. The third instalment of a LitRPG spin-off set within the Viridian Gate Online expanded universe.",
+      "tone": "action-packed, game-mechanics-driven, lightly romantic",
+      "pacing": "Fast",
+      "themes": [
+        "identity and new beginnings",
+        "loyalty and betrayal",
+        "survival in a game world",
+        "corporate power in the real world",
+        "underdog persistence"
+      ],
+      "setting": "Viridian Gate Online — an ultra-immersive VRMMORPG fantasy world — and the near-future real world",
+      "comparable_books": [
+        "Viridian Gate Online - James A. Hunter",
+        "Ready Player One - Ernest Cline",
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "The Land - Aleron Kong"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG game mechanics",
+          "fast-paced action",
+          "rogueish underdog protagonist",
+          "interconnected extended universe",
+          "romance subplot"
+        ],
+        "negative": [
+          "requires prior knowledge of the Illusionist series and VGO universe",
+          "game-mechanic focus not for non-LitRPG readers",
+          "dual storyline (in-game and real-world) may feel disjointed"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Murder on the Lamplight Express - Morgan Stang": {
@@ -223250,30 +223467,51 @@
       "audit": null
     },
     "Traitor’s Legacy - S. J. Parris": {
-      "title": "Traitor’s Legacy",
+      "title": "Traitor's Legacy",
       "author": "S. J. Parris",
       "series": "Sophia de Wolfe",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Crime Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1598 London, former royal spy Sophia de Wolfe is pulled back into dangerous service when a young heiress is murdered at the theatre with a coded message hidden on her body — a mystery that ensnares the Queen's court, the Earl of Essex, and a secret from Sophia's own buried past. A richly researched Elizabethan thriller launching a new series from the author of the Giordano Bruno books.",
+      "tone": "atmospheric, tense, historically vivid",
+      "pacing": "Moderate",
+      "themes": [
+        "political intrigue and conspiracy",
+        "female agency in a patriarchal world",
+        "identity and secret lives",
+        "loyalty and betrayal",
+        "Elizabethan succession crisis"
+      ],
+      "setting": "London, 1598 — late Elizabethan England, including the Globe Theatre, the royal court, and the city's political underworld",
+      "comparable_books": [
+        "Treachery - S.J. Parris (Giordano Bruno series)",
+        "An Instance of the Fingerpost - Iain Pears",
+        "Dissolution - C.J. Sansom",
+        "The Alchemist's Daughter - Mary Lawrence"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Elizabethan historical setting",
+          "female protagonist spy",
+          "political intrigue",
+          "real historical figures",
+          "tightly plotted mystery"
+        ],
+        "negative": [
+          "slow setup establishing new series",
+          "benefits from some familiarity with the period",
+          "Bruno series veterans may miss the original protagonist"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Alchemy - S. J. Parris": {
@@ -233542,30 +233780,51 @@
       "audit": null
     },
     "Never Say You Can’t Survive - Charlie Jane Anders": {
-      "title": "Never Say You Can’t Survive",
+      "title": "Never Say You Can't Survive",
       "author": "Charlie Jane Anders",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction — Writing Craft",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Science fiction author Charlie Jane Anders offers an encouraging, personal guide to writing speculative fiction — covering craft fundamentals, dealing with creative block, and using storytelling as an emotional survival tool — drawn from her Tor.com essay series. Warm, activist, and aimed at writers navigating both the craft and difficult real-world times.",
+      "tone": "warm, encouraging, personal, activist",
+      "pacing": "Moderate",
+      "themes": [
+        "creative writing craft",
+        "storytelling as survival",
+        "speculative fiction techniques",
+        "dealing with creative anxiety",
+        "writing through adversity"
+      ],
+      "setting": "Nonfiction — no narrative setting; contemporary creative writing guidance with examples drawn from SFF literature",
+      "comparable_books": [
+        "On Writing - Stephen King",
+        "Wonderbook - Jeff VanderMeer",
+        "The Spire - James M. Williamson",
+        "Story - Robert McKee"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "practical and accessible writing advice",
+          "warm and encouraging voice",
+          "speculative fiction focus",
+          "emotionally honest about the writing life",
+          "activist and inclusive perspective"
+        ],
+        "negative": [
+          "personal/anecdotal style not for readers wanting systematic craft theory",
+          "SFF-centric examples may not suit all genre writers",
+          "overlaps with her prior Tor.com columns"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Victories Greater Than Death - Charlie Jane Anders": {

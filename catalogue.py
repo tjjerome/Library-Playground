@@ -87,11 +87,12 @@ _QUOTE_NORMALIZE = str.maketrans({
     "‘": "'", "’": "'", "‚": "'", "‛": "'",
     "“": '"', "”": '"', "„": '"', "‟": '"',
     "–": "-", "—": "-", "−": "-",
+    "​": "", "‌": "", "‍": "", "﻿": "",
 })
 
 
 def normalize_key(s: str) -> str:
-    return s.translate(_QUOTE_NORMALIZE).lower()
+    return " ".join(s.translate(_QUOTE_NORMALIZE).lower().split())
 
 # ---------------------------------------------------------------------------
 # Library CSV loading
