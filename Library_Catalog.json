@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4172,
-  "total_pending": 428,
+  "total_catalogued": 4192,
+  "total_pending": 408,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -226293,513 +226293,923 @@
       "title": "Rise of a Merchant Prince",
       "author": "Raymond E. Feist",
       "series": "The Serpentwar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Roo Avery returns home from the front and builds a trading empire in Krondor, navigating ruthless commerce, political intrigue, and personal ambition, while darker forces continue to threaten the Kingdom. A rare detour into mercantile fantasy within the Midkemia saga.",
+      "tone": "Intrigue-driven, grounded, occasionally domestic",
+      "pacing": "Moderate",
+      "themes": [
+        "ambition",
+        "commerce",
+        "class",
+        "loyalty",
+        "corruption"
+      ],
+      "setting": "Krondor and the Kingdom of the Isles, Midkemia — a secondary fantasy world with a late medieval flavour",
+      "comparable_books": [
+        "The Blade Itself - Joe Abercrombie",
+        "Magician - Raymond E. Feist",
+        "The Pillars of the Earth - Ken Follett"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political intrigue",
+          "merchant/trade-focused narrative",
+          "long-running secondary world",
+          "character-driven middle entry"
+        ],
+        "negative": [
+          "slower than other Feist books",
+          "less action than Book 1",
+          "lighter on combat"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Rage of a Demon King - Raymond E. Feist": {
       "title": "Rage of a Demon King",
       "author": "Raymond E. Feist",
       "series": "The Serpentwar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The Emerald Queen's invasion reaches its devastating climax as the forces of Midkemia struggle to survive against overwhelming odds, and a demon of enormous power threatens to consume everything. Epic battles and high stakes mark this penultimate volume.",
+      "tone": "Intense, dark, epic",
+      "pacing": "Fast",
+      "themes": [
+        "war",
+        "sacrifice",
+        "good vs. evil",
+        "survival",
+        "duty"
+      ],
+      "setting": "Midkemia — the Kingdom of the Isles and the western continent, secondary fantasy world at war",
+      "comparable_books": [
+        "The Return of the King - J.R.R. Tolkien",
+        "Lord of Chaos - Robert Jordan",
+        "A Crown of Swords - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic battle sequences",
+          "high-stakes payoff",
+          "classic secondary world fantasy",
+          "long-running series investment rewarded"
+        ],
+        "negative": [
+          "requires reading prior books",
+          "large cast",
+          "some plotlines feel rushed"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Firefly - Henry Porter": {
       "title": "Firefly",
       "author": "Henry Porter",
       "series": "Paul Samson",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Spy Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former MI6 agent Paul Samson is recruited to find a thirteen-year-old Syrian refugee codenamed Firefly, who carries vital intelligence about an ISIS terror cell and is racing across Europe to safety while terrorists hunt him. A propulsive chase thriller set against the backdrop of the real refugee crisis.",
+      "tone": "Tense, humane, topical, le Carré-esque",
+      "pacing": "Fast",
+      "themes": [
+        "refugee crisis",
+        "espionage",
+        "innocence vs. violence",
+        "migration",
+        "humanity"
+      ],
+      "setting": "Contemporary Europe — Greece, Macedonia, Serbia; refugee camps and border crossings",
+      "comparable_books": [
+        "The Spy Who Came in from the Cold - John le Carré",
+        "A Divided Spy - Charles Cumming",
+        "Slow Horses - Mick Herron"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "socially conscious thriller",
+          "le Carré comparisons",
+          "dual POV structure",
+          "morally grounded protagonist"
+        ],
+        "negative": [
+          "some find Samson underdeveloped",
+          "thriller framing softens darker realities of the refugee crisis"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Highly praised audio narration; dual-POV structure works well in audio format.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "White Hot Silence - Henry Porter": {
       "title": "White Hot Silence",
       "author": "Henry Porter",
       "series": "Paul Samson",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Spy Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former MI6 agent Paul Samson is hired to rescue Greek aid worker Anastasia — the woman he still loves — after she is abducted by the Italian Mafia and pulled into a web of international financial corruption and Russian manipulation. A kinetic chase across Europe with a Casablanca-style romantic triangle.",
+      "tone": "Propulsive, politically charged, emotionally complex",
+      "pacing": "Fast",
+      "themes": [
+        "espionage",
+        "love and loyalty",
+        "organised crime",
+        "Russian interference",
+        "international corruption"
+      ],
+      "setting": "Contemporary Europe — Italy, Russia, Estonia; spanning Mediterranean to the Baltic",
+      "comparable_books": [
+        "Firefly - Henry Porter",
+        "The Spy Who Came in from the Cold - John le Carré",
+        "A Legacy of Spies - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "romantic tension",
+          "complex plotting",
+          "le Carré comparisons",
+          "ripped-from-headlines geopolitics"
+        ],
+        "negative": [
+          "complex cast and plot threads",
+          "best read after Firefly",
+          "some exposition-heavy passages"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Old Enemy - Henry Porter": {
       "title": "The Old Enemy",
       "author": "Henry Porter",
       "series": "Paul Samson",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Spy Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Paul Samson survives an assassination attempt that coincides with the murder of legendary spy Robert Harland and the poisoning of billionaire Denis Hisami, leading him on a dangerous hunt for a former Stasi spymaster whose network of assets has penetrated deep into US and UK governments. A tense conclusion to the Paul Samson trilogy.",
+      "tone": "Taut, paranoid, geopolitically urgent",
+      "pacing": "Fast",
+      "themes": [
+        "Cold War legacy",
+        "Russian influence",
+        "espionage",
+        "democracy under threat",
+        "data and surveillance"
+      ],
+      "setting": "Contemporary London, Estonia, and the US; spanning the new Cold War geopolitical landscape",
+      "comparable_books": [
+        "White Hot Silence - Henry Porter",
+        "Slow Horses - Mick Herron",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series payoff",
+          "ripped-from-headlines Cold War 2.0 plot",
+          "propulsive action",
+          "well-drawn returning characters"
+        ],
+        "negative": [
+          "heavy recap passages for newcomers",
+          "some find the ending abrupt",
+          "requires investment in prior books for full impact"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The White Gold Score - Craig Schaefer": {
       "title": "The White Gold Score",
       "author": "Craig Schaefer",
       "series": "Daniel Faust",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1.5",
+      "genre": "Urban Fantasy",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Las Vegas sorcerer and criminal Daniel Faust is called in to handle a ghost refusing to vacate a casino penthouse, but the job spirals into the seedy LA music industry, entangling him with a scheming record producer, a drug cartel, and a quarter-million-dollar heist. A fast, standalone novella set between Books 1 and 2.",
+      "tone": "Darkly comic, noir, fast-paced",
+      "pacing": "Fast",
+      "themes": [
+        "crime",
+        "magic",
+        "found family",
+        "morality",
+        "the supernatural underworld"
+      ],
+      "setting": "Las Vegas and Los Angeles, contemporary — the occult criminal underworld beneath the neon glitz",
+      "comparable_books": [
+        "The Dresden Files - Jim Butcher",
+        "Felix Castor series - Mike Carey",
+        "Sandman Slim - Richard Kadrey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "morally grey protagonist",
+          "fast pacing",
+          "found family crew",
+          "noir urban fantasy",
+          "heist elements"
+        ],
+        "negative": [
+          "novella length — limited character development",
+          "works best read after Book 1",
+          "very dark/violent content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Fast, punchy prose and a strong narrator make this an ideal audio listen.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Hammerfall: A God Eater Saga Story - Rob J. Hayes": {
       "title": "Hammerfall: A God Eater Saga Story",
       "author": "Rob J. Hayes",
-      "series": null,
+      "series": "God Eater Saga",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Grimdark Fantasy",
+      "series_status": "Standalone",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Selitha, once the legendary Valkyr warrior known as the Starhammer, has built a quiet life in the forest — until bandits raid nearby villages and steal the children, forcing her to take up her axe again and confront who she truly is. A standalone Norse-mythology-inspired dark fantasy adventure set in the God Eater Saga world.",
+      "tone": "Grimdark, action-driven, introspective, relentless",
+      "pacing": "Fast",
+      "themes": [
+        "identity and legacy",
+        "redemption",
+        "heroism vs. monstrosity",
+        "parenthood",
+        "fallen gods"
+      ],
+      "setting": "The Primals — a Norse-mythology-inspired dark fantasy world of fallen angels, dead gods, and ancient monsters",
+      "comparable_books": [
+        "Shadow of the Gods - John Gwynne",
+        "The First Law - Joe Abercrombie",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "strong female protagonist",
+          "Norse mythology flavour",
+          "fast and relentless pacing",
+          "self-contained story"
+        ],
+        "negative": [
+          "richer if read after main God Eater books",
+          "dark and brutal content",
+          "limited page count means world-building is condensed"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Live and Let Die - Ian Fleming": {
       "title": "Live and Let Die",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "James Bond is sent to New York and Jamaica to investigate a sinister Harlem crime lord known as Mr. Big, who is smuggling seventeenth-century gold coins to fund Soviet intelligence. A propulsive early Bond adventure with sharp set-pieces and Cold War stakes.",
+      "tone": "Pulpy, tense, period-thrilling",
+      "pacing": "Fast",
+      "themes": [
+        "Cold War espionage",
+        "crime",
+        "danger and survival",
+        "colonial-era exoticism"
+      ],
+      "setting": "1950s New York (Harlem), Florida, and Jamaica",
+      "comparable_books": [
+        "Casino Royale - Ian Fleming",
+        "Moonraker - Ian Fleming",
+        "The Spy Who Loved Me - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive action",
+          "classic spy thrills",
+          "iconic characters",
+          "short punchy chapters",
+          "period atmosphere"
+        ],
+        "negative": [
+          "dated racial attitudes",
+          "thin female characters",
+          "pulpy wish-fulfilment may feel dated to modern readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "racial stereotyping (period text)"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Violence & Vigilance - David T. List": {
       "title": "Violence & Vigilance",
       "author": "David T. List",
       "series": "Turesia Untamed",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Grimdark Fantasy",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Arena fighter Irdessa the Undying escapes imprisonment and seeks survival and revenge in a brutal fantasy world, while failed monk Basalt Kale discovers dark secrets within his order as war looms between two island civilisations. A gritty multi-POV epic grimdark debut with savage beasts, dark humour, and damaged characters.",
+      "tone": "Grimdark, dark-humorous, gritty, kinetic",
+      "pacing": "Moderate",
+      "themes": [
+        "survival",
+        "vendetta",
+        "corruption",
+        "faith and disillusionment",
+        "war"
+      ],
+      "setting": "Turesia — a dual-island fantasy world featuring the warrior culture of Fohrvylda and the elemental-monk society of Ausgan, connected by the Faithless Sea",
+      "comparable_books": [
+        "The First Law - Joe Abercrombie",
+        "Red Rising - Pierce Brown",
+        "The Blade Itself - Joe Abercrombie"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "grimdark",
+          "dark humour",
+          "strong female protagonist",
+          "original world-building",
+          "dual POV structure"
+        ],
+        "negative": [
+          "debut novel — some rough edges",
+          "currently only one book confirmed in series",
+          "very dark content"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dr. No - Ian Fleming": {
       "title": "Dr. No",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "James Bond is sent to Jamaica to investigate the disappearance of a fellow agent and finds himself facing the megalomaniacal Dr. No, who is sabotaging US rocket tests from his heavily fortified Caribbean island. One of the most iconic Bond adventures, featuring the classic villain lair.",
+      "tone": "Pulpy, tense, adventure-driven",
+      "pacing": "Fast",
+      "themes": [
+        "Cold War espionage",
+        "power and megalomania",
+        "survival",
+        "isolation"
+      ],
+      "setting": "1950s Jamaica — tropical Caribbean island with a hidden villain fortress",
+      "comparable_books": [
+        "Casino Royale - Ian Fleming",
+        "Goldfinger - Ian Fleming",
+        "Thunderball - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "iconic villain",
+          "propulsive action",
+          "classic spy thrills",
+          "vivid tropical setting",
+          "short punchy chapters"
+        ],
+        "negative": [
+          "dated racial and gender attitudes",
+          "thin female characters",
+          "fantasy-level plot contrivances"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "From Russia With Love - Ian Fleming": {
       "title": "From Russia With Love",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "SMERSH hatches an elaborate plan to lure James Bond into a deadly trap using a beautiful Russian cipher clerk and the lure of a top-secret decoding machine, resulting in a cat-and-mouse game across Istanbul and the Orient Express. Often cited as Fleming's finest novel.",
+      "tone": "Taut, atmospheric, cold-blooded",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "Cold War espionage",
+        "deception",
+        "betrayal",
+        "love as weapon",
+        "East vs. West"
+      ],
+      "setting": "1950s Istanbul and the Orient Express; Cold War Europe",
+      "comparable_books": [
+        "Casino Royale - Ian Fleming",
+        "Tinker Tailor Soldier Spy - John le Carré",
+        "The Spy Who Came in from the Cold - John le Carré"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "slow burn thriller",
+          "atmosphere and tension",
+          "Cold War authenticity",
+          "le Carré-adjacent tone",
+          "iconic setting"
+        ],
+        "negative": [
+          "Bond barely appears in the first half",
+          "dated attitudes",
+          "minimalist action"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "For Your Eyes Only - Ian Fleming": {
       "title": "For Your Eyes Only",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A collection of five short stories featuring James Bond, including a revenge mission in Vermont, a Caribbean assassination, and a sniper duel in the Swiss Alps. The stories range in tone from action-driven to unexpectedly poignant, showcasing Fleming's range.",
+      "tone": "Varied — taut, elegiac, pulpy, intimate",
+      "pacing": "Fast",
+      "themes": [
+        "vengeance",
+        "duty",
+        "mortality",
+        "Cold War espionage",
+        "love and loss"
+      ],
+      "setting": "Various — Vermont, Jamaica, Swiss Alps, Nassau; 1950s Cold War era",
+      "comparable_books": [
+        "Octopussy and the Living Daylights - Ian Fleming",
+        "Casino Royale - Ian Fleming",
+        "The Spy Who Loved Me - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short story format — digestible in sittings",
+          "tonal variety",
+          "some unexpectedly emotional entries",
+          "classic Bond action"
+        ],
+        "negative": [
+          "uneven story quality",
+          "dated attitudes",
+          "no sustained narrative arc"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Goldfinger - Ian Fleming": {
       "title": "Goldfinger",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "James Bond becomes obsessed with the wealthy and dangerous Auric Goldfinger after catching him cheating at cards, uncovering a vast criminal plot to steal the entire US gold reserve at Fort Knox. Features one of the most iconic villains — and villain speeches — in all of thriller fiction.",
+      "tone": "Propulsive, flamboyant, larger-than-life",
+      "pacing": "Moderate",
+      "themes": [
+        "greed",
+        "Cold War espionage",
+        "obsession",
+        "gold and power",
+        "crime on a grand scale"
+      ],
+      "setting": "1950s England, Switzerland, Kentucky (Fort Knox), and the US — Cold War era",
+      "comparable_books": [
+        "Dr. No - Ian Fleming",
+        "Thunderball - Ian Fleming",
+        "Casino Royale - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "iconic villain",
+          "grand criminal scheme",
+          "propulsive plotting",
+          "witty voice",
+          "classic Bond set-pieces"
+        ],
+        "negative": [
+          "dated gender and racial attitudes",
+          "some slow middle sections",
+          "Jill Masterton's death is gratuitously exploitative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Thunderball - Ian Fleming": {
       "title": "Thunderball",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "SPECTRE hijacks NATO nuclear weapons and threatens to destroy a major city unless a massive ransom is paid, sending Bond to the Bahamas where he faces the suave and deadly Emilio Largo in a high-stakes underwater battle for the bombs. The first Bond novel to feature SPECTRE as the main villain organisation.",
+      "tone": "Sun-soaked, tense, adventurous",
+      "pacing": "Moderate",
+      "themes": [
+        "nuclear threat",
+        "Cold War brinkmanship",
+        "organised crime",
+        "luxury and danger"
+      ],
+      "setting": "1960s Bahamas — Nassau, the Caribbean sea; Cold War nuclear stakes",
+      "comparable_books": [
+        "Dr. No - Ian Fleming",
+        "Goldfinger - Ian Fleming",
+        "On Her Majesty's Secret Service - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "iconic villain organisation (SPECTRE)",
+          "tropical setting",
+          "underwater action sequences",
+          "high global stakes"
+        ],
+        "negative": [
+          "pacing drags in the middle",
+          "dated attitudes",
+          "long health-farm opening"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Spy Who Loved Me - Ian Fleming": {
       "title": "The Spy Who Loved Me",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 10",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Told entirely from the perspective of Vivienne Michel, a young French-Canadian woman who finds herself alone and terrorised by two gangsters at a remote motel — until James Bond arrives unexpectedly and turns the tables. A radical formal experiment: Bond is a supporting character in his own novel.",
+      "tone": "Intimate, tense, romantic, unconventional",
+      "pacing": "Moderate",
+      "themes": [
+        "female perspective",
+        "violence against women",
+        "rescue",
+        "independence",
+        "love"
+      ],
+      "setting": "Late 1950s Upstate New York — a remote roadside motel in the Adirondacks",
+      "comparable_books": [
+        "Casino Royale - Ian Fleming",
+        "For Your Eyes Only - Ian Fleming",
+        "The Man With the Golden Gun - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "unique format in the series",
+          "female-POV narrator",
+          "claustrophobic tension",
+          "deliberately subversive of spy genre conventions"
+        ],
+        "negative": [
+          "Bond barely appears",
+          "Fleming disowned this novel",
+          "female psychology feels dated and male-gaze oriented",
+          "divisive among Bond fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Octopussy and the Living Daylights - Ian Fleming": {
       "title": "Octopussy and the Living Daylights",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A collection of two novellas (and in some editions additional stories): 'Octopussy' in which Bond confronts a retired British agent living in decadent exile, and 'The Living Daylights' in which Bond must act as a sniper to cover a Soviet defector's escape across the Berlin Wall. Fleming's final published Bond fiction, with a more reflective and melancholy tone.",
+      "tone": "Elegiac, tense, morally nuanced",
+      "pacing": "Fast",
+      "themes": [
+        "guilt and reckoning",
+        "Cold War espionage",
+        "moral compromise",
+        "the cost of the spy life"
+      ],
+      "setting": "Jamaica and Cold War Berlin — 1960s era",
+      "comparable_books": [
+        "For Your Eyes Only - Ian Fleming",
+        "From Russia With Love - Ian Fleming",
+        "Casino Royale - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "shorter, focused stories",
+          "more literary tone than most Bond",
+          "morally complex 'Octopussy'",
+          "tense sniper set-piece in 'Living Daylights'"
+        ],
+        "negative": [
+          "very short collection",
+          "no sustained adventure",
+          "Bond largely absent from 'Octopussy'"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Man With the Golden Gun - Ian Fleming": {
       "title": "The Man With the Golden Gun",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 13",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A brainwashed James Bond attempts to assassinate M before being deprogrammed and sent to Jamaica to eliminate Francisco 'Paco' Scaramanga, the world's most dangerous hitman who kills with a golden gun. Fleming's final completed Bond novel, considered a slight but fast-paced thriller.",
+      "tone": "Lean, terse, slightly melancholy",
+      "pacing": "Fast",
+      "themes": [
+        "identity and brainwashing",
+        "duty",
+        "the assassin's code",
+        "Caribbean crime"
+      ],
+      "setting": "1960s Jamaica — Caribbean; Cold War era espionage",
+      "comparable_books": [
+        "Dr. No - Ian Fleming",
+        "Thunderball - Ian Fleming",
+        "Live and Let Die - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "short and punchy",
+          "iconic villain concept",
+          "a sense of Bond at his most tired and human",
+          "fast read"
+        ],
+        "negative": [
+          "widely considered one of the weaker Bond novels",
+          "unpolished — Fleming died before final revision",
+          "thin plot",
+          "Scaramanga underdeveloped vs. great Bond villains"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "On Her Majesty's Secret Service - Ian Fleming": {
       "title": "On Her Majesty's Secret Service",
       "author": "Ian Fleming",
       "series": "James Bond",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 11",
+      "genre": "Spy Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "James Bond tracks the elusive Ernst Stavro Blofeld to an Alpine research institute where he plots a devastating biological attack on Britain's food supply, all while falling genuinely and deeply in love with Tracy di Vicenzo, whom he ultimately marries — with tragic consequences.",
+      "tone": "Romantic, tense, deeply melancholy",
+      "pacing": "Moderate",
+      "themes": [
+        "love and marriage",
+        "loss",
+        "Cold War bioterrorism",
+        "identity",
+        "vengeance"
+      ],
+      "setting": "1960s Swiss Alps and the Casino at Royale-les-Eaux; Cold War Europe",
+      "comparable_books": [
+        "Casino Royale - Ian Fleming",
+        "You Only Live Twice - Ian Fleming",
+        "Thunderball - Ian Fleming"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "the most emotionally resonant Bond novel",
+          "genuinely romantic",
+          "devastating ending",
+          "slower and more literary than typical Bond",
+          "Blofeld at his best"
+        ],
+        "negative": [
+          "slower pacing",
+          "middle sections on the mountaintop may drag",
+          "devastating finale not for all readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Shadow of a Dark Queen - Raymond E. Feist": {
       "title": "Shadow of a Dark Queen",
       "author": "Raymond E. Feist",
       "series": "The Serpentwar Saga",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Epic Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Erik von Darkmoor and Rupert Avery, fleeing death sentences, are pressed into a secret military mission to scout a terrifying new threat from the west — the Emerald Queen's vast and savage army. A new generation of heroes is forged as the Kingdom of the Isles braces for war.",
+      "tone": "Epic, adventurous, militaristic",
+      "pacing": "Moderate",
+      "themes": [
+        "war",
+        "honour",
+        "fate",
+        "coming of age",
+        "loyalty"
+      ],
+      "setting": "Midkemia — a richly detailed secondary fantasy world, spanning frontier lands and the western continent, late medieval era",
+      "comparable_books": [
+        "The Darkness That Comes Before - R. Scott Bakker",
+        "The Dragonbone Chair - Tad Williams",
+        "Magician - Raymond E. Feist"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic military fantasy",
+          "large-scale world-building",
+          "ensemble cast",
+          "classic high fantasy feel",
+          "long-running shared world"
+        ],
+        "negative": [
+          "slow opening act",
+          "large cast to track",
+          "readers unfamiliar with Midkemia lore may struggle"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Shroud - Adrian Tchaikovsky": {
@@ -226807,26 +227217,47 @@
       "author": "Adrian Tchaikovsky",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a catastrophic accident strands scientists Juna Ceelander and Mai Ste Etienne on the surface of Shroud — a pitch-black, high-gravity moon with no oxygen but teeming with alien life — they must survive a gruelling journey across the hostile landscape while attempting first contact with an incomprehensible hive-mind intelligence. A tense, ideas-rich hard SF survival story.",
+      "tone": "Tense, cerebral, darkly comic, awe-inspiring",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact",
+        "alien intelligence",
+        "corporate exploitation",
+        "survival",
+        "communication and misunderstanding",
+        "colonialism"
+      ],
+      "setting": "Far-future — a pitch-black moon called Shroud in a distant star system; corporate interstellar expansion era",
+      "comparable_books": [
+        "Children of Time - Adrian Tchaikovsky",
+        "Blindsight - Peter Watts",
+        "Solaris - Stanisław Lem"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF alien contact",
+          "inventive exobiology",
+          "tightly focused cast",
+          "dual-perspective POV (human and alien)",
+          "anti-corporate themes"
+        ],
+        "negative": [
+          "slow-burn middle section",
+          "very alien aliens may frustrate readers seeking relatable antagonists",
+          "bleak ending elements"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Silence of the Girls - Pat Barker": {
