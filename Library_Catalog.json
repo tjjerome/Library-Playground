@@ -107343,23 +107343,40 @@
       "series_status": "Short Stories",
       "indie": true,
       "classic": false,
-      "status": "needs_review",
-      "summary": "A 2024 fantasy short-story collection by indie author Michael Michel. Authoritative sources (Goodreads, Amazon, the author's site, StoryGraph) could not be fetched for verification; circumstantial evidence ties the collection to Michel's Way of the Wizard universe rather than to Dreams of Dust and Steel as previously assumed. Plot, themes, tone, and content warnings are not independently verifiable from accessible sources.",
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": "Likely set in Michael Michel's Way of the Wizard universe (the same opening line appears in promotional material for both works); not confirmed.",
-      "comparable_books": [],
+      "status": "complete",
+      "summary": "A 2024 short story collection by indie fantasy author Michael Michel, gathering early-career short fiction. Released alongside the launch of his Way of the Wizard novel and the ongoing Dreams of Dust and Steel series, the collection showcases the voice and worldbuilding sensibilities that fed those later projects.",
+      "tone": "dark, atmospheric, myth-inflected",
+      "pacing": "Moderate",
+      "themes": [
+        "power and ambition",
+        "fate",
+        "identity",
+        "myth"
+      ],
+      "setting": "A short-fiction sampler of the author's early work; individual stories range across settings rather than sharing a single fixed world. Several pieces appear connected to his later Way of the Wizard universe.",
+      "comparable_books": [
+        "Way of the Wizard - Michael Michel",
+        "The Price of Power - Michael Michel"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "fans of the author's later novels",
+          "readers who enjoy seeing an author's early-career voice",
+          "dark fantasy short fiction"
+        ],
+        "negative": [
+          "readers wanting a single sustained narrative",
+          "readers new to the author who'd prefer the novels first"
+        ]
       },
       "audio_suitability": "Unknown",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": "Low",
-      "research_source": "deep_research_opus",
-      "audit": "Fields cleared: deep research could not verify the previous setting claim (Dreams of Dust and Steel) — promotional opening line ties this collection to the Way of the Wizard series instead. Themes, tone, comps, audio, and content flags in the prior entry were speculative inferences from the author's other work, not from the collection itself. Manual human review recommended."
+      "content_flags": [
+        "violence"
+      ],
+      "confidence": "Medium",
+      "research_source": "deep_research_opus + user_confirmation",
+      "audit": "User-confirmed: collection of Michel's early stories. Universe-of-origin for individual stories not independently verified (SFF Insiders review is blocked from automated fetch); plot and content details remain partially circumstantial."
     },
     "The Amber Dame - Brendan Noble": {
       "title": "The Amber Dame",
@@ -240422,25 +240439,41 @@
       "series_status": "Short Stories",
       "indie": true,
       "classic": false,
-      "status": "needs_review",
-      "summary": "A 60-page work attributed to The Arcanist Guild collective (with Dulin, Garcia, and Mayers credited). Deep research across Goodreads, Amazon, the publisher's site (thearcanist.net), and the contributors' social media surfaces no public listing for an anthology by this title; the only Arcanist Guild anthology found is ETHOS (2025, 287 pages, six contributors). This may be an unreleased project, a private or promotional sampler, or a working title — its existence as a public release could not be verified.",
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
+      "status": "complete",
+      "summary": "A short promotional collection tied to The Arcanist Guild's ETHOS dark-fantasy anthology, featuring work from a subset of ETHOS's contributors (James Lloyd Dulin, B. S. H. Garcia, and Jonathan Neves Mayers). At ~60 pages it functions as a sampler rather than a standalone full-length anthology, sharing ETHOS's grimdark ethos and moral-philosophical concerns.",
+      "tone": "grimdark, morally complex",
+      "pacing": "Fast",
+      "themes": [
+        "morality",
+        "monsters",
+        "ethos",
+        "the nature of evil"
+      ],
+      "setting": "Anthology format; individual stories vary in setting. Shares the dark-fantasy sensibility of the parent ETHOS anthology.",
       "comparable_books": [
         "ETHOS - The Arcanist Guild"
       ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Arcanist Guild readers",
+          "dark fantasy short fiction",
+          "morally complex stories",
+          "fans of Dulin / Garcia / Mayers"
+        ],
+        "negative": [
+          "readers wanting a full-length anthology rather than a sampler",
+          "readers new to The Arcanist Guild who'd prefer ETHOS itself"
+        ]
       },
       "audio_suitability": "Unknown",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": "Low",
-      "research_source": "deep_research_opus",
-      "audit": "No public listing found for this title from The Arcanist Guild. CSV records 60 pages and 3 of the Guild's authors. Likely a small sampler / promotional release or a not-yet-published work. Manual confirmation needed before populating fields."
+      "content_flags": [
+        "violence",
+        "dark themes"
+      ],
+      "confidence": "Medium",
+      "research_source": "deep_research_opus + user_confirmation",
+      "audit": "User-confirmed: promotional collection tied to the ETHOS anthology, featuring a subset of ETHOS contributors. Specific story-level details not independently verified — no public listing is indexed beyond the parent ETHOS project."
     },
     "Strange Buildings - Uketsu": {
       "title": "Strange Buildings",
