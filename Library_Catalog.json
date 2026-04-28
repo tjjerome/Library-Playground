@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4093,
-  "total_pending": 507,
+  "total_catalogued": 4112,
+  "total_pending": 488,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -222437,81 +222437,146 @@
       "title": "The Fallen",
       "author": "David Baldacci",
       "series": "Amos Decker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "FBI consultant Amos Decker and his partner Alex Jamison visit a struggling Pennsylvania rust-belt town and stumble into a string of bizarre murders linked to the opioid crisis and deep local corruption. Decker's perfect memory is put to the test as he unravels a conspiracy that could have nationwide consequences.",
+      "tone": "propulsive, dark, socially aware",
+      "pacing": "Fast",
+      "themes": [
+        "opioid crisis",
+        "small-town decline",
+        "corruption",
+        "memory and identity",
+        "justice"
+      ],
+      "setting": "Contemporary; Baronville, Pennsylvania — a decaying former mill and mining town",
+      "comparable_books": [
+        "Memory Man - David Baldacci",
+        "The Last Mile - David Baldacci",
+        "The Fix - David Baldacci"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "procedural investigation",
+          "morally complex protagonist",
+          "social commentary in thriller format",
+          "series continuity rewarded"
+        ],
+        "negative": [
+          "formulaic plotting",
+          "suspension of disbelief required",
+          "convoluted multi-thread narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The 6:20 Man - David Baldacci": {
       "title": "The 6:20 Man",
       "author": "David Baldacci",
-      "series": "6:20 Man",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "6:20 Man (Travis Devine)",
+      "series_position": "Book 1",
+      "genre": "Thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Former Army Ranger Travis Devine leaves the military for a gruelling job as an entry-level analyst at a powerful Wall Street investment firm, commuting daily on the 6:20 train. When a colleague and former girlfriend is found dead — apparently a suicide — Devine finds himself both a suspect and an unwilling inside man for a shadowy government team, uncovering a deadly corporate conspiracy.",
+      "tone": "dark, tense, conspiracy-driven",
+      "pacing": "Fast",
+      "themes": [
+        "corporate corruption",
+        "greed and inequality",
+        "military-to-civilian transition",
+        "conspiracy",
+        "identity and guilt"
+      ],
+      "setting": "Contemporary; New York City financial district and surrounding suburbs",
+      "comparable_books": [
+        "The Fix - David Baldacci",
+        "Memory Man - David Baldacci",
+        "The Long Game - Steve Hamilton"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "short punchy chapters",
+          "Wall Street intrigue",
+          "capable military protagonist",
+          "conspiracy thriller fans"
+        ],
+        "negative": [
+          "suspension of disbelief required",
+          "white-collar crime setting",
+          "formulaic Baldacci structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Redemption - David Baldacci": {
       "title": "Redemption",
       "author": "David Baldacci",
       "series": "Amos Decker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Amos Decker returns to his hometown of Burlington, Ohio, and is confronted by a man he helped put in prison — a man claiming to be innocent of the murders that launched Decker's career. When new evidence surfaces, Decker must re-examine the case that defined him.",
+      "tone": "propulsive, emotionally charged",
+      "pacing": "Fast",
+      "themes": [
+        "wrongful conviction",
+        "redemption",
+        "memory and fallibility",
+        "hometown roots",
+        "justice"
+      ],
+      "setting": "Contemporary; Burlington, Ohio — Decker's hometown",
+      "comparable_books": [
+        "The Fallen - David Baldacci",
+        "Memory Man - David Baldacci",
+        "The Last Mile - David Baldacci"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "morally complex protagonist",
+          "cold case re-examination",
+          "emotional stakes",
+          "series continuity"
+        ],
+        "negative": [
+          "formulaic plotting",
+          "requires prior series knowledge for full impact"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Anthony Bourdain Reader - Anthony Bourdain": {
@@ -222519,26 +222584,49 @@
       "author": "Anthony Bourdain",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / Essay Collection",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A definitive, career-spanning anthology of Bourdain's best writing, assembled posthumously, covering his passions for food, travel, kitchen life, and the wider world — ranging from culinary memoir and cultural critique to previously unpublished fiction and teenage diary entries. Edited by his longtime agent Kimberly Witherspoon with a foreword by Patrick Radden Keefe.",
+      "tone": "darkly comic, irreverent, razor-sharp, deeply personal",
+      "pacing": "Moderate",
+      "themes": [
+        "food and culinary culture",
+        "travel and wanderlust",
+        "identity",
+        "addiction and excess",
+        "mortality",
+        "the working class"
+      ],
+      "setting": "Global — Vietnam, Buenos Aires, Paris, Shanghai, New York restaurant kitchens, and beyond",
+      "comparable_books": [
+        "Kitchen Confidential - Anthony Bourdain",
+        "Medium Raw - Anthony Bourdain",
+        "The Nasty Bits - Anthony Bourdain"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Bourdain fans",
+          "culinary writing",
+          "travel writing",
+          "sharp essay collections",
+          "posthumous literary anthologies",
+          "darkly comic voice"
+        ],
+        "negative": [
+          "readers seeking linear narrative",
+          "those unfamiliar with Bourdain's oeuvre"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Bourdain's distinctive voice and personality translate exceptionally well to audio; previous audiobooks narrated by him are beloved.",
+      "content_flags": [
+        "drug use references"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Absolute Power - David Baldacci": {
@@ -222546,107 +222634,192 @@
       "author": "David Baldacci",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A master cat burglar witnesses a shocking crime involving the President of the United States and becomes a hunted man as the full machinery of the government is turned against him to bury the truth. A relentless cat-and-mouse thriller that became Baldacci's debut novel and the basis for a Clint Eastwood film.",
+      "tone": "propulsive, paranoid, politically charged",
+      "pacing": "Fast",
+      "themes": [
+        "corruption in power",
+        "justice vs. the state",
+        "survival",
+        "government cover-up"
+      ],
+      "setting": "Contemporary; Washington D.C. and Virginia",
+      "comparable_books": [
+        "The Firm - John Grisham",
+        "Executive Power - Vince Flynn",
+        "The Pelican Brief - John Grisham"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political thriller fans",
+          "government conspiracy",
+          "propulsive pacing",
+          "cat-and-mouse tension",
+          "film adaptation fans"
+        ],
+        "negative": [
+          "readers seeking deep characterisation over plot",
+          "those averse to Washington power-circle settings"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Silent Parade - Keigo Higashino": {
       "title": "Silent Parade",
       "author": "Keigo Higashino",
-      "series": "Detective Galileo Series",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series": "Detective Galileo",
+      "series_position": "Book 4 (translated; Book 9 in Japanese)",
+      "genre": "Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a teenage girl's skeletal remains are found in a burned house, her suspected killer returns to taunt the community — then dies himself during a local parade under seemingly impossible circumstances with everyone who had motive possessing a rock-solid alibi. Physics professor and reluctant detective Manabu Yukawa (Detective Galileo) must untangle the intricate locked-room puzzle.",
+      "tone": "methodical, melancholy, intellectually elegant",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "justice and its limits",
+        "grief and community",
+        "obsession",
+        "alibi construction",
+        "scientific reasoning"
+      ],
+      "setting": "Contemporary Japan; a neighbourhood in Tokyo centred on a family-run restaurant",
+      "comparable_books": [
+        "The Devotion of Suspect X - Keigo Higashino",
+        "Salvation of a Saint - Keigo Higashino",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Japanese mystery fans",
+          "locked-room puzzle lovers",
+          "character-driven procedurals",
+          "slow burn with satisfying payoff",
+          "Golden Age puzzle sensibility"
+        ],
+        "negative": [
+          "readers wanting fast pacing",
+          "those unfamiliar with Japanese crime fiction conventions",
+          "large Japanese cast can be hard to track"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Print preferred",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "An Echo of Things to Come - James Islington": {
       "title": "An Echo of Things to Come",
       "author": "James Islington",
       "series": "The Licanius Trilogy",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Fantasy",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the aftermath of a devastating attack, an amnesty is declared for the Augurs, allowing them to emerge from hiding to face the dark forces threatening the land of Andarra. Davian races north toward a failing magical Boundary while his companions Wirr and Asha navigate assassination, political intrigue, and a secret investigation — all while the amnesiac Caeden grapples with dark truths from his recovered memories.",
+      "tone": "epic, revelatory, relentlessly plotted",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "memory and identity",
+        "morality of war",
+        "power and corruption",
+        "time and fate",
+        "sacrifice"
+      ],
+      "setting": "Secondary world fantasy; the land of Andarra — a realm with complex magical politics and a failing mystical Boundary",
+      "comparable_books": [
+        "The Shadow of What Was Lost - James Islington",
+        "The Way of Kings - Brandon Sanderson",
+        "The Eye of the World - Robert Jordan"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic fantasy fans",
+          "Wheel of Time / Sanderson comparisons",
+          "complex magic systems",
+          "political intrigue",
+          "multi-POV doorstoppers",
+          "slow burn with shocking payoff"
+        ],
+        "negative": [
+          "readers wanting standalone story",
+          "those who dislike dense worldbuilding",
+          "must read Book 1 first"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Walk the Wire - David Baldacci": {
       "title": "Walk the Wire",
       "author": "David Baldacci",
       "series": "Amos Decker",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "Thriller",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Amos Decker and Alex Jamison are dispatched to London, North Dakota — a fracking boomtown — when a woman's body is discovered, expertly autopsied and dumped in the Badlands. As Decker investigates, he uncovers overlapping conspiracies involving a religious cult, ruthless oil interests, and a classified military installation, with the stakes escalating to a national level.",
+      "tone": "propulsive, conspiratorial, gritty",
+      "pacing": "Moderate",
+      "themes": [
+        "energy industry and exploitation",
+        "secrecy and government power",
+        "religious communities",
+        "boomtown corruption",
+        "loyalty"
+      ],
+      "setting": "Contemporary; London, North Dakota — a fracking boomtown in the Badlands",
+      "comparable_books": [
+        "The Fallen - David Baldacci",
+        "Redemption - David Baldacci",
+        "The Edge - David Baldacci"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Baldacci series fans",
+          "crossover appeal for Will Robie fans",
+          "conspiracy thriller readers",
+          "regional American settings"
+        ],
+        "negative": [
+          "overly complex multi-thread narrative",
+          "less emphasis on Decker's signature memory ability",
+          "somewhat convoluted pacing per some reviewers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Source - James A. Michener": {
@@ -222654,26 +222827,49 @@
       "author": "James A. Michener",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Using an archaeological dig at a fictional tell in modern Israel as its framing device, this sweeping epic traces the history of the Jewish people across twelve thousand years through a series of linked stories, from prehistoric religion to the founding of the modern state of Israel. One of Michener's most celebrated works.",
+      "tone": "panoramic, meditative, richly detailed",
+      "pacing": "Slow",
+      "themes": [
+        "religion and faith",
+        "history of the Jewish people",
+        "land and identity",
+        "archaeology",
+        "the nature of civilization",
+        "conflict and coexistence"
+      ],
+      "setting": "The Holy Land (modern Israel), spanning from prehistoric times through the 20th century",
+      "comparable_books": [
+        "The Pillars of the Earth - Ken Follett",
+        "Centennial - James A. Michener",
+        "Poland - James A. Michener"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "epic historical fiction lovers",
+          "readers fascinated by the Middle East and Jewish history",
+          "Michener fans",
+          "multigenerational sagas",
+          "archaeological framing device"
+        ],
+        "negative": [
+          "readers wanting plot momentum",
+          "those averse to very long books",
+          "those seeking strong individual protagonist"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Pushing Ice - Alastair Reynolds": {
@@ -222681,26 +222877,46 @@
       "author": "Alastair Reynolds",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the near future, the crew of an ice-mining spaceship diverts to intercept Janus — a moon of Saturn that turns out to be an alien artefact accelerating out of the solar system. What begins as a rescue mission becomes a one-way journey into deep time, as the crew faces decades of isolation, internal conflict, and encounters with mysterious alien civilisations.",
+      "tone": "awe-inspiring, claustrophobic, emotionally raw",
+      "pacing": "Moderate",
+      "themes": [
+        "first contact",
+        "survival",
+        "friendship and betrayal",
+        "time and loss",
+        "human adaptability",
+        "the scale of the universe"
+      ],
+      "setting": "Near-future and far-future deep space; Saturn's vicinity and beyond",
+      "comparable_books": [
+        "Revelation Space - Alastair Reynolds",
+        "A Fire Upon the Deep - Vernor Vinge",
+        "Rendezvous with Rama - Arthur C. Clarke"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "hard SF fans",
+          "first contact narratives",
+          "character-driven SF",
+          "big-concept science fiction",
+          "fans of Reynolds's Revelation Space universe"
+        ],
+        "negative": [
+          "readers wanting fast plot resolution",
+          "those who dislike bleak or emotionally heavy SF"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Fifth Head of Cerberus - Gene Wolfe": {
@@ -222708,188 +222924,329 @@
       "author": "Gene Wolfe",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Science Fiction",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "Three linked novellas set on twin colonial planets where the indigenous inhabitants may have been replaced — or may have shape-shifted into the colonists themselves. A deeply layered, unreliable meditation on identity, colonialism, and memory, widely considered one of the most demanding and rewarding works in science fiction.",
+      "tone": "enigmatic, lyrical, deeply ambiguous",
+      "pacing": "Slow",
+      "themes": [
+        "identity and selfhood",
+        "colonialism and cultural erasure",
+        "memory and unreliable narration",
+        "nature vs. nurture",
+        "myth and transformation"
+      ],
+      "setting": "Far-future twin colonial worlds Sainte Croix and Sainte Anne — culturally French, decadent, mysterious",
+      "comparable_books": [
+        "The Book of the New Sun - Gene Wolfe",
+        "Solaris - Stanislaw Lem",
+        "The Left Hand of Darkness - Ursula K. Le Guin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary SF readers",
+          "unreliable narrator enthusiasts",
+          "Gene Wolfe fans",
+          "puzzle-box fiction",
+          "novella format",
+          "postcolonial themes"
+        ],
+        "negative": [
+          "readers wanting clear resolution",
+          "those who dislike ambiguity",
+          "mainstream genre thriller readers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print strongly preferred",
+      "audio_notes": "Wolfe's layered prose and unreliable narration demand close reading and re-reading; audio makes it nearly impossible to track the intricate textual puzzles.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Forest Laird - Jack Whyte": {
       "title": "The Forest Laird",
       "author": "Jack Whyte",
       "series": "The Bravehearts Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Told through the eyes of Father James, a Scottish priest and cousin of William Wallace, this novel reconstructs the life of Scotland's great hero of the Wars of Independence — from his youth as an outlaw in the forests to his role as rebel, patriot, and kingmaker — as Wallace awaits execution in London's Smithfield Prison in 1305.",
+      "tone": "sweeping, sombre, historically detailed",
+      "pacing": "Slow",
+      "themes": [
+        "Scottish independence",
+        "patriotism and sacrifice",
+        "brotherhood",
+        "legend vs. reality",
+        "English oppression"
+      ],
+      "setting": "Late 13th–early 14th century Scotland and England; the Wars of Independence",
+      "comparable_books": [
+        "The Guardian - Jack Whyte",
+        "The Pillars of the Earth - Ken Follett",
+        "Braveheart - Randall Wallace"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Scottish historical fiction fans",
+          "medieval epic readers",
+          "Braveheart enthusiasts",
+          "Jack Whyte fans",
+          "character study over action"
+        ],
+        "negative": [
+          "readers wanting fast-paced action",
+          "those put off by philosophical digressions",
+          "readers expecting Wallace as primary POV"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Guardian - Jack Whyte": {
       "title": "The Guardian",
       "author": "Jack Whyte",
       "series": "The Bravehearts Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The concluding volume of the Chronicles brings together William Wallace and Robert Bruce in Scotland, AD 1297, as they defy the brutal English king Edward Plantagenet in a desperate struggle for Scottish freedom — culminating in Wallace assuming the mantle of Guardian of Scotland and the legendary Battle of Stirling Bridge.",
+      "tone": "sweeping, martial, historically grounded",
+      "pacing": "Moderate",
+      "themes": [
+        "Scottish independence",
+        "guerrilla warfare",
+        "heroism and sacrifice",
+        "two legendary leaders",
+        "loyalty"
+      ],
+      "setting": "Scotland, AD 1297 — the critical year of the Wars of Independence",
+      "comparable_books": [
+        "The Forest Laird - Jack Whyte",
+        "Robert The Bruce - Jack Whyte",
+        "The King in the North - Max Adams"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Scottish historical fiction fans",
+          "medieval military history lovers",
+          "series completionists",
+          "Jack Whyte fans"
+        ],
+        "negative": [
+          "readers new to the series — requires Books 1 and 2",
+          "those wanting more action over dialogue"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Robert The Bruce - Jack Whyte": {
       "title": "Robert The Bruce",
       "author": "Jack Whyte",
       "series": "The Bravehearts Chronicles",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "This second book follows the young Robert Bruce coming of age amid the bitter rivalry of Scotland's nobles after the Scottish king dies without an heir, tracking his journey from feudal loyalty to the English crown to reluctant renegade, as the road to Bannockburn begins.",
+      "tone": "sweeping, politically intricate, character-driven",
+      "pacing": "Slow",
+      "themes": [
+        "political allegiance and betrayal",
+        "coming of age under pressure",
+        "Scottish nationhood",
+        "the making of a king",
+        "resistance"
+      ],
+      "setting": "Scotland and England, from 1286 to the eve of Bannockburn — the Wars of Independence",
+      "comparable_books": [
+        "The Forest Laird - Jack Whyte",
+        "The Guardian - Jack Whyte",
+        "The Scottish Chiefs - Jane Porter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Scottish historical fiction fans",
+          "Robert Bruce enthusiasts",
+          "political historical fiction",
+          "Jack Whyte fans"
+        ],
+        "negative": [
+          "readers wanting fast action over political manoeuvring",
+          "those new to the series"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Wrath of the Furies - Steven Saylor": {
       "title": "Wrath of the Furies",
       "author": "Steven Saylor",
       "series": "Roma Sub Rosa",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 15 (Prequel 3)",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Set in 88 BC as Mithridates the Great sweeps through Asia Minor and massacres Romans across his territories, a young Gordianus the Finder travels incognito to Ephesus to rescue his former tutor — and finds himself entangled in political intrigue, espionage, and plans for a ritual sacrifice at the heart of Mithridates' court.",
+      "tone": "atmospheric, tightly plotted, historically vivid",
+      "pacing": "Moderate",
+      "themes": [
+        "political violence",
+        "loyalty and rescue",
+        "ancient geopolitics",
+        "espionage",
+        "the cost of empire"
+      ],
+      "setting": "88 BC; Alexandria and Ephesus — during Mithridates' invasion of Roman Asia Minor",
+      "comparable_books": [
+        "Roman Blood - Steven Saylor",
+        "Raiders of the Nile - Steven Saylor",
+        "Masters of Rome series - Colleen McCullough"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "ancient Rome historical fiction fans",
+          "historical mystery readers",
+          "Gordianus the Finder fans",
+          "espionage thriller in classical setting"
+        ],
+        "negative": [
+          "readers unfamiliar with the series — best after prior books",
+          "those expecting a straightforward murder mystery"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "A Christmas Requiem - S. J. Parris": {
       "title": "A Christmas Requiem",
       "author": "S. J. Parris",
       "series": "Giordano Bruno",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 0.7 (Novella / Prequel)",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Rome, 1569: a young novice monk Giordano Bruno is unexpectedly summoned before the Pope, a summons he fears is a trap. His curiosity and recklessness draw him into the dangerous intrigues of the Eternal City, where accusations of heresy are never far away and a single misstep could prove fatal.",
+      "tone": "atmospheric, tense, wry",
+      "pacing": "Fast",
+      "themes": [
+        "religious persecution",
+        "curiosity vs. conformity",
+        "Roman intrigue",
+        "heresy",
+        "survival"
+      ],
+      "setting": "Rome, 1569 — the height of the Counter-Reformation",
+      "comparable_books": [
+        "Heresy - S. J. Parris",
+        "The Secret Dead - S. J. Parris",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Giordano Bruno series fans",
+          "historical mystery lovers",
+          "Renaissance setting enthusiasts",
+          "novella format"
+        ],
+        "negative": [
+          "readers new to the series — better after at least Book 1",
+          "those wanting full novel length"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Treachery - S. J. Parris": {
       "title": "Treachery",
       "author": "S. J. Parris",
       "series": "Giordano Bruno",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "August 1585: Giordano Bruno accompanies Sir Philip Sidney to Plymouth, where Sir Francis Drake is preparing a daring expedition against Spain. When a ship's captain is brutally murdered and Drake's life is threatened, Bruno must hunt the killer through Plymouth's dangerous underworld while uncovering a conspiracy that threatens all of England.",
+      "tone": "atmospheric, propulsive, historically rich",
+      "pacing": "Fast",
+      "themes": [
+        "religious-political conflict",
+        "espionage",
+        "loyalty and betrayal",
+        "Elizabethan England on the brink of war",
+        "ambition"
+      ],
+      "setting": "England, August 1585 — Plymouth harbour and its underworld, on the eve of Drake's famous expedition",
+      "comparable_books": [
+        "Conspiracy - S. J. Parris",
+        "Sacrilege - S. J. Parris",
+        "Dissolution - C. J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Elizabethan historical fiction fans",
+          "C. J. Sansom readers",
+          "historical spy thriller enthusiasts",
+          "nautical Elizabethan setting"
+        ],
+        "negative": [
+          "readers new to the series — best read in order",
+          "those wanting a quieter mystery pace"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Traitor’s Legacy - S. J. Parris": {
@@ -222923,54 +223280,98 @@
       "title": "Alchemy",
       "author": "S. J. Parris",
       "series": "Giordano Bruno",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sent to Prague by spymaster Walsingham to make contact with the English alchemist John Dee at the court of the Holy Roman Emperor Rudolf II, Giordano Bruno arrives to find Dee missing and a rival alchemist brutally murdered. Ordered by the emperor himself to find the killer, Bruno must navigate the labyrinthine factions of Rudolf's occult-obsessed court.",
+      "tone": "atmospheric, intricate, darkly comic in places",
+      "pacing": "Moderate",
+      "themes": [
+        "alchemy and mysticism",
+        "religious and political tension",
+        "espionage",
+        "identity and obsession",
+        "the pursuit of forbidden knowledge"
+      ],
+      "setting": "Prague, 1588 — the court of Holy Roman Emperor Rudolf II, a haven for alchemists and mystics",
+      "comparable_books": [
+        "Treachery - S. J. Parris",
+        "Execution - S. J. Parris",
+        "The Name of the Rose - Umberto Eco"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Giordano Bruno series fans",
+          "Renaissance occultism setting",
+          "historical mystery lovers",
+          "Prague setting",
+          "John Dee enthusiasts"
+        ],
+        "negative": [
+          "readers new to the series",
+          "those who disliked later series instalments with romance subplots — Bruno is solo here"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Wolf Sea - Robert Low": {
       "title": "The Wolf Sea",
       "author": "Robert Low",
       "series": "Oathsworn",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Fiction",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Stranded in Byzantium after the events of The Whale Road, the Oathsworn and their reluctant young leader Orm set out across the treacherous eastern seas to recover their stolen Rune Serpent sword and rescue enslaved comrades, pursuing their rival Starkad from Constantinople to Jerusalem amid the bloody wars between Byzantium and the Arab world.",
+      "tone": "grimdark, brutal, darkly comedic, authentically Norse",
+      "pacing": "Fast",
+      "themes": [
+        "brotherhood and oath-keeping",
+        "fate and the Norse gods",
+        "vengeance",
+        "survival",
+        "the Viking world beyond Scandinavia"
+      ],
+      "setting": "Late 10th century; Byzantium, the eastern Mediterranean, and the Near East — the treacherous 'wolf sea'",
+      "comparable_books": [
+        "The Whale Road - Robert Low",
+        "The Last Kingdom - Bernard Cornwell",
+        "Vikings - Tim Severin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Viking fiction fans",
+          "Bernard Cornwell readers",
+          "brutal authentic medieval action",
+          "found family / oath-brotherhood dynamics",
+          "dark humour",
+          "non-Scandinavian Viking settings"
+        ],
+        "negative": [
+          "readers new to the series — must read Book 1 first",
+          "those averse to graphic violence",
+          "readers wanting female characters or domestic storylines"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Low's raw, runic prose style and Orm's sardonic voice are exceptionally well-suited to audio narration.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Whale Road - Robert Low": {
