@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4033,
-  "total_pending": 567,
+  "total_catalogued": 4053,
+  "total_pending": 547,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -219565,81 +219565,139 @@
       "title": "The Hermit of Eyton Forest",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 14",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When a young nobleman's heir disappears near Eyton Forest and a mysterious hermit appears in the area, Brother Cadfael investigates a tangle of inheritance, fugitives, and murder in 12th-century Shrewsbury. The case draws him into questions of loyalty, law, and the lives of those who seek sanctuary.",
+      "tone": "Gentle, atmospheric, morally thoughtful",
+      "pacing": "Moderate",
+      "themes": [
+        "sanctuary and law",
+        "inheritance and duty",
+        "medieval monastic life",
+        "justice"
+      ],
+      "setting": "12th-century Shrewsbury and Eyton Forest, England; Benedictine monastery",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Mistress of the Art of Death - Ariana Franklin",
+        "The Matthew Shardlake series - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy historical mystery",
+          "monastic setting",
+          "period atmosphere",
+          "gentle pacing",
+          "recurring beloved detective"
+        ],
+        "negative": [
+          "graphic violence",
+          "fast-paced thrillers",
+          "modern settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Ellis Peters's richly atmospheric prose and the warmly familiar voice of Cadfael translate beautifully to audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Murderous Procession - Ariana Franklin": {
       "title": "A Murderous Procession",
       "author": "Ariana Franklin",
       "series": "Mistress of the Art of Death",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1176, King Henry II despatches his forensic expert Adelia Aguilar to accompany Princess Joanna's wedding procession to Sicily — but when members of the party are murdered, Adelia must identify a killer who may be targeting the princess or herself. The final book completed by Franklin before her death in 2011.",
+      "tone": "Vivid, witty, richly historical, suspenseful",
+      "pacing": "Moderate",
+      "themes": [
+        "women's agency in a patriarchal world",
+        "medieval politics",
+        "forensic justice",
+        "forbidden love"
+      ],
+      "setting": "Medieval England, France, and Sicily, 1176",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "An Instance of the Fingerpost - Iain Pears",
+        "The Cadfael Chronicles - Ellis Peters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "strong female protagonist",
+          "historical detail",
+          "forensic mystery",
+          "medieval setting",
+          "series investment payoff"
+        ],
+        "negative": [
+          "series must be read in order",
+          "slow burn",
+          "unresolved cliffhanger ending"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Rich period dialogue and vivid characterisation make this an excellent audio experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Franchise Affair - Josephine Tey": {
       "title": "The Franchise Affair",
       "author": "Josephine Tey",
       "series": "Inspector Alan Grant",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "A respectable mother and daughter living in an isolated house called The Franchise are accused by a teenager of having kidnapped and beaten her; a local solicitor takes up their defence against apparently overwhelming evidence. A sharp psychological study of truth, reputation, and the nature of evidence.",
+      "tone": "Dry, wry, psychologically astute",
+      "pacing": "Moderate",
+      "themes": [
+        "truth versus accusation",
+        "respectability and class",
+        "justice",
+        "mob mentality"
+      ],
+      "setting": "Post-war English rural England, 1940s",
+      "comparable_books": [
+        "Gaudy Night - Dorothy L. Sayers",
+        "The Daughter of Time - Josephine Tey",
+        "An English Murder - Cyril Hare"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "golden age mystery feel",
+          "psychological depth",
+          "witty prose",
+          "unusual mystery structure",
+          "classic British fiction"
+        ],
+        "negative": [
+          "action-focused readers",
+          "those expecting conventional whodunit structure"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Peak - Sam Guthrie": {
@@ -219647,53 +219705,92 @@
       "author": "Sam Guthrie",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "When rising Australian politician Sebastian commits suicide in front of his childhood friend and political aide Charlie, a cascade of catastrophic events — blackouts, intelligence service interventions — unfolds over 24 hours, forcing Charlie to uncover what Sebastian knew and why it threatens to bring the world to its knees. A debut thriller rooted in Australian–Chinese geopolitics.",
+      "tone": "Propulsive, politically charged, claustrophobic",
+      "pacing": "Fast",
+      "themes": [
+        "China–Australia geopolitics",
+        "friendship and betrayal",
+        "political corruption",
+        "espionage",
+        "grief"
+      ],
+      "setting": "Contemporary Beijing, Hong Kong, and Adelaide; 24-hour time frame",
+      "comparable_books": [
+        "Damascus Station - David McCloskey",
+        "The Day of the Jackal - Frederick Forsyth",
+        "Black Doves - Joe Thomas"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "propulsive pacing",
+          "insider geopolitical detail",
+          "morally grey protagonist",
+          "debut thriller",
+          "China/Australia angle"
+        ],
+        "negative": [
+          "those wanting a conventional hero",
+          "readers who dislike politics-heavy plotting"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Devil's Novice - Ellis Peters": {
       "title": "The Devil's Novice",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 8",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A troubled young novice arrives at Shrewsbury Abbey with a secret connected to a murder, while political upheaval grips England during the civil war between King Stephen and the Empress Maud. Cadfael must unravel the young man's past to solve the crime and protect the innocent.",
+      "tone": "Gentle, atmospheric, morally thoughtful",
+      "pacing": "Moderate",
+      "themes": [
+        "guilt and redemption",
+        "civil war",
+        "monastic vocation",
+        "truth and loyalty"
+      ],
+      "setting": "12th-century Shrewsbury, England; Benedictine monastery; reign of King Stephen",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Mistress of the Art of Death - Ariana Franklin",
+        "The Matthew Shardlake series - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy historical mystery",
+          "monastic setting",
+          "period atmosphere",
+          "recurring beloved detective"
+        ],
+        "negative": [
+          "graphic violence",
+          "fast-paced thrillers",
+          "modern settings"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The warmth and rhythm of Ellis Peters's prose suit audio narration particularly well.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Compound - Aisling Rawle": {
@@ -219701,80 +219798,139 @@
       "author": "Aisling Rawle",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dystopian Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a near-future war-torn world, Lily wakes in a remote desert compound as a contestant on a massively popular reality TV show where twenty players must outlast each other for prizes ranging from luxury goods to basic necessities. As the competition intensifies and the producers raise ever-darker stakes, the line between playing and surviving begins to blur.",
+      "tone": "Unsettling, darkly satirical, slow-building dread",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "reality TV and spectacle",
+        "capitalism and consumerism",
+        "gender dynamics",
+        "survival",
+        "media and power"
+      ],
+      "setting": "Near-future dystopia; remote desert compound reality TV set",
+      "comparable_books": [
+        "The Hunger Games - Suzanne Collins",
+        "Camp Zero - Michelle Min Sterling",
+        "My Murder - Katie Williams"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary dystopia",
+          "social satire",
+          "slow-burn tension",
+          "feminist themes",
+          "debut fiction"
+        ],
+        "negative": [
+          "readers wanting action from page one",
+          "those averse to reality TV subject matter",
+          "explicit genre thriller fans"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Beekeeper's Apprentice - Laurie R. King": {
       "title": "The Beekeeper's Apprentice",
       "author": "Laurie R. King",
       "series": "Mary Russell and Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1915, a fifteen-year-old Mary Russell stumbles upon a retired Sherlock Holmes on the Sussex Downs; he recognises her extraordinary intellect and takes her on as his apprentice, and their unlikely partnership soon faces a dangerous enemy who targets them both. A fresh and inventive reimagining of the Holmes canon.",
+      "tone": "Witty, warm, intellectually sparkling",
+      "pacing": "Moderate",
+      "themes": [
+        "female intellect and agency",
+        "mentorship",
+        "identity",
+        "partnership"
+      ],
+      "setting": "1915 Sussex and London, England; WWI backdrop",
+      "comparable_books": [
+        "A Study in Scarlet - Arthur Conan Doyle",
+        "Maisie Dobbs - Jacqueline Winspear",
+        "The Thursday Murder Club - Richard Osman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Sherlock Holmes fan",
+          "strong female protagonist",
+          "historical mystery",
+          "witty banter",
+          "long-running beloved series"
+        ],
+        "negative": [
+          "purists who dislike Holmes reinterpretations",
+          "readers wanting grim or dark tone"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The first-person narrative voice of the spirited Russell is a natural fit for audio; widely praised in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Confession of Brother Haluin - Ellis Peters": {
       "title": "The Confession of Brother Haluin",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 15",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Near death, a monk confesses to a love affair and a woman's death from long ago; when he unexpectedly recovers, he and Cadfael set out on a journey to make amends — only to find that old secrets conceal a present-day crime. A quieter, more introspective entry in the series.",
+      "tone": "Contemplative, melancholic, gently suspenseful",
+      "pacing": "Slow",
+      "themes": [
+        "confession and penance",
+        "old secrets",
+        "love and loss",
+        "guilt and redemption"
+      ],
+      "setting": "12th-century England; Benedictine monastery and English countryside",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "The Cadfael Chronicles - Ellis Peters",
+        "Mistress of the Art of Death - Ariana Franklin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy historical mystery",
+          "meditative pacing",
+          "character-focused narrative",
+          "period atmosphere"
+        ],
+        "negative": [
+          "readers wanting a fast-moving plot",
+          "those new to the series"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The reflective, lyrical quality of this entry suits audio particularly well.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Betrayal of Thomas True - A. J. West": {
@@ -219782,26 +219938,49 @@
       "author": "A. J. West",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Historical Mystery",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1715, young Thomas True arrives in London harbouring a dangerous secret and finds himself drawn into the hidden underworld of the molly houses — clandestine meeting places for gay men — where a murderous traitor is betraying the community's secrets to cruel justices. Carpenter Gabriel Griffin must unmask the rat before more lives are lost and their forbidden love is destroyed.",
+      "tone": "Vivid, raucous, emotionally devastating, gothic",
+      "pacing": "Moderate",
+      "themes": [
+        "LGBTQ+ history and persecution",
+        "found family",
+        "identity and self-acceptance",
+        "betrayal",
+        "justice"
+      ],
+      "setting": "Georgian London, 1715; molly houses, Fleet Ditch, Alsatia",
+      "comparable_books": [
+        "Jonathan Strange & Mr Norrell - Susanna Clarke",
+        "The Spirit Engineer - A.J. West",
+        "Fingersmith - Sarah Waters"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LGBTQ+ historical fiction",
+          "found family",
+          "morally complex characters",
+          "vivid period setting",
+          "emotionally charged"
+        ],
+        "negative": [
+          "those averse to queer themes",
+          "readers wanting lighter fare",
+          "slow-pacing preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Operation Mincemeat - Ben Macintyre": {
@@ -219809,134 +219988,227 @@
       "author": "Ben Macintyre",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Narrative Non-Fiction",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The true story of one of WWII's most audacious deceptions: British intelligence planted a corpse carrying fake invasion plans off the coast of Spain to mislead the Nazis about the Allied invasion of Sicily. Macintyre reconstructs the extraordinary cast of eccentric spies, writers, and officials who pulled off the ruse.",
+      "tone": "Propulsive, wry, richly detailed",
+      "pacing": "Fast",
+      "themes": [
+        "wartime deception",
+        "espionage",
+        "identity",
+        "bureaucracy and ingenuity",
+        "truth and fiction"
+      ],
+      "setting": "WWII Britain and Spain, 1943",
+      "comparable_books": [
+        "Agent Zigzag - Ben Macintyre",
+        "The Spy and the Traitor - Ben Macintyre",
+        "Double Cross - Ben Macintyre"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII history",
+          "true spy stories",
+          "propulsive narrative non-fiction",
+          "eccentric British characters",
+          "stranger-than-fiction plots"
+        ],
+        "negative": [
+          "academic or dense history",
+          "readers wanting fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Macintyre's pacey, novelistic prose and colourful characterisation make this a standout listening experience.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Saint Peter's Fair - Ellis Peters": {
       "title": "Saint Peter's Fair",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 4",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "During the great annual fair at Shrewsbury Abbey, a wealthy merchant is found murdered in the River Severn, and his determined daughter insists on uncovering the truth — drawing Brother Cadfael into a mystery entangled with trade rivalry, a young romance, and political intrigue during the civil war.",
+      "tone": "Warm, atmospheric, gently suspenseful",
+      "pacing": "Moderate",
+      "themes": [
+        "commerce and greed",
+        "civil war England",
+        "justice",
+        "young love",
+        "monastic life"
+      ],
+      "setting": "12th-century Shrewsbury, England; the great August Fair; Benedictine monastery",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Mistress of the Art of Death - Ariana Franklin",
+        "The Matthew Shardlake series - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy historical mystery",
+          "medieval fair setting",
+          "period atmosphere",
+          "gentle romance subplot",
+          "recurring beloved detective"
+        ],
+        "negative": [
+          "graphic violence",
+          "fast-paced thrillers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The vivid fair setting and warm narrative voice translate excellently to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mistress of the Art of Death - Ariana Franklin": {
       "title": "Mistress of the Art of Death",
       "author": "Ariana Franklin",
       "series": "Mistress of the Art of Death",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1171 Cambridge, a series of child murders is blamed on the Jewish community; King Henry II secretly summons a female forensic investigator from Salerno — Adelia Aguilar, trained in anatomy and detection — to find the real killer while disguising her profession in a society that cannot accept a woman doctor.",
+      "tone": "Vivid, witty, richly atmospheric, occasionally dark",
+      "pacing": "Moderate",
+      "themes": [
+        "women's agency in a patriarchal world",
+        "antisemitism and scapegoating",
+        "forensic justice",
+        "medieval England",
+        "outsider identity"
+      ],
+      "setting": "Medieval Cambridge and the English Fens, 1171",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "The Cadfael Chronicles - Ellis Peters",
+        "An Instance of the Fingerpost - Iain Pears"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "strong female protagonist",
+          "historical detail",
+          "forensic mystery",
+          "medieval setting",
+          "witty voice"
+        ],
+        "negative": [
+          "those averse to child-murder subject matter",
+          "readers wanting a cosy tone throughout"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Adelia's vivid first-person-adjacent perspective and rich period dialogue make for an excellent audio experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "One Corpse Too Many - Ellis Peters": {
       "title": "One Corpse Too Many",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "After King Stephen's forces take Shrewsbury Castle, ninety-four rebels are executed — but Cadfael, tasked with preparing the bodies for burial, finds a ninety-fifth corpse that was clearly murdered, not hanged. He must identify the victim and killer amidst the brutal aftermath of civil war.",
+      "tone": "Sombre, atmospheric, historically vivid",
+      "pacing": "Moderate",
+      "themes": [
+        "civil war and its costs",
+        "justice amid chaos",
+        "loyalty and betrayal",
+        "the value of individual life"
+      ],
+      "setting": "12th-century Shrewsbury, England; aftermath of the castle siege; civil war between Stephen and Maud",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Mistress of the Art of Death - Ariana Franklin",
+        "The Matthew Shardlake series - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy historical mystery",
+          "monastic detective",
+          "period atmosphere",
+          "historical accuracy"
+        ],
+        "negative": [
+          "graphic violence",
+          "fast-paced thrillers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "A particularly strong audio entry due to the dramatic historical backdrop and Cadfael's warm narrative presence.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Monk's Hood - Ellis Peters": {
       "title": "Monk's Hood",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A wealthy man is poisoned with monk's hood oil from Cadfael's own herb garden, and a young man is accused of his murder; Cadfael must investigate while also confronting ghosts from his own past — including a woman he once loved before taking his vows.",
+      "tone": "Warm, atmospheric, gently melancholic",
+      "pacing": "Moderate",
+      "themes": [
+        "guilt and innocence",
+        "Cadfael's past life",
+        "greed and inheritance",
+        "monastic vocation"
+      ],
+      "setting": "12th-century Shrewsbury, England; Benedictine monastery and surrounding area",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Mistress of the Art of Death - Ariana Franklin",
+        "The Matthew Shardlake series - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy historical mystery",
+          "character backstory",
+          "period atmosphere",
+          "recurring beloved detective"
+        ],
+        "negative": [
+          "graphic violence",
+          "fast-paced thrillers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The personal dimension of Cadfael's past history gives this entry special emotional richness in audio format.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Enigma Girl - Henry Porter": {
@@ -219944,161 +220216,275 @@
       "author": "Henry Porter",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Spy Thriller",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Disgraced MI5 agent Slim Parsons, recovering from a brutal undercover mission, is recalled to infiltrate a secretive news organisation near Bletchley Park staffed by descendants of WWII codebreakers who appear to be hacking government systems — but the assignment soon intersects with her dangerous past and her missing brother. A taut espionage thriller blending WWII history, AI, and modern-day corruption.",
+      "tone": "Taut, intricate, morally charged",
+      "pacing": "Moderate",
+      "themes": [
+        "journalism and government corruption",
+        "espionage and identity",
+        "WWII legacy",
+        "modern slavery",
+        "female agency"
+      ],
+      "setting": "Contemporary England; near Bletchley Park; also London and Norfolk",
+      "comparable_books": [
+        "Slough House series - Mick Herron",
+        "The Traitor - Ava Glass",
+        "Brandenburg Gate - Henry Porter"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "le Carré-style espionage",
+          "strong female protagonist",
+          "WWII historical thread",
+          "journalism angle",
+          "character-driven spy fiction"
+        ],
+        "negative": [
+          "action-first readers",
+          "those wanting a cleaner single-focus plot"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Death and the Maiden - Ariana Franklin": {
       "title": "Death and the Maiden",
       "author": "Ariana Franklin",
       "series": "Mistress of the Art of Death",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "Historical Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In 1191 England, the retired Adelia Aguilar sends her daughter Allie — trained in her own forensic arts — to Cambridgeshire, where young village girls have been disappearing; Allie must apply her mother's skills to unmask a predator before she becomes the next victim. The final book in the series, completed by Franklin's daughter Samantha Norman after Franklin's death in 2011.",
+      "tone": "Warm, richly historical, elegiac",
+      "pacing": "Moderate",
+      "themes": [
+        "mother-daughter legacy",
+        "forensic justice",
+        "women's agency",
+        "medieval village life",
+        "closure"
+      ],
+      "setting": "Medieval England (Cambridgeshire/Ely), 1191",
+      "comparable_books": [
+        "The Cadfael Chronicles - Ellis Peters",
+        "An Instance of the Fingerpost - Iain Pears",
+        "Mistress of the Art of Death - Ariana Franklin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusion",
+          "next-generation protagonist",
+          "historical forensic mystery",
+          "fond farewell to beloved characters"
+        ],
+        "negative": [
+          "those expecting series to continue with Adelia as lead",
+          "readers who dislike posthumous continuations"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Dead Man's Ransom - Ellis Peters": {
       "title": "Dead Man's Ransom",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 9",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A prisoner exchange between English and Welsh forces brings a Welsh chieftain's son to Shrewsbury, where he falls in love with an English girl — but when a sheriff is found murdered, the fragile peace and a young couple's future are threatened, and Cadfael must disentangle political violence from personal crime.",
+      "tone": "Warm, atmospheric, politically textured",
+      "pacing": "Moderate",
+      "themes": [
+        "English-Welsh relations",
+        "civil war",
+        "young love",
+        "justice",
+        "political intrigue"
+      ],
+      "setting": "12th-century Shrewsbury and the Welsh borders; civil war between Stephen and Maud",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Mistress of the Art of Death - Ariana Franklin",
+        "The Matthew Shardlake series - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "cosy historical mystery",
+          "Welsh history",
+          "romance subplot",
+          "period atmosphere",
+          "recurring beloved detective"
+        ],
+        "negative": [
+          "graphic violence",
+          "fast-paced thrillers"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The Welsh Border setting and political texture give this entry particular richness in audio form.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Mary Russell's War - Laurie R. King": {
       "title": "Mary Russell's War",
       "author": "Laurie R. King",
       "series": "Mary Russell and Sherlock Holmes",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Short story collection (series companion)",
+      "genre": "Historical Mystery",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A companion collection of ten short stories illuminating the hidden corners of the Mary Russell and Sherlock Holmes series, centred on a prequel novella following the teenage Mary Russell's wartime diary from 1914, tracking German spies and investigating family mysteries before she ever meets Holmes.",
+      "tone": "Witty, warm, intimate, nostalgic",
+      "pacing": "Moderate",
+      "themes": [
+        "WWI home front",
+        "female intellect",
+        "origins and backstory",
+        "partnership",
+        "memory and identity"
+      ],
+      "setting": "WWI-era England and San Francisco; various settings from across the series timeline",
+      "comparable_books": [
+        "The Beekeeper's Apprentice - Laurie R. King",
+        "A Study in Scarlet - Arthur Conan Doyle",
+        "Maisie Dobbs - Jacqueline Winspear"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "devoted series fan",
+          "Sherlock Holmes universe",
+          "short story format",
+          "character backstory",
+          "WWI history"
+        ],
+        "negative": [
+          "series newcomers",
+          "readers wanting a novel-length mystery plot"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Print preferred",
+      "audio_notes": "Several stories include illustrated newspaper clippings and postcards integral to the reading experience, which do not translate to audio.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Brother Cadfael's Penance - Ellis Peters": {
       "title": "Brother Cadfael's Penance",
       "author": "Ellis Peters",
       "series": "The Chronicles of Brother Cadfael",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 20",
+      "genre": "Historical Mystery",
+      "series_status": "Long Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the final Cadfael novel, the ageing monk risks everything — including his vows — to journey into dangerous territory to rescue his illegitimate son Olivier, taken prisoner during a civil war siege, in a deeply personal quest that tests his faith, his loyalty, and his very identity.",
+      "tone": "Elegiac, emotionally resonant, morally weighty",
+      "pacing": "Moderate",
+      "themes": [
+        "fatherhood and sacrifice",
+        "faith versus duty",
+        "redemption",
+        "end of an era",
+        "civil war"
+      ],
+      "setting": "12th-century England; end of the civil war between Stephen and Maud",
+      "comparable_books": [
+        "The Name of the Rose - Umberto Eco",
+        "Mistress of the Art of Death - Ariana Franklin",
+        "The Matthew Shardlake series - C.J. Sansom"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "series conclusion",
+          "emotionally resonant finale",
+          "character-driven",
+          "long-running series payoff"
+        ],
+        "negative": [
+          "series newcomers",
+          "those wanting a lighter mystery"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "The deeply personal and elegiac tone of this series finale is particularly well suited to the intimacy of audio narration.",
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Shilling for Candles - Josephine Tey": {
       "title": "A Shilling for Candles",
       "author": "Josephine Tey",
       "series": "Inspector Alan Grant",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": true,
+      "status": "complete",
+      "summary": "When a famous film actress is found strangled on a Kent beach, Inspector Grant investigates a case tangled with false witnesses, an escaped young man wrongly suspected of the crime, and Tey's characteristic dissection of celebrity, truth, and moral illusion.",
+      "tone": "Dry, wry, psychologically observant",
+      "pacing": "Moderate",
+      "themes": [
+        "celebrity and illusion",
+        "truth and deception",
+        "justice",
+        "class and reputation"
+      ],
+      "setting": "1930s England; Kent coast and London",
+      "comparable_books": [
+        "The Franchise Affair - Josephine Tey",
+        "Gaudy Night - Dorothy L. Sayers",
+        "The Daughter of Time - Josephine Tey"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "golden age mystery",
+          "witty British prose",
+          "psychological depth",
+          "classic detective fiction"
+        ],
+        "negative": [
+          "readers wanting high-octane action",
+          "those averse to dated social attitudes"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "A Rare Benedictine - Ellis Peters": {
