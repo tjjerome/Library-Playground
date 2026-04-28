@@ -2,8 +2,8 @@
   "catalog_version": 2,
   "last_updated": "2026-04-28",
   "total_in_library": 4600,
-  "total_catalogued": 4351,
-  "total_pending": 249,
+  "total_catalogued": 4371,
+  "total_pending": 229,
   "entries": {
     "Brave New World - Aldous Huxley": {
       "title": "Brave New World",
@@ -234970,54 +234970,99 @@
       "title": "The Murder at World's End",
       "author": "Ross Montgomery",
       "series": "A Stockingham & Pike Mystery",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "Historical Mystery",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In Cornwall, 1910, a pompous viscount is found murdered in his sealed study during a Halley's Comet apocalypse scare, and newly hired under-butler Stephen Pike must team up with the sharp-tongued, octogenarian Miss Decima Stockingham to unmask the killer before suspicion falls entirely on him.",
+      "tone": "witty, darkly comic, classically cozy",
+      "pacing": "Moderate",
+      "themes": [
+        "class and society",
+        "unlikely partnership",
+        "justice",
+        "paranoia",
+        "golden-age detective fiction"
+      ],
+      "setting": "Cornwall, England, 1910 — a remote tidal island manor sealed against an apocalyptic comet",
+      "comparable_books": [
+        "How to Solve Your Own Murder - Kristen Perrin",
+        "The Appeal - Janice Hallett",
+        "Everyone in My Family Has Killed Someone - Benjamin Stevenson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "locked-room mysteries",
+          "mismatched detective duo",
+          "historical setting",
+          "witty dialogue",
+          "Golden Age mystery pastiche",
+          "cozy tone with real stakes"
+        ],
+        "negative": [
+          "graphic violence",
+          "dark or grimdark tone",
+          "romance-heavy stories"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Character-driven wit and period dialogue lend themselves very well to narration.",
+      "content_flags": [
+        "graphic violence",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Freedom - Daniel Suarez": {
-      "title": "Freedom",
+      "title": "Freedom™",
       "author": "Daniel Suarez",
       "series": "Daemon",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Techno-thriller",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The rogue AI network known as the Daemon has reordered the social fabric, and a small group of human operatives must decide whether to resist or join its emerging post-corporate society as governments and corporations struggle to reclaim control.",
+      "tone": "propulsive, cerebral, dystopian",
+      "pacing": "Fast",
+      "themes": [
+        "artificial intelligence",
+        "post-scarcity society",
+        "corporate power",
+        "freedom vs. control",
+        "technological revolution"
+      ],
+      "setting": "Near-future United States, spanning urban and rural communities reorganizing under AI governance",
+      "comparable_books": [
+        "Daemon - Daniel Suarez",
+        "Rainbows End - Vernor Vinge",
+        "The Circle - Dave Eggers"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "techno-thriller pacing",
+          "AI as antagonist/protagonist",
+          "near-future speculation",
+          "systemic societal critique"
+        ],
+        "negative": [
+          "character-driven literary fiction",
+          "romance-heavy",
+          "slow meditative pacing"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Brief Cases - Jim Butcher": {
@@ -235025,53 +235070,96 @@
       "author": "Jim Butcher",
       "series": "The Dresden Files",
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Urban Fantasy",
+      "series_status": "Short Stories",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "A collection of Dresden Files short stories and novellas featuring Harry Dresden and other beloved characters from the series, spanning cases both before and between the novels.",
+      "tone": "darkly comic, action-packed, character-rich",
+      "pacing": "Fast",
+      "themes": [
+        "magic and the supernatural",
+        "found family",
+        "justice",
+        "self-sacrifice",
+        "Chicago underworld"
+      ],
+      "setting": "Chicago and the wider Dresden Files world — various time periods within the series",
+      "comparable_books": [
+        "Side Jobs - Jim Butcher",
+        "Mean Streets - Jim Butcher et al.",
+        "Unfettered II - ed. Shawn Speakman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "urban fantasy fans",
+          "Dresden Files series readers",
+          "short story collections",
+          "action and humor",
+          "found family"
+        ],
+        "negative": [
+          "standalone readers unfamiliar with the series",
+          "slow literary fiction"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "James Marsters' narration of the Dresden Files is legendary and carries over to the short fiction.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Born a Crime - Trevor Noah": {
-      "title": "Born a Crime",
+      "title": "Born a Crime: Stories from a South African Childhood",
       "author": "Trevor Noah",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Memoir",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Trevor Noah recounts growing up as the mixed-race son of a Black Xhosa mother and a white Swiss father in apartheid and post-apartheid South Africa, where his very existence was literally a crime under the law.",
+      "tone": "warm, humorous, heartfelt, occasionally harrowing",
+      "pacing": "Moderate",
+      "themes": [
+        "race and identity",
+        "apartheid",
+        "resilience",
+        "mother-son bond",
+        "poverty and survival",
+        "belonging"
+      ],
+      "setting": "South Africa, from the final years of apartheid through the 1990s",
+      "comparable_books": [
+        "Long Walk to Freedom - Nelson Mandela",
+        "Educated - Tara Westover",
+        "Between the World and Me - Ta-Nehisi Coates"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "memoir readers",
+          "humor-infused nonfiction",
+          "social and political history",
+          "coming-of-age stories",
+          "strong mother figures"
+        ],
+        "negative": [
+          "genre fiction readers",
+          "readers seeking purely escapist content"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Trevor Noah himself, with multiple languages and accents — widely considered one of the best celebrity-narrated audiobooks.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Message - Ta-Nehisi Coates": {
@@ -235079,26 +235167,45 @@
       "author": "Ta-Nehisi Coates",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / Essay",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Through three essay-length dispatches — from Senegal, South Carolina, and the West Bank — Coates explores the power and responsibility of storytelling, examining how narratives shape reality and suppress or sustain justice.",
+      "tone": "searching, urgent, morally serious",
+      "pacing": "Slow",
+      "themes": [
+        "storytelling and power",
+        "race and racism",
+        "Palestinian occupation",
+        "journalistic responsibility",
+        "identity"
+      ],
+      "setting": "Dakar (Senegal), South Carolina, and the occupied Palestinian territories — contemporary",
+      "comparable_books": [
+        "Between the World and Me - Ta-Nehisi Coates",
+        "The Souls of Black Folk - W.E.B. Du Bois",
+        "I Was Their American Dream - Malaka Gharib"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "essayistic nonfiction",
+          "racial justice",
+          "political writing",
+          "Coates fans",
+          "international perspective"
+        ],
+        "negative": [
+          "readers wanting narrative nonfiction with clear story arc",
+          "genre fiction readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Library at Mount Char - Scott Hawkins": {
@@ -235106,80 +235213,150 @@
       "author": "Scott Hawkins",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Dark Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Carolyn, one of a group of American children raised by a godlike and terrifying figure called Father, must navigate a brutal, supernatural power struggle after Father goes missing, armed with arcane knowledge from his impossible library.",
+      "tone": "deeply dark, bizarre, violent, blackly comic",
+      "pacing": "Moderate",
+      "themes": [
+        "power and knowledge",
+        "abuse and trauma",
+        "divinity and mortality",
+        "family dysfunction",
+        "revenge"
+      ],
+      "setting": "Suburban America and a vast, reality-defying supernatural library — contemporary",
+      "comparable_books": [
+        "American Gods - Neil Gaiman",
+        "A Head Full of Ghosts - Paul Tremblay",
+        "The Hollow Places - T. Kingfisher"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "dark fantasy",
+          "subverted genre expectations",
+          "morally grey protagonists",
+          "weird fiction",
+          "violent and unsettling content",
+          "mystery layered into horror"
+        ],
+        "negative": [
+          "cozy fantasy",
+          "readers sensitive to child abuse themes",
+          "romance-heavy fantasy"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence",
+        "sexual content",
+        "animal death"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Us Against You - Fredrik Backman": {
       "title": "Us Against You",
       "author": "Fredrik Backman",
       "series": "Beartown",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "Literary Fiction",
+      "series_status": "Short Series",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "The small hockey town of Beartown continues to fracture under the weight of its darkest secrets, as old loyalties are tested and two rival hockey teams become vessels for the community's grief, rage, and desperate longing for identity.",
+      "tone": "emotionally devastating, community-driven, quietly urgent",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "community and belonging",
+        "grief",
+        "gender and violence",
+        "loyalty",
+        "small-town politics",
+        "identity"
+      ],
+      "setting": "Beartown, a fictional small Swedish hockey town — contemporary",
+      "comparable_books": [
+        "Beartown - Fredrik Backman",
+        "A Man Called Ove - Fredrik Backman",
+        "The Corrections - Jonathan Franzen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "literary fiction",
+          "ensemble casts",
+          "emotional depth",
+          "community-focused stories",
+          "sports as metaphor",
+          "Backman fans"
+        ],
+        "negative": [
+          "plot-driven thrillers",
+          "genre fantasy",
+          "fast-paced action"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Backman's prose and emotional depth reward the immersive, intimate quality of audio narration.",
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Stories Are Weapons - Annalee Newitz": {
-      "title": "Stories Are Weapons",
+      "title": "Stories Are Weapons: Psychological Warfare and the American Mind",
       "author": "Annalee Newitz",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Newitz traces how disinformation, propaganda, and psychological warfare operations evolved from military tools against foreign enemies into weapons deployed in America's domestic culture wars, from Benjamin Franklin's fake Revolutionary-era newspaper through Cold War psyops to 21st-century influence campaigns.",
+      "tone": "incisive, urgent, accessible, polemical",
+      "pacing": "Moderate",
+      "themes": [
+        "propaganda and disinformation",
+        "psychological warfare",
+        "American history",
+        "culture wars",
+        "media literacy",
+        "democracy"
+      ],
+      "setting": "United States across 200+ years of history — contemporary analysis with deep historical roots",
+      "comparable_books": [
+        "LikeWar - P.W. Singer & Emerson Brooking",
+        "This Is Not Propaganda - Peter Pomerantsev",
+        "Merchants of Doubt - Naomi Oreskes"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political nonfiction",
+          "media criticism",
+          "American history",
+          "disinformation and propaganda",
+          "science journalism"
+        ],
+        "negative": [
+          "genre fiction readers",
+          "readers wanting ideologically neutral analysis"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Nexus: A Brief History of Information Networks From the Stone Age to AI - Yuval Noah Harari": {
@@ -235187,53 +235364,90 @@
       "author": "Yuval Noah Harari",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Harari examines how human civilizations have always been shaped by information networks — from oral traditions and religious texts to the printing press and the internet — and argues that the rise of AI represents an unprecedented rupture in humanity's relationship with information and power.",
+      "tone": "sweeping, accessible, provocative",
+      "pacing": "Moderate",
+      "themes": [
+        "information and power",
+        "technology and society",
+        "artificial intelligence",
+        "history of knowledge",
+        "democracy and authoritarianism"
+      ],
+      "setting": "Global — spanning all of human history from prehistoric times to the present",
+      "comparable_books": [
+        "Sapiens - Yuval Noah Harari",
+        "The Age of Surveillance Capitalism - Shoshana Zuboff",
+        "Power and Progress - Daron Acemoglu & Simon Johnson"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "big-picture history",
+          "AI and technology concerns",
+          "accessible nonfiction",
+          "Harari fans",
+          "macro-historical thinking"
+        ],
+        "negative": [
+          "specialists seeking academic rigor",
+          "readers wanting narrative nonfiction with characters"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "How the South Won the Civil War - Heather Cox Richardson": {
-      "title": "How the South Won the Civil War",
+      "title": "How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America",
       "author": "Heather Cox Richardson",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Richardson argues that although the Confederacy lost militarily, its ideology of white supremacy and oligarchic hierarchy migrated westward and ultimately reasserted itself in American politics and culture, tracing a through-line from the Civil War to modern conservatism.",
+      "tone": "analytical, politically urgent, accessible",
+      "pacing": "Moderate",
+      "themes": [
+        "American democracy",
+        "racism and white supremacy",
+        "oligarchy",
+        "political history",
+        "the Civil War legacy"
+      ],
+      "setting": "United States — spanning Reconstruction through the 21st century",
+      "comparable_books": [
+        "Caste - Isabel Wilkerson",
+        "Democracy in Chains - Nancy MacLean",
+        "The Second Civil War - Ronald Brownstein"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "American political history",
+          "racial justice",
+          "democracy and authoritarianism",
+          "accessible history writing"
+        ],
+        "negative": [
+          "genre fiction readers",
+          "conservative political readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "Takeover: Hitler's Final Rise to Power - Timothy W. Ryback": {
@@ -235241,26 +235455,46 @@
       "author": "Timothy W. Ryback",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Drawing on previously unaccessed archival materials, Ryback reconstructs the six tumultuous months from mid-1932 to January 1933, when Hitler's Nazi party seemed on the verge of collapse before a string of political miscalculations and backroom deals resulted in his appointment as German Chancellor.",
+      "tone": "propulsive, chilling, meticulously researched",
+      "pacing": "Fast",
+      "themes": [
+        "democracy's fragility",
+        "political contingency",
+        "authoritarianism",
+        "Weimar Republic",
+        "the rise of fascism"
+      ],
+      "setting": "Weimar Germany, July 1932 – January 1933",
+      "comparable_books": [
+        "The Coming of the Third Reich - Richard Evans",
+        "On Tyranny - Timothy Snyder",
+        "Hitler's Willing Executioners - Daniel Goldhagen"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "WWII and Nazi history",
+          "political narrative history",
+          "democracy and authoritarianism",
+          "propulsive nonfiction"
+        ],
+        "negative": [
+          "genre fiction readers",
+          "readers wanting broad WWII coverage rather than focused political narrative"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "How Democracies Die: What History Reveals About Our Future - Steven Levitsky & Daniel Ziblatt": {
@@ -235268,161 +235502,288 @@
       "author": "Steven Levitsky & Daniel Ziblatt",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / Political Science",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Two Harvard political scientists analyze how democracies across history have collapsed not through dramatic coups but through the gradual erosion of democratic norms by elected leaders, using comparative case studies to illuminate the risks facing contemporary America.",
+      "tone": "measured, scholarly, urgently relevant",
+      "pacing": "Moderate",
+      "themes": [
+        "democratic erosion",
+        "authoritarianism",
+        "political norms",
+        "comparative politics",
+        "American democracy"
+      ],
+      "setting": "Global comparative — historical and contemporary democracies worldwide, with focus on the United States",
+      "comparable_books": [
+        "Tyranny of the Minority - Steven Levitsky & Daniel Ziblatt",
+        "On Tyranny - Timothy Snyder",
+        "How Fascism Works - Jason Stanley"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "political science readers",
+          "democracy and authoritarianism",
+          "accessible academic nonfiction",
+          "comparative history"
+        ],
+        "negative": [
+          "genre fiction readers",
+          "readers wanting purely narrative history"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "training",
       "audit": null
     },
     "The Devil Reached Toward the Sky - Garrett M. Graff": {
-      "title": "The Devil Reached Toward the Sky",
+      "title": "The Devil Reached Toward the Sky: An Oral History of the Making and Unleashing of the Atomic Bomb",
       "author": "Garrett M. Graff",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Nonfiction / History",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "Pulitzer Prize finalist Garrett Graff weaves together hundreds of first-person accounts from scientists, soldiers, generals, and survivors to chronicle the Manhattan Project's clandestine race to build the atomic bomb and its devastating deployment at Hiroshima and Nagasaki in 1945.",
+      "tone": "panoramic, human-centered, sobering",
+      "pacing": "Moderate",
+      "themes": [
+        "WWII and the Manhattan Project",
+        "science and morality",
+        "war and consequence",
+        "human cost of technology",
+        "memory and testimony"
+      ],
+      "setting": "United States (Oak Ridge, Hanford, Los Alamos) and Japan (Hiroshima and Nagasaki), 1939–1945",
+      "comparable_books": [
+        "The Only Plane in the Sky - Garrett M. Graff",
+        "When the Sea Came Alive - Garrett M. Graff",
+        "American Prometheus - Kai Bird & Martin Sherwin"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "oral history format",
+          "WWII history",
+          "science and ethics",
+          "narrative nonfiction",
+          "Graff fans"
+        ],
+        "negative": [
+          "genre fiction readers",
+          "readers wanting a single narrative thread rather than mosaic voices"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Features a full cast of narrators with atmospheric music and historical recordings — a 2026 Audie Award finalist.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Butcher's Masquerade - Matt Dinniman": {
       "title": "The Butcher's Masquerade",
       "author": "Matt Dinniman",
       "series": "Dungeon Crawler Carl",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 5",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Carl and Princess Donut reach the sixth floor — the Hunting Grounds — a jungle teeming with dinosaurs, where alien tourists are allowed into the dungeon for the first time as hunters, and an elite hunter named Vrah sets her sights on Carl as the ultimate trophy.",
+      "tone": "darkly comic, propulsive, emotionally surprising",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "resistance against oppression",
+        "found family",
+        "media spectacle",
+        "exploitation and dehumanization"
+      ],
+      "setting": "A vast alien-run dungeon beneath post-apocalyptic Earth — sixth floor jungle biome",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "He Who Fights Monsters - Jason Cheyne",
+        "The Wandering Inn - pirateaba"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG and GameLit",
+          "darkly comic tone",
+          "found family",
+          "escalating stakes",
+          "propulsive pacing",
+          "absurdist humor"
+        ],
+        "negative": [
+          "readers sensitive to graphic violence",
+          "literary fiction readers",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Narrated by Jeff Hays with full cast; widely praised as one of the best audiobook productions in the genre.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Eye of the Bedlam Bride - Matt Dinniman": {
       "title": "The Eye of the Bedlam Bride",
       "author": "Matt Dinniman",
       "series": "Dungeon Crawler Carl",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 6",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "On the chaotic eighth floor, Carl and Donut must capture six powerful monsters to build a deck of cards for a climactic battle, with the most fearsome prize being Shi Maria — the Bedlam Bride — a near-godlike spider creature whose gaze drives mortals insane.",
+      "tone": "darkly comic, emotionally intense, increasingly epic",
+      "pacing": "Fast",
+      "themes": [
+        "survival",
+        "resistance",
+        "found family",
+        "forgotten gods",
+        "AI and power",
+        "sacrifice"
+      ],
+      "setting": "A vast alien-run dungeon beneath post-apocalyptic Earth — eighth floor",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "He Who Fights Monsters - Jason Cheyne",
+        "The Wandering Inn - pirateaba"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG and GameLit",
+          "darkly comic tone",
+          "found family",
+          "escalating stakes",
+          "absurdist humor"
+        ],
+        "negative": [
+          "readers sensitive to graphic violence",
+          "literary fiction readers",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full-cast production by Jeff Hays with Patrick Warburton and Travis Baldree; consistently praised as a standout audio experience.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "This Inevitable Ruin - Matt Dinniman": {
       "title": "This Inevitable Ruin",
       "author": "Matt Dinniman",
       "series": "Dungeon Crawler Carl",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 7",
+      "genre": "LitRPG",
+      "series_status": "Long Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "The ninth floor brings Faction Wars — a battle royale between nine alien-led armies plus a newly self-aware NPC army — where for the first time the crawlers have their own fighting force, and Carl and Donut must face a war where defeat means permanent death.",
+      "tone": "darkly comic, epic, emotionally devastating",
+      "pacing": "Fast",
+      "themes": [
+        "war and resistance",
+        "freedom and self-determination",
+        "AI sentience",
+        "sacrifice",
+        "found family"
+      ],
+      "setting": "A vast alien-run dungeon beneath post-apocalyptic Earth — ninth floor war zone",
+      "comparable_books": [
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "He Who Fights Monsters - Jason Cheyne",
+        "The Wandering Inn - pirateaba"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG and GameLit",
+          "escalating stakes",
+          "ensemble casts",
+          "darkly comic tone",
+          "found family",
+          "political intrigue"
+        ],
+        "negative": [
+          "readers sensitive to graphic violence",
+          "literary fiction readers",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
-      "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "audio_suitability": "Excellent",
+      "audio_notes": "Full-cast Soundbooth Theater production narrated by Jeff Hays; the audiobook is a flagship production of the series.",
+      "content_flags": [
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Catalyst - J. D. L. Rosell": {
       "title": "Catalyst",
       "author": "J. D. L. Rosell",
       "series": "Godslayer Rising",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 1",
+      "genre": "LitRPG",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Seventeen-year-old Sean Marrow sneaks into a VR gaming parlor to enter The Everlands, an immersive fantasy MMORPG, only to find himself trapped inside when the game's gods take a personal interest in him, forcing him to choose between survival and becoming a pawn in their schemes.",
+      "tone": "fast-paced, adventurous, light",
+      "pacing": "Fast",
+      "themes": [
+        "virtual reality and identity",
+        "power and agency",
+        "divine politics",
+        "coming of age",
+        "game mechanics as metaphor"
+      ],
+      "setting": "The Everlands — an immersive virtual fantasy world with game-like mechanics; near-future real world",
+      "comparable_books": [
+        "Ready Player One - Ernest Cline",
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "He Who Fights Monsters - Jason Cheyne"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG and GameLit",
+          "fast-paced adventure",
+          "VR game settings",
+          "underdog protagonists"
+        ],
+        "negative": [
+          "literary fiction readers",
+          "readers wanting heavy character depth",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "The Poet Empress - Shen Tao": {
@@ -235430,80 +235791,141 @@
       "author": "Shen Tao",
       "series": null,
       "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "genre": "Epic Fantasy",
+      "series_status": "Standalone",
+      "indie": false,
+      "classic": false,
+      "status": "complete",
+      "summary": "In a Chinese-inspired empire on the brink of civil war and famine, desperate peasant girl Wei Yin offers herself as concubine to a cruel prince, secretly learning to write in a world where women are forbidden to read, and discovering that poetry itself is a form of deadly magic.",
+      "tone": "lyrical, brutal, slow-burn, emotionally devastating",
+      "pacing": "Slow burn with payoff",
+      "themes": [
+        "power and survival",
+        "forbidden knowledge",
+        "gender oppression",
+        "court intrigue",
+        "the power of words",
+        "trauma and resilience"
+      ],
+      "setting": "A Chinese-inspired ancient empire during dynastic collapse and civil war",
+      "comparable_books": [
+        "She Who Became the Sun - Shelley Parker-Chan",
+        "The Poppy War - R.F. Kuang",
+        "The Song of Achilles - Madeline Miller"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "Asian-inspired fantasy",
+          "court intrigue",
+          "lyrical prose",
+          "morally complex antagonists",
+          "dark romantasy",
+          "feminist themes"
+        ],
+        "negative": [
+          "readers sensitive to sexual violence and abuse of minors",
+          "light cozy fantasy",
+          "fast-paced action readers"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
-      "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "content_flags": [
+        "sexual content",
+        "graphic violence"
+      ],
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Champion - J. D. L. Rosell": {
       "title": "Champion",
       "author": "J. D. L. Rosell",
       "series": "Godslayer Rising",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 2",
+      "genre": "LitRPG",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "Sean Marrow, having sparked a divine conflict in The Everlands, is offered a deal by a self-aware child deity: complete three impossible trials to gain the power to harm gods — or be trapped in the game forever.",
+      "tone": "fast-paced, adventurous, escalating",
+      "pacing": "Fast",
+      "themes": [
+        "power and sacrifice",
+        "divine politics",
+        "survival",
+        "identity and agency",
+        "game mechanics as metaphor"
+      ],
+      "setting": "The Everlands — a VR fantasy world with increasingly high-stakes divine politics",
+      "comparable_books": [
+        "Catalyst - J.D.L. Rosell",
+        "Dungeon Crawler Carl - Matt Dinniman",
+        "Ready Player One - Ernest Cline"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG and GameLit",
+          "fast-paced adventure",
+          "escalating stakes",
+          "underdog protagonists"
+        ],
+        "negative": [
+          "literary fiction readers",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "Heretic - J. D. L. Rosell": {
       "title": "Heretic",
       "author": "J. D. L. Rosell",
       "series": "Godslayer Rising",
-      "series_position": null,
-      "genre": null,
-      "series_status": null,
-      "indie": null,
-      "classic": null,
-      "status": "pending",
-      "summary": null,
-      "tone": null,
-      "pacing": null,
-      "themes": [],
-      "setting": null,
-      "comparable_books": [],
+      "series_position": "Book 3",
+      "genre": "LitRPG",
+      "series_status": "Short Series",
+      "indie": true,
+      "classic": false,
+      "status": "complete",
+      "summary": "In the concluding volume of the trilogy, Sean Marrow faces his final reckoning with the gods of The Everlands, forced into an impossible choice that will either free him from the game or doom the entire virtual world — and possibly himself — forever.",
+      "tone": "fast-paced, climactic, satisfying",
+      "pacing": "Fast",
+      "themes": [
+        "freedom vs. fate",
+        "divine power",
+        "sacrifice",
+        "identity",
+        "resolution and consequence"
+      ],
+      "setting": "The Everlands — the final confrontation across the VR fantasy world",
+      "comparable_books": [
+        "Catalyst - J.D.L. Rosell",
+        "Champion - J.D.L. Rosell",
+        "Dungeon Crawler Carl - Matt Dinniman"
+      ],
       "taste_signals": {
-        "positive": [],
-        "negative": []
+        "positive": [
+          "LitRPG and GameLit",
+          "complete trilogy satisfaction",
+          "escalating stakes",
+          "fast-paced adventure"
+        ],
+        "negative": [
+          "literary fiction readers",
+          "standalone preference"
+        ]
       },
-      "audio_suitability": null,
+      "audio_suitability": "Good",
       "audio_notes": null,
       "content_flags": [],
-      "confidence": null,
-      "research_source": null,
+      "confidence": "High",
+      "research_source": "web_search",
       "audit": null
     },
     "His Black Tongue - Mitchell Luthi": {
