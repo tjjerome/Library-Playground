@@ -916,37 +916,50 @@ section into the main pool or read it directly.
 
 ### Series handling
 
-The default is to add the whole series to the pool — the reader is
-committing the *series* to TBR, not to reading every book in sequence.
-But how much of a series belongs in the pool depends on the series.
-**Use judgment.** Pull from the catalog when making the call:
-`series_status` for size, `taste_signals.negative` for divisiveness
-signals, `pacing` and `tone` for "does the back half drag" signals, and
-the reading log for series the reader has already started.
+When a sequential series is selected, **always ask the reader how many
+books to add** via `AskUserQuestion`. Never default — even when the
+series is short and tight, the reader gets to decide whether they want
+the full commitment or a tester. Pull from the catalog to **shape the
+options offered**, not to make the decision: `series_status` for size,
+`taste_signals.negative` for divisiveness signals, `pacing` and `tone`
+for "does the back half drag" signals, and the reading log for series
+the reader has already started.
 
-Concrete examples of the kinds of judgment calls to make:
+Typical option shape for a sequential series:
+
+- `Just book 1 — try it first`
+- `First N books — partial commitment` (pick a sensible N, e.g., a
+  trilogy break or where the quality is known to dip)
+- `All M available published books`
+- `Other`
+
+If a single batch produces multiple series additions, **walk through
+them sequentially** — one `AskUserQuestion` call per series. Don't
+bundle "how many of A, B, and C?" into one question; the reader needs
+to make each scope decision in isolation.
+
+Use the catalog signals to mark a `(Recommended)` option, but leave the
+choice to the reader. Concrete examples of how to shape the options:
 
 - **Three-Body Problem** (trilogy, ~600k words, consistently strong) —
-  add all three. The shape is the commitment; quality holds.
-- **Hyperion Cantos** (4 books) — add the first two (*Hyperion* + *The
-  Fall of Hyperion*). The Endymion duology that follows is divisive
-  enough that a tester gate belongs between book 2 and book 3, not at
-  book 1.
-- **Wheel of Time** (14 books, ~4M words) — add book 1 as a tester. A
-  multi-thousand-page commitment shouldn't go in based on enthusiasm
-  for the premise alone.
-- **Discworld** (41 books, loosely connected) — pick standout entries
-  that fit the reader's taste and add individually as standalones. Don't
-  bulk-add the shelf.
+  recommend all three. The shape is the commitment; quality holds.
+- **Hyperion Cantos** (4 books) — recommend the first two
+  (*Hyperion* + *The Fall of Hyperion*). The Endymion duology that
+  follows is divisive enough that a tester gate belongs between
+  book 2 and book 3, not at book 1.
+- **Wheel of Time** (14 books, ~4M words) — recommend book 1 as a
+  tester. A multi-thousand-page commitment shouldn't go in based on
+  enthusiasm for the premise alone.
+- **Discworld** (41 books, loosely connected) — see loosely-connected
+  rule below.
 - **Cosmere** (sprawling, interconnected) — depends on prior Sanderson
-  exposure. New to him: one tester. Already a fan: pull the next series
-  in their stated direction.
-- **Malazan** (10 books, dense, divisive) — book 1 as tester, with a
-  clear "you'll know after Gardens of the Moon whether the rest is for
-  you" frame.
+  exposure. New to him: recommend one tester. Already a fan:
+  recommend the next series in their stated direction.
+- **Malazan** (10 books, dense, divisive) — recommend book 1 as
+  tester, with a clear "you'll know after Gardens of the Moon
+  whether the rest is for you" frame.
 
-Use `AskUserQuestion` for the scope decision when there's a real choice
-to make. Tailor the options to the series:
+Sample call shapes:
 
 > Q: "How do you want to handle the Hyperion Cantos?"
 > Options: "First two books (Recommended)" / "All four books" /
