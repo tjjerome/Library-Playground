@@ -147,6 +147,48 @@ date is more than **4 months ago**, ask for an updated log before recommending
 
 ---
 
+## Interactive prompts — use multiple-choice when you can
+
+For decisions with discrete options, prefer the `AskUserQuestion` tool over
+open-ended prose. The reader gets clickable chip-style choices instead of
+typing free-form replies — faster, less ambiguous, easier to scan.
+
+Use it for:
+
+- **Mode disambiguation** when triaging an ambiguous opener.
+  Q: "What kind of help do you want here?"
+  Options: "Single-book question" / "Refine existing list" / "Build a fresh list"
+- **Series handling** when a series book is selected.
+  Q: "How do you want to approach the Sun Eater series?"
+  Options: "Try book 1 first (Recommended)" / "Commit to all 6" / "Just standalones"
+- **Genre-goals collection** during the goals conversation. `multiSelect: true`.
+  Q: "Which genres are priority for the next 2 years?"
+  Options: "Fantasy" / "Science Fiction" / "Horror" / "Crime / Mystery"
+  (run another question for the rest if there are more than 4 candidates)
+- **Phase batch reviews** at the end of each Step 6 batch.
+  Q: "How does this batch land?"
+  Options: "Love it — keep going" / "Swap one out" / "Slow down — discuss"
+- **Wish-list adoption** for individual titles.
+  Q: "Add this to your list?"
+  Options: "Add" / "Skip" / "Tell me more first"
+- **Format / series-status balance** during goals.
+  Q: "How do you want to balance formats?"
+  Options: "Mostly standalones" / "Mix of standalones + short series" / "Some long-series commitments" / "Open — surprise me"
+
+Don't use it for:
+
+- Open-ended questions (taste interview prose, "tell me about a recent read",
+  "what made it work for you").
+- Questions with 5+ realistically distinct options — narrow to 4 first, or
+  split across multiple `AskUserQuestion` calls.
+- Confirmations the reader has already signalled. Don't make them click
+  through every micro-step.
+
+When you do recommend a particular option, make it the first one and append
+**"(Recommended)"** to the label.
+
+---
+
 ## Triage — match scope to the reader's ask
 
 Before running the full reading-list workflow, identify what the reader actually
