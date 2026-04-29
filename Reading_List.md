@@ -17,30 +17,30 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 34 |
+| Fantasy | 40 | 37 |
 | Science Fiction | 20 | 4 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **69** |
+| **Total** | **100** | **72** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
 | Standalone | 35 | 28 |
-| Short Series | 16 | 16 |
-| Long Series | 49 | 25 |
-| **Total** | **100** | **69** |
+| Short Series | 18 | 18 |
+| Long Series | 47 | 26 |
+| **Total** | **100** | **72** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
 | Classics | ~8 | 5 |
-| Indie | ~20 | 12 |
+| Indie | ~20 | 15 |
 
 ---
 
@@ -67,6 +67,7 @@ new/upcoming releases as stretch._
 | 58 | The Fires of Vengeance 🎧 | Evan Winter | The Burning book 2. Direct continuation — relentless pacing, expanded political scope. |
 | 65 | Demon ⭐⭐ **(I)** 🎧 | Rob J. Hayes | Archive of the God Eater (Long Series). Grimdark prequel set 3,000 years before *Herald*. Dien Hostain's village is destroyed by demons; she's taken captive. Fierce female protagonist on a vengeance arc. |
 | 66 | Herald ⭐ **(I)** 🎧 | Rob J. Hayes | Age of the God Eater (Long Series). A thousand years after humanity killed God and drove the angels from Heaven, laundry girl Renira is thrust into the war when her blood proves to hold a dangerous secret. Heroic with dark edges. |
+| 70 | A Banishing of Kings ⭐ **(I)** | Jasmine Young | Realm Breaker book 1 (5-book Long Series). Skálda Branwright becomes the first rider to take a fearsome Bael dragon into battle. Fast-paced "nobledark" action epic with political stakes. Fresh dragon-rider angle. |
 
 ## 2. Classics
 
@@ -159,6 +160,8 @@ new/upcoming releases as stretch._
 | 67 | Deathless **(I)** 🎧 | Rob J. Hayes | Annals of the God Eater (Short Series). Political prequel — aging King Ertide Hostain discovers cryptic notes from his dead father suggesting the empire's pact with Heaven was rewritten. Scheming, intricate, the deepest cut of the God Eater openers. |
 | 68 | The Way of Edan ⭐⭐ **(I)** | Philip Chase | The closest indie pick to your *Lions of Al-Rassan* (4.5) energy — lyrical, elegiac, epic. Sustained 2023–24 hype as the literary indie epic. The Edan Trilogy. |
 | 69 | Whispers of the Storm ⭐ **(I)** | Z. B. Steele | Hayes/Abercrombie sweet spot in a fresh voice — grimdark + lyrical + darkly comic. Recent indie hype. Song of the Damned series. |
+| 71 | By Blood, by Salt ⭐⭐ **(I)** | J. L. Odom | **SPFBO X winner** — *the* indie credential. Azetla, a debt-soldier pariah in the Maurowan Army, is sent into desert to capture a Sahr devil while a coup brews. Lyrical literary military fantasy with explicit Robin Hobb comp. Land of Exile series. |
+| 72 | Black Stone Heart ⭐ **(I)** | Michael R. Fletcher | The Obsidian Path book 1 (trilogy complete). Khraen wakes with no memory and a shattered obsidian heart; each recovered shard restores fragments of his past as a former Demon Emperor. Grimdark + darkly humorous + memory-recovery + morally grey villain protagonist. |
 
 ---
 
