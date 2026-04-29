@@ -17,23 +17,23 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 15 |
+| Fantasy | 40 | 20 |
 | Science Fiction | 20 | 4 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **50** |
+| **Total** | **100** | **55** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
 | Standalone | 35 | 27 |
-| Short Series | 15 | 6 |
-| Long Series | 50 | 17 |
-| **Total** | **100** | **50** |
+| Short Series | 15 | 8 |
+| Long Series | 50 | 20 |
+| **Total** | **100** | **55** |
 
 ### Miscellaneous Goals
 
@@ -59,6 +59,9 @@ new/upcoming releases as stretch._
 | 9 | Hyperion 🎧 | Dan Simmons | Wishlist pick. Hugo-winning literary SF, Canterbury-Tales frame, theological/philosophical depth. **Risk:** denser than Sun Eater, but each pilgrim's tale shifts genre (one is straight horror, one military SF) which counteracts the slow-burn trap. *Canticle for Leibowitz* (4.75) is the parallel. |
 | 10 | The Fall of Hyperion 🎧 | Dan Simmons | Required follow-up; Hyperion ends on a cliffhanger. |
 | 11 | Tales of the Sun Eater, Volume 4 | Christopher Ruocchio | Last unread Sun Eater entry. Closes you out cleanly while we wait on the next main novel. |
+| 51 | Chronicles of the Black Company ⭐⭐ 🎧 | Glen Cook | Grimdark ur-text and direct ancestor of Abercrombie's First Law (the line you're climbing 4→5). Mercenary company in service of a dark sorceress, morally grey ensemble, propulsive military fantasy. Omnibus = first 3 books; long arc runs 10. |
+| 52 | Assassin's Apprentice ⭐ 🎧 | Robin Hobb | Opens Realm of the Elderlings — 16-book mega-arc routinely named the genre's emotional peak. Slow-burn flagged honestly, but the emotional payoff is *Lions of Al-Rassan* (4.5) energy at scale. Long-series anchor. |
+| 53 | The Rage of Dragons ⭐ 🎧 | Evan Winter | African-inspired military fantasy with demon hunts and dragon riders. Propulsive, brutal, found-family core. The Burning trilogy (book 3 still pending — second-to-last entry available now). |
 
 ## 2. Classics
 
@@ -140,6 +143,8 @@ new/upcoming releases as stretch._
 | 17 | Jade Legacy 🎧 | Fonda Lee | Green Bone book 3 — closes the trilogy. |
 | 18 | The Will of the Many ⭐ 🎧 | James Islington | Roman-influenced magic + dark academia + ancient mysteries. The catalog comps it close to Sun Eater's ambient texture; recent buzz is real. |
 | 19 | The Sword of the Lictor | Gene Wolfe | BotNS book 3, per your decision to push one more. Mountains, Severian on the run, the trilogy's mid-point. |
+| 54 | Red Sister ⭐⭐ | Mark Lawrence | Lawrence in your pocket via the Library trilogy + Returns/Overdue. Different mode entirely — lyrical grimdark, female-led: young Nona Grey enters a convent of warrior-nuns on a dying world. Coming-of-age + sisterhood + brutal violence. Book of the Ancestor trilogy. |
+| 55 | The Justice of Kings ⭐ 🎧 | Richard Swan | Recent (2022) grimdark — Imperial judge Sir Konrad Vonvalt + his clerk traverse a fading empire investigating heresy and political rot. Abercrombie-adjacent voice, tight pacing. Empire of the Wolf trilogy (now complete). |
 
 ---
 
