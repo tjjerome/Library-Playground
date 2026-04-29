@@ -19,26 +19,26 @@ new/upcoming releases as stretch goals._
 | Fantasy | 40 | 15 |
 | Science Fiction | 22 | 4 |
 | Horror | 11 | 5 |
-| Historical Fiction | 10 | 0 |
+| Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 0 |
 | Literary Fiction | 5 | 0 |
 | Crime / Mystery / Thriller | 5 | 0 |
-| **Total** | **100** | **24** |
+| **Total** | **100** | **30** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 8 |
+| Standalone | 35 | 12 |
 | Short Series | 15 | 5 |
-| Long Series | 50 | 11 |
-| **Total** | **100** | **24** |
+| Long Series | 50 | 13 |
+| **Total** | **100** | **30** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
-| Classics | ~8 | 0 |
+| Classics | ~8 | 1 |
 | Indie | ~20 | 5 |
 
 ---
@@ -88,6 +88,12 @@ new/upcoming releases as stretch goals._
 
 | # | Title | Author | Why It's For You |
 |---|---|---|---|
+| 25 | The Pillars of the Earth ⭐⭐ 🎧 | Ken Follett | Faith + Gothic cathedral building + 12th-century English Anarchy. Epic multigenerational scope. ~1000 pages — long but propulsive. Kingsbridge series anchor. |
+| 26 | The Underground Railroad ⭐⭐ 🎧 | Colson Whitehead | The closest book in the library to *James* (4.75) — slavery as the spine, with literal-railroad alternate history adding allegorical fantasy underneath. Pulitzer. |
+| 27 | The Book Thief ⭐ 🎧 | Markus Zusak | WWII Germany, narrated by Death. Lyrical, found family, books-as-resistance. Tonal cousin to *Nightingale* (5.0) without being a clone. |
+| 28 | Lonesome Dove ⭐ 🎧 | Larry McMurtry | Pulitzer winner, often called the great American novel. Two aging Rangers + a massive cattle drive. Elegiac, vast, deeply human — *Lions of Al-Rassan* energy in a Western. Long Series anchor. |
+| 29 | All the Light We Cannot See 🎧 | Anthony Doerr | Pulitzer-winning WWII dual narrative — blind French girl + German orphan boy whose paths converge. Lyrical and luminous. |
+| 30 | All Quiet on the Western Front 🎧 | Erich Maria Remarque | WWI from a German trench. Tight, unflinching, tragic. Counts toward Classics. Strong on audio. |
 
 ## 7. Literary Fiction
 
