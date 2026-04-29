@@ -17,23 +17,23 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 25 |
+| Fantasy | 40 | 27 |
 | Science Fiction | 20 | 4 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **60** |
+| **Total** | **100** | **62** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
 | Standalone | 35 | 27 |
-| Short Series | 15 | 10 |
+| Short Series | 15 | 12 |
 | Long Series | 50 | 23 |
-| **Total** | **100** | **60** |
+| **Total** | **100** | **62** |
 
 ### Miscellaneous Goals
 
@@ -150,6 +150,8 @@ new/upcoming releases as stretch._
 | 59 | Grey Sister | Mark Lawrence | Book of the Ancestor 2. Nona's training deepens; the convent politics turn lethal. |
 | 60 | Holy Sister | Mark Lawrence | Book of the Ancestor 3. Closes the trilogy — the focus tightens to the dying world's last corridor of warmth. |
 | 55 | The Justice of Kings ⭐ 🎧 | Richard Swan | Recent (2022) grimdark — Imperial judge Sir Konrad Vonvalt + his clerk traverse a fading empire investigating heresy and political rot. Abercrombie-adjacent voice, tight pacing. Empire of the Wolf trilogy (now complete). |
+| 61 | The Tyranny of Faith 🎧 | Richard Swan | Empire of the Wolf 2. Religious-political escalation; tone darkens, scope widens to imperial succession. |
+| 62 | The Trials of Empire 🎧 | Richard Swan | Empire of the Wolf 3. Closes the trilogy — horror-fantasy edge intensifies. |
 
 ---
 
