@@ -521,9 +521,59 @@ the category balance match goals? Make agreed swaps.
 
 ### Phase 4 — new and upcoming releases (up to 10)
 
-After the core list is locked, surface up to 10 new/upcoming releases as stretch
-goals. Research each via web search before recommending. Present in a clearly
-separated section.
+After the core 100 picks are locked, surface up to 10 stretch picks from
+books **releasing in the next 12 months**. These sit outside the 100-book
+count and live in a clearly separated section of `Reading_List.md`.
+
+Same pipeline as Phase 1/2 (exclusion check, multiSelect checklists,
+"Why It's For You" hooks, series follow-ups, surprise-pick probes). Two
+differences: web search is the primary data source (these aren't in the
+catalog yet) and library availability is N/A.
+
+**Step 1 — ask the reader's upcoming-release wish list first.** Mirror
+the Step 4 wish-list pass, scoped to upcoming releases:
+
+> "Any books or sequels coming out in the next 12 months that you
+> already have on your radar — things you've seen announced, been hyped
+> about, or heard recommended?"
+
+For each named release: web search to confirm the date sits in the
+window and pull plot/comp details; run `is_already_read(title, author)`
+in case of an ARC; fit-check against the profile; if it's a series
+sequel, confirm the prior books are read in the log and open the series
+scope follow-up if scope is ambiguous. Add confirmed picks to the
+stretch section.
+
+**Step 2 — librarian-suggested upcoming releases.** Build the candidate
+pool from web search, prioritized by fit signal:
+
+1. **Author backlist hits** — upcoming books by authors in `five_star`
+   and `all_favorites`. A new book by a 5-starred author is the
+   strongest possible upcoming-release signal.
+2. **Sequels in unfinished sequential series** — pull `unfinished` from
+   the log, search for announced next-book dates.
+3. **Comp-driven** — for `five_star` benchmarks, search "books like X"
+   or "[author] influence" within upcoming-release roundups.
+4. **Genre-specific previews** — "best [genre] 2026" / "anticipated
+   [genre] releases" filtered by the reader's Step 3 genre goals.
+
+Run the candidate pool through the same checks as Phase 2: exclusion
+set, profile fit, recency-weighted negative signal. Present survivors
+as multiSelect `AskUserQuestion` checklists (3–4 per call) with the
+"Why It's For You" hook in the description and the release date +
+summary in the `preview` field.
+
+After-checklist behavior is identical to Phase 2 (selected → stretch
+section + series follow-ups; unselected → "not right now"; surprising
+selections → pointed follow-up; surprising rejections → quiet unless
+patterned).
+
+**Bridge to the main pool.** Stretch picks live in the "New & Upcoming
+Releases" section until the reader actually acquires the book. When
+they say "I bought X" or "I picked up X", hand off to the cataloguer
+skill — it adds the entry to `Library_Catalog.json`, regenerates the
+index, and the reader can decide whether to move it from the stretch
+section into the main pool or read it directly.
 
 ### Core principles
 
