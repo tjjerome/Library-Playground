@@ -419,8 +419,10 @@ before overwriting.
 
 ## Step 3: Goals conversation
 
-Establish goals fresh each session. Default target: **100 books** core (≈50/year over
-two years), plus up to **10 new/upcoming releases** as stretch goals.
+Establish goals fresh each session. **Core target: 100 books, with a
+10-book grace cushion (hard cap 110) to accommodate series.** Plus
+**10–15 new/upcoming releases** as stretch goals in a separate section.
+Final list comes in between 100 and 125 books total.
 
 **Genre goals** — counts of individual books per genre. Common: Fantasy, Science
 Fiction, Horror, Historical Fiction, Crime/Mystery/Thriller, Literary Fiction,
@@ -562,18 +564,46 @@ AskUserQuestion(questions=[{
    something specific is off about the framing.
 
 After each batch, summarise additions in chat in one line ("added 3 to
-the pool — total 14/100") and continue.
+the pool — total 14/100, cap 110") and continue.
 
-### Phase 3 — swap discussion at 100
+### The 100-cap with 10-book grace for series
 
-Once 100 are in the pool, pause: any reservations, anything missing, does
-the category balance match goals? Make agreed swaps.
+The target is 100 but **don't be neurotic about it as you approach the
+mark.** A series suggestion that would push the count from 95 to 103 is
+fine — series get a 10-book grace cushion (hard cap 110) precisely so
+you can keep recommending naturally without flinching at the boundary.
 
-### Phase 4 — new and upcoming releases (up to 10)
+Two rules govern the boundary:
 
-After the core 100 picks are locked, surface up to 10 stretch picks from
-books **releasing in the next 12 months**. These sit outside the 100-book
+1. **Pre-100: recommend freely**, including series even when the math
+   would tip the total over 100. Don't decline to surface a strong fit
+   just because it's a 5-book series and you're at 97.
+2. **Post-100: stop initiating new recommendations.** Don't open new
+   batches, don't suggest new authors or standalones, don't introduce
+   series that haven't been discussed yet. The only writes that should
+   still happen are filling out series scope decisions for series
+   already on the list — e.g. the reader picked Hyperion earlier with
+   "first two books," and later decides to bump it to all four; or a
+   pending series scope follow-up resolves and adds 2–3 more entries.
+
+Hard cap at 110. Once you reach 110, even open series scope decisions
+should default to the smaller scope ("first 2 only" rather than "all
+4"); over-110 series spillover belongs in Phase 4 stretch territory.
+
+### Phase 3 — swap discussion at 100–110
+
+Once the core sits in the 100–110 range and no series scope follow-ups
+are pending, pause: any reservations, anything missing, does the
+category balance match goals? Make agreed swaps. Swap discussions can
+also right-size series scope ("you committed to all four Hyperion books
+— still want all four, or trim to two now that you've seen the list?").
+
+### Phase 4 — new and upcoming releases (10–15)
+
+After the core is locked (100–110), surface 10–15 stretch picks from
+books **releasing in the next 12 months**. These sit outside the core
 count and live in a clearly separated section of `Reading_List.md`.
+Final list lands between 100 and 125 books total.
 
 Same pipeline as Phase 1/2 (exclusion check, multiSelect checklists,
 "Why It's For You" hooks, series follow-ups, surprise-pick probes). Two
@@ -713,7 +743,7 @@ Sections (use whichever apply):
 Format: `| Title | Author | Pages | Why It's For You |` — drop the `#` column so
 the table doesn't read as a numbered reading queue. Add 🎧 and **(I)** as
 appropriate. Use ⭐ for strong fits, ⭐⭐ for absolute must-reads,
-sparingly. The running count toward 100 lives in the goals-tracking table
+sparingly. The running count (target 100, hard cap 110) lives in the goals-tracking table
 at the bottom, not as numbered rows.
 
 ---
@@ -745,8 +775,8 @@ and point at the file. The file carries the content; the chat carries the
 discussion.
 
 - **`Reading_List.md`** — full curated list with sections, strength
-  indicators, running count toward 100, stretch goals, and a goals-tracking
-  table:
+  indicators, running count (`N/100, cap 110`), stretch goals, and a
+  goals-tracking table:
   - Genre Goals: `| Genre | Goal | Current |`
   - Series Status Goals: `| Status | Goal | Current |`
   - Miscellaneous Goals: `| Tag | Goal | Current |`
