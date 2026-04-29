@@ -18,22 +18,22 @@ new/upcoming releases as stretch._
 | Genre | Goal | Current |
 |---|---|---|
 | Fantasy | 39 | 39 |
-| Science Fiction | 21 | 12 |
+| Science Fiction | 21 | 16 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **82** |
+| **Total** | **100** | **86** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 30 |
-| Short Series | 23 | 23 |
-| Long Series | 42 | 29 |
-| **Total** | **100** | **82** |
+| Standalone | 35 | 31 |
+| Short Series | 26 | 26 |
+| Long Series | 39 | 29 |
+| **Total** | **100** | **86** |
 
 ### Miscellaneous Goals
 
@@ -146,6 +146,7 @@ new/upcoming releases as stretch._
 | 63 | Never Die ⭐ **(I)** 🎧 | Rob J. Hayes | Wuxia-influenced standalone. Boy on a mission from the God of Death recruits four legendary heroes (some already dead) to assassinate the Emperor. Fast, propulsive, eastern-flavored — pairs with *Sword of Kaigen* energy. |
 | 80 | Use of Weapons ⭐⭐ 🎧 | Iain M. Banks | The Culture peak by most readers' reckoning. Special Circumstances agent Zakalwe; structurally inventive — alternating chapters, one set running backward. Banks in pocket via *Phlebas* + *Player of Games*. |
 | 81 | Anathem ⭐ 🎧 | Neal Stephenson | Philosophical SF — monks of mathematics in a cloistered alternate world react to first contact. Distinctive, long, idea-saturated. Your Sun Eater density tolerance puts this in range. |
+| 83 | Cat's Cradle ⭐⭐ 🎧 | Kurt Vonnegut Jr. | Top-tier Vonnegut, SF-tagged. Ice-nine, Bokononism, the end of the world played for dark satirical laughs. Direct continuation of the *Slaughterhouse-Five* (5.0) + *Mother Night* (slot 46) thread. |
 
 ### 8b. Short Series Fantasy
 
@@ -157,6 +158,9 @@ new/upcoming releases as stretch._
 | 18 | The Will of the Many ⭐ 🎧 | James Islington | Roman-influenced magic + dark academia + ancient mysteries. The catalog comps it close to Sun Eater's ambient texture; recent buzz is real. |
 | 19 | The Sword of the Lictor | Gene Wolfe | BotNS book 3, per your decision to push one more. Mountains, Severian on the run, the trilogy's mid-point. |
 | 82 | The Citadel of the Autarch | Gene Wolfe | BotNS book 4 — closes the main quartet. Severian's journey reaches its end; the meaning of everything that came before clicks into place. |
+| 84 | Children of Time ⭐⭐ 🎧 | Adrian Tchaikovsky | Hugo winner. Last surviving humans on a generation ship reach a planet where spiders have been uplifted to civilization by an ancient nanovirus. Two civilizations on a millennia-spanning collision course. Iconic modern SF. |
+| 85 | Children of Ruin 🎧 | Adrian Tchaikovsky | Children of Time book 2. Octopuses this time. Same uplift framework, fresh civilization. |
+| 86 | Children of Memory 🎧 | Adrian Tchaikovsky | Children of Time book 3. Closes the trilogy — corvids and a colony ship gone wrong. |
 | 54 | Red Sister ⭐⭐ | Mark Lawrence | Lawrence in your pocket via the Library trilogy + Returns/Overdue. Different mode entirely — lyrical grimdark, female-led: young Nona Grey enters a convent of warrior-nuns on a dying world. Coming-of-age + sisterhood + brutal violence. Book of the Ancestor trilogy. |
 | 59 | Grey Sister | Mark Lawrence | Book of the Ancestor 2. Nona's training deepens; the convent politics turn lethal. |
 | 60 | Holy Sister | Mark Lawrence | Book of the Ancestor 3. Closes the trilogy — the focus tightens to the dying world's last corridor of warmth. |
