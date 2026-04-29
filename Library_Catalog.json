@@ -79206,7 +79206,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Two slacker friends in a small American town accidentally ingest a mysterious drug called Soy Sauce that grants them terrifying awareness of supernatural forces, and find themselves the unlikely last line of defence against an interdimensional invasion. Equal parts absurdist comedy and Lovecraftian horror, the novel unfolds through the unreliable first-person narration of self-described failure David Wong.",
       "tone": "darkly comic, absurdist, gross-out horror",
       "pacing": "Fast",
@@ -79220,8 +79220,8 @@
       ],
       "setting": "Contemporary small-town America (the fictional 'Undisclosed'); interdimensional threats bleed into mundane suburban life",
       "comparable_books": [
-        "Good Omens - Terry Pratchett & Neil Gaiman",
-        "Hitchhiker's Guide to the Galaxy - Douglas Adams",
+        "Good Omens - Neil Gaiman & Terry Pratchett",
+        "The Hitchhiker’s Guide to the Galaxy - Douglas Adams",
         "House of Leaves - Mark Z. Danielewski",
         "Practical Demonkeeping - Christopher Moore"
       ],
@@ -79250,7 +79250,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 2 comp(s) not in library: House of Leaves - Mark Z. Danielewski, Practical Demonkeeping - Christopher Moore"
+          }
+        ]
+      },
       "pages": 331,
       "goodreads_reviews": 84200,
       "goodreads_rating": 3.86,
@@ -98971,7 +98980,7 @@
       "comparable_books": [
         "Exhalation - Ted Chiang",
         "Stories of Your Life and Others - Ted Chiang",
-        "The Paper Menagerie - Ken Liu",
+        "The Paper Menagerie and Other Stories - Ken Liu",
         "Burning Chrome - William Gibson"
       ],
       "taste_signals": {
@@ -99012,7 +99021,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "In the fourth instalment of the experimental Driver Series, characters from both the living and the dead worlds — villains of circumstance and phantoms of desperation — unknowingly converge near a point of no return, each pursuing their own agendas of revenge, survival, or manipulation. The otherworldly Driver navigates a liminal space between life and death where souls play dangerous, potentially irreversible games.",
       "tone": "gritty, atmospheric, bleak",
       "pacing": "Moderate",
@@ -99052,7 +99061,16 @@
       ],
       "confidence": "Medium",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Between - Tananarive Due"
+          }
+        ]
+      },
       "pages": 132,
       "goodreads_reviews": 4,
       "goodreads_rating": 4.5,
@@ -99186,7 +99204,7 @@
       "setting": "The fictional land of Nóra — a secondary-world medieval-adjacent setting rendered with comic sensibility",
       "comparable_books": [
         "Guards! Guards! - Terry Pratchett",
-        "The Dragon Keeper - Robin Hobb",
+        "Dragon Keeper - Robin Hobb",
         "How to Train Your Dragon - Cressida Cowell",
         "Inkheart - Cornelia Funke"
       ],
@@ -99558,7 +99576,7 @@
       "series_status": "Standalone",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "A devastating plague called the Wrack sweeps across the fantasy continent of Teringia, told through a tapestry of multiple perspectives — kings, healers, merchants, and warriors — as nations collapse, political schemes flourish, and ordinary people struggle to survive. The plague itself is the protagonist, advancing indifferently as the ambitious and the desperate expose the full spectrum of human nature in its wake.",
       "tone": "bleak, sociological, relentlessly grim",
       "pacing": "Slow",
@@ -99572,7 +99590,7 @@
       ],
       "setting": "The continent of Teringia — a richly built secondary fantasy world of competing kingdoms and empires, with a unique magic system involving seers",
       "comparable_books": [
-        "World War Z - Max Brooks",
+        "World War Z: An Oral History of the Zombie War - Max Brooks",
         "The Plague - Albert Camus",
         "Black Death - Robert Lyndon",
         "The Darkness That Comes Before - R. Scott Bakker"
@@ -99601,7 +99619,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 2 comp(s) not in library: The Plague - Albert Camus, Black Death - Robert Lyndon"
+          }
+        ]
+      },
       "pages": 193,
       "goodreads_reviews": 605,
       "goodreads_rating": 4.0,
@@ -99669,7 +99696,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "After completing his first year at Lorian Heights Academy, enchanter Corin Cadence and his friends travel to the foreign country of Caelford on what should be a vacation — but Corin has a packed agenda of goals including seeking artificial attunements, finding a cure for his sister Sera, and forging alliances. His plans swiftly collide with those of several other powerful players, pulling everyone into the centre of new conflicts.",
       "tone": "adventurous, systems-focused, warm with moments of tension",
       "pacing": "Moderate",
@@ -99710,7 +99737,16 @@
       "content_flags": [],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 2 comp(s) not in library: He Who Fights With Monsters - Jason Cheyne, Mother of Learning - Domagoj Kurmaic"
+          }
+        ]
+      },
       "pages": 462,
       "goodreads_reviews": 8657,
       "goodreads_rating": 4.11,
@@ -100572,7 +100608,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Leiyn 'Firebrand', a brash ranger sworn to protect a newly colonised continent from colossal elemental spirit-beasts called titans, survives a treacherous attack that wipes out her lodge and sets her on a vengeful quest across the Titan Wilds. To succeed, she must finally accept a powerful and long-suppressed nature magic inherited at birth — one that gives her power over life and death.",
       "tone": "adventurous, wonder-filled, action-driven",
       "pacing": "Fast",
@@ -100614,7 +100650,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 3 comp(s) not in library: The Ranger's Apprentice - John Flanagan, Horizon: Zero Dawn (game), The Poppy War - R.F. Kuang"
+          }
+        ]
+      },
       "pages": 411,
       "goodreads_reviews": 1928,
       "goodreads_rating": 4.28,
@@ -101666,7 +101711,7 @@
       "series_status": "Standalone",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "In the futuristic city of Kansmark, private detective Jack is hired to protect a pro-Taika presidential candidate whose life may be in danger, and uncovers a conspiracy that could change the fate of the persecuted Taika people forever. A noir mystery set against a backdrop of racial tension and political upheaval.",
       "tone": "noir, politically charged, tense",
       "pacing": "Moderate",
@@ -101703,7 +101748,16 @@
       ],
       "confidence": "Medium",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The City & The City - China Miéville"
+          }
+        ]
+      },
       "pages": 181,
       "goodreads_reviews": 4,
       "goodreads_rating": 3.75,
@@ -101719,7 +101773,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Corin Cadence enters the deadly Serpent Spire — a tower of traps, monsters, and shifting rooms — seeking an attunement and answers about his brother who never returned. After surviving the trials, he enrolls at a mage academy and must grow in power while investigating a deeper conspiracy tied to his missing brother.",
       "tone": "adventurous, systems-focused, lighthearted with dark edges",
       "pacing": "Slow burn with payoff",
@@ -101758,7 +101812,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: Mark of the Fool - J.M. Clarke"
+          }
+        ]
+      },
       "pages": 517,
       "goodreads_reviews": 26819,
       "goodreads_rating": 4.1,
@@ -101774,7 +101837,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Continuing directly from Voice of War, three heroes — Chrys, Laurel, and Alverax — are scattered across the world of Arasin, each facing personal crises while a new, world-threatening danger rises in the wake of a shattered coreseal. The stakes are higher, the twists sharper, and the bonds of family and sacrifice are tested at every turn.",
       "tone": "propulsive, emotionally resonant, fast-paced epic",
       "pacing": "Fast",
@@ -101813,7 +101876,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Final Empire - Brandon Sanderson"
+          }
+        ]
+      },
       "pages": 229,
       "goodreads_reviews": 1144,
       "goodreads_rating": 4.16,
@@ -102850,7 +102922,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Disgraced dwarven ex-hero Gorm Ingerson stands up for an undocumented goblin and finds himself on a suicidal quest, stumbling into a conspiracy that implicates the very financial and political machinery underpinning the professional heroics industry. A sharp satirical fantasy that skewers capitalism through the lens of a classic dungeon-crawler.",
       "tone": "darkly comic, satirical, surprisingly poignant",
       "pacing": "Moderate",
@@ -102888,7 +102960,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Colour of Magic - Terry Pratchett"
+          }
+        ]
+      },
       "pages": 288,
       "goodreads_reviews": 10079,
       "goodreads_rating": 4.27,
@@ -102964,7 +103045,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Back at Lorian Heights Academy, Corin Cadence now has firm evidence his brother Tristan is alive but entangled with a dangerous clandestine organization called the Whispers. While trying to unravel the conspiracy, he must also help his ailing companion Sera regain her lost voice and magic.",
       "tone": "adventurous, systems-focused, building tension",
       "pacing": "Slow burn with payoff",
@@ -103002,7 +103083,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: Mark of the Fool - J.M. Clarke"
+          }
+        ]
+      },
       "pages": 613,
       "goodreads_reviews": 15836,
       "goodreads_rating": 4.22,
@@ -103170,7 +103260,7 @@
       "series_status": "Standalone",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Ein, a murdered eight-year-old boy acting on behalf of the God of Death, must assemble a band of legendary heroes to bring down the tyrannical Emperor of Ten Kings — but there is one catch: each hero must first die before they can serve him. A propulsive wuxia adventure brimming with samurai, shinigami, and vengeful spirits.",
       "tone": "propulsive, action-packed, anime-inspired, bittersweet",
       "pacing": "Fast",
@@ -103209,7 +103299,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Black Company - Glen Cook"
+          }
+        ]
+      },
       "pages": 239,
       "goodreads_reviews": 4622,
       "goodreads_rating": 3.88,
@@ -103278,7 +103377,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "During Hunter's Eve — a city-wide celebration of monsters and the macabre — Huntress Isabeau Agarwal is tasked with solving two seemingly unrelated murders in Lamplight while a werewolf terrorises the streets. As she digs deeper, the crimes converge around a shadowy social club of powerful figures, each with secrets and motives to kill.",
       "tone": "witty, playful, mystery-driven with dark edges",
       "pacing": "Fast",
@@ -103317,7 +103416,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Adventures of Amina al-Sirafi - S.A. Chakraborty"
+          }
+        ]
+      },
       "pages": 259,
       "goodreads_reviews": 781,
       "goodreads_rating": 4.37,
@@ -103333,7 +103441,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Huntress Isabeau Agarwal tracks a shape-shifting creature called a Doppelvyrm to the isolated Spindle Manor, where it could be any one of the ten guests trapped by a raging thunderstorm. When a murder occurs on top of the monster hunt, Isabeau must solve two mysteries in a single night before more guests — or she herself — end up dead.",
       "tone": "darkly comic, atmospheric, propulsive, Agatha Christie-esque with fantasy flair",
       "pacing": "Fast",
@@ -103373,7 +103481,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Inheritance Games - Jennifer Lynn Barnes"
+          }
+        ]
+      },
       "pages": 176,
       "goodreads_reviews": 2822,
       "goodreads_rating": 4.01,
@@ -103389,7 +103506,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "With the time loop nearing its end and restarts running out, Zorian and his allies must urgently find a way to prevent the release of an ancient primordial being before they are returned to a world where mistakes cannot be undone. The stakes reach their highest point yet as the origin of the time loop is fully revealed.",
       "tone": "tense, methodical, escalating",
       "pacing": "Moderate",
@@ -103431,7 +103548,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 3 comp(s) not in library: The Cradle Series - Will Wight, Mage Errant - John Bierce, Mark of the Fool - J.M. Clarke"
+          }
+        ]
+      },
       "pages": 526,
       "goodreads_reviews": 7282,
       "goodreads_rating": 4.51,
@@ -103447,7 +103573,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Zorian Kazinski, an ambitious teenage mage at Cyoria's magical academy, is murdered on the eve of the summer festival and wakes to find himself trapped in a repeating month-long time loop with no visible exit. Using each reset to grow in power and knowledge, he begins uncovering a mysterious conspiracy threatening the city.",
       "tone": "methodical, curious, quietly tense",
       "pacing": "Slow burn with payoff",
@@ -103489,7 +103615,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 3 comp(s) not in library: Cradle - Will Wight, Mage Errant - John Bierce, A Practical Guide to Evil - ErraticErrata"
+          }
+        ]
+      },
       "pages": 444,
       "goodreads_reviews": 13373,
       "goodreads_rating": 4.44,
@@ -103551,7 +103686,7 @@
       "series_status": "Standalone",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "WroOth, a shapeshifting warrior, arrives with his brothers to clear a village of giant spiders, but finds himself unexpectedly drawn to a baker named Mara who is fleeing a far greater threat. A fast-paced prequel novella set in the world of the Tue-Rah Chronicles, exploring the nature of 'locking' — a bond akin to soulmate pairing.",
       "tone": "fast-paced, adventurous, warmly romantic",
       "pacing": "Fast",
@@ -103589,7 +103724,16 @@
       "content_flags": [],
       "confidence": "Medium",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=0 (<3). Web search returned 3 comp(s) not in library: Identity Revealed - J.M. Butler, Scarlet - Marissa Meyer, Dragon Bound - Thea Harrison"
+          }
+        ]
+      },
       "pages": 52,
       "goodreads_reviews": 22,
       "goodreads_rating": 4.55,
@@ -103605,7 +103749,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Zee Tarrow, a lowly hull-scrubber in a world of dragon-riding knights, secretly rescues and bonds with a baby kraken — a creature that even dragons fear — and must navigate an elite military academy while hiding the most dangerous and extraordinary bond in a thousand years. A coming-of-age progression fantasy with a heartfelt man-and-beast relationship at its core.",
       "tone": "adventurous, heartwarming, lively",
       "pacing": "Fast",
@@ -103646,7 +103790,16 @@
       "content_flags": [],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 3 comp(s) not in library: Mage Errant - John Bierce, How to Train Your Dragon - Cressida Cowell, Ascendant - Nicholas Binge"
+          }
+        ]
+      },
       "pages": 472,
       "goodreads_reviews": 478,
       "goodreads_rating": 4.37,
@@ -103819,7 +103972,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Reidon Ward, a physically frail young man with the lowest possible combat rating, enters the Galens Institute — a prestigious military academy that trains humanity's mech-suit warriors against alien threats — and begins an unlikely rise powered by a unique and terrifying symbiotic AI. A propulsive military academy progression fantasy set in a sci-fi-inflected secondary world.",
       "tone": "propulsive, triumphant, high-octane",
       "pacing": "Fast",
@@ -103862,7 +104015,16 @@
       ],
       "confidence": "High",
       "research_source": "training",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 3 comp(s) not in library: Cradle - Will Wight, Mage Errant - John Bierce, Super Powereds - Drew Hayes"
+          }
+        ]
+      },
       "pages": 768,
       "goodreads_reviews": 18230,
       "goodreads_rating": 4.57,
@@ -104066,7 +104228,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Lydia and Keras infiltrate a city ruled by three gods to investigate whether the deities are genuine, uncovering layers of conspiracy, divine intrigue, and questions about the nature of godhood itself. A carefully constructed secondary-world fantasy featuring intricate magic systems and a slow-burn plot rich in worldbuilding.",
       "tone": "measured, intricate, quietly tense",
       "pacing": "Slow burn with payoff",
@@ -104107,7 +104269,16 @@
       ],
       "confidence": "High",
       "research_source": "training",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 2 comp(s) not in library: Mother of Learning - Domagoj Kurmaić, Arcane Ascension - Andrew Rowe"
+          }
+        ]
+      },
       "pages": 289,
       "goodreads_reviews": 7086,
       "goodreads_rating": 3.92,
@@ -104414,7 +104585,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "When her village is raided by the Vulkari — fearsome warrior women of the Ancient Wilds — young Zyntael Fairwinter is taken and claimed as a daughter by their matriarch, raised to hunt, fight, and kill in a culture utterly alien to her own. Steeped in Slavic mythology, this coming-of-age story follows her search for the mysterious reason behind her abduction, in a world populated entirely by fae and folkloric creatures.",
       "tone": "grin-dark (gritty with levity), vivid, propulsive",
       "pacing": "Fast",
@@ -104458,7 +104629,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 2 comp(s) not in library: Realm of the Elderlings - Robin Hobb, The Wolf's Call - Anthony Ryan"
+          }
+        ]
+      },
       "pages": 325,
       "goodreads_reviews": 175,
       "goodreads_rating": 3.84,
@@ -104643,7 +104823,7 @@
       "series_status": "Standalone",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Edwayn Sattler, a half-dwarf waiter with a magic-infused beard, stumbles into a city-threatening conspiracy when a night serving the elite goes catastrophically wrong, landing him in partnership with an inscrutable rat-man detective to solve a magical murder mystery. A darkly comic fantasy noir set in a steampunk-flavored secondary world of elves, trolls, and overcharged magic cops.",
       "tone": "darkly comic, fast, quippy",
       "pacing": "Fast",
@@ -104684,7 +104864,16 @@
       "content_flags": [],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 3 comp(s) not in library: Dirty Streets of Heaven - Tad Williams, The Dresden Files - Jim Butcher, Legends & Lattes - Travis Baldree"
+          }
+        ]
+      },
       "pages": 272,
       "goodreads_reviews": 82,
       "goodreads_rating": 3.62,
@@ -104757,7 +104946,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Temperance Whiteoak, a pistol witch who channels magic through enchanted bullets, tracks the daemon Belial to a remote mountain town called Shady Hollow — only to find the isolated community harboring dark secrets and a monster problem of its own. A self-contained episode in a weird-west fantasy series that deepens the heroine's tragic backstory while delivering a mystery-western adventure.",
       "tone": "adventurous, mysterious, western-gothic",
       "pacing": "Fast",
@@ -104800,7 +104989,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=0 (<3). Web search returned 4 comp(s) not in library: Deadlands RPG tie-in fiction, The Six-Gun Tarot - R.S. Belcher, Hell on Earth - Chuck Wendig..."
+          }
+        ]
+      },
       "pages": 813,
       "goodreads_reviews": 2,
       "goodreads_rating": 5.0,
@@ -104816,7 +105014,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "In the concluding volume of the Threadlight trilogy, Chrys, Laurel, Alverax, and their allies race to stop the returning Heralds — powerful beings worshipped as gods — before they destroy the world, with family and sacrifice at the heart of every choice. The novel brings all major character arcs to resolution in a fast-paced, emotionally charged finale.",
       "tone": "hopeful, emotionally resonant, action-driven",
       "pacing": "Fast",
@@ -104855,7 +105053,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Final Empire - Brandon Sanderson"
+          }
+        ]
+      },
       "pages": 241,
       "goodreads_reviews": 917,
       "goodreads_rating": 4.08,
@@ -105829,7 +106036,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "The concluding volume of the Paternus Trilogy, in which Fi and Zeke must accept their newfound powers and fight alongside Peter and an army of gods, monsters, and heroes from every world mythology in the climactic Maha yuga — a final war to decide the fate of all humanity. The novel spans globe-trotting locations from Africa to Asgard as the Deva face off against the ancient evil of Khagan and Kleron's Asura.",
       "tone": "epic, action-packed, mythologically exuberant, emotionally walloping",
       "pacing": "Fast",
@@ -105843,7 +106050,7 @@
       ],
       "setting": "Contemporary Earth — Detroit, Africa, Asgard, the Pacific, and mythological realms; present day",
       "comparable_books": [
-        "American Gods - Neil Gaiman",
+        "American Gods: The Tenth Anniversary Edition - Neil Gaiman",
         "The Dresden Files - Jim Butcher",
         "Paternus: Rise of Gods - Dyrk Ashton"
       ],
@@ -105869,7 +106076,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 2 comp(s) not in library: The Dresden Files - Jim Butcher, Paternus: Rise of Gods - Dyrk Ashton"
+          }
+        ]
+      },
       "pages": 581,
       "goodreads_reviews": 1167,
       "goodreads_rating": 4.4,
@@ -105885,7 +106101,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "On the run from an ancient evil and his army of mythological terrors, Fi and Zeke aid Peter on a globe-trotting quest to gather the remaining Firstborn — the real gods and creatures behind every legend — for what may be the final battle in the world's oldest war. Along the way, both teenagers discover powers of their own that come at a steep personal cost.",
       "tone": "breathless, action-packed, witty, mythologically rich",
       "pacing": "Fast",
@@ -105899,7 +106115,7 @@
       ],
       "setting": "Contemporary Earth — modern cities, ancient mythological locations; present day",
       "comparable_books": [
-        "American Gods - Neil Gaiman",
+        "American Gods: The Tenth Anniversary Edition - Neil Gaiman",
         "Paternus: Rise of Gods - Dyrk Ashton",
         "The Dresden Files - Jim Butcher"
       ],
@@ -105925,7 +106141,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 2 comp(s) not in library: Paternus: Rise of Gods - Dyrk Ashton, The Dresden Files - Jim Butcher"
+          }
+        ]
+      },
       "pages": 380,
       "goodreads_reviews": 1578,
       "goodreads_rating": 4.26,
@@ -106400,7 +106625,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "In a province ruled by a god, two rival nations — the Horacks and the Nairabians — have fought a two-century-long war made immortal by the power of the Dathens, god-gifted warriors who can resurrect fallen soldiers. When young Enron is drafted into the army, he becomes entangled in a desperate scheme to assassinate the enemy Dathens and finally end the endless conflict.",
       "tone": "action-oriented, military-flavoured, straightforward",
       "pacing": "Moderate",
@@ -106436,7 +106661,16 @@
       ],
       "confidence": "Medium",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3)"
+          }
+        ]
+      },
       "pages": 91,
       "goodreads_reviews": 1,
       "goodreads_rating": 5.0,
@@ -107231,7 +107465,7 @@
       "series_status": "Standalone",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Dragonbonded Palon and her dragon partner Windward are respected champions of their mountain nest, but when stolen treasures are found in Palon's collection she must fight to prove her innocence against mounting suspicion while also managing her volatile new charge, a rebellious teenage dragonbonded named Tebah. As rivalries and plots unfold within their close-knit community, Palon must learn to trust others if she is to reclaim her place and protect those she loves.",
       "tone": "intimate, character-driven, warm, community-focused",
       "pacing": "Moderate",
@@ -107269,7 +107503,16 @@
       "content_flags": [],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=0 (<3). Web search returned 3 comp(s) not in library: Dragonflight - Anne McCaffrey, Seraphina - Rachel Hartman, Between Starfalls - S. Kaeth"
+          }
+        ]
+      },
       "pages": 234,
       "goodreads_reviews": 52,
       "goodreads_rating": 4.12,
@@ -108480,7 +108723,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Auric Manteo, a retired and trauma-scarred veteran of the Syraeic League of adventurers, is dragged back into service when a cursed artifact threatens his daughter's life, forcing him to lead a group of inexperienced companions back into the doom-haunted Barrowlands — ruins of the ancient and wicked Djao civilisation — to confront a bloodthirsty living god. The novel blends dungeon-crawling quest fantasy with genuine PTSD and psychological depth.",
       "tone": "dark, atmospheric, tense, RPG-flavoured with psychological depth",
       "pacing": "Slow burn with payoff",
@@ -108521,7 +108764,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The House in the Cerulean Sea - TJ Klune"
+          }
+        ]
+      },
       "pages": 377,
       "goodreads_reviews": 3874,
       "goodreads_rating": 4.16,
@@ -109075,7 +109327,7 @@
       "series_status": "Standalone",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "A fearsome, reclusive old fighter named Balak is hired by a determined teenage girl, Arda, to escort her and her infant sister across the war-ravaged continent of Tartaurus to the safety of the distant castle of Iron Gates. Drawing on Caucasus mythology, the novel explores the tension between justice and revenge as the unlikely pair face hostile terrain, enemy forces, and giants while slowly discovering each other's secrets.",
       "tone": "gritty, adventurous, occasionally tender, action-driven",
       "pacing": "Fast",
@@ -109114,7 +109366,16 @@
       ],
       "confidence": "Medium",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: Of Blood and Bone - Nora Roberts"
+          }
+        ]
+      },
       "pages": 150,
       "goodreads_reviews": 81,
       "goodreads_rating": 3.46,
@@ -111113,7 +111374,7 @@
       "setting": "Various fantasy settings",
       "comparable_books": [
         "The Price of Power - Michael Michel",
-        "War Song - Michael Michel"
+        "War Song: A Dreams of Dust and Steel Saga - Michael Michel"
       ],
       "taste_signals": {
         "positive": [
@@ -111147,7 +111408,7 @@
       "series_status": "Short Stories",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Set two years before The Crimson Court, this prequel novella follows Kasia Niezik as she rises to become the Amber Dame — navigating rival nobles, dangerous beasts, and her own dark past in order to restore her fallen house. Inspired by Polish mythology, the story blends gaslamp technology, flintlock firearms, and spirit magic in a world of political intrigue.",
       "tone": "dark, politically tense, revenge-driven",
       "pacing": "Fast",
@@ -111187,7 +111448,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: A Dagger in the Winds - Brendan Noble"
+          }
+        ]
+      },
       "pages": 61,
       "goodreads_reviews": 31,
       "goodreads_rating": 3.68,
@@ -111203,7 +111473,7 @@
       "series_status": "Short Stories",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "An advent-calendar-style fantasy anthology featuring 24 short stories — one for each day of December leading to Christmas — by 24 self-published fantasy authors. All stories are thematically tied to winter, ranging from dark frozen hellscapes to cozy winter wonderlands, and spanning subgenres including epic fantasy, cozy fantasy, steampunk, and fairytale.",
       "tone": "varied — dark and wintry, ranging from hopeful to harrowing",
       "pacing": "Fast",
@@ -111242,7 +111512,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=0 (<3). Web search returned 2 comp(s) not in library: The Anatomy of Fear - Various Authors, Unfettered - Various Authors edited by Shawn Speakman"
+          }
+        ]
+      },
       "pages": 331,
       "goodreads_reviews": 251,
       "goodreads_rating": 4.15,
@@ -119931,7 +120210,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "With the Holdfasts of Lostwell scattered and Kelsey held captive alongside Aila, only Belinda — battling her own fears and hiding her resistance — stands between the Ascendants and total victory. The sixth installment closes the Lostwell arc and turns on Belinda's struggle to reclaim the land she once ruled as queen.",
       "tone": "grimdark, politically complex, morally ambiguous",
       "pacing": "Fast",
@@ -119971,7 +120250,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Queen's Executioner - Christopher Mitchell"
+          }
+        ]
+      },
       "pages": 338,
       "goodreads_reviews": 1144,
       "goodreads_rating": 4.61,
@@ -120389,7 +120677,7 @@
       "comparable_books": [
         "The Way of Kings - Brandon Sanderson",
         "Empire of the Vampire - Jay Kristoff",
-        "Towers of Midnight - Robert Jordan"
+        "Towers of Midnight - Robert Jordan & Brandon Sanderson"
       ],
       "taste_signals": {
         "positive": [
@@ -120443,7 +120731,7 @@
       "setting": "Star Continent and connected worlds in the Magelands universe, secondary fantasy multi-world setting",
       "comparable_books": [
         "The Way of Kings - Brandon Sanderson",
-        "Towers of Midnight - Robert Jordan",
+        "Towers of Midnight - Robert Jordan & Brandon Sanderson",
         "Empire of the Vampire - Jay Kristoff"
       ],
       "taste_signals": {
@@ -122087,7 +122375,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "In a world where people can extend their lifespan by sacrificing others — a practice called Span Transfer — a privileged young man named Xinlas, the only person ever to survive being a Proxy, must decide whether to embrace his supposed destiny as a hero when a ruthless king threatens a hidden, peaceful community. An SPFBO4 finalist readable as a standalone.",
       "tone": "adventurous, morally provocative, uneven",
       "pacing": "Moderate",
@@ -122128,7 +122416,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 2 comp(s) not in library: Unwind - Neal Shusterman, Graceling - Kristin Cashore"
+          }
+        ]
+      },
       "pages": 374,
       "goodreads_reviews": 38,
       "goodreads_rating": 3.76,
@@ -122144,7 +122441,7 @@
       "series_status": "Short Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "When his wife is murdered and his newborn triplets kidnapped to be ritually sacrificed on their 99th day of life, dragon-herder Ketram sets out on a desperate race across the world of Greyfelle to save them. A propulsive, emotionally charged quest fantasy built around the brutal Span Transfer magic system.",
       "tone": "propulsive, emotionally raw, adventurous",
       "pacing": "Fast",
@@ -122183,7 +122480,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: Unwind - Neal Shusterman"
+          }
+        ]
+      },
       "pages": 277,
       "goodreads_reviews": 39,
       "goodreads_rating": 4.15,
@@ -122536,7 +122842,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Arthur Shield and the half-orc Mikaia Goretusk sail the treacherous Broken Sea aboard a pirate ship in search of a powerful Elven Queen who might be able to send Mikaia home to Earth, pursued by an ambitious Imperial admiral and beset by god-infested islands and ancient evils. The second entry in the Broken Redemption sub-series within Heroes of Summervale.",
       "tone": "swashbuckling, adventurous, darkly comic",
       "pacing": "Fast",
@@ -122574,7 +122880,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: Jack Bloodfist: Fixer - James Jakins"
+          }
+        ]
+      },
       "pages": 206,
       "goodreads_reviews": 16,
       "goodreads_rating": 4.69,
@@ -159380,7 +159695,7 @@
       "series_status": "Standalone",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "When best friends Blake and Dustin venture into darkness to retrieve a mysterious guitar, they discover the instrument's music can calm the deadly shadow beasts — but the magic also drives the two friends apart, transforming one into something monstrous. Blake must find a way to reclaim his friend before both are destroyed.",
       "tone": "tense, eerie, friendship-focused",
       "pacing": "Fast",
@@ -159415,7 +159730,16 @@
       "content_flags": [],
       "confidence": "Medium",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 2 comp(s) not in library: The Paper Magician - Charlie N. Holmberg, Every Heart a Doorway - Seanan McGuire"
+          }
+        ]
+      },
       "pages": 58,
       "goodreads_reviews": 3,
       "goodreads_rating": 3.67,
@@ -160218,7 +160542,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "India Muerte and the crew of the Devil's Dress are swept into the brutal wake of Vane Blood, a pirate on a vicious vendetta against slavery, leading them through maddening jungles to lost Aztec ruins and into a world of revenge and moral complexity. The fourth book in the pirate fantasy adventure series, darker in tone than its predecessors.",
       "tone": "swashbuckling, darkly adventurous, morally charged",
       "pacing": "Fast",
@@ -160256,7 +160580,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: Assassin's Creed: Black Flag (novelisation)"
+          }
+        ]
+      },
       "pages": 186,
       "goodreads_reviews": 8,
       "goodreads_rating": 4.0,
@@ -160381,7 +160714,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "The crew of the Devil's Dress has been cursed by a god, and India Muerte embarks on a desperate quest across the Caribbean and Mississippi Seas to find a cure before it destroys them all. The hunt takes him deeper into the ocean than any human has ever explored, in search of the mythical Black Atlantis.",
       "tone": "darkly adventurous, weird, propulsive",
       "pacing": "Fast",
@@ -160419,7 +160752,16 @@
       ],
       "confidence": "Medium",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 2 comp(s) not in library: The Lies of the Ajungo - Moses Ose Utomi, The Light Pirate - Lily Brooks-Dalton"
+          }
+        ]
+      },
       "pages": 150,
       "goodreads_reviews": 17,
       "goodreads_rating": 4.29,
@@ -255230,7 +255572,7 @@
       ],
       "setting": null,
       "comparable_books": [
-        "ETHOS - The Arcanist Guild",
+        "ETHOS - The Arcanist Guild & E J Doble & James Lloyd Dulin & B. S. H. Garcia & Jonathan Neves Mayers & Morgan Shank",
         "No Heart for a Thief - James Lloyd Dulin"
       ],
       "taste_signals": {
@@ -255247,7 +255589,16 @@
       "content_flags": [],
       "confidence": "Low",
       "research_source": "web_search",
-      "audit": "User-confirmed: promotional collection tied to the ETHOS anthology, featuring a subset of ETHOS contributors. Specific story-level details not independently verified — no public listing is indexed beyond the parent ETHOS project.",
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Web search returned 1 comp(s) not in library: No Heart for a Thief - James Lloyd Dulin"
+          }
+        ]
+      },
       "pages": 60,
       "genre": "Fantasy"
     },
@@ -259562,7 +259913,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Princess Calla Valento is trapped in a loveless political betrothal meant to unite two kingdoms, while her heart yearns for a forbidden love hidden in the shadows of the royal court. A dark fantasy romance retelling of the Cupid legend, set in the world of Levanthria.",
       "tone": "romantic, atmospheric, darkly courtly",
       "pacing": "Fast",
@@ -259599,7 +259950,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 2 comp(s) not in library: A Court of Thorns and Roses - Sarah J. Maas, Grave Mercy - Robin LaFevers"
+          }
+        ]
+      },
       "pages": 57,
       "goodreads_reviews": 222,
       "goodreads_rating": 3.84,
@@ -259668,7 +260028,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Gregor awakens from an icy grave with no memory of his former life, only a divine mandate to hunt the demons consuming Levanthria. After discovering a slaughtered family in a frost-bitten village, he throws himself into battle against a demon plague in this dark Father Christmas-inspired retelling.",
       "tone": "dark, folkloric, action-driven, atmospheric",
       "pacing": "Fast",
@@ -259705,7 +260065,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Witcher (short stories) - Andrzej Sapkowski"
+          }
+        ]
+      },
       "pages": 68,
       "goodreads_reviews": 1020,
       "goodreads_rating": 3.98,
@@ -259721,7 +260090,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Two years after his resurrection, Gregor is stranded in a small town when a brutal tavern murder points to demonic work. Teaming up with a local lawman, he unravels a mystery that strikes closer to home than anticipated — the demon he hunts is linked to his own forgotten past.",
       "tone": "dark, atmospheric, mystery-tinged, folkloric",
       "pacing": "Fast",
@@ -259758,7 +260127,16 @@
       ],
       "confidence": "High",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Witcher (short stories) - Andrzej Sapkowski"
+          }
+        ]
+      },
       "pages": 92,
       "goodreads_reviews": 355,
       "goodreads_rating": 4.33,
@@ -259774,7 +260152,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Monster-hunter Gregor arrives in a remote town to find himself accused of a brutal attack — committed by a demon wearing his exact face. Stalked by a hellhound and a doppelgänger that knows his every sin, Gregor must fight for his life and his soul.",
       "tone": "Dark, atmospheric, psychologically tense",
       "pacing": "Fast",
@@ -259813,7 +260191,16 @@
       ],
       "confidence": "Medium",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=2 (<3). Web search returned 1 comp(s) not in library: The Witcher: The Last Wish - Andrzej Sapkowski"
+          }
+        ]
+      },
       "pages": 83,
       "goodreads_reviews": 115,
       "goodreads_rating": 4.4,
@@ -259829,7 +260216,7 @@
       "series_status": "Long Series",
       "indie": true,
       "classic": false,
-      "status": "complete",
+      "status": "needs_review",
       "summary": "Bo, an Orc from the fierce Fire Tusk Clan, is cast out after refusing his violent rites of passage — because all he has ever wanted is to be a bard. Wandering the wastelands with only a broken guitar, he sets out to forge his own legend.",
       "tone": "Warm, hopeful, whimsical; lighter than the main series",
       "pacing": "Moderate",
@@ -259867,7 +260254,16 @@
       "content_flags": [],
       "confidence": "Medium",
       "research_source": "web_search",
-      "audit": null,
+      "audit": {
+        "passed": false,
+        "flags": [
+          {
+            "field": "comparable_books",
+            "severity": "note",
+            "reason": "Below quality bar after web-search reprocess: valid comparable_books=1 (<3). Web search returned 2 comp(s) not in library: Legends & Lattes - Travis Baldree, The House in the Cerulean Sea - TJ Klune"
+          }
+        ]
+      },
       "pages": 67,
       "goodreads_reviews": 165,
       "goodreads_rating": 3.84,
