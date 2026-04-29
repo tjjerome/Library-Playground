@@ -21,24 +21,24 @@ target bumped from 5 to 8) + up to 10 new/upcoming releases as stretch._
 | Horror | 11 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
-| Literary Fiction | 5 | 0 |
+| Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **103** | **45** |
+| **Total** | **103** | **50** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 22 |
+| Standalone | 35 | 27 |
 | Short Series | 15 | 6 |
 | Long Series | 53 | 17 |
-| **Total** | **103** | **45** |
+| **Total** | **103** | **50** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
-| Classics | ~8 | 3 |
+| Classics | ~8 | 5 |
 | Indie | ~20 | 5 |
 
 ---
@@ -114,6 +114,11 @@ target bumped from 5 to 8) + up to 10 new/upcoming releases as stretch._
 
 | # | Title | Author | Why It's For You |
 |---|---|---|---|
+| 46 | Mother Night ⭐⭐ | Kurt Vonnegut Jr. | Direct Vonnegut continuation after *Slaughterhouse-Five* (5.0). WWII American spy posing as Nazi propagandist, awaiting trial in Israel. Tighter and morally darker — top-tier Vonnegut. |
+| 47 | East of Eden ⭐ | John Steinbeck | Steinbeck's magnum opus. Cain-and-Abel retelling across two Salinas Valley families; *timshel* ("thou mayest") as the philosophical spine. Cathy/Kate is one of American literature's great malevolent characters. Slow-burn (~600p) but biblical heft like *Canticle*. Counts toward Classics. |
+| 48 | Lincoln in the Bardo ⭐ | George Saunders | Booker winner. Lincoln visits his dead son's crypt; a chorus of ghosts narrates. Formally inventive but emotionally direct — grief, history, the in-between. |
+| 49 | The Secret History ⭐ | Donna Tartt | Dark academia, Greek classics students, an inverted murder mystery (you know the killing in the prologue). Pairs with *Will of the Many* — same vein, contemporary lens. |
+| 50 | Catch-22 | Joseph Heller | WWII bomber Yossarian vs. military bureaucracy. Slaughterhouse-Five's tonal sibling — absurdist comedy curdling into tragedy. Counts toward Classics. |
 
 ## 8. Science Fiction & Fantasy
 
