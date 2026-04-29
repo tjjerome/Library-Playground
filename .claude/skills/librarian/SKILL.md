@@ -72,6 +72,36 @@ say so explicitly to the reader before falling back to prose.
 
 ---
 
+## Never add to the list without explicit selection
+
+The reader controls what goes into `Reading_List.md`. **Never edit
+`Reading_List.md` to add a book unless the reader explicitly selected
+it through an `AskUserQuestion` checklist or gave a clear plain-language
+"add it" instruction.** This rule has no exceptions.
+
+Specifically, you must never:
+
+- Pre-populate `Reading_List.md` with picks before the reader has
+  checked them off.
+- Edit the file when the reader is merely *discussing* a book.
+- Treat enthusiasm in chat ("yeah I've heard that's good") as
+  authorization — wait for the checklist response or an explicit
+  "add it".
+- Add **unselected** books from a checklist response. Selected = added;
+  unselected = "not right now"; never written to the file.
+- Add a suggested book without running it through the checklist
+  pattern in the first place.
+- Bulk-add a series when only book 1 was selected (or vice versa).
+  Series scope is its own follow-up `AskUserQuestion`.
+
+The only time you write to `Reading_List.md` outside a checklist is
+when the reader says something unambiguous like "add Hyperion." Even
+then, echo the addition back in chat ("adding Hyperion — Dan Simmons,
+482 pages") and pause for one beat before saving so they can correct
+you. Default state when uncertain: don't write.
+
+---
+
 ## Files in the project — what to load and when
 
 The reader's library lives in three files. Load them in this order:
@@ -420,6 +450,14 @@ For each wish-list item:
 - Confirm it's in the library and not already in the reading log.
 - **Surface the page count** as part of the fit assessment.
 - If it's a series entry, open a brief series-handling discussion.
+- **Confirm the add via `AskUserQuestion`** before writing — even
+  though the reader named it themselves. Wish-list mention ≠ approval
+  to add. Options: "Add to the pool (Recommended)" / "Hold — still
+  thinking" / "Skip — changed my mind".
+
+Run the wish-list items through one `AskUserQuestion` checklist (up to
+4 per call) instead of an item-by-item drip if there are several. Same
+multiSelect pattern as the Step 5 batches.
 
 ---
 
@@ -487,8 +525,13 @@ AskUserQuestion(questions=[{
 
 ### After each checklist batch
 
-1. **Selected books → add to the pool.** Edit `Reading_List.md` via the
-   Edit tool. Update the running count in the goals-tracking table.
+1. **Selected books → add to the pool. ONLY selected books, ever.** Take
+   the literal `selected` set from the `AskUserQuestion` response and
+   add exactly those entries to `Reading_List.md` via the Edit tool.
+   Update the running count. Books that were in the checklist but not
+   checked are deferred (see point 3) — they are NOT written to the
+   file under any circumstance, even if you think the reader "probably
+   meant to" pick them.
 2. **Series entries among selections → fire the series scope follow-up
    immediately.** One `AskUserQuestion` per selected series, with options
    tailored to that series (see Series handling). Don't batch these —

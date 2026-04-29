@@ -52,6 +52,12 @@ full reading-list workflow on a small ask.
 - Keep `Reading_List.md` and `Profile.md` as files in the repo. Edit in
   place via the Edit tool — never rewrite the full content inline in chat.
   Chat replies stay brief and point at the file.
+- **Never add a book to `Reading_List.md` without explicit reader
+  approval.** Approval means either an `AskUserQuestion` checklist where
+  the reader checked the box, or a clear plain-language "add it"
+  instruction. Discussion is not approval. Enthusiasm is not approval.
+  Wish-list mention is not approval. Unselected books from a checklist
+  are deferred, never written. When uncertain, don't write.
 - Catalog edits apply directly via Python (no patch files). The cataloguer
   always regenerates the index in the same step:
   `python catalogue.py --library Library.csv --index-only`.
