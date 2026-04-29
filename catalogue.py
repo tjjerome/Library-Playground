@@ -524,12 +524,32 @@ def rank_comparables_with_claude(
     ranking_failures: list[str] = []
     ranked = 0
 
-    # Pre-trim extreme over-cap lists deterministically before sending.
+    def _prefilter_score(source_entry: dict, cand_key: str) -> tuple:
+        cand = catalog["entries"].get(cand_key)
+        if cand is None:
+            return (0, 0, cand_key)
+        same_genre = (
+            (source_entry.get("primary_genre") or "").lower()
+            == (cand.get("primary_genre") or "").lower()
+            and source_entry.get("primary_genre")
+        )
+        src_themes = {t.lower() for t in (source_entry.get("themes") or [])}
+        cand_themes = {t.lower() for t in (cand.get("themes") or [])}
+        shared_themes = len(src_themes & cand_themes)
+        # Higher score wins. Tiebreak by normalize_key for determinism.
+        return (1 if same_genre else 0, shared_themes, normalize_key(cand_key))
+
     work: list[tuple[str, list[str]]] = []
     for k in over_cap_keys:
         candidates = list(catalog["entries"][k]["comparable_books"])
         if len(candidates) > RANKING_CANDIDATE_LIMIT:
-            candidates = sorted(candidates)[:RANKING_CANDIDATE_LIMIT]
+            source_entry = catalog["entries"][k]
+            scored = sorted(
+                candidates,
+                key=lambda c: _prefilter_score(source_entry, c),
+                reverse=True,
+            )
+            candidates = scored[:RANKING_CANDIDATE_LIMIT]
             pre_trimmed.append(k)
         work.append((k, candidates))
 
