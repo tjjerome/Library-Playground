@@ -18,21 +18,21 @@ new/upcoming releases as stretch goals._
 |---|---|---|
 | Fantasy | 40 | 15 |
 | Science Fiction | 22 | 4 |
-| Horror | 11 | 0 |
+| Horror | 11 | 5 |
 | Historical Fiction | 10 | 0 |
 | Nonfiction | 7 | 0 |
 | Literary Fiction | 5 | 0 |
 | Crime / Mystery / Thriller | 5 | 0 |
-| **Total** | **100** | **19** |
+| **Total** | **100** | **24** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 3 |
+| Standalone | 35 | 8 |
 | Short Series | 15 | 5 |
 | Long Series | 50 | 11 |
-| **Total** | **100** | **19** |
+| **Total** | **100** | **24** |
 
 ### Miscellaneous Goals
 
@@ -73,6 +73,11 @@ new/upcoming releases as stretch goals._
 
 | # | Title | Author | Why It's For You |
 |---|---|---|---|
+| 20 | The Only Good Indians ⭐⭐ | Stephen Graham Jones | Fast, visceral, mythic supernatural vengeance. The direct counter to your Anne Rice complaint — *real* horror with stakes. Indigenous folklore + propulsive dread. |
+| 21 | Those Across the River ⭐⭐ 🎧 | Christopher Buehlman | Buehlman's in your pocket after BTF (5.0). Southern Gothic, ancestral guilt, monsters in the woods, lyrical prose. Slow burn with payoff. |
+| 22 | The Lesser Dead 🎧 | Christopher Buehlman | Vampire horror done *right* — direct corrective to *Interview With the Vampire*. Voice-driven, darkly comic, real menace. 1970s NYC, child vampires arrive. |
+| 23 | The Terror | Dan Simmons | Historical horror, Arctic Franklin Expedition, monstrous creature on the ice. ~784 pages — slow burn flagged honestly, but the historical grounding + ensemble + Simmons prose make it a BTF-cousin. Pairs with Hyperion in the Simmons rotation. |
+| 24 | The Hunger | Alma Katsu | Donner Party with supernatural creep. Historical horror crossover — also nudges your HistFic count. ~384 pages, tight by horror standards. |
 
 ## 5. Crime / Mystery / Thriller
 
