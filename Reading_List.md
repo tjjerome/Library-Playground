@@ -17,30 +17,30 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 27 |
+| Fantasy | 40 | 28 |
 | Science Fiction | 20 | 4 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **62** |
+| **Total** | **100** | **63** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 27 |
+| Standalone | 35 | 28 |
 | Short Series | 15 | 12 |
 | Long Series | 50 | 23 |
-| **Total** | **100** | **62** |
+| **Total** | **100** | **63** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
 | Classics | ~8 | 5 |
-| Indie | ~20 | 5 |
+| Indie | ~20 | 6 |
 
 ---
 
@@ -136,6 +136,7 @@ new/upcoming releases as stretch._
 | 12 | Tigana ⭐⭐ | Guy Gavriel Kay | *Lions of Al-Rassan* (4.5) puts Kay in your pocket. Standalone literary epic; cultural-erasure premise hits the mythological-weight signal hard. Lyrical, elegiac, morally complex. |
 | 13 | The Sword of Kaigen ⭐⭐ **(I)** | M. L. Wang | Same author as *Blood Over Bright Haven* (5.0). Japanese-inspired military fantasy, family-and-honor saga, fast pacing, devastating. Standalone. |
 | 14 | The Heroes ⭐⭐ 🎧 | Joe Abercrombie | The other peak of First Law World after *Best Served Cold* (5.0). Three days, one hill, multi-POV battle. Same vein, fast pacing. |
+| 63 | Never Die ⭐ **(I)** 🎧 | Rob J. Hayes | Wuxia-influenced standalone. Boy on a mission from the God of Death recruits four legendary heroes (some already dead) to assassinate the Emperor. Fast, propulsive, eastern-flavored — pairs with *Sword of Kaigen* energy. |
 
 ### 8b. Short Series Fantasy
 
