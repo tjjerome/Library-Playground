@@ -17,14 +17,14 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 29 |
+| Fantasy | 40 | 34 |
 | Science Fiction | 20 | 4 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **64** |
+| **Total** | **100** | **69** |
 
 ### Series Status Goals
 
@@ -32,15 +32,15 @@ new/upcoming releases as stretch._
 |---|---|---|
 | Standalone | 35 | 28 |
 | Short Series | 15 | 13 |
-| Long Series | 50 | 23 |
-| **Total** | **100** | **64** |
+| Long Series | 50 | 28 |
+| **Total** | **100** | **69** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
 | Classics | ~8 | 5 |
-| Indie | ~20 | 7 |
+| Indie | ~20 | 12 |
 
 ---
 
@@ -65,6 +65,11 @@ new/upcoming releases as stretch._
 | 57 | Assassin's Quest 🎧 | Robin Hobb | Farseer book 3. Closes the trilogy — the gut-punch the series is famous for. |
 | 53 | The Rage of Dragons ⭐ 🎧 | Evan Winter | African-inspired military fantasy with demon hunts and dragon riders. Propulsive, brutal, found-family core. The Burning trilogy (book 3 still pending — second-to-last entry available now). |
 | 58 | The Fires of Vengeance 🎧 | Evan Winter | The Burning book 2. Direct continuation — relentless pacing, expanded political scope. |
+| 65 | Along the Razor's Edge ⭐⭐ **(I)** 🎧 | Rob J. Hayes | Opens The War Eternal — the God Eater series. Eskara Helsene, war-mage prisoner stripped of magic in a hellish underground prison, narrates her own ascent to power and infamy. First-person grimdark with an unreliable, morally grey, deeply unforgettable narrator. |
+| 66 | The Lessons Never Learned **(I)** 🎧 | Rob J. Hayes | War Eternal book 2. Eskara on the run; the body count climbs and the moral grey deepens. |
+| 67 | From Cold Ashes Risen **(I)** 🎧 | Rob J. Hayes | War Eternal book 3. Villainous-POV beats land hard — many call this the trilogy's peak. |
+| 68 | Sins of the Mother **(I)** 🎧 | Rob J. Hayes | War Eternal book 4. Generational fallout; Eskara as the legend others now hunt. |
+| 69 | Death's Beating Heart **(I)** 🎧 | Rob J. Hayes | War Eternal book 5 — closes the saga. |
 
 ## 2. Classics
 
