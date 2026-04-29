@@ -40,7 +40,7 @@ new/upcoming releases as stretch._
 | Tag | Goal | Current |
 |---|---|---|
 | Classics | ~8 | 5 |
-| Indie | ~20 | 18 |
+| Indie | ~20 | 17 |
 
 ---
 
@@ -162,7 +162,7 @@ new/upcoming releases as stretch._
 | 64 | Legacy of the Brightwash ⭐⭐ **(I)** | Krystle Matar | Industrial-revolution-era grimdark with literary depth — disgraced inspector investigates a child's murder while navigating a city's class system. Sword-of-Kaigen-tier quality from the indie scene. Tainted Dominion trilogy. |
 | 67 | Deathless **(I)** 🎧 | Rob J. Hayes | Annals of the God Eater (Short Series). Political prequel — aging King Ertide Hostain discovers cryptic notes from his dead father suggesting the empire's pact with Heaven was rewritten. Scheming, intricate, the deepest cut of the God Eater openers. |
 | 68 | The Way of Edan ⭐⭐ **(I)** | Philip Chase | The closest indie pick to your *Lions of Al-Rassan* (4.5) energy — lyrical, elegiac, epic. Sustained 2023–24 hype as the literary indie epic. The Edan Trilogy. |
-| 69 | Whispers of the Storm ⭐ **(I)** | Z. B. Steele | Hayes/Abercrombie sweet spot in a fresh voice — grimdark + lyrical + darkly comic. Recent indie hype. Song of the Damned series. |
+| 69 | Empire of the Vampire ⭐ | Jay Kristoff | Gothic grimdark vampire fantasy framed as a captured holy knight's confession to his vampire interrogator. Visceral, darkly comic, illustrated. Trilogy in progress (book 2 *Empire of the Damned* available; book 3 pending release). |
 | 71 | By Blood, by Salt ⭐⭐ **(I)** | J. L. Odom | **SPFBO X winner** — *the* indie credential. Azetla, a debt-soldier pariah in the Maurowan Army, is sent into desert to capture a Sahr devil while a coup brews. Lyrical literary military fantasy with explicit Robin Hobb comp. Land of Exile series. |
 | 72 | Black Stone Heart ⭐ **(I)** | Michael R. Fletcher | The Obsidian Path book 1 (trilogy complete). Khraen wakes with no memory and a shattered obsidian heart; each recovered shard restores fragments of his past as a former Demon Emperor. Grimdark + darkly humorous + memory-recovery + morally grey villain protagonist. |
 
