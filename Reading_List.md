@@ -17,8 +17,8 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 41 | 41 |
-| Science Fiction | 19 | 10 |
+| Fantasy | 39 | 39 |
+| Science Fiction | 21 | 12 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
@@ -31,8 +31,8 @@ new/upcoming releases as stretch._
 | Status | Goal | Current |
 |---|---|---|
 | Standalone | 35 | 30 |
-| Short Series | 22 | 22 |
-| Long Series | 43 | 30 |
+| Short Series | 23 | 23 |
+| Long Series | 42 | 29 |
 | **Total** | **100** | **82** |
 
 ### Miscellaneous Goals
