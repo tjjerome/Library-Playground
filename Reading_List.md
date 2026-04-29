@@ -1,7 +1,8 @@
 # Reading List — 2026–2027
 
-_Curated for ~50 books/year over two years. 103 core picks (Crime
-target bumped from 5 to 8) + up to 10 new/upcoming releases as stretch._
+_Curated for ~50 books/year over two years. 100 core picks (Crime
+bumped to 8; SF trimmed to 20; Horror trimmed to 10) + up to 10
+new/upcoming releases as stretch._
 
 **Anchor:** Cahill's *Bound and Broken* + Discworld City Watch push
 (Sun Eater is caught up; next main novel will land in stretch).
@@ -17,13 +18,13 @@ target bumped from 5 to 8) + up to 10 new/upcoming releases as stretch._
 | Genre | Goal | Current |
 |---|---|---|
 | Fantasy | 40 | 15 |
-| Science Fiction | 22 | 4 |
-| Horror | 11 | 5 |
+| Science Fiction | 20 | 4 |
+| Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **103** | **50** |
+| **Total** | **100** | **50** |
 
 ### Series Status Goals
 
@@ -31,8 +32,8 @@ target bumped from 5 to 8) + up to 10 new/upcoming releases as stretch._
 |---|---|---|
 | Standalone | 35 | 27 |
 | Short Series | 15 | 6 |
-| Long Series | 53 | 17 |
-| **Total** | **103** | **50** |
+| Long Series | 50 | 17 |
+| **Total** | **100** | **50** |
 
 ### Miscellaneous Goals
 
