@@ -195,7 +195,12 @@ new/upcoming releases as stretch._
 
 ## 9. New & Upcoming Releases (Stretch — up to 10)
 
-_Phase 4 — proposed; pending reader confirmation pick-by-pick._
+_Phase 4 picks — read these if you finish the 100 ahead of schedule, or as they drop._
 
 | # | Title | Author | Status / ETA | Why |
 |---|---|---|---|---|
+| S1 | **Red God** | Pierce Brown | Red Rising 7, series finale, expected 2026 | Closes the saga. Iron Gold + Dark Age + Light Bringer are in the main list — this is the bookend. |
+| S2 | **Children of Strife** | Adrian Tchaikovsky | Children of Time book 4, in catalog | Continues the trilogy you took (slots 84-86). Expands the uplift framework. |
+| S3 | **Shadow of the Leviathan 3** (untitled) | Robert Jackson Bennett | Sequel to *A Drop of Corruption* (5.0 in your log) | You've read books 1+2; series clearly landed. Book 3 closes this arc; pending release. |
+| S4 | **The Daughters' War** | Christopher Buehlman | Blacktongue Saga prequel (2024), in catalog | Buehlman in pocket via *BTF* (5.0) + *Those Across the River* + *The Lesser Dead*. Female lead military fantasy prequel — his most acclaimed since BTF. |
+| S5 | **The MANIAC** | Benjamín Labatut | Standalone (2023) | Fictionalized triptych: Von Neumann's life + the bomb / game theory + AlphaGo vs Lee Sedol. Historical-philosophical-SF hybrid that hits ideas-readers hard. |
