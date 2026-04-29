@@ -121,6 +121,96 @@ def parse_catalog_response(raw: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Comparable-books ranking prompt
+# ---------------------------------------------------------------------------
+
+def build_ranking_prompt(sources: list, *, candidate_summary) -> str:
+    """Prompt asking Claude to pick the top 6 comparable_books for each source.
+
+    `sources` is a list of dicts:
+        {"key": <source_key>, "entry": <source_entry>, "candidates": [(key, entry), ...]}
+    `candidate_summary(key, entry) -> str` formats one candidate line.
+    """
+    intro = (
+        "You are pruning oversized `comparable_books` lists in a personal-library "
+        "catalog. For each source book below, pick the 6 candidates with the "
+        "strongest appeal overlap with the source — same vibe, same kind of "
+        "reader payoff, similar themes/tone/pacing. Genre alignment is a strong "
+        "but not absolute signal. Return exactly 6 keys per source, in ranked "
+        "order (strongest first).\n\n"
+        "OUTPUT FORMAT: a single JSON object mapping each source key to its "
+        "ranked list of 6 chosen candidate keys, wrapped in a ```json code "
+        "block. No commentary outside the block.\n\n"
+        "CRITICAL: Use the EXACT keys shown below — every key is in "
+        "`Title - Author` form. Do not shorten to just the title, do not "
+        "rephrase, do not normalise punctuation. Both the source-key "
+        "(JSON object key) and the chosen candidate keys (JSON array "
+        "values) must match the strings shown verbatim, character-for-"
+        "character. Picks that don't match the candidate list verbatim "
+        "are dropped.\n\n"
+        "Example output shape:\n"
+        "```json\n"
+        "{\n"
+        '  "The Hobbit - J.R.R. Tolkien": [\n'
+        '    "The Lord of the Rings - J.R.R. Tolkien",\n'
+        '    "The Eye of the World - Robert Jordan",\n'
+        '    "Earthsea - Ursula K. Le Guin",\n'
+        '    "The Belgariad - David Eddings",\n'
+        '    "Mistborn - Brandon Sanderson",\n'
+        '    "Discworld - Terry Pratchett"\n'
+        "  ]\n"
+        "}\n"
+        "```\n"
+    )
+
+    blocks = []
+    for s in sources:
+        e = s["entry"]
+        themes = ", ".join(e.get("themes") or [])
+        positive = ", ".join((e.get("taste_signals") or {}).get("positive") or [])
+        meta_lines = [
+            f"Source: {s['key']}",
+            f"  primary_genre: {e.get('primary_genre') or e.get('genre') or ''}",
+            f"  tone: {e.get('tone') or ''}",
+            f"  pacing: {e.get('pacing') or ''}",
+            f"  setting: {e.get('setting') or ''}",
+            f"  themes: {themes}",
+            f"  taste_signals.positive: {positive}",
+            "",
+            f"Candidates ({len(s['candidates'])}):",
+        ]
+        for i, (ck, ce) in enumerate(s["candidates"], 1):
+            meta_lines.append(f"  {i}. {candidate_summary(ck, ce)}")
+        blocks.append("\n".join(meta_lines))
+
+    return intro + "\n\n" + ("\n\n---\n\n".join(blocks)) + "\n"
+
+
+def parse_ranking_response(raw: str) -> dict:
+    """Extract {source_key: [candidate_key, ...]} from Claude's ranking response.
+
+    Returns {} on failure. Caller is responsible for validating list length
+    and that picks are in the source's candidate set.
+    """
+    code_block = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
+    if code_block:
+        try:
+            return json.loads(code_block.group(1))
+        except json.JSONDecodeError:
+            pass
+
+    brace_start = raw.find("{")
+    brace_end = raw.rfind("}")
+    if brace_start != -1 and brace_end != -1:
+        try:
+            return json.loads(raw[brace_start:brace_end + 1])
+        except json.JSONDecodeError:
+            pass
+
+    return {}
+
+
+# ---------------------------------------------------------------------------
 # Audit report
 # ---------------------------------------------------------------------------
 

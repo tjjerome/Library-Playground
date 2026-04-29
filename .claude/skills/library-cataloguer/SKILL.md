@@ -114,9 +114,14 @@ time, even when it would otherwise be a great fit. Don't mark
 
 - `summary` is at least one full sentence (≥50 chars).
 - `tone`, `pacing`, `setting` filled in.
-- **≥3 `comparable_books`**, and every comp must be a real library
-  entry (cross-check against `Library_Index.json` keys before saving —
-  irrelevant comps are worse than none).
+- **3–6 `comparable_books`**. The cap is enforced by
+  `--sync-comparables`, which also canonicalises title variants, adds
+  reciprocal links between matched pairs, and asks Claude to pick the
+  strongest 6 when a list exceeds the cap. Comps don't have to be in
+  the library — referencing a famous external book is fine when it
+  conveys the vibe (e.g. citing *We* on *Brave New World*). Type
+  canonical keys from `Library_Index.json` when the comp *is* in the
+  library so the sync can match it.
 - **≥2 `taste_signals.positive`**.
 - **≥1 `taste_signals.negative`** (every book has limits; "no negatives"
   is the model dodging, not a real signal).
@@ -146,9 +151,7 @@ When cataloguing an indie:
    and `goodreads_reviews` are CSV-authoritative; pull them in before
    search to set expectations (low review count → expect thinner web
    data).
-3. **Cross-check comparable_books against the library index.** Drop any
-   comp that isn't a real key in `Library_Index.json`.
-4. **If web search comes up dry**, set `status: needs_review` and add
+3. **If web search comes up dry**, set `status: needs_review` and add
    an `audit.flags` entry: `{"field": "research", "severity": "note",
    "reason": "Indie with limited public reviews; needs reader input"}`
    so the gap is visible.
@@ -290,12 +293,28 @@ or `comparable_books`) or for batches.
 
 ### 4. Regenerate the index — always
 
+For most edits (content_flags, taste_signals, summaries, single-entry
+adds):
+
 ```bash
 python catalogue.py --library Library.csv --index-only
 ```
 
-Sub-second. Run it after every catalog write, even if no indexed field
-appears to have changed — it's cheap insurance against drift.
+If the change touched `comparable_books` on more than a couple of
+entries (batch comp adds, audit fixes that affect many entries,
+librarian-session recommendation links), run the comp sync instead —
+it canonicalises variants, reciprocates links, asks Claude to pick
+the top 6 for any over-cap list, and regenerates the index in one
+pass:
+
+```bash
+python catalogue.py --library Library.csv --sync-comparables
+```
+
+Use `--sync-comparables --dry-run --report sync.json` first to preview
+the structural changes (dry-run skips the LLM ranking step). Both
+commands run sub-second when no LLM ranking is needed; the sync takes
+longer when many entries land over the cap.
 
 ### 5. Report what was applied
 
@@ -321,6 +340,7 @@ Run the script directly for anything bulk:
 | Process all pending entries (after CSV adds) | `python catalogue.py --library Library.csv` |
 | Reprocess `needs_review` entries | `python catalogue.py --library Library.csv --review-only` |
 | Rebuild the slim index from existing catalog | `python catalogue.py --library Library.csv --index-only` |
+| Sync comparable_books (canonicalise, reciprocate, Claude-rank to 6) | `python catalogue.py --library Library.csv --sync-comparables` |
 | Status check (no API calls) | `python catalogue.py --library Library.csv --status` |
 | Larger chunks for well-known books | add `--chunk-size 40` |
 
@@ -340,7 +360,7 @@ the session ingress token. It auto-loads the token from
 You don't need to export anything yourself — `python catalogue.py ...` will
 just work in a Claude Code session. If you see an auth error, check that
 `ANTHROPIC_API_KEY` isn't lingering in the environment from earlier work, and
-that `pip install anthropic` has been run.
+that `pip install -r requirements.txt` has been run.
 
 ### Running it in the background
 

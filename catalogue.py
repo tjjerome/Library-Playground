@@ -11,7 +11,7 @@ Usage:
     python catalogue.py --library Library.csv --review-only  # reprocess needs_review entries
 
 Requirements:
-    pip install anthropic
+    pip install -r requirements.txt
     Must be run inside a Claude Code session — authenticates via the session
     ingress token at $CLAUDE_SESSION_INGRESS_TOKEN_FILE. Refuses to run if
     ANTHROPIC_API_KEY is set (to avoid accidental external billing).
@@ -37,6 +37,10 @@ MAX_TOKENS = 16000
 DEFAULT_CHUNK_SIZE = 20
 RATE_LIMIT_DELAY = 10    # seconds between API calls
 MAX_RETRIES = 3
+
+COMPARABLES_CAP = 6
+RANKING_BATCH_SIZE = 10        # over-cap entries per LLM call
+RANKING_CANDIDATE_LIMIT = 25   # pre-trim safeguard before LLM ranking
 
 WEB_SEARCH_TOOL = {
     "type": "web_search_20250305",
@@ -122,6 +126,21 @@ _QUOTE_NORMALIZE = str.maketrans({
 
 def normalize_key(s: str) -> str:
     return " ".join(s.translate(_QUOTE_NORMALIZE).lower().split())
+
+
+def resolve_canonical_key(
+    raw: str,
+    catalog_keys: set,
+    normalized_index: dict,
+) -> str | None:
+    """Return the canonical catalog key for a raw key string, or None.
+
+    Strict variant: exact match, then normalize_key fallback. No substring
+    matching — that's only safe inside catalogue_chunk's upsert path.
+    """
+    if raw in catalog_keys:
+        return raw
+    return normalized_index.get(normalize_key(raw))
 
 # ---------------------------------------------------------------------------
 # Library CSV loading
@@ -239,8 +258,15 @@ def get_book_csv_data(books: list[dict], key: str) -> dict:
 # API call with tool-use loop
 # ---------------------------------------------------------------------------
 
-def call_api_with_tools(client, messages: list, system: str) -> str:
-    """Runs the multi-turn tool-use loop. Returns final assistant text."""
+def call_api_with_tools(client, messages: list, system: str, tools: list | None = None) -> str:
+    """Runs the multi-turn tool-use loop. Returns final assistant text.
+
+    `tools` defaults to [WEB_SEARCH_TOOL]. Pass [] to skip the tool loop —
+    callers like the comparable_books ranker don't need web search and
+    avoid wasted round-trips that way.
+    """
+    if tools is None:
+        tools = [WEB_SEARCH_TOOL]
     # Cache the system prompt + tool list so they aren't re-billed on every call.
     # Note: Haiku 4.5 requires a >=4096-token prefix to actually cache; this prompt
     # is ~800 tokens, so the marker is currently a no-op. It activates automatically
@@ -253,13 +279,15 @@ def call_api_with_tools(client, messages: list, system: str) -> str:
 
     for attempt in range(MAX_RETRIES):
         try:
-            response = client.messages.create(
+            kwargs = dict(
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
                 system=cached_system,
-                tools=[WEB_SEARCH_TOOL],
-                messages=messages
+                messages=messages,
             )
+            if tools:
+                kwargs["tools"] = tools
+            response = client.messages.create(**kwargs)
 
             while response.stop_reason == "tool_use":
                 tool_uses = [b for b in response.content if b.type == "tool_use"]
@@ -274,13 +302,8 @@ def call_api_with_tools(client, messages: list, system: str) -> str:
                     {"role": "assistant", "content": response.content},
                     {"role": "user", "content": tool_results}
                 ]
-                response = client.messages.create(
-                    model=MODEL,
-                    max_tokens=MAX_TOKENS,
-                    system=cached_system,
-                    tools=[WEB_SEARCH_TOOL],
-                    messages=messages
-                )
+                kwargs["messages"] = messages
+                response = client.messages.create(**kwargs)
 
             u = response.usage
             print(
@@ -336,15 +359,12 @@ def catalogue_chunk(
 
     catalogued = 0
 
-    normalized_index = {normalize_key(ck): ck for ck in catalog["entries"]}
+    catalog_keys = set(catalog["entries"])
+    normalized_index = {normalize_key(ck): ck for ck in catalog_keys}
 
     for key, entry_data in results.items():
-        matched_key = None
-        if key in catalog["entries"]:
-            matched_key = key
-        elif normalize_key(key) in normalized_index:
-            matched_key = normalized_index[normalize_key(key)]
-        else:
+        matched_key = resolve_canonical_key(key, catalog_keys, normalized_index)
+        if matched_key is None:
             title_norm = normalize_key(entry_data.get("title", ""))
             if title_norm:
                 for nck, ck in normalized_index.items():
@@ -365,6 +385,348 @@ def catalogue_chunk(
             print(f"  Warning: couldn't match '{key}' to a catalog entry — skipping.")
 
     return catalogued
+
+# ---------------------------------------------------------------------------
+# comparable_books postprocessing
+# ---------------------------------------------------------------------------
+
+def _build_canonical_indices(catalog: dict) -> tuple[set, dict]:
+    keys = set(catalog["entries"])
+    normalized: dict[str, str] = {}
+    for k in keys:
+        n = normalize_key(k)
+        if n in normalized and normalized[n] != k:
+            print(f"  warning: normalize_key collision: {normalized[n]!r} vs {k!r}")
+        normalized[n] = k
+    return keys, normalized
+
+
+def canonicalise_comparables(catalog: dict) -> dict:
+    """Phase 1 (in place). Replace matched comps with canonical keys, preserve
+    unmatched, drop self-refs and within-list duplicates.
+
+    Returns stats: canonicalised, self_dropped, duplicate_dropped,
+    drops_per_entry.
+    """
+    keys, norm_index = _build_canonical_indices(catalog)
+    canonicalised = 0
+    self_dropped = 0
+    duplicate_dropped = 0
+    drops_per_entry: dict[str, list] = {}
+
+    for k, entry in catalog["entries"].items():
+        seen: set[str] = set()
+        out: list[str] = []
+        local_drops: list[tuple[str, str]] = []
+        for c in entry.get("comparable_books") or []:
+            canon = resolve_canonical_key(c, keys, norm_index)
+            if canon is not None:
+                if canon == k:
+                    local_drops.append((c, "self"))
+                    self_dropped += 1
+                    continue
+                n = normalize_key(canon)
+                if n in seen:
+                    local_drops.append((c, "duplicate"))
+                    duplicate_dropped += 1
+                    continue
+                if canon != c:
+                    canonicalised += 1
+                seen.add(n)
+                out.append(canon)
+            else:
+                # Unmatched: keep raw, but still dedupe variants within the list.
+                n = normalize_key(c)
+                if n in seen:
+                    local_drops.append((c, "duplicate"))
+                    duplicate_dropped += 1
+                    continue
+                seen.add(n)
+                out.append(c)
+        entry["comparable_books"] = out
+        if local_drops:
+            drops_per_entry[k] = local_drops
+
+    return {
+        "canonicalised": canonicalised,
+        "self_dropped": self_dropped,
+        "duplicate_dropped": duplicate_dropped,
+        "drops_per_entry": drops_per_entry,
+    }
+
+
+def reciprocate_comparables(catalog: dict) -> int:
+    """Phase 2 (in place). For every matched comp B in source A, append A to
+    B's comparable_books if not already present. No cap check — over-cap
+    lists are resolved later by Phase 3.
+
+    Returns the number of reciprocal links added.
+    """
+    catalog_keys = set(catalog["entries"])
+    added = 0
+    for k in sorted(catalog["entries"]):
+        for c in list(catalog["entries"][k].get("comparable_books") or []):
+            if c not in catalog_keys:
+                continue
+            target = catalog["entries"][c]
+            target_list = target.setdefault("comparable_books", [])
+            if k in target_list:
+                continue
+            target_list.append(k)
+            added += 1
+    return added
+
+
+def find_over_cap_entries(catalog: dict) -> list:
+    return [
+        k for k, e in catalog["entries"].items()
+        if len(e.get("comparable_books") or []) > COMPARABLES_CAP
+    ]
+
+
+def _candidate_summary(key: str, entry: dict) -> str:
+    """One-line description of a candidate comp for the ranking prompt."""
+    genre = entry.get("primary_genre") or entry.get("genre") or ""
+    tone = entry.get("tone") or ""
+    summary = (entry.get("summary") or "").strip()
+    if len(summary) > 160:
+        summary = summary[:157].rstrip() + "..."
+    parts = [key]
+    if genre:
+        parts.append(genre)
+    if tone:
+        parts.append(tone)
+    if summary:
+        parts.append(summary)
+    return " | ".join(parts)
+
+
+RANKING_SYSTEM_PROMPT = (
+    "You are pruning oversized comparable_books lists in a personal-library "
+    "catalog. For each source book, return the 6 candidates with the strongest "
+    "appeal overlap. Output a single JSON object mapping each source key to a "
+    "ranked list of exactly 6 candidate keys, wrapped in a ```json code block. "
+    "No commentary outside the block."
+)
+
+
+def rank_comparables_with_claude(
+    client,
+    catalog: dict,
+    over_cap_keys: list,
+) -> dict:
+    """Phase 3 (in place). For each over-cap entry, ask Claude to pick the
+    strongest 6 comps. Mutates catalog. Returns stats.
+    """
+    from catalogue_prompts import build_ranking_prompt, parse_ranking_response
+
+    pre_trimmed: list[str] = []
+    ranking_failures: list[str] = []
+    ranked = 0
+
+    def _prefilter_score(source_entry: dict, cand_key: str) -> tuple:
+        cand = catalog["entries"].get(cand_key)
+        if cand is None:
+            return (0, 0, cand_key)
+        same_genre = (
+            (source_entry.get("primary_genre") or "").lower()
+            == (cand.get("primary_genre") or "").lower()
+            and source_entry.get("primary_genre")
+        )
+        src_themes = {t.lower() for t in (source_entry.get("themes") or [])}
+        cand_themes = {t.lower() for t in (cand.get("themes") or [])}
+        shared_themes = len(src_themes & cand_themes)
+        # Higher score wins. Tiebreak by normalize_key for determinism.
+        return (1 if same_genre else 0, shared_themes, normalize_key(cand_key))
+
+    work: list[tuple[str, list[str]]] = []
+    for k in over_cap_keys:
+        candidates = list(catalog["entries"][k]["comparable_books"])
+        if len(candidates) > RANKING_CANDIDATE_LIMIT:
+            source_entry = catalog["entries"][k]
+            scored = sorted(
+                candidates,
+                key=lambda c: _prefilter_score(source_entry, c),
+                reverse=True,
+            )
+            candidates = scored[:RANKING_CANDIDATE_LIMIT]
+            pre_trimmed.append(k)
+        work.append((k, candidates))
+
+    print(f"\n  Ranking {len(work)} over-cap entries via Claude "
+          f"(batch size={RANKING_BATCH_SIZE})...")
+
+    for batch_start in range(0, len(work), RANKING_BATCH_SIZE):
+        batch = work[batch_start: batch_start + RANKING_BATCH_SIZE]
+        sources = []
+        for source_key, candidate_keys in batch:
+            source_entry = catalog["entries"][source_key]
+            candidate_entries = [
+                (ck, catalog["entries"][ck]) for ck in candidate_keys
+                if ck in catalog["entries"]
+            ]
+            sources.append({
+                "key": source_key,
+                "entry": source_entry,
+                "candidates": candidate_entries,
+            })
+
+        prompt = build_ranking_prompt(sources, candidate_summary=_candidate_summary)
+        messages = [{"role": "user", "content": prompt}]
+
+        try:
+            raw = call_api_with_tools(client, messages, RANKING_SYSTEM_PROMPT, tools=[])
+        except Exception as e:
+            print(f"  Ranking batch failed: {e}")
+            for source_key, candidate_keys in batch:
+                ranking_failures.append(source_key)
+                catalog["entries"][source_key]["comparable_books"] = (
+                    candidate_keys[:COMPARABLES_CAP]
+                )
+            continue
+
+        rankings = parse_ranking_response(raw)
+
+        for source_key, candidate_keys in batch:
+            # Accept Claude's response under either the exact source key or a
+            # normalize_key-equivalent variant. Same for picks against the
+            # candidate set — Claude occasionally drifts on smart quotes / dashes.
+            cand_canon = {normalize_key(c): c for c in candidate_keys}
+            picked_raw = rankings.get(source_key)
+            if picked_raw is None:
+                for rk, rv in rankings.items():
+                    if normalize_key(rk) == normalize_key(source_key):
+                        picked_raw = rv
+                        break
+
+            picked: list[str] = []
+            if isinstance(picked_raw, list):
+                for p in picked_raw[:COMPARABLES_CAP]:
+                    if not isinstance(p, str):
+                        continue
+                    canon = cand_canon.get(normalize_key(p))
+                    if canon is None or canon in picked:
+                        continue
+                    picked.append(canon)
+
+            if len(picked) == COMPARABLES_CAP:
+                catalog["entries"][source_key]["comparable_books"] = picked
+                ranked += 1
+            else:
+                ranking_failures.append(source_key)
+                catalog["entries"][source_key]["comparable_books"] = (
+                    candidate_keys[:COMPARABLES_CAP]
+                )
+
+        time.sleep(RATE_LIMIT_DELAY)
+
+    return {
+        "ranked_entries": ranked,
+        "pre_trimmed": pre_trimmed,
+        "ranking_failures": ranking_failures,
+    }
+
+
+def sync_comparables(
+    catalog: dict,
+    *,
+    client=None,
+    dry_run: bool = False,
+    report_path: str | None = None,
+) -> dict:
+    """Run the comparable_books postprocess. Phases 1 + 2 always run.
+    Phase 3 (LLM ranking) runs only when client is provided and not dry_run.
+
+    If dry_run, work on a deep copy and don't mutate the input catalog.
+    """
+    import copy
+    target = copy.deepcopy(catalog) if dry_run else catalog
+    before = {
+        k: list(e.get("comparable_books") or [])
+        for k, e in target["entries"].items()
+    }
+
+    phase1 = canonicalise_comparables(target)
+    reciprocals_added = reciprocate_comparables(target)
+    over_cap_entries = find_over_cap_entries(target)
+
+    phase3 = {"ranked_entries": 0, "pre_trimmed": [], "ranking_failures": []}
+    if over_cap_entries and client is not None and not dry_run:
+        phase3 = rank_comparables_with_claude(
+            client, target, over_cap_entries
+        )
+        # Recompute over-cap after ranking; should be empty unless Phase 3 itself
+        # left lists over-cap (failure fallback already trims to cap).
+        residual = find_over_cap_entries(target)
+        if residual:
+            for k in residual:
+                target["entries"][k]["comparable_books"] = (
+                    target["entries"][k]["comparable_books"][:COMPARABLES_CAP]
+                )
+
+    after = {k: list(e["comparable_books"]) for k, e in target["entries"].items()}
+    lists_changed = sum(1 for k in before if before[k] != after[k])
+
+    stats = {
+        "lists_changed": lists_changed,
+        "canonicalised": phase1["canonicalised"],
+        "self_dropped": phase1["self_dropped"],
+        "duplicate_dropped": phase1["duplicate_dropped"],
+        "reciprocals_added": reciprocals_added,
+        "over_cap_entries": over_cap_entries,
+        "ranked_entries": phase3["ranked_entries"],
+        "pre_trimmed": phase3["pre_trimmed"],
+        "ranking_failures": phase3["ranking_failures"],
+        "drops_per_entry": phase1["drops_per_entry"],
+        "dry_run": dry_run,
+    }
+
+    if report_path:
+        with open(report_path, "w", encoding="utf-8") as f:
+            json.dump(stats, f, indent=2, ensure_ascii=False)
+
+    return stats
+
+
+def print_sync_summary(stats: dict):
+    print("\n  comparable_books sync summary")
+    print(f"    lists changed     : {stats['lists_changed']}")
+    print(f"    canonicalised     : {stats['canonicalised']}")
+    print(f"    self_dropped      : {stats['self_dropped']}")
+    print(f"    duplicate_dropped : {stats['duplicate_dropped']}")
+    print(f"    reciprocals_added : {stats['reciprocals_added']}")
+    print(f"    over_cap entries  : {len(stats['over_cap_entries'])}")
+    print(f"    ranked by Claude  : {stats['ranked_entries']}")
+    if stats['pre_trimmed']:
+        print(f"    pre_trimmed       : {len(stats['pre_trimmed'])} (>{RANKING_CANDIDATE_LIMIT} candidates)")
+    if stats['ranking_failures']:
+        print(f"    ranking_failures  : {len(stats['ranking_failures'])} (fell back to truncate)")
+    if stats['dry_run']:
+        print("    (dry run — no changes written, Phase 3 skipped)")
+
+
+def authenticate_anthropic_client():
+    """Set up the Anthropic client using the Claude Code session ingress token.
+
+    Refuses to run if ANTHROPIC_API_KEY is set or the session token isn't
+    available.
+    """
+    import anthropic
+    token_file = os.environ.get("CLAUDE_SESSION_INGRESS_TOKEN_FILE")
+    if not token_file or not Path(token_file).is_file():
+        print(
+            "Error: CLAUDE_SESSION_INGRESS_TOKEN_FILE is not set or does not point "
+            "to a readable file. This script must run inside a Claude Code session."
+        )
+        sys.exit(1)
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        print(
+            "Error: ANTHROPIC_API_KEY is set. Unset it — this script only authenticates "
+            "via the Claude Code session token."
+        )
+        sys.exit(1)
+    os.environ["ANTHROPIC_AUTH_TOKEN"] = Path(token_file).read_text().strip()
+    return anthropic.Anthropic()
 
 # ---------------------------------------------------------------------------
 # Progress and audit reporting
@@ -405,6 +767,14 @@ def main():
                         help="Only reprocess needs_review entries")
     parser.add_argument("--index-only", action="store_true",
                         help="Rebuild the slim index from the existing catalog and exit")
+    parser.add_argument("--sync-comparables", action="store_true",
+                        help="Canonicalise variants, reciprocate links, and "
+                             "Claude-rank top 6 when over cap")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="With --sync-comparables: compute changes but don't "
+                             "write or call Claude (reports the would-rank set)")
+    parser.add_argument("--report", default=None,
+                        help="With --sync-comparables: write JSON report to this path")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
@@ -412,6 +782,23 @@ def main():
     if args.index_only:
         save_index(catalog, args.index)
         print(f"  Wrote slim index → {args.index} ({len(catalog['entries'])} entries)")
+        sys.exit(0)
+
+    if args.sync_comparables:
+        client = None
+        if not args.dry_run:
+            client = authenticate_anthropic_client()
+        stats = sync_comparables(
+            catalog,
+            client=client,
+            dry_run=args.dry_run,
+            report_path=args.report,
+        )
+        print_sync_summary(stats)
+        if not args.dry_run:
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+            print(f"  Wrote → {args.catalog} (+ {args.index})")
         sys.exit(0)
 
     books = load_library(args.library)
@@ -459,26 +846,8 @@ def main():
     estimated_chunks = -(-total_to_process // args.chunk_size)
     print(f"  {total_to_process} entries to process in ~{estimated_chunks} chunks of {args.chunk_size}.\n")
 
-    # Heavy imports only needed for the API path
-    import anthropic
     from catalogue_prompts import build_system_prompt
-
-    # Auth: only the Claude Code session ingress token is supported.
-    token_file = os.environ.get("CLAUDE_SESSION_INGRESS_TOKEN_FILE")
-    if not token_file or not Path(token_file).is_file():
-        print(
-            "Error: CLAUDE_SESSION_INGRESS_TOKEN_FILE is not set or does not point "
-            "to a readable file. This script must run inside a Claude Code session."
-        )
-        sys.exit(1)
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        print(
-            "Error: ANTHROPIC_API_KEY is set. Unset it — this script only authenticates "
-            "via the Claude Code session token."
-        )
-        sys.exit(1)
-    os.environ["ANTHROPIC_AUTH_TOKEN"] = Path(token_file).read_text().strip()
-    client = anthropic.Anthropic()
+    client = authenticate_anthropic_client()
     system = build_system_prompt()
 
     processed = 0
@@ -521,6 +890,13 @@ def main():
 
     save_index(catalog, args.index)
     print(f"  Wrote slim index → {args.index}")
+
+    # Run the comparable_books sync at the tail so a fresh build always
+    # lands canonical, reciprocated, and Claude-ranked.
+    sync_stats = sync_comparables(catalog, client=client)
+    print_sync_summary(sync_stats)
+    save_catalog(catalog, args.catalog)
+    save_index(catalog, args.index)
 
     print("\nCataloguing complete.")
     print_status(catalog)
