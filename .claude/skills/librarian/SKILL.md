@@ -136,37 +136,85 @@ The reader uses asterisk-prefixed flags inside `my_tags`:
 - `*tbr` — to-be-read marker on a book they expect to start.
 - `*completed` — series complete (every entry read), or standalone closed out.
 
-Filter examples:
+### MANDATORY: build the already-read exclusion set first
+
+Before recommending or surfacing ANY book in a checklist, build an
+exclusion set from the **entire log** — not just recent reads, not just
+rated reads, every single row. Any candidate whose normalized
+(title, author) is in this set is disqualified from recommendations.
 
 ```python
 import csv
 from datetime import datetime
 
+# Same normalization the catalog uses (handles smart quotes, em-dashes,
+# zero-width chars, case, whitespace).
+_QUOTE_NORMALIZE = str.maketrans({
+    "‘": "'", "’": "'", "‚": "'", "‛": "'",
+    "“": '"', "”": '"', "„": '"', "‟": '"',
+    "–": "-", "—": "-", "−": "-",
+    "​": "", "‌": "", "‍": "", "﻿": "",
+})
+
+def norm(s):
+    if not s:
+        return ""
+    return " ".join(s.translate(_QUOTE_NORMALIZE).lower().split())
+
 with open("Reading_Log.csv", encoding="utf-8") as f:
     log = list(csv.DictReader(f))
 
-# Recent reads (have a date, parseable)
+# Exclusion set — every row, regardless of date or rating
+already_read = {
+    (norm(r["title"]), norm(r["authors"]))
+    for r in log
+    if r["title"]
+}
+
+def is_already_read(title, author):
+    return (norm(title), norm(author)) in already_read
+```
+
+**Run `is_already_read(title, author)` against every candidate before it
+goes into a checklist option, the wish-list pass, or any recommendation.**
+If a candidate hits the exclusion set, drop it silently and pull a
+replacement from the candidate pool. Never offer it.
+
+### Other useful filters
+
+```python
 def parse_date(s):
     return datetime.strptime(s, "%m/%d/%Y") if s else None
 
+# Recent reads (drives sharper taste signals — see below)
 recent = sorted(
     [r for r in log if parse_date(r["Last Date Read"])],
     key=lambda r: parse_date(r["Last Date Read"]),
     reverse=True,
 )
 
-# Highest/lowest recent rated reads — only those with both a date and a rating
-def rated(r):
-    return r["My Rating"].strip() and parse_date(r["Last Date Read"])
+# All-time top reads — pull regardless of date. These are benchmark
+# anchors, not just historical context.
+def has_rating(r):
+    return r["My Rating"].strip()
 
-scored = sorted(
-    [r for r in log if rated(r)],
+all_time_top = sorted(
+    [r for r in log if has_rating(r)],
     key=lambda r: float(r["My Rating"]),
-)
-top_5 = scored[-5:]
-bottom_3 = scored[:3]
+    reverse=True,
+)[:20]
 
-# Unfinished series — Long/Short Series entries without *completed
+# Recent rated reads (for the taste interview's MC questions)
+def rated(r):
+    return has_rating(r) and parse_date(r["Last Date Read"])
+
+scored_recent = sorted(
+    [r for r in log if rated(r)],
+    key=lambda r: parse_date(r["Last Date Read"]),
+    reverse=True,
+)
+
+# Unfinished series — Long/Short Series without *completed
 def has_flag(r, flag):
     return any(t.strip() == flag for t in r["my_tags"].split(","))
 
@@ -177,20 +225,37 @@ unfinished = [r for r in log
 
 ### Using the log in recommendations
 
-- **Always cross-check** before recommending — never suggest a title already in
-  the log (any row with the matching title+author).
-- **Recent reads (last ~6 months) drive taste signals.** Older highly-rated
-  reads still matter, but recent dislikes are the strongest negative signal.
-- **Quarter-point ratings carry information.** A 4.75 means "almost a 5 but
-  something held it back" — worth probing in the taste interview. A 3.25 means
-  "competent but missed for me" — different from a 2.
-- **Unrated books with a date** = read but didn't bother rating. Often graphic
-  novels, comics, or filler — don't pull taste signals from them.
-- **Unfinished series:** if the next book in a series the reader liked is in
-  the library, it's a strong default candidate for the list (flag as a
-  continuation).
-- **`*tbr` items in the log** are wish-list signals — surface them in the
-  Step 4 wish-list pass.
+- **Exclusion is non-negotiable.** Every candidate runs through
+  `is_already_read(title, author)` first. A book in the log — at any
+  date, with or without a rating — is disqualified. Drop silently and
+  pull a replacement; never offer it as a "have you read this?" prompt.
+- **Past favorites are real signal.** Pull `all_time_top` (top 20-ish
+  ratings regardless of date) as benchmark anchors — these are the
+  reader's strongest taste evidence. Use them to find catalog entries
+  with overlapping `comparable_books` or `taste_signals.positive`.
+  Recency biases the *interview* prompts (recent reads = better
+  conversation hooks), not the recommendation engine.
+- **Recent dislikes are the sharpest negative signal.** A recent ≤3.0
+  read tells you what's currently *not* working better than an old one
+  does — tastes drift.
+- **Quarter-point ratings carry information.** A 4.75 means "almost a 5
+  but something held it back" — worth probing in the taste interview.
+  A 3.25 means "competent but missed for me" — different from a 2.
+- **Unrated books with a date** = read but didn't bother rating. Often
+  graphic novels, comics, or filler — exclude from recommendations
+  (still in the exclusion set!) but don't pull taste signals from them.
+- **Unfinished series:** if the next book in a series the reader liked
+  is in the library, it's a strong default candidate (flag as a
+  continuation). Note that the *unread* next book is NOT in the
+  exclusion set — only the books they've already read are.
+- **`*tbr` items in the log** are wish-list signals — surface them in
+  the Step 4 wish-list pass. They're already-marked but unread, so they
+  still pass the exclusion check (the entry has no completed-read row).
+  If your reader has a row with both `*tbr` and a date filled in, treat
+  it as read.
+- **Re-reads.** If the reader explicitly asks for re-read suggestions
+  ("remind me what I loved last year"), pull from the log directly — but
+  this is a separate mode, not part of the TBR pool build.
 
 ### Freshness check on the log
 
@@ -359,6 +424,12 @@ so the reader sees them as related groupings — by genre, by tone, by
 **Every batch is presented as a multiSelect `AskUserQuestion` checklist.**
 The user selects which books they want in the pool; unselected entries
 are deferred, not rejected.
+
+**Before any candidate becomes a checklist option, run it through
+`is_already_read(title, author)`.** Books in the reading log never appear
+in a checklist, full stop. If the exclusion drops your batch below 3
+options, pull replacements from the candidate pool — don't ship a
+short batch and don't ask the reader "have you read X?".
 
 Call shape — one `AskUserQuestion` per batch, single multiSelect question,
 3–4 options (the AskUserQuestion ceiling). The option `description` carries
