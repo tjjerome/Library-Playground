@@ -19,21 +19,21 @@ new/upcoming releases as stretch._
 |---|---|---|
 | Fantasy | 39 | 39 |
 | Science Fiction | 21 | 21 |
-| Horror | 10 | 7 |
+| Horror | 10 | 10 |
 | Historical Fiction | 10 | 10 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **97** |
+| **Total** | **100** | **100** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 37 | 37 |
+| Standalone | 40 | 40 |
 | Short Series | 27 | 27 |
-| Long Series | 36 | 33 |
-| **Total** | **100** | **97** |
+| Long Series | 33 | 33 |
+| **Total** | **100** | **100** |
 
 ### Miscellaneous Goals
 
@@ -103,6 +103,9 @@ new/upcoming releases as stretch._
 | 24 | The Hunger | Alma Katsu | Donner Party with supernatural creep. Historical horror crossover — also nudges your HistFic count. ~384 pages, tight by horror standards. |
 | 96 | The Fisherman ⭐⭐ | John Langan | The acclaimed cosmic horror novel of the last decade. Two widowers bond over fishing, then chase a story that becomes Lovecraftian on a different scale. Literary, melancholic, mythic. Pairs with *BTF* (5.0) energy in literary horror. |
 | 97 | The Reformatory ⭐⭐ 🎧 | Tananarive Due | Jim Crow Florida 1950s — a Black boy sent to a brutal reform school where he can see the ghosts of murdered children. Historical horror weaponized; deserves to be the new *Beloved*-of-the-genre. |
+| 98 | Black Mouth ⭐ | Ronald Malfi | Atmospheric small-town horror — four childhood friends reunite to confront something they encountered in the West Virginia woods as kids. Psychologically layered, deeply unsettling. |
+| 99 | It ⭐ 🎧 | Stephen King | The 1986 epic — Pennywise, the Losers' Club, Derry. Coming-of-age horror at scale. King's most iconic doorstop. |
+| 100 | King Sorrow ⭐ 🎧 | Joe Hill | 2025 release — your final slot. Hill's latest, returning to the dark mythic register that made *NOS4A2* and *The Fireman* land. |
 
 ## 5. Crime / Mystery / Thriller
 
