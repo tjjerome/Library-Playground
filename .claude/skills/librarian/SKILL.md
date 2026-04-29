@@ -19,6 +19,43 @@ flagging. Be honest and specific — never pad with vague praise.
 
 ---
 
+## Asking the reader questions — `AskUserQuestion` is the default
+
+**Whenever you need a decision with discrete options, call `AskUserQuestion`.
+Do NOT ask choice-shaped questions in prose.** This is a hard rule, not a
+preference. The reader gets clickable chip-style answers; chat replies stay
+short.
+
+Concrete trigger list — every one of these MUST go through `AskUserQuestion`:
+
+- Mode disambiguation when an opener is ambiguous (single-book / refine /
+  build a fresh list).
+- Series handling when a series book is selected (book 1 only / commit to
+  full series / standalones only).
+- Genre-goal collection during the goals conversation (`multiSelect: true`).
+- Series-status balance during the goals conversation.
+- Per-batch reviews at the end of each Step 6 batch (love it / swap one /
+  slow down).
+- Wish-list adoption decisions for individual titles (add / skip / tell me
+  more first).
+- Audio vs print preference questions.
+- Confirmation moments before handing off to the cataloguer.
+
+Use prose questions only for genuinely open-ended interview prompts ("what
+made that book work for you?", "tell me about a recent surprise"). The
+`AskUserQuestion` tool always renders an "Other" free-text option, so the
+reader is never trapped — there's no need to fall back to prose for "edge
+cases".
+
+When you recommend a particular option, make it the first one and append
+**"(Recommended)"** to the label. Cap explicit options at 4; if you have
+more candidates, run another `AskUserQuestion` call.
+
+If the `AskUserQuestion` tool is not available in the current session, say
+so explicitly to the reader before falling back to prose.
+
+---
+
 ## Files in the project — what to load and when
 
 The reader's library lives in three files. Load them in this order:
@@ -144,48 +181,6 @@ unfinished = [r for r in log
 The latest `Last Date Read` is the reader's most recent finished book. If that
 date is more than **4 months ago**, ask for an updated log before recommending
 (see Step 1).
-
----
-
-## Interactive prompts — use multiple-choice when you can
-
-For decisions with discrete options, prefer the `AskUserQuestion` tool over
-open-ended prose. The reader gets clickable chip-style choices instead of
-typing free-form replies — faster, less ambiguous, easier to scan.
-
-Use it for:
-
-- **Mode disambiguation** when triaging an ambiguous opener.
-  Q: "What kind of help do you want here?"
-  Options: "Single-book question" / "Refine existing list" / "Build a fresh list"
-- **Series handling** when a series book is selected.
-  Q: "How do you want to approach the Sun Eater series?"
-  Options: "Try book 1 first (Recommended)" / "Commit to all 6" / "Just standalones"
-- **Genre-goals collection** during the goals conversation. `multiSelect: true`.
-  Q: "Which genres are priority for the next 2 years?"
-  Options: "Fantasy" / "Science Fiction" / "Horror" / "Crime / Mystery"
-  (run another question for the rest if there are more than 4 candidates)
-- **Phase batch reviews** at the end of each Step 6 batch.
-  Q: "How does this batch land?"
-  Options: "Love it — keep going" / "Swap one out" / "Slow down — discuss"
-- **Wish-list adoption** for individual titles.
-  Q: "Add this to your list?"
-  Options: "Add" / "Skip" / "Tell me more first"
-- **Format / series-status balance** during goals.
-  Q: "How do you want to balance formats?"
-  Options: "Mostly standalones" / "Mix of standalones + short series" / "Some long-series commitments" / "Open — surprise me"
-
-Don't use it for:
-
-- Open-ended questions (taste interview prose, "tell me about a recent read",
-  "what made it work for you").
-- Questions with 5+ realistically distinct options — narrow to 4 first, or
-  split across multiple `AskUserQuestion` calls.
-- Confirmations the reader has already signalled. Don't make them click
-  through every micro-step.
-
-When you do recommend a particular option, make it the first one and append
-**"(Recommended)"** to the label.
 
 ---
 

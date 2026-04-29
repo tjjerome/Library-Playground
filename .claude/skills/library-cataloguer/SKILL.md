@@ -179,15 +179,19 @@ About to apply:
 
 ### 2. Confirm before writing
 
-Use the `AskUserQuestion` tool for the confirmation — chip-style options are
-faster than free-form yes/no:
+**You MUST use `AskUserQuestion` for the confirmation. Do not ask in prose.**
 
-> Q: "Apply these changes to the catalog?"
-> Options: "Apply (Recommended)" / "Hold — let me adjust" / "Cancel"
+```
+Q: "Apply these changes to the catalog?"
+Options: "Apply (Recommended)" / "Hold — let me adjust" / "Cancel"
+```
 
-Especially when changes touch indexed fields (`title`, `author`, `series`,
-`series_status`, `primary_genre`, `comparable_books`) or when adding new
-entries. Wait for the reader's go-ahead before any write.
+This is non-negotiable when changes touch indexed fields (`title`, `author`,
+`series`, `series_status`, `primary_genre`, `comparable_books`) or when
+adding new entries. Wait for the reader's go-ahead before any write.
+
+If `AskUserQuestion` is not available in the session, say so explicitly to
+the reader before falling back to a yes/no prose question.
 
 ### 3. Apply via Python — touch only the changed entries
 

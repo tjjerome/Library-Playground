@@ -58,6 +58,19 @@ full reading-list workflow on a small ask.
 - Offer to commit memory-bank updates ("Want me to commit this?") but
   never commit without confirmation. Don't push without an explicit ask.
 
+## Asking the reader questions
+
+**For any choice-shaped question with discrete options, use the
+`AskUserQuestion` tool — do not ask in prose.** This applies across both
+the librarian and cataloguer flows: mode disambiguation, series handling,
+genre/format goals, batch reviews, wish-list adoption, and confirmations
+before writes. Reserve prose questions for genuinely open-ended interview
+prompts ("what made that book work for you?"). The tool always offers an
+"Other" free-text option, so the reader is never trapped.
+
+If `AskUserQuestion` isn't available in the current session, say so
+explicitly before falling back to prose.
+
 ## Memory bank
 
 `Library_Catalog.json` is the librarian's long-term memory. As the reader
