@@ -141,6 +141,32 @@ Or filter:
 
 This keeps the 9.4MB catalog out of the chat context — only matched entries enter.
 
+**Before claiming a book is "not in catalog,"** run a three-pass fuzzy match
+on the index. Exact-key lookups miss titles that vary in punctuation, books
+known by series name, or partial-title queries.
+
+```python
+import json
+with open("Library_Index.json") as f:
+    idx = json.load(f)
+
+def find(query):
+    q = query.lower()
+    # Pass 1: exact key match
+    hits = [k for k in idx["entries"] if k.lower() == q]
+    if hits: return hits
+    # Pass 2: title-only substring
+    hits = [k for k, e in idx["entries"].items()
+            if q in (e.get("title") or "").lower()]
+    if hits: return hits
+    # Pass 3: series-name substring
+    hits = [k for k, e in idx["entries"].items()
+            if q in (e.get("series") or "").lower()]
+    return hits
+```
+
+Only after all three passes return empty is "not in catalog" a valid claim.
+
 ---
 
 ## Reading_Log.csv — interpreting the columns
@@ -409,6 +435,34 @@ Add more MC questions if you want a sharper read on a specific axis
 (content flags to avoid, settings that pull them in, tone preferences,
 pacing tolerance). The 2-Open cap stays firm.
 
+### Tone-breadth probe (conditional)
+
+If the reader's older ≥4.0 reads (>12 months back) sit tonally apart from
+their recent reads — e.g., warmer epics in the older pool alongside darker
+fare in the recent pool — run an additional MC probe to calibrate palette
+breadth. Skipping this is how a profile inherits a too-narrow tone palette
+and starts vetoing valid candidates that match older taste.
+
+Use `AskUserQuestion` with options built from the reader's actual titles,
+not abstract preferences. Sample probe shapes:
+
+- **Tone span:** "Looking back, your older high-rated reads include
+  [warm titles] alongside your more recent [darker titles]. How wide
+  should the list go?"
+  - `Both — keep the full warm-to-dark range live`
+  - `Lean current — mostly recent darker tone, a few warm exceptions`
+  - `Lean classic — mostly older warmer tone, a few darker exceptions`
+  - `Other`
+- **Specific revisits:** for 3–5 older 4+ titles, ask which still feel
+  like "yes, more like this" vs. "loved it then, not my palate now."
+  Multi-select.
+- **Author continuity:** for 3–5 authors with old high-rated reads and
+  unread catalog books, ask "still want more from these?" — multi-select.
+
+The goal is to **calibrate breadth**, not to relitigate old reads.
+`Profile.md` should explicitly note tone-palette breadth so candidate
+generation doesn't narrow it later.
+
 Extract a profile covering positive indicators, negative indicators,
 benchmark books (3–5), preferred settings/genres, audio vs. print, and
 series-length appetite. Write the updated `Profile.md` to the repo. If
@@ -435,6 +489,19 @@ Short Stories. Counts are **individual books**, not series. Loosely connected se
 
 **Miscellaneous goals** — how many classics, how many indie titles. These cross-cut
 and don't need to sum to 100.
+
+**All goals are soft caps, not hard constraints.** Treat series-status,
+indie, and classic targets the way a chef treats a recipe — directional,
+not exact. Apply explicit tolerances and avoid mid-build cap negotiations:
+
+- Series-status buckets (Standalone / Short Series / Long Series / Short
+  Stories): **±4 books** per bucket before flagging.
+- Indie / Classic: **±2 books** before flagging.
+
+During candidate selection, prefer picks that move buckets toward target,
+but **never force a pick to hit a bucket exactly** — the goal is a
+coherent list, not a perfect distribution. Tolerance check happens at
+Phase 3, not mid-build.
 
 Summarize goals back to the reader before moving on.
 
@@ -474,6 +541,51 @@ exists so the reader feels pulled toward the book in a moment.
 The phases below are **conversation pacing**, not a reading sequence.
 Surface high-confidence picks first to set the tone of the build; then
 keep the reader engaged through batches.
+
+### Candidate signals — a toolkit, not a hierarchy
+
+When generating candidates, mine **all** of the following signals from the
+reading log + catalog + (where relevant) the open web. Confidence comes
+from how many independent signals point at the same book. This is not an
+ordering where one signal trumps another — picks are highest-confidence
+when **multiple signals stack** for the same book. Single-signal picks
+are still valid; they just need a stronger pitch.
+
+**Log-driven signals (strongest when stacked):**
+
+1. **Unfinished series.** Series with any reader-rated entry ≥ 4.0 that
+   has unread books in the catalog. **Stronger** when multiple entries
+   are highly rated. **Strong** even on a single high rating.
+2. **Author-in-pocket signal.** Author has ≥ 1 reader-rated read ≥ 4.0
+   with unread catalog books. Signal scales with count and consistency:
+   - 1 high rating → weak signal (one hit doesn't mean every book lands;
+     treat like any other positive indicator).
+   - 2+ high ratings, 0 lows → strong signal.
+   - 3+ high ratings, 0 lows → very strong, near-automatic for Phase 1.
+   - Mixed (some 4+, some 2-) → neutral; lean on other signals for the
+     specific book.
+
+**Catalog-driven signals:**
+
+3. **`comparable_books` linkage.** Catalog entries already cross-reference
+   reader-loved titles.
+4. **Genre / tone match against profile.** Built in Step 2; works best
+   when the profile has captured tone-palette breadth.
+
+**External signals (use as inputs, not authority):**
+
+5. **Goodreads average rating.** A rough quality floor — a 3.6 book and
+   a 4.4 book carry different priors. Not authoritative. Useful for
+   breaking ties, sanity-checking obscure picks, or flagging that a book
+   may underperform reader expectations.
+6. **Wishlist** (already gathered in Step 4).
+
+**How signals combine.** A pick that stacks unfinished-series +
+author-in-pocket + tone match is near-automatic. A pick on a single
+signal (e.g., tone match alone, or one ≥ 4.0 author rating alone) needs
+the pitch to make the case. **Never reject a candidate for failing one
+signal when others are strong** — an explicit unfinished-series signal
+should not be vetoed by a weak tone-match disagreement.
 
 ### Surfacing obscure / indie / low-confidence picks
 
@@ -653,6 +765,21 @@ are pending, pause: any reservations, anything missing, does the
 category balance match goals? Make agreed swaps. Swap discussions can
 also right-size series scope ("you committed to all four Hyperion books
 — still want all four, or trim to two now that you've seen the list?").
+
+**Distribution tolerance check.** Compute the actual distribution against
+the targets collected at Step 3. Show the reader the table (Goal vs.
+Current vs. Delta) for series-status, indie, and classic. For any bucket
+**inside tolerance** (±4 series-status, ±2 indie/classic), no action —
+note as "within wiggle." For any bucket **outside tolerance**, surface
+it via `AskUserQuestion`:
+
+- `Swap picks to hit the target`
+- `Revise the target — current shape feels right`
+- `Other`
+
+Don't introduce mid-build cap negotiations during Phase 1 / 2 selection
+— the wiggle is exactly to avoid that. Cap discussions happen only here
+at Phase 3, only on buckets outside tolerance.
 
 ### Phase 4 — new and upcoming releases (10–15)
 
@@ -877,6 +1004,14 @@ index in the same step — no patch files, no manual apply.
 
 If the reader hasn't asked to save changes yet, hold them in the conversation —
 batch them and offer to flush once a few have accumulated.
+
+**Catalog tags are ground truth for the librarian** (genre, series_status,
+indie, classic). If the reader corrects a tag during a build ("BotNS is SF,
+not Fantasy" / "Black Company isn't indie"), acknowledge the correction,
+apply it to the in-progress reading list immediately, and queue the catalog
+update for the cataloguer skill to apply at the next memory-bank flush.
+Don't preemptively distrust tags before a correction is offered — that
+just creates friction.
 
 ---
 
