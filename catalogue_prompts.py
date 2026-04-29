@@ -140,7 +140,27 @@ def build_ranking_prompt(sources: list, *, candidate_summary) -> str:
         "order (strongest first).\n\n"
         "OUTPUT FORMAT: a single JSON object mapping each source key to its "
         "ranked list of 6 chosen candidate keys, wrapped in a ```json code "
-        "block. No commentary outside the block.\n"
+        "block. No commentary outside the block.\n\n"
+        "CRITICAL: Use the EXACT keys shown below — every key is in "
+        "`Title - Author` form. Do not shorten to just the title, do not "
+        "rephrase, do not normalise punctuation. Both the source-key "
+        "(JSON object key) and the chosen candidate keys (JSON array "
+        "values) must match the strings shown verbatim, character-for-"
+        "character. Picks that don't match the candidate list verbatim "
+        "are dropped.\n\n"
+        "Example output shape:\n"
+        "```json\n"
+        "{\n"
+        '  "The Hobbit - J.R.R. Tolkien": [\n'
+        '    "The Lord of the Rings - J.R.R. Tolkien",\n'
+        '    "The Eye of the World - Robert Jordan",\n'
+        '    "Earthsea - Ursula K. Le Guin",\n'
+        '    "The Belgariad - David Eddings",\n'
+        '    "Mistborn - Brandon Sanderson",\n'
+        '    "Discworld - Terry Pratchett"\n'
+        "  ]\n"
+        "}\n"
+        "```\n"
     )
 
     blocks = []
