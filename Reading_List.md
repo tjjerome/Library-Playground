@@ -17,23 +17,23 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 40 |
-| Science Fiction | 20 | 4 |
+| Fantasy | 41 | 41 |
+| Science Fiction | 19 | 10 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **75** |
+| **Total** | **100** | **82** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 28 |
-| Short Series | 21 | 21 |
-| Long Series | 44 | 26 |
-| **Total** | **100** | **75** |
+| Standalone | 35 | 30 |
+| Short Series | 22 | 22 |
+| Long Series | 43 | 30 |
+| **Total** | **100** | **82** |
 
 ### Miscellaneous Goals
 
@@ -53,6 +53,10 @@ new/upcoming releases as stretch._
 | 3 | Of War and Ruin **(I)** 🎧 | Ryan Cahill | Bound and Broken book 3. |
 | 4 | Of Empires and Dust **(I)** 🎧 | Ryan Cahill | Bound and Broken book 4 — closes the main arc. |
 | 5 | Iron Gold ⭐⭐ 🎧 | Pierce Brown | Direct continuation. *Morning Star* just hit 5.0 (2/24). Layup. Tone shifts — decade later, the revolution is fracturing. |
+| 76 | Dark Age ⭐⭐ 🎧 | Pierce Brown | Red Rising 5. Tone goes darker — many call it the series' brutal peak. |
+| 77 | Light Bringer ⭐⭐ 🎧 | Pierce Brown | Red Rising 6. Closes the second arc; book 7 still pending release. |
+| 78 | Leviathan Wakes ⭐⭐ 🎧 | James S. A. Corey | Expanse anchor — 9 books complete. Corey's voice known via *Mercy of Gods*. Propulsive space-opera-meets-noir; ensemble that grows. |
+| 79 | The Three-Body Problem ⭐ 🎧 | Liu Cixin | Hugo winner. Hard SF, Cultural Revolution opening, escalates to civilizational stakes. First contact with deep ideas. Remembrance of Earth's Past trilogy. |
 | 6 | A Little Hatred ⭐ 🎧 | Joe Abercrombie | Opens Age of Madness — your Abercrombie ratings climb (4 → 4.5 → 4.75 → 5). The next big arc in First Law World, decades after the original trilogy. |
 | 7 | The Lies of Locke Lamora ⭐ 🎧 | Scott Lynch | Heist crew, Venice-ish setting, found family, propulsive with grimdark edges. Plot moves and the prose has bite. |
 | 8 | Night Watch ⭐⭐ 🎧 | Terry Pratchett | The Discworld peak. You're hot on City Watch (Guards! 4.75/5.0, Men at Arms 4.25, Feet of Clay 4.25). Sam Vimes thrown back in time — darker, more contemplative than the early books. |
@@ -140,6 +144,8 @@ new/upcoming releases as stretch._
 | 13 | The Sword of Kaigen ⭐⭐ **(I)** | M. L. Wang | Same author as *Blood Over Bright Haven* (5.0). Japanese-inspired military fantasy, family-and-honor saga, fast pacing, devastating. Standalone. |
 | 14 | The Heroes ⭐⭐ 🎧 | Joe Abercrombie | The other peak of First Law World after *Best Served Cold* (5.0). Three days, one hill, multi-POV battle. Same vein, fast pacing. |
 | 63 | Never Die ⭐ **(I)** 🎧 | Rob J. Hayes | Wuxia-influenced standalone. Boy on a mission from the God of Death recruits four legendary heroes (some already dead) to assassinate the Emperor. Fast, propulsive, eastern-flavored — pairs with *Sword of Kaigen* energy. |
+| 80 | Use of Weapons ⭐⭐ 🎧 | Iain M. Banks | The Culture peak by most readers' reckoning. Special Circumstances agent Zakalwe; structurally inventive — alternating chapters, one set running backward. Banks in pocket via *Phlebas* + *Player of Games*. |
+| 81 | Anathem ⭐ 🎧 | Neal Stephenson | Philosophical SF — monks of mathematics in a cloistered alternate world react to first contact. Distinctive, long, idea-saturated. Your Sun Eater density tolerance puts this in range. |
 
 ### 8b. Short Series Fantasy
 
@@ -150,6 +156,7 @@ new/upcoming releases as stretch._
 | 17 | Jade Legacy 🎧 | Fonda Lee | Green Bone book 3 — closes the trilogy. |
 | 18 | The Will of the Many ⭐ 🎧 | James Islington | Roman-influenced magic + dark academia + ancient mysteries. The catalog comps it close to Sun Eater's ambient texture; recent buzz is real. |
 | 19 | The Sword of the Lictor | Gene Wolfe | BotNS book 3, per your decision to push one more. Mountains, Severian on the run, the trilogy's mid-point. |
+| 82 | The Citadel of the Autarch | Gene Wolfe | BotNS book 4 — closes the main quartet. Severian's journey reaches its end; the meaning of everything that came before clicks into place. |
 | 54 | Red Sister ⭐⭐ | Mark Lawrence | Lawrence in your pocket via the Library trilogy + Returns/Overdue. Different mode entirely — lyrical grimdark, female-led: young Nona Grey enters a convent of warrior-nuns on a dying world. Coming-of-age + sisterhood + brutal violence. Book of the Ancestor trilogy. |
 | 59 | Grey Sister | Mark Lawrence | Book of the Ancestor 2. Nona's training deepens; the convent politics turn lethal. |
 | 60 | Holy Sister | Mark Lawrence | Book of the Ancestor 3. Closes the trilogy — the focus tightens to the dying world's last corridor of warmth. |
