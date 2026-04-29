@@ -20,20 +20,20 @@ new/upcoming releases as stretch._
 | Fantasy | 39 | 39 |
 | Science Fiction | 21 | 21 |
 | Horror | 10 | 5 |
-| Historical Fiction | 10 | 6 |
+| Historical Fiction | 10 | 10 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **91** |
+| **Total** | **100** | **95** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 33 |
+| Standalone | 35 | 35 |
 | Short Series | 27 | 27 |
-| Long Series | 38 | 31 |
-| **Total** | **100** | **91** |
+| Long Series | 38 | 33 |
+| **Total** | **100** | **95** |
 
 ### Miscellaneous Goals
 
@@ -125,6 +125,10 @@ new/upcoming releases as stretch._
 | 28 | Lonesome Dove ⭐ 🎧 | Larry McMurtry | Pulitzer winner, often called the great American novel. Two aging Rangers + a massive cattle drive. Elegiac, vast, deeply human — *Lions of Al-Rassan* energy in a Western. Long Series anchor. |
 | 29 | All the Light We Cannot See 🎧 | Anthony Doerr | Pulitzer-winning WWII dual narrative — blind French girl + German orphan boy whose paths converge. Lyrical and luminous. |
 | 30 | All Quiet on the Western Front 🎧 | Erich Maria Remarque | WWI from a German trench. Tight, unflinching, tragic. Counts toward Classics. Strong on audio. |
+| 92 | Matterhorn ⭐⭐ | Karl Marlantes | THE Vietnam War novel — Marine veteran took 30+ years to write it. Visceral, unflinching, ~600p. Fills the war gap (you have WWI, WWII, Western, but no Vietnam). Standalone. |
+| 93 | The Plot Against America ⭐ 🎧 | Philip Roth | Alt-history standalone — Lindbergh defeats FDR in 1940 and the country slides into homegrown fascism. Roth narrating his own childhood under the alternate timeline. Distinct register from your other HistFic. |
+| 94 | The Gates of Rome ⭐ 🎧 | Conn Iggulden | Emperor 1 — young Caesar in the Roman Republic. Propulsive military-historical. 5-book Long Series anchor. Pure ancient-history propulsion. |
+| 95 | The Last Kingdom ⭐ 🎧 | Bernard Cornwell | Saxon Stories 1 — Uhtred of Bebbanburg, raised by Vikings, caught between worlds in Alfred the Great's England. ~13-book Long Series anchor. Early medieval but the same propulsive register as Iggulden. |
 
 ## 7. Literary Fiction
 
