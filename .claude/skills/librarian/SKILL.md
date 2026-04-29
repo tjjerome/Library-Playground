@@ -666,38 +666,95 @@ Same pipeline as Phase 1/2 (exclusion check, multiSelect checklists,
 differences: web search is the primary data source (these aren't in the
 catalog yet) and library availability is N/A.
 
-**Step 1 — ask the reader's upcoming-release wish list first.** Mirror
-the Step 4 wish-list pass, scoped to upcoming releases:
+#### Web search is mandatory — training data alone is unreliable
+
+Your training data is months to years out of date by the time this
+phase runs. Books you "remember" as upcoming have usually already
+released; what's actually upcoming when the reader is in this chat is
+data you don't have. **Every Phase 4 candidate must be backed by a
+recent web search result confirming the release date is in the future
+relative to today.** Training-only suggestions are forbidden in Phase 4.
+
+Procedure before suggesting *any* candidate:
+
+1. **Anchor to today's date.** Run `date +%Y-%m-%d` (or read the
+   `<currentDate>` context tag) so you know the actual cutoff. The
+   12-month window runs from today forward, not from your training
+   cutoff.
+2. **Run multiple fresh searches.** One search isn't enough — publisher
+   announcements, genre blogs, and aggregator lists all carry different
+   subsets. For each candidate priority, run at least two searches
+   targeting recent sources:
+   - `[author] new book [current year]`
+   - `[author] upcoming release`
+   - `[series name] next book release date`
+   - `most anticipated [genre] books [current year+1]`
+   - `[genre] books releasing [current month-year]`
+   - Targeted publisher catalog searches when known (Tor Forge, Orbit,
+     Subterranean, Erewhon, etc.)
+3. **Verify the release date in writing.** Pull a specific date or
+   month from the search result, not a vague "soon" or "next year."
+   If the only signal is "announced" with no date, the book doesn't
+   qualify — drop it.
+4. **Reject anything that's already out.** If the verified date is in
+   the past, the book is by definition not upcoming. Don't smuggle it
+   into Phase 4 by re-framing it as "recent."
+5. **Cite the source briefly in the `preview` field** of the
+   `AskUserQuestion` option ("Tor announcement, Feb 2026; release
+   Sep 2026"). Lets the reader sanity-check.
+
+If a candidate from your training memory comes to mind, do NOT surface
+it without first running the verification searches above. Many books
+you "know" as forthcoming have already shipped.
+
+#### Step 1 — ask the reader's upcoming-release wish list first
+
+Mirror the Step 4 wish-list pass, scoped to upcoming releases:
 
 > "Any books or sequels coming out in the next 12 months that you
 > already have on your radar — things you've seen announced, been hyped
 > about, or heard recommended?"
 
-For each named release: web search to confirm the date sits in the
-window and pull plot/comp details; run `is_already_read(title, author)`
-in case of an ARC; fit-check against the profile; if it's a series
-sequel, confirm the prior books are read in the log and open the series
-scope follow-up if scope is ambiguous. Add confirmed picks to the
-stretch section.
+For each named release: **run the verification searches above** to
+confirm the date sits in the window (reader-named picks aren't exempt
+from the freshness check — they may be remembering something already
+out). Pull plot/comp details. Run `is_already_read(title, author)` in
+case of an ARC. Fit-check against the profile. If it's a series sequel,
+confirm the prior books are read in the log and open the series scope
+follow-up if scope is ambiguous. Add confirmed picks to the stretch
+section.
 
-**Step 2 — librarian-suggested upcoming releases.** Build the candidate
-pool from web search, prioritized by fit signal:
+#### Step 2 — librarian-suggested upcoming releases
+
+Build the candidate pool from web search, prioritized by fit signal.
+For each priority below, run at least one targeted search and one
+broader date-anchored search before treating any result as a candidate:
 
 1. **Author backlist hits** — upcoming books by authors in `five_star`
    and `all_favorites`. A new book by a 5-starred author is the
    strongest possible upcoming-release signal.
+   - Search: `[author] new book [current year]`,
+     `[author] upcoming` (filter results by date).
 2. **Sequels in unfinished sequential series** — pull `unfinished` from
    the log, search for announced next-book dates.
+   - Search: `[series name] book [N+1] release date`,
+     `[series name] next book`.
 3. **Comp-driven** — for `five_star` benchmarks, search "books like X"
    or "[author] influence" within upcoming-release roundups.
-4. **Genre-specific previews** — "best [genre] 2026" / "anticipated
-   [genre] releases" filtered by the reader's Step 3 genre goals.
+   - Search: `books like [title] [current year]`,
+     `if you liked [title] read in [current year+1]`.
+4. **Genre-specific previews** — "anticipated [genre] [current year]" /
+   "[genre] releases [current year+1]" filtered by the reader's Step 3
+   genre goals.
+   - Search: `most anticipated [genre] books [current year]`,
+     `[genre] book releases [current month-year]`.
 
 Run the candidate pool through the same checks as Phase 2: exclusion
-set, profile fit, recency-weighted negative signal. Present survivors
-as multiSelect `AskUserQuestion` checklists (3–4 per call) with the
-"Why It's For You" hook in the description and the release date +
-summary in the `preview` field.
+set, profile fit, recency-weighted negative signal, **and the
+release-date verification above**. Present survivors as multiSelect
+`AskUserQuestion` checklists (3–4 per call) with the "Why It's For You"
+hook in the description and the release date + source citation in the
+`preview` field.
 
 After-checklist behavior is identical to Phase 2 (selected → stretch
 section + series follow-ups; unselected → "not right now"; surprising
