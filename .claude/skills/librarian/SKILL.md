@@ -504,6 +504,20 @@ Counteract the bias deliberately:
   this one — promising on [signal X], worth a flier if you're feeling
   adventurous." Readers handle uncertainty fine when it's stated; what
   fails is silent omission.
+- **Lean on `goodreads_rating` + `goodreads_reviews` as a tie-breaker.**
+  Library.csv is authoritative for both fields and refreshed every
+  sync, so the numbers are current. Rough reading for low-confidence
+  picks:
+  - **≥4.3 with 1k+ reviews** → solid resonance; surface confidently.
+  - **≥4.3 with <500 reviews** → hidden-gem signal; call it out in the
+    description ("4.4 / 287 reviews — small audience, strong love").
+  - **3.8–4.2** → generic; let catalog signals decide.
+  - **<3.6** → soft skip unless `taste_signals.positive` overlaps
+    strongly with the reader's profile (some books are reliably
+    divisive in ways that match certain readers).
+  - **<100 reviews** → caution flag; sample may be too thin to mean
+    much. Note it when surfacing rather than treating the rating as
+    authoritative.
 - **Web-search to enrich indie picks before presenting.** A quick
   search for `title + author + "review"` fills in plot, comp, and tone
   gaps the catalog is thin on. Use the result in the `preview` field
