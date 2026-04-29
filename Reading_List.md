@@ -16,39 +16,48 @@ new/upcoming releases as stretch goals._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 7 |
-| Science Fiction | 22 | 2 |
+| Fantasy | 40 | 15 |
+| Science Fiction | 22 | 4 |
 | Horror | 11 | 0 |
 | Historical Fiction | 10 | 0 |
 | Nonfiction | 7 | 0 |
 | Literary Fiction | 5 | 0 |
 | Crime / Mystery / Thriller | 5 | 0 |
-| **Total** | **100** | **9** |
+| **Total** | **100** | **19** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 0 |
+| Standalone | 35 | 3 |
 | Short Series | 15 | 5 |
-| Long Series | 50 | 4 |
-| **Total** | **100** | **9** |
+| Long Series | 50 | 11 |
+| **Total** | **100** | **19** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
 | Classics | ~8 | 0 |
-| Indie | ~20 | 4 |
+| Indie | ~20 | 5 |
 
 ---
 
-## 1. Long Series
-
-_Series anchors and continuations._
+## 1. Long Series — anchors and continuations
 
 | # | Title | Author | Why It's For You |
 |---|---|---|---|
+| 1 | Of Blood and Fire **(I)** 🎧 | Ryan Cahill | Wishlist pick. Traditional high fantasy in the Tolkien/Jordan vein — your WoT love (5.0 across A Memory of Light, The Gathering Storm) is the clearest evidence this lands. Hopeful tone, dragon bonds, found-family trio. |
+| 2 | Of Darkness and Light **(I)** 🎧 | Ryan Cahill | Bound and Broken book 2. |
+| 3 | Of War and Ruin **(I)** 🎧 | Ryan Cahill | Bound and Broken book 3. |
+| 4 | Of Empires and Dust **(I)** 🎧 | Ryan Cahill | Bound and Broken book 4 — closes the main arc. |
+| 5 | Iron Gold ⭐⭐ 🎧 | Pierce Brown | Direct continuation. *Morning Star* just hit 5.0 (2/24). Layup. Tone shifts — decade later, the revolution is fracturing. |
+| 6 | A Little Hatred ⭐ 🎧 | Joe Abercrombie | Opens Age of Madness — your Abercrombie ratings climb (4 → 4.5 → 4.75 → 5). The next big arc in First Law World, decades after the original trilogy. |
+| 7 | The Lies of Locke Lamora ⭐ 🎧 | Scott Lynch | Heist crew, Venice-ish setting, found family, propulsive with grimdark edges. Plot moves and the prose has bite. |
+| 8 | Night Watch ⭐⭐ 🎧 | Terry Pratchett | The Discworld peak. You're hot on City Watch (Guards! 4.75/5.0, Men at Arms 4.25, Feet of Clay 4.25). Sam Vimes thrown back in time — darker, more contemplative than the early books. |
+| 9 | Hyperion 🎧 | Dan Simmons | Wishlist pick. Hugo-winning literary SF, Canterbury-Tales frame, theological/philosophical depth. **Risk:** denser than Sun Eater, but each pilgrim's tale shifts genre (one is straight horror, one military SF) which counteracts the slow-burn trap. *Canticle for Leibowitz* (4.75) is the parallel. |
+| 10 | The Fall of Hyperion 🎧 | Dan Simmons | Required follow-up; Hyperion ends on a cliffhanger. |
+| 11 | Tales of the Sun Eater, Volume 4 | Christopher Ruocchio | Last unread Sun Eater entry. Closes you out cleanly while we wait on the next main novel. |
 
 ## 2. Classics
 
@@ -82,24 +91,23 @@ _Series anchors and continuations._
 
 ## 8. Science Fiction & Fantasy
 
-### 8a. Epic Fantasy
+### 8a. Standalone Fantasy
 
 | # | Title | Author | Why It's For You |
 |---|---|---|---|
-| 1 | Of Blood and Fire **(I)** 🎧 | Ryan Cahill | Wishlist pick. Traditional high fantasy in the Tolkien/Jordan vein — your WoT love (5.0 across A Memory of Light, Gathering Storm) is the clearest evidence this lands. Hopeful tone, dragon bonds, found-family trio. Comfort tier at high quality. |
-| 2 | Of Darkness and Light **(I)** | Ryan Cahill | Bound and Broken book 2. Continuation. |
-| 3 | Of War and Ruin **(I)** | Ryan Cahill | Bound and Broken book 3. |
-| 4 | Of Empires and Dust **(I)** | Ryan Cahill | Bound and Broken book 4. Closes the main arc. |
-| 5 | Jade City 🎧 | Fonda Lee | Wishlist pick. ⭐⭐ near-automatic. *Best Served Cold* (5.0) + *Lions of Al-Rassan* (4.5) means Godfather-with-jade-warriors is built for you. Family saga, ruthless factions, propulsive multi-POV. |
-| 6 | Jade War 🎧 | Fonda Lee | Green Bone book 2. |
-| 7 | Jade Legacy 🎧 | Fonda Lee | Green Bone book 3 — closes the trilogy. |
+| 12 | Tigana ⭐⭐ | Guy Gavriel Kay | *Lions of Al-Rassan* (4.5) puts Kay in your pocket. Standalone literary epic; cultural-erasure premise hits the mythological-weight signal hard. Lyrical, elegiac, morally complex. |
+| 13 | The Sword of Kaigen ⭐⭐ **(I)** | M. L. Wang | Same author as *Blood Over Bright Haven* (5.0). Japanese-inspired military fantasy, family-and-honor saga, fast pacing, devastating. Standalone. |
+| 14 | The Heroes ⭐⭐ 🎧 | Joe Abercrombie | The other peak of First Law World after *Best Served Cold* (5.0). Three days, one hill, multi-POV battle. Same vein, fast pacing. |
 
-### 8b. Literary / Hard SF
+### 8b. Short Series Fantasy
 
 | # | Title | Author | Why It's For You |
 |---|---|---|---|
-| 8 | Hyperion 🎧 | Dan Simmons | Wishlist pick. Hugo-winning literary SF, frame-narrative à la Canterbury Tales, theological/philosophical depth. **Risk noted:** dense and slower than Sun Eater, but the pilgrim-frame structure means each tale shifts genre (one is straight horror, one military SF) — this should counteract the "slow burn" trap. *Canticle for Leibowitz* (4.75) and Sun Eater are the parallels. |
-| 9 | The Fall of Hyperion 🎧 | Dan Simmons | Required follow-up; Hyperion ends on a cliffhanger. |
+| 15 | Jade City ⭐⭐ 🎧 | Fonda Lee | Wishlist pick. Near-automatic. *Best Served Cold* (5.0) + *Lions of Al-Rassan* (4.5) means Godfather-with-jade-warriors is built for you. Family saga, ruthless factions, propulsive multi-POV. |
+| 16 | Jade War 🎧 | Fonda Lee | Green Bone book 2. |
+| 17 | Jade Legacy 🎧 | Fonda Lee | Green Bone book 3 — closes the trilogy. |
+| 18 | The Will of the Many ⭐ 🎧 | James Islington | Roman-influenced magic + dark academia + ancient mysteries. The catalog comps it close to Sun Eater's ambient texture; recent buzz is real. |
+| 19 | The Sword of the Lictor | Gene Wolfe | BotNS book 3, per your decision to push one more. Mountains, Severian on the run, the trilogy's mid-point. |
 
 ---
 
