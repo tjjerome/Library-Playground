@@ -11,7 +11,7 @@ Usage:
     python catalogue.py --library Library.csv --review-only  # reprocess needs_review entries
 
 Requirements:
-    pip install anthropic
+    pip install -r requirements.txt
     Must be run inside a Claude Code session — authenticates via the session
     ingress token at $CLAUDE_SESSION_INGRESS_TOKEN_FILE. Refuses to run if
     ANTHROPIC_API_KEY is set (to avoid accidental external billing).

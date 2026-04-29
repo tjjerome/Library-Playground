@@ -360,7 +360,7 @@ the session ingress token. It auto-loads the token from
 You don't need to export anything yourself — `python catalogue.py ...` will
 just work in a Claude Code session. If you see an auth error, check that
 `ANTHROPIC_API_KEY` isn't lingering in the environment from earlier work, and
-that `pip install anthropic` has been run.
+that `pip install -r requirements.txt` has been run.
 
 ### Running it in the background
 
