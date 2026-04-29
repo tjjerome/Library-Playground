@@ -4,6 +4,9 @@
     "CLAUDE_CODE_SUBAGENT_MODEL": "haiku"
   },
   "model": "sonnet",
+  "enabledPlugins": {
+    "caveman@caveman": false
+  },
   "extraKnownMarketplaces": {
     "caveman": {
       "source": {
@@ -11,8 +14,5 @@
         "repo": "JuliusBrussee/caveman"
       }
     }
-  },
-  "enabledPlugins": {
-    "caveman@caveman": true
   }
 }
