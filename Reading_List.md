@@ -17,23 +17,23 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 20 |
+| Fantasy | 40 | 25 |
 | Science Fiction | 20 | 4 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **55** |
+| **Total** | **100** | **60** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
 | Standalone | 35 | 27 |
-| Short Series | 15 | 8 |
-| Long Series | 50 | 20 |
-| **Total** | **100** | **55** |
+| Short Series | 15 | 10 |
+| Long Series | 50 | 23 |
+| **Total** | **100** | **60** |
 
 ### Miscellaneous Goals
 
@@ -61,7 +61,10 @@ new/upcoming releases as stretch._
 | 11 | Tales of the Sun Eater, Volume 4 | Christopher Ruocchio | Last unread Sun Eater entry. Closes you out cleanly while we wait on the next main novel. |
 | 51 | Chronicles of the Black Company ⭐⭐ 🎧 | Glen Cook | Grimdark ur-text and direct ancestor of Abercrombie's First Law (the line you're climbing 4→5). Mercenary company in service of a dark sorceress, morally grey ensemble, propulsive military fantasy. Omnibus = first 3 books; long arc runs 10. |
 | 52 | Assassin's Apprentice ⭐ 🎧 | Robin Hobb | Opens Realm of the Elderlings — 16-book mega-arc routinely named the genre's emotional peak. Slow-burn flagged honestly, but the emotional payoff is *Lions of Al-Rassan* (4.5) energy at scale. Long-series anchor. |
+| 56 | Royal Assassin 🎧 | Robin Hobb | Farseer book 2. Many readers' favorite — the political and emotional stakes ratchet hard. |
+| 57 | Assassin's Quest 🎧 | Robin Hobb | Farseer book 3. Closes the trilogy — the gut-punch the series is famous for. |
 | 53 | The Rage of Dragons ⭐ 🎧 | Evan Winter | African-inspired military fantasy with demon hunts and dragon riders. Propulsive, brutal, found-family core. The Burning trilogy (book 3 still pending — second-to-last entry available now). |
+| 58 | The Fires of Vengeance 🎧 | Evan Winter | The Burning book 2. Direct continuation — relentless pacing, expanded political scope. |
 
 ## 2. Classics
 
@@ -144,6 +147,8 @@ new/upcoming releases as stretch._
 | 18 | The Will of the Many ⭐ 🎧 | James Islington | Roman-influenced magic + dark academia + ancient mysteries. The catalog comps it close to Sun Eater's ambient texture; recent buzz is real. |
 | 19 | The Sword of the Lictor | Gene Wolfe | BotNS book 3, per your decision to push one more. Mountains, Severian on the run, the trilogy's mid-point. |
 | 54 | Red Sister ⭐⭐ | Mark Lawrence | Lawrence in your pocket via the Library trilogy + Returns/Overdue. Different mode entirely — lyrical grimdark, female-led: young Nona Grey enters a convent of warrior-nuns on a dying world. Coming-of-age + sisterhood + brutal violence. Book of the Ancestor trilogy. |
+| 59 | Grey Sister | Mark Lawrence | Book of the Ancestor 2. Nona's training deepens; the convent politics turn lethal. |
+| 60 | Holy Sister | Mark Lawrence | Book of the Ancestor 3. Closes the trilogy — the focus tightens to the dying world's last corridor of warmth. |
 | 55 | The Justice of Kings ⭐ 🎧 | Richard Swan | Recent (2022) grimdark — Imperial judge Sir Konrad Vonvalt + his clerk traverse a fading empire investigating heresy and political rot. Abercrombie-adjacent voice, tight pacing. Empire of the Wolf trilogy (now complete). |
 
 ---
