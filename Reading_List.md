@@ -31,8 +31,8 @@ new/upcoming releases as stretch._
 | Status | Goal | Current |
 |---|---|---|
 | Standalone | 35 | 28 |
-| Short Series | 15 | 13 |
-| Long Series | 50 | 28 |
+| Short Series | 16 | 16 |
+| Long Series | 49 | 25 |
 | **Total** | **100** | **69** |
 
 ### Miscellaneous Goals
@@ -65,11 +65,8 @@ new/upcoming releases as stretch._
 | 57 | Assassin's Quest 🎧 | Robin Hobb | Farseer book 3. Closes the trilogy — the gut-punch the series is famous for. |
 | 53 | The Rage of Dragons ⭐ 🎧 | Evan Winter | African-inspired military fantasy with demon hunts and dragon riders. Propulsive, brutal, found-family core. The Burning trilogy (book 3 still pending — second-to-last entry available now). |
 | 58 | The Fires of Vengeance 🎧 | Evan Winter | The Burning book 2. Direct continuation — relentless pacing, expanded political scope. |
-| 65 | Along the Razor's Edge ⭐⭐ **(I)** 🎧 | Rob J. Hayes | Opens The War Eternal — the God Eater series. Eskara Helsene, war-mage prisoner stripped of magic in a hellish underground prison, narrates her own ascent to power and infamy. First-person grimdark with an unreliable, morally grey, deeply unforgettable narrator. |
-| 66 | The Lessons Never Learned **(I)** 🎧 | Rob J. Hayes | War Eternal book 2. Eskara on the run; the body count climbs and the moral grey deepens. |
-| 67 | From Cold Ashes Risen **(I)** 🎧 | Rob J. Hayes | War Eternal book 3. Villainous-POV beats land hard — many call this the trilogy's peak. |
-| 68 | Sins of the Mother **(I)** 🎧 | Rob J. Hayes | War Eternal book 4. Generational fallout; Eskara as the legend others now hunt. |
-| 69 | Death's Beating Heart **(I)** 🎧 | Rob J. Hayes | War Eternal book 5 — closes the saga. |
+| 65 | Demon ⭐⭐ **(I)** 🎧 | Rob J. Hayes | Archive of the God Eater (Long Series). Grimdark prequel set 3,000 years before *Herald*. Dien Hostain's village is destroyed by demons; she's taken captive. Fierce female protagonist on a vengeance arc. |
+| 66 | Herald ⭐ **(I)** 🎧 | Rob J. Hayes | Age of the God Eater (Long Series). A thousand years after humanity killed God and drove the angels from Heaven, laundry girl Renira is thrust into the war when her blood proves to hold a dangerous secret. Heroic with dark edges. |
 
 ## 2. Classics
 
@@ -159,6 +156,9 @@ new/upcoming releases as stretch._
 | 61 | The Tyranny of Faith 🎧 | Richard Swan | Empire of the Wolf 2. Religious-political escalation; tone darkens, scope widens to imperial succession. |
 | 62 | The Trials of Empire 🎧 | Richard Swan | Empire of the Wolf 3. Closes the trilogy — horror-fantasy edge intensifies. |
 | 64 | Legacy of the Brightwash ⭐⭐ **(I)** | Krystle Matar | Industrial-revolution-era grimdark with literary depth — disgraced inspector investigates a child's murder while navigating a city's class system. Sword-of-Kaigen-tier quality from the indie scene. Tainted Dominion trilogy. |
+| 67 | Deathless **(I)** 🎧 | Rob J. Hayes | Annals of the God Eater (Short Series). Political prequel — aging King Ertide Hostain discovers cryptic notes from his dead father suggesting the empire's pact with Heaven was rewritten. Scheming, intricate, the deepest cut of the God Eater openers. |
+| 68 | The Way of Edan ⭐⭐ **(I)** | Philip Chase | The closest indie pick to your *Lions of Al-Rassan* (4.5) energy — lyrical, elegiac, epic. Sustained 2023–24 hype as the literary indie epic. The Edan Trilogy. |
+| 69 | Whispers of the Storm ⭐ **(I)** | Z. B. Steele | Hayes/Abercrombie sweet spot in a fresh voice — grimdark + lyrical + darkly comic. Recent indie hype. Song of the Damned series. |
 
 ---
 
