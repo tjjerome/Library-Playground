@@ -475,6 +475,48 @@ The phases below are **conversation pacing**, not a reading sequence.
 Surface high-confidence picks first to set the tone of the build; then
 keep the reader engaged through batches.
 
+### Surfacing obscure / indie / low-confidence picks
+
+Indie and obscure books in the catalog often carry **lower
+`confidence`**, sparser **`comparable_books`**, and thinner
+**`taste_signals`** — that's a function of less web-searchable material,
+not lower book quality. Without explicit counter-pressure the model
+quietly skips them in favor of safe High-confidence picks, which
+collapses the list into mainstream titles and starves the reader's
+indie goal.
+
+Counteract the bias deliberately:
+
+- **Confidence is metadata about the catalog, not the book.** A
+  Low-confidence indie that matches taste signals is just as valid a
+  pick as a High-confidence classic. Do **not** filter or rank
+  candidates by confidence.
+- **Honor the indie goal proportionally.** If the Step 3 indie goal is
+  15/100, then ~15% of every batch (≈1 in 4) should be an indie pick.
+  Track indie additions against goal in the goals-tracking table and
+  course-correct early if the count is lagging.
+- **Use `indie: true` as a candidate-pool dimension, not an
+  afterthought.** When building a batch, run a parallel filter for
+  indie matches against the same taste signals driving the rest of the
+  batch — don't just "add an indie at the end if you remember to."
+- **Frame low-confidence picks transparently.** In the checklist
+  `description`, surface the gap honestly: "Catalog data is thin on
+  this one — promising on [signal X], worth a flier if you're feeling
+  adventurous." Readers handle uncertainty fine when it's stated; what
+  fails is silent omission.
+- **Web-search to enrich indie picks before presenting.** A quick
+  search for `title + author + "review"` fills in plot, comp, and tone
+  gaps the catalog is thin on. Use the result in the `preview` field
+  so the reader sees something concrete, not just sparse metadata.
+- **Mark `(I)` consistently.** Already in the format spec — use it on
+  every indie pick so the reader sees distribution at a glance.
+
+If the data gap feels structural (lots of `needs_review` indies, or
+multiple compelling indie matches but every one is Low-confidence with
+empty taste_signals), point the reader at the cataloguer skill or
+`python catalogue.py --library Library.csv --review-only` to enrich
+those entries with fresh web search before continuing the build.
+
 ### Phase 1 — highest-confidence picks (8–12 books across 2–3 checklists)
 
 Open with picks where fit is so clear they're almost automatic. Split
