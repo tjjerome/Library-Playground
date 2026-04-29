@@ -19,21 +19,21 @@ new/upcoming releases as stretch._
 |---|---|---|
 | Fantasy | 39 | 39 |
 | Science Fiction | 21 | 21 |
-| Horror | 10 | 5 |
+| Horror | 10 | 7 |
 | Historical Fiction | 10 | 10 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **95** |
+| **Total** | **100** | **97** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 35 |
+| Standalone | 37 | 37 |
 | Short Series | 27 | 27 |
-| Long Series | 38 | 33 |
-| **Total** | **100** | **95** |
+| Long Series | 36 | 33 |
+| **Total** | **100** | **97** |
 
 ### Miscellaneous Goals
 
@@ -101,6 +101,8 @@ new/upcoming releases as stretch._
 | 22 | The Lesser Dead 🎧 | Christopher Buehlman | Vampire horror done *right* — direct corrective to *Interview With the Vampire*. Voice-driven, darkly comic, real menace. 1970s NYC, child vampires arrive. |
 | 23 | The Terror | Dan Simmons | Historical horror, Arctic Franklin Expedition, monstrous creature on the ice. ~784 pages — slow burn flagged honestly, but the historical grounding + ensemble + Simmons prose make it a BTF-cousin. Pairs with Hyperion in the Simmons rotation. |
 | 24 | The Hunger | Alma Katsu | Donner Party with supernatural creep. Historical horror crossover — also nudges your HistFic count. ~384 pages, tight by horror standards. |
+| 96 | The Fisherman ⭐⭐ | John Langan | The acclaimed cosmic horror novel of the last decade. Two widowers bond over fishing, then chase a story that becomes Lovecraftian on a different scale. Literary, melancholic, mythic. Pairs with *BTF* (5.0) energy in literary horror. |
+| 97 | The Reformatory ⭐⭐ 🎧 | Tananarive Due | Jim Crow Florida 1950s — a Black boy sent to a brutal reform school where he can see the ghosts of murdered children. Historical horror weaponized; deserves to be the new *Beloved*-of-the-genre. |
 
 ## 5. Crime / Mystery / Thriller
 
