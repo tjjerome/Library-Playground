@@ -136,13 +136,62 @@ def load_library(csv_path: str) -> list[dict]:
     return books
 
 
-def sync_library_to_catalog(books: list[dict], catalog: dict) -> int:
-    """Add pending stubs for any library books not yet in the catalog."""
+# Library.csv is the source of truth for these three fields. The cataloguer
+# never asks the LLM for them and never lets stale catalog values stand:
+# every sync re-applies whatever the CSV currently says.
+CSV_AUTHORITATIVE_FIELDS = ("pages", "goodreads_rating", "goodreads_reviews")
+
+
+def csv_authoritative_values(book: dict) -> dict:
+    """Pull pages / goodreads_rating / goodreads_reviews out of a CSV row.
+
+    Only fields the CSV actually provides are returned, so callers can
+    distinguish "CSV says this" from "CSV is silent" and leave existing
+    catalog values alone in the latter case.
+    """
+    out: dict = {}
+
+    pages = book.get("#pages")
+    if pages:
+        try:
+            out["pages"] = int(float(pages))
+        except (TypeError, ValueError):
+            pass
+
+    grvotes = book.get("#grvotes")
+    if grvotes:
+        try:
+            out["goodreads_reviews"] = int(float(grvotes))
+        except (TypeError, ValueError):
+            pass
+
+    # Goodreads rating lives inside the comma-joined identifiers field as
+    # "grrating:3.99" rather than its own column.
+    for piece in (book.get("identifiers") or "").split(","):
+        piece = piece.strip()
+        if piece.startswith("grrating:"):
+            try:
+                out["goodreads_rating"] = float(piece.split(":", 1)[1])
+            except ValueError:
+                pass
+            break
+
+    return out
+
+
+def sync_library_to_catalog(books: list[dict], catalog: dict) -> tuple[int, int]:
+    """Add stubs for new library books and re-apply CSV-authoritative fields.
+
+    Returns (added, refreshed): how many new pending stubs were created and
+    how many existing entries had a pages/goodreads field updated to match
+    the CSV.
+    """
     added = 0
+    refreshed = 0
     for book in books:
         key = book_key(book["title"], book["authors"])
+        csv_fields = csv_authoritative_values(book)
         if key not in catalog["entries"]:
-            pages_str = book.get("#pages", "").strip()
             catalog["entries"][key] = {
                 "title": book["title"],
                 "author": book["authors"],
@@ -165,10 +214,16 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> int:
                 "content_flags": [],
                 "confidence": None,
                 "research_source": None,
-                "pages": int(pages_str) if pages_str.isdigit() else None,
+                **csv_fields,
             }
             added += 1
-    return added
+        else:
+            entry = catalog["entries"][key]
+            for field, value in csv_fields.items():
+                if entry.get(field) != value:
+                    entry[field] = value
+                    refreshed += 1
+    return added, refreshed
 
 
 def get_book_csv_data(books: list[dict], key: str) -> dict:
@@ -363,10 +418,14 @@ def main():
         print(f"Error: no books found in {args.library}. Check CSV format.")
         sys.exit(1)
 
-    # Sync library
-    added = sync_library_to_catalog(books, catalog)
+    # Sync library — adds pending stubs for new books and re-applies CSV-authoritative
+    # fields (pages, goodreads_rating, goodreads_reviews) onto every existing entry.
+    added, refreshed = sync_library_to_catalog(books, catalog)
     if added:
         print(f"  Added {added} new pending entries from library.")
+    if refreshed:
+        print(f"  Refreshed {refreshed} CSV-authoritative field values on existing entries.")
+    if added or refreshed:
         save_catalog(catalog, args.catalog)
         save_index(catalog, args.index)
 
