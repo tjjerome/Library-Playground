@@ -249,20 +249,26 @@ at `catalogue.py` (Claude Code) for bulk cataloguing, or invoke the
 
 ## Step 2: Taste interview (if Profile.md is absent or stale)
 
-Keep it tight — **5–6 multiple-choice questions and 1–2 open-ended ones, no
-more.** Do not pile up prose questions; the reader gets tired. Auto-pull
-candidates from `Reading_Log.csv` so most questions can be multiple-choice
+**Minimum 5 multiple-choice questions; maximum 2 open-ended.** No upper
+bound on MC count — go deeper if the reader is engaged. The 2-Open
+ceiling is firm; prose questions pile up faster than they look.
+
+**Lead with at least 2 MC before any Open question.** Prose follow-ups
+land sharper when they can point at concrete picks the reader just made
+instead of abstract preferences.
+
+Auto-pull candidates from `Reading_Log.csv` so most questions can be MC
 against real titles, not abstract preferences.
 
-Suggested flow (every step labelled MC = `AskUserQuestion`, Open = prose):
+Suggested flow (each step labelled MC = `AskUserQuestion`, Open = prose):
 
 1. **MC, multiSelect** — "Which of your recent 5-star reads landed
    strongest?" Options: top 4–5 most recent ≥4.5-rated entries from the log.
-2. **Open** — "What made [their selections] work for you?" One pointed
-   open-ended question. Don't pile follow-ups; one answer is enough to
-   extract benchmark themes.
-3. **MC, multiSelect** — "Any recent reads that disappointed?" Options:
+2. **MC, multiSelect** — "Any recent reads that disappointed?" Options:
    bottom 3–4 most recent ≤3.0-rated entries from the log.
+3. **Open (pointed)** — "What made [their top picks] work, and what missed
+   in [their disappointments]?" One open-ended that leverages the previous
+   two MC selections. Skip if their picks already make the answer obvious.
 4. **MC** — "Audio vs. print split right now?"
    Options: "Mostly audio" / "Mostly print" / "Roughly 50/50" /
    "Depends on the book"
@@ -273,13 +279,13 @@ Suggested flow (every step labelled MC = `AskUserQuestion`, Open = prose):
    Options: "Commute / errands (audio)" / "Bedtime / wind-down" /
    "Dedicated reading time" / "Travel"
 7. **MC, multiSelect** — "Genres you want more of?" Run another
-   `AskUserQuestion` for additional candidates if the reader has more than
-   4 in mind.
+   `AskUserQuestion` if the reader has more than 4 candidates in mind.
 8. **Open (optional)** — "Any recent surprise — book or author you didn't
-   expect to click with?" Skip if the conversation has covered it.
+   expect to click with?" Skip if it's already come up.
 
-That's 6 MC + 1–2 Open. Don't add more prose unless the reader signals
-they want a deeper conversation.
+Add more MC questions if you want a sharper read on a specific axis
+(content flags to avoid, settings that pull them in, tone preferences,
+pacing tolerance). The 2-Open cap stays firm.
 
 Extract a profile covering positive indicators, negative indicators,
 benchmark books (3–5), preferred settings/genres, audio vs. print, and
@@ -371,36 +377,48 @@ separated section.
 
 ### Series handling
 
-**Default: pool the whole series.** A true sequential series counts as one
-entry, and the reader is committing the *series* to the TBR pool — they'll
-work through it as the mood strikes. Don't pitch "just book 1" reflexively;
-that wastes their pool slot on indecision.
+The default is to add the whole series to the pool — the reader is
+committing the *series* to TBR, not to reading every book in sequence.
+But how much of a series belongs in the pool depends on the series.
+**Use judgment.** Pull from the catalog when making the call:
+`series_status` for size, `taste_signals.negative` for divisiveness
+signals, `pacing` and `tone` for "does the back half drag" signals, and
+the reading log for series the reader has already started.
 
-Pitch **book 1 only** in three specific cases:
+Concrete examples of the kinds of judgment calls to make:
 
-- **Long series** (≈6+ books, or ~600k+ total words — Wheel of Time,
-  Malazan, Cradle, long Discworld arcs). The commitment is large enough
-  that one book's worth of testing is worth it. The rest can be added
-  later if book 1 lands.
-- **Polarizing series** where reactions reliably split (Gene Wolfe's
-  New Sun, R. Scott Bakker, Bakker-adjacent grimdark, dense litfic
-  series). Pull `taste_signals.negative` from the catalog as a check —
-  if any of those hit the reader's profile, treat as polarizing.
-- **Series the reader has already started but seems uncertain about** —
-  e.g. a low-rated entry already in the log, or an unfinished series
-  that's been dormant for a year+. Surface it as a "do you want to keep
-  going or drop it?" question.
+- **Three-Body Problem** (trilogy, ~600k words, consistently strong) —
+  add all three. The shape is the commitment; quality holds.
+- **Hyperion Cantos** (4 books) — add the first two (*Hyperion* + *The
+  Fall of Hyperion*). The Endymion duology that follows is divisive
+  enough that a tester gate belongs between book 2 and book 3, not at
+  book 1.
+- **Wheel of Time** (14 books, ~4M words) — add book 1 as a tester. A
+  multi-thousand-page commitment shouldn't go in based on enthusiasm
+  for the premise alone.
+- **Discworld** (41 books, loosely connected) — pick standout entries
+  that fit the reader's taste and add individually as standalones. Don't
+  bulk-add the shelf.
+- **Cosmere** (sprawling, interconnected) — depends on prior Sanderson
+  exposure. New to him: one tester. Already a fan: pull the next series
+  in their stated direction.
+- **Malazan** (10 books, dense, divisive) — book 1 as tester, with a
+  clear "you'll know after Gardens of the Moon whether the rest is for
+  you" frame.
 
-Use `AskUserQuestion` for the series decision in those edge cases:
+Use `AskUserQuestion` for the scope decision when there's a real choice
+to make. Tailor the options to the series:
 
-> Q: "How do you want to handle [series]?"
-> Options: "Add the whole series (Recommended)" / "Just book 1 as a
-> tester" / "Skip — not feeling it"
+> Q: "How do you want to handle the Hyperion Cantos?"
+> Options: "First two books (Recommended)" / "All four books" /
+> "Just book 1 as a tester" / "Skip"
+
+> Q: "How do you want to handle Wheel of Time?"
+> Options: "Book 1 as a tester (Recommended)" / "All 14 books" / "Skip"
 
 For **loosely connected series** (Poirot, Culture, Hainish, Discworld
 subseries, procedural mysteries), pick the standout entries that fit the
-reader's taste and add them individually as standalones. Don't bulk-add
-the whole shelf; the reader doesn't want 41 Discworld books in their pool.
+reader's taste and add them individually as standalones.
 
 Check the reading log for unfinished sequential series — the next unread
 entry is a strong default candidate, flagged as a continuation.
