@@ -195,7 +195,29 @@ new/upcoming releases as stretch._
 
 ## 9. New & Upcoming Releases (Stretch — up to 10)
 
-_Researched in Phase 4._
+_Phase 4 picks — read these if you finish the 100 ahead of schedule, or as they drop. Mix of committed-series continuations, new books from authors in pocket, and 2023–2025 buzz._
 
-| # | Title | Author | Status | Why It's For You |
+### Continuations of series in the list
+
+| # | Title | Author | Status / ETA | Why |
 |---|---|---|---|---|
+| S1 | **Red God** | Pierce Brown | Red Rising 7, series finale, expected 2026 | Closes the saga. With Iron Gold + Dark Age + Light Bringer in the main list, this is the bookend. Layup. |
+| S2 | **Sun Eater main novel 7** (untitled) | Christopher Ruocchio | Expected 2026 | Next after *Disquiet Gods*. Reader has finished the published main series; this is the natural continuation. |
+| S3 | **Empire of the Vampire 3** (untitled) | Jay Kristoff | Pending release | Closes the trilogy. With *Empire of the Vampire* (slot 69) committed, the third book completes the gothic vampire run. |
+| S4 | **Children of Strife** | Adrian Tchaikovsky | Children of Time book 4, in catalog | Continues the trilogy you took (slots 84-86). Expands the uplift framework. |
+| S5 | **Shadow of the Leviathan 3** (untitled) | Robert Jackson Bennett | Sequel to *A Drop of Corruption* (5.0 in your log) | You've read books 1+2 but neither is on the list — series clearly landed for you. Book 3 closes this arc; pending release. |
+
+### Authors-in-pocket new releases
+
+| # | Title | Author | Status / ETA | Why |
+|---|---|---|---|---|
+| S6 | **The Daughters' War** | Christopher Buehlman | Blacktongue Saga prequel (2024) | Buehlman in your pocket via *BTF* (5.0) + *Those Across the River* + *The Lesser Dead*. This is his most acclaimed since BTF — military fantasy prequel from the female lead's POV. |
+| S7 | **Service Model** | Adrian Tchaikovsky | Standalone (2024) | Robotic valet accidentally murders his master; wanders post-collapse world full of robots still trying to serve absent humans. Darkly comic, Kafkaesque. |
+| S8 | **Shroud** | Adrian Tchaikovsky | Standalone (2025) | First-contact survival on a moon shrouded in dark gas. Recent; Tchaikovsky's typical hard-SF inventiveness. |
+
+### Discovery / 2023–2025 buzz
+
+| # | Title | Author | Status / ETA | Why |
+|---|---|---|---|---|
+| S9 | **The MANIAC** | Benjamín Labatut | Standalone (2023), shortlisted for major prizes | Fictionalized triptych: Von Neumann's life, the birth of game theory and the bomb, then AlphaGo vs Lee Sedol. Reads like *When We Cease to Understand the World* (Labatut's prior) — historical-philosophical-SF hybrid that lands hard for ideas-readers. |
+| S10 | **Wandering Stars** | Tommy Orange | Standalone (2024), sequel to *There There* | Multigenerational Native American novel tracing a single family from the 1864 Sand Creek Massacre to present-day Oakland. The closest literary contemporary to *James* (4.75) energy from the last two years. |
