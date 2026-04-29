@@ -1,7 +1,7 @@
 # Reading List — 2026–2027
 
-_Curated for ~50 books/year over two years. 100 core picks + up to 10
-new/upcoming releases as stretch goals._
+_Curated for ~50 books/year over two years. 103 core picks (Crime
+target bumped from 5 to 8) + up to 10 new/upcoming releases as stretch._
 
 **Anchor:** Cahill's *Bound and Broken* + Discworld City Watch push
 (Sun Eater is caught up; next main novel will land in stretch).
@@ -22,23 +22,23 @@ new/upcoming releases as stretch goals._
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 0 |
-| Crime / Mystery / Thriller | 5 | 0 |
-| **Total** | **100** | **37** |
+| Crime / Mystery / Thriller | 8 | 8 |
+| **Total** | **103** | **45** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 19 |
-| Short Series | 15 | 5 |
-| Long Series | 50 | 13 |
-| **Total** | **100** | **37** |
+| Standalone | 35 | 22 |
+| Short Series | 15 | 6 |
+| Long Series | 53 | 17 |
+| **Total** | **103** | **45** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
-| Classics | ~8 | 1 |
+| Classics | ~8 | 3 |
 | Indie | ~20 | 5 |
 
 ---
@@ -90,6 +90,14 @@ new/upcoming releases as stretch goals._
 
 | # | Title | Author | Why It's For You |
 |---|---|---|---|
+| 38 | The Devotion of Suspect X ⭐⭐ | Keigo Higashino | Direct continuation of *Malice* (4.0). Higashino's most acclaimed: inverted mystery — you watch the cover-up and follow the duel between killer and detective. Cerebral and devastating. |
+| 39 | In the Woods ⭐ | Tana French | Dublin Murder Squad opener. Literary Irish crime — atmospheric, psychological, prose-driven. Note: French has an unreliable-narrator habit; the central mystery is famously unresolved. |
+| 40 | The Power of the Dog ⭐ | Don Winslow | Propulsive 30-year Mexican drug-war saga. Fast pacing — antidote to the slow-burn entries. Grimdark scope. |
+| 41 | Mystic River | Dennis Lehane | Boston, three childhood friends, atmospheric tragedy. Standalone, literary. |
+| 42 | The Spy Who Came in from the Cold | John le Carré | The anti-Bond — cynical, bleak, morally compromised Cold War spycraft. 1963 classic. |
+| 43 | Day of the Jackal ⭐ | Frederick Forsyth | 1971 procedural classic. Cold, clinical, propulsive — an unnamed assassin hired to kill de Gaulle while a French detective races to find him. Documentary realism. |
+| 44 | Slow Horses 🎧 | Mick Herron | Disgraced MI5 agents in dead-end exile under the repugnant Jackson Lamb. Darkly comic, propulsive, ensemble. Opens a beloved long series — pairs as tonal counterpoint to le Carré. |
+| 45 | The Maltese Falcon | Dashiell Hammett | The 1929 noir foundation text. Sam Spade, double-crosses, lean prose. Classics-tagged. |
 
 ## 6. Historical Fiction
 
