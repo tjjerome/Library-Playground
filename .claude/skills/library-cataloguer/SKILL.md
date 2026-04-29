@@ -190,8 +190,10 @@ This is non-negotiable when changes touch indexed fields (`title`, `author`,
 `series`, `series_status`, `primary_genre`, `comparable_books`) or when
 adding new entries. Wait for the reader's go-ahead before any write.
 
-If `AskUserQuestion` is not available in the session, say so explicitly to
-the reader before falling back to a yes/no prose question.
+`AskUserQuestion` is a deferred tool in Claude Code. If its schema isn't
+loaded yet, run `ToolSearch(query="select:AskUserQuestion", max_results=1)`
+once before calling it. If `ToolSearch` returns no match, the tool isn't
+available — say so to the reader and fall back to a prose yes/no.
 
 ### 3. Apply via Python — touch only the changed entries
 

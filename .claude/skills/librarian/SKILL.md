@@ -51,8 +51,19 @@ When you recommend a particular option, make it the first one and append
 **"(Recommended)"** to the label. Cap explicit options at 4; if you have
 more candidates, run another `AskUserQuestion` call.
 
-If the `AskUserQuestion` tool is not available in the current session, say
-so explicitly to the reader before falling back to prose.
+### `AskUserQuestion` is a deferred tool — load it once at session start
+
+In Claude Code, `AskUserQuestion`'s schema is not loaded by default. Before
+the first choice-shaped question (ideally as soon as the librarian skill
+activates), run:
+
+```
+ToolSearch(query="select:AskUserQuestion", max_results=1)
+```
+
+Once loaded, the tool stays callable for the rest of the session. If
+`ToolSearch` returns no match, the tool isn't available in this surface —
+say so explicitly to the reader before falling back to prose.
 
 ---
 

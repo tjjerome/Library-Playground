@@ -68,8 +68,22 @@ before writes. Reserve prose questions for genuinely open-ended interview
 prompts ("what made that book work for you?"). The tool always offers an
 "Other" free-text option, so the reader is never trapped.
 
-If `AskUserQuestion` isn't available in the current session, say so
-explicitly before falling back to prose.
+### Loading the AskUserQuestion schema (one-time per session)
+
+`AskUserQuestion` is a **deferred tool in Claude Code** — its schema is not
+loaded at session start. Before the first choice-shaped question, fetch the
+schema once:
+
+```
+ToolSearch(query="select:AskUserQuestion", max_results=1)
+```
+
+After that, the tool stays callable for the rest of the session. If
+`ToolSearch` returns no match for `AskUserQuestion`, the tool genuinely
+isn't available — say so to the reader and fall back to prose.
+
+You can do the load eagerly at session start (recommended for librarian
+sessions, since most steps need it) or lazily on first need.
 
 ## Memory bank
 
