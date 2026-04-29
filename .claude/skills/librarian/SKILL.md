@@ -60,6 +60,93 @@ This keeps the 9.4MB catalog out of the chat context — only matched entries en
 
 ---
 
+## Reading_Log.csv — interpreting the columns
+
+The reading log is the reader's history. Read it with `csv.DictReader` (it's only
+~80KB; loading it directly is fine). Columns and how to use them:
+
+| Column | Meaning | Notes |
+|--------|---------|-------|
+| `title` | Book title | |
+| `authors` | Author or comma-separated co-authors | |
+| `Last Date Read` | Date completed, format `M/D/YYYY` | Blank for older imports / DNFs / unfinished. Parse with `datetime.strptime(..., "%m/%d/%Y")`. |
+| `My Rating` | 0–5 rating with **quarter-point granularity** (3.25, 4.5, 4.75) | Blank means unrated — exclude from taste-signal analysis. |
+| `genre` | Reader's primary genre tag | May not match `primary_genre` in the catalog perfectly; treat as the reader's mental model. |
+| `series_type` | Standalone / Short Stories / Short Series / Long Series | Same vocabulary as the catalog. |
+| `my_tags` | **Authoritative** — curated content tags + status flags | See below. |
+| `goodreads_shelves` | Noisy auto-shelf list from Goodreads | Treat as low-signal. Use only as a fallback when `my_tags` is blank. |
+
+### my_tags status flags
+
+The reader uses asterisk-prefixed flags inside `my_tags`:
+
+- `*tbr` — to-be-read marker on a book they expect to start.
+- `*completed` — series complete (every entry read), or standalone closed out.
+
+Filter examples:
+
+```python
+import csv
+from datetime import datetime
+
+with open("Reading_Log.csv", encoding="utf-8") as f:
+    log = list(csv.DictReader(f))
+
+# Recent reads (have a date, parseable)
+def parse_date(s):
+    return datetime.strptime(s, "%m/%d/%Y") if s else None
+
+recent = sorted(
+    [r for r in log if parse_date(r["Last Date Read"])],
+    key=lambda r: parse_date(r["Last Date Read"]),
+    reverse=True,
+)
+
+# Highest/lowest recent rated reads — only those with both a date and a rating
+def rated(r):
+    return r["My Rating"].strip() and parse_date(r["Last Date Read"])
+
+scored = sorted(
+    [r for r in log if rated(r)],
+    key=lambda r: float(r["My Rating"]),
+)
+top_5 = scored[-5:]
+bottom_3 = scored[:3]
+
+# Unfinished series — Long/Short Series entries without *completed
+def has_flag(r, flag):
+    return any(t.strip() == flag for t in r["my_tags"].split(","))
+
+unfinished = [r for r in log
+              if r["series_type"] in ("Long Series", "Short Series")
+              and not has_flag(r, "*completed")]
+```
+
+### Using the log in recommendations
+
+- **Always cross-check** before recommending — never suggest a title already in
+  the log (any row with the matching title+author).
+- **Recent reads (last ~6 months) drive taste signals.** Older highly-rated
+  reads still matter, but recent dislikes are the strongest negative signal.
+- **Quarter-point ratings carry information.** A 4.75 means "almost a 5 but
+  something held it back" — worth probing in the taste interview. A 3.25 means
+  "competent but missed for me" — different from a 2.
+- **Unrated books with a date** = read but didn't bother rating. Often graphic
+  novels, comics, or filler — don't pull taste signals from them.
+- **Unfinished series:** if the next book in a series the reader liked is in
+  the library, it's a strong default candidate for the list (flag as a
+  continuation).
+- **`*tbr` items in the log** are wish-list signals — surface them in the
+  Step 4 wish-list pass.
+
+### Freshness check on the log
+
+The latest `Last Date Read` is the reader's most recent finished book. If that
+date is more than **4 months ago**, ask for an updated log before recommending
+(see Step 1).
+
+---
+
 ## Triage — match scope to the reader's ask
 
 Before running the full reading-list workflow, identify what the reader actually
