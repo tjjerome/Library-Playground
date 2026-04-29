@@ -568,15 +568,29 @@ def rank_comparables_with_claude(
         rankings = parse_ranking_response(raw)
 
         for source_key, candidate_keys in batch:
-            picked = rankings.get(source_key)
-            valid = (
-                isinstance(picked, list)
-                and len(picked) == COMPARABLES_CAP
-                and all(p in candidate_keys for p in picked)
-                and len(set(picked)) == COMPARABLES_CAP
-            )
-            if valid:
-                catalog["entries"][source_key]["comparable_books"] = list(picked)
+            # Accept Claude's response under either the exact source key or a
+            # normalize_key-equivalent variant. Same for picks against the
+            # candidate set — Claude occasionally drifts on smart quotes / dashes.
+            cand_canon = {normalize_key(c): c for c in candidate_keys}
+            picked_raw = rankings.get(source_key)
+            if picked_raw is None:
+                for rk, rv in rankings.items():
+                    if normalize_key(rk) == normalize_key(source_key):
+                        picked_raw = rv
+                        break
+
+            picked: list[str] = []
+            if isinstance(picked_raw, list):
+                for p in picked_raw[:COMPARABLES_CAP]:
+                    if not isinstance(p, str):
+                        continue
+                    canon = cand_canon.get(normalize_key(p))
+                    if canon is None or canon in picked:
+                        continue
+                    picked.append(canon)
+
+            if len(picked) == COMPARABLES_CAP:
+                catalog["entries"][source_key]["comparable_books"] = picked
                 ranked += 1
             else:
                 ranking_failures.append(source_key)
