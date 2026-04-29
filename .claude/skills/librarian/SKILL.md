@@ -34,8 +34,13 @@ Concrete trigger list — every one of these MUST go through `AskUserQuestion`:
   full series / standalones only).
 - Genre-goal collection during the goals conversation (`multiSelect: true`).
 - Series-status balance during the goals conversation.
-- Per-batch reviews at the end of each Step 6 batch (love it / swap one /
-  slow down).
+- **Per-batch list additions during Step 5 build (Phase 1 and Phase 2)** —
+  always a `multiSelect` checklist with a "Why It's For You" hook in the
+  description and optional fuller context in the `preview` field. Never
+  ask "want any of these?" in prose during the build.
+- Series scope follow-ups when a series entry is selected.
+- "What drew you to this one?" probes for surprising picks (single
+  follow-up, doesn't need to be prose).
 - Wish-list adoption decisions for individual titles (add / skip / tell me
   more first).
 - Audio vs print preference questions.
@@ -342,16 +347,81 @@ The phases below are **conversation pacing**, not a reading sequence.
 Surface high-confidence picks first to set the tone of the build; then
 keep the reader engaged through batches.
 
-### Phase 1 — highest-confidence picks (8–12 books)
+### Phase 1 — highest-confidence picks (8–12 books across 2–3 checklists)
 
-Open with the picks where fit is so clear they're almost automatic. Explain
-each specifically. Reader reacts before you continue.
+Open with picks where fit is so clear they're almost automatic. Split
+across 2–3 sequential `AskUserQuestion` checklist calls (3–4 books each)
+so the reader sees them as related groupings — by genre, by tone, by
+"long commitment vs. quick read" — not as one mega-list.
 
-### Phase 2 — batches of 4–6
+### Phase 2 — checklist batches of 3–4 picks
 
-Pause for reaction after each batch (use `AskUserQuestion`: "Love it" /
-"Swap one" / "Slow down"). Reader can accept, swap, or modify. Keep a
-running count toward 100.
+**Every batch is presented as a multiSelect `AskUserQuestion` checklist.**
+The user selects which books they want in the pool; unselected entries
+are deferred, not rejected.
+
+Call shape — one `AskUserQuestion` per batch, single multiSelect question,
+3–4 options (the AskUserQuestion ceiling). The option `description` carries
+a 1–2 sentence "Why It's For You" hook tied to the reader's profile or
+benchmarks. The optional `preview` field can carry fuller context (themes,
+tone, comparable_books from the catalog).
+
+```python
+AskUserQuestion(questions=[{
+    "question": "Which of these horror picks belong in your pool?",
+    "header": "Horror batch",
+    "multiSelect": True,
+    "options": [
+        {
+            "label": "Between Two Fires — Christopher Buehlman",
+            "description": "Cosmic horror in plague-era France; you rated "
+                           "Buehlman 5/5 already. Slow-burn dread with "
+                           "grimdark medieval imagery — comp for your "
+                           "Wolfe and Kay reads.",
+            "preview": "Themes: faith under siege, monstrous bureaucracy. "
+                       "Tone: lyrical grimdark. Comparable: A Canticle for "
+                       "Leibowitz, The Devils."
+        },
+        # ...up to 4 total per call
+    ]
+}])
+```
+
+### After each checklist batch
+
+1. **Selected books → add to the pool.** Edit `Reading_List.md` via the
+   Edit tool. Update the running count in the goals-tracking table.
+2. **Series entries among selections → fire the series scope follow-up
+   immediately.** One `AskUserQuestion` per selected series, with options
+   tailored to that series (see Series handling). Don't batch these —
+   each series needs a clear scope decision before moving on.
+3. **Unselected books are NOT a hard no — they become "not right now".**
+   Treat them as deferred: still eligible, can resurface in a later batch
+   if a related thread comes up. Don't drop them from your candidate set.
+   Don't prompt "did you mean to skip X?" — respect the silence.
+4. **Surprising selections → ask one pointed follow-up.** A surprising
+   pick is one that contradicts the reader's profile in a clear way:
+   - Picked a book whose `taste_signals.negative` overlaps strongly with
+     their stated positive indicators (e.g. they love fast pacing but
+     picked a slow burn).
+   - Picked a book in a genre they marked low-priority in goals.
+   - Picked a comp for a book they recently rated low in the log.
+   - Picked an indie when they said they prefer traditional, or vice versa.
+   - Picked a long-series entry after stating "standalones only".
+
+   Use ONE pointed follow-up — usually `AskUserQuestion` ("What drew you
+   to this one? — A fresh interest in [genre] / Specific recommendation /
+   Curious about the author / Other") or a single Open if genuinely
+   open-ended. The answer feeds back into `Profile.md` so future
+   recommendations sharpen. (Counts toward the 2-Open cap if you go
+   prose.)
+5. **Surprising rejections → stay quiet.** Don't interrogate every "not
+   right now" — most are mood-dependent. Only probe if the same *class*
+   of book has been rejected 2–3 times in a row, then ask once if
+   something specific is off about the framing.
+
+After each batch, summarise additions in chat in one line ("added 3 to
+the pool — total 14/100") and continue.
 
 ### Phase 3 — swap discussion at 100
 
