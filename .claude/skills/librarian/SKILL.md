@@ -306,9 +306,11 @@ Don't launch a full workflow on a small ask.
 
 Pull the entry from `Library_Catalog.json` via code execution. Give a focused
 1–3 paragraph answer: fit against the reader's profile, plot/tone summary,
-comparable_books from their library, and an audio note if relevant. Skip
-freshness checks. Skip the goals conversation. Don't build a list. If the
-reader follows up with a list-shaped ask, escalate then.
+comparable_books from their library, page count, and an audio note if
+relevant. **Always include the page count** — it's how the reader gauges
+whether they're in the mood for the length. Skip freshness checks. Skip
+the goals conversation. Don't build a list. If the reader follows up with
+a list-shaped ask, escalate then.
 
 ### Refine-existing-list mode
 
@@ -416,6 +418,7 @@ Before any recommendations, ask:
 For each wish-list item:
 - Look it up in the catalog via code execution. Assess fit honestly.
 - Confirm it's in the library and not already in the reading log.
+- **Surface the page count** as part of the fit assessment.
 - If it's a series entry, open a brief series-handling discussion.
 
 ---
@@ -454,8 +457,12 @@ short batch and don't ask the reader "have you read X?".
 Call shape — one `AskUserQuestion` per batch, single multiSelect question,
 3–4 options (the AskUserQuestion ceiling). The option `description` carries
 a 1–2 sentence "Why It's For You" hook tied to the reader's profile or
-benchmarks. The optional `preview` field can carry fuller context (themes,
-tone, comparable_books from the catalog).
+benchmarks **and ends with the page count from the catalog** (e.g.
+"… — 416 pages."). The `preview` field carries fuller context (themes,
+tone, comparable_books). **Page count is mandatory in the description
+for every recommended book.** It's a length signal the reader uses to
+decide what they're in the mood for. The only exception is Phase 4
+upcoming releases, where final page counts may not be published yet.
 
 ```python
 AskUserQuestion(questions=[{
@@ -468,7 +475,7 @@ AskUserQuestion(questions=[{
             "description": "Cosmic horror in plague-era France; you rated "
                            "Buehlman 5/5 already. Slow-burn dread with "
                            "grimdark medieval imagery — comp for your "
-                           "Wolfe and Kay reads.",
+                           "Wolfe and Kay reads. 432 pages.",
             "preview": "Themes: faith under siege, monstrous bureaucracy. "
                        "Tone: lyrical grimdark. Comparable: A Canticle for "
                        "Leibowitz, The Devils."
@@ -581,6 +588,14 @@ section into the main pool or read it directly.
 - **No duplicates.** Cross-check the reading log every time.
 - **Taste-matched.** Every pick connects to at least one positive indicator.
 - **Honest.** Flag both strong fits and meaningful concerns.
+- **Page count is mandatory.** Every recommended book in a checklist,
+  table, or single-book answer must show its `pages` value from the
+  catalog. Format as "N pages." in checklist descriptions; use a
+  dedicated Pages column in `Reading_List.md` tables. Two exceptions:
+  Phase 4 upcoming releases (final count may not be published yet),
+  and the rare entry where `pages` is null in the catalog (flag this
+  to the reader and offer to hand off to the cataloguer skill to
+  backfill rather than silently omitting).
 - **Specific.** "Why It's For You" must reference the reader's profile, benchmarks,
   or known ratings — never generic praise.
 - **Indie visibility.** Mark indie books with **(I)**.
@@ -652,7 +667,7 @@ Sections (use whichever apply):
 - Science Fiction & Fantasy (with subsections)
 - New & Upcoming Releases (stretch — separate)
 
-Format: `| Title | Author | Why It's For You |` — drop the `#` column so
+Format: `| Title | Author | Pages | Why It's For You |` — drop the `#` column so
 the table doesn't read as a numbered reading queue. Add 🎧 and **(I)** as
 appropriate. Use ⭐ for strong fits, ⭐⭐ for absolute must-reads,
 sparingly. The running count toward 100 lives in the goals-tracking table

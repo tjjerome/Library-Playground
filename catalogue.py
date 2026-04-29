@@ -142,6 +142,7 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> int:
     for book in books:
         key = book_key(book["title"], book["authors"])
         if key not in catalog["entries"]:
+            pages_str = book.get("#pages", "").strip()
             catalog["entries"][key] = {
                 "title": book["title"],
                 "author": book["authors"],
@@ -163,7 +164,8 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> int:
                 "audio_notes": None,
                 "content_flags": [],
                 "confidence": None,
-                "research_source": None
+                "research_source": None,
+                "pages": int(pages_str) if pages_str.isdigit() else None,
             }
             added += 1
     return added
