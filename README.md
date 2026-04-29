@@ -9,11 +9,19 @@ Designed to run in **Claude Code** without requiring human approval between chun
 
 ## Setup
 
-Claude Code sets `ANTHROPIC_API_KEY` automatically. If running outside Claude Code:
+This script only authenticates via the Claude Code session ingress token —
+running it outside Claude Code is not supported.
+
+`catalogue.py` reads the token from the file pointed to by
+`$CLAUDE_SESSION_INGRESS_TOKEN_FILE` (which Claude Code sets automatically) and
+exits with a clear error if either:
+
+- `$CLAUDE_SESSION_INGRESS_TOKEN_FILE` is unset or missing, or
+- `$ANTHROPIC_API_KEY` is set (it must be unset so it can't accidentally be used).
 
 ```bash
-export ANTHROPIC_API_KEY=your_key_here
 pip install anthropic
+python catalogue.py --library Library.csv
 ```
 
 ---

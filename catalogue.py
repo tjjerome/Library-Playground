@@ -12,7 +12,9 @@ Usage:
 
 Requirements:
     pip install anthropic
-    ANTHROPIC_API_KEY must be set (Claude Code handles this automatically)
+    Must be run inside a Claude Code session — authenticates via the session
+    ingress token at $CLAUDE_SESSION_INGRESS_TOKEN_FILE. Refuses to run if
+    ANTHROPIC_API_KEY is set (to avoid accidental external billing).
 """
 
 import argparse
@@ -461,14 +463,21 @@ def main():
     import anthropic
     from catalogue_prompts import build_system_prompt
 
-    # Support Claude Code OAuth when no API key is set
-    if not os.environ.get("ANTHROPIC_API_KEY") and not os.environ.get("ANTHROPIC_AUTH_TOKEN"):
-        creds_path = Path.home() / ".claude" / ".credentials.json"
-        if creds_path.exists():
-            with open(creds_path) as _f:
-                _tok = json.load(_f).get("claudeAiOauth", {}).get("accessToken", "")
-            if _tok:
-                os.environ["ANTHROPIC_AUTH_TOKEN"] = _tok
+    # Auth: only the Claude Code session ingress token is supported.
+    token_file = os.environ.get("CLAUDE_SESSION_INGRESS_TOKEN_FILE")
+    if not token_file or not Path(token_file).is_file():
+        print(
+            "Error: CLAUDE_SESSION_INGRESS_TOKEN_FILE is not set or does not point "
+            "to a readable file. This script must run inside a Claude Code session."
+        )
+        sys.exit(1)
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        print(
+            "Error: ANTHROPIC_API_KEY is set. Unset it — this script only authenticates "
+            "via the Claude Code session token."
+        )
+        sys.exit(1)
+    os.environ["ANTHROPIC_AUTH_TOKEN"] = Path(token_file).read_text().strip()
     client = anthropic.Anthropic()
     system = build_system_prompt()
 

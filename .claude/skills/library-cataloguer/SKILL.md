@@ -327,6 +327,40 @@ Run the script directly for anything bulk:
 If the reader is adding more than ~10 books, sync the CSV first and run the
 script — chat-by-chat editing past that scale is wasteful.
 
+### Authentication for catalogue.py
+
+The script must run inside a Claude Code session and authenticates only via
+the session ingress token. It auto-loads the token from
+`$CLAUDE_SESSION_INGRESS_TOKEN_FILE` and refuses to run if either:
+
+- `$CLAUDE_SESSION_INGRESS_TOKEN_FILE` is unset or missing, or
+- `$ANTHROPIC_API_KEY` is set (must be unset so it can't accidentally bill an
+  external account).
+
+You don't need to export anything yourself — `python catalogue.py ...` will
+just work in a Claude Code session. If you see an auth error, check that
+`ANTHROPIC_API_KEY` isn't lingering in the environment from earlier work, and
+that `pip install anthropic` has been run.
+
+### Running it in the background
+
+Bulk runs can take 30–60 minutes and hit Anthropic TPM limits after roughly
+30–50 chunks per session. Launch via Bash with `run_in_background: true` and
+arm a Monitor on the output file with a filter like:
+
+```
+grep -E --line-buffered "Saved|Cataloguing complete|consecutive chunk failures|Error|Traceback|RateLimit"
+```
+
+On each `Saved → Library_Catalog.json` event, commit and push progress with a
+message like `Update catalog progress to X% (N/total entries)`. If the script
+exits with `3 consecutive chunk failures` (exit code 1), that's expected
+rate-limit saturation — commit, then start it again. The script skips
+already-complete entries on every pass, so re-runs are safe and cheap.
+
+**Don't tune `chunk_size`, `MODEL`, or `RATE_LIMIT_DELAY` to work around rate
+limits without asking the reader first.**
+
 ---
 
 ## Tone
