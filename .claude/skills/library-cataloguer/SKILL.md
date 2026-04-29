@@ -103,6 +103,58 @@ Print only what you need. Never dump the full file.
 
 ---
 
+## Quality bar for "complete" entries
+
+A `complete` catalog entry needs enough signal to drive taste-matched
+recommendations. The librarian uses `comparable_books`, `taste_signals`,
+and `tone`/`pacing` to score candidates — sparse data on these
+dimensions means the entry gets silently de-prioritized at recommendation
+time, even when it would otherwise be a great fit. Don't mark
+`complete` unless the entry meets all of:
+
+- `summary` is at least one full sentence (≥50 chars).
+- `tone`, `pacing`, `setting` filled in.
+- **≥3 `comparable_books`**, and every comp must be a real library
+  entry (cross-check against `Library_Index.json` keys before saving —
+  irrelevant comps are worse than none).
+- **≥2 `taste_signals.positive`**.
+- **≥1 `taste_signals.negative`** (every book has limits; "no negatives"
+  is the model dodging, not a real signal).
+- `audio_suitability` set.
+
+If you can't meet the bar even after web search → set
+`status: needs_review` rather than `complete`. The librarian knows how
+to surface `needs_review` entries with appropriate framing; it won't
+get the same value from a half-filled `complete` entry that's masquerading
+as ready.
+
+### Extra rigor for indie books
+
+`indie: true` entries deserve **more** web search effort, not less.
+They're harder to find data on AND they're the picks the librarian
+most needs help surfacing — so a weak indie entry disproportionately
+hurts recommendations. The librarian skill has explicit counter-pressure
+to surface indies; that pressure goes nowhere if the catalog data is
+empty.
+
+When cataloguing an indie:
+
+1. **Web-search first** with `title + author + "review"` and
+   `title + author + "comp" / "similar to"` if confidence isn't
+   immediately High from training.
+2. **Use Goodreads metadata as audience signal.** `goodreads_rating`
+   and `goodreads_reviews` are CSV-authoritative; pull them in before
+   search to set expectations (low review count → expect thinner web
+   data).
+3. **Cross-check comparable_books against the library index.** Drop any
+   comp that isn't a real key in `Library_Index.json`.
+4. **If web search comes up dry**, set `status: needs_review` and add
+   an `audit.flags` entry: `{"field": "research", "severity": "note",
+   "reason": "Indie with limited public reviews; needs reader input"}`
+   so the gap is visible.
+
+---
+
 ## In-chat workflows
 
 ### Single book lookup
