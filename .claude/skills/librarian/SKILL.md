@@ -182,37 +182,46 @@ replacement from the candidate pool. Never offer it.
 
 ### Other useful filters
 
+Ratings cap at 5 with quarter-point granularity. Use **thresholds**, not
+top-N — the reader can have many 5-stars. The full set of favorites (and
+the full set of dislikes) is what drives recommendations.
+
 ```python
 def parse_date(s):
     return datetime.strptime(s, "%m/%d/%Y") if s else None
 
-# Recent reads (drives sharper taste signals — see below)
+def parse_rating(r):
+    s = r["My Rating"].strip()
+    return float(s) if s else None
+
+# Favorites — every entry the reader rated highly, regardless of date.
+# These are the benchmark pool. Use comparable_books and
+# taste_signals.positive overlap with these to score recommendations.
+five_star = [r for r in log if parse_rating(r) == 5.0]                 # strongest tier
+all_favorites = [r for r in log if (parse_rating(r) or 0) >= 4.5]      # strong positives
+
+# Dislikes — every entry the reader rated low. The strict pool is the
+# clearest "this didn't work" signal; the soft pool catches "competent
+# but missed for me" reads (3.0 and below) which still carry signal,
+# especially when patterns repeat.
+all_dislikes = [r for r in log if 0 < (parse_rating(r) or 0) <= 2.5]   # strict — strong negatives
+soft_dislikes = [r for r in log if 0 < (parse_rating(r) or 0) <= 3.0]  # broader — pattern-detection
+
+# Recent reads (used for sharper interview prompts and for negative
+# recency-weighting — see "Using the log" below)
 recent = sorted(
     [r for r in log if parse_date(r["Last Date Read"])],
     key=lambda r: parse_date(r["Last Date Read"]),
     reverse=True,
 )
 
-# All-time top reads — pull regardless of date. These are benchmark
-# anchors, not just historical context.
-def has_rating(r):
-    return r["My Rating"].strip()
+def rated_recently(r):
+    return parse_rating(r) is not None and parse_date(r["Last Date Read"])
 
-all_time_top = sorted(
-    [r for r in log if has_rating(r)],
-    key=lambda r: float(r["My Rating"]),
-    reverse=True,
-)[:20]
-
-# Recent rated reads (for the taste interview's MC questions)
-def rated(r):
-    return has_rating(r) and parse_date(r["Last Date Read"])
-
-scored_recent = sorted(
-    [r for r in log if rated(r)],
-    key=lambda r: parse_date(r["Last Date Read"]),
-    reverse=True,
-)
+recent_favorites = [r for r in log
+                    if rated_recently(r) and (parse_rating(r) or 0) >= 4.5]
+recent_dislikes = [r for r in log
+                   if rated_recently(r) and 0 < (parse_rating(r) or 0) <= 2.5]
 
 # Unfinished series — Long/Short Series without *completed
 def has_flag(r, flag):
@@ -229,15 +238,26 @@ unfinished = [r for r in log
   `is_already_read(title, author)` first. A book in the log — at any
   date, with or without a rating — is disqualified. Drop silently and
   pull a replacement; never offer it as a "have you read this?" prompt.
-- **Past favorites are real signal.** Pull `all_time_top` (top 20-ish
-  ratings regardless of date) as benchmark anchors — these are the
-  reader's strongest taste evidence. Use them to find catalog entries
-  with overlapping `comparable_books` or `taste_signals.positive`.
-  Recency biases the *interview* prompts (recent reads = better
-  conversation hooks), not the recommendation engine.
-- **Recent dislikes are the sharpest negative signal.** A recent ≤3.0
-  read tells you what's currently *not* working better than an old one
-  does — tastes drift.
+- **The whole favorites pool is benchmark evidence.** Pull
+  `all_favorites` (≥4.5 stars, every era) and weight `five_star` even
+  more heavily — these are the reader's clearest taste signal. Use
+  overlap with `comparable_books` and `taste_signals.positive` in the
+  catalog to score recommendations. Don't truncate to "top 20" or any
+  fixed N; the reader has many 5-stars and all of them count.
+- **The whole dislikes pool is also evidence.** Pull `all_dislikes`
+  (≤2.5 stars, every era) and check candidates against their themes,
+  tone, settings, and `taste_signals.negative`. Recurring negative
+  patterns (multiple disliked books with the same trope) are strong
+  "avoid this" signals.
+- **Recency biases the conversation, not the engine.** Recent reads
+  surface in the *interview* prompts because they make sharper
+  conversation hooks ("you just gave Morning Star a 5 — what hit?").
+  But the recommendation engine itself uses the full favorites and
+  dislikes pools, not just recent ones.
+- **Recent dislikes do get extra negative weight.** Tastes drift, and
+  a 2-star read from last month is a sharper "currently not working"
+  signal than a 2-star from five years ago. Use `recent_dislikes` as
+  a tie-breaker when a candidate is borderline.
 - **Quarter-point ratings carry information.** A 4.75 means "almost a 5
   but something held it back" — worth probing in the taste interview.
   A 3.25 means "competent but missed for me" — different from a 2.
