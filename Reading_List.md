@@ -17,30 +17,30 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 28 |
+| Fantasy | 40 | 29 |
 | Science Fiction | 20 | 4 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **63** |
+| **Total** | **100** | **64** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
 | Standalone | 35 | 28 |
-| Short Series | 15 | 12 |
+| Short Series | 15 | 13 |
 | Long Series | 50 | 23 |
-| **Total** | **100** | **63** |
+| **Total** | **100** | **64** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
 | Classics | ~8 | 5 |
-| Indie | ~20 | 6 |
+| Indie | ~20 | 7 |
 
 ---
 
@@ -153,6 +153,7 @@ new/upcoming releases as stretch._
 | 55 | The Justice of Kings ⭐ 🎧 | Richard Swan | Recent (2022) grimdark — Imperial judge Sir Konrad Vonvalt + his clerk traverse a fading empire investigating heresy and political rot. Abercrombie-adjacent voice, tight pacing. Empire of the Wolf trilogy (now complete). |
 | 61 | The Tyranny of Faith 🎧 | Richard Swan | Empire of the Wolf 2. Religious-political escalation; tone darkens, scope widens to imperial succession. |
 | 62 | The Trials of Empire 🎧 | Richard Swan | Empire of the Wolf 3. Closes the trilogy — horror-fantasy edge intensifies. |
+| 64 | Legacy of the Brightwash ⭐⭐ **(I)** | Krystle Matar | Industrial-revolution-era grimdark with literary depth — disgraced inspector investigates a child's murder while navigating a city's class system. Sword-of-Kaigen-tier quality from the indie scene. Tainted Dominion trilogy. |
 
 ---
 
