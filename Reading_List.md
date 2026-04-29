@@ -18,28 +18,28 @@ new/upcoming releases as stretch._
 | Genre | Goal | Current |
 |---|---|---|
 | Fantasy | 39 | 39 |
-| Science Fiction | 21 | 18 |
+| Science Fiction | 21 | 21 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **88** |
+| **Total** | **100** | **91** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 32 |
+| Standalone | 35 | 33 |
 | Short Series | 27 | 27 |
-| Long Series | 38 | 29 |
-| **Total** | **100** | **88** |
+| Long Series | 38 | 31 |
+| **Total** | **100** | **91** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
-| Classics | ~8 | 6 |
+| Classics | ~8 | 7 |
 | Indie | ~20 | 17 |
 
 ---
@@ -57,6 +57,8 @@ new/upcoming releases as stretch._
 | 77 | Light Bringer ⭐⭐ 🎧 | Pierce Brown | Red Rising 6. Closes the second arc; book 7 still pending release. |
 | 78 | Leviathan Wakes ⭐⭐ 🎧 | James S. A. Corey | Expanse anchor — 9 books complete. Corey's voice known via *Mercy of Gods*. Propulsive space-opera-meets-noir; ensemble that grows. |
 | 79 | The Three-Body Problem ⭐ 🎧 | Liu Cixin | Hugo winner. Hard SF, Cultural Revolution opening, escalates to civilizational stakes. First contact with deep ideas. Remembrance of Earth's Past trilogy. |
+| 89 | Endymion 🎧 | Dan Simmons | Hyperion Cantos book 3. Centuries after the first duology — Raul Endymion sent to protect a child who may save what's left of the human universe. |
+| 90 | The Rise of Endymion 🎧 | Dan Simmons | Hyperion Cantos book 4. Closes the saga. |
 | 6 | A Little Hatred ⭐ 🎧 | Joe Abercrombie | Opens Age of Madness — your Abercrombie ratings climb (4 → 4.5 → 4.75 → 5). The next big arc in First Law World, decades after the original trilogy. |
 | 7 | The Lies of Locke Lamora ⭐ 🎧 | Scott Lynch | Heist crew, Venice-ish setting, found family, propulsive with grimdark edges. Plot moves and the prose has bite. |
 | 8 | Night Watch ⭐⭐ 🎧 | Terry Pratchett | The Discworld peak. You're hot on City Watch (Guards! 4.75/5.0, Men at Arms 4.25, Feet of Clay 4.25). Sam Vimes thrown back in time — darker, more contemplative than the early books. |
@@ -148,6 +150,7 @@ new/upcoming releases as stretch._
 | 81 | Anathem ⭐ 🎧 | Neal Stephenson | Philosophical SF — monks of mathematics in a cloistered alternate world react to first contact. Distinctive, long, idea-saturated. Your Sun Eater density tolerance puts this in range. |
 | 83 | Cat's Cradle ⭐⭐ 🎧 | Kurt Vonnegut Jr. | Top-tier Vonnegut, SF-tagged. Ice-nine, Bokononism, the end of the world played for dark satirical laughs. Direct continuation of the *Slaughterhouse-Five* (5.0) + *Mother Night* (slot 46) thread. |
 | 87 | Roadside Picnic ⭐⭐ | Strugatsky brothers | 1972 Soviet SF classic — short, dense, devastating. The Zone is alien-contaminated land humans loot for incomprehensible artifacts; "stalkers" make their living running incursions. The source novel for *Stalker* and the *S.T.A.L.K.E.R.* games. Counts toward Classics. |
+| 91 | The Stars My Destination ⭐ | Alfred Bester | 1956 SF classic — Gully Foyle, marooned in space, abandoned by a passing ship, rebuilds himself into an instrument of revenge. Edmond-Dantès-in-space; propulsive (~250p); often credited as cyberpunk's structural DNA. Counts toward Classics. |
 
 ### 8b. Short Series Fantasy
 
