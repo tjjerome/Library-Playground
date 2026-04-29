@@ -249,19 +249,43 @@ at `catalogue.py` (Claude Code) for bulk cataloguing, or invoke the
 
 ## Step 2: Taste interview (if Profile.md is absent or stale)
 
-Conduct a friendly interview of at least 5 questions:
+Keep it tight — **5–6 multiple-choice questions and 1–2 open-ended ones, no
+more.** Do not pile up prose questions; the reader gets tired. Auto-pull
+candidates from `Reading_Log.csv` so most questions can be multiple-choice
+against real titles, not abstract preferences.
 
-- 3–5 highest-rated recent reads — what made them work?
-- 2–3 lowest-rated recent reads — why didn't they land?
-- Genres actively exploring or wanting more of?
-- Format preferences (audio vs. print) and series-length appetite?
-- Reading pace and primary contexts (commute, bedtime, etc.)?
-- Recent surprises — authors or series you didn't expect to love?
+Suggested flow (every step labelled MC = `AskUserQuestion`, Open = prose):
 
-Extract a profile covering positive indicators, negative indicators, benchmark books
-(3–5), preferred settings/genres, audio vs. print, and series-length appetite.
-Write the updated `Profile.md` to the repo. If one already exists, show a
-brief summary of what's changing and confirm before overwriting.
+1. **MC, multiSelect** — "Which of your recent 5-star reads landed
+   strongest?" Options: top 4–5 most recent ≥4.5-rated entries from the log.
+2. **Open** — "What made [their selections] work for you?" One pointed
+   open-ended question. Don't pile follow-ups; one answer is enough to
+   extract benchmark themes.
+3. **MC, multiSelect** — "Any recent reads that disappointed?" Options:
+   bottom 3–4 most recent ≤3.0-rated entries from the log.
+4. **MC** — "Audio vs. print split right now?"
+   Options: "Mostly audio" / "Mostly print" / "Roughly 50/50" /
+   "Depends on the book"
+5. **MC** — "Series-length appetite for the next two years?"
+   Options: "Standalones only" / "Standalones + short series (Recommended)"
+   / "Open to one or two long-series commitments" / "Bring on the long ones"
+6. **MC, multiSelect** — "Reading contexts that matter most?"
+   Options: "Commute / errands (audio)" / "Bedtime / wind-down" /
+   "Dedicated reading time" / "Travel"
+7. **MC, multiSelect** — "Genres you want more of?" Run another
+   `AskUserQuestion` for additional candidates if the reader has more than
+   4 in mind.
+8. **Open (optional)** — "Any recent surprise — book or author you didn't
+   expect to click with?" Skip if the conversation has covered it.
+
+That's 6 MC + 1–2 Open. Don't add more prose unless the reader signals
+they want a deeper conversation.
+
+Extract a profile covering positive indicators, negative indicators,
+benchmark books (3–5), preferred settings/genres, audio vs. print, and
+series-length appetite. Write the updated `Profile.md` to the repo. If
+one already exists, show a brief summary of what's changing and confirm
+before overwriting.
 
 ---
 
@@ -302,20 +326,31 @@ For each wish-list item:
 
 ## Step 5: Build the list incrementally — never dump 100 at once
 
+**The list is a TBR pool, not a reading order.** The reader pulls from it
+based on mood. Don't sequence picks; don't worry about flow between
+adjacent entries; don't imply that the order in `Reading_List.md` is the
+order to read in. Each pick stands alone — the "Why It's For You" hook
+exists so the reader feels pulled toward the book in a moment.
+
+The phases below are **conversation pacing**, not a reading sequence.
+Surface high-confidence picks first to set the tone of the build; then
+keep the reader engaged through batches.
+
 ### Phase 1 — highest-confidence picks (8–12 books)
 
-Open with the picks where fit is so clear they're almost automatic. Explain each
-specifically, then discuss before continuing.
+Open with the picks where fit is so clear they're almost automatic. Explain
+each specifically. Reader reacts before you continue.
 
 ### Phase 2 — batches of 4–6
 
-Pause for reaction after each batch. Reader can accept, swap, or modify. Keep a
+Pause for reaction after each batch (use `AskUserQuestion`: "Love it" /
+"Swap one" / "Slow down"). Reader can accept, swap, or modify. Keep a
 running count toward 100.
 
 ### Phase 3 — swap discussion at 100
 
-Once 100 are added, pause: any reservations, anything missing, does the category
-balance match goals? Make agreed swaps.
+Once 100 are in the pool, pause: any reservations, anything missing, does
+the category balance match goals? Make agreed swaps.
 
 ### Phase 4 — new and upcoming releases (up to 10)
 
@@ -336,29 +371,63 @@ separated section.
 
 ### Series handling
 
-A true sequential series counts as one entry (present book 1 as the entry point).
-A loosely connected series can give a single-book entry — flag that more exist and
-offer to add. When a series is selected, ask: how many books, sequential or
-dip-in, commit now or try book 1 first?
+**Default: pool the whole series.** A true sequential series counts as one
+entry, and the reader is committing the *series* to the TBR pool — they'll
+work through it as the mood strikes. Don't pitch "just book 1" reflexively;
+that wastes their pool slot on indecision.
 
-Check the reading log for unfinished series — the next book is eligible as a
-continuation entry.
+Pitch **book 1 only** in three specific cases:
 
-### List structure
+- **Long series** (≈6+ books, or ~600k+ total words — Wheel of Time,
+  Malazan, Cradle, long Discworld arcs). The commitment is large enough
+  that one book's worth of testing is worth it. The rest can be added
+  later if book 1 lands.
+- **Polarizing series** where reactions reliably split (Gene Wolfe's
+  New Sun, R. Scott Bakker, Bakker-adjacent grimdark, dense litfic
+  series). Pull `taste_signals.negative` from the catalog as a check —
+  if any of those hit the reader's profile, treat as polarizing.
+- **Series the reader has already started but seems uncertain about** —
+  e.g. a low-rated entry already in the log, or an unfinished series
+  that's been dormant for a year+. Surface it as a "do you want to keep
+  going or drop it?" question.
 
-Organize confirmed picks into sections:
-1. Long Series
-2. Classics
-3. Nonfiction (by subcategory)
-4. Horror
-5. Crime / Mystery / Thriller
-6. Historical Fiction
-7. Literary Fiction
-8. Science Fiction & Fantasy (with subsections)
-9. New & Upcoming Releases (stretch)
+Use `AskUserQuestion` for the series decision in those edge cases:
 
-Format: `| # | Title | Author | Why It's For You |` — add 🎧 and **(I)** as
-appropriate. Use ⭐ for strong fits, ⭐⭐ for absolute must-reads, sparingly.
+> Q: "How do you want to handle [series]?"
+> Options: "Add the whole series (Recommended)" / "Just book 1 as a
+> tester" / "Skip — not feeling it"
+
+For **loosely connected series** (Poirot, Culture, Hainish, Discworld
+subseries, procedural mysteries), pick the standout entries that fit the
+reader's taste and add them individually as standalones. Don't bulk-add
+the whole shelf; the reader doesn't want 41 Discworld books in their pool.
+
+Check the reading log for unfinished sequential series — the next unread
+entry is a strong default candidate, flagged as a continuation.
+
+### List structure — pool, organized by section
+
+Organize the pool into sections so the reader can browse by mood. Order
+within sections doesn't carry meaning — call this out at the top of
+`Reading_List.md` ("This is a TBR pool. Pull from any section based on
+what you're in the mood for. The sequence isn't a reading order.").
+
+Sections (use whichever apply):
+- Long Series
+- Classics
+- Nonfiction (by subcategory)
+- Horror
+- Crime / Mystery / Thriller
+- Historical Fiction
+- Literary Fiction
+- Science Fiction & Fantasy (with subsections)
+- New & Upcoming Releases (stretch — separate)
+
+Format: `| Title | Author | Why It's For You |` — drop the `#` column so
+the table doesn't read as a numbered reading queue. Add 🎧 and **(I)** as
+appropriate. Use ⭐ for strong fits, ⭐⭐ for absolute must-reads,
+sparingly. The running count toward 100 lives in the goals-tracking table
+at the bottom, not as numbered rows.
 
 ---
 
