@@ -17,30 +17,30 @@ new/upcoming releases as stretch._
 
 | Genre | Goal | Current |
 |---|---|---|
-| Fantasy | 40 | 37 |
+| Fantasy | 40 | 40 |
 | Science Fiction | 20 | 4 |
 | Horror | 10 | 5 |
 | Historical Fiction | 10 | 6 |
 | Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 5 |
 | Crime / Mystery / Thriller | 8 | 8 |
-| **Total** | **100** | **72** |
+| **Total** | **100** | **75** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
 | Standalone | 35 | 28 |
-| Short Series | 18 | 18 |
-| Long Series | 47 | 26 |
-| **Total** | **100** | **72** |
+| Short Series | 21 | 21 |
+| Long Series | 44 | 26 |
+| **Total** | **100** | **75** |
 
 ### Miscellaneous Goals
 
 | Tag | Goal | Current |
 |---|---|---|
 | Classics | ~8 | 5 |
-| Indie | ~20 | 15 |
+| Indie | ~20 | 18 |
 
 ---
 
@@ -156,6 +156,9 @@ new/upcoming releases as stretch._
 | 55 | The Justice of Kings ⭐ 🎧 | Richard Swan | Recent (2022) grimdark — Imperial judge Sir Konrad Vonvalt + his clerk traverse a fading empire investigating heresy and political rot. Abercrombie-adjacent voice, tight pacing. Empire of the Wolf trilogy (now complete). |
 | 61 | The Tyranny of Faith 🎧 | Richard Swan | Empire of the Wolf 2. Religious-political escalation; tone darkens, scope widens to imperial succession. |
 | 62 | The Trials of Empire 🎧 | Richard Swan | Empire of the Wolf 3. Closes the trilogy — horror-fantasy edge intensifies. |
+| 73 | Murder on the Lamplight Express **(I)** | Morgan Stang | Direct sequel to *Murder at Spindle Manor* (which you've read). Same darkly comic witty voice — gaslamp fantasy mystery. Lamplight Mysteries book 2. |
+| 74 | Murder on Hunter's Eve **(I)** | Morgan Stang | Lamplight Mysteries book 3. Closes the run. |
+| 75 | Dragon Mage ⭐ **(I)** | M. L. Spencer | Rivenworld book 1. Aram Raythe — neurodivergent misfit with a rare magical gift — at a dragon-riding magic academy facing a rising dark god. Warm, sweeping, coming-of-age, ~900 pages. WoT/Cahill-adjacent tone. |
 | 64 | Legacy of the Brightwash ⭐⭐ **(I)** | Krystle Matar | Industrial-revolution-era grimdark with literary depth — disgraced inspector investigates a child's murder while navigating a city's class system. Sword-of-Kaigen-tier quality from the indie scene. Tainted Dominion trilogy. |
 | 67 | Deathless **(I)** 🎧 | Rob J. Hayes | Annals of the God Eater (Short Series). Political prequel — aging King Ertide Hostain discovers cryptic notes from his dead father suggesting the empire's pact with Heaven was rewritten. Scheming, intricate, the deepest cut of the God Eater openers. |
 | 68 | The Way of Edan ⭐⭐ **(I)** | Philip Chase | The closest indie pick to your *Lions of Al-Rassan* (4.5) energy — lyrical, elegiac, epic. Sustained 2023–24 hype as the literary indie epic. The Edan Trilogy. |
