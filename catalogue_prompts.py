@@ -11,9 +11,9 @@ import re
 # ---------------------------------------------------------------------------
 
 def build_system_prompt() -> str:
-    return """You are an expert librarian building a structured knowledge catalog of a personal book library.
+    return """You expert librarian building structured knowledge catalog of personal book library.
 
-For each book you are given, produce a complete catalog entry as a JSON object.
+For each book given, produce complete catalog entry as JSON object.
 
 ---
 
@@ -51,16 +51,16 @@ CATALOG FIELD DEFINITIONS:
 - classic: true if broadly considered classic literature
 - taste_signals: map to reader preference signals — e.g. "found family", "propulsive pacing", "morally grey protagonist", "slow meditative pacing", "romance-heavy"
 - content_flags: flag only meaningful content warnings — graphic violence, sexual content, necrophilia, animal death, suicide. Do NOT over-flag.
-- confidence: High = you know it well. Medium = partial knowledge. Low = limited info or post-training-cutoff.
-- status: use "needs_review" when confidence is Low or information is uncertain/conflicting.
+- confidence: High = know it well. Medium = partial knowledge. Low = limited info or post-training-cutoff.
+- status: use "needs_review" when confidence is Low or information uncertain/conflicting.
 
 WEB SEARCH:
-Use web search for any book you don't recognise, are uncertain about, or that appears to postdate your training data. Search for "[Title] [Author] book review" and "[Title] [Author] plot summary genre". Use results to complete the catalog entry. Set research_source to "web_search".
+Use web search for any book you don't recognise, uncertain about, or that postdates training data. Search "[Title] [Author] book review" and "[Title] [Author] plot summary genre". Use results to complete catalog entry. Set research_source to "web_search".
 
-NEVER fabricate plot details or author information. If you genuinely cannot find reliable information after searching, set confidence to "Low" and status to "needs_review", leaving uncertain fields as null.
+NEVER fabricate plot details or author information. If genuinely no reliable info after searching, set confidence "Low" and status "needs_review", leave uncertain fields null.
 
 OUTPUT FORMAT:
-After processing all books in the batch, output a single JSON object where each key is "Title - Author" and each value is the complete catalog entry. Wrap it in a markdown code block:
+After processing all books in batch, output single JSON object where each key is "Title - Author" and each value is complete catalog entry. Wrap in markdown code block:
 
 ```json
 {
@@ -69,7 +69,7 @@ After processing all books in the batch, output a single JSON object where each 
 }
 ```
 
-Do not include any other text after the JSON block."""
+No other text after JSON block."""
 
 
 # ---------------------------------------------------------------------------
@@ -77,7 +77,7 @@ Do not include any other text after the JSON block."""
 # ---------------------------------------------------------------------------
 
 def build_batch_prompt(books: list[dict]) -> str:
-    lines = ["Catalogue the following books. Use web search for any you are uncertain about.\n"]
+    lines = ["Catalogue these books. Use web search for any uncertain.\n"]
     for i, book in enumerate(books, 1):
         parts = [f"{i}. {book['title']} by {book['author']}"]
         ctx = {}
@@ -132,22 +132,22 @@ def build_ranking_prompt(sources: list, *, candidate_summary) -> str:
     `candidate_summary(key, entry) -> str` formats one candidate line.
     """
     intro = (
-        "You are pruning oversized `comparable_books` lists in a personal-library "
-        "catalog. For each source book below, pick the 6 candidates with the "
-        "strongest appeal overlap with the source — same vibe, same kind of "
-        "reader payoff, similar themes/tone/pacing. Genre alignment is a strong "
+        "You pruning oversized `comparable_books` lists in personal-library "
+        "catalog. For each source book below, pick 6 candidates with "
+        "strongest appeal overlap with source — same vibe, same kind of "
+        "reader payoff, similar themes/tone/pacing. Genre alignment strong "
         "but not absolute signal. Return exactly 6 keys per source, in ranked "
         "order (strongest first).\n\n"
-        "OUTPUT FORMAT: a single JSON object mapping each source key to its "
-        "ranked list of 6 chosen candidate keys, wrapped in a ```json code "
-        "block. No commentary outside the block.\n\n"
-        "CRITICAL: Use the EXACT keys shown below — every key is in "
-        "`Title - Author` form. Do not shorten to just the title, do not "
-        "rephrase, do not normalise punctuation. Both the source-key "
-        "(JSON object key) and the chosen candidate keys (JSON array "
-        "values) must match the strings shown verbatim, character-for-"
-        "character. Picks that don't match the candidate list verbatim "
-        "are dropped.\n\n"
+        "OUTPUT FORMAT: single JSON object mapping each source key to its "
+        "ranked list of 6 chosen candidate keys, wrapped in ```json code "
+        "block. No commentary outside block.\n\n"
+        "CRITICAL: Use EXACT keys shown below — every key in "
+        "`Title - Author` form. Don't shorten to title only, don't "
+        "rephrase, don't normalise punctuation. Both source-key "
+        "(JSON object key) and chosen candidate keys (JSON array "
+        "values) must match strings shown verbatim, character-for-"
+        "character. Picks that don't match candidate list verbatim "
+        "get dropped.\n\n"
         "Example output shape:\n"
         "```json\n"
         "{\n"
@@ -281,7 +281,7 @@ def generate_audit_report(catalog: dict) -> str:
 
     if unverified:
         lines.append(f"\n## ⚪ Not Yet Audited ({len(unverified)} entries)")
-        lines.append("These entries were processed before the audit feature was added, "
-                     "or were skipped. Re-run with `--re-audit` to check them.\n")
+        lines.append("Entries processed before audit feature added, "
+                     "or skipped. Re-run with `--re-audit` to check.\n")
 
     return "\n".join(lines)
