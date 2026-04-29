@@ -20,19 +20,19 @@ new/upcoming releases as stretch goals._
 | Science Fiction | 22 | 4 |
 | Horror | 11 | 5 |
 | Historical Fiction | 10 | 6 |
-| Nonfiction | 7 | 0 |
+| Nonfiction | 7 | 7 |
 | Literary Fiction | 5 | 0 |
 | Crime / Mystery / Thriller | 5 | 0 |
-| **Total** | **100** | **30** |
+| **Total** | **100** | **37** |
 
 ### Series Status Goals
 
 | Status | Goal | Current |
 |---|---|---|
-| Standalone | 35 | 12 |
+| Standalone | 35 | 19 |
 | Short Series | 15 | 5 |
 | Long Series | 50 | 13 |
-| **Total** | **100** | **30** |
+| **Total** | **100** | **37** |
 
 ### Miscellaneous Goals
 
@@ -68,6 +68,13 @@ new/upcoming releases as stretch goals._
 
 | # | Title | Author | Why It's For You |
 |---|---|---|---|
+| 31 | Under the Banner of Heaven ⭐⭐ | Jon Krakauer | Mormon fundamentalism + true crime. The single closest book to *Cultish* (5.0) — same lens on how systems of belief produce real-world violence. |
+| 32 | Going Clear ⭐⭐ 🎧 | Lawrence Wright | Definitive Scientology investigation. Direct sibling to *Troublemaker* (4.0) — Remini's lived experience, then Wright's institutional history. |
+| 33 | Say Nothing ⭐ 🎧 | Patrick Radden Keefe | Same author as *Empire of Pain* (read). The Troubles + IRA + a disappearance, threaded through generations. |
+| 34 | Killers of the Flower Moon ⭐ 🎧 | David Grann | Osage murders + the birth of the FBI + corruption in 1920s Oklahoma. Americana strangeness in pure form. |
+| 35 | Helter Skelter | Vincent Bugliosi | The Manson cult, told by the prosecutor. Cult + true crime overlap; ur-text of the genre. |
+| 36 | Endurance ⭐⭐ | Alfred Lansing | Shackleton's 1914 Antarctic disaster. Often called the greatest survival narrative ever written. |
+| 37 | Carrying the Fire ⭐ | Michael Collins | Apollo 11 memoir from the astronaut who orbited the Moon alone. Considered the best astronaut memoir — unique voice, beautifully written. |
 
 ## 4. Horror
 
