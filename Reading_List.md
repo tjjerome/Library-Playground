@@ -186,7 +186,19 @@ _Coming next batch._
 
 ## New & Upcoming Releases (Stretch)
 
-_Coming in Phase 4 — books releasing in the next 12 months._
+_Not counted in the 100-book core — pull from here when a release lands and you're caught up._
+
+| Title | Author | Release | Why It's For You |
+|---|---|---|---|
+| Of Gods and Ashes (Bound and the Broken #5) **(I)** | Ryan Cahill | 2026 (TBA) | **Series finale** for the long-series arc you committed to. Closes the Cahill run. |
+| A Trade of Blood (Shadow of the Leviathan #3) | Robert Jackson Bennett | Aug 11, 2026 | **Series finale.** You 5'd #2 (A Drop of Corruption); this caps the Ana & Din trilogy. Auto-add. |
+| The Thrice-Bound Fool (Blacktongue #2) | Christopher Buehlman | Oct 13, 2026 | Direct sequel to Blacktongue Thief on your list. Galva and Kinch front-and-center. Buehlman is your 5/5 author. |
+| The Devils #2 (untitled) | Joe Abercrombie | 2026 (likely H2) | Sequel to The Devils. Currently in second-draft edits per Abercrombie's progress reports. |
+| Children of Strife (Children of Time #4) | Adrian Tchaikovsky | March 2026 | Direct extension of Children of Time on your list — mantis-shrimp captain, mavericks crew. |
+| Daughter of Crows (Academy of Kindness #1) **(I leaning)** | Mark Lawrence | March 2026 (out) | New Lawrence series — comp for Book That Wouldn't Burn fans (your 5/5). 4.15 GR early. |
+| Red God (Red Rising #7) | Pierce Brown | Late 2026 or 2027 | **Series finale** of Red Rising. Caps the Iron Gold/Dark Age/Light Bringer arc on your list. Date highly uncertain — Brown still drafting. |
+
+---
 
 ---
 
