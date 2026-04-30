@@ -377,9 +377,19 @@ def _index_catalog_by_pair(entries: dict) -> dict[tuple[str, str], dict]:
 
 
 def cmd_unfinished_series(args):
-    """Phase 0 input: series in the log with at least one rating >= --min-rating
-    and no `*completed` flag, joined to the catalog so we can name the next
-    unread book.
+    """Phase 0 input: series the reader is mid-way through and likely wants
+    to continue. Three gates:
+
+      1. max(rating) >= --min-rating (any high point in the series at all)
+      2. avg(rating) >= --min-avg     (overall enjoyment held up)
+      3. last_rating  >= --min-last   (most recent series read wasn't a clear "I'm done")
+
+    Plus: no `*completed` flag on any entry.
+
+    `last_rating` is the rating on the highest-position read entry — i.e.
+    where the reader actually stopped. A series rated 5/5/2 (Book 1, 2, 3)
+    is filtered out; the trajectory says they DNF'd. A series rated 5/4/4
+    stays; the trajectory says they liked it and just paused.
     """
     log = load_log()
     cat = load_catalog()
@@ -409,10 +419,24 @@ def cmd_unfinished_series(args):
 
     out = []
     for series, rows in series_log_rows.items():
-        ratings = [parse_rating(r.get("My Rating")) for r, _ in rows]
-        ratings = [x for x in ratings if x is not None]
-        if not ratings or max(ratings) < args.min_rating:
+        rated = [(r, ce, parse_rating(r.get("My Rating")))
+                 for r, ce in rows if parse_rating(r.get("My Rating")) is not None]
+        if not rated:
             continue
+        ratings = [x for _, _, x in rated]
+
+        if max(ratings) < args.min_rating:
+            continue
+        avg = sum(ratings) / len(ratings)
+        if avg < args.min_avg:
+            continue
+
+        # last_rating = rating on the highest-position read entry the reader rated
+        rated_by_pos = sorted(rated, key=lambda t: _series_order_key(t[1]))
+        last_rating = rated_by_pos[-1][2]
+        if last_rating < args.min_last:
+            continue
+
         if any(has_flag(r, "*completed") for r, _ in rows):
             continue
 
@@ -752,7 +776,14 @@ def build_parser():
     sp.set_defaults(func=cmd_exclusion_set)
 
     sp = sub.add_parser("unfinished-series")
-    sp.add_argument("--min-rating", type=float, default=4.0)
+    sp.add_argument("--min-rating", type=float, default=4.0,
+                    help="Series must have at least one rating ≥ this (default 4.0)")
+    sp.add_argument("--min-avg", type=float, default=3.5,
+                    help="Series average rating must be ≥ this (default 3.5) — "
+                         "drops series the reader broadly didn't enjoy")
+    sp.add_argument("--min-last", type=float, default=3.0,
+                    help="Reader's most-recent rating in the series must be ≥ this "
+                         "(default 3.0) — drops series with a clear DNF trajectory")
     sp.set_defaults(func=cmd_unfinished_series)
 
     sp = sub.add_parser("candidates")

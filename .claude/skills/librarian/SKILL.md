@@ -503,7 +503,23 @@ Option `description` ≤ **140 characters**, lead with a personal anchor naming 
 
 Template: `"<why you specifically — named anchor> — <what the book is, one phrase> — <Npp>."`
 
-Frame the batch in chat **before** firing the question — context lives in chat so the question itself stays mobile-safe. The question is a confirmation interface, not the place to deliver context.
+**Mandatory pre-question prelude in chat — one paragraph per book.** The 140-char `description` is mobile-safe but tight; the rich book pitch lives in chat *before* the `AskUserQuestion` fires. Each pick gets a 2–4 sentence paragraph covering: the personal anchor (rated title / stated taste / profile flag), what the book is (plot/tone/setting), and why it slots into the current batch theme. Plot details, comp authors, content flags worth noting, audio suitability — all belong here. The `AskUserQuestion` block is the confirmation interface; the chat prelude is where the reader actually decides.
+
+Sample shape:
+
+> **Horror batch** — four picks pulling on your Buehlman 5/5 and your love of slow-burn medieval horror.
+>
+> **Between Two Fires — Christopher Buehlman** (432pp). Cosmic horror in plague-era France: a fallen angel and an orphan girl on the road in 1348. Lyrical grimdark prose; tonally adjacent to your Wolfe and Kay reads. Audio is excellent (Erikson narrates).
+>
+> **The Lesser Dead — Christopher Buehlman** (249pp). 1970s NYC vampire novel narrated by a teenage subway-tunnel vampire. Same Buehlman voice in a faster, leaner package — good if you want the Buehlman tone without another 400-pager.
+>
+> **Mountain Fast — Brian Lerner** (314pp). Indie pick: monastic siege horror, very small audience but 4.4/5 on the small sample. Pulled because you flagged "interest in liturgical / monastic settings" in Profile.md.
+>
+> **The Shining — Stephen King** (355pp). Hotel-isolation horror; you've read deep King but not this one. Worth it for the Torrance interiority alone.
+>
+> [AskUserQuestion fires here — 4 options, ≤140-char descriptions, mobile-safe.]
+
+The chat prelude is also where you cite trade-offs, surface concerns, and frame the batch as a story (e.g., "two short, two long" / "two by Buehlman, two adjacent"). The `description` field can't carry that texture — use the prelude.
 
 ```python
 AskUserQuestion(questions=[{
