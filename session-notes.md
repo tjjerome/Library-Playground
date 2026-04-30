@@ -79,14 +79,32 @@ Notes:
 
 ## Build Progress
 
-- [ ] Step 2: Taste interview — **in progress**
-- [ ] Step 3: Goals conversation
+- [x] Step 2: Taste interview — complete
+- [x] Step 3: Goals conversation — complete
 - [x] Step 4: Wish list — 26 books added (11/22/63, Mystic River, Jade City trilogy, Gunmetal Gods ×4, Children of Time ×3, Red Sister ×3, Herald+Demon+Deathless, Of Blood and Fire full series ×8)
-- [ ] Phase 0: Unfinished series routing
-- [ ] Phase 1: Highest-confidence picks
-- [ ] Phase 2: Genre batches
+- [x] Phase 0: Unfinished series routing — 10 books added (Red Rising ×4, Network Effect, Sprawl ×2, Inside Man, Book of New Sun ×2)
+- [x] Phase 1: Highest-confidence picks — 13 books added (Fantasy: A Little Hatred, Blacktongue Thief + Daughters' War, Lies of Locke Lamora + Red Seas, Murder on Lamplight Express; Horror: Shining, Lesser Dead; Crime: Devotion of Suspect X; Hist/SciFi/NF: Gates of Fire, Hyperion duology, The Wager)
+- [ ] Phase 2: Genre batches — **next**
 - [ ] Phase 3: New/upcoming releases
 - [ ] Phase 4: Final review
 - [ ] Phase 5: Top 5 capstone
 
-*List count: 0 / 100 (cap 110)*
+**List count: 49 / 100 (cap 110)**
+
+### Phase 1 rejection notes
+- Shutter Island (Lehane) — skipped, Mystic River already covers Lehane
+- No Country for Old Men (McCarthy) — skipped (Road 4.75★ but crime wasn't the pull)
+
+### Gap analysis entering Phase 2
+| Genre | Target | Current | Need |
+|-------|--------|---------|------|
+| Fantasy | ~30 | 25 | ~5 |
+| Science Fiction | ~15 | 12 | ~3 |
+| Horror | ~8 | 2 | ~6 |
+| Crime / Mystery / Thriller | ~10 | 2 | ~8 |
+| Historical Fiction | ~15 | 1 | ~14 |
+| Literary Fiction | ~5 | 0 | ~5 |
+| Nonfiction | ~10 | 1 | ~9 |
+| Long Series / Other | ~7 | 6 | ~1 |
+
+Indie floor: 14/20. Classics floor: 0/10.
