@@ -463,6 +463,8 @@ def audit_entry_points(
     client=None,
     chunk_size: int = DEFAULT_CHUNK_SIZE,
     dry_run: bool = False,
+    catalog_path: str | None = None,
+    index_path: str | None = None,
 ) -> dict:
     """Backfill series_role + author_entry_point on entries that lack them.
 
@@ -555,6 +557,16 @@ def audit_entry_points(
                 entry["author_entry_point"] = aep
 
         processed += len(chunk)
+
+        # Save after every chunk so a mid-run failure doesn't lose work.
+        # Re-runs skip already-filled entries via needs_entry_point_audit.
+        if catalog_path:
+            save_catalog(catalog, catalog_path)
+            if index_path:
+                save_index(catalog, index_path)
+            print(f"  Saved → {catalog_path}"
+                  + (f" (+ {index_path})" if index_path else ""))
+
         time.sleep(RATE_LIMIT_DELAY)
 
     stats["still_null"] = sum(
@@ -973,6 +985,8 @@ def main():
             client=client,
             chunk_size=args.chunk_size,
             dry_run=args.dry_run,
+            catalog_path=None if args.dry_run else args.catalog,
+            index_path=None if args.dry_run else args.index,
         )
         print(f"\nEntry-point audit complete.")
         print(f"  auto_filled: {stats['auto_filled']}")
@@ -982,9 +996,11 @@ def main():
         if args.dry_run:
             print(f"  --dry-run: catalog NOT written.")
         else:
+            # Final save (in addition to per-chunk saves) — ensures the
+            # last chunk's stats land on disk.
             save_catalog(catalog, args.catalog)
             save_index(catalog, args.index)
-            print(f"  Wrote → {args.catalog} (+ {args.index})")
+            print(f"  Cataloguing complete. Wrote → {args.catalog} (+ {args.index})")
         sys.exit(0)
 
     if args.sync_comparables:
