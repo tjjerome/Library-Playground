@@ -81,7 +81,7 @@ Notes:
 
 - [ ] Step 2: Taste interview — **in progress**
 - [ ] Step 3: Goals conversation
-- [ ] Step 4: Wish list
+- [x] Step 4: Wish list — 26 books added (11/22/63, Mystic River, Jade City trilogy, Gunmetal Gods ×4, Children of Time ×3, Red Sister ×3, Herald+Demon+Deathless, Of Blood and Fire full series ×8)
 - [ ] Phase 0: Unfinished series routing
 - [ ] Phase 1: Highest-confidence picks
 - [ ] Phase 2: Genre batches
