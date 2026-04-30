@@ -10,10 +10,12 @@ Read source on demand — no preload docs.
 ## Files
 
 - `Library_Index.json` — slim browse index (~1.4MB). Load at session start for librarian. Fields: title, author, series, series_status, primary_genre, comparable_books.
-- `Library_Catalog.json` — full per-book knowledge (~9.4MB). **Never read directly into context.** Query via Bash + Python: load → filter → return matches.
+- `Library_Catalog.json` — full per-book knowledge (~9.4MB). **Never read directly into context.** Query via `librarian-query.py` (preferred) or inline Bash + Python.
 - `Library.csv` — raw data. Tag audits + source of truth only.
 - `Reading_Log.csv` and `Profile.md` — taste context (when present).
+- `Reading_List.md` — reader-controlled TBR pool. Librarian writes only on explicit reader selection.
 - `catalogue.py` — bulk cataloguing, audit, index regen.
+- `librarian-query.py` — single chokepoint for librarian candidate generation, exclusion checks, and the shown-this-session ledger. All batch generation routes through this helper; do not duplicate the gates in inline Python.
 
 ## Skills
 
@@ -21,6 +23,19 @@ Read source on demand — no preload docs.
 - **`library-cataloguer`** (`.claude/skills/library-cataloguer/`) — owns writes to `Library_Catalog.json` and `Library_Index.json`. Small in-chat changes via Python; bulk work defers to `catalogue.py`.
 
 Both skills auto-trigger on description match. Librarian session: ask librarian-shaped question ("what should I read next?", "anything like X?", "build me a 2-year reading list"). Cataloguer work: "add this book", "fix this entry", "save those changes", "what do you know about [book]?".
+
+## Librarian hard invariants
+
+These survive even when the librarian skill prompt isn't visible in the running agent's context. The full skill spec is `.claude/skills/librarian/SKILL.md`; the rules below are non-negotiable:
+
+1. **Universal exclusion gate.** Every candidate that ever reaches an `AskUserQuestion` option clears `is_already_read` (Reading_Log.csv) AND `is_on_list` (Reading_List.md) AND a session shown-ledger. Owned by `librarian-query.py`. Never duplicate inline.
+2. **Core target = 100 fixed.** Mid-build cap reductions trigger a redistribution `AskUserQuestion`; they never lower 100. The Phase 4 (final review) gate refuses to fire below 100.
+3. **Conservative author-entry-point fallback.** Refuse to recommend a non-Standalone book by an author not in `Reading_Log.csv` unless `series_position == "Book 1"`. Cite this rule explicitly when declining a candidate.
+4. **Phase 0 unfinished-series gate.** Run `librarian-query.py unfinished-series --min-rating 4.0` before any genre batch fires; route every entry via `AskUserQuestion`.
+5. **Per-batch deep-cut floor.** Every 4-pick batch contains ≥1 deep cut, slot position randomized, never labeled.
+6. **Open prose questions are turn-ending.** No `AskUserQuestion` on the same turn after a prose question.
+
+Workflow phases: **Phase 0** unfinished-series gate → **Phase 1** highest-confidence → **Phase 2** checklist batches → **Phase 3** new and upcoming releases → **Phase 4** final review (borderline removals + missed picks + distribution check) → **Phase 5** Top 5 capstone.
 
 ## Modes — match scope to the ask
 
