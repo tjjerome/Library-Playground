@@ -199,6 +199,48 @@ def is_book_one(series_position: str | None) -> bool:
     return bool(_BOOK1.match(series_position.strip()))
 
 
+# series_role values that count as a valid entry point for an unread author.
+_ENTRY_ROLES = {"standalone", "first", "loose-entry"}
+
+
+def _passes_entry_point_gate(entry: dict, log_authors: set[str]) -> bool:
+    """Universal author entry-point gate.
+
+    Two-layer check:
+
+    1. **Catalog-driven** (preferred): when `series_role` and/or
+       `author_entry_point` are populated, use them. This is the long-term
+       answer once `catalogue.py --audit-entry-points` has run.
+    2. **Conservative fallback**: when both fields are null on the entry,
+       fall back to the original rule — non-Standalone book by an unread
+       author requires `series_position == "Book 1"`.
+
+    Author IS in the log → always passes (reader has read this author and
+    can judge whether to start with this book themselves).
+    """
+    if norm(entry.get("author", "")) in log_authors:
+        return True
+
+    role = entry.get("series_role")
+    aep = entry.get("author_entry_point")
+
+    # Catalog-driven path
+    if role is not None or aep is not None:
+        if aep is False:
+            return False
+        if role is not None and role not in _ENTRY_ROLES:
+            # mid / late / loose-mid: drop for unread authors
+            return False
+        # role in entry-roles, OR role null with aep True/null → allow
+        return True
+
+    # Conservative fallback (fields not yet populated by audit)
+    if (entry.get("series_status") and entry.get("series_status") != "Standalone"
+            and not is_book_one(entry.get("series_position"))):
+        return False
+    return True
+
+
 def is_deep_cut(entry: dict, batch_genre_keys: Iterable[str] = ()) -> bool:
     """Helper-internal definition. Never labeled in user-facing output."""
     gr = entry.get("goodreads_rating") or 0
@@ -489,12 +531,9 @@ def cmd_candidates(args):
             continue
         if args.page_floor and pages and pages < args.page_floor:
             continue
-        # conservative author entry-point fallback
-        if args.author_entry_point_strict:
-            if (e.get("series_status") and e.get("series_status") != "Standalone"
-                    and norm(e.get("author", "")) not in log_authors
-                    and not is_book_one(e.get("series_position"))):
-                continue
+        # author entry-point gate
+        if args.author_entry_point_strict and not _passes_entry_point_gate(e, log_authors):
+            continue
 
         rej = rejection_count(e.get("title", ""), e.get("author", ""))
         score, breakdown = score_candidate(

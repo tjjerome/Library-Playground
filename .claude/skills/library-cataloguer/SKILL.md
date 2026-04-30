@@ -45,6 +45,8 @@ Per-entry fields:
 | `title`, `author` | str | |
 | `series`, `series_position` | str / null | |
 | `series_status` | str | Standalone / Short Stories / Short Series / Long Series |
+| `series_role` | str / null | standalone / first / mid / late / loose-entry / loose-mid. **See "Entry-point fields" below.** |
+| `author_entry_point` | bool / null | True = recommended starting point with this author for a new reader. **See "Entry-point fields" below.** |
 | `primary_genre` | str | Mutually exclusive primary label |
 | `secondary_genre` | str / null | Optional finer label |
 | `indie`, `classic` | bool | |
@@ -70,10 +72,66 @@ Per-entry fields:
 Slim index = strict subset, regenerated from catalog:
 
 ```
-title, author, series, series_status, primary_genre, comparable_books
+title, author, series, series_status, series_role, author_entry_point, primary_genre, comparable_books
 ```
 
 Write touches any of those fields → index must regenerate.
+
+---
+
+## Entry-point fields — `series_role` and `author_entry_point`
+
+Both fields exist to give the librarian skill a **structural** answer to "is this book a good place to start with this author?" — replacing the conservative `series_position == "Book 1"` fallback. Default to `null` on existing entries; populated by `python catalogue.py --audit-entry-points` and on every newly catalogued book.
+
+### `series_role` — book's role within its series
+
+| Value | Meaning |
+|---|---|
+| `"standalone"` | Truly standalone book. `series == null`. |
+| `"first"` | Book 1 of a sequential series (Short Series / Long Series). Intended entry point. |
+| `"mid"` | Middle entry of a sequential series. Continuation; needs prior books. |
+| `"late"` | Final or near-final book of a sequential series. Often spoiler-heavy. Reader should not start here. |
+| `"loose-entry"` | Book in a loosely-connected series (Discworld, Reacher, Poirot, Bosch, Culture, Hainish, etc.) that IS a recommended entry point — what fans tell new readers to start with. |
+| `"loose-mid"` | Book in a loosely-connected series that depends on accumulated context — better entered via a recommended starting book in the same world. |
+
+Trivially-derivable cases the audit script fills without an LLM call:
+
+- `series_status == "Standalone"` AND `series == null` → `"standalone"`.
+- `series_status in ("Short Series", "Long Series")` AND `series_position` matches `"Book 1"` (case-insensitive prefix, no decimal) → `"first"` (provisional; LLM may upgrade rare cases).
+- `series_status in ("Short Series", "Long Series")` AND `series_position` doesn't match Book 1 → `"mid"` (LLM may promote some to `"late"`).
+- `series_status == "Short Stories"` → `"standalone"` (story collections are entry-agnostic).
+
+LLM-only cases:
+
+- `series_status == "Standalone"` AND `series != null` (loosely-connected, e.g. Discworld, Reacher) → `"loose-entry"` or `"loose-mid"` based on whether THIS specific book is a recommended starting point in the loose series.
+- Any case where `series_position` includes annotations (`"Book 1 of loosely connected series"`, `"Book 2 (prequel)"`, `"1.5"`) needs LLM judgement.
+
+### `author_entry_point` — recommended starting point with this author
+
+Boolean. `true` if a new-to-this-author reader can start here without missing context. `false` if the author has a better starting book elsewhere in the catalog (or this is a deep-cut / spinoff / late-series).
+
+Heuristics for the LLM:
+
+- Author has only one book in the catalog → almost always `true`.
+- Book is `series_role: "first"` of the author's flagship / best-known series → `true`.
+- Book is `series_role: "first"` of a secondary series for an author whose flagship is elsewhere → usually `false` (e.g. *Dragon Keeper* is Book 1 of Rain Wild Chronicles, but Hobb's flagship entry is *Assassin's Apprentice*).
+- Book is `series_role: "mid" | "late" | "loose-mid"` → `false`.
+- Book is `series_role: "loose-entry"` → usually `true`.
+- Standalone with author having other works → judge whether THIS book is a recommended starter (e.g. *The Shining* yes, *The Tommyknockers* no).
+
+Confidence: when uncertain, set `author_entry_point: null` and add `audit.flags` entry `{"field": "author_entry_point", "severity": "note", "reason": "..."}`. Null is a valid value — the librarian's conservative fallback (`series_position == "Book 1"`) covers it.
+
+### Cataloguing new books
+
+Every new entry catalogued via `catalogue.py` or in-chat MUST include both fields. Use the heuristics above. When in doubt for `author_entry_point`, leave it `null` rather than fabricating.
+
+### Bulk audit of existing entries
+
+Run `python catalogue.py --audit-entry-points` to fill these fields on existing entries. The pass:
+
+1. Auto-derives the trivial cases above without LLM cost.
+2. Sends ambiguous entries (loose-connected; cross-author entry-point judgement) to the LLM in chunks, identical to how `catalogue_chunk` works for new entries.
+3. Saves the catalog and regenerates the slim index.
 
 ---
 
@@ -278,6 +336,7 @@ Run script directly for anything bulk:
 | Reprocess `needs_review` entries | `python catalogue.py --library Library.csv --review-only` |
 | Rebuild the slim index from existing catalog | `python catalogue.py --library Library.csv --index-only` |
 | Sync comparable_books (canonicalise, reciprocate, Claude-rank to 6) | `python catalogue.py --library Library.csv --sync-comparables` |
+| Backfill `series_role` + `author_entry_point` on existing entries | `python catalogue.py --library Library.csv --audit-entry-points` |
 | Status check (no API calls) | `python catalogue.py --library Library.csv --status` |
 | Larger chunks for well-known books | add `--chunk-size 40` |
 

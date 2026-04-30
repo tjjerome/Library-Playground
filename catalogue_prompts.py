@@ -23,6 +23,8 @@ CATALOG ENTRY SCHEMA:
   "author": "exact author name(s)",
   "series": "series name or null",
   "series_position": "e.g. Book 1, or null",
+  "series_role": one of: "standalone" | "first" | "mid" | "late" | "loose-entry" | "loose-mid",
+  "author_entry_point": true | false | null,
   "genre": "single most accurate genre label",
   "series_status": one of: "Standalone" | "Short Stories" | "Short Series" | "Long Series",
   "indie": true or false,
@@ -47,6 +49,8 @@ CATALOG ENTRY SCHEMA:
 
 CATALOG FIELD DEFINITIONS:
 - series_status: Standalone = single book or loosely connected series (e.g. Poirot, Culture, Hainish Cycle). Short Stories = novella <50k words or story collection. Short Series = <4 books OR <600k total words published. Long Series = 4+ books AND 600k+ words published.
+- series_role: book's role within its series. "standalone" = no series. "first" = Book 1 of a sequential series (intended entry point). "mid" = middle entry of a sequential series. "late" = final or near-final book (spoiler-heavy; reader should not start here). "loose-entry" = book in a loosely-connected series (Discworld, Reacher, Poirot, Culture) that IS a recommended starting point. "loose-mid" = book in a loosely-connected series that depends on accumulated context. Story collections default to "standalone".
+- author_entry_point: true if a new-to-this-author reader can start here without missing context; false if the author has a better starting book elsewhere. Heuristics: "first" of an author's flagship series → true. "first" of a secondary series when flagship is elsewhere → usually false. "mid" / "late" / "loose-mid" → false. "loose-entry" → usually true. Standalone with author having other works → judge whether THIS book is a recommended starter. When uncertain, set null.
 - indie: true if self-published or originally self-published before traditional pickup
 - classic: true if broadly considered classic literature
 - taste_signals: map to reader preference signals — e.g. "found family", "propulsive pacing", "morally grey protagonist", "slow meditative pacing", "romance-heavy"
@@ -285,3 +289,102 @@ def generate_audit_report(catalog: dict) -> str:
                      "or skipped. Re-run with `--re-audit` to check.\n")
 
     return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Entry-point audit prompt (series_role + author_entry_point backfill)
+# ---------------------------------------------------------------------------
+
+ENTRY_POINT_AUDIT_SYSTEM = """You auditing entry-point fields on a personal-library catalog.
+
+For each book given, return ONLY two fields:
+
+  series_role: one of "standalone" | "first" | "mid" | "late" | "loose-entry" | "loose-mid"
+  author_entry_point: true | false | null
+
+DEFINITIONS:
+
+- series_role
+  - "standalone": no series at all. series == null.
+  - "first": Book 1 of a sequential series (Short Series or Long Series). Intended entry point.
+  - "mid": middle entry in a sequential series. Continuation; depends on prior books.
+  - "late": final or near-final entry in a long sequential series. Often spoiler-heavy. Reader should NOT start here.
+  - "loose-entry": book in a loosely-connected series (Discworld, Reacher, Poirot, Bosch, Culture, Hainish, etc.) that IS a recommended starting point — what fans tell new readers to start with.
+  - "loose-mid": book in a loosely-connected series that depends on accumulated context — better entered via a different starting book in the same world.
+
+- author_entry_point
+  - true: a new-to-this-author reader can start with THIS book without missing context.
+  - false: the author has a better starting book elsewhere in the catalog (or this is a deep-cut, spinoff, or late-series).
+  - null: genuinely uncertain — author has multiple starting points and you cannot pick a recommended one without more research.
+
+HEURISTICS:
+
+- "first" of an author's flagship / best-known series → author_entry_point: true.
+- "first" of a secondary series when the flagship is elsewhere → author_entry_point: false. Example: Hobb's *Dragon Keeper* is Book 1 of Rain Wild Chronicles, but new Hobb readers start with *Assassin's Apprentice* — so Dragon Keeper is author_entry_point: false.
+- "mid" / "late" / "loose-mid" → author_entry_point: false.
+- "loose-entry" → usually author_entry_point: true.
+- Standalone, author has only this book in catalog → author_entry_point: true.
+- Standalone, author has other works → judge whether THIS book is a recommended starter (e.g. King's *The Shining* yes, *The Tommyknockers* no; Vonnegut's *Slaughterhouse-Five* yes, *Galápagos* no).
+
+WEB SEARCH: Use web search when uncertain about loose-connected series ordering or author-flagship judgements. Search "[author] best book to start with" or "[series] reading order entry point".
+
+NEVER fabricate. Set author_entry_point: null when genuinely uncertain.
+
+OUTPUT FORMAT: a single JSON object keyed by "Title - Author", values containing only series_role and author_entry_point. Wrap in a markdown ```json code block.
+
+```json
+{
+  "Title - Author": {"series_role": "first", "author_entry_point": true},
+  "Other Title - Other Author": {"series_role": "loose-mid", "author_entry_point": false}
+}
+```
+
+No other text outside the block."""
+
+
+def build_entry_point_audit_system_prompt() -> str:
+    return ENTRY_POINT_AUDIT_SYSTEM
+
+
+def build_entry_point_audit_prompt(entries: list[dict]) -> str:
+    """Build the user-message for an entry-point audit chunk.
+
+    `entries` is a list of catalog entry dicts (each carrying its existing
+    fields). The prompt asks the LLM to fill series_role + author_entry_point
+    only.
+    """
+    lines = ["Audit these books. Return only series_role and author_entry_point per entry.\n"]
+    for i, e in enumerate(entries, 1):
+        ctx = {
+            "title": e.get("title"),
+            "author": e.get("author"),
+            "series": e.get("series"),
+            "series_position": e.get("series_position"),
+            "series_status": e.get("series_status"),
+            "primary_genre": e.get("primary_genre"),
+        }
+        # also surface peer books by the same author so the LLM can compare
+        peers = e.get("_author_peers") or []
+        line = f"{i}. {ctx['title']} by {ctx['author']}\n   Context: {json.dumps(ctx)}"
+        if peers:
+            line += f"\n   Other books by this author in catalog: {json.dumps(peers)}"
+        lines.append(line)
+    return "\n\n".join(lines)
+
+
+def parse_entry_point_response(raw: str) -> dict:
+    """Extract {key: {series_role, author_entry_point}} from Claude's audit response."""
+    code_block = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
+    if code_block:
+        try:
+            return json.loads(code_block.group(1))
+        except json.JSONDecodeError:
+            pass
+    brace_start = raw.find("{")
+    brace_end = raw.rfind("}")
+    if brace_start != -1 and brace_end != -1:
+        try:
+            return json.loads(raw[brace_start:brace_end + 1])
+        except json.JSONDecodeError:
+            pass
+    return {}

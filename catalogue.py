@@ -87,6 +87,8 @@ INDEX_FIELDS = (
     "author",
     "series",
     "series_status",
+    "series_role",
+    "author_entry_point",
     "primary_genre",
     "comparable_books",
 )
@@ -218,6 +220,8 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> tuple[int, int]
                 "author": book["authors"],
                 "series": book.get("series") or None,
                 "series_position": None,
+                "series_role": None,
+                "author_entry_point": None,
                 "genre": book.get("genre") or None,
                 "series_status": book.get("series_type") or None,
                 "indie": None,
@@ -385,6 +389,178 @@ def catalogue_chunk(
             print(f"  Warning: couldn't match '{key}' to a catalog entry — skipping.")
 
     return catalogued
+
+# ---------------------------------------------------------------------------
+# Entry-point fields (series_role + author_entry_point)
+# ---------------------------------------------------------------------------
+
+import re as _re
+
+_AUDIT_BOOK1 = _re.compile(r"^book\s*1(?![\d.])", _re.IGNORECASE)
+
+
+def _is_book_one_position(series_position: str | None) -> bool:
+    if not series_position:
+        return False
+    return bool(_AUDIT_BOOK1.match(series_position.strip()))
+
+
+def derive_series_role_provisional(entry: dict) -> str | None:
+    """Auto-derive series_role for trivially-derivable cases — no LLM cost.
+
+    Returns one of "standalone" | "first" | "mid", or None when the case
+    needs LLM judgement (loose-connected entries, ambiguous positions, or
+    promotion to "late" / "loose-entry" / "loose-mid").
+    """
+    status = entry.get("series_status")
+    series = entry.get("series")
+    pos = entry.get("series_position")
+
+    if status == "Standalone" and not series:
+        return "standalone"
+    if status == "Short Stories":
+        return "standalone"
+    if status in ("Short Series", "Long Series"):
+        if _is_book_one_position(pos):
+            return "first"
+        if pos and _re.search(r"book\s*\d", pos, _re.IGNORECASE):
+            return "mid"
+    # Standalone-with-series (loose-connected) and unparsed positions are
+    # the LLM's job — return None to flag for the audit pass.
+    return None
+
+
+def needs_entry_point_audit(entry: dict) -> bool:
+    """Entry needs the LLM-driven audit pass for series_role / author_entry_point."""
+    if entry.get("series_role") is None:
+        return True
+    if entry.get("author_entry_point") is None:
+        return True
+    return False
+
+
+def _author_peer_summary(catalog: dict, author: str, exclude_key: str) -> list[str]:
+    """Return a short list of peer-by-this-author titles + series labels for prompt context."""
+    out = []
+    for k, e in catalog["entries"].items():
+        if k == exclude_key:
+            continue
+        if (e.get("author") or "") != author:
+            continue
+        label = e.get("title") or ""
+        s = e.get("series")
+        if s:
+            label += f" ({s} {e.get('series_position') or ''})".rstrip()
+        out.append(label.strip())
+        if len(out) >= 8:
+            break
+    return out
+
+
+def audit_entry_points(
+    catalog: dict,
+    *,
+    client=None,
+    chunk_size: int = DEFAULT_CHUNK_SIZE,
+    dry_run: bool = False,
+) -> dict:
+    """Backfill series_role + author_entry_point on entries that lack them.
+
+    Phase 1 (no LLM cost): derive trivial cases via `derive_series_role_provisional`.
+    Phase 2 (LLM): chunk through entries that still need either field after Phase 1.
+
+    Returns a stats dict {auto_filled, llm_chunks, llm_filled, still_null}.
+    """
+    from catalogue_prompts import (
+        build_entry_point_audit_system_prompt,
+        build_entry_point_audit_prompt,
+        parse_entry_point_response,
+    )
+
+    stats = {"auto_filled": 0, "llm_chunks": 0, "llm_filled": 0, "still_null": 0}
+
+    # Phase 1: trivially-derivable fills (free).
+    for key, entry in catalog["entries"].items():
+        if entry.get("series_role") is None:
+            provisional = derive_series_role_provisional(entry)
+            if provisional is not None:
+                entry["series_role"] = provisional
+                stats["auto_filled"] += 1
+
+    # Targets needing LLM: anything still missing either field.
+    targets = [
+        (key, entry) for key, entry in catalog["entries"].items()
+        if needs_entry_point_audit(entry)
+    ]
+    print(f"  Phase 1 auto-filled series_role on {stats['auto_filled']} entries.")
+    print(f"  {len(targets)} entries still need LLM audit "
+          f"(loose-connected, ambiguous, author_entry_point judgement).")
+
+    if dry_run or not targets:
+        if dry_run:
+            print("  --dry-run: skipping LLM pass.")
+        stats["still_null"] = len(targets)
+        return stats
+
+    if client is None:
+        raise RuntimeError("audit_entry_points: client required for LLM pass; pass dry_run=True to skip")
+
+    system = build_entry_point_audit_system_prompt()
+
+    processed = 0
+    estimated_chunks = -(-len(targets) // chunk_size)
+    while processed < len(targets):
+        chunk_num = processed // chunk_size + 1
+        chunk = targets[processed: processed + chunk_size]
+        chunk_entries = []
+        for key, entry in chunk:
+            payload = {
+                **{k: entry.get(k) for k in (
+                    "title", "author", "series", "series_position",
+                    "series_status", "primary_genre"
+                )},
+                "_author_peers": _author_peer_summary(catalog, entry.get("author") or "", key),
+            }
+            chunk_entries.append(payload)
+
+        prompt = build_entry_point_audit_prompt(chunk_entries)
+        messages = [{"role": "user", "content": prompt}]
+        print(f"  Audit chunk {chunk_num}/{estimated_chunks} "
+              f"({len(chunk)} entries)...")
+        try:
+            raw = call_api_with_tools(client, messages, system)
+            results = parse_entry_point_response(raw)
+        except Exception as e:
+            print(f"    Error: {e}. Skipping chunk.")
+            processed += len(chunk)
+            time.sleep(RATE_LIMIT_DELAY)
+            continue
+
+        stats["llm_chunks"] += 1
+
+        catalog_keys = set(catalog["entries"])
+        normalized_index = {normalize_key(ck): ck for ck in catalog_keys}
+
+        for key, fields in results.items():
+            matched = resolve_canonical_key(key, catalog_keys, normalized_index)
+            if matched is None:
+                continue
+            entry = catalog["entries"][matched]
+            sr = fields.get("series_role")
+            aep = fields.get("author_entry_point")
+            if sr in {"standalone", "first", "mid", "late", "loose-entry", "loose-mid"}:
+                entry["series_role"] = sr
+                stats["llm_filled"] += 1
+            if aep in (True, False, None):
+                entry["author_entry_point"] = aep
+
+        processed += len(chunk)
+        time.sleep(RATE_LIMIT_DELAY)
+
+    stats["still_null"] = sum(
+        1 for e in catalog["entries"].values() if needs_entry_point_audit(e)
+    )
+    return stats
 
 # ---------------------------------------------------------------------------
 # comparable_books postprocessing
@@ -770,9 +946,13 @@ def main():
     parser.add_argument("--sync-comparables", action="store_true",
                         help="Canonicalise variants, reciprocate links, and "
                              "Claude-rank top 6 when over cap")
+    parser.add_argument("--audit-entry-points", action="store_true",
+                        help="Backfill series_role and author_entry_point on "
+                             "entries that lack them (auto-derives the trivial "
+                             "cases for free; LLM for the rest).")
     parser.add_argument("--dry-run", action="store_true",
-                        help="With --sync-comparables: compute changes but don't "
-                             "write or call Claude (reports the would-rank set)")
+                        help="With --sync-comparables or --audit-entry-points: "
+                             "compute changes but don't call Claude")
     parser.add_argument("--report", default=None,
                         help="With --sync-comparables: write JSON report to this path")
     args = parser.parse_args()
@@ -782,6 +962,29 @@ def main():
     if args.index_only:
         save_index(catalog, args.index)
         print(f"  Wrote slim index → {args.index} ({len(catalog['entries'])} entries)")
+        sys.exit(0)
+
+    if args.audit_entry_points:
+        client = None
+        if not args.dry_run:
+            client = authenticate_anthropic_client()
+        stats = audit_entry_points(
+            catalog,
+            client=client,
+            chunk_size=args.chunk_size,
+            dry_run=args.dry_run,
+        )
+        print(f"\nEntry-point audit complete.")
+        print(f"  auto_filled: {stats['auto_filled']}")
+        print(f"  llm_chunks:  {stats['llm_chunks']}")
+        print(f"  llm_filled:  {stats['llm_filled']}")
+        print(f"  still_null:  {stats['still_null']}")
+        if args.dry_run:
+            print(f"  --dry-run: catalog NOT written.")
+        else:
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+            print(f"  Wrote → {args.catalog} (+ {args.index})")
         sys.exit(0)
 
     if args.sync_comparables:

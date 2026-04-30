@@ -244,7 +244,11 @@ unfinished = [r for r in log
 ### Using the log in recommendations
 
 - **Exclusion non-negotiable.** Every candidate runs through `librarian-query.py candidates --exclude-read` (which applies the universal gate). Book in log — any date, with or without rating — disqualified. Drop silently, pull replacement. Never offer.
-- **Conservative author-entry-point fallback.** Until the catalog has `series_role` / `author_entry_point` fields, refuse to recommend a non-Standalone book by an author not in the log unless `series_position == "Book 1"`. Cite this rule explicitly when you decline a candidate. The fallback is enforced inside `librarian-query.py candidates` by default; do not pass `--no-author-entry-point-strict` in production batches. Loosely-connected series (Discworld, Poirot, Reacher) are catalogued as `Standalone`, so this rule does not over-block them.
+- **Author entry-point gate.** Two-layer rule, applied automatically by `librarian-query.py candidates`:
+  1. **Catalog-driven** (preferred): when an entry has `series_role` and/or `author_entry_point` populated, the helper trusts those fields. `series_role` in `{standalone, first, loose-entry}` AND `author_entry_point != False` → allow. `loose-mid`, `mid`, `late`, or `author_entry_point == False` → drop for unread authors.
+  2. **Conservative fallback**: when both fields are null, refuse to recommend a non-Standalone book by an author not in the log unless `series_position == "Book 1"`.
+
+  Cite the rule explicitly when you decline a candidate. Do not pass `--no-author-entry-point-strict` in production batches. The fallback is the right behavior for the smoke-test catalog state where these fields are still null on existing entries; once `python catalogue.py --audit-entry-points` has run, the catalog-driven path takes over without any librarian-side change.
 - **Whole favorites pool = benchmark evidence.** Pull `all_favorites` (≥4.5 stars, every era), weight `five_star` heavily. Use overlap with `comparable_books` and `taste_signals.positive` to score. Don't truncate to "top 20" — reader has many 5-stars, all count.
 - **Whole dislikes pool = also evidence.** Pull `all_dislikes` (≤2.5 stars, every era), check candidates against themes, tone, settings, `taste_signals.negative`. Recurring negative patterns = strong "avoid" signal.
 - **Recency biases conversation, not engine.** Recent reads surface in *interview* prompts (sharper hooks). Recommendation engine uses full favorites and dislikes pools, not just recent.
