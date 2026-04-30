@@ -102,6 +102,8 @@ Indie monster-hunter trilogies covering the gap your Witcher-saga 5-stars left.
 | The Green Mile | Stephen King | 290 | Death-row prison fantasy-horror — gentle giant inmate with healing touch. King at his most humane. 4.49 / 364k. |
 | There Is No Antimemetics Division | qntm | 175 | Anti-memes (memes that erase themselves on perception). Lovecraftian SCP-style cosmic horror. Indie. 4.14 / 21k. |
 | King Sorrow | Joe Hill | 710 | Faustian dark-academia horror from Stephen King's son — comp Secret History + IT. Most-praised Joe Hill. 4.43 / 15k. Heavy commitment but worth it. |
+| The Buffalo Hunter Hunter | Stephen Graham Jones | 324 | Indigenous-vampire historical horror — 1912 Montana priest's confession from a survivor of the buffalo-hunt massacres. SGJ is a major modern horror voice. 4.00 / 42k. |
+| Black Mouth | Ronald Malfi | 305 | Appalachian dark-secret returns when estranged brothers reunite after their mother's death. Comp McCammon regional gothic + King family-horror. 3.93 / 9k. |
 
 ---
 
@@ -195,7 +197,7 @@ _Not counted in the 100-book core — pull from here when a release lands and yo
 
 ## Tracking
 
-**Core count: 98 / 100** (10-book grace cushion, hard cap 110).
+**Core count: 100 / 100** ✓ (10-book grace cushion, hard cap 110).
 
 ### Genre Goals
 
@@ -203,7 +205,7 @@ _Not counted in the 100-book core — pull from here when a release lands and yo
 |---|---|---|
 | Fantasy | 22 | 27 (over by 5 — your call to lean in here) |
 | Science Fiction | 18 | 18 ✓ |
-| Horror | 12 (trimmed from 18) | 10 |
+| Horror | 12 (trimmed from 18) | 12 ✓ |
 | Crime / Mystery / Thriller | 12 | 12 ✓ |
 | Historical Fiction | 12 | 13 (over by 1) |
 | Nonfiction | 10 | 10 ✓ |
