@@ -2,7 +2,7 @@
 
 > **This is a TBR pool, not a reading order.** Pull from any section based on mood. Sequence carries no meaning.
 
-*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 36/100*
+*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 49/100*
 
 ---
 
@@ -36,6 +36,8 @@
 | Title | Author | Pages | Why It's For You |
 |-------|--------|-------|-----------------|
 | 11/22/63 🎧 | Stephen King | 592 | King 5★ author; propulsive time-travel thriller, JFK assassination, emotionally devastating |
+| Hyperion | Dan Simmons | 403 | Profile: space opera with literary ambitions — Canterbury Tales in space, peak literary sci-fi |
+| The Fall of Hyperion | Dan Simmons | 432 | Hyperion Bk 2 — completes the story, grandeur + philosophical |
 | Children of Time | Adrian Tchaikovsky | 424 | Hard sci-fi first contact, spider civilisation, Clarke Award — Tchaikovsky 4-4.5★ for you |
 | Children of Ruin | Adrian Tchaikovsky | 417 | Series continues — Bk 2 |
 | Children of Memory | Adrian Tchaikovsky | 342 | Series conclusion — Bk 3 |
@@ -51,6 +53,12 @@
 
 | Title | Author | Pages | Why It's For You |
 |-------|--------|-------|-----------------|
+| A Little Hatred | Joe Abercrombie | 462 | Best Served Cold 5★ author — Age of Madness Bk 1, First Law world decades later, same grimdark moral rot |
+| The Blacktongue Thief | Christopher Buehlman | 315 | Between Two Fires 5★ author — darkly comic grimdark, Buehlman voice in a faster package |
+| The Daughters' War | Christopher Buehlman | 303 | Blacktongue prequel — Bk 0, harrowing elegiac origin story |
+| The Lies of Locke Lamora 🎧 | Scott Lynch | 467 | Profile: heist + found family + morally grey ensemble — best-in-class grimdark heist fantasy |
+| Red Seas Under Red Skies 🎧 | Scott Lynch | 499 | Gentleman Bastards Bk 2 — darkly comic, propulsive continuation |
+| Murder on the Lamplight Express (I) | Morgan Stang | 194 | Murder at Spindle Manor 4.5★ — same series Bk 2, gothic detective with dark edges |
 | Jade City | Fonda Lee | 445 | Godfather-as-fantasy, political intrigue, morally grey ensemble — comps Tigana (Kay 4.5★) |
 | Jade War | Fonda Lee | 589 | Series continues — Bk 2 |
 | Jade Legacy | Fonda Lee | 702 | Series conclusion — Bk 3 |
@@ -75,24 +83,32 @@
 | Title | Author | Pages | Why It's For You |
 |-------|--------|-------|-----------------|
 | Mystic River | Dennis Lehane | 302 | Lehane 5★ author; Boston crime, brutal earned consequences, no soft landing |
+| The Devotion of Suspect X | Keigo Higashino | 231 | Malice 4★ author — structural cleverness, HOW not WHO, cerebral and devastating |
 
 ---
 
 ## Historical Fiction
 
-*To be filled — Phase 1/2 batches.*
+| Title | Author | Pages | Why It's For You |
+|-------|--------|-------|-----------------|
+| Gates of Fire 🎧 | Steven Pressfield | 354 | Profile: ancient world + military fiction — Thermopylae sole survivor POV, intense + humanising |
 
 ---
 
 ## Horror
 
-*To be filled — Phase 1/2 batches.*
+| Title | Author | Pages | Why It's For You |
+|-------|--------|-------|-----------------|
+| The Shining 🎧 | Stephen King | 355 | King 5★ — Pet Sematary 4.5★, Salem's Lot 4.75★ — claustrophobic hotel horror, full payoff |
+| The Lesser Dead | Christopher Buehlman | 249 | Between Two Fires 5★ author — 1970s vampire horror, darkly comic, dread-soaked |
 
 ---
 
 ## Nonfiction
 
-*To be filled — Phase 1/2 batches.*
+| Title | Author | Pages | Why It's For You |
+|-------|--------|-------|-----------------|
+| The Wager 🎧 | David Grann | 306 | Profile: propulsive narrative nonfiction — 1741 shipwreck, mutiny, cinematic and morally probing |
 
 ---
 
@@ -114,13 +130,13 @@
 
 | Genre | Goal | Current |
 |-------|------|---------|
-| Fantasy | ~30 | 19 |
-| Science Fiction | ~15 | 10 |
-| Horror | ~8 | 0 |
-| Crime / Mystery / Thriller | ~10 | 1 |
-| Historical Fiction | ~15 | 0 |
+| Fantasy | ~30 | 25 |
+| Science Fiction | ~15 | 12 |
+| Horror | ~8 | 2 |
+| Crime / Mystery / Thriller | ~10 | 2 |
+| Historical Fiction | ~15 | 1 |
 | Literary Fiction | ~5 | 0 |
-| Nonfiction | ~10 | 0 |
+| Nonfiction | ~10 | 1 |
 | Long Series / Other | ~7 | 6 |
 | **Total** | **100** | **36** |
 
