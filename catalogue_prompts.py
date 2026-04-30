@@ -49,8 +49,8 @@ CATALOG ENTRY SCHEMA:
 
 CATALOG FIELD DEFINITIONS:
 - series_status: Standalone = single book or loosely connected series (e.g. Poirot, Culture, Hainish Cycle). Short Stories = novella <50k words or story collection. Short Series = <4 books OR <600k total words published. Long Series = 4+ books AND 600k+ words published.
-- series_role: book's role within its series. "standalone" = no series. "first" = Book 1 of a sequential series (intended entry point). "mid" = middle entry of a sequential series. "late" = final or near-final book (spoiler-heavy; reader should not start here). "loose-entry" = book in a loosely-connected series (Discworld, Reacher, Poirot, Culture) that IS a recommended starting point. "loose-mid" = book in a loosely-connected series that depends on accumulated context. Story collections default to "standalone".
-- author_entry_point: true if a new-to-this-author reader can start here without missing context; false if the author has a better starting book elsewhere. Heuristics: "first" of an author's flagship series → true. "first" of a secondary series when flagship is elsewhere → usually false. "mid" / "late" / "loose-mid" → false. "loose-entry" → usually true. Standalone with author having other works → judge whether THIS book is a recommended starter. When uncertain, set null.
+- series_role: role within series. "standalone" = no series. "first" = Book 1 of sequential series (entry point). "mid" = middle of sequential. "late" = final or near-final (spoiler-heavy; not entry). "loose-entry" = loosely-connected series (Discworld, Reacher, Poirot, Culture) that IS recommended starting point. "loose-mid" = loosely-connected book needing prior context. Story collections default "standalone".
+- author_entry_point: true if new-to-this-author reader can start here without missing context; false if author has better starter elsewhere. Heuristics: "first" of flagship series → true. "first" of secondary series when flagship elsewhere → usually false. "mid" / "late" / "loose-mid" → false. "loose-entry" → usually true. Standalone with other works by author → judge if THIS is recommended starter. Uncertain → null.
 - indie: true if self-published or originally self-published before traditional pickup
 - classic: true if broadly considered classic literature
 - taste_signals: map to reader preference signals — e.g. "found family", "propulsive pacing", "morally grey protagonist", "slow meditative pacing", "romance-heavy"
@@ -295,9 +295,9 @@ def generate_audit_report(catalog: dict) -> str:
 # Entry-point audit prompt (series_role + author_entry_point backfill)
 # ---------------------------------------------------------------------------
 
-ENTRY_POINT_AUDIT_SYSTEM = """You auditing entry-point fields on a personal-library catalog.
+ENTRY_POINT_AUDIT_SYSTEM = """You auditing entry-point fields on personal-library catalog.
 
-For each book given, return ONLY two fields:
+For each book, return ONLY two fields:
 
   series_role: one of "standalone" | "first" | "mid" | "late" | "loose-entry" | "loose-mid"
   author_entry_point: true | false | null
@@ -305,32 +305,32 @@ For each book given, return ONLY two fields:
 DEFINITIONS:
 
 - series_role
-  - "standalone": no series at all. series == null.
-  - "first": Book 1 of a sequential series (Short Series or Long Series). Intended entry point.
-  - "mid": middle entry in a sequential series. Continuation; depends on prior books.
-  - "late": final or near-final entry in a long sequential series. Often spoiler-heavy. Reader should NOT start here.
-  - "loose-entry": book in a loosely-connected series (Discworld, Reacher, Poirot, Bosch, Culture, Hainish, etc.) that IS a recommended starting point — what fans tell new readers to start with.
-  - "loose-mid": book in a loosely-connected series that depends on accumulated context — better entered via a different starting book in the same world.
+  - "standalone": no series. series == null.
+  - "first": Book 1 of sequential series (Short Series or Long Series). Entry point.
+  - "mid": middle of sequential series. Continuation; needs prior books.
+  - "late": final or near-final of long sequential series. Spoiler-heavy. NOT entry.
+  - "loose-entry": loosely-connected series (Discworld, Reacher, Poirot, Bosch, Culture, Hainish) that IS recommended starting point — what fans tell new readers.
+  - "loose-mid": loosely-connected book needing prior context — better entered via different starter in same world.
 
 - author_entry_point
-  - true: a new-to-this-author reader can start with THIS book without missing context.
-  - false: the author has a better starting book elsewhere in the catalog (or this is a deep-cut, spinoff, or late-series).
-  - null: genuinely uncertain — author has multiple starting points and you cannot pick a recommended one without more research.
+  - true: new-to-this-author reader can start with THIS without missing context.
+  - false: author has better starter elsewhere (or this is deep-cut, spinoff, late-series).
+  - null: uncertain — author has multiple starters and you can't pick recommended one without research.
 
 HEURISTICS:
 
-- "first" of an author's flagship / best-known series → author_entry_point: true.
-- "first" of a secondary series when the flagship is elsewhere → author_entry_point: false. Example: Hobb's *Dragon Keeper* is Book 1 of Rain Wild Chronicles, but new Hobb readers start with *Assassin's Apprentice* — so Dragon Keeper is author_entry_point: false.
+- "first" of flagship / best-known series → author_entry_point: true.
+- "first" of secondary series when flagship elsewhere → author_entry_point: false. Example: Hobb's *Dragon Keeper* is Book 1 of Rain Wild Chronicles, but new Hobb readers start with *Assassin's Apprentice* — Dragon Keeper is author_entry_point: false.
 - "mid" / "late" / "loose-mid" → author_entry_point: false.
 - "loose-entry" → usually author_entry_point: true.
 - Standalone, author has only this book in catalog → author_entry_point: true.
-- Standalone, author has other works → judge whether THIS book is a recommended starter (e.g. King's *The Shining* yes, *The Tommyknockers* no; Vonnegut's *Slaughterhouse-Five* yes, *Galápagos* no).
+- Standalone, author has other works → judge if THIS is recommended starter (King's *The Shining* yes, *The Tommyknockers* no; Vonnegut's *Slaughterhouse-Five* yes, *Galápagos* no).
 
-WEB SEARCH: Use web search when uncertain about loose-connected series ordering or author-flagship judgements. Search "[author] best book to start with" or "[series] reading order entry point".
+WEB SEARCH: Use when uncertain about loose-connected ordering or author-flagship judgements. Search "[author] best book to start with" or "[series] reading order entry point".
 
-NEVER fabricate. Set author_entry_point: null when genuinely uncertain.
+NEVER fabricate. Set author_entry_point: null when uncertain.
 
-OUTPUT FORMAT: a single JSON object keyed by "Title - Author", values containing only series_role and author_entry_point. Wrap in a markdown ```json code block.
+OUTPUT FORMAT: single JSON object keyed by "Title - Author", values containing only series_role and author_entry_point. Wrap in markdown ```json block.
 
 ```json
 {
@@ -339,7 +339,7 @@ OUTPUT FORMAT: a single JSON object keyed by "Title - Author", values containing
 }
 ```
 
-No other text outside the block."""
+No text outside block."""
 
 
 def build_entry_point_audit_system_prompt() -> str:
@@ -353,7 +353,7 @@ def build_entry_point_audit_prompt(entries: list[dict]) -> str:
     fields). The prompt asks the LLM to fill series_role + author_entry_point
     only.
     """
-    lines = ["Audit these books. Return only series_role and author_entry_point per entry.\n"]
+    lines = ["Audit these books. Return series_role and author_entry_point per entry.\n"]
     for i, e in enumerate(entries, 1):
         ctx = {
             "title": e.get("title"),

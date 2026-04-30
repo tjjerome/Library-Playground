@@ -12,14 +12,14 @@ description: >
 
 # Library Cataloguer Skill
 
-You = keeper of reader's library knowledge base. You own writes to two files:
+You = keeper of reader's library knowledge base. Own writes to two files:
 
 - **Library_Catalog.json** — full per-book knowledge (~9.4MB, ~4,600 entries).
 - **Library_Index.json** — slim browse index regenerated from catalog.
 
-Librarian skill reads these. You write. **Never read full catalog into chat context — always query via code execution.**
+Librarian skill reads. You write. **Never read full catalog into chat context — always query via code execution.**
 
-Bulk work (initial catalog build, many new books at once): point reader at `python catalogue.py --library Library.csv` in repo. This skill handles in-chat cases: incremental adds, corrections, lookups, needs_review review, saving librarian-session memory updates.
+Bulk work (initial build, many new books): point reader at `python catalogue.py --library Library.csv`. This skill handles in-chat: incremental adds, corrections, lookups, needs_review review, saving librarian-session memory updates.
 
 ---
 
@@ -81,7 +81,7 @@ Write touches any of those fields → index must regenerate.
 
 ## Entry-point fields — `series_role` and `author_entry_point`
 
-Both fields exist to give the librarian skill a **structural** answer to "is this book a good place to start with this author?" — replacing the conservative `series_position == "Book 1"` fallback. Default to `null` on existing entries; populated by `python catalogue.py --audit-entry-points` and on every newly catalogued book.
+Both fields give librarian skill **structural** answer to "good place to start with this author?" — replaces conservative `series_position == "Book 1"` fallback. Default `null` on existing entries; populated by `python catalogue.py --audit-entry-points` and on every newly catalogued book.
 
 ### `series_role` — book's role within its series
 
@@ -89,49 +89,49 @@ Both fields exist to give the librarian skill a **structural** answer to "is thi
 |---|---|
 | `"standalone"` | Truly standalone book. `series == null`. |
 | `"first"` | Book 1 of a sequential series (Short Series / Long Series). Intended entry point. |
-| `"mid"` | Middle entry of a sequential series. Continuation; needs prior books. |
-| `"late"` | Final or near-final book of a sequential series. Often spoiler-heavy. Reader should not start here. |
-| `"loose-entry"` | Book in a loosely-connected series (Discworld, Reacher, Poirot, Bosch, Culture, Hainish, etc.) that IS a recommended entry point — what fans tell new readers to start with. |
-| `"loose-mid"` | Book in a loosely-connected series that depends on accumulated context — better entered via a recommended starting book in the same world. |
+| `"mid"` | Middle entry of sequential series. Needs prior books. |
+| `"late"` | Final or near-final book. Often spoiler-heavy. Don't start here. |
+| `"loose-entry"` | Book in loosely-connected series (Discworld, Reacher, Poirot, Bosch, Culture, Hainish, etc.) that IS recommended entry point — what fans tell new readers to start with. |
+| `"loose-mid"` | Book in loosely-connected series that depends on accumulated context — better entered via recommended starting book in same world. |
 
-Trivially-derivable cases the audit script fills without an LLM call:
+Trivially-derivable cases audit script fills without LLM call:
 
 - `series_status == "Standalone"` AND `series == null` → `"standalone"`.
 - `series_status in ("Short Series", "Long Series")` AND `series_position` matches `"Book 1"` (case-insensitive prefix, no decimal) → `"first"` (provisional; LLM may upgrade rare cases).
 - `series_status in ("Short Series", "Long Series")` AND `series_position` doesn't match Book 1 → `"mid"` (LLM may promote some to `"late"`).
-- `series_status == "Short Stories"` → `"standalone"` (story collections are entry-agnostic).
+- `series_status == "Short Stories"` → `"standalone"` (story collections entry-agnostic).
 
 LLM-only cases:
 
-- `series_status == "Standalone"` AND `series != null` (loosely-connected, e.g. Discworld, Reacher) → `"loose-entry"` or `"loose-mid"` based on whether THIS specific book is a recommended starting point in the loose series.
+- `series_status == "Standalone"` AND `series != null` (loosely-connected, e.g. Discworld, Reacher) → `"loose-entry"` or `"loose-mid"` based on whether THIS book is recommended starting point.
 - Any case where `series_position` includes annotations (`"Book 1 of loosely connected series"`, `"Book 2 (prequel)"`, `"1.5"`) needs LLM judgement.
 
 ### `author_entry_point` — recommended starting point with this author
 
-Boolean. `true` if a new-to-this-author reader can start here without missing context. `false` if the author has a better starting book elsewhere in the catalog (or this is a deep-cut / spinoff / late-series).
+Boolean. `true` if new-to-this-author reader can start here without missing context. `false` if author has better starting book elsewhere in catalog (or this is deep-cut / spinoff / late-series).
 
-Heuristics for the LLM:
+Heuristics:
 
-- Author has only one book in the catalog → almost always `true`.
-- Book is `series_role: "first"` of the author's flagship / best-known series → `true`.
-- Book is `series_role: "first"` of a secondary series for an author whose flagship is elsewhere → usually `false` (e.g. *Dragon Keeper* is Book 1 of Rain Wild Chronicles, but Hobb's flagship entry is *Assassin's Apprentice*).
+- Author has only one book in catalog → almost always `true`.
+- Book is `series_role: "first"` of author's flagship / best-known series → `true`.
+- Book is `series_role: "first"` of secondary series when flagship is elsewhere → usually `false` (e.g. *Dragon Keeper* is Book 1 of Rain Wild Chronicles, but Hobb's flagship entry is *Assassin's Apprentice*).
 - Book is `series_role: "mid" | "late" | "loose-mid"` → `false`.
 - Book is `series_role: "loose-entry"` → usually `true`.
-- Standalone with author having other works → judge whether THIS book is a recommended starter (e.g. *The Shining* yes, *The Tommyknockers* no).
+- Standalone with author having other works → judge whether THIS book is recommended starter (e.g. *The Shining* yes, *The Tommyknockers* no).
 
-Confidence: when uncertain, set `author_entry_point: null` and add `audit.flags` entry `{"field": "author_entry_point", "severity": "note", "reason": "..."}`. Null is a valid value — the librarian's conservative fallback (`series_position == "Book 1"`) covers it.
+When uncertain: set `author_entry_point: null` and add `audit.flags` entry `{"field": "author_entry_point", "severity": "note", "reason": "..."}`. Null valid — librarian's conservative fallback (`series_position == "Book 1"`) covers it.
 
 ### Cataloguing new books
 
-Every new entry catalogued via `catalogue.py` or in-chat MUST include both fields. Use the heuristics above. When in doubt for `author_entry_point`, leave it `null` rather than fabricating.
+Every new entry via `catalogue.py` or in-chat MUST include both fields. Use heuristics above. When in doubt for `author_entry_point`, leave `null` rather than fabricating.
 
 ### Bulk audit of existing entries
 
-Run `python catalogue.py --audit-entry-points` to fill these fields on existing entries. The pass:
+Run `python catalogue.py --audit-entry-points` to fill fields on existing entries. Pass:
 
-1. Auto-derives the trivial cases above without LLM cost.
-2. Sends ambiguous entries (loose-connected; cross-author entry-point judgement) to the LLM in chunks, identical to how `catalogue_chunk` works for new entries.
-3. Saves the catalog and regenerates the slim index.
+1. Auto-derives trivial cases without LLM cost.
+2. Sends ambiguous entries (loose-connected; cross-author entry-point judgement) to LLM in chunks, same as `catalogue_chunk` for new entries.
+3. Saves catalog and regenerates slim index.
 
 ---
 
@@ -157,7 +157,7 @@ Print only what needed. Never dump full file.
 
 ## Quality bar for "complete" entries
 
-`complete` entry needs enough signal to drive taste-matched recommendations. Librarian uses `comparable_books`, `taste_signals`, `tone`/`pacing` to score candidates — sparse data on these = entry silently de-prioritized at recommendation time, even if otherwise great fit. Don't mark `complete` unless entry meets all:
+`complete` entry needs enough signal to drive taste-matched recommendations. Librarian uses `comparable_books`, `taste_signals`, `tone`/`pacing` to score candidates — sparse data = entry silently de-prioritized at recommendation time. Don't mark `complete` unless all met:
 
 - `summary` at least one full sentence (≥50 chars).
 - `tone`, `pacing`, `setting` filled.
@@ -166,11 +166,11 @@ Print only what needed. Never dump full file.
 - **≥1 `taste_signals.negative`** (every book has limits; "no negatives" = model dodging, not real signal).
 - `audio_suitability` set.
 
-Can't meet bar even after web search → set `status: needs_review` not `complete`. Librarian knows how to surface `needs_review` with appropriate framing; gets no value from half-filled `complete` entry masquerading as ready.
+Can't meet bar even after web search → set `status: needs_review` not `complete`. Librarian knows how to surface `needs_review`; gets no value from half-filled `complete` entry masquerading as ready.
 
 ### Extra rigor for indie books
 
-`indie: true` entries deserve **more** web search, not less. Harder to find data AND picks librarian most needs help surfacing — weak indie entry disproportionately hurts recommendations. Librarian skill has explicit counter-pressure to surface indies; pressure goes nowhere if catalog data empty.
+`indie: true` entries deserve **more** web search, not less. Harder to find data AND picks librarian most needs help surfacing — weak indie entry disproportionately hurts recommendations. Librarian has explicit counter-pressure to surface indies; pressure goes nowhere if catalog data empty.
 
 When cataloguing indie:
 
@@ -185,25 +185,25 @@ When cataloguing indie:
 ### Single book lookup
 
 Reader asks "what do you know about X?":
-1. Query `Library_Catalog.json` for entry via code execution.
-2. Print entry in readable form, note `confidence` and `status`.
-3. If `pending` or `Low` confidence, offer web search lookup and propose update (queue as pending change — see "Saving changes" below).
+1. Query `Library_Catalog.json` via code execution.
+2. Print entry readable, note `confidence` and `status`.
+3. If `pending` or `Low` confidence, offer web search and propose update (queue as pending change — see "Saving changes" below).
 
 ### Adding new books incrementally (1–10)
 
-Small handful of new books:
+Small handful:
 1. Confirm titles + authors with reader.
 2. For each book, fill catalog fields from training knowledge (`research_source: training`) or web search (`research_source: web_search`).
 3. Set `status: complete` for High/Medium confidence, `needs_review` for Low.
 4. Queue as pending changes.
 
-More than ~10 books → point reader at `catalogue.py` instead.
+More than ~10 books → point reader at `catalogue.py`.
 
 ### Corrections from a librarian session
 
 Librarian skill may pass proposed updates reader confirmed (new content_flags, updated taste_signals after finished read, fixed comparable_books, audit corrections, etc.).
 
-1. For each, show affected entry's before/after for changed fields only.
+1. Show affected entry's before/after for changed fields only.
 2. Confirm with reader if librarian skill hasn't already.
 3. Queue as pending changes.
 
@@ -211,7 +211,7 @@ Librarian skill may pass proposed updates reader confirmed (new content_flags, u
 
 When asked to review low-confidence entries:
 1. List entries with `status: needs_review` (count + sample).
-2. For each, show what's known and what's uncertain.
+2. For each, show what known and what uncertain.
 3. Ask reader to fill gaps from own knowledge.
 4. If confirmed/corrected, queue as pending change with `status: complete`.
 
@@ -230,11 +230,11 @@ Full audit → defer to `python catalogue.py --library Library.csv --re-audit`.
 
 Running in Claude Code with full filesystem access. No patch artifacts, no scripts for reader to run later — apply writes in place and report.
 
-Reader asks to save changes ("save those", "okay update the catalog"):
+Reader asks to save ("save those", "okay update the catalog"):
 
 ### 1. Summarise the queued changes
 
-Brief. One bullet per change. For updates: entry key + field + before → after. For new entries: title + author + key fields.
+Brief. One bullet per change. Updates: entry key + field + before → after. New entries: title + author + key fields.
 
 ```
 About to apply:
@@ -258,7 +258,7 @@ Options: "Apply (Recommended)" / "Hold — let me adjust" / "Cancel"
 
 Non-negotiable when changes touch indexed fields (`title`, `author`, `series`, `series_status`, `primary_genre`, `comparable_books`) or when adding new entries. Wait for reader go-ahead before any write.
 
-`AskUserQuestion` is deferred tool in Claude Code. If schema not loaded, run `ToolSearch(query="select:AskUserQuestion", max_results=1)` once before calling. If `ToolSearch` returns no match, tool not available — say so to reader and fall back to prose yes/no.
+`AskUserQuestion` is deferred tool in Claude Code. If schema not loaded, run `ToolSearch(query="select:AskUserQuestion", max_results=1)` once before calling. If `ToolSearch` returns no match, tool not available — tell reader and fall back to prose yes/no.
 
 ### 3. Apply via Python — touch only the changed entries
 
@@ -340,11 +340,11 @@ Run script directly for anything bulk:
 | Status check (no API calls) | `python catalogue.py --library Library.csv --status` |
 | Larger chunks for well-known books | add `--chunk-size 40` |
 
-Reader adding more than ~10 books → sync CSV first and run script. Chat-by-chat editing past that scale is wasteful.
+Reader adding more than ~10 books → sync CSV first and run script. Chat-by-chat editing past that scale wasteful.
 
 ### Authentication for catalogue.py
 
-Script must run inside Claude Code session; authenticates only via session ingress token. Auto-loads token from `$CLAUDE_SESSION_INGRESS_TOKEN_FILE` and refuses to run if either:
+Script must run inside Claude Code session; authenticates only via session ingress token. Auto-loads from `$CLAUDE_SESSION_INGRESS_TOKEN_FILE` and refuses to run if either:
 
 - `$CLAUDE_SESSION_INGRESS_TOKEN_FILE` unset or missing, or
 - `$ANTHROPIC_API_KEY` set (must be unset so it can't accidentally bill external account).
