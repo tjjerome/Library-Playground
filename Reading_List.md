@@ -2,7 +2,7 @@
 
 > **This is a TBR pool, not a reading order.** Pull from any section based on mood. Sequence carries no meaning.
 
-*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 49/100*
+*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 78/100*
 
 ---
 
@@ -84,6 +84,18 @@
 |-------|--------|-------|-----------------|
 | Mystic River | Dennis Lehane | 302 | Lehane 5★ author; Boston crime, brutal earned consequences, no soft landing |
 | The Devotion of Suspect X | Keigo Higashino | 231 | Malice 4★ author — structural cleverness, HOW not WHO, cerebral and devastating |
+| Magpie Murders | Anthony Horowitz | 388 | Meta mystery-within-mystery — editor reads murder manuscript while real murder unfolds outside. Maximum structural cleverness. Tester |
+| In the Woods | Tana French | 396 | Literary crime — detective with forgotten childhood mystery, same woods, new murder. Structurally tight, unexpected ending. Dublin Murder Squad Bk 1 |
+| The Likeness | Tana French | 448 | Dublin Murder Squad Bk 2 — Cassie Maddox goes undercover as a murdered woman who looks exactly like her |
+| Faithful Place | Tana French | 330 | Dublin Murder Squad Bk 3 — Frank Mackey, cold case resurfaces in the Liberties |
+| Murder on the Orient Express | Agatha Christie | 139 | Classic. Poirot. Christie's most audacious structural twist — cheats genre rules completely. HOW-not-WHO at its purest |
+| The Girl with the Dragon Tattoo | Stieg Larsson | 404 | Journalist + Lisbeth Salander, 40-year disappearance inside a Swedish dynasty. Two competence-driven protagonists. Millennium Bk 1 |
+| The Girl Who Played with Fire | Stieg Larsson | 417 | Millennium Bk 2 — Lisbeth hunted, the truth about her past emerges |
+| The Girl Who Kicked the Hornet's Nest | Stieg Larsson | 474 | Millennium Bk 3 — series conclusion, institutions vs. Salander |
+| The Thursday Murder Club | Richard Osman | 289 | Four retired sleuths, real murder drops in their lap — darkly comic, character ensemble. Bk 1 tester |
+| Slow Horses | Mick Herron | 239 | MI5 reject department, darkly comic morally grey ensemble spy thriller — Jackson Lamb + unauthorized ops. Bk 1 |
+| Dead Lions | Mick Herron | 255 | Slough House continues — Bk 2 |
+| Real Tigers | Mick Herron | 239 | Slough House Bk 3 — trilogy arc completes |
 
 ---
 
@@ -92,6 +104,16 @@
 | Title | Author | Pages | Why It's For You |
 |-------|--------|-------|-----------------|
 | Gates of Fire 🎧 | Steven Pressfield | 354 | Profile: ancient world + military fiction — Thermopylae sole survivor POV, intense + humanising |
+| The Name of the Rose | Umberto Eco | 836 | Classic. Medieval monastery murder mystery — GRRM's stated influence. Detective spine + structural cleverness, comp to A Drop of Corruption |
+| Glorious Exploits | Ferdia Lennon | 198 | Athens 413 BC — two broke potters stage Euripides using Sicilian POWs. Darkly comic, short, devastating. Deep cut (20k reviews) |
+| The Iron King | Maurice Druon | 236 | Classic. GRRM's stated GOT inspiration — medieval France, Templar curse, royal intrigue. Politically ruthless Book 1 tester |
+| The Last Kingdom | Bernard Cornwell | 263 | Viking/Saxon England — competence-driven Uhtred, gritty + darkly humorous. Book 1 tester of 13-book series |
+| All the Light We Cannot See | Anthony Doerr | 453 | Pulitzer winner. Blind French girl + German radio tracker, WWII — literary ambition in service of plot, structurally precise |
+| Lonesome Dove | Larry McMurtry | 844 | Classic. Two Texas Rangers, cattle drive to Montana, everything goes wrong — propulsive ensemble epic, Abercrombie-level earned consequences |
+| The Great Train Robbery | Michael Crichton | 218 | Victorian England heist — short, structurally meticulous, same clever HOW spine as A Drop of Corruption. Under-known Crichton |
+| The Pillars of the Earth | Ken Follett | 894 | 12th-century England, cathedral built across decades — political intrigue, war, religious power. Generational epic, Book 1 tester |
+| The Count of Monte Cristo | Alexandre Dumas | 1057 | Classic. Architecture of revenge schemes — surgical precision, every thread pays off, same pleasure center as A Drop of Corruption at epic scale |
+| The Underground Railroad | Colson Whitehead | 249 | Pulitzer winner. Escaped slave, Underground Railroad as literal rail network — propulsive, structurally inventive, each chapter a different state |
 
 ---
 
@@ -101,6 +123,12 @@
 |-------|--------|-------|-----------------|
 | The Shining 🎧 | Stephen King | 355 | King 5★ — Pet Sematary 4.5★, Salem's Lot 4.75★ — claustrophobic hotel horror, full payoff |
 | The Lesser Dead | Christopher Buehlman | 249 | Between Two Fires 5★ author — 1970s vampire horror, darkly comic, dread-soaked |
+| The Terror | Dan Simmons | 650 | 1845 Arctic expedition horror — historical scaffolding + something hunting the crew. Simmons meticulous + propulsive. Gothic-historical at profile spec |
+| Fevre Dream | George R.R. Martin | 349 | 1857 Mississippi River vampires — GRRM morally grey ensemble, Gothic + historical, plot-forward not languorous |
+| Mountain Fast: A Gothic Tale of Medieval Horror (I) | S.J. Shank | 199 | Indie. Medieval pilgrim Gothic horror — dark, short, exactly the Gothic-historical register you want |
+| The Haunting of Hill House | Shirley Jackson | 187 | Classic. Template for all haunted house fiction — precise structural dread, foundational, 187pp |
+| Something Wicked This Way Comes | Ray Bradbury | 145 | Classic. Dark carnival horror — two boys, one wish per victim, danger written as folklore. 145pp |
+| Good Boy | Neil McRobert | 85 | Northern English folk-cosmic horror novella — missing children, ancient horror, village history. 85pp deep cut |
 
 ---
 
@@ -114,7 +142,9 @@
 
 ## Literary Fiction
 
-*To be filled — Phase 1/2 batches.*
+| Title | Author | Pages | Why It's For You |
+|-------|--------|-------|-----------------|
+| The Secret History | Donna Tartt | 468 | Inverted mystery — you know who killed whom on page one, the book is HOW and WHY. Literary, cold, structurally elegant |
 
 ---
 
@@ -132,13 +162,13 @@
 |-------|------|---------|
 | Fantasy | ~30 | 25 |
 | Science Fiction | ~15 | 12 |
-| Horror | ~8 | 2 |
-| Crime / Mystery / Thriller | ~10 | 2 |
-| Historical Fiction | ~15 | 1 |
-| Literary Fiction | ~5 | 0 |
+| Horror | ~8 | 8 ✓ |
+| Crime / Mystery / Thriller | ~10 | 14 |
+| Historical Fiction | ~15 | 11 |
+| Literary Fiction | ~5 | 1 |
 | Nonfiction | ~10 | 1 |
 | Long Series / Other | ~7 | 6 |
-| **Total** | **100** | **36** |
+| **Total** | **100** | **78** |
 
 ### Series Status Goals
 
@@ -152,7 +182,7 @@
 
 | Tag | Floor | Current |
 |-----|-------|---------|
-| Classics | 10 | 0 |
-| Indie | 20 | 14 |
+| Classics | 10 | 7 |
+| Indie | 20 | 15 |
 
-*List: 26 / 100 (cap 110) | Top 5 locked: No*
+*List: 78 / 100 (cap 110) | Top 5 locked: No*
