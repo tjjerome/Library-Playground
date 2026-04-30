@@ -2,7 +2,7 @@
 
 > **This is a TBR pool, not a reading order.** Pull from any section based on mood. Sequence carries no meaning.
 
-*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 78/100*
+*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 91/100*
 
 ---
 
@@ -137,6 +137,15 @@
 | Title | Author | Pages | Why It's For You |
 |-------|--------|-------|-----------------|
 | The Wager 🎧 | David Grann | 306 | Profile: propulsive narrative nonfiction — 1741 shipwreck, mutiny, cinematic and morally probing |
+| Killers of the Flower Moon 🎧 | David Grann | 259 | Grann again — 1920s Osage Nation murders, FBI origin story. Same propulsive narrative DNA as The Wager |
+| In Cold Blood | Truman Capote | 281 | Classic. Invented narrative nonfiction — 1959 Kansas murders, Capote with the killers on death row. Propulsive, morally unresolved |
+| Say Nothing | Patrick Radden Keefe | 478 | IRA, Jean McConville, three decades of violence and memory. Reads faster than most thrillers |
+| Endurance | Alfred Lansing | 225 | Shackleton's 1915 Antarctic survival — 27 men, ship crushed in ice. Pure propulsion, documentary-precise |
+| Bad Blood | John Carreyrou | 316 | Theranos fraud procedural — Carreyrou unravels Elizabeth Holmes’ empire methodically. Reads like a thriller |
+| The Radium Girls | Kate Moore | 382 | 1920s radium dial workers poisoned + told it was safe — they sued and changed labor law. Propulsive narrative + courtroom stakes |
+| The Immortal Life of Henrietta Lacks | Rebecca Skloot | 269 | HeLa cells — Henrietta's cancer cells taken without consent became the most important cell line in history. Science + history + racial injustice |
+| Cosmos | Carl Sagan | 301 | Classic. 13 billion years of universe as narrative — Sagan writes the scientific method like Hemingway. Gateway between science and wonder |
+| A Short History of Nearly Everything | Bill Bryson | 564 | Bryson's tour of scientific history — how we discovered what we know. Accessible, narrative, funny |
 
 ---
 
@@ -145,6 +154,10 @@
 | Title | Author | Pages | Why It's For You |
 |-------|--------|-------|-----------------|
 | The Secret History | Donna Tartt | 468 | Inverted mystery — you know who killed whom on page one, the book is HOW and WHY. Literary, cold, structurally elegant |
+| Pachinko | Min Jin Lee | 412 | Korea to Japan 1910–1989 — four generations surviving colonial occupation, war, permanent outsider status. Literary fiction with GRRM-scale consequence |
+| 1984 | George Orwell | 236 | Classic. Re-read by reader request. Winston Smith's resistance — surveillance state structured like a thriller, still propulsive |
+| Crime and Punishment | Fyodor Dostoevsky | 491 | Classic. Murderer watches himself unravel — psychological procedural, investigator plays games and waits. Propulsive despite being 19th-century Russian |
+| Lincoln in the Bardo | George Saunders | 211 | Lincoln holds his dead son's body in the crypt — ghost chorus + documentary fragments. Formally experimental, deeply felt |
 
 ---
 
@@ -165,10 +178,10 @@
 | Horror | ~8 | 8 ✓ |
 | Crime / Mystery / Thriller | ~10 | 14 |
 | Historical Fiction | ~15 | 11 |
-| Literary Fiction | ~5 | 1 |
-| Nonfiction | ~10 | 1 |
+| Literary Fiction | ~5 | 5 ✓ |
+| Nonfiction | ~10 | 10 ✓ |
 | Long Series / Other | ~7 | 6 |
-| **Total** | **100** | **78** |
+| **Total** | **100** | **91** |
 
 ### Series Status Goals
 
@@ -182,7 +195,7 @@
 
 | Tag | Floor | Current |
 |-----|-------|---------|
-| Classics | 10 | 7 |
+| Classics | 10 | 10 ✓ |
 | Indie | 20 | 15 |
 
-*List: 78 / 100 (cap 110) | Top 5 locked: No*
+*List: 91 / 100 (cap 110) | Top 5 locked: No*
