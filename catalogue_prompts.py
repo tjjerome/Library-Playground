@@ -53,8 +53,11 @@ CATALOG FIELD DEFINITIONS:
 - author_entry_point: true if new-to-this-author reader can start here without missing context; false if author has better starter elsewhere. Heuristics: "first" of flagship series → true. "first" of secondary series when flagship elsewhere → usually false. "mid" / "late" / "loose-mid" → false. "loose-entry" → usually true. Standalone with other works by author → judge if THIS is recommended starter. Uncertain → null.
 - indie: true if self-published or originally self-published before traditional pickup
 - classic: true if broadly considered classic literature
-- taste_signals: map to reader preference signals — e.g. "found family", "propulsive pacing", "morally grey protagonist", "slow meditative pacing", "romance-heavy"
-- content_flags: flag only meaningful content warnings — graphic violence, sexual content, necrophilia, animal death, suicide. Do NOT over-flag.
+- taste_signals: **public-reception signals** — what readers in general respond to in this book ("found family", "propulsive pacing", "morally grey protagonist", "slow meditative pacing", "romance-heavy"). NOT this reader's personal taste. Phrase as objective claims about the book, not "I liked X".
+- content_flags: factual claims about content present in the book — graphic violence, sexual content, on-page sexual assault, animal death, suicide. NOT reader's personal triggers or aversions. Do NOT over-flag.
+
+CATALOG SCOPE — HARD RULE:
+Catalog holds objective facts, public reception, and context — what a knowledgeable librarian knows. NEVER write reader sentiment ("I loved this", "this disappointed me"), reader's per-book rating, or reader's personal preferences into any catalog field. Those belong in Profile.md or Reading_Log.csv. If a hand-off contains sentiment-flavored language, translate to objective form before writing.
 - confidence: High = know it well. Medium = partial knowledge. Low = limited info or post-training-cutoff.
 - status: use "needs_review" when confidence is Low or information uncertain/conflicting.
 

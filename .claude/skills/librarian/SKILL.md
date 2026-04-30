@@ -729,20 +729,48 @@ Catalog = librarian's persistent memory. Treat it that way. Reader corrects, ref
 
 **Eager, not lazy.** A correction surfaced at chunk 4 of a 25-batch build should be written by chunk 5, not at session close. Hoarding corrections has two costs: the rest of the build runs against stale data, and reader watches the librarian "pretend to remember" something it knows is wrong.
 
-Triggers — hand off to the **library-cataloguer** skill the same turn the reader gives signal:
+### The catalog/profile/log boundary — non-negotiable
+
+Catalog is what a knowledgeable librarian knows about a book — **objective facts, public reception, and context**. Reader sentiment and reading-log data live elsewhere. The line:
+
+| Belongs in `Library_Catalog.json` | Belongs in `Profile.md` | Belongs in `Reading_Log.csv` |
+|---|---|---|
+| Genre, series, page count, pub year | Reader's positive/negative indicators | Reader's per-book rating |
+| Plot summary, themes, setting | Tone-palette breadth, audio split, length appetite | Date read |
+| Tone/pacing as commonly described | Stated comp anchors ("more like X than Y") | `*tbr` / `*completed` flags |
+| `comparable_books` based on objective overlap (themes, tone, audience) | Reader's named "if you liked this you'll like" pairings | Per-book `my_tags` |
+| `taste_signals.positive/negative` = **what readers in general respond to** ("found family", "slow-burn payoff", "morally grey protagonist") | Reader's personal positives/negatives | — |
+| `content_flags` = factual claims about the book ("graphic violence in third act", "on-page sexual assault") | Reader's personal triggers / preferences | — |
+| `audio_suitability` based on production quality + book demands | Reader's audio-context preferences | — |
+
+**Test:** could another reader using this same catalog get value from this fact? Yes → catalog. No → Profile.md. Reader's *rating* of a book never enters the catalog — that's reading-log territory.
+
+When reader gives signal that's **factual about the book**: route to catalog via cataloguer.
+When reader gives signal that's **about themselves**: route to `Profile.md` (librarian writes directly, no cataloguer hand-off).
+
+### Catalog-write triggers (objective, public, contextual only)
+
+Hand off to **library-cataloguer** the same turn the reader gives a factual signal:
 
 - **Tag correction** — "actually that's literary fiction not fantasy", "this isn't indie", "this isn't a Long Series, the second book never came out". Apply to in-progress `Reading_List.md` immediately + queue catalog write.
-- **New content flag** — "the violence in that gets really graphic" / "there's a sexual assault scene worth flagging". Catalog update.
-- **Fresh comp link** — reader names a book that should be a comp for a catalog entry. Catalog update on both sides (reciprocate links).
-- **Post-read taste signal** — reader finished something on the list and reports back. Catalog `taste_signals.positive` or `.negative` + add to reading log.
+- **New content flag** — "the violence in that gets really graphic" / "there's a sexual assault scene worth flagging". Factual about the book. Catalog update. (Compare: "I don't want graphic violence" → that's a Profile.md negative indicator, not a catalog flag.)
+- **Fresh comp link** — reader names a book that's objectively similar (same audience, themes, tone). Catalog update on both sides. (Compare: "X reminded me of Y in a way I personally connect with" → Profile.md, not catalog.)
+- **Public-reception clarification** — reader corrects a `taste_signals` claim ("most readers don't actually love the pacing — it's a known sticking point"). Catalog update.
+- **Audit fix** — null `pages`, wrong `series_position`, missing `summary`, mis-set `series_role` / `author_entry_point`. Catalog update.
 - **New book** — "I bought X" / "I picked up X". Cataloguer adds entry, regenerates index.
-- **Audit fix** — null `pages`, wrong `series_position`, missing `summary`. Catalog update.
+
+**Profile.md-write triggers (sentiment, preference, personal taste):**
+
+- "I loved/hated/didn't click with X" → Profile.md, not catalog.
+- "I'm currently into X mood" → Profile.md.
+- Reader's *rating* of a book post-read → reading log (handled by cataloguer's reading-log workflow, not the catalog itself).
+- Reader's tone-palette shifts surfaced during reflection checkpoints → Profile.md.
 
 Cataloguer can batch within a session (its own design), but the librarian should hand off **early and often** — every 2–3 batches at most, not "once a few accumulated". The cataloguer's own batching is what protects against per-edit thrash; the librarian doesn't need to also gate on batch size.
 
 **Catalog tags = ground truth** for librarian-side ranking (genre, series_status, indie, classic, series_role, author_entry_point). Reader corrects? Acknowledge, apply to reading list immediately, queue cataloguer update same beat. Don't preemptively distrust tags before correction — creates friction.
 
-`Profile.md` is also memory but lives separately — librarian writes that directly (see "Reflection checkpoint" in Phase 2). Cataloguer doesn't touch it.
+`Profile.md` is also memory but lives separately — librarian writes that directly (see "Reflection checkpoint" in Phase 2). Cataloguer doesn't touch it. **Reader sentiment and ratings never enter the catalog.**
 
 ---
 

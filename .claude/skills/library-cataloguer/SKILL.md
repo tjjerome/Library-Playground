@@ -79,6 +79,25 @@ Write touches any of those fields → index must regenerate.
 
 ---
 
+## Catalog scope — objective, public, contextual only
+
+Catalog = what a knowledgeable librarian knows about a book. **Reader sentiment, ratings, and personal preferences NEVER enter the catalog.** Hard rule for every write — incoming librarian-session updates, in-chat corrections, audit fixes, new entries.
+
+| In scope | Out of scope (route elsewhere) |
+|---|---|
+| Genre, series, page count, pub year | Reader's per-book rating → `Reading_Log.csv` |
+| Plot summary, themes, setting, tone, pacing | "I loved/hated this" → `Profile.md` |
+| `comparable_books` based on objective overlap (themes, tone, audience) | "X reminded me of Y because I personally connect" → `Profile.md` |
+| `taste_signals.positive/negative` = **what readers in general respond to** ("found family", "slow-burn payoff", "morally grey protagonist") | Reader's personal positives/negatives → `Profile.md` |
+| `content_flags` = factual claims about the book ("graphic violence in third act", "on-page sexual assault") | Reader's personal triggers / preferences → `Profile.md` |
+| `audio_suitability` based on production quality + book demands | Reader's audio-context preferences → `Profile.md` |
+
+**Test before any write:** could another reader using this same catalog get value from this fact? Yes → catalog. No → reject the write, route to `Profile.md` (librarian) or `Reading_Log.csv` (separate workflow).
+
+When a librarian-session hand-off contains sentiment-flavored language ("I loved how slow this was"), translate to the objective form ("readers who enjoy slow-burn meditative pacing respond well") before writing — or refuse the write and tell the librarian to route to Profile.md instead.
+
+---
+
 ## Entry-point fields — `series_role` and `author_entry_point`
 
 Both fields give librarian skill **structural** answer to "good place to start with this author?" — replaces conservative `series_position == "Book 1"` fallback. Default `null` on existing entries; populated by `python catalogue.py --audit-entry-points` and on every newly catalogued book.
