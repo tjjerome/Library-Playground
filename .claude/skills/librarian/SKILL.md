@@ -489,9 +489,16 @@ Every 4-pick batch must contain at least one deep cut. The helper defines deep-c
 
 When the indie or classic floor is below target, every Phase 2 candidate call runs with `--cross-cut-floor indie:1` (or `classic:1`) until the floor is met. Treat indie / classic as cross-cutting axes considered in every genre batch — not as separate batch types. The smoke-test reader's complaint #12 came from running indie as a separate pass *after* the genres were full; by then the only indie left was fantasy.
 
-#### Mid-build reflection beats
+#### Reflection checkpoint — every 2–3 batches
 
-Every 2–3 batches, write 2–3 sentences of conversational reflection in chat — what's been accepted, what's been skipped, has the implicit profile shifted? Optionally end with one clarifying question (which is then turn-ending; do not chain another `AskUserQuestion` on the same turn). This is the librarian thinking out loud at the shelf, not a structured probe. Natural commit point — "Want me to commit progress so far?" is appropriate here.
+Not a monologue. Every 2–3 batches, the librarian opens a real two-way conversation about the build so far. Pattern:
+
+1. **Observation in chat (2–3 sentences).** What's been accepted, what's been skipped, what implicit pattern is showing — "you're picking lyrical grimdark over fast-paced grimdark; you've passed on every space-opera so far; the indie picks are landing harder than the trad."
+2. **Open prose question to the reader.** Pick one of: "what's working?", "what's missing?", "anything I'm misreading?", "is the tone still right?". Turn-ending — no `AskUserQuestion` chains. Wait for the reply.
+3. **Profile write same turn.** Reader's answer goes straight into `Profile.md` via Edit — new positive indicators, sharpened negative indicators, fresh benchmark titles, tone adjustments. Don't queue. Don't wait for end-of-session. **`Profile.md` is live memory, not a one-time output.**
+4. **Optional commit.** Natural commit point — "Want me to commit the profile update + progress so far?" via `AskUserQuestion`.
+
+The taste interview at session start is a **seed**, not a fixed contract. The build phase is where the profile actually sharpens.
 
 #### Phase boundary commit beat
 
@@ -543,13 +550,13 @@ AskUserQuestion(questions=[{
 
 Take literal `selected` set from `AskUserQuestion` response, add exactly those to `Reading_List.md` via Edit. Update running count. Unchecked = deferred — NOT written. Run `is-on-list` pre-write check (see "Never add to the list").
 2. **Append to shown-ledger.** Write `picks.json` of all options shown (with `status: selected | rejected`) and run `python3 librarian-query.py mark-shown --batch-id <id> --picks @picks.json`. This is what makes rejection weighting work.
-3. **Series entries → fire series scope follow-up immediately.** One `AskUserQuestion` per selected series. Don't batch — each series needs scope decision before moving on.
+3. **Series entries → fire series-scope follow-up BEFORE next batch.** Hard gate. If reader picked a series book in this batch, an `AskUserQuestion` MUST fire asking how many books to add ("Just book 1" / "First N — partial commitment" / "All M published" / "Other"). One per selected series; no batching across series. **No new candidate batch generates until every selected series has an answered scope question on record.** Reader's choice is what gets written to `Reading_List.md` — never assume "they picked book 1, must mean the whole series" or vice versa.
 4. **Unselected = "not right now," but rejection weighting is real.** Each unselected pick adds escalating negative weight (-0.5, -1.5, -3.5, -6.0). Can resurface, but score must overcome weight. Two rejections = strong penalty; three = effectively dropped. Can resurface high-conviction pick with new framing, fresh signal, or explicit reader request.
 5. **Whole-batch skip = pause-and-probe.** Zero options selected → **do not auto-advance** to different genre. Open probe in chat:
 
    > "None of those landed — what's off about the framing? Tone, format, era, something else?"
 
-   Prose question (turn-ending — no `AskUserQuestion` same turn). Reader's answer feeds back into `Profile.md` via cataloguer skill **before any new batch fires.** Smoke-test issue #11 fix.
+   Prose question (turn-ending — no `AskUserQuestion` same turn). Reader's answer is written to `Profile.md` directly via Edit (librarian owns Profile.md — not a cataloguer hand-off) **before any new batch fires.** Smoke-test issue #11 fix.
 6. **Surprising selections → one pointed follow-up.** Surprising = contradicts reader profile:
    - Picked book whose `taste_signals.negative` overlaps with stated positive indicators.
    - Picked book in low-priority genre.
@@ -716,17 +723,26 @@ Format: `| Title | Author | Pages | Why It's For You |` — drop `#` column so t
 
 ---
 
-## Step 6: Memory bank — corrections and updates from chat
+## Step 6: Memory bank — `Library_Catalog.json` is long-term memory
 
-As reader discusses books, they may give new info to persist to catalog: corrected facts, new content_flags, updated taste_signals, fresh `comparable_books` link, audit fixes, new book.
+Catalog = librarian's persistent memory. Treat it that way. Reader corrects, refines, or adds info during build → **act on it that turn**, not at session end. The cataloguer skill owns the actual write; librarian's job is to recognize the signal and hand off promptly.
 
-**This is the librarian's memory.** Treat seriously — never silently mutate.
+**Eager, not lazy.** A correction surfaced at chunk 4 of a 25-batch build should be written by chunk 5, not at session close. Hoarding corrections has two costs: the rest of the build runs against stale data, and reader watches the librarian "pretend to remember" something it knows is wrong.
 
-When reader confirms change, hand off to **library-cataloguer** skill, which owns all writes to `Library_Catalog.json` and `Library_Index.json`. In Claude Code it applies change directly via Python and regenerates index — no patch files, no manual apply.
+Triggers — hand off to the **library-cataloguer** skill the same turn the reader gives signal:
 
-Reader hasn't asked to save changes? Hold in conversation — batch and offer to flush once a few accumulated.
+- **Tag correction** — "actually that's literary fiction not fantasy", "this isn't indie", "this isn't a Long Series, the second book never came out". Apply to in-progress `Reading_List.md` immediately + queue catalog write.
+- **New content flag** — "the violence in that gets really graphic" / "there's a sexual assault scene worth flagging". Catalog update.
+- **Fresh comp link** — reader names a book that should be a comp for a catalog entry. Catalog update on both sides (reciprocate links).
+- **Post-read taste signal** — reader finished something on the list and reports back. Catalog `taste_signals.positive` or `.negative` + add to reading log.
+- **New book** — "I bought X" / "I picked up X". Cataloguer adds entry, regenerates index.
+- **Audit fix** — null `pages`, wrong `series_position`, missing `summary`. Catalog update.
 
-**Catalog tags = ground truth** (genre, series_status, indie, classic). Reader corrects tag? Acknowledge, apply to reading list immediately, queue catalog update for cataloguer. Don't preemptively distrust tags — creates friction.
+Cataloguer can batch within a session (its own design), but the librarian should hand off **early and often** — every 2–3 batches at most, not "once a few accumulated". The cataloguer's own batching is what protects against per-edit thrash; the librarian doesn't need to also gate on batch size.
+
+**Catalog tags = ground truth** for librarian-side ranking (genre, series_status, indie, classic, series_role, author_entry_point). Reader corrects? Acknowledge, apply to reading list immediately, queue cataloguer update same beat. Don't preemptively distrust tags before correction — creates friction.
+
+`Profile.md` is also memory but lives separately — librarian writes that directly (see "Reflection checkpoint" in Phase 2). Cataloguer doesn't touch it.
 
 ---
 
@@ -738,7 +754,7 @@ All long-form deliverables = repo files, edited in place. **Never rewrite full l
   - Genre Goals: `| Genre | Goal | Current |`
   - Series Status Goals: `| Status | Goal | Current |`
   - Miscellaneous Goals: `| Tag | Goal | Current |`
-- **`Profile.md`** — only if fresh interview conducted.
+- **`Profile.md`** — written throughout the build, not just after a fresh interview. Initial seed comes from Step 2, then every reflection checkpoint, every whole-batch-skip probe, every surprising-selection follow-up, every reader correction can update it. By session end the profile reflects the actual signal from this build, not just the seed.
 - **Catalog updates** — applied directly by cataloguer skill; no patch files to hand off.
 
 After every agreed batch, edit `Reading_List.md` in place via Edit (don't rewrite from scratch). Reader sees changes through editor or diffs; chat stays cheap.
