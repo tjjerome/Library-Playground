@@ -92,7 +92,6 @@ Indie monster-hunter trilogies covering the gap your Witcher-saga 5-stars left.
 
 | Title | Author | Pages | Why It's For You |
 |---|---|---|---|
-| Those Across the River | Christopher Buehlman | 206 | 1935 Georgia, Southern Gothic. Same lyrical dread-laden register as Between Two Fires in a different setting. 3.71 / 16k — splits audiences, but the right side for you. |
 | The Lesser Dead | Christopher Buehlman | 249 | 1970s NYC vampire underworld with razor-sharp first-person voice. Tests your gothic-vampire boundary (Anne Rice misfired) — but Buehlman's voice is mean and literary, not mannered romance. 4.07 / 9k. |
 | The Haunting of Hill House | Shirley Jackson | 187 | The haunted-house novel everyone copies — tighter and weirder than the reputation. Psychological dread over jump scares. 3.81 / 396k. |
 | The Picture of Dorian Gray | Oscar Wilde | 142 | Hedonist trades his soul for eternal youth, painting takes the damage. Gothic-classic crossover — also counts toward your Classics goal. 4.13 / 1.9M. |
@@ -116,7 +115,6 @@ Indie monster-hunter trilogies covering the gap your Witcher-saga 5-stars left.
 | Blood Meridian | Cormac McCarthy | 250 | Tennessee teenager joins a scalp-hunting gang in 1849 borderlands. Considered a great American novel — brutal, biblical. 4.15 / 222k. |
 | The Master and Margarita | Mikhail Bulgakov | 368 | Devil visits 1930s Moscow + Pontius Pilate's parallel narrative. Russian satire-fantasy classic. 4.28 / 422k. |
 | The Secret History | Donna Tartt | 468 | Greek-classics students at Vermont college fall into ritual murder. Dark Academia foundational. 4.15 / 1M. |
-| The Things They Carried | Tim O'Brien | 175 | Linked Vietnam-war stories — the war fiction taught in college. Lyrical and devastating. 4.15 / 349k. |
 | Ficciones | Jorge Luis Borges | 128 | Foundational labyrinth-stories — short, surreal, intellectual fictions that shaped modern literary fantasy. Counts as classic + lit. 4.40 / 79k. |
 
 ---
@@ -145,7 +143,6 @@ Indie monster-hunter trilogies covering the gap your Witcher-saga 5-stars left.
 | Title | Author | Pages | Why It's For You |
 |---|---|---|---|
 | Lonesome Dove (#1) ⭐⭐ | Larry McMurtry | 844 | Two retired Texas Rangers drive cattle from Texas to Montana. The great American Western; Pulitzer winner. Scope is the cost. 4.58. |
-| The Last Kingdom (#1) | Bernard Cornwell | 263 | Saxon/Viking England — dispossessed Saxon raised by Danes, swept up in Alfred the Great's wars. Long series; reads as standalone-friendly. 4.27 / 112k. |
 | The Winter King (Warlord Chronicles #1) | Bernard Cornwell | 413 | Cornwell's Arthurian retelling — historically grounded, darker than Mary Stewart. Cornwell's own favorite of his books. 4.26 / 55k. |
 | Gates of Fire | Steven Pressfield | 354 | Thermopylae from a Spartan helot's POV. Tight, brutal, philosophical war novel. 4.40 / 44k. |
 | Matterhorn | Karl Marlantes | 477 | Vietnam War, Marine company in remote firebase. Author was there; the great Vietnam novel. 4.28 / 48k. |
@@ -178,12 +175,6 @@ Indie monster-hunter trilogies covering the gap your Witcher-saga 5-stars left.
 
 ---
 
-## Classics
-
-_Coming next batch._
-
----
-
 ## New & Upcoming Releases (Stretch)
 
 _Not counted in the 100-book core — pull from here when a release lands and you're caught up._
@@ -204,7 +195,7 @@ _Not counted in the 100-book core — pull from here when a release lands and yo
 
 ## Tracking
 
-**Core count: 101 / 100** (slight overshoot — 10-book grace cushion, hard cap 110).
+**Core count: 98 / 100** (10-book grace cushion, hard cap 110).
 
 ### Genre Goals
 
@@ -212,11 +203,11 @@ _Not counted in the 100-book core — pull from here when a release lands and yo
 |---|---|---|
 | Fantasy | 22 | 27 (over by 5 — your call to lean in here) |
 | Science Fiction | 18 | 18 ✓ |
-| Horror | 12 (trimmed from 18) | 11 |
+| Horror | 12 (trimmed from 18) | 10 |
 | Crime / Mystery / Thriller | 12 | 12 ✓ |
-| Historical Fiction | 12 | 14 (over by 2) |
+| Historical Fiction | 12 | 13 (over by 1) |
 | Nonfiction | 10 | 10 ✓ |
-| Literary Fiction | 8 | 8 ✓ |
+| Literary Fiction | 8 | 7 |
 | _Other (Mieville weird)_ | _—_ | 1 |
 
 ### Series-Status Goals
@@ -233,4 +224,4 @@ _Not counted in the 100-book core — pull from here when a release lands and yo
 | Tag | Goal | Current |
 |---|---|---|
 | Indie | 15 | 16 ✓ |
-| Classics | 6 | ~6 ✓ (Dorian Gray, Master & Margarita, East of Eden, Blood Meridian, Things They Carried, Ficciones) |
+| Classics | 6 | 5 (Dorian Gray, Master & Margarita, East of Eden, Blood Meridian, Ficciones) |
