@@ -8,7 +8,13 @@
 
 ## Top 5 — Start Here
 
-*Set at Phase 5 capstone — not yet locked.*
+| Title | Author | Genre | Why First |
+|-------|--------|-------|-----------|
+| The Lies of Locke Lamora 🎧 | Scott Lynch | Fantasy | Highest-confidence profile hit. Heist + found family + morally grey ensemble — your taste statement as a novel. |
+| The Blacktongue Thief | Christopher Buehlman | Fantasy | Between Two Fires 5★ author in fantasy. Faster and darker. 315pp entry point. |
+| In the Woods | Tana French | Crime | French 5★. Hooks from page one. Literary crime with structural payoff you won't see coming. |
+| A Little Hatred | Joe Abercrombie | Fantasy | Best Served Cold 5★ author. Same world, decades later — no prior trilogy required. Grimdark with earned consequences. |
+| Say Nothing | Patrick Radden Keefe | Nonfiction | Reads faster than most thrillers. IRA, memory, violence — Keefe's writing is surgical. Opens the Nonfiction section right. |
 
 ---
 
@@ -220,4 +226,4 @@
 | Classics | 10 | 10 ✓ |
 | Indie | 20 | 20 ✓ |
 
-*List: 112 / 110 (cap exceeded by reader choice) | Top 5 locked: No*
+*List: 112 / 110 (cap exceeded by reader choice) | Top 5 locked: Yes*
