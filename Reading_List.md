@@ -2,7 +2,7 @@
 
 > **This is a TBR pool, not a reading order.** Pull from any section based on mood. Sequence carries no meaning.
 
-*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 108/110*
+*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 112/110*
 
 ---
 
@@ -81,10 +81,14 @@
 | The Citadel of the Autarch | Gene Wolfe | 236 | Book of the New Sun conclusion — Bk 4 |
 | Tigana | Guy Gavriel Kay | 538 | Conquered kingdom's name erased from memory — survivors must restore it. Literary fantasy, devastating payoff. Standalone |
 | Murder on Hunter's Eve (I) | Morgan Stang | 259 | Lamplight Murder Mysteries Bk 3 — continues series already on this list. Same gothic detective voice. Indie deep cut |
-| The Goblin Emperor | Katherine Addison | 348 | Half-goblin becomes emperor overnight, navigates court politics while trying to be decent. Warm epic counterweight |
 | Court of Assassins (I) | Philip C. Quaintrell | 365 | Taken as a child, forged into a killer — crack in his conditioning grows. Fast, grimdark, morally complex. The Ranger Archives Bk 1 |
 | Blood and Coin (I) | Philip C. Quaintrell | 434 | Ranger Archives Bk 2 — series escalates |
 | A Dance of Fang and Claw (I) | Philip C. Quaintrell | 408 | Ranger Archives conclusion — Bk 3 |
+| Dreams of the Dying (I) | Nicolas Lietzau | 483 | Mercenary investigates crimes in a world where morality and belief reshape reality — grimdark, award-winning indie debut. Twelfth World Bk 1 |
+| The Cure for Living - Part One (I) | Nicolas Lietzau | 446 | Twelfth World Bk 2 — series continues |
+| The Cure for Living - Part Two (I) | Nicolas Lietzau | 274 | Twelfth World Bk 3 — series conclusion |
+| Dragon Mage (I) | M. L. Spencer | 662 | Outcast mage, epic dark fantasy — massive world, action-driven, 662pp of morally complex grimdark. Eragon energy but darker. Rivenworld Bk 1 |
+| Champion of the Fallen | M. L. Spencer | 587 | Rivenworld Bk 2 — series escalates |
 
 ---
 
@@ -106,6 +110,7 @@
 | Slow Horses | Mick Herron | 239 | MI5 reject department, darkly comic morally grey ensemble spy thriller — Jackson Lamb + unauthorized ops. Bk 1 |
 | Dead Lions | Mick Herron | 255 | Slough House continues — Bk 2 |
 | Real Tigers | Mick Herron | 239 | Slough House Bk 3 — trilogy arc completes |
+| Dissolution | C. J. Sansom | 302 | Tudor England 1537 — hunchback lawyer Shardlake investigates a monastery murder during Henry VIII's church seizures. Historical mystery with real political stakes. Shardlake Bk 1 |
 
 ---
 
@@ -158,7 +163,6 @@
 | Endurance | Alfred Lansing | 225 | Shackleton's 1915 Antarctic survival — 27 men, ship crushed in ice. Pure propulsion, documentary-precise |
 | Bad Blood | John Carreyrou | 316 | Theranos fraud procedural — Carreyrou unravels Elizabeth Holmes’ empire methodically. Reads like a thriller |
 | The Radium Girls | Kate Moore | 382 | 1920s radium dial workers poisoned + told it was safe — they sued and changed labor law. Propulsive narrative + courtroom stakes |
-| The Immortal Life of Henrietta Lacks | Rebecca Skloot | 269 | HeLa cells — Henrietta's cancer cells taken without consent became the most important cell line in history. Science + history + racial injustice |
 | Cosmos | Carl Sagan | 301 | Classic. 13 billion years of universe as narrative — Sagan writes the scientific method like Hemingway. Gateway between science and wonder |
 | A Short History of Nearly Everything | Bill Bryson | 564 | Bryson's tour of scientific history — how we discovered what we know. Accessible, narrative, funny |
 
@@ -191,15 +195,15 @@
 
 | Genre | Goal | Current |
 |-------|------|---------|
-| Fantasy | ~30 | 33 |
+| Fantasy | ~30 | 37 |
 | Science Fiction | ~15 | 16 |
 | Horror | ~8 | 8 ✓ |
-| Crime / Mystery / Thriller | ~10 | 14 |
+| Crime / Mystery / Thriller | ~10 | 15 |
 | Historical Fiction | ~15 | 16 |
 | Literary Fiction | ~5 | 5 ✓ |
-| Nonfiction | ~10 | 10 ✓ |
+| Nonfiction | ~10 | 9 |
 | Long Series / Other | ~7 | 6 |
-| **Total** | **100** | **108** |
+| **Total** | **100** | **112** |
 
 ### Series Status Goals
 
@@ -207,7 +211,7 @@
 |--------|------|---------|
 | Long Series commitment (1–2 series) | 1–2 | 1 (Bound and Broken) |
 | Short Series | flexible | 4 series running |
-| Standalone | majority | 2 |
+| Standalone | majority | ~30 ✓ |
 
 ### Cross-Cutting Floors
 
@@ -216,4 +220,4 @@
 | Classics | 10 | 10 ✓ |
 | Indie | 20 | 20 ✓ |
 
-*List: 108 / 110 (cap 110) | Top 5 locked: No*
+*List: 112 / 110 (cap exceeded by reader choice) | Top 5 locked: No*
