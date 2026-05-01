@@ -2,7 +2,7 @@
 
 > **This is a TBR pool, not a reading order.** Pull from any section based on mood. Sequence carries no meaning.
 
-*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 103/110*
+*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 106/110*
 
 ---
 
@@ -82,6 +82,9 @@
 | Tigana | Guy Gavriel Kay | 538 | Conquered kingdom's name erased from memory — survivors must restore it. Literary fantasy, devastating payoff. Standalone |
 | Murder on Hunter's Eve (I) | Morgan Stang | 259 | Lamplight Murder Mysteries Bk 3 — continues series already on this list. Same gothic detective voice. Indie deep cut |
 | The Goblin Emperor | Katherine Addison | 348 | Half-goblin becomes emperor overnight, navigates court politics while trying to be decent. Warm epic counterweight |
+| Court of Assassins (I) | Philip C. Quaintrell | 365 | Taken as a child, forged into a killer — crack in his conditioning grows. Fast, grimdark, morally complex. The Ranger Archives Bk 1 |
+| Blood and Coin (I) | Philip C. Quaintrell | 434 | Ranger Archives Bk 2 — series escalates |
+| A Dance of Fang and Claw (I) | Philip C. Quaintrell | 408 | Ranger Archives conclusion — Bk 3 |
 
 ---
 
@@ -185,7 +188,7 @@
 
 | Genre | Goal | Current |
 |-------|------|---------|
-| Fantasy | ~30 | 28 |
+| Fantasy | ~30 | 31 |
 | Science Fiction | ~15 | 16 |
 | Horror | ~8 | 8 ✓ |
 | Crime / Mystery / Thriller | ~10 | 14 |
@@ -193,7 +196,7 @@
 | Literary Fiction | ~5 | 5 ✓ |
 | Nonfiction | ~10 | 10 ✓ |
 | Long Series / Other | ~7 | 6 |
-| **Total** | **100** | **103** |
+| **Total** | **100** | **106** |
 
 ### Series Status Goals
 
@@ -210,4 +213,4 @@
 | Classics | 10 | 10 ✓ |
 | Indie | 20 | 20 ✓ |
 
-*List: 103 / 110 (cap 110) | Top 5 locked: No*
+*List: 106 / 110 (cap 110) | Top 5 locked: No*
