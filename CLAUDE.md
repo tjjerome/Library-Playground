@@ -34,6 +34,10 @@ These survive even when librarian skill prompt not visible. Full spec at `.claud
 4. **Phase 0 unfinished-series gate.** Run `librarian-query.py unfinished-series --min-rating 4.0` before any genre batch; route every entry via `AskUserQuestion`.
 5. **Per-batch deep-cut floor.** Every 4-pick batch has ≥1 deep cut, slot randomized, never labeled.
 6. **Open prose questions are turn-ending.** No `AskUserQuestion` same turn after prose question.
+7. **Anti-jargon contract.** No internal vocabulary in chat, `AskUserQuestion` text, or `Reading_List.md`. Translate "Phase 0/1/…", "ledger", "candidate", "deep cut", "is-read", "Bk 1" to reader-facing language before output. Full map in `SKILL.md`.
+8. **Deep-cut silence.** Deep-cut slot is mechanism, not label. Never named, parenthesised, or formatted differently. `librarian-query.py` randomises position; reader sees only the book.
+
+**Live memory.** `Profile.md` is written throughout the session, not just at interview time. Every reflection beat, probe answer, surprising selection, or reader correction triggers a write same-turn via `librarian-query.py profile-append`.
 
 Workflow phases: **Phase 0** unfinished-series gate → **Phase 1** highest-confidence → **Phase 2** checklist batches → **Phase 3** new/upcoming → **Phase 4** final review → **Phase 5** Top 5 capstone.
 

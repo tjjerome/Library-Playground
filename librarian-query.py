@@ -368,11 +368,48 @@ def _series_order_key(entry: dict) -> tuple[float, str]:
 
 
 def _index_catalog_by_pair(entries: dict) -> dict[tuple[str, str], dict]:
+    """Index catalog entries by (norm(title), norm(author)).
+
+    Two passes so subtitle-truncated rows in Reading_Log resolve to the right
+    catalog entry without shadowing books whose actual title has a colon:
+
+    Pass 1 — full title and full catalog-key prefix (priority).
+    Pass 2 — pre-colon prefix of the entry title; pre-` - ` prefix of the
+             catalog key. Only fills a slot if Pass 1 left it empty.
+
+    Example: catalog key `Side Jobs - Jim Butcher` with entry title
+    `Side Jobs: Stories from the Dresden Files` is indexed under
+    `(side jobs stories from the dresden files, jim butcher)` (full title)
+    AND `(side jobs, jim butcher)` (key prefix + colon prefix). A
+    Reading_Log row `Side Jobs / Jim Butcher` resolves cleanly.
+    """
     out: dict[tuple[str, str], dict] = {}
+
+    # Pass 1: full forms (highest priority).
     for k, e in entries.items():
-        pair = (norm(e.get("title", "")), norm(e.get("author", "")))
-        if pair not in out:
-            out[pair] = {"key": k, **e}
+        author_n = norm(e.get("author", ""))
+        full_title_n = norm(e.get("title", ""))
+        if full_title_n:
+            pair = (full_title_n, author_n)
+            out.setdefault(pair, {"key": k, **e})
+        # Catalog key in form "Title - Author" — index by the title portion
+        # of the key in case it differs from entry["title"] (short-titled key).
+        if " - " in k:
+            key_title = k.rsplit(" - ", 1)[0]
+            key_pair = (norm(key_title), author_n)
+            out.setdefault(key_pair, {"key": k, **e})
+
+    # Pass 2: subtitle prefixes (only fill empty slots).
+    for k, e in entries.items():
+        author_n = norm(e.get("author", ""))
+        title = e.get("title") or ""
+        # Pre-colon prefix of entry title.
+        if ":" in title:
+            prefix = title.split(":", 1)[0]
+            pair = (norm(prefix), author_n)
+            if pair not in out:
+                out[pair] = {"key": k, **e}
+
     return out
 
 
@@ -471,6 +508,270 @@ def cmd_unfinished_series(args):
 
     out.sort(key=lambda r: -r["max_rating_in_series"])
     print(json.dumps(out, ensure_ascii=False, indent=2))
+
+
+# ----------------------- series-continuation -----------------------
+
+def _series_sub_thread(series_position: str | None) -> str | None:
+    """Extract sub-thread label from a series_position string.
+
+    Examples:
+      "Book 1 of Age of Madness"        -> "age of madness"
+      "Book 8 (Age of Madness #2)"      -> "age of madness"
+      "Book 34 (City Watch Book 7)"     -> "city watch"
+      "Book 5"                          -> None
+      "Book 1"                          -> None
+    """
+    if not series_position:
+        return None
+    p = series_position.strip()
+
+    # Prefer parens content if present.
+    m = re.search(r"\(([^)]+)\)", p)
+    if m:
+        inner = m.group(1)
+    else:
+        # Fall back to text after the leading "Book N" or "N.M".
+        inner = re.sub(r"^[Bb]ook\s*\d+(\.\d+)?\s*", "", p)
+        inner = re.sub(r"^of\s+", "", inner, flags=re.IGNORECASE)
+
+    if not inner:
+        return None
+    # Strip trailing "Book N" / "#N" / "novella" / etc.
+    inner = re.sub(r"\s+Book\s*\d+(\.\d+)?$", "", inner, flags=re.IGNORECASE)
+    inner = re.sub(r"\s*#\d+(\.\d+)?$", "", inner)
+    inner = re.sub(r"\s+\(?(novella|coda|prequel)\)?$", "", inner, flags=re.IGNORECASE)
+    inner = inner.strip().lower()
+    return inner or None
+
+
+def cmd_series_continuation(args):
+    """Return next unread book in the same series as the given title.
+
+    Used by Phase 2 after a series book is selected: surface the next book
+    as a follow-up checklist option (never auto-add).
+    """
+    cat = load_catalog()
+    entries = cat["entries"]
+    pair_to_entry = _index_catalog_by_pair(entries)
+
+    pair = (norm(args.title), norm(args.author))
+    src = pair_to_entry.get(pair)
+    if not src:
+        print(json.dumps({"next": None, "reason": "source book not in catalog"}))
+        sys.exit(0)
+
+    series = src.get("series")
+    if not series or src.get("series_status") not in ("Short Series", "Long Series"):
+        print(json.dumps({"next": None, "reason": "not a sequential series"}))
+        sys.exit(0)
+
+    # All catalog entries in this series, ordered.
+    siblings = [{"key": k, **e} for k, e in entries.items() if e.get("series") == series]
+    siblings.sort(key=_series_order_key)
+
+    # Read / on-list / shown exclusions.
+    log = load_log()
+    excluded_pairs = already_read_set(log) | list_set()
+    if not args.include_shown:
+        excluded_pairs |= shown_set()
+
+    src_pos = src.get("series_position") or ""
+    src_n = (norm(src.get("title", "")), norm(src.get("author", "")))
+    src_sub = _series_sub_thread(src_pos)
+
+    # If the source belongs to a sub-thread (e.g. Age of Madness within
+    # First Law World), restrict siblings to that sub-thread first; fall
+    # back to the parent series if no sub-thread match.
+    def _candidate_books(restrict_to_sub):
+        for book in siblings:
+            if restrict_to_sub:
+                if _series_sub_thread(book.get("series_position")) != restrict_to_sub:
+                    continue
+            book_pair = (norm(book.get("title", "")), norm(book.get("author", "")))
+            yield book, book_pair
+
+    def _next_after_source(books):
+        next_book = None
+        found_src = False
+        for book, book_pair in books:
+            if not found_src:
+                if book_pair == src_n or book.get("series_position") == src_pos:
+                    found_src = True
+                continue
+            # Skip prequels / 0.x entries.
+            p = (book.get("series_position") or "").lower()
+            m = re.search(r"book\s*([\d.]+)", p)
+            if m and float(m.group(1)) < 1:
+                continue
+            if book_pair in excluded_pairs:
+                continue
+            next_book = book
+            break
+        return next_book
+
+    next_book = None
+    if src_sub:
+        next_book = _next_after_source(list(_candidate_books(src_sub)))
+    if not next_book:
+        next_book = _next_after_source(list(_candidate_books(None)))
+
+    if not next_book:
+        print(json.dumps({"next": None, "reason": "no further unread book in series"}))
+        sys.exit(0)
+
+    print(json.dumps({
+        "next": {
+            "key": next_book.get("key"),
+            "title": next_book.get("title"),
+            "author": next_book.get("author"),
+            "series": series,
+            "series_position": next_book.get("series_position"),
+            "pages": next_book.get("pages"),
+            "gr_rating": next_book.get("goodreads_rating"),
+            "gr_reviews": next_book.get("goodreads_reviews"),
+            "summary": next_book.get("summary"),
+        }
+    }, ensure_ascii=False, indent=2))
+
+
+# ----------------------- lookup -----------------------
+
+def cmd_lookup(args):
+    """Three-pass fuzzy match against the catalog. Replaces inline find().
+
+    Pass 1: exact key match (case-insensitive)
+    Pass 2: title substring (full or pre-colon prefix)
+    Pass 3: series substring
+
+    Returns each match with its canonical key, identifying fields, and
+    exclusion-gate booleans.
+    """
+    cat = load_catalog()
+    entries = cat["entries"]
+    q = args.query.strip()
+    qn = norm(q)
+
+    matches: list[dict] = []
+    seen_keys: set[str] = set()
+
+    def add(k: str):
+        if k in seen_keys:
+            return
+        seen_keys.add(k)
+        e = entries[k]
+        title = e.get("title") or ""
+        author = e.get("author") or ""
+        pair = (norm(title), norm(author))
+        matches.append({
+            "key": k,
+            "title": title,
+            "author": author,
+            "series": e.get("series"),
+            "series_position": e.get("series_position"),
+            "series_status": e.get("series_status"),
+            "primary_genre": e.get("primary_genre"),
+            "pages": e.get("pages"),
+            "is_already_read": pair in already_read_set(),
+            "is_on_list": pair in list_set(),
+            "is_shown": pair in shown_set(),
+        })
+
+    # Pass 1: exact key match.
+    for k in entries:
+        if k.lower() == q.lower():
+            add(k)
+    if matches and not args.all_passes:
+        print(json.dumps(matches, ensure_ascii=False, indent=2))
+        sys.exit(0)
+
+    # Pass 2: title substring (incl. pre-colon prefix).
+    for k, e in entries.items():
+        title = (e.get("title") or "").lower()
+        if qn and (qn in norm(title) or qn in norm(title.split(":", 1)[0])):
+            add(k)
+    if matches and not args.all_passes:
+        print(json.dumps(matches, ensure_ascii=False, indent=2))
+        sys.exit(0)
+
+    # Pass 3: series substring.
+    for k, e in entries.items():
+        s = (e.get("series") or "").lower()
+        if qn and qn in norm(s):
+            add(k)
+
+    print(json.dumps(matches, ensure_ascii=False, indent=2))
+    if not matches:
+        sys.exit(1)
+
+
+# ----------------------- profile-append -----------------------
+
+PROFILE_PATH = REPO_ROOT / "Profile.md"
+
+
+def cmd_profile_append(args):
+    """Append a bullet to a named section of Profile.md.
+
+    Idempotent on identical bullets (no duplicate). Creates the section
+    if missing. Never rewrites the rest of the file.
+    """
+    section = args.section.strip()
+    bullet = args.bullet.strip()
+
+    if not PROFILE_PATH.exists():
+        # Bootstrap a minimal Profile.md scaffold.
+        PROFILE_PATH.write_text(
+            "# Reader Profile\n\n"
+            "_Living memory — updated throughout reading-list builds._\n\n",
+            encoding="utf-8",
+        )
+
+    text = PROFILE_PATH.read_text(encoding="utf-8")
+    lines = text.splitlines()
+
+    # Find the section heading (## <section>).
+    target = f"## {section}"
+    section_idx = next(
+        (i for i, ln in enumerate(lines) if ln.strip().lower() == target.lower()),
+        None,
+    )
+
+    if section_idx is None:
+        # Append a new section at end.
+        if lines and lines[-1].strip():
+            lines.append("")
+        lines.append(target)
+        lines.append("")
+        lines.append(f"- {bullet}")
+        lines.append("")
+        PROFILE_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        print(json.dumps({"appended": True, "section": section, "bullet": bullet,
+                          "created_section": True}))
+        return
+
+    # Find the next section boundary.
+    end_idx = len(lines)
+    for j in range(section_idx + 1, len(lines)):
+        if lines[j].startswith("## "):
+            end_idx = j
+            break
+
+    # Idempotent check inside the section.
+    existing = [ln.strip() for ln in lines[section_idx + 1:end_idx]]
+    if any(ln.lstrip("- ").strip() == bullet for ln in existing if ln.startswith("- ")):
+        print(json.dumps({"appended": False, "section": section, "bullet": bullet,
+                          "reason": "duplicate"}))
+        return
+
+    # Insert before any trailing blank lines in the section.
+    insert_at = end_idx
+    while insert_at > section_idx + 1 and not lines[insert_at - 1].strip():
+        insert_at -= 1
+    lines.insert(insert_at, f"- {bullet}")
+    PROFILE_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(json.dumps({"appended": True, "section": section, "bullet": bullet,
+                      "created_section": False}))
 
 
 def _build_favorite_pools(log: list[dict]):
@@ -619,10 +920,66 @@ def cmd_candidates(args):
 
     deep_cut_index = next((i for i, s in enumerate(selected) if s["is_deep_cut"]), None)
 
+    # Rejection-cluster escalation. Count rejections in the same cross-cut
+    # cluster (genre × indie? × classic? × page-bucket). If at threshold,
+    # surface a probe_recommended flag so the librarian fires pause-and-probe
+    # instead of generating yet another batch.
+    cluster_genres = set(g.lower() for g in (args.genre or []))
+    require_indie = "indie" in require_tags or "indie" in boost_tags
+    require_classic = "classic" in require_tags or "classic" in boost_tags
+    page_bucket = None
+    if args.page_cap:
+        page_bucket = "short" if args.page_cap <= 350 else "medium" if args.page_cap <= 600 else "long"
+
+    cluster_rejections = 0
+    for r in ledger_records():
+        if r.get("status") != "rejected":
+            continue
+        # Match cluster filter dimensions on the original entry if cached.
+        # We keep this loose: any rejection in the same genre+indie/classic+page bucket counts.
+        rec_genre = (r.get("primary_genre") or "").lower() if r.get("primary_genre") else None
+        rec_indie = bool(r.get("indie"))
+        rec_classic = bool(r.get("classic"))
+        rec_pages = r.get("pages") or 0
+        rec_bucket = None
+        if rec_pages:
+            rec_bucket = "short" if rec_pages <= 350 else "medium" if rec_pages <= 600 else "long"
+
+        if cluster_genres and rec_genre and rec_genre not in cluster_genres:
+            continue
+        if require_indie and not rec_indie:
+            continue
+        if require_classic and not rec_classic:
+            continue
+        if page_bucket and rec_bucket and rec_bucket != page_bucket:
+            continue
+        cluster_rejections += 1
+
+    probe_recommended = cluster_rejections >= args.probe_threshold
+    probe_reason = None
+    if probe_recommended:
+        cluster_descr = []
+        if cluster_genres:
+            cluster_descr.append("/".join(sorted(cluster_genres)))
+        if require_indie:
+            cluster_descr.append("indie")
+        if require_classic:
+            cluster_descr.append("classic")
+        if page_bucket:
+            cluster_descr.append(f"{page_bucket} pages")
+        cluster_label = "+".join(cluster_descr) or "this cluster"
+        probe_reason = (
+            f"{cluster_rejections} rejections in {cluster_label} this session — "
+            "likely a framing miss, not candidate quality. Pause and probe before next batch."
+        )
+
     batch_id = args.batch_id or f"{(args.genre or ['mixed'])[0]}-{int(time.time())}"
     payload = {
         "batch_id": batch_id,
         "deep_cut_index": deep_cut_index,
+        "probe_recommended": probe_recommended,
+        "probe_reason": probe_reason,
+        "cluster_rejection_count": cluster_rejections,
         "filters_applied": {
             "genre": args.genre,
             "min_gr": args.min_gr,
@@ -676,11 +1033,17 @@ def cmd_mark_shown(args):
     if not isinstance(picks, list):
         die("--picks must be a JSON list of {title, author, status} records", code=2)
 
+    # Look up cluster fields from catalog so the ledger records carry enough
+    # context for rejection-cluster escalation in `candidates`.
+    cat = load_catalog()
+    pair_to_entry = _index_catalog_by_pair(cat["entries"])
+
     ts = datetime.now(timezone.utc).isoformat()
     for p in picks:
         title = p.get("title", "")
         author = p.get("author", "")
         status = p.get("status", "shown")  # selected | rejected | shown
+        ce = pair_to_entry.get((norm(title), norm(author)))
         rec = {
             "title": title,
             "author": author,
@@ -689,6 +1052,12 @@ def cmd_mark_shown(args):
             "batch_id": args.batch_id,
             "status": status,
             "ts": ts,
+            # Cluster fields for rejection-cluster escalation. Caller can pass
+            # them explicitly (overrides catalog lookup); else inferred from catalog.
+            "primary_genre": p.get("primary_genre") or (ce.get("primary_genre") if ce else None),
+            "indie": p.get("indie") if "indie" in p else (ce.get("indie") if ce else None),
+            "classic": p.get("classic") if "classic" in p else (ce.get("classic") if ce else None),
+            "pages": p.get("pages") or (ce.get("pages") if ce else None),
         }
         append_ledger(rec)
     print(json.dumps({"appended": len(picks), "batch_id": args.batch_id}))
@@ -806,6 +1175,9 @@ def build_parser():
                     action="store_true", default=True)
     sp.add_argument("--no-author-entry-point-strict",
                     dest="author_entry_point_strict", action="store_false")
+    sp.add_argument("--probe-threshold", type=int, default=3,
+                    help="Number of cluster-matched rejections that triggers "
+                         "probe_recommended=true in the response (default 3).")
     sp.add_argument("--batch-id", default=None)
     sp.add_argument("--explain", action="store_true")
     sp.set_defaults(func=cmd_candidates)
@@ -826,6 +1198,28 @@ def build_parser():
 
     sp = sub.add_parser("session-reset")
     sp.set_defaults(func=cmd_session_reset)
+
+    sp = sub.add_parser("series-continuation")
+    sp.add_argument("--title", required=True)
+    sp.add_argument("--author", required=True)
+    sp.add_argument("--include-shown", action="store_true",
+                    help="Diagnostic: include books already shown this session")
+    sp.set_defaults(func=cmd_series_continuation)
+
+    sp = sub.add_parser("lookup")
+    sp.add_argument("--query", required=True,
+                    help="Title, partial title, or series name")
+    sp.add_argument("--all-passes", action="store_true",
+                    help="Run all three match passes and merge results "
+                         "(default: stop at first pass with a hit)")
+    sp.set_defaults(func=cmd_lookup)
+
+    sp = sub.add_parser("profile-append")
+    sp.add_argument("--section", required=True,
+                    help='Section header to append under (e.g. "Negative indicators")')
+    sp.add_argument("--bullet", required=True,
+                    help="Bullet text (no leading dash). Idempotent if identical bullet exists.")
+    sp.set_defaults(func=cmd_profile_append)
 
     return p
 

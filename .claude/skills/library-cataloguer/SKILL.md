@@ -204,9 +204,11 @@ When cataloguing indie:
 ### Single book lookup
 
 Reader asks "what do you know about X?":
-1. Query `Library_Catalog.json` via code execution.
-2. Print entry readable, note `confidence` and `status`.
+1. Resolve via `python3 librarian-query.py lookup --query "<X>"` — three-pass fuzzy match (exact key → title substring incl. pre-colon prefix → series substring). Returns canonical key + read/list/shown booleans. Replaces hand-rolled `find()` patterns.
+2. Print entry readable from `Library_Catalog.json`, note `confidence` and `status`.
 3. If `pending` or `Low` confidence, offer web search and propose update (queue as pending change — see "Saving changes" below).
+
+For series continuation queries — "what comes after X?" — use `python3 librarian-query.py series-continuation --title "X" --author "Y"`. Handles sub-threads (Discworld City Watch, First Law Age of Madness) correctly.
 
 ### Adding new books incrementally (1–10)
 
