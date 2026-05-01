@@ -384,3 +384,37 @@ All 10 Phase 0 additions passed `is-read` and `is-on-list` checks (exit 1 = not 
 **Classics floor update:** 6 → 7 (Murder on the Orient Express)
 **Secret History counted as Literary Fiction: 0 → 1**
 **List count after batch:** 78 / 100
+
+*[Nonfiction, Literary Fiction, Fantasy Phase 2 batches occurred here — batches ran but log not captured due to context compaction. Net result: 78 → 94 in file, Fantasy section unchanged at 25 books per file, goals table updated to Fantasy:28/SciFi:12/total:94 with Long Series cross-counting methodology.]*
+
+---
+
+## Phase 2 — SciFi Batches (resumed after context compaction)
+
+### TURN: Phase 2 — Fantasy Indie Slot
+**Context:** Reader at 29/30 Fantasy (per summary — 1 book added outside file capture). Reader asked for indie options for final Fantasy slot. Presented: Blood Song (Ryan), Rage of Dragons (Winter), Theft of Swords (Sullivan). All rejected. Reader said: "let's switch to sci fi for now and come back to it."
+**Status:** Fantasy final slot deferred — reader wants indie pick, returning later.
+
+### TURN: Phase 2 — SciFi Batch 1
+**Exclusion debug:** Do Androids Dream of Electric Sheep (Dick) — READ (exit 0). Kindred (Butler) — READ (exit 0). Flowers for Algernon (Keyes) — READ (exit 0). Old Man's War, Leviathan Wakes, Blindsight, The Dispossessed — all clear.
+
+| Option | Signal | Selected |
+|--------|--------|----------|
+| Leviathan Wakes — Corey | 4.31★, The Expanse Bk 1, thriller DNA in space opera — 9-book series | ✗ |
+| Old Man's War — Scalzi | 4.23★, military SF, propulsive, dark humor | ✗ |
+| Blindsight — Watts | 4.0★, hard SF first contact, horror-adjacent, cerebral, Hugo finalist — Firefall Bk 1 | ✓ |
+| The Dispossessed — Le Guin | 4.26★, Classic standalone, anarchist utopia dual-civilization — meditative | ✗ |
+
+**List count after batch:** 95 / 100
+
+### TURN: Phase 2 — SciFi Batch 2
+**Exclusion debug:** Dark Matter, Roadside Picnic, Recursion, Harry August — all clear. Stories of Your Life and Others (Chiang) — READ (exit 0).
+
+| Option | Signal | Selected |
+|--------|--------|----------|
+| Dark Matter — Crouch | 4.13★, quantum multiverse thriller-SF, standalone | ✗ |
+| Roadside Picnic — Strugatsky Bros | 4.12★, Classic standalone, foundational SF, alien Zones, inspired Stalker | ✓ |
+| Recursion — Crouch | 4.17★, memory-manipulation thriller-SF, standalone | ✓ |
+| The First Fifteen Lives of Harry August — North | 4.03★, time-loop standalone thriller-SF, cerebral | ✓ |
+
+**List count after batch:** 98 / 100

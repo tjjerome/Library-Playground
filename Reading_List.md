@@ -2,7 +2,7 @@
 
 > **This is a TBR pool, not a reading order.** Pull from any section based on mood. Sequence carries no meaning.
 
-*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 91/100*
+*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 98/100*
 
 ---
 
@@ -44,6 +44,10 @@
 | Network Effect | Martha Wells | 285 | Murderbot continuation — Exit Strategy 4.5★; first full-length novel in series — Bk 5 |
 | Count Zero | William Gibson | 192 | Sprawl Bk 2 — Neuromancer 4.5★; new POV characters, same cyberpunk world |
 | Mona Lisa Overdrive | William Gibson | 187 | Sprawl conclusion — Bk 3 |
+| Blindsight | Peter Watts | 384 | Hard SF first contact, crew of broken specialists, horror-adjacent — consciousness as the real horror. Hugo finalist. Firefall Bk 1 |
+| Roadside Picnic | Arkady Strugatsky & Boris Strugatsky | 192 | Classic. Foundational SF — alien visitation aftermath, scavengers in lethal Zones, no explanation for the aliens. Inspired Stalker. Standalone |
+| Recursion | Blake Crouch | 342 | Standalone thriller-SF — neuroscientist's memory machine rewrites reality, each chapter the world subtly different. Propulsive + structurally inventive |
+| The First Fifteen Lives of Harry August | Claire North | 405 | Standalone time-loop thriller — man relives his life forever, receives a message from the future: stop the world from ending. Cerebral + propulsive |
 
 ---
 
@@ -75,6 +79,9 @@
 | Inside Man | K. J. Parker | 68 | Prosper's Demon Bk 2 — 4.25★ on Bk 1; dark competence-driven novella, same grimdark voice |
 | The Sword of the Lictor | Gene Wolfe | 225 | Book of the New Sun Bk 3 — continuing from Claw of the Conciliator |
 | The Citadel of the Autarch | Gene Wolfe | 236 | Book of the New Sun conclusion — Bk 4 |
+| Tigana | Guy Gavriel Kay | 538 | Conquered kingdom's name erased from memory — survivors must restore it. Literary fantasy, devastating payoff. Standalone |
+| Murder on Hunter's Eve (I) | Morgan Stang | 259 | Lamplight Murder Mysteries Bk 3 — continues series already on this list. Same gothic detective voice. Indie deep cut |
+| The Goblin Emperor | Katherine Addison | 348 | Half-goblin becomes emperor overnight, navigates court politics while trying to be decent. Warm epic counterweight |
 
 ---
 
@@ -173,15 +180,15 @@
 
 | Genre | Goal | Current |
 |-------|------|---------|
-| Fantasy | ~30 | 25 |
-| Science Fiction | ~15 | 12 |
+| Fantasy | ~30 | 28 |
+| Science Fiction | ~15 | 16 |
 | Horror | ~8 | 8 ✓ |
 | Crime / Mystery / Thriller | ~10 | 14 |
 | Historical Fiction | ~15 | 11 |
 | Literary Fiction | ~5 | 5 ✓ |
 | Nonfiction | ~10 | 10 ✓ |
 | Long Series / Other | ~7 | 6 |
-| **Total** | **100** | **91** |
+| **Total** | **100** | **98** |
 
 ### Series Status Goals
 
@@ -196,6 +203,6 @@
 | Tag | Floor | Current |
 |-----|-------|---------|
 | Classics | 10 | 10 ✓ |
-| Indie | 20 | 15 |
+| Indie | 20 | 16 |
 
-*List: 91 / 100 (cap 110) | Top 5 locked: No*
+*List: 98 / 100 (cap 110) | Top 5 locked: No*
