@@ -2,7 +2,7 @@
 
 > **This is a TBR pool, not a reading order.** Pull from any section based on mood. Sequence carries no meaning.
 
-*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 100/100*
+*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 103/110*
 
 ---
 
@@ -123,6 +123,9 @@
 | The Underground Railroad | Colson Whitehead | 249 | Pulitzer winner. Escaped slave, Underground Railroad as literal rail network — propulsive, structurally inventive, each chapter a different state |
 | Shōgun | James Clavell | 1210 | Classic. 1600 — English navigator stranded in feudal Japan, entangled in succession war between lords. Morally grey ensemble, political intrigue, earned consequences. Standalone |
 | An Instance of the Fingerpost | Iain Pears | 700 | One woman's death, four narrators — each tells a completely different story of what happened. Structural cleverness maxed. Same register as Magpie Murders in historical form. Standalone |
+| Yellow Sky Revolt (I) | Baptiste Pinson Wu | 233 | 184 CE China — peasant boy joins the Yellow Turban Rebellion against the crumbling Han dynasty. Gritty, action-driven Three Kingdoms era. Bk 1 |
+| Heroes of Chaos (I) | Baptiste Pinson Wu | 232 | Three Kingdoms Bk 2 — series escalates |
+| Dynasty Killers (I) | Baptiste Pinson Wu | 263 | Three Kingdoms Bk 3 — arc continues |
 
 ---
 
@@ -186,11 +189,11 @@
 | Science Fiction | ~15 | 16 |
 | Horror | ~8 | 8 ✓ |
 | Crime / Mystery / Thriller | ~10 | 14 |
-| Historical Fiction | ~15 | 13 |
+| Historical Fiction | ~15 | 16 |
 | Literary Fiction | ~5 | 5 ✓ |
 | Nonfiction | ~10 | 10 ✓ |
 | Long Series / Other | ~7 | 6 |
-| **Total** | **100** | **100** |
+| **Total** | **100** | **103** |
 
 ### Series Status Goals
 
@@ -205,6 +208,6 @@
 | Tag | Floor | Current |
 |-----|-------|---------|
 | Classics | 10 | 10 ✓ |
-| Indie | 20 | 16 |
+| Indie | 20 | 20 ✓ |
 
-*List: 100 / 100 (cap 110) | Top 5 locked: No*
+*List: 103 / 110 (cap 110) | Top 5 locked: No*
