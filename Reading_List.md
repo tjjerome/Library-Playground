@@ -2,7 +2,7 @@
 
 > **This is a TBR pool, not a reading order.** Pull from any section based on mood. Sequence carries no meaning.
 
-*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 106/110*
+*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 108/110*
 
 ---
 
@@ -178,7 +178,10 @@
 
 ## New & Upcoming Releases
 
-*Phase 3 — not yet built.*
+| Title | Author | Pages | Why It's For You |
+|-------|--------|-------|-----------------|
+| Daughter of Crows | Mark Lawrence | 324 | Lawrence returns to grimdark — Academy of Kindness Bk 1 (Mar 2026). 100 girls sold to an assassin academy, only 3 survive. Multiple POVs, merciless. Red Sister author at his sharpest. New series |
+| The Thrice-Bound Fool | Christopher Buehlman | 384 | Blacktongue Bk 2 (Oct 2026). Direct continuation of The Blacktongue Thief — Buehlman 5★ author, same darkly comic grimdark voice |
 
 ---
 
@@ -188,7 +191,7 @@
 
 | Genre | Goal | Current |
 |-------|------|---------|
-| Fantasy | ~30 | 31 |
+| Fantasy | ~30 | 33 |
 | Science Fiction | ~15 | 16 |
 | Horror | ~8 | 8 ✓ |
 | Crime / Mystery / Thriller | ~10 | 14 |
@@ -196,7 +199,7 @@
 | Literary Fiction | ~5 | 5 ✓ |
 | Nonfiction | ~10 | 10 ✓ |
 | Long Series / Other | ~7 | 6 |
-| **Total** | **100** | **106** |
+| **Total** | **100** | **108** |
 
 ### Series Status Goals
 
@@ -213,4 +216,4 @@
 | Classics | 10 | 10 ✓ |
 | Indie | 20 | 20 ✓ |
 
-*List: 106 / 110 (cap 110) | Top 5 locked: No*
+*List: 108 / 110 (cap 110) | Top 5 locked: No*
