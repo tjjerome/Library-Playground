@@ -142,3 +142,158 @@ Phase 3 (new/upcoming releases) is a small web-search step. Could be isolated, b
 | P2 | Catalog series-name search support in librarian-query.py |
 | P3 | `librarian-batch-review` sub-skill |
 | P3 | `librarian-goals-tracker` sub-skill |
+
+---
+
+## Smoke Test 2 — Root Cause Analysis
+
+*Review of `overseer-assessment.md` + `user-feedback.md` from second smoke test. Technical bugs investigated against source code. Commentary below.*
+
+---
+
+### Bug 1 — Phase 0 False Positive (Dresden Files Side Jobs, Lawrence completed series)
+
+**Overseer finding (GROUP A–D):** Phase 0 surfaced Side Jobs (Bk 12.5) as an unread continuation despite it being in Reading_Log. Similarly, Lawrence's Library trilogy was flagged as unfinished despite all three books being read.
+
+**Root cause confirmed via code inspection:**
+
+`cmd_unfinished_series` resolves log entries to catalog entries via `_index_catalog_by_pair`, which indexes on `norm(catalog_entry["title"])`. The catalog title for Side Jobs is `"Side Jobs: Stories from the Dresden Files"` — normalized to `"side jobs stories from dresden files"`. But Reading_Log (a Goodreads import) has `title="Side Jobs"` — normalized to `"side jobs"`. These don't match. The log entry is never resolved to a catalog entry, never added to `series_log_rows`, and Side Jobs is therefore invisible in the `read_pairs` check. The next-book iterator finds it unread and surfaces it.
+
+Same mechanism for the Lawrence trilogy: if any book in the trilogy has a subtitle-truncated title in the log, the catalog pair-lookup fails and that book is treated as unread.
+
+**Fix:** `_index_catalog_by_pair` should index on two keys per entry: `norm(full_title)` AND `norm(title_before_colon)`. Lookup should check both. One-line change per entry:
+
+```python
+def _index_catalog_by_pair(entries):
+    out = {}
+    for k, e in entries.items():
+        full_pair = (norm(e.get("title", "")), norm(e.get("author", "")))
+        short_title = e.get("title", "").split(":")[0].strip()
+        short_pair = (norm(short_title), norm(e.get("author", "")))
+        if full_pair not in out:
+            out[full_pair] = {"key": k, **e}
+        if short_pair not in out:   # only if distinct
+            out[short_pair] = {"key": k, **e}
+    return out
+```
+
+This is also why `is-read --title "Side Jobs" --author "Jim Butcher"` returns `hit=true` correctly — `cmd_is_read` compares against the raw log (which has the short title), so it works. The mismatch only affects the catalog pair-index path used by `unfinished-series`.
+
+**Severity:** Medium (reader catches it, but will happen again on any Goodreads-truncated title).
+
+---
+
+### Bug 2 — Deep-Cut Labeling Violation (GROUP L)
+
+**Overseer finding:** Deep-cut picks labeled in user-facing Reading_List descriptions ("Indie deep cut," "deep cut"). Spec: "never label the deep cut in user-facing output."
+
+**Root cause:** Ambiguous spec wording in SKILL.md. The rule says "randomize slot, never label" — but the model interprets "deep cut" as useful flavor text for the reader (explaining *why* a book is less-known), not as a labeling violation. There's no example of what constitutes a label violation vs. acceptable description framing.
+
+The phrase "Indie deep cut" in a description is functionally a label. The reader can trivially identify the deep-cut slot. This defeats the anti-bias mechanism entirely.
+
+**Fix:** SKILL.md needs an explicit example of the violation. Current rule: `≥1 deep cut per batch, slot randomized, never labeled`. Add: *"Labeling includes: 'deep cut,' 'hidden gem,' 'under-known,' 'indie deep cut,' or any phrase flagging discovery value. Descriptions for deep-cut slots must read identically in tone to non-deep-cut slots. The slot position alone is the signal."*
+
+---
+
+### Bug 3 — Profile.md Not Created or Evolved (GROUP K / GROUP U)
+
+**Overseer finding:** Profile.md not committed after Step 2 interview, and never updated throughout build. Adaptive candidate generation ran against stale data.
+
+**Root cause:** Two separate failures.
+
+**Failure A (creation):** SKILL.md says profile should be written after Step 2, but doesn't make it a blocking precondition for Phase 1. Under Claude Code workflow pressure, the file creation step gets deferred and then skipped. There's no gate that refuses to run Phase 1 without a committed Profile.md.
+
+**Failure B (evolution):** SKILL.md says "Profile.md is live — written throughout the build" but this is aspirational prose, not a procedural checkpoint. No SKILL.md step says "update Profile.md after this batch." There are no reflection checkpoint prompts after batch skips or surprising selections.
+
+**Fix A:** Add a Phase 1 precondition: `Profile.md must exist and be committed before Phase 1 fires`. If missing, create and commit first.
+
+**Fix B:** Add explicit Profile update triggers to the phase checklist:
+- After any whole-batch skip: add a one-sentence note why those books missed
+- After any book that surprises (reader picks something outside pattern): ask why, record answer
+- After every 3 batches: brief profile update commit alongside Reading_List commit
+
+---
+
+### Bug 4 — multiSelect Fallback Wrong (GROUP E / GROUP N)
+
+**Overseer finding:** multiSelect failures forced fallback to yes/no binary per-book decisions. Should fall back to single-select instead.
+
+**Root cause:** The `AskUserQuestion` `multiSelect: true` option fails with `InputValidationError` in Claude Code environment — this appears to be an environment constraint (tool backend rejects the parameter), not a schema issue. The model correctly detects the failure and falls back — but falls back to the wrong pattern (yes/no per book instead of single-select per batch).
+
+**Why yes/no is wrong:** Yes/no per book destroys the key mechanism — the reader can't compare books against each other in a batch. Batch comparison is the whole point. With yes/no, each book is evaluated in isolation with no relative weighting.
+
+**Why single-select is better:** `"Which of these four would you most like to read?"` still forces a comparison. The reader sees all four options and picks the winner. This preserves batch coherence even without multi-select.
+
+**Even better fallback (if single-select is also unreliable):** Present the four books as a numbered prose list and ask the reader to reply with the numbers of books they want. Parse the reply. Zero tool calls. Maximally robust. Loses the structured confirmation but the ledger can still be updated from the reply.
+
+**Fix:** SKILL.md should document a fallback priority chain:
+1. `multiSelect: true` (preferred)
+2. `singleSelect` with "Add all / Add some / Skip all" option
+3. Prose list with numbered reply parsing
+
+---
+
+### Bug 5 — Series Continuation Gap (Abercrombie Age of Madness Bk 2, GROUP J)
+
+**Overseer finding:** A Little Hatred (Age of Madness Bk 1) offered but The Trouble with Peace (Bk 2) never surfaced.
+
+**Root cause (verified via catalog):** The Trouble with Peace is in catalog with `series_position = "Book 8 (Age of Madness #2)"` and `author_entry_point = False`. It won't surface via `author_entry_point_strict` candidate generation because it's mid-series. And `unfinished-series` won't flag it because A Little Hatred hasn't been *read* — it was just added to the list.
+
+There is **no automatic mechanism** to surface Book 2 after Book 1 is added to the reading list. The librarian has to manually check "is there a Book 2 in catalog?" after each Book 1 acceptance. This manual step is easy to skip under batch pressure.
+
+**Fix:** After any Book 1 acceptance, `librarian-query.py` should have a `series-continuation` subcommand:
+```
+python librarian-query.py series-continuation --title "A Little Hatred" --author "Joe Abercrombie"
+```
+Returns the next unread book(s) in the same sub-series. Run this automatically after each Book 1 is added to the list; if there's a Bk 2, add it to the candidate pool for the next batch.
+
+This is distinct from `unfinished-series` (which checks the reading log for partially-read series). This is "list-continuation" — books that follow what's already on the list.
+
+---
+
+### Bug 6 — Tone Signal Recency Bias (GROUP S / GROUP T)
+
+**Overseer finding:** Candidate generation skewed toward recent grimdark reads despite profile stating "full range." Older 5★ warm epics didn't pull equal weight.
+
+**Root cause:** `librarian-query.py candidates` doesn't currently implement time-weighted signal averaging. Candidates are ranked by catalog rating, author-in-pocket match, and genre goal proximity. If recent reads (used to seed comparable_books lookups) skew grimdark, the comparable_books chains will surface more grimdark candidates. Older warm reads have lower chain weight simply because fewer recent seeds point at them.
+
+**Fix (two-part):**
+
+1. In `Profile.md`, list 2–3 favorite warm epics alongside favorite grimdark — not as a separate category but as peers. This directly seeds the comparable_books lookup with warm-epic anchors.
+
+2. The Step 2 interview probe should capture multiple taste dimensions explicitly (pacing, character scope, context — per GROUP T). More dimensions = more seed vectors = less chance of mono-culture candidate generation.
+
+The overseer's additional note about reductive tone probes (GROUP T) is correct: dark/warm is one axis. Pacing and character-focus probes are at least as important for matching candidate tone to context. These dimensions should be captured explicitly in the interview and stored in Profile.md.
+
+---
+
+### Note on Claude Code Environment Mismatch
+
+**Overseer finding:** Claude Code optimized for code editing + bash; conversational book-recommendation workflows create friction (tool schema loading, jargon leakage, file state management).
+
+**My view:** The overseer is right about the friction sources but the conclusion (migrate to web chat) deserves more nuance.
+
+The actual blockers are:
+1. multiSelect bug — fixable if the tool backend is patched, otherwise a real environment constraint
+2. Jargon leakage — a SKILL.md guardrail issue, not a Claude Code issue
+3. Profile.md creation discipline — a process issue, not an environment issue
+
+The `librarian-query.py` design (catalog isolation, exclusion gate, shown-ledger) depends on a local filesystem. Web chat doesn't have access to these. Migrating to web chat would require either: (a) uploading catalog JSON per session (impractical at 9.4MB), or (b) a local server the web chat calls (complex, breaks Pro-only accessibility requirement).
+
+Claude Code on the web (claude.ai/code) satisfies the Pro-only constraint and preserves the local tool access. The environment friction is real but fixable at the SKILL.md + tooling layer without migrating the architecture.
+
+**Recommendation:** Fix multiSelect fallback chain first. Audit SKILL.md for jargon guardrails. Add Profile.md creation gate. These three changes address ~80% of the environment-friction complaints without architectural migration.
+
+---
+
+### Summary of Root Causes
+
+| Issue | Root Cause Type | Fixable Where |
+|-------|----------------|---------------|
+| Phase 0 false positives (subtitle truncation) | Code bug — `_index_catalog_by_pair` doesn't index short titles | `librarian-query.py` |
+| Deep-cut labeling | Spec ambiguity — "never label" not defined | `SKILL.md` |
+| Profile.md not created/evolved | Process discipline — no blocking gate | `SKILL.md` phase checklist |
+| multiSelect fallback to yes/no | Tool environment constraint + wrong fallback choice | `SKILL.md` fallback chain |
+| Series continuation gap (Bk 2) | Missing feature — no list-continuation subcommand | `librarian-query.py` + `SKILL.md` |
+| Tone signal recency bias | Profile design + interview probe depth | `Profile.md` + `SKILL.md` Step 2 |
+| Jargon in user-facing output | No guardrail in skill prompt | `SKILL.md` |
