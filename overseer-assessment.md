@@ -242,6 +242,16 @@ Commit Profile updates every 2–3 batches bundled with Reading_List commits. Gi
 
 ---
 
+## Interface Accessibility Requirement
+
+**Critical constraint:** Next interface must be accessible to users with Claude Pro subscription only. No additional usage-based costs, no separate API credits, no extra fees. 
+
+Web chat (claude.ai) with Pro access satisfies constraint. Local wrapper (librarian-query.py on user's machine) has no cost. This combination preserves accessibility while avoiding Claude Code environment friction.
+
+If migrating to custom interface (Cursor, custom IDE extension, standalone app), must remain within Claude Pro tier — no API calls beyond what Pro covers, no external service costs.
+
+---
+
 ## Conclusion
 
 Librarian skill architecture remains sound. Session exposed 15 new UX/specification/environment issues, not logic flaws. Most critical: tool reliability (multiSelect), conversational tone (pitch quality), and profile fluidity (live evolution, not interview lock-in). Environment (Claude Code) appears structurally mismatched for conversational workflows; web + wrapper recommended for future iterations. Fixes above unblock full Phase 2–5 build and improve downstream recommendation quality substantially.
