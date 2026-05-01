@@ -2,7 +2,7 @@
 
 > **This is a TBR pool, not a reading order.** Pull from any section based on mood. Sequence carries no meaning.
 
-*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 98/100*
+*Build session: 2026-04-30 | Target: 100 books, hard cap 110 | Current: 100/100*
 
 ---
 
@@ -121,6 +121,8 @@
 | The Pillars of the Earth | Ken Follett | 894 | 12th-century England, cathedral built across decades — political intrigue, war, religious power. Generational epic, Book 1 tester |
 | The Count of Monte Cristo | Alexandre Dumas | 1057 | Classic. Architecture of revenge schemes — surgical precision, every thread pays off, same pleasure center as A Drop of Corruption at epic scale |
 | The Underground Railroad | Colson Whitehead | 249 | Pulitzer winner. Escaped slave, Underground Railroad as literal rail network — propulsive, structurally inventive, each chapter a different state |
+| Shōgun | James Clavell | 1210 | Classic. 1600 — English navigator stranded in feudal Japan, entangled in succession war between lords. Morally grey ensemble, political intrigue, earned consequences. Standalone |
+| An Instance of the Fingerpost | Iain Pears | 700 | One woman's death, four narrators — each tells a completely different story of what happened. Structural cleverness maxed. Same register as Magpie Murders in historical form. Standalone |
 
 ---
 
@@ -184,11 +186,11 @@
 | Science Fiction | ~15 | 16 |
 | Horror | ~8 | 8 ✓ |
 | Crime / Mystery / Thriller | ~10 | 14 |
-| Historical Fiction | ~15 | 11 |
+| Historical Fiction | ~15 | 13 |
 | Literary Fiction | ~5 | 5 ✓ |
 | Nonfiction | ~10 | 10 ✓ |
 | Long Series / Other | ~7 | 6 |
-| **Total** | **100** | **98** |
+| **Total** | **100** | **100** |
 
 ### Series Status Goals
 
@@ -205,4 +207,4 @@
 | Classics | 10 | 10 ✓ |
 | Indie | 20 | 16 |
 
-*List: 98 / 100 (cap 110) | Top 5 locked: No*
+*List: 100 / 100 (cap 110) | Top 5 locked: No*
