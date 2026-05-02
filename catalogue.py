@@ -978,17 +978,6 @@ def main():
                              "<sqlite-path>.encoded — gzip+base64 wrapped, "
                              "Drive-uploadable, decoded once per session by "
                              "the librarian-triage skill.")
-    parser.add_argument("--export-browse-index", dest="export_browse_index",
-                        default=None, metavar="PATH",
-                        help="Emit a slim browse index (JSON) sized for the "
-                             "claude.ai project-knowledge budget — title, "
-                             "author, series, series_status, primary_genre, "
-                             "indie, classic, status, pages, "
-                             "goodreads_rating only.  No comparable_books, "
-                             "no taste_signals, no summary.  Pair with the "
-                             "full SQLite catalog in Drive: librarian "
-                             "queries the index for routing, decodes SQLite "
-                             "for full per-book detail.")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
@@ -1008,71 +997,6 @@ def main():
             encoded_path = sqlite_path.with_suffix(sqlite_path.suffix + ".encoded")
             _encode_file(sqlite_path, encoded_path)
             print(f"  Wrote encoded catalog → {encoded_path}")
-        sys.exit(0)
-
-    if args.export_browse_index:
-        from pathlib import Path as _Path
-        out_path = _Path(args.export_browse_index)
-
-        # Compact key encoding to fit in claude.ai project knowledge.
-        # `key` (already "Title - Author") carries title + author for
-        # free.  Each entry stores only what's useful for routing /
-        # presence-check / "do I have X?" queries.
-        #
-        # Field map (single-letter to keep file size in budget):
-        #   s   = series (str | null)
-        #   sp  = series_position (str | null)
-        #   ss  = series_status (str | null)
-        #   sr  = series_role (str | null)
-        #   aep = author_entry_point (bool | null)
-        #   g   = primary_genre (str | null)
-        #   i   = indie (0|1)
-        #   c   = classic (0|1)
-        #   st  = status (str)
-        #   gr  = goodreads_rating (float | null)
-        #   p   = pages (int | null)
-        slim_entries = {}
-        for key, e in catalog["entries"].items():
-            slim_entries[key] = {
-                "s":   e.get("series"),
-                "sp":  e.get("series_position"),
-                "ss":  e.get("series_status"),
-                "sr":  e.get("series_role"),
-                "aep": e.get("author_entry_point"),
-                "g":   e.get("primary_genre"),
-                "i":   1 if e.get("indie") else 0,
-                "c":   1 if e.get("classic") else 0,
-                "st":  e.get("status"),
-                "gr":  e.get("goodreads_rating"),
-                "p":   e.get("pages"),
-            }
-
-        slim_index = {
-            "browse_index_version": 1,
-            "last_updated": str(date.today()),
-            "total": len(slim_entries),
-            "field_map": {
-                "s": "series", "sp": "series_position", "ss": "series_status",
-                "sr": "series_role", "aep": "author_entry_point",
-                "g": "primary_genre", "i": "indie", "c": "classic",
-                "st": "status", "gr": "goodreads_rating", "p": "pages",
-            },
-            "note": (
-                "Slim browse index for project-knowledge upload.  "
-                "Title + author come from the entry key (Title - Author).  "
-                "Use for routing, presence checks, and 'do you have X?' "
-                "queries.  Full per-book detail (summary, themes, "
-                "comparable_books, taste_signals, content_flags, audit) "
-                "lives in Library_Catalog.sqlite via webhelper/librarian_query.py."
-            ),
-            "entries": slim_entries,
-        }
-        out_path.parent.mkdir(parents=True, exist_ok=True)
-        with out_path.open("w", encoding="utf-8") as f:
-            json.dump(slim_index, f, ensure_ascii=False, separators=(",", ":"))
-        size_kb = out_path.stat().st_size / 1024
-        print(f"  Wrote browse index → {out_path} "
-              f"({len(slim_entries)} entries, {size_kb:.0f} KB)")
         sys.exit(0)
 
     if args.index_only:

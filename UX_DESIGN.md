@@ -70,17 +70,17 @@ the recovery flow when only one fails.
 | Layer | Holds | Mutability |
 |---|---|---|
 | Drive | `Library_Catalog.sqlite.encoded` (gzip+b64) | Mutable; cataloguer flushes at session end. |
-| Project knowledge (uploaded once per project) | `Library_Browse_Index.json` (~800KB), `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds | Static — re-upload to refresh. |
+| Project knowledge (uploaded once per project) | `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds | Static — re-upload to refresh. |
 | `picker` artifact storage | Build state (`build:<id>`), ledger, batch selections (`batch:<id>`), `catalog_edit_lock`, `log_pending_updates` | Per-edit writes during build sessions. |
 | `profile` artifact storage | `profile` key with `{version, content, updated_at}` | Per-edit on Profile-write triggers. |
 | `reading-list` artifact storage | `reading_list` key with `{version, content, updated_at}` | Per-edit on every confirmed pick / removal. |
 | Sandbox `/tmp/` (per session) | Decoded catalog, mirrored Profile/Reading_List for helper, scratch I/O | Discarded at session end. |
 
 Drive holds one file (the big mutable catalog).  Project knowledge
-holds reads (the slim browse index for fast presence checks, plus the
-reading log).  Artifacts hold the live mutable user-facing surfaces
-(profile + reading list).  Picker artifact storage holds invisible
-build mechanics.
+holds reads (the reading log, plus optional profile/list seeds).
+Artifacts hold the live mutable user-facing surfaces (profile +
+reading list).  Picker artifact storage holds invisible build
+mechanics.
 
 ---
 
@@ -812,9 +812,9 @@ into the UX above.
    native `WebSearch` tool.
 6. **Mutable-state split** (refactor 2026-05-02 second pass): Drive
    narrows to one binary file; Profile + Reading_List move to their
-   own published artifacts; Reading_Log + slim browse index move to
-   project knowledge.  See "Storage layout" table above and the
-   13-18 rows of the resolved-decisions table for the full split.
+   own published artifacts; Reading_Log moves to project knowledge.
+   See "Storage layout" table above and the 13-18 rows of the
+   resolved-decisions table for the full split.
 
 ---
 
@@ -835,11 +835,11 @@ into the UX above.
 | 11 | All catalog fields in SQLite | Yes — all 36 fields, including `secondary_genre`, `audio_notes`, `research_source`, `audit.passed`, full `audit.flags[]` row table, plus catalog metadata. |
 | 12 | Encoded format | gzip + base64, `Library_Catalog.sqlite.encoded`, header line `# library-playground-catalog v1 gzip+b64`, decode once at session start. |
 | 13 | Storage budget | ~20MB per artifact.  Three artifacts × 20MB = 60MB total; build state is tens-to-hundreds of KB, profile ≤100KB, reading_list ≤500KB.  Plenty of headroom. |
-| 14 | Mutable storage split | Drive holds catalog only.  Project knowledge holds reads (browse index, reading log).  Artifacts hold mutable user-facing files (profile, reading-list).  Picker artifact holds invisible build mechanics. |
+| 14 | Mutable storage split | Drive holds catalog only.  Project knowledge holds reads (reading log, optional profile/list seeds).  Artifacts hold mutable user-facing files (profile, reading-list).  Picker artifact holds invisible build mechanics. |
 | 15 | Project-file Profile.md handling | Triage seeds the profile artifact from `PROJECT_PROFILE` on first session.  Build-setup honours existing profile via partial-interview / fresh-interview prompt. |
 | 16 | Project-file Reading_List.md handling | Triage seeds the reading-list artifact from `PROJECT_LIST` on first session.  Refine-vs-fresh prompt at triage when content exists. |
 | 17 | Project-file Reading_Log.csv handling | Read-only path.  In-chat rate updates queue to `log_pending_updates` on the picker artifact; reader merges to project file via re-upload. |
-| 18 | Slim browse index | `python3 catalogue.py --library Library.csv --export-browse-index Library_Browse_Index.json` — single-letter field codes, no comparable_books, ~800KB at 5,000 books.  Lives in project knowledge for fast presence checks. |
+| 18 | Slim browse index | Removed 2026-05-02 (this branch).  Triage decodes the SQLite catalog once per session into the sandbox; all presence checks query SQLite directly via `webhelper/librarian_query.py lookup`.  The decode is ~100ms; SQLite has indexes on `title_normalized`, `title_short`, and `author_normalized`.  A separate slim index added project-knowledge weight without saving sandbox time. |
 
 ---
 

@@ -46,7 +46,7 @@ yourself.  Your job ends when the right downstream skill takes over.
 | Layer | What lives here |
 |---|---|
 | Drive | `Library_Catalog.sqlite.encoded` (single big mutable file) |
-| Project knowledge (uploaded once per project) | `Library_Browse_Index.json` (slim ~800KB), `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds |
+| Project knowledge (uploaded once per project) | `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds |
 | Published artifact storage | `picker` (build state + ledger + batch selections), `profile` (live Profile.md content), `reading-list` (live Reading_List.md content) |
 | Sandbox `/tmp/` (per session) | Decoded catalog, helper scripts, scratch I/O |
 
@@ -79,9 +79,6 @@ Project files in claude.ai sandbox land at a known mount path.  Look for
 each by name (try `/mnt/user-data/uploads/`, `/mnt/skills/`, current
 working directory, then `find /mnt -name "<file>" 2>/dev/null`):
 
-- `Library_Browse_Index.json` — the slim browse index.  Strongly
-  recommended to upload to project knowledge; quickref + cataloguer use
-  it for fast presence checks without decoding the full catalog.
 - `Reading_Log.csv` — the reader's history.  Required for full builds
   and series-continuation queries.  Recommended in project files.
 - `Profile.md` (optional) — seed taste profile.  When present, used as
@@ -89,7 +86,7 @@ working directory, then `find /mnt -name "<file>" 2>/dev/null`):
 - `Reading_List.md` (optional) — existing TBR pool.  When present,
   triggers the refine-vs-fresh prompt below.
 
-Bind discovered paths to local variables (`PROJECT_INDEX`, `PROJECT_LOG`,
+Bind discovered paths to local variables (`PROJECT_LOG`,
 `PROJECT_PROFILE`, `PROJECT_LIST`).  Use throughout the session.
 
 ## First-run setup
@@ -102,8 +99,7 @@ Conversational, ~7 turns total.  Cover, in this order:
    back.
 
 2. **Discover project files.**  Run the discovery above.  Tell the reader
-   what was found.  If `Library_Browse_Index.json` is missing, suggest
-   uploading it to project knowledge for faster sessions.
+   what was found.
 
 3. **Create + publish three artifacts** in this order:
    - `batch-picker` (from `artifacts/batch-picker.jsx`) — build state +

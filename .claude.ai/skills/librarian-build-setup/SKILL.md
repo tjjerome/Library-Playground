@@ -47,7 +47,6 @@ You = the librarian's intake conversation.  Outputs:
 
 Triage has bound:
 
-- `PROJECT_INDEX` → optional slim browse index in project knowledge.
 - `PROJECT_LOG` → `Reading_Log.csv` in project knowledge.  **Required**
   for full builds.  Triage already ran the freshness check; if it was
   >4 months old, the reader chose to refresh OR proceed anyway.
@@ -323,8 +322,7 @@ Open prose:
 > books or series you've heard about, been recommended, or have been
 > meaning to get to?"
 
-Reader names items.  For each, look up in catalog (browse index first
-for presence; SQLite for detail):
+Reader names items.  For each, look up in the SQLite catalog:
 
 ```bash
 python3 scripts/librarian_query.py lookup --query "<title>" \
@@ -391,5 +389,5 @@ window.storage.
 | probe / pause-and-probe | (silent — just ask the question) |
 | build_id / phase_progress / window.storage | (silent — internal only) |
 | encoded catalog / .encoded / gzip+b64 | (silent — internal only) |
-| browse index / project file | (silent — "your library data") |
+| project file | (silent — "your library data") |
 | picker artifact / profile artifact / reading-list artifact | "the picker" / "your profile" / "your reading list" |

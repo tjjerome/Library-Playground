@@ -86,7 +86,6 @@ echo "$listContent" > /tmp/Reading_List.md
 ```
 
 Project-file paths from triage:
-- `PROJECT_INDEX` (optional, slim browse index)
 - `PROJECT_LOG` (`Reading_Log.csv` — required)
 
 Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
@@ -416,7 +415,7 @@ Phase advance only on completion criteria.
 | probe / pause-and-probe | (silent — just ask the question) |
 | build_id / phase_progress / window.storage | (silent — internal only) |
 | encoded catalog / .encoded / gzip+b64 | (silent — internal only) |
-| browse index / project file | (silent — "your library data") |
+| project file | (silent — "your library data") |
 | picker artifact / profile artifact / reading-list artifact | "the picker" / "your profile" / "your reading list" |
 | refine-mode / fresh-build mode | (silent — just behaviour) |
 

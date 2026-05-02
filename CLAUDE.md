@@ -27,10 +27,6 @@ features between branches without an explicit ask.
 - `Library_Catalog.sqlite.encoded` — gzip+base64 wrapped form (~5MB
   text) for the Drive connector to read.  Header line:
   `# library-playground-catalog v1 gzip+b64`.  Gitignored.
-- `Library_Browse_Index.json` — slim browse index (~800KB) generated
-  via `catalogue.py --export-browse-index`.  Lives in claude.ai
-  project knowledge for fast presence checks without decoding SQLite.
-  Gitignored.
 - `Library.csv`, `Reading_Log.csv` — user-provided inputs.
 - `Profile.md`, `Reading_List.md` — live in published artifact
   storage (`profile`, `reading-list`) in production.  Local files
@@ -41,7 +37,7 @@ features between branches without an explicit ask.
 | Layer | Holds | Mutability |
 |---|---|---|
 | Drive | `Library_Catalog.sqlite.encoded`, `.config.json` | Mutable; cataloguer flushes at session end |
-| Project knowledge | `Library_Browse_Index.json`, `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds | Static — re-upload to refresh |
+| Project knowledge | `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds | Static — re-upload to refresh |
 | `picker` artifact | `build:<id>`, `batch:<id>`, ledger, `catalog_edit_lock`, `log_pending_updates` | Per-edit during builds |
 | `profile` artifact | `profile` key with `{version, content, updated_at}` | Per-edit on Profile-write triggers |
 | `reading-list` artifact | `reading_list` key with `{version, content, updated_at}` | Per-edit on every confirmed pick / removal |

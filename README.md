@@ -20,7 +20,7 @@ no Anthropic API credits beyond what Pro covers.
 | Six skills installed in claude.ai | Auto-trigger on librarian-shaped questions, file uploads, and bulk-add requests |
 | Three published React artifacts | `picker` (batch multi-select + build state), `profile` (live taste profile), `reading-list` (live TBR pool) |
 | Drive folder | One file: the catalog (gzip+base64 wrapped) |
-| claude.ai project knowledge | Slim browse index, reading log, optional profile/list seeds |
+| claude.ai project knowledge | Reading log, optional profile/list seeds |
 | Local Python tooling | One-time bulk catalogue build + SQLite/index export; round-trip parity tests |
 
 The reader's experience: they open a chat in claude.ai, say something
@@ -51,13 +51,11 @@ finishes.  Highlights:
    catalog (one-time, 2-6 hours).
 5. Run `python3 catalogue.py --library Library.csv --export-sqlite
    Library_Catalog.sqlite --emit-encoded` to produce the Drive-ready
-   text-wrapped catalog, then `python3 catalogue.py --library
-   Library.csv --export-browse-index Library_Browse_Index.json` for
-   the slim browse index.
+   text-wrapped catalog.
 6. Upload `Library_Catalog.sqlite.encoded` to a `Library-Playground`
-   folder in Drive (one file).  Upload `Library_Browse_Index.json`
-   + `Reading_Log.csv` (and optional `Profile.md` /
-   `Reading_List.md` seeds) to claude.ai project knowledge.
+   folder in Drive (one file).  Upload `Reading_Log.csv` (and
+   optional `Profile.md` / `Reading_List.md` seeds) to claude.ai
+   project knowledge.
 7. `make skills` to build the six skill zips.  Upload via Settings →
    Features → Skills.
 8. **Publish three artifacts once.**  In a fresh chat, say "set up
@@ -90,10 +88,10 @@ rendering — no deep-cut differentiation),
 `artifacts/profile.jsx` (markdown render + inline edit), and
 `artifacts/reading-list.jsx` (markdown render, read-only).  Storage
 split: Drive holds only the catalog `.encoded`; claude.ai project
-knowledge holds the slim browse index + reading log + optional
-profile/list seeds; published artifacts hold all mutable user-facing
-state.  Catalog flushes only at session end; profile + reading-list
-flush per-edit via artifact storage writes.
+knowledge holds the reading log + optional profile/list seeds;
+published artifacts hold all mutable user-facing state.  Catalog
+flushes only at session end; profile + reading-list flush per-edit
+via artifact storage writes.
 
 For the design rationale and failure-mode handling, see
 [`UX_DESIGN.md`](UX_DESIGN.md).  For the build plan, see
@@ -135,7 +133,6 @@ Reading_Log.csv                        # you provide
 Library_Catalog.json                   # built by catalogue.py (gitignored)
 Library_Catalog.sqlite                 # gitignored
 Library_Catalog.sqlite.encoded         # gitignored
-Library_Browse_Index.json              # gitignored
 Profile.md                             # for testing; production lives in profile artifact
 Reading_List.md                        # for testing; production lives in reading-list artifact
 Makefile                               # `make skills` builds the six zips

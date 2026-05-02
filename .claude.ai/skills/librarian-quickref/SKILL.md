@@ -3,12 +3,11 @@ name: librarian-quickref
 description: >
   Answers single-book queries against the reader's library — "anything like
   X?", "is X worth my time?", "what do you know about X?", "what comes after
-  X in its series?", "any plans you have on Y?".  Reads from the project-file
-  browse index for fast presence checks, decodes the SQLite catalog only when
-  needed for full per-book detail, gives a 1-3 paragraph answer that fits the
-  book to the reader's profile, and writes any signal-capture bullets into
-  the profile artifact immediately.  Does NOT do batch builds, batch picks,
-  multi-book workflows, or catalog edits.
+  X in its series?", "any plans you have on Y?".  Queries the decoded SQLite
+  catalog directly, gives a 1-3 paragraph answer that fits the book to the
+  reader's profile, and writes any signal-capture bullets into the profile
+  artifact immediately.  Does NOT do batch builds, batch picks, multi-book
+  workflows, or catalog edits.
 ---
 
 # librarian-quickref — single-book mode
@@ -36,35 +35,19 @@ interview, no goals conversation, no batch checklists, no list edits.
 
 Triage has bound:
 
-- `PROJECT_INDEX` → path to `Library_Browse_Index.json` (slim, ~800KB)
-  in project knowledge.  May be missing on minimal Pro setups.
 - `PROJECT_LOG` → path to `Reading_Log.csv` in project knowledge.
 - Profile content → `window.storage["profile"].content` on the profile
   artifact (text markdown).
 - Reading_List content → `window.storage["reading_list"].content` on
   the reading-list artifact (text markdown).
-- Decoded SQLite at `/tmp/Library_Catalog.sqlite` (decoded by triage if
-  the reader's question requires per-book detail).
+- Decoded SQLite at `/tmp/Library_Catalog.sqlite` (decoded by triage at
+  session start — always present by the time quickref runs).
 
-## Read order — start cheap
+## Catalog reads
 
-For "do you have X?" / "is X in my library?", **try the browse index
-first**.  No SQLite decode needed:
-
-```python
-import json
-with open(PROJECT_INDEX) as f:
-    idx = json.load(f)
-# Field map at idx["field_map"]; entries at idx["entries"][key].
-# Try exact key match, then linear scan with norm().
-key = next((k for k in idx["entries"]
-            if k.lower() == f"{title} - {author}".lower()), None)
-```
-
-If you only need to confirm presence + genre + series role + page count
-+ goodreads rating, the browse index is enough.  For full detail
-(summary, themes, comparable_books, taste_signals, content_flags),
-decode the catalog (triage handles this on first need) and query SQLite:
+All catalog reads go through SQLite.  For presence checks, structured
+lookups, or full per-book detail (summary, themes, comparable_books,
+taste_signals, content_flags), query the decoded SQLite directly:
 
 ```python
 import sqlite3
@@ -116,8 +99,8 @@ horror batch?") and hand off to `librarian-build-setup` (fresh) or
 
 ### "Anything like X?" responses
 
-Pull `comparable_books` for X from SQLite.  For each comp, check the
-browse index for presence and run `is-read` / `is-on-list`:
+Pull `comparable_books` for X from SQLite.  For each comp, run
+`is-read` / `is-on-list`:
 
 ```bash
 python3 scripts/librarian_query.py is-read \

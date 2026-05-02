@@ -101,20 +101,13 @@ these):
 python3 catalogue.py --library Library.csv --audit-entry-points
 ```
 
-## 5. Export the catalog three ways
-
-One command per output:
+## 5. Export the catalog
 
 ```bash
 # Full SQLite (used in-sandbox for queries) + the gzip+base64
 # wrapped form (used to ship the catalog through the Drive connector).
 python3 catalogue.py --library Library.csv \
     --export-sqlite Library_Catalog.sqlite --emit-encoded
-
-# Slim browse index (used in project knowledge for fast presence
-# checks without decoding the full catalog).  ~800KB at 5,000 books.
-python3 catalogue.py --library Library.csv \
-    --export-browse-index Library_Browse_Index.json
 ```
 
 Outputs:
@@ -124,8 +117,6 @@ Outputs:
 - `Library_Catalog.sqlite.encoded` — gzip+base64, ~5MB at 5,000
   books.  Drive uploadable.  First line is
   `# library-playground-catalog v1 gzip+b64`.
-- `Library_Browse_Index.json` — slim browse index for project
-  knowledge.
 
 You can verify the SQLite + encoded round-trip cleanly:
 
@@ -160,7 +151,6 @@ claude.ai projects can hold static reference files that load into
 every chat in the project.  Create a project (or reuse one), then
 upload:
 
-- `Library_Browse_Index.json` (from §5) — slim browse index.
 - `Reading_Log.csv` (from §3) — your reading history.
 - (optional) `Profile.md` — taste profile seed.  When present, the
   librarian uses it as the seed for the live profile artifact on
@@ -418,7 +408,6 @@ window.storage on a single artifact, which collides build state.
 ├── Library_Catalog.json               # built by catalogue.py (deprecated post-build)
 ├── Library_Catalog.sqlite             # built by catalogue.py --export-sqlite (gitignored)
 ├── Library_Catalog.sqlite.encoded     # built by --emit-encoded (gitignored)
-├── Library_Browse_Index.json          # built by --export-browse-index (gitignored)
 ├── webhelper/                         # runtime helpers (bundled in skill zips)
 ├── artifacts/batch-picker.jsx         # picker artifact source
 ├── artifacts/profile.jsx              # profile artifact source
@@ -436,7 +425,6 @@ Drive/Library-Playground/              # the user's claude.ai-side store (bare)
 └── .config.json                       # 3 artifact URLs + folder name
 
 claude.ai project knowledge            # static reads, loaded into every chat
-├── Library_Browse_Index.json          # slim browse index (~800KB)
 ├── Reading_Log.csv                    # reading history
 ├── Profile.md (optional)              # taste profile seed
 └── Reading_List.md (optional)         # existing TBR seed for refine-mode

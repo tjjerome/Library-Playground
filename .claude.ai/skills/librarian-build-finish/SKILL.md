@@ -42,7 +42,6 @@ let listObj    = JSON.parse((await window.storage.get("reading_list")).value);
 Mirror reading-list content to `/tmp/Reading_List.md`.
 
 Project-file paths from triage:
-- `PROJECT_INDEX` (optional)
 - `PROJECT_LOG` (required)
 
 Decoded SQLite at `/tmp/Library_Catalog.sqlite`.

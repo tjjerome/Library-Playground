@@ -41,7 +41,6 @@ skills read; you write.
 
 Triage has bound:
 
-- `PROJECT_INDEX` (optional, slim browse index)
 - `PROJECT_LOG` → `Reading_Log.csv` in project knowledge (read-only
   for chat)
 - Decoded SQLite at `/tmp/Library_Catalog.sqlite`
@@ -52,17 +51,7 @@ When the reader asks "what do you know about X?" without proposing a
 write, answer in chat — same shape as librarian-quickref.  Don't
 bounce.
 
-For fast presence checks, use the browse index:
-
-```python
-import json
-with open(PROJECT_INDEX) as f:
-    idx = json.load(f)
-# Field map at idx["field_map"]; entries at idx["entries"][key].
-```
-
-For full detail (summary, themes, comps, taste_signals, content_flags,
-audit), open SQLite:
+All catalog reads go through SQLite:
 
 ```python
 import sqlite3, json
@@ -323,11 +312,7 @@ After successful flush, drop the lock:
 await window.storage.delete("catalog_edit_lock");
 ```
 
-Confirm: "Catalog saved to your Drive folder.  Note: since the browse
-index in your project knowledge was generated from the previous
-catalog, consider re-running `python3 catalogue.py --library
-Library.csv --export-browse-index Library_Browse_Index.json` locally
-and re-uploading to project knowledge so quickref stays current."
+Confirm: "Catalog saved to your Drive folder."
 
 ## Boundaries — what cataloguer does NOT do
 
