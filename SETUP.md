@@ -148,7 +148,8 @@ click **Connect**, and grant access to the folder.
 ### 6a. Bake the Drive file ID into project instructions
 
 Recommended for fast catalog loads (skips name-based discovery on
-every session start).
+every session start) and to give the librarian the full set of
+voice / routing / hard-rule instructions in one place.
 
 1. In Drive, open `Library_Catalog.sqlite.encoded`, click **Share**
    or open the file and copy the URL.
@@ -161,15 +162,18 @@ every session start).
                                           file ID
    ```
 
-3. In claude.ai, open your project, click **Edit project
-   instructions**, and paste this line (substituting your own ID):
-
-   ```
-   DRIVE_CATALOG_FILE_ID: 1QEe3-9Hv0CEe1lsT4C9aRFFYTFgKsjPy
-   ```
-
-4. Save.  Triage now fetches the catalog by ID directly; no folder
-   search.
+3. Open `PROJECT_INSTRUCTIONS.md` in this repo.  Copy the contents
+   of the codeblock inside it (everything from
+   `DRIVE_CATALOG_FILE_ID:` down to the closing hard-rule line).
+4. In claude.ai, open your project, click **Edit project
+   instructions**, paste the codeblock content, and substitute your
+   own Drive file ID for the placeholder on the first line.
+5. Leave the three `*_ARTIFACT_URL` lines as placeholders for now —
+   you'll fill them in after first-run setup (§ 8) publishes the
+   three artifacts and gives you their URLs.
+6. Save.  Triage now fetches the catalog by ID directly; the
+   embedded librarian rules are loaded into every chat in the
+   project.
 
 If you skip this step, triage falls back to looking for the file by
 name in `Library-Playground/` (or your custom folder).  Slower but

@@ -14,6 +14,10 @@ features between branches without an explicit ask.
 - `CONVERSION_PLAN.md` — original spec from the maintainer.
 - `UX_DESIGN.md` — design rationale + folder layouts + failure modes.
 - `SETUP.md` — user-facing install guide (sourced from UX_DESIGN.md).
+- `PROJECT_INSTRUCTIONS.md` — copy-paste-ready content for the
+  reader's claude.ai project instructions panel.  Contains the
+  Drive file-ID slot, three artifact-URL slots, the librarian voice,
+  and the seven hard rules.
 - `/root/.claude/plans/include-all-fields-in-synchronous-peacock.md` —
   the approved implementation plan with frozen architecture decisions.
 
