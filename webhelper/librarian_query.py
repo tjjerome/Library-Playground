@@ -49,12 +49,17 @@ from typing import Iterable
 # ---------------------------------------------------------------------------
 
 try:
-    # Skill-bundled deployment: webhelper is a sibling.
+    # Package-relative (when imported as part of webhelper.*).
     from .sqlite_export import norm  # type: ignore
 except (ImportError, ValueError):
-    # Direct invocation (`python3 webhelper/librarian_query.py ...`).
-    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-    from webhelper.sqlite_export import norm  # noqa: E402
+    try:
+        # Direct invocation: webhelper/librarian_query.py from repo root.
+        # Python adds the script dir to sys.path[0], so sibling import works.
+        from sqlite_export import norm  # type: ignore  # noqa: E402
+    except ImportError:
+        # Fallback for tests / out-of-tree invocation.
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+        from webhelper.sqlite_export import norm  # noqa: E402
 
 REJECTION_PENALTIES = (0.5, 1.5, 3.5, 6.0)  # cumulative-by-count
 _BOOK1 = re.compile(r"^book\s*1(?![\d.])", flags=re.IGNORECASE)
