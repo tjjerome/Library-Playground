@@ -3,11 +3,11 @@ __pycache__/
 *.original.md
 .librarian-session/
 
-# Step 1+ build outputs.  Derived from Library_Catalog.json + catalogue.py;
-# users regenerate locally.  The live mutable catalog lives in the user's
-# Drive folder, not here.
+# Step 1+ build outputs.  The raw .sqlite is derived from the tracked
+# .encoded form via `python3 webhelper/encoded_codec.py decode`; the
+# .encoded form ships with the branch so users can drop it straight
+# into project knowledge without re-running the bulk catalogue.
 Library_Catalog.sqlite
-Library_Catalog.sqlite.encoded
 dist/
 build/
 
