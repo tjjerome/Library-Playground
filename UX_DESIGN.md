@@ -16,49 +16,71 @@ Goodreads export, no Claude Code, no prior context on this repo.
 
 ---
 
-## Required: publish the picker artifact (one-time, mandatory)
+## Required: publish three artifacts (one-time, mandatory)
 
-**This is a hard prerequisite for every build session.** The React
-batch-picker artifact is the only place build state, ledger entries,
-and per-batch reader selections persist between turns. Persistence
-relies on the artifact's `window.storage` API, which has two non-
-negotiable rules verified against current Anthropic docs:
+**Hard prerequisite for every build session.** Three React artifacts
+must be published before any build skill runs.  Each one owns a slice
+of mutable state via `window.storage`:
 
-1. **Storage operations only succeed on PUBLISHED artifacts.**
-   On unpublished artifacts the calls silently no-op — no error, no
-   warning, just nothing saved. Any build session against an
-   unpublished picker is functionally broken.
+| Artifact | Source file | Stores |
+|---|---|---|
+| `picker` | `artifacts/batch-picker.jsx` | Build state, ledger, batch selections, edit-locks, pending log updates |
+| `profile` | `artifacts/profile.jsx` | Live `Profile.md` content (markdown) |
+| `reading-list` | `artifacts/reading-list.jsx` | Live `Reading_List.md` content (markdown) |
+
+`window.storage` has two non-negotiable rules verified against current
+Anthropic docs:
+
+1. **Storage operations only succeed on PUBLISHED artifacts.**  On
+   unpublished artifacts the calls silently no-op.
 2. **Storage data is permanently deleted the moment the artifact is
-   unpublished.** No recovery, no undo. In-progress build state is
-   wiped if the user (or anyone with edit access) ever clicks
-   Unpublish on the picker.
+   unpublished.**
 
-**Setup-flow integration.** First-run setup includes:
+**Setup-flow integration.**  First-run setup walks through publishing
+all three artifacts.  Each one:
 
-- Open a fresh chat, say *"create the library picker"*. The build-
-  batches skill renders `artifacts/batch-picker.jsx` once with
-  default props as a preview.
-- Click **Publish** on the artifact panel.
-- Paste the resulting URL back into chat. The skill validates the URL
-  shape, writes it to `Library-Playground/.config.json` in Drive, and
-  performs a tiny `set/get` round-trip to confirm storage works.
-- Leave the artifact published. Do not unpublish.
+- Skill renders the `.jsx` once.  If a project-file seed exists
+  (`Profile.md`, `Reading_List.md`), it's passed as the `seed` prop so
+  the artifact starts populated.
+- User clicks **Publish** on the artifact panel.
+- User pastes the URL back to chat.  The skill validates, runs a
+  `set/get` round-trip preflight, writes the URL into Drive's
+  `.config.json`.
 
-**Preflight check on every build session.** The triage skill performs
-a `window.storage.set('preflight', '<ts>')` followed by a `get` round-
-trip on every session that routes to a build skill. Failure stops the
-session before any build skill is invoked and surfaces the recovery
-flow under "Failure modes — F6" below.
+Leave all three published.  Do not unpublish any of them.
 
-**Why the picker is also the state container, not just the UI.**
-`window.storage` is per-artifact, not user-global. Putting build
-state in the same artifact that hosts the batch-pick UI keeps the
-storage scope coherent and avoids needing a second published
-artifact. Storage budget — ~20MB total per artifact, text-only — is
-plenty: build state is on the order of tens to hundreds of KB. The
-canonical Reading_List.md still lives in Drive; `window.storage`
-only carries the in-progress build conversation state and the picker
-selections.
+**Preflight check on every build session.**  Triage performs the
+`set/get` round-trip on each artifact URL before invoking any build
+skill.  Failure on any one stops the session and surfaces the
+recovery flow under F6 below.
+
+**Why split into three artifacts.**  Profile and Reading_List are
+reader-visible — putting them in their own artifacts means the reader
+can browse / view-raw / (for Profile) edit them from the artifact
+pane between or during sessions.  Build state stays bundled with the
+picker because it's tightly coupled to batch UX.  Storage budget per
+artifact is ~20MB text-only — plenty for any single concern; trying
+to fit all three into one artifact would mix concerns and complicate
+the recovery flow when only one fails.
+
+---
+
+## Storage layout
+
+| Layer | Holds | Mutability |
+|---|---|---|
+| Drive | `Library_Catalog.sqlite.encoded` (gzip+b64) | Mutable; cataloguer flushes at session end. |
+| Project knowledge (uploaded once per project) | `Library_Browse_Index.json` (~800KB), `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds | Static — re-upload to refresh. |
+| `picker` artifact storage | Build state (`build:<id>`), ledger, batch selections (`batch:<id>`), `catalog_edit_lock`, `log_pending_updates` | Per-edit writes during build sessions. |
+| `profile` artifact storage | `profile` key with `{version, content, updated_at}` | Per-edit on Profile-write triggers. |
+| `reading-list` artifact storage | `reading_list` key with `{version, content, updated_at}` | Per-edit on every confirmed pick / removal. |
+| Sandbox `/tmp/` (per session) | Decoded catalog, mirrored Profile/Reading_List for helper, scratch I/O | Discarded at session end. |
+
+Drive holds one file (the big mutable catalog).  Project knowledge
+holds reads (the slim browse index for fast presence checks, plus the
+reading log).  Artifacts hold the live mutable user-facing surfaces
+(profile + reading list).  Picker artifact storage holds invisible
+build mechanics.
 
 ---
 
@@ -788,6 +810,11 @@ into the UX above.
    comes via Drive (text-wrapped), helper comes bundled in skill,
    web search for upcoming releases (Phase 3) goes through Claude's
    native `WebSearch` tool.
+6. **Mutable-state split** (refactor 2026-05-02 second pass): Drive
+   narrows to one binary file; Profile + Reading_List move to their
+   own published artifacts; Reading_Log + slim browse index move to
+   project knowledge.  See "Storage layout" table above and the
+   13-18 rows of the resolved-decisions table for the full split.
 
 ---
 
@@ -807,7 +834,12 @@ into the UX above.
 | 10 | Bulk catalog without Code | Cataloguer skill accepts ≤20 books per chat batch. User repeats as needed. |
 | 11 | All catalog fields in SQLite | Yes — all 36 fields, including `secondary_genre`, `audio_notes`, `research_source`, `audit.passed`, full `audit.flags[]` row table, plus catalog metadata. |
 | 12 | Encoded format | gzip + base64, `Library_Catalog.sqlite.encoded`, header line `# library-playground-catalog v1 gzip+b64`, decode once at session start. |
-| 13 | Storage budget | ~20MB per artifact is plenty given Drive holds canonical Reading_List. Build state is tens-to-hundreds of KB. |
+| 13 | Storage budget | ~20MB per artifact.  Three artifacts × 20MB = 60MB total; build state is tens-to-hundreds of KB, profile ≤100KB, reading_list ≤500KB.  Plenty of headroom. |
+| 14 | Mutable storage split | Drive holds catalog only.  Project knowledge holds reads (browse index, reading log).  Artifacts hold mutable user-facing files (profile, reading-list).  Picker artifact holds invisible build mechanics. |
+| 15 | Project-file Profile.md handling | Triage seeds the profile artifact from `PROJECT_PROFILE` on first session.  Build-setup honours existing profile via partial-interview / fresh-interview prompt. |
+| 16 | Project-file Reading_List.md handling | Triage seeds the reading-list artifact from `PROJECT_LIST` on first session.  Refine-vs-fresh prompt at triage when content exists. |
+| 17 | Project-file Reading_Log.csv handling | Read-only path.  In-chat rate updates queue to `log_pending_updates` on the picker artifact; reader merges to project file via re-upload. |
+| 18 | Slim browse index | `python3 catalogue.py --library Library.csv --export-browse-index Library_Browse_Index.json` — single-letter field codes, no comparable_books, ~800KB at 5,000 books.  Lives in project knowledge for fast presence checks. |
 
 ---
 

@@ -13,15 +13,23 @@ If you're looking for the original Claude Code workflow, see
 > first session, *not counting* the one-time bulk catalogue build
 > (~2-6 hours of mostly unattended runtime).
 
-## Required: publish the picker artifact
+## Required: publish three artifacts
 
-This is the one prerequisite easy to miss.  The librarian uses a
-React artifact (the "library picker") for batch selections.  The
-picker also stores all in-progress build state — phase, goals,
-ledger, indie/classic floor counters.  Persistence works **only on
-published artifacts**, and unpublishing the artifact **permanently
-deletes the storage**.  Setup step 4 below walks through the publish
-flow.  Once published, leave it published.
+Easiest prerequisite to miss.  The librarian uses three React
+artifacts:
+
+- **`picker`** — multi-select for batch picks.  Also holds all
+  in-progress build state (phase, goals, ledger, indie/classic
+  floor counters, edit-locks, pending log updates).
+- **`profile`** — your live `Profile.md`.  Renders the markdown,
+  supports inline edit.
+- **`reading-list`** — your live `Reading_List.md`.  Read-only
+  rendering of the table-form list.
+
+Each one's persistence works **only on published artifacts**, and
+unpublishing **permanently deletes** that artifact's storage.  Setup
+section 8 below walks through publishing all three.  Once published,
+leave them published.
 
 ---
 
@@ -93,27 +101,33 @@ these):
 python3 catalogue.py --library Library.csv --audit-entry-points
 ```
 
-## 5. Export to SQLite + the encoded form
+## 5. Export the catalog three ways
 
-One command, both outputs:
+One command per output:
 
 ```bash
+# Full SQLite (used in-sandbox for queries) + the gzip+base64
+# wrapped form (used to ship the catalog through the Drive connector).
 python3 catalogue.py --library Library.csv \
     --export-sqlite Library_Catalog.sqlite --emit-encoded
+
+# Slim browse index (used in project knowledge for fast presence
+# checks without decoding the full catalog).  ~800KB at 5,000 books.
+python3 catalogue.py --library Library.csv \
+    --export-browse-index Library_Browse_Index.json
 ```
 
 Outputs:
 
-- `Library_Catalog.sqlite` — the queryable form for local diagnostics
-  (the librarian uses this in-sandbox).
-- `Library_Catalog.sqlite.encoded` — gzip+base64 wrapped text file
-  (~1-1.5MB per 5,000 books).  This is the file you upload to Drive,
-  because the Drive connector reads text but not binary.
+- `Library_Catalog.sqlite` — queryable, ~12MB.  Local diagnostics
+  only; the on-Drive form is the encoded one.
+- `Library_Catalog.sqlite.encoded` — gzip+base64, ~5MB at 5,000
+  books.  Drive uploadable.  First line is
+  `# library-playground-catalog v1 gzip+b64`.
+- `Library_Browse_Index.json` — slim browse index for project
+  knowledge.
 
-The first line of `.encoded` is `# library-playground-catalog v1
-gzip+b64`.  Skills detect format drift from this header.
-
-You can verify the export round-trips cleanly:
+You can verify the SQLite + encoded round-trip cleanly:
 
 ```bash
 python3 tests/sqlite_roundtrip.py
@@ -124,32 +138,39 @@ Both should report `OK`.
 
 ## 6. Set up Google Drive
 
-In Google Drive, create a folder.  The default name is
-`Library-Playground` (the librarian-triage skill uses this name
-unless you override it on first run).
+In Google Drive, create a folder.  Default name: `Library-Playground`
+(triage uses this unless you override on first run).
 
-Upload these four files into the folder:
+Upload **one file** into the folder:
 
 ```
 Library-Playground/
-├── Library_Catalog.sqlite.encoded   # from §5
-├── Reading_Log.csv                   # from §3
-├── Profile.md                        # empty file, the librarian fills it
-└── Reading_List.md                   # empty file, the librarian fills it
+└── Library_Catalog.sqlite.encoded   # from §5
 ```
 
-Two empty placeholders are easiest to create with `touch`:
-
-```bash
-touch Profile.md Reading_List.md
-```
-
-…then drag-and-drop into Drive.
+That's it.  Profile and Reading_List live in artifacts (see §8); the
+reading log lives in project knowledge (see §6b).
 
 In claude.ai, go to **Settings → Connectors**, find Google Drive,
-click **Connect**, and grant access to the folder.  When you start a
-session, you'll add the folder to the chat via the paperclip icon
-or the "Add Content" button.
+click **Connect**, and grant access to the folder.
+
+## 6b. Set up project knowledge
+
+claude.ai projects can hold static reference files that load into
+every chat in the project.  Create a project (or reuse one), then
+upload:
+
+- `Library_Browse_Index.json` (from §5) — slim browse index.
+- `Reading_Log.csv` (from §3) — your reading history.
+- (optional) `Profile.md` — taste profile seed.  When present, the
+  librarian uses it as the seed for the live profile artifact on
+  first session.
+- (optional) `Reading_List.md` — existing TBR pool.  When present,
+  the librarian asks "refine this or start fresh?" before doing
+  anything.
+
+Empty `Profile.md` / `Reading_List.md` placeholders aren't
+necessary — only upload them if you have content worth seeding.
 
 ## 7. Install the six skills
 
@@ -178,37 +199,47 @@ In claude.ai:
    "Skill installed" toast between uploads.  Order doesn't matter;
    skills auto-trigger on description match.
 
-## 8. Publish the picker artifact
+## 8. Publish three artifacts
 
-This is the publish-once-leave-published step.  Without it, build
-sessions can't store state.
+Publish-once-leave-published step.  Without these, build sessions
+can't store state.
 
-1. Open a fresh chat in claude.ai.
-2. With the Drive folder added to the chat, type:
+1. Open a fresh chat in claude.ai with the project active and the
+   Drive folder added.
+2. Type:
 
-   > "Create the library picker."
+   > "Set up the library artifacts."
 
-3. The `librarian-build-batches` skill renders the picker artifact
-   with sample books.  Click the **Publish** button on the artifact
-   panel.
-4. Copy the resulting URL (looks like
-   `https://claude.ai/public/artifacts/<uuid>`).
-5. Paste the URL back into the chat.  The triage skill validates,
-   does a tiny `set/get` round-trip to confirm storage works, and
-   writes `.config.json` into your Drive folder.
+3. The `librarian-triage` skill walks you through three artifacts in
+   order — `picker`, `profile`, `reading-list`.  For each one:
+   a. Skill renders the artifact preview.
+   b. Click **Publish** on the artifact panel.
+   c. Copy the resulting URL (`https://claude.ai/public/artifacts/<uuid>`).
+   d. Paste back into chat.
+   e. Triage runs a `set/get` round-trip preflight.
 
-After this step, your Drive folder also has:
+4. If `Profile.md` or `Reading_List.md` is present in project
+   knowledge, the matching artifact gets seeded from it on first
+   render — you'll see the existing content already in place.
+
+5. Once all three URLs are pasted and verified, triage writes them
+   into Drive's `.config.json`:
 
 ```
 Library-Playground/
-├── ...the four files from §6...
-└── .config.json                      # picker URL + folder name
+├── Library_Catalog.sqlite.encoded
+└── .config.json                      # 3 artifact URLs + folder name
 ```
 
-> **If you ever unpublish the picker:** all in-progress build state
-> is permanently lost.  The committed picks still live in
-> `Reading_List.md`, but the conversation context (current phase,
-> shown-ledger, rejection-cluster counters) is gone.  Don't unpublish.
+> **If you ever unpublish any artifact:** that artifact's storage is
+> permanently lost.
+> - Picker unpublished → in-progress build state gone (committed
+>   picks are still in the reading-list artifact).
+> - Profile unpublished → live profile gone (the project-knowledge
+>   `Profile.md` seed is still there to re-seed from).
+> - Reading-list unpublished → live list gone (similar — re-seed
+>   from project file or rebuild).
+> Don't unpublish.
 
 ## 9. Start your first session
 
@@ -282,14 +313,21 @@ After finishing a book:
 
 > "I finished *Hyperion* — 5 stars."
 
-The cataloguer appends to `Reading_Log.csv` and flushes to Drive
-same turn.  If the book was on `Reading_List.md`, it's removed.
+The cataloguer queues the rate update to `log_pending_updates` on the
+picker artifact.  If the book was on the reading-list artifact, it's
+removed same turn.  Triage surfaces queued updates on next session
+start as a CSV-ready paste block:
 
-If you'd rather refresh the whole log from Goodreads:
+> "I have 3 pending rate updates from previous sessions.  Paste these
+> rows into your `Reading_Log.csv`, save, re-upload to project
+> knowledge, and say 'log refreshed' here — I'll clear the queue."
+
+To refresh the whole log from Goodreads:
 
 1. Export a fresh `Reading_Log.csv` from Goodreads.
-2. Replace `Library-Playground/Reading_Log.csv` in Drive.
-3. In chat: "log refreshed" — the librarian re-reads it.
+2. Replace it in your project knowledge.
+3. In chat: "log refreshed" — the librarian re-reads it and clears
+   any pending queue.
 
 ### Refreshing comparable_books across the catalog
 
@@ -319,33 +357,45 @@ Connectors → Google Drive → Reconnect, then say `flush now`.
 
 > "The catalog file in your Drive looks corrupted."
 
-Likely cause: an interrupted upload or a stale `.encoded` from a
-schema change.  Recovery:
+Likely cause: interrupted upload or a stale `.encoded` from a schema
+change.  Recovery:
 
 ```bash
 python3 catalogue.py --library Library.csv \
     --export-sqlite Library_Catalog.sqlite --emit-encoded
 ```
 
-Re-upload `Library_Catalog.sqlite.encoded` to Drive.  In chat: `continue`.
+Re-upload `Library_Catalog.sqlite.encoded` to Drive.  In chat:
+`continue`.
 
-### Build state can't be read / window.storage is empty
+### Build state can't be read / picker storage empty
 
-Likely cause: the picker artifact was unpublished.  Recovery:
+Likely cause: picker artifact was unpublished.  Recovery:
 
 1. Open the picker URL.
 2. Click **Publish** again.
-3. Return to the chat and say `continue`.
+3. Return to chat and say `continue`.
 
-In-progress build state from before the unpublish is gone, but
-Reading_List.md in Drive still has your committed picks — the
-librarian re-orients from there.
+In-progress build state from before the unpublish is gone.  The
+reading-list artifact still has your committed picks (assuming it
+wasn't also unpublished).
 
-### I forgot the picker URL
+### Profile or reading-list artifact storage empty
 
-The picker URL lives in `Library-Playground/.config.json` in your
-Drive folder.  Open it in a text view (Google Drive supports this
-for `.json`).
+Likely cause: that artifact was unpublished.  Recovery:
+
+1. Open its URL.
+2. Click **Publish** again.
+3. If a project-knowledge seed exists (`Profile.md` /
+   `Reading_List.md`), triage will re-seed from it on next session.
+4. If no seed exists, the librarian re-orients from scratch — for
+   profile, run a fresh interview; for reading-list, build fresh.
+
+### I forgot the artifact URLs
+
+All three URLs live in `Library-Playground/.config.json` in your
+Drive folder.  Open in a text view (Google Drive supports this for
+`.json`).
 
 ### Pro plan usage limit cutoff mid-build
 
@@ -362,27 +412,37 @@ window.storage on a single artifact, which collides build state.
 ## 13. Files reference
 
 ```
-~/Library-Playground/                 # the user's clone
-├── Library.csv                       # source of truth, you provide
-├── Reading_Log.csv                   # you provide
-├── Library_Catalog.json              # built by catalogue.py (deprecated post-build)
-├── Library_Catalog.sqlite            # built by catalogue.py --export-sqlite (gitignored)
-├── Library_Catalog.sqlite.encoded    # built by --emit-encoded (gitignored)
-├── webhelper/                        # runtime helpers (bundled in skill zips)
-├── artifacts/batch-picker.jsx        # the published picker artifact
-├── .claude.ai/skills/                # skill source — each gets zipped + uploaded
-├── catalogue.py                      # bulk cataloguer + SQLite export
-├── librarian-query.py                # CODE-side helper (unchanged on this branch)
-├── tests/                            # round-trip parity tests
-├── dist/skills/*.zip                 # build outputs (gitignored)
-├── UX_DESIGN.md                      # design rationale for the port
-└── SETUP.md                          # this file
+~/Library-Playground/                  # the user's clone
+├── Library.csv                        # source of truth, you provide
+├── Reading_Log.csv                    # you provide
+├── Library_Catalog.json               # built by catalogue.py (deprecated post-build)
+├── Library_Catalog.sqlite             # built by catalogue.py --export-sqlite (gitignored)
+├── Library_Catalog.sqlite.encoded     # built by --emit-encoded (gitignored)
+├── Library_Browse_Index.json          # built by --export-browse-index (gitignored)
+├── webhelper/                         # runtime helpers (bundled in skill zips)
+├── artifacts/batch-picker.jsx         # picker artifact source
+├── artifacts/profile.jsx              # profile artifact source
+├── artifacts/reading-list.jsx         # reading-list artifact source
+├── .claude.ai/skills/                 # skill source — each gets zipped + uploaded
+├── catalogue.py                       # bulk cataloguer + SQLite/index export
+├── librarian-query.py                 # CODE-side helper (unchanged on this branch)
+├── tests/                             # round-trip parity tests
+├── dist/skills/*.zip                  # build outputs (gitignored)
+├── UX_DESIGN.md                       # design rationale for the port
+└── SETUP.md                           # this file
 
-Drive/Library-Playground/              # the user's claude.ai-side store
+Drive/Library-Playground/              # the user's claude.ai-side store (bare)
 ├── Library_Catalog.sqlite.encoded
-├── Reading_Log.csv
-├── Profile.md
-├── Reading_List.md
-├── archive/                          # auto-created snapshots before flushes
-└── .config.json                      # picker URL + folder name
+└── .config.json                       # 3 artifact URLs + folder name
+
+claude.ai project knowledge            # static reads, loaded into every chat
+├── Library_Browse_Index.json          # slim browse index (~800KB)
+├── Reading_Log.csv                    # reading history
+├── Profile.md (optional)              # taste profile seed
+└── Reading_List.md (optional)         # existing TBR seed for refine-mode
+
+Published artifacts (window.storage)   # mutable user-facing state
+├── picker        — build state, ledger, batch:<id>, log_pending_updates, catalog_edit_lock
+├── profile       — live Profile.md content
+└── reading-list  — live Reading_List.md content
 ```

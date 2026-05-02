@@ -18,9 +18,10 @@ no Anthropic API credits beyond what Pro covers.
 | Surface | What it does |
 |---|---|
 | Six skills installed in claude.ai | Auto-trigger on librarian-shaped questions, file uploads, and bulk-add requests |
-| Published React picker artifact | The multi-select UI for batch picks; also stores in-progress build state |
-| Drive folder | Holds the reader's mutable files (catalog, log, profile, reading list) |
-| Local Python tooling | One-time bulk catalogue build + SQLite export; round-trip parity tests |
+| Three published React artifacts | `picker` (batch multi-select + build state), `profile` (live taste profile), `reading-list` (live TBR pool) |
+| Drive folder | One file: the catalog (gzip+base64 wrapped) |
+| claude.ai project knowledge | Slim browse index, reading log, optional profile/list seeds |
+| Local Python tooling | One-time bulk catalogue build + SQLite/index export; round-trip parity tests |
 
 The reader's experience: they open a chat in claude.ai, say something
 library-shaped ("what should I read next year", "anything like X",
@@ -50,14 +51,19 @@ finishes.  Highlights:
    catalog (one-time, 2-6 hours).
 5. Run `python3 catalogue.py --library Library.csv --export-sqlite
    Library_Catalog.sqlite --emit-encoded` to produce the Drive-ready
-   text-wrapped form.
-6. Upload the four files to a `Library-Playground` folder in Drive,
-   connect Drive in claude.ai.
+   text-wrapped catalog, then `python3 catalogue.py --library
+   Library.csv --export-browse-index Library_Browse_Index.json` for
+   the slim browse index.
+6. Upload `Library_Catalog.sqlite.encoded` to a `Library-Playground`
+   folder in Drive (one file).  Upload `Library_Browse_Index.json`
+   + `Reading_Log.csv` (and optional `Profile.md` /
+   `Reading_List.md` seeds) to claude.ai project knowledge.
 7. `make skills` to build the six skill zips.  Upload via Settings →
    Features → Skills.
-8. **Publish the picker artifact once.**  The librarian uses it for
-   batch selections AND in-progress state — storage works only on
-   published artifacts, and unpublishing wipes the storage.  Don't
+8. **Publish three artifacts once.**  In a fresh chat, say "set up
+   the library artifacts" — triage walks you through publishing
+   `picker`, `profile`, and `reading-list`.  Storage works only on
+   published artifacts; unpublishing any wipes its storage.  Don't
    unpublish.
 9. Open a chat and say "build me a reading list".  The librarian
    takes it from there.
@@ -66,21 +72,28 @@ finishes.  Highlights:
 
 `webhelper/sqlite_export.py` converts the JSON catalog to SQLite at
 build time, with `title_short` + `title_normalized` precomputed so the
-runtime helper indexes subtitle-truncation cases in SQL.  `webhelper/
-encoded_codec.py` wraps the binary SQLite as gzip+base64 text (~5MB
-for a 5,000-book library) so the Drive connector can read it.
+runtime helper indexes subtitle-truncation cases in SQL.
+`webhelper/encoded_codec.py` wraps the binary SQLite as gzip+base64
+text (~5MB at 5,000 books) so the Drive connector can read it.
 `webhelper/librarian_query.py` ports the Code helper to SQLite + a
-stdin/stdout ledger; the model owns ledger persistence in the picker
+stdin/stdout ledger; the model owns ledger persistence on the picker
 artifact's `window.storage`.  Six skills under `.claude.ai/skills/`
-encode the workflow phases (triage routes, quickref answers single
-questions, build-setup runs the interview + Phase 0, build-batches
-owns Phases 1+2, build-finish closes Phases 3+4+5, library-cataloguer
-owns SQLite writes).  `make skills` zips each one with the three
-helper modules bundled in.  The React picker artifact
-(`artifacts/batch-picker.jsx`) renders four cards identically — no
-deep-cut differentiation, ever — and persists selections to
-`window.storage`.  Profile.md and Reading_List.md flush to Drive on
-every edit.  The catalog flushes only at session end.
+encode the workflow phases (triage routes + does first-run setup +
+freshness checks + refine-vs-fresh, quickref answers single questions,
+build-setup runs the interview + Phase 0 honouring any existing
+profile/list seed, build-batches owns Phases 1+2, build-finish closes
+Phases 3+4+5, library-cataloguer owns SQLite writes + queues
+reading-log rate updates).  `make skills` zips each one with the three
+helper modules bundled in.  Three React artifacts:
+`artifacts/batch-picker.jsx` (4-card multi-select, identical
+rendering — no deep-cut differentiation),
+`artifacts/profile.jsx` (markdown render + inline edit), and
+`artifacts/reading-list.jsx` (markdown render, read-only).  Storage
+split: Drive holds only the catalog `.encoded`; claude.ai project
+knowledge holds the slim browse index + reading log + optional
+profile/list seeds; published artifacts hold all mutable user-facing
+state.  Catalog flushes only at session end; profile + reading-list
+flush per-edit via artifact storage writes.
 
 For the design rationale and failure-mode handling, see
 [`UX_DESIGN.md`](UX_DESIGN.md).  For the build plan, see
@@ -104,7 +117,9 @@ plan](file:///root/.claude/plans/include-all-fields-in-synchronous-peacock.md).
     librarian-build-finish/SKILL.md
     library-cataloguer/SKILL.md
 artifacts/
-  batch-picker.jsx                     # the published picker artifact
+  batch-picker.jsx                     # picker artifact source
+  profile.jsx                          # profile artifact source
+  reading-list.jsx                     # reading-list artifact source
 webhelper/
   sqlite_export.py
   encoded_codec.py
@@ -120,8 +135,9 @@ Reading_Log.csv                        # you provide
 Library_Catalog.json                   # built by catalogue.py (gitignored)
 Library_Catalog.sqlite                 # gitignored
 Library_Catalog.sqlite.encoded         # gitignored
-Profile.md                             # for testing; production lives in Drive
-Reading_List.md                        # for testing; production lives in Drive
+Library_Browse_Index.json              # gitignored
+Profile.md                             # for testing; production lives in profile artifact
+Reading_List.md                        # for testing; production lives in reading-list artifact
 Makefile                               # `make skills` builds the six zips
 README.md
 SETUP.md                               # user-facing install guide

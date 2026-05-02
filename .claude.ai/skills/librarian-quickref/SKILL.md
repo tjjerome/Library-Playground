@@ -3,11 +3,12 @@ name: librarian-quickref
 description: >
   Answers single-book queries against the reader's library — "anything like
   X?", "is X worth my time?", "what do you know about X?", "what comes after
-  X in its series?", "any plans you have on Y?".  Pulls one or two entries
-  from the SQLite catalog, gives a 1-3 paragraph answer that fits the book
-  to the reader's profile, and writes any signal-capture bullets into
-  Profile.md immediately.  Does NOT do batch builds, batch picks, multi-book
-  workflows, or catalog edits.
+  X in its series?", "any plans you have on Y?".  Reads from the project-file
+  browse index for fast presence checks, decodes the SQLite catalog only when
+  needed for full per-book detail, gives a 1-3 paragraph answer that fits the
+  book to the reader's profile, and writes any signal-capture bullets into
+  the profile artifact immediately.  Does NOT do batch builds, batch picks,
+  multi-book workflows, or catalog edits.
 ---
 
 # librarian-quickref — single-book mode
@@ -17,43 +18,53 @@ interview, no goals conversation, no batch checklists, no list edits.
 
 ## Hard invariants
 
-1. **Triage already verified the picker artifact is published** — but
-   quickref doesn't write to `window.storage`, so a publish failure in this
-   skill is fine.  Don't run preflight here.
-2. **Catalog reads only.**  If the reader hands you a factual catalog
-   correction ("actually that's literary fiction, not fantasy"), hand off to
-   library-cataloguer same turn.  Don't write to SQLite yourself.
-3. **Profile.md per-edit flush.**  Any time you append a bullet to
-   Profile.md, immediately write the updated file back to Drive in the
-   same turn.  Don't queue Profile writes.
+1. **Triage already verified the artifacts** — but quickref doesn't write
+   to the picker artifact, so its preflight failure is irrelevant here.
+   Quickref DOES write to the profile artifact, so the profile preflight
+   must have passed before quickref runs.  Triage gates this.
+2. **Catalog reads only.**  Factual catalog corrections from the reader
+   ("actually that's literary fiction, not fantasy") → hand off to
+   library-cataloguer same turn.
+3. **Profile artifact per-edit storage write.**  Any time you append a
+   bullet to the profile, write the updated content to
+   `window.storage["profile"]` same turn.
 4. **Page count mandatory** in any single-book answer that names a book.
-5. **Anti-jargon contract** carries over from the librarian invariants —
-   no "ledger", "candidate", "score", "deep cut", "Bk 1", "Phase N",
-   "primary_genre", "is-read".  Translate to the reader-facing language map
-   before output (see librarian-build-batches/SKILL.md).
+5. **Anti-jargon contract** — see translation map in
+   `librarian-build-batches/SKILL.md`.
 
 ## Inputs at session start
 
-`librarian-triage` has already decoded the catalog into
-`/tmp/Library_Catalog.sqlite` and downloaded `Reading_Log.csv`,
-`Profile.md`, `Reading_List.md` into `/tmp/`.  Quickref reads them via the
-helper script:
+Triage has bound:
 
-```bash
-python3 scripts/librarian_query.py lookup --query "<reader-supplied>" \
-    --catalog /tmp/Library_Catalog.sqlite \
-    --log /tmp/Reading_Log.csv \
-    --reading-list /tmp/Reading_List.md
+- `PROJECT_INDEX` → path to `Library_Browse_Index.json` (slim, ~800KB)
+  in project knowledge.  May be missing on minimal Pro setups.
+- `PROJECT_LOG` → path to `Reading_Log.csv` in project knowledge.
+- Profile content → `window.storage["profile"].content` on the profile
+  artifact (text markdown).
+- Reading_List content → `window.storage["reading_list"].content` on
+  the reading-list artifact (text markdown).
+- Decoded SQLite at `/tmp/Library_Catalog.sqlite` (decoded by triage if
+  the reader's question requires per-book detail).
+
+## Read order — start cheap
+
+For "do you have X?" / "is X in my library?", **try the browse index
+first**.  No SQLite decode needed:
+
+```python
+import json
+with open(PROJECT_INDEX) as f:
+    idx = json.load(f)
+# Field map at idx["field_map"]; entries at idx["entries"][key].
+# Try exact key match, then linear scan with norm().
+key = next((k for k in idx["entries"]
+            if k.lower() == f"{title} - {author}".lower()), None)
 ```
 
-`lookup` returns canonical key + `is_already_read` / `is_on_list` /
-`is_shown` booleans for each match.  Three-pass fuzzy match handles
-subtitle-truncation ("Side Jobs" matches "Side Jobs: Stories from the
-Dresden Files") and series-name searches ("Cesare Aldo" → all D. V. Bishop
-entries).
-
-For the full per-book detail (summary, themes, comparable_books,
-taste_signals, content_flags, audio_suitability), open SQLite directly:
+If you only need to confirm presence + genre + series role + page count
++ goodreads rating, the browse index is enough.  For full detail
+(summary, themes, comparable_books, taste_signals, content_flags),
+decode the catalog (triage handles this on first need) and query SQLite:
 
 ```python
 import sqlite3
@@ -67,56 +78,69 @@ sig_p  = [r[0] for r in conn.execute("SELECT signal FROM taste_signals WHERE boo
 sig_n  = [r[0] for r in conn.execute("SELECT signal FROM taste_signals WHERE book_key = ? AND polarity='negative'", (key,))]
 ```
 
-## Answer shape
-
-Three components, in narrative form (no bullet list, no headings):
-
-1. **Personal anchor.**  Name a rated title from `Reading_Log.csv` or a
-   stated taste from `Profile.md`.  ("You rated *The Blacktongue Thief* 5/5,
-   and your profile flags 'lyrical grimdark' as a positive…")
-2. **Plot / tone hook.**  One or two sentences on what the book is and how
-   it lands tonally.
-3. **Fit verdict.**  Honest assessment with page count.  Mention
-   `audio_suitability` only when the reader's profile flags an audio
-   preference.
-
-Length: 1-3 paragraphs.  Stop there — single-book mode is not a runway to a
-build session.  If the reader follows up with "what else like this?", that's
-when you offer to escalate ("want me to put together a horror batch?") and
-hand off to `librarian-build-setup` or `librarian-build-batches` depending
-on whether a build is already in progress.
-
-### "Anything like X?" responses
-
-Pull `comparable_books` for X from the catalog.  For each comp, run
-`is-read` and `is-on-list` to filter:
+Or via the helper script for fuzzy matching:
 
 ```bash
-python3 scripts/librarian_query.py is-read --title "<comp-title>" --author "<comp-author>" \
-    --log /tmp/Reading_Log.csv
-python3 scripts/librarian_query.py is-on-list --title "<comp-title>" --author "<comp-author>" \
+python3 scripts/librarian_query.py lookup --query "<reader-supplied>" \
+    --catalog /tmp/Library_Catalog.sqlite \
+    --log $PROJECT_LOG \
     --reading-list /tmp/Reading_List.md
 ```
 
-Surface 2-4 unread, unreadlisted comps in narrative ("…the closest match in
-your library is *Foo* by *Bar*; *Baz* by *Quux* lands in the same lyrical-
-grimdark register but with a tighter page count.").  Page counts in line.
-Skip the helper's full ranking machinery — for a single-book reply, two or
-three good comps from the catalog beat a scored batch.
+`lookup` returns canonical key + `is_already_read` / `is_on_list` /
+`is_shown` for each match.  Three-pass fuzzy match handles
+subtitle-truncation and series-name searches.
+
+For `is_on_list`, write the artifact's content to
+`/tmp/Reading_List.md` first so the helper has a file to read:
+
+```bash
+# At session start (or before first list-aware query):
+echo "$RL_CONTENT" > /tmp/Reading_List.md   # RL_CONTENT from window.storage
+```
+
+## Answer shape
+
+Three components, narrative form:
+
+1. **Personal anchor.**  Name a rated title from `PROJECT_LOG` or a
+   stated taste from the profile artifact's content.
+2. **Plot / tone hook.**  One or two sentences.
+3. **Fit verdict.**  Honest assessment with page count.  Mention
+   `audio_suitability` only when the profile flags an audio preference.
+
+Length: 1-3 paragraphs.  Stop there.  If the reader follows up with
+"what else like this?", offer to escalate ("want me to put together a
+horror batch?") and hand off to `librarian-build-setup` (fresh) or
+`librarian-build-batches` (resume).
+
+### "Anything like X?" responses
+
+Pull `comparable_books` for X from SQLite.  For each comp, check the
+browse index for presence and run `is-read` / `is-on-list`:
+
+```bash
+python3 scripts/librarian_query.py is-read \
+    --title "<comp-title>" --author "<comp-author>" --log $PROJECT_LOG
+python3 scripts/librarian_query.py is-on-list \
+    --title "<comp-title>" --author "<comp-author>" \
+    --reading-list /tmp/Reading_List.md
+```
+
+Surface 2-4 unread, unreadlisted comps in narrative.  Page counts in
+line.
 
 ### "Is X worth my time?" responses
 
-Pull X from SQLite + `Reading_Log.csv` + `Profile.md`.  Cover:
+Pull X from SQLite + `PROJECT_LOG` + profile artifact content.  Cover:
 
-- Whether X clears the universal exclusion gate (already-read or
-  on-list?  Then say so and offer comps instead.)
-- Author entry-point status (X is mid-series, reader hasn't read author?
-  Cite the rule and recommend the entry point if available.)
-- Profile match — name two specific positive indicators from `Profile.md`
-  that line up, and one negative indicator that doesn't (if any).
+- Universal exclusion gate clearance (already-read or on-list?).
+- Author entry-point status.
+- Profile match — name two specific positive indicators that line up
+  and one negative that doesn't (if any).
 - Page count, audio note when relevant.
-- Honest summary: "yes, worth it" / "yes but read Y first" / "not for your
-  current taste — try Z instead".
+- Honest summary: "yes" / "yes but read Y first" / "not for current
+  taste — try Z instead".
 
 ### "What comes after X in its series?" responses
 
@@ -124,66 +148,57 @@ Pull X from SQLite + `Reading_Log.csv` + `Profile.md`.  Cover:
 python3 scripts/librarian_query.py series-continuation \
     --title "X" --author "<author>" \
     --catalog /tmp/Library_Catalog.sqlite \
-    --log /tmp/Reading_Log.csv \
+    --log $PROJECT_LOG \
     --reading-list /tmp/Reading_List.md
 ```
 
-Helper handles sub-threads (Discworld City Watch, First Law's Age of
-Madness).  If the next book is in the catalog, name it with page count and
-a one-sentence reason to read on (or pause).  If not, say so and offer to
-have the cataloguer add it.
+If next book in catalog → name it with page count + one-sentence reason
+to read on (or pause).  If not → offer cataloguer add.
 
-## Profile.md writes — per-edit flush
+## Profile updates — per-edit artifact write
 
-When the reader gives a signal worth capturing — "I'd actually rather avoid
-graphic horror right now", "I loved how slow that one was", "I don't want
-another long series" — append to `Profile.md` same turn:
+When the reader gives a signal worth capturing, append to the profile
+artifact same turn.  Read current content, update, write back:
 
-```bash
-python3 scripts/librarian_query.py profile-append \
-    --section "Negative indicators" \
-    --bullet "graphic horror in third act (Q&A 2026-05)" \
-    --profile /tmp/Profile.md
+```python
+import json, sys, subprocess
+# Get current profile content from the model's earlier read:
+profile_text = current_profile_content  # already loaded at session start
+
+# Append via helper (stdio mode — pure transformation):
+new_text = subprocess.run(
+    ["python3", "scripts/librarian_query.py", "profile-append",
+     "--section", "Negative indicators",
+     "--bullet", "graphic horror in third act (Q&A 2026-05)",
+     "--stdio"],
+    input=profile_text, capture_output=True, text=True, check=True,
+).stdout
 ```
 
-Or `--stdio` style (read existing Profile from stdin, write updated to
-stdout) when the skill mediates the Drive read/write itself:
+Then write back to the artifact:
 
-```bash
-echo "$(cat /tmp/Profile.md)" | python3 scripts/librarian_query.py profile-append \
-    --section "Negative indicators" \
-    --bullet "..." \
-    --stdio > /tmp/Profile.md.new
-mv /tmp/Profile.md.new /tmp/Profile.md
+```javascript
+await window.storage.set("profile", JSON.stringify({
+  version: 1,
+  content: new_text,
+  updated_at: new Date().toISOString(),
+}));
 ```
 
-After the in-sandbox file is updated, **flush to Drive same turn** — write
-the updated `/tmp/Profile.md` content back to the
-`Library-Playground/Profile.md` Drive object.  Do not queue.  Do not wait
-for end-of-session.
-
-Confirm with one chat sentence: "Noted in your profile: <bullet>."  Then
-keep going.  Per-edit flush keeps the reader's profile durable even if the
-session ends abruptly.
+Confirm with one chat sentence: "Noted in your profile: <bullet>."
 
 ## Hand-off triggers
 
-- Factual catalog correction → `library-cataloguer`.  Examples:
-  - "Actually that's literary fiction, not fantasy."
-  - "The page count on Y is wrong; mine has 540 pages."
-  - "There's a graphic content warning that's missing from the entry."
+- Factual catalog correction → `library-cataloguer`.
 - Reader escalates from "any like X?" to "actually build me a list" →
-  `librarian-build-setup` (fresh) or `librarian-build-batches` (resume an
-  existing build).
-- Reader bought a new book and wants it in the library → `library-
-  cataloguer`.
+  `librarian-build-setup` (fresh) or `librarian-build-batches` (resume).
+- Reader bought a new book → `library-cataloguer`.
 
-In every case: state the hand-off in one sentence so the reader sees the
-skill change ("let me bring in the cataloguer to fix that"), then stop.
+State the hand-off in one sentence; stop.
 
 ## Page count is mandatory
 
-Every named book in the response shows pages.  Format inline: "*Hyperion* —
-Dan Simmons (482 pp)".  Two exceptions: upcoming releases without published
-counts, and entries where `pages` is null in the catalog (flag the gap and
-offer a cataloguer fix).
+Every named book shows pages.  Format inline: "*Hyperion* — Dan Simmons
+(482 pp)".  Two exceptions: upcoming releases without published counts,
+and entries where `pages` is null in the catalog (flag the gap, offer
+cataloguer fix).

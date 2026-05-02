@@ -19,17 +19,32 @@ features between branches without an explicit ask.
 
 ## Files
 
-### Source of truth on this branch (post-Step-6)
+### Source of truth on this branch (post-Step-6, post-2026-05-02 refactor)
 
-- `Library_Catalog.sqlite` — queryable catalog (~12MB binary) generated
-  from `Library_Catalog.json` via `catalogue.py --export-sqlite`.
-  Gitignored — regenerate locally.
+- `Library_Catalog.sqlite` — queryable catalog (~12MB binary)
+  generated from `Library_Catalog.json` via
+  `catalogue.py --export-sqlite`.  Gitignored — regenerate locally.
 - `Library_Catalog.sqlite.encoded` — gzip+base64 wrapped form (~5MB
   text) for the Drive connector to read.  Header line:
   `# library-playground-catalog v1 gzip+b64`.  Gitignored.
+- `Library_Browse_Index.json` — slim browse index (~800KB) generated
+  via `catalogue.py --export-browse-index`.  Lives in claude.ai
+  project knowledge for fast presence checks without decoding SQLite.
+  Gitignored.
 - `Library.csv`, `Reading_Log.csv` — user-provided inputs.
-- `Profile.md`, `Reading_List.md` — user-mutable; live in Drive
-  in production, present locally only for testing.
+- `Profile.md`, `Reading_List.md` — live in published artifact
+  storage (`profile`, `reading-list`) in production.  Local files
+  only for testing or as project-knowledge seeds.
+
+### Storage split (2026-05-02 refactor)
+
+| Layer | Holds | Mutability |
+|---|---|---|
+| Drive | `Library_Catalog.sqlite.encoded`, `.config.json` | Mutable; cataloguer flushes at session end |
+| Project knowledge | `Library_Browse_Index.json`, `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds | Static — re-upload to refresh |
+| `picker` artifact | `build:<id>`, `batch:<id>`, ledger, `catalog_edit_lock`, `log_pending_updates` | Per-edit during builds |
+| `profile` artifact | `profile` key with `{version, content, updated_at}` | Per-edit on Profile-write triggers |
+| `reading-list` artifact | `reading_list` key with `{version, content, updated_at}` | Per-edit on every confirmed pick / removal |
 
 ### Code-side reference (kept unchanged for parity)
 
@@ -47,8 +62,14 @@ features between branches without an explicit ask.
 - `webhelper/encoded_codec.py` — gzip+b64 codec with format header.
 - `webhelper/librarian_query.py` — port of the Code helper to SQLite +
   stdin/stdout ledger.  Same subcommand surface.
-- `artifacts/batch-picker.jsx` — React multi-select that owns
-  window.storage build state.  Must be PUBLISHED for storage to work.
+- `artifacts/batch-picker.jsx` — React multi-select.  Owns picker
+  storage (build state, ledger, batch selections, edit-locks,
+  pending log updates).  Must be PUBLISHED.
+- `artifacts/profile.jsx` — markdown render + inline edit for the
+  live `Profile.md`.  Owns profile storage.  Must be PUBLISHED.
+- `artifacts/reading-list.jsx` — markdown render (read-only) for the
+  live `Reading_List.md`.  Owns reading-list storage.  Must be
+  PUBLISHED.
 - `.claude.ai/skills/<name>/SKILL.md` — six skills:
   `librarian-triage`, `librarian-quickref`, `librarian-build-setup`,
   `librarian-build-batches`, `librarian-build-finish`,
