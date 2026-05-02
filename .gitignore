@@ -10,3 +10,11 @@ Library_Catalog.sqlite
 Library_Catalog.sqlite.encoded
 dist/
 build/
+
+# Library_Catalog.json is deprecated as authoritative on this branch
+# (post-Step 6) — SQLite is the source of truth.  The JSON stays as a
+# one-time conversion input for `catalogue.py --export-sqlite`, but we
+# no longer track changes to it on this branch.  The Code-side workflow
+# on `main` continues to track and update it.
+Library_Catalog.json
+Library_Index.json
