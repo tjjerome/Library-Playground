@@ -179,7 +179,9 @@ accordingly.  You don't pick the mode; the librarian does.
 
 Tell the cataloguer in chat: "I just bought *Mountain Fast* by Brian
 Lerner".  The cataloguer fills the entry, asks before writing, and
-flushes to Drive at session end.
+hands you a download link at session end.  Save the file, replace
+`Library_Catalog.sqlite.encoded` in your Drive folder, and the next
+session loads the updated catalog.
 
 ### Adding more (>20)
 

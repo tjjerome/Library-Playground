@@ -64,14 +64,26 @@ folder name may have been customised — see "Drive folder discovery".
 - **`.config.json` present** → load it, run preflight on all three artifact
   URLs, discover project files, then route the opener.
 
-## Drive folder discovery
+## Drive catalog discovery
 
-Default: `Library-Playground/`.  Discovery order:
+Discovery order, fastest to slowest:
 
-1. Look for `Library-Playground/.config.json` in connected Drive.
-2. Not found → ask: "What did you name your library folder in Drive?
-   (default: Library-Playground)"
-3. Read `<folder>/.config.json`.  Still missing → first-run setup.
+1. **Project-instructions injection.**  If the project-level system
+   prompt declares `DRIVE_CATALOG_FILE_ID: <id>`, fetch that file
+   directly via the Drive connector — no folder/name search.  This is
+   the recommended setup; SETUP.md walks readers through pasting their
+   Drive file ID into project instructions.
+2. **`.config.json` in the default folder.**  Look for
+   `Library-Playground/.config.json`; load `catalog_file_id` (and the
+   three artifact URLs) from it.
+3. **Custom folder name.**  Ask: "What did you name your library
+   folder in Drive? (default: Library-Playground)"  Read
+   `<folder>/.config.json`.
+4. **First-run setup** if all three above fail.
+
+Bind the resolved file ID to `DRIVE_CATALOG_FILE_ID` for the rest of
+the session.  All catalog reads at session start go through the
+connector by ID; no name search after step 1 succeeds.
 
 ## Project-file discovery
 
@@ -158,16 +170,18 @@ Do not invoke any build skill until all three preflights pass.
 ## Catalog load (one-shot per session)
 
 Once routing is settled and the reader is heading into a quickref or
-build skill, decode the catalog into the sandbox once:
+build skill, fetch the encoded catalog from Drive by ID and decode
+into the sandbox:
 
 ```bash
+# 1. Drive connector: read file by ID (resolved during discovery,
+#    typically from project instructions' DRIVE_CATALOG_FILE_ID).
+#    Write raw bytes to /tmp/Library_Catalog.sqlite.encoded.
+# 2. Decode:
 python3 scripts/encoded_codec.py decode \
     /tmp/Library_Catalog.sqlite.encoded \
     /tmp/Library_Catalog.sqlite
 ```
-
-(Download the `.encoded` from Drive into `/tmp/` first via the Drive
-connector's read.)
 
 Quick integrity gate:
 
@@ -180,7 +194,10 @@ assert ok == "ok", f"Catalog integrity_check failed: {ok}"
 ```
 
 **Decode runs ONCE per session.**  Build skills mutate the in-sandbox
-SQLite; `library-cataloguer` re-encodes + flushes at session end.  Never
+SQLite; `library-cataloguer` re-encodes at session end and presents a
+download link the reader uses to manually replace the Drive file —
+the Drive connector's write path is intentionally not used (writes
+need explicit reader confirmation, not silent agent action).  Never
 re-fetch the encoded catalog mid-session — that overwrites in-session
 edits.
 
@@ -323,7 +340,7 @@ Document in `SETUP.md`:
 |---|---|
 | `where are we` | Pull build state from picker storage; render human-readable summary (current phase, books in pool, indie/classic floors, last batch genre). |
 | `flush now` | Force a re-write of the profile + reading-list artifact storage from in-sandbox copies (idempotent — both are per-edit). |
-| `save catalog` | Hand off to library-cataloguer to flush the in-sandbox SQLite back to Drive (gzip+b64 re-encode). |
+| `save catalog` | Hand off to library-cataloguer to re-encode the in-sandbox SQLite and present a download link.  Reader manually replaces their Drive file. |
 | `continue` | After a recovery prompt, resume the prior flow. |
 | `start fresh` | Clear `build:<id>` from picker storage; preserve profile + reading-list artifact content; archive a snapshot to Drive first. |
 | `show pending log updates` | Show queued rate updates from `log_pending_updates` so the reader can merge into Reading_Log.csv and re-upload. |

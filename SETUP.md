@@ -145,6 +145,36 @@ reading log lives in project knowledge (see §6b).
 In claude.ai, go to **Settings → Connectors**, find Google Drive,
 click **Connect**, and grant access to the folder.
 
+### 6a. Bake the Drive file ID into project instructions
+
+Recommended for fast catalog loads (skips name-based discovery on
+every session start).
+
+1. In Drive, open `Library_Catalog.sqlite.encoded`, click **Share**
+   or open the file and copy the URL.
+2. Extract the file ID — the long alphanumeric segment between
+   `/d/` and `/view` in the URL, e.g.:
+
+   ```
+   https://drive.google.com/file/d/1QEe3-9Hv0CEe1lsT4C9aRFFYTFgKsjPy/view
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                          file ID
+   ```
+
+3. In claude.ai, open your project, click **Edit project
+   instructions**, and paste this line (substituting your own ID):
+
+   ```
+   DRIVE_CATALOG_FILE_ID: 1QEe3-9Hv0CEe1lsT4C9aRFFYTFgKsjPy
+   ```
+
+4. Save.  Triage now fetches the catalog by ID directly; no folder
+   search.
+
+If you skip this step, triage falls back to looking for the file by
+name in `Library-Playground/` (or your custom folder).  Slower but
+works.
+
 ## 6b. Set up project knowledge
 
 claude.ai projects can hold static reference files that load into
@@ -161,6 +191,11 @@ upload:
 
 Empty `Profile.md` / `Reading_List.md` placeholders aren't
 necessary — only upload them if you have content worth seeding.
+
+**Do NOT upload `Library_Catalog.sqlite.encoded` to project
+knowledge.**  It's ~5MB of base64 — well over the project-knowledge
+budget on Pro (a single user reported 218% capacity after one
+upload).  The catalog lives in Drive only.
 
 ## 7. Install the six skills
 
@@ -260,10 +295,10 @@ small talk:
 | Phrase | What it does |
 |---|---|
 | `where are we` | Triage replays your build state ("23 books in your list, indie at 4 of 15") |
-| `flush now` | Force a Drive flush of Profile.md + Reading_List.md (auto-fires on every edit too) |
-| `save catalog` | Cataloguer flushes in-session catalog edits to Drive (gzip+b64 re-encode) |
+| `flush now` | Force a re-write of the profile + reading-list artifact storage from in-sandbox copies (idempotent — both are per-edit) |
+| `save catalog` | Cataloguer re-encodes the in-session catalog and presents a download link.  Replace the Drive file manually. |
 | `continue` | After a recovery prompt, resume the prior flow |
-| `start fresh` | Discard build state in window.storage; preserve Profile.md + Reading_List.md in Drive |
+| `start fresh` | Discard build state in the picker artifact's storage; preserve profile + reading-list artifacts |
 
 ## 11. Maintenance
 
@@ -274,8 +309,14 @@ Tell the cataloguer in chat:
 > "I just bought *The Lesser Dead* by Christopher Buehlman."
 
 The cataloguer confirms, fills catalog fields, and writes to the
-in-sandbox SQLite.  At session end, say "save catalog" and it
-re-encodes + flushes back to Drive.
+in-sandbox SQLite.  At session end (or when you say "save catalog"),
+the cataloguer re-encodes the modified database and presents a
+download link in chat.  Click the link, save the file, and replace
+`Library_Catalog.sqlite.encoded` in your Drive folder.  The next
+session loads the updated catalog.
+
+The cataloguer never writes to Drive directly — every catalog change
+is reader-confirmed and reader-applied.
 
 ### Adding more than 20 books at once
 
@@ -339,9 +380,12 @@ missing.  Confirm "Code execution and file creation" is on.
 
 ### Drive disconnects mid-session
 
-The librarian's in-progress edits are still in window.storage; they
-flush back to Drive once you reconnect.  Reconnect via Settings →
-Connectors → Google Drive → Reconnect, then say `flush now`.
+The librarian's in-progress edits are still in the picker artifact's
+`window.storage`; the catalog edits live in the sandbox SQLite.
+Reconnect via Settings → Connectors → Google Drive → Reconnect.
+Profile + reading-list keep updating regardless of Drive — they
+write to artifact storage.  Catalog changes only need Drive at
+session end when you replace the file from the download link.
 
 ### Catalog file looks corrupted
 
@@ -389,10 +433,14 @@ Drive folder.  Open in a text view (Google Drive supports this for
 
 ### Pro plan usage limit cutoff mid-build
 
-Your committed picks and profile updates are safe — both files are
-flushed to Drive on every edit.  Wait out the cooldown, open a new
-chat, and triage will offer to resume.  The picker artifact's state
-survives the reset.
+Your committed picks and profile updates are safe — both write
+per-edit to artifact storage (profile silently, reading-list with
+chat acknowledgement on every pick).  Wait out the cooldown, open a
+new chat, and triage will offer to resume.  The picker artifact's
+state survives the reset.
+
+Catalog changes that hadn't reached the session-end download link
+are gone — re-state them in the next session.
 
 ### Multiple users on the same Pro account
 

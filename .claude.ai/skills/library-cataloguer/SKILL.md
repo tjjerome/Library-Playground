@@ -282,37 +282,71 @@ For each entry, surface what's known and what's uncertain; ask the
 reader to fill gaps.  Confirmed corrections → queue + confirm + apply,
 with `status: complete` once the quality bar is met.
 
-## Saving the catalog back to Drive (session-end flush)
+## Saving the catalog at session end (manual download flow)
 
-Either at session end OR when reader says "save catalog" / "save
-those":
+The cataloguer **never writes back to Drive directly**.  At session
+end (or when the reader says "save catalog" / "save those"), encode
+in the sandbox and present a download link the reader uses to
+manually replace their Drive file.
+
+Trigger conditions:
+
+- Session is ending and at least one catalog write happened this
+  session.
+- Reader explicitly says "save catalog" / "save those".
+- Reader says "I'm done" / "that's all for today" and the edit count
+  is non-zero.
+
+Flow:
 
 ```python
-import sqlite3, sys
+import sqlite3, sys, shutil
 sys.path.insert(0, "scripts")
 from encoded_codec import encode_bytes
 
-# Run integrity check before encoding.
+# 1. Integrity gate.
 ok = sqlite3.connect("/tmp/Library_Catalog.sqlite").execute(
     "PRAGMA integrity_check"
 ).fetchone()[0]
 if ok != "ok":
-    raise SystemExit(f"Refusing to flush corrupted SQLite: {ok}")
+    raise SystemExit(f"Refusing to encode corrupted SQLite: {ok}")
 
+# 2. Encode in the sandbox.
 raw = open("/tmp/Library_Catalog.sqlite", "rb").read()
 encoded_text = encode_bytes(raw)
-# Then write `encoded_text` to
-# Library-Playground/Library_Catalog.sqlite.encoded in Drive via the
-# Drive connector's save-file path.
+out_path = "/mnt/user-data/outputs/Library_Catalog.sqlite.encoded"
+with open(out_path, "w") as f:
+    f.write(encoded_text)
 ```
 
-After successful flush, drop the lock:
+3. Render a chat message that surfaces the file as a download link:
+
+> "I made <N> change<s> to your catalog this session.  Here's the
+> updated catalog file — download it and replace
+> `Library_Catalog.sqlite.encoded` in your Drive folder so the next
+> session picks up the changes.
+>
+> [`Library_Catalog.sqlite.encoded`](sandbox:/mnt/user-data/outputs/Library_Catalog.sqlite.encoded)
+>
+> Summary of changes:
+> - <one line per change, plain language>"
+
+4. Drop the lock after the link is rendered (the reader's manual
+   upload completes the loop, but the in-session lock is no longer
+   needed once the encoded file is produced):
 
 ```javascript
 await window.storage.delete("catalog_edit_lock");
 ```
 
-Confirm: "Catalog saved to your Drive folder."
+**Why manual.**  The Drive connector's write path needs explicit
+reader confirmation per change to avoid silent agent mutation of a
+shared file.  Surfacing the file as a download link gives the reader
+an explicit checkpoint where they confirm + replace, with the option
+to inspect the encoded form first.
+
+If the session has zero catalog edits, skip the flush entirely — no
+download offered, no lock to drop.
 
 ## Boundaries — what cataloguer does NOT do
 

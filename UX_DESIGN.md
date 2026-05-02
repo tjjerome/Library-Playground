@@ -69,7 +69,7 @@ the recovery flow when only one fails.
 
 | Layer | Holds | Mutability |
 |---|---|---|
-| Drive | `Library_Catalog.sqlite.encoded` (gzip+b64) | Mutable; cataloguer flushes at session end. |
+| Drive | `Library_Catalog.sqlite.encoded` (gzip+b64) | Read-only from chat.  Reader manually replaces the file at session end via the cataloguer's download-link flow. |
 | Project knowledge (uploaded once per project) | `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds | Static — re-upload to refresh. |
 | `picker` artifact storage | Build state (`build:<id>`), ledger, batch selections (`batch:<id>`), `catalog_edit_lock`, `log_pending_updates` | Per-edit writes during build sessions. |
 | `profile` artifact storage | `profile` key with `{version, content, updated_at}` | Per-edit on Profile-write triggers. |
@@ -285,12 +285,17 @@ start** in triage. The decoded `.sqlite` lives in the sandbox for
 the rest of the session. Skills never re-fetch from Drive
 mid-session.
 
-**Write cadence.** The cataloguer skill mutates the in-sandbox
-SQLite during the session and re-encodes + flushes to Drive **only
-at session end** (or on explicit "save catalog"). Per-edit flushes
-are rejected as round-trip-race risk. Concurrent sessions are
-prevented via a `window.storage` lock on the picker artifact (see
-"Known risks" in the plan).
+**Write cadence — manual download flow.** The cataloguer skill
+mutates the in-sandbox SQLite during the session.  At session end
+(or on explicit "save catalog"), it re-encodes in the sandbox and
+presents a download link in chat; the reader saves the file and
+manually replaces `Library_Catalog.sqlite.encoded` in their Drive
+folder.  The Drive connector's write API is intentionally not used —
+catalog mutations require explicit reader confirmation + manual
+upload, not silent agent action against a shared file.  Per-edit
+flushes never happen.  Concurrent sessions are prevented via a
+`window.storage` lock on the picker artifact (see "Known risks" in
+the plan).
 
 **Failure mode.** Header missing/wrong, base64 decode fails, gunzip
 fails, or `PRAGMA integrity_check` fails after restore — any of
@@ -477,11 +482,11 @@ authoritative and skips the interview.
 |---|---|---|
 | Routing decision | `AskUserQuestion` to reader (or shape-match) | Always, in triage |
 | Build state (current phase, ledger, goals) | `window.storage` (via picker artifact) | When triage routes to a build skill |
-| Catalog | `Library_Catalog.sqlite.encoded` from Drive → decode in sandbox | When any skill needs catalog data |
-| Reading log | `Reading_Log.csv` from Drive | When any skill needs log data |
-| Profile.md | Drive → live-edit in artifact storage during session → flush back | Build skills only |
-| Reading_List.md | Drive → live-edit in artifact storage during session → flush back | Build skills only |
-| Picker artifact URL | `Library-Playground/.config.json` in Drive | Triage and build skills |
+| Catalog | Drive → fetch by `DRIVE_CATALOG_FILE_ID` (project instructions) → decode in sandbox | When any skill needs catalog data |
+| Reading log | `Reading_Log.csv` from project knowledge | When any skill needs log data |
+| Profile content | `window.storage["profile"]` on the published profile artifact | Build + quickref skills |
+| Reading-list content | `window.storage["reading_list"]` on the published reading-list artifact | Build skills |
+| Artifact URLs | Project instructions, or `.config.json` in Drive as fallback | Triage and build skills |
 
 ---
 
@@ -521,17 +526,20 @@ with a single-step recovery the reader can take.
 
 ### F1. Drive disconnects mid-session
 
-**Detection:** A Drive read or write fails with an auth error.
+**Detection:** A Drive read fails with an auth error.
 
 **Active-skill response:**
-> "Drive lost connection mid-session. The work we've done is still in
-> the picker artifact's storage; it'll write back to Drive as soon as
-> Drive reconnects. To reconnect: click your avatar → Settings →
-> Connectors → Google Drive → Reconnect. Then say 'flush now' and I'll
-> push everything to Drive."
+> "Drive lost connection mid-session.  The work we've done is still
+> in the artifact storage (picker, profile, reading-list).  Catalog
+> edits this session are in the sandbox; they'll surface as a
+> download link at session end whether or not Drive is reconnected.
+> To reconnect anyway: click your avatar → Settings → Connectors →
+> Google Drive → Reconnect."
 
-**Why this works:** All session edits are staged in `window.storage`;
-Drive is the eventual destination. Disconnect doesn't lose work as
+**Why this works:** All session edits are staged in `window.storage`
+(picker / profile / reading-list) or the sandbox SQLite (catalog).
+Drive is only used for the initial catalog read and the eventual
+manual file replacement.  Disconnect doesn't lose work as
 long as the artifact is still published.
 
 ### F2. Catalog SQLite file missing or corrupted
@@ -546,16 +554,16 @@ long as the artifact is still published.
 > Library-Playground Drive folder. Then come back and say 'continue'."
 
 **Edge case:** If the catalog has been mutated in-session by the
-cataloguer skill but the session-end Drive flush has not yet
-happened (e.g. F4 usage-limit cutoff, F1 Drive disconnect), the
-build skill should refuse to re-decode from Drive on the next
-session-start without first checking for an in-sandbox `.sqlite`
-that hasn't been flushed. Tell the reader:
+cataloguer skill but the reader hasn't yet downloaded + replaced the
+Drive file (e.g. F4 usage-limit cutoff before session-end summary,
+F1 Drive disconnect), the in-sandbox SQLite holds unsaved changes.
+The next session re-fetches the (older) Drive copy on session-start
+unless the reader confirms otherwise.  Tell the reader at the
+trigger moment:
 
-> "I made some catalog edits earlier this session that haven't been
-> flushed to Drive yet. Re-decoding from the broken Drive copy would
-> lose those. Save the in-session catalog snapshot first by saying
-> 'save catalog'."
+> "I made some catalog edits earlier this session.  Before we lose
+> them when this session ends, say 'save catalog' so I can hand you
+> a download link to update your Drive file."
 
 ### F3. Build state in `window.storage` is corrupted or missing
 
@@ -573,10 +581,11 @@ that hasn't been flushed. Tell the reader:
 (`AskUserQuestion`: Resume from existing Reading_List / Start fresh
 build / Other.)
 
-**Why this is recoverable:** Reading_List.md in Drive is the
-authoritative deliverable; build state in `window.storage` is the
-*conversation history* around producing that deliverable. Losing
-build state is annoying but not destructive.
+**Why this is recoverable:** The reading-list and profile artifacts
+hold the authoritative live content; build state in the picker
+artifact's `window.storage` is the *conversation history* around
+producing that deliverable.  Losing build state is annoying but not
+destructive — the lists themselves stay intact.
 
 ### F4. Reader hits Pro plan usage limit mid-build
 
@@ -586,29 +595,39 @@ end abruptly.
 
 **Mitigation built into the design:**
 
-1. **Every batch flushes to Drive.** The picker artifact's "Save
-   selections" button writes to `window.storage` *and* triggers the
-   skill on the reader's next turn to flush Profile.md and
-   Reading_List.md to Drive. Worst case: one batch's worth of
-   conversation context is lost.
-2. **Phase boundaries always flush.** Plan Step 7–9 call this out;
-   reinforced here.
+1. **Every confirmed pick writes to the reading-list artifact.**  The
+   picker artifact's "Save selections" button writes to
+   `window.storage` *and* triggers the skill on the reader's next
+   turn to write the new picks into the reading-list artifact's
+   storage.  Worst case: one batch's worth of conversation context
+   is lost.
+2. **Profile writes are silent but per-edit.**  The profile artifact
+   updates same-turn on every signal-capture trigger, even though
+   the chat doesn't surface those writes mid-session.  A usage-limit
+   cutoff loses *unsurfaced* writes only if they happened in the
+   exact final turn before the cutoff.
+3. **Catalog changes only at session end.**  An interrupted session
+   loses any uncommitted catalog edits — that's the trade for the
+   manual download flow.  Cataloguer warns the reader if the session
+   has open edits when usage starts trending toward the limit.
 
 **Reader-facing recovery (in `SETUP.md`):**
 > "If you hit the message limit mid-build, your committed picks and
-> profile updates are safely in Drive. Wait out the cooldown, open a
-> new chat, and the triage skill will offer to resume. The state in
-> the picker artifact survives across the reset."
+> profile updates are safely in the artifact storage.  Wait out the
+> cooldown, open a new chat, and the triage skill will offer to
+> resume.  The state in the picker artifact survives across the
+> reset.  Catalog edits that hadn't reached the download-link
+> moment are gone — re-state them in the next session."
 
-**Edge case:** If the reset happens *between* the picker save and the
-follow-up turn that would flush to Drive, you lose the picks the
-reader just selected. Mitigation: the picker artifact itself does a
-best-effort "queue selections to flush" write to a separate
-`pending_flush` key in `window.storage`; on the next session the
-triage skill detects that key and tells the reader:
+**Edge case:** If the reset happens *between* the picker save and
+the follow-up turn that would write the new picks into the
+reading-list artifact, the picker artifact itself does a best-effort
+"queue selections" write to a separate `pending_flush` key in its
+own `window.storage`.  On the next session, the triage skill detects
+that key and writes the queued picks into the reading-list artifact:
 
-> "I see selections from your last session that didn't make it to
-> Drive — let me flush them now."
+> "I see selections from your last session that didn't make it into
+> the reading list — let me apply them now."
 
 ### F5. Skill doesn't trigger on the expected opener
 
@@ -722,15 +741,18 @@ After finishing a book and rating it:
 
 > "I just finished *Hyperion* — 5 stars."
 
-Cataloguer (which owns reading-log writes):
+Cataloguer (which owns reading-log queue writes):
 
-1. Confirms via `AskUserQuestion`: "Add to log? Title=Hyperion,
+1. Confirms via `AskUserQuestion`: "Log this read? Title=Hyperion,
    author=Dan Simmons, rating=5, date=today (2026-05-02). Yes / Edit /
    Cancel."
-2. On approval, appends a row to the in-sandbox `Reading_Log.csv` and
-   re-encodes for Drive flush.
-3. If the book is currently in `Reading_List.md`, removes it (it's no
-   longer "to be read") with a notification.
+2. On approval, appends a CSV-ready row to `log_pending_updates` on
+   the picker artifact's `window.storage`.  Project-knowledge
+   `Reading_Log.csv` is read-only from chat — at session end, the
+   reader sees the queued rows and pastes them into their log
+   manually (or re-exports from Goodreads).
+3. If the book is currently in the reading-list artifact, removes it
+   (it's no longer "to be read") with a notification.
 
 **Bulk reading-log refresh** (if the reader exports a fresh
 `Reading_Log.csv` from Goodreads):
@@ -752,8 +774,8 @@ The reader memorizes nothing. But the documented phrases — the ones
 | Phrase | What it does |
 |---|---|
 | `where are we` | Triage replays the build state ("phase 2, 47 books in pool, indie floor at 6 of 10") |
-| `flush now` | Force a Drive flush of Profile.md + Reading_List.md (also auto-fires at phase boundaries) |
-| `save catalog` | Cataloguer flushes in-session catalog edits to Drive |
+| `flush now` | Force a re-write of profile + reading-list artifact storage from in-sandbox copies (idempotent — both are per-edit) |
+| `save catalog` | Cataloguer re-encodes in-session catalog edits and presents a download link.  Replace the Drive file manually. |
 | `continue` | After a recovery prompt, resume the prior flow |
 | `start fresh` | Discard build state in `window.storage`, keep Profile.md and Reading_List.md in Drive |
 
@@ -822,12 +844,12 @@ into the UX above.
 
 | # | Question | Resolution |
 |---|---|---|
-| 1 | Drive folder name | First-run only. Stored in `.config.json` in Drive. |
-| 2 | `make skills` packaging | Six separate zips. No combined `all-skills.zip`. |
-| 3 | Catalog (SQLite) write cadence | Flush to Drive at session end only. |
-| 4 | Profile.md / Reading_List.md cadence | Per-edit flush to Drive. |
-| 5 | Helper distribution | Skill-bundled only. No URL-fetch fallback. |
-| 6 | Picker artifact URL location | `.config.json` in Drive. |
+| 1 | Drive catalog discovery | Project instructions inject `DRIVE_CATALOG_FILE_ID: <id>`; triage fetches by ID first, falls back to `.config.json` then folder name. |
+| 2 | `make skills` packaging | Six separate zips.  No combined `all-skills.zip`. |
+| 3 | Catalog (SQLite) write cadence | Manual download flow at session end only.  Cataloguer encodes in sandbox and presents a download link; reader replaces the Drive file.  No programmatic Drive write. |
+| 4 | Profile + reading-list cadence | Per-edit artifact-storage write.  Profile silent in chat (consolidated diff at session end); reading-list per-edit user-visible. |
+| 5 | Helper distribution | Skill-bundled only.  No URL-fetch fallback. |
+| 6 | Picker artifact URL location | Project instructions, or `.config.json` in Drive as fallback. |
 | 7 | Triage resume-offer trigger | Ambiguous or build-shaped openers only. |
 | 8 | GitHub vs Drive primacy | Drive primary (mutable). GitHub canonical for read-only repo content. |
 | 9 | Catalog JSON deprecation | Deprecated after Step 6. SQLite is sole source of truth. JSON gitignored thereafter. |

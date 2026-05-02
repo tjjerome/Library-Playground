@@ -51,10 +51,17 @@ claude.ai-port specific ones, plus one stronger rule about the picker.
 8. **Deep-cut silence.**  Never label the deep cut.  No "(deep cut)",
    "(hidden gem)", "(indie pick)", "(small-press wildcard)" anywhere in
    chat preludes, picker pitches, or list cells.
-9. **Profile artifact per-edit storage write.**  Every signal-capture
-   write goes to `window.storage["profile"]` same turn.
-10. **Reading-list artifact per-edit storage write.**  Every batch's
-    selected picks update `window.storage["reading_list"]` same turn.
+9. **Profile artifact per-edit storage write — silent.**  Every
+   signal-capture write goes to `window.storage["profile"]` same
+   turn.  Do NOT mention profile updates in chat mid-session — the
+   user sees the consolidated profile diff at session end alongside
+   the catalog download.  The artifact URL is always navigable
+   out-of-band if the reader wants to inspect.
+10. **Reading-list artifact per-edit storage write — user-visible.**
+    Every batch's selected picks update `window.storage["reading_list"]`
+    same turn.  Each confirmed pick gets a one-line chat
+    acknowledgement (e.g. "Added *Hyperion* — Dan Simmons").  This is
+    the one mutable surface the reader sees evolve in real time.
 11. **Picker artifact is the only `AskUserQuestion(multiSelect)`
     surface for batch picks.**  No yes/no fallback.  No four sequential
     yes/no questions.  If the picker fails mid-session, surface the
@@ -346,8 +353,10 @@ Open a real two-way conversation about the build so far.  Pattern:
 
 ## Profile-write triggers (exhaustive)
 
-All write to profile artifact same turn, with one-line chat
-confirmation ("Noting in your profile: <bullet>"):
+All write to profile artifact same turn, **silently** — no chat
+confirmation, no "Noting in your profile" sentence.  The user sees
+the consolidated profile diff at session end alongside the catalog
+download (build-finish handles that surface).
 
 1. Reflection checkpoint.
 2. Whole-batch skip probe answer.
@@ -360,8 +369,9 @@ confirmation ("Noting in your profile: <bullet>"):
 
 End-of-session assertion: if any of triggers 2-7 fired this session
 and the profile artifact's `updated_at` hasn't moved since session
-start, surface the gap to the reader before any phase advance and
-capture the missed signal then.
+start, internal failure — log to picker storage's `profile_write_misses`
+and surface the gap during the build-finish session-end summary
+alongside the missed signal recovery.
 
 ## Cross-cutting tag floors
 
@@ -388,6 +398,28 @@ When `current_count >= 100`:
 
 Update build state: `current_phase: "phase-3"`,
 `phase_progress.phase_2: "done"`.
+
+## Mid-build session pause — interim summary
+
+Trigger phrases: "I'm done for now", "let's pause", "save and come
+back", "that's enough today", or any signal that the reader is
+wrapping the session before reaching the 100 hand-off.
+
+Run a compact version of the session-end summary defined in
+`librarian-build-finish/SKILL.md`:
+
+1. **Reading list:** one line — current count, link to artifact URL.
+2. **Profile diff (silent → consolidated):** every profile write that
+   happened this session, sectioned by what changed.  This is the
+   reader's first chat-side view of the changes.  Surface any
+   `profile_write_misses` recorded in picker storage and capture them
+   now.
+3. **Catalog changes (if any):** hand off to library-cataloguer's
+   manual-download flow.  Skip if no catalog writes happened.
+4. **Resume pointer:** "I've saved your spot.  Open a new chat and
+   say 'continue' when you're ready."
+
+Update build state with `last_paused_at: <ISO>`.
 
 ## Phase advance is NOT an escape hatch for fatigue
 

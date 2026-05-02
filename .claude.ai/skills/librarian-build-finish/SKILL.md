@@ -213,11 +213,35 @@ After Top 5 locks:
    `updated_at` is recent.
 2. **Final reading-list artifact write.**  Top 5 section + main pool
    + New & Upcoming Releases.
-3. **Mark `build:<id>` as complete** — set `current_phase: "complete"`,
+3. **Session-end summary turn — first time the reader sees the
+   profile diff.**  Render a single chat message covering, in this
+   order:
+
+   - **Reading list:** one line — "Your reading list now has <N>
+     books, locked as <Top 5 / 100-core / +stretch>.  See
+     <reading-list URL>."  The reader has been watching this evolve
+     all session, so this is just a final pointer.
+   - **Profile diff:** consolidated summary of every profile write
+     that happened this session — sectioned by what changed (e.g.
+     "Added under 'Negative indicators': graphic-horror ceiling,
+     unreliable-narrator avoidance.  Added under 'Tone / pacing':
+     prefers ~400pp anchors, accepts up to 700pp for late-series
+     payoff.").  This is the reader's first chat-side view of the
+     profile changes — they were silent during the build.  Also
+     surface any `profile_write_misses` recorded in picker storage
+     and capture the missed signal now.  Link the profile artifact
+     URL: "Inspect or edit at <profile URL>."
+   - **Catalog changes (if any):** if the cataloguer ran any writes
+     this session, hand off to library-cataloguer's manual-download
+     flow now (see `library-cataloguer/SKILL.md`).  The reader
+     receives the encoded download link in the same turn.  If no
+     catalog writes happened, skip this section entirely.
+
+4. **Mark `build:<id>` as complete** — set `current_phase: "complete"`,
    `completed_at: <ISO>`.  Keep for one cycle (so triage can replay
    "you finished a build on <date>"); delete on next session-start if
    reader starts fresh.
-4. **Offer a session-log paragraph** the reader can paste anywhere
+5. **Offer a session-log paragraph** the reader can paste anywhere
    (Drive comment, journal, chat with a friend):
 
    > "Want a one-paragraph summary of this session for your records?"

@@ -24,9 +24,12 @@ interview, no goals conversation, no batch checklists, no list edits.
 2. **Catalog reads only.**  Factual catalog corrections from the reader
    ("actually that's literary fiction, not fantasy") → hand off to
    library-cataloguer same turn.
-3. **Profile artifact per-edit storage write.**  Any time you append a
-   bullet to the profile, write the updated content to
-   `window.storage["profile"]` same turn.
+3. **Profile artifact per-edit storage write — silent.**  Any time
+   you append a bullet to the profile, write the updated content to
+   `window.storage["profile"]` same turn.  Do NOT confirm the write
+   in chat.  Quickref sessions surface the profile diff (if any) only
+   at the end of the answer turn, in one consolidated sentence — see
+   "Profile updates" below.
 4. **Page count mandatory** in any single-book answer that names a book.
 5. **Anti-jargon contract** — see translation map in
    `librarian-build-batches/SKILL.md`.
@@ -168,7 +171,15 @@ await window.storage.set("profile", JSON.stringify({
 }));
 ```
 
-Confirm with one chat sentence: "Noted in your profile: <bullet>."
+**Silent write.**  Do not announce the profile update in chat
+mid-answer.  At the end of your response, append one consolidated
+sentence covering all profile writes from this turn, e.g.:
+
+> "Updated your profile with two notes from today (graphic-horror
+> ceiling, audio preference for first-person narrators).  Inspect
+> any time at <profile artifact URL>."
+
+Single sentence, end-of-turn.  No mid-answer interruption.
 
 ## Hand-off triggers
 

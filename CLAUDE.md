@@ -17,6 +17,15 @@ features between branches without an explicit ask.
 - `/root/.claude/plans/include-all-fields-in-synchronous-peacock.md` —
   the approved implementation plan with frozen architecture decisions.
 
+## Project owner's Drive setup (reference)
+
+Catalog file ID in the maintainer's Drive:
+`1QEe3-9Hv0CEe1lsT4C9aRFFYTFgKsjPy`.  Lives in the maintainer's
+claude.ai project instructions as `DRIVE_CATALOG_FILE_ID`.  Triage
+reads that ID at session start and skips folder/name search entirely.
+Other forks set their own ID in their own project instructions; the
+SKILL.md falls back to filename/folder discovery if the ID is absent.
+
 ## Files
 
 ### Source of truth on this branch (post-Step-6, post-2026-05-02 refactor)
@@ -36,7 +45,7 @@ features between branches without an explicit ask.
 
 | Layer | Holds | Mutability |
 |---|---|---|
-| Drive | `Library_Catalog.sqlite.encoded`, `.config.json` | Mutable; cataloguer flushes at session end |
+| Drive | `Library_Catalog.sqlite.encoded`, optional `.config.json` | Read-only from chat; reader manually replaces the file at session end via the cataloguer's download-link flow |
 | Project knowledge | `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds | Static — re-upload to refresh |
 | `picker` artifact | `build:<id>`, `batch:<id>`, ledger, `catalog_edit_lock`, `log_pending_updates` | Per-edit during builds |
 | `profile` artifact | `profile` key with `{version, content, updated_at}` | Per-edit on Profile-write triggers |
@@ -115,9 +124,14 @@ non-negotiable:
 7. Anti-jargon contract — no internal vocabulary in chat, picker UI,
    Reading_List.md, or Profile.md.
 8. Deep-cut silence — render identically across all batch positions.
-9. Profile.md per-edit Drive flush.
-10. Reading_List.md per-edit Drive flush.
+9. Profile artifact per-edit storage write — silent; consolidated
+   diff surfaces at session end alongside the catalog download.
+10. Reading-list artifact per-edit storage write — user-visible;
+    one-line acknowledgement on each confirmed pick.
 11. React picker is the only multi-select surface for batch picks.
+12. Catalog flush is manual: cataloguer encodes in sandbox at session
+    end and presents a download link; the reader replaces their Drive
+    file.  Drive connector's write path is intentionally unused.
 
 Translation map for reader-facing language is at the bottom of
 `librarian-build-batches/SKILL.md`.
@@ -172,8 +186,14 @@ Cataloguer rules:
 1. Never silently mutate.  Confirm via `AskUserQuestion`.
 2. ≤20 new books per chat batch.  Bulk → defer to `catalogue.py`.
 3. `comparable_books` reciprocity is mandatory on every comp link write.
-4. Catalog flush back to Drive: session-end only, never per-edit.
-5. Profile.md / Reading_List.md flush: per-edit, every write.
+4. Catalog flush is **manual download**: session-end only, never
+   per-edit, never via the Drive write API.  Reader replaces the
+   Drive file from the link.
+5. Profile artifact: per-edit storage write, **silent** in chat;
+   consolidated diff surfaced at session end alongside catalog
+   download.
+6. Reading-list artifact: per-edit storage write, **user-visible**
+   one-line acknowledgement on every confirmed pick.
 
 Git history = audit trail.  Commits document what changed and when.
 
