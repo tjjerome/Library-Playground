@@ -967,9 +967,37 @@ def main():
                              "compute changes but don't call Claude")
     parser.add_argument("--report", default=None,
                         help="With --sync-comparables: write JSON report to this path")
+    parser.add_argument("--export-sqlite", dest="export_sqlite", default=None,
+                        metavar="PATH",
+                        help="One-shot: convert the existing JSON catalog to a "
+                             "SQLite database at PATH and exit. Pair with "
+                             "--emit-encoded to also produce the gzip+b64 "
+                             "wrapped form for upload to the claude.ai surface.")
+    parser.add_argument("--emit-encoded", action="store_true",
+                        help="With --export-sqlite: also emit "
+                             "<sqlite-path>.encoded — gzip+base64 wrapped, "
+                             "Drive-uploadable, decoded once per session by "
+                             "the librarian-triage skill.")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
+
+    if args.export_sqlite:
+        # Lazy import — the export path stays usable on Pro setups that
+        # don't have the anthropic SDK installed.
+        from pathlib import Path as _Path
+        from webhelper.sqlite_export import export as _sqlite_export
+        from webhelper.encoded_codec import encode_file as _encode_file
+
+        sqlite_path = _Path(args.export_sqlite)
+        _sqlite_export(catalog, sqlite_path)
+        n = len(catalog.get("entries") or {})
+        print(f"  Wrote SQLite catalog → {sqlite_path} ({n} entries)")
+        if args.emit_encoded:
+            encoded_path = sqlite_path.with_suffix(sqlite_path.suffix + ".encoded")
+            _encode_file(sqlite_path, encoded_path)
+            print(f"  Wrote encoded catalog → {encoded_path}")
+        sys.exit(0)
 
     if args.index_only:
         save_index(catalog, args.index)
