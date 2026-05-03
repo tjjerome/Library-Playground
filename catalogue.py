@@ -190,16 +190,12 @@ def csv_authoritative_values(book: dict) -> dict:
         except (TypeError, ValueError):
             pass
 
-    # Goodreads rating lives inside the comma-joined identifiers field as
-    # "grrating:3.99" rather than its own column.
-    for piece in (book.get("identifiers") or "").split(","):
-        piece = piece.strip()
-        if piece.startswith("grrating:"):
-            try:
-                out["goodreads_rating"] = float(piece.split(":", 1)[1])
-            except ValueError:
-                pass
-            break
+    modrating = book.get("#modrating")
+    if modrating:
+        try:
+            out["goodreads_rating"] = float(modrating)
+        except (TypeError, ValueError):
+            pass
 
     return out
 
