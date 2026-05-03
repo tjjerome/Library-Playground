@@ -627,11 +627,33 @@ def cmd_series_continuation(args, conn) -> None:
     }, ensure_ascii=False, indent=2))
 
 
+def _split_title_by_author(q: str) -> tuple[str, str | None]:
+    """Detect "<title> by <author>" patterns from natural-language queries.
+    Returns (title_query, author_filter or None).  Splits on the rightmost
+    " by " (case-insensitive) so titles containing "by" still parse cleanly
+    ("Stand By Me by Stephen King" → "Stand By Me", "Stephen King").
+    Falls back to (q, None) if the split looks implausible (RHS missing,
+    too long to be an author name, or LHS empty)."""
+    import re
+    parts = re.split(r"\s+by\s+", q, flags=re.IGNORECASE)
+    if len(parts) < 2:
+        return q, None
+    # Take the LAST " by " as the title/author boundary.
+    title_q = " by ".join(parts[:-1]).strip()
+    author_q = parts[-1].strip()
+    if not title_q or not author_q or len(author_q) > 60:
+        return q, None
+    return title_q, author_q
+
+
 def cmd_lookup(args, conn) -> None:
     """Three-pass fuzzy match: exact key → title substring (incl.
-    pre-colon prefix) → series substring."""
-    q = args.query.strip()
+    pre-colon prefix) → series substring.  Pre-parses "<title> by
+    <author>" natural-language queries and filters results by author."""
+    raw_q = args.query.strip()
+    q, author_q = _split_title_by_author(raw_q)
     qn = norm(q)
+    author_filter = norm(author_q) if author_q else None
 
     log = load_log(args.log) if Path(args.log).exists() else []
     read_set = already_read_set(log)
@@ -644,6 +666,8 @@ def cmd_lookup(args, conn) -> None:
     def add(row: sqlite3.Row) -> None:
         k = row["key"]
         if k in seen_keys:
+            return
+        if author_filter and author_filter not in (row["author_normalized"] or ""):
             return
         seen_keys.add(k)
         title = row["title"] or ""
