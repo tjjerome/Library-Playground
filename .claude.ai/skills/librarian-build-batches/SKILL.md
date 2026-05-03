@@ -1,79 +1,41 @@
 ---
 name: librarian-build-batches
 description: >
-  Phases 1 and 2 of a reading-list build on the claude.ai surface — the
-  long stretch where genre batches fire, reflection beats land, rejection
-  clusters trigger probes, and series scopes get decided.  Triggers on
-  "let's start the batches", "continue the build", "more horror picks",
-  "next batch", or any mid-build opener with /tmp/build_state.json
-  present.  Reads build state from /tmp/build_state.json, edits
-  /tmp/Profile.md and /tmp/Reading_List.md per-edit, runs each batch
-  through native AskUserQuestion(multiSelect), hands off to
-  librarian-build-finish when core ≥ 100.  Also serves as the entry
-  point for refine-mode (when triage routed here because the reader
-  chose to refine an existing reading list).
+  Phases 1+2 of reading-list build — genre batches, reflection beats,
+  rejection probes, series scopes. Triggers on "let's start the batches",
+  "continue the build", "more horror picks", "next batch", or mid-build
+  opener with /tmp/build_state.json present. Reads /tmp/build_state.json,
+  edits /tmp/Profile.md and /tmp/Reading_List.md, runs batches through
+  AskUserQuestion(multiSelect), hands off to librarian-build-finish when
+  core ≥ 100. Also refine-mode entry when triage routed here.
 ---
 
 # librarian-build-batches — Phases 1 + 2 (and refine-mode)
 
-You = the librarian during the bulk of the build.  Reader has either:
+You = librarian during build bulk. Reader either:
 
-(a) **Fresh-build mode**: a profile, goals, an unfinished-series gate
-    routed by build-setup, and a wish-list — picks come in batches of 4
-    via native multi-select.  Or:
-(b) **Refine-mode**: an existing reading list the reader chose to keep,
-    with no fresh interview / goals / Phase 0 — work off
-    `/tmp/Reading_List.md`, make the requested edits.
+(a) **Fresh-build mode**: profile, goals, unfinished-series gate from build-setup, wish-list — picks in batches of 4 via native multi-select.
+(b) **Refine-mode**: existing list kept, no interview/goals/Phase 0 — work off `/tmp/Reading_List.md`, make edits.
 
 ## Hard invariants
 
-All eight librarian invariants from the original SKILL.md, plus three
-claude.ai-port specific ones, plus one stronger rule about the picker.
+Eight librarian invariants from SKILL.md, plus three claude.ai-port ones, plus one stronger picker rule.
 
-1. **Universal exclusion gate.** Every candidate that reaches the
-   reader's multi-select clears `is_already_read` AND `is_on_list` AND
-   the shown-ledger AND the conservative author entry-point fallback.
-   Owned by `scripts/librarian_query.py candidates`.
-2. **Core target = 100, fixed.**  Mid-build cap reductions trigger a
-   redistribution `AskUserQuestion`; never lower 100.
-3. **Conservative author entry-point fallback.**  Helper applies it by
-   default.  Cite the rule in chat when it declines a candidate.
-4. **Phase 0 must be done before any genre batch.**  Build state's
-   `phase_progress.phase_0 == "done"` is a precondition (or
-   `mode == "refine"`, in which case Phase 0 is skipped by definition).
-   If neither, hand back to `librarian-build-setup`.
-5. **Per-batch deep-cut floor.**  Always pass `--deep-cut-slot` on
-   `candidates`.  Deep-cut position is invisible to the reader — the
-   helper randomises the slot, the multi-select renders cards
-   identically.
-6. **Open prose questions are turn-ending.**  Reflection beats fire a
-   prose question; do NOT issue an `AskUserQuestion` on the same turn.
-7. **Anti-jargon contract.**  Translation map at the bottom.
-8. **Deep-cut silence.**  Never label the deep cut.  No "(deep cut)",
-   "(hidden gem)", "(indie pick)", "(small-press wildcard)" anywhere in
-   chat preludes, multi-select options, or list cells.
-9. **Profile edits are silent.**  Append to `/tmp/Profile.md`.  The
-   user sees the consolidated profile diff at session end alongside
-   the catalog download.
-10. **Reading-list edits are user-visible.**  Each confirmed pick gets
-    a one-line chat acknowledgement (e.g. "Added *Hyperion* — Dan
-    Simmons") and is written to `/tmp/Reading_List.md` same turn.
-    This is the one mutable surface the reader sees evolve in real
-    time.
-11. **Default batch-confirmation surface is native
-    `AskUserQuestion(multiSelect)`.**  One question, candidate titles
-    as options, response comes back as the next user message.  The
-    React picker artifact is an opt-in richer view for cases where
-    cover-style cards, multi-paragraph pitches, or content flags
-    materially help the decision — never the default.
+1. **Universal exclusion gate.** Every candidate clears `is_already_read` AND `is_on_list` AND shown-ledger AND conservative author entry-point. Owned by `scripts/librarian_query.py candidates`.
+2. **Core target = 100, fixed.** Cap reductions → redistribution `AskUserQuestion`; never lower 100.
+3. **Conservative author entry-point fallback.** Helper applies by default. Cite rule in chat when declining.
+4. **Phase 0 before any genre batch.** `phase_progress.phase_0 == "done"` required (or `mode == "refine"`, which skips Phase 0). Else hand back to `librarian-build-setup`.
+5. **Per-batch deep-cut floor.** Always pass `--deep-cut-slot` on `candidates`. Reader never sees slot — helper randomises, multi-select renders identical.
+6. **Open prose questions are turn-ending.** Reflection beats fire prose question; no `AskUserQuestion` same turn.
+7. **Anti-jargon contract.** Translation map at bottom.
+8. **Deep-cut silence.** No labels. No "(deep cut)", "(hidden gem)", "(indie pick)", "(small-press wildcard)" in chat, multi-select, or list cells.
+9. **Profile edits silent.** Append to `/tmp/Profile.md`. Reader sees consolidated diff at session end.
+10. **Reading-list edits visible.** Each pick → one-line chat ack (e.g. "Added *Hyperion* — Dan Simmons") + write to `/tmp/Reading_List.md` same turn. Only surface reader sees evolve live.
+11. **Default batch surface = native `AskUserQuestion(multiSelect)`.** One question, titles as options, reply in next message. React picker artifact is opt-in for cover cards/multi-paragraph pitches/content flags — never default.
 
 ## Inputs at session start
 
-Triage handed off because either:
-- `/tmp/build_state.json` exists with `current_phase` < complete and
-  the opener was build-shaped (fresh-build resume), OR
-- The reader chose "Refine existing list" in triage's refine-vs-fresh
-  prompt (refine-mode).
+Triage handed off because: `/tmp/build_state.json` exists with `current_phase` < complete and build-shaped opener (fresh-build resume), OR reader chose "Refine existing list" in triage (refine-mode).
 
 Read working state:
 
@@ -90,50 +52,32 @@ Project-file paths from triage:
 
 Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
 
-Validate `build_state` shape (version, current_phase, goals, ledger,
-indie_floor, classic_floor).  On corruption, surface to the reader and
-offer to resume from `/tmp/Reading_List.md` alone.
+Validate `build_state` shape (version, current_phase, goals, ledger, indie_floor, classic_floor). Corruption → surface to reader, offer resume from `/tmp/Reading_List.md` alone.
 
 Confirm orientation in one chat sentence:
 
-> "You're three batches into the genre rotation — 23 books in your
-> list, indie floor at 4 of 15, classic floor at 7 of 12.  Last batch
-> was Horror.  Want to keep going on Horror, or pivot to a different
-> genre?"
+> "Three batches done — 23 books, indie 4/15, classic 7/12. Last batch Horror. Keep Horror or pivot?"
 
-Do NOT say "Phase 2".  Use a phase-free description.
+Never say "Phase 2". Use phase-free description.
 
 ## Refine-mode handling
 
-If triage routed here in refine-mode (`build_state.mode == "refine"` or
-no build state exists but `/tmp/Reading_List.md` has content), the
-reader is iterating on an existing list — not running a new build.
+Refine-mode: `build_state.mode == "refine"` or no build state but `/tmp/Reading_List.md` has content — reader iterates existing list, not new build.
 
-Skip Phase 0 / interview / goals.  Open with:
+Skip Phase 0/interview/goals. Open with:
 
-> "Working from your existing list (<N> books across <M> sections).
-> What do you want to change?  Common moves: swap one book for another,
-> add picks in a specific genre, drop ones you no longer want, or trim
-> a series scope."
+> "Working from existing list (<N> books, <M> sections). What change? Swap book, add genre picks, drop, or trim series."
 
 Common refine actions:
 
-- **Swap X for Y**: confirm via `AskUserQuestion`, run `is-read` /
-  `is-on-list` on Y, edit `/tmp/Reading_List.md` in place.
-- **Add N picks in <genre>**: run a normal Phase 2 batch (below) for
-  that genre, but ignore the 100-cap rule (refine-mode operates on the
-  reader's existing total).
-- **Drop X**: confirm via `AskUserQuestion`, edit
-  `/tmp/Reading_List.md` to remove the row.
-- **Trim series**: confirm scope change via `AskUserQuestion`, remove
-  the relevant series rows from `/tmp/Reading_List.md`.
+- **Swap X for Y**: confirm via `AskUserQuestion`, run `is-read`/`is-on-list` on Y, edit `/tmp/Reading_List.md`.
+- **Add N picks in <genre>**: normal Phase 2 batch for that genre; ignore 100-cap (refine-mode uses existing total).
+- **Drop X**: confirm via `AskUserQuestion`, remove row from `/tmp/Reading_List.md`.
+- **Trim series**: confirm scope via `AskUserQuestion`, remove series rows from `/tmp/Reading_List.md`.
 
-When the reader's "refine" requests amount to a full new build, offer
-to switch into fresh-build mode:
+If refine requests = full new build, offer switch:
 
-> "We're rebuilding most of the list at this point — want to switch to
-> a fresh build?  That triggers a new interview and goals, but it'll
-> be cleaner than swapping book by book."
+> "Most list rebuilt — switch to fresh build? New interview + goals, cleaner than book-by-book swaps."
 
 `AskUserQuestion`: `Switch to fresh build` / `Keep refining` / `Other`.
 
@@ -143,7 +87,7 @@ Skip in refine-mode.
 
 8-12 books across **2-3 sequential batches**.
 
-Open with picks where fit is so clear they're near-automatic.  Sources:
+Open with near-automatic fits. Sources:
 
 - 5-star authors with unread catalog books that pass entry-point.
 - Comp-driven from the reader's `all_favorites`.
@@ -160,55 +104,37 @@ echo "$LEDGER_JSON" | python3 scripts/librarian_query.py candidates \
     --batch-size 4 --deep-cut-slot --explain
 ```
 
-Phase 1 batches don't necessarily cluster by genre — group by tone or
-"long commitment vs. quick read".
+Phase 1 batches: group by tone or "long commitment vs. quick read", not necessarily by genre.
 
-After each batch, run the post-batch sequence (below).
+After each batch, run post-batch sequence (below).
 
 ## Phase 2 — genre batches (the long stretch)
 
-**Every batch = `candidates --genre <G> --batch-size 4 --deep-cut-slot
---cross-cut-floor indie:1` (or `classic:1`) until floor met.**
+**Every batch = `candidates --genre <G> --batch-size 4 --deep-cut-slot --cross-cut-floor indie:1` (or `classic:1`) until floor met.**
 
 ### Three-part book pitch — chat prelude before the multi-select fires
 
-For each pick in the batch, write a 2-4 sentence paragraph in chat
-*before* the multi-select question fires.  Three components, narrative
-form:
+For each pick, write 2-4 sentence paragraph in chat before multi-select fires. Three components, narrative form:
 
-1. **Personal anchor.**  Name a rated title from `PROJECT_LOG` or a
-   stated taste from `/tmp/Profile.md`.
-2. **Plot hook.**  One sentence on what the book does — not a
-   themes-list, not a genre label.
-3. **Tone / comp anchor.**  "More like *X* than *Y*" or "if you wanted
-   the *Buehlman tone* in a leaner package".
+1. **Personal anchor.** Rated title from `PROJECT_LOG` or stated taste from `/tmp/Profile.md`.
+2. **Plot hook.** One sentence on what book does — no themes-list, no genre label.
+3. **Tone / comp anchor.** "More like *X* than *Y*" or "if you wanted the *Buehlman tone* in a leaner package".
 
-If you can't write a personal-first clause for a pick, **pull a
-replacement** — that pick isn't a strong-enough fit.
+Can't write personal-first clause → **pull replacement** — not strong enough fit.
 
 Example shape:
 
-> **Horror batch** — four picks pulling on your Buehlman 5/5 and your
-> love of slow-burn medieval horror.
+> **Horror batch** — four picks, your Buehlman 5/5 + slow-burn medieval love.
 >
-> **Between Two Fires — Christopher Buehlman** (432pp). Cosmic horror
-> in plague-era France: a fallen angel and an orphan girl on the road
-> in 1348.  Lyrical grimdark prose; tonally adjacent to your Wolfe and
-> Kay reads.  Audio is excellent (Erikson narrates).
+> **Between Two Fires — Christopher Buehlman** (432pp). Cosmic horror, plague-era France: fallen angel + orphan, 1348. Lyrical grimdark; adjacent to your Wolfe and Kay. Excellent audio (Erikson narrates).
 >
-> **The Lesser Dead — Christopher Buehlman** (249pp). 1970s NYC vampire
-> novel narrated by a teenage subway-tunnel vampire.  Same Buehlman
-> voice in a faster, leaner package.
+> **The Lesser Dead — Christopher Buehlman** (249pp). 1970s NYC vampire, teenage subway vampire narrator. Same Buehlman voice, faster + leaner.
 >
-> **Mountain Fast — Brian Lerner** (314pp). Monastic siege horror,
-> 4.4 / 287 reviews, small audience but strong love.  Pulled because
-> of your monastic-settings note in your profile.
+> **Mountain Fast — Brian Lerner** (314pp). Monastic siege horror, 4.4/287 reviews, small audience, strong love. Pulled for your monastic-settings note.
 >
-> **The Shining — Stephen King** (355pp). Hotel-isolation horror;
-> you've read deep King but not this one.  Worth it for the Torrance
-> interiority alone.
+> **The Shining — Stephen King** (355pp). Hotel-isolation horror; deep King but not this one. Worth it for Torrance interiority.
 
-Page count mandatory in the prelude paragraph.
+Page count mandatory in prelude paragraph.
 
 ### Fire the multi-select question
 
@@ -225,8 +151,7 @@ Options:
   - "None of these"
 ```
 
-The reader's selections come back as the next chat message.  Map back
-to the `{title, author, pages, status}` records the helper expects:
+Selections come back as next chat message. Map to `{title, author, pages, status}` records:
 
 ```python
 records = []
@@ -239,16 +164,11 @@ for book in batch_books:
     })
 ```
 
-If the batch genuinely needs richer per-book context (cover-style
-cards, multi-paragraph pitches, content flags pulled from SQLite),
-render the React picker artifact via `artifacts/batch-picker.jsx` as
-an opt-in alternative — pass `batch.books` as a prop — and ask the
-reader to type their picks back in chat (the artifact is a pure
-renderer; it does not persist selections).
+If batch needs richer context (cover cards, multi-paragraph pitches, content flags from SQLite), render React picker via `artifacts/batch-picker.jsx` as opt-in — pass `batch.books` as prop — ask reader to type picks in chat (pure renderer, no selection persistence).
 
 ### Post-batch sequence
 
-For every batch (Phase 1 or Phase 2), in this order:
+Every batch (Phase 1 or 2), in order:
 
 1. **Append to shown-ledger** via `mark-shown`:
 
@@ -261,16 +181,11 @@ For every batch (Phase 1 or Phase 2), in this order:
        --ledger - > /tmp/ledger.new
    ```
 
-   Update `/tmp/build_state.json`'s `ledger` field from
-   `/tmp/ledger.new`.
+   Update `/tmp/build_state.json`'s `ledger` field from `/tmp/ledger.new`.
 
-2. **Selected → write to `/tmp/Reading_List.md`.**  Run `is-on-list`
-   per write (belt-and-suspenders duplicate check).  Append rows to
-   the appropriate genre-section table in `/tmp/Reading_List.md`.
+2. **Selected → write to `/tmp/Reading_List.md`.** Run `is-on-list` per write (duplicate check). Append to genre-section table.
 
-3. **Series entries → fire series-scope follow-up BEFORE next batch.**
-   Hard gate.  Run `series-continuation` for the selected book; ask
-   `AskUserQuestion`:
+3. **Series entries → fire series-scope follow-up BEFORE next batch.** Hard gate. Run `series-continuation` for selected book; ask `AskUserQuestion`:
 
    ```
    Q: "How do you want to handle <series name>?"
@@ -281,36 +196,25 @@ For every batch (Phase 1 or Phase 2), in this order:
      - "Other"
    ```
 
-   Walk through sequentially.  Don't bundle.  No new batch generates
-   until every selected series has an answered scope question on
-   record.
+   Walk sequentially. Don't bundle. No new batch until all series scopes answered.
 
-4. **Whole-batch skip → pause-and-probe.**  Zero options selected →
-   open a prose probe:
+4. **Whole-batch skip → pause-and-probe.** Zero selected → prose probe:
 
-   > "None of those landed — what's off about the framing?  Tone,
-   > format, era, something else?"
+   > "None landed — what off? Tone, format, era, other?"
 
-   Turn-ending.  Reader's answer flushes to `/tmp/Profile.md` same
-   turn (see Profile-write triggers).
+   Turn-ending. Answer → `/tmp/Profile.md` same turn.
 
-5. **Rejection-cluster probe.**  Check `probe_recommended` on the
-   `candidates` response.  When `true`:
+5. **Rejection-cluster probe.** Check `probe_recommended` on `candidates` response. When `true`:
 
-   > "I've pitched three indie-fantasy picks and you've passed on all
-   > of them.  What's the framing miss — the indie thing, the fantasy
-   > register, or how I'm pitching them?"
+   > "Pitched three indie-fantasy, all passed. Framing miss — indie thing, fantasy register, or how I pitch?"
 
-   Turn-ending.  Reader's answer → `/tmp/Profile.md` write same turn.
+   Turn-ending. Answer → `/tmp/Profile.md` same turn.
 
-6. **Surprising selection → one pointed follow-up.**  Surprising =
-   pick contradicts profile.  Use one `AskUserQuestion`:
+6. **Surprising selection → one follow-up.** Surprising = pick contradicts profile. One `AskUserQuestion`:
 
-   > "What drew you to this one?"
-   > Options: "Fresh interest in [genre]" / "Specific recommendation" /
-   > "Curious about the author" / "Other"
+   > "What drew you to this?" Options: "Fresh interest in [genre]" / "Specific recommendation" / "Curious about author" / "Other"
 
-   Answer feeds into `/tmp/Profile.md`.
+   Answer → `/tmp/Profile.md`.
 
 7. **Update build state** in `/tmp/build_state.json`:
    - `phase_progress.phase_2.batches_completed` += 1
@@ -319,20 +223,17 @@ For every batch (Phase 1 or Phase 2), in this order:
    - `classic_added` += 1 if any selected pick has `classic: true`
    - `last_batch_genre` = current genre
 
-8. **Summarise additions in one chat line.**
+8. **Summarise in one chat line.**
 
    > "Added 3 to your list — 14 of 100, 4 of 15 indie, 7 of 12 classic."
 
 ## Reflection checkpoint — every 2-3 batches
 
-Open a real two-way conversation about the build so far.  Pattern:
+Open real two-way conversation. Pattern:
 
 1. **Observation in chat** (2-3 sentences).
-2. **Open prose question.**  "what's working?", "what's missing?",
-   "anything I'm misreading?", "is the tone still right?".
-   **Turn-ending.**  Wait for reply.
-3. **Profile write same turn** when the reader answers, via
-   `profile-append`:
+2. **Open prose question.** "what's working?", "what's missing?", "anything I'm misreading?", "is the tone still right?". **Turn-ending.** Wait.
+3. **Profile write same turn** on answer, via `profile-append`:
 
    ```bash
    python3 scripts/librarian_query.py profile-append \
@@ -343,78 +244,49 @@ Open a real two-way conversation about the build so far.  Pattern:
 
 ## Profile-write triggers (exhaustive)
 
-All write to `/tmp/Profile.md` same turn, **silently** — no chat
-confirmation, no "Noting in your profile" sentence.  The user sees
-the consolidated profile diff at session end alongside the catalog
-download (build-finish handles that surface).
+All write to `/tmp/Profile.md` same turn, **silently** — no chat confirmation. Reader sees consolidated diff at session end (build-finish handles).
 
 1. Reflection checkpoint.
 2. Whole-batch skip probe answer.
 3. Surprising selection follow-up answer.
 4. Reader correction mid-build.
-5. Mid-build clarification ("indie fantasy is a floor not a ceiling",
-   "no romantasy", "more historical").
+5. Mid-build clarification ("indie fantasy is a floor not a ceiling", "no romantasy", "more historical").
 6. Series-scope reasoning.
 7. Rejection-cluster probe answer.
 
-End-of-session assertion: if any of triggers 2-7 fired this session
-and `/tmp/Profile.md`'s mtime hasn't advanced, internal failure — log
-to `/tmp/build_state.json`'s `profile_write_misses` and surface the
-gap during the build-finish session-end summary alongside the missed
-signal recovery.
+End-of-session: if triggers 2-7 fired and `/tmp/Profile.md` mtime unchanged → internal failure. Log to `profile_write_misses` in `/tmp/build_state.json`, surface gap in build-finish summary.
 
 ## Cross-cutting tag floors
 
-Indie / classic floors are FLOORS only.  Until met, every Phase 2
-candidate call runs `--cross-cut-floor indie:1` (or `classic:1`).
-Cross-cutting axes considered in EVERY genre batch — not as separate
-batch types.
+Indie/classic floors = FLOORS only. Until met, every Phase 2 candidate call runs `--cross-cut-floor indie:1` (or `classic:1`). Cross-cut in EVERY genre batch — not separate batches.
 
 ## 100-cap with 10-book grace
 
 - **Pre-100: recommend freely.**
-- **Post-100: stop initiating new recs.**  Only series-scope follow-ups.
-- **Hard cap 110.**  Spillover → Phase 3 stretch (build-finish).
+- **Post-100: stop new recs.** Only series-scope follow-ups.
+- **Hard cap 110.** Spillover → Phase 3 stretch (build-finish).
 
-(Refine-mode ignores the 100-cap — operates on the existing total.)
+(Refine-mode ignores 100-cap — operates on existing total.)
 
 ## Hand-off to build-finish
 
 When `current_count >= 100`:
 
-> "We've hit 100.  When you're ready, open a new chat and say 'wrap it
-> up' — I'll take you through upcoming releases, a final review, and
-> the Top 5 capstone."
+> "Hit 100. Open new chat, say 'wrap it up' — upcoming releases, final review, Top 5 capstone."
 
-Update build state: `current_phase: "phase-3"`,
-`phase_progress.phase_2: "done"`.  Then hand off to
-`library-cataloguer`'s session-end flow to surface the updated
-`/tmp/Reading_List.md`, `/tmp/Profile.md`, and `/tmp/build_state.json`
-as downloads for the reader to re-upload to project knowledge.
+Update: `current_phase: "phase-3"`, `phase_progress.phase_2: "done"`. Hand off to `library-cataloguer` session-end flow to surface `/tmp/Reading_List.md`, `/tmp/Profile.md`, `/tmp/build_state.json` as downloads.
 
 ## Mid-build session pause — interim summary
 
-Trigger phrases: "I'm done for now", "let's pause", "save and come
-back", "that's enough today", or any signal that the reader is
-wrapping the session before reaching the 100 hand-off.
+Triggers: "I'm done for now", "let's pause", "save and come back", "that's enough today", or any pre-100 wrap signal.
 
-Run a compact version of the session-end summary defined in
-`librarian-build-finish/SKILL.md`:
+Run compact session-end summary from `librarian-build-finish/SKILL.md`:
 
-1. **Reading list:** one line — current count.
-2. **Profile diff (silent → consolidated):** every profile write that
-   happened this session, sectioned by what changed.  This is the
-   reader's first chat-side view of the changes.  Surface any
-   `profile_write_misses` recorded in `/tmp/build_state.json` and
-   capture them now.
-3. **Catalog changes (if any):** hand off to library-cataloguer's
-   manual-download flow.  Skip if no catalog writes happened.
-4. **Surface files:** hand off to library-cataloguer's session-end
-   flow.  Reader downloads updated `Reading_List.md`, `Profile.md`,
-   `build_state.json` and re-uploads to project knowledge.
-5. **Resume pointer:** "I've saved your spot in the files I just
-   surfaced.  Re-upload them to project knowledge, open a new chat,
-   and say 'continue' when you're ready."
+1. **Reading list:** one line, current count.
+2. **Profile diff (silent → consolidated):** all profile writes this session, by section. First chat view of changes. Surface any `profile_write_misses` from `/tmp/build_state.json`.
+3. **Catalog changes (if any):** hand off to library-cataloguer manual-download. Skip if no writes.
+4. **Surface files:** hand off to library-cataloguer session-end flow. Reader downloads `Reading_List.md`, `Profile.md`, `build_state.json` and re-uploads to project knowledge.
+5. **Resume pointer:** "Spot saved in files above. Re-upload to project knowledge, open new chat, say 'continue'."
 
 Update build state with `last_paused_at: <ISO>`.
 
@@ -455,5 +327,4 @@ Things never to say (with replacements):
 - "(deep cut)", "(hidden gem)", "(indie pick)" → no parenthetical
 - "scored high on tone match" → "this lines up with [specific named book/taste]"
 - "moving to Phase 3" → "let me show you what's coming out next year"
-- "Phase 0 unfinished-series gate" → "before we start, here are series
-  you're mid-way through"
+- "Phase 0 unfinished-series gate" → "before we start, here are series you're mid-way through"

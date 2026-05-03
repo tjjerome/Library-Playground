@@ -1,80 +1,50 @@
 ---
 name: librarian-triage
 description: >
-  Routing skill for librarian-shaped openers on claude.ai chat.  Triggers when
-  the reader asks for book recommendations, a reading list, taste matching,
-  "what should I read next", "anything like X", "is X worth my time", uploads a
-  reading log or library catalog, or wants to update their catalog.  Does NOT
-  do the recommendation work itself — discovers project-knowledge files
-  (Reading_Log.csv, optional Profile.md / Reading_List.md / build_state.json),
-  copies them into /tmp for the session, pulls the catalog from Drive into the
-  sandbox, runs freshness checks, asks refine-vs-fresh when a list exists, and
-  hands off to one of librarian-quickref / librarian-build-setup /
-  librarian-build-batches / librarian-build-finish / library-cataloguer.
+  Route skill for reader book questions on claude.ai chat. Triggers: recommend, reading list, taste match, "what should I read next", "anything like X", "is X worth my time", log upload, catalog update. No recommendation work — discover project files (Reading_Log.csv, optional Profile.md / Reading_List.md / build_state.json), copy to /tmp, pull catalog from Drive, freshness check, refine-vs-fresh if list exists, hand off to librarian-quickref / librarian-build-setup / librarian-build-batches / librarian-build-finish / library-cataloguer.
 ---
 
 # librarian-triage — entry-point router
 
-You = the librarian's front desk.  Reader walks up with a book question;
-you figure out what they need, set the table (catalog decoded, project
-files discovered and copied to /tmp, freshness checked, existing
-Profile / Reading_List honoured), and hand off.
+You = front desk. Reader ask book question; figure out need, set table (catalog decoded, project files to /tmp, freshness checked, existing Profile / Reading_List honoured), hand off.
 
-Never do the recommendation work, the catalog write, or the batch
-selection yourself.  Your job ends when the right downstream skill takes
-over.
+Never do recommendation, catalog write, batch selection. Job end when downstream skill take over.
 
 ## Hard invariants
 
-1. **Anti-jargon.**  Reader never sees "triage", "build state", "encoded
-   catalog", or any internal term.  Translate at the chat layer.  See
-   translation map in `.claude.ai/skills/librarian-build-batches/SKILL.md`.
-2. **Existing Profile / Reading_List in project knowledge is honoured,
-   not overwritten.**  When the reader has Profile.md / Reading_List.md
-   uploaded, those seed `/tmp/Profile.md` and `/tmp/Reading_List.md` for
-   the session.  Refine-vs-fresh prompt before any mutation when a
-   non-empty Reading_List exists.
-3. **Single-book queries do NOT hear about in-progress build state.**
-   The resume offer fires only on ambiguous or build-shaped openers.
+1. **Anti-jargon.** Reader never see "triage", "build state", "encoded catalog", internal terms. Translate at chat layer. See map in `.claude.ai/skills/librarian-build-batches/SKILL.md`.
+2. **Existing Profile / Reading_List in project knowledge is honoured, not overwritten.** Reader has Profile.md / Reading_List.md → seed `/tmp/Profile.md` and `/tmp/Reading_List.md`. Refine-vs-fresh prompt before mutation if Reading_List non-empty.
+3. **Single-book queries do NOT hear about in-progress build state.** Resume offer fire only on ambiguous or build-shaped openers.
 
 ## Storage layout (read this once)
 
 | Layer | Holds | Mutability |
 |---|---|---|
-| Drive | `Library_Catalog.sqlite.encoded` | Read-only from chat; cataloguer surfaces a download link at session end for manual replacement |
-| Project knowledge | `Reading_Log.csv` (recommended as a plain file, not a `<documents>` injection — see SETUP.md), optional `Profile.md`, `Reading_List.md`, `build_state.json` | Reader re-uploads at the end of any session that changed them |
+| Drive | `Library_Catalog.sqlite.encoded` | Read-only from chat; cataloguer surface download link at end for manual replace |
+| Project knowledge | `Reading_Log.csv` (plain file, not `<documents>` injection — see SETUP.md), optional `Profile.md`, `Reading_List.md`, `build_state.json` | Reader re-upload at end of changed sessions |
 | Sandbox `/tmp/` (per session) | `Library_Catalog.sqlite`, `Profile.md`, `Reading_List.md`, `build_state.json`, `log_pending_updates.csv` | Mutated freely during session; surfaced via `present_files` at session end |
 | `picker` / `profile` / `reading-list` artifacts | Read-only renderers — content passed via `seed` prop | None — no `window.storage` |
 
-The /tmp files are the **live working surfaces** during a session.
-Project files are the **carry-across-sessions** layer; the reader
-re-uploads anything that changed when the session ends (the
-build-finish / cataloguer skills present them via `present_files`).
-The artifacts are pure renderers — they never persist.
+/tmp files = live working surface. Project files = carry-across-sessions; reader re-upload changed files at end (build-finish / cataloguer present via `present_files`). Artifacts = pure renderers, never persist.
 
 ## Project-file discovery
 
-Look for each by name in the canonical project mount path:
+Look by name at canonical path:
 
-- `/mnt/project/Reading_Log.csv` — reader's history.  Required for full
-  builds and series-continuation queries.
+- `/mnt/project/Reading_Log.csv` — reader history. Need for full builds, series queries.
 - `/mnt/project/Profile.md` (optional) — seed taste profile.
 - `/mnt/project/Reading_List.md` (optional) — existing TBR pool.
-- `/mnt/project/build_state.json` (optional) — in-progress build resume
-  pointer from a previous session.
-- `/mnt/project/log_pending_updates.csv` (optional) — queued reading-log
-  rate updates from previous sessions, not yet merged into the log.
+- `/mnt/project/build_state.json` (optional) — in-progress build resume from prior session.
+- `/mnt/project/log_pending_updates.csv` (optional) — queued log rate updates from prior sessions, not yet merged.
 
-Fallback search if not at the canonical path:
+Fallback if not at canonical path:
 `find /mnt -maxdepth 4 -name "<file>" 2>/dev/null`.
 
-Bind discovered paths to local variables (`PROJECT_LOG`,
-`PROJECT_PROFILE`, `PROJECT_LIST`, `PROJECT_STATE`, `PROJECT_LOG_QUEUE`).
-Use throughout the session.
+Bind to local vars (`PROJECT_LOG`, `PROJECT_PROFILE`, `PROJECT_LIST`, `PROJECT_STATE`, `PROJECT_LOG_QUEUE`). Use throughout session.
 
 ### Copy seeds into /tmp working files
 
-Once discovered, copy each into /tmp:
+Discovered → copy to /tmp:
 
 ```bash
 [ -f "$PROJECT_PROFILE"  ] && cp "$PROJECT_PROFILE"  /tmp/Profile.md
@@ -83,39 +53,27 @@ Once discovered, copy each into /tmp:
 [ -f "$PROJECT_LOG_QUEUE" ] && cp "$PROJECT_LOG_QUEUE" /tmp/log_pending_updates.csv
 ```
 
-Missing seed → create an empty stub:
+Missing seed → create empty stub:
 
 ```bash
 [ ! -f /tmp/Profile.md ]      && printf '# Reader Profile\n\n_Living memory._\n' > /tmp/Profile.md
 [ ! -f /tmp/Reading_List.md ] && printf '# Reading List\n' > /tmp/Reading_List.md
 ```
 
-These /tmp files are the source of truth for the session.  Build /
-quickref / cataloguer skills read and edit them in place; build-finish
-and cataloguer surface them via `present_files` at session end so the
-reader can download the updated copy and replace it in project
-knowledge.
+/tmp files = session truth. Build / quickref / cataloguer read/edit in place; build-finish and cataloguer surface via `present_files` at end for reader download + replace in project knowledge.
 
 ## Drive catalog discovery
 
 Discovery order, fastest to slowest:
 
-1. **Project-instructions injection.**  If the project-level system
-   prompt declares `DRIVE_CATALOG_FILE_ID: <id>`, fetch that file
-   directly via the Drive connector — no folder/name search.  This is
-   the recommended setup; SETUP.md walks readers through pasting their
-   Drive file ID into project instructions.
-2. **Folder + filename search.**  Look for
-   `Library-Playground/Library_Catalog.sqlite.encoded`.
-3. **Custom folder name.**  Ask: "What did you name your library
-   folder in Drive? (default: Library-Playground)"  Search inside.
-4. **Reader hasn't done first-run setup** if all three above fail —
-   point them to `SETUP.md`.
+1. **Project-instructions injection.** System prompt has `DRIVE_CATALOG_FILE_ID: <id>` → fetch direct via Drive connector, no search. Recommended; SETUP.md walks reader through pasting file ID.
+2. **Folder + filename search.** Look for `Library-Playground/Library_Catalog.sqlite.encoded`.
+3. **Custom folder name.** Ask reader for folder name (default: Library-Playground). Search inside.
+4. **Reader hasn't done first-run setup** if all three fail — point to `SETUP.md`.
 
 ## Catalog load (one-shot per session)
 
-Once the catalog file is located, fetch the encoded form via the Drive
-connector and decode into the sandbox:
+Catalog found → fetch encoded via Drive connector, decode to sandbox:
 
 ```bash
 # 1. Drive connector: read file by ID; write raw bytes to
@@ -136,15 +94,11 @@ ok = sqlite3.connect("/tmp/Library_Catalog.sqlite").execute(
 assert ok == "ok", f"Catalog integrity_check failed: {ok}"
 ```
 
-**Decode runs ONCE per session.**  Build skills mutate the in-sandbox
-SQLite; `library-cataloguer` re-encodes at session end and presents a
-download link the reader uses to manually replace the Drive file.
-Never re-fetch the encoded catalog mid-session — that overwrites
-in-session edits.
+**Decode ONCE per session.** Build skills mutate in-sandbox SQLite; `library-cataloguer` re-encodes at end, presents download link. Never re-fetch mid-session — overwrites in-session edits.
 
 ## Reading_Log freshness check
 
-Once `PROJECT_LOG` is found:
+Once `PROJECT_LOG` found:
 
 ```python
 import csv, datetime
@@ -162,7 +116,7 @@ for r in rows:
 latest = max(dates) if dates else None
 ```
 
-If `latest` is more than **4 months ago**, surface to the reader:
+If `latest` > 4 months ago, tell reader:
 
 > "Your reading log's latest entry is from <date>. That's >4 months ago.
 > Want to refresh it before we recommend?  Export a fresh
@@ -170,11 +124,9 @@ If `latest` is more than **4 months ago**, surface to the reader:
 > knowledge.  Or we can keep going — newer reads just won't influence
 > picks."
 
-`AskUserQuestion`: `Refresh first (Recommended)` / `Keep going with
-current log` / `Other`.
+`AskUserQuestion`: `Refresh first (Recommended)` / `Keep going with current log` / `Other`.
 
-If `/tmp/log_pending_updates.csv` exists from a prior session, count
-its rows and surface:
+If `/tmp/log_pending_updates.csv` exists from prior session, count rows and tell reader:
 
 > "I have <N> pending rate updates from previous chats that haven't
 > made it into your reading log yet.  Want me to show them so you can
@@ -182,20 +134,15 @@ its rows and surface:
 
 ## Profile freshness check
 
-Read `/tmp/Profile.md` (the seeded copy).  Look at the project file's
-mtime via `stat $PROJECT_PROFILE` for the freshness signal.
+Read `/tmp/Profile.md`. Check mtime via `stat $PROJECT_PROFILE`.
 
-If the file's mtime is more than **10 months ago** OR the content is
-the unmodified seed header only, treat the profile as stale.  Don't
-refuse to use it — surface to the reader and let
-`librarian-build-setup` decide (refine vs fresh interview).
+mtime > 10 months ago OR content = unmodified seed → stale. Don't refuse — surface to reader, let `librarian-build-setup` decide (refine vs fresh).
 
 ## Reading_List discovery + refine-vs-fresh
 
-Read `/tmp/Reading_List.md`.  Determine "list has real content" — count
-`|` table rows or `-` bullet items beyond the seed header.
+Read `/tmp/Reading_List.md`. Count `|` rows or `-` items beyond seed header to check real content.
 
-If the opener is build-shaped AND the list has real content, ask:
+If opener is build-shaped AND list has real content, ask:
 
 ```
 Q: "I found an existing reading list — <N> books in <M> sections.
@@ -207,19 +154,12 @@ Options:
 ```
 
 Routes:
-- "Refine" → `librarian-build-batches` directly with `/tmp/Reading_List.md`
-  in place.  Skips Phase 0 / interview / goals (already established by
-  the existing list).
-- "Start fresh" → archive the seed (`mv /tmp/Reading_List.md
-  /tmp/Reading_List.md.<ISO>`), reset `/tmp/Reading_List.md` to the
-  empty seed, route to `librarian-build-setup`.
+- "Refine" → `librarian-build-batches` with `/tmp/Reading_List.md` in place. Skip Phase 0 / interview / goals (already in list).
+- "Start fresh" → archive seed (`mv /tmp/Reading_List.md /tmp/Reading_List.md.<ISO>`), reset to empty seed, route to `librarian-build-setup`.
 
 ## Routing
 
-Match opener shape, then ask one disambiguating `AskUserQuestion` only
-when shape is genuinely unclear.  `AskUserQuestion` is deferred — load
-once at session start with
-`ToolSearch(query="select:AskUserQuestion", max_results=1)`.
+Match opener shape, ask `AskUserQuestion` only when genuinely unclear. Deferred — load once at session start with `ToolSearch(query="select:AskUserQuestion", max_results=1)`.
 
 | Opener shape | Route to |
 |---|---|
@@ -231,46 +171,39 @@ once at session start with
 
 ### Resume-offer rule
 
-If `/tmp/build_state.json` exists AND its `current_phase` is not
-`"complete"` AND the opener is build-shaped or ambiguous, surface a
-resume offer:
+If `/tmp/build_state.json` exists AND `current_phase` ≠ `"complete"` AND opener is build-shaped or ambiguous → surface resume offer:
 
 > "You're <N> books into the build I started with you on
 > <human-readable date> — <short summary, e.g. 'three batches into the
 > horror genre'>. Want to pick up where we left off, or start
 > something new?"
 
-Options: `Resume the build (Recommended)` / `Start fresh` / `Single-book
-question` / `Other`.
+Options: `Resume the build (Recommended)` / `Start fresh` / `Single-book question` / `Other`.
 
 Do NOT fire the resume offer for a clean single-book query.
 
 ## Documented phrase set
 
-Phrases the reader can type at any time and triage will recognize.
-Document in `SETUP.md`:
+Phrases reader can type. Document in `SETUP.md`:
 
 | Phrase | What triage does |
 |---|---|
-| `where are we` | Read `/tmp/build_state.json`; render a human-readable summary (current phase, books in pool, indie/classic floors, last batch genre). |
-| `save catalog` | Hand off to library-cataloguer to re-encode the in-sandbox SQLite and present a download link.  Reader manually replaces their Drive file. |
-| `save my files` | Hand off to library-cataloguer's session-end flow to present `Reading_List.md`, `Profile.md`, `build_state.json`, and any pending log updates as downloads. |
-| `continue` | After a recovery prompt, resume the prior flow. |
-| `start fresh` | Archive `/tmp/Reading_List.md` and `/tmp/build_state.json`; preserve Profile.md; route to build-setup. |
-| `show pending log updates` | Print rows from `/tmp/log_pending_updates.csv` so the reader can merge into Reading_Log.csv and re-upload. |
+| `where are we` | Read `/tmp/build_state.json`; render summary (phase, pool count, floors, last genre). |
+| `save catalog` | Hand off to library-cataloguer; re-encode SQLite, present download link. Reader replaces Drive file. |
+| `save my files` | Hand off to library-cataloguer session-end; present `Reading_List.md`, `Profile.md`, `build_state.json`, pending log updates as downloads. |
+| `continue` | Resume prior flow after recovery prompt. |
+| `start fresh` | Archive `/tmp/Reading_List.md` and `/tmp/build_state.json`; keep Profile.md; route to build-setup. |
+| `show pending log updates` | Print `/tmp/log_pending_updates.csv` rows; reader merge into Reading_Log.csv and re-upload. |
 
 ## Hand-off
 
-Hand-off is verbal: state explicitly which skill is taking over so the
-reader sees the skill chip change.  e.g.
+Hand-off verbal: say which skill take over so reader see skill chip change. e.g.
 
 > "Got it — switching into single-book mode."  (librarian-quickref takes over.)
 
-> "Good — let's start with the interview."  (librarian-build-setup takes
-> over.)
+> "Good — let's start with the interview."  (librarian-build-setup takes over.)
 
 > "Picking up where we left off — three batches into Horror."
 > (librarian-build-batches takes over.)
 
-Never invoke build mechanics yourself.  When in doubt, ask one question
-and hand off.
+Never invoke build mechanics. Doubt → ask one question, hand off.

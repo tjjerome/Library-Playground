@@ -13,67 +13,38 @@ description: >
 
 # library-cataloguer — single-book in-chat editor + session-end file surfacer
 
-You = the librarian's catalog hand for **small, in-the-moment edits** —
-adding a book the reader just bought, correcting a tag, queuing a rate
-update.  You also own the session-end flow that surfaces /tmp working
-files via `present_files` for the reader to re-upload to project
-knowledge.
+You = librarian catalog hand for **small, in-the-moment edits** — add book reader just bought, fix tag, queue rate update. Also own session-end flow: surface /tmp working files via `present_files` for reader to re-upload to project knowledge.
 
-**Bulk and structural catalog work runs on the Claude Code surface, not
-here.**  When the reader uploads a new `Library.csv` or wants to
-re-sync from scratch, point them at:
+**Bulk + structural catalog work runs on Claude Code surface, not here.** When reader uploads new `Library.csv` or wants re-sync from scratch, point to:
 
 ```bash
 python3 catalogue.py --library Library.csv --sync
 ```
 
-That umbrella command refreshes CSV-authoritative fields
-(pages, goodreads_rating, goodreads_reviews) on every existing entry,
-catalogues all new books in chunks, runs the comparables sync tail,
-exports the SQLite + encoded form, writes a sync audit summary, and
-git-commits + pushes both artefacts to the current feature branch so
-the reader can download from GitHub.
+That umbrella command refreshes CSV-authoritative fields (pages, goodreads_rating, goodreads_reviews) on every existing entry, catalogues all new books in chunks, runs comparables sync tail, exports SQLite + encoded form, writes sync audit summary, and git-commits + pushes both artefacts to current feature branch so reader can download from GitHub.
 
 ## Hard invariants
 
-1. **Catalog scope is objective, public, contextual only.**  Reader
-   sentiment never enters the catalog.  Per-book ratings →
-   `/tmp/log_pending_updates.csv`.  Reader's personal positives /
-   negatives / triggers → `/tmp/Profile.md` (owned by build /
-   quickref skills).
-2. **Confirm every write with `AskUserQuestion` before touching SQLite.**
-   Never silently mutate.
-3. **Single-book / short-series adds only.**  More than 3-5 books in
-   one go → defer to `catalogue.py --sync` on the Code surface.
-4. **Catalog write cadence: session-end flush only.**  In-session edits
-   go to `/tmp/Library_Catalog.sqlite`; they don't reach Drive until
-   the reader says "save catalog" or session ends.
+1. **Catalog scope is objective, public, contextual only.** Reader sentiment never enters catalog. Per-book ratings → `/tmp/log_pending_updates.csv`. Reader's personal positives / negatives / triggers → `/tmp/Profile.md` (owned by build / quickref skills).
+2. **Confirm every write with `AskUserQuestion` before touching SQLite.** Never silently mutate.
+3. **Single-book / short-series adds only.** More than 3-5 books in one go → defer to `catalogue.py --sync` on Code surface.
+4. **Catalog write cadence: session-end flush only.** In-session edits go to `/tmp/Library_Catalog.sqlite`; don't reach Drive until reader says "save catalog" or session ends.
 5. **Comparable_books reciprocity** — when adding A→B, also add B→A.
-6. **Reading_Log lives in project knowledge — read-only from chat.**
-   In-chat rate updates queue to `/tmp/log_pending_updates.csv`;
-   reader merges into the project file via re-upload.
-7. **Canonical `series_position` format.**  Use
-   `Book <N> (<Subseries Name> Book <M>)` for books in a named
-   subseries (e.g. `Book 29 (City Watch Book 6)`), or just `Book <N>`
-   for books with no subseries.
-8. **`series` field carries the parent series only.**  Use the
-   umbrella series name (`Discworld`, `Star Wars`, `Cosmere`); put
-   subseries info in `series_position`'s parenthetical.
+6. **Reading_Log lives in project knowledge — read-only from chat.** In-chat rate updates queue to `/tmp/log_pending_updates.csv`; reader merges into project file via re-upload.
+7. **Canonical `series_position` format.** Use `Book <N> (<Subseries Name> Book <M>)` for books in named subseries (e.g. `Book 29 (City Watch Book 6)`), or just `Book <N>` for books with no subseries.
+8. **`series` field carries parent series only.** Use umbrella series name (`Discworld`, `Star Wars`, `Cosmere`); put subseries info in `series_position`'s parenthetical.
 
 ## Inputs at session start
 
 Triage has bound:
 
-- `PROJECT_LOG` → `Reading_Log.csv` in project knowledge (read-only
-  for chat).
+- `PROJECT_LOG` → `Reading_Log.csv` in project knowledge (read-only for chat).
 - Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
-- `/tmp/log_pending_updates.csv` — seeded from project knowledge if
-  present (queued rate updates from prior sessions).
+- `/tmp/log_pending_updates.csv` — seeded from project knowledge if present (queued rate updates from prior sessions).
 
 ## Quickref / single-book lookups
 
-When the reader asks "what do you know about X?" without proposing a
-write, answer in chat — same shape as librarian-quickref.
+When reader asks "what do you know about X?" without proposing write, answer in chat — same shape as librarian-quickref.
 
 ```python
 import sqlite3, json
@@ -89,14 +60,11 @@ Three steps per edit.
 
 ### 1. Queue
 
-Hold proposed changes in conversation context.  Format the queue
-summary for the reader.  One bullet per change.  Updates: entry key +
-field + before → after.  New entries: title + author + key fields.
+Hold proposed changes in conversation context. Format queue summary for reader. One bullet per change. Updates: entry key + field + before → after. New entries: title + author + key fields.
 
 ### 2. Confirm via AskUserQuestion
 
-Mandatory.  Schema is deferred — load once at session start with
-`ToolSearch(query="select:AskUserQuestion", max_results=1)`.
+Mandatory. Schema deferred — load once at session start with `ToolSearch(query="select:AskUserQuestion", max_results=1)`.
 
 ```
 Q: "Apply these changes to your library?"
@@ -108,7 +76,7 @@ Options:
 
 ### 3. Apply via SQL
 
-Use parameter binding.  Never string-interpolate user content into SQL:
+Use parameter binding. Never string-interpolate user content into SQL:
 
 ```python
 import sqlite3
@@ -156,10 +124,7 @@ for src, dst in [(key, comp_key), (comp_key, key)]:
 conn.commit()
 ```
 
-Append a one-line summary of each applied edit to
-`/tmp/catalog_edits.log` so the session-end summary can render the
-change list without re-querying.  Report what changed in one short
-chat summary.
+Append one-line summary of each applied edit to `/tmp/catalog_edits.log` so session-end summary can render change list without re-querying. Report what changed in one short chat summary.
 
 ### Quality bar for new entries marked `status: complete`
 
@@ -169,15 +134,11 @@ chat summary.
 - ≥2 `taste_signals.positive`, ≥1 `taste_signals.negative`
 - `audio_suitability` set
 
-Below the bar → `status: needs_review`.  Indie books deserve more
-web search, not less — Goodreads rating + review count carry signal.
+Below bar → `status: needs_review`. Indie books deserve more web search, not less — Goodreads rating + review count carry signal.
 
 ## Bulk additions — defer to catalogue.py
 
-If the reader pastes a list of more than 3-5 books, asks to "re-import
-my library", says "I uploaded a new Library.csv", or otherwise
-proposes structural catalog work, refuse the in-chat path and surface
-the Code-side flow:
+If reader pastes list of more than 3-5 books, asks to "re-import my library", says "I uploaded a new Library.csv", or otherwise proposes structural catalog work, refuse in-chat path and surface Code-side flow:
 
 > "That's bulk catalog work — better suited to the Code-side script.
 > In a Claude Code session on the repo, run:
@@ -194,20 +155,14 @@ the Code-side flow:
 > say `continue` and triage will pick up the new catalog from
 > Drive."
 
-If the reader doesn't have access to Claude Code, fall back to the
-in-chat path with a hard ≤20-book cap per batch — but flag that
-running it locally is faster and produces a clean audit.
+If reader lacks Claude Code access, fall back to in-chat path with hard ≤20-book cap per batch — but flag that running locally is faster and produces clean audit.
 
 ## Reading-log rate updates (queue path)
 
-When the reader says "I finished *Hyperion* — 5 stars":
+When reader says "I finished *Hyperion* — 5 stars":
 
-1. **Confirm via `AskUserQuestion`:** "Add to log? Title=Hyperion,
-   author=Dan Simmons, rating=5, date=today (<today>). Yes / Edit /
-   Cancel."
-2. **On approval, append a CSV row to `/tmp/log_pending_updates.csv`**
-   (creating the file with the standard Reading_Log header if it
-   doesn't yet exist):
+1. **Confirm via `AskUserQuestion`:** "Add to log? Title=Hyperion, author=Dan Simmons, rating=5, date=today (<today>). Yes / Edit / Cancel."
+2. **On approval, append CSV row to `/tmp/log_pending_updates.csv`** (create file with standard Reading_Log header if not yet exists):
 
    ```python
    import csv, os, datetime
@@ -227,22 +182,15 @@ When the reader says "I finished *Hyperion* — 5 stars":
        ])
    ```
 
-3. **Confirm in chat:** "Logged.  At session end I'll surface this as
-   a CSV patch you can paste into your `Reading_Log.csv` and re-upload
-   to project knowledge.  In the meantime: if the book was on your
-   reading list, want me to remove it?"
+3. **Confirm in chat:** "Logged. At session end I'll surface this as CSV patch you can paste into `Reading_Log.csv` and re-upload to project knowledge. Meanwhile: if book was on reading list, want me to remove it?"
 
-4. **If the book was on `/tmp/Reading_List.md`**, edit the file in
-   place to remove the row same turn.
+4. **If book was on `/tmp/Reading_List.md`**, edit file in place to remove row same turn.
 
-If the reader asks "show me pending log updates", read
-`/tmp/log_pending_updates.csv` and render as a CSV-ready block for
-pasting.  When the reader says "log refreshed", `os.remove(path)`.
+If reader asks "show me pending log updates", read `/tmp/log_pending_updates.csv` and render as CSV-ready block for pasting. When reader says "log refreshed", `os.remove(path)`.
 
 ## Tag corrections / content flag updates
 
-Same queue → confirm → apply flow.  Watch the catalog/profile/log
-boundary:
+Same queue → confirm → apply flow. Watch catalog/profile/log boundary:
 
 | Reader signal | Where it goes |
 |---|---|
@@ -254,9 +202,7 @@ boundary:
 | "Most readers actually find the pacing a sticking point" | catalog (taste_signals.negative — public-reception correction) |
 | "I finished Y, rate it 4 stars" | reading-log queue (above) |
 
-Test before any catalog write: *would another reader using this
-catalog get value from this fact?*  Yes → catalog.  No → profile (or
-log queue for ratings).
+Test before any catalog write: *would another reader using this catalog get value from this fact?* Yes → catalog. No → profile (or log queue for ratings).
 
 ## needs_review queue
 
@@ -266,10 +212,7 @@ needs = list(conn.execute(
 ))
 ```
 
-For each entry, surface what's known and what's uncertain; ask the
-reader to fill gaps.  Confirmed corrections → queue + confirm + apply,
-with `status: complete` once the quality bar is met.  If the
-needs_review queue is dozens of rows, defer:
+For each entry, surface what known and what uncertain; ask reader to fill gaps. Confirmed corrections → queue + confirm + apply, with `status: complete` once quality bar met. If needs_review queue is dozens of rows, defer:
 
 > "There are <N> entries flagged needs_review.  Easier to clear them
 > in one pass with `python3 catalogue.py --library Library.csv
@@ -278,17 +221,13 @@ needs_review queue is dozens of rows, defer:
 
 ## Saving the catalog at session end (manual download flow)
 
-The cataloguer **never writes back to Drive directly**.  At session
-end (or when the reader says "save catalog" / "save those"), encode
-in the sandbox and present a download link.
+Cataloguer **never writes back to Drive directly**. At session end (or when reader says "save catalog" / "save those"), encode in sandbox and present download link.
 
 Trigger conditions:
 
-- Session is ending and at least one catalog write happened this
-  session.
+- Session ending and at least one catalog write happened this session.
 - Reader explicitly says "save catalog" / "save those".
-- Reader says "I'm done" / "that's all for today" and the edit count
-  is non-zero.
+- Reader says "I'm done" / "that's all for today" and edit count is non-zero.
 
 Flow:
 
@@ -311,7 +250,7 @@ with open(out_path, "w") as f:
     f.write(encoded_text)
 ```
 
-Render a chat message that surfaces the file as a download link:
+Render chat message surfacing file as download link:
 
 > "I made <N> change<s> to your catalog this session.  Here's the
 > updated catalog file — download it and replace
@@ -323,14 +262,11 @@ Render a chat message that surfaces the file as a download link:
 > Summary of changes (from `/tmp/catalog_edits.log`):
 > - <one line per change, plain language>"
 
-If the session has zero catalog edits, skip the catalog flush
-entirely.
+If session has zero catalog edits, skip catalog flush entirely.
 
 ## Session-end "surface files for re-upload" flow
 
-Other skills (build-setup, build-batches, build-finish) hand off here
-at session pause / end so the reader can carry their working state
-forward.
+Other skills (build-setup, build-batches, build-finish) hand off here at session pause / end so reader can carry working state forward.
 
 ```python
 import os, shutil
@@ -345,7 +281,7 @@ for src, name in candidates:
         shutil.copy(src, f"/mnt/user-data/outputs/{name}")
 ```
 
-Render a single chat message with all download links:
+Render single chat message with all download links:
 
 > "Here are your updated files — download each and replace the
 > matching one in your claude.ai project knowledge:
@@ -358,25 +294,19 @@ Render a single chat message with all download links:
 > into `Reading_Log.csv` before re-uploading.  Next session, triage
 > will read these files back from project knowledge."
 
-If a catalog write also happened this session, the catalog download
-link from the previous section appears in the same surface turn.
+If catalog write also happened this session, catalog download link from previous section appears in same surface turn.
 
 ## Boundaries — what cataloguer does NOT do
 
 - Render batch checklists (build-batches).
 - Run universal exclusion gate or candidate scoring (helper script).
 - Edit `/tmp/Profile.md` content (build / quickref skills own that).
-- **Bulk catalog work** — defer to `catalogue.py --sync` on the Code
-  surface.
-- Entry-point audit (`series_role`, `author_entry_point` backfill) —
-  that's `python3 catalogue.py --audit-entry-points` locally.
-- Comparables sweep — that's `python3 catalogue.py --sync-comparables`
-  locally (and it's already part of `--sync`).
+- **Bulk catalog work** — defer to `catalogue.py --sync` on Code surface.
+- Entry-point audit (`series_role`, `author_entry_point` backfill) — that's `python3 catalogue.py --audit-entry-points` locally.
+- Comparables sweep — that's `python3 catalogue.py --sync-comparables` locally (already part of `--sync`).
 
 ## Hand-offs
 
-- "Build me a list" / "what should I read next" → librarian-build-setup
-  (or -build-batches if a build is in progress).
+- "Build me a list" / "what should I read next" → librarian-build-setup (or -build-batches if build in progress).
 - "Anything like X?" / "is X worth my time?" → librarian-quickref.
-- "I uploaded a new Library.csv" / "re-sync everything" → Code-side
-  `python3 catalogue.py --library Library.csv --sync`.
+- "I uploaded a new Library.csv" / "re-sync everything" → Code-side `python3 catalogue.py --library Library.csv --sync`.
