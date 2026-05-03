@@ -1,10 +1,3 @@
-The file isn't stored in the compress skill directory — the task is asking me to output the fixed compressed content directly (this is the compress skill's cherry-pick fix step). I have the COMPRESSED content in the prompt and know exactly what to fix.
-
-Three changes needed:
-1. Add `Single five-option \`AskUserQuestion\`:` before the Phase 5 code block (restores lost 2nd occurrence)
-2. Change `Then render markdown links:` → `Then render markdown links so the reader can click + download:` (restores before-context for `build_state.json` inline code)  
-3. Restore the exact ORIGINAL text from after the `build_state.json` link through the Hand-offs and Boundaries sections (restores after-context)
-
 ---
 name: librarian-build-finish
 description: >
