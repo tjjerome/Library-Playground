@@ -2,12 +2,15 @@
 name: librarian-build-batches
 description: >
   Phases 1+2 of reading-list build — genre batches, reflection beats,
-  rejection probes, series scopes. Triggers on "let's start the batches",
-  "continue the build", "more horror picks", "next batch", or mid-build
-  opener with /tmp/build_state.json present. Reads /tmp/build_state.json,
-  edits /tmp/Profile.md and /tmp/Reading_List.md, runs batches through
-  AskUserQuestion(multiSelect), hands off to librarian-build-finish when
-  core ≥ 100. Also refine-mode entry when triage routed here.
+  rejection probes, series scopes. Triggers on a "ready to hear about
+  some books" affirmative handed in from build-setup, "continue the
+  build", "more horror picks", "more picks", "next picks", or any
+  mid-build opener with /tmp/build_state.json present. Reads
+  /tmp/build_state.json, edits /tmp/Profile.md and /tmp/Reading_List.md,
+  runs batches through AskUserQuestion(multiSelect), hands off to
+  librarian-build-finish when core ≥ 100. Also refine-mode entry when
+  triage routed here. Internal vocabulary only — never says "batch" in
+  chat.
 ---
 
 # librarian-build-batches — Phases 1 + 2 (and refine-mode)
@@ -56,7 +59,7 @@ Validate `build_state` shape (version, current_phase, goals, ledger, indie_floor
 
 Confirm orientation in one chat sentence:
 
-> "Three batches done — 23 books, indie 4/15, classic 7/12. Last batch Horror. Keep Horror or pivot?"
+> "We're 23 books in — indie 4/15, classic 7/12.  Last round was horror.  Stay with horror or pivot?"
 
 Never say "Phase 2". Use phase-free description.
 
@@ -124,7 +127,7 @@ Can't write personal-first clause → **pull replacement** — not strong enough
 
 Example shape:
 
-> **Horror batch** — four picks, your Buehlman 5/5 + slow-burn medieval love.
+> **A few horror picks** — drawn from your Buehlman 5/5 + slow-burn medieval love.
 >
 > **Between Two Fires — Christopher Buehlman** (432pp). Cosmic horror, plague-era France: fallen angel + orphan, 1348. Lyrical grimdark; adjacent to your Wolfe and Kay. Excellent audio (Erikson narrates).
 >
@@ -268,13 +271,56 @@ Indie/classic floors = FLOORS only. Until met, every Phase 2 candidate call runs
 
 (Refine-mode ignores 100-cap — operates on existing total.)
 
-## Hand-off to build-finish
+## Hand-off to build-finish — continue in same chat, surface files as checkpoint
 
-When `current_count >= 100`:
+When `current_count >= 100`, **do not break the session**.  Same
+pattern as setup→picks: /tmp working files persist between skills,
+the platform auto-compresses earlier turns, build-finish picks up in
+place.  No re-upload, no "open a new chat".
 
-> "Hit 100. Open new chat, say 'wrap it up' — upcoming releases, final review, Top 5 capstone."
+We **do** still surface the working files at this milestone as a
+checkpoint save — 100 books is the right moment to give the reader a
+durable snapshot before the stretch / final-review passes.
 
-Update: `current_phase: "phase-3"`, `phase_progress.phase_2: "done"`. Hand off to `library-cataloguer` session-end flow to surface `/tmp/Reading_List.md`, `/tmp/Profile.md`, `/tmp/build_state.json` as downloads.
+Steps:
+
+1. Update build state: `current_phase: "phase-3"`,
+   `phase_progress.phase_2: "done"`.
+2. **Surface /tmp files via `present_files`** as a checkpoint save:
+
+   ```python
+   import shutil
+   shutil.copy("/tmp/Profile.md",       "/mnt/user-data/outputs/Profile.md")
+   shutil.copy("/tmp/Reading_List.md",  "/mnt/user-data/outputs/Reading_List.md")
+   shutil.copy("/tmp/build_state.json", "/mnt/user-data/outputs/build_state.json")
+   ```
+
+3. Transition in librarian voice — short, no plumbing talk.  Roll the
+   checkpoint links into the same turn so it reads as a natural
+   pause-point:
+
+   > "That's a hundred.  I've put a checkpoint of your files here in
+   > case you want to save progress before we keep going:
+   >
+   > - [`Profile.md`](sandbox:/mnt/user-data/outputs/Profile.md)
+   > - [`Reading_List.md`](sandbox:/mnt/user-data/outputs/Reading_List.md)
+   > - [`build_state.json`](sandbox:/mnt/user-data/outputs/build_state.json)
+   >
+   > Want to look at what's coming out in the next year and pick five
+   > to start with?"
+
+   `AskUserQuestion`:
+   - "Yes — let's finish it"
+   - "Give me a minute first"
+   - "Other"
+
+4. **On affirmative**, hand off to `librarian-build-finish` in the
+   same chat — it reads `/tmp/build_state.json` directly.
+5. **On pause**, hand off to `library-cataloguer`'s session-end flow
+   for the full save-and-resume wrap.
+
+The earlier "open a new chat to wrap it up" pattern is removed; the
+checkpoint stays.
 
 ## Mid-build session pause — interim summary
 
@@ -319,6 +365,8 @@ Phase advance only on completion criteria.
 | project file / project knowledge | (silent — "your library data") |
 | picker artifact / multi-select | "a picker"; never expose the surface choice |
 | refine-mode / fresh-build mode | (silent — just behaviour) |
+| batch / next batch / genre batch | "the next handful of picks" / "a few <genre> picks" / "another round" — never "batch" |
+| "open a new chat to start the batches" | (removed — same chat continues; ask "are you ready to hear about some books?") |
 
 Things never to say (with replacements):
 

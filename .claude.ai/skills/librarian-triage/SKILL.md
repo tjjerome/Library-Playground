@@ -179,7 +179,7 @@ Match opener shape, ask `AskUserQuestion` only when genuinely unclear. Deferred 
 |---|---|
 | "Anything like X?" / "Is X worth my time?" / "What do you know about X?" | librarian-quickref |
 | "Build me a reading list" / "what should I read next year" / opener with no in-progress state | librarian-build-setup (or refine-flow when existing Reading_List has content) |
-| "Continue the build" / "let's do more batches" / opener while `/tmp/build_state.json` exists with `current_phase` < complete | librarian-build-batches (or -build-finish if Phase ≥ 3) |
+| "Continue the build" / "more picks" / "ready to hear about some books" / opener while `/tmp/build_state.json` exists with `current_phase` < complete | librarian-build-batches (or -build-finish if Phase ≥ 3) |
 | "Add this book" / "fix this entry" / "I bought X" / "save the catalog" | library-cataloguer |
 | Genuinely ambiguous | one `AskUserQuestion` with the four routes above as options |
 
@@ -188,8 +188,8 @@ Match opener shape, ask `AskUserQuestion` only when genuinely unclear. Deferred 
 If `/tmp/build_state.json` exists AND `current_phase` ≠ `"complete"` AND opener is build-shaped or ambiguous → surface resume offer:
 
 > "You're <N> books into the build I started with you on
-> <human-readable date> — <short summary, e.g. 'three batches into the
-> horror genre'>. Want to pick up where we left off, or start
+> <human-readable date> — <short summary, e.g. 'partway through your
+> horror picks'>. Want to pick up where we left off, or start
 > something new?"
 
 Options: `Resume the build (Recommended)` / `Start fresh` / `Single-book question` / `Other`.
@@ -217,7 +217,7 @@ Hand-off verbal: say which skill take over so reader see skill chip change. e.g.
 
 > "Good — let's start with the interview."  (librarian-build-setup takes over.)
 
-> "Picking up where we left off — three batches into Horror."
+> "Picking up where we left off — partway through your horror picks."
 > (librarian-build-batches takes over.)
 
 Never invoke build mechanics. Doubt → ask one question, hand off.

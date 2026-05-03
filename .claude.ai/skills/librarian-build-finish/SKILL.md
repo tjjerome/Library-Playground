@@ -4,12 +4,14 @@ description: >
   Phases 3-5 of reading-list build on claude.ai surface — upcoming
   releases via web search across four parallel pools, final review with
   borderline removals + missed picks + distribution check, and Top 5
-  "Start Here" capstone.  Triggers on "wrap it up", "let's finish the
-  build", "next phase" when /tmp/build_state.json shows core ≥ 100, or
-  any build-shaped opener with `current_phase: "phase-3"` or later.
-  Final-edits /tmp/Profile.md and /tmp/Reading_List.md, marks build
-  state complete, then surfaces all updated files via `present_files`
-  for reader to download and re-upload to project knowledge.
+  "Start Here" capstone.  Triggers on a "yes let's finish it"
+  affirmative handed in from build-batches, "wrap it up", "let's
+  finish the build", "next phase", any build-shaped opener with
+  `current_phase: "phase-3"` or later, or the moment build-batches
+  hits core ≥ 100 in the same chat.  Final-edits /tmp/Profile.md and
+  /tmp/Reading_List.md, marks build state complete, then surfaces all
+  updated files via `present_files` for reader to download and
+  re-upload to project knowledge.
 ---
 
 # librarian-build-finish — Phases 3 + 4 + 5
@@ -25,7 +27,9 @@ All eleven from build-batches carry over. Two more:
 
 ## Inputs at session start
 
-Triage handed off because `build_state.current_phase >= "phase-3"`.
+Triage handed off (fresh chat) OR build-batches handed off in place
+(same chat, just hit core ≥ 100), because
+`build_state.current_phase >= "phase-3"`.
 
 ```python
 import json
@@ -41,7 +45,15 @@ Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
 
 Confirm orientation:
 
-> "We're at 100 + <n stretch> books. Two more passes: upcoming releases for next year, then full walk-through, then five to start with. Ready?"
+- **Same-chat hand-off from build-batches** (reader just answered "yes
+  let's finish it" to the 100-book transition): skip the redundant
+  recap.  Open straight into Phase 3 step 1 — the wish-list pass for
+  upcoming releases.
+- **Fresh chat / resumed session**:
+
+  > "We're at 100 + <n stretch> books.  Two more passes: upcoming
+  > releases for the next year, full walk-through, then five to start
+  > with.  Ready?"
 
 ## Phase 3 — new and upcoming releases (10-15)
 
