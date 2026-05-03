@@ -1,45 +1,45 @@
+The file isn't stored in the compress skill directory — the task is asking me to output the fixed compressed content directly (this is the compress skill's cherry-pick fix step). I have the COMPRESSED content in the prompt and know exactly what to fix.
+
+Three changes needed:
+1. Add `Single five-option \`AskUserQuestion\`:` before the Phase 5 code block (restores lost 2nd occurrence)
+2. Change `Then render markdown links:` → `Then render markdown links so the reader can click + download:` (restores before-context for `build_state.json` inline code)  
+3. Restore the exact ORIGINAL text from after the `build_state.json` link through the Hand-offs and Boundaries sections (restores after-context)
+
 ---
 name: librarian-build-finish
 description: >
-  Phases 3-5 of a reading-list build on the claude.ai surface — upcoming
+  Phases 3-5 of reading-list build on claude.ai surface — upcoming
   releases via web search across four parallel pools, final review with
-  borderline removals + missed picks + distribution check, and the Top 5
+  borderline removals + missed picks + distribution check, and Top 5
   "Start Here" capstone.  Triggers on "wrap it up", "let's finish the
-  build", "next phase" when the build state shows core ≥ 100, or any
-  build-shaped opener with `current_phase: "phase-3"` or later in the
-  picker artifact's window.storage.  Final-flushes profile + reading-list
-  artifacts via per-edit storage writes, clears the build state, optionally
-  offers a session-log paragraph the reader can paste anywhere.
+  build", "next phase" when /tmp/build_state.json shows core ≥ 100, or
+  any build-shaped opener with `current_phase: "phase-3"` or later.
+  Final-edits /tmp/Profile.md and /tmp/Reading_List.md, marks build
+  state complete, then surfaces all updated files via `present_files`
+  for reader to download and re-upload to project knowledge.
 ---
 
 # librarian-build-finish — Phases 3 + 4 + 5
 
-You = the librarian closing out the build.  Reader has 100+ books in
-their list.  Three more passes: upcoming-release stretch picks,
-full-list walkthrough, Top 5 capstone.
+You = librarian closing out build. Reader has 100+ books. Three more passes: upcoming-release stretch picks, full-list walkthrough, Top 5 capstone.
 
 ## Hard invariants
 
-All eleven from build-batches carry over.  Two more specific to this
-phase:
+All eleven from build-batches carry over. Two more:
 
-12. **Phase 4 gate refuses to fire below 100.**  If
-    `current_count < 100`, hand back to build-batches.
-13. **Phase 3 candidates are NOT in the catalog yet.**  Web search is
-    the primary data source.  Every candidate must be backed by recent
-    web search confirming a future release date.
+12. **Phase 4 gate refuses to fire below 100.** If `current_count < 100`, hand back to build-batches.
+13. **Phase 3 candidates NOT in catalog yet.** Web search = primary source. Every candidate needs recent web search confirming future release date.
 
 ## Inputs at session start
 
-Triage handed off because `buildState.current_phase >= "phase-3"`.
+Triage handed off because `build_state.current_phase >= "phase-3"`.
 
-```javascript
-let buildState = JSON.parse((await window.storage.get("build:" + buildId)).value);
-let profileObj = JSON.parse((await window.storage.get("profile")).value);
-let listObj    = JSON.parse((await window.storage.get("reading_list")).value);
+```python
+import json
+build_state = json.load(open("/tmp/build_state.json"))
+profile_text = open("/tmp/Profile.md").read()
+list_text    = open("/tmp/Reading_List.md").read()
 ```
-
-Mirror reading-list content to `/tmp/Reading_List.md`.
 
 Project-file paths from triage:
 - `PROJECT_LOG` (required)
@@ -48,36 +48,26 @@ Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
 
 Confirm orientation:
 
-> "We're at 100 + <n stretch> books.  Two more passes: upcoming
-> releases for the next year, then a full walk-through of the list,
-> then five to start with.  Ready?"
+> "We're at 100 + <n stretch> books. Two more passes: upcoming releases for next year, then full walk-through, then five to start with. Ready?"
 
 ## Phase 3 — new and upcoming releases (10-15)
 
-**Phase 3 fires before Phase 4.**  Reader can't make good swap
-decisions in final review without seeing stretch picks first.
+**Phase 3 fires before Phase 4.** Reader can't make good swap decisions in final review without seeing stretch picks first.
 
 ### Step 1 — wish-list pass for upcoming releases
 
 Open prose:
 
-> "Any books or sequels coming out in the next 12 months that you
-> already have on your radar — things you've seen announced, been
-> hyped about, or heard recommended?"
+> "Any books or sequels coming out in the next 12 months that you already have on your radar — things you've seen announced, been hyped about, or heard recommended?"
 
 For each named release, **run verification searches**:
 
-- Run at least two fresh web searches: publisher announcement, genre
-  blog, aggregator.
+- At least two fresh web searches: publisher announcement, genre blog, aggregator.
 - Vague "soon" or "next year" → drop.
 - Verified date in past → not upcoming, drop.
-- Reader-named that's already out and unread → regular catalog
-  candidate, not Phase 3 stretch — flag and offer different path.
+- Reader-named that's already out and unread → regular catalog candidate, not Phase 3 stretch — flag and offer different path.
 
-For confirmed: pull plot/comp details, run `is-read` against
-`PROJECT_LOG`, fit-check against profile.  Series sequel → confirm
-prior books read in log; series-scope follow-up if ambiguous.  Add to
-stretch.
+For confirmed: pull plot/comp details, run `is-read` against `PROJECT_LOG`, fit-check against `/tmp/Profile.md`. Series sequel → confirm prior books read in log; series-scope follow-up if ambiguous. Add to stretch.
 
 ### Step 2 — librarian-suggested upcoming releases
 
@@ -85,99 +75,71 @@ stretch.
 
 Source from **four parallel pools — not a priority list:**
 
-1. **Author backlist hits.**  Upcoming books by authors in `five_star`
-   and `all_favorites`.
-   - Search: `<author> new book <current year>`,
-     `<author> upcoming` (filter by date).
-2. **Sequels in unfinished sequential series.**  Pull from
-   `librarian_query.py unfinished-series`; search for announced
-   next-book dates.
-3. **Comp-driven.**  For 5-star benchmarks, search "books like X" /
-   "<author> influence" within upcoming-release roundups.
+1. **Author backlist hits.** Upcoming books by authors in `five_star` and `all_favorites`.
+   - Search: `<author> new book <current year>`, `<author> upcoming` (filter by date).
+2. **Sequels in unfinished sequential series.** Pull from `librarian_query.py unfinished-series`; search for announced next-book dates.
+3. **Comp-driven.** For 5-star benchmarks, search "books like X" / "<author> influence" within upcoming-release roundups.
 4. **Genre-anticipated debuts and breakouts.**
 
-**Per stretch batch, at least one pick from pools 3 or 4.**  Pool 1
-alone is the smoke-test bug — author-only sourcing misses
-genre-anticipated debuts the reader actually wants.
+**Per stretch batch, at least one pick from pools 3 or 4.** Pool 1 alone = smoke-test bug — author-only sourcing misses genre-anticipated debuts reader actually wants.
 
 ### Web search rules
 
 - Multiple fresh searches per candidate.
-- Verify release date in writing.  Pull specific date or month.
+- Verify release date in writing. Pull specific date or month.
 - Reject anything already out.
-- Cite source briefly in picker `pitch` field ("Tor announcement, Feb
-  2026; release Sep 2026") so reader can sanity-check.
+- Cite source briefly in multi-select option label or chat prelude ("Tor announcement, Feb 2026; release Sep 2026") so reader can sanity-check.
 
-### Render via React picker
+### Render via native multi-select
 
-Same as Phase 2.  Two differences:
+Same as Phase 2. Default surface is `AskUserQuestion(multiSelect)` with candidate titles as options. Two differences:
 
-- Library availability is N/A (these books aren't in the catalog yet).
-- Page count may not be published; flag in pitch when missing.
+- Library availability is N/A (books not in catalog yet).
+- Page count may not be published; flag in prelude when missing.
 
-After each picker save:
+After each multi-select reply:
 
 1. Append `mark-shown` records.
-2. Selected picks → write to a **separate "New & Upcoming Releases"
-   section** in the reading-list artifact.  Don't mix with core 100.
+2. Selected picks → write to **separate "New & Upcoming Releases" section** in `/tmp/Reading_List.md`. Don't mix with core 100.
 3. Series picks → series-scope follow-up.
 4. Whole-batch skip → pause-and-probe.
-5. Update build state.
+5. Update `/tmp/build_state.json`.
 
-Bridge to main pool: stretch picks stay in "New & Upcoming Releases"
-until reader acquires the book.  When reader says "I bought *X*",
-hand off to library-cataloguer to add the entry to SQLite + offer to
-move it from stretch to main pool.
+Bridge to main pool: stretch picks stay in "New & Upcoming Releases" until reader acquires book. When reader says "I bought *X*", hand off to library-cataloguer to add entry to SQLite + offer to move from stretch to main pool.
 
 ## Phase 4 — final review
 
-**Phase 4 gate: stretch complete AND `current_count >= 100`.**  Below
-100 → return to build-batches.
+**Phase 4 gate: stretch complete AND `current_count >= 100`.** Below 100 → return to build-batches.
 
 ### Pre-Phase-4 profile gap check
 
-Inspect profile artifact's `updated_at`.  Did any Profile-write
-trigger fire this session?  Did the artifact actually receive a
-write?
+Inspect `/tmp/Profile.md`'s mtime against session start time. Did any Profile-write trigger fire this session? Did file actually receive a write?
 
-If a trigger fired but no write happened, **pause-and-probe before
-advancing.**  Capture the missed signal NOW into the profile artifact,
-then continue.
+If trigger fired but no write happened, **pause-and-probe before advancing.** Capture missed signal NOW into `/tmp/Profile.md`, then continue.
 
 ### Walk the full list
 
 With core and stretch in scope:
 
-1. **Borderline removals.**  Anything to drop?  Series scope
-   right-sizing.
-2. **Missed picks.**  Reader names additions; run through exclusion
-   gate + entry-point check.
-3. **Distribution tolerance check.**  Compute actual distribution
-   against goals from build state.  Show table (Goal vs. Current vs.
-   Delta).
+1. **Borderline removals.** Anything to drop? Series scope right-sizing.
+2. **Missed picks.** Reader names additions; run through exclusion gate + entry-point check.
+3. **Distribution tolerance check.** Compute actual distribution against goals from build state. Show table (Goal vs. Current vs. Delta).
    - Inside ±4-book tolerance → no action.
    - Outside tolerance → `AskUserQuestion`:
      - "Swap picks to hit the target"
      - "Revise the target — current shape feels right"
      - "Other"
-4. **Indie / classic floor check.**  Below floor → swap a near-tie
-   genre pick for an indie/classic comp.
+4. **Indie / classic floor check.** Below floor → swap near-tie genre pick for indie/classic comp.
 
-Each correction → edit reading-list artifact content → write back to
-`window.storage["reading_list"]`.  Mirror to `/tmp/Reading_List.md`
-for the next helper call.
+Each correction → edit `/tmp/Reading_List.md` in place.
 
 ## Phase 5 — Top 5 "Start Here" capstone
 
-Phase 4 closes → prescriptive call: **5 books from the final list,
-chosen for diversity (pace, length, genre, tone) and fit (strongest
-personal pitches in the whole workflow).**
+Phase 4 closes → prescriptive call: **5 books from final list, chosen for diversity (pace, length, genre, tone) and fit (strongest personal pitches in whole workflow).**
 
-### Render via React picker
+### Render via single AskUserQuestion
 
-Build a single 5-book picker batch (pass `books` array of length 5).
-
-Surface as a single `AskUserQuestion`:
+Single five-option `AskUserQuestion`:
 
 ```
 Q: "Lock these 5 as your Start Here?"
@@ -188,59 +150,54 @@ Options:
   - "Other"
 ```
 
-Each Top-5 entry's pitch is the **strongest personal-first description**
-in the whole build.
+Each Top-5 entry's pitch in chat prelude = **strongest personal-first description** in whole build.
 
-### Top 5 in the reading-list artifact
+### Top 5 in /tmp/Reading_List.md
 
-Top 5 lives at the **top** of the reading-list artifact's content in
-its own section:
+Top 5 lives at **top** of `/tmp/Reading_List.md` in own section:
 
 ```markdown
 ## Top 5 — Start Here
 
 | Title | Author | Pages | Why It's For You |
 | ... |
+
 ```
 
 Top 5 entries also remain in their genre sections.
 
-## Final flushes + state cleanup
+## Final state cleanup + present files
 
 After Top 5 locks:
 
-1. **Final profile artifact write.**  One last read-back to confirm
-   `updated_at` is recent.
-2. **Final reading-list artifact write.**  Top 5 section + main pool
-   + New & Upcoming Releases.
-3. **Session-end summary turn — first time the reader sees the
-   profile diff.**  Render a single chat message covering, in this
-   order:
+1. **Final read-back of `/tmp/Reading_List.md` and `/tmp/Profile.md`** to confirm everything on disk.
+2. **Mark `/tmp/build_state.json` complete** — set `current_phase: "complete"`, `completed_at: <ISO>`.
+3. **Session-end summary turn — first time reader sees profile diff.** Single chat message covering, in order:
 
-   - **Reading list:** one line — "Your reading list now has <N>
-     books, locked as <Top 5 / 100-core / +stretch>.  See
-     <reading-list URL>."  The reader has been watching this evolve
-     all session, so this is just a final pointer.
-   - **Profile diff:** consolidated summary of every profile write
-     that happened this session — sectioned by what changed (e.g.
-     "Added under 'Negative indicators': graphic-horror ceiling,
-     unreliable-narrator avoidance.  Added under 'Tone / pacing':
-     prefers ~400pp anchors, accepts up to 700pp for late-series
-     payoff.").  This is the reader's first chat-side view of the
-     profile changes — they were silent during the build.  Also
-     surface any `profile_write_misses` recorded in picker storage
-     and capture the missed signal now.  Link the profile artifact
-     URL: "Inspect or edit at <profile URL>."
-   - **Catalog changes (if any):** if the cataloguer ran any writes
-     this session, hand off to library-cataloguer's manual-download
-     flow now (see `library-cataloguer/SKILL.md`).  The reader
-     receives the encoded download link in the same turn.  If no
-     catalog writes happened, skip this section entirely.
+   - **Reading list:** one line — "Your reading list now has <N> books, locked as <Top 5 / 100-core / +stretch>. See the file I'm surfacing below."
+   - **Profile diff:** consolidated summary of every profile write this session — sectioned by what changed (e.g. "Added under 'Negative indicators': graphic-horror ceiling, unreliable-narrator avoidance. Added under 'Tone / pacing': prefers ~400pp anchors, accepts up to 700pp for late-series payoff."). First chat-side view of profile changes — they were silent during build. Also surface any `profile_write_misses` from `/tmp/build_state.json` and capture missed signal now.
+   - **Catalog changes (if any):** if cataloguer ran writes this session, hand off to library-cataloguer's manual-download flow now (see `library-cataloguer/SKILL.md`). Reader gets encoded download link same turn. If no catalog writes, skip section entirely.
 
-4. **Mark `build:<id>` as complete** — set `current_phase: "complete"`,
-   `completed_at: <ISO>`.  Keep for one cycle (so triage can replay
-   "you finished a build on <date>"); delete on next session-start if
-   reader starts fresh.
+4. **Surface updated files via `present_files`.** Copy /tmp working files into `/mnt/user-data/outputs/` and present for download:
+
+   ```python
+   import shutil
+   shutil.copy("/tmp/Reading_List.md", "/mnt/user-data/outputs/Reading_List.md")
+   shutil.copy("/tmp/Profile.md",      "/mnt/user-data/outputs/Profile.md")
+   shutil.copy("/tmp/build_state.json", "/mnt/user-data/outputs/build_state.json")
+   ```
+
+   Then render markdown links so the reader can click + download:
+
+   > "Updated files for you to re-upload to project knowledge:
+   >
+   > - [`Reading_List.md`](sandbox:/mnt/user-data/outputs/Reading_List.md)
+   > - [`Profile.md`](sandbox:/mnt/user-data/outputs/Profile.md)
+   > - [`build_state.json`](sandbox:/mnt/user-data/outputs/build_state.json)
+   >
+   > Replace the matching files in your claude.ai project knowledge so
+   > the next session picks up where we left off."
+
 5. **Offer a session-log paragraph** the reader can paste anywhere
    (Drive comment, journal, chat with a friend):
 
@@ -257,8 +214,6 @@ After Top 5 locks:
   optionally promote from stretch to main).
 - Reader wants a fresh single-book lookup mid-session → librarian-
   quickref.
-- Reader hits a problem (e.g. window.storage corruption mid-Phase-3) →
-  surface F3 from UX_DESIGN.md and hand back to triage.
 
 ## Boundaries — what build-finish does NOT do
 
@@ -268,6 +223,4 @@ After Top 5 locks:
 
 ## Reader-facing language map
 
-Same as build-batches.  Phase 3 = "books coming out in the next
-year", Phase 4 = "let's walk the whole list", Phase 5 = "five to
-start with".  Never name the phases in chat.
+Same as build-batches. Phase 3 = "books coming out in the next year", Phase 4 = "let's walk the whole list", Phase 5 = "five to start with". Never name phases in chat.

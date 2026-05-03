@@ -1,25 +1,15 @@
 // Library-Playground reading-list artifact — claude.ai port.
 //
-// Holds the reader's `Reading_List.md` content in `window.storage` and
-// renders it.  Skills (build-setup, build-batches, build-finish) write
-// here via `window.storage.set("reading_list", "...")`; the artifact is
-// the persistence layer the reader sees.
-//
-// Storage key: `reading_list`
-// Stored value: { version: 1, content: "<markdown text>", updated_at: "<ISO>" }
-//
-// READ-ONLY by design.  The reader does NOT directly edit the list —
-// every add must go through the librarian's batch picker so the
-// exclusion gate, deep-cut floor, and series scope follow-up rules
-// stay enforced.  If the reader wants to remove or swap, they tell
-// the librarian in chat.
-//
-// IMPORTANT: window.storage only works on PUBLISHED artifacts.
+// Pure read-only renderer for the reader's `Reading_List.md` content.
+// Skills pass content via the `seed` prop (markdown text).  No
+// window.storage, no persistence, no preflight.  The source of truth
+// for Reading_List.md lives in /mnt/project/Reading_List.md (uploaded
+// to project knowledge by the reader); the librarian's in-session
+// edits land in /tmp/Reading_List.md and surface at session end via
+// present_files for the reader to download and re-upload.
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 
-const STORAGE_KEY = "reading_list";
-const STORAGE_VERSION = 1;
 const SEED = `# Reading List
 
 _The librarian builds this list as you converse.  Every entry was a
@@ -27,26 +17,6 @@ deliberate pick from a batch — the order doesn't imply reading order,
 it's a TBR pool you can browse by mood.  To remove or swap, tell the
 librarian in chat._
 `;
-
-async function safeGet(key) {
-  try {
-    if (!window.storage || typeof window.storage.get !== "function") return null;
-    const r = await window.storage.get(key);
-    if (!r) return null;
-    if (typeof r.value === "string") {
-      try { return JSON.parse(r.value); } catch { return null; }
-    }
-    return r.value ?? null;
-  } catch { return null; }
-}
-
-async function safeSet(key, value) {
-  try {
-    if (!window.storage || typeof window.storage.set !== "function") return false;
-    await window.storage.set(key, JSON.stringify(value));
-    return true;
-  } catch { return false; }
-}
 
 function parseMarkdown(text) {
   const lines = text.split("\n");
@@ -100,7 +70,6 @@ function parseTable(rows) {
   const cells = rows.map((row) =>
     row.trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim())
   );
-  // Drop separator row (`|---|---|`).
   return cells.filter((cells) => !cells.every((c) => /^[-:\s]+$/.test(c)));
 }
 
@@ -195,35 +164,8 @@ function MarkdownView({ source }) {
 }
 
 export default function ReadingListArtifact(props) {
-  const seed = props.seed || SEED;
-  const [content, setContent] = useState(seed);
-  const [updatedAt, setUpdatedAt] = useState(null);
-  const [phase, setPhase] = useState("loading");
-  const [storageWarning, setStorageWarning] = useState(false);
+  const content = props.seed || SEED;
   const [showRaw, setShowRaw] = useState(false);
-
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      const stored = await safeGet(STORAGE_KEY);
-      if (cancelled) return;
-      if (stored && typeof stored.content === "string") {
-        setContent(stored.content);
-        setUpdatedAt(stored.updated_at || null);
-      } else if (props.storageEnabled !== false) {
-        const ok = await safeSet(STORAGE_KEY, {
-          version: STORAGE_VERSION,
-          content: seed,
-          updated_at: new Date().toISOString(),
-        });
-        if (!ok) setStorageWarning(true);
-        const verify = await safeGet(STORAGE_KEY);
-        if (!verify && props.storageEnabled !== false) setStorageWarning(true);
-      }
-      setPhase("viewing");
-    })();
-    return () => { cancelled = true; };
-  }, []);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
@@ -232,9 +174,10 @@ export default function ReadingListArtifact(props) {
           <div>
             <h1 className="text-xl font-semibold">Reading list</h1>
             <p className="text-xs text-slate-500">
-              Built by the librarian as you converse. Read-only — to add,
-              remove, or swap, tell the librarian in chat.
-              {updatedAt && <> Last updated {fmtTs(updatedAt)}.</>}
+              Read-only preview of your reading list.  Built and edited by
+              the librarian as you converse — at session end you'll get
+              a download link to replace your project-knowledge
+              `Reading_List.md`.
             </p>
           </div>
           <button
@@ -245,8 +188,6 @@ export default function ReadingListArtifact(props) {
             {showRaw ? "View rendered" : "View raw"}
           </button>
         </header>
-
-        {storageWarning && <StorageWarning />}
 
         <article className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           {showRaw ? (
@@ -260,30 +201,4 @@ export default function ReadingListArtifact(props) {
       </div>
     </div>
   );
-}
-
-function StorageWarning() {
-  return (
-    <div className="mb-4 rounded-2xl bg-amber-50 p-4 ring-1 ring-amber-200">
-      <p className="text-sm font-medium text-amber-900">
-        Heads up — list updates may not be saving.
-      </p>
-      <p className="mt-1 text-sm text-amber-800">
-        This artifact has to be published for storage to work. Click the
-        Publish button on the artifact panel, then refresh.
-      </p>
-    </div>
-  );
-}
-
-function fmtTs(iso) {
-  try {
-    const d = new Date(iso);
-    return d.toLocaleString(undefined, {
-      year: "numeric", month: "short", day: "numeric",
-      hour: "numeric", minute: "2-digit",
-    });
-  } catch {
-    return iso;
-  }
 }

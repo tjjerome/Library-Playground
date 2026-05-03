@@ -1,83 +1,55 @@
 ---
 name: librarian-build-setup
 description: >
-  First half of a fresh reading-list build on the claude.ai surface.  Runs
-  the unfinished-series gate (Phase 0), the taste interview (using any
-  existing project-file or artifact Profile.md as a seed), the goals
-  conversation, and the wish-list pass.  Honours an existing Reading_List
-  via the refine-vs-fresh prompt that triage already asked.  Writes profile
-  and reading-list artifact storage per-edit, persists build state to the
-  picker artifact's window.storage, then hands off to
-  librarian-build-batches.  Triggers on "build me a reading list", "what
-  should I read next year", "plan my reading", or fresh-start routings from
-  triage.
+  First half of reading-list build. Runs unfinished-series gate (Phase 0),
+  taste interview (seeded from Profile.md), goals talk, wish-list pass.
+  Honors existing Reading_List via refine-vs-fresh prompt from triage.
+  Edits /tmp/Profile.md and /tmp/Reading_List.md in place, persists state to
+  /tmp/build_state.json, hands off to librarian-build-batches.
+  Triggers on "build me a reading list", "what should I read next year",
+  "plan my reading", or fresh-start from triage.
 ---
 
 # librarian-build-setup — Phase 0 + interview + goals + wishlist
 
-You = the librarian's intake conversation.  Outputs:
+You = librarian's intake conversation. Outputs:
 
-- `profile` artifact → populated Profile.md (seeded from project file
-  if present)
-- `reading-list` artifact → seeded with Phase 0 picks + wish-list
-  selections
-- `picker` artifact's `build:<id>` JSON → goals + ledger + phase state
-  that `librarian-build-batches` resumes from
+- `/tmp/Profile.md` → taste profile (seeded from project file if present)
+- `/tmp/Reading_List.md` → Phase 0 picks + wish-list
+- `/tmp/build_state.json` → goals + ledger + phase state; `librarian-build-batches` resumes from this
+
+All three surfaced via `present_files` at session end (build-finish or cataloguer's session-end flow). Reader download + replace in project knowledge.
 
 ## Hard invariants (carry over from the librarian spec)
 
-1. **Universal exclusion gate** — every candidate that reaches the React
-   picker clears `is_already_read` AND `is_on_list` AND the shown-ledger.
-   Owned by `scripts/librarian_query.py candidates`.  Never duplicate
-   inline.
+1. **Universal exclusion gate** — every candidate at multi-select clears `is_already_read` AND `is_on_list` AND shown-ledger. Owned by `scripts/librarian_query.py candidates`. No inline duplicate.
 2. **Core target = 100, fixed.**
-3. **Conservative author entry-point fallback** — helper applies it by
-   default.
+3. **Conservative author entry-point fallback** — helper applies by default.
 4. **Phase 0 unfinished-series gate** — runs before any candidate batch.
-5. **Per-batch deep-cut floor** — relevant in the wishlist multi-pick.
+5. **Per-batch deep-cut floor** — relevant in wishlist multi-pick.
 6. **Open prose questions are turn-ending.**
 7. **Anti-jargon contract.**
 8. **Deep-cut silence.**
-9. **Profile artifact per-edit storage write — silent.**  No
-   mid-session chat confirmation; build-finish surfaces the
-   consolidated diff at session end.
-10. **Reading-list artifact per-edit storage write — user-visible.**
-    One-line acknowledgement on each confirmed pick.
-11. **Build state lives in the picker artifact's `window.storage`** under
-    `build:<build_id>`.
+9. **Profile edits are silent.** Append to `/tmp/Profile.md`; consolidated diff surfaces at session end (build-finish handles it).
+10. **Reading-list edits are user-visible.** One-line acknowledgement on every confirmed pick.
+11. **Build state lives in `/tmp/build_state.json`.**
 
 ## Inputs at session start
 
-Triage has bound:
+Triage bound:
 
-- `PROJECT_LOG` → `Reading_Log.csv` in project knowledge.  **Required**
-  for full builds.  Triage already ran the freshness check; if it was
-  >4 months old, the reader chose to refresh OR proceed anyway.
-- `PROJECT_PROFILE` → optional `Profile.md` seed in project knowledge.
-- `PROJECT_LIST` → optional `Reading_List.md` seed in project knowledge.
-- Profile artifact content → already seeded by triage.  Read with
-  `window.storage.get("profile")`.
-- Reading-list artifact content → already seeded by triage.  Read with
-  `window.storage.get("reading_list")`.
+- `PROJECT_LOG` → `Reading_Log.csv` in project knowledge. **Required** for full builds. Triage ran freshness check; if >4 months old, reader chose refresh OR proceed.
+- `/tmp/Profile.md` — seeded by triage from `PROJECT_PROFILE` (or empty stub).
+- `/tmp/Reading_List.md` — seeded by triage from `PROJECT_LIST` (or empty stub).
+- `/tmp/build_state.json` — only present if previous session paused mid-build (triage offered resume).
 - Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
-
-Mirror Reading_List artifact content to `/tmp/Reading_List.md` so the
-helper can read it via `--reading-list`:
-
-```bash
-echo "$READING_LIST_CONTENT" > /tmp/Reading_List.md
-```
 
 ## Existing-Profile handling — refine, don't overwrite
 
-Before running the taste interview, inspect the profile artifact's
-content:
+Before taste interview, inspect `/tmp/Profile.md`:
 
-- **Empty seed** (only the boilerplate "# Reader Profile" header) →
-  full taste interview from Step 2 (below).
-- **Populated** (non-empty sections beyond the header) → **partial
-  interview**.  Skip MC questions whose answers are already in the
-  profile.  Confirm with the reader:
+- **Empty seed** (only "# Reader Profile" header) → full taste interview, Step 2.
+- **Populated** (non-empty sections beyond header) → **partial interview**. Skip MC questions already in profile. Confirm:
 
   > "Your existing profile covers: <list of sections, e.g. Tone (lyrical
   > grimdark / mixed), Pacing (slow-burn), Audio split (60/40), Series
@@ -89,8 +61,7 @@ content:
   - "Run the full interview again — taste shifted"
   - "Other"
 
-- **Stale** (artifact updated_at >10 months ago) → recommend full
-  interview, defer to reader:
+- **Stale** (project-file mtime >10 months ago) → recommend full interview, defer to reader:
 
   > "Your profile was last updated <date> — about <X> months ago.
   > Tastes drift.  Want a fresh interview, or work from the existing
@@ -101,18 +72,15 @@ content:
   - "Work from the existing profile"
   - "Other"
 
-In both gap-probe paths, prepend a short note to the profile noting the
-session date so future freshness checks have a recent timestamp.
+In both gap-probe paths, prepend session date note to profile for future freshness checks.
 
 ## Build-id + initial build state
 
-Compute or generate a `build_id` — short slug + ISO date, e.g.
-`build-2026-05-02-fantasy-prime`.  Write a starting state object to
-the picker artifact's `window.storage`:
+Compute `build_id` — short slug + ISO date, e.g. `build-2026-05-02-fantasy-prime`. Write starting state to `/tmp/build_state.json`:
 
 ```json
 {
-  "version": 1,
+  "version": 2,
   "build_id": "<id>",
   "started_at": "<ISO8601>",
   "current_phase": "phase-0",
@@ -128,8 +96,7 @@ the picker artifact's `window.storage`:
 }
 ```
 
-Persist via `window.storage.set("build:<id>", ...)` against the picker
-artifact.  Also write `latest_build` = `<id>` for resume.
+Persist with `json.dump(state, open("/tmp/build_state.json", "w"), indent=2)`. Re-read each significant step for coherence.
 
 ## Tool prep
 
@@ -139,8 +106,7 @@ Load `AskUserQuestion` once:
 ToolSearch(query="select:AskUserQuestion", max_results=1)
 ```
 
-If unavailable, fall back to prose and tell the reader.  Most build
-work is unworkable without it.
+If unavailable, fall back to prose and tell reader. Most build work needs it.
 
 ## Phase 0 — unfinished-series gate
 
@@ -151,10 +117,7 @@ python3 scripts/librarian_query.py unfinished-series \
     --reading-list /tmp/Reading_List.md
 ```
 
-Returns JSON list of series rated ≥4.0 with no `*completed` flag and an
-unread next book in the catalog.  Surface the full list in chat as a
-paragraph (one line per series, with last-book / next-book / ratings) —
-not a checklist.
+Returns JSON list: series rated ≥4.0, no `*completed` flag, unread next book in catalog. Surface list in chat, one line per series (last-book / next-book / ratings) — not checklist.
 
 For each entry, route via `AskUserQuestion`:
 
@@ -167,123 +130,87 @@ Options:
   - "Decline — not for me right now"
 ```
 
-Walk through one at a time.  After each accept:
+One at a time. After each accept:
 
-1. Append the picks to the reading-list artifact's content + flush:
+1. Append picks to `/tmp/Reading_List.md`:
 
-   ```javascript
-   let rl = JSON.parse((await window.storage.get("reading_list")).value);
-   rl.content = rl.content + "\n## Series continuations\n\n| ... |";
-   rl.updated_at = new Date().toISOString();
-   await window.storage.set("reading_list", JSON.stringify(rl));
+   ```bash
+   # Append a "## Series continuations" section if it doesn't already
+   # exist; insert table rows beneath it.  Use Python's standard
+   # markdown editing (no helper needed for plain appends).
    ```
 
-   Then mirror the new content to `/tmp/Reading_List.md` for the next
-   helper call.
+2. Update `/tmp/build_state.json`'s `phase_progress.phase_0`.
 
-2. Update build state's `phase_progress.phase_0`.
-
-**No genre batch fires until every Phase 0 entry is routed.**  Hand off
-to build-batches only after Phase 0 closes.
+**No genre batch fires until every Phase 0 entry is routed.** Hand off to build-batches only after Phase 0 closes.
 
 ## Step 2 — Taste interview
 
-Run only if profile is **empty** OR the reader chose "fresh interview"
-in the existing-profile prompt above.  Skip with one sentence if the
-reader chose "work from existing profile":
+Run only if profile **empty** OR reader chose "fresh interview" above. Skip with one sentence if "work from existing profile":
 
 > "Working from your existing profile.  I'll probe gaps as we go."
 
 If running:
 
-- **At least 5 multiple-choice questions** before any open prose
-  question.  No upper bound on MC.
-- **Maximum 2 open-ended prose questions.**
-- **Open prose questions are turn-ending** — no `AskUserQuestion` on
-  the same turn after.
-- Auto-pull MC options from `PROJECT_LOG` (top-rated recent reads,
-  bottom-rated recent reads).
-- For partial interview (existing profile, gaps only), only ask MC
-  questions whose answers aren't covered by the existing profile.
+- **At least 5 MC questions** before any open prose. No upper bound on MC.
+- **Max 2 open-ended prose questions.**
+- **Open prose questions are turn-ending** — no `AskUserQuestion` same turn after.
+- Auto-pull MC options from `PROJECT_LOG` (top-rated + bottom-rated recent reads).
+- For partial interview, only ask MC questions not covered by existing profile.
 
 Suggested flow:
 
 1. MC, multiSelect — "Which of your recent 5-star reads landed strongest?"
 2. MC, multiSelect — "Any recent reads that disappointed?"
-3. Open (pointed) — "What made [top picks] work, and what missed in
-   [disappointments]?"  Turn-ending.
+3. Open (pointed) — "What made [top picks] work, and what missed in [disappointments]?"  Turn-ending.
 4. MC — "Audio vs. print split right now?"
 5. MC — "Series-length appetite for the next two years?"
 6. MC, multiSelect — "Reading contexts that matter most?"
-7. Open (optional) — "Any recent surprise — book or author you didn't
-   expect to click with?"  Turn-ending.
+7. Open (optional) — "Any recent surprise — book or author you didn't expect to click with?"  Turn-ending.
 
 ### Multi-axis taste probe
 
-Between MC blocks 2 and 5, run six axes as separate `AskUserQuestion`
-calls:
+Between MC blocks 2 and 5, run six axes as separate `AskUserQuestion` calls:
 
-1. Tone — `Dark / lyrical grimdark` / `Warm / hopeful` / `Mixed — both
-   live` / `Other`
-2. Pacing — `Propulsive / page-turner` / `Meditative / slow-burn` /
-   `Mixed` / `Other`
-3. Character scope — `Intimate close-third` / `Sweeping ensemble` /
-   `Mixed` / `Other`
-4. Context — `Literary fiction` / `Genre fiction` / `Cross-over
-   (literary genre)` / `Other`
-5. Stakes — `Personal / interior` / `World-ending / epic` / `Mixed` /
-   `Other`
-6. Themes (multiSelect) — seeded from `taste_signals.positive` overlap
-   on the reader's `all_favorites`.
+1. Tone — `Dark / lyrical grimdark` / `Warm / hopeful` / `Mixed — both live` / `Other`
+2. Pacing — `Propulsive / page-turner` / `Meditative / slow-burn` / `Mixed` / `Other`
+3. Character scope — `Intimate close-third` / `Sweeping ensemble` / `Mixed` / `Other`
+4. Context — `Literary fiction` / `Genre fiction` / `Cross-over (literary genre)` / `Other`
+5. Stakes — `Personal / interior` / `World-ending / epic` / `Mixed` / `Other`
+6. Themes (multiSelect) — seeded from `taste_signals.positive` overlap on reader's `all_favorites`.
 
-"Mixed" is a signal in itself — write into the profile verbatim.
+"Mixed" is signal in itself — write into profile verbatim.
 
 ### Tone-breadth probe (conditional)
 
-When older ≥4.0 reads sit tonally apart from recent ones.  Use options
-sourced from actual titles.  Goal: calibrate breadth, not relitigate.
+When older ≥4.0 reads sit tonally apart from recent. Options from actual titles. Goal: calibrate breadth, not relitigate.
 
-### Profile artifact write
+### Profile write
 
-After the interview, write a fresh Profile content with sections
-covering positive indicators, negative indicators, benchmark books
-(3-5), preferred settings/genres, audio split, series-length appetite,
-tone-palette breadth note.
+After interview, write fresh profile to `/tmp/Profile.md`: positive indicators, negative indicators, benchmark books (3-5), preferred settings/genres, audio split, series appetite, tone-palette breadth note.
 
-Read current artifact content, transform via helper, write back:
+When existing profile has scaffolding, use `profile-append` per bullet (idempotent on duplicates):
 
-```python
-# Build text in-memory or use multiple profile-append calls.
-# When the existing profile has scaffolding, prefer profile-append per
-# bullet (idempotent on duplicates).
-result = subprocess.run(
-    ["python3", "scripts/librarian_query.py", "profile-append",
-     "--section", "Positive indicators",
-     "--bullet", "lyrical grimdark prose (Buehlman 5/5, Wolfe 4.75/5)",
-     "--stdio"],
-    input=profile_content, capture_output=True, text=True, check=True,
-).stdout
+```bash
+python3 scripts/librarian_query.py profile-append \
+    --section "Positive indicators" \
+    --bullet "lyrical grimdark prose (Buehlman 5/5, Wolfe 4.75/5)" \
+    --profile /tmp/Profile.md
 ```
 
-Then write back via `window.storage.set("profile", ...)`.  After every
-append, the artifact storage write IS the per-edit flush — there's no
-secondary Drive flush step (Drive doesn't hold the profile anymore).
+Helper edits `/tmp/Profile.md` in place. No artifact write; no `window.storage`.
 
 ## Step 3 — Goals conversation
 
 Establish goals fresh each session.
 
-- **Core target: 100 books, 10-book grace cushion (hard cap 110) for
-  series.**
-- **Plus 10-15 new/upcoming releases** as stretch goals in a separate
-  section.  Final list: 100-125 total.
+- **Core target: 100 books, 10-book grace cushion (hard cap 110) for series.**
+- **Plus 10-15 new/upcoming releases** as stretch goals in separate section. Final list: 100-125 total.
 - **Genre goals** — counts of individual books per genre.
-- **Series-status goals** — Standalone / Short Series / Long Series /
-  Short Stories balance.
+- **Series-status goals** — Standalone / Short Series / Long Series / Short Stories balance.
 - **Indie / classic targets are floors only.**
 
-Ask via `AskUserQuestion` for genres + counts, then series-status
-balance, then indie/classic floors.  Summarise back before moving on.
+Ask via `AskUserQuestion`: genres + counts, series-status balance, indie/classic floors. Summarise before moving on.
 
 ### Catalog distribution warning
 
@@ -292,14 +219,11 @@ python3 scripts/librarian_query.py distribution \
     --catalog /tmp/Library_Catalog.sqlite
 ```
 
-If a cross-cutting tag is concentrated >60% in one genre (e.g. "87% of
-indie in your catalog is Fantasy"), surface the warning to the reader
-before goals are finalised — pull cross-cutting picks during the
-genre's batches, not after.
+If cross-cutting tag >60% in one genre (e.g. "87% of indie in your catalog is Fantasy"), warn reader before goals finalize — pull cross-cutting picks during genre batches, not after.
 
 ### Update build state
 
-Write goals + floors into `build:<id>` state:
+Write goals + floors into `/tmp/build_state.json`:
 
 ```json
 {
@@ -314,8 +238,7 @@ Write goals + floors into `build:<id>` state:
 }
 ```
 
-Persist via picker artifact's `window.storage` after every goal
-answer.
+Persist to `/tmp/build_state.json` after every goal answer.
 
 ## Step 4 — Wish-list pass
 
@@ -325,7 +248,7 @@ Open prose:
 > books or series you've heard about, been recommended, or have been
 > meaning to get to?"
 
-Reader names items.  For each, look up in the SQLite catalog:
+Reader names items. For each, look up in SQLite catalog:
 
 ```bash
 python3 scripts/librarian_query.py lookup --query "<title>" \
@@ -334,43 +257,30 @@ python3 scripts/librarian_query.py lookup --query "<title>" \
     --reading-list /tmp/Reading_List.md
 ```
 
-Confirm in library + not already read.  For multiple wish-list items,
-use the React picker artifact for batch confirmation.  Single item →
-`AskUserQuestion` is fine.
+Confirm in library + not already read. Multiple items → **`AskUserQuestion` with multiSelect**, one question with candidate titles. Single item → single-option `AskUserQuestion`.
 
-After the picker save, persist ledger updates to `build:<id>.ledger`,
-then append selected picks to the reading-list artifact:
+Fall back to React picker artifact only when richer per-book context (cards, pitches, content flags) genuinely helps — picker is opt-in, not default.
 
-```javascript
-let rl = JSON.parse((await window.storage.get("reading_list")).value);
-rl.content = rl.content + "\n## Wishlist additions\n\n" + table_text;
-rl.updated_at = new Date().toISOString();
-await window.storage.set("reading_list", JSON.stringify(rl));
-```
-
-Mirror to `/tmp/Reading_List.md` for the next helper call.
+After confirmation, append picks to `/tmp/Reading_List.md` under `## Wishlist additions`, update `/tmp/build_state.json` ledger.
 
 ## End-of-session handoff
 
-Once Phase 0 + interview + goals + wishlist are done:
+Once Phase 0 + interview + goals + wishlist done:
 
-1. Confirm both artifacts have current content (one final read-back to
-   verify storage round-trip — no separate Drive step).
-2. Update build state: `current_phase: "phase-1"`,
-   `phase_progress.phase_0: "done"`,
-   `phase_progress.interview: "done" | "skipped-existing-profile" |
-   "partial-gap-probe"`,
-   `phase_progress.wishlist: { added: <n> }`.
-3. Tell the reader the next move:
+1. Confirm `/tmp/Profile.md`, `/tmp/Reading_List.md`, and `/tmp/build_state.json` all current on disk.
+2. Update build state: `current_phase: "phase-1"`, `phase_progress.phase_0: "done"`, `phase_progress.interview: "done" | "skipped-existing-profile" | "partial-gap-probe"`, `phase_progress.wishlist: { added: <n> }`.
+3. Tell reader next move:
 
    > "We've got your profile, your goals, and the series we want to
    > close out.  When you're ready for the actual picks, open a new
    > chat and say 'let's start the batches' — or just open a new chat
-   > and I'll offer to resume."
+   > and I'll offer to resume.  Before you close this session, I'll
+   > surface your updated files so you can re-upload to project
+   > knowledge."
 
-The "open a new chat" is the natural break.  build-batches takes the
-session reset and reads build state from the picker artifact's
-window.storage.
+4. Hand off to `library-cataloguer`'s session-end flow to surface /tmp files via `present_files`.
+
+"Open a new chat" is natural break. build-batches reads `/tmp/build_state.json` after reader re-uploads as `build_state.json` to project knowledge (triage seeds back into /tmp).
 
 ## Anti-jargon translation map (shared)
 
@@ -390,7 +300,6 @@ window.storage.
 | author entry-point | "good place to start with this author" |
 | score / weight / scored high on | (silent — narrative reasoning instead) |
 | probe / pause-and-probe | (silent — just ask the question) |
-| build_id / phase_progress / window.storage | (silent — internal only) |
+| build_id / phase_progress / build_state.json | (silent — internal only) |
 | encoded catalog / .encoded / gzip+b64 | (silent — internal only) |
 | project file | (silent — "your library data") |
-| picker artifact / profile artifact / reading-list artifact | "the picker" / "your profile" / "your reading list" |

@@ -16,8 +16,7 @@ features between branches without an explicit ask.
 - `SETUP.md` — user-facing install guide (sourced from UX_DESIGN.md).
 - `PROJECT_INSTRUCTIONS.md` — copy-paste-ready content for the
   reader's claude.ai project instructions panel.  Contains the
-  Drive file-ID slot, three artifact-URL slots, the librarian voice,
-  and the seven hard rules.
+  Drive file-ID slot and the seven hard rules.
 - `/root/.claude/plans/include-all-fields-in-synchronous-peacock.md` —
   the approved implementation plan with frozen architecture decisions.
 
@@ -41,19 +40,25 @@ SKILL.md falls back to filename/folder discovery if the ID is absent.
   text) for the Drive connector to read.  Header line:
   `# library-playground-catalog v1 gzip+b64`.  Gitignored.
 - `Library.csv`, `Reading_Log.csv` — user-provided inputs.
-- `Profile.md`, `Reading_List.md` — live in published artifact
-  storage (`profile`, `reading-list`) in production.  Local files
-  only for testing or as project-knowledge seeds.
+- `Profile.md`, `Reading_List.md` — live in **project knowledge** as
+  the carry-across-sessions form, edited in `/tmp` during a session,
+  surfaced via `present_files` at session end so the reader can
+  re-upload.  Local files only for testing or as project-knowledge
+  seeds.
 
-### Storage split (2026-05-02 refactor)
+### Storage split (2026-05-03 refactor — file-based)
 
 | Layer | Holds | Mutability |
 |---|---|---|
-| Drive | `Library_Catalog.sqlite.encoded`, optional `.config.json` | Read-only from chat; reader manually replaces the file at session end via the cataloguer's download-link flow |
-| Project knowledge | `Reading_Log.csv`, optional `Profile.md` / `Reading_List.md` seeds | Static — re-upload to refresh |
-| `picker` artifact | `build:<id>`, `batch:<id>`, ledger, `catalog_edit_lock`, `log_pending_updates` | Per-edit during builds |
-| `profile` artifact | `profile` key with `{version, content, updated_at}` | Per-edit on Profile-write triggers |
-| `reading-list` artifact | `reading_list` key with `{version, content, updated_at}` | Per-edit on every confirmed pick / removal |
+| Drive | `Library_Catalog.sqlite.encoded` | Read-only from chat; reader manually replaces the file at session end via the cataloguer's download-link flow |
+| Project knowledge | `Reading_Log.csv`, optional `Profile.md`, `Reading_List.md`, `build_state.json`, `log_pending_updates.csv` | Reader re-uploads at the end of any session that changed them |
+| Sandbox `/tmp/` (per session) | `Library_Catalog.sqlite`, `Profile.md`, `Reading_List.md`, `build_state.json`, `log_pending_updates.csv`, `catalog_edits.log` | Mutated freely; surfaced via `present_files` at session end |
+| `picker` / `profile` / `reading-list` artifacts | Read-only renderers — content passed in via `seed` prop | None — no `window.storage`, no preflight, no persistence |
+
+The artifacts are pure renderers.  The chat agent has no available
+tool to write to a published artifact's storage by URL/UUID, so the
+prior storage-based persistence model was unimplementable; /tmp files
+plus session-end `present_files` is what actually works on Pro.
 
 ### Code-side reference (kept unchanged for parity)
 
@@ -65,20 +70,38 @@ SKILL.md falls back to filename/folder discovery if the ID is absent.
 - `.claude/skills/librarian/`, `.claude/skills/library-cataloguer/` —
   Code-side skills.  Untouched.
 
+### Catalog sync workflow (Code surface)
+
+Bulk catalog work runs from a Claude Code session via:
+
+```bash
+python3 catalogue.py --library Library.csv --sync
+```
+
+That umbrella command refreshes CSV-authoritative fields, catalogues
+new books, runs the comparables tail, exports SQLite + encoded form,
+writes `dist/sync_audit.md`, and `git add -f` + commits + pushes both
+artefacts to the current feature branch (refuses `main`/`master`).
+Pass `--no-push` for local-only runs.
+
+The in-chat `library-cataloguer` skill on claude.ai is intentionally
+scoped to **single-book / short-series** in-the-moment edits.  When
+the reader proposes bulk work it bounces them to `--sync` on the Code
+side.
+
 ### claude.ai port (this branch's deliverables)
 
 - `webhelper/sqlite_export.py` — JSON→SQLite writer + `norm()`.
 - `webhelper/encoded_codec.py` — gzip+b64 codec with format header.
 - `webhelper/librarian_query.py` — port of the Code helper to SQLite +
   stdin/stdout ledger.  Same subcommand surface.
-- `artifacts/batch-picker.jsx` — React multi-select.  Owns picker
-  storage (build state, ledger, batch selections, edit-locks,
-  pending log updates).  Must be PUBLISHED.
-- `artifacts/profile.jsx` — markdown render + inline edit for the
-  live `Profile.md`.  Owns profile storage.  Must be PUBLISHED.
-- `artifacts/reading-list.jsx` — markdown render (read-only) for the
-  live `Reading_List.md`.  Owns reading-list storage.  Must be
-  PUBLISHED.
+- `artifacts/batch-picker.jsx` — pure React renderer for richer batch
+  preview (cover-style cards, content flags).  No storage.  Opt-in
+  alternative to native `AskUserQuestion(multiSelect)`.
+- `artifacts/profile.jsx` — read-only markdown renderer for
+  `Profile.md` content via `seed` prop.  No storage.
+- `artifacts/reading-list.jsx` — read-only markdown renderer for
+  `Reading_List.md` content via `seed` prop.  No storage.
 - `.claude.ai/skills/<name>/SKILL.md` — six skills:
   `librarian-triage`, `librarian-quickref`, `librarian-build-setup`,
   `librarian-build-batches`, `librarian-build-finish`,
@@ -110,8 +133,8 @@ python3 webhelper/librarian_query.py candidates \
     --ledger - --genre Horror --batch-size 4 --deep-cut-slot < ledger.json
 ```
 
-Ledger is stdin/stdout — the model owns persistence in the picker
-artifact's `window.storage`.
+Ledger is stdin/stdout — the model owns persistence in
+`/tmp/build_state.json` (carried across sessions via project knowledge).
 
 ## Hard invariants — librarian-build-batches/SKILL.md is canonical
 
@@ -128,14 +151,20 @@ non-negotiable:
 7. Anti-jargon contract — no internal vocabulary in chat, picker UI,
    Reading_List.md, or Profile.md.
 8. Deep-cut silence — render identically across all batch positions.
-9. Profile artifact per-edit storage write — silent; consolidated
-   diff surfaces at session end alongside the catalog download.
-10. Reading-list artifact per-edit storage write — user-visible;
-    one-line acknowledgement on each confirmed pick.
-11. React picker is the only multi-select surface for batch picks.
+9. `/tmp/Profile.md` per-edit write — silent; consolidated diff
+   surfaces at session end alongside the catalog download.
+10. `/tmp/Reading_List.md` per-edit write — user-visible; one-line
+    acknowledgement on each confirmed pick.
+11. Default batch-confirmation surface is native
+    `AskUserQuestion(multiSelect)`.  React picker artifact is opt-in
+    for genuinely richer per-book context.
 12. Catalog flush is manual: cataloguer encodes in sandbox at session
     end and presents a download link; the reader replaces their Drive
     file.  Drive connector's write path is intentionally unused.
+13. Working state (`/tmp/Reading_List.md`, `/tmp/Profile.md`,
+    `/tmp/build_state.json`, `/tmp/log_pending_updates.csv`) is
+    surfaced via `present_files` at session end; reader re-uploads to
+    project knowledge to carry into the next session.
 
 Translation map for reader-facing language is at the bottom of
 `librarian-build-batches/SKILL.md`.
@@ -193,10 +222,10 @@ Cataloguer rules:
 4. Catalog flush is **manual download**: session-end only, never
    per-edit, never via the Drive write API.  Reader replaces the
    Drive file from the link.
-5. Profile artifact: per-edit storage write, **silent** in chat;
+5. `/tmp/Profile.md`: per-edit file write, **silent** in chat;
    consolidated diff surfaced at session end alongside catalog
    download.
-6. Reading-list artifact: per-edit storage write, **user-visible**
+6. `/tmp/Reading_List.md`: per-edit file write, **user-visible**
    one-line acknowledgement on every confirmed pick.
 
 Git history = audit trail.  Commits document what changed and when.

@@ -1,56 +1,37 @@
 ---
 name: librarian-quickref
 description: >
-  Answers single-book queries against the reader's library — "anything like
-  X?", "is X worth my time?", "what do you know about X?", "what comes after
-  X in its series?", "any plans you have on Y?".  Queries the decoded SQLite
-  catalog directly, gives a 1-3 paragraph answer that fits the book to the
-  reader's profile, and writes any signal-capture bullets into the profile
-  artifact immediately.  Does NOT do batch builds, batch picks, multi-book
-  workflows, or catalog edits.
+  Single-book query handler. Ask "anything like X?", "worth time?",
+  "what come after X?", "any plans on Y?". Query SQLite direct, give
+  1-3 para answer fit to reader profile, append signals to /tmp/Profile.md.
+  No batch builds, no multi-book, no catalog edits.
 ---
 
 # librarian-quickref — single-book mode
 
-Reader asks one focused question.  You give one focused answer.  No
-interview, no goals conversation, no batch checklists, no list edits.
+Reader ask one question. Give one answer. No interview, no goals talk, no batch, no list edits.
 
 ## Hard invariants
 
-1. **Triage already verified the artifacts** — but quickref doesn't write
-   to the picker artifact, so its preflight failure is irrelevant here.
-   Quickref DOES write to the profile artifact, so the profile preflight
-   must have passed before quickref runs.  Triage gates this.
-2. **Catalog reads only.**  Factual catalog corrections from the reader
-   ("actually that's literary fiction, not fantasy") → hand off to
-   library-cataloguer same turn.
-3. **Profile artifact per-edit storage write — silent.**  Any time
-   you append a bullet to the profile, write the updated content to
-   `window.storage["profile"]` same turn.  Do NOT confirm the write
-   in chat.  Quickref sessions surface the profile diff (if any) only
-   at the end of the answer turn, in one consolidated sentence — see
-   "Profile updates" below.
-4. **Page count mandatory** in any single-book answer that names a book.
-5. **Anti-jargon contract** — see translation map in
+1. **Catalog reads only.**  Reader correct catalog ("actually literary fiction, not fantasy") → hand to library-cataloguer same turn.
+2. **Profile edits write to `/tmp/Profile.md` silently.**  Append bullet via helper; surface consolidated diff in one sentence at turn end (see "Profile updates").
+3. **Page count mandatory** when naming any book.
+4. **Anti-jargon contract** — see translation map in
    `librarian-build-batches/SKILL.md`.
 
 ## Inputs at session start
 
-Triage has bound:
+Triage bound:
 
 - `PROJECT_LOG` → path to `Reading_Log.csv` in project knowledge.
-- Profile content → `window.storage["profile"].content` on the profile
-  artifact (text markdown).
-- Reading_List content → `window.storage["reading_list"].content` on
-  the reading-list artifact (text markdown).
+- `/tmp/Profile.md` → seeded from `PROJECT_PROFILE` (or empty stub).
+- `/tmp/Reading_List.md` → seeded from `PROJECT_LIST` (or empty stub).
 - Decoded SQLite at `/tmp/Library_Catalog.sqlite` (decoded by triage at
   session start — always present by the time quickref runs).
 
 ## Catalog reads
 
-All catalog reads go through SQLite.  For presence checks, structured
-lookups, or full per-book detail (summary, themes, comparable_books,
-taste_signals, content_flags), query the decoded SQLite directly:
+All reads through SQLite. Presence checks, structured lookups, full per-book detail (summary, themes, comparable_books, taste_signals, content_flags) — query direct:
 
 ```python
 import sqlite3
@@ -64,7 +45,7 @@ sig_p  = [r[0] for r in conn.execute("SELECT signal FROM taste_signals WHERE boo
 sig_n  = [r[0] for r in conn.execute("SELECT signal FROM taste_signals WHERE book_key = ? AND polarity='negative'", (key,))]
 ```
 
-Or via the helper script for fuzzy matching:
+Or fuzzy match via helper:
 
 ```bash
 python3 scripts/librarian_query.py lookup --query "<reader-supplied>" \
@@ -73,36 +54,24 @@ python3 scripts/librarian_query.py lookup --query "<reader-supplied>" \
     --reading-list /tmp/Reading_List.md
 ```
 
-`lookup` returns canonical key + `is_already_read` / `is_on_list` /
-`is_shown` for each match.  Three-pass fuzzy match handles
-subtitle-truncation and series-name searches.
-
-For `is_on_list`, write the artifact's content to
-`/tmp/Reading_List.md` first so the helper has a file to read:
-
-```bash
-# At session start (or before first list-aware query):
-echo "$RL_CONTENT" > /tmp/Reading_List.md   # RL_CONTENT from window.storage
-```
+`lookup` return canonical key + `is_already_read` / `is_on_list` /
+`is_shown` per match. Three-pass fuzzy match handle subtitle-truncation and series-name searches.
 
 ## Answer shape
 
-Three components, narrative form:
+Three parts, narrative form:
 
-1. **Personal anchor.**  Name a rated title from `PROJECT_LOG` or a
-   stated taste from the profile artifact's content.
+1. **Personal anchor.**  Name rated title from `PROJECT_LOG` or stated taste from `/tmp/Profile.md`.
 2. **Plot / tone hook.**  One or two sentences.
-3. **Fit verdict.**  Honest assessment with page count.  Mention
-   `audio_suitability` only when the profile flags an audio preference.
+3. **Fit verdict.**  Honest with page count. Mention
+   `audio_suitability` only when profile flag audio preference.
 
-Length: 1-3 paragraphs.  Stop there.  If the reader follows up with
-"what else like this?", offer to escalate ("want me to put together a
-horror batch?") and hand off to `librarian-build-setup` (fresh) or
+Length: 1-3 paragraphs. Stop. If reader ask "what else like this?", offer escalate and hand to `librarian-build-setup` (fresh) or
 `librarian-build-batches` (resume).
 
 ### "Anything like X?" responses
 
-Pull `comparable_books` for X from SQLite.  For each comp, run
+Pull `comparable_books` for X from SQLite. For each comp, run
 `is-read` / `is-on-list`:
 
 ```bash
@@ -113,20 +82,17 @@ python3 scripts/librarian_query.py is-on-list \
     --reading-list /tmp/Reading_List.md
 ```
 
-Surface 2-4 unread, unreadlisted comps in narrative.  Page counts in
-line.
+Surface 2-4 unread comps in narrative. Page counts inline.
 
 ### "Is X worth my time?" responses
 
-Pull X from SQLite + `PROJECT_LOG` + profile artifact content.  Cover:
+Pull X from SQLite + `PROJECT_LOG` + `/tmp/Profile.md`. Cover:
 
-- Universal exclusion gate clearance (already-read or on-list?).
+- Exclusion gate (already read or on list?).
 - Author entry-point status.
-- Profile match — name two specific positive indicators that line up
-  and one negative that doesn't (if any).
+- Profile match — two specific positive signals that line up, one negative that doesn't (if any).
 - Page count, audio note when relevant.
-- Honest summary: "yes" / "yes but read Y first" / "not for current
-  taste — try Z instead".
+- Honest summary: "yes" / "yes but read Y first" / "not for current taste — try Z instead".
 
 ### "What comes after X in its series?" responses
 
@@ -138,61 +104,38 @@ python3 scripts/librarian_query.py series-continuation \
     --reading-list /tmp/Reading_List.md
 ```
 
-If next book in catalog → name it with page count + one-sentence reason
-to read on (or pause).  If not → offer cataloguer add.
+Next book in catalog → name with page count + one sentence to read on (or pause). Not found → offer cataloguer add.
 
-## Profile updates — per-edit artifact write
+## Profile updates — append to /tmp/Profile.md
 
-When the reader gives a signal worth capturing, append to the profile
-artifact same turn.  Read current content, update, write back:
+Signal worth capturing → append to `/tmp/Profile.md` same turn via helper:
 
-```python
-import json, sys, subprocess
-# Get current profile content from the model's earlier read:
-profile_text = current_profile_content  # already loaded at session start
-
-# Append via helper (stdio mode — pure transformation):
-new_text = subprocess.run(
-    ["python3", "scripts/librarian_query.py", "profile-append",
-     "--section", "Negative indicators",
-     "--bullet", "graphic horror in third act (Q&A 2026-05)",
-     "--stdio"],
-    input=profile_text, capture_output=True, text=True, check=True,
-).stdout
+```bash
+python3 scripts/librarian_query.py profile-append \
+    --section "Negative indicators" \
+    --bullet "graphic horror in third act (Q&A 2026-05)" \
+    --profile /tmp/Profile.md
 ```
 
-Then write back to the artifact:
+Helper write in place. No artifact write; no `window.storage`.
 
-```javascript
-await window.storage.set("profile", JSON.stringify({
-  version: 1,
-  content: new_text,
-  updated_at: new Date().toISOString(),
-}));
-```
+**Silent during answer.**  No mid-answer announcement. End of response, one consolidated sentence covering all profile writes from this turn, e.g.:
 
-**Silent write.**  Do not announce the profile update in chat
-mid-answer.  At the end of your response, append one consolidated
-sentence covering all profile writes from this turn, e.g.:
+> "Profile updated: two notes (graphic-horror ceiling, audio pref for first-person narrators). Session end → download link to refresh `Profile.md` in project knowledge."
 
-> "Updated your profile with two notes from today (graphic-horror
-> ceiling, audio preference for first-person narrators).  Inspect
-> any time at <profile artifact URL>."
-
-Single sentence, end-of-turn.  No mid-answer interruption.
+One sentence, end-of-turn. No mid-answer interruption.
 
 ## Hand-off triggers
 
 - Factual catalog correction → `library-cataloguer`.
-- Reader escalates from "any like X?" to "actually build me a list" →
+- Reader escalate to "actually build me a list" →
   `librarian-build-setup` (fresh) or `librarian-build-batches` (resume).
-- Reader bought a new book → `library-cataloguer`.
+- Reader bought new book → `library-cataloguer`.
+- Session wrap + any profile edits → hand to `library-cataloguer` session-end to surface `/tmp/Profile.md` download.
 
-State the hand-off in one sentence; stop.
+State hand-off in one sentence; stop.
 
 ## Page count is mandatory
 
-Every named book shows pages.  Format inline: "*Hyperion* — Dan Simmons
-(482 pp)".  Two exceptions: upcoming releases without published counts,
-and entries where `pages` is null in the catalog (flag the gap, offer
-cataloguer fix).
+Every named book show pages. Format inline: "*Hyperion* — Dan Simmons
+(482 pp)". Two exceptions: upcoming releases without published counts; entries where `pages` is null in catalog (flag gap, offer cataloguer fix).

@@ -19,8 +19,10 @@ Requirements:
 
 import argparse
 import csv
+import datetime as _datetime
 import json
 import os
+import subprocess
 import sys
 import time
 from datetime import date
@@ -202,15 +204,17 @@ def csv_authoritative_values(book: dict) -> dict:
     return out
 
 
-def sync_library_to_catalog(books: list[dict], catalog: dict) -> tuple[int, int]:
+def sync_library_to_catalog(books: list[dict], catalog: dict) -> dict:
     """Add stubs for new library books and re-apply CSV-authoritative fields.
 
-    Returns (added, refreshed): how many new pending stubs were created and
-    how many existing entries had a pages/goodreads field updated to match
-    the CSV.
+    Returns a stats dict:
+      - added: count of new pending stubs created
+      - refreshed: count of field-value updates applied
+      - added_titles: list of "Title — Author" strings for new entries
+      - refreshed_by_field: {field: count} of which fields got updated
     """
-    added = 0
-    refreshed = 0
+    added_titles: list[str] = []
+    refreshed_by_field: dict[str, int] = {f: 0 for f in CSV_AUTHORITATIVE_FIELDS}
     for book in books:
         key = book_key(book["title"], book["authors"])
         csv_fields = csv_authoritative_values(book)
@@ -241,14 +245,19 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> tuple[int, int]
                 "research_source": None,
                 **csv_fields,
             }
-            added += 1
+            added_titles.append(f"{book['title']} — {book['authors']}")
         else:
             entry = catalog["entries"][key]
             for field, value in csv_fields.items():
                 if entry.get(field) != value:
                     entry[field] = value
-                    refreshed += 1
-    return added, refreshed
+                    refreshed_by_field[field] += 1
+    return {
+        "added": len(added_titles),
+        "refreshed": sum(refreshed_by_field.values()),
+        "added_titles": added_titles,
+        "refreshed_by_field": refreshed_by_field,
+    }
 
 
 def get_book_csv_data(books: list[dict], key: str) -> dict:
@@ -940,6 +949,193 @@ def print_status(catalog: dict):
     print(f"{'='*55}\n")
 
 # ---------------------------------------------------------------------------
+# Sync export — umbrella step for the Code-side "I uploaded a new
+# Library.csv, please update everything" workflow.
+# ---------------------------------------------------------------------------
+
+DEFAULT_SYNC_SQLITE = "Library_Catalog.sqlite"
+DEFAULT_SYNC_AUDIT = "dist/sync_audit.md"
+
+
+def _status_counts(catalog: dict) -> dict[str, int]:
+    counts = {"complete": 0, "needs_review": 0, "pending": 0}
+    for entry in catalog.get("entries", {}).values():
+        counts[entry.get("status", "pending")] = counts.get(
+            entry.get("status", "pending"), 0
+        ) + 1
+    counts["total"] = sum(counts[k] for k in ("complete", "needs_review", "pending"))
+    return counts
+
+
+def write_sync_audit(
+    audit_path: Path,
+    catalog: dict,
+    library_sync_stats: dict,
+    comparables_stats: dict | None,
+    pre_counts: dict[str, int],
+    encoded_path: Path,
+    sqlite_path: Path,
+) -> None:
+    """Write a human-readable sync audit summary to `audit_path`."""
+    audit_path.parent.mkdir(parents=True, exist_ok=True)
+    post = _status_counts(catalog)
+    delta = {k: post[k] - pre_counts.get(k, 0) for k in ("complete", "needs_review", "pending", "total")}
+
+    encoded_size = encoded_path.stat().st_size if encoded_path.exists() else 0
+    sqlite_size = sqlite_path.stat().st_size if sqlite_path.exists() else 0
+
+    lines: list[str] = []
+    lines.append(f"# Library catalog sync — {_datetime.datetime.now().isoformat(timespec='seconds')}")
+    lines.append("")
+    lines.append("## Catalog totals")
+    lines.append("")
+    lines.append("| Status | Before | After | Δ |")
+    lines.append("|---|---|---|---|")
+    for k in ("complete", "needs_review", "pending", "total"):
+        lines.append(f"| {k} | {pre_counts.get(k, 0)} | {post[k]} | {delta[k]:+d} |")
+    lines.append("")
+
+    lines.append("## CSV-authoritative field refreshes")
+    lines.append("")
+    refreshed_by_field = library_sync_stats.get("refreshed_by_field", {})
+    if any(refreshed_by_field.values()):
+        lines.append("| Field | Entries updated |")
+        lines.append("|---|---|")
+        for field, count in refreshed_by_field.items():
+            if count:
+                lines.append(f"| `{field}` | {count} |")
+    else:
+        lines.append("_No CSV-authoritative fields drifted from the catalog this sync._")
+    lines.append("")
+
+    added_titles: list[str] = library_sync_stats.get("added_titles", [])
+    lines.append(f"## New entries added ({len(added_titles)})")
+    lines.append("")
+    if added_titles:
+        for t in added_titles[:200]:
+            lines.append(f"- {t}")
+        if len(added_titles) > 200:
+            lines.append(f"- _…and {len(added_titles) - 200} more (truncated)._")
+    else:
+        lines.append("_None — every CSV row was already in the catalog._")
+    lines.append("")
+
+    if comparables_stats:
+        lines.append("## comparable_books sync")
+        lines.append("")
+        for k, v in comparables_stats.items():
+            if isinstance(v, (int, float, str)):
+                lines.append(f"- **{k}:** {v}")
+        lines.append("")
+
+    lines.append("## Output artefacts")
+    lines.append("")
+    lines.append(f"- `{sqlite_path}` ({sqlite_size:,} bytes)")
+    lines.append(f"- `{encoded_path}` ({encoded_size:,} bytes) — gzip+b64-wrapped, Drive-uploadable")
+    lines.append(f"- `{audit_path}` (this file)")
+    lines.append("")
+
+    audit_path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"  Wrote sync audit → {audit_path}")
+
+
+def _run_git(args: list[str], check: bool = True) -> subprocess.CompletedProcess:
+    """Run a git command and stream its output."""
+    print(f"  $ git {' '.join(args)}")
+    return subprocess.run(["git", *args], check=check, text=True, capture_output=True)
+
+
+def git_commit_and_push(paths: list[Path], message: str) -> None:
+    """Stage `paths` (force-adding gitignored files), commit, and push the
+    current branch to origin.  No-op if there are no actual changes to
+    commit.
+    """
+    branch = _run_git(["rev-parse", "--abbrev-ref", "HEAD"]).stdout.strip()
+    if branch in {"main", "master"}:
+        print(f"  Refusing to auto-commit to protected branch '{branch}'.")
+        print(f"  Run from a feature branch, or commit manually.")
+        return
+
+    for p in paths:
+        if p.exists():
+            _run_git(["add", "-f", str(p)])
+        else:
+            print(f"  Skipping missing path: {p}")
+
+    status = _run_git(["status", "--porcelain"]).stdout
+    if not status.strip():
+        print("  Nothing to commit — working tree matches HEAD after staging.")
+        return
+
+    _run_git(["commit", "-m", message])
+
+    # Push with simple linear retry — surfaces network blips without
+    # silently swallowing real failures.
+    for delay in (0, 2, 4, 8):
+        if delay:
+            print(f"  Push retry after {delay}s …")
+            time.sleep(delay)
+        result = subprocess.run(
+            ["git", "push", "-u", "origin", branch],
+            text=True, capture_output=True,
+        )
+        if result.returncode == 0:
+            print(f"  Pushed → origin/{branch}")
+            print(result.stdout.strip())
+            return
+        print(f"  push failed: {result.stderr.strip()}")
+    raise SystemExit(f"git push failed after retries on branch {branch}")
+
+
+def run_sync_export(
+    catalog: dict,
+    library_sync_stats: dict,
+    comparables_stats: dict | None,
+    pre_counts: dict[str, int],
+    sqlite_path: Path,
+    audit_path: Path,
+    push: bool,
+) -> None:
+    """Export SQLite + encoded form, write audit summary, optionally git
+    commit + push.  Called at the tail of `main()` when --sync is set.
+    """
+    from webhelper.sqlite_export import export as _sqlite_export
+    from webhelper.encoded_codec import encode_file as _encode_file
+
+    print("\nSync export:")
+    _sqlite_export(catalog, sqlite_path)
+    n = len(catalog.get("entries") or {})
+    print(f"  Wrote SQLite catalog → {sqlite_path} ({n} entries)")
+
+    encoded_path = sqlite_path.with_suffix(sqlite_path.suffix + ".encoded")
+    _encode_file(sqlite_path, encoded_path)
+    print(f"  Wrote encoded catalog → {encoded_path}")
+
+    write_sync_audit(
+        audit_path=audit_path,
+        catalog=catalog,
+        library_sync_stats=library_sync_stats,
+        comparables_stats=comparables_stats,
+        pre_counts=pre_counts,
+        encoded_path=encoded_path,
+        sqlite_path=sqlite_path,
+    )
+
+    if push:
+        message = (
+            f"catalog: sync from Library.csv "
+            f"(+{library_sync_stats['added']} new, "
+            f"{library_sync_stats['refreshed']} field refreshes)"
+        )
+        git_commit_and_push(
+            paths=[encoded_path, audit_path],
+            message=message,
+        )
+    else:
+        print("  --no-push set; skipping git commit + push.")
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -978,6 +1174,26 @@ def main():
                              "<sqlite-path>.encoded — gzip+base64 wrapped, "
                              "Drive-uploadable, decoded once per session by "
                              "the librarian-triage skill.")
+    parser.add_argument("--sync", action="store_true",
+                        help="Umbrella mode for the Code-side 'I uploaded a "
+                             "new Library.csv' workflow. After the normal "
+                             "sync + catalogue + comparables tail, exports "
+                             "the SQLite catalog, emits the encoded form, "
+                             "writes a sync audit summary, and (unless "
+                             "--no-push) git-commits both artefacts and "
+                             "pushes the current branch to origin so the "
+                             "user can download from GitHub.")
+    parser.add_argument("--sync-sqlite", default=DEFAULT_SYNC_SQLITE,
+                        metavar="PATH",
+                        help=f"With --sync: path to write the SQLite catalog "
+                             f"(default: {DEFAULT_SYNC_SQLITE}).")
+    parser.add_argument("--sync-audit", default=DEFAULT_SYNC_AUDIT,
+                        metavar="PATH",
+                        help=f"With --sync: path to write the audit summary "
+                             f"(default: {DEFAULT_SYNC_AUDIT}).")
+    parser.add_argument("--no-push", action="store_true",
+                        help="With --sync: skip the git commit + push step "
+                             "(useful for dry runs / local-only inspection).")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
@@ -1054,14 +1270,17 @@ def main():
         print(f"Error: no books found in {args.library}. Check CSV format.")
         sys.exit(1)
 
+    # Capture pre-sync status counts so the audit summary can report deltas.
+    pre_counts = _status_counts(catalog)
+
     # Sync library — adds pending stubs for new books and re-applies CSV-authoritative
     # fields (pages, goodreads_rating, goodreads_reviews) onto every existing entry.
-    added, refreshed = sync_library_to_catalog(books, catalog)
-    if added:
-        print(f"  Added {added} new pending entries from library.")
-    if refreshed:
-        print(f"  Refreshed {refreshed} CSV-authoritative field values on existing entries.")
-    if added or refreshed:
+    library_sync_stats = sync_library_to_catalog(books, catalog)
+    if library_sync_stats["added"]:
+        print(f"  Added {library_sync_stats['added']} new pending entries from library.")
+    if library_sync_stats["refreshed"]:
+        print(f"  Refreshed {library_sync_stats['refreshed']} CSV-authoritative field values on existing entries.")
+    if library_sync_stats["added"] or library_sync_stats["refreshed"]:
         save_catalog(catalog, args.catalog)
         save_index(catalog, args.index)
 
@@ -1140,13 +1359,24 @@ def main():
 
     # Run the comparable_books sync at the tail so a fresh build always
     # lands canonical, reciprocated, and Claude-ranked.
-    sync_stats = sync_comparables(catalog, client=client)
-    print_sync_summary(sync_stats)
+    comparables_stats = sync_comparables(catalog, client=client)
+    print_sync_summary(comparables_stats)
     save_catalog(catalog, args.catalog)
     save_index(catalog, args.index)
 
     print("\nCataloguing complete.")
     print_status(catalog)
+
+    if args.sync:
+        run_sync_export(
+            catalog=catalog,
+            library_sync_stats=library_sync_stats,
+            comparables_stats=comparables_stats,
+            pre_counts=pre_counts,
+            sqlite_path=Path(args.sync_sqlite),
+            audit_path=Path(args.sync_audit),
+            push=not args.no_push,
+        )
 
 
 if __name__ == "__main__":
