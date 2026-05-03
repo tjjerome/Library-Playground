@@ -219,82 +219,89 @@ For each entry, surface what known and what uncertain; ask reader to fill gaps. 
 > --review-only` on the Code side — that runs them all through Claude
 > in chunks and re-pushes the encoded catalog."
 
-## Saving the catalog at session end (manual download flow)
+## Session-end file surface (unified)
 
-Cataloguer **never writes back to Drive directly**. At session end (or when reader says "save catalog" / "save those"), encode in sandbox and present download link.
+Other skills (build-setup, build-batches, build-finish, quickref) hand off here at session pause / end. Reader explicit triggers: "save catalog" / "save my files" / "I'm done" / "that's all for today" / "save those" — or any session-ending turn after edits.
 
-Trigger conditions:
+Cataloguer **never writes to Drive directly**. Surface every changed working file in `/mnt/user-data/outputs/` and render one chat message with all download links. Reader downloads + replaces in project knowledge / Drive.
 
-- Session ending and at least one catalog write happened this session.
-- Reader explicitly says "save catalog" / "save those".
-- Reader says "I'm done" / "that's all for today" and edit count is non-zero.
+### What to surface (conditional)
 
-Flow:
+Each file gets surfaced only if changed this session:
+
+| Source `/tmp/` file | Output name | Trigger |
+|---|---|---|
+| `Reading_List.md` | `Reading_List.md` | mtime > session start |
+| `Profile.md` | `Profile.md` | mtime > session start |
+| `build_state.json` | `build_state.json` | mtime > session start |
+| `log_pending_updates.csv` | `log_pending_updates.csv` | exists |
+| `Library_Catalog.sqlite` | `Library_Catalog.sqlite.encoded` | mtime > session start (re-encode first) |
+
+### Re-encode the catalog if it changed
+
+Session-start timestamp comes from `/tmp/.session_start.json` (written by triage):
 
 ```python
-import sqlite3, sys, shutil
-sys.path.insert(0, "scripts")
-from encoded_codec import encode_bytes
+import sqlite3, os, json
+SESSION_START_MTIME = json.load(open("/tmp/.session_start.json"))["started_at"]
 
-# Integrity gate.
-ok = sqlite3.connect("/tmp/Library_Catalog.sqlite").execute(
-    "PRAGMA integrity_check"
-).fetchone()[0]
-if ok != "ok":
-    raise SystemExit(f"Refusing to encode corrupted SQLite: {ok}")
+if os.path.getmtime("/tmp/Library_Catalog.sqlite") > SESSION_START_MTIME:
+    # Integrity gate.
+    ok = sqlite3.connect("/tmp/Library_Catalog.sqlite").execute(
+        "PRAGMA integrity_check"
+    ).fetchone()[0]
+    if ok != "ok":
+        raise SystemExit(f"Refusing to encode corrupted SQLite: {ok}")
 
-raw = open("/tmp/Library_Catalog.sqlite", "rb").read()
-encoded_text = encode_bytes(raw)
-out_path = "/mnt/user-data/outputs/Library_Catalog.sqlite.encoded"
-with open(out_path, "w") as f:
-    f.write(encoded_text)
+    import sys
+    sys.path.insert(0, "scripts")
+    from encoded_codec import encode_bytes
+    raw = open("/tmp/Library_Catalog.sqlite", "rb").read()
+    open("/mnt/user-data/outputs/Library_Catalog.sqlite.encoded", "w").write(
+        encode_bytes(raw)
+    )
 ```
 
-Render chat message surfacing file as download link:
-
-> "I made <N> change<s> to your catalog this session.  Here's the
-> updated catalog file — download it and replace
-> `Library_Catalog.sqlite.encoded` in your Drive folder so the next
-> session picks up the changes.
->
-> [`Library_Catalog.sqlite.encoded`](sandbox:/mnt/user-data/outputs/Library_Catalog.sqlite.encoded)
->
-> Summary of changes (from `/tmp/catalog_edits.log`):
-> - <one line per change, plain language>"
-
-If session has zero catalog edits, skip catalog flush entirely.
-
-## Session-end "surface files for re-upload" flow
-
-Other skills (build-setup, build-batches, build-finish) hand off here at session pause / end so reader can carry working state forward.
+### Copy /tmp working files
 
 ```python
 import os, shutil
+
 candidates = [
     ("/tmp/Reading_List.md",         "Reading_List.md"),
     ("/tmp/Profile.md",              "Profile.md"),
     ("/tmp/build_state.json",        "build_state.json"),
     ("/tmp/log_pending_updates.csv", "log_pending_updates.csv"),
 ]
+surfaced = []
 for src, name in candidates:
-    if os.path.exists(src):
+    if os.path.exists(src) and os.path.getmtime(src) > SESSION_START_MTIME:
         shutil.copy(src, f"/mnt/user-data/outputs/{name}")
+        surfaced.append(name)
 ```
 
-Render single chat message with all download links:
+### Render the surface turn
+
+Single chat message with every link. Group by destination:
 
 > "Here are your updated files — download each and replace the
-> matching one in your claude.ai project knowledge:
+> matching one in the destination shown:
 >
+> **claude.ai project knowledge:**
 > - [`Reading_List.md`](sandbox:/mnt/user-data/outputs/Reading_List.md)
 > - [`Profile.md`](sandbox:/mnt/user-data/outputs/Profile.md)
 > - [`build_state.json`](sandbox:/mnt/user-data/outputs/build_state.json)
+> - [`log_pending_updates.csv`](sandbox:/mnt/user-data/outputs/log_pending_updates.csv) — paste rows into `Reading_Log.csv` before re-uploading
 >
-> If a `log_pending_updates.csv` link is included, paste those rows
-> into `Reading_Log.csv` before re-uploading.  Next session, triage
-> will read these files back from project knowledge."
+> **Google Drive folder:**
+> - [`Library_Catalog.sqlite.encoded`](sandbox:/mnt/user-data/outputs/Library_Catalog.sqlite.encoded) — replace the existing file
+>
+> Catalog changes this session (from `/tmp/catalog_edits.log`):
+> - <one line per change, plain language>"
 
-If catalog write also happened this session, catalog download link from previous section appears in same surface turn.
+Omit any link whose source file wasn't surfaced. If nothing changed, skip the turn entirely.
+
+Next session, triage reads project-knowledge files back from `/mnt/project/` and decodes the new catalog from Drive.
 
 ## Boundaries — what cataloguer does NOT do
 

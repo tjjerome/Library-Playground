@@ -62,6 +62,20 @@ Missing seed → create empty stub:
 
 /tmp files = session truth. Build / quickref / cataloguer read/edit in place; build-finish and cataloguer surface via `present_files` at end for reader download + replace in project knowledge.
 
+### Capture session-start mtimes
+
+After seeding /tmp files, record the timestamp so cataloguer's session-end surface can tell which files actually changed:
+
+```python
+import json, os, time
+SESSION_START = time.time()
+# Stash for later skills to read.
+with open("/tmp/.session_start.json", "w") as f:
+    json.dump({"started_at": SESSION_START}, f)
+```
+
+Cataloguer's session-end flow reads this and only surfaces files whose mtime exceeds it.
+
 ## Drive catalog discovery
 
 Discovery order, fastest to slowest:
