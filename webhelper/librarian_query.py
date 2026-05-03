@@ -384,23 +384,94 @@ def _series_order_key(entry: dict) -> tuple[float, str]:
     return (999.0, entry.get("title") or "")
 
 
-def _series_sub_thread(series_position: str | None) -> str | None:
+# Patterns that look like subseries notation but aren't navigable
+# (content / format annotations, not sequential thread membership).
+_SUBSERIES_SKIP_TOKENS = (
+    "overall", "publication order", "collects", "novella", "novelette",
+    "omnibus", "anthology", "standalone", "prequel", "sequel",
+    "companion", "short story", "finale", "chronological",
+    "translated", "translation", "audio original", "ebook",
+    "middle grade", "final adult", "spin-off", "side-story",
+    "or standalone", "set after", "between", "late-career",
+    "pre-series", "unpublished", "set in", "in english",
+    "collection", "bridge novella", "plus anthology",
+    "part of interconnected", "novellas", "phase 1", "phase ii",
+    "rogue one prequel", "in publication order", "in chronological",
+    "within universe", "short novel", "secret project",
+    "or .",
+)
+
+
+def _parse_subseries(series_position: str | None) -> tuple[str, float] | None:
+    """Return (subseries_name_normalised, subseries_position) parsed
+    from the parenthetical of a series_position string, or None when
+    no recognisable subseries pattern is present.
+
+    Subseries notation lives inside the trailing parens, e.g.
+    "Book 29 (City Watch Book 6)" → ("city watch", 6.0).  Recognised
+    inner-paren forms (case-insensitive):
+
+      - "<Name> Book N" / "<Name> Book N.M"
+      - "<Name>, Book N"
+      - "<Name> #N"
+      - "<Name> subseries Book N"
+      - "<Name> Series Book N"
+      - "Book N in <Name>" / "Book N in <Name> subseries"
+
+    Annotations like "(novella)", "(omnibus)", "(prequel)",
+    "(chronological order)", "(Books 10-12: ...)" are ignored —
+    they're content/format hints, not a sequential subseries.
+    """
     if not series_position:
         return None
-    p = series_position.strip()
-    m = re.search(r"\(([^)]+)\)", p)
-    if m:
-        inner = m.group(1)
-    else:
-        inner = re.sub(r"^[Bb]ook\s*\d+(\.\d+)?\s*", "", p)
-        inner = re.sub(r"^of\s+", "", inner, flags=re.IGNORECASE)
-    if not inner:
+    m = re.search(r"\(([^)]+)\)", series_position)
+    if not m:
         return None
-    inner = re.sub(r"\s+Book\s*\d+(\.\d+)?$", "", inner, flags=re.IGNORECASE)
-    inner = re.sub(r"\s*#\d+(\.\d+)?$", "", inner)
-    inner = re.sub(r"\s+\(?(novella|coda|prequel)\)?$", "", inner, flags=re.IGNORECASE)
-    inner = inner.strip().lower()
-    return inner or None
+    inner = m.group(1).strip()
+    inner_lc = inner.lower()
+    if any(tok in inner_lc for tok in _SUBSERIES_SKIP_TOKENS):
+        return None
+
+    # "Book N in <Name> [subseries]" — number first.
+    mm = re.match(
+        r"^Book\s+([\d.]+)\s+in\s+(.+?)(?:\s+subseries)?$",
+        inner, flags=re.IGNORECASE,
+    )
+    if mm:
+        try:
+            return (norm(mm.group(2)), float(mm.group(1)))
+        except ValueError:
+            pass
+
+    # "<Name>[,]? [subseries|Series] Book N" / "<Name> #N"
+    for pat in (
+        r"^(.+?),\s+Book\s+([\d.]+)$",
+        r"^(.+?)\s+(?:[Ss]ubseries|[Ss]eries)\s+Book\s+([\d.]+)$",
+        r"^(.+?)\s+(?:[Ss]ubseries|[Ss]eries)\s+#([\d.]+)$",
+        r"^(.+?)\s+Book\s+([\d.]+)$",
+        r"^(.+?)\s+#([\d.]+)$",
+    ):
+        mm = re.match(pat, inner, flags=re.IGNORECASE)
+        if mm:
+            try:
+                return (norm(mm.group(1)), float(mm.group(2)))
+            except ValueError:
+                pass
+    return None
+
+
+def _series_sub_thread(series_position: str | None) -> str | None:
+    parsed = _parse_subseries(series_position)
+    return parsed[0] if parsed else None
+
+
+def _subseries_order_key(entry: dict) -> tuple[float, str]:
+    """Sort key for navigating WITHIN a subseries.  Falls back to
+    overall series ordering when no subseries info is present."""
+    parsed = _parse_subseries(entry.get("series_position"))
+    if parsed:
+        return (parsed[1], entry.get("title") or "")
+    return _series_order_key(entry)
 
 
 def lookup_by_pair(conn: sqlite3.Connection, title: str, author: str) -> dict | None:
@@ -565,7 +636,6 @@ def cmd_series_continuation(args, conn) -> None:
     siblings = [row_to_entry(r) for r in conn.execute(
         "SELECT * FROM books WHERE series = ?", (series,)
     )]
-    siblings.sort(key=_series_order_key)
 
     log = load_log(args.log)
     excluded_pairs = already_read_set(log) | list_set(args.reading_list)
@@ -577,7 +647,13 @@ def cmd_series_continuation(args, conn) -> None:
     src_sub = _series_sub_thread(src_pos)
 
     def _candidate_books(restrict_to_sub):
-        for book in siblings:
+        # When walking a subseries, sort by SUBSERIES position (not the
+        # outer overall-series book number) so City Watch #6 follows
+        # City Watch #5 even when the Discworld numbering jumps over
+        # other subseries entries.
+        sort_key = _subseries_order_key if restrict_to_sub else _series_order_key
+        ordered = sorted(siblings, key=sort_key)
+        for book in ordered:
             if restrict_to_sub:
                 if _series_sub_thread(book.get("series_position")) != restrict_to_sub:
                     continue

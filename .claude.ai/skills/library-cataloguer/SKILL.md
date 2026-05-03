@@ -36,6 +36,21 @@ skills read; you write.
    In-chat rate updates queue to `window.storage["log_pending_updates"]`
    on the picker artifact; reader merges into project file via
    re-upload.
+8. **Canonical `series_position` format.**  When writing or editing a
+   `series_position` value, use `Book <N> (<Subseries Name> Book <M>)`
+   for books in a named subseries (e.g. `Book 29 (City Watch Book 6)`),
+   or just `Book <N>` for books with no subseries.  Avoid variants like
+   `(City Watch #6)`, `(Book 6 in City Watch subseries)`,
+   `(Subseries Name, Book 6)` — those forms exist in legacy entries
+   for parser-compatibility, but new writes should be canonical.
+   Run `python3 webhelper/normalize_series_position.py` locally to
+   batch-fix legacy entries.
+9. **`series` field carries the parent series only.**  Use the umbrella
+   series name (`Discworld`, `Star Wars`, `Cosmere`) for `series`, and
+   put subseries/sub-arc info in `series_position`'s parenthetical.
+   Avoid creating a child series tag like `Discworld City Watch` —
+   that breaks `series-continuation` because the helper queries
+   `WHERE series = ?` exactly.
 
 ## Inputs at session start
 
