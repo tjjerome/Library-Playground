@@ -13,23 +13,21 @@ If you're looking for the original Claude Code workflow, see
 > first session, *not counting* the one-time bulk catalogue build
 > (~2-6 hours of mostly unattended runtime).
 
-## Required: publish three artifacts
+## How state moves between sessions
 
-Easiest prerequisite to miss.  The librarian uses three React
-artifacts:
+The librarian's mutable state lives in **project-knowledge files**, not
+in published artifacts.  During a session, the librarian works in
+`/tmp/` (`Reading_List.md`, `Profile.md`, `build_state.json`,
+`log_pending_updates.csv`); at session end it surfaces those files via
+download links so you can re-upload them to project knowledge.  The
+next session reads them back from project knowledge.
 
-- **`picker`** — multi-select for batch picks.  Also holds all
-  in-progress build state (phase, goals, ledger, indie/classic
-  floor counters, edit-locks, pending log updates).
-- **`profile`** — your live `Profile.md`.  Renders the markdown,
-  supports inline edit.
-- **`reading-list`** — your live `Reading_List.md`.  Read-only
-  rendering of the table-form list.
-
-Each one's persistence works **only on published artifacts**, and
-unpublishing **permanently deletes** that artifact's storage.  Setup
-section 8 below walks through publishing all three.  Once published,
-leave them published.
+The three React artifacts (`batch-picker`, `profile`, `reading-list`)
+are pure renderers — they take content via props and have no
+persistence layer.  You don't need to publish them for storage to
+work.  The librarian renders one inline when it wants you to look at
+your current list / profile, or to provide a richer batch-picker view
+for a specific decision.
 
 ---
 
@@ -139,8 +137,9 @@ Library-Playground/
 └── Library_Catalog.sqlite.encoded   # from §5
 ```
 
-That's it.  Profile and Reading_List live in artifacts (see §8); the
-reading log lives in project knowledge (see §6b).
+That's it.  Profile, Reading_List, and build_state live in project
+knowledge (see §6b); the reading log lives in project knowledge as
+well.
 
 In claude.ai, go to **Settings → Connectors**, find Google Drive,
 click **Connect**, and grant access to the folder.
@@ -163,15 +162,11 @@ voice / routing / hard-rule instructions in one place.
    ```
 
 3. Open `PROJECT_INSTRUCTIONS.md` in this repo.  Copy the contents
-   of the codeblock inside it (everything from
-   `DRIVE_CATALOG_FILE_ID:` down to the closing hard-rule line).
+   of the codeblock inside it.
 4. In claude.ai, open your project, click **Edit project
    instructions**, paste the codeblock content, and substitute your
    own Drive file ID for the placeholder on the first line.
-5. Leave the three `*_ARTIFACT_URL` lines as placeholders for now —
-   you'll fill them in after first-run setup (§ 8) publishes the
-   three artifacts and gives you their URLs.
-6. Save.  Triage now fetches the catalog by ID directly; the
+5. Save.  Triage now fetches the catalog by ID directly; the
    embedded librarian rules are loaded into every chat in the
    project.
 
@@ -185,13 +180,26 @@ claude.ai projects can hold static reference files that load into
 every chat in the project.  Create a project (or reuse one), then
 upload:
 
-- `Reading_Log.csv` (from §3) — your reading history.
+- `Reading_Log.csv` (from §3) — your reading history.  **Upload as
+  a file attachment, not inline content.**  Inline content gets
+  injected as a `<documents>` block into every chat's system prompt
+  and chews through context fast (Reading_Log.csv at 80KB+ is
+  enough to push first-build attempts past the conversation-size
+  cap on Pro).  As a file, the librarian reads it on demand via
+  bash and only the rows it needs land in context.
 - (optional) `Profile.md` — taste profile seed.  When present, the
-  librarian uses it as the seed for the live profile artifact on
-  first session.
+  librarian copies it into `/tmp/Profile.md` at session start and
+  edits in place; at session end you get a download link to the
+  updated copy.
 - (optional) `Reading_List.md` — existing TBR pool.  When present,
   the librarian asks "refine this or start fresh?" before doing
-  anything.
+  anything.  Same /tmp + present-files cycle as Profile.md.
+- (optional) `build_state.json` — only present after the librarian
+  surfaces it at the end of a build session.  Re-upload between
+  sessions to enable resume.
+- (optional) `log_pending_updates.csv` — queued reading-log rate
+  updates.  Re-upload between sessions until you merge them into
+  Reading_Log.csv.
 
 Empty `Profile.md` / `Reading_List.md` placeholders aren't
 necessary — only upload them if you have content worth seeding.
@@ -228,49 +236,7 @@ In claude.ai:
    "Skill installed" toast between uploads.  Order doesn't matter;
    skills auto-trigger on description match.
 
-## 8. Publish three artifacts
-
-Publish-once-leave-published step.  Without these, build sessions
-can't store state.
-
-1. Open a fresh chat in claude.ai with the project active and the
-   Drive folder added.
-2. Type:
-
-   > "Set up the library artifacts."
-
-3. The `librarian-triage` skill walks you through three artifacts in
-   order — `picker`, `profile`, `reading-list`.  For each one:
-   a. Skill renders the artifact preview.
-   b. Click **Publish** on the artifact panel.
-   c. Copy the resulting URL (`https://claude.ai/public/artifacts/<uuid>`).
-   d. Paste back into chat.
-   e. Triage runs a `set/get` round-trip preflight.
-
-4. If `Profile.md` or `Reading_List.md` is present in project
-   knowledge, the matching artifact gets seeded from it on first
-   render — you'll see the existing content already in place.
-
-5. Once all three URLs are pasted and verified, triage writes them
-   into Drive's `.config.json`:
-
-```
-Library-Playground/
-├── Library_Catalog.sqlite.encoded
-└── .config.json                      # 3 artifact URLs + folder name
-```
-
-> **If you ever unpublish any artifact:** that artifact's storage is
-> permanently lost.
-> - Picker unpublished → in-progress build state gone (committed
->   picks are still in the reading-list artifact).
-> - Profile unpublished → live profile gone (the project-knowledge
->   `Profile.md` seed is still there to re-seed from).
-> - Reading-list unpublished → live list gone (similar — re-seed
->   from project file or rebuild).
-> Don't unpublish.
-
-## 9. Start your first session
+## 8. Start your first session
 
 Open a fresh chat and say one of:
 
@@ -289,7 +255,7 @@ Open a fresh chat and say one of:
   to `library-cataloguer`.  Confirms the entry, fills catalog fields,
   asks before writing.
 
-## 10. Reader cheat sheet
+## 9. Reader cheat sheet
 
 Phrases the librarian recognises at any time.  You don't need to
 memorise them — the librarian usually offers the right next move
@@ -298,13 +264,13 @@ small talk:
 
 | Phrase | What it does |
 |---|---|
-| `where are we` | Triage replays your build state ("23 books in your list, indie at 4 of 15") |
-| `flush now` | Force a re-write of the profile + reading-list artifact storage from in-sandbox copies (idempotent — both are per-edit) |
+| `where are we` | Triage replays your build state from `/tmp/build_state.json` ("23 books in your list, indie at 4 of 15") |
+| `save my files` | Cataloguer surfaces the current `/tmp/Reading_List.md`, `/tmp/Profile.md`, `/tmp/build_state.json`, and any pending log updates as download links to replace in project knowledge |
 | `save catalog` | Cataloguer re-encodes the in-session catalog and presents a download link.  Replace the Drive file manually. |
 | `continue` | After a recovery prompt, resume the prior flow |
-| `start fresh` | Discard build state in the picker artifact's storage; preserve profile + reading-list artifacts |
+| `start fresh` | Archive the in-session reading list and build state; preserve `Profile.md`; route to build-setup |
 
-## 11. Maintenance
+## 10. Maintenance
 
 ### Adding a few books (≤20)
 
@@ -348,10 +314,12 @@ After finishing a book:
 
 > "I finished *Hyperion* — 5 stars."
 
-The cataloguer queues the rate update to `log_pending_updates` on the
-picker artifact.  If the book was on the reading-list artifact, it's
-removed same turn.  Triage surfaces queued updates on next session
-start as a CSV-ready paste block:
+The cataloguer queues the rate update to `/tmp/log_pending_updates.csv`.
+If the book was on `/tmp/Reading_List.md`, it's removed same turn.  At
+session end, the cataloguer surfaces the pending-updates file as a
+download link.  On the next session start, triage seeds it back from
+project knowledge and surfaces queued updates as a CSV-ready paste
+block:
 
 > "I have 3 pending rate updates from previous sessions.  Paste these
 > rows into your `Reading_Log.csv`, save, re-upload to project
@@ -374,7 +342,7 @@ python3 catalogue.py --library Library.csv \
 
 Re-upload `.encoded` to Drive.
 
-## 12. Troubleshooting
+## 11. Troubleshooting
 
 ### Skills don't trigger
 
@@ -384,12 +352,11 @@ missing.  Confirm "Code execution and file creation" is on.
 
 ### Drive disconnects mid-session
 
-The librarian's in-progress edits are still in the picker artifact's
-`window.storage`; the catalog edits live in the sandbox SQLite.
-Reconnect via Settings → Connectors → Google Drive → Reconnect.
-Profile + reading-list keep updating regardless of Drive — they
-write to artifact storage.  Catalog changes only need Drive at
-session end when you replace the file from the download link.
+The librarian's in-progress edits live in `/tmp/` (Profile.md,
+Reading_List.md, build_state.json) and the sandbox SQLite — they
+don't depend on Drive.  Reconnect via Settings → Connectors → Google
+Drive → Reconnect.  Catalog changes only need Drive at session end
+when you replace the file from the download link.
 
 ### Catalog file looks corrupted
 
@@ -406,52 +373,38 @@ python3 catalogue.py --library Library.csv \
 Re-upload `Library_Catalog.sqlite.encoded` to Drive.  In chat:
 `continue`.
 
-### Build state can't be read / picker storage empty
+### Build state can't be read
 
-Likely cause: picker artifact was unpublished.  Recovery:
+Likely cause: forgot to re-upload `build_state.json` to project
+knowledge after the previous session surfaced it.  Recovery:
 
-1. Open the picker URL.
-2. Click **Publish** again.
-3. Return to chat and say `continue`.
-
-In-progress build state from before the unpublish is gone.  The
-reading-list artifact still has your committed picks (assuming it
-wasn't also unpublished).
-
-### Profile or reading-list artifact storage empty
-
-Likely cause: that artifact was unpublished.  Recovery:
-
-1. Open its URL.
-2. Click **Publish** again.
-3. If a project-knowledge seed exists (`Profile.md` /
-   `Reading_List.md`), triage will re-seed from it on next session.
-4. If no seed exists, the librarian re-orients from scratch — for
-   profile, run a fresh interview; for reading-list, build fresh.
-
-### I forgot the artifact URLs
-
-All three URLs live in `Library-Playground/.config.json` in your
-Drive folder.  Open in a text view (Google Drive supports this for
-`.json`).
+1. If you have the download from the prior session in your local
+   downloads folder, re-upload it to project knowledge.
+2. Otherwise the build is unrecoverable mid-stream — but
+   `Reading_List.md` still has your committed picks (provided you
+   re-uploaded it).  Tell the librarian "refine my list" to pick up
+   from there.
 
 ### Pro plan usage limit cutoff mid-build
 
-Your committed picks and profile updates are safe — both write
-per-edit to artifact storage (profile silently, reading-list with
-chat acknowledgement on every pick).  Wait out the cooldown, open a
-new chat, and triage will offer to resume.  The picker artifact's
-state survives the reset.
+Anything you committed to `/tmp/Reading_List.md` and
+`/tmp/Profile.md` during the cut-off session is gone unless the
+session got far enough to surface those files via download links.
+Recovery: open a new chat after the cooldown, triage will read
+whatever was last re-uploaded to project knowledge.  In practice,
+this means re-uploading early and often — say "save my files" any
+time you want a checkpoint.
 
 Catalog changes that hadn't reached the session-end download link
-are gone — re-state them in the next session.
+are also gone — re-state them in the next session.
 
 ### Multiple users on the same Pro account
 
-Not supported.  Pro is per-user; shared accounts get shared
-window.storage on a single artifact, which collides build state.
+Not supported.  Pro is per-user; project knowledge is shared per
+project but uploads collide if two people are mutating the same
+files.
 
-## 13. Files reference
+## 12. Files reference
 
 ```
 ~/Library-Playground/                  # the user's clone
@@ -473,16 +426,25 @@ window.storage on a single artifact, which collides build state.
 └── SETUP.md                           # this file
 
 Drive/Library-Playground/              # the user's claude.ai-side store (bare)
-├── Library_Catalog.sqlite.encoded
-└── .config.json                       # 3 artifact URLs + folder name
+└── Library_Catalog.sqlite.encoded
 
-claude.ai project knowledge            # static reads, loaded into every chat
-├── Reading_Log.csv                    # reading history
-├── Profile.md (optional)              # taste profile seed
-└── Reading_List.md (optional)         # existing TBR seed for refine-mode
+claude.ai project knowledge            # carry-across-sessions store
+├── Reading_Log.csv                    # reading history (upload as a file, not inline)
+├── Profile.md (optional)              # taste profile, re-uploaded after each editing session
+├── Reading_List.md (optional)         # TBR list, re-uploaded after each editing session
+├── build_state.json (optional)        # in-progress build state, re-uploaded between sessions
+└── log_pending_updates.csv (optional) # queued reading-log rate updates
 
-Published artifacts (window.storage)   # mutable user-facing state
-├── picker        — build state, ledger, batch:<id>, log_pending_updates, catalog_edit_lock
-├── profile       — live Profile.md content
-└── reading-list  — live Reading_List.md content
+Sandbox /tmp/                          # per-session working state
+├── Library_Catalog.sqlite             # decoded from Drive at session start
+├── Profile.md                         # seeded from project knowledge, edited in place
+├── Reading_List.md                    # seeded from project knowledge, edited in place
+├── build_state.json                   # build phase / goals / ledger
+├── log_pending_updates.csv            # pending log queue
+└── catalog_edits.log                  # per-session catalog change list
+
+Artifacts                              # pure renderers — no persistence
+├── batch-picker.jsx  — opt-in richer batch view
+├── profile.jsx       — read-only Profile.md preview
+└── reading-list.jsx  — read-only Reading_List.md preview
 ```

@@ -5,13 +5,13 @@ description: >
   long stretch where genre batches fire, reflection beats land, rejection
   clusters trigger probes, and series scopes get decided.  Triggers on
   "let's start the batches", "continue the build", "more horror picks",
-  "next batch", or any mid-build opener with build state in the picker
-  artifact's window.storage.  Reads build state from the picker artifact,
-  reads/writes profile + reading-list artifacts per-edit, runs each batch
-  through the React picker artifact, hands off to librarian-build-finish
-  when core ≥ 100.  Also serves as the entry point for refine-mode (when
-  triage routed here because the reader chose to refine an existing
-  reading list).
+  "next batch", or any mid-build opener with /tmp/build_state.json
+  present.  Reads build state from /tmp/build_state.json, edits
+  /tmp/Profile.md and /tmp/Reading_List.md per-edit, runs each batch
+  through native AskUserQuestion(multiSelect), hands off to
+  librarian-build-finish when core ≥ 100.  Also serves as the entry
+  point for refine-mode (when triage routed here because the reader
+  chose to refine an existing reading list).
 ---
 
 # librarian-build-batches — Phases 1 + 2 (and refine-mode)
@@ -20,20 +20,20 @@ You = the librarian during the bulk of the build.  Reader has either:
 
 (a) **Fresh-build mode**: a profile, goals, an unfinished-series gate
     routed by build-setup, and a wish-list — picks come in batches of 4
-    through the React picker.  Or:
+    via native multi-select.  Or:
 (b) **Refine-mode**: an existing reading list the reader chose to keep,
-    with no fresh interview / goals / Phase 0 — work off the existing
-    artifact content, make the requested edits.
+    with no fresh interview / goals / Phase 0 — work off
+    `/tmp/Reading_List.md`, make the requested edits.
 
 ## Hard invariants
 
 All eight librarian invariants from the original SKILL.md, plus three
 claude.ai-port specific ones, plus one stronger rule about the picker.
 
-1. **Universal exclusion gate.** Every candidate that reaches the React
-   picker clears `is_already_read` AND `is_on_list` AND the shown-ledger
-   AND the conservative author entry-point fallback.  Owned by
-   `scripts/librarian_query.py candidates`.
+1. **Universal exclusion gate.** Every candidate that reaches the
+   reader's multi-select clears `is_already_read` AND `is_on_list` AND
+   the shown-ledger AND the conservative author entry-point fallback.
+   Owned by `scripts/librarian_query.py candidates`.
 2. **Core target = 100, fixed.**  Mid-build cap reductions trigger a
    redistribution `AskUserQuestion`; never lower 100.
 3. **Conservative author entry-point fallback.**  Helper applies it by
@@ -44,52 +44,45 @@ claude.ai-port specific ones, plus one stronger rule about the picker.
    If neither, hand back to `librarian-build-setup`.
 5. **Per-batch deep-cut floor.**  Always pass `--deep-cut-slot` on
    `candidates`.  Deep-cut position is invisible to the reader — the
-   helper randomises the slot, the picker renders cards identically.
+   helper randomises the slot, the multi-select renders cards
+   identically.
 6. **Open prose questions are turn-ending.**  Reflection beats fire a
    prose question; do NOT issue an `AskUserQuestion` on the same turn.
 7. **Anti-jargon contract.**  Translation map at the bottom.
 8. **Deep-cut silence.**  Never label the deep cut.  No "(deep cut)",
    "(hidden gem)", "(indie pick)", "(small-press wildcard)" anywhere in
-   chat preludes, picker pitches, or list cells.
-9. **Profile artifact per-edit storage write — silent.**  Every
-   signal-capture write goes to `window.storage["profile"]` same
-   turn.  Do NOT mention profile updates in chat mid-session — the
+   chat preludes, multi-select options, or list cells.
+9. **Profile edits are silent.**  Append to `/tmp/Profile.md`.  The
    user sees the consolidated profile diff at session end alongside
-   the catalog download.  The artifact URL is always navigable
-   out-of-band if the reader wants to inspect.
-10. **Reading-list artifact per-edit storage write — user-visible.**
-    Every batch's selected picks update `window.storage["reading_list"]`
-    same turn.  Each confirmed pick gets a one-line chat
-    acknowledgement (e.g. "Added *Hyperion* — Dan Simmons").  This is
-    the one mutable surface the reader sees evolve in real time.
-11. **Picker artifact is the only `AskUserQuestion(multiSelect)`
-    surface for batch picks.**  No yes/no fallback.  No four sequential
-    yes/no questions.  If the picker fails mid-session, surface the
-    publish-recovery flow and stop.
+   the catalog download.
+10. **Reading-list edits are user-visible.**  Each confirmed pick gets
+    a one-line chat acknowledgement (e.g. "Added *Hyperion* — Dan
+    Simmons") and is written to `/tmp/Reading_List.md` same turn.
+    This is the one mutable surface the reader sees evolve in real
+    time.
+11. **Default batch-confirmation surface is native
+    `AskUserQuestion(multiSelect)`.**  One question, candidate titles
+    as options, response comes back as the next user message.  The
+    React picker artifact is an opt-in richer view for cases where
+    cover-style cards, multi-paragraph pitches, or content flags
+    materially help the decision — never the default.
 
 ## Inputs at session start
 
 Triage handed off because either:
-- `build:<id>` exists in the picker artifact's window.storage and the
-  opener was build-shaped (fresh-build resume), OR
+- `/tmp/build_state.json` exists with `current_phase` < complete and
+  the opener was build-shaped (fresh-build resume), OR
 - The reader chose "Refine existing list" in triage's refine-vs-fresh
   prompt (refine-mode).
 
-Read build state:
+Read working state:
 
-```javascript
-let buildState = JSON.parse((await window.storage.get("build:" + buildId)).value);
-let profileObj = JSON.parse((await window.storage.get("profile")).value);
-let listObj    = JSON.parse((await window.storage.get("reading_list")).value);
-let profileContent = profileObj?.content || "";
-let listContent    = listObj?.content    || "";
-```
-
-Mirror Reading_List content to `/tmp/Reading_List.md` so the helper can
-read it via `--reading-list`:
-
-```bash
-echo "$listContent" > /tmp/Reading_List.md
+```python
+import json
+with open("/tmp/build_state.json") as f:
+    build_state = json.load(f)
+profile_text = open("/tmp/Profile.md").read()
+list_text    = open("/tmp/Reading_List.md").read()
 ```
 
 Project-file paths from triage:
@@ -97,10 +90,9 @@ Project-file paths from triage:
 
 Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
 
-Validate `buildState` shape (version, current_phase, goals, ledger,
-indie_floor, classic_floor).  On corruption, surface F3 ("can't read
-in-progress build state") and offer to resume from the on-Drive
-`Reading_List.md` archive.
+Validate `build_state` shape (version, current_phase, goals, ledger,
+indie_floor, classic_floor).  On corruption, surface to the reader and
+offer to resume from `/tmp/Reading_List.md` alone.
 
 Confirm orientation in one chat sentence:
 
@@ -113,8 +105,8 @@ Do NOT say "Phase 2".  Use a phase-free description.
 
 ## Refine-mode handling
 
-If triage routed here in refine-mode (`buildState.mode == "refine"` or
-no buildState exists but reading-list artifact has content), the
+If triage routed here in refine-mode (`build_state.mode == "refine"` or
+no build state exists but `/tmp/Reading_List.md` has content), the
 reader is iterating on an existing list — not running a new build.
 
 Skip Phase 0 / interview / goals.  Open with:
@@ -127,14 +119,14 @@ Skip Phase 0 / interview / goals.  Open with:
 Common refine actions:
 
 - **Swap X for Y**: confirm via `AskUserQuestion`, run `is-read` /
-  `is-on-list` on Y, edit reading-list artifact content, flush.
+  `is-on-list` on Y, edit `/tmp/Reading_List.md` in place.
 - **Add N picks in <genre>**: run a normal Phase 2 batch (below) for
   that genre, but ignore the 100-cap rule (refine-mode operates on the
   reader's existing total).
-- **Drop X**: confirm via `AskUserQuestion`, edit reading-list artifact
-  to remove the row, flush.
+- **Drop X**: confirm via `AskUserQuestion`, edit
+  `/tmp/Reading_List.md` to remove the row.
 - **Trim series**: confirm scope change via `AskUserQuestion`, remove
-  the relevant series rows, flush.
+  the relevant series rows from `/tmp/Reading_List.md`.
 
 When the reader's "refine" requests amount to a full new build, offer
 to switch into fresh-build mode:
@@ -149,7 +141,7 @@ to switch into fresh-build mode:
 
 Skip in refine-mode.
 
-8-12 books across **2-3 sequential picker batches**.
+8-12 books across **2-3 sequential batches**.
 
 Open with picks where fit is so clear they're near-automatic.  Sources:
 
@@ -178,13 +170,14 @@ After each batch, run the post-batch sequence (below).
 **Every batch = `candidates --genre <G> --batch-size 4 --deep-cut-slot
 --cross-cut-floor indie:1` (or `classic:1`) until floor met.**
 
-### Three-part book pitch — chat prelude before the picker fires
+### Three-part book pitch — chat prelude before the multi-select fires
 
 For each pick in the batch, write a 2-4 sentence paragraph in chat
-*before* the picker renders.  Three components, narrative form:
+*before* the multi-select question fires.  Three components, narrative
+form:
 
 1. **Personal anchor.**  Name a rated title from `PROJECT_LOG` or a
-   stated taste from the profile artifact's content.
+   stated taste from `/tmp/Profile.md`.
 2. **Plot hook.**  One sentence on what the book does — not a
    themes-list, not a genre label.
 3. **Tone / comp anchor.**  "More like *X* than *Y*" or "if you wanted
@@ -214,28 +207,44 @@ Example shape:
 > **The Shining — Stephen King** (355pp). Hotel-isolation horror;
 > you've read deep King but not this one.  Worth it for the Torrance
 > interiority alone.
->
-> [picker artifact renders here]
 
-Page count mandatory in the prelude paragraph.  Render the picker
-after the prelude, not before.
+Page count mandatory in the prelude paragraph.
 
-### Render the picker
+### Fire the multi-select question
 
-Build the picker payload from the helper's response, plus the chat-
-prelude pitch as the `pitch` field on each card.  Pass content_flags
-(pulled from SQLite) as the optional `content_flags` array.  Set the
-artifact's `batch.batch_id` to the helper's returned `batch_id`.
+Default surface is native `AskUserQuestion`:
 
-The picker writes the selection to `window.storage` under
-`batch:<batch_id>` when the reader clicks Save.  Read back:
-
-```javascript
-let saved = JSON.parse((await window.storage.get("batch:" + batchId)).value);
-let selectedIds = saved.selected;
-let rejectedIds = saved.rejected;
-let records     = saved.records; // {title, author, pages, status} list
 ```
+Q: "Which of these belong in your pool?"
+multiSelect: true
+Options:
+  - "Between Two Fires — Christopher Buehlman"
+  - "The Lesser Dead — Christopher Buehlman"
+  - "Mountain Fast — Brian Lerner"
+  - "The Shining — Stephen King"
+  - "None of these"
+```
+
+The reader's selections come back as the next chat message.  Map back
+to the `{title, author, pages, status}` records the helper expects:
+
+```python
+records = []
+for book in batch_books:
+    records.append({
+        "title":  book["title"],
+        "author": book["author"],
+        "pages":  book["pages"],
+        "status": "selected" if book in selections else "rejected",
+    })
+```
+
+If the batch genuinely needs richer per-book context (cover-style
+cards, multi-paragraph pitches, content flags pulled from SQLite),
+render the React picker artifact via `artifacts/batch-picker.jsx` as
+an opt-in alternative — pass `batch.books` as a prop — and ask the
+reader to type their picks back in chat (the artifact is a pure
+renderer; it does not persist selections).
 
 ### Post-batch sequence
 
@@ -252,26 +261,12 @@ For every batch (Phase 1 or Phase 2), in this order:
        --ledger - > /tmp/ledger.new
    ```
 
-   Persist new ledger to `build:<id>.ledger` via picker artifact's
-   window.storage.
+   Update `/tmp/build_state.json`'s `ledger` field from
+   `/tmp/ledger.new`.
 
-2. **Selected → write to reading-list artifact.**  Run `is-on-list`
-   per write (belt-and-suspenders duplicate check).  Read current
-   artifact content, append a row to the appropriate genre-section
-   table, write back:
-
-   ```javascript
-   let rl = JSON.parse((await window.storage.get("reading_list")).value);
-   rl.content = applyAppendsToMarkdownTable(rl.content, "Horror", new_rows);
-   rl.updated_at = new Date().toISOString();
-   await window.storage.set("reading_list", JSON.stringify(rl));
-   ```
-
-   Mirror to `/tmp/Reading_List.md` for the next helper call:
-
-   ```bash
-   echo "$rl.content" > /tmp/Reading_List.md
-   ```
+2. **Selected → write to `/tmp/Reading_List.md`.**  Run `is-on-list`
+   per write (belt-and-suspenders duplicate check).  Append rows to
+   the appropriate genre-section table in `/tmp/Reading_List.md`.
 
 3. **Series entries → fire series-scope follow-up BEFORE next batch.**
    Hard gate.  Run `series-continuation` for the selected book; ask
@@ -296,7 +291,7 @@ For every batch (Phase 1 or Phase 2), in this order:
    > "None of those landed — what's off about the framing?  Tone,
    > format, era, something else?"
 
-   Turn-ending.  Reader's answer flushes to profile artifact same
+   Turn-ending.  Reader's answer flushes to `/tmp/Profile.md` same
    turn (see Profile-write triggers).
 
 5. **Rejection-cluster probe.**  Check `probe_recommended` on the
@@ -306,7 +301,7 @@ For every batch (Phase 1 or Phase 2), in this order:
    > of them.  What's the framing miss — the indie thing, the fantasy
    > register, or how I'm pitching them?"
 
-   Turn-ending.  Reader's answer → profile artifact write same turn.
+   Turn-ending.  Reader's answer → `/tmp/Profile.md` write same turn.
 
 6. **Surprising selection → one pointed follow-up.**  Surprising =
    pick contradicts profile.  Use one `AskUserQuestion`:
@@ -315,11 +310,11 @@ For every batch (Phase 1 or Phase 2), in this order:
    > Options: "Fresh interest in [genre]" / "Specific recommendation" /
    > "Curious about the author" / "Other"
 
-   Answer feeds back into profile artifact.
+   Answer feeds into `/tmp/Profile.md`.
 
-7. **Update build state** in picker artifact's window.storage:
+7. **Update build state** in `/tmp/build_state.json`:
    - `phase_progress.phase_2.batches_completed` += 1
-   - `current_count` = books in reading-list artifact (re-parse)
+   - `current_count` = books in `/tmp/Reading_List.md` (re-parse)
    - `indie_added` += 1 if any selected pick has `indie: true`
    - `classic_added` += 1 if any selected pick has `classic: true`
    - `last_batch_genre` = current genre
@@ -337,23 +332,18 @@ Open a real two-way conversation about the build so far.  Pattern:
    "anything I'm misreading?", "is the tone still right?".
    **Turn-ending.**  Wait for reply.
 3. **Profile write same turn** when the reader answers, via
-   profile-append helper + window.storage.set:
+   `profile-append`:
 
    ```bash
-   echo "$PROFILE_CONTENT" | python3 scripts/librarian_query.py profile-append \
+   python3 scripts/librarian_query.py profile-append \
        --section "Mid-build observations" \
        --bullet "<one-line distillation>" \
-       --stdio
+       --profile /tmp/Profile.md
    ```
-
-   Capture stdout, write back to `window.storage["profile"]`.
-4. **Optional flush beat** — every artifact write IS the flush, so this
-   is mostly redundant; skip unless the reader wants explicit
-   confirmation.
 
 ## Profile-write triggers (exhaustive)
 
-All write to profile artifact same turn, **silently** — no chat
+All write to `/tmp/Profile.md` same turn, **silently** — no chat
 confirmation, no "Noting in your profile" sentence.  The user sees
 the consolidated profile diff at session end alongside the catalog
 download (build-finish handles that surface).
@@ -368,10 +358,10 @@ download (build-finish handles that surface).
 7. Rejection-cluster probe answer.
 
 End-of-session assertion: if any of triggers 2-7 fired this session
-and the profile artifact's `updated_at` hasn't moved since session
-start, internal failure — log to picker storage's `profile_write_misses`
-and surface the gap during the build-finish session-end summary
-alongside the missed signal recovery.
+and `/tmp/Profile.md`'s mtime hasn't advanced, internal failure — log
+to `/tmp/build_state.json`'s `profile_write_misses` and surface the
+gap during the build-finish session-end summary alongside the missed
+signal recovery.
 
 ## Cross-cutting tag floors
 
@@ -397,7 +387,10 @@ When `current_count >= 100`:
 > the Top 5 capstone."
 
 Update build state: `current_phase: "phase-3"`,
-`phase_progress.phase_2: "done"`.
+`phase_progress.phase_2: "done"`.  Then hand off to
+`library-cataloguer`'s session-end flow to surface the updated
+`/tmp/Reading_List.md`, `/tmp/Profile.md`, and `/tmp/build_state.json`
+as downloads for the reader to re-upload to project knowledge.
 
 ## Mid-build session pause — interim summary
 
@@ -408,16 +401,20 @@ wrapping the session before reaching the 100 hand-off.
 Run a compact version of the session-end summary defined in
 `librarian-build-finish/SKILL.md`:
 
-1. **Reading list:** one line — current count, link to artifact URL.
+1. **Reading list:** one line — current count.
 2. **Profile diff (silent → consolidated):** every profile write that
    happened this session, sectioned by what changed.  This is the
    reader's first chat-side view of the changes.  Surface any
-   `profile_write_misses` recorded in picker storage and capture them
-   now.
+   `profile_write_misses` recorded in `/tmp/build_state.json` and
+   capture them now.
 3. **Catalog changes (if any):** hand off to library-cataloguer's
    manual-download flow.  Skip if no catalog writes happened.
-4. **Resume pointer:** "I've saved your spot.  Open a new chat and
-   say 'continue' when you're ready."
+4. **Surface files:** hand off to library-cataloguer's session-end
+   flow.  Reader downloads updated `Reading_List.md`, `Profile.md`,
+   `build_state.json` and re-uploads to project knowledge.
+5. **Resume pointer:** "I've saved your spot in the files I just
+   surfaced.  Re-upload them to project knowledge, open a new chat,
+   and say 'continue' when you're ready."
 
 Update build state with `last_paused_at: <ISO>`.
 
@@ -445,10 +442,10 @@ Phase advance only on completion criteria.
 | author entry-point | "good place to start with this author" |
 | score / weight / scored high on | (silent — narrative reasoning instead) |
 | probe / pause-and-probe | (silent — just ask the question) |
-| build_id / phase_progress / window.storage | (silent — internal only) |
+| build_id / phase_progress / build_state.json | (silent — internal only) |
 | encoded catalog / .encoded / gzip+b64 | (silent — internal only) |
-| project file | (silent — "your library data") |
-| picker artifact / profile artifact / reading-list artifact | "the picker" / "your profile" / "your reading list" |
+| project file / project knowledge | (silent — "your library data") |
+| picker artifact / multi-select | "a picker"; never expose the surface choice |
 | refine-mode / fresh-build mode | (silent — just behaviour) |
 
 Things never to say (with replacements):

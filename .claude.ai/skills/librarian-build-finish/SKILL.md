@@ -5,11 +5,11 @@ description: >
   releases via web search across four parallel pools, final review with
   borderline removals + missed picks + distribution check, and the Top 5
   "Start Here" capstone.  Triggers on "wrap it up", "let's finish the
-  build", "next phase" when the build state shows core ≥ 100, or any
-  build-shaped opener with `current_phase: "phase-3"` or later in the
-  picker artifact's window.storage.  Final-flushes profile + reading-list
-  artifacts via per-edit storage writes, clears the build state, optionally
-  offers a session-log paragraph the reader can paste anywhere.
+  build", "next phase" when /tmp/build_state.json shows core ≥ 100, or
+  any build-shaped opener with `current_phase: "phase-3"` or later.
+  Final-edits /tmp/Profile.md and /tmp/Reading_List.md, marks the build
+  state complete, then surfaces all updated files via `present_files`
+  for the reader to download and re-upload to project knowledge.
 ---
 
 # librarian-build-finish — Phases 3 + 4 + 5
@@ -31,15 +31,14 @@ phase:
 
 ## Inputs at session start
 
-Triage handed off because `buildState.current_phase >= "phase-3"`.
+Triage handed off because `build_state.current_phase >= "phase-3"`.
 
-```javascript
-let buildState = JSON.parse((await window.storage.get("build:" + buildId)).value);
-let profileObj = JSON.parse((await window.storage.get("profile")).value);
-let listObj    = JSON.parse((await window.storage.get("reading_list")).value);
+```python
+import json
+build_state = json.load(open("/tmp/build_state.json"))
+profile_text = open("/tmp/Profile.md").read()
+list_text    = open("/tmp/Reading_List.md").read()
 ```
-
-Mirror reading-list content to `/tmp/Reading_List.md`.
 
 Project-file paths from triage:
 - `PROJECT_LOG` (required)
@@ -75,9 +74,9 @@ For each named release, **run verification searches**:
   candidate, not Phase 3 stretch — flag and offer different path.
 
 For confirmed: pull plot/comp details, run `is-read` against
-`PROJECT_LOG`, fit-check against profile.  Series sequel → confirm
-prior books read in log; series-scope follow-up if ambiguous.  Add to
-stretch.
+`PROJECT_LOG`, fit-check against `/tmp/Profile.md`.  Series sequel →
+confirm prior books read in log; series-scope follow-up if ambiguous.
+Add to stretch.
 
 ### Step 2 — librarian-suggested upcoming releases
 
@@ -105,24 +104,26 @@ genre-anticipated debuts the reader actually wants.
 - Multiple fresh searches per candidate.
 - Verify release date in writing.  Pull specific date or month.
 - Reject anything already out.
-- Cite source briefly in picker `pitch` field ("Tor announcement, Feb
-  2026; release Sep 2026") so reader can sanity-check.
+- Cite source briefly in the multi-select option label or chat prelude
+  ("Tor announcement, Feb 2026; release Sep 2026") so reader can
+  sanity-check.
 
-### Render via React picker
+### Render via native multi-select
 
-Same as Phase 2.  Two differences:
+Same as Phase 2.  Default surface is `AskUserQuestion(multiSelect)`
+with the candidate titles as options.  Two differences:
 
 - Library availability is N/A (these books aren't in the catalog yet).
-- Page count may not be published; flag in pitch when missing.
+- Page count may not be published; flag in the prelude when missing.
 
-After each picker save:
+After each multi-select reply:
 
 1. Append `mark-shown` records.
 2. Selected picks → write to a **separate "New & Upcoming Releases"
-   section** in the reading-list artifact.  Don't mix with core 100.
+   section** in `/tmp/Reading_List.md`.  Don't mix with core 100.
 3. Series picks → series-scope follow-up.
 4. Whole-batch skip → pause-and-probe.
-5. Update build state.
+5. Update `/tmp/build_state.json`.
 
 Bridge to main pool: stretch picks stay in "New & Upcoming Releases"
 until reader acquires the book.  When reader says "I bought *X*",
@@ -136,12 +137,12 @@ move it from stretch to main pool.
 
 ### Pre-Phase-4 profile gap check
 
-Inspect profile artifact's `updated_at`.  Did any Profile-write
-trigger fire this session?  Did the artifact actually receive a
-write?
+Inspect `/tmp/Profile.md`'s mtime against the session start time.
+Did any Profile-write trigger fire this session?  Did the file
+actually receive a write?
 
 If a trigger fired but no write happened, **pause-and-probe before
-advancing.**  Capture the missed signal NOW into the profile artifact,
+advancing.**  Capture the missed signal NOW into `/tmp/Profile.md`,
 then continue.
 
 ### Walk the full list
@@ -163,9 +164,7 @@ With core and stretch in scope:
 4. **Indie / classic floor check.**  Below floor → swap a near-tie
    genre pick for an indie/classic comp.
 
-Each correction → edit reading-list artifact content → write back to
-`window.storage["reading_list"]`.  Mirror to `/tmp/Reading_List.md`
-for the next helper call.
+Each correction → edit `/tmp/Reading_List.md` in place.
 
 ## Phase 5 — Top 5 "Start Here" capstone
 
@@ -173,11 +172,9 @@ Phase 4 closes → prescriptive call: **5 books from the final list,
 chosen for diversity (pace, length, genre, tone) and fit (strongest
 personal pitches in the whole workflow).**
 
-### Render via React picker
+### Render via single AskUserQuestion
 
-Build a single 5-book picker batch (pass `books` array of length 5).
-
-Surface as a single `AskUserQuestion`:
+Single five-option `AskUserQuestion`:
 
 ```
 Q: "Lock these 5 as your Start Here?"
@@ -188,39 +185,39 @@ Options:
   - "Other"
 ```
 
-Each Top-5 entry's pitch is the **strongest personal-first description**
-in the whole build.
+Each Top-5 entry's pitch in the chat prelude is the **strongest
+personal-first description** in the whole build.
 
-### Top 5 in the reading-list artifact
+### Top 5 in /tmp/Reading_List.md
 
-Top 5 lives at the **top** of the reading-list artifact's content in
-its own section:
+Top 5 lives at the **top** of `/tmp/Reading_List.md` in its own
+section:
 
 ```markdown
 ## Top 5 — Start Here
 
 | Title | Author | Pages | Why It's For You |
 | ... |
+
 ```
 
 Top 5 entries also remain in their genre sections.
 
-## Final flushes + state cleanup
+## Final state cleanup + present files
 
 After Top 5 locks:
 
-1. **Final profile artifact write.**  One last read-back to confirm
-   `updated_at` is recent.
-2. **Final reading-list artifact write.**  Top 5 section + main pool
-   + New & Upcoming Releases.
+1. **Final read-back of `/tmp/Reading_List.md` and `/tmp/Profile.md`**
+   to confirm everything is on disk.
+2. **Mark `/tmp/build_state.json` complete** — set
+   `current_phase: "complete"`, `completed_at: <ISO>`.
 3. **Session-end summary turn — first time the reader sees the
    profile diff.**  Render a single chat message covering, in this
    order:
 
    - **Reading list:** one line — "Your reading list now has <N>
-     books, locked as <Top 5 / 100-core / +stretch>.  See
-     <reading-list URL>."  The reader has been watching this evolve
-     all session, so this is just a final pointer.
+     books, locked as <Top 5 / 100-core / +stretch>.  See the file
+     I'm surfacing below."
    - **Profile diff:** consolidated summary of every profile write
      that happened this session — sectioned by what changed (e.g.
      "Added under 'Negative indicators': graphic-horror ceiling,
@@ -228,19 +225,36 @@ After Top 5 locks:
      prefers ~400pp anchors, accepts up to 700pp for late-series
      payoff.").  This is the reader's first chat-side view of the
      profile changes — they were silent during the build.  Also
-     surface any `profile_write_misses` recorded in picker storage
-     and capture the missed signal now.  Link the profile artifact
-     URL: "Inspect or edit at <profile URL>."
+     surface any `profile_write_misses` recorded in
+     `/tmp/build_state.json` and capture the missed signal now.
    - **Catalog changes (if any):** if the cataloguer ran any writes
      this session, hand off to library-cataloguer's manual-download
      flow now (see `library-cataloguer/SKILL.md`).  The reader
      receives the encoded download link in the same turn.  If no
      catalog writes happened, skip this section entirely.
 
-4. **Mark `build:<id>` as complete** — set `current_phase: "complete"`,
-   `completed_at: <ISO>`.  Keep for one cycle (so triage can replay
-   "you finished a build on <date>"); delete on next session-start if
-   reader starts fresh.
+4. **Surface the updated files via `present_files`.**  Copy the /tmp
+   working files into `/mnt/user-data/outputs/` and present them so
+   the reader can download:
+
+   ```python
+   import shutil
+   shutil.copy("/tmp/Reading_List.md", "/mnt/user-data/outputs/Reading_List.md")
+   shutil.copy("/tmp/Profile.md",      "/mnt/user-data/outputs/Profile.md")
+   shutil.copy("/tmp/build_state.json", "/mnt/user-data/outputs/build_state.json")
+   ```
+
+   Then render markdown links so the reader can click + download:
+
+   > "Updated files for you to re-upload to project knowledge:
+   >
+   > - [`Reading_List.md`](sandbox:/mnt/user-data/outputs/Reading_List.md)
+   > - [`Profile.md`](sandbox:/mnt/user-data/outputs/Profile.md)
+   > - [`build_state.json`](sandbox:/mnt/user-data/outputs/build_state.json)
+   >
+   > Replace the matching files in your claude.ai project knowledge so
+   > the next session picks up where we left off."
+
 5. **Offer a session-log paragraph** the reader can paste anywhere
    (Drive comment, journal, chat with a friend):
 
@@ -257,8 +271,6 @@ After Top 5 locks:
   optionally promote from stretch to main).
 - Reader wants a fresh single-book lookup mid-session → librarian-
   quickref.
-- Reader hits a problem (e.g. window.storage corruption mid-Phase-3) →
-  surface F3 from UX_DESIGN.md and hand back to triage.
 
 ## Boundaries — what build-finish does NOT do
 

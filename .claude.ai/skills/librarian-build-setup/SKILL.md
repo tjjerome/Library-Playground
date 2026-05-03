@@ -3,33 +3,36 @@ name: librarian-build-setup
 description: >
   First half of a fresh reading-list build on the claude.ai surface.  Runs
   the unfinished-series gate (Phase 0), the taste interview (using any
-  existing project-file or artifact Profile.md as a seed), the goals
-  conversation, and the wish-list pass.  Honours an existing Reading_List
-  via the refine-vs-fresh prompt that triage already asked.  Writes profile
-  and reading-list artifact storage per-edit, persists build state to the
-  picker artifact's window.storage, then hands off to
-  librarian-build-batches.  Triggers on "build me a reading list", "what
-  should I read next year", "plan my reading", or fresh-start routings from
-  triage.
+  existing project-knowledge Profile.md as a seed), the goals conversation,
+  and the wish-list pass.  Honours an existing Reading_List via the
+  refine-vs-fresh prompt that triage already asked.  Edits /tmp/Profile.md
+  and /tmp/Reading_List.md in place per-edit, persists build state to
+  /tmp/build_state.json, then hands off to librarian-build-batches.
+  Triggers on "build me a reading list", "what should I read next year",
+  "plan my reading", or fresh-start routings from triage.
 ---
 
 # librarian-build-setup — Phase 0 + interview + goals + wishlist
 
 You = the librarian's intake conversation.  Outputs:
 
-- `profile` artifact → populated Profile.md (seeded from project file
+- `/tmp/Profile.md` → populated taste profile (seeded from project file
   if present)
-- `reading-list` artifact → seeded with Phase 0 picks + wish-list
+- `/tmp/Reading_List.md` → seeded with Phase 0 picks + wish-list
   selections
-- `picker` artifact's `build:<id>` JSON → goals + ledger + phase state
-  that `librarian-build-batches` resumes from
+- `/tmp/build_state.json` → goals + ledger + phase state that
+  `librarian-build-batches` resumes from
+
+All three are surfaced via `present_files` at session end (handled by
+build-finish or cataloguer's session-end flow) so the reader can
+download and replace them in project knowledge.
 
 ## Hard invariants (carry over from the librarian spec)
 
-1. **Universal exclusion gate** — every candidate that reaches the React
-   picker clears `is_already_read` AND `is_on_list` AND the shown-ledger.
-   Owned by `scripts/librarian_query.py candidates`.  Never duplicate
-   inline.
+1. **Universal exclusion gate** — every candidate that reaches the
+   reader's multi-select clears `is_already_read` AND `is_on_list` AND
+   the shown-ledger.  Owned by `scripts/librarian_query.py candidates`.
+   Never duplicate inline.
 2. **Core target = 100, fixed.**
 3. **Conservative author entry-point fallback** — helper applies it by
    default.
@@ -38,13 +41,11 @@ You = the librarian's intake conversation.  Outputs:
 6. **Open prose questions are turn-ending.**
 7. **Anti-jargon contract.**
 8. **Deep-cut silence.**
-9. **Profile artifact per-edit storage write — silent.**  No
-   mid-session chat confirmation; build-finish surfaces the
-   consolidated diff at session end.
-10. **Reading-list artifact per-edit storage write — user-visible.**
-    One-line acknowledgement on each confirmed pick.
-11. **Build state lives in the picker artifact's `window.storage`** under
-    `build:<build_id>`.
+9. **Profile edits are silent.**  Append to `/tmp/Profile.md`; the
+   consolidated diff surfaces at session end (build-finish handles it).
+10. **Reading-list edits are user-visible.**  One-line acknowledgement
+    on every confirmed pick.
+11. **Build state lives in `/tmp/build_state.json`.**
 
 ## Inputs at session start
 
@@ -53,25 +54,17 @@ Triage has bound:
 - `PROJECT_LOG` → `Reading_Log.csv` in project knowledge.  **Required**
   for full builds.  Triage already ran the freshness check; if it was
   >4 months old, the reader chose to refresh OR proceed anyway.
-- `PROJECT_PROFILE` → optional `Profile.md` seed in project knowledge.
-- `PROJECT_LIST` → optional `Reading_List.md` seed in project knowledge.
-- Profile artifact content → already seeded by triage.  Read with
-  `window.storage.get("profile")`.
-- Reading-list artifact content → already seeded by triage.  Read with
-  `window.storage.get("reading_list")`.
+- `/tmp/Profile.md` — seeded by triage from `PROJECT_PROFILE` (or empty
+  stub).
+- `/tmp/Reading_List.md` — seeded by triage from `PROJECT_LIST` (or
+  empty stub).
+- `/tmp/build_state.json` — only present if a previous session paused
+  mid-build (triage offered resume).
 - Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
-
-Mirror Reading_List artifact content to `/tmp/Reading_List.md` so the
-helper can read it via `--reading-list`:
-
-```bash
-echo "$READING_LIST_CONTENT" > /tmp/Reading_List.md
-```
 
 ## Existing-Profile handling — refine, don't overwrite
 
-Before running the taste interview, inspect the profile artifact's
-content:
+Before running the taste interview, inspect `/tmp/Profile.md`:
 
 - **Empty seed** (only the boilerplate "# Reader Profile" header) →
   full taste interview from Step 2 (below).
@@ -89,7 +82,7 @@ content:
   - "Run the full interview again — taste shifted"
   - "Other"
 
-- **Stale** (artifact updated_at >10 months ago) → recommend full
+- **Stale** (project-file mtime >10 months ago) → recommend full
   interview, defer to reader:
 
   > "Your profile was last updated <date> — about <X> months ago.
@@ -108,11 +101,11 @@ session date so future freshness checks have a recent timestamp.
 
 Compute or generate a `build_id` — short slug + ISO date, e.g.
 `build-2026-05-02-fantasy-prime`.  Write a starting state object to
-the picker artifact's `window.storage`:
+`/tmp/build_state.json`:
 
 ```json
 {
-  "version": 1,
+  "version": 2,
   "build_id": "<id>",
   "started_at": "<ISO8601>",
   "current_phase": "phase-0",
@@ -128,8 +121,9 @@ the picker artifact's `window.storage`:
 }
 ```
 
-Persist via `window.storage.set("build:<id>", ...)` against the picker
-artifact.  Also write `latest_build` = `<id>` for resume.
+Persist with `json.dump(state, open("/tmp/build_state.json", "w"),
+indent=2)`.  Re-read at the start of each significant step so concurrent
+edits stay coherent.
 
 ## Tool prep
 
@@ -169,19 +163,15 @@ Options:
 
 Walk through one at a time.  After each accept:
 
-1. Append the picks to the reading-list artifact's content + flush:
+1. Append the picks to `/tmp/Reading_List.md`:
 
-   ```javascript
-   let rl = JSON.parse((await window.storage.get("reading_list")).value);
-   rl.content = rl.content + "\n## Series continuations\n\n| ... |";
-   rl.updated_at = new Date().toISOString();
-   await window.storage.set("reading_list", JSON.stringify(rl));
+   ```bash
+   # Append a "## Series continuations" section if it doesn't already
+   # exist; insert table rows beneath it.  Use Python's standard
+   # markdown editing (no helper needed for plain appends).
    ```
 
-   Then mirror the new content to `/tmp/Reading_List.md` for the next
-   helper call.
-
-2. Update build state's `phase_progress.phase_0`.
+2. Update `/tmp/build_state.json`'s `phase_progress.phase_0`.
 
 **No genre batch fires until every Phase 0 entry is routed.**  Hand off
 to build-batches only after Phase 0 closes.
@@ -243,31 +233,25 @@ calls:
 When older ≥4.0 reads sit tonally apart from recent ones.  Use options
 sourced from actual titles.  Goal: calibrate breadth, not relitigate.
 
-### Profile artifact write
+### Profile write
 
-After the interview, write a fresh Profile content with sections
-covering positive indicators, negative indicators, benchmark books
-(3-5), preferred settings/genres, audio split, series-length appetite,
-tone-palette breadth note.
+After the interview, write a fresh profile content to `/tmp/Profile.md`
+with sections covering positive indicators, negative indicators,
+benchmark books (3-5), preferred settings/genres, audio split,
+series-length appetite, tone-palette breadth note.
 
-Read current artifact content, transform via helper, write back:
+When the existing profile has scaffolding, prefer `profile-append` per
+bullet (idempotent on duplicates):
 
-```python
-# Build text in-memory or use multiple profile-append calls.
-# When the existing profile has scaffolding, prefer profile-append per
-# bullet (idempotent on duplicates).
-result = subprocess.run(
-    ["python3", "scripts/librarian_query.py", "profile-append",
-     "--section", "Positive indicators",
-     "--bullet", "lyrical grimdark prose (Buehlman 5/5, Wolfe 4.75/5)",
-     "--stdio"],
-    input=profile_content, capture_output=True, text=True, check=True,
-).stdout
+```bash
+python3 scripts/librarian_query.py profile-append \
+    --section "Positive indicators" \
+    --bullet "lyrical grimdark prose (Buehlman 5/5, Wolfe 4.75/5)" \
+    --profile /tmp/Profile.md
 ```
 
-Then write back via `window.storage.set("profile", ...)`.  After every
-append, the artifact storage write IS the per-edit flush — there's no
-secondary Drive flush step (Drive doesn't hold the profile anymore).
+The helper edits `/tmp/Profile.md` in place.  No artifact write; no
+`window.storage`.
 
 ## Step 3 — Goals conversation
 
@@ -299,7 +283,7 @@ genre's batches, not after.
 
 ### Update build state
 
-Write goals + floors into `build:<id>` state:
+Write goals + floors into `/tmp/build_state.json`:
 
 ```json
 {
@@ -314,8 +298,7 @@ Write goals + floors into `build:<id>` state:
 }
 ```
 
-Persist via picker artifact's `window.storage` after every goal
-answer.
+Persist to `/tmp/build_state.json` after every goal answer.
 
 ## Step 4 — Wish-list pass
 
@@ -335,27 +318,24 @@ python3 scripts/librarian_query.py lookup --query "<title>" \
 ```
 
 Confirm in library + not already read.  For multiple wish-list items,
-use the React picker artifact for batch confirmation.  Single item →
-`AskUserQuestion` is fine.
+default to **`AskUserQuestion` with multiSelect** — one question with the
+candidate titles as options, the reader's response comes back as their
+next chat message.  Single item → single-option `AskUserQuestion`.
 
-After the picker save, persist ledger updates to `build:<id>.ledger`,
-then append selected picks to the reading-list artifact:
+Fall back to the React picker artifact only when richer per-book context
+(cover-style cards, multi-paragraph pitches, content flags) genuinely
+helps the decision — the picker is opt-in, not the default.
 
-```javascript
-let rl = JSON.parse((await window.storage.get("reading_list")).value);
-rl.content = rl.content + "\n## Wishlist additions\n\n" + table_text;
-rl.updated_at = new Date().toISOString();
-await window.storage.set("reading_list", JSON.stringify(rl));
-```
-
-Mirror to `/tmp/Reading_List.md` for the next helper call.
+After confirmation, append selected picks to `/tmp/Reading_List.md`
+under a `## Wishlist additions` section, and update
+`/tmp/build_state.json`'s ledger.
 
 ## End-of-session handoff
 
 Once Phase 0 + interview + goals + wishlist are done:
 
-1. Confirm both artifacts have current content (one final read-back to
-   verify storage round-trip — no separate Drive step).
+1. Confirm `/tmp/Profile.md`, `/tmp/Reading_List.md`, and
+   `/tmp/build_state.json` are all current on disk.
 2. Update build state: `current_phase: "phase-1"`,
    `phase_progress.phase_0: "done"`,
    `phase_progress.interview: "done" | "skipped-existing-profile" |
@@ -366,11 +346,17 @@ Once Phase 0 + interview + goals + wishlist are done:
    > "We've got your profile, your goals, and the series we want to
    > close out.  When you're ready for the actual picks, open a new
    > chat and say 'let's start the batches' — or just open a new chat
-   > and I'll offer to resume."
+   > and I'll offer to resume.  Before you close this session, I'll
+   > surface your updated files so you can re-upload to project
+   > knowledge."
+
+4. Hand off to `library-cataloguer`'s session-end flow to surface the
+   /tmp files via `present_files`.
 
 The "open a new chat" is the natural break.  build-batches takes the
-session reset and reads build state from the picker artifact's
-window.storage.
+session reset and reads `/tmp/build_state.json` (after the reader
+re-uploads it as `build_state.json` to project knowledge, where triage
+seeds it back into /tmp).
 
 ## Anti-jargon translation map (shared)
 
@@ -390,7 +376,6 @@ window.storage.
 | author entry-point | "good place to start with this author" |
 | score / weight / scored high on | (silent — narrative reasoning instead) |
 | probe / pause-and-probe | (silent — just ask the question) |
-| build_id / phase_progress / window.storage | (silent — internal only) |
+| build_id / phase_progress / build_state.json | (silent — internal only) |
 | encoded catalog / .encoded / gzip+b64 | (silent — internal only) |
 | project file | (silent — "your library data") |
-| picker artifact / profile artifact / reading-list artifact | "the picker" / "your profile" / "your reading list" |

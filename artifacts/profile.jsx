@@ -1,58 +1,19 @@
 // Library-Playground profile artifact — claude.ai port.
 //
-// Holds the reader's `Profile.md` content in `window.storage` and
-// renders it.  Skills (build-setup, build-batches, build-finish,
-// quickref) write here via `window.storage.set("profile", "...")`;
-// the artifact is the persistence layer the reader sees.
-//
-// Storage key: `profile`
-// Stored value: { version: 1, content: "<markdown text>", updated_at: "<ISO>" }
-//
-// IMPORTANT: window.storage only works on PUBLISHED artifacts.  Setup
-// step 8 in SETUP.md walks through the publish flow.  If the storage
-// round-trip fails, the artifact shows a soft warning so the reader
-// notices the artifact needs republishing.
+// Pure read-only renderer for the reader's `Profile.md` content.
+// Skills pass content via the `seed` prop (markdown text).  No
+// window.storage, no persistence, no preflight.  The source of truth
+// for Profile.md lives in /mnt/project/Profile.md (uploaded to project
+// knowledge by the reader); the librarian's in-session edits land in
+// /tmp/Profile.md and surface at session end via present_files for the
+// reader to download and re-upload.
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo } from "react";
 
-const STORAGE_KEY = "profile";
-const STORAGE_VERSION = 1;
 const SEED_PROFILE = `# Reader Profile
 
 _Living memory — updated throughout reading-list builds._
 `;
-
-async function safeGet(key) {
-  try {
-    if (!window.storage || typeof window.storage.get !== "function") return null;
-    const r = await window.storage.get(key);
-    if (!r) return null;
-    if (typeof r.value === "string") {
-      try { return JSON.parse(r.value); } catch { return null; }
-    }
-    return r.value ?? null;
-  } catch { return null; }
-}
-
-async function safeSet(key, value) {
-  try {
-    if (!window.storage || typeof window.storage.set !== "function") return false;
-    await window.storage.set(key, JSON.stringify(value));
-    return true;
-  } catch { return false; }
-}
-
-// Lightweight markdown renderer — headings, bullets, paragraphs,
-// horizontal rules.  Tables and code blocks pass through as
-// preformatted text (good enough for Profile.md).
-function MarkdownView({ source }) {
-  const blocks = useMemo(() => parseMarkdown(source || ""), [source]);
-  return (
-    <div className="prose prose-slate max-w-none">
-      {blocks.map((b, i) => renderBlock(b, i))}
-    </div>
-  );
-}
 
 function parseMarkdown(text) {
   const lines = text.split("\n");
@@ -103,7 +64,6 @@ function parseMarkdown(text) {
 }
 
 function renderInline(text) {
-  // Italics _x_ and bold **x** — only the cases Profile.md uses.
   const parts = [];
   let rest = text;
   let key = 0;
@@ -165,150 +125,34 @@ function renderBlock(b, key) {
   return null;
 }
 
+function MarkdownView({ source }) {
+  const blocks = useMemo(() => parseMarkdown(source || ""), [source]);
+  return (
+    <div className="prose prose-slate max-w-none">
+      {blocks.map((b, i) => renderBlock(b, i))}
+    </div>
+  );
+}
+
 export default function ProfileArtifact(props) {
-  const seed = props.seed || SEED_PROFILE;
-  const [content, setContent] = useState(seed);
-  const [updatedAt, setUpdatedAt] = useState(null);
-  const [phase, setPhase] = useState("loading"); // loading | viewing | editing | saving
-  const [draft, setDraft] = useState("");
-  const [storageWarning, setStorageWarning] = useState(false);
-
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      const stored = await safeGet(STORAGE_KEY);
-      if (cancelled) return;
-      if (stored && typeof stored.content === "string") {
-        setContent(stored.content);
-        setUpdatedAt(stored.updated_at || null);
-      } else if (props.storageEnabled !== false) {
-        // Bootstrap: seed empty profile so the skill side has something
-        // to read on first run.
-        const ok = await safeSet(STORAGE_KEY, {
-          version: STORAGE_VERSION,
-          content: seed,
-          updated_at: new Date().toISOString(),
-        });
-        if (!ok) setStorageWarning(true);
-        const verify = await safeGet(STORAGE_KEY);
-        if (!verify && props.storageEnabled !== false) setStorageWarning(true);
-      }
-      setPhase("viewing");
-    })();
-    return () => { cancelled = true; };
-  }, []);
-
-  function startEdit() {
-    setDraft(content);
-    setPhase("editing");
-  }
-
-  function cancelEdit() {
-    setDraft("");
-    setPhase("viewing");
-  }
-
-  async function saveEdit() {
-    setPhase("saving");
-    const now = new Date().toISOString();
-    const ok = await safeSet(STORAGE_KEY, {
-      version: STORAGE_VERSION,
-      content: draft,
-      updated_at: now,
-    });
-    if (!ok) setStorageWarning(true);
-    const verify = await safeGet(STORAGE_KEY);
-    if (!verify) setStorageWarning(true);
-    setContent(draft);
-    setUpdatedAt(now);
-    setPhase("viewing");
-  }
+  const content = props.seed || SEED_PROFILE;
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <div className="mx-auto max-w-3xl px-4 pb-12 pt-6">
-        <header className="flex items-start justify-between gap-3 mb-4">
-          <div>
-            <h1 className="text-xl font-semibold">Reader profile</h1>
-            <p className="text-xs text-slate-500">
-              Living taste profile. The librarian writes here as you converse;
-              you can edit it directly with the button on the right.
-              {updatedAt && <> Last updated {fmtTs(updatedAt)}.</>}
-            </p>
-          </div>
-          {phase === "viewing" && (
-            <button
-              type="button"
-              onClick={startEdit}
-              className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-medium hover:bg-slate-100"
-            >
-              Edit
-            </button>
-          )}
+        <header className="mb-4">
+          <h1 className="text-xl font-semibold">Reader profile</h1>
+          <p className="text-xs text-slate-500">
+            Read-only preview of your taste profile.  To edit, tell the
+            librarian in chat — at session end you'll get a download
+            link to replace your project-knowledge `Profile.md`.
+          </p>
         </header>
 
-        {storageWarning && <StorageWarning />}
-
-        {phase === "editing" || phase === "saving" ? (
-          <div className="space-y-3">
-            <textarea
-              value={draft}
-              onChange={(e) => setDraft(e.target.value)}
-              className="w-full min-h-[60vh] rounded-xl border border-slate-300 bg-white p-3 font-mono text-sm leading-relaxed focus:border-emerald-500 focus:outline-none"
-              spellCheck={false}
-              disabled={phase === "saving"}
-            />
-            <div className="flex justify-end gap-2">
-              <button
-                type="button"
-                onClick={cancelEdit}
-                disabled={phase === "saving"}
-                className="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm hover:bg-slate-100"
-              >
-                Cancel
-              </button>
-              <button
-                type="button"
-                onClick={saveEdit}
-                disabled={phase === "saving"}
-                className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:bg-slate-300"
-              >
-                {phase === "saving" ? "Saving…" : "Save"}
-              </button>
-            </div>
-          </div>
-        ) : (
-          <article className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
-            <MarkdownView source={content} />
-          </article>
-        )}
+        <article className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+          <MarkdownView source={content} />
+        </article>
       </div>
     </div>
   );
-}
-
-function StorageWarning() {
-  return (
-    <div className="mb-4 rounded-2xl bg-amber-50 p-4 ring-1 ring-amber-200">
-      <p className="text-sm font-medium text-amber-900">
-        Heads up — profile changes may not be saving.
-      </p>
-      <p className="mt-1 text-sm text-amber-800">
-        This artifact has to be published for storage to work. Click the
-        Publish button on the artifact panel, then refresh.
-      </p>
-    </div>
-  );
-}
-
-function fmtTs(iso) {
-  try {
-    const d = new Date(iso);
-    return d.toLocaleString(undefined, {
-      year: "numeric", month: "short", day: "numeric",
-      hour: "numeric", minute: "2-digit",
-    });
-  } catch {
-    return iso;
-  }
 }
