@@ -271,13 +271,34 @@ Indie/classic floors = FLOORS only. Until met, every Phase 2 candidate call runs
 
 (Refine-mode ignores 100-cap — operates on existing total.)
 
-## Hand-off to build-finish
+## Hand-off to build-finish — continue in same chat
 
-When `current_count >= 100`:
+When `current_count >= 100`, **do not break the session**.  Same
+pattern as setup→picks: /tmp working files persist between skills,
+the platform auto-compresses earlier turns, build-finish picks up in
+place.  No re-upload, no "open a new chat".
 
-> "Hit 100. Open new chat, say 'wrap it up' — upcoming releases, final review, Top 5 capstone."
+Steps:
 
-Update: `current_phase: "phase-3"`, `phase_progress.phase_2: "done"`. Hand off to `library-cataloguer` session-end flow to surface `/tmp/Reading_List.md`, `/tmp/Profile.md`, `/tmp/build_state.json` as downloads.
+1. Update build state: `current_phase: "phase-3"`,
+   `phase_progress.phase_2: "done"`.
+2. Transition in librarian voice — short, no plumbing talk:
+
+   > "That's a hundred.  Want to look at what's coming out in the next
+   > year and pick five to start with?"
+
+   `AskUserQuestion`:
+   - "Yes — let's finish it"
+   - "Give me a minute first"
+   - "Other"
+
+3. **On affirmative**, hand off to `librarian-build-finish` in the
+   same chat — it reads `/tmp/build_state.json` directly.
+4. **On pause**, hand off to `library-cataloguer`'s session-end flow
+   to surface /tmp files via `present_files` so the reader can stop
+   here and resume cleanly in a future chat.
+
+The earlier "open a new chat to wrap it up" pattern is removed.
 
 ## Mid-build session pause — interim summary
 
