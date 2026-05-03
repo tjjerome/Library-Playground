@@ -113,18 +113,23 @@ Conversational, ~7 turns total.  Cover, in this order:
 2. **Discover project files.**  Run the discovery above.  Tell the reader
    what was found.
 
-3. **Create + publish three artifacts** in this order:
-   - `batch-picker` (from `artifacts/batch-picker.jsx`) — build state +
-     batch selections.
-   - `profile` (from `artifacts/profile.jsx`) — live Profile.md.  If
-     `PROJECT_PROFILE` exists, pass it as the `seed` prop so the artifact
-     starts populated.
-   - `reading-list` (from `artifacts/reading-list.jsx`) — live
-     Reading_List.md.  If `PROJECT_LIST` exists, pass it as the `seed`
-     prop.
+3. **Create + publish three artifacts** in this order.  The JSX
+   sources ship inside this skill zip at `assets/`:
 
-   For each: render the artifact, tell the reader to click Publish, ask
-   them to paste the published URL.  Run preflight on each (see below).
+   - `batch-picker` (from `assets/batch-picker.jsx`) — build state +
+     batch selections.
+   - `profile` (from `assets/profile.jsx`) — live Profile.md.  If
+     `PROJECT_PROFILE` exists, pass its content as the `seed` prop so
+     the artifact starts populated.
+   - `reading-list` (from `assets/reading-list.jsx`) — live
+     Reading_List.md.  If `PROJECT_LIST` exists, pass its content as
+     the `seed` prop.
+
+   For each: read the JSX file from the skill's assets directory
+   (resolve via `find /mnt -name "<file>.jsx" 2>/dev/null` or the
+   skill's known mount path), render the artifact verbatim, tell the
+   reader to click **Publish**, and ask them to paste the published
+   URL.  Run preflight on each (see below).
 
 4. **Write `.config.json` to Drive folder** with all three URLs:
 
