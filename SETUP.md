@@ -288,25 +288,40 @@ session loads the updated catalog.
 The cataloguer never writes to Drive directly — every catalog change
 is reader-confirmed and reader-applied.
 
-### Adding more than 20 books at once
+### Adding more than a handful of books / re-syncing the whole library
 
-You have two paths:
+Run `catalogue.py --sync` from a Claude Code session on the repo
+(this is the recommended path — the in-chat cataloguer skill on
+claude.ai will redirect you here):
 
-1. **Run `catalogue.py` locally** (recommended for big batches):
+```bash
+# Drop the new Library.csv in place, then:
+python3 catalogue.py --library Library.csv --sync
+```
 
-   ```bash
-   # update Library.csv with new rows
-   python3 catalogue.py --library Library.csv
-   python3 catalogue.py --library Library.csv \
-       --export-sqlite Library_Catalog.sqlite --emit-encoded
-   ```
+That umbrella command does everything in one shot:
 
-   Then re-upload `Library_Catalog.sqlite.encoded` to Drive,
-   replacing the old one.
+1. **Refreshes CSV-authoritative fields** (pages, goodreads_rating,
+   goodreads_reviews) on every existing entry — these always come
+   from the CSV, never from Claude.
+2. **Catalogues new books** in chunks of 30 (resumable).
+3. **Runs the comparables sync** tail (canonicalise, reciprocate,
+   Claude-rank top 6 when over cap).
+4. **Exports SQLite + the encoded form** (gzip+b64-wrapped,
+   Drive-uploadable).
+5. **Writes `dist/sync_audit.md`** — counts before/after, refresh
+   stats per CSV field, list of new entries, comparables stats.
+6. **`git add -f` + commit + push** the encoded catalog and the
+   audit summary to the current feature branch.  Refuses to push
+   to `main` / `master`.  Pass `--no-push` to skip the git step.
 
-2. **Break into ≤20 chunks for the cataloguer skill.**  Tell it 20
-   books, say "save catalog", repeat.  Slower but doesn't need a
-   local Python environment.
+Then download `Library_Catalog.sqlite.encoded` from GitHub and
+replace your Drive file.
+
+The in-chat cataloguer on claude.ai stays focused on small
+in-the-moment edits — adding a single book the reader just bought,
+fixing a tag, queueing a rate update.  Anything bulk is bounced
+back to this Code-side flow.
 
 ### Updating the reading log
 

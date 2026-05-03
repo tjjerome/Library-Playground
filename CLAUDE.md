@@ -70,6 +70,25 @@ plus session-end `present_files` is what actually works on Pro.
 - `.claude/skills/librarian/`, `.claude/skills/library-cataloguer/` —
   Code-side skills.  Untouched.
 
+### Catalog sync workflow (Code surface)
+
+Bulk catalog work runs from a Claude Code session via:
+
+```bash
+python3 catalogue.py --library Library.csv --sync
+```
+
+That umbrella command refreshes CSV-authoritative fields, catalogues
+new books, runs the comparables tail, exports SQLite + encoded form,
+writes `dist/sync_audit.md`, and `git add -f` + commits + pushes both
+artefacts to the current feature branch (refuses `main`/`master`).
+Pass `--no-push` for local-only runs.
+
+The in-chat `library-cataloguer` skill on claude.ai is intentionally
+scoped to **single-book / short-series** in-the-moment edits.  When
+the reader proposes bulk work it bounces them to `--sync` on the Code
+side.
+
 ### claude.ai port (this branch's deliverables)
 
 - `webhelper/sqlite_export.py` — JSON→SQLite writer + `norm()`.
