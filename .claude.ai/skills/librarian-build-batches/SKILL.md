@@ -271,34 +271,56 @@ Indie/classic floors = FLOORS only. Until met, every Phase 2 candidate call runs
 
 (Refine-mode ignores 100-cap — operates on existing total.)
 
-## Hand-off to build-finish — continue in same chat
+## Hand-off to build-finish — continue in same chat, surface files as checkpoint
 
 When `current_count >= 100`, **do not break the session**.  Same
 pattern as setup→picks: /tmp working files persist between skills,
 the platform auto-compresses earlier turns, build-finish picks up in
 place.  No re-upload, no "open a new chat".
 
+We **do** still surface the working files at this milestone as a
+checkpoint save — 100 books is the right moment to give the reader a
+durable snapshot before the stretch / final-review passes.
+
 Steps:
 
 1. Update build state: `current_phase: "phase-3"`,
    `phase_progress.phase_2: "done"`.
-2. Transition in librarian voice — short, no plumbing talk:
+2. **Surface /tmp files via `present_files`** as a checkpoint save:
 
-   > "That's a hundred.  Want to look at what's coming out in the next
-   > year and pick five to start with?"
+   ```python
+   import shutil
+   shutil.copy("/tmp/Profile.md",       "/mnt/user-data/outputs/Profile.md")
+   shutil.copy("/tmp/Reading_List.md",  "/mnt/user-data/outputs/Reading_List.md")
+   shutil.copy("/tmp/build_state.json", "/mnt/user-data/outputs/build_state.json")
+   ```
+
+3. Transition in librarian voice — short, no plumbing talk.  Roll the
+   checkpoint links into the same turn so it reads as a natural
+   pause-point:
+
+   > "That's a hundred.  I've put a checkpoint of your files here in
+   > case you want to save progress before we keep going:
+   >
+   > - [`Profile.md`](sandbox:/mnt/user-data/outputs/Profile.md)
+   > - [`Reading_List.md`](sandbox:/mnt/user-data/outputs/Reading_List.md)
+   > - [`build_state.json`](sandbox:/mnt/user-data/outputs/build_state.json)
+   >
+   > Want to look at what's coming out in the next year and pick five
+   > to start with?"
 
    `AskUserQuestion`:
    - "Yes — let's finish it"
    - "Give me a minute first"
    - "Other"
 
-3. **On affirmative**, hand off to `librarian-build-finish` in the
+4. **On affirmative**, hand off to `librarian-build-finish` in the
    same chat — it reads `/tmp/build_state.json` directly.
-4. **On pause**, hand off to `library-cataloguer`'s session-end flow
-   to surface /tmp files via `present_files` so the reader can stop
-   here and resume cleanly in a future chat.
+5. **On pause**, hand off to `library-cataloguer`'s session-end flow
+   for the full save-and-resume wrap.
 
-The earlier "open a new chat to wrap it up" pattern is removed.
+The earlier "open a new chat to wrap it up" pattern is removed; the
+checkpoint stays.
 
 ## Mid-build session pause — interim summary
 

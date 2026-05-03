@@ -263,7 +263,7 @@ Fall back to React picker artifact only when richer per-book context (cards, pit
 
 After confirmation, append picks to `/tmp/Reading_List.md` under `## Wishlist additions`, update `/tmp/build_state.json` ledger.
 
-## End-of-section handoff — continue in same chat
+## End-of-section handoff — continue in same chat, surface files as checkpoint
 
 Once Phase 0 + interview + goals + wishlist done, **do not break the
 session**.  The sandbox keeps `/tmp/build_state.json`,
@@ -271,6 +271,11 @@ session**.  The sandbox keeps `/tmp/build_state.json`,
 platform auto-compresses earlier setup turns as context fills — so we
 hand straight off to `librarian-build-batches` in place.  No
 re-upload, no "open a new chat".
+
+We **do** still surface the working files at this transition as a
+checkpoint save: if the reader closes the tab or the chat crashes
+between phases, they have the intake state on disk and can resume
+cleanly next time.
 
 Steps:
 
@@ -280,27 +285,46 @@ Steps:
    `phase_progress.phase_0: "done"`,
    `phase_progress.interview: "done" | "skipped-existing-profile" | "partial-gap-probe"`,
    `phase_progress.wishlist: { added: <n> }`.
-3. Transition in librarian voice — short, no plumbing talk, no
-   "compressing the conversation" or "loading the next skill":
+3. **Surface /tmp files via `present_files`** as a checkpoint save —
+   this is the same mechanism the cataloguer's session-end flow uses,
+   just without the "we're done" framing:
+
+   ```python
+   import shutil
+   shutil.copy("/tmp/Profile.md",       "/mnt/user-data/outputs/Profile.md")
+   shutil.copy("/tmp/Reading_List.md",  "/mnt/user-data/outputs/Reading_List.md")
+   shutil.copy("/tmp/build_state.json", "/mnt/user-data/outputs/build_state.json")
+   ```
+
+4. Transition in librarian voice — short, no plumbing talk, no
+   "compressing the conversation" or "loading the next skill".  Roll
+   the checkpoint links into the same turn so it reads as a natural
+   pause-point, not a stop:
 
    > "Profile's down, goals are set, series we're catching up on are
-   > sorted.  Are you ready to hear about some books?"
+   > sorted.  I've put a checkpoint of your files here in case you
+   > want to save progress before we keep going:
+   >
+   > - [`Profile.md`](sandbox:/mnt/user-data/outputs/Profile.md)
+   > - [`Reading_List.md`](sandbox:/mnt/user-data/outputs/Reading_List.md)
+   > - [`build_state.json`](sandbox:/mnt/user-data/outputs/build_state.json)
+   >
+   > Are you ready to hear about some books?"
 
    `AskUserQuestion`:
    - "Yes — let's hear them"
    - "Give me a minute first"
    - "Other"
 
-4. **On affirmative**, hand off to `librarian-build-batches` in the
+5. **On affirmative**, hand off to `librarian-build-batches` in the
    same chat — it reads `/tmp/build_state.json` directly.
-5. **On pause** ("give me a minute" / "later" / etc.), hand off to
-   `library-cataloguer`'s session-end flow to surface /tmp files via
-   `present_files` so the reader can stop here and resume cleanly in
-   a future chat.
+6. **On pause** ("give me a minute" / "later" / etc.), hand off to
+   `library-cataloguer`'s session-end flow for the full save-and-resume
+   wrap (it'll re-surface the same files plus catalog + pending log).
 
 The session only breaks when the reader actually pauses, or when the
 build finishes.  The earlier "open a new chat to start the picks"
-pattern is removed.
+pattern is removed; the checkpoint stays.
 
 ## Anti-jargon translation map (shared)
 
