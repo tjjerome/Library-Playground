@@ -263,24 +263,44 @@ Fall back to React picker artifact only when richer per-book context (cards, pit
 
 After confirmation, append picks to `/tmp/Reading_List.md` under `## Wishlist additions`, update `/tmp/build_state.json` ledger.
 
-## End-of-session handoff
+## End-of-section handoff — continue in same chat
 
-Once Phase 0 + interview + goals + wishlist done:
+Once Phase 0 + interview + goals + wishlist done, **do not break the
+session**.  The sandbox keeps `/tmp/build_state.json`,
+`/tmp/Profile.md`, and `/tmp/Reading_List.md` between skills, and the
+platform auto-compresses earlier setup turns as context fills — so we
+hand straight off to `librarian-build-batches` in place.  No
+re-upload, no "open a new chat".
 
-1. Confirm `/tmp/Profile.md`, `/tmp/Reading_List.md`, and `/tmp/build_state.json` all current on disk.
-2. Update build state: `current_phase: "phase-1"`, `phase_progress.phase_0: "done"`, `phase_progress.interview: "done" | "skipped-existing-profile" | "partial-gap-probe"`, `phase_progress.wishlist: { added: <n> }`.
-3. Tell reader next move:
+Steps:
 
-   > "We've got your profile, your goals, and the series we want to
-   > close out.  When you're ready for the actual picks, open a new
-   > chat and say 'let's start the batches' — or just open a new chat
-   > and I'll offer to resume.  Before you close this session, I'll
-   > surface your updated files so you can re-upload to project
-   > knowledge."
+1. Confirm `/tmp/Profile.md`, `/tmp/Reading_List.md`, and
+   `/tmp/build_state.json` all current on disk.
+2. Update build state: `current_phase: "phase-1"`,
+   `phase_progress.phase_0: "done"`,
+   `phase_progress.interview: "done" | "skipped-existing-profile" | "partial-gap-probe"`,
+   `phase_progress.wishlist: { added: <n> }`.
+3. Transition in librarian voice — short, no plumbing talk, no
+   "compressing the conversation" or "loading the next skill":
 
-4. Hand off to `library-cataloguer`'s session-end flow to surface /tmp files via `present_files`.
+   > "Profile's down, goals are set, series we're catching up on are
+   > sorted.  Are you ready to hear about some books?"
 
-"Open a new chat" is natural break. build-batches reads `/tmp/build_state.json` after reader re-uploads as `build_state.json` to project knowledge (triage seeds back into /tmp).
+   `AskUserQuestion`:
+   - "Yes — let's hear them"
+   - "Give me a minute first"
+   - "Other"
+
+4. **On affirmative**, hand off to `librarian-build-batches` in the
+   same chat — it reads `/tmp/build_state.json` directly.
+5. **On pause** ("give me a minute" / "later" / etc.), hand off to
+   `library-cataloguer`'s session-end flow to surface /tmp files via
+   `present_files` so the reader can stop here and resume cleanly in
+   a future chat.
+
+The session only breaks when the reader actually pauses, or when the
+build finishes.  The earlier "open a new chat to start the picks"
+pattern is removed.
 
 ## Anti-jargon translation map (shared)
 
@@ -303,3 +323,5 @@ Once Phase 0 + interview + goals + wishlist done:
 | build_id / phase_progress / build_state.json | (silent — internal only) |
 | encoded catalog / .encoded / gzip+b64 | (silent — internal only) |
 | project file | (silent — "your library data") |
+| batch / next batch / genre batch | "the next handful of picks" / "a few <genre> picks" / "another round" — never "batch" |
+| "open a new chat to start the batches" | (removed — same chat continues; ask "are you ready to hear about some books?") |

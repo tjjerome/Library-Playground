@@ -2,12 +2,15 @@
 name: librarian-build-batches
 description: >
   Phases 1+2 of reading-list build — genre batches, reflection beats,
-  rejection probes, series scopes. Triggers on "let's start the batches",
-  "continue the build", "more horror picks", "next batch", or mid-build
-  opener with /tmp/build_state.json present. Reads /tmp/build_state.json,
-  edits /tmp/Profile.md and /tmp/Reading_List.md, runs batches through
-  AskUserQuestion(multiSelect), hands off to librarian-build-finish when
-  core ≥ 100. Also refine-mode entry when triage routed here.
+  rejection probes, series scopes. Triggers on a "ready to hear about
+  some books" affirmative handed in from build-setup, "continue the
+  build", "more horror picks", "more picks", "next picks", or any
+  mid-build opener with /tmp/build_state.json present. Reads
+  /tmp/build_state.json, edits /tmp/Profile.md and /tmp/Reading_List.md,
+  runs batches through AskUserQuestion(multiSelect), hands off to
+  librarian-build-finish when core ≥ 100. Also refine-mode entry when
+  triage routed here. Internal vocabulary only — never says "batch" in
+  chat.
 ---
 
 # librarian-build-batches — Phases 1 + 2 (and refine-mode)
@@ -56,7 +59,7 @@ Validate `build_state` shape (version, current_phase, goals, ledger, indie_floor
 
 Confirm orientation in one chat sentence:
 
-> "Three batches done — 23 books, indie 4/15, classic 7/12. Last batch Horror. Keep Horror or pivot?"
+> "We're 23 books in — indie 4/15, classic 7/12.  Last round was horror.  Stay with horror or pivot?"
 
 Never say "Phase 2". Use phase-free description.
 
@@ -124,7 +127,7 @@ Can't write personal-first clause → **pull replacement** — not strong enough
 
 Example shape:
 
-> **Horror batch** — four picks, your Buehlman 5/5 + slow-burn medieval love.
+> **A few horror picks** — drawn from your Buehlman 5/5 + slow-burn medieval love.
 >
 > **Between Two Fires — Christopher Buehlman** (432pp). Cosmic horror, plague-era France: fallen angel + orphan, 1348. Lyrical grimdark; adjacent to your Wolfe and Kay. Excellent audio (Erikson narrates).
 >
@@ -319,6 +322,8 @@ Phase advance only on completion criteria.
 | project file / project knowledge | (silent — "your library data") |
 | picker artifact / multi-select | "a picker"; never expose the surface choice |
 | refine-mode / fresh-build mode | (silent — just behaviour) |
+| batch / next batch / genre batch | "the next handful of picks" / "a few <genre> picks" / "another round" — never "batch" |
+| "open a new chat to start the batches" | (removed — same chat continues; ask "are you ready to hear about some books?") |
 
 Things never to say (with replacements):
 
