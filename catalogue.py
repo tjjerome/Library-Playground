@@ -2140,7 +2140,55 @@ def main():
                              "promotes verified self-pub origins to "
                              "indie=True. Writes a diff report by default; "
                              "pass --apply-changes to commit.")
+    parser.add_argument("--audit-entry-points-consistency", action="store_true",
+                        help="Run the deterministic consistency audit on "
+                             "author_entry_point flags (no LLM). Writes a "
+                             "review queue at docs/audit_entry_points.md. "
+                             "Reads from --audit-sqlite (default "
+                             "Library_Catalog.sqlite) — regenerate first via "
+                             "--export-sqlite if the catalog has changed.")
+    parser.add_argument("--audit-comparables", action="store_true",
+                        help="Run the deterministic quality audit on "
+                             "comparable_books links (no LLM). Writes a "
+                             "review queue at docs/audit_comparables.md. "
+                             "Reads from --audit-sqlite (default "
+                             "Library_Catalog.sqlite).")
+    parser.add_argument("--audit-sqlite", default="Library_Catalog.sqlite",
+                        metavar="PATH",
+                        help="With --audit-entry-points-consistency / "
+                             "--audit-comparables: the SQLite catalog to "
+                             "read (default: Library_Catalog.sqlite).")
     args = parser.parse_args()
+
+    if args.audit_entry_points_consistency or args.audit_comparables:
+        from pathlib import Path as _Path
+        from audits import (
+            write_entry_points_review_queue,
+            write_comparables_review_queue,
+        )
+        sqlite_path = _Path(args.audit_sqlite)
+        if not sqlite_path.exists():
+            print(f"  ! {sqlite_path} not found; "
+                  f"run `--export-sqlite {sqlite_path}` first.")
+            sys.exit(2)
+        if args.audit_entry_points_consistency:
+            out = _Path("docs/audit_entry_points.md")
+            report = write_entry_points_review_queue(sqlite_path, out)
+            n = (len(report["misaligned"])
+                 + len(report["pub_year_regression"])
+                 + len(report["zero_entry_point"]))
+            print(f"  Wrote {out} ({n} flags: "
+                  f"{len(report['misaligned'])} misaligned, "
+                  f"{len(report['pub_year_regression'])} pub_year regression, "
+                  f"{len(report['zero_entry_point'])} zero entry point).")
+        if args.audit_comparables:
+            out = _Path("docs/audit_comparables.md")
+            queue = write_comparables_review_queue(sqlite_path, out)
+            drops = sum(1 for q in queue if q["suggested_action"] == "drop")
+            reviews = sum(1 for q in queue if q["suggested_action"] == "review")
+            print(f"  Wrote {out} ({len(queue)} flags: "
+                  f"{drops} drop-suggested, {reviews} review-suggested).")
+        sys.exit(0)
 
     catalog = load_catalog(args.catalog)
 
