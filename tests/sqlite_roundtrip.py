@@ -34,6 +34,7 @@ IGNORE_FIELDS: set[str] = set()
 
 
 _LIST_FIELDS = ("comparable_books", "content_flags", "themes")
+_OPTIONAL_LIST_FIELDS = ("related_series", "themes_canonical")
 
 
 def _normalise_for_compare(entry: dict) -> dict:
@@ -45,6 +46,9 @@ def _normalise_for_compare(entry: dict) -> dict:
       - Drop None values so absent-vs-None is treated as equal.
       - Default `taste_signals` and the list-fields to empty values
         on both sides (catalogues vary between key-absent and empty).
+      - Optional fields (related_series, themes_canonical,
+        taste_signals_canonical) round-trip only when populated, so
+        treat absent-vs-empty as equal on both sides.
       - Treat the rare audit-shape variants by serialising audit
         dicts (so dict ordering / key presence won't false-flag).
     """
@@ -60,8 +64,19 @@ def _normalise_for_compare(entry: dict) -> dict:
                 "negative": list(v.get("negative") or []),
             }
             continue
+        if k == "taste_signals_canonical" and isinstance(v, dict):
+            pos = list(v.get("positive") or [])
+            neg = list(v.get("negative") or [])
+            if pos or neg:
+                out[k] = {"positive": pos, "negative": neg}
+            continue
         if k in _LIST_FIELDS:
             out[k] = list(v or [])
+            continue
+        if k in _OPTIONAL_LIST_FIELDS:
+            lst = list(v or [])
+            if lst:
+                out[k] = lst
             continue
         out[k] = v
 

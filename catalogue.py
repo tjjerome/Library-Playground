@@ -161,18 +161,56 @@ def load_library(csv_path: str) -> list[dict]:
     return books
 
 
-# Library.csv is the source of truth for these three fields. The cataloguer
+# Library.csv is the source of truth for these fields. The cataloguer
 # never asks the LLM for them and never lets stale catalog values stand:
 # every sync re-applies whatever the CSV currently says.
-CSV_AUTHORITATIVE_FIELDS = ("pages", "goodreads_rating", "goodreads_reviews")
+#
+# - pages / goodreads_rating / goodreads_reviews: numerics from the export.
+# - series / series_position / series_status: structural facts about where
+#   a book sits in a series. The CSV's `series`, `series_index`, and
+#   `#series_type` columns carry these — the model used to be asked for
+#   them and would occasionally invent ordering or misclassify length.
+#   Treating them as authoritative pins the answer to the source data.
+CSV_AUTHORITATIVE_FIELDS = (
+    "pages",
+    "goodreads_rating",
+    "goodreads_reviews",
+    "series",
+    "series_position",
+    "series_status",
+)
+
+
+def _format_series_position(raw: str | None) -> str | None:
+    """Convert a CSV `series_index` value to a `series_position` string.
+
+    "1.0" -> "Book 1"; "4.5" -> "Book 4.5"; "0" / "" / None -> None.
+    """
+    if raw is None or raw == "":
+        return None
+    try:
+        f = float(raw)
+    except (TypeError, ValueError):
+        return None
+    if f <= 0:
+        return None
+    if f.is_integer():
+        return f"Book {int(f)}"
+    # Preserve fractional positions for novellas (e.g. Book 4.5).
+    return f"Book {f:g}"
 
 
 def csv_authoritative_values(book: dict) -> dict:
-    """Pull pages / goodreads_rating / goodreads_reviews out of a CSV row.
+    """Pull CSV-authoritative fields out of a Library.csv row.
 
-    Only fields the CSV actually provides are returned, so callers can
-    distinguish "CSV says this" from "CSV is silent" and leave existing
-    catalog values alone in the latter case.
+    Numerics return only when the CSV provides a parseable value, so a silent
+    column doesn't clobber existing catalog data.
+
+    The series triple (series / series_position / series_status), by contrast,
+    is *always* emitted — an empty `series` column is itself authoritative
+    ("this book is not part of a series, regardless of what the catalog
+    currently says"). That keeps the catalog from drifting when the reader
+    corrects a series tag in the CSV.
     """
     out: dict = {}
 
@@ -197,6 +235,17 @@ def csv_authoritative_values(book: dict) -> dict:
         except (TypeError, ValueError):
             pass
 
+    # series triple is always emitted (empty CSV value -> None).
+    series_raw = (book.get("series") or "").strip()
+    out["series"] = series_raw or None
+    out["series_position"] = _format_series_position(book.get("series_index"))
+    series_type = (book.get("#series_type") or "").strip()
+    out["series_status"] = series_type or None
+    # When the CSV says a book is standalone, drop any stale series_position
+    # that the catalog might still carry.
+    if out["series"] is None:
+        out["series_position"] = None
+
     return out
 
 
@@ -218,12 +267,11 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> dict:
             catalog["entries"][key] = {
                 "title": book["title"],
                 "author": book["authors"],
-                "series": book.get("series") or None,
-                "series_position": None,
                 "series_role": None,
                 "author_entry_point": None,
-                "genre": book.get("genre") or None,
-                "series_status": book.get("series_type") or None,
+                "primary_genre": None,
+                "secondary_genre": None,
+                "related_series": [],
                 "indie": None,
                 "classic": None,
                 "status": "pending",
@@ -231,9 +279,11 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> dict:
                 "tone": None,
                 "pacing": None,
                 "themes": [],
+                "themes_canonical": [],
                 "setting": None,
                 "comparable_books": [],
                 "taste_signals": {"positive": [], "negative": []},
+                "taste_signals_canonical": {"positive": [], "negative": []},
                 "audio_suitability": None,
                 "audio_notes": None,
                 "content_flags": [],
@@ -383,6 +433,12 @@ def catalogue_chunk(
 
         if matched_key:
             existing = catalog["entries"][matched_key]
+            # CSV-pinned fields stay pinned even if the model emits values
+            # for them. The system prompt instructs the model not to touch
+            # them, but a defensive strip keeps a chatty response from
+            # silently overriding ground truth.
+            for pinned in CSV_AUTHORITATIVE_FIELDS:
+                entry_data.pop(pinned, None)
             existing.update(entry_data)
             if "status" not in entry_data:
                 existing["status"] = (
@@ -898,6 +954,280 @@ def print_sync_summary(stats: dict):
         print("    (dry run — no changes written, Phase 3 skipped)")
 
 
+# ---------------------------------------------------------------------------
+# Canonicalisation backfill — map free-form taste_signals / themes to the
+# controlled vocabulary IDs in catalogue_vocab. One LLM call per chunk of
+# distinct strings, applied across every entry that uses them. Idempotent:
+# already-canonicalised entries skip the model.
+# ---------------------------------------------------------------------------
+
+CANONICALIZE_CHUNK_SIZE = 80   # distinct phrases per LLM call
+
+
+def _collect_distinct_signals(catalog: dict) -> set[str]:
+    out: set[str] = set()
+    for entry in catalog["entries"].values():
+        ts = entry.get("taste_signals") or {}
+        if isinstance(ts, dict):
+            for sig in (ts.get("positive") or []):
+                if sig:
+                    out.add(sig)
+            for sig in (ts.get("negative") or []):
+                if sig:
+                    out.add(sig)
+    return out
+
+
+def _collect_distinct_themes(catalog: dict) -> set[str]:
+    out: set[str] = set()
+    for entry in catalog["entries"].values():
+        for t in entry.get("themes") or []:
+            if t:
+                out.add(t)
+    return out
+
+
+def _build_canonical_mapping(
+    client,
+    phrases: set[str],
+    label: str,
+    vocab: dict[str, str],
+    chunk_size: int = CANONICALIZE_CHUNK_SIZE,
+) -> dict[str, str | None]:
+    """Ask the LLM to map each free-form phrase to a canonical vocab ID
+    (or None). Returns a dict; phrases with no mapping have value None."""
+    from catalogue_prompts import (
+        build_canonicalize_system_prompt,
+        build_canonicalize_prompt,
+        parse_canonicalize_response,
+    )
+
+    system = build_canonicalize_system_prompt(label, vocab)
+    allowed = set(vocab.keys())
+    sorted_phrases = sorted(phrases)
+    mapping: dict[str, str | None] = {p: None for p in sorted_phrases}
+
+    n_chunks = -(-len(sorted_phrases) // chunk_size)
+    for i in range(n_chunks):
+        chunk = sorted_phrases[i * chunk_size: (i + 1) * chunk_size]
+        prompt = build_canonicalize_prompt(chunk)
+        print(f"  canonicalize-{label} chunk {i + 1}/{n_chunks} ({len(chunk)} phrases)...")
+        try:
+            raw = call_api_with_tools(client, [{"role": "user", "content": prompt}],
+                                      system, tools=[])
+            chunk_map = parse_canonicalize_response(raw, allowed)
+            mapping.update(chunk_map)
+        except Exception as e:
+            print(f"    Error: {e}. Phrases in this chunk left unmapped.")
+        time.sleep(RATE_LIMIT_DELAY)
+
+    return mapping
+
+
+def _apply_signal_mapping(catalog: dict, mapping: dict[str, str | None]) -> int:
+    """Write taste_signals_canonical onto every entry, using the mapping.
+    Returns the number of entries whose canonical block changed."""
+    changed = 0
+    for entry in catalog["entries"].values():
+        ts = entry.get("taste_signals") or {}
+        if not isinstance(ts, dict):
+            continue
+        new_canon: dict[str, list[str | None]] = {}
+        for polarity in ("positive", "negative"):
+            new_canon[polarity] = [mapping.get(s) for s in (ts.get(polarity) or [])]
+        # Only persist if any canonical was actually filled — keeps entries
+        # that have purely unrecognised free-form values from acquiring an
+        # all-null canonical block.
+        any_canon = any(c for buck in new_canon.values() for c in buck)
+        old = entry.get("taste_signals_canonical")
+        if any_canon:
+            if old != new_canon:
+                entry["taste_signals_canonical"] = new_canon
+                changed += 1
+        elif old is not None:
+            del entry["taste_signals_canonical"]
+            changed += 1
+    return changed
+
+
+def _apply_theme_mapping(catalog: dict, mapping: dict[str, str | None]) -> int:
+    changed = 0
+    for entry in catalog["entries"].values():
+        themes = entry.get("themes") or []
+        new_canon = [mapping.get(t) for t in themes]
+        any_canon = any(c for c in new_canon)
+        old = entry.get("themes_canonical")
+        if any_canon:
+            if old != new_canon:
+                entry["themes_canonical"] = new_canon
+                changed += 1
+        elif old is not None:
+            del entry["themes_canonical"]
+            changed += 1
+    return changed
+
+
+def canonicalize_signals(catalog: dict, client) -> dict:
+    """Full pipeline: collect distinct free-form signals, map via LLM,
+    apply across catalog. Returns stats."""
+    from catalogue_vocab import CANONICAL_TASTE_SIGNALS
+    distinct = _collect_distinct_signals(catalog)
+    print(f"  {len(distinct)} distinct free-form taste_signals across the catalog.")
+    mapping = _build_canonical_mapping(
+        client, distinct, "taste_signals", CANONICAL_TASTE_SIGNALS
+    )
+    n_entries_changed = _apply_signal_mapping(catalog, mapping)
+    n_mapped = sum(1 for v in mapping.values() if v is not None)
+    return {
+        "distinct_phrases": len(distinct),
+        "phrases_mapped": n_mapped,
+        "phrases_unmapped": len(distinct) - n_mapped,
+        "entries_changed": n_entries_changed,
+    }
+
+
+def canonicalize_themes(catalog: dict, client) -> dict:
+    from catalogue_vocab import CANONICAL_THEMES
+    distinct = _collect_distinct_themes(catalog)
+    print(f"  {len(distinct)} distinct free-form themes across the catalog.")
+    mapping = _build_canonical_mapping(
+        client, distinct, "themes", CANONICAL_THEMES
+    )
+    n_entries_changed = _apply_theme_mapping(catalog, mapping)
+    n_mapped = sum(1 for v in mapping.values() if v is not None)
+    return {
+        "distinct_phrases": len(distinct),
+        "phrases_mapped": n_mapped,
+        "phrases_unmapped": len(distinct) - n_mapped,
+        "entries_changed": n_entries_changed,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Library.csv genre re-audit — judges the CSV's `#genre` column with the
+# LLM and writes a per-row diff for the operator to review before applying.
+# ---------------------------------------------------------------------------
+
+LIBRARY_GENRE_AUDIT_REPORT = "dist/library_genre_audit.md"
+
+
+def audit_library_genres(
+    csv_path: Path,
+    client,
+    *,
+    chunk_size: int = DEFAULT_CHUNK_SIZE,
+    apply_changes: bool = False,
+    report_path: Path | None = None,
+) -> dict:
+    """Walk Library.csv and ask the LLM to verify each row's `#genre`.
+
+    By default writes a diff report only — operator reviews and re-runs
+    with `apply_changes=True` to commit the revised genre column to CSV.
+    """
+    from catalogue_prompts import (
+        build_library_genre_audit_system_prompt,
+        build_library_genre_audit_prompt,
+        parse_library_genre_audit_response,
+    )
+
+    rows = load_library(str(csv_path))
+    targets = []
+    for row in rows:
+        targets.append({
+            "title": row.get("title"),
+            "author": row.get("authors"),
+            "current_genre": row.get("#genre") or "",
+            "tag_hints": row.get("#more_tags") or "",
+            "series": row.get("series") or None,
+        })
+    print(f"  {len(targets)} rows to audit.")
+
+    system = build_library_genre_audit_system_prompt()
+    n_chunks = -(-len(targets) // chunk_size)
+    proposed: dict[str, str] = {}
+
+    for i in range(n_chunks):
+        chunk = targets[i * chunk_size: (i + 1) * chunk_size]
+        prompt = build_library_genre_audit_prompt(chunk)
+        print(f"  Genre audit chunk {i + 1}/{n_chunks} ({len(chunk)} rows)...")
+        try:
+            raw = call_api_with_tools(client, [{"role": "user", "content": prompt}],
+                                      system)
+            chunk_map = parse_library_genre_audit_response(raw)
+            proposed.update(chunk_map)
+        except Exception as e:
+            print(f"    Error: {e}. Chunk skipped.")
+        time.sleep(RATE_LIMIT_DELAY)
+
+    # Build the diff report.
+    diffs = []
+    unchanged = 0
+    for row in rows:
+        key = book_key(row.get("title", ""), row.get("authors", ""))
+        new = proposed.get(key)
+        if new is None:
+            continue
+        cur = (row.get("#genre") or "").strip()
+        if new != cur:
+            diffs.append((key, cur, new))
+        else:
+            unchanged += 1
+
+    report_path = report_path or Path(LIBRARY_GENRE_AUDIT_REPORT)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# Library.csv #genre re-audit\n\n",
+        f"Audit covered {len(rows)} rows; LLM responded for {len(proposed)}.\n",
+        f"Unchanged: {unchanged}. Proposed changes: {len(diffs)}.\n\n",
+        "## Proposed changes\n\n",
+        "| Book | Current | Proposed |\n|---|---|---|\n",
+    ]
+    for key, cur, new in sorted(diffs):
+        lines.append(f"| {key} | {cur} | {new} |\n")
+    report_path.write_text("".join(lines), encoding="utf-8")
+    print(f"  Wrote audit report → {report_path}")
+
+    stats = {
+        "rows_audited": len(rows),
+        "responses_received": len(proposed),
+        "proposed_changes": len(diffs),
+        "applied": 0,
+    }
+
+    if apply_changes and diffs:
+        # Rewrite Library.csv with the proposed genre values.
+        import io as _io
+        # Re-read raw rows so we keep all columns and ordering intact.
+        with open(csv_path, encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            fieldnames = reader.fieldnames
+            raw_rows = list(reader)
+        change_set = {k: new for k, _cur, new in diffs}
+        applied = 0
+        for row in raw_rows:
+            key = book_key(row.get("title", ""), row.get("authors", ""))
+            if key in change_set:
+                row["#genre"] = change_set[key]
+                applied += 1
+        # Preserve the file's original style (BOM, unquoted header, QUOTE_ALL
+        # body, \n endings) — same shape as the series_type audit writer.
+        with open(csv_path, "wb") as f:
+            f.write("﻿".encode("utf-8"))
+            f.write((",".join(fieldnames) + "\n").encode("utf-8"))
+            buf = _io.StringIO()
+            w = csv.DictWriter(
+                buf, fieldnames=fieldnames,
+                quoting=csv.QUOTE_ALL, lineterminator="\n",
+            )
+            for row in raw_rows:
+                w.writerow(row)
+            f.write(buf.getvalue().encode("utf-8"))
+        stats["applied"] = applied
+        print(f"  Applied {applied} genre changes to {csv_path}.")
+
+    return stats
+
+
 def authenticate_anthropic_client():
     """Set up the Anthropic client using the Claude Code session ingress token.
 
@@ -1190,6 +1520,21 @@ def main():
     parser.add_argument("--no-push", action="store_true",
                         help="With --sync: skip the git commit + push step "
                              "(useful for dry runs / local-only inspection).")
+    parser.add_argument("--canonicalize-signals", action="store_true",
+                        help="Map free-form taste_signals on every entry to "
+                             "canonical IDs from catalogue_vocab. Idempotent; "
+                             "writes taste_signals_canonical and saves.")
+    parser.add_argument("--canonicalize-themes", action="store_true",
+                        help="Same as --canonicalize-signals, for themes / "
+                             "themes_canonical.")
+    parser.add_argument("--audit-library-genres", action="store_true",
+                        help="LLM-walks Library.csv and proposes a primary "
+                             "genre per row. Writes a diff report by default; "
+                             "pass --apply-changes to commit the proposal "
+                             "to the CSV.")
+    parser.add_argument("--apply-changes", action="store_true",
+                        help="With --audit-library-genres: rewrite "
+                             "Library.csv with the LLM's proposed genres.")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
@@ -1258,6 +1603,46 @@ def main():
             save_catalog(catalog, args.catalog)
             save_index(catalog, args.index)
             print(f"  Wrote → {args.catalog} (+ {args.index})")
+        sys.exit(0)
+
+    if args.canonicalize_signals or args.canonicalize_themes:
+        client = authenticate_anthropic_client()
+        if args.canonicalize_signals:
+            print("\nCanonicalising taste_signals…")
+            stats = canonicalize_signals(catalog, client)
+            print(f"  distinct phrases : {stats['distinct_phrases']}")
+            print(f"  mapped           : {stats['phrases_mapped']}")
+            print(f"  unmapped         : {stats['phrases_unmapped']}")
+            print(f"  entries changed  : {stats['entries_changed']}")
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+        if args.canonicalize_themes:
+            print("\nCanonicalising themes…")
+            stats = canonicalize_themes(catalog, client)
+            print(f"  distinct phrases : {stats['distinct_phrases']}")
+            print(f"  mapped           : {stats['phrases_mapped']}")
+            print(f"  unmapped         : {stats['phrases_unmapped']}")
+            print(f"  entries changed  : {stats['entries_changed']}")
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+        print(f"\n  Wrote → {args.catalog} (+ {args.index})")
+        sys.exit(0)
+
+    if args.audit_library_genres:
+        client = authenticate_anthropic_client()
+        stats = audit_library_genres(
+            Path(args.library),
+            client,
+            chunk_size=args.chunk_size,
+            apply_changes=args.apply_changes,
+        )
+        print(f"\nLibrary genre audit complete.")
+        print(f"  rows audited       : {stats['rows_audited']}")
+        print(f"  responses received : {stats['responses_received']}")
+        print(f"  proposed changes   : {stats['proposed_changes']}")
+        print(f"  applied            : {stats['applied']}")
+        if not args.apply_changes and stats["proposed_changes"]:
+            print("  (review report; rerun with --apply-changes to commit.)")
         sys.exit(0)
 
     books = load_library(args.library)
