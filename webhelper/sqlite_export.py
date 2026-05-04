@@ -130,9 +130,9 @@ SCHEMA = [
         audit_json           TEXT
     )""",
     """CREATE TABLE taste_signals (
-        book_key TEXT NOT NULL,
-        polarity TEXT NOT NULL,
-        signal   TEXT NOT NULL,
+        book_key  TEXT NOT NULL,
+        polarity  TEXT NOT NULL,
+        canonical TEXT NOT NULL,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE comparable_books (
@@ -146,8 +146,13 @@ SCHEMA = [
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE themes (
-        book_key TEXT NOT NULL,
-        theme    TEXT NOT NULL,
+        book_key  TEXT NOT NULL,
+        canonical TEXT NOT NULL,
+        FOREIGN KEY (book_key) REFERENCES books(key)
+    )""",
+    """CREATE TABLE related_series (
+        book_key       TEXT NOT NULL,
+        related_series TEXT NOT NULL,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE audit_flags (
@@ -168,6 +173,9 @@ SCHEMA = [
     "CREATE INDEX idx_books_indie              ON books(indie)",
     "CREATE INDEX idx_books_classic            ON books(classic)",
     "CREATE INDEX idx_books_status             ON books(status)",
+    "CREATE INDEX idx_taste_signals_canonical  ON taste_signals(canonical, polarity)",
+    "CREATE INDEX idx_themes_canonical         ON themes(canonical)",
+    "CREATE INDEX idx_related_series           ON related_series(related_series)",
 ]
 
 
@@ -320,19 +328,17 @@ def export(catalog: dict, sqlite_path: Path) -> None:
 
             ts = entry.get("taste_signals") or {}
             if isinstance(ts, dict):
-                for sig in ts.get("positive") or []:
-                    if sig:
+                # Closed-vocab schema: each list element IS a canonical ID.
+                for polarity in ("positive", "negative"):
+                    seen: set[str] = set()
+                    for sig in (ts.get(polarity) or []):
+                        if not sig or sig in seen:
+                            continue
+                        seen.add(sig)
                         cur.execute(
-                            "INSERT INTO taste_signals (book_key, polarity, signal) "
-                            "VALUES (?, 'positive', ?)",
-                            (key, sig),
-                        )
-                for sig in ts.get("negative") or []:
-                    if sig:
-                        cur.execute(
-                            "INSERT INTO taste_signals (book_key, polarity, signal) "
-                            "VALUES (?, 'negative', ?)",
-                            (key, sig),
+                            "INSERT INTO taste_signals (book_key, polarity, canonical) "
+                            "VALUES (?, ?, ?)",
+                            (key, polarity, sig),
                         )
 
             for comp in entry.get("comparable_books") or []:
@@ -351,11 +357,22 @@ def export(catalog: dict, sqlite_path: Path) -> None:
                         (key, flag),
                     )
 
+            themes_seen: set[str] = set()
             for theme in entry.get("themes") or []:
-                if theme:
+                if not theme or theme in themes_seen:
+                    continue
+                themes_seen.add(theme)
+                cur.execute(
+                    "INSERT INTO themes (book_key, canonical) VALUES (?, ?)",
+                    (key, theme),
+                )
+
+            for rel in entry.get("related_series") or []:
+                if rel:
                     cur.execute(
-                        "INSERT INTO themes (book_key, theme) VALUES (?, ?)",
-                        (key, theme),
+                        "INSERT INTO related_series (book_key, related_series) "
+                        "VALUES (?, ?)",
+                        (key, rel),
                     )
 
             for row in _audit_flag_rows(key, entry):
@@ -402,15 +419,18 @@ def reconstruct_entry(conn: sqlite3.Connection, key: str) -> dict:
     entry["indie"] = bool(book["indie"]) if book["indie"] is not None else None
     entry["classic"] = bool(book["classic"]) if book["classic"] is not None else None
 
-    pos = [r["signal"] for r in cur.execute(
-        "SELECT signal FROM taste_signals WHERE book_key = ? AND polarity = 'positive'",
-        (key,),
-    )]
-    neg = [r["signal"] for r in cur.execute(
-        "SELECT signal FROM taste_signals WHERE book_key = ? AND polarity = 'negative'",
-        (key,),
-    )]
-    entry["taste_signals"] = {"positive": pos, "negative": neg}
+    entry["taste_signals"] = {
+        "positive": [r["canonical"] for r in cur.execute(
+            "SELECT canonical FROM taste_signals "
+            "WHERE book_key = ? AND polarity = 'positive'",
+            (key,),
+        )],
+        "negative": [r["canonical"] for r in cur.execute(
+            "SELECT canonical FROM taste_signals "
+            "WHERE book_key = ? AND polarity = 'negative'",
+            (key,),
+        )],
+    }
 
     entry["comparable_books"] = [
         r["comp_key"] for r in cur.execute(
@@ -425,11 +445,20 @@ def reconstruct_entry(conn: sqlite3.Connection, key: str) -> dict:
         )
     ]
     entry["themes"] = [
-        r["theme"] for r in cur.execute(
-            "SELECT theme FROM themes WHERE book_key = ?",
+        r["canonical"] for r in cur.execute(
+            "SELECT canonical FROM themes WHERE book_key = ?",
             (key,),
         )
     ]
+
+    related = [
+        r["related_series"] for r in cur.execute(
+            "SELECT related_series FROM related_series WHERE book_key = ?",
+            (key,),
+        )
+    ]
+    if related:
+        entry["related_series"] = related
 
     aj = book["audit_json"]
     if aj is None:

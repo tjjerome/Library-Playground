@@ -4,9 +4,11 @@ __pycache__/
 .librarian-session/
 
 # Step 1+ build outputs.  The .sqlite form regenerates locally from
-# Library_Catalog.json via `catalogue.py --export-sqlite --emit-encoded`;
-# the .encoded text wrapper is tracked so readers cloning this branch
-# get a ready-to-upload Drive artifact without needing to regenerate.
+# Library_Catalog.json via `catalogue.py --export-sqlite --emit-encoded`
+# and is gitignored to avoid binary churn.  The .encoded form (gzip+b64
+# wrapped) is the canonical mutable artifact for the claude.ai surface
+# and is tracked here so readers can pull from this branch without
+# re-running the export.
 Library_Catalog.sqlite
 dist/
 build/

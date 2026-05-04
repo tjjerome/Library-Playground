@@ -22,6 +22,7 @@ import csv
 import datetime as _datetime
 import json
 import os
+import re as _re
 import subprocess
 import sys
 import time
@@ -38,6 +39,8 @@ MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 16000
 DEFAULT_CHUNK_SIZE = 20
 RATE_LIMIT_DELAY = 10    # seconds between API calls
+CANONICALIZE_DELAY = 2   # tighter delay for the canonicalize loop, which
+                         # only does cheap classify-from-fixed-vocab calls
 MAX_RETRIES = 3
 
 COMPARABLES_CAP = 6
@@ -68,6 +71,9 @@ def load_catalog(path: str) -> dict:
 
 
 def save_catalog(catalog: dict, path: str):
+    # Deterministic flag gates run on every save so newly-catalogued
+    # entries can never escape the post-processing rules. Idempotent.
+    apply_flag_gates(catalog)
     catalog["last_updated"] = str(date.today())
     entries = catalog["entries"]
     catalog["total_in_library"] = len(entries)
@@ -79,6 +85,86 @@ def save_catalog(catalog: dict, path: str):
     )
     with open(path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
+
+
+# ---------------------------------------------------------------------------
+# Deterministic flag gates — run on every save so the post-processing rules
+# stay enforced even as the cataloguer adds new entries.
+# ---------------------------------------------------------------------------
+
+INDIE_REVIEW_THRESHOLD = 12000   # > this -> book has broken out of indie identity
+CLASSIC_MIN_AGE_YEARS = 30       # < this -> not yet a classic by age
+
+
+def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
+    """Enforce indie + classic flag rules in place. Idempotent.
+
+    Rules applied in order:
+
+    1. **Series-indie propagation.** If any book in a series carries
+       `indie=True`, every other book in that same series is set to
+       `indie=True`. Catches cases where the series's first book broke
+       out of indie identity (large review count) but later volumes are
+       still in the same indie footprint.
+
+    2. **Indie review-count threshold.** A book with `indie=True` and
+       `goodreads_reviews > INDIE_REVIEW_THRESHOLD` flips to `indie=False`
+       — UNLESS the book is part of a series identified as indie by
+       step 1, which preserves the series identity through breakouts.
+
+    3. **Classic age gate.** A book with `classic=True` and either no
+       `pub_year` or `pub_year` more recent than
+       `current_year - CLASSIC_MIN_AGE_YEARS` flips to `classic=False`.
+
+    Returns a stats dict for logging.
+    """
+    if current_year is None:
+        current_year = _datetime.date.today().year
+
+    entries = catalog.get("entries") or {}
+
+    # Step 1 — collect series with any indie member, then propagate.
+    indie_series: set[str] = set()
+    for entry in entries.values():
+        if entry.get("indie") and entry.get("series"):
+            indie_series.add(entry["series"])
+
+    propagated = 0
+    for entry in entries.values():
+        s = entry.get("series")
+        if s and s in indie_series and not entry.get("indie"):
+            entry["indie"] = True
+            propagated += 1
+
+    # Step 2 — threshold demotion (skips books in propagated indie series).
+    threshold_demoted = 0
+    for entry in entries.values():
+        if not entry.get("indie"):
+            continue
+        s = entry.get("series")
+        if s and s in indie_series:
+            continue
+        reviews = entry.get("goodreads_reviews")
+        if isinstance(reviews, int) and reviews > INDIE_REVIEW_THRESHOLD:
+            entry["indie"] = False
+            threshold_demoted += 1
+
+    # Step 3 — classic age gate.
+    classic_demoted = 0
+    for entry in entries.values():
+        if not entry.get("classic"):
+            continue
+        py = entry.get("pub_year")
+        if not isinstance(py, int) or (current_year - py) < CLASSIC_MIN_AGE_YEARS:
+            entry["classic"] = False
+            classic_demoted += 1
+
+    return {
+        "indie_series_count": len(indie_series),
+        "indie_propagated": propagated,
+        "indie_threshold_demoted": threshold_demoted,
+        "classic_demoted": classic_demoted,
+    }
 
 
 # Fields kept in the slim index. Everything else (summary, themes, comparables,
@@ -161,18 +247,57 @@ def load_library(csv_path: str) -> list[dict]:
     return books
 
 
-# Library.csv is the source of truth for these three fields. The cataloguer
+# Library.csv is the source of truth for these fields. The cataloguer
 # never asks the LLM for them and never lets stale catalog values stand:
 # every sync re-applies whatever the CSV currently says.
-CSV_AUTHORITATIVE_FIELDS = ("pages", "goodreads_rating", "goodreads_reviews")
+#
+# - pages / goodreads_rating / goodreads_reviews: numerics from the export.
+# - series / series_position / series_status: structural facts about where
+#   a book sits in a series. The CSV's `series`, `series_index`, and
+#   `#series_type` columns carry these — the model used to be asked for
+#   them and would occasionally invent ordering or misclassify length.
+#   Treating them as authoritative pins the answer to the source data.
+CSV_AUTHORITATIVE_FIELDS = (
+    "pages",
+    "goodreads_rating",
+    "goodreads_reviews",
+    "series",
+    "series_position",
+    "series_status",
+    "pub_year",
+)
+
+
+def _format_series_position(raw: str | None) -> str | None:
+    """Convert a CSV `series_index` value to a `series_position` string.
+
+    "1.0" -> "Book 1"; "4.5" -> "Book 4.5"; "0" / "" / None -> None.
+    """
+    if raw is None or raw == "":
+        return None
+    try:
+        f = float(raw)
+    except (TypeError, ValueError):
+        return None
+    if f <= 0:
+        return None
+    if f.is_integer():
+        return f"Book {int(f)}"
+    # Preserve fractional positions for novellas (e.g. Book 4.5).
+    return f"Book {f:g}"
 
 
 def csv_authoritative_values(book: dict) -> dict:
-    """Pull pages / goodreads_rating / goodreads_reviews out of a CSV row.
+    """Pull CSV-authoritative fields out of a Library.csv row.
 
-    Only fields the CSV actually provides are returned, so callers can
-    distinguish "CSV says this" from "CSV is silent" and leave existing
-    catalog values alone in the latter case.
+    Numerics return only when the CSV provides a parseable value, so a silent
+    column doesn't clobber existing catalog data.
+
+    The series triple (series / series_position / series_status), by contrast,
+    is *always* emitted — an empty `series` column is itself authoritative
+    ("this book is not part of a series, regardless of what the catalog
+    currently says"). That keeps the catalog from drifting when the reader
+    corrects a series tag in the CSV.
     """
     out: dict = {}
 
@@ -197,6 +322,40 @@ def csv_authoritative_values(book: dict) -> dict:
         except (TypeError, ValueError):
             pass
 
+    # series triple is always emitted (empty CSV value -> None).
+    series_raw = (book.get("series") or "").strip()
+    out["series"] = series_raw or None
+    out["series_position"] = _format_series_position(book.get("series_index"))
+    series_type = (book.get("#series_type") or "").strip()
+    out["series_status"] = series_type or None
+    # When the CSV says a book is standalone, drop any stale series_position
+    # that the catalog might still carry.
+    if out["series"] is None:
+        out["series_position"] = None
+
+    # pub_year derived from CSV's pubdate ISO timestamp. Some pubdate values
+    # carry republication / edition years rather than first-publication year;
+    # the `--audit-pub-years` LLM pass corrects those after sync.
+    pubdate = book.get("pubdate") or ""
+    m = _re.match(r"^(\d{4})", pubdate)
+    if m:
+        try:
+            year = int(m.group(1))
+            if 1000 <= year <= 2100:
+                out["pub_year"] = year
+        except ValueError:
+            pass
+    # Library_new.csv may have promoted pub_year to its own column. Honour it.
+    py_explicit = book.get("pub_year") or ""
+    m2 = _re.match(r"^(\d{4})$", str(py_explicit).strip())
+    if m2:
+        try:
+            year = int(m2.group(1))
+            if 1000 <= year <= 2100:
+                out["pub_year"] = year
+        except ValueError:
+            pass
+
     return out
 
 
@@ -218,12 +377,11 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> dict:
             catalog["entries"][key] = {
                 "title": book["title"],
                 "author": book["authors"],
-                "series": book.get("series") or None,
-                "series_position": None,
                 "series_role": None,
                 "author_entry_point": None,
-                "genre": book.get("genre") or None,
-                "series_status": book.get("series_type") or None,
+                "primary_genre": None,
+                "secondary_genre": None,
+                "related_series": [],
                 "indie": None,
                 "classic": None,
                 "status": "pending",
@@ -383,6 +541,12 @@ def catalogue_chunk(
 
         if matched_key:
             existing = catalog["entries"][matched_key]
+            # CSV-pinned fields stay pinned even if the model emits values
+            # for them. The system prompt instructs the model not to touch
+            # them, but a defensive strip keeps a chatty response from
+            # silently overriding ground truth.
+            for pinned in CSV_AUTHORITATIVE_FIELDS:
+                entry_data.pop(pinned, None)
             existing.update(entry_data)
             if "status" not in entry_data:
                 existing["status"] = (
@@ -398,8 +562,6 @@ def catalogue_chunk(
 # ---------------------------------------------------------------------------
 # Entry-point fields (series_role + author_entry_point)
 # ---------------------------------------------------------------------------
-
-import re as _re
 
 _AUDIT_BOOK1 = _re.compile(r"^book\s*1(?![\d.])", _re.IGNORECASE)
 
@@ -898,6 +1060,754 @@ def print_sync_summary(stats: dict):
         print("    (dry run — no changes written, Phase 3 skipped)")
 
 
+# ---------------------------------------------------------------------------
+# Canonicalisation migration — convert legacy free-form `taste_signals` /
+# `themes` to closed-vocab ID lists. One LLM call per chunk of distinct
+# free-form strings, applied across every entry that uses them. After
+# the migration:
+#   * `taste_signals` lists hold canonical IDs only (no free-form strings).
+#   * `themes` lists hold canonical IDs only.
+#   * Legacy `taste_signals_canonical` / `themes_canonical` fields are
+#     deleted from each entry — the new schema doesn't carry them.
+# Idempotent: phrases that are already canonical IDs aren't sent to the
+# model, and entries already in the new shape pass through unchanged.
+# ---------------------------------------------------------------------------
+
+CANONICALIZE_CHUNK_SIZE = 200   # distinct phrases per LLM call
+
+
+def _collect_distinct_signals(catalog: dict) -> set[str]:
+    """Distinct free-form signal strings that need LLM mapping.
+
+    Skips phrases that are already canonical IDs (post-migration entries
+    or pass-through), and skips phrases whose legacy `taste_signals_canonical`
+    block already carries a valid vocab ID at the same list index. The
+    skip cuts repeat LLM cost on entries the prior canonicalize run
+    already mapped — only previously-unmapped phrases (and newly-added
+    vocab IDs that might catch them) hit the model again.
+    """
+    from catalogue_vocab import CANONICAL_TASTE_SIGNALS
+    allowed = set(CANONICAL_TASTE_SIGNALS)
+    out: set[str] = set()
+    for entry in catalog["entries"].values():
+        ts = entry.get("taste_signals") or {}
+        if not isinstance(ts, dict):
+            continue
+        legacy = entry.get("taste_signals_canonical")
+        legacy_dict = legacy if isinstance(legacy, dict) else {}
+        for polarity in ("positive", "negative"):
+            phrases = ts.get(polarity) or []
+            legacy_list = legacy_dict.get(polarity) or []
+            for i, sig in enumerate(phrases):
+                if not sig or sig in allowed:
+                    continue
+                # Position-paired legacy canonical: if the prior run mapped
+                # this exact slot to a still-valid vocab ID, skip the LLM.
+                legacy_id = legacy_list[i] if i < len(legacy_list) else None
+                if isinstance(legacy_id, str) and legacy_id in allowed:
+                    continue
+                out.add(sig)
+    return out
+
+
+def _collect_distinct_themes(catalog: dict) -> set[str]:
+    """Distinct free-form theme strings that need LLM mapping.
+
+    Mirrors `_collect_distinct_signals`: skips phrases that are already
+    canonical IDs and phrases with a valid legacy `themes_canonical`
+    mapping at the same list index.
+    """
+    from catalogue_vocab import CANONICAL_THEMES
+    allowed = set(CANONICAL_THEMES)
+    out: set[str] = set()
+    for entry in catalog["entries"].values():
+        themes = entry.get("themes") or []
+        legacy = entry.get("themes_canonical") or []
+        if not isinstance(legacy, list):
+            legacy = []
+        for i, t in enumerate(themes):
+            if not t or t in allowed:
+                continue
+            legacy_id = legacy[i] if i < len(legacy) else None
+            if isinstance(legacy_id, str) and legacy_id in allowed:
+                continue
+            out.add(t)
+    return out
+
+
+def _build_canonical_mapping(
+    client,
+    phrases: set[str],
+    label: str,
+    vocab: dict[str, str],
+    chunk_size: int = CANONICALIZE_CHUNK_SIZE,
+) -> dict[str, str | None]:
+    """Ask the LLM to map each free-form phrase to a canonical vocab ID
+    (or None). Returns a dict; phrases with no mapping have value None."""
+    from catalogue_prompts import (
+        build_canonicalize_system_prompt,
+        build_canonicalize_prompt,
+        parse_canonicalize_response,
+    )
+
+    system = build_canonicalize_system_prompt(label, vocab)
+    allowed = set(vocab.keys())
+    sorted_phrases = sorted(phrases)
+    mapping: dict[str, str | None] = {p: None for p in sorted_phrases}
+
+    n_chunks = -(-len(sorted_phrases) // chunk_size)
+    for i in range(n_chunks):
+        chunk = sorted_phrases[i * chunk_size: (i + 1) * chunk_size]
+        prompt = build_canonicalize_prompt(chunk)
+        print(f"  canonicalize-{label} chunk {i + 1}/{n_chunks} ({len(chunk)} phrases)...")
+        try:
+            raw = call_api_with_tools(client, [{"role": "user", "content": prompt}],
+                                      system, tools=[])
+            chunk_map = parse_canonicalize_response(raw, allowed)
+            mapping.update(chunk_map)
+        except Exception as e:
+            print(f"    Error: {e}. Phrases in this chunk left unmapped.")
+        time.sleep(CANONICALIZE_DELAY)
+
+    return mapping
+
+
+def _legacy_canonical_signals(entry: dict) -> dict[str, list[str]]:
+    """Pull canonical IDs out of an entry's legacy `taste_signals_canonical`
+    block, position-paired with its free-form list. Returns positive/negative
+    lists of IDs (Nones / blanks dropped). Used during migration to
+    preserve existing canonical mappings on top of fresh LLM output.
+    """
+    out = {"positive": [], "negative": []}
+    canon = entry.get("taste_signals_canonical")
+    if not isinstance(canon, dict):
+        return out
+    for polarity in ("positive", "negative"):
+        for v in (canon.get(polarity) or []):
+            if isinstance(v, str) and v:
+                out[polarity].append(v)
+    return out
+
+
+def _legacy_canonical_themes(entry: dict) -> list[str]:
+    canon = entry.get("themes_canonical")
+    if not isinstance(canon, list):
+        return []
+    return [v for v in canon if isinstance(v, str) and v]
+
+
+def _apply_signal_mapping(catalog: dict, mapping: dict[str, str | None]) -> int:
+    """Migrate `taste_signals` to canonical-IDs-only shape per entry.
+
+    Sources of IDs, merged:
+      1. Items already on the vocab in the current `taste_signals` lists
+         (covers entries already in new shape — pass-through).
+      2. Mapping output for free-form strings in current `taste_signals`.
+      3. Legacy `taste_signals_canonical` if present (preserves prior runs).
+
+    Per-entry result is deduplicated and replaces `taste_signals` directly.
+    `taste_signals_canonical` is deleted unconditionally.
+    """
+    from catalogue_vocab import CANONICAL_TASTE_SIGNALS
+    allowed = set(CANONICAL_TASTE_SIGNALS)
+    changed = 0
+    for entry in catalog["entries"].values():
+        ts = entry.get("taste_signals") or {}
+        if not isinstance(ts, dict):
+            ts = {"positive": [], "negative": []}
+        legacy_canon = _legacy_canonical_signals(entry)
+        new_ts: dict[str, list[str]] = {}
+        for polarity in ("positive", "negative"):
+            seen: set[str] = set()
+            buf: list[str] = []
+            for src in (ts.get(polarity) or []):
+                if not src:
+                    continue
+                if src in allowed:
+                    cand = src
+                else:
+                    cand = mapping.get(src)
+                if cand and cand in allowed and cand not in seen:
+                    seen.add(cand)
+                    buf.append(cand)
+            for cand in legacy_canon[polarity]:
+                if cand in allowed and cand not in seen:
+                    seen.add(cand)
+                    buf.append(cand)
+            new_ts[polarity] = buf
+
+        if entry.get("taste_signals") != new_ts:
+            entry["taste_signals"] = new_ts
+            changed += 1
+        if "taste_signals_canonical" in entry:
+            del entry["taste_signals_canonical"]
+    return changed
+
+
+def _apply_theme_mapping(catalog: dict, mapping: dict[str, str | None]) -> int:
+    """Migrate `themes` to canonical-IDs-only shape per entry. Same
+    structure as `_apply_signal_mapping` — see that docstring."""
+    from catalogue_vocab import CANONICAL_THEMES
+    allowed = set(CANONICAL_THEMES)
+    changed = 0
+    for entry in catalog["entries"].values():
+        themes = entry.get("themes") or []
+        if not isinstance(themes, list):
+            themes = []
+        legacy_canon = _legacy_canonical_themes(entry)
+        seen: set[str] = set()
+        buf: list[str] = []
+        for src in themes:
+            if not src:
+                continue
+            if src in allowed:
+                cand = src
+            else:
+                cand = mapping.get(src)
+            if cand and cand in allowed and cand not in seen:
+                seen.add(cand)
+                buf.append(cand)
+        for cand in legacy_canon:
+            if cand in allowed and cand not in seen:
+                seen.add(cand)
+                buf.append(cand)
+
+        if entry.get("themes") != buf:
+            entry["themes"] = buf
+            changed += 1
+        if "themes_canonical" in entry:
+            del entry["themes_canonical"]
+    return changed
+
+
+def canonicalize_signals(catalog: dict, client) -> dict:
+    """Full pipeline: collect distinct free-form signals, map via LLM,
+    apply across catalog. Returns stats."""
+    from catalogue_vocab import CANONICAL_TASTE_SIGNALS
+    distinct = _collect_distinct_signals(catalog)
+    print(f"  {len(distinct)} distinct free-form taste_signals across the catalog.")
+    mapping = _build_canonical_mapping(
+        client, distinct, "taste_signals", CANONICAL_TASTE_SIGNALS
+    )
+    n_entries_changed = _apply_signal_mapping(catalog, mapping)
+    n_mapped = sum(1 for v in mapping.values() if v is not None)
+    return {
+        "distinct_phrases": len(distinct),
+        "phrases_mapped": n_mapped,
+        "phrases_unmapped": len(distinct) - n_mapped,
+        "entries_changed": n_entries_changed,
+    }
+
+
+def canonicalize_themes(catalog: dict, client) -> dict:
+    from catalogue_vocab import CANONICAL_THEMES
+    distinct = _collect_distinct_themes(catalog)
+    print(f"  {len(distinct)} distinct free-form themes across the catalog.")
+    mapping = _build_canonical_mapping(
+        client, distinct, "themes", CANONICAL_THEMES
+    )
+    n_entries_changed = _apply_theme_mapping(catalog, mapping)
+    n_mapped = sum(1 for v in mapping.values() if v is not None)
+    return {
+        "distinct_phrases": len(distinct),
+        "phrases_mapped": n_mapped,
+        "phrases_unmapped": len(distinct) - n_mapped,
+        "entries_changed": n_entries_changed,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Library.csv audit pipeline — programmatic + LLM-driven passes that propose
+# revisions to the CSV's mutable columns. Output goes to a separate
+# `Library_new.csv` so the operator can diff/promote at their pace; the
+# source-of-truth `Library.csv` stays untouched.
+#
+# Only three columns are ever rewritten by the audit pipeline: `#genre`,
+# `#series_type`, and `tags`. Everything else round-trips unchanged.
+# ---------------------------------------------------------------------------
+
+LIBRARY_NEW_PATH = "Library_new.csv"
+LIBRARY_SERIES_TYPE_AUDIT_REPORT = "dist/library_series_type_audit.md"
+LIBRARY_GENRE_AUDIT_REPORT = "dist/library_genre_audit.md"
+
+# Mutable columns the audit may rewrite. Anything outside this set must be
+# byte-for-byte identical between Library.csv input and Library_new.csv output.
+LIBRARY_AUDIT_MUTABLE_COLUMNS = ("#genre", "#series_type", "tags")
+
+# Series-type rule anchors. Stormlight Archive (7 books, 5774 pages) → Long;
+# Long Price Quartet (4 books, 1242 pages) → Short.
+LONG_SERIES_PAGE_THRESHOLD = 2500
+LONG_SERIES_MIN_BOOKS = 4
+
+
+def _read_library_raw(csv_path: Path) -> tuple[list[str], list[dict]]:
+    """Read a Library.csv-shaped file, preserving column order and raw values."""
+    with open(csv_path, encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        fieldnames = list(reader.fieldnames or [])
+        raw_rows = list(reader)
+    return fieldnames, raw_rows
+
+
+def _write_library_csv(out_path: Path, fieldnames: list[str], rows: list[dict]) -> None:
+    """Write rows to `out_path` in Library.csv's exact byte style: BOM,
+    unquoted header, QUOTE_ALL body, `\\n` line endings."""
+    import io as _io
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(out_path, "wb") as f:
+        f.write("﻿".encode("utf-8"))
+        f.write((",".join(fieldnames) + "\n").encode("utf-8"))
+        buf = _io.StringIO()
+        w = csv.DictWriter(
+            buf, fieldnames=fieldnames,
+            quoting=csv.QUOTE_ALL, lineterminator="\n",
+        )
+        for row in rows:
+            w.writerow(row)
+        f.write(buf.getvalue().encode("utf-8"))
+
+
+def _load_audit_base(library_path: Path, out_path: Path) -> tuple[list[str], list[dict]]:
+    """Read the audit base layer.
+
+    If `out_path` (default Library_new.csv) already exists, read from there
+    so successive audits stack. Otherwise read from `library_path`. The
+    operator promotes Library_new.csv to Library.csv when satisfied; until
+    then the audits accumulate against the proposal file.
+    """
+    if out_path.exists():
+        print(f"  Reading from existing {out_path} (stacking on prior audit).")
+        return _read_library_raw(out_path)
+    return _read_library_raw(library_path)
+
+
+def audit_library_series_type(
+    library_path: Path,
+    out_path: Path,
+    *,
+    report_path: Path | None = None,
+) -> dict:
+    """Programmatic audit of `#series_type`. Deterministic — no LLM.
+
+    Rule: <4 books OR <2500 total pages → Short Series; ≥4 books AND
+    ≥2500 pages → Long Series. Series with 1-3 books in the library are
+    left alone (insufficient sample to override the cataloguer's call).
+
+    Reads from Library.csv (or Library_new.csv if it exists), writes to
+    `out_path`, and produces a markdown report at `report_path`.
+    """
+    from collections import defaultdict
+
+    fieldnames, rows = _load_audit_base(library_path, out_path)
+
+    by_series: dict[str, list[dict]] = defaultdict(list)
+    for row in rows:
+        s = (row.get("series") or "").strip()
+        if s:
+            by_series[s].append(row)
+    stats_per_series: dict[str, dict] = {}
+    for s, books in by_series.items():
+        pages = 0
+        for b in books:
+            try:
+                pages += int(float(b.get("#pages") or 0))
+            except (TypeError, ValueError):
+                pass
+        stats_per_series[s] = {"count": len(books), "pages": pages}
+
+    flips: dict[tuple[str, str], list[str]] = defaultdict(list)
+    changed_rows = 0
+    for row in rows:
+        s = (row.get("series") or "").strip()
+        if not s:
+            continue
+        st = stats_per_series[s]
+        if st["count"] < LONG_SERIES_MIN_BOOKS:
+            continue
+        new = (
+            "Long Series" if st["pages"] >= LONG_SERIES_PAGE_THRESHOLD
+            else "Short Series"
+        )
+        cur = (row.get("#series_type") or "").strip()
+        if cur != new:
+            row["#series_type"] = new
+            changed_rows += 1
+            flips[(cur, new)].append(s)
+
+    _write_library_csv(out_path, fieldnames, rows)
+    print(f"  Wrote {changed_rows} #series_type changes → {out_path}")
+
+    report_path = report_path or Path(LIBRARY_SERIES_TYPE_AUDIT_REPORT)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# Library.csv #series_type re-audit\n\n",
+        f"Rule: <{LONG_SERIES_MIN_BOOKS} books OR "
+        f"<{LONG_SERIES_PAGE_THRESHOLD} total pages → Short Series; "
+        f">={LONG_SERIES_MIN_BOOKS} books AND "
+        f">={LONG_SERIES_PAGE_THRESHOLD} pages → Long Series.\n",
+        "Singletons (1-3 books in library) are left alone — "
+        "insufficient sample.\n",
+        "Anchor: Stormlight Archive → Long; Long Price Quartet → Short.\n\n",
+        f"Total row changes: {changed_rows} of {len(rows)}.\n\n",
+        "## Changes\n",
+    ]
+    for (cur, new), names in sorted(flips.items(), key=lambda x: -len(x[1])):
+        distinct = sorted(set(names))
+        lines.append(
+            f"\n### {cur} → {new} "
+            f"({len(names)} rows, {len(distinct)} series)\n\n"
+        )
+        for s in distinct:
+            st = stats_per_series[s]
+            lines.append(f"- {s} ({st['count']} books, {st['pages']} pages)\n")
+    report_path.write_text("".join(lines), encoding="utf-8")
+    print(f"  Wrote audit report → {report_path}")
+
+    return {
+        "rows_total": len(rows),
+        "rows_changed": changed_rows,
+        "series_changed": sum(len(set(names)) for names in flips.values()),
+    }
+
+
+def audit_library_genres(
+    library_path: Path,
+    out_path: Path,
+    client,
+    *,
+    chunk_size: int = DEFAULT_CHUNK_SIZE,
+    apply_changes: bool = False,
+    report_path: Path | None = None,
+) -> dict:
+    """LLM-driven `#genre` audit. Walks every row, asks the model for the
+    best primary genre label, and writes a diff report. Only commits the
+    proposals to `out_path` when `apply_changes=True`.
+    """
+    from catalogue_prompts import (
+        build_library_genre_audit_system_prompt,
+        build_library_genre_audit_prompt,
+        parse_library_genre_audit_response,
+    )
+
+    fieldnames, raw_rows = _load_audit_base(library_path, out_path)
+
+    targets = []
+    for row in raw_rows:
+        targets.append({
+            "title": row.get("title"),
+            "author": row.get("authors"),
+            "current_genre": row.get("#genre") or "",
+            "tag_hints": row.get("#more_tags") or "",
+            "series": row.get("series") or None,
+        })
+    print(f"  {len(targets)} rows to audit.")
+
+    system = build_library_genre_audit_system_prompt()
+    n_chunks = -(-len(targets) // chunk_size)
+    proposed: dict[str, str] = {}
+
+    for i in range(n_chunks):
+        chunk = targets[i * chunk_size: (i + 1) * chunk_size]
+        prompt = build_library_genre_audit_prompt(chunk)
+        print(f"  Genre audit chunk {i + 1}/{n_chunks} ({len(chunk)} rows)...")
+        try:
+            raw = call_api_with_tools(
+                client, [{"role": "user", "content": prompt}], system,
+            )
+            chunk_map = parse_library_genre_audit_response(raw)
+            proposed.update(chunk_map)
+        except Exception as e:
+            print(f"    Error: {e}. Chunk skipped.")
+        time.sleep(RATE_LIMIT_DELAY)
+
+    diffs: list[tuple[str, str, str]] = []
+    unchanged = 0
+    for row in raw_rows:
+        key = book_key(row.get("title", ""), row.get("authors", ""))
+        new = proposed.get(key)
+        if new is None:
+            continue
+        cur = (row.get("#genre") or "").strip()
+        if new != cur:
+            diffs.append((key, cur, new))
+        else:
+            unchanged += 1
+
+    report_path = report_path or Path(LIBRARY_GENRE_AUDIT_REPORT)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# Library.csv #genre re-audit\n\n",
+        f"Audit covered {len(raw_rows)} rows; "
+        f"LLM responded for {len(proposed)}.\n",
+        f"Unchanged: {unchanged}. Proposed changes: {len(diffs)}.\n\n",
+        "## Proposed changes\n\n",
+        "| Book | Current | Proposed |\n|---|---|---|\n",
+    ]
+    for key, cur, new in sorted(diffs):
+        lines.append(f"| {key} | {cur} | {new} |\n")
+    report_path.write_text("".join(lines), encoding="utf-8")
+    print(f"  Wrote audit report → {report_path}")
+
+    stats = {
+        "rows_audited": len(raw_rows),
+        "responses_received": len(proposed),
+        "proposed_changes": len(diffs),
+        "applied": 0,
+    }
+
+    if apply_changes and diffs:
+        change_set = {k: new for k, _cur, new in diffs}
+        applied = 0
+        for row in raw_rows:
+            key = book_key(row.get("title", ""), row.get("authors", ""))
+            if key in change_set:
+                row["#genre"] = change_set[key]
+                applied += 1
+        _write_library_csv(out_path, fieldnames, raw_rows)
+        stats["applied"] = applied
+        print(f"  Applied {applied} #genre changes → {out_path}")
+
+    return stats
+
+
+# ---------------------------------------------------------------------------
+# pub_year audit — verify first-publication year per book; correct catalog
+# and add a `pub_year` column to Library_new.csv on apply.
+# ---------------------------------------------------------------------------
+
+PUB_YEAR_AUDIT_REPORT = "dist/library_pub_year_audit.md"
+PUB_YEAR_CHUNK_SIZE = 50
+
+
+def audit_pub_years(
+    catalog: dict,
+    library_path: Path,
+    library_out: Path,
+    client,
+    *,
+    chunk_size: int = PUB_YEAR_CHUNK_SIZE,
+    apply_changes: bool = False,
+    report_path: Path | None = None,
+) -> dict:
+    """LLM-walks every catalog entry, asks the model to verify the first
+    publication year, and writes a diff report.
+
+    On apply: writes corrected `pub_year` to each catalog entry and
+    promotes the column to Library_new.csv (adds the column if absent).
+    """
+    from catalogue_prompts import (
+        build_pub_year_audit_system_prompt,
+        build_pub_year_audit_prompt,
+        parse_pub_year_audit_response,
+    )
+
+    entries = catalog["entries"]
+    keys = sorted(entries.keys())
+    print(f"  {len(keys)} catalog entries to audit.")
+
+    system = build_pub_year_audit_system_prompt()
+    n_chunks = -(-len(keys) // chunk_size)
+    proposed: dict[str, int | None] = {}
+
+    for i in range(n_chunks):
+        chunk_keys = keys[i * chunk_size: (i + 1) * chunk_size]
+        chunk_books = []
+        for k in chunk_keys:
+            e = entries[k]
+            chunk_books.append({
+                "title": e.get("title"),
+                "author": e.get("author"),
+                "csv_pub_year_guess": e.get("pub_year"),
+            })
+        prompt = build_pub_year_audit_prompt(chunk_books)
+        print(f"  pub-year audit chunk {i + 1}/{n_chunks} ({len(chunk_keys)} books)...")
+        try:
+            raw = call_api_with_tools(client, [{"role": "user", "content": prompt}],
+                                      system)
+            chunk_map = parse_pub_year_audit_response(raw)
+            proposed.update(chunk_map)
+        except Exception as e:
+            print(f"    Error: {e}. Chunk skipped.")
+        time.sleep(RATE_LIMIT_DELAY)
+
+    diffs: list[tuple[str, int | None, int | None]] = []
+    catalog_keys = set(entries)
+    normalized_index = {normalize_key(ck): ck for ck in catalog_keys}
+    for k, new_year in proposed.items():
+        canon = resolve_canonical_key(k, catalog_keys, normalized_index)
+        if canon is None:
+            continue
+        cur = entries[canon].get("pub_year")
+        if new_year != cur:
+            diffs.append((canon, cur, new_year))
+
+    report_path = report_path or Path(PUB_YEAR_AUDIT_REPORT)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# Library pub_year re-audit\n\n",
+        f"Audit covered {len(keys)} entries; LLM responded for {len(proposed)}.\n",
+        f"Proposed changes: {len(diffs)}.\n\n",
+        "## Proposed changes\n\n",
+        "| Book | Current pub_year | Proposed |\n|---|---|---|\n",
+    ]
+    for k, cur, new in sorted(diffs):
+        lines.append(f"| {k} | {cur} | {new} |\n")
+    report_path.write_text("".join(lines), encoding="utf-8")
+    print(f"  Wrote audit report → {report_path}")
+
+    stats = {
+        "entries_audited": len(keys),
+        "responses_received": len(proposed),
+        "proposed_changes": len(diffs),
+        "applied": 0,
+        "library_new_csv_changes": 0,
+    }
+
+    if apply_changes and diffs:
+        # Apply to catalog
+        for canon, _cur, new_year in diffs:
+            entries[canon]["pub_year"] = new_year
+        stats["applied"] = len(diffs)
+
+        # Write to Library_new.csv: promote pub_year to a new column.
+        if library_out.exists():
+            fieldnames, raw_rows = _read_library_raw(library_out)
+        else:
+            fieldnames, raw_rows = _read_library_raw(library_path)
+        if "pub_year" not in fieldnames:
+            fieldnames = list(fieldnames) + ["pub_year"]
+        # Build map from key -> new pub_year using catalog (for ALL entries,
+        # not just diffs — we want every row to carry the audit-corrected
+        # value, including unchanged ones).
+        py_by_key: dict[str, int | None] = {}
+        for k, e in entries.items():
+            py_by_key[k] = e.get("pub_year")
+        csv_changes = 0
+        for row in raw_rows:
+            key = book_key(row.get("title", ""), row.get("authors", ""))
+            new_py = py_by_key.get(key)
+            cur_str = (row.get("pub_year") or "").strip()
+            new_str = "" if new_py is None else str(new_py)
+            if cur_str != new_str:
+                row["pub_year"] = new_str
+                csv_changes += 1
+            else:
+                # Ensure the column is at least present in the row dict.
+                row["pub_year"] = new_str
+        _write_library_csv(library_out, fieldnames, raw_rows)
+        stats["library_new_csv_changes"] = csv_changes
+        print(f"  Applied {len(diffs)} pub_year changes to catalog; "
+              f"wrote {csv_changes} pub_year cells to {library_out}.")
+
+    return stats
+
+
+# ---------------------------------------------------------------------------
+# indie audit — verify indie / self-publication status for low-review books
+# the cataloguer may have under-tagged.
+# ---------------------------------------------------------------------------
+
+INDIE_AUDIT_REPORT = "dist/library_indie_audit.md"
+INDIE_AUDIT_CHUNK_SIZE = 50
+
+
+def audit_indie_flags(
+    catalog: dict,
+    client,
+    *,
+    review_ceiling: int = INDIE_REVIEW_THRESHOLD,
+    chunk_size: int = INDIE_AUDIT_CHUNK_SIZE,
+    apply_changes: bool = False,
+    report_path: Path | None = None,
+) -> dict:
+    """LLM audits books currently NOT tagged indie that have <= review_ceiling
+    Goodreads reviews. Promotes verified indies to `indie=True`.
+    """
+    from catalogue_prompts import (
+        build_indie_audit_system_prompt,
+        build_indie_audit_prompt,
+        parse_indie_audit_response,
+    )
+
+    candidates: list[str] = []
+    for k, e in catalog["entries"].items():
+        if e.get("indie"):
+            continue
+        reviews = e.get("goodreads_reviews")
+        if reviews is None or (isinstance(reviews, int) and reviews <= review_ceiling):
+            candidates.append(k)
+    print(f"  {len(candidates)} indie-backfill candidates "
+          f"(indie!=True AND reviews<={review_ceiling}).")
+
+    system = build_indie_audit_system_prompt()
+    n_chunks = -(-len(candidates) // chunk_size)
+    proposed: dict[str, bool | None] = {}
+
+    for i in range(n_chunks):
+        chunk_keys = candidates[i * chunk_size: (i + 1) * chunk_size]
+        chunk_books = []
+        for k in chunk_keys:
+            e = catalog["entries"][k]
+            chunk_books.append({
+                "title": e.get("title"),
+                "author": e.get("author"),
+                "goodreads_reviews": e.get("goodreads_reviews"),
+                "current_indie": bool(e.get("indie")),
+                "series": e.get("series"),
+            })
+        prompt = build_indie_audit_prompt(chunk_books)
+        print(f"  indie audit chunk {i + 1}/{n_chunks} ({len(chunk_keys)} books)...")
+        try:
+            raw = call_api_with_tools(client, [{"role": "user", "content": prompt}],
+                                      system)
+            chunk_map = parse_indie_audit_response(raw)
+            proposed.update(chunk_map)
+        except Exception as e:
+            print(f"    Error: {e}. Chunk skipped.")
+        time.sleep(RATE_LIMIT_DELAY)
+
+    flips: list[tuple[str, bool]] = []
+    catalog_keys = set(catalog["entries"])
+    normalized_index = {normalize_key(ck): ck for ck in catalog_keys}
+    for k, val in proposed.items():
+        canon = resolve_canonical_key(k, catalog_keys, normalized_index)
+        if canon is None:
+            continue
+        cur = bool(catalog["entries"][canon].get("indie"))
+        if val is True and not cur:
+            flips.append((canon, True))
+
+    report_path = report_path or Path(INDIE_AUDIT_REPORT)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# Library indie-backfill audit\n\n",
+        f"Candidates: {len(candidates)}; LLM responded for {len(proposed)}.\n",
+        f"Proposed promotions to indie=True: {len(flips)}.\n\n",
+        "## Proposed promotions\n\n",
+        "| Book | Reviews | Series |\n|---|---|---|\n",
+    ]
+    for k, _ in sorted(flips):
+        e = catalog["entries"][k]
+        lines.append(f"| {k} | {e.get('goodreads_reviews')} | {e.get('series') or ''} |\n")
+    report_path.write_text("".join(lines), encoding="utf-8")
+    print(f"  Wrote audit report → {report_path}")
+
+    stats = {
+        "candidates": len(candidates),
+        "responses_received": len(proposed),
+        "proposed_promotions": len(flips),
+        "applied": 0,
+    }
+
+    if apply_changes and flips:
+        for canon, _ in flips:
+            catalog["entries"][canon]["indie"] = True
+        stats["applied"] = len(flips)
+        print(f"  Promoted {len(flips)} entries to indie=True.")
+
+    return stats
+
+
 def authenticate_anthropic_client():
     """Set up the Anthropic client using the Claude Code session ingress token.
 
@@ -1190,6 +2100,46 @@ def main():
     parser.add_argument("--no-push", action="store_true",
                         help="With --sync: skip the git commit + push step "
                              "(useful for dry runs / local-only inspection).")
+    parser.add_argument("--canonicalize-signals", action="store_true",
+                        help="Map free-form taste_signals on every entry to "
+                             "canonical IDs from catalogue_vocab. Idempotent; "
+                             "writes taste_signals_canonical and saves.")
+    parser.add_argument("--canonicalize-themes", action="store_true",
+                        help="Same as --canonicalize-signals, for themes / "
+                             "themes_canonical.")
+    parser.add_argument("--audit-library-series-type", action="store_true",
+                        help="Programmatic re-audit of Library.csv "
+                             "#series_type column using the page-count rule. "
+                             "Writes a diff report and the revised rows to "
+                             "Library_new.csv (never to Library.csv).")
+    parser.add_argument("--audit-library-genres", action="store_true",
+                        help="LLM-walks Library.csv and proposes a primary "
+                             "genre per row. Writes a diff report by default; "
+                             "pass --apply-changes to commit the proposal "
+                             "to Library_new.csv (never to Library.csv).")
+    parser.add_argument("--apply-changes", action="store_true",
+                        help="With --audit-library-genres: write the LLM's "
+                             "proposed genres into Library_new.csv.")
+    parser.add_argument("--library-out", default=LIBRARY_NEW_PATH,
+                        metavar="PATH",
+                        help=f"Output path for Library audit subcommands "
+                             f"(default: {LIBRARY_NEW_PATH}). Only #genre, "
+                             f"#series_type, tags, and pub_year are ever "
+                             f"rewritten; every other column is byte-for-byte "
+                             f"identical to the input.")
+    parser.add_argument("--audit-pub-years", action="store_true",
+                        help="LLM-walks every catalog entry and verifies the "
+                             "first-publication year (CSV pubdate is often a "
+                             "republication date). Writes a diff report by "
+                             "default; pass --apply-changes to commit "
+                             "corrections to the catalog and add a pub_year "
+                             "column to Library_new.csv.")
+    parser.add_argument("--audit-indie-flags", action="store_true",
+                        help="LLM-walks books currently NOT tagged indie that "
+                             f"have <={INDIE_REVIEW_THRESHOLD} reviews and "
+                             "promotes verified self-pub origins to "
+                             "indie=True. Writes a diff report by default; "
+                             "pass --apply-changes to commit.")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
@@ -1255,6 +2205,106 @@ def main():
         )
         print_sync_summary(stats)
         if not args.dry_run:
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+            print(f"  Wrote → {args.catalog} (+ {args.index})")
+        sys.exit(0)
+
+    if args.canonicalize_signals or args.canonicalize_themes:
+        client = authenticate_anthropic_client()
+        if args.canonicalize_signals:
+            print("\nCanonicalising taste_signals…")
+            stats = canonicalize_signals(catalog, client)
+            print(f"  distinct phrases : {stats['distinct_phrases']}")
+            print(f"  mapped           : {stats['phrases_mapped']}")
+            print(f"  unmapped         : {stats['phrases_unmapped']}")
+            print(f"  entries changed  : {stats['entries_changed']}")
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+        if args.canonicalize_themes:
+            print("\nCanonicalising themes…")
+            stats = canonicalize_themes(catalog, client)
+            print(f"  distinct phrases : {stats['distinct_phrases']}")
+            print(f"  mapped           : {stats['phrases_mapped']}")
+            print(f"  unmapped         : {stats['phrases_unmapped']}")
+            print(f"  entries changed  : {stats['entries_changed']}")
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+        print(f"\n  Wrote → {args.catalog} (+ {args.index})")
+        sys.exit(0)
+
+    if args.audit_library_series_type:
+        stats = audit_library_series_type(
+            Path(args.library),
+            Path(args.library_out),
+        )
+        print(f"\nLibrary series-type audit complete.")
+        print(f"  rows total    : {stats['rows_total']}")
+        print(f"  rows changed  : {stats['rows_changed']}")
+        print(f"  series flipped: {stats['series_changed']}")
+        sys.exit(0)
+
+    if args.audit_library_genres:
+        client = authenticate_anthropic_client()
+        stats = audit_library_genres(
+            Path(args.library),
+            Path(args.library_out),
+            client,
+            chunk_size=args.chunk_size,
+            apply_changes=args.apply_changes,
+        )
+        print(f"\nLibrary genre audit complete.")
+        print(f"  rows audited       : {stats['rows_audited']}")
+        print(f"  responses received : {stats['responses_received']}")
+        print(f"  proposed changes   : {stats['proposed_changes']}")
+        print(f"  applied            : {stats['applied']}")
+        if not args.apply_changes and stats["proposed_changes"]:
+            print(f"  (review report; rerun with --apply-changes to write "
+                  f"{args.library_out}.)")
+        sys.exit(0)
+
+    if args.audit_pub_years:
+        # Refresh CSV-authoritative fields (incl. seed pub_year from pubdate)
+        # before the LLM pass — keeps the prompt anchored on current CSV.
+        books_for_sync = load_library(args.library)
+        sync_library_to_catalog(books_for_sync, catalog)
+        client = authenticate_anthropic_client()
+        stats = audit_pub_years(
+            catalog,
+            Path(args.library),
+            Path(args.library_out),
+            client,
+            chunk_size=args.chunk_size or PUB_YEAR_CHUNK_SIZE,
+            apply_changes=args.apply_changes,
+        )
+        print(f"\npub_year audit complete.")
+        print(f"  entries audited        : {stats['entries_audited']}")
+        print(f"  responses received     : {stats['responses_received']}")
+        print(f"  proposed changes       : {stats['proposed_changes']}")
+        print(f"  applied                : {stats['applied']}")
+        print(f"  Library_new.csv cells  : {stats['library_new_csv_changes']}")
+        if args.apply_changes:
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+            print(f"  Wrote → {args.catalog} (+ {args.index})")
+        sys.exit(0)
+
+    if args.audit_indie_flags:
+        books_for_sync = load_library(args.library)
+        sync_library_to_catalog(books_for_sync, catalog)
+        client = authenticate_anthropic_client()
+        stats = audit_indie_flags(
+            catalog,
+            client,
+            chunk_size=args.chunk_size or INDIE_AUDIT_CHUNK_SIZE,
+            apply_changes=args.apply_changes,
+        )
+        print(f"\nindie backfill audit complete.")
+        print(f"  candidates             : {stats['candidates']}")
+        print(f"  responses received     : {stats['responses_received']}")
+        print(f"  proposed promotions    : {stats['proposed_promotions']}")
+        print(f"  applied                : {stats['applied']}")
+        if args.apply_changes:
             save_catalog(catalog, args.catalog)
             save_index(catalog, args.index)
             print(f"  Wrote → {args.catalog} (+ {args.index})")
