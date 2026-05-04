@@ -7,8 +7,46 @@ Different objective, different shape.
 This plan covers (1) skill recomposition, (2) recommender redesign,
 (3) script pruning, (4) state separation, and (5) a pitch list for
 catalog-side cleanup that would unblock the redesign.  Catalog cleanup
-is **out of scope to implement here**; it's pitched so that the skill
-changes can be designed against a known target.
+items 6.3-6.7 are out of scope to implement here, but item 6.1
+(canonicalize taste signals) is sequenced as the first phase of
+implementation rather than parallel — see §7.
+
+## Design stance: principles over templates
+
+Several places in an earlier draft of this plan reached for
+structural solutions when the actual fix was *less* structure.  The
+revisions below preserve that learning and call it out where
+relevant:
+
+- **Pitch shape is a principle, not a menu.**  Earlier draft listed
+  four pitch shapes with selection rules ("if reader's last reply
+  was specific → shape 1 or 4").  That's mechanical scaffolding in
+  a different costume — the model picks "shape 2" instead of
+  "shape 1" and the output stays mechanical.  Revised §2 states the
+  principle and trusts the model.
+- **Recommendation is portfolio construction, not ranking.**
+  Earlier draft proposed a multiplicative score formula
+  (`rating × overlap × theme × ...`).  That collapses to "match as
+  many of your current vectors as possible" — same recency-drift
+  problem, new costume.  Revised §4 replaces the score with
+  constraint-satisfaction + vector-spread sampling.
+- **Reflection is trigger-based, not counter-based.**  Earlier
+  draft revised reflection cadence from "every 2-3 batches" to
+  "every ~10 picks."  Both are clocks.  Revised §2 names explicit
+  triggers (rejection cluster, floor near saturation, reader
+  pivots twice in same direction) with a long-stretch backstop.
+- **Process narration removed structurally, not by rule.**  Telling
+  the model "have a status tool but don't print it" is a hard ask.
+  Revised §4 fixes this by making `status` return *only* what's
+  actionable for the next decision — less to leak.
+- **Taste cartography is living, not frozen at setup.**  Earlier
+  draft had vectors derived once and persisted.  Revised §3 adds
+  light re-derivation on rejection clusters, reader corrections,
+  positive surprises, and reflection beats.
+- **Reader-correction-as-feedback is an explicit primitive.**  The
+  earlier draft missed this entirely.  When the reader pushes back,
+  the model names what was wrong and revises its stance for the
+  rest of the build, not just the next turn.  See §2.
 
 ---
 
@@ -63,57 +101,89 @@ library-cataloguer        (unchanged scope; benefits from script prune)
 
 ### `librarian-build` — new conversation grammar
 
-The skill specifies *what to do*, not *what to say*.  Pitch shape is
-the model's choice within explicit shape options.
+The skill specifies principles, not templates.  Anywhere we'd be
+tempted to enumerate options for the model to pick from, we instead
+state the principle and trust the model to vary within it.  This is
+the load-bearing change: the previous version's "four pitch shapes
+with selection rules" was the same form-feel problem in a different
+costume — the model would just announce internally "deploying shape
+2."  Looser guardrails produce more conversational output than
+finer-grained scaffolding.
 
-**Pitch shapes (model picks one per turn):**
+**Pitch principles (not a menu):**
 
-1. **One-book hard pitch.**  Single recommendation, prose paragraph,
-   conviction tone.  Reader replies in chat ("yes / pass / tell me
-   more / what else").  No `AskUserQuestion`.
-2. **A/B tension.**  Two picks framed against each other.  Reader
-   replies in chat OR `AskUserQuestion` if the choice is genuinely
-   binary.
-3. **Scan handful.**  3-4 picks, multi-select via `AskUserQuestion`
-   — the current default, but reserved for moments when the reader
-   has signalled "show me more options" rather than every turn.
-4. **"Almost didn't show you."**  Single deep-cut framed with
-   reasoning, prose only.  No multi-select — buys conviction.
+- **Vary the pitch shape.**  Default *away* from four-up parallel
+  pitches.  Sometimes one book pushed hard, sometimes A/B tension on
+  a real tradeoff, sometimes a handful to scan, sometimes "here's
+  what I almost didn't show you."  No fixed cadence; the moment
+  picks the shape.
+- **`AskUserQuestion` is for genuine multi-axis decisions** (scope,
+  goals, distribution tradeoffs, swap-vs-revise-target) — *not* for
+  every pitch.  When pitching one or two books, prose is the surface;
+  reader replies in chat.
+- **Conviction over coverage.**  A single pick written with care
+  does more than four parallel paragraphs.  When the right move is
+  one book, pitch one book.
 
-**When to use which:**
-- Reader's last reply was specific ("more like Buehlman") → 1 or 4.
-- Reader's last reply was open ("what else?") → 3.
-- Two picks pull in different directions on a genuine tradeoff
-  (length, tone, era) → 2.
-- Floor decision (genre, indie, classic) needs reader input → use
-  `AskUserQuestion` for the *direction*, then pitch in chosen shape.
+**Reader-correction-as-feedback.**  This is the missing primitive.
+When the reader pushes back ("don't max fantasy before indie",
+"too many doorstops", "Smiley's People is Book 5, not an entry
+point"), the model:
 
-`AskUserQuestion` reverts to its original purpose: discrete choices
-with named options.  Not the medium of every pitch.
+1. Names what it was doing wrong, briefly and without fawning
+   ("you're right — I leaned recent because the log is recent-heavy,
+   but the older 5★s aren't represented yet").
+2. Revises its stance for the rest of the build, not just the next
+   turn — write the revision into `/tmp/Profile.md` so subsequent
+   `recommend` calls see it.
+3. Doesn't relitigate or reframe the correction as agreement.
 
-**Reader-interruption-as-signal.**  When the reader pivots
-("actually, what about indie?", "you've got too many doorstops"),
-treat that as the next prompt — don't try to finish the current
-genre run before responding.
+This is what makes the conversation feel like a real librarian:
+they update their model of you in front of you.  The current skill
+treats reader replies as inputs to the next pitch; this makes them
+inputs to the model's stance.
 
-**Process narration: removed.**  No "Pivoting to horror."  No
-"73 of 100."  No "reflection beat."  Status surfaces only when:
-- the reader asks ("where are we"),
-- the math matters for a decision the reader is making,
-- the reflection checkpoint fires (every ~10 picks; see below).
+**Reader-interruption-as-primary-signal.**  When the reader pivots
+mid-genre-run ("actually, what about indie?"), follow the pivot.
+Don't finish the current run first.
 
-The `status` script (§4) makes silent floor tracking cheap — model
-calls it before deciding what to pitch next, doesn't print it.
+**Process narration: removed structurally, not just by rule.**  No
+"Pivoting to horror."  No "73 of 100."  No "reflection beat."  The
+fix is to make `status` (§4) return *only* what's actionable for the
+next decision — the floor at risk, the underused vector, the
+rejection cluster forming — not a dashboard.  If the tool doesn't
+return counts, the model can't leak counts.  The reader sees status
+only when they ask ("where are we") or when the math is the answer
+to a question they just asked.
 
-### Reflection checkpoints — keep, with one change
+### Reflection — trigger-based, not counter-based
 
-Currently fires after every 2-3 batches.  Change to **every ~10 picks
-or when a tag floor is within 1 pick of being met**, whichever comes
-first.  Output unchanged: 2-3 sentence observation + open prose
-question + turn-ending wait + profile write on reply.
+The previous "every 2-3 batches" rule and the revised "every ~10
+picks" rule are both clocks.  The reflection beats that worked in
+the smoke test fired *organically* — at moments the model noticed a
+pattern.  Replace the counter with explicit triggers:
 
-The smoke test confirmed reflection beats produced two of the best
-list redirects.  Don't lose this — just don't gate it on batch count.
+- **Rejection pattern.**  ≥3 picks rejected in the same cluster
+  (genre / page-bucket / indie-or-classic / tone register) with no
+  intervening accepts.  `recommend` already computes this as
+  `probe_recommended`; the reflection trigger reads the same
+  signal.
+- **Floor near saturation.**  Indie or classic floor within 1 pick
+  of meeting; or any genre floor within 1 of meeting and the
+  reader hasn't been told the build is closing in on it.
+- **Reader pivots twice in same direction.**  Two reader-correction
+  events with overlapping content (both about length, both about
+  tone, both about indie distribution) fire a reflection regardless
+  of pick count.
+- **Long stretch since last reflection** *as a backstop only* —
+  e.g. 25+ picks with no other trigger firing.  Catches the case
+  where the build is going smoothly but breadth needs sanity-check.
+
+Reflection output unchanged: 2-3 sentence observation + open prose
+question + turn-ending wait + profile write on reply.  The smoke
+test confirmed reflection beats produced two of the best list
+redirects.  Trigger-based firing keeps that without making it
+mechanical.
 
 ### Goal language — floors and ranges, not targets
 
@@ -150,14 +220,20 @@ Add to map:
 
 ---
 
-## 3. Taste cartography opening pass
+## 3. Taste cartography — living, not frozen at setup
 
-New step in `librarian-build-setup`, runs after Phase 0 and before
-goals.  Structural distinction from quickref.
+A first cartography pass in `librarian-build-setup` (after Phase 0,
+before goals) seeds the vectors.  But the build itself reveals
+taste — adding Faithful and the Fallen mid-run, declining doorstops
+repeatedly, asking for Empire of the Wolf — and a vector set frozen
+at setup goes stale against the conversation actually happening.
+The vectors must be living.
 
-**What it does.**  Read the full `Reading_Log.csv` (not just the
-top-rated recents).  Cluster ≥4★ titles into 8-12 distinct taste
-vectors.  Each vector has:
+### Initial pass (`librarian-build-setup`)
+
+Read the full `Reading_Log.csv` (not just top-rated recents).
+Cluster ≥4★ titles into 8-12 distinct taste vectors.  Each vector
+has:
 
 - A short label (model-generated, reader-readable: "structural
   cleverness", "humor with serious stakes", "monastic isolation",
@@ -166,139 +242,206 @@ vectors.  Each vector has:
 - Catalog signal correspondence (which `taste_signals.positive`
   values map to this vector — see §6 catalog cleanup).
 
-**Why now.**  Three problems it solves:
+Reader sees a one-message prose summary of the vectors, no
+checklist.  Reader can correct ("that's not really me anymore" /
+"add one for X"); corrections write to `/tmp/Profile.md` and
+update `build_state.taste_vectors`.
 
-1. Recency drift — vectors carry old 5★s that recent-only sourcing
-   misses (Witcher, Pale Blue Dot, Sword of Kaigen).
-2. Coverage tracking — vectors become a checklist the recommender
-   tallies during the build ("12 picks match 'structural cleverness',
-   0 match 'humor with serious stakes'").
-3. Pitch synthesis — the personal anchor in every pitch grounds in a
-   *named vector*, not the most recent 5★.
+### Live re-derivation (`librarian-build`)
 
-**Reader sees:** a one-message summary of the vectors, prose form, no
-checklist.  Reader can correct ("that's not really me anymore" / "add
-one for X") and the corrections write to `/tmp/Profile.md`.
+Vectors are *not* frozen.  The skill re-derives them lightly when
+the build signals taste shift:
 
-Vectors persist in `build_state.taste_vectors`.  Recommender (§4)
-reads them on every call.
+- **After a rejection cluster.**  Three rejections in the same
+  cluster → re-evaluate whether a vector that had been driving picks
+  in that cluster still belongs, or split it ("epic fantasy" → "epic
+  fantasy with intimate POV" + "epic fantasy with sweeping
+  ensemble"), or retire it.
+- **After a reader-correction event** (§2).  The correction names
+  what was off; re-derivation translates that to a vector edit.
+- **After a positive surprise.**  Reader picks a book whose vector
+  signature is weak in the current set — add or strengthen.
+- **At reflection beats.**  The reflection's open prose question
+  often surfaces a vector that wasn't named at setup; capture it.
+
+Re-derivation is *light* — usually one vector edited, rarely the
+whole set re-clustered.  The model writes deltas to
+`build_state.taste_vectors` with a short rationale, and Profile.md
+gets one consolidated line per session-end.  Vector history isn't
+audited every turn; it just stays current.
+
+### Why this matters
+
+Recommender (§4) reads vectors on every call, so vector drift
+shapes ranking immediately.  A frozen vector set turns the
+recommender into "match books to the reader you were at the start
+of the session," which is the same recency-drift problem in a
+different costume — except the frozen point is session-start
+instead of log-recent.
 
 ---
 
-## 4. Recommender redesign — one synthesis tool, not eleven SQL wrappers
+## 4. Recommender redesign — constraint satisfaction, not multiplicative scoring
 
-### The new `recommend` command
+### Why not the multiplicative formula
 
-Replaces `candidates`.  Single-purpose, takes the full picture, does
-the synthesis the model used to do by hand (and got wrong with
-goodreads-rating-as-quality).
+The earlier draft proposed `goodreads_rating × taste_signal_overlap
+× theme_match × recency_dampener × entry_point_factor`.  Wrong
+shape.  Multiplication collapses to "find the book that matches as
+many of your current vectors as possible."  A book with 0 overlap
+× any high-quality factors = 0.  A book with 0.1 overlap × high
+rating = tiny score.  The sorted result is almost entirely high-
+overlap books, which is the *recent-taste-heavy* problem in a new
+costume — the recency dampener helps but doesn't fix it.  The
+underlying issue is treating recommendation as a ranking problem
+when it's actually a portfolio-construction problem.
 
-**Inputs:**
+### Constraint satisfaction + vector-spread sampling
+
+Recommendation has two stages, neither of which is "rank everything
+by a single score and slice the top."
+
+**Stage 1 — quality-floor candidate pool.**  Filter the catalog to
+books that meet *minimum* viability:
+
+- `goodreads_rating ≥ 3.8` (quality floor; not a sort key).
+- ≥1 theme overlap with reader's profile theme set, OR ≥1 taste-
+  signal overlap with any vector.  Cheap relevance gate.
+- Passes universal exclusion (already-read / on-list / rejected this
+  session).
+- Passes entry-point gate.  Non-Book-1 / `author_entry_point=false`
+  books are pulled unless reader has read another book by the
+  author already, in which case they enter the pool.
+- `goodreads_reviews` not consulted at any point.
+
+This produces a candidate pool of plausibly N=200-2000 books,
+depending on the catalog and the reader.  No ranking yet.
+
+**Stage 2 — vector-spread sampling.**  The recommender's job is
+"give me K candidates with good vector spread," not "give me the
+top K by score."  Sampling rules:
+
+- For each vector currently *underused* in the build (vector
+  coverage tally below proportional share), preferentially sample
+  candidates that match it.  Underused vectors get more candidates
+  than oversaturated ones.
+- For each floor at risk (indie below floor, classic below floor,
+  genre below floor), preferentially sample matching candidates.
+  Floor satisfaction is a constraint, not a tiebreaker.
+- Within each vector / floor slice, *quality is a tiebreaker*:
+  rating, comp-overlap with reader favorites, log-anchor strength
+  (does the author / theme / tone match a non-recent 5★?).
+- Time-bucket the log signals: vector matches sourced from last
+  12mo / 12-36mo / 3+yrs in roughly equal proportion, so older
+  taste vectors compete for slot space against recent ones.
+- The result is K candidates that *cover* the build's gaps, not
+  K candidates that all match the same overlap-heavy point.
+
+This is closer to a stratified sample than a sort.  The
+multiplicative score becomes a per-stratum tiebreaker, not the
+global ordering.
+
+**Pitch-shape parameter.**  Caller passes `--n` (how many
+candidates to return).  No "shape one/ab/scan/deep-cut" — the
+model decides shape at the chat layer based on conversation
+context.  The recommender just returns candidates; whether they
+get pitched as one hard pick or four-up is the model's call.
+
+### Inputs
+
 - `--catalog /tmp/Library_Catalog.sqlite`
 - `--log $PROJECT_LOG`
 - `--profile /tmp/Profile.md`  (taste vectors parsed from sections)
-- `--reading-list /tmp/Reading_List.md`  (exclusion + duplicate gate)
+- `--reading-list /tmp/Reading_List.md`  (exclusion gate)
 - `--build-state /tmp/build_state.json`  (vectors, floors, current
-  counts)
-- `--genre <G>` (optional — focuses the slice)
-- `--shape one|ab|scan|deep-cut` (controls return size; one→1 rec,
-  ab→2 contrasting recs, scan→4, deep-cut→1 with low popularity)
-- `--n <int>` (override slice size)
+  counts, rejected candidates this session)
+- `--genre <G>` (optional — restricts pool to that genre slice;
+  vector spread still applies within the slice)
+- `--n <int>` (default 6; caller picks)
+- `--lean <vector|floor>` (optional — caller asks for skew toward
+  a specific vector or floor; recommender respects but still
+  returns spread, not a pile of clones)
 
-**Score (replaces the `score_candidate` formula):**
-
-```
-score = goodreads_rating
-      × taste_signal_overlap
-      × theme_match
-      × recency_dampener(log)
-      × (1 - 0.3 if author_in_recent_year else 0)
-      × entry_point_factor    # 0 if not entry point, 1 otherwise
-      − rejection_penalty
-```
-
-- `goodreads_rating` is a quality factor only — never a sort key on
-  its own.  Capped at 5.0.
-- `taste_signal_overlap` = count of book's `taste_signals.positive`
-  that match a vector signal in the reader's profile, normalized.
-  This is the **central change** — surfaces deep cuts that match
-  taste over popular-but-mid-fit titles.
-- `theme_match` = jaccard of book themes vs. profile theme set.
-- `recency_dampener` down-weights books whose author appears in the
-  log's last 12 months (those tastes are already represented in
-  continuations / wishlist).
-- `goodreads_reviews` is **not used.**  The skill should explicitly
-  forbid review-count-as-quality-proxy.
-- `entry_point_factor` is the entry-point gate baked in (was opt-in
-  via `--author-entry-point-strict`; now always on).
-
-**Time-bucketed log read.**  Recommender splits the log into three
-pools — last 12mo, 12-36mo, 3+ years — and pulls taste signals
-proportionally across all three, not weighted toward recent.
-
-**Output:**
+### Output
 
 ```json
 {
-  "shape": "scan",
-  "picks": [
+  "candidates": [
     {
       "key": "...",
       "title": "...",
       "author": "...",
       "pages": ...,
-      "score": 18.4,
       "match_reasoning": {
-        "anchor_log_entries": [{"title": "Pet Sematary", "rating": 5}],
+        "anchor_log_entries": [{"title": "Pet Sematary", "rating": 5, "bucket": "3+yrs"}],
         "matched_vectors": ["grief-rooted horror", "lyrical grimdark"],
         "matched_themes": ["isolation", "loss"],
-        "comp_overlap": ["A Head Full of Ghosts", "..."],
+        "comp_overlap": ["A Head Full of Ghosts"],
         "entry_point_ok": true,
-        "popularity_note": "small audience (4.4 / 287 reviews)"
+        "rating": 4.2
       },
-      "is_deep_cut": true,
+      "fills_gap": {
+        "vector": "grief-rooted horror",
+        "floor": null
+      },
       "warnings": []
     }
   ],
-  "vector_coverage": {
-    "structural cleverness": {"used": 12, "vector_books": 4},
-    "humor with serious stakes": {"used": 0, "vector_books": 1},
-    ...
-  },
-  "floors": {
-    "indie": {"used": 4, "floor": 15},
-    "classic": {"used": 7, "floor": 12}
-  },
+  "pool_size": 847,
   "probe_recommended": false
 }
 ```
 
-The `match_reasoning` field is **fact source**, not pitch text.  The
-skill explicitly forbids quoting catalog summaries.  The model
-synthesizes the personal connection itself ("you went 5★ on Pet
-Sematary, this is grief-rooted horror in a similar register").
+`match_reasoning` is **fact source, not pitch text.**  The skill
+explicitly forbids quoting catalog summaries or `match_reasoning`
+language directly; the personal connection synthesizes fresh every
+time.  `fills_gap` tells the model *why* this candidate was
+sampled (which underused vector or at-risk floor it covers), so
+the pitch can ground in the right anchor.
 
 **Anti-pattern check (auto-warn).**  If `series_position` ≠ Book 1
-or `author_entry_point` is false, the recommender adds a `warnings`
-entry: `"not an entry point — series_position: Book 5"`.  Skill
-treats any warning as a hard pull-and-resort signal.
+or `author_entry_point` is false (and reader hasn't read the
+author), the recommender either pulls the book or adds a
+`warnings` entry.  Default behavior is pull; warnings surface
+only on edge cases (author read but unfamiliar series).  Skill
+treats any warning as a stop signal.
 
-### Other synthesis tools to keep / improve
+### `status` returns only what's actionable
 
-- **`unfinished-series`** — already works.  Keep.
-- **`status`** — new.  Single command returning current state vs.
-  goals: genre distribution, indie/classic floor progress, page-budget
-  rough estimate (sum of pages so far, average pages/book), long-
-  series slot usage, vector coverage, last reflection-checkpoint pick
-  count.  Skill calls this constantly **silently** — output is for the
-  model, not the reader.
-- **`series-fit`** — new.  Given a series name, returns: full book
-  list with page counts and `series_role`, narrative shape (one arc
-  / loose subseries / dip-in — derived from series_status + position
-  patterns), recommended scope based on profile signals (e.g.
-  reader prefers ≤3-book commitments → defaults to "Book 1" or
-  "Books 1-3").  Replaces `series-continuation` plus the manual
-  scope-question loop.
+Earlier draft had `status` returning a dashboard.  Wrong — gives the
+model material to leak.  Revised: `status` returns *only* the
+signals that should drive the next decision, nothing more:
+
+```json
+{
+  "floors_at_risk": [
+    {"name": "indie", "remaining": 3, "books_left": 11}
+  ],
+  "vectors_underused": [
+    {"name": "humor with serious stakes", "matched_picks": 0}
+  ],
+  "rejection_clusters": [],
+  "page_budget_warning": null
+}
+```
+
+Empty arrays when nothing is at risk.  No genre breakdown, no
+"73 of 100", no average-page-count.  If the model wants those
+numbers it can compute them from `Reading_List.md` directly, but
+the tool surface doesn't hand them over for free.  This is the
+structural fix for process narration: less to say means less
+gets said.
+
+### `series-fit` — unchanged from previous draft
+
+Given a series name, returns: full book list with page counts and
+`series_role`, narrative shape (one arc / loose subseries /
+dip-in), recommended scope based on profile signals.  Replaces
+`series-continuation` plus manual scope-question loop.
+
+### `unfinished-series` — keep
+
+Already works.
 
 ### Drop these scripts
 
@@ -349,6 +492,18 @@ This collapses the duplication and removes the `mark-shown` round-trip.
 The skill redesign assumes data the catalog *almost* has but doesn't
 quite.  If the catalog gets cleaned up, the skill changes land cleanly.
 If not, several skill changes degrade to "best-effort over messy data."
+
+**One of these is a load-bearing dependency, not a parallel
+improvement: 6.1 (canonicalize taste_signals) is doing the real
+work in the redesign.**  Without it, `taste_signal_overlap` in the
+new recommender is substring matching on free-form strings, which
+is approximately what the old query already did.  Building the
+constraint-satisfaction sampler on top of dirty signal data
+produces a more flexible-feeling but still-mid recommender.  6.1
+should be sequenced *first*, before the skill rewrite (see §7).
+
+Other items in this section are genuinely parallel and degrade
+gracefully.
 
 Pitched in priority order:
 
@@ -438,27 +593,42 @@ recommender precision.  Plausibly out of scope until 6.1 lands.
 
 Suggested sequencing.  Each phase ships a working state.
 
-1. **Helper script rewrite.**  New `recommend`, `status`, `series-fit`,
-   `unfinished-series` (port).  Drop the rest.  Tests for each.
-   *Catalog stays as-is* — `recommend` does substring matching on
-   `taste_signals.positive` until 6.1 lands.
-2. **Skill rewrite — `librarian-build-setup`.**  Add taste cartography
-   pass.  Goals-as-floors language.  No phase numbering in
-   internal voice.
-3. **Skill rewrite — `librarian-build`.**  New conversation grammar
-   (pitch shapes, no batch structure, silent status, reflection
-   every ~10 picks).  Reader-interruption-as-primary-signal.
-4. **Skill rewrite — `librarian-build-finish`.**  Vocabulary cleanup,
-   no phase numbering.
-5. **Triage + cataloguer + quickref edits.**  Small surface — drop
-   references to dropped scripts, update phrase set, point to new
-   `status` for `where are we`.
-6. **Build artifact `dist/skills/*.zip` rebuild.**  Smoke-test in a
-   fresh chat.
+1. **Catalog cleanup 6.1 — canonicalize `taste_signals`.**
+   Sequenced first, not parallel.  The new recommender's
+   constraint-satisfaction sampler depends on canonical signal
+   IDs to compute vector overlap reliably.  Skipping or deferring
+   this step delivers a more flexible-feeling skill on top of
+   substring-matching data — same recommendation quality as
+   today, just with prettier framing.  Cluster signals, label
+   canonicals, backfill `signal_canonical` column, ship.
+2. **Catalog cleanup 6.2 — canonicalize `themes`.**  Same shape
+   as 6.1, smaller magnitude.  Folds in alongside 6.1 since the
+   pipeline is shared.
+3. **Helper script rewrite.**  New `recommend` (constraint
+   satisfaction + vector-spread sampling, reads canonical
+   signals), `status` (actionable-only, not a dashboard),
+   `series-fit`, `unfinished-series` (port).  Drop the rest.
+   Tests for each.
+4. **Skill rewrite — `librarian-build-setup`.**  Add taste
+   cartography opening pass.  Goals-as-floors language.  No phase
+   numbering in internal voice.
+5. **Skill rewrite — `librarian-build`.**  New conversation
+   grammar (pitch principles not menu, reader-correction-as-
+   feedback, trigger-based reflection, living taste cartography,
+   reader-interruption-as-primary-signal).  Process narration
+   removed structurally via `status` shape.
+6. **Skill rewrite — `librarian-build-finish`.**  Vocabulary
+   cleanup, no phase numbering.
+7. **Triage + cataloguer + quickref edits.**  Small surface —
+   drop references to dropped scripts, update phrase set, point
+   to new `status` for `where are we`.
+8. **Build artifact `dist/skills/*.zip` rebuild.**  Smoke-test
+   in fresh chat against the smoke-test feedback as a regression
+   checklist.
 
-Catalog cleanup (6.1-6.7) runs in parallel on the Code surface,
-independent of the skill rewrite.  Skill changes don't block on it
-— they degrade gracefully and improve as catalog cleanup lands.
+Catalog cleanup items 6.3-6.7 run in parallel on the Code surface
+during phases 3-8.  Skill changes don't block on them — they
+degrade gracefully and improve as those land.
 
 ---
 
