@@ -3,12 +3,11 @@ __pycache__/
 *.original.md
 .librarian-session/
 
-# Step 1+ build outputs.  Both forms regenerate locally from
+# Step 1+ build outputs.  The .sqlite form regenerates locally from
 # Library_Catalog.json via `catalogue.py --export-sqlite --emit-encoded`;
-# users upload the .encoded form to their own Drive folder and bake the
-# Drive file ID into their claude.ai project instructions.
+# the .encoded text wrapper is tracked so readers cloning this branch
+# get a ready-to-upload Drive artifact without needing to regenerate.
 Library_Catalog.sqlite
-Library_Catalog.sqlite.encoded
 dist/
 build/
 
