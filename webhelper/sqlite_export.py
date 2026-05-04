@@ -132,8 +132,7 @@ SCHEMA = [
     """CREATE TABLE taste_signals (
         book_key  TEXT NOT NULL,
         polarity  TEXT NOT NULL,
-        signal    TEXT NOT NULL,
-        canonical TEXT,
+        canonical TEXT NOT NULL,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE comparable_books (
@@ -148,8 +147,7 @@ SCHEMA = [
     )""",
     """CREATE TABLE themes (
         book_key  TEXT NOT NULL,
-        theme     TEXT NOT NULL,
-        canonical TEXT,
+        canonical TEXT NOT NULL,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE related_series (
@@ -329,21 +327,18 @@ def export(catalog: dict, sqlite_path: Path) -> None:
             cur.execute(book_sql, _row_for_book(key, entry))
 
             ts = entry.get("taste_signals") or {}
-            ts_canon = entry.get("taste_signals_canonical") or {}
             if isinstance(ts, dict):
+                # Closed-vocab schema: each list element IS a canonical ID.
                 for polarity in ("positive", "negative"):
-                    free = ts.get(polarity) or []
-                    canon = ts_canon.get(polarity) or [] if isinstance(ts_canon, dict) else []
-                    # Pair canonical IDs with free-form strings by list index;
-                    # short canonical list -> trailing rows get NULL canonical.
-                    for i, sig in enumerate(free):
-                        if not sig:
+                    seen: set[str] = set()
+                    for sig in (ts.get(polarity) or []):
+                        if not sig or sig in seen:
                             continue
-                        canon_id = canon[i] if i < len(canon) and canon[i] else None
+                        seen.add(sig)
                         cur.execute(
-                            "INSERT INTO taste_signals (book_key, polarity, signal, canonical) "
-                            "VALUES (?, ?, ?, ?)",
-                            (key, polarity, sig, canon_id),
+                            "INSERT INTO taste_signals (book_key, polarity, canonical) "
+                            "VALUES (?, ?, ?)",
+                            (key, polarity, sig),
                         )
 
             for comp in entry.get("comparable_books") or []:
@@ -362,16 +357,14 @@ def export(catalog: dict, sqlite_path: Path) -> None:
                         (key, flag),
                     )
 
-            themes_free = entry.get("themes") or []
-            themes_canon = entry.get("themes_canonical") or []
-            for i, theme in enumerate(themes_free):
-                if not theme:
+            themes_seen: set[str] = set()
+            for theme in entry.get("themes") or []:
+                if not theme or theme in themes_seen:
                     continue
-                canon_id = themes_canon[i] if i < len(themes_canon) and themes_canon[i] else None
+                themes_seen.add(theme)
                 cur.execute(
-                    "INSERT INTO themes (book_key, theme, canonical) "
-                    "VALUES (?, ?, ?)",
-                    (key, theme, canon_id),
+                    "INSERT INTO themes (book_key, canonical) VALUES (?, ?)",
+                    (key, theme),
                 )
 
             for rel in entry.get("related_series") or []:
@@ -426,30 +419,18 @@ def reconstruct_entry(conn: sqlite3.Connection, key: str) -> dict:
     entry["indie"] = bool(book["indie"]) if book["indie"] is not None else None
     entry["classic"] = bool(book["classic"]) if book["classic"] is not None else None
 
-    pos_rows = list(cur.execute(
-        "SELECT signal, canonical FROM taste_signals "
-        "WHERE book_key = ? AND polarity = 'positive'",
-        (key,),
-    ))
-    neg_rows = list(cur.execute(
-        "SELECT signal, canonical FROM taste_signals "
-        "WHERE book_key = ? AND polarity = 'negative'",
-        (key,),
-    ))
     entry["taste_signals"] = {
-        "positive": [r["signal"] for r in pos_rows],
-        "negative": [r["signal"] for r in neg_rows],
+        "positive": [r["canonical"] for r in cur.execute(
+            "SELECT canonical FROM taste_signals "
+            "WHERE book_key = ? AND polarity = 'positive'",
+            (key,),
+        )],
+        "negative": [r["canonical"] for r in cur.execute(
+            "SELECT canonical FROM taste_signals "
+            "WHERE book_key = ? AND polarity = 'negative'",
+            (key,),
+        )],
     }
-    pos_canon = [r["canonical"] for r in pos_rows if r["canonical"]]
-    neg_canon = [r["canonical"] for r in neg_rows if r["canonical"]]
-    if pos_canon or neg_canon:
-        # Mirror polarity buckets; only emit when at least one canonical
-        # was populated, so legacy entries round-trip without acquiring
-        # an empty `taste_signals_canonical` block they didn't have.
-        entry["taste_signals_canonical"] = {
-            "positive": pos_canon,
-            "negative": neg_canon,
-        }
 
     entry["comparable_books"] = [
         r["comp_key"] for r in cur.execute(
@@ -463,14 +444,12 @@ def reconstruct_entry(conn: sqlite3.Connection, key: str) -> dict:
             (key,),
         )
     ]
-    theme_rows = list(cur.execute(
-        "SELECT theme, canonical FROM themes WHERE book_key = ?",
-        (key,),
-    ))
-    entry["themes"] = [r["theme"] for r in theme_rows]
-    themes_canon = [r["canonical"] for r in theme_rows if r["canonical"]]
-    if themes_canon:
-        entry["themes_canonical"] = themes_canon
+    entry["themes"] = [
+        r["canonical"] for r in cur.execute(
+            "SELECT canonical FROM themes WHERE book_key = ?",
+            (key,),
+        )
+    ]
 
     related = [
         r["related_series"] for r in cur.execute(

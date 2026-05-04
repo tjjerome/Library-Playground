@@ -1,9 +1,9 @@
 """
 Prompts and response parsing for the library cataloguer.
 
-Controlled vocabulary for `taste_signals_canonical` and `themes_canonical`
-lives in `catalogue_vocab.py` — see that module for the canonical lists and
-the rationale for keeping them seeded but extensible.
+Controlled vocabulary for `taste_signals` and `themes` lives in
+`catalogue_vocab.py`. The cataloguer emits closed-vocabulary IDs only —
+no free-form fallback. Off-vocab values are stripped by the parser.
 """
 
 import json
@@ -42,15 +42,10 @@ CATALOG ENTRY SCHEMA:
   "summary": "1-2 sentence spoiler-free plot summary",
   "tone": "brief tone description, e.g. grimdark, propulsive, lyrical, darkly comic",
   "pacing": one of: "Fast" | "Moderate" | "Slow" | "Slow burn with payoff",
-  "themes": ["theme1", "theme2", ...],
-  "themes_canonical": ["theme-id1", "theme-id2", ...],
+  "themes": ["theme-id", ...],
   "setting": "brief setting description — time, place, world",
   "comparable_books": ["Title - Author", ...],
   "taste_signals": {{
-    "positive": ["free-form signal", ...],
-    "negative": ["free-form signal", ...]
-  }},
-  "taste_signals_canonical": {{
     "positive": ["signal-id", ...],
     "negative": ["signal-id", ...]
   }},
@@ -72,16 +67,21 @@ CATALOG FIELD DEFINITIONS:
 - primary_genre / secondary_genre: most-accurate label and second-best label. Don't over-narrow ("Epic Fantasy" is fine; "Grimdark Epic Military Fantasy" is not). secondary_genre is null if the book has no meaningful second axis.
 - indie: true if self-published or originally self-published before traditional pickup.
 - classic: true if broadly considered classic literature.
-- themes: 3-7 free-form theme phrases — concrete recurring concerns of the text ("grief and loss", "found family", "abuse of state power", "monastic isolation").
-- themes_canonical: list of canonical theme IDs from the controlled vocabulary below. PICK FROM THE LIST when a canonical fits; if a book genuinely needs a theme that isn't represented, leave it out of themes_canonical (it stays in the free-form themes). Don't invent new IDs.
-- taste_signals.positive / .negative: free-form public-reception signals — what readers in general respond to in this book ("found family", "propulsive pacing", "morally grey protagonist", "slow meditative pacing", "romance-heavy"). NOT this reader's personal taste. Phrase as objective claims about the book.
-- taste_signals_canonical.positive / .negative: canonical IDs from the controlled vocabulary below, mirroring the same polarity buckets as the free-form list. Same rule as themes_canonical: pick from the list, don't invent. Free-form strings stay for human readability; canonical IDs are what the recommender uses for cross-book overlap.
+- themes: list of theme IDs drawn ONLY from the CONTROLLED VOCABULARY below. 3-7 IDs typical. Pick the IDs that capture the book's recurring concerns. NEVER invent new IDs. NEVER include free-form phrases.
+- taste_signals.positive / .negative: lists of signal IDs drawn ONLY from the CONTROLLED VOCABULARY below. Pick the IDs that capture how readers respond to the book. NEVER invent new IDs. NEVER include free-form phrases.
 - content_flags: factual claims about content present — graphic violence, sexual content, on-page sexual assault, animal death, suicide. NOT reader triggers. Do NOT over-flag.
 
-CONTROLLED VOCABULARY — taste_signals_canonical (use these IDs):
+CLOSED-VOCABULARY CONTRACT (HARD RULE):
+* `themes` and `taste_signals` accept ONLY the IDs listed below. Any output containing strings not on these lists will be stripped before write.
+* Don't squeeze book-specific nuance into a free-form string — pick the closest IDs and let the rest go.
+* Don't write reader-targeting phrases ("X readers", "X fans", "newcomers", "completionists"). Cataloguer describes the book, not its audience.
+* Don't write entry-point markers ("requires prior books", "series conclusion", "cliffhanger ending") into taste_signals — those belong in `series_role` and `author_entry_point`.
+* Don't duplicate `content_flags` into taste_signals. Use `content_flags` for factual content presence (graphic violence, sexual content). Use the `disturbing-content` signal ONLY when the texture / register itself is the signal, not the factual presence.
+
+CONTROLLED VOCABULARY — taste_signals (use these IDs only):
 {format_vocab_for_prompt(CANONICAL_TASTE_SIGNALS)}
 
-CONTROLLED VOCABULARY — themes_canonical (use these IDs):
+CONTROLLED VOCABULARY — themes (use these IDs only):
 {format_vocab_for_prompt(CANONICAL_THEMES)}
 
 CATALOG SCOPE — HARD RULE:
@@ -150,29 +150,85 @@ def build_batch_prompt(books: list[dict]) -> str:
 # Response parsing
 # ---------------------------------------------------------------------------
 
+_ALLOWED_SIGNAL_IDS = frozenset(CANONICAL_TASTE_SIGNALS)
+_ALLOWED_THEME_IDS = frozenset(CANONICAL_THEMES)
+
+
+def _enforce_closed_vocab(entry: dict) -> None:
+    """Strip off-vocab IDs from `taste_signals` and `themes` in place.
+
+    Mutates `entry` so downstream upsert can't write free-form drift even
+    if the model ignored the prompt's instructions. Logs nothing — the
+    cataloguer's chunk loop already prints the keys it couldn't place.
+    """
+    ts = entry.get("taste_signals")
+    if isinstance(ts, dict):
+        new_ts = {}
+        for polarity in ("positive", "negative"):
+            seen: set[str] = set()
+            cleaned: list[str] = []
+            for v in (ts.get(polarity) or []):
+                if isinstance(v, str) and v in _ALLOWED_SIGNAL_IDS and v not in seen:
+                    seen.add(v)
+                    cleaned.append(v)
+            new_ts[polarity] = cleaned
+        entry["taste_signals"] = new_ts
+    elif "taste_signals" in entry:
+        entry["taste_signals"] = {"positive": [], "negative": []}
+
+    themes = entry.get("themes")
+    if isinstance(themes, list):
+        seen_t: set[str] = set()
+        cleaned_t: list[str] = []
+        for v in themes:
+            if isinstance(v, str) and v in _ALLOWED_THEME_IDS and v not in seen_t:
+                seen_t.add(v)
+                cleaned_t.append(v)
+        entry["themes"] = cleaned_t
+    elif "themes" in entry:
+        entry["themes"] = []
+
+    # Old shape leftovers — drop entirely. The new schema has no
+    # *_canonical fields; if a model emits them anyway, ignore.
+    entry.pop("taste_signals_canonical", None)
+    entry.pop("themes_canonical", None)
+
+
 def parse_catalog_response(raw: str) -> dict:
     """
     Extract the JSON catalog entries from Claude's response.
     Returns a dict of {key: entry} or empty dict on failure.
+
+    Closed-vocab enforcement: each entry's `taste_signals` and `themes`
+    fields are filtered to the canonical-ID allowlist before return, so
+    no off-vocab string ever reaches the catalog.
     """
+    parsed: dict | None = None
     # Try to find a JSON code block first
     code_block = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
     if code_block:
         try:
-            return json.loads(code_block.group(1))
+            parsed = json.loads(code_block.group(1))
         except json.JSONDecodeError:
-            pass
+            parsed = None
 
     # Fallback: try to find the largest JSON object in the response
-    brace_start = raw.find("{")
-    brace_end = raw.rfind("}")
-    if brace_start != -1 and brace_end != -1:
-        try:
-            return json.loads(raw[brace_start:brace_end + 1])
-        except json.JSONDecodeError:
-            pass
+    if parsed is None:
+        brace_start = raw.find("{")
+        brace_end = raw.rfind("}")
+        if brace_start != -1 and brace_end != -1:
+            try:
+                parsed = json.loads(raw[brace_start:brace_end + 1])
+            except json.JSONDecodeError:
+                parsed = None
 
-    return {}
+    if not parsed:
+        return {}
+
+    for entry in parsed.values():
+        if isinstance(entry, dict):
+            _enforce_closed_vocab(entry)
+    return parsed
 
 
 # ---------------------------------------------------------------------------

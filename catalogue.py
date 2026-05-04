@@ -281,11 +281,9 @@ def sync_library_to_catalog(books: list[dict], catalog: dict) -> dict:
                 "tone": None,
                 "pacing": None,
                 "themes": [],
-                "themes_canonical": [],
                 "setting": None,
                 "comparable_books": [],
                 "taste_signals": {"positive": [], "negative": []},
-                "taste_signals_canonical": {"positive": [], "negative": []},
                 "audio_suitability": None,
                 "audio_notes": None,
                 "content_flags": [],
@@ -957,34 +955,46 @@ def print_sync_summary(stats: dict):
 
 
 # ---------------------------------------------------------------------------
-# Canonicalisation backfill — map free-form taste_signals / themes to the
-# controlled vocabulary IDs in catalogue_vocab. One LLM call per chunk of
-# distinct strings, applied across every entry that uses them. Idempotent:
-# already-canonicalised entries skip the model.
+# Canonicalisation migration — convert legacy free-form `taste_signals` /
+# `themes` to closed-vocab ID lists. One LLM call per chunk of distinct
+# free-form strings, applied across every entry that uses them. After
+# the migration:
+#   * `taste_signals` lists hold canonical IDs only (no free-form strings).
+#   * `themes` lists hold canonical IDs only.
+#   * Legacy `taste_signals_canonical` / `themes_canonical` fields are
+#     deleted from each entry — the new schema doesn't carry them.
+# Idempotent: phrases that are already canonical IDs aren't sent to the
+# model, and entries already in the new shape pass through unchanged.
 # ---------------------------------------------------------------------------
 
 CANONICALIZE_CHUNK_SIZE = 200   # distinct phrases per LLM call
 
 
 def _collect_distinct_signals(catalog: dict) -> set[str]:
+    """Distinct free-form signal strings that aren't already canonical IDs."""
+    from catalogue_vocab import CANONICAL_TASTE_SIGNALS
+    allowed = set(CANONICAL_TASTE_SIGNALS)
     out: set[str] = set()
     for entry in catalog["entries"].values():
         ts = entry.get("taste_signals") or {}
         if isinstance(ts, dict):
             for sig in (ts.get("positive") or []):
-                if sig:
+                if sig and sig not in allowed:
                     out.add(sig)
             for sig in (ts.get("negative") or []):
-                if sig:
+                if sig and sig not in allowed:
                     out.add(sig)
     return out
 
 
 def _collect_distinct_themes(catalog: dict) -> set[str]:
+    """Distinct free-form theme strings that aren't already canonical IDs."""
+    from catalogue_vocab import CANONICAL_THEMES
+    allowed = set(CANONICAL_THEMES)
     out: set[str] = set()
     for entry in catalog["entries"].values():
         for t in entry.get("themes") or []:
-            if t:
+            if t and t not in allowed:
                 out.add(t)
     return out
 
@@ -1026,46 +1036,111 @@ def _build_canonical_mapping(
     return mapping
 
 
+def _legacy_canonical_signals(entry: dict) -> dict[str, list[str]]:
+    """Pull canonical IDs out of an entry's legacy `taste_signals_canonical`
+    block, position-paired with its free-form list. Returns positive/negative
+    lists of IDs (Nones / blanks dropped). Used during migration to
+    preserve existing canonical mappings on top of fresh LLM output.
+    """
+    out = {"positive": [], "negative": []}
+    canon = entry.get("taste_signals_canonical")
+    if not isinstance(canon, dict):
+        return out
+    for polarity in ("positive", "negative"):
+        for v in (canon.get(polarity) or []):
+            if isinstance(v, str) and v:
+                out[polarity].append(v)
+    return out
+
+
+def _legacy_canonical_themes(entry: dict) -> list[str]:
+    canon = entry.get("themes_canonical")
+    if not isinstance(canon, list):
+        return []
+    return [v for v in canon if isinstance(v, str) and v]
+
+
 def _apply_signal_mapping(catalog: dict, mapping: dict[str, str | None]) -> int:
-    """Write taste_signals_canonical onto every entry, using the mapping.
-    Returns the number of entries whose canonical block changed."""
+    """Migrate `taste_signals` to canonical-IDs-only shape per entry.
+
+    Sources of IDs, merged:
+      1. Items already on the vocab in the current `taste_signals` lists
+         (covers entries already in new shape — pass-through).
+      2. Mapping output for free-form strings in current `taste_signals`.
+      3. Legacy `taste_signals_canonical` if present (preserves prior runs).
+
+    Per-entry result is deduplicated and replaces `taste_signals` directly.
+    `taste_signals_canonical` is deleted unconditionally.
+    """
+    from catalogue_vocab import CANONICAL_TASTE_SIGNALS
+    allowed = set(CANONICAL_TASTE_SIGNALS)
     changed = 0
     for entry in catalog["entries"].values():
         ts = entry.get("taste_signals") or {}
         if not isinstance(ts, dict):
-            continue
-        new_canon: dict[str, list[str | None]] = {}
+            ts = {"positive": [], "negative": []}
+        legacy_canon = _legacy_canonical_signals(entry)
+        new_ts: dict[str, list[str]] = {}
         for polarity in ("positive", "negative"):
-            new_canon[polarity] = [mapping.get(s) for s in (ts.get(polarity) or [])]
-        # Only persist if any canonical was actually filled — keeps entries
-        # that have purely unrecognised free-form values from acquiring an
-        # all-null canonical block.
-        any_canon = any(c for buck in new_canon.values() for c in buck)
-        old = entry.get("taste_signals_canonical")
-        if any_canon:
-            if old != new_canon:
-                entry["taste_signals_canonical"] = new_canon
-                changed += 1
-        elif old is not None:
-            del entry["taste_signals_canonical"]
+            seen: set[str] = set()
+            buf: list[str] = []
+            for src in (ts.get(polarity) or []):
+                if not src:
+                    continue
+                if src in allowed:
+                    cand = src
+                else:
+                    cand = mapping.get(src)
+                if cand and cand in allowed and cand not in seen:
+                    seen.add(cand)
+                    buf.append(cand)
+            for cand in legacy_canon[polarity]:
+                if cand in allowed and cand not in seen:
+                    seen.add(cand)
+                    buf.append(cand)
+            new_ts[polarity] = buf
+
+        if entry.get("taste_signals") != new_ts:
+            entry["taste_signals"] = new_ts
             changed += 1
+        if "taste_signals_canonical" in entry:
+            del entry["taste_signals_canonical"]
     return changed
 
 
 def _apply_theme_mapping(catalog: dict, mapping: dict[str, str | None]) -> int:
+    """Migrate `themes` to canonical-IDs-only shape per entry. Same
+    structure as `_apply_signal_mapping` — see that docstring."""
+    from catalogue_vocab import CANONICAL_THEMES
+    allowed = set(CANONICAL_THEMES)
     changed = 0
     for entry in catalog["entries"].values():
         themes = entry.get("themes") or []
-        new_canon = [mapping.get(t) for t in themes]
-        any_canon = any(c for c in new_canon)
-        old = entry.get("themes_canonical")
-        if any_canon:
-            if old != new_canon:
-                entry["themes_canonical"] = new_canon
-                changed += 1
-        elif old is not None:
-            del entry["themes_canonical"]
+        if not isinstance(themes, list):
+            themes = []
+        legacy_canon = _legacy_canonical_themes(entry)
+        seen: set[str] = set()
+        buf: list[str] = []
+        for src in themes:
+            if not src:
+                continue
+            if src in allowed:
+                cand = src
+            else:
+                cand = mapping.get(src)
+            if cand and cand in allowed and cand not in seen:
+                seen.add(cand)
+                buf.append(cand)
+        for cand in legacy_canon:
+            if cand in allowed and cand not in seen:
+                seen.add(cand)
+                buf.append(cand)
+
+        if entry.get("themes") != buf:
+            entry["themes"] = buf
             changed += 1
+        if "themes_canonical" in entry:
+            del entry["themes_canonical"]
     return changed
 
 

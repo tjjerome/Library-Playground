@@ -28,29 +28,28 @@ from webhelper.sqlite_export import (  # noqa: E402
 )
 
 
-# JSON fields that legitimately may differ between the original entry
-# and the SQLite-reconstructed entry. None today; reserved for future use.
-IGNORE_FIELDS: set[str] = set()
+# JSON fields that the new schema doesn't round-trip — drop on both
+# sides before comparing. `taste_signals_canonical` and `themes_canonical`
+# were the legacy paired-list shape; the closed-vocab schema folds those
+# IDs into `taste_signals` and `themes` directly, so the export does not
+# reconstruct them.
+IGNORE_FIELDS: set[str] = {"taste_signals_canonical", "themes_canonical"}
 
 
 _LIST_FIELDS = ("comparable_books", "content_flags", "themes")
-_OPTIONAL_LIST_FIELDS = ("related_series", "themes_canonical")
+_OPTIONAL_LIST_FIELDS = ("related_series",)
 
 
 def _normalise_for_compare(entry: dict) -> dict:
-    """Normalise both the original and reconstructed entries to a shape
-    where they should compare equal if the SQLite export preserved
-    every meaningful field.
+    """Normalise both original and reconstructed entries to a shape where
+    they should compare equal if the SQLite export preserved every
+    meaningful field.
 
-    Specific normalisations:
-      - Drop None values so absent-vs-None is treated as equal.
-      - Default `taste_signals` and the list-fields to empty values
-        on both sides (catalogues vary between key-absent and empty).
-      - Optional fields (related_series, themes_canonical,
-        taste_signals_canonical) round-trip only when populated, so
-        treat absent-vs-empty as equal on both sides.
-      - Treat the rare audit-shape variants by serialising audit
-        dicts (so dict ordering / key presence won't false-flag).
+    - Drop None values; absent-vs-None treated as equal.
+    - Drop `IGNORE_FIELDS` (legacy paired-list canonical fields).
+    - Default `taste_signals` and the list-fields to empty values on both
+      sides (catalogues vary between key-absent and empty).
+    - Optional fields (related_series) round-trip only when populated.
     """
     out = {}
     for k, v in entry.items():
@@ -64,12 +63,6 @@ def _normalise_for_compare(entry: dict) -> dict:
                 "negative": list(v.get("negative") or []),
             }
             continue
-        if k == "taste_signals_canonical" and isinstance(v, dict):
-            pos = list(v.get("positive") or [])
-            neg = list(v.get("negative") or [])
-            if pos or neg:
-                out[k] = {"positive": pos, "negative": neg}
-            continue
         if k in _LIST_FIELDS:
             out[k] = list(v or [])
             continue
@@ -80,7 +73,6 @@ def _normalise_for_compare(entry: dict) -> dict:
             continue
         out[k] = v
 
-    # Default the collection fields so empty-vs-missing doesn't diff.
     if "taste_signals" not in out:
         out["taste_signals"] = {"positive": [], "negative": []}
     for k in _LIST_FIELDS:
