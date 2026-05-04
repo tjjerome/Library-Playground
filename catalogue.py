@@ -38,6 +38,8 @@ MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 16000
 DEFAULT_CHUNK_SIZE = 20
 RATE_LIMIT_DELAY = 10    # seconds between API calls
+CANONICALIZE_DELAY = 2   # tighter delay for the canonicalize loop, which
+                         # only does cheap classify-from-fixed-vocab calls
 MAX_RETRIES = 3
 
 COMPARABLES_CAP = 6
@@ -961,7 +963,7 @@ def print_sync_summary(stats: dict):
 # already-canonicalised entries skip the model.
 # ---------------------------------------------------------------------------
 
-CANONICALIZE_CHUNK_SIZE = 80   # distinct phrases per LLM call
+CANONICALIZE_CHUNK_SIZE = 200   # distinct phrases per LLM call
 
 
 def _collect_distinct_signals(catalog: dict) -> set[str]:
@@ -1019,7 +1021,7 @@ def _build_canonical_mapping(
             mapping.update(chunk_map)
         except Exception as e:
             print(f"    Error: {e}. Phrases in this chunk left unmapped.")
-        time.sleep(RATE_LIMIT_DELAY)
+        time.sleep(CANONICALIZE_DELAY)
 
     return mapping
 
