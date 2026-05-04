@@ -19,7 +19,19 @@ You = keeper of reader's library knowledge base. Own writes to two files:
 
 Librarian skill reads. You write. **Never read full catalog into chat context — always query via code execution.**
 
-Bulk work (initial build, many new books): point reader at `python catalogue.py --library Library.csv`. This skill handles in-chat: incremental adds, corrections, lookups, needs_review review, saving librarian-session memory updates.
+Bulk work (initial build, many new books): point reader at `python catalogue.py`. **Default flow** = full sync from `Library.csv` → catalogue any new pending entries → sync comparables → apply flag gates → export `Library_Catalog.sqlite` + `.encoded` → write `dist/sync_audit.md` → git commit + push.  Drop a fresh `Library.csv` in the repo, run that one command, done.
+
+Maintenance commands live in dedicated scripts (each does one job):
+
+| Script | Purpose |
+|---|---|
+| `catalogue.py` | CSV-diff sync, catalogue new books, export, push (default flow). |
+| `backfill.py --entry-points` | LLM backfill for `series_role` + `author_entry_point` on existing entries. |
+| `audit_catalog.py --all` | Deterministic review queues over the SQLite catalog (entry-points consistency, comparables quality). No LLM. |
+| `audit_library.py` | Library.csv-side LLM audits → `Library_new.csv` (genres, series-type, pub-years, indie flags). |
+| `canonicalize.py --signals --themes` | Remap free-form taste_signals / themes to closed-vocab IDs. |
+
+This skill handles in-chat: incremental adds, corrections, lookups, needs_review review, saving librarian-session memory updates.
 
 ---
 
@@ -100,7 +112,7 @@ When a librarian-session hand-off contains sentiment-flavored language ("I loved
 
 ## Entry-point fields — `series_role` and `author_entry_point`
 
-Both fields give librarian skill **structural** answer to "good place to start with this author?" — replaces conservative `series_position == "Book 1"` fallback. Default `null` on existing entries; populated by `python catalogue.py --audit-entry-points` and on every newly catalogued book.
+Both fields give librarian skill **structural** answer to "good place to start with this author?" — replaces conservative `series_position == "Book 1"` fallback. Default `null` on existing entries; populated by `python backfill.py --entry-points` and on every newly catalogued book.
 
 ### `series_role` — book's role within its series
 
@@ -146,11 +158,13 @@ Every new entry via `catalogue.py` or in-chat MUST include both fields. Use heur
 
 ### Bulk audit of existing entries
 
-Run `python catalogue.py --audit-entry-points` to fill fields on existing entries. Pass:
+Run `python backfill.py --entry-points` to fill fields on existing entries. Pass:
 
 1. Auto-derives trivial cases without LLM cost.
 2. Sends ambiguous entries (loose-connected; cross-author entry-point judgement) to LLM in chunks, same as `catalogue_chunk` for new entries.
 3. Saves catalog and regenerates slim index.
+
+For a deterministic *consistency audit* (flags suspect existing values rather than backfilling missing ones), use `python audit_catalog.py --entry-points` — writes `docs/audit_entry_points.md` review queue.
 
 ---
 
@@ -180,7 +194,7 @@ Print only what needed. Never dump full file.
 
 - `summary` at least one full sentence (≥50 chars).
 - `tone`, `pacing`, `setting` filled.
-- **3–6 `comparable_books`**. Cap enforced by `--sync-comparables`, which canonicalises title variants, adds reciprocal links between matched pairs, asks Claude to pick strongest 6 when list exceeds cap. Comps don't have to be in library — referencing famous external book fine when it conveys vibe (e.g. citing *We* on *Brave New World*). Type canonical keys from `Library_Index.json` when comp *is* in library so sync can match it.
+- **3–6 `comparable_books`**. Cap enforced at the tail of every `python catalogue.py` run (canonicalises title variants, reciprocates links, Claude-ranks down to 6 when over cap). Comps don't have to be in library — referencing famous external book fine when it conveys vibe (e.g. citing *We* on *Brave New World*). Type canonical keys from `Library_Index.json` when comp *is* in library so sync can match it.
 - **≥2 `taste_signals.positive`**.
 - **≥1 `taste_signals.negative`** (every book has limits; "no negatives" = model dodging, not real signal).
 - `audio_suitability` set.
@@ -321,19 +335,21 @@ Use `Edit` for surgical single-field changes when easier. Use Python for nested 
 
 ### 4. Regenerate the index — always
 
-Most edits (content_flags, taste_signals, summaries, single-entry adds):
+`save_catalog()` rewrites `Library_Catalog.json`; the slim index regenerates by re-reading the catalog and filtering to `INDEX_FIELDS`.  Most in-chat edits go through `save_catalog()` + `save_index()` directly in the same Python block that mutates entries:
 
-```bash
-python catalogue.py --library Library.csv --index-only
+```python
+import catalogue as c
+c.save_catalog(cat, "Library_Catalog.json")
+c.save_index(cat, "Library_Index.json")
 ```
 
-Change touched `comparable_books` on more than a couple entries (batch comp adds, audit fixes affecting many entries, librarian-session recommendation links) → run comp sync instead — canonicalises variants, reciprocates links, asks Claude to pick top 6 for over-cap lists, regenerates index in one pass:
+Change touched `comparable_books` on more than a couple entries (batch comp adds, audit fixes affecting many entries, librarian-session recommendation links) → run a full sync instead, which canonicalises comp variants, reciprocates links, and Claude-ranks down to 6 for over-cap lists as part of the standard tail:
 
 ```bash
-python catalogue.py --library Library.csv --sync-comparables
+python catalogue.py
 ```
 
-Use `--sync-comparables --dry-run --report sync.json` first to preview structural changes (dry-run skips LLM ranking step). Both commands run sub-second when no LLM ranking needed; sync takes longer when many entries over cap.
+Sub-second when no new books pending and no entries over cap; longer when comps need ranking.
 
 ### 5. Report what was applied
 
@@ -347,21 +363,23 @@ If yes, stage `Library_Catalog.json` and `Library_Index.json`, write one-line me
 
 ---
 
-## When to defer to catalogue.py
+## When to defer to scripts
 
-Run script directly for anything bulk:
+Run scripts directly for anything bulk:
 
 | Task | Command |
 |------|---------|
-| Process all pending entries (after CSV adds) | `python catalogue.py --library Library.csv` |
-| Reprocess `needs_review` entries | `python catalogue.py --library Library.csv --review-only` |
-| Rebuild the slim index from existing catalog | `python catalogue.py --library Library.csv --index-only` |
-| Sync comparable_books (canonicalise, reciprocate, Claude-rank to 6) | `python catalogue.py --library Library.csv --sync-comparables` |
-| Backfill `series_role` + `author_entry_point` on existing entries | `python catalogue.py --library Library.csv --audit-entry-points` |
-| Status check (no API calls) | `python catalogue.py --library Library.csv --status` |
-| Larger chunks for well-known books | add `--chunk-size 40` |
+| Drop a fresh `Library.csv` and update everything (catalogue + sync + export + push) | `python catalogue.py` |
+| Reprocess `needs_review` entries | `python catalogue.py --review-only` |
+| Status check (no API calls) | `python catalogue.py --status` |
+| Larger chunks for well-known books | `python catalogue.py --chunk-size 40` |
+| Skip the git push at the end | `python catalogue.py --no-push` |
+| Backfill `series_role` + `author_entry_point` on existing entries | `python backfill.py --entry-points` |
+| Catalog-side review queues (entry-point misalignment, weak comps) | `python audit_catalog.py --all` |
+| Library.csv-side LLM audits → `Library_new.csv` | `python audit_library.py --genres` / `--series-type` / `--pub-years` / `--indie-flags` |
+| Closed-vocab remap (signals / themes) | `python canonicalize.py --signals --themes` |
 
-Reader adding more than ~10 books → sync CSV first and run script. Chat-by-chat editing past that scale wasteful.
+Reader adding more than ~10 books → sync CSV first and run `catalogue.py`. Chat-by-chat editing past that scale wasteful.
 
 ### Authentication for catalogue.py
 

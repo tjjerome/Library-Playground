@@ -75,19 +75,30 @@ plus session-end `present_files` is what actually works on Pro.
 Bulk catalog work runs from a Claude Code session via:
 
 ```bash
-python3 catalogue.py --library Library.csv --sync
+python3 catalogue.py
 ```
 
-That umbrella command refreshes CSV-authoritative fields, catalogues
-new books, runs the comparables tail, exports SQLite + encoded form,
-writes `dist/sync_audit.md`, and `git add -f` + commits + pushes both
-artefacts to the current feature branch (refuses `main`/`master`).
-Pass `--no-push` for local-only runs.
+Default flow (no flags): refresh CSV-authoritative fields, catalogue
+new books, run comparables tail, apply flag gates, export SQLite +
+encoded form, write `dist/sync_audit.md`, `git add -f` + commit +
+push both artefacts to the current feature branch (refuses
+`main`/`master`).  Pass `--no-push` for local-only runs.  Pass
+`--status` for cheap inspection.  Pass `--dry-run` to skip API + writes.
+
+Maintenance commands live in dedicated scripts so the catalogue.py
+surface stays small:
+
+| Script | Purpose |
+|---|---|
+| `backfill.py --entry-points` | LLM backfill `series_role` + `author_entry_point` on existing entries. |
+| `audit_catalog.py --all` | Deterministic review queues over Library_Catalog.sqlite (entry-points consistency, comparables quality). |
+| `audit_library.py` | Library.csv-side LLM audits → Library_new.csv (genres / series-type / pub-years / indie). |
+| `canonicalize.py` | Closed-vocab remap of taste_signals / themes. |
 
 The in-chat `library-cataloguer` skill on claude.ai is intentionally
 scoped to **single-book / short-series** in-the-moment edits.  When
-the reader proposes bulk work it bounces them to `--sync` on the Code
-side.
+the reader proposes bulk work it bounces them to `python catalogue.py`
+on the Code side.
 
 ### claude.ai port (this branch's deliverables)
 
@@ -174,10 +185,10 @@ Translation map for reader-facing language is at the bottom of
 Run the parity tests against the live catalog:
 
 ```bash
-python3 catalogue.py --library Library.csv \
-    --export-sqlite Library_Catalog.sqlite --emit-encoded
-python3 tests/sqlite_roundtrip.py
-python3 tests/encoded_roundtrip.py
+python3 catalogue.py --no-push
+python3 tests/sqlite_roundtrip.py --catalog Library_Catalog.json
+python3 tests/encoded_roundtrip.py --catalog Library_Catalog.json
+python3 tests/taste_vectors_export.py --catalog Library_Catalog.json
 ```
 
 Both should report `OK` on a clean export.  `make skills` builds the

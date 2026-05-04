@@ -1,14 +1,31 @@
 #!/usr/bin/env python3
 """
 Library Cataloguer
-Autonomously builds Library_Catalog.json from a Library CSV.
-Designed to run in Claude Code without requiring human approval between chunks.
+Update Library_Catalog.json + Library_Catalog.sqlite from Library.csv.
 
 Usage:
-    python catalogue.py --library Library.csv
-    python catalogue.py --library Library.csv --chunk-size 40
-    python catalogue.py --library Library.csv --status
-    python catalogue.py --library Library.csv --review-only  # reprocess needs_review entries
+    python catalogue.py                     # default: full sync
+    python catalogue.py --status            # cheap inspection
+    python catalogue.py --review-only       # reprocess needs_review only
+    python catalogue.py --dry-run           # no API calls, no writes
+    python catalogue.py --no-push           # skip git commit + push at the end
+
+The default flow:
+    1. Diff Library.csv → catalog (add new pending stubs, refresh
+       CSV-authoritative fields on existing entries).
+    2. LLM-catalogue any pending entries.
+    3. Sync comparable_books at the tail (canonicalise variants,
+       reciprocate, Claude-rank when over cap).
+    4. Run apply_flag_gates (indie / classic / loose-series demotion).
+    5. Export Library_Catalog.sqlite + .encoded.
+    6. Write dist/sync_audit.md.
+    7. (Unless --no-push) git-commit + push the .encoded artefact and
+       audit summary on the current branch.
+
+Maintenance commands live in dedicated scripts:
+    python audit_catalog.py    # entry-point + comparables review queues
+    python audit_library.py    # Library.csv-side LLM audits (genres, pub years, indie)
+    python canonicalize.py     # signal / theme closed-vocab remapping
 
 Requirements:
     pip install -r requirements.txt
@@ -2098,326 +2115,34 @@ def run_sync_export(
 # ---------------------------------------------------------------------------
 
 def main():
-    parser = argparse.ArgumentParser(description="Autonomously catalogue a book library.")
-    parser.add_argument("--library", required=True, help="Path to Library.csv")
-    parser.add_argument("--catalog", default=CATALOG_FILE)
+    parser = argparse.ArgumentParser(
+        description="Update the catalog from Library.csv (default: full sync + push).",
+    )
+    parser.add_argument("--library", default="Library.csv",
+                        help="Input CSV (default: Library.csv)")
+    parser.add_argument("--catalog", default=CATALOG_FILE,
+                        help=f"JSON catalog path (default: {CATALOG_FILE})")
     parser.add_argument("--index", default=INDEX_FILE,
-                        help="Slim browse index regenerated alongside the catalog")
-    parser.add_argument("--chunk-size", type=int, default=DEFAULT_CHUNK_SIZE)
-    parser.add_argument("--status", action="store_true", help="Print progress and exit")
+                        help=f"Slim browse index (default: {INDEX_FILE})")
+    parser.add_argument("--chunk-size", type=int, default=DEFAULT_CHUNK_SIZE,
+                        help=f"LLM chunk size (default: {DEFAULT_CHUNK_SIZE})")
+    parser.add_argument("--status", action="store_true",
+                        help="Print catalog progress and exit; no API calls.")
     parser.add_argument("--review-only", action="store_true",
-                        help="Only reprocess needs_review entries")
-    parser.add_argument("--index-only", action="store_true",
-                        help="Rebuild the slim index from the existing catalog and exit")
-    parser.add_argument("--sync-comparables", action="store_true",
-                        help="Canonicalise variants, reciprocate links, and "
-                             "Claude-rank top 6 when over cap")
-    parser.add_argument("--audit-entry-points", action="store_true",
-                        help="Backfill series_role and author_entry_point on "
-                             "entries that lack them (auto-derives the trivial "
-                             "cases for free; LLM for the rest).")
+                        help="Reprocess needs_review entries instead of pending.")
     parser.add_argument("--dry-run", action="store_true",
-                        help="With --sync-comparables or --audit-entry-points: "
-                             "compute changes but don't call Claude")
-    parser.add_argument("--report", default=None,
-                        help="With --sync-comparables: write JSON report to this path")
-    parser.add_argument("--export-sqlite", dest="export_sqlite", default=None,
-                        metavar="PATH",
-                        help="One-shot: convert the existing JSON catalog to a "
-                             "SQLite database at PATH and exit. Pair with "
-                             "--emit-encoded to also produce the gzip+b64 "
-                             "wrapped form for upload to the claude.ai surface.")
-    parser.add_argument("--emit-encoded", action="store_true",
-                        help="With --export-sqlite: also emit "
-                             "<sqlite-path>.encoded — gzip+base64 wrapped, "
-                             "Drive-uploadable, decoded once per session by "
-                             "the librarian-triage skill.")
-    parser.add_argument("--sync", action="store_true",
-                        help="Umbrella mode for the Code-side 'I uploaded a "
-                             "new Library.csv' workflow. After the normal "
-                             "sync + catalogue + comparables tail, exports "
-                             "the SQLite catalog, emits the encoded form, "
-                             "writes a sync audit summary, and (unless "
-                             "--no-push) git-commits both artefacts and "
-                             "pushes the current branch to origin so the "
-                             "user can download from GitHub.")
+                        help="No API calls, no writes — useful for sanity-checking the diff.")
+    parser.add_argument("--no-push", action="store_true",
+                        help="Skip git commit + push at the end of the sync.")
     parser.add_argument("--sync-sqlite", default=DEFAULT_SYNC_SQLITE,
                         metavar="PATH",
-                        help=f"With --sync: path to write the SQLite catalog "
-                             f"(default: {DEFAULT_SYNC_SQLITE}).")
+                        help=f"SQLite output path (default: {DEFAULT_SYNC_SQLITE}).")
     parser.add_argument("--sync-audit", default=DEFAULT_SYNC_AUDIT,
                         metavar="PATH",
-                        help=f"With --sync: path to write the audit summary "
-                             f"(default: {DEFAULT_SYNC_AUDIT}).")
-    parser.add_argument("--no-push", action="store_true",
-                        help="With --sync: skip the git commit + push step "
-                             "(useful for dry runs / local-only inspection).")
-    parser.add_argument("--canonicalize-signals", action="store_true",
-                        help="Map free-form taste_signals on every entry to "
-                             "canonical IDs from catalogue_vocab. Idempotent; "
-                             "writes taste_signals_canonical and saves.")
-    parser.add_argument("--canonicalize-themes", action="store_true",
-                        help="Same as --canonicalize-signals, for themes / "
-                             "themes_canonical.")
-    parser.add_argument("--audit-library-series-type", action="store_true",
-                        help="Programmatic re-audit of Library.csv "
-                             "#series_type column using the page-count rule. "
-                             "Writes a diff report and the revised rows to "
-                             "Library_new.csv (never to Library.csv).")
-    parser.add_argument("--audit-library-genres", action="store_true",
-                        help="LLM-walks Library.csv and proposes a primary "
-                             "genre per row. Writes a diff report by default; "
-                             "pass --apply-changes to commit the proposal "
-                             "to Library_new.csv (never to Library.csv).")
-    parser.add_argument("--apply-changes", action="store_true",
-                        help="With --audit-library-genres: write the LLM's "
-                             "proposed genres into Library_new.csv.")
-    parser.add_argument("--library-out", default=LIBRARY_NEW_PATH,
-                        metavar="PATH",
-                        help=f"Output path for Library audit subcommands "
-                             f"(default: {LIBRARY_NEW_PATH}). Only #genre, "
-                             f"#series_type, tags, and pub_year are ever "
-                             f"rewritten; every other column is byte-for-byte "
-                             f"identical to the input.")
-    parser.add_argument("--audit-pub-years", action="store_true",
-                        help="LLM-walks every catalog entry and verifies the "
-                             "first-publication year (CSV pubdate is often a "
-                             "republication date). Writes a diff report by "
-                             "default; pass --apply-changes to commit "
-                             "corrections to the catalog and add a pub_year "
-                             "column to Library_new.csv.")
-    parser.add_argument("--audit-indie-flags", action="store_true",
-                        help="LLM-walks books currently NOT tagged indie that "
-                             f"have <={INDIE_REVIEW_THRESHOLD} reviews and "
-                             "promotes verified self-pub origins to "
-                             "indie=True. Writes a diff report by default; "
-                             "pass --apply-changes to commit.")
-    parser.add_argument("--audit-entry-points-consistency", action="store_true",
-                        help="Run the deterministic consistency audit on "
-                             "author_entry_point flags (no LLM). Writes a "
-                             "review queue at docs/audit_entry_points.md. "
-                             "Reads from --audit-sqlite (default "
-                             "Library_Catalog.sqlite) — regenerate first via "
-                             "--export-sqlite if the catalog has changed.")
-    parser.add_argument("--audit-comparables", action="store_true",
-                        help="Run the deterministic quality audit on "
-                             "comparable_books links (no LLM). Writes a "
-                             "review queue at docs/audit_comparables.md. "
-                             "Reads from --audit-sqlite (default "
-                             "Library_Catalog.sqlite).")
-    parser.add_argument("--audit-sqlite", default="Library_Catalog.sqlite",
-                        metavar="PATH",
-                        help="With --audit-entry-points-consistency / "
-                             "--audit-comparables: the SQLite catalog to "
-                             "read (default: Library_Catalog.sqlite).")
+                        help=f"Audit summary output (default: {DEFAULT_SYNC_AUDIT}).")
     args = parser.parse_args()
 
-    if args.audit_entry_points_consistency or args.audit_comparables:
-        from pathlib import Path as _Path
-        from audits import (
-            write_entry_points_review_queue,
-            write_comparables_review_queue,
-        )
-        sqlite_path = _Path(args.audit_sqlite)
-        if not sqlite_path.exists():
-            print(f"  ! {sqlite_path} not found; "
-                  f"run `--export-sqlite {sqlite_path}` first.")
-            sys.exit(2)
-        if args.audit_entry_points_consistency:
-            out = _Path("docs/audit_entry_points.md")
-            report = write_entry_points_review_queue(sqlite_path, out)
-            n = (len(report["misaligned"])
-                 + len(report["pub_year_regression"])
-                 + len(report["zero_entry_point"]))
-            print(f"  Wrote {out} ({n} flags: "
-                  f"{len(report['misaligned'])} misaligned, "
-                  f"{len(report['pub_year_regression'])} pub_year regression, "
-                  f"{len(report['zero_entry_point'])} zero entry point).")
-        if args.audit_comparables:
-            out = _Path("docs/audit_comparables.md")
-            queue = write_comparables_review_queue(sqlite_path, out)
-            drops = sum(1 for q in queue if q["suggested_action"] == "drop")
-            reviews = sum(1 for q in queue if q["suggested_action"] == "review")
-            print(f"  Wrote {out} ({len(queue)} flags: "
-                  f"{drops} drop-suggested, {reviews} review-suggested).")
-        sys.exit(0)
-
     catalog = load_catalog(args.catalog)
-
-    if args.export_sqlite:
-        # Lazy import — the export path stays usable on Pro setups that
-        # don't have the anthropic SDK installed.
-        from pathlib import Path as _Path
-        from webhelper.sqlite_export import export as _sqlite_export
-        from webhelper.encoded_codec import encode_file as _encode_file
-
-        # Run flag gates so SQLite always reflects the current rule set,
-        # not just whatever was last applied at JSON-save time.
-        gate_stats = apply_flag_gates(catalog)
-        if gate_stats.get("loose_series_books_demoted"):
-            print(f"  Loose-series demotion: "
-                  f"{gate_stats['loose_series_books_demoted']} books in "
-                  f"{gate_stats['loose_series_count']} series → Standalone.")
-
-        sqlite_path = _Path(args.export_sqlite)
-        _sqlite_export(catalog, sqlite_path)
-        n = len(catalog.get("entries") or {})
-        print(f"  Wrote SQLite catalog → {sqlite_path} ({n} entries)")
-        if args.emit_encoded:
-            encoded_path = sqlite_path.with_suffix(sqlite_path.suffix + ".encoded")
-            _encode_file(sqlite_path, encoded_path)
-            print(f"  Wrote encoded catalog → {encoded_path}")
-        sys.exit(0)
-
-    if args.index_only:
-        save_index(catalog, args.index)
-        print(f"  Wrote slim index → {args.index} ({len(catalog['entries'])} entries)")
-        sys.exit(0)
-
-    if args.audit_entry_points:
-        client = None
-        if not args.dry_run:
-            client = authenticate_anthropic_client()
-        stats = audit_entry_points(
-            catalog,
-            client=client,
-            chunk_size=args.chunk_size,
-            dry_run=args.dry_run,
-            catalog_path=None if args.dry_run else args.catalog,
-            index_path=None if args.dry_run else args.index,
-        )
-        print(f"\nEntry-point audit complete.")
-        print(f"  auto_filled: {stats['auto_filled']}")
-        print(f"  llm_chunks:  {stats['llm_chunks']}")
-        print(f"  llm_filled:  {stats['llm_filled']}")
-        print(f"  still_null:  {stats['still_null']}")
-        if args.dry_run:
-            print(f"  --dry-run: catalog NOT written.")
-        else:
-            # Final save (in addition to per-chunk saves) — ensures the
-            # last chunk's stats land on disk.
-            save_catalog(catalog, args.catalog)
-            save_index(catalog, args.index)
-            print(f"  Cataloguing complete. Wrote → {args.catalog} (+ {args.index})")
-        sys.exit(0)
-
-    if args.sync_comparables:
-        client = None
-        if not args.dry_run:
-            client = authenticate_anthropic_client()
-        stats = sync_comparables(
-            catalog,
-            client=client,
-            dry_run=args.dry_run,
-            report_path=args.report,
-        )
-        print_sync_summary(stats)
-        if not args.dry_run:
-            save_catalog(catalog, args.catalog)
-            save_index(catalog, args.index)
-            print(f"  Wrote → {args.catalog} (+ {args.index})")
-        sys.exit(0)
-
-    if args.canonicalize_signals or args.canonicalize_themes:
-        client = authenticate_anthropic_client()
-        if args.canonicalize_signals:
-            print("\nCanonicalising taste_signals…")
-            stats = canonicalize_signals(catalog, client)
-            print(f"  distinct phrases : {stats['distinct_phrases']}")
-            print(f"  mapped           : {stats['phrases_mapped']}")
-            print(f"  unmapped         : {stats['phrases_unmapped']}")
-            print(f"  entries changed  : {stats['entries_changed']}")
-            save_catalog(catalog, args.catalog)
-            save_index(catalog, args.index)
-        if args.canonicalize_themes:
-            print("\nCanonicalising themes…")
-            stats = canonicalize_themes(catalog, client)
-            print(f"  distinct phrases : {stats['distinct_phrases']}")
-            print(f"  mapped           : {stats['phrases_mapped']}")
-            print(f"  unmapped         : {stats['phrases_unmapped']}")
-            print(f"  entries changed  : {stats['entries_changed']}")
-            save_catalog(catalog, args.catalog)
-            save_index(catalog, args.index)
-        print(f"\n  Wrote → {args.catalog} (+ {args.index})")
-        sys.exit(0)
-
-    if args.audit_library_series_type:
-        stats = audit_library_series_type(
-            Path(args.library),
-            Path(args.library_out),
-        )
-        print(f"\nLibrary series-type audit complete.")
-        print(f"  rows total    : {stats['rows_total']}")
-        print(f"  rows changed  : {stats['rows_changed']}")
-        print(f"  series flipped: {stats['series_changed']}")
-        sys.exit(0)
-
-    if args.audit_library_genres:
-        client = authenticate_anthropic_client()
-        stats = audit_library_genres(
-            Path(args.library),
-            Path(args.library_out),
-            client,
-            chunk_size=args.chunk_size,
-            apply_changes=args.apply_changes,
-        )
-        print(f"\nLibrary genre audit complete.")
-        print(f"  rows audited       : {stats['rows_audited']}")
-        print(f"  responses received : {stats['responses_received']}")
-        print(f"  proposed changes   : {stats['proposed_changes']}")
-        print(f"  applied            : {stats['applied']}")
-        if not args.apply_changes and stats["proposed_changes"]:
-            print(f"  (review report; rerun with --apply-changes to write "
-                  f"{args.library_out}.)")
-        sys.exit(0)
-
-    if args.audit_pub_years:
-        # Refresh CSV-authoritative fields (incl. seed pub_year from pubdate)
-        # before the LLM pass — keeps the prompt anchored on current CSV.
-        books_for_sync = load_library(args.library)
-        sync_library_to_catalog(books_for_sync, catalog)
-        client = authenticate_anthropic_client()
-        stats = audit_pub_years(
-            catalog,
-            Path(args.library),
-            Path(args.library_out),
-            client,
-            chunk_size=args.chunk_size or PUB_YEAR_CHUNK_SIZE,
-            apply_changes=args.apply_changes,
-        )
-        print(f"\npub_year audit complete.")
-        print(f"  entries audited        : {stats['entries_audited']}")
-        print(f"  responses received     : {stats['responses_received']}")
-        print(f"  proposed changes       : {stats['proposed_changes']}")
-        print(f"  applied                : {stats['applied']}")
-        print(f"  Library_new.csv cells  : {stats['library_new_csv_changes']}")
-        if args.apply_changes:
-            save_catalog(catalog, args.catalog)
-            save_index(catalog, args.index)
-            print(f"  Wrote → {args.catalog} (+ {args.index})")
-        sys.exit(0)
-
-    if args.audit_indie_flags:
-        books_for_sync = load_library(args.library)
-        sync_library_to_catalog(books_for_sync, catalog)
-        client = authenticate_anthropic_client()
-        stats = audit_indie_flags(
-            catalog,
-            client,
-            chunk_size=args.chunk_size or INDIE_AUDIT_CHUNK_SIZE,
-            apply_changes=args.apply_changes,
-        )
-        print(f"\nindie backfill audit complete.")
-        print(f"  candidates             : {stats['candidates']}")
-        print(f"  responses received     : {stats['responses_received']}")
-        print(f"  proposed promotions    : {stats['proposed_promotions']}")
-        print(f"  applied                : {stats['applied']}")
-        if args.apply_changes:
-            save_catalog(catalog, args.catalog)
-            save_index(catalog, args.index)
-            print(f"  Wrote → {args.catalog} (+ {args.index})")
-        sys.exit(0)
-
     books = load_library(args.library)
 
     if not books:
@@ -2443,6 +2168,9 @@ def main():
     # Early exits
     if args.status:
         sys.exit(0)
+    if args.dry_run:
+        print("\n--dry-run set; no API calls or SQLite/git work performed.")
+        sys.exit(0)
 
     # Determine which entries to process
     if args.review_only:
@@ -2458,17 +2186,24 @@ def main():
         if entry["status"] in target_statuses
     ]
 
+    comparables_stats = None
+    client = None
+
     if not pending_entries:
-        print("Nothing to process.")
-        sys.exit(0)
+        print("Nothing to catalogue — proceeding straight to SQLite export + push.")
 
     total_to_process = len(pending_entries)
-    estimated_chunks = -(-total_to_process // args.chunk_size)
-    print(f"  {total_to_process} entries to process in ~{estimated_chunks} chunks of {args.chunk_size}.\n")
 
-    from catalogue_prompts import build_system_prompt
-    client = authenticate_anthropic_client()
-    system = build_system_prompt()
+    if pending_entries:
+        estimated_chunks = -(-total_to_process // args.chunk_size)
+        print(f"  {total_to_process} entries to process in ~{estimated_chunks} chunks of {args.chunk_size}.\n")
+
+        from catalogue_prompts import build_system_prompt
+        client = authenticate_anthropic_client()
+        system = build_system_prompt()
+    else:
+        estimated_chunks = 0
+        system = None
 
     processed = 0
     chunk_num = 0
@@ -2512,25 +2247,29 @@ def main():
     print(f"  Wrote slim index → {args.index}")
 
     # Run the comparable_books sync at the tail so a fresh build always
-    # lands canonical, reciprocated, and Claude-ranked.
-    comparables_stats = sync_comparables(catalog, client=client)
-    print_sync_summary(comparables_stats)
-    save_catalog(catalog, args.catalog)
-    save_index(catalog, args.index)
+    # lands canonical, reciprocated, and Claude-ranked.  Skip when
+    # nothing was catalogued — comp links are stable until new entries
+    # land.
+    if pending_entries:
+        if client is None:
+            client = authenticate_anthropic_client()
+        comparables_stats = sync_comparables(catalog, client=client)
+        print_sync_summary(comparables_stats)
+        save_catalog(catalog, args.catalog)
+        save_index(catalog, args.index)
 
     print("\nCataloguing complete.")
     print_status(catalog)
 
-    if args.sync:
-        run_sync_export(
-            catalog=catalog,
-            library_sync_stats=library_sync_stats,
-            comparables_stats=comparables_stats,
-            pre_counts=pre_counts,
-            sqlite_path=Path(args.sync_sqlite),
-            audit_path=Path(args.sync_audit),
-            push=not args.no_push,
-        )
+    run_sync_export(
+        catalog=catalog,
+        library_sync_stats=library_sync_stats,
+        comparables_stats=comparables_stats,
+        pre_counts=pre_counts,
+        sqlite_path=Path(args.sync_sqlite),
+        audit_path=Path(args.sync_audit),
+        push=not args.no_push,
+    )
 
 
 if __name__ == "__main__":
