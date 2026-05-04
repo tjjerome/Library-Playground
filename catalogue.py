@@ -95,6 +95,17 @@ def save_catalog(catalog: dict, path: str):
 INDIE_REVIEW_THRESHOLD = 12000   # > this -> book has broken out of indie identity
 CLASSIC_MIN_AGE_YEARS = 30       # < this -> not yet a classic by age
 
+# Loose-series-of-standalones gate (Poirot, Reacher, Cadfael shape).
+# A series qualifies when ≥LOOSE_SERIES_MIN books carry a series_role and
+# ≥LOOSE_SERIES_FRACTION of the role-populated books have a loose-* /
+# standalone role.  Qualifying series have every book's series_status
+# rewritten to 'Standalone' so the librarian's series-gating logic
+# (unfinished-series, series-continuation, entry-point) treats them like
+# what they actually are: recurring-character standalones.
+LOOSE_SERIES_FRACTION = 0.8
+LOOSE_SERIES_MIN = 3
+LOOSE_SERIES_ROLES = frozenset({"loose-entry", "loose-mid", "standalone"})
+
 
 def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
     """Enforce indie + classic flag rules in place. Idempotent.
@@ -115,6 +126,15 @@ def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
     3. **Classic age gate.** A book with `classic=True` and either no
        `pub_year` or `pub_year` more recent than
        `current_year - CLASSIC_MIN_AGE_YEARS` flips to `classic=False`.
+
+    4. **Loose-series demotion.** A series with ≥`LOOSE_SERIES_MIN`
+       books AND ≥`LOOSE_SERIES_FRACTION` of role-populated books in
+       loose-entry / loose-mid / standalone roles has every book's
+       `series_status` rewritten to 'Standalone'.  Catches Poirot /
+       Reacher / Cadfael — recurring-character standalones the
+       librarian shouldn't treat as a sequential series.  `series` and
+       `series_position` stay populated so the connection is still
+       discoverable.
 
     Returns a stats dict for logging.
     """
@@ -159,11 +179,43 @@ def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
             entry["classic"] = False
             classic_demoted += 1
 
+    # Step 4 — loose-series demotion.
+    series_role_counts: dict[str, list[int]] = {}  # series -> [loose, total_roled]
+    for entry in entries.values():
+        s = entry.get("series")
+        if not s:
+            continue
+        if entry.get("series_status") == "Standalone":
+            continue  # already standalone — nothing to demote
+        role = entry.get("series_role")
+        if role is None:
+            continue
+        bucket = series_role_counts.setdefault(s, [0, 0])
+        bucket[1] += 1
+        if role in LOOSE_SERIES_ROLES:
+            bucket[0] += 1
+
+    loose_series: set[str] = set()
+    for s, (loose, total) in series_role_counts.items():
+        if total < LOOSE_SERIES_MIN:
+            continue
+        if (loose / total) >= LOOSE_SERIES_FRACTION:
+            loose_series.add(s)
+
+    loose_demoted = 0
+    for entry in entries.values():
+        s = entry.get("series")
+        if s in loose_series and entry.get("series_status") != "Standalone":
+            entry["series_status"] = "Standalone"
+            loose_demoted += 1
+
     return {
         "indie_series_count": len(indie_series),
         "indie_propagated": propagated,
         "indie_threshold_demoted": threshold_demoted,
         "classic_demoted": classic_demoted,
+        "loose_series_count": len(loose_series),
+        "loose_series_books_demoted": loose_demoted,
     }
 
 
@@ -2198,6 +2250,14 @@ def main():
         from pathlib import Path as _Path
         from webhelper.sqlite_export import export as _sqlite_export
         from webhelper.encoded_codec import encode_file as _encode_file
+
+        # Run flag gates so SQLite always reflects the current rule set,
+        # not just whatever was last applied at JSON-save time.
+        gate_stats = apply_flag_gates(catalog)
+        if gate_stats.get("loose_series_books_demoted"):
+            print(f"  Loose-series demotion: "
+                  f"{gate_stats['loose_series_books_demoted']} books in "
+                  f"{gate_stats['loose_series_count']} series → Standalone.")
 
         sqlite_path = _Path(args.export_sqlite)
         _sqlite_export(catalog, sqlite_path)

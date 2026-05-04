@@ -6,7 +6,7 @@ Implements RECOMPOSITION_PLAN §6.5.  Three suspect classes,
 none auto-fixed.  Each row is for the maintainer to confirm
 (keep / change / annotate).
 
-**115 flags total** (8 misaligned, 102 pub_year regression, 5 zero-entry-point authors).
+**128 flags total** (8 misaligned, 115 pub_year regression, 5 zero-entry-point authors).
 
 ## 1. Series misalignment (8)
 
@@ -26,7 +26,7 @@ Express shape — high-confidence flags.
 | The Elfstones of Shannara | Terry Brooks | The Sword of Shannara | Book 2 | mid | series_role='mid' (mid-series — not a sensible entry) |
 | Path of Deceit | Tessa Gratton & Justina Ireland | The High Republic | Book 7 | first | series_role='first' but series_position parses to Book 7 |
 
-## 2. pub_year regression on standalone-only authors (102)
+## 2. pub_year regression on standalone-only authors (115)
 
 Author has ≥2 standalone books, the entry-point flag is on
 a book published *after* an earlier standalone by the same
@@ -45,20 +45,26 @@ descending; bigger gaps deserve more scrutiny.
 | Stephen King | 11/22/63 | 2011 | Carrie | 1974 | 37 |
 | Harlan Ellison | I Have No Mouth and I Must Scream | 2002 | Dangerous Visions | 1967 | 35 |
 | Victor Hugo | Les Misérables | 1862 | The Hunchback of Notre Dame | 1831 | 31 |
+| Agatha Christie | Crooked House | 1949 | The Mysterious Affair at Styles | 1920 | 29 |
 | David McCullough | 1776 | 2005 | The Path Between the Seas | 1977 | 28 |
 | Philip K. Dick | Selected Stories of Philip K. Dick | 1982 | Eye in the Sky | 1957 | 25 |
 | David McCullough | John Adams | 2001 | The Path Between the Seas | 1977 | 24 |
 | Charles Dickens | Great Expectations | 1861 | Oliver Twist; or, The Parish Boy's Progress | 1838 | 23 |
 | Dean Koontz | Intensity | 1995 | Demon Seed | 1973 | 22 |
+| Josephine Tey | The Daughter of Time | 1951 | The Man in the Queue | 1929 | 22 |
 | Charles Dickens | A Tale of Two Cities | 1859 | Oliver Twist; or, The Parish Boy's Progress | 1838 | 21 |
-| Agatha Christie | Crooked House | 1949 | The Seven Dials Mystery | 1929 | 20 |
+| Terry Pratchett | The Wee Free Men | 2003 | The Color of Magic | 1983 | 20 |
+| Agatha Christie | And Then There Were None | 1939 | The Mysterious Affair at Styles | 1920 | 19 |
+| Josephine Tey | The Franchise Affair | 1948 | The Man in the Queue | 1929 | 19 |
 | Tom Wolfe | The Bonfire of the Vanities | 1987 | The Electric Kool-Aid Acid Test | 1968 | 19 |
 | Kurt Vonnegut Jr. | Slaughterhouse-Five | 1969 | Player Piano | 1952 | 17 |
 | Neil Gaiman | The Ocean at the End of the Lane | 2013 | Neverwhere | 1996 | 17 |
 | Susanna Clarke | Piranesi | 2020 | Jonathan Strange & Mr Norrell | 2004 | 16 |
+| Arthur Conan Doyle | The Hound of the Baskervilles | 1902 | A Study in Scarlet | 1887 | 15 |
 | Carl Sagan | The Demon-Haunted World: Science as a Candle in the Dark | 1995 | Cosmos | 1980 | 15 |
 | Edith Wharton | The Age of Innocence | 1920 | The House of Mirth | 1905 | 15 |
 | Joseph Kanon | Istanbul Passage | 2012 | Los Alamos | 1997 | 15 |
+| Agatha Christie | Murder on the Orient Express | 1934 | The Mysterious Affair at Styles | 1920 | 14 |
 | Barack Obama | A Promised Land | 2020 | The Audacity of Hope: Thoughts on Reclaiming the American Dream | 2006 | 14 |
 | Cormac McCarthy | The Road | 2006 | All the Pretty Horses | 1992 | 14 |
 | Dean Koontz | Watchers | 1987 | Demon Seed | 1973 | 14 |
@@ -77,14 +83,15 @@ descending; bigger gaps deserve more scrutiny.
 | Harlan Coben | Tell No One | 2001 | Play Dead | 1990 | 11 |
 | Tom Wolfe | The Right Stuff | 1979 | The Electric Kool-Aid Acid Test | 1968 | 11 |
 | William Shakespeare | Hamlet | 1601 | Romeo and Juliet | 1590 | 11 |
-| Agatha Christie | And Then There Were None | 1939 | The Seven Dials Mystery | 1929 | 10 |
 | David Foster Wallace | Consider the Lobster and Other Essays | 2005 | Infinite Jest | 1996 | 9 |
 | Erik Larson | The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America | 2003 | Lethal Passage: The Story of a Gun | 1994 | 9 |
 | James A. Michener | Centennial | 1974 | The Source | 1965 | 9 |
+| James Clavell | Shōgun | 1975 | Tai-Pan | 1966 | 9 |
 | Leo Tolstoy | Anna Karenina | 1878 | War and Peace | 1869 | 9 |
 | Mark Twain | Adventures of Huckleberry Finn | 1885 | The Adventures of Tom Sawyer | 1876 | 9 |
 | Ben Macintyre | The Spy and the Traitor: The Greatest Espionage Story of the Cold War | 2018 | Operation Mincemeat | 2010 | 8 |
 | Tim Powers | On Stranger Tides | 1987 | The Drawing of the Dark | 1979 | 8 |
+| Ursula K. le Guin | The Dispossessed | 1974 | City of Illusions | 1966 | 8 |
 | Victor LaValle | The Changeling | 2017 | Big Machine | 2009 | 8 |
 | Blake Crouch | Dark Matter | 2016 | Abandon | 2009 | 7 |
 | John Green | The Fault in Our Stars | 2012 | Looking for Alaska | 2005 | 7 |
@@ -97,8 +104,11 @@ descending; bigger gaps deserve more scrutiny.
 | Robert Crais | The Two Minute Rule | 2006 | Demolition Angel | 2000 | 6 |
 | Ronald Malfi | Come With Me | 2021 | Little Girls | 2015 | 6 |
 | Stephen King | Firestarter | 1980 | Carrie | 1974 | 6 |
+| Terry Pratchett | Guards! Guards! | 1989 | The Color of Magic | 1983 | 6 |
+| Arthur Conan Doyle | The Adventures of Sherlock Holmes | 1892 | A Study in Scarlet | 1887 | 5 |
 | Hunter S. Thompson | Fear and Loathing in Las Vegas: A Savage Journey to the Heart of the American Dream | 1971 | Hell's Angels: A Strange and Terrible Saga | 1966 | 5 |
 | Michael Pollan | The Omnivore's Dilemma: A Natural History of Four Meals | 2006 | The Botany of Desire: A Plant's-Eye View of the World | 2001 | 5 |
+| Terry Pratchett | Wyrd Sisters | 1988 | The Color of Magic | 1983 | 5 |
 | V. E. Schwab | Bury Our Bones in the Midnight Soil | 2025 | The Invisible Life of Addie LaRue | 2020 | 5 |
 | Ania Ahlborn | Brother | 2015 | Seed | 2011 | 4 |
 | George Orwell | 1984 | 1949 | Animal Farm | 1945 | 4 |
@@ -118,12 +128,14 @@ descending; bigger gaps deserve more scrutiny.
 | David Sedaris | Me Talk Pretty One Day | 2000 | Naked | 1997 | 3 |
 | John Dickson Carr | The Hollow Man | 1935 | Poison in Jest | 1932 | 3 |
 | Max Brooks | World War Z: An Oral History of the Zombie War | 2006 | The Zombie Survival Guide: Complete Protection from the Living Dead | 2003 | 3 |
+| Max Gladstone | Last First Snow | 2015 | Three Parts Dead | 2012 | 3 |
 | Naomi Novik | Spinning Silver | 2018 | Uprooted | 2015 | 3 |
 | Nick Hornby | High Fidelity | 1995 | Fever Pitch | 1992 | 3 |
 | Ray Bradbury | Fahrenheit 451 | 1953 | The Martian Chronicles | 1950 | 3 |
 | Richard Preston | The Hot Zone: The Terrifying True Story of the Origins of the Ebola Virus | 1994 | The Cobra Event | 1991 | 3 |
 | Shaun Paul Stevens | Nether Light | 2021 | Deliverance at Van Demon's Deep | 2018 | 3 |
 | Thomas Pynchon | The Crying of Lot 49 | 1966 | V. | 1963 | 3 |
+| Ursula K. Le Guin | The Left Hand of Darkness | 1969 | City of Illusions | 1966 | 3 |
 | Greg Egan | Permutation City | 1994 | Quarantine | 1992 | 2 |
 | John Jackson Miller | Kenobi | 2013 | Knight Errant | 2011 | 2 |
 | John Steinbeck | Of Mice and Men | 1937 | Tortilla Flat | 1935 | 2 |
@@ -136,6 +148,7 @@ descending; bigger gaps deserve more scrutiny.
 | Charlie Huston | The Mystic Arts of Erasing All Signs of Death | 2008 | The Shotgun Rule | 2007 | 1 |
 | Christopher Buehlman | Between Two Fires | 2012 | Those Across the River | 2011 | 1 |
 | Clifford D. Simak | City | 1952 | Time and Again | 1951 | 1 |
+| Iain M. Banks | The Player of Games | 1988 | Consider Phlebas | 1987 | 1 |
 | Robert Crais | Hostage | 2001 | Demolition Angel | 2000 | 1 |
 | Robert J. Sawyer | Flashforward | 1999 | Factoring Humanity | 1998 | 1 |
 | Silvia Moreno-Garcia | Mexican Gothic | 2020 | Gods of Jade and Shadow | 2019 | 1 |
