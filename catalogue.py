@@ -1077,31 +1077,61 @@ CANONICALIZE_CHUNK_SIZE = 200   # distinct phrases per LLM call
 
 
 def _collect_distinct_signals(catalog: dict) -> set[str]:
-    """Distinct free-form signal strings that aren't already canonical IDs."""
+    """Distinct free-form signal strings that need LLM mapping.
+
+    Skips phrases that are already canonical IDs (post-migration entries
+    or pass-through), and skips phrases whose legacy `taste_signals_canonical`
+    block already carries a valid vocab ID at the same list index. The
+    skip cuts repeat LLM cost on entries the prior canonicalize run
+    already mapped — only previously-unmapped phrases (and newly-added
+    vocab IDs that might catch them) hit the model again.
+    """
     from catalogue_vocab import CANONICAL_TASTE_SIGNALS
     allowed = set(CANONICAL_TASTE_SIGNALS)
     out: set[str] = set()
     for entry in catalog["entries"].values():
         ts = entry.get("taste_signals") or {}
-        if isinstance(ts, dict):
-            for sig in (ts.get("positive") or []):
-                if sig and sig not in allowed:
-                    out.add(sig)
-            for sig in (ts.get("negative") or []):
-                if sig and sig not in allowed:
-                    out.add(sig)
+        if not isinstance(ts, dict):
+            continue
+        legacy = entry.get("taste_signals_canonical")
+        legacy_dict = legacy if isinstance(legacy, dict) else {}
+        for polarity in ("positive", "negative"):
+            phrases = ts.get(polarity) or []
+            legacy_list = legacy_dict.get(polarity) or []
+            for i, sig in enumerate(phrases):
+                if not sig or sig in allowed:
+                    continue
+                # Position-paired legacy canonical: if the prior run mapped
+                # this exact slot to a still-valid vocab ID, skip the LLM.
+                legacy_id = legacy_list[i] if i < len(legacy_list) else None
+                if isinstance(legacy_id, str) and legacy_id in allowed:
+                    continue
+                out.add(sig)
     return out
 
 
 def _collect_distinct_themes(catalog: dict) -> set[str]:
-    """Distinct free-form theme strings that aren't already canonical IDs."""
+    """Distinct free-form theme strings that need LLM mapping.
+
+    Mirrors `_collect_distinct_signals`: skips phrases that are already
+    canonical IDs and phrases with a valid legacy `themes_canonical`
+    mapping at the same list index.
+    """
     from catalogue_vocab import CANONICAL_THEMES
     allowed = set(CANONICAL_THEMES)
     out: set[str] = set()
     for entry in catalog["entries"].values():
-        for t in entry.get("themes") or []:
-            if t and t not in allowed:
-                out.add(t)
+        themes = entry.get("themes") or []
+        legacy = entry.get("themes_canonical") or []
+        if not isinstance(legacy, list):
+            legacy = []
+        for i, t in enumerate(themes):
+            if not t or t in allowed:
+                continue
+            legacy_id = legacy[i] if i < len(legacy) else None
+            if isinstance(legacy_id, str) and legacy_id in allowed:
+                continue
+            out.add(t)
     return out
 
 
