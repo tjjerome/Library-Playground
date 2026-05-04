@@ -22,6 +22,7 @@ import csv
 import datetime as _datetime
 import json
 import os
+import re as _re
 import subprocess
 import sys
 import time
@@ -70,6 +71,9 @@ def load_catalog(path: str) -> dict:
 
 
 def save_catalog(catalog: dict, path: str):
+    # Deterministic flag gates run on every save so newly-catalogued
+    # entries can never escape the post-processing rules. Idempotent.
+    apply_flag_gates(catalog)
     catalog["last_updated"] = str(date.today())
     entries = catalog["entries"]
     catalog["total_in_library"] = len(entries)
@@ -81,6 +85,86 @@ def save_catalog(catalog: dict, path: str):
     )
     with open(path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
+
+
+# ---------------------------------------------------------------------------
+# Deterministic flag gates — run on every save so the post-processing rules
+# stay enforced even as the cataloguer adds new entries.
+# ---------------------------------------------------------------------------
+
+INDIE_REVIEW_THRESHOLD = 12000   # > this -> book has broken out of indie identity
+CLASSIC_MIN_AGE_YEARS = 30       # < this -> not yet a classic by age
+
+
+def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
+    """Enforce indie + classic flag rules in place. Idempotent.
+
+    Rules applied in order:
+
+    1. **Series-indie propagation.** If any book in a series carries
+       `indie=True`, every other book in that same series is set to
+       `indie=True`. Catches cases where the series's first book broke
+       out of indie identity (large review count) but later volumes are
+       still in the same indie footprint.
+
+    2. **Indie review-count threshold.** A book with `indie=True` and
+       `goodreads_reviews > INDIE_REVIEW_THRESHOLD` flips to `indie=False`
+       — UNLESS the book is part of a series identified as indie by
+       step 1, which preserves the series identity through breakouts.
+
+    3. **Classic age gate.** A book with `classic=True` and either no
+       `pub_year` or `pub_year` more recent than
+       `current_year - CLASSIC_MIN_AGE_YEARS` flips to `classic=False`.
+
+    Returns a stats dict for logging.
+    """
+    if current_year is None:
+        current_year = _datetime.date.today().year
+
+    entries = catalog.get("entries") or {}
+
+    # Step 1 — collect series with any indie member, then propagate.
+    indie_series: set[str] = set()
+    for entry in entries.values():
+        if entry.get("indie") and entry.get("series"):
+            indie_series.add(entry["series"])
+
+    propagated = 0
+    for entry in entries.values():
+        s = entry.get("series")
+        if s and s in indie_series and not entry.get("indie"):
+            entry["indie"] = True
+            propagated += 1
+
+    # Step 2 — threshold demotion (skips books in propagated indie series).
+    threshold_demoted = 0
+    for entry in entries.values():
+        if not entry.get("indie"):
+            continue
+        s = entry.get("series")
+        if s and s in indie_series:
+            continue
+        reviews = entry.get("goodreads_reviews")
+        if isinstance(reviews, int) and reviews > INDIE_REVIEW_THRESHOLD:
+            entry["indie"] = False
+            threshold_demoted += 1
+
+    # Step 3 — classic age gate.
+    classic_demoted = 0
+    for entry in entries.values():
+        if not entry.get("classic"):
+            continue
+        py = entry.get("pub_year")
+        if not isinstance(py, int) or (current_year - py) < CLASSIC_MIN_AGE_YEARS:
+            entry["classic"] = False
+            classic_demoted += 1
+
+    return {
+        "indie_series_count": len(indie_series),
+        "indie_propagated": propagated,
+        "indie_threshold_demoted": threshold_demoted,
+        "classic_demoted": classic_demoted,
+    }
 
 
 # Fields kept in the slim index. Everything else (summary, themes, comparables,
@@ -180,6 +264,7 @@ CSV_AUTHORITATIVE_FIELDS = (
     "series",
     "series_position",
     "series_status",
+    "pub_year",
 )
 
 
@@ -247,6 +332,29 @@ def csv_authoritative_values(book: dict) -> dict:
     # that the catalog might still carry.
     if out["series"] is None:
         out["series_position"] = None
+
+    # pub_year derived from CSV's pubdate ISO timestamp. Some pubdate values
+    # carry republication / edition years rather than first-publication year;
+    # the `--audit-pub-years` LLM pass corrects those after sync.
+    pubdate = book.get("pubdate") or ""
+    m = _re.match(r"^(\d{4})", pubdate)
+    if m:
+        try:
+            year = int(m.group(1))
+            if 1000 <= year <= 2100:
+                out["pub_year"] = year
+        except ValueError:
+            pass
+    # Library_new.csv may have promoted pub_year to its own column. Honour it.
+    py_explicit = book.get("pub_year") or ""
+    m2 = _re.match(r"^(\d{4})$", str(py_explicit).strip())
+    if m2:
+        try:
+            year = int(m2.group(1))
+            if 1000 <= year <= 2100:
+                out["pub_year"] = year
+        except ValueError:
+            pass
 
     return out
 
@@ -454,8 +562,6 @@ def catalogue_chunk(
 # ---------------------------------------------------------------------------
 # Entry-point fields (series_role + author_entry_point)
 # ---------------------------------------------------------------------------
-
-import re as _re
 
 _AUDIT_BOOK1 = _re.compile(r"^book\s*1(?![\d.])", _re.IGNORECASE)
 
@@ -1434,6 +1540,244 @@ def audit_library_genres(
     return stats
 
 
+# ---------------------------------------------------------------------------
+# pub_year audit — verify first-publication year per book; correct catalog
+# and add a `pub_year` column to Library_new.csv on apply.
+# ---------------------------------------------------------------------------
+
+PUB_YEAR_AUDIT_REPORT = "dist/library_pub_year_audit.md"
+PUB_YEAR_CHUNK_SIZE = 50
+
+
+def audit_pub_years(
+    catalog: dict,
+    library_path: Path,
+    library_out: Path,
+    client,
+    *,
+    chunk_size: int = PUB_YEAR_CHUNK_SIZE,
+    apply_changes: bool = False,
+    report_path: Path | None = None,
+) -> dict:
+    """LLM-walks every catalog entry, asks the model to verify the first
+    publication year, and writes a diff report.
+
+    On apply: writes corrected `pub_year` to each catalog entry and
+    promotes the column to Library_new.csv (adds the column if absent).
+    """
+    from catalogue_prompts import (
+        build_pub_year_audit_system_prompt,
+        build_pub_year_audit_prompt,
+        parse_pub_year_audit_response,
+    )
+
+    entries = catalog["entries"]
+    keys = sorted(entries.keys())
+    print(f"  {len(keys)} catalog entries to audit.")
+
+    system = build_pub_year_audit_system_prompt()
+    n_chunks = -(-len(keys) // chunk_size)
+    proposed: dict[str, int | None] = {}
+
+    for i in range(n_chunks):
+        chunk_keys = keys[i * chunk_size: (i + 1) * chunk_size]
+        chunk_books = []
+        for k in chunk_keys:
+            e = entries[k]
+            chunk_books.append({
+                "title": e.get("title"),
+                "author": e.get("author"),
+                "csv_pub_year_guess": e.get("pub_year"),
+            })
+        prompt = build_pub_year_audit_prompt(chunk_books)
+        print(f"  pub-year audit chunk {i + 1}/{n_chunks} ({len(chunk_keys)} books)...")
+        try:
+            raw = call_api_with_tools(client, [{"role": "user", "content": prompt}],
+                                      system)
+            chunk_map = parse_pub_year_audit_response(raw)
+            proposed.update(chunk_map)
+        except Exception as e:
+            print(f"    Error: {e}. Chunk skipped.")
+        time.sleep(RATE_LIMIT_DELAY)
+
+    diffs: list[tuple[str, int | None, int | None]] = []
+    catalog_keys = set(entries)
+    normalized_index = {normalize_key(ck): ck for ck in catalog_keys}
+    for k, new_year in proposed.items():
+        canon = resolve_canonical_key(k, catalog_keys, normalized_index)
+        if canon is None:
+            continue
+        cur = entries[canon].get("pub_year")
+        if new_year != cur:
+            diffs.append((canon, cur, new_year))
+
+    report_path = report_path or Path(PUB_YEAR_AUDIT_REPORT)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# Library pub_year re-audit\n\n",
+        f"Audit covered {len(keys)} entries; LLM responded for {len(proposed)}.\n",
+        f"Proposed changes: {len(diffs)}.\n\n",
+        "## Proposed changes\n\n",
+        "| Book | Current pub_year | Proposed |\n|---|---|---|\n",
+    ]
+    for k, cur, new in sorted(diffs):
+        lines.append(f"| {k} | {cur} | {new} |\n")
+    report_path.write_text("".join(lines), encoding="utf-8")
+    print(f"  Wrote audit report → {report_path}")
+
+    stats = {
+        "entries_audited": len(keys),
+        "responses_received": len(proposed),
+        "proposed_changes": len(diffs),
+        "applied": 0,
+        "library_new_csv_changes": 0,
+    }
+
+    if apply_changes and diffs:
+        # Apply to catalog
+        for canon, _cur, new_year in diffs:
+            entries[canon]["pub_year"] = new_year
+        stats["applied"] = len(diffs)
+
+        # Write to Library_new.csv: promote pub_year to a new column.
+        if library_out.exists():
+            fieldnames, raw_rows = _read_library_raw(library_out)
+        else:
+            fieldnames, raw_rows = _read_library_raw(library_path)
+        if "pub_year" not in fieldnames:
+            fieldnames = list(fieldnames) + ["pub_year"]
+        # Build map from key -> new pub_year using catalog (for ALL entries,
+        # not just diffs — we want every row to carry the audit-corrected
+        # value, including unchanged ones).
+        py_by_key: dict[str, int | None] = {}
+        for k, e in entries.items():
+            py_by_key[k] = e.get("pub_year")
+        csv_changes = 0
+        for row in raw_rows:
+            key = book_key(row.get("title", ""), row.get("authors", ""))
+            new_py = py_by_key.get(key)
+            cur_str = (row.get("pub_year") or "").strip()
+            new_str = "" if new_py is None else str(new_py)
+            if cur_str != new_str:
+                row["pub_year"] = new_str
+                csv_changes += 1
+            else:
+                # Ensure the column is at least present in the row dict.
+                row["pub_year"] = new_str
+        _write_library_csv(library_out, fieldnames, raw_rows)
+        stats["library_new_csv_changes"] = csv_changes
+        print(f"  Applied {len(diffs)} pub_year changes to catalog; "
+              f"wrote {csv_changes} pub_year cells to {library_out}.")
+
+    return stats
+
+
+# ---------------------------------------------------------------------------
+# indie audit — verify indie / self-publication status for low-review books
+# the cataloguer may have under-tagged.
+# ---------------------------------------------------------------------------
+
+INDIE_AUDIT_REPORT = "dist/library_indie_audit.md"
+INDIE_AUDIT_CHUNK_SIZE = 50
+
+
+def audit_indie_flags(
+    catalog: dict,
+    client,
+    *,
+    review_ceiling: int = INDIE_REVIEW_THRESHOLD,
+    chunk_size: int = INDIE_AUDIT_CHUNK_SIZE,
+    apply_changes: bool = False,
+    report_path: Path | None = None,
+) -> dict:
+    """LLM audits books currently NOT tagged indie that have <= review_ceiling
+    Goodreads reviews. Promotes verified indies to `indie=True`.
+    """
+    from catalogue_prompts import (
+        build_indie_audit_system_prompt,
+        build_indie_audit_prompt,
+        parse_indie_audit_response,
+    )
+
+    candidates: list[str] = []
+    for k, e in catalog["entries"].items():
+        if e.get("indie"):
+            continue
+        reviews = e.get("goodreads_reviews")
+        if reviews is None or (isinstance(reviews, int) and reviews <= review_ceiling):
+            candidates.append(k)
+    print(f"  {len(candidates)} indie-backfill candidates "
+          f"(indie!=True AND reviews<={review_ceiling}).")
+
+    system = build_indie_audit_system_prompt()
+    n_chunks = -(-len(candidates) // chunk_size)
+    proposed: dict[str, bool | None] = {}
+
+    for i in range(n_chunks):
+        chunk_keys = candidates[i * chunk_size: (i + 1) * chunk_size]
+        chunk_books = []
+        for k in chunk_keys:
+            e = catalog["entries"][k]
+            chunk_books.append({
+                "title": e.get("title"),
+                "author": e.get("author"),
+                "goodreads_reviews": e.get("goodreads_reviews"),
+                "current_indie": bool(e.get("indie")),
+                "series": e.get("series"),
+            })
+        prompt = build_indie_audit_prompt(chunk_books)
+        print(f"  indie audit chunk {i + 1}/{n_chunks} ({len(chunk_keys)} books)...")
+        try:
+            raw = call_api_with_tools(client, [{"role": "user", "content": prompt}],
+                                      system)
+            chunk_map = parse_indie_audit_response(raw)
+            proposed.update(chunk_map)
+        except Exception as e:
+            print(f"    Error: {e}. Chunk skipped.")
+        time.sleep(RATE_LIMIT_DELAY)
+
+    flips: list[tuple[str, bool]] = []
+    catalog_keys = set(catalog["entries"])
+    normalized_index = {normalize_key(ck): ck for ck in catalog_keys}
+    for k, val in proposed.items():
+        canon = resolve_canonical_key(k, catalog_keys, normalized_index)
+        if canon is None:
+            continue
+        cur = bool(catalog["entries"][canon].get("indie"))
+        if val is True and not cur:
+            flips.append((canon, True))
+
+    report_path = report_path or Path(INDIE_AUDIT_REPORT)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# Library indie-backfill audit\n\n",
+        f"Candidates: {len(candidates)}; LLM responded for {len(proposed)}.\n",
+        f"Proposed promotions to indie=True: {len(flips)}.\n\n",
+        "## Proposed promotions\n\n",
+        "| Book | Reviews | Series |\n|---|---|---|\n",
+    ]
+    for k, _ in sorted(flips):
+        e = catalog["entries"][k]
+        lines.append(f"| {k} | {e.get('goodreads_reviews')} | {e.get('series') or ''} |\n")
+    report_path.write_text("".join(lines), encoding="utf-8")
+    print(f"  Wrote audit report → {report_path}")
+
+    stats = {
+        "candidates": len(candidates),
+        "responses_received": len(proposed),
+        "proposed_promotions": len(flips),
+        "applied": 0,
+    }
+
+    if apply_changes and flips:
+        for canon, _ in flips:
+            catalog["entries"][canon]["indie"] = True
+        stats["applied"] = len(flips)
+        print(f"  Promoted {len(flips)} entries to indie=True.")
+
+    return stats
+
+
 def authenticate_anthropic_client():
     """Set up the Anthropic client using the Claude Code session ingress token.
 
@@ -1750,9 +2094,22 @@ def main():
                         metavar="PATH",
                         help=f"Output path for Library audit subcommands "
                              f"(default: {LIBRARY_NEW_PATH}). Only #genre, "
-                             f"#series_type, and tags are ever rewritten; "
-                             f"every other column is byte-for-byte identical "
-                             f"to the input.")
+                             f"#series_type, tags, and pub_year are ever "
+                             f"rewritten; every other column is byte-for-byte "
+                             f"identical to the input.")
+    parser.add_argument("--audit-pub-years", action="store_true",
+                        help="LLM-walks every catalog entry and verifies the "
+                             "first-publication year (CSV pubdate is often a "
+                             "republication date). Writes a diff report by "
+                             "default; pass --apply-changes to commit "
+                             "corrections to the catalog and add a pub_year "
+                             "column to Library_new.csv.")
+    parser.add_argument("--audit-indie-flags", action="store_true",
+                        help="LLM-walks books currently NOT tagged indie that "
+                             f"have <={INDIE_REVIEW_THRESHOLD} reviews and "
+                             "promotes verified self-pub origins to "
+                             "indie=True. Writes a diff report by default; "
+                             "pass --apply-changes to commit.")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
@@ -1874,6 +2231,53 @@ def main():
         if not args.apply_changes and stats["proposed_changes"]:
             print(f"  (review report; rerun with --apply-changes to write "
                   f"{args.library_out}.)")
+        sys.exit(0)
+
+    if args.audit_pub_years:
+        # Refresh CSV-authoritative fields (incl. seed pub_year from pubdate)
+        # before the LLM pass — keeps the prompt anchored on current CSV.
+        books_for_sync = load_library(args.library)
+        sync_library_to_catalog(books_for_sync, catalog)
+        client = authenticate_anthropic_client()
+        stats = audit_pub_years(
+            catalog,
+            Path(args.library),
+            Path(args.library_out),
+            client,
+            chunk_size=args.chunk_size or PUB_YEAR_CHUNK_SIZE,
+            apply_changes=args.apply_changes,
+        )
+        print(f"\npub_year audit complete.")
+        print(f"  entries audited        : {stats['entries_audited']}")
+        print(f"  responses received     : {stats['responses_received']}")
+        print(f"  proposed changes       : {stats['proposed_changes']}")
+        print(f"  applied                : {stats['applied']}")
+        print(f"  Library_new.csv cells  : {stats['library_new_csv_changes']}")
+        if args.apply_changes:
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+            print(f"  Wrote → {args.catalog} (+ {args.index})")
+        sys.exit(0)
+
+    if args.audit_indie_flags:
+        books_for_sync = load_library(args.library)
+        sync_library_to_catalog(books_for_sync, catalog)
+        client = authenticate_anthropic_client()
+        stats = audit_indie_flags(
+            catalog,
+            client,
+            chunk_size=args.chunk_size or INDIE_AUDIT_CHUNK_SIZE,
+            apply_changes=args.apply_changes,
+        )
+        print(f"\nindie backfill audit complete.")
+        print(f"  candidates             : {stats['candidates']}")
+        print(f"  responses received     : {stats['responses_received']}")
+        print(f"  proposed promotions    : {stats['proposed_promotions']}")
+        print(f"  applied                : {stats['applied']}")
+        if args.apply_changes:
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+            print(f"  Wrote → {args.catalog} (+ {args.index})")
         sys.exit(0)
 
     books = load_library(args.library)

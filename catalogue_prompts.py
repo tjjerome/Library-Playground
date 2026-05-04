@@ -637,3 +637,159 @@ def parse_library_genre_audit_response(raw: str) -> dict[str, str]:
         except json.JSONDecodeError:
             pass
     return {}
+
+
+# ---------------------------------------------------------------------------
+# pub_year audit — first-publication year, not edition / reprint year
+# ---------------------------------------------------------------------------
+
+PUB_YEAR_AUDIT_SYSTEM = """You auditing first-publication years for a personal-library catalog.
+
+For each book, return the year the WORK was first published. NOT the year of the edition the reader owns. NOT a paperback reissue date. The CSV's pubdate is sometimes a republication / edition / re-release timestamp; cross-check.
+
+Examples:
+* Aldous Huxley's *Brave New World* — return 1932 even if CSV says 2010.
+* Jane Austen's *Pride and Prejudice* — return 1813.
+* Octavia Butler's *Kindred* — return 1979.
+* For series volumes published as a single book later, return the year that volume first appeared in print.
+
+Use web search when uncertain. Set value to null only if you genuinely cannot establish the year.
+
+OUTPUT FORMAT: single JSON object mapping "Title - Author" to integer year (or null), wrapped in ```json. No commentary outside the block.
+
+```json
+{
+  "Brave New World - Aldous Huxley": 1932,
+  "The Martian - Andy Weir": 2011,
+  "Some Obscure Book - Author": null
+}
+```
+"""
+
+
+def build_pub_year_audit_system_prompt() -> str:
+    return PUB_YEAR_AUDIT_SYSTEM
+
+
+def build_pub_year_audit_prompt(books: list[dict]) -> str:
+    """User prompt: title, author, current pub_year guess (from CSV pubdate)."""
+    lines = ["Verify the first-publication year for each book. CSV pubdate is "
+             "shown as the current guess and is unreliable for older works.\n"]
+    for i, b in enumerate(books, 1):
+        ctx = {
+            "title": b.get("title"),
+            "author": b.get("author"),
+            "csv_pub_year_guess": b.get("csv_pub_year_guess"),
+        }
+        lines.append(f"{i}. {b['title']} by {b['author']}\n   Context: {json.dumps(ctx)}")
+    return "\n\n".join(lines)
+
+
+def parse_pub_year_audit_response(raw: str) -> dict[str, int | None]:
+    code_block = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
+    obj: dict = {}
+    if code_block:
+        try:
+            obj = json.loads(code_block.group(1))
+        except json.JSONDecodeError:
+            obj = {}
+    if not obj:
+        brace_start = raw.find("{")
+        brace_end = raw.rfind("}")
+        if brace_start != -1 and brace_end != -1:
+            try:
+                obj = json.loads(raw[brace_start:brace_end + 1])
+            except json.JSONDecodeError:
+                return {}
+    out: dict[str, int | None] = {}
+    for k, v in obj.items():
+        if v is None:
+            out[k] = None
+        elif isinstance(v, int) and 1000 <= v <= 2100:
+            out[k] = v
+        elif isinstance(v, str):
+            try:
+                yi = int(v)
+                if 1000 <= yi <= 2100:
+                    out[k] = yi
+            except ValueError:
+                pass
+    return out
+
+
+# ---------------------------------------------------------------------------
+# indie audit — was the book originally self-published?
+# ---------------------------------------------------------------------------
+
+INDIE_AUDIT_SYSTEM = """You auditing indie / self-publication status of books in a personal-library catalog.
+
+For each book, return TRUE if the book was originally self-published (KDP / Smashwords / Patreon / author website / SPFBO entry / Kickstarter), even if a traditional publisher later picked it up.
+
+Examples that are TRUE:
+* Andy Weir, *The Martian* — originally KDP.
+* Hugh Howey, *Wool* / *Shift* — originally KDP.
+* Anthony Ryan, *Blood Song* — originally KDP, Ace later.
+* Michael J. Sullivan, *Riyria* series — originally indie.
+* Most SPFBO finalists in their original publication.
+* Brandon Sanderson's Kickstarter Secret Projects.
+
+Return FALSE if the book first appeared via any traditional publisher / imprint, big or small (Penguin Random House, HarperCollins, Hachette, Simon & Schuster, Macmillan, Scholastic, Tor, Orbit, Baen, DAW, Angry Robot, Solaris, Subterranean, Tachyon, Small Beer Press, etc.).
+
+Return null only when you genuinely cannot establish origin after web search.
+
+The reader's library has many trad-pub books with low review counts (recent releases, niche subjects, small-press literary fiction) — do NOT default to TRUE just because review count is low. Verify.
+
+OUTPUT FORMAT: single JSON object mapping "Title - Author" to true / false / null, wrapped in ```json. No commentary outside the block.
+
+```json
+{
+  "The Martian - Andy Weir": true,
+  "Some Trad Book - Author": false,
+  "Obscure Title - Unknown Author": null
+}
+```
+"""
+
+
+def build_indie_audit_system_prompt() -> str:
+    return INDIE_AUDIT_SYSTEM
+
+
+def build_indie_audit_prompt(books: list[dict]) -> str:
+    lines = ["Audit indie / self-pub status. Most candidates here have <12k "
+             "Goodreads reviews and the cataloguer was uncertain. Verify each.\n"]
+    for i, b in enumerate(books, 1):
+        ctx = {
+            "title": b.get("title"),
+            "author": b.get("author"),
+            "goodreads_reviews": b.get("goodreads_reviews"),
+            "current_indie": b.get("current_indie"),
+            "series": b.get("series"),
+        }
+        lines.append(f"{i}. {b['title']} by {b['author']}\n   Context: {json.dumps(ctx)}")
+    return "\n\n".join(lines)
+
+
+def parse_indie_audit_response(raw: str) -> dict[str, bool | None]:
+    code_block = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
+    obj: dict = {}
+    if code_block:
+        try:
+            obj = json.loads(code_block.group(1))
+        except json.JSONDecodeError:
+            obj = {}
+    if not obj:
+        brace_start = raw.find("{")
+        brace_end = raw.rfind("}")
+        if brace_start != -1 and brace_end != -1:
+            try:
+                obj = json.loads(raw[brace_start:brace_end + 1])
+            except json.JSONDecodeError:
+                return {}
+    out: dict[str, bool | None] = {}
+    for k, v in obj.items():
+        if v is None:
+            out[k] = None
+        elif isinstance(v, bool):
+            out[k] = v
+    return out
