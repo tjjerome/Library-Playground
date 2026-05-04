@@ -7,13 +7,16 @@ inspection of the live catalog) and catalog-level metadata.
 
 All cataloguer-side fields end up in one of these tables:
 
-  catalog_meta    – single-row catalog metadata (version, dates, totals)
-  books           – per-entry scalar columns
-  taste_signals   – (book_key, polarity, signal) per signal
-  comparable_books– (book_key, comp_key) per comp link
-  content_flags   – (book_key, flag) per flag
-  themes          – (book_key, theme) per theme
-  audit_flags     – per-flag audit record (field/severity/reason/...)
+  catalog_meta         – single-row catalog metadata (version, dates, totals)
+  books                – per-entry scalar columns
+  taste_signals        – (book_key, polarity, signal) per signal
+  comparable_books     – (book_key, comp_key) per comp link
+  content_flags        – (book_key, flag) per flag
+  themes               – (book_key, theme) per theme
+  audit_flags          – per-flag audit record (field/severity/reason/...)
+  taste_vectors        – vector vocabulary (id, label, description)
+  taste_vector_members – which canonical signals/themes belong to each vector
+  book_taste_vectors   – which vectors a book exemplifies (sparse, derived)
 
 Notes on schema choices:
 
@@ -38,6 +41,21 @@ Notes on schema choices:
   on a small number of entries (72 and 1 respectively).  Preserved
   for byte-for-byte JSON round-trip parity; not queried by any
   skill.
+
+* `goodreads_reviews` is QUALITY-IRRELEVANT for the recommender
+  (RECOMPOSITION_PLAN §6.6).  It stays in the schema for audit /
+  debug visibility, but `recommend` and any future scoring code
+  must NOT consult it — review counts are popularity, not quality,
+  and folding them into ranking re-introduces the popularity-as-
+  quality bias the redesign is fixing.  Use `goodreads_rating` as
+  the quality floor instead.
+
+* `book_taste_vectors` is *derived* at export time from the
+  per-book `taste_signals` (positive polarity) and `themes`
+  collections via `book_taste_vector_matches()` from
+  `catalogue_vocab`.  It is SQLite-only — `reconstruct_entry()`
+  does not round-trip it back into the JSON shape, since the JSON
+  catalog is the input and the derivation is a one-way projection.
 """
 
 from __future__ import annotations
@@ -45,8 +63,23 @@ from __future__ import annotations
 import json
 import re
 import sqlite3
+import sys
 from pathlib import Path
 from typing import Any
+
+# `catalogue_vocab` lives at the repo root; allow import whether this module
+# is loaded as `webhelper.sqlite_export` or run directly.
+try:
+    from catalogue_vocab import (  # type: ignore
+        CANONICAL_TASTE_VECTORS,
+        book_taste_vector_matches,
+    )
+except ImportError:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    from catalogue_vocab import (  # type: ignore  # noqa: E402
+        CANONICAL_TASTE_VECTORS,
+        book_taste_vector_matches,
+    )
 
 # ---------------------------------------------------------------------------
 # Normalisation — kept in lock-step with webhelper/librarian_query.py:norm()
@@ -164,6 +197,24 @@ SCHEMA = [
         expected_value TEXT,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
+    """CREATE TABLE taste_vectors (
+        vector_id   TEXT PRIMARY KEY,
+        label       TEXT NOT NULL,
+        description TEXT NOT NULL
+    )""",
+    """CREATE TABLE taste_vector_members (
+        vector_id  TEXT NOT NULL,
+        kind       TEXT NOT NULL,
+        member_id  TEXT NOT NULL,
+        FOREIGN KEY (vector_id) REFERENCES taste_vectors(vector_id)
+    )""",
+    """CREATE TABLE book_taste_vectors (
+        book_key  TEXT NOT NULL,
+        vector_id TEXT NOT NULL,
+        overlap   INTEGER NOT NULL,
+        FOREIGN KEY (book_key)  REFERENCES books(key),
+        FOREIGN KEY (vector_id) REFERENCES taste_vectors(vector_id)
+    )""",
     "CREATE INDEX idx_books_genre              ON books(primary_genre)",
     "CREATE INDEX idx_books_secondary_genre    ON books(secondary_genre)",
     "CREATE INDEX idx_books_series             ON books(series, series_position)",
@@ -176,6 +227,10 @@ SCHEMA = [
     "CREATE INDEX idx_taste_signals_canonical  ON taste_signals(canonical, polarity)",
     "CREATE INDEX idx_themes_canonical         ON themes(canonical)",
     "CREATE INDEX idx_related_series           ON related_series(related_series)",
+    "CREATE INDEX idx_taste_vector_members_vec ON taste_vector_members(vector_id)",
+    "CREATE INDEX idx_taste_vector_members_mem ON taste_vector_members(member_id, kind)",
+    "CREATE INDEX idx_book_taste_vectors_book  ON book_taste_vectors(book_key)",
+    "CREATE INDEX idx_book_taste_vectors_vec   ON book_taste_vectors(vector_id)",
 ]
 
 
@@ -382,10 +437,49 @@ def export(catalog: dict, sqlite_path: Path) -> None:
                     row,
                 )
 
+        _populate_taste_vectors(cur, catalog["entries"])
+
         conn.commit()
         cur.execute("VACUUM")
     finally:
         conn.close()
+
+
+def _populate_taste_vectors(cur: sqlite3.Cursor, entries: dict) -> None:
+    """Insert the taste-vector vocabulary, the vector→signal/theme
+    membership rows, and the per-book vector tags derived via
+    `book_taste_vector_matches()`.  All three tables are populated in
+    one pass after the per-book loop.
+    """
+    for vid, vec in CANONICAL_TASTE_VECTORS.items():
+        cur.execute(
+            "INSERT INTO taste_vectors (vector_id, label, description) "
+            "VALUES (?, ?, ?)",
+            (vid, vec.get("label", vid), vec.get("description", "")),
+        )
+        for sig in vec.get("signals") or []:
+            cur.execute(
+                "INSERT INTO taste_vector_members (vector_id, kind, member_id) "
+                "VALUES (?, 'signal', ?)",
+                (vid, sig),
+            )
+        for th in vec.get("themes") or []:
+            cur.execute(
+                "INSERT INTO taste_vector_members (vector_id, kind, member_id) "
+                "VALUES (?, 'theme', ?)",
+                (vid, th),
+            )
+
+    for key, entry in entries.items():
+        ts = entry.get("taste_signals") or {}
+        positive = list((ts.get("positive") or [])) if isinstance(ts, dict) else []
+        themes = list(entry.get("themes") or [])
+        for vid, overlap in book_taste_vector_matches(positive, themes):
+            cur.execute(
+                "INSERT INTO book_taste_vectors (book_key, vector_id, overlap) "
+                "VALUES (?, ?, ?)",
+                (key, vid, overlap),
+            )
 
 
 # ---------------------------------------------------------------------------

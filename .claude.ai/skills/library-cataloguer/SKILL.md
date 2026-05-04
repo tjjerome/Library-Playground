@@ -7,7 +7,7 @@ description: >
   a tag, add a content flag, queue a reading-log rate update, or save the
   catalog / working files at session end.  Bulk catalog work — full CSV
   re-syncs, multi-book additions, comparables sweeps, entry-point audits
-  — defers to `catalogue.py --sync` on the Claude Code surface, which
+  — defers to `catalogue.py` on the Claude Code surface, which
   handles refresh + new-book cataloguing + audit + git push end-to-end.
 ---
 
@@ -18,7 +18,7 @@ You = librarian catalog hand for **small, in-the-moment edits** — add book rea
 **Bulk + structural catalog work runs on Claude Code surface, not here.** When reader uploads new `Library.csv` or wants re-sync from scratch, point to:
 
 ```bash
-python3 catalogue.py --library Library.csv --sync
+python3 catalogue.py
 ```
 
 That umbrella command refreshes CSV-authoritative fields (pages, goodreads_rating, goodreads_reviews) on every existing entry, catalogues all new books in chunks, runs comparables sync tail, exports SQLite + encoded form, writes sync audit summary, and git-commits + pushes both artefacts to current feature branch so reader can download from GitHub.
@@ -27,7 +27,7 @@ That umbrella command refreshes CSV-authoritative fields (pages, goodreads_ratin
 
 1. **Catalog scope is objective, public, contextual only.** Reader sentiment never enters catalog. Per-book ratings → `/tmp/log_pending_updates.csv`. Reader's personal positives / negatives / triggers → `/tmp/Profile.md` (owned by build / quickref skills).
 2. **Confirm every write with `AskUserQuestion` before touching SQLite.** Never silently mutate.
-3. **Single-book / short-series adds only.** More than 3-5 books in one go → defer to `catalogue.py --sync` on Code surface.
+3. **Single-book / short-series adds only.** More than 3-5 books in one go → defer to `catalogue.py` on Code surface.
 4. **Catalog write cadence: session-end flush only.** In-session edits go to `/tmp/Library_Catalog.sqlite`; don't reach Drive until reader says "save catalog" or session ends.
 5. **Comparable_books reciprocity** — when adding A→B, also add B→A.
 6. **Reading_Log lives in project knowledge — read-only from chat.** In-chat rate updates queue to `/tmp/log_pending_updates.csv`; reader merges into project file via re-upload.
@@ -144,7 +144,7 @@ If reader pastes list of more than 3-5 books, asks to "re-import my library", sa
 > In a Claude Code session on the repo, run:
 >
 > ```
-> python3 catalogue.py --library Library.csv --sync
+> python3 catalogue.py
 > ```
 >
 > That refreshes pages / Goodreads rating / Goodreads reviews on
@@ -215,9 +215,9 @@ needs = list(conn.execute(
 For each entry, surface what known and what uncertain; ask reader to fill gaps. Confirmed corrections → queue + confirm + apply, with `status: complete` once quality bar met. If needs_review queue is dozens of rows, defer:
 
 > "There are <N> entries flagged needs_review.  Easier to clear them
-> in one pass with `python3 catalogue.py --library Library.csv
-> --review-only` on the Code side — that runs them all through Claude
-> in chunks and re-pushes the encoded catalog."
+> in one pass with `python3 catalogue.py --review-only` on the Code
+> side — that runs them all through Claude in chunks and re-pushes
+> the encoded catalog."
 
 ## Session-end file surface (unified)
 
@@ -308,12 +308,12 @@ Next session, triage reads project-knowledge files back from `/mnt/project/` and
 - Render batch checklists (build-batches).
 - Run universal exclusion gate or candidate scoring (helper script).
 - Edit `/tmp/Profile.md` content (build / quickref skills own that).
-- **Bulk catalog work** — defer to `catalogue.py --sync` on Code surface.
-- Entry-point audit (`series_role`, `author_entry_point` backfill) — that's `python3 catalogue.py --audit-entry-points` locally.
-- Comparables sweep — that's `python3 catalogue.py --sync-comparables` locally (already part of `--sync`).
+- **Bulk catalog work** — defer to `catalogue.py` on Code surface.
+- Entry-point audit (`series_role`, `author_entry_point` backfill) — that's `python3 backfill.py --entry-points` locally.
+- Comparables sweep — already part of `python3 catalogue.py` (runs at the tail of every default sync).
 
 ## Hand-offs
 
 - "Build me a list" / "what should I read next" → librarian-build-setup (or -build-batches if build in progress).
 - "Anything like X?" / "is X worth my time?" → librarian-quickref.
-- "I uploaded a new Library.csv" / "re-sync everything" → Code-side `python3 catalogue.py --library Library.csv --sync`.
+- "I uploaded a new Library.csv" / "re-sync everything" → Code-side `python3 catalogue.py`.
