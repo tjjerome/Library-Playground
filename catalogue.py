@@ -1104,25 +1104,171 @@ def canonicalize_themes(catalog: dict, client) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Library.csv genre re-audit — judges the CSV's `#genre` column with the
-# LLM and writes a per-row diff for the operator to review before applying.
+# Library.csv audit pipeline — programmatic + LLM-driven passes that propose
+# revisions to the CSV's mutable columns. Output goes to a separate
+# `Library_new.csv` so the operator can diff/promote at their pace; the
+# source-of-truth `Library.csv` stays untouched.
+#
+# Only three columns are ever rewritten by the audit pipeline: `#genre`,
+# `#series_type`, and `tags`. Everything else round-trips unchanged.
 # ---------------------------------------------------------------------------
 
+LIBRARY_NEW_PATH = "Library_new.csv"
+LIBRARY_SERIES_TYPE_AUDIT_REPORT = "dist/library_series_type_audit.md"
 LIBRARY_GENRE_AUDIT_REPORT = "dist/library_genre_audit.md"
+
+# Mutable columns the audit may rewrite. Anything outside this set must be
+# byte-for-byte identical between Library.csv input and Library_new.csv output.
+LIBRARY_AUDIT_MUTABLE_COLUMNS = ("#genre", "#series_type", "tags")
+
+# Series-type rule anchors. Stormlight Archive (7 books, 5774 pages) → Long;
+# Long Price Quartet (4 books, 1242 pages) → Short.
+LONG_SERIES_PAGE_THRESHOLD = 2500
+LONG_SERIES_MIN_BOOKS = 4
+
+
+def _read_library_raw(csv_path: Path) -> tuple[list[str], list[dict]]:
+    """Read a Library.csv-shaped file, preserving column order and raw values."""
+    with open(csv_path, encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        fieldnames = list(reader.fieldnames or [])
+        raw_rows = list(reader)
+    return fieldnames, raw_rows
+
+
+def _write_library_csv(out_path: Path, fieldnames: list[str], rows: list[dict]) -> None:
+    """Write rows to `out_path` in Library.csv's exact byte style: BOM,
+    unquoted header, QUOTE_ALL body, `\\n` line endings."""
+    import io as _io
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(out_path, "wb") as f:
+        f.write("﻿".encode("utf-8"))
+        f.write((",".join(fieldnames) + "\n").encode("utf-8"))
+        buf = _io.StringIO()
+        w = csv.DictWriter(
+            buf, fieldnames=fieldnames,
+            quoting=csv.QUOTE_ALL, lineterminator="\n",
+        )
+        for row in rows:
+            w.writerow(row)
+        f.write(buf.getvalue().encode("utf-8"))
+
+
+def _load_audit_base(library_path: Path, out_path: Path) -> tuple[list[str], list[dict]]:
+    """Read the audit base layer.
+
+    If `out_path` (default Library_new.csv) already exists, read from there
+    so successive audits stack. Otherwise read from `library_path`. The
+    operator promotes Library_new.csv to Library.csv when satisfied; until
+    then the audits accumulate against the proposal file.
+    """
+    if out_path.exists():
+        print(f"  Reading from existing {out_path} (stacking on prior audit).")
+        return _read_library_raw(out_path)
+    return _read_library_raw(library_path)
+
+
+def audit_library_series_type(
+    library_path: Path,
+    out_path: Path,
+    *,
+    report_path: Path | None = None,
+) -> dict:
+    """Programmatic audit of `#series_type`. Deterministic — no LLM.
+
+    Rule: <4 books OR <2500 total pages → Short Series; ≥4 books AND
+    ≥2500 pages → Long Series. Series with 1-3 books in the library are
+    left alone (insufficient sample to override the cataloguer's call).
+
+    Reads from Library.csv (or Library_new.csv if it exists), writes to
+    `out_path`, and produces a markdown report at `report_path`.
+    """
+    from collections import defaultdict
+
+    fieldnames, rows = _load_audit_base(library_path, out_path)
+
+    by_series: dict[str, list[dict]] = defaultdict(list)
+    for row in rows:
+        s = (row.get("series") or "").strip()
+        if s:
+            by_series[s].append(row)
+    stats_per_series: dict[str, dict] = {}
+    for s, books in by_series.items():
+        pages = 0
+        for b in books:
+            try:
+                pages += int(float(b.get("#pages") or 0))
+            except (TypeError, ValueError):
+                pass
+        stats_per_series[s] = {"count": len(books), "pages": pages}
+
+    flips: dict[tuple[str, str], list[str]] = defaultdict(list)
+    changed_rows = 0
+    for row in rows:
+        s = (row.get("series") or "").strip()
+        if not s:
+            continue
+        st = stats_per_series[s]
+        if st["count"] < LONG_SERIES_MIN_BOOKS:
+            continue
+        new = (
+            "Long Series" if st["pages"] >= LONG_SERIES_PAGE_THRESHOLD
+            else "Short Series"
+        )
+        cur = (row.get("#series_type") or "").strip()
+        if cur != new:
+            row["#series_type"] = new
+            changed_rows += 1
+            flips[(cur, new)].append(s)
+
+    _write_library_csv(out_path, fieldnames, rows)
+    print(f"  Wrote {changed_rows} #series_type changes → {out_path}")
+
+    report_path = report_path or Path(LIBRARY_SERIES_TYPE_AUDIT_REPORT)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# Library.csv #series_type re-audit\n\n",
+        f"Rule: <{LONG_SERIES_MIN_BOOKS} books OR "
+        f"<{LONG_SERIES_PAGE_THRESHOLD} total pages → Short Series; "
+        f">={LONG_SERIES_MIN_BOOKS} books AND "
+        f">={LONG_SERIES_PAGE_THRESHOLD} pages → Long Series.\n",
+        "Singletons (1-3 books in library) are left alone — "
+        "insufficient sample.\n",
+        "Anchor: Stormlight Archive → Long; Long Price Quartet → Short.\n\n",
+        f"Total row changes: {changed_rows} of {len(rows)}.\n\n",
+        "## Changes\n",
+    ]
+    for (cur, new), names in sorted(flips.items(), key=lambda x: -len(x[1])):
+        distinct = sorted(set(names))
+        lines.append(
+            f"\n### {cur} → {new} "
+            f"({len(names)} rows, {len(distinct)} series)\n\n"
+        )
+        for s in distinct:
+            st = stats_per_series[s]
+            lines.append(f"- {s} ({st['count']} books, {st['pages']} pages)\n")
+    report_path.write_text("".join(lines), encoding="utf-8")
+    print(f"  Wrote audit report → {report_path}")
+
+    return {
+        "rows_total": len(rows),
+        "rows_changed": changed_rows,
+        "series_changed": sum(len(set(names)) for names in flips.values()),
+    }
 
 
 def audit_library_genres(
-    csv_path: Path,
+    library_path: Path,
+    out_path: Path,
     client,
     *,
     chunk_size: int = DEFAULT_CHUNK_SIZE,
     apply_changes: bool = False,
     report_path: Path | None = None,
 ) -> dict:
-    """Walk Library.csv and ask the LLM to verify each row's `#genre`.
-
-    By default writes a diff report only — operator reviews and re-runs
-    with `apply_changes=True` to commit the revised genre column to CSV.
+    """LLM-driven `#genre` audit. Walks every row, asks the model for the
+    best primary genre label, and writes a diff report. Only commits the
+    proposals to `out_path` when `apply_changes=True`.
     """
     from catalogue_prompts import (
         build_library_genre_audit_system_prompt,
@@ -1130,9 +1276,10 @@ def audit_library_genres(
         parse_library_genre_audit_response,
     )
 
-    rows = load_library(str(csv_path))
+    fieldnames, raw_rows = _load_audit_base(library_path, out_path)
+
     targets = []
-    for row in rows:
+    for row in raw_rows:
         targets.append({
             "title": row.get("title"),
             "author": row.get("authors"),
@@ -1151,18 +1298,18 @@ def audit_library_genres(
         prompt = build_library_genre_audit_prompt(chunk)
         print(f"  Genre audit chunk {i + 1}/{n_chunks} ({len(chunk)} rows)...")
         try:
-            raw = call_api_with_tools(client, [{"role": "user", "content": prompt}],
-                                      system)
+            raw = call_api_with_tools(
+                client, [{"role": "user", "content": prompt}], system,
+            )
             chunk_map = parse_library_genre_audit_response(raw)
             proposed.update(chunk_map)
         except Exception as e:
             print(f"    Error: {e}. Chunk skipped.")
         time.sleep(RATE_LIMIT_DELAY)
 
-    # Build the diff report.
-    diffs = []
+    diffs: list[tuple[str, str, str]] = []
     unchanged = 0
-    for row in rows:
+    for row in raw_rows:
         key = book_key(row.get("title", ""), row.get("authors", ""))
         new = proposed.get(key)
         if new is None:
@@ -1177,7 +1324,8 @@ def audit_library_genres(
     report_path.parent.mkdir(parents=True, exist_ok=True)
     lines = [
         "# Library.csv #genre re-audit\n\n",
-        f"Audit covered {len(rows)} rows; LLM responded for {len(proposed)}.\n",
+        f"Audit covered {len(raw_rows)} rows; "
+        f"LLM responded for {len(proposed)}.\n",
         f"Unchanged: {unchanged}. Proposed changes: {len(diffs)}.\n\n",
         "## Proposed changes\n\n",
         "| Book | Current | Proposed |\n|---|---|---|\n",
@@ -1188,20 +1336,13 @@ def audit_library_genres(
     print(f"  Wrote audit report → {report_path}")
 
     stats = {
-        "rows_audited": len(rows),
+        "rows_audited": len(raw_rows),
         "responses_received": len(proposed),
         "proposed_changes": len(diffs),
         "applied": 0,
     }
 
     if apply_changes and diffs:
-        # Rewrite Library.csv with the proposed genre values.
-        import io as _io
-        # Re-read raw rows so we keep all columns and ordering intact.
-        with open(csv_path, encoding="utf-8-sig") as f:
-            reader = csv.DictReader(f)
-            fieldnames = reader.fieldnames
-            raw_rows = list(reader)
         change_set = {k: new for k, _cur, new in diffs}
         applied = 0
         for row in raw_rows:
@@ -1209,21 +1350,9 @@ def audit_library_genres(
             if key in change_set:
                 row["#genre"] = change_set[key]
                 applied += 1
-        # Preserve the file's original style (BOM, unquoted header, QUOTE_ALL
-        # body, \n endings) — same shape as the series_type audit writer.
-        with open(csv_path, "wb") as f:
-            f.write("﻿".encode("utf-8"))
-            f.write((",".join(fieldnames) + "\n").encode("utf-8"))
-            buf = _io.StringIO()
-            w = csv.DictWriter(
-                buf, fieldnames=fieldnames,
-                quoting=csv.QUOTE_ALL, lineterminator="\n",
-            )
-            for row in raw_rows:
-                w.writerow(row)
-            f.write(buf.getvalue().encode("utf-8"))
+        _write_library_csv(out_path, fieldnames, raw_rows)
         stats["applied"] = applied
-        print(f"  Applied {applied} genre changes to {csv_path}.")
+        print(f"  Applied {applied} #genre changes → {out_path}")
 
     return stats
 
@@ -1527,14 +1656,26 @@ def main():
     parser.add_argument("--canonicalize-themes", action="store_true",
                         help="Same as --canonicalize-signals, for themes / "
                              "themes_canonical.")
+    parser.add_argument("--audit-library-series-type", action="store_true",
+                        help="Programmatic re-audit of Library.csv "
+                             "#series_type column using the page-count rule. "
+                             "Writes a diff report and the revised rows to "
+                             "Library_new.csv (never to Library.csv).")
     parser.add_argument("--audit-library-genres", action="store_true",
                         help="LLM-walks Library.csv and proposes a primary "
                              "genre per row. Writes a diff report by default; "
                              "pass --apply-changes to commit the proposal "
-                             "to the CSV.")
+                             "to Library_new.csv (never to Library.csv).")
     parser.add_argument("--apply-changes", action="store_true",
-                        help="With --audit-library-genres: rewrite "
-                             "Library.csv with the LLM's proposed genres.")
+                        help="With --audit-library-genres: write the LLM's "
+                             "proposed genres into Library_new.csv.")
+    parser.add_argument("--library-out", default=LIBRARY_NEW_PATH,
+                        metavar="PATH",
+                        help=f"Output path for Library audit subcommands "
+                             f"(default: {LIBRARY_NEW_PATH}). Only #genre, "
+                             f"#series_type, and tags are ever rewritten; "
+                             f"every other column is byte-for-byte identical "
+                             f"to the input.")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
@@ -1628,10 +1769,22 @@ def main():
         print(f"\n  Wrote → {args.catalog} (+ {args.index})")
         sys.exit(0)
 
+    if args.audit_library_series_type:
+        stats = audit_library_series_type(
+            Path(args.library),
+            Path(args.library_out),
+        )
+        print(f"\nLibrary series-type audit complete.")
+        print(f"  rows total    : {stats['rows_total']}")
+        print(f"  rows changed  : {stats['rows_changed']}")
+        print(f"  series flipped: {stats['series_changed']}")
+        sys.exit(0)
+
     if args.audit_library_genres:
         client = authenticate_anthropic_client()
         stats = audit_library_genres(
             Path(args.library),
+            Path(args.library_out),
             client,
             chunk_size=args.chunk_size,
             apply_changes=args.apply_changes,
@@ -1642,7 +1795,8 @@ def main():
         print(f"  proposed changes   : {stats['proposed_changes']}")
         print(f"  applied            : {stats['applied']}")
         if not args.apply_changes and stats["proposed_changes"]:
-            print("  (review report; rerun with --apply-changes to commit.)")
+            print(f"  (review report; rerun with --apply-changes to write "
+                  f"{args.library_out}.)")
         sys.exit(0)
 
     books = load_library(args.library)
