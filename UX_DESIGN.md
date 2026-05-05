@@ -93,14 +93,15 @@ These are the rules every concrete UX decision below resolves against.
    open a chat, say something library-shaped, and the system routes.
 2. **Setup is one sitting, ≤30 minutes after the one-time bulk catalogue.**
    Anything longer is a UX failure — the spec must adapt, not the user.
-3. **The reader never sees jargon mid-session.** "Phase 0", "ledger",
-   "deep cut", "build-id", "window.storage", "artifact published" — all
-   stay internal. The setup doc is allowed brief mentions only when the
-   reader has to take a click action that depends on the term.
+3. **The reader never sees jargon mid-session.** "Phase 0", "batch",
+   "ledger", "deep cut", "build-id", "window.storage", "artifact
+   published", "stretch picks", "73 of 100" — all stay internal. The
+   setup doc is allowed brief mentions only when the reader has to
+   take a click action that depends on the term.
 4. **State recovery is the reader's responsibility *only* when something
    failed.** Happy path: triage skill detects in-progress build state
-   and offers to resume by name ("you were 6 batches into the horror
-   genre, want me to pick up there?"), no phrase to remember.
+   and offers to resume by name ("you were partway through your horror
+   picks, want me to pick up there?"), no phrase to remember.
 5. **Failure modes degrade gracefully, never silently.** Drive
    disconnect, missing SQLite, corrupted state, usage limits — all
    produce a plain-English explanation and a one-step recovery path.
@@ -131,7 +132,7 @@ These are the rules every concrete UX decision below resolves against.
 │       ├── librarian-triage/
 │       ├── librarian-quickref/
 │       ├── librarian-build-setup/
-│       ├── librarian-build-batches/
+│       ├── librarian-build/
 │       ├── librarian-build-finish/
 │       └── library-cataloguer/
 ├── artifacts/
@@ -411,15 +412,17 @@ Reading_List.md, and routes:
    first if the reader prefers that shape.
 
 **Then** the build-setup skill takes over (handed off automatically;
-the reader does not pick it). It runs Phase 0 (unfinished series),
-the taste interview, the goals conversation, the wishlist pass — all
-the same shape as the Code spec but with the picker artifact for
-multi-select wishlist adoption.
+the reader does not pick it). It runs the unfinished-series gate,
+the taste cartography pass (clusters the reader's log into 8-12
+durable taste vectors with example titles), the goals-as-floors
+conversation, and the wishlist pass.
 
-**Session A ends when:** The reader is told "you've got a profile, a
-goals table, and a Phase 0 result captured. When you're ready to start
-the batches, open a new chat and say 'let's start the batches' — or
-just open a new chat and the triage skill will offer to resume."
+**Session A ends when:** The reader is told "profile's down, the
+threads I'm working from are sketched out, goals are set, series
+we're catching up on are sorted. Ready to hear about some books?" —
+and the build skill picks up in the same chat (no "open a new chat"
+ritual). A checkpoint of the working files is surfaced for
+re-upload, but the conversation continues.
 
 The phrase is documented but not required to memorize — see "Resuming
 a build" below for why.
@@ -447,19 +450,19 @@ sub-cases:
 #### B.1 — In-progress build detected
 
 ```
-"You're 6 batches into the horror build I started with you on April
-12 — 23 books in the pool, classic floor met, indie floor at 4 of 8.
-Want to pick up where we left off, or start something new?"
+"You're 23 books into the build I started with you on April 12 —
+last round leaned horror. Want to pick up where we left off, or
+start something new?"
 ```
 
-(`AskUserQuestion`: Resume the horror build / Start fresh / Quick
+(`AskUserQuestion`: Resume the build / Start fresh / Quick
 single-book question / Other.)
 
-The "April 12" date is human-readable, not a build-id. The "23 books
-in the pool" is information the reader actually wants. The phrase
-"horror build" is paraphrased from the in-progress phase metadata
-(`current_phase: "Phase 2"`, `current_batch_genre: "Horror"`) — the
-internal vocabulary stays internal.
+The "April 12" date is human-readable, not a build-id. The phrase
+"last round leaned horror" is paraphrased from the most recent
+session_notes entry — the internal vocabulary stays internal. The
+build no longer counts batches; picks accumulate conversationally
+and the count of picks comes from `Reading_List.md` itself.
 
 #### B.2 — No in-progress build
 
@@ -502,7 +505,7 @@ shaped openers. Within a session, the active skill keeps control until
 its work is done — then it hands back to triage with a brief "where
 to next?" prompt if more work is plausibly pending.
 
-**Resuming a build mid-session:** The build-batches skill stays active
+**Resuming a build mid-session:** The build skill stays active
 across multiple turns. The reader does not need to say "still in the
 build" or anything like it; the skill keeps state and continues until
 the reader changes shape (single-book query, or "I'm done for now").
@@ -830,8 +833,8 @@ into the UX above.
 5. **Code execution sandbox network access varies.** No part of the
    architecture above requires arbitrary HTTPS fetches. Catalog
    comes via Drive (text-wrapped), helper comes bundled in skill,
-   web search for upcoming releases (Phase 3) goes through Claude's
-   native `WebSearch` tool.
+   web search for upcoming releases goes through Claude's native
+   `WebSearch` tool (build-finish's first closing pass).
 6. **Mutable-state split** (refactor 2026-05-02 second pass): Drive
    narrows to one binary file; Profile + Reading_List move to their
    own published artifacts; Reading_Log moves to project knowledge.
