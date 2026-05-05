@@ -7,7 +7,7 @@ description: >
   conversationally — varying shape, never running a fixed batch size.
   Hands off to librarian-build-finish when the list reaches working
   range. Triggers on a "ready to hear about some books" affirmative
-  from build-setup, "continue the build", "more <genre> picks", "more
+  from build-setup, "continue the build", "more GENRE picks", "more
   picks", "next picks", or any mid-build opener with
   /tmp/build_state.json present. Also refine-mode entry when triage
   routed here.
