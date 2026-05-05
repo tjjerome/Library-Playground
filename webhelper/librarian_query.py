@@ -59,7 +59,9 @@ DEFAULT_LIST = "Reading_List.md"
 DEFAULT_PROFILE = "Profile.md"
 DEFAULT_BUILD_STATE = "build_state.json"
 
-VARIANCE_MODES = ("balanced", "focused", "surprising")
+VARIANCE_MODES = ("balanced", "focused", "surprising", "adjacent")
+ADJACENT_MIN_OVERLAP = 1
+ADJACENT_MAX_OVERLAP = 2
 QUALITY_FLOOR = 3.8
 DEFAULT_N = 15
 MIN_N = 12
@@ -405,6 +407,25 @@ def vectors_matched(signals: set[str], themes: set[str], vectors: list[dict]) ->
     return out
 
 
+def vector_overlap_count(signals: set[str], themes: set[str], v: dict) -> int:
+    """Total signal+theme intersection size between a candidate and one
+    vector.  Used by adjacency mode to distinguish partial matches
+    (1-2 overlap) from central matches (3+ overlap)."""
+    return len(signals & vector_signal_set(v)) + len(themes & vector_theme_set(v))
+
+
+def partial_vector_match(signals: set[str], themes: set[str], v: dict,
+                          min_overlap: int = ADJACENT_MIN_OVERLAP,
+                          max_overlap: int = ADJACENT_MAX_OVERLAP) -> dict | None:
+    """Return {vector, overlap_count} when the candidate's overlap with
+    vector v sits inside [min_overlap, max_overlap]; else None.  Edge
+    of the cluster, not its centre."""
+    n = vector_overlap_count(signals, themes, v)
+    if min_overlap <= n <= max_overlap:
+        return {"vector": v["name"], "overlap_count": n}
+    return None
+
+
 # ---------------------------------------------------------------------------
 # Time-bucketed log anchors
 # ---------------------------------------------------------------------------
@@ -428,7 +449,7 @@ def _parse_date(s: str) -> datetime | None:
 
 def _bucket_for(d: datetime | None, now: datetime) -> str:
     if d is None:
-        return "3+yrs"
+        return "undated"
     delta_days = (now - d).days
     if delta_days <= 365:
         return "<=12mo"
@@ -449,7 +470,7 @@ def compute_log_anchors(log: list[dict], conn: sqlite3.Connection,
     bucket_weight maps bucket → normalized weight (sum=3.0)."""
     now = now or datetime.now(timezone.utc).replace(tzinfo=None)
     anchors = []
-    counts = {"<=12mo": 0, "12-36mo": 0, "3+yrs": 0}
+    counts = {"<=12mo": 0, "12-36mo": 0, "3+yrs": 0, "undated": 0}
     for r in log:
         rating = parse_rating(r.get("My Rating"))
         if rating is None or rating < 4.0:
@@ -751,12 +772,27 @@ def _candidate_matched_floors(c: dict, floors: list[dict]) -> list[str]:
     return out
 
 
+def _stratum_label_adjacent(name: str) -> str:
+    return f"adjacent:{name}"
+
+
 def assign_strata(pool: list[dict], underused: list[dict],
                   at_risk_floors: list[dict],
-                  active_vectors: list[dict]) -> dict[str, list[dict]]:
+                  active_vectors: list[dict],
+                  variance: str = "balanced") -> dict[str, list[dict]]:
     """Each candidate goes into every matching stratum (vector or
     floor), and into 'residual' if it matches neither.  A candidate
-    can appear in multiple strata; the allocator handles dedup."""
+    can appear in multiple strata; the allocator handles dedup.
+
+    Adjacent mode overrides this layout: candidates with partial
+    overlap [ADJACENT_MIN_OVERLAP, ADJACENT_MAX_OVERLAP] against an
+    active vector go into 'adjacent:<vector>' strata.  Central matches
+    (overlap > max) and pure misses both fall through to residual.  No
+    underused/floor strata in adjacent mode — the goal is edge picks,
+    not gap-fillers."""
+    if variance == "adjacent":
+        return _assign_strata_adjacent(pool, active_vectors)
+
     strata: dict[str, list[dict]] = {
         _stratum_label_vector(v["name"]): [] for v in underused
     }
@@ -788,6 +824,52 @@ def assign_strata(pool: list[dict], underused: list[dict],
             placed = True
         if not placed:
             strata["residual"].append(c)
+    return strata
+
+
+def _assign_strata_adjacent(pool: list[dict],
+                             active_vectors: list[dict]) -> dict[str, list[dict]]:
+    """Adjacency-mode strata: per-vector buckets of partial-overlap
+    candidates only.  Central matches drop to residual along with
+    pure misses so the model sees them only if the adjacency strata
+    are too thin to fill the slot count."""
+    strata: dict[str, list[dict]] = {
+        _stratum_label_adjacent(v["name"]): [] for v in active_vectors
+    }
+    strata["residual"] = []
+
+    for c in pool:
+        sigs = c.get("_signals", set())
+        thms = c.get("_themes", set())
+        c["_matched_vectors"] = vectors_matched(sigs, thms, active_vectors)
+        c["_matched_underused"] = []
+        c["_matched_floors"] = []
+
+        # Pick the strongest partial-match vector for the candidate;
+        # store on _adjacency so render_candidate can surface it.
+        best: dict | None = None
+        for v in active_vectors:
+            m = partial_vector_match(sigs, thms, v)
+            if m is None:
+                continue
+            if best is None or m["overlap_count"] < best["overlap_count"]:
+                best = m
+
+        forced = bool(c.get("_force_residual"))
+        if best is None or forced:
+            c["_is_residual"] = True
+            c["_adjacency"] = None
+            if forced or not c["_matched_vectors"]:
+                strata["residual"].append(c)
+            # Central matches (overlap > max) are intentionally dropped
+            # in adjacent mode — they live in residual only when they
+            # also lack any vector overlap (impossible given pool gate),
+            # so the effect is to filter them out entirely.
+            continue
+
+        c["_is_residual"] = False
+        c["_adjacency"] = best
+        strata[_stratum_label_adjacent(best["vector"])].append(c)
     return strata
 
 
@@ -844,6 +926,11 @@ def _allocate_slots(stratum_names: list[str], n: int, mode: str,
             weights[s] = 1.0
         if "residual" in stratum_names:
             weights["residual"] = 2.0
+    elif mode == "adjacent":
+        # Adjacency strata share weight evenly; residual stays low
+        # so it only fills slots when adjacency strata are thin.
+        for s in stratum_names:
+            weights[s] = 1.5 if s.startswith("adjacent:") else 0.5
     else:
         # balanced
         for s in stratum_names:
@@ -919,7 +1006,8 @@ def stage2_sample(pool: list[dict], conn: sqlite3.Connection, *,
                   n: int, variance: str, lean: str | None,
                   rng: random.Random) -> tuple[list[dict], dict]:
     """Stratified sample.  Returns (selected, stratum_breakdown)."""
-    strata = assign_strata(pool, underused, at_risk, active_vectors)
+    strata = assign_strata(pool, underused, at_risk, active_vectors,
+                            variance=variance)
     stratum_names = list(strata.keys())
 
     # Compute anchor scoring inputs.
@@ -1087,6 +1175,7 @@ def render_candidate(c: dict, underused_names: set[str],
             "vectors": fills_vectors,
             "floors": fills_floors,
             "is_residual": bool(c.get("_is_residual")),
+            "adjacency": c.get("_adjacency"),
         },
         "warnings": _apply_warnings(c, profile_notes),
     }
@@ -1521,6 +1610,164 @@ def cmd_unfinished_series(args, conn: sqlite3.Connection) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Subcommand: compare
+# ---------------------------------------------------------------------------
+
+def _fit_verdict(anchor_strength: float) -> str:
+    """anchor_strength_for caps at 1.5.  Map the spread to three
+    coarse verdicts the model can quote in chat."""
+    if anchor_strength >= 0.9:
+        return "strong"
+    if anchor_strength >= 0.4:
+        return "medium"
+    return "weak"
+
+
+def _shared_overlap(a_sigs: set[str], a_thms: set[str],
+                     b_sigs: set[str], b_thms: set[str]) -> dict:
+    shared_sigs = sorted(a_sigs & b_sigs)
+    shared_thms = sorted(a_thms & b_thms)
+    union = (a_sigs | a_thms) | (b_sigs | b_thms)
+    overlap = (a_sigs & b_sigs) | (a_thms & b_thms)
+    jaccard = (len(overlap) / len(union)) if union else 0.0
+    return {
+        "shared_signals": shared_sigs,
+        "shared_themes": shared_thms,
+        "overlap_count": len(overlap),
+        "jaccard": round(jaccard, 4),
+    }
+
+
+def cmd_compare(args, conn: sqlite3.Connection) -> None:
+    add_entry = lookup_by_pair(conn, args.add, args.add_author or "")
+    if not add_entry:
+        die(f"add candidate not found in catalog: "
+            f"{args.add!r} by {args.add_author!r}", code=3)
+
+    add_sigs = positive_signals_for(conn, add_entry["key"])
+    add_thms = themes_for(conn, add_entry["key"])
+
+    list_pairs = list_set(args.reading_list)
+    list_picks = resolve_list_picks(conn, list_pairs)
+    if not list_picks:
+        die("reading list resolved to zero catalog entries; nothing "
+            "to compare against", code=3)
+
+    state = load_build_state(args.build_state)
+    actives = active_vectors_of(state)
+    active_signal_pool = {s for v in actives for s in vector_signal_set(v)}
+    active_theme_pool = {t for v in actives for t in vector_theme_set(v)}
+
+    log = load_log(args.log)
+    log_authors = {norm(r.get("authors", "")) for r in log if r.get("title")}
+    anchors, bucket_weight = compute_log_anchors(
+        log, conn, active_signal_pool, active_theme_pool)
+    favorite_keys = favorite_log_keys(conn, log)
+
+    # Add candidate's own match reasoning + fit verdict.
+    add_anchor_strength, add_matched_anchors = anchor_strength_for(
+        add_sigs, add_thms, anchors, bucket_weight)
+    add_comp_n = _comp_overlap_count(conn, add_entry["key"], favorite_keys)
+    add_match = {
+        "anchor_log_entries": add_matched_anchors,
+        "matched_vectors": vectors_matched(add_sigs, add_thms, actives),
+        "matched_themes": sorted(add_thms),
+        "comp_overlap_count": add_comp_n,
+        "entry_point_ok": passes_entry_point_gate(add_entry, log_authors),
+        "rating": add_entry.get("goodreads_rating"),
+        "anchor_strength": round(add_anchor_strength, 3),
+    }
+
+    # Score each list pick on two axes.
+    scored_picks = []
+    for p in list_picks:
+        p_sigs = p.get("_signals", set())
+        p_thms = p.get("_themes", set())
+        overlap = _shared_overlap(add_sigs, add_thms, p_sigs, p_thms)
+        p_anchor, _ = anchor_strength_for(
+            p_sigs, p_thms, anchors, bucket_weight)
+        scored_picks.append({
+            "key": p["key"],
+            "title": p.get("title"),
+            "author": p.get("author"),
+            "pages": p.get("pages"),
+            "primary_genre": p.get("primary_genre"),
+            "shared_signals": overlap["shared_signals"],
+            "shared_themes": overlap["shared_themes"],
+            "add_candidate_overlap": overlap["jaccard"],
+            "_overlap_count": overlap["overlap_count"],
+            "anchor_strength": round(p_anchor, 3),
+        })
+
+    # High-overlap rank: thematically redundant with the add candidate.
+    high_overlap = sorted(
+        [p for p in scored_picks if p["_overlap_count"] > 0],
+        key=lambda p: (-p["_overlap_count"], -p["add_candidate_overlap"],
+                       p["anchor_strength"]),
+    )
+    # Low-confidence rank: weakest log-anchor resonance, gated by the
+    # median so a pick with strong anchors never surfaces as "weak fit".
+    if scored_picks:
+        anchor_vals = sorted(p["anchor_strength"] for p in scored_picks)
+        mid = anchor_vals[len(anchor_vals) // 2]
+    else:
+        mid = 0.0
+    low_confidence = sorted(
+        [p for p in scored_picks if p["anchor_strength"] < mid],
+        key=lambda p: p["anchor_strength"],
+    )
+
+    n = max(args.n, 1)
+    half_high = (n + 1) // 2  # at least one of each when both have material
+    half_low = n - half_high
+
+    seen: set[str] = set()
+    out: list[dict] = []
+
+    def take(pool: list[dict], reason: str, slots: int) -> None:
+        for p in pool:
+            if slots <= 0:
+                break
+            if p["key"] in seen or p["key"] == add_entry["key"]:
+                continue
+            seen.add(p["key"])
+            entry = {k: v for k, v in p.items() if not k.startswith("_")}
+            entry["reason"] = reason
+            out.append(entry)
+            slots -= 1
+
+    take(high_overlap, "high_overlap", half_high)
+    take(low_confidence, "low_confidence", half_low)
+
+    # Reflow leftover slots: if one axis was thin, fill from the other.
+    remaining = n - len(out)
+    if remaining > 0:
+        for pool, reason in ((low_confidence, "low_confidence"),
+                              (high_overlap, "high_overlap")):
+            take(pool, reason, remaining)
+            remaining = n - len(out)
+            if remaining <= 0:
+                break
+
+    output = {
+        "add_candidate": {
+            "key": add_entry["key"],
+            "title": add_entry.get("title"),
+            "author": add_entry.get("author"),
+            "pages": add_entry.get("pages"),
+            "primary_genre": add_entry.get("primary_genre"),
+            "indie": add_entry.get("indie"),
+            "classic": add_entry.get("classic"),
+            "match_reasoning": add_match,
+            "fit_verdict": _fit_verdict(add_anchor_strength),
+        },
+        "swap_suggestions": out,
+        "list_size": len(list_picks),
+    }
+    print(json.dumps(output, ensure_ascii=False, indent=2))
+
+
+# ---------------------------------------------------------------------------
 # Subcommand: norm
 # ---------------------------------------------------------------------------
 
@@ -1579,6 +1826,20 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--min-avg", type=float, default=3.5)
     sp.add_argument("--min-last", type=float, default=3.0)
     sp.set_defaults(func=cmd_unfinished_series, needs_catalog=True)
+
+    sp = sub.add_parser("compare")
+    sp.add_argument("--catalog", default=DEFAULT_CATALOG)
+    sp.add_argument("--log", default=DEFAULT_LOG)
+    sp.add_argument("--profile", default=None)
+    sp.add_argument("--reading-list", default=DEFAULT_LIST)
+    sp.add_argument("--build-state", required=True)
+    sp.add_argument("--add", required=True,
+                    help="title of the book the reader wants to add")
+    sp.add_argument("--add-author", default="",
+                    help="author of the add candidate (improves lookup)")
+    sp.add_argument("--n", type=int, default=3,
+                    help="number of swap suggestions to return")
+    sp.set_defaults(func=cmd_compare, needs_catalog=True)
 
     return p
 
