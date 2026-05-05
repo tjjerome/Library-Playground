@@ -151,7 +151,8 @@ python3 webhelper/librarian_query.py recommend \
 Returns `candidates[]` with `match_reasoning` (anchor log entries,
 matched vectors, matched themes, comp-overlap count, rating),
 `fills_gap` (which underused vector or at-risk floor this candidate
-covers, plus `is_residual` for surprising-mode picks), and `warnings`.
+covers, `is_residual` for surprising-mode picks, `adjacency` for
+adjacent-mode picks with `{vector, overlap_count}`), and `warnings`.
 
 `match_reasoning` is **fact source, not pitch text.** Never quote
 catalog summary fields, vector names, or `match_reasoning` language
@@ -166,6 +167,27 @@ Default 6.
 `--lean` skews sampling. Use it when the conversation has named a
 direction ("more historical fiction", "lean indie") — soft ×2 bias on
 that stratum.
+
+`--variance` switches the sampling shape. Defaults to `balanced`.
+Other values:
+
+- `focused` — concentrates picks on one underused vector (model
+  picks; rng-tied). Use when the reader's named a direction strong
+  enough that breadth would feel diffusing.
+- `surprising` — guarantees a residual slot (vector-misses with
+  quality floor) for picks that share zero overlap with the active
+  vectors. Use when the conversation invites genuine left-field.
+- `adjacent` — surfaces picks that overlap *partially* with an
+  active vector (1-2 signal/theme matches, not 3+). These sit at
+  the edge of a taste cluster instead of in the middle of it.
+  Pitch them honestly: "here's one adjacent rather than central to
+  your usual." Reader passing on an adjacent pick doesn't mean
+  anything went wrong — the pick was a deliberate stretch. **Fire
+  this every so often, not every round.** Goal is occasional
+  breadth, not constant disorientation. Model decides when. Cues
+  that often fit: a stretch of central picks landing softly, the
+  reader expressing mild restlessness without naming a direction,
+  a reflection beat where breadth feels low.
 
 ### Pitch shape varies with the moment
 
@@ -200,8 +222,11 @@ Every pitch grounds in the reader's actual log or stated taste. If
 the model can't write a personal-first clause for a candidate, it's
 not a strong fit — pull it. The `match_reasoning.anchor_log_entries`
 field gives the model the rated titles to anchor on; use the **time
-bucket** (12mo / 12-36mo / 3+yrs) as a cue to pull from older
-favourites when the recent ones are oversaturated.
+bucket** (`<=12mo` / `12-36mo` / `3+yrs` / `undated`) as a cue to
+pull from older favourites when the recent ones are oversaturated.
+`undated` carries the same weight as `3+yrs` — it's a real read,
+just from before the reader's tracking habit. Often the strongest
+durable-taste anchors. Pull from it freely.
 
 ### Page count + entry-point + warnings
 
@@ -296,28 +321,38 @@ build_state["taste_vectors"].append({
 })
 ```
 
-## Reflection — trigger-based, not counter-based
+## Reflection — model-led, not trigger-fired
 
-Reflection beats fire on **explicit triggers**, not a clock:
+Reflection is the model's call. The build benefits from occasional
+pauses where the librarian steps back and reads the list with the
+reader — not on a timer, not on a count, not fired by a single
+signal.
 
-- **Rejection cluster.** ≥3 picks rejected in the same cluster with
-  no intervening accepts. `recommend.probe` returns a non-null shape
-  when this is live; use it as the trigger.
-- **Floor near saturation.** Indie or classic floor within 1 pick of
-  meeting; or any genre floor within 1 of meeting and the reader
-  hasn't been told the build's closing in on it.
-- **Reader pivots twice in the same direction.** Two correction
-  events with overlapping `kind` (both about length, both about
-  tone, both about indie distribution) — fire reflection regardless
-  of pick count.
-- **Long-stretch backstop.** 25+ picks since the last reflection, no
-  other trigger firing — sanity-check breadth. This is the *only*
-  count-based trigger and it exists to catch smooth builds where
-  nothing's gone wrong but a pause is still useful.
+The kinds of moments that often deserve a pause:
+
+- A stretch of rejected picks that all share something — same tone,
+  same length bucket, same register.
+- The reader's energy shifting — shorter replies, repeated
+  hesitation, or a clear pivot in stated taste.
+- A floor edging close to satisfaction (or close to leaving slack).
+- The build going so smoothly that breadth feels worth checking
+  before more picks pile up.
+- A correction event that looks like the second instance of a
+  pattern.
+
+These are cues, not rules. Read the conversation; pause when the
+pause earns its turn. Reflection beats are rarer than pitches but
+always prose, always turn-ending, always followed by a profile
+write on the reply.
 
 `status` exposes `floors_at_risk`, `vectors_underused`, and
-`rejection_clusters`; reflection triggers read those plus
-`build_state.events`.
+`rejection_clusters` (informational — recent rejection signature in
+the events log). `recommend.probe` returns the same rejection
+signature. Both are *inputs* to the model's call, not flags that
+fire reflection automatically. All rejected picks (including
+adjacent-mode declines) log to `build_state.events` as
+`type: "rejected"`; the model uses the events list as one input
+among many.
 
 Reflection beat shape:
 
@@ -326,9 +361,9 @@ Reflection beat shape:
 2. **Open prose question.** "What's working about these?", "Anything
    I'm misreading?", "Is the tone still right?". **Turn-ending.**
 3. **Profile write same turn on reply** — silent append to
-   `/tmp/Profile.md` under `## Mid-build observations`. The reflection
-   itself is the only chat surface; no announcement that a reflection
-   is happening.
+   `/tmp/Profile.md` under `## Mid-build observations`. The
+   reflection itself is the only chat surface; no announcement that
+   a reflection is happening.
 
 ## Status — actionable only, not a dashboard
 
