@@ -2086,6 +2086,11 @@ def run_sync_export(
     _encode_file(sqlite_path, encoded_path)
     print(f"  Wrote encoded catalog → {encoded_path}")
 
+    from sync_csv_tags import sync_tags_from_catalog as _sync_csv_tags
+    library_new = Path("Library_new.csv")
+    print(f"\nSyncing Library_new.csv tags from catalog:")
+    _sync_csv_tags(catalog, library_new)
+
     write_sync_audit(
         audit_path=audit_path,
         catalog=catalog,
