@@ -104,7 +104,7 @@ side.
   `Reading_List.md` content via `seed` prop.  No storage.
 - `.claude.ai/skills/<name>/SKILL.md` — six skills:
   `librarian-triage`, `librarian-quickref`, `librarian-build-setup`,
-  `librarian-build-batches`, `librarian-build-finish`,
+  `librarian-build`, `librarian-build-finish`,
   `library-cataloguer`.
 - `Makefile` — `make skills` zips each into `dist/skills/<name>.zip`,
   bundling the three webhelper modules into each.
@@ -122,42 +122,53 @@ conn.row_factory = sqlite3.Row
 row = conn.execute("SELECT * FROM books WHERE key = ?", (key,)).fetchone()
 ```
 
-For candidate generation, exclusion checks, lookup, profile-append, and
-the shown-ledger, route through `webhelper/librarian_query.py`:
+For candidate generation, status, series scope, and the
+unfinished-series gate, route through `webhelper/librarian_query.py`:
 
 ```bash
-python3 webhelper/librarian_query.py candidates \
+python3 webhelper/librarian_query.py recommend \
     --catalog Library_Catalog.sqlite \
     --log Reading_Log.csv \
+    --profile Profile.md \
     --reading-list Reading_List.md \
-    --ledger - --genre Horror --batch-size 4 --deep-cut-slot < ledger.json
+    --build-state build_state.json \
+    --genre Horror --n 6
 ```
 
-Ledger is stdin/stdout — the model owns persistence in
-`/tmp/build_state.json` (carried across sessions via project knowledge).
+The helper exposes four subcommands (`recommend`, `status`,
+`series-fit`, `unfinished-series`) plus `norm` for shared use by the
+cataloguer. Picks live exclusively in `Reading_List.md`; the model
+owns rejection events, scope decisions, and taste-vector edits in
+`build_state.json`.
 
-## Hard invariants — librarian-build-batches/SKILL.md is canonical
+## Hard invariants — librarian-build/SKILL.md is canonical
 
-The eight-plus-three librarian invariants live in
-`.claude.ai/skills/librarian-build-batches/SKILL.md`.  Hard rules
+The eleven librarian invariants live in
+`.claude.ai/skills/librarian-build/SKILL.md`.  Hard rules
 non-negotiable:
 
-1. Universal exclusion gate (helper-owned).
-2. Core target = 100 fixed.
+1. Universal exclusion gate (helper-owned via `recommend`).
+2. Working range = 100-110 before stretch picks; 110-125 after. Genre
+   goals are floors that guide direction, not numbers to hit.
 3. Conservative author-entry-point fallback.
-4. Phase 0 unfinished-series gate before any genre batch.
-5. Per-batch deep-cut floor; slot randomised; never labelled.
-6. Open prose questions are turn-ending.
-7. Anti-jargon contract — no internal vocabulary in chat, picker UI,
+4. Series scope is a hard gate — `series-fit` runs before the next
+   pitch round whenever a confirmed pick is part of a multi-book
+   series.
+5. Open prose questions are turn-ending.
+6. Anti-jargon contract — no internal vocabulary in chat, picker UI,
    Reading_List.md, or Profile.md.
-8. Deep-cut silence — render identically across all batch positions.
-9. `/tmp/Profile.md` per-edit write — silent; consolidated diff
+7. `/tmp/Profile.md` per-edit write — silent; consolidated diff
    surfaces at session end alongside the catalog download.
-10. `/tmp/Reading_List.md` per-edit write — user-visible; one-line
-    acknowledgement on each confirmed pick.
-11. Default batch-confirmation surface is native
-    `AskUserQuestion(multiSelect)`.  React picker artifact is opt-in
-    for genuinely richer per-book context.
+8. `/tmp/Reading_List.md` per-edit write — user-visible; one-line
+   acknowledgement on each confirmed pick.
+9. Pick state lives in `/tmp/Reading_List.md` only; `build_state`
+   carries goals, floors, vectors, events, scope decisions, rejected
+   candidates — never selected picks.
+10. `AskUserQuestion` is not the default turn shape. Use it for
+    genuine multi-axis decisions; most pitches go reader → prose
+    reply.
+11. Process narration is structurally absent — `status` returns only
+    what's actionable for the next decision.
 12. Catalog flush is manual: cataloguer encodes in sandbox at session
     end and presents a download link; the reader replaces their Drive
     file.  Drive connector's write path is intentionally unused.
@@ -167,7 +178,7 @@ non-negotiable:
     project knowledge to carry into the next session.
 
 Translation map for reader-facing language is at the bottom of
-`librarian-build-batches/SKILL.md`.
+`librarian-build/SKILL.md`.
 
 ## Testing
 

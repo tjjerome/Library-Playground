@@ -1,7 +1,7 @@
 ---
 name: librarian-triage
 description: >
-  Route skill for reader book questions on claude.ai chat. Triggers: recommend, reading list, taste match, "what should I read next", "anything like X", "is X worth my time", log upload, catalog update. No recommendation work — discover project files (Reading_Log.csv, optional Profile.md / Reading_List.md / build_state.json), copy to /tmp, pull catalog from Drive, freshness check, refine-vs-fresh if list exists, hand off to librarian-quickref / librarian-build-setup / librarian-build-batches / librarian-build-finish / library-cataloguer.
+  Route skill for reader book questions on claude.ai chat. Triggers: recommend, reading list, taste match, "what should I read next", "anything like X", "is X worth my time", log upload, catalog update. No recommendation work — discover project files (Reading_Log.csv, optional Profile.md / Reading_List.md / build_state.json), copy to /tmp, pull catalog from Drive, freshness check, refine-vs-fresh if list exists, hand off to librarian-quickref / librarian-build-setup / librarian-build / librarian-build-finish / library-cataloguer.
 ---
 
 # librarian-triage — entry-point router
@@ -12,7 +12,7 @@ Never do recommendation, catalog write, batch selection. Job end when downstream
 
 ## Hard invariants
 
-1. **Anti-jargon.** Reader never see "triage", "build state", "encoded catalog", internal terms. Translate at chat layer. See map in `.claude.ai/skills/librarian-build-batches/SKILL.md`.
+1. **Anti-jargon.** Reader never see "triage", "build state", "encoded catalog", internal terms. Translate at chat layer. See map in `.claude.ai/skills/librarian-build/SKILL.md`.
 2. **Existing Profile / Reading_List in project knowledge is honoured, not overwritten.** Reader has Profile.md / Reading_List.md → seed `/tmp/Profile.md` and `/tmp/Reading_List.md`. Refine-vs-fresh prompt before mutation if Reading_List non-empty.
 3. **Single-book queries do NOT hear about in-progress build state.** Resume offer fire only on ambiguous or build-shaped openers.
 
@@ -168,7 +168,7 @@ Options:
 ```
 
 Routes:
-- "Refine" → `librarian-build-batches` with `/tmp/Reading_List.md` in place. Skip Phase 0 / interview / goals (already in list).
+- "Refine" → `librarian-build` with `/tmp/Reading_List.md` in place. Skip the unfinished-series gate, taste cartography, and goals (already in list).
 - "Start fresh" → archive seed (`mv /tmp/Reading_List.md /tmp/Reading_List.md.<ISO>`), reset to empty seed, route to `librarian-build-setup`.
 
 ## Routing
@@ -179,13 +179,13 @@ Match opener shape, ask `AskUserQuestion` only when genuinely unclear. Deferred 
 |---|---|
 | "Anything like X?" / "Is X worth my time?" / "What do you know about X?" | librarian-quickref |
 | "Build me a reading list" / "what should I read next year" / opener with no in-progress state | librarian-build-setup (or refine-flow when existing Reading_List has content) |
-| "Continue the build" / "more picks" / "ready to hear about some books" / opener while `/tmp/build_state.json` exists with `current_phase` < complete | librarian-build-batches (or -build-finish if Phase ≥ 3) |
+| "Continue the build" / "more picks" / "ready to hear about some books" / opener while `/tmp/build_state.json` exists and is not complete | librarian-build (or -build-finish if `session_notes` contains `core_complete`) |
 | "Add this book" / "fix this entry" / "I bought X" / "save the catalog" | library-cataloguer |
 | Genuinely ambiguous | one `AskUserQuestion` with the four routes above as options |
 
 ### Resume-offer rule
 
-If `/tmp/build_state.json` exists AND `current_phase` ≠ `"complete"` AND opener is build-shaped or ambiguous → surface resume offer:
+If `/tmp/build_state.json` exists AND `session_notes` does NOT contain a `build_complete` entry AND opener is build-shaped or ambiguous → surface resume offer:
 
 > "You're <N> books into the build I started with you on
 > <human-readable date> — <short summary, e.g. 'partway through your
@@ -202,7 +202,7 @@ Phrases reader can type. Document in `SETUP.md`:
 
 | Phrase | What triage does |
 |---|---|
-| `where are we` | Read `/tmp/build_state.json`; render summary (phase, pool count, floors, last genre). |
+| `where are we` | Hand off to `librarian-build` and run `webhelper/librarian_query.py status`; surface only what's actionable (floors at risk, underused vectors, rejection clusters). Count of picks comes from `Reading_List.md` rows when the reader explicitly asks. |
 | `save catalog` | Hand off to library-cataloguer; re-encode SQLite, present download link. Reader replaces Drive file. |
 | `save my files` | Hand off to library-cataloguer session-end; present `Reading_List.md`, `Profile.md`, `build_state.json`, pending log updates as downloads. |
 | `continue` | Resume prior flow after recovery prompt. |
@@ -218,6 +218,6 @@ Hand-off verbal: say which skill take over so reader see skill chip change. e.g.
 > "Good — let's start with the interview."  (librarian-build-setup takes over.)
 
 > "Picking up where we left off — partway through your horror picks."
-> (librarian-build-batches takes over.)
+> (librarian-build takes over.)
 
 Never invoke build mechanics. Doubt → ask one question, hand off.

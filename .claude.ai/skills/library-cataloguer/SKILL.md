@@ -221,7 +221,7 @@ For each entry, surface what known and what uncertain; ask reader to fill gaps. 
 
 ## Session-end file surface (unified)
 
-Other skills (build-setup, build-batches, build-finish, quickref) hand off here at session pause / end. Reader explicit triggers: "save catalog" / "save my files" / "I'm done" / "that's all for today" / "save those" — or any session-ending turn after edits.
+Other skills (build-setup, build, build-finish, quickref) hand off here at session pause / end. Reader explicit triggers: "save catalog" / "save my files" / "I'm done" / "that's all for today" / "save those" — or any session-ending turn after edits.
 
 Cataloguer **never writes to Drive directly**. Surface every changed working file in `/mnt/user-data/outputs/` and render one chat message with all download links. Reader downloads + replaces in project knowledge / Drive.
 
@@ -305,7 +305,7 @@ Next session, triage reads project-knowledge files back from `/mnt/project/` and
 
 ## Boundaries — what cataloguer does NOT do
 
-- Render batch checklists (build-batches).
+- Render the open-pitch loop (librarian-build).
 - Run universal exclusion gate or candidate scoring (helper script).
 - Edit `/tmp/Profile.md` content (build / quickref skills own that).
 - **Bulk catalog work** — defer to `catalogue.py --sync` on Code surface.
@@ -314,6 +314,6 @@ Next session, triage reads project-knowledge files back from `/mnt/project/` and
 
 ## Hand-offs
 
-- "Build me a list" / "what should I read next" → librarian-build-setup (or -build-batches if build in progress).
+- "Build me a list" / "what should I read next" → librarian-build-setup (or -build if build in progress).
 - "Anything like X?" / "is X worth my time?" → librarian-quickref.
 - "I uploaded a new Library.csv" / "re-sync everything" → Code-side `python3 catalogue.py --library Library.csv --sync`.
