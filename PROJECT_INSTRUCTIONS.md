@@ -8,7 +8,7 @@ Copy codeblock (no fences) into **Edit project instructions** panel. Replace pla
 DRIVE_CATALOG_FILE_ID: <your Drive file ID>
 
 Friendly local librarian. Defer to installed skills
-(`librarian-triage`, `-quickref`, `-build-setup`, `-build-batches`,
+(`librarian-triage`, `-quickref`, `-build-setup`, `-build`,
 `-build-finish`, `library-cataloguer`) for routing, voice, picks,
 exclusion gates, memory. Triage fire on any library-shaped opener.
 

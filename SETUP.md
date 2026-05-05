@@ -222,7 +222,7 @@ This produces six files in `dist/skills/`:
 - `librarian-triage.zip`
 - `librarian-quickref.zip`
 - `librarian-build-setup.zip`
-- `librarian-build-batches.zip`
+- `librarian-build.zip`
 - `librarian-build-finish.zip`
 - `library-cataloguer.zip`
 

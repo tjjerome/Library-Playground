@@ -127,7 +127,7 @@ accordingly.  You don't pick the mode; the librarian does.
 
 | Your ask | What happens |
 |---|---|
-| "What should I read next?" / "Build me a 1-year reading list" | Full workflow — triage routes to build-setup → build-batches → build-finish across multiple sessions. |
+| "What should I read next?" / "Build me a 1-year reading list" | Full workflow — triage routes to build-setup → build → build-finish across multiple sessions. |
 | "Anything like *Between Two Fires*?" / "Is *Hyperion* worth my time?" | Single-book mode — focused 1-3 paragraph answer, no full workflow. |
 | "Tweak my list" / "swap X for Y" / "add 3 more nonfiction picks" | Refine mode — works off your existing `Reading_List.md`. |
 | "Add this book" / "I bought X" / "fix this entry" | Cataloguer takes over.  Big asks bounce to `catalogue.py --sync`. |
@@ -157,15 +157,20 @@ build time, with `title_short` + `title_normalized` precomputed so
 the runtime helper indexes subtitle-truncation cases in SQL.
 `webhelper/encoded_codec.py` wraps the binary SQLite as gzip+base64
 text (~5MB at 5,000 books) so the Drive connector can read it.
-`webhelper/librarian_query.py` ports the Code helper to SQLite + a
-stdin/stdout ledger.  Six skills under `.claude.ai/skills/` encode
-the workflow phases (triage routes + does file discovery + freshness
-checks + refine-vs-fresh; quickref answers single questions;
-build-setup runs the interview + Phase 0; build-batches owns
-Phases 1+2 with native `AskUserQuestion(multiSelect)` as the default
-batch surface; build-finish closes Phases 3+4+5 and surfaces working
-files for re-upload; library-cataloguer owns SQLite writes, queues
-reading-log rate updates, and bounces bulk work to
+`webhelper/librarian_query.py` exposes four subcommands —
+`recommend` (constraint-satisfaction + vector-spread sampling),
+`status` (actionable-only, no dashboard), `series-fit`, and
+`unfinished-series` — plus a shared `norm` for the cataloguer.  Six
+skills under `.claude.ai/skills/` shape the workflow (triage routes
++ does file discovery + freshness checks + refine-vs-fresh; quickref
+answers single questions; build-setup runs the unfinished-series
+gate, taste cartography, and goals-as-floors intake; build owns the
+open-pitch loop conversationally — pitch shape varies, picks
+accumulate, reflection beats fire on triggers, taste vectors stay
+living; build-finish closes with upcoming releases, the full-list
+walk-through, and a five-to-start-with capstone, then surfaces
+working files for re-upload; library-cataloguer owns SQLite writes,
+queues reading-log rate updates, and bounces bulk work to
 `catalogue.py --sync`).  `make skills` zips each one with the three
 helper modules bundled in.  Three React artifacts
 (`artifacts/batch-picker.jsx`, `profile.jsx`, `reading-list.jsx`) are
@@ -189,7 +194,7 @@ For the design rationale and failure-mode handling, see
     librarian-triage/SKILL.md
     librarian-quickref/SKILL.md
     librarian-build-setup/SKILL.md
-    librarian-build-batches/SKILL.md
+    librarian-build/SKILL.md
     librarian-build-finish/SKILL.md
     library-cataloguer/SKILL.md
 artifacts/
@@ -256,28 +261,34 @@ and say "log refreshed".
 ## Hard invariants
 
 These survive even when no skill prompt is visible.  Full spec at
-`.claude.ai/skills/librarian-build-batches/SKILL.md`.  Non-negotiable:
+`.claude.ai/skills/librarian-build/SKILL.md`.  Non-negotiable:
 
-1. Universal exclusion gate — every candidate clears
-   already-read AND on-list AND shown-ledger.
-2. Core target = 100 fixed.  Mid-build cap reductions trigger
-   redistribution.
+1. Universal exclusion gate — every candidate clears already-read AND
+   on-list AND rejected-this-session.  Owned by `recommend`.
+2. Working range = 100-110 books before stretch picks; 110-125 after.
+   Genre goals are floors that guide direction, not numbers to hit.
+   Indie / classic floors stay floors.
 3. Conservative author entry-point fallback — non-Standalone book by
    an unread author requires `series_position == "Book 1"` (or
    catalog-driven entry-point fields).
-4. Phase 0 unfinished-series gate before any genre batch.
-5. Per-batch deep-cut floor; slot randomised; never labelled.
-6. Open prose questions are turn-ending.
-7. Anti-jargon contract — no internal vocabulary in chat, picker UI,
+4. Series scope is a hard gate — `series-fit` runs before the next
+   pitch round whenever a confirmed pick is part of a multi-book
+   series.
+5. Open prose questions are turn-ending.
+6. Anti-jargon contract — no internal vocabulary in chat, picker UI,
    `Reading_List.md`, or `Profile.md`.
-8. Deep-cut silence — render identically across all batch positions.
-9. `/tmp/Profile.md` per-edit write — silent in chat; consolidated
+7. `/tmp/Profile.md` per-edit write — silent in chat; consolidated
    diff at session end.
-10. `/tmp/Reading_List.md` per-edit write — user-visible
-    one-line acknowledgement.
-11. Default batch-confirmation surface is native
-    `AskUserQuestion(multiSelect)`; React picker is opt-in for
-    cases needing richer per-book context.
+8. `/tmp/Reading_List.md` per-edit write — user-visible one-line
+   acknowledgement.
+9. Pick state lives in `/tmp/Reading_List.md` only; `build_state`
+   carries goals, floors, vectors, events, scope decisions, rejected
+   candidates — never selected picks.
+10. `AskUserQuestion` is not the default turn shape.  Use it for
+    genuine multi-axis decisions; most pitches go reader → prose
+    reply.
+11. Process narration is structurally absent — `status` returns only
+    what's actionable for the next decision.
 12. Catalog flush is manual: cataloguer presents a download link at
     session end; the reader replaces the Drive file.
 13. Working state surfaces via `present_files` at session end;
@@ -286,17 +297,19 @@ These survive even when no skill prompt is visible.  Full spec at
 ## When the librarian isn't doing what you want
 
 - **Books you've already read leaking through:** the exclusion gate
-  uses `webhelper/librarian_query.py` with subtitle-prefix indexing
-  via the SQLite `title_short` column.  If a known-read book
-  surfaces, run `python3 webhelper/librarian_query.py is-read --title
-  "..." --author "..." --log Reading_Log.csv` to debug.
-- **Internal jargon in chat:** Invariant 7 forbids this.  Push back
-  if you see "Phase 0", "ledger", "deep cut", "Bk 1", "build state",
-  "encoded catalog".  The librarian should re-pitch in plain
-  language.
+  is owned by `webhelper/librarian_query.py recommend` with
+  subtitle-prefix indexing via the SQLite `title_short` column.  If a
+  known-read book surfaces, drop into a Python REPL and check the
+  pair-set directly: `from webhelper.librarian_query import
+  load_log, already_read_set; pairs = already_read_set(load_log("Reading_Log.csv"))`.
+- **Internal jargon in chat:** Invariant 6 forbids this.  Push back
+  if you see "Phase 0", "batch", "ledger", "deep cut", "Bk 1", "build
+  state", "encoded catalog", "stretch picks", "73 of 100".  The
+  librarian should re-pitch in plain language.
 - **Same genre cycling without learning:** after 3 rejections in the
-  same cluster, the helper sets `probe_recommended: true` and the
-  librarian must pause-and-probe before generating another batch.
+  same cluster, `recommend.probe` returns a non-null shape and the
+  librarian must run a reflection beat — observation + open prose
+  question, turn-ending — before pitching again.
 - **Profile.md not evolving:** Profile is live memory, written
   same-turn at every reflection beat / probe / surprise / correction.
   If `/tmp/Profile.md` hasn't changed mid-build, ask the librarian to
