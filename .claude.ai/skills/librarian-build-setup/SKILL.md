@@ -148,8 +148,10 @@ python3 webhelper/librarian_query.py unfinished-series \
 ```
 
 Returns JSON list: series rated ≥4.0, no completion flag, unread next
-book in catalog. Surface in chat one line per series (last-book /
-next-book / ratings) — prose, not a checklist.
+book in catalog. The gate considers every rated log entry regardless
+of whether it has a `Last Date Read` value — older undated reads
+count the same as recent ones. Surface in chat one line per series
+(last-book / next-book / ratings) — prose, not a checklist.
 
 For each entry, `AskUserQuestion`:
 
@@ -195,6 +197,15 @@ Read `PROJECT_LOG` end-to-end — not just recents, not just top-rated.
 Old 5★s carry as much weight as recent 5★s; the recommender is
 explicitly built to avoid recency drift, so cartography mirrors that.
 
+**Undated entries are real reads.** Rows with a blank `Last Date Read`
+are older reads from before the reader's tracking habit — durable
+older taste, not noise. Cluster them alongside dated entries. The
+helper's `compute_log_anchors` buckets them as `"undated"` (separate
+from `"3+yrs"`) with the same weight, so anchors carry a visible
+`bucket: "undated"` flag downstream. Often these books *are* the
+load-bearing vectors: they survived years on the shelf without a
+re-rate event. Treat them as such.
+
 ### 2b. Cluster ≥4★ titles into 8-12 distinct vectors
 
 Each vector is a *bundle of taste*, not a genre. Pull from the
@@ -210,7 +221,9 @@ A vector has:
   ("tone-vector-3"); avoid bare genres ("fantasy").
 - **`example_titles`** — 2-4 titles from the reader's ≥4★ log
   spanning years (not all from the last 12 months). Year span is what
-  makes the vector durable.
+  makes the vector durable. Undated rows count as "older" for the
+  spread requirement — pull them in when a vector would otherwise
+  read as recency-only.
 - **`canonical_signals`** — list of canonical taste-signal IDs the
   vector corresponds to. Pulled from the SQLite `taste_signals` table
   for the example titles. These drive `recommend`'s overlap math.

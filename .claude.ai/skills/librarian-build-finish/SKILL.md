@@ -191,10 +191,83 @@ Core + upcoming both in scope. Four checks, in order:
 1. **Borderline removals.** Anything to drop? Series scope
    right-sizing happens here too (cut book 4 from a four-book
    commitment that turned out to be load-bearing in the wrong way).
-2. **Missed picks.** Reader names additions; check inline against
-   `Reading_List.md` and `Reading_Log.csv`; if it's a series, run
-   `series-fit`; if it's an author with no entry-point flag, surface
-   the warning.
+2. **Revisit gate.** The conversational "anything we should revisit"
+   turn. Open prose, turn-ending:
+
+   > "Anything you're realising should be on the list that didn't
+   > make it? A book you almost mentioned, an author you've been
+   > turning over, anything you saw on the walk-through and
+   > hesitated about?"
+
+   For each addition the reader names, run `compare` to get a fit
+   verdict on the add candidate plus a few swap suggestions:
+
+   ```bash
+   python3 webhelper/librarian_query.py compare \
+       --catalog /tmp/Library_Catalog.sqlite \
+       --log $PROJECT_LOG \
+       --profile /tmp/Profile.md \
+       --reading-list /tmp/Reading_List.md \
+       --build-state /tmp/build_state.json \
+       --add "<title>" --add-author "<author>" \
+       --n 3
+   ```
+
+   Returns:
+
+   ```json
+   {
+     "add_candidate": {
+       "key": "...", "title": "...", "author": "...",
+       "match_reasoning": { ... },
+       "fit_verdict": "strong | medium | weak"
+     },
+     "swap_suggestions": [
+       {
+         "key": "...", "title": "...", "author": "...",
+         "reason": "high_overlap | low_confidence",
+         "shared_signals": ["..."], "shared_themes": ["..."],
+         "anchor_strength": 0.4,
+         "add_candidate_overlap": 0.85
+       }
+     ],
+     "list_size": 102
+   }
+   ```
+
+   Surface the fit verdict honestly in prose:
+
+   - **strong** — say so plainly, walk through which log titles it
+     resonates with.
+   - **medium** — balanced read, name the strengths and the gaps.
+   - **weak** — say so directly with the reasoning ("this is more
+     atmospheric than what your log usually rewards"). Don't
+     pretend.
+
+   Then, when `swap_suggestions` is non-empty, present comparison
+   in direct prose — not a table. Per suggestion: name it, why it's
+   the swap target (overlap-heavy means thematic redundancy with the
+   add; low-confidence means the existing pick has weaker log
+   resonance), what the reader gives up.
+
+   `AskUserQuestion`:
+
+   ```
+   Q: "How do you want to handle <add candidate>?"
+   Options:
+     - "Swap [drop suggestion 1] for <add candidate>"
+     - "Swap [drop suggestion 2] for <add candidate>"   (when N≥2)
+     - "Add <add candidate> without dropping anything"
+     - "Skip <add candidate> — talked me out of it"
+     - "Other"
+   ```
+
+   Reader's choice → edit `/tmp/Reading_List.md` in place, one-line
+   ack, append the decision to `build_state.session_notes`. Loop on
+   "anything else?" prose until reader closes the gate. Series
+   additions still run `series-fit` for scope; entry-point warnings
+   surface as before.
+
 3. **Distribution check.** Compute actual distribution against goals
    from `build_state.goals`. Show a small prose summary, not a table
    ("you wanted to lean historical fiction; we're at 9 against the
@@ -228,89 +301,83 @@ Core + upcoming both in scope. Four checks, in order:
 Each correction → edit `/tmp/Reading_List.md` in place, one-line ack
 in chat, log the edit to `session_notes`.
 
-## Five to start with — the capstone
+## Closing turn
 
-Walk-through closes → prescriptive call: **5 books from the final
-list, chosen for diversity (pace, length, genre, tone) and fit (the
-strongest personal pitches in the whole build).**
+Walk-through closes → single chat message that does everything:
+top-pick recommendations, one highlighted "read this tonight",
+profile diff, catalog hand-off if needed, present_files. **No
+follow-up question, no `AskUserQuestion`, turn ends.** The earlier
+"five to start with" + send-off + cleanup were three separate
+sections; this is one.
 
-This is the one place in the build where the librarian's conviction
-shows fully — five books picked deliberately, each with the best
-personal-anchor framing the model can write.
+### State changes that go with the turn
 
-### Render via single AskUserQuestion
+Before composing the message:
 
-```
-Q: "Lock these 5 as your start-here?"
-Options:
-  - "Lock these 5 (Recommended)"
-  - "Swap one of them — which?"
-  - "Pick 5 myself"
-  - "Other"
-```
+1. **Pick the top picks** — short list of the strongest places to
+   start from the locked list. No fixed count; model decides how
+   many feel right (typically 3-6) based on what's on the list and
+   which contexts the reader cares about. Anchor to *different*
+   reading contexts where it helps (audio commute, single sitting,
+   slower evening read). Choose one of these as the highlighted
+   pick.
+2. **Pin top picks at the top of `/tmp/Reading_List.md`** under
+   `## Where to start` (replacing any prior pin block; this section
+   stays a cross-reference, not a removal — entries also remain in
+   their genre sections):
 
-Each entry's pitch in the chat prelude = **strongest personal-first
-description** in the whole build. Anchor titles, tone register, why
-this book is where to start — fresh language each time, no template.
+   ```markdown
+   ## Where to start
 
-### Five-to-start in /tmp/Reading_List.md
+   | Title | Author | Pages | Why it's for you |
+   | ... |
+   ```
 
-The five live at the **top** of `/tmp/Reading_List.md` in their own
-section:
-
-```markdown
-## Five to start with
-
-| Title | Author | Pages | Why it's for you |
-| ... |
-```
-
-These entries also remain in their genre sections — the top section
-is a cross-reference, not a removal.
-
-## Final state cleanup + present files
-
-After the five lock:
-
-1. **Final read-back of `/tmp/Reading_List.md` and `/tmp/Profile.md`**
-   to confirm everything's on disk.
-2. **Mark `/tmp/build_state.json` complete** — append
+3. **Mark `/tmp/build_state.json` complete** — append
    `{"kind": "build_complete", "at": <ISO>}` to `session_notes`.
-3. **Session-end summary turn — first time the reader sees the
-   profile diff.** Single chat message, in order:
-
-   - **Reading list:** one line — "Your reading list now has <N>
-     books, with five locked as start-here. See the file I'm
-     surfacing below."
-   - **Profile diff:** consolidated summary of every profile write
-     this session, sectioned by what changed. Concrete:
-
-     > "Added under 'Negative indicators': graphic-horror ceiling,
-     > unreliable-narrator avoidance. Added under 'Tone / pacing':
-     > prefers ~400pp anchors, accepts up to 700pp for late-series
-     > payoff. New taste vector: 'monastic isolation' (split from the
-     > original 'epic fantasy' cluster on three rejections)."
-
-     This is the **first chat-side view of profile changes** — they
-     were silent during the build. Also surface any
-     `profile_write_miss` entries from `session_notes` and capture
-     missed signal now.
-   - **Catalog changes (if any):** if the cataloguer ran writes this
-     session, hand off to `library-cataloguer`'s manual-download flow
-     now. Reader gets the encoded download link same turn. Skip if
-     no catalog writes.
-
-4. **Surface updated files via `present_files`.** Copy /tmp working
-   files into `/mnt/user-data/outputs/` and present for download:
+4. **Copy /tmp working files** to `/mnt/user-data/outputs/`:
 
    ```python
    import shutil
-   shutil.copy("/tmp/Reading_List.md",   "/mnt/user-data/outputs/Reading_List.md")
-   shutil.copy("/tmp/Profile.md",        "/mnt/user-data/outputs/Profile.md")
-   shutil.copy("/tmp/build_state.json",  "/mnt/user-data/outputs/build_state.json")
+   shutil.copy("/tmp/Reading_List.md",  "/mnt/user-data/outputs/Reading_List.md")
+   shutil.copy("/tmp/Profile.md",       "/mnt/user-data/outputs/Profile.md")
+   shutil.copy("/tmp/build_state.json", "/mnt/user-data/outputs/build_state.json")
    ```
 
-   Then render markdown links:
+### The message
+
+Single chat turn. Order:
+
+1. **Reading list line.** "Your list now has <N> books. See the
+   file I'm surfacing below."
+2. **Top picks paragraph.** Short prose paragraph naming the
+   handful of strongest places to start. No template, no table —
+   write each title with one or two sentences anchored to a
+   reading context where it earns its place ("for the audio
+   commute…", "for a single-sitting read…", "for slower evenings
+   when the long-burn payoff is the point…"). Vary the framing.
+3. **One highlighted pick.** Single book pulled out of the top
+   picks paragraph as "if you read one tonight, this is it."
+   Strongest pitch in the whole build: personal anchor + plot
+   hook + why-this-one-tonight. Fresh language, no template.
+4. **Profile diff.** Consolidated summary of every silent profile
+   write this session, sectioned by what changed. First chat-side
+   view of the edits. Concrete:
+
+   > "Added under 'Negative indicators': graphic-horror ceiling,
+   > unreliable-narrator avoidance. Added under 'Tone / pacing':
+   > prefers ~400pp anchors, accepts up to 700pp for late-series
+   > payoff. New taste vector: 'monastic isolation' (split from
+   > the original 'epic fantasy' cluster after a few rejections)."
+
+   Surface any `profile_write_miss` entries from `session_notes`
+   and capture missed signal now.
+5. **Catalog changes (if any).** If the cataloguer ran writes this
+   session, hand off to `library-cataloguer`'s manual-download flow
+   inline — reader gets the encoded download link same turn. Skip
+   the section entirely if no catalog writes.
+6. **`present_files` block.** Markdown links for the three working
+   files:
 
    > "Updated files for you to re-upload to project knowledge:
    >
@@ -321,17 +388,8 @@ After the five lock:
    > Replace the matching files in your claude.ai project knowledge
    > so the next session picks up where we left off."
 
-5. **Offer a session-log paragraph** the reader can paste anywhere
-   (Drive comment, journal, chat with a friend):
-
-   > "Want a one-paragraph summary of this session for your records?"
-
-   `AskUserQuestion`: "Yes — show me a summary" / "No, all done".
-
-   On yes, render a paragraph in reader-facing language only:
-   "Built a 100+15 list across <date range>. <N> series we're
-   catching up on (<list>). Goals: <genres>. Five to start with:
-   <list>." No internal terms.
+7. **Closing line.** Short, no question, no "ready to start?" —
+   turn ends.
 
 ## Hand-offs
 
@@ -360,9 +418,13 @@ Same as `librarian-build`. Specific to this skill:
 |---|---|
 | upcoming releases (section) | "books coming out in the next year" |
 | walk the full list | "let's walk the whole list" |
-| five to start with | "five to start with" — internal and external match |
+| revisit gate | "anything we should revisit?" |
+| compare / swap_suggestions / fit_verdict | (silent — internal helper output) |
+| high_overlap / low_confidence | "thematically close to" / "weaker fit than the others" |
+| where to start (section header) | "where to start" — internal and external match |
+| top picks / highlighted pick | "the strongest places to start" / "if you read one tonight" |
 | stretch / stretch picks / stretch goals | (silent — never used internally either) |
-| Phase 3 / Phase 4 / Phase 5 | (silent — never used internally either) |
+| Phase 3 / Phase 4 / Phase 5 / five to start with | (silent — never used internally either) |
 | upcoming_added / build_complete / core_complete | (silent — internal session_notes only) |
 | profile_write_miss | (silent — surfaced as part of the consolidated diff) |
 | tolerance / ±4-book tolerance | "the shape feels right / off" |
