@@ -15,7 +15,7 @@
 SKILLS := librarian-triage \
           librarian-quickref \
           librarian-build-setup \
-          librarian-build-batches \
+          librarian-build \
           librarian-build-finish \
           library-cataloguer
 
