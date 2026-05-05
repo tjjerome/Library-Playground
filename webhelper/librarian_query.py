@@ -60,12 +60,24 @@ DEFAULT_PROFILE = "Profile.md"
 DEFAULT_BUILD_STATE = "build_state.json"
 
 VARIANCE_MODES = ("balanced", "focused", "surprising", "adjacent")
-ADJACENT_MIN_OVERLAP = 1
-ADJACENT_MAX_OVERLAP = 2
 QUALITY_FLOOR = 3.8
 DEFAULT_N = 15
 MIN_N = 12
 MAX_N = 18
+
+# Commitment-load thresholds (used to derive load from the current
+# Reading_List, not from a stale build_state field).
+LONG_SERIES_THRESHOLD = 3       # ≥3 picks from one series = real commitment
+DOORSTOP_PAGES = 600
+
+# Adjacency-mode tuning.  See partial_vector_match / _assign_strata_adjacent
+# for how these get used.  Central match = candidate sits inside a
+# vector's cluster (covers ≥CENTRAL_MIN_FRAC of the vector OR
+# ≥CENTRAL_MIN_ABS overlap, whichever is smaller).  Adjacent = shares
+# one axis (signals OR themes) with the vector while pulling outside on
+# the other axis.
+ADJACENT_CENTRAL_MIN_FRAC = 0.50
+ADJACENT_CENTRAL_MIN_ABS = 3
 
 _BOOK1 = re.compile(r"^book\s*1(?![\d.])", flags=re.IGNORECASE)
 _ENTRY_ROLES = {"standalone", "first", "loose-entry"}
@@ -409,21 +421,80 @@ def vectors_matched(signals: set[str], themes: set[str], vectors: list[dict]) ->
 
 def vector_overlap_count(signals: set[str], themes: set[str], v: dict) -> int:
     """Total signal+theme intersection size between a candidate and one
-    vector.  Used by adjacency mode to distinguish partial matches
-    (1-2 overlap) from central matches (3+ overlap)."""
+    vector."""
     return len(signals & vector_signal_set(v)) + len(themes & vector_theme_set(v))
 
 
-def partial_vector_match(signals: set[str], themes: set[str], v: dict,
-                          min_overlap: int = ADJACENT_MIN_OVERLAP,
-                          max_overlap: int = ADJACENT_MAX_OVERLAP) -> dict | None:
-    """Return {vector, overlap_count} when the candidate's overlap with
-    vector v sits inside [min_overlap, max_overlap]; else None.  Edge
-    of the cluster, not its centre."""
-    n = vector_overlap_count(signals, themes, v)
-    if min_overlap <= n <= max_overlap:
-        return {"vector": v["name"], "overlap_count": n}
-    return None
+def vector_central_threshold(v: dict) -> int:
+    """Minimum overlap for a candidate to count as 'central' to vector v.
+
+    Proportional to vector size, capped between 2 and the absolute
+    floor — so a 3-signal vector counts overlap=2 as central while
+    an 8-signal vector requires 4.  The earlier hardcoded
+    ADJACENT_MIN_OVERLAP=1 / MAX_OVERLAP=2 produced misfires on
+    large vectors (a single signal hit looked adjacent) and
+    starvation on small ones (2 of 3 signals counted as edge, not
+    centre)."""
+    size = max(1, len(vector_signal_set(v)) + len(vector_theme_set(v)))
+    half = (size + 1) // 2  # ceil(size / 2)
+    return max(2, min(half, ADJACENT_CENTRAL_MIN_ABS))
+
+
+def candidate_adjacency(signals: set[str], themes: set[str],
+                         active_vectors: list[dict]) -> dict | None:
+    """Decide whether a candidate is *adjacent* to the reader's taste.
+
+    Adjacency-as-shape: the candidate must be **central** to its
+    strongest-matching vector (overlap ≥ vector_central_threshold)
+    AND must carry at least one signal or theme that pulls outside
+    that vector — either matching a different active vector (a
+    bridge) or matching no active vector at all (a new direction).
+
+    Returns ``{vector, overlap_count, divergence, bridges_to}`` when
+    adjacent, else None.  ``divergence`` is ``"bridge"`` or
+    ``"new-direction"``; ``bridges_to`` names the bridge vector when
+    relevant.
+
+    Replaces the prior ``partial_vector_match`` (which counted any
+    1-2 overlap as adjacent regardless of shape — that surfaced thin
+    misfires rather than 'just outside my comfort zone' picks)."""
+    if not signals and not themes:
+        return None
+    if not active_vectors:
+        return None
+
+    best = None
+    best_overlap = 0
+    for v in active_vectors:
+        overlap = vector_overlap_count(signals, themes, v)
+        if overlap >= vector_central_threshold(v) and overlap > best_overlap:
+            best = v
+            best_overlap = overlap
+    if best is None:
+        return None
+
+    central_sigs = vector_signal_set(best)
+    central_thms = vector_theme_set(best)
+    outside_sigs = signals - central_sigs
+    outside_thms = themes - central_thms
+    if not outside_sigs and not outside_thms:
+        return None  # purely central; no divergence
+
+    bridges_to = None
+    for v in active_vectors:
+        if v["name"] == best["name"]:
+            continue
+        if (outside_sigs & vector_signal_set(v)) or \
+           (outside_thms & vector_theme_set(v)):
+            bridges_to = v["name"]
+            break
+
+    return {
+        "vector": best["name"],
+        "overlap_count": best_overlap,
+        "divergence": "bridge" if bridges_to else "new-direction",
+        "bridges_to": bridges_to,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -664,12 +735,39 @@ def page_budget_warning(picks: list[dict], page_budget: dict | None) -> dict | N
             "n_picks_with_pages": len(pages)}
 
 
-def commitment_load_warning(state: dict) -> dict | None:
+def derive_commitment_load(picks: list[dict]) -> dict:
+    """Commitment load read off the current Reading_List, not a
+    persisted counter.  Build-state used to carry
+    `long_series_slots_used`, but nothing in the build flow updated
+    it as series got committed; derivation from picks keeps the
+    signal honest.
+
+    A long-series slot is consumed when ≥LONG_SERIES_THRESHOLD picks
+    share a series — partial scope counts (committing to all six
+    matters; trying just Book 1 doesn't).  Doorstops are picks with
+    pages ≥ DOORSTOP_PAGES.
+    """
+    series_counts: dict[str, int] = {}
+    for p in picks:
+        s = (p.get("series") or "").strip()
+        if not s or s.lower() == "standalone":
+            continue
+        series_counts[s] = series_counts.get(s, 0) + 1
+    long_used = sum(1 for n in series_counts.values()
+                    if n >= LONG_SERIES_THRESHOLD)
+    doorstops = sum(1 for p in picks
+                    if (p.get("pages") or 0) >= DOORSTOP_PAGES)
+    return {"long_series_slots_used": long_used,
+            "doorstop_count": doorstops}
+
+
+def commitment_load_warning(state: dict,
+                             picks: list[dict]) -> dict | None:
     cl = state.get("commitment_load") or {}
     cap = cl.get("long_series_cap")
-    used = cl.get("long_series_slots_used", 0)
     if cap is None:
         return None
+    used = derive_commitment_load(picks)["long_series_slots_used"]
     if used >= cap:
         return {"long_series_slots_used": used, "long_series_cap": cap,
                 "status": "at_cap"}
@@ -784,12 +882,13 @@ def assign_strata(pool: list[dict], underused: list[dict],
     floor), and into 'residual' if it matches neither.  A candidate
     can appear in multiple strata; the allocator handles dedup.
 
-    Adjacent mode overrides this layout: candidates with partial
-    overlap [ADJACENT_MIN_OVERLAP, ADJACENT_MAX_OVERLAP] against an
-    active vector go into 'adjacent:<vector>' strata.  Central matches
-    (overlap > max) and pure misses both fall through to residual.  No
-    underused/floor strata in adjacent mode — the goal is edge picks,
-    not gap-fillers."""
+    Adjacent mode overrides this layout: candidates that are central
+    to one active vector AND have signals/themes pulling outside that
+    vector (either bridging to another active vector or in a
+    no-active-vector direction) go into 'adjacent:<central-vector>'
+    strata.  Pure-central matches and pure misses fall through to
+    residual.  No underused/floor strata in adjacent mode — the goal
+    is shape-aware edge picks, not gap-fillers."""
     if variance == "adjacent":
         return _assign_strata_adjacent(pool, active_vectors)
 
@@ -829,10 +928,11 @@ def assign_strata(pool: list[dict], underused: list[dict],
 
 def _assign_strata_adjacent(pool: list[dict],
                              active_vectors: list[dict]) -> dict[str, list[dict]]:
-    """Adjacency-mode strata: per-vector buckets of partial-overlap
-    candidates only.  Central matches drop to residual along with
-    pure misses so the model sees them only if the adjacency strata
-    are too thin to fill the slot count."""
+    """Adjacency-mode strata: per-vector buckets keyed by the
+    candidate's *central* vector.  Candidates with no central match,
+    or central matches that don't diverge anywhere, drop to residual
+    so the slot allocator only fills from there when adjacency
+    strata are starved."""
     strata: dict[str, list[dict]] = {
         _stratum_label_adjacent(v["name"]): [] for v in active_vectors
     }
@@ -845,31 +945,20 @@ def _assign_strata_adjacent(pool: list[dict],
         c["_matched_underused"] = []
         c["_matched_floors"] = []
 
-        # Pick the strongest partial-match vector for the candidate;
-        # store on _adjacency so render_candidate can surface it.
-        best: dict | None = None
-        for v in active_vectors:
-            m = partial_vector_match(sigs, thms, v)
-            if m is None:
-                continue
-            if best is None or m["overlap_count"] < best["overlap_count"]:
-                best = m
-
         forced = bool(c.get("_force_residual"))
-        if best is None or forced:
+        adj = None if forced else candidate_adjacency(sigs, thms,
+                                                       active_vectors)
+
+        if adj is None or forced:
             c["_is_residual"] = True
             c["_adjacency"] = None
             if forced or not c["_matched_vectors"]:
                 strata["residual"].append(c)
-            # Central matches (overlap > max) are intentionally dropped
-            # in adjacent mode — they live in residual only when they
-            # also lack any vector overlap (impossible given pool gate),
-            # so the effect is to filter them out entirely.
             continue
 
         c["_is_residual"] = False
-        c["_adjacency"] = best
-        strata[_stratum_label_adjacent(best["vector"])].append(c)
+        c["_adjacency"] = adj
+        strata[_stratum_label_adjacent(adj["vector"])].append(c)
     return strata
 
 
@@ -939,9 +1028,17 @@ def _allocate_slots(stratum_names: list[str], n: int, mode: str,
     if lean:
         try:
             kind, name = lean.split(":", 1)
-            target = (_stratum_label_vector(name) if kind == "vector"
-                      else _stratum_label_floor(name) if kind == "floor"
-                      else None)
+            if kind == "vector" and mode == "adjacent":
+                # In adjacent mode, "lean vector:X" means
+                # "central-to-X plus a new direction" — translate to
+                # the adjacency stratum keyed on X.
+                target = _stratum_label_adjacent(name)
+            elif kind == "vector":
+                target = _stratum_label_vector(name)
+            elif kind == "floor":
+                target = _stratum_label_floor(name)
+            else:
+                target = None
             if target and target in weights:
                 weights[target] *= 2.0
         except ValueError:
@@ -1320,7 +1417,7 @@ def cmd_status(args, conn: sqlite3.Connection) -> None:
             {"kind": c["kind"], "value": c["value"], "count": c["count"]}
             for c in clusters
         ],
-        "commitment_load_warning": commitment_load_warning(state),
+        "commitment_load_warning": commitment_load_warning(state, picks),
         "page_budget_warning": page_budget_warning(picks,
                                                    state.get("page_budget")),
     }
@@ -1376,7 +1473,7 @@ def _series_signals(conn: sqlite3.Connection, books: list[dict]) -> tuple[set[st
 
 
 def _scope_signals(conn: sqlite3.Connection, books: list[dict],
-                   state: dict, list_size: int) -> dict:
+                   state: dict, list_picks: list[dict]) -> dict:
     actives = active_vectors_of(state)
     series_sigs, series_thms = _series_signals(conn, books)
 
@@ -1391,9 +1488,10 @@ def _scope_signals(conn: sqlite3.Connection, books: list[dict],
         elif len(matched) == 1:
             strength = "weak"
 
-    cl = state.get("commitment_load") or {}
-    long_used = cl.get("long_series_slots_used", 0)
-    doorstops = cl.get("doorstop_count", 0)
+    derived = derive_commitment_load(list_picks)
+    long_used = derived["long_series_slots_used"]
+    doorstops = derived["doorstop_count"]
+    list_size = len(list_picks)
     series_total_pages = sum(b.get("pages") or 0 for b in books)
 
     n_target = state.get("n_target", 100)
@@ -1509,7 +1607,8 @@ def cmd_series_fit(args, conn: sqlite3.Connection) -> None:
         "n_target": 100, "taste_vectors": [], "floors": {},
         "events": [], "commitment_load": {}, "page_budget": None,
     }
-    scope_signals = _scope_signals(conn, books, state, len(list_pairs))
+    list_picks = resolve_list_picks(conn, list_pairs)
+    scope_signals = _scope_signals(conn, books, state, list_picks)
 
     output = {
         "series": series_name,

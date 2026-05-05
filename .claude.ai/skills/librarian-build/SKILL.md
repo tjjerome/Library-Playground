@@ -60,6 +60,14 @@ conviction — not to run a form.
     only what's actionable for the next decision; the model never
     sees "73 of 100" unless it computes it from the list, and never
     surfaces it unless the reader asks "where are we".
+12. **Pitch shape is varied silently.** Vary the shape (one book
+    pushed hard / A-B tension / handful to scan / "almost didn't
+    show you"), never *name* it. No "let me pitch this one hard",
+    no "switching to A/B", no "scanning a handful", no "deep cut".
+    No "pivoting to horror", no "let's lean indie next round". The
+    reader sees books and framing, never the meta-decision about
+    which framing to use. Shape is the model's tool, not the
+    conversation's.
 
 ## Inputs at session start
 
@@ -149,10 +157,10 @@ python3 webhelper/librarian_query.py recommend \
 ```
 
 Returns `candidates[]` with `match_reasoning` (anchor log entries,
-matched vectors, matched themes, comp-overlap count, rating),
-`fills_gap` (which underused vector or at-risk floor this candidate
-covers, `is_residual` for surprising-mode picks, `adjacency` for
-adjacent-mode picks with `{vector, overlap_count}`), and `warnings`.
+matched vectors, themes, comp-overlap count, rating), `fills_gap`
+(`is_residual` for surprising-mode picks; `adjacency` for
+adjacent-mode picks with `{vector, overlap_count, divergence,
+bridges_to}`), and `warnings`.
 
 `match_reasoning` is **fact source, not pitch text.** Never quote
 catalog summary fields, vector names, or `match_reasoning` language
@@ -160,34 +168,32 @@ back to the reader. Synthesise the personal connection fresh every
 time. A vector named "lyrical grimdark" is internal vocabulary; in
 chat it's "the Buehlman/Wolfe register".
 
-`--n` is your pick — ask for fewer when conviction is high (one or
-two), more when the reader's invited a scan ("show me a handful").
-Default 6.
-
-`--lean` skews sampling. Use it when the conversation has named a
-direction ("more historical fiction", "lean indie") — soft ×2 bias on
+`--n` defaults to 6 — fewer when conviction is high, more on a scan.
+`--lean vector:NAME` or `--lean floor:NAME` skews sampling ×2 toward
 that stratum.
 
 `--variance` switches the sampling shape. Defaults to `balanced`.
 Other values:
 
-- `focused` — concentrates picks on one underused vector (model
-  picks; rng-tied). Use when the reader's named a direction strong
-  enough that breadth would feel diffusing.
+- `focused` — concentrates on one underused vector (rng-tied). Use
+  when the reader's named a direction strong enough that breadth
+  would feel diffusing.
 - `surprising` — guarantees a residual slot (vector-misses with
   quality floor) for picks that share zero overlap with the active
   vectors. Use when the conversation invites genuine left-field.
-- `adjacent` — surfaces picks that overlap *partially* with an
-  active vector (1-2 signal/theme matches, not 3+). These sit at
-  the edge of a taste cluster instead of in the middle of it.
-  Pitch them honestly: "here's one adjacent rather than central to
-  your usual." Reader passing on an adjacent pick doesn't mean
-  anything went wrong — the pick was a deliberate stretch. **Fire
-  this every so often, not every round.** Goal is occasional
-  breadth, not constant disorientation. Model decides when. Cues
-  that often fit: a stretch of central picks landing softly, the
-  reader expressing mild restlessness without naming a direction,
-  a reflection beat where breadth feels low.
+- `adjacent` — surfaces picks that are **central** to one of the
+  reader's active vectors AND pull outside that vector on at least
+  one axis (either bridging to a different active vector, or
+  introducing a signal/theme outside any active vector). These are
+  "Kay-flavoured but politically heavier" picks, not thin
+  one-signal misfires. `adjacency.divergence` is `"bridge"` or
+  `"new-direction"`; `bridges_to` names the bridge vector.
+  `--lean vector:NAME` in adjacent mode means "central to NAME plus
+  one new direction" — the natural shape for "you've got six
+  grief-rooted-horror picks; want one that's grief-rooted but
+  funnier?". Fire occasionally, not every round; model decides when
+  (cues: central picks landing softly, mild reader restlessness, a
+  reflection beat where breadth feels low).
 
 ### Pitch shape varies with the moment
 
@@ -256,70 +262,32 @@ the model:
    ("That makes sense, here's why I picked it" → no. The reader
    already heard the rationale; relitigating it teaches them their
    feedback isn't being absorbed.)
-4. **Logs the correction event** to `build_state.events`:
+4. **Logs the correction event** as
+   `{"type": "correction", "at": <ISO>, "kind": "<distribution|
+   length|tone|entry-point|…>", "summary": "<one line>"}` in
+   `build_state.events`.
 
-   ```python
-   events.append({
-       "type": "correction",
-       "at": "<ISO>",
-       "kind": "<distribution|length|tone|entry-point|...>",
-       "summary": "<one line>",
-   })
-   ```
-
-   Two correction events with overlapping `kind` fire a reflection
-   trigger (see below), regardless of pick count.
-
-This is the difference between a librarian who's listening and one
-who's executing. The current build state's `events` list is the place
-this updating happens.
+   Two correction events with overlapping `kind` are a strong cue
+   to reflect, regardless of pick count.
 
 ## Reader-interruption-as-primary-signal
 
 When the reader pivots mid-thread ("actually, what about indie?"),
-**follow the pivot.** Do not finish the current run first. The
-moment they ask, the run is over.
-
-Drop the in-progress framing, start fresh. If a candidate from the
-prior round is genuinely worth the pivot, carry it forward; otherwise
-let it go.
+**follow the pivot.** Do not finish the current run first. Drop the
+in-progress framing; carry forward only candidates that genuinely
+fit the pivot.
 
 ## Living taste cartography
 
-`build_state.taste_vectors` is editable during the build, not just at
-setup. Re-derive lightly when:
-
-- **Rejection cluster** — three rejections in the same cluster
-  (genre / page-bucket / indie-or-classic / tone register) with no
-  intervening accepts. Re-evaluate whether a vector that was driving
-  picks in that cluster still belongs. Common edits: split
-  ("epic fantasy" → "epic fantasy with intimate POV" + "epic fantasy
-  with sweeping ensemble"), retire (set `status: "demoted"`), or
-  rename. The helper's `build_probe` returns the rejection signature.
-- **Reader-correction event** (above). Translate the correction to a
-  vector edit when applicable.
-- **Positive surprise** — reader picks a book whose vector signature
-  is weak in the current set. Add or strengthen the matching vector.
-- **Reflection beat** (below). The open prose question often surfaces
-  a vector that wasn't named at setup; capture it.
-
-Re-derivation is **light** — usually one vector edited, rarely the
-whole set re-clustered. Write deltas to `taste_vectors` with a short
-rationale in the vector's own metadata; let `Profile.md` get one
-consolidated bullet at session end.
-
-```python
-# Rough shape — actual edit lives wherever the model is processing
-# the trigger.
-build_state["taste_vectors"].append({
-    "name": "epic fantasy with intimate POV",
-    "canonical_signals": [...],
-    "themes": [...],
-    "status": "active",
-    "derived_at": "<ISO>",
-    "rationale": "split from 'epic fantasy' after 3 ensemble rejections",
-})
-```
+`build_state.taste_vectors` is editable during the build. Edit
+lightly — usually one vector at a time, rarely a re-cluster — when
+rejections cluster, a correction event lands, a positive surprise
+breaks the current set, or a reflection beat surfaces a vector that
+wasn't named at setup. Common edits: split ("epic fantasy" → "epic
+fantasy with intimate POV" + "epic fantasy with sweeping
+ensemble"), retire (`status: "demoted"`), or rename. Each edited
+vector carries a short `rationale`; `Profile.md` gets one
+consolidated bullet at session-end.
 
 ## Reflection — model-led, not trigger-fired
 
@@ -354,16 +322,10 @@ adjacent-mode declines) log to `build_state.events` as
 `type: "rejected"`; the model uses the events list as one input
 among many.
 
-Reflection beat shape:
-
-1. **Observation in chat** — 2-3 sentences. Concrete: what pattern's
-   forming, what's missing, what might be off.
-2. **Open prose question.** "What's working about these?", "Anything
-   I'm misreading?", "Is the tone still right?". **Turn-ending.**
-3. **Profile write same turn on reply** — silent append to
-   `/tmp/Profile.md` under `## Mid-build observations`. The
-   reflection itself is the only chat surface; no announcement that
-   a reflection is happening.
+A reflection beat is a 2-3 sentence concrete observation followed
+by an open prose question, turn-ending. The reply gets a silent
+append to `/tmp/Profile.md` under `## Mid-build observations`. No
+announcement that a reflection is happening.
 
 ## Status — actionable only, not a dashboard
 
@@ -401,88 +363,37 @@ multi-pick handful):
 1. **Append to `/tmp/Reading_List.md`.** Same turn, one-line ack in
    chat ("Added *Hyperion* — Dan Simmons.").
 2. **If the book is part of a series**, run `series-fit` before the
-   next pitch:
+   next pitch (same flag set as `recommend`, plus `--series "<name>"`).
+   Use the recommended scope as the default option in an
+   `AskUserQuestion` ("just book 1", "all available", "other").
+   Walk sequentially — no new pitch round until scope is answered.
+   Append the resolved scope to `build_state.session_notes`.
 
-   ```bash
-   python3 webhelper/librarian_query.py series-fit \
-       --catalog /tmp/Library_Catalog.sqlite \
-       --series "<series name>" \
-       --log $PROJECT_LOG \
-       --reading-list /tmp/Reading_List.md \
-       --build-state /tmp/build_state.json
-   ```
+3. **Rejected picks** (offered but not selected) → append a
+   `{"type": "rejected", "at": <ISO>, "key", "title",
+   "primary_genre", "indie", "classic"}` event to
+   `build_state.events`. `recommend` reads these to suppress
+   re-offering and compute rejection clusters.
 
-   Use the recommended scope as the default suggestion in
-   `AskUserQuestion`:
-
-   ```
-   Q: "How do you want to handle <series>?"
-   Options:
-     - "<recommended scope from series-fit>"
-     - "Just book 1 — try it first"
-     - "All available — commit to the run"
-     - "Other"
-   ```
-
-   Walk sequentially. Don't bundle. No new pitch round until the
-   series scope is answered. Append the resolved scope to
-   `build_state.session_notes`.
-
-3. **Rejected picks** (offered but not selected) → log to
-   `build_state.events`:
-
-   ```python
-   events.append({
-       "type": "rejected",
-       "at": "<ISO>",
-       "key": candidate["key"],
-       "title": candidate["title"],
-       "primary_genre": candidate["primary_genre"],
-       "indie": candidate["indie"],
-       "classic": candidate["classic"],
-   })
-   ```
-
-   `recommend` reads these to suppress re-offering and to compute
-   rejection clusters.
-
-4. **Whole-pitch skip** (zero picks taken from a multi-pick handful)
-   → fire a probe immediately, prose, turn-ending:
-
-   > "None of those landed — what was off? Tone, format, era, something
-   > else?"
-
-   Reply → `/tmp/Profile.md` same turn under `## Build corrections`.
-   This is a correction event; log it.
+4. **Whole-pitch skip** (zero picks from a multi-pick handful) →
+   probe immediately, prose, turn-ending: "None of those landed —
+   what was off?". Reply → `/tmp/Profile.md` under
+   `## Build corrections`. Log as a correction event.
 
 5. **Surprising selection** (pick contradicts profile or is from
-   `fills_gap.is_residual`) → one follow-up `AskUserQuestion`:
+   `fills_gap.is_residual`) → one follow-up `AskUserQuestion`
+   ("what drew you to this?"). Reply → profile write; if it
+   implies a new vector, add to `taste_vectors`.
 
-   > "What drew you to this?" Options: "Fresh interest in [genre]" /
-   > "Specific recommendation" / "Curious about author" / "Other"
+## Profile writes — silent, same turn
 
-   Reply → profile write; if it implies a new vector, add to
-   `taste_vectors`.
-
-## Profile-write triggers (exhaustive)
-
-All write to `/tmp/Profile.md` same turn, **silently**. Reader sees
-consolidated diff at session end (build-finish). Triggers:
-
-1. Reflection beat reply.
-2. Whole-pitch skip probe reply.
-3. Surprising-selection follow-up reply.
-4. Reader-correction event (every one).
-5. Mid-build clarification ("indie is a floor not a ceiling", "no
-   romantasy", "more historical").
-6. Series-scope reasoning (when the reasoning's worth carrying — not
-   for trivial "just book 1").
-7. Vector re-derivation (one consolidated bullet per session-end).
-
-End-of-session: if any of triggers 1-6 fired and `/tmp/Profile.md`
-mtime is unchanged → internal failure. Log to
-`build_state.session_notes` as `{"kind": "profile_write_miss", ...}`;
-build-finish will surface the gap in its summary.
+Any reflection / correction / clarification reply, any series-scope
+reasoning worth carrying, and the per-session vector-re-derivation
+summary all append silently to `/tmp/Profile.md`. Reader sees the
+consolidated diff at session end. If a trigger fired but
+`/tmp/Profile.md` mtime is unchanged at session end, log a
+`profile_write_miss` to `build_state.session_notes`; build-finish
+surfaces it.
 
 ## Floors and goals — direction, not targets
 
@@ -501,29 +412,16 @@ build-finish will surface the gap in its summary.
 ## Hand-off to build-finish — same chat, checkpoint surfaced
 
 When picks reach working range (≥100, no at-risk floors), **do not
-break the session.** Same pattern as setup → build: /tmp working
-files persist, the platform auto-compresses earlier turns,
-build-finish picks up in place.
+break the session.** /tmp working files persist; build-finish picks
+up in place. 100 books is the right moment to surface a checkpoint
+save.
 
-We **do** still surface the working files at this milestone as a
-checkpoint save — 100 books is the right moment to give the reader a
-durable snapshot before the closing passes.
-
-Steps:
-
-1. Update build state: append
-   `{"kind": "core_complete", "at": <ISO>}` to `session_notes`.
-2. **Surface /tmp files via `present_files`** as a checkpoint save:
-
-   ```python
-   import shutil
-   shutil.copy("/tmp/Profile.md",       "/mnt/user-data/outputs/Profile.md")
-   shutil.copy("/tmp/Reading_List.md",  "/mnt/user-data/outputs/Reading_List.md")
-   shutil.copy("/tmp/build_state.json", "/mnt/user-data/outputs/build_state.json")
-   ```
-
-3. Transition in librarian voice — short, no plumbing talk. Roll the
-   checkpoint links into the same turn:
+1. Append `{"kind": "core_complete", "at": <ISO>}` to
+   `session_notes`.
+2. Copy `/tmp/Profile.md`, `/tmp/Reading_List.md`, and
+   `/tmp/build_state.json` to `/mnt/user-data/outputs/` so the
+   reader has download links.
+3. Transition in librarian voice — short, no plumbing talk:
 
    > "That's a hundred. I've put a checkpoint of your files here in
    > case you want to save progress before we keep going:
@@ -535,36 +433,22 @@ Steps:
    > Want to look at what's coming out in the next year and pick five
    > to start with?"
 
-   `AskUserQuestion`:
-   - "Yes — let's finish it"
-   - "Give me a minute first"
-   - "Other"
+   `AskUserQuestion`: "Yes — let's finish it" / "Give me a minute
+   first" / "Other".
 
-4. **On affirmative**, hand off to `librarian-build-finish` in the
-   same chat — it reads `/tmp/build_state.json` directly.
-5. **On pause**, hand off to `library-cataloguer`'s session-end flow.
+4. **Affirmative** → hand off to `librarian-build-finish` (reads
+   `/tmp/build_state.json` directly).
+5. **Pause** → hand off to `library-cataloguer`'s session-end flow.
 
 ## Mid-build session pause — interim summary
 
 Triggers: "I'm done for now", "let's pause", "save and come back",
-"that's enough today", or any pre-100 wrap signal.
-
-Run the compact session-end summary from `librarian-build-finish/SKILL.md`:
-
-1. **Reading list:** one line, current count.
-2. **Profile diff (silent → consolidated):** all profile writes this
-   session, by section. First chat view of changes. Surface any
-   `profile_write_miss` entries from `session_notes`.
-3. **Catalog changes (if any):** hand off to library-cataloguer
-   manual-download. Skip if no writes.
-4. **Surface files:** hand off to library-cataloguer session-end flow.
-   Reader downloads `Reading_List.md`, `Profile.md`,
-   `build_state.json` and re-uploads to project knowledge.
-5. **Resume pointer:** "Spot saved. Re-upload to project knowledge,
-   open new chat, say 'continue'."
-
-Update build state: `session_notes` append
-`{"kind": "paused", "at": <ISO>}`.
+"that's enough today", or any pre-100 wrap signal. Append
+`{"kind": "paused", "at": <ISO>}` to `session_notes` and run the
+compact session-end summary from
+`librarian-build-finish/SKILL.md` — current count, consolidated
+profile diff, catalog hand-off if any, file surface, resume
+pointer.
 
 ## Friction is a probe trigger, not an advance trigger
 
