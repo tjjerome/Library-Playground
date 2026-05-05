@@ -8,8 +8,9 @@
     subseries notation: narrative_shape=`loose-subseries`, subseries
     groups detected.
   - Commitment-load differential: same series + same vector match,
-    different `commitment_load.long_series_slots_used`, produces
-    different `scope_recommendation.scope`.
+    different reading-list contents (empty vs. ≥3 series each with
+    ≥3 picks), produces different `scope_recommendation.scope`.
+    Commitment load is *derived* from the list, not read from state.
 
 Run via:
     python3 tests/series_fit_smoke.py
@@ -50,7 +51,9 @@ def _capture(args_ns) -> dict:
 
 def _make_args(workdir: Path, catalog: str, *, series: str,
                build_state: dict, log: str = "/dev/null",
-               reading_list: str = "/dev/null") -> SimpleNamespace:
+               reading_list: str | None = None) -> SimpleNamespace:
+    if reading_list is None:
+        reading_list = "/dev/null"
     bs_path = workdir / "build_state.json"
     bs_path.write_text(json.dumps(build_state), encoding="utf-8")
     return SimpleNamespace(
@@ -63,7 +66,7 @@ def _make_args(workdir: Path, catalog: str, *, series: str,
     )
 
 
-def _strong_match_state(slots_used: int) -> dict:
+def _strong_match_state() -> dict:
     return {
         "n_target": 100,
         "taste_vectors": [
@@ -81,10 +84,40 @@ def _strong_match_state(slots_used: int) -> dict:
              "themes": ["loyalty-and-betrayal"]},
         ],
         "floors": {}, "events": [],
-        "commitment_load": {"long_series_slots_used": slots_used,
-                             "doorstop_count": 0},
+        "commitment_load": {},
         "page_budget": {"target_avg": 500},
     }
+
+
+def _high_commitment_list_for(catalog_path: str) -> str:
+    """Build a markdown reading-list with ≥3 distinct series, each
+    with ≥3 books, drawn from the live catalog so resolve_list_picks
+    actually finds them.  Picks the first three series that have
+    ≥3 books in the catalog."""
+    conn = sqlite3.connect(catalog_path)
+    conn.row_factory = sqlite3.Row
+    rows = conn.execute(
+        "SELECT series, COUNT(*) AS n FROM books "
+        "WHERE series IS NOT NULL AND series != '' "
+        "AND series != 'Standalone' "
+        "GROUP BY series HAVING n >= 3 "
+        "ORDER BY n DESC LIMIT 4"
+    ).fetchall()
+    series_names = [r["series"] for r in rows]
+    if len(series_names) < 3:
+        conn.close()
+        raise RuntimeError(
+            f"live catalog lacks 3+ series with ≥3 books "
+            f"(found {len(series_names)})")
+    lines = ["| Title | Author |", "|---|---|"]
+    for s in series_names[:4]:
+        books = conn.execute(
+            "SELECT title, author FROM books WHERE series = ? LIMIT 3",
+            (s,)).fetchall()
+        for b in books:
+            lines.append(f"| {b['title']} | {b['author']} |")
+    conn.close()
+    return "\n".join(lines) + "\n"
 
 
 def _build_synthetic_catalog(path: Path) -> None:
@@ -144,11 +177,11 @@ def run(catalog: str) -> int:
     failures: list[str] = []
 
     # --- Test 1: live one-arc (Red Rising).
-    state_lo = _strong_match_state(slots_used=0)
+    state = _strong_match_state()
     with tempfile.TemporaryDirectory() as tmp:
         out = _capture(_make_args(Path(tmp), catalog,
                                    series="Red Rising",
-                                   build_state=state_lo))
+                                   build_state=state))
     if len(out["books"]) < 5:
         failures.append(f"(1) Red Rising returned {len(out['books'])} books")
     if out["narrative_shape"] != "one-arc":
@@ -172,7 +205,7 @@ def run(catalog: str) -> int:
         _build_synthetic_catalog(synth_path)
         out2 = _capture(_make_args(Path(tmp), str(synth_path),
                                     series="Discworld",
-                                    build_state=state_lo))
+                                    build_state=state))
     if out2["narrative_shape"] != "loose-subseries":
         failures.append(
             f"(2) synthetic Discworld shape "
@@ -184,13 +217,35 @@ def run(catalog: str) -> int:
             f"expected city watch + death")
 
     # --- Test 3: commitment-load differential changes recommendation.
+    # Derived from the reading list: empty list → low load → "all";
+    # populated list with ≥3 series carrying ≥3 picks each → high
+    # load → "entry".
     with tempfile.TemporaryDirectory() as tmp:
-        low = _capture(_make_args(Path(tmp), catalog, series="Red Rising",
-                                   build_state=_strong_match_state(0)))
-        high = _capture(_make_args(Path(tmp), catalog, series="Red Rising",
-                                    build_state=_strong_match_state(4)))
+        tmp_path = Path(tmp)
+        low_list = tmp_path / "list_low.md"
+        low_list.write_text("", encoding="utf-8")
+        high_list = tmp_path / "list_high.md"
+        high_list.write_text(_high_commitment_list_for(catalog),
+                              encoding="utf-8")
+        low = _capture(_make_args(tmp_path, catalog, series="Red Rising",
+                                   build_state=_strong_match_state(),
+                                   reading_list=str(low_list)))
+        high = _capture(_make_args(tmp_path, catalog, series="Red Rising",
+                                    build_state=_strong_match_state(),
+                                    reading_list=str(high_list)))
     low_scope = low["scope_recommendation"]["scope"]
     high_scope = high["scope_recommendation"]["scope"]
+    low_used = low["scope_signals"]["commitment_load"][
+        "long_series_slots_used"]
+    high_used = high["scope_signals"]["commitment_load"][
+        "long_series_slots_used"]
+    if low_used != 0:
+        failures.append(
+            f"(3) empty list derived long_used={low_used}, expected 0")
+    if high_used < 3:
+        failures.append(
+            f"(3) populated list derived long_used={high_used}, "
+            f"expected ≥3")
     if low_scope == high_scope:
         failures.append(
             f"(3) commitment-load did not affect scope "
