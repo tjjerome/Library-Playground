@@ -39,8 +39,9 @@ put the right book in the reader's hands, repeatedly, with conviction
   Genre goals are floors that guide direction, not numbers to hit.
   Indie / classic floors stay floors.
 - **Conservative author entry-point fallback.** Helper applies it by
-  default. `recommend.candidates[*].warnings` flags edge cases — treat
-  any warning as a stop signal.
+  default. `recommend.candidates[*].warnings` flags edge cases. Stick
+  to recommended entry points when the reader hasn't read the author
+  unless explicitly requested otherwise.
 - **Series scope is a hard gate.** Whenever a confirmed pick is part
   of a multi-book series, run `series-fit` and resolve scope (one
   book / partial / all) before pitching the next round.

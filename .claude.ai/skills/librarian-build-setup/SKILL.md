@@ -29,11 +29,12 @@ and re-uploads to project knowledge to carry into the next session.
   the helper or simple SQL.
 - **Working range = 100-110 before stretch picks, 110-125 after.**
   Goals are floors that guide direction, not numbers to hit exactly.
-- **Conservative author entry-point fallback.** Helper applies it by
-  default; `recommend` warns if a non-Book-1 / non-entry-point title
-  slips through.
-- **Series gate runs before any taste or goals work** — what the
-  reader's mid-way through anchors everything else.
+- **Series gate runs before handing off to the main build** — start by
+  surfacing any incomplete series the reader has in their log. Help the
+  reader make scope decisions for each (pick up the next book, commit to
+  finishing the series, defer to upcoming releases, or pass) and write
+  the picks to the list before moving on. The build assumes the scope is
+  set and doesn't re-check it.
 - **Build state lives in `/tmp/build_state.json`** and never duplicates
   the picks themselves. The list is the source of truth; build state
   carries goals, floors, vectors, rejection events, scope decisions.
@@ -86,7 +87,7 @@ Triage has already bound:
 
 If the reader corrects or adds to the log during intake ("oh, I read
 *Hyperion* last year, 5 stars"), edit `/tmp/Reading_Log.csv` silently
-to absorb it — no acknowledgement, no queue, no surfacing.
+to absorb it.
 
 ## Existing-Profile handling — refine, don't overwrite
 
