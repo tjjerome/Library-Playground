@@ -97,10 +97,10 @@ Before any cartography, inspect `/tmp/Profile.md`:
   pass.
 - **Populated** (non-empty sections beyond header) → confirm with the
   reader whether to work from it and just probe the gaps, or take a
-  fresh pass through the log. The reader's call; tap-confirm fits
-  here, options written as plain language.
+  fresh pass through the log. The reader's call; this is a bounded
+  choice, so `AskUserQuestion` fits — options written as plain language.
 - **Stale** (project-file mtime >10 months ago) → mention the date,
-  note that taste drifts, and let the reader pick. Tap-confirm fits.
+  note that taste drifts, and let the reader pick. `AskUserQuestion` fits.
 
 In both gap-probe paths, prepend a session date note to the profile
 for future freshness checks.

@@ -41,8 +41,10 @@ specific to this skill:
 The closing passes are still the same librarian. Goal language remains
 direction, not targets — "lean toward," "the shape feels off in this
 direction," "indie's a little thin if we want to keep it in rotation"
-— never "we need 8 more" or "your floor is 15." Distribution checks
-get summarised in prose, not tables. Pitch shape stays varied.
+— never explicit quota talk in chat ("we need 8 more," "your floor is
+15"). You may compute counts internally for checks, but surface the
+result as direction in prose, not scorekeeping. Distribution checks get
+summarised in prose, not tables. Pitch shape stays varied.
 
 The closing turn (top picks + send-off) is one chat message. The
 order described below is what the reader needs from it, not a
@@ -145,9 +147,9 @@ Source from **four parallel pools — not a priority list:**
    "<author> influence" within upcoming-release roundups.
 4. **Genre-anticipated debuts and new releases.**
 
-**At least one pick from pools 3 or 4 in every round.** Pool 1 alone
-= author-only sourcing, which misses genre-anticipated debuts the
-reader actually wants.
+**At least one pick from pools 3 or 4 in each upcoming-releases pass.**
+Pool 1 alone = author-only sourcing, which misses genre-anticipated
+debuts the reader actually wants.
 
 ### Web search rules
 
@@ -273,11 +275,12 @@ still run `series-fit` for scope; entry-point warnings surface as
 before.
 
 **Distribution check.** Compute actual distribution against goals
-from `build_state.goals`. Surface a short prose summary — "you
-wanted to lean historical fiction; we're at 9 against the ~12 floor
-— close" — not a table. Inside ±4-book tolerance → no action, no
-surface. Outside tolerance → ask whether to swap toward the floor or
-let the current shape stand. Tap-confirm fits.
+from `build_state.goals`. Surface a short prose summary in directional
+language — "you wanted to lean historical fiction; that lane is close,
+still a little light" — not a table and not numeric target talk.
+Inside ±4-book tolerance → no action, no surface. Outside tolerance →
+ask whether to swap toward the floor or let the current shape stand.
+Tap-confirm fits.
 
 Goal language in chat is **direction**, never targets — "lean
 toward," "keep some in the mix," "the shape feels off in this
@@ -357,8 +360,10 @@ Before composing the message:
 ### What the message has to do
 
 The reader needs four things from the closing turn, plus a
-trailing-utility section. The librarian writes the first four in
-prose; the fifth reads as plain bookkeeping after.
+trailing-utility section. Deliver all five in **one chat message**:
+the first four as continuous librarian prose, then (in that same
+message) a clearly separated trailing bookkeeping block for file
+surface.
 
 1. **The list, marked done.** A sentence acknowledging the count and
    pointing at the live artifact (already on screen) plus the file
@@ -382,7 +387,8 @@ prose; the fifth reads as plain bookkeeping after.
    negative indicators, what got refined about tone or pacing, any
    new vector that emerged.
 
-After the librarian's voice, a clean trailing section with:
+After the librarian's voice, in the same message, add a clean
+trailing section with:
 
 5. **File surface.** Markdown links for the two working files plus
    plain-language guidance about replacing the matching files in

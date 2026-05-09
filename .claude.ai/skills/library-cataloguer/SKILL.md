@@ -52,9 +52,9 @@ lookups, recommendation work — belongs to other skills.
   tap-confirm via `AskUserQuestion`. Never silently mutate.
 - **Single-book / short-series adds only.** More than three to five
   books in one go → defer to `catalogue.py` on the Code surface.
-- **Catalog write cadence: session-end flush only.** In-session
-  edits go to `/tmp/Library_Catalog.sqlite`; they don't reach Drive
-  until the reader says "save catalog."
+- **Catalog persistence is reader-triggered only.** In-session edits
+  apply to `/tmp/Library_Catalog.sqlite`; persistence to Drive happens
+  only when the reader explicitly says "save the catalog."
 - **Comparable_books reciprocity** — when adding A→B, also add B→A.
 - **Canonical `series_position` format.** Use
   `Book <N> (<Subseries Name> Book <M>)` for books in named
@@ -235,9 +235,11 @@ queue runs to dozens of rows, defer to the Code-side batch path
 Trigger: explicit "save the catalog" / "save catalog" / "encode it"
 phrase. Cataloguer never auto-saves; the reader asks.
 
-If `/tmp/catalog_edits.log` has rows, edits happened this session
-and re-encode is worth doing. If it doesn't exist or is empty, no
-catalog changes this session — tell the reader briefly and skip.
+Only after that explicit trigger, check `/tmp/catalog_edits.log` as a
+gate for whether there's anything to save. If it has rows, edits
+happened this session and re-encode is worth doing. If it doesn't
+exist or is empty, no catalog changes happened this session — tell the
+reader briefly and skip this save request.
 
 ```python
 import sqlite3, os, sys

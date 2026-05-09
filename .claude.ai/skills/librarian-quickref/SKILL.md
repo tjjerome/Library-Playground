@@ -11,6 +11,8 @@ description: >
 
 Reader asks one question. Give one answer. No interview, no goals talk,
 no batch, no list edits.
+If the reader's question is unclear, malformed, or missing key context,
+ask a brief clarification question before proceeding.
 
 ## What stays true
 
@@ -141,7 +143,7 @@ for line in list_text.splitlines():
 on_list = lambda t, a: (norm(t), norm(a)) in list_pairs
 ```
 
-Surface two to four unread, not-on-list comps in narrative form. Pull
+Surface up to four unread, not-on-list comps in narrative form. Pull
 in a page count when the comparison hinges on length or commitment
 (a 1200-page Erikson recommendation needs the page count; a 280-page
 Le Guin probably doesn't).
