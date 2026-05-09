@@ -110,7 +110,7 @@ for future freshness checks.
 Write a fresh `/tmp/build_state.json` for the helper scripts to read.
 This is internal infrastructure — never surfaced to the reader, never
 re-uploaded across sessions. Goals get re-derived each session from
-the persistent files (Reading_List.md metadata header for goals,
+the persistent files (Reading_List.md `## Goals` tables for goals,
 Profile.md for taste vectors); rejections and session notes don't
 persist.
 
@@ -132,105 +132,68 @@ persist.
 
 `taste_vectors` is the script-readable form of what's in Profile.md;
 `goals` and `floors` are the script-readable form of what's in
-Reading_List.md's metadata header. The persistent files are the
+Reading_List.md's `## Goals` tables. The persistent files are the
 source of truth — this JSON is a derived, transient view the helper
 scripts read.
 
 Persist with `json.dump(state, open("/tmp/build_state.json", "w"), indent=2)`.
 
 ## Build artifact — the live reading list
-Write a fresh `/tmp/Reading_List.md` in the format below.
 
-The artifact has two tables: the picks themselves at the top and a
-goals/floors table at the bottom. The metadata header at the top carries
-the reader's goals, current build state, and the date the build was set up.
+Write a fresh `/tmp/Reading_List.md` in the format below. The same
+markdown file is what the `reading-list` artifact renders from (via
+its `seed` prop), what `present_files` surfaces for download at
+session end, and what the reader re-uploads to project knowledge to
+seed the next session — one file, three roles.
 
-### Artifact format
+The picks live in a pipe-table at the top and the goals/floors live
+in a `## Goals` section at the bottom with sub-sections for genre,
+series balance, and floors. The italicised line under the title is
+the meta line — it carries the running count and the date the build
+was set up.
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-  body { font-family: system-ui, sans-serif; max-width: 980px; margin: 24px auto; padding: 0 16px; }
-  h1 { margin-bottom: 4px; }
-  .meta { color: #666; margin-bottom: 24px; }
+### File format
 
-  table.list { border-collapse: collapse; width: 100%; margin-bottom: 32px; }
-  table.list th, table.list td { padding: 8px 10px; border-bottom: 1px solid #ddd; text-align: left; vertical-align: top; }
-  table.list th { background: #f5f5f5; font-weight: 600; }
-  table.list td.stars { white-space: nowrap; letter-spacing: 1px; }
-  table.list td.why { color: #444; font-size: 0.95em; }
+```markdown
+# Reading List
 
-  table.goals { border-collapse: collapse; width: 100%; }
-  table.goals th, table.goals td { padding: 8px 10px; border: 1px solid #bbb; text-align: left; }
-  table.goals th { background: #f5f5f5; }
-  /* double-border separators between sections */
-  table.goals tr.section-start td { border-top: 4px double #333; }
-</style>
-</head>
-<body>
-  <h1>Reading List</h1>
-  <p class="meta">12 of ~100 books · started 2026-05-04</p>
+_12 of ~100 books · started 2026-05-04_
 
-  <table class="list">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Genre</th>
-        <th>Pages</th>
-        <th>Confidence</th>
-        <th>Audio</th>
-        <th>Why</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><em>Hyperion</em></td>
-        <td>Dan Simmons</td>
-        <td>Science Fiction</td>
-        <td>482</td>
-        <td class="stars">★★★★★</td>
-        <td class="stars">★★★★☆</td>
-        <td class="why">structural cleverness like <em>The Wandering Inn</em></td>
-      </tr>
-      <!-- one row per pick, appended as the build progresses -->
-    </tbody>
-  </table>
+| Title | Author | Genre | Pages | Confidence | Audio | Why |
+|---|---|---|---|---|---|---|
+| *Hyperion* | Dan Simmons | Science Fiction | 482 | ★★★★★ | ★★★★☆ | structural cleverness like *The Wandering Inn* |
 
-  <h2>Goals</h2>
-  <table class="goals">
-    <thead>
-      <tr><th>Goal</th><th>Target</th><th>Current</th></tr>
-    </thead>
-    <tbody>
-      <!-- Genre goals -->
-      <tr><td>Fantasy</td><td>~25</td><td>#</td></tr>
-      <tr><td>Science Fiction</td><td>~18</td><td>#</td></tr>
-      <tr><td>Horror</td><td>~12</td><td>#</td></tr>
-      <tr><td>Historical Fiction</td><td>~12</td><td>#</td></tr>
-      <tr><td>Literary Fiction</td><td>~10</td><td>#</td></tr>
+## Goals
 
-      <!-- Series balance — double border above -->
-      <tr class="section-start"><td>Series balance</td><td>Lean in</td><td>42% of picks</td></tr>
+### Genre
 
-      <!-- Floors — double border above -->
-      <tr class="section-start"><td>Indie</td><td>15+</td><td>#</td></tr>
-      <tr><td>Classic</td><td>12+</td><td>#</td></tr>
-    </tbody>
-  </table>
-</body>
-</html>
+| Goal | Target | Current |
+|---|---|---|
+| Fantasy | ~25 | # |
+| Science Fiction | ~18 | # |
+| Horror | ~12 | # |
+| Historical Fiction | ~12 | # |
+| Literary Fiction | ~10 | # |
+
+### Series balance
+
+| Preference | Current |
+|---|---|
+| Lean in | 42% of picks |
+
+### Floors
+
+| Floor | Target | Current |
+|---|---|---|
+| Indie | 15+ | # |
+| Classic | 12+ | # |
 ```
 
-The two `tr.section-start` rows are what produce the double-border
-breaks between the three logical groups (genre goals → series balance
-→ indie/classic floors). Add or remove rows freely as goals shift —
-the section-start markers stay on the first row of each new section.
+Add or remove rows freely as goals shift; sub-sections can be
+collapsed or split as the reader's preferences come in.
 
 **Genre** is the canonical genre from the catalog, and what is mapped
-back to the goals in Reading_List.md's metadata header.
+back to the rows in the `### Genre` table.
 **Confidence** is your judgment of how well the pick fits the reader,
 based on log overlap and vector alignment — not a catalog field.
 **Audio** comes from the catalog's `audio_suitability`. Both render
@@ -252,9 +215,9 @@ Mirror to `/tmp/build_state.json` for the helper scripts to read:
 }
 ```
 
-The Reading_List.md is the source of truth; the
-build_state.json mirror is regenerated each session by parsing the
-header. Persist both after the answers come in.
+`/tmp/Reading_List.md` is the source of truth; the `build_state.json`
+mirror is regenerated each session by parsing the goals tables at
+the bottom. Persist both after the answers come in.
 
 ## Tool prep
 
@@ -389,8 +352,9 @@ After the answers come back, summarise the direction in a couple of
 sentences before moving on. Never "your floor for indie is 15" — say
 "indie's in rotation; I'll check in if it falls behind."
 
-Translate the answers to floors and write the metadata header at the
-top of `/tmp/Reading_List.md`. This is the persistent store —
+Translate the answers to floors and write them into the `## Goals`
+tables at the bottom of `/tmp/Reading_List.md` along with the meta
+line under the title. The file is the persistent store —
 re-reading next session gives the agent the goals back from the
 user-uploaded file.
 
@@ -465,7 +429,7 @@ After confirmation:
 1. Add picks to `/tmp/Reading_List.md` with a note in the "Why" column
 like "User wishlist book".
 2. Record the decision in `/tmp/build_state.json` `session_notes`
-   (e.g. `{"kind": "series_scope", "series": "...", "scope": "next-1"}`).
+   (e.g. `{"kind": "wishlist_added", "title": "...", "scope": "next-1"}`).
 
 
 ## End-of-section handoff
@@ -483,8 +447,9 @@ every time the list changes.
 ### Steps at the handoff
 
 1. Confirm `/tmp/Profile.md` and `/tmp/Reading_List.md` are current
-   on disk. Reading_List.md has the goals metadata header from the
-   goals step plus any series-gate / wishlist additions.
+   on disk. Reading_List.md has the meta line and `## Goals` tables
+   from the goals step plus any series-gate / wishlist additions
+   in the picks table.
 2. Update internal build state: `intake_complete: true`,
    `session_notes` append `{"kind": "intake_done", "at": <ISO>}`.
 3. Surface `Profile.md` via `present_files` as a save-point file:
@@ -494,10 +459,13 @@ every time the list changes.
    shutil.copy("/tmp/Profile.md", "/mnt/user-data/outputs/Profile.md")
    ```
 
-4. Present the `reading-list` artifact from `/tmp/Reading_List.md`
-   with `present_files`. `Reading_List.md`. The reader sees the
+4. Create the live `reading-list` artifact by passing the current
+   `/tmp/Reading_List.md` contents in via the `seed` prop — the
+   artifact renders the markdown directly. The reader sees the
    artifact inline; one click gives them the live view they'll
-   watch the build happen in.
+   watch the build happen in. From here on, every edit to
+   `/tmp/Reading_List.md` is paired with re-rendering the artifact
+   from the same file.
 5. Transition in librarian voice — short, no plumbing talk. A
    sentence or two about where the conversation is at, with the
    artifact already rendered above and the Profile.md file linked as

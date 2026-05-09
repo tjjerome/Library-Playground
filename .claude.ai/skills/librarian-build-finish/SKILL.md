@@ -173,12 +173,15 @@ Two differences from the catalog-side loop:
 
 After each confirmation:
 
-1. **Add to the live Reading List artifact** and note "Upcoming Release".
-   Confidence and audio stars on each new row, if available;
-   the goals table at the bottom updates if any genre/floor moves.
-   Keep upcoming releases visually separate from the core list in
-   the artifact (a divider row works fine) — these aren't acquired
-   yet. Acknowledgement in chat is brief, not templated.
+1. **Append to `/tmp/Reading_List.md` and re-render the artifact**
+   from the same file. Keep upcoming releases visually separate
+   from the core list — close the core picks table, add an
+   `## Upcoming releases` sub-heading, and open a second pipe-table
+   underneath with the same columns. New rows go in the second
+   table; pages may be blank. Confidence and audio stars where
+   they're available; the goals tables at the bottom update if any
+   genre/floor moves. Acknowledgement in chat is brief, not
+   templated.
 2. **Series picks → no series-scope follow-up.** Use of `series-fit`
    is not necessary for upcoming releases. If it's a sequel, just confirm
    the prior books read in the log or placed in the reading list.
@@ -317,17 +320,18 @@ Before composing the message:
    to six. Anchor to *different* reading contexts where it helps
    (audio commute, single sitting, slower evening read). Choose one
    as the highlighted pick.
-2. **Move top picks to the top of the Reading List artifact.** Change
-   font to bold and add "(Top Pick)" to the notes section for each.
+2. **Reorder the top-pick rows to the top of the picks table in
+   `/tmp/Reading_List.md`.** Bold the title cell (`**Hyperion**`)
+   and prefix the Why cell with `(Top Pick) `. No separate section;
+   the rows just sit at the top of the existing table.
 3. **Mark `/tmp/build_state.json` complete** — append
    `{"kind": "build_complete", "at": <ISO>}` to `session_notes` (this
    is internal scratch; not surfaced to the reader).
-4. **Update the `reading-list` artifact one last time** — the top
-   picks pin moved into Reading_List.md above, so the artifact's
-   list now shows the `## Where to start` block at the top and the
-   goals table at the bottom is final. The reader's been watching
-   this artifact the whole build; the closing update is the version
-   they keep.
+4. **Re-render the `reading-list` artifact one last time** from
+   the updated `/tmp/Reading_List.md` — the top-pick rows now sit
+   at the top of the picks table, the goals tables at the bottom
+   are final. The reader's been watching this artifact the whole
+   build; the closing render is the version they keep.
 5. **Copy the two working files** to `/mnt/user-data/outputs/` for
    re-upload:
 
@@ -426,7 +430,7 @@ Same as `librarian-build`. Specific to this skill:
 | revisit gate | "anything we should revisit?" |
 | compare / swap_suggestions / fit_verdict | (silent — internal helper output) |
 | high_overlap / low_confidence | "thematically close to" / "weaker fit than the others" |
-| where to start (section header) | "where to start" — internal and external match |
+| top-pick rows / (Top Pick) prefix | "the strongest places to start" — never name the prefix in chat |
 | top picks / highlighted pick | "the strongest places to start" / "if you read one tonight" |
 | stretch / stretch picks / stretch goals | (silent — never used internally either) |
 | Phase 3 / Phase 4 / Phase 5 / five to start with | (silent — never used internally either) |
