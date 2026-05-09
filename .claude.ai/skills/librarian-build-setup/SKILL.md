@@ -138,6 +138,124 @@ scripts read.
 
 Persist with `json.dump(state, open("/tmp/build_state.json", "w"), indent=2)`.
 
+## Build artifact — the live reading list
+Write a fresh `/tmp/Reading_List.md` in the format below.
+
+The artifact has two tables: the picks themselves at the top and a
+goals/floors table at the bottom. The metadata header at the top carries
+the reader's goals, current build state, and the date the build was set up.
+
+### Artifact format
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 980px; margin: 24px auto; padding: 0 16px; }
+  h1 { margin-bottom: 4px; }
+  .meta { color: #666; margin-bottom: 24px; }
+
+  table.list { border-collapse: collapse; width: 100%; margin-bottom: 32px; }
+  table.list th, table.list td { padding: 8px 10px; border-bottom: 1px solid #ddd; text-align: left; vertical-align: top; }
+  table.list th { background: #f5f5f5; font-weight: 600; }
+  table.list td.stars { white-space: nowrap; letter-spacing: 1px; }
+  table.list td.why { color: #444; font-size: 0.95em; }
+
+  table.goals { border-collapse: collapse; width: 100%; }
+  table.goals th, table.goals td { padding: 8px 10px; border: 1px solid #bbb; text-align: left; }
+  table.goals th { background: #f5f5f5; }
+  /* double-border separators between sections */
+  table.goals tr.section-start td { border-top: 4px double #333; }
+</style>
+</head>
+<body>
+  <h1>Reading List</h1>
+  <p class="meta">12 of ~100 books · started 2026-05-04</p>
+
+  <table class="list">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Pages</th>
+        <th>Confidence</th>
+        <th>Audio</th>
+        <th>Why</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>Hyperion</em></td>
+        <td>Dan Simmons</td>
+        <td>Science Fiction</td>
+        <td>482</td>
+        <td class="stars">★★★★★</td>
+        <td class="stars">★★★★☆</td>
+        <td class="why">structural cleverness like <em>The Wandering Inn</em></td>
+      </tr>
+      <!-- one row per pick, appended as the build progresses -->
+    </tbody>
+  </table>
+
+  <h2>Goals</h2>
+  <table class="goals">
+    <thead>
+      <tr><th>Goal</th><th>Target</th><th>Current</th></tr>
+    </thead>
+    <tbody>
+      <!-- Genre goals -->
+      <tr><td>Fantasy</td><td>~25</td><td>#</td></tr>
+      <tr><td>Science Fiction</td><td>~18</td><td>#</td></tr>
+      <tr><td>Horror</td><td>~12</td><td>#</td></tr>
+      <tr><td>Historical Fiction</td><td>~12</td><td>#</td></tr>
+      <tr><td>Literary Fiction</td><td>~10</td><td>#</td></tr>
+
+      <!-- Series balance — double border above -->
+      <tr class="section-start"><td>Series balance</td><td>Lean in</td><td>42% of picks</td></tr>
+
+      <!-- Floors — double border above -->
+      <tr class="section-start"><td>Indie</td><td>15+</td><td>#</td></tr>
+      <tr><td>Classic</td><td>12+</td><td>#</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
+```
+
+The two `tr.section-start` rows are what produce the double-border
+breaks between the three logical groups (genre goals → series balance
+→ indie/classic floors). Add or remove rows freely as goals shift —
+the section-start markers stay on the first row of each new section.
+
+**Genre** is the canonical genre from the catalog, and what is mapped
+back to the goals in Reading_List.md's metadata header.
+**Confidence** is your judgment of how well the pick fits the reader,
+based on log overlap and vector alignment — not a catalog field.
+**Audio** comes from the catalog's `audio_suitability`. Both render
+as ★ ratings out of 5.
+
+Mirror to `/tmp/build_state.json` for the helper scripts to read:
+
+```json
+{
+  "goals": {
+    "Fantasy": 25, "Science Fiction": 18, "Horror": 12,
+    "Historical Fiction": 12, "Literary Fiction": 10
+  },
+  "floors": {
+    "indie": {"kind": "tag", "value": 15},
+    "classic": {"kind": "tag", "value": 12},
+    "Fantasy": {"kind": "genre", "value": 25}
+  }
+}
+```
+
+The Reading_List.md is the source of truth; the
+build_state.json mirror is regenerated each session by parsing the
+header. Persist both after the answers come in.
+
 ## Tool prep
 
 Load `AskUserQuestion` once at session start:
@@ -148,55 +266,17 @@ ToolSearch(query="select:AskUserQuestion", max_results=1)
 
 Falls back to prose if unavailable.
 
-## The arc — series, taste, goals, wishlist
+## The arc — taste, goals, unfinished series, wishlist
 
 The intake usually moves through four kinds of conversation, in
 roughly this order. They aren't phases the reader is walked through;
 they're what the librarian is paying attention to.
 
-### Series in flight
-
-```bash
-python3 webhelper/librarian_query.py unfinished-series \
-    --catalog /tmp/Library_Catalog.sqlite \
-    --log $PROJECT_LOG \
-    --reading-list /tmp/Reading_List.md
-```
-
-Returns a JSON list: series rated ≥4.0, no completion flag, unread
-next book in catalog. The gate considers every rated log entry
-regardless of whether it has a `Last Date Read` value — older undated
-reads count the same as recent ones.
-
-Surface the unfinished series in chat — one line per series, prose,
-not a checklist (last-book / next-book / ratings), in a way that
-sounds like the librarian recalling: "you finished *Gardens of the
-Moon* in '21 and never came back; *Deadhouse Gates* is right there."
-
-For each series, the reader has a real choice — pick up the next
-book, do a partial block from where they left off, defer to upcoming
-releases, or pass. The decisions stack across the gate, and each one
-is a clean tap-confirm: bounded, irreversible-ish (changes the list),
-the reader's about to do it anyway. Walk them one at a time.
-
-After each accepted entry:
-
-1. Append picks to `/tmp/Reading_List.md` under
-   `## Series continuations` (create section if absent). Inline Python
-   markdown editing — no helper for plain appends.
-2. Record the decision in `/tmp/build_state.json` `session_notes`
-   (e.g. `{"kind": "series_scope", "series": "...", "scope": "next-1"}`).
-
-No taste or goals work fires until every unfinished-series entry is
-routed.
-
 ### Taste — read the log, read it back
 
-This is the load-bearing change. The earlier interview asked the
-reader to multi-select tone / pacing / scope from menus, which
-treated taste as a checklist. The cartography pass reads the log
-and proposes vectors *grounded in the reader's actual ratings*, then
-invites correction in prose.
+The cartography pass reads the log and proposes taste vectors
+*grounded in the reader's actual ratings*, then invites correction
+in prose.
 
 Run only if the profile is empty OR the reader chose a fresh pass.
 For "work from existing profile," skip with one short note that the
@@ -208,12 +288,10 @@ If running:
 top-rated. Old 5★s carry as much weight as recent 5★s; the recommender
 is built to avoid recency drift, and cartography mirrors that.
 Undated entries are real reads — older reads from before the reader's
-tracking habit, durable older taste, not noise. Cluster them
-alongside dated entries. The helper's `compute_log_anchors` buckets
-them as `"undated"` (separate from `"3+yrs"`) with the same weight,
-so anchors carry a visible `bucket: "undated"` flag downstream. Often
-these books *are* the load-bearing vectors: they survived years on
-the shelf without a re-rate event. Treat them as such.
+tracking habit,  older taste, not noise. Cluster them alongside dated
+entries. The helper's `compute_log_anchors` buckets them as `"undated"`
+(separate from `"3+yrs"`) with the same weight, so anchors carry a
+visible `bucket: "undated"` flag downstream.
 
 **Cluster ≥4★ titles into eight to twelve distinct vectors.** Each
 vector is a *bundle of taste*, not a genre. Pull from the catalog's
@@ -282,13 +360,17 @@ will correct it.
 Establish goals fresh each session. Goal language is **floors and
 ranges**, not exact targets:
 
-- **Working range: 100-110 books before stretch picks, 110-125 after.**
+- **Working range: 100-110 books before upcoming releases, 110-125 after.**
   In conversation, this is "around 100, with room for series to push a
   bit higher, and another 10-15 of upcoming releases on top."
 - **Genre goals are floors that guide direction**, not numbers to
   hit. "You wanted ~12 historical fiction; we're at 4. Want to lean
   there, or stay with what we're doing?" — never "we need 8 more
   historical fiction."
+- **Series balance is a guide.** It allows the reader to specify a
+  preference for series without making it a hard requirement. "Do you
+  want to lean into series you love, or keep an even mix, or mostly
+  standalones?" — never "we need more series books to hit your goal."
 - **Indie / classic floors stay floors.** "I want to keep some indie /
   classic in the mix" — the count is internal.
 - **Stretch goals = "books coming out next year"** in reader voice,
@@ -299,49 +381,51 @@ the menu of plausible answers is bounded, and three-word replies
 wouldn't add much over a tap. Three small questions usually cover it
 — genre tilt (multi-select from the reader's highest-rated genres in
 the log; reader picks two to five), series-status balance (mostly
-standalones / even mix / lean into series), and indie-classic
-floors. Write the labels as plain language — "lean into series I
-love" reads better than "Series-leaning (Recommended)."
+standalones / even mix / tackle some short series / lean into long
+series), and indie-classic floors. Write the labels as plain language
+— "get lost in long series" reads better than "Series-leaning (Recommended)."
 
 After the answers come back, summarise the direction in a couple of
 sentences before moving on. Never "your floor for indie is 15" — say
 "indie's in rotation; I'll check in if it falls behind."
 
-Translate the answers to floors and write a metadata header at the
+Translate the answers to floors and write the metadata header at the
 top of `/tmp/Reading_List.md`. This is the persistent store —
 re-reading next session gives the agent the goals back from the
 user-uploaded file.
 
-```markdown
-# Reading List
+### Unfinished Series
 
-_Goals: ~100 books, lean Fantasy / Sci-Fi / Horror, keep historical
-fiction and literary fiction in the mix. Indie and classic stay in
-rotation. Started 2026-05-04._
-
-## Series continuations
-...
+```bash
+python3 webhelper/librarian_query.py unfinished-series \
+    --catalog /tmp/Library_Catalog.sqlite \
+    --log $PROJECT_LOG \
+    --reading-list /tmp/Reading_List.md
 ```
 
-Mirror to `/tmp/build_state.json` for the helper scripts to read:
+Returns a JSON list: series with highly rated entries, no completion flag,
+unread next book in catalog. The gate considers every rated log entry
+regardless of whether it has a `Last Date Read` value — older undated
+reads count the same as recent ones.
 
-```json
-{
-  "goals": {
-    "Fantasy": 25, "Science Fiction": 18, "Horror": 12,
-    "Historical Fiction": 12, "Literary Fiction": 10
-  },
-  "floors": {
-    "indie": {"kind": "tag", "value": 15},
-    "classic": {"kind": "tag", "value": 12},
-    "Fantasy": {"kind": "genre", "value": 25}
-  }
-}
-```
+Surface the unfinished series in chat — one line per series, prose,
+not a checklist (last-book / next-book / ratings), in a way that
+sounds like the librarian recalling: "you finished *Gardens of the
+Moon* in '21 and never came back; *Deadhouse Gates* is right there."
 
-The metadata header in Reading_List.md is the source of truth; the
-build_state.json mirror is regenerated each session by parsing the
-header. Persist both after the answers come in.
+For each series, the reader has a real choice — pick up the next
+book, do a partial block from where they left off, defer to upcoming
+releases, or pass. The decisions stack across the gate, and each one
+is a clean tap-confirm: bounded, irreversible-ish (changes the list),
+the reader's about to do it anyway. Walk them one at a time.
+
+After each accepted entry:
+
+1. Add picks to `/tmp/Reading_List.md` with a note in the "Why" column
+like "Unfinished series: picked next book in <series> after your 4★ of <previous book>".
+2. Record the decision in `/tmp/build_state.json` `session_notes`
+   (e.g. `{"kind": "series_scope", "series": "...", "scope": "next-1"}`).
+
 
 ### Wishlist
 
@@ -350,8 +434,10 @@ question about what the reader's already excited about for the next
 year or two, books or series they've heard of, been recommended, or
 have been meaning to get to. Wait.
 
-For each title named, look up in SQLite directly (the `lookup`
-subcommand was retired):
+For each title named, look up in SQLite directly with a fuzzy match
+on normalized title or author. Some fuzziness is important here — the reader won't necessarily give you perfect metadata, and you want to catch close calls. Normalize with
+the same function the catalog uses for its `title_norm` and `author_norm` fields, which is available in
+`webhelper.librarian_query.py norm` or as a Python function if you open the catalog in-process:
 
 ```python
 import sqlite3
@@ -371,117 +457,28 @@ already-on-list before confirming.
 Confirm presence in the library and not-already-read before adding.
 Multiple wishlist items at once → one multi-select tap-confirm with
 the candidate titles as options is fine; single items can go via a
-short prose ack and add. Fall back to the React picker artifact only
-when richer per-book context (cards, content flags) genuinely helps
-— picker is opt-in, not default.
+short prose ack and add. If the wishlist books are part of a series,
+ask the reader if they want to add just that book or the whole series
+or a partial series block.
 
-After confirmation, append picks to `/tmp/Reading_List.md` under
-`## Wishlist additions` and record the additions in `session_notes`.
-The list itself is the source of truth; do not duplicate selected
-picks into `build_state`.
+After confirmation:
+1. Add picks to `/tmp/Reading_List.md` with a note in the "Why" column
+like "User wishlist book".
+2. Record the decision in `/tmp/build_state.json` `session_notes`
+   (e.g. `{"kind": "series_scope", "series": "...", "scope": "next-1"}`).
 
-## End-of-section handoff — create the live reading-list artifact
+
+## End-of-section handoff
 
 Once the series gate, cartography, goals, and wishlist are done,
 **don't break the session**. The sandbox keeps the working files
 between skills, so hand straight off to `librarian-build` in place.
 
-The handoff is the moment to create the **`reading-list` artifact**
+The handoff is the moment to present the **`reading-list` artifact**
 — the live view the reader will watch the build happen in. The
 reader sees the artifact once, clicks through, and from then on it
-updates in place as picks land. No more re-surfacing the file
+updates in place as picks land. No re-surfacing the file
 every time the list changes.
-
-The artifact has two tables: the picks themselves at the top and a
-goals/floors table at the bottom. The goals table mirrors the
-metadata header in `Reading_List.md` and updates as books are added.
-
-### Artifact format
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-  body { font-family: system-ui, sans-serif; max-width: 980px; margin: 24px auto; padding: 0 16px; }
-  h1 { margin-bottom: 4px; }
-  .meta { color: #666; margin-bottom: 24px; }
-
-  table.list { border-collapse: collapse; width: 100%; margin-bottom: 32px; }
-  table.list th, table.list td { padding: 8px 10px; border-bottom: 1px solid #ddd; text-align: left; vertical-align: top; }
-  table.list th { background: #f5f5f5; font-weight: 600; }
-  table.list td.stars { white-space: nowrap; letter-spacing: 1px; }
-  table.list td.why { color: #444; font-size: 0.95em; }
-
-  table.goals { border-collapse: collapse; width: 100%; }
-  table.goals th, table.goals td { padding: 8px 10px; border: 1px solid #bbb; text-align: left; }
-  table.goals th { background: #f5f5f5; }
-  /* double-border separators between sections */
-  table.goals tr.section-start td { border-top: 4px double #333; }
-</style>
-</head>
-<body>
-  <h1>Reading List</h1>
-  <p class="meta">12 of ~100 books · started 2026-05-04</p>
-
-  <table class="list">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Pages</th>
-        <th>Confidence</th>
-        <th>Audio</th>
-        <th>Why</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><em>Hyperion</em></td>
-        <td>Dan Simmons</td>
-        <td>482</td>
-        <td class="stars">★★★★★</td>
-        <td class="stars">★★★★☆</td>
-        <td class="why">structural cleverness like <em>The Wandering Inn</em></td>
-      </tr>
-      <!-- one row per pick, appended as the build progresses -->
-    </tbody>
-  </table>
-
-  <h2>Goals</h2>
-  <table class="goals">
-    <thead>
-      <tr><th>Goal</th><th>Target</th><th>Current</th></tr>
-    </thead>
-    <tbody>
-      <!-- Genre goals -->
-      <tr><td>Fantasy</td><td>~25</td><td>5</td></tr>
-      <tr><td>Science Fiction</td><td>~18</td><td>3</td></tr>
-      <tr><td>Horror</td><td>~12</td><td>1</td></tr>
-      <tr><td>Historical Fiction</td><td>~12</td><td>2</td></tr>
-      <tr><td>Literary Fiction</td><td>~10</td><td>1</td></tr>
-
-      <!-- Series balance — double border above -->
-      <tr class="section-start"><td>Series balance</td><td>Lean in</td><td>42% of picks</td></tr>
-
-      <!-- Floors — double border above -->
-      <tr class="section-start"><td>Indie</td><td>15+</td><td>4</td></tr>
-      <tr><td>Classic</td><td>12+</td><td>2</td></tr>
-    </tbody>
-  </table>
-</body>
-</html>
-```
-
-The two `tr.section-start` rows are what produce the double-border
-breaks between the three logical groups (genre goals → series balance
-→ indie/classic floors). Add or remove rows freely as goals shift —
-the section-start markers stay on the first row of each new section.
-
-**Confidence** is your judgment of how well the pick fits the reader,
-based on log overlap and vector alignment — not a catalog field.
-**Audio** comes from the catalog's `audio_suitability`. Both render
-as ★ ratings out of 5.
 
 ### Steps at the handoff
 
@@ -497,10 +494,10 @@ as ★ ratings out of 5.
    shutil.copy("/tmp/Profile.md", "/mnt/user-data/outputs/Profile.md")
    ```
 
-4. Create the `reading-list` artifact using the format above, seeded
-   with goals from the metadata header and any picks already in
-   `Reading_List.md`. The reader sees the artifact inline; one click
-   gives them the live view they'll watch the build happen in.
+4. Present the `reading-list` artifact from `/tmp/Reading_List.md`
+   with `present_files`. `Reading_List.md`. The reader sees the
+   artifact inline; one click gives them the live view they'll
+   watch the build happen in.
 5. Transition in librarian voice — short, no plumbing talk. A
    sentence or two about where the conversation is at, with the
    artifact already rendered above and the Profile.md file linked as

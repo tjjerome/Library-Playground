@@ -24,11 +24,6 @@ in `/tmp/Reading_List.md`. Three more passes:
    distribution + floor checks.
 3. **Where to start** — capstone top picks.
 
-The skill no longer numbers these passes as phases. Earlier
-"Phase 3 / Phase 4 / Phase 5" vocabulary was structural process
-narration even when it never reached the reader; the names above are
-load-bearing in chat *and* in this document.
-
 ## What stays true (data and integrity)
 
 All the integrity rules from `librarian-build` carry over. Two more
@@ -73,9 +68,7 @@ type or tap; also picture whether their three-word reply tells you
 more than "Option B" would. If yes, prose.
 
 When you do present options, write the labels as sentences a person
-would actually say. Drop "(Recommended)" decorations and "Other" as
-a default escape; only include a write-in option when there's a
-real chance the reader needs one.
+would actually say. Drop "(Recommended)" decorations.
 
 ## Inputs at session start
 
@@ -141,7 +134,7 @@ ambiguous. Add to the upcoming-releases section.
 
 Source from **four parallel pools — not a priority list:**
 
-1. **Author backlist hits.** Upcoming books by authors with ≥1 5★
+1. **Author backlist hits.** Upcoming books by authors with ≥1 >4★
    read in `PROJECT_LOG`.
    - Search: `<author> new book <current year>`,
      `<author> upcoming` (filter by date).
@@ -150,7 +143,7 @@ Source from **four parallel pools — not a priority list:**
    announced next-book dates.
 3. **Comp-driven.** For 5-star benchmarks, search "books like X" /
    "<author> influence" within upcoming-release roundups.
-4. **Genre-anticipated debuts and breakouts.**
+4. **Genre-anticipated debuts and new releases.**
 
 **At least one pick from pools 3 or 4 in every round.** Pool 1 alone
 = author-only sourcing, which misses genre-anticipated debuts the
@@ -180,26 +173,20 @@ Two differences from the catalog-side loop:
 
 After each confirmation:
 
-1. **Append to `/tmp/Reading_List.md` under
-   `## Upcoming releases` and update the live `reading-list`
-   artifact** the same turn — same flow as the open-pitch loop in
-   `librarian-build`. Confidence and audio stars on each new row;
+1. **Add to the live Reading List artifact** and note "Upcoming Release".
+   Confidence and audio stars on each new row, if available;
    the goals table at the bottom updates if any genre/floor moves.
    Keep upcoming releases visually separate from the core list in
    the artifact (a divider row works fine) — these aren't acquired
    yet. Acknowledgement in chat is brief, not templated.
-2. **Series picks → series-scope follow-up.** Use `series-fit` if the
-   sequel is in a series already in the catalog; otherwise resolve
-   scope by hand.
+2. **Series picks → no series-scope follow-up.** Use of `series-fit`
+   is not necessary for upcoming releases. If it's a sequel, just confirm
+   the prior books read in the log or placed in the reading list.
 3. **Whole-pitch skip → ask, prose, turn-ending.** Same shape as
    `librarian-build`. Reply → profile write.
 4. **Update `/tmp/build_state.json`** — append
    `{"kind": "upcoming_added", "title": ..., "at": <ISO>}` to
    `session_notes`.
-
-When the reader acquires one of these books later, the cataloguer
-adds it to SQLite and offers to move the entry from
-`## Upcoming releases` to its genre section.
 
 ## Walk the full list
 
@@ -266,7 +253,7 @@ Surface the verdict honestly in prose:
   resonates with.
 - **medium** — balanced read, name the strengths and the gaps.
 - **weak** — say so directly with the reasoning ("this is more
-  atmospheric than what your log usually rewards"). Don't pretend.
+  atmospheric than books you've enjoyed in the past"). Don't pretend.
 
 Then, when `swap_suggestions` is non-empty, present the comparison
 in direct prose — not a table. Per suggestion: name it, say why it's
@@ -330,19 +317,8 @@ Before composing the message:
    to six. Anchor to *different* reading contexts where it helps
    (audio commute, single sitting, slower evening read). Choose one
    as the highlighted pick.
-
-2. **Pin top picks at the top of `/tmp/Reading_List.md`** under
-   `## Where to start` (replacing any prior pin block; this section
-   stays a cross-reference, not a removal — entries also remain in
-   their genre sections):
-
-   ```markdown
-   ## Where to start
-
-   | Title | Author | Pages | Why it's for you |
-   | ... |
-   ```
-
+2. **Move top picks to the top of the Reading List artifact.** Change
+   font to bold and add "(Top Pick)" to the notes section for each.
 3. **Mark `/tmp/build_state.json` complete** — append
    `{"kind": "build_complete", "at": <ISO>}` to `session_notes` (this
    is internal scratch; not surfaced to the reader).

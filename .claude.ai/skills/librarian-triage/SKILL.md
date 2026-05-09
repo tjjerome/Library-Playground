@@ -53,7 +53,7 @@ Look by name at canonical path:
 
 - `/mnt/project/Reading_Log.csv` — reader history. Need for full builds, series queries.
 - `/mnt/project/Profile.md` (optional) — seed taste profile.
-- `/mnt/project/Reading_List.md` (optional) — existing TBR pool. Goals live in a metadata header at the top, when present.
+- `/mnt/project/Reading_List.md` (optional) — existing TBR pool. Goals live in a table at the bottom, when present.
 
 Fallback if not at canonical path:
 `find /mnt -maxdepth 4 -name "<file>" 2>/dev/null`.
@@ -82,7 +82,6 @@ Missing seed → create empty stub:
 
 ```bash
 [ ! -f /tmp/Profile.md ]      && printf '# Reader Profile\n\n_Living memory._\n' > /tmp/Profile.md
-[ ! -f /tmp/Reading_List.md ] && printf '# Reading List\n' > /tmp/Reading_List.md
 ```
 
 `/tmp/build_state.json` is internal scratch — build-setup or build
@@ -93,7 +92,8 @@ discover it from project knowledge; don't seed it from there.
 edit them in place. Build-setup creates a `reading-list` artifact at
 the intake handoff that live-updates as picks land — `present_files`
 on `Reading_List.md` only fires at session pause / completion for
-re-upload. Profile.md surfaces as a file the same way.
+re-upload. Profile.md surfaces as a file the same way. If the Reading_List.md
+seed does not exist, it will be created in the librarian-build-setup flow.
 
 ## Drive catalog discovery
 
@@ -217,8 +217,7 @@ with `ToolSearch(query="select:AskUserQuestion", max_results=1)`.
 
 ### Resume-offer rule
 
-If `Reading_List.md` has real content (rows beyond the seed header)
-AND the opener is build-shaped or ambiguous, mention the in-progress
+If `Reading_List.md` has real content, mention the in-progress
 list in human terms — count of picks, what direction the last entries
 were going ("looks like you're partway through some horror picks").
 Let the reader pick up where they left off, switch to a single-book

@@ -22,7 +22,9 @@ either:
 gate done, taste cartography seeded, goals-as-floors set, wishlist
 absorbed. Pick up here and pitch books until working range is met.
 (b) **Refine-mode**: existing list kept, no intake — work off
-`/tmp/Reading_List.md`, edit it on request.
+`/tmp/Reading_List.md`, edit it on request. Present the working
+list to the user as a live artifact since the librarian-build-setup
+was bypassed.
 
 The build is **one continuous conversation**, not a sequence of fixed
 batches. Picks accumulate as the reader confirms them. Your job is to
@@ -45,9 +47,10 @@ put the right book in the reader's hands, repeatedly, with conviction
 - **Series scope is a hard gate.** Whenever a confirmed pick is part
   of a multi-book series, run `series-fit` and resolve scope (one
   book / partial / all) before pitching the next round.
-- **Pick state lives in `/tmp/Reading_List.md` only.** `build_state`
+- **`/tmp/Reading_List.md` is the source of truth.** `build_state`
   carries goals, floors, vectors, events, scope decisions, rejected
-  candidates — never selected picks.
+  candidates — it is a useful log for the librarian, but needs to be 
+  updated to reflect the current state of the reading list.
 - **Profile edits are silent during the build**, surfaced as one
   consolidated diff at session end (build-finish). Reading-list
   edits get a brief visible acknowledgement so the reader knows the
@@ -90,11 +93,6 @@ more than "Option B" would. If yes, prose.
 When you do present options, write the labels as sentences a person
 would actually say. Drop "(Recommended)" decorations — if one option
 is the obvious move, the prose around the question can carry that.
-Drop "Other" as a default escape — only include a write-in option
-when there's a real chance the reader needs one.
-
-`AskUserQuestion` is **not** the default turn shape. Most pitches go
-reader → prose reply.
 
 ## Inputs at session start
 
@@ -136,7 +134,8 @@ Refine-mode: `build_state.mode == "refine"` or no build state but
 `/tmp/Reading_List.md` has content — the reader's iterating an existing
 list, not building a new one.
 
-Skip cartography and goals. Open with a short orienting line that
+Skip cartography and goals. Pull those from the existing Profile.md and
+Reading_List.md. Open with a short orienting line that
 names the count and asks what changes — prose, not a tap-confirm.
 
 Common refine actions:
@@ -424,6 +423,10 @@ surfaces it.
 - **Genre floors** work the same way. "You wanted to lean historical
   fiction; we're at 4. Stay there or pivot?" — never "we need 8 more
   to hit your target."
+- **Series balance is a guide.** If the reader wanted more standalones
+  or short series, check to see if the long series are filling up the
+  list too much and offer a pivot when they are. If the reader asked
+  to lean into series, check to see if they are properly represented.
 - **Working range satisfaction.** When `len(Reading_List.md picks)`
   reaches 100 and there are no critical at-risk floors, hand off to
   `librarian-build-finish` for the upcoming-releases / walk-through /
@@ -467,10 +470,9 @@ issues *the librarian* noticed without being asked.
 
 ## Hand-off to build-finish — same chat, checkpoint surfaced
 
-When picks reach working range (≥100, no at-risk floors), **don't
-break the session.** /tmp working files persist; build-finish picks
-up in place. 100 books is the right moment to surface a checkpoint
-save.
+When picks reach the minimum working range (≥100, no at-risk floors),
+**don't break the session.** /tmp working files persist; build-finish
+picks up in place.
 
 1. Append `{"kind": "core_complete", "at": <ISO>}` to `session_notes`
    in the internal `/tmp/build_state.json`.
