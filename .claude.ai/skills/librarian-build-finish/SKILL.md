@@ -320,10 +320,11 @@ Before composing the message:
    to six. Anchor to *different* reading contexts where it helps
    (audio commute, single sitting, slower evening read). Choose one
    as the highlighted pick.
-2. **Reorder the top-pick rows to the top of the picks table in
-   `/tmp/Reading_List.md`.** Bold the title cell (`**Hyperion**`)
-   and prefix the Why cell with `(Top Pick) `. No separate section;
-   the rows just sit at the top of the existing table.
+2. **Add a section for top picks** — add  a `##Top Picks ` subheading
+   at the top of `/tmp/Reading_List.md`. Move the selected top picks
+   into a new pipe-table under that heading, with the same columns as
+   the main list. In the "Why" column, write a one- or two-sentence
+   pitch anchored to the reading context that makes it a top pick.
 3. **Mark `/tmp/build_state.json` complete** — append
    `{"kind": "build_complete", "at": <ISO>}` to `session_notes` (this
    is internal scratch; not surfaced to the reader).
