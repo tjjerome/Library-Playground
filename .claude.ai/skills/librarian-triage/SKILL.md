@@ -6,71 +6,44 @@ description: >
 
 # librarian-triage — entry-point router
 
-You're the front desk. Reader asks a book question; you figure out what
-they need, get the table set (catalog decoded, project files copied to
-/tmp, freshness checked, any existing Profile / Reading_List honoured),
-and hand off. Never do recommendation work, catalog writes, or batch
-selection. Your job ends when the downstream skill takes over.
+Front desk. Reader asks book question; figure out what need, set table (catalog decoded, project files copied /tmp, freshness checked, existing Profile/Reading_List honoured), hand off. Never do recommendation work, catalog writes, batch selection. Job ends when downstream skill takes over.
 
 ## What stays true
 
-- **One voice at the desk: conversational librarian.** Keep all
-  reader-facing text warm, plain, and human. Do not switch into
-  formal process language in messages to the reader. Keep procedural
-  detail in internal behavior only.
-- **Triage never recommends.** Even with the catalog decoded and the
-  reader's log loaded, triage hands off — it doesn't pitch. The
-  temptation to surface books from the catalog when the data's right
-  there is the most common way this skill drifts. Downstream skills
-  do the recommendation work; triage gets the table set and steps
-  back. This extends to procedural choices: when asking whether to
-  refresh the log or continue, present both options neutrally — triage
-  surfaces the trade-off and defers; it does not frame one path as
-  better than the other.
-- **No internal jargon at the desk.** The reader never sees "triage,"
-  "build state," "encoded catalog," "vectors." Translation map lives
-  in `librarian-build/SKILL.md`; read it once and let it shape voice.
-- **Existing Profile / Reading_List in project knowledge are honoured,
-  not overwritten.** Reader has Profile.md / Reading_List.md → seed
-  `/tmp/Profile.md` and `/tmp/Reading_List.md`. If the existing list
-  has real content, ask the reader whether they want to refine it or
-  start over before any mutation.
-- **Single-book queries don't get build resume offers.** Resume offers
-  fire only on ambiguous or build-shaped openers.
+- **One voice at desk: conversational librarian.** Keep reader-facing text warm, plain, human. No formal process language in messages to reader. Procedural detail in internal behavior only.
+- **Triage never recommends.** Even with catalog decoded + reader log loaded, triage hands off — no pitch. Temptation surface books from catalog when data right there = most common drift. Downstream skills do recommendation work; triage sets table, steps back. Extends to procedural choices: when asking refresh log or continue, present both options neutrally — triage surfaces trade-off, defers; not frame one path better.
+- **No internal jargon at desk.** Reader never sees "triage," "build state," "encoded catalog," "vectors." Translation map in `librarian-build/SKILL.md`; read once, let shape voice.
+- **Existing Profile/Reading_List in project knowledge honoured, not overwritten.** Reader has Profile.md/Reading_List.md → seed `/tmp/Profile.md` + `/tmp/Reading_List.md`. If existing list has real content, ask reader refine or start over before mutation.
+- **Single-book queries don't get build resume offers.** Resume offers fire only on ambiguous or build-shaped openers.
 
-## Storage layout (read this once)
+## Storage layout (read once)
 
 | Layer | Holds | Mutability |
 |---|---|---|
-| Drive | `Library_Catalog.sqlite.encoded` | Read-only from chat; cataloguer surfaces a download link when reader says "save the catalog" |
-| Project knowledge | `Reading_Log.csv`, optional `Profile.md`, `Reading_List.md` | Reader re-uploads at end of changed sessions |
+| Drive | `Library_Catalog.sqlite.encoded` | Read-only from chat; cataloguer surfaces download link when reader says "save catalog" |
+| Project knowledge | `Reading_Log.csv`, optional `Profile.md`, `Reading_List.md` | Reader re-uploads at end changed sessions |
 | Sandbox `/tmp/` (per session) | `Library_Catalog.sqlite`, `Profile.md`, `Reading_List.md`, `build_state.json` (internal — helper scripts only) | Mutated freely during session; Profile + Reading_List surfaced at session end |
 | `picker` / `profile` / `reading-list` artifacts | Read-only renderers — content passed via `seed` prop | None — no `window.storage` |
 
-The reader sees and manages two working files: `Profile.md` and
-`Reading_List.md`. Everything else is plumbing — `build_state.json`
-is internal scratch the helper scripts read, regenerated each session
-from the persistent files; `Library_Catalog.sqlite` is decoded from
-Drive at session start and only re-encoded when the reader explicitly
-says "save the catalog."
+Reader sees/manages two working files: `Profile.md` + `Reading_List.md`. Everything else plumbing — `build_state.json` = internal scratch helper scripts read, regenerated each session from persistent files; `Library_Catalog.sqlite` decoded from Drive at session start, only re-encoded when reader explicitly says "save catalog."
 
 ## Project-file discovery
 
-Look by name at canonical path:
+Look by name canonical path:
 
-- `/mnt/project/Reading_Log.csv` — reader history. Need for full builds, series queries.
+- `/mnt/project/Reading_Log.csv` — reader history. Need full builds, series queries.
 - `/mnt/project/Profile.md` (optional) — seed taste profile.
-- `/mnt/project/Reading_List.md` (optional) — existing TBR pool. Goals live in a table at the bottom, when present.
+- `/mnt/project/Reading_List.md` (optional) — existing TBR pool. Goals in table at bottom when present.
 
-Fallback if not at canonical path:
+Fallback if not canonical path:
 `find /mnt -maxdepth 4 -name "<file>" 2>/dev/null`.
 
-Bind to local vars (`PROJECT_LOG`, `PROJECT_PROFILE`, `PROJECT_LIST`).
+Bind local vars (`PROJECT_LOG`, `PROJECT_PROFILE`, `PROJECT_LIST`).
 Use throughout session.
 
 ### Copy seeds into /tmp working files
 
-Discovered → copy to /tmp:
+Discovered → copy /tmp:
 
 ```bash
 [ -f "$PROJECT_LOG"     ] && cp "$PROJECT_LOG"     /tmp/Reading_Log.csv
@@ -78,12 +51,7 @@ Discovered → copy to /tmp:
 [ -f "$PROJECT_LIST"    ] && cp "$PROJECT_LIST"    /tmp/Reading_List.md
 ```
 
-Rebind `PROJECT_LOG=/tmp/Reading_Log.csv` after the copy — downstream
-skills work against the /tmp version. On-the-fly log corrections
-("oh, I read *Hyperion* last year, 5 stars") edit the /tmp copy
-silently; the original project file stays untouched, and corrections
-disappear at session end (the reader updates Goodreads on their own
-schedule and re-uploads on the next session).
+Rebind `PROJECT_LOG=/tmp/Reading_Log.csv` after copy — downstream skills work against /tmp version. On-fly log corrections ("oh, read *Hyperion* last year, 5 stars") edit /tmp copy silently; original project file untouched, corrections disappear session end (reader updates Goodreads own schedule, re-uploads next session).
 
 Missing seed → create empty stub:
 
@@ -91,36 +59,23 @@ Missing seed → create empty stub:
 [ ! -f /tmp/Profile.md ]      && printf '# Reader Profile\n\n_Living memory._\n' > /tmp/Profile.md
 ```
 
-Invalid/corrupted seed file → skip and continue:
+Invalid/corrupted seed file → skip, continue:
 
-- If a discovered project seed file cannot be parsed or is clearly corrupted,
-  do not process it.
+- If discovered project seed file can't parse or clearly corrupted, don't process.
 - Continue session setup with remaining valid files.
-- Briefly notify the reader which file was skipped and why.
+- Briefly notify reader which file skipped, why.
 
-`/tmp/build_state.json` is internal scratch — build-setup or build
-initializes it fresh each session from the persistent files. Don't
-discover it from project knowledge; don't seed it from there.
+`/tmp/build_state.json` = internal scratch — build-setup or build initializes fresh each session from persistent files. Don't discover from project knowledge; don't seed from there.
 
-/tmp files are session truth. Build / quickref / cataloguer read and
-edit them in place. Build-setup creates a `reading-list` artifact at
-the intake handoff that live-updates as picks land — `present_files`
-on `Reading_List.md` only fires at session pause / completion for
-re-upload. Profile.md surfaces as a file the same way. If the Reading_List.md
-seed does not exist, it will be created in the librarian-build-setup flow.
+/tmp files = session truth. Build/quickref/cataloguer read, edit in place. Build-setup creates `reading-list` artifact at intake handoff that live-updates as picks land — `present_files` on `Reading_List.md` only fires at session pause/completion for re-upload. Profile.md surfaces as file same way. If Reading_List.md seed not exist, created in librarian-build-setup flow.
 
 ## Drive catalog discovery
 
-Discovery order, fastest to slowest:
+Discovery order, fastest → slowest:
 
-1. **Project-instructions injection.** System prompt has
-   `DRIVE_CATALOG_FILE_ID: <id>` → fetch directly via Drive connector,
-   no search. Recommended; SETUP.md walks the reader through pasting
-   the file ID.
-2. **Folder + filename search.** Look for
-   `Library-Playground/Library_Catalog.sqlite.encoded`.
-3. **Custom folder name.** Ask the reader for the folder name (default:
-   Library-Playground). Search inside.
+1. **Project-instructions injection.** System prompt has `DRIVE_CATALOG_FILE_ID: <id>` → fetch directly via Drive connector, no search. Recommended; SETUP.md walks reader through pasting file ID.
+2. **Folder + filename search.** Look for `Library-Playground/Library_Catalog.sqlite.encoded`.
+3. **Custom folder name.** Ask reader folder name (default: Library-Playground). Search inside.
 4. **First-run setup not done** if all three fail — point to `SETUP.md`.
 
 ## Catalog load (one-shot per session)
@@ -146,18 +101,13 @@ ok = sqlite3.connect("/tmp/Library_Catalog.sqlite").execute(
 assert ok == "ok", f"Catalog integrity_check failed: {ok}"
 ```
 
-**Decode once per session.** Build skills mutate in-sandbox SQLite;
-`library-cataloguer` re-encodes at end and presents a download link.
-Never re-fetch mid-session — that overwrites in-session edits.
+**Decode once per session.** Build skills mutate in-sandbox SQLite; `library-cataloguer` re-encodes at end, presents download link. Never re-fetch mid-session — overwrites in-session edits.
 
-The catalog being decoded and ready does **not** mean triage starts
-using it for recommendations. It's there for the next skill to read.
-Don't preview, don't pitch, don't surface "by the way, you might like
-X." Hand off.
+Catalog decoded + ready **not** mean triage starts using for recommendations. There for next skill to read. Don't preview, pitch, surface "by way, might like X." Hand off.
 
 ## Reading_Log freshness check
 
-Once `PROJECT_LOG` is found:
+Once `PROJECT_LOG` found:
 
 ```python
 import csv, datetime
@@ -175,90 +125,56 @@ for r in rows:
 latest = max(dates) if dates else None
 ```
 
-If `latest` is more than four months ago, mention it casually before
-diving in — the reader's call whether to refresh from Goodreads first
-or just keep going with what's there. Frame "keep going" as a real
-option, not a fallback. A button-confirm fits here (the choice is
-binary and the reader's about to do something else with their hands);
-write the options as sentences a person would actually say, not labels.
+If `latest` > 4 months ago, mention casually before diving — reader call whether refresh from Goodreads first or keep going with what's there. Frame "keep going" as real option, not fallback. Button-confirm fits (choice binary, reader about to do something else with hands); write options as sentences person actually say, not labels.
 
 ## Profile freshness check
 
 Read `/tmp/Profile.md`. Check mtime via `stat $PROJECT_PROFILE`.
 
-mtime > 10 months ago OR content = unmodified seed → stale. Don't
-refuse — surface the staleness to the reader and let
-`librarian-build-setup` decide (refine vs fresh) when it takes over.
+mtime > 10 months ago OR content = unmodified seed → stale. Don't refuse — surface staleness to reader, let `librarian-build-setup` decide (refine vs fresh) when takes over.
 
 ## Reading_List discovery + refine-vs-fresh
 
-Read `/tmp/Reading_List.md`. Count `|` rows or `-` items beyond the
-seed header to see whether there's real content.
+Read `/tmp/Reading_List.md`. Count `|` rows or `-` items beyond seed header see whether real content.
 
-If the opener is build-shaped AND the list has real content, the
-reader has to choose between refining the existing list and starting
-over. This is the moment a tap-confirm earns its keep — the choice
-is bounded, the reader's about to commit to one path or the other,
-and either prose answer would route to the same two outcomes anyway.
-Frame the question with the actual book count and a quick read of
-what's in the list so the reader knows what they'd be archiving.
+If opener build-shaped AND list has real content, reader must choose between refining existing list + starting over. Moment tap-confirm earns keep — choice bounded, reader about to commit one path, either prose answer would route same two outcomes. Frame question with actual book count + quick read what's in list so reader knows what archiving.
 
 Routes:
 
-- Refine → `librarian-build` with `/tmp/Reading_List.md` in place.
-  Skip the unfinished-series gate, taste cartography, and goals (those
-  are already in the list).
-- Start fresh → archive the seed
-  (`mv /tmp/Reading_List.md /tmp/Reading_List.md.<ISO>`), reset to an
-  empty seed, route to `librarian-build-setup`.
+- Refine → `librarian-build` with `/tmp/Reading_List.md` in place. Skip unfinished-series gate, taste cartography, goals (already in list).
+- Start fresh → archive seed (`mv /tmp/Reading_List.md /tmp/Reading_List.md.<ISO>`), reset empty seed, route `librarian-build-setup`.
 
 ## Routing
 
-Most opener shapes route on sight — the table below pairs each shape
-with what to do, including whether asking is part of the move. Only
-one row warrants a tap-confirm; the others go straight to the
-hand-off. `AskUserQuestion` is deferred — load once at session start
-with `ToolSearch(query="select:AskUserQuestion", max_results=1)`.
+Most opener shapes route on sight — table pairs each shape with what do, including whether asking part of move. Only one row warrants tap-confirm; others go straight hand-off. `AskUserQuestion` deferred — load once session start with `ToolSearch(query="select:AskUserQuestion", max_results=1)`.
 
 | Opener shape | What to do |
 |---|---|
-| "Anything like X?" / "Is X worth my time?" / "What do you know about X?" | Hand to librarian-quickref. No clarifying needed. |
-| "Build me a reading list" / "what should I read next year" / opener with no existing Reading_List content | Hand to librarian-build-setup. |
-| "Continue the build" / "more picks" / "ready to hear about some books" / opener with Reading_List.md showing real picks but below the working range | Hand to librarian-build. (If close to or above 100 picks, hand to librarian-build-finish for closing passes.) |
-| Existing Reading_List with real content + build-shaped opener — refine vs. fresh? | Tap-confirm: refine the existing list or start over. Refine → librarian-build. Fresh → archive list, route to librarian-build-setup. |
-| "Add this book" / "fix this entry" / "I bought X" / "save the catalog" | Hand to library-cataloguer. |
-| Genuinely ambiguous | One tap-confirm with the four routes as plain-language options. |
+| "Anything like X?" / "Is X worth my time?" / "What you know about X?" | Hand librarian-quickref. No clarifying needed. |
+| "Build reading list" / "what should read next year" / opener no existing Reading_List content | Hand librarian-build-setup. |
+| "Continue build" / "more picks" / "ready hear books" / opener with Reading_List.md showing real picks but below working range | Hand librarian-build. (If close/above 100 picks, hand librarian-build-finish for closing passes.) |
+| Existing Reading_List with real content + build-shaped opener — refine vs fresh? | Tap-confirm: refine existing list or start over. Refine → librarian-build. Fresh → archive list, route librarian-build-setup. |
+| "Add book" / "fix entry" / "I bought X" / "save catalog" | Hand library-cataloguer. |
+| Genuinely ambiguous | One tap-confirm with four routes as plain-language options. |
 
 ### Resume-offer rule
 
-If `Reading_List.md` has real content, mention the in-progress
-list in human terms — count of picks, what direction the last entries
-were going ("looks like you're partway through some horror picks").
-Let the reader pick up where they left off, switch to a single-book
-question, or start something new. Do NOT fire a resume offer for a
-clean single-book query.
+If `Reading_List.md` has real content, mention in-progress list human terms — count picks, what direction last entries going ("looks partway through horror picks"). Let reader pick up where left off, switch single-book question, start something new. NOT fire resume offer for clean single-book query.
 
 ## Documented phrase set
 
-Phrases the reader can type. Document in `SETUP.md`:
+Phrases reader can type. Document in `SETUP.md`:
 
 | Phrase | What triage does |
 |---|---|
-| `where are we` | Hand off to active skill (typically librarian-build); count picks from `Reading_List.md` rows, surface anything genuinely at risk in plain prose. |
-| `save catalog` | Hand off to library-cataloguer; re-encode SQLite, present download link. |
-| `save my files` / `I'm done for now` | Active skill surfaces Profile.md and Reading_List.md if changed. Triage handles only at session opening; mid-session, the active skill owns it. |
+| `where are we` | Hand off active skill (typically librarian-build); count picks from `Reading_List.md` rows, surface anything genuinely at risk plain prose. |
+| `save catalog` | Hand off library-cataloguer; re-encode SQLite, present download link. |
+| `save my files` / `I'm done for now` | Active skill surfaces Profile.md + Reading_List.md if changed. Triage handles only session opening; mid-session, active skill owns. |
 | `continue` | Resume prior flow after recovery prompt. |
-| `start fresh` | Archive `/tmp/Reading_List.md`; keep Profile.md; route to build-setup. |
+| `start fresh` | Archive `/tmp/Reading_List.md`; keep Profile.md; route build-setup. |
 
 ## Hand-off
 
-Hand-off needs to be visible enough that the reader sees the skill chip
-change, but it doesn't need to narrate the state machine. A short
-sentence in conversational librarian voice that points at what's about
-to happen is plenty — something the reader could imagine a human
-librarian saying as they reach for a different stack of cards. Avoid
-procedural phrasing or system narration. "Got it, switching gears"
-isn't right; "let's start with the interview" is. The transition reads
-as a natural pause, not as a system event.
+Hand-off needs visible enough reader sees skill chip change, but doesn't need narrate state machine. Short sentence conversational librarian voice that points at what about happen = plenty — something reader could imagine human librarian saying as reach for different stack cards. Avoid procedural phrasing or system narration. "Got it, switching gears" not right; "let's start with interview" is. Transition reads natural pause, not system event.
 
-When in doubt about the route, ask one question and hand off.
+When doubt about route, ask one question, hand off.

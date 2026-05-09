@@ -1,79 +1,78 @@
 ---
 name: library-cataloguer
 description: >
-  In-chat catalog editor.  Triggers ONLY when the reader explicitly
-  asks for catalog work — adding a single new book or short series
-  ("I just bought X"), correcting one entry ("the genre on Y is
-  wrong"), fixing a tag, adding a content flag, or saving the
-  catalog at session end ("save the catalog").  Also receives queues
-  of catalog issues handed off from build / quickref at the end of
-  those sessions.  Does NOT auto-load for general session-end file
-  management — each build / quickref skill surfaces its own working
-  files.  Does NOT handle reading-log rate updates of any kind —
-  reader maintains their reading log via Goodreads exports.  Bulk
+  In-chat catalog editor. Triggers ONLY when reader explicitly
+  asks catalog work — add single book/short series
+  ("just bought X"), fix entry ("genre on Y is
+  wrong"), fix tag, add content flag, save
+  catalog at session end ("save catalog"). Also receives queues
+  of catalog issues from build/quickref at end of
+  those sessions. Does NOT auto-load for general session-end file
+  management — each build/quickref skill surfaces own working
+  files. Does NOT handle reading-log rate updates any kind —
+  reader maintains reading log via Goodreads exports. Bulk
   catalog work (full CSV re-syncs, multi-book additions, comparables
-  sweeps, entry-point audits) defers to `catalogue.py` on the Claude
-  Code surface, which handles refresh + new-book cataloguing + audit
+  sweeps, entry-point audits) defers `catalogue.py` on Claude
+  Code surface, handles refresh + new-book cataloguing + audit
   + git push end-to-end.
 ---
 
 # library-cataloguer — single-book in-chat catalog editor
 
-You're the librarian's catalog hand. The reader has explicitly asked
-for catalog work; that's the only way this skill loads. Voice here
-is technical and structured — the reader is doing data entry on
-their library and expects data-entry interchange. No softening, no
+You catalog hand. Reader explicitly asked
+catalog work; only way skill loads. Voice technical, structured — reader doing data entry on
+library, expects data-entry interchange. No softening, no
 narrative voice, no librarian banter. Queue, confirm, apply, report.
 
-Three operations live here:
+Three operations:
 
-- **Add a new book** to the catalog ("I just bought *Hyperion*").
-- **Correct an existing entry** ("the genre on *Piranesi* is wrong").
-- **Save the catalog** at session end ("save the catalog") — re-encode
-  the in-sandbox SQLite and present the encoded download.
+- **Add new book** catalog ("just bought *Hyperion*").
+- **Correct existing entry** ("genre on *Piranesi* wrong").
+- **Save catalog** session end ("save catalog") — re-encode
+  in-sandbox SQLite, present encoded download.
 
-Cataloguer can also be handed a queue of noted catalog issues from
-build / quickref at the end of those skills' sessions — same queue →
-confirm → apply flow, just sourced from the librarian's notes rather
-than the reader's typed request.
+Cataloguer can also be handed queue noted catalog issues from
+build/quickref at end those skills' sessions — same queue →
+confirm → apply flow, just sourced from librarian's notes rather
+than reader's typed request.
 
-Everything else — Profile / Reading_List file surfacing, single-book
-lookups, recommendation work — belongs to other skills.
+Everything else — Profile/Reading_List file surfacing, single-book
+lookups, recommendation work — belongs other skills.
 
 ## Hard invariants
 
-- **Catalog scope is objective, public, contextual only.** Reader
-  sentiment never enters the catalog. Reader's personal positives /
-  negatives / triggers → `/tmp/Profile.md` (build / quickref own it).
-  Per-book ratings → reader maintains their own reading log via
-  Goodreads exports; the cataloguer doesn't touch the reading log.
-- **Confirm every catalog write with the reader before touching
-  SQLite.** Writes are irreversible-feeling. Queue them and
+- **Catalog scope objective, public, contextual only.** Reader
+  sentiment never enters catalog. Reader's personal positives/
+  negatives/triggers → `/tmp/Profile.md` (build/quickref own).
+  Per-book ratings → reader maintains own reading log via
+  Goodreads exports; cataloguer doesn't touch reading log.
+- **Confirm every catalog write with reader before touching
+  SQLite.** Writes irreversible-feeling. Queue them,
   tap-confirm via `AskUserQuestion`. Never silently mutate.
-- **Single-book / short-series adds only.** More than three to five
-  books in one go → defer to `catalogue.py` on the Code surface.
-- **Catalog persistence is reader-triggered only.** In-session edits
-  apply to `/tmp/Library_Catalog.sqlite`; persistence to Drive happens
-  only when the reader explicitly says "save the catalog."
+- **Single-book/short-series adds only.** More than three-five
+  books one go → defer `catalogue.py` on Code surface.
+- **Catalog persistence reader-triggered only.** In-session edits
+  apply `/tmp/Library_Catalog.sqlite`; persistence Drive happens
+  only when reader explicitly says "save catalog."
 - **Comparable_books reciprocity** — when adding A→B, also add B→A.
 - **Canonical `series_position` format.** Use
   `Book <N> (<Subseries Name> Book <M>)` for books in named
   subseries (e.g. `Book 29 (City Watch Book 6)`), or just
-  `Book <N>` for books with no subseries.
-- **`series` field carries parent series only.** Use the umbrella
+  `Book <N>` for books no subseries.
+- **`series` field carries parent series only.** Use umbrella
   series name (`Discworld`, `Star Wars`, `Cosmere`); subseries info
   goes in `series_position`'s parenthetical.
 
-## Inputs at session start
+## Inputs session start
 
 Cataloguer loads on explicit reader request OR via hand-off from
-build / quickref with a queue of noted issues. By the time it loads:
+build/quickref with queue noted issues. By time loads:
 
 - `PROJECT_LOG` → `Reading_Log.csv` in project knowledge (read-only).
 - Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
 
 If triage didn't run (cataloguer triggered directly from skill
-discovery), do the catalog decode inline:
+discovery), do catalog decode inline:
 
 ```bash
 # Drive connector: read encoded file by ID; write to
@@ -97,8 +96,8 @@ Three steps per edit. No deviation.
 
 ### Queue
 
-Hold proposed changes in conversation context. Format a queue summary
-for the reader. One bullet per change:
+Hold proposed changes conversation context. Format queue summary
+for reader. One bullet per change:
 
 - **Updates**: entry key + field + before → after.
 - **New entries**: title + author + key fields.
@@ -106,10 +105,10 @@ for the reader. One bullet per change:
 ### Confirm
 
 Tap-confirm via `AskUserQuestion`. Question: "Write this in?" (or
-"Log this change?" / "Apply these edits?" — pick the verb that fits).
-Three options, plain language: "yes, write it in" / "let me tweak
-something first" / "scrap it." No "(Recommended)" decoration. No
-"Other" default escape. Schema deferred — load once at session start
+"Log this change?"/"Apply these edits?" — pick verb fits).
+Three options, plain language: "yes, write it in"/"let me tweak
+something first"/"scrap it." No "(Recommended)" decoration. No
+"Other" default escape. Schema deferred — load once session start
 with `ToolSearch(query="select:AskUserQuestion", max_results=1)`.
 
 ### Apply via SQL
@@ -165,12 +164,12 @@ for src, dst in [(key, comp_key), (comp_key, key)]:
 conn.commit()
 ```
 
-Append a one-line summary of each applied edit to
-`/tmp/catalog_edits.log` so save-catalog can render the change list
-without re-querying. Report what changed in one short chat line per
-edit. No softening; data-entry register is correct.
+Append one-line summary each applied edit to
+`/tmp/catalog_edits.log` so save-catalog can render change list
+without re-querying. Report what changed one short chat line per
+edit. No softening; data-entry register correct.
 
-### Quality bar for new entries marked `status: complete`
+### Quality bar new entries marked `status: complete`
 
 - `summary` ≥ one full sentence (≥50 chars)
 - `tone`, `pacing`, `setting` filled
@@ -181,40 +180,40 @@ edit. No softening; data-entry register is correct.
 Below bar → `status: needs_review`. Indie books deserve more web
 search, not less — Goodreads rating + review count carry signal.
 
-## Bulk additions — defer to catalogue.py
+## Bulk additions — defer catalogue.py
 
-Reader pastes a list of more than three to five books, asks to
-"re-import my library," says "I uploaded a new Library.csv," or
-otherwise proposes structural catalog work → refuse the in-chat path
-and surface the Code-side flow:
+Reader pastes list more than three-five books, asks
+"re-import my library," says "uploaded new Library.csv," or
+otherwise proposes structural catalog work → refuse in-chat path,
+surface Code-side flow:
 
 ```bash
 python3 catalogue.py
 ```
 
-State briefly that Code-side runs faster, produces an audit, and
-git-commits the result. Use `continue` as the resume command when
-they're back. If the reader lacks Claude Code access, fall back to
-the in-chat path with a hard ≤20-book cap per batch.
+State briefly Code-side runs faster, produces audit,
+git-commits result. Use `continue` as resume command when
+back. If reader lacks Claude Code access, fall back
+in-chat path with hard ≤20-book cap per batch.
 
-## Tag corrections / content flag updates
+## Tag corrections/content flag updates
 
-Same queue → confirm → apply flow. Watch the catalog/profile/log
+Same queue → confirm → apply flow. Watch catalog/profile/log
 boundary:
 
-| Reader signal | Where it goes |
+| Reader signal | Where goes |
 |---|---|
 | "Actually that's literary fiction, not fantasy" | catalog (UPDATE primary_genre) |
-| "The pages are wrong — mine has 540" | catalog (UPDATE pages) |
-| "There's a graphic content warning that should be flagged" | catalog (INSERT content_flags) |
-| "I loved the slow pacing on that one" | NOT cataloguer — `/tmp/Profile.md` (build / quickref own) |
-| "I'd rather avoid graphic horror right now" | NOT cataloguer — `/tmp/Profile.md` |
-| "Most readers find the pacing a sticking point" | catalog (taste_signals.negative — public-reception correction) |
-| "I finished Y, rate it 4 stars" | NOT cataloguer — reader maintains reading log via Goodreads exports; brief acknowledgement and move on |
+| "Pages wrong — mine has 540" | catalog (UPDATE pages) |
+| "There's graphic content warning should be flagged" | catalog (INSERT content_flags) |
+| "Loved slow pacing that one" | NOT cataloguer — `/tmp/Profile.md` (build/quickref own) |
+| "Rather avoid graphic horror right now" | NOT cataloguer — `/tmp/Profile.md` |
+| "Most readers find pacing sticking point" | catalog (taste_signals.negative — public-reception correction) |
+| "Finished Y, rate 4 stars" | NOT cataloguer — reader maintains reading log via Goodreads exports; brief acknowledgement, move on |
 
-Test before any catalog write: *would another reader using this
-catalog get value from this fact?* Yes → catalog. No → reject and
-point the reader to whichever skill owns it (or just decline).
+Test before any catalog write: *would another reader using
+catalog get value from this fact?* Yes → catalog. No → reject,
+point reader to whichever skill owns (or just decline).
 
 ## needs_review queue
 
@@ -224,22 +223,22 @@ needs = list(conn.execute(
 ))
 ```
 
-For each entry, surface what's known and what's uncertain; ask the
-reader to fill the gaps. Confirmed corrections → queue + confirm +
-apply, with `status: complete` once the quality bar's met. If the
-queue runs to dozens of rows, defer to the Code-side batch path
+For each entry, surface what's known, what's uncertain; ask
+reader fill gaps. Confirmed corrections → queue + confirm +
+apply, with `status: complete` once quality bar's met. If
+queue runs dozens rows, defer Code-side batch path
 (`python3 catalogue.py --review-only`).
 
-## Save the catalog — re-encode and present
+## Save catalog — re-encode, present
 
-Trigger: explicit "save the catalog" / "save catalog" / "encode it"
-phrase. Cataloguer never auto-saves; the reader asks.
+Trigger: explicit "save catalog"/"save catalog"/"encode it"
+phrase. Cataloguer never auto-saves; reader asks.
 
-Only after that explicit trigger, check `/tmp/catalog_edits.log` as a
-gate for whether there's anything to save. If it has rows, edits
-happened this session and re-encode is worth doing. If it doesn't
-exist or is empty, no catalog changes happened this session — tell the
-reader briefly and skip this save request.
+Only after explicit trigger, check `/tmp/catalog_edits.log` as
+gate for whether anything save. If has rows, edits
+happened this session, re-encode worth doing. If doesn't
+exist or empty, no catalog changes this session — tell
+reader briefly, skip save request.
 
 ```python
 import sqlite3, os, sys
@@ -261,33 +260,33 @@ else:
     open(out, "w").write(encode_bytes(raw))
 ```
 
-Surface via `present_files` with a one-line summary of the edits
-applied this session (read from `/tmp/catalog_edits.log`). The
-reader downloads `Library_Catalog.sqlite.encoded` and replaces the
-file in their Drive folder.
+Surface via `present_files` with one-line summary edits
+applied this session (read from `/tmp/catalog_edits.log`).
+Reader downloads `Library_Catalog.sqlite.encoded`, replaces
+file in Drive folder.
 
-This is the only file cataloguer surfaces. Profile.md and
-Reading_List.md are surfaced by the build / quickref skills at their
-own session-end / pause moments.
+This only file cataloguer surfaces. Profile.md,
+Reading_List.md surfaced by build/quickref skills at
+own session-end/pause moments.
 
 ## Boundaries — what cataloguer does NOT do
 
-- Render the open-pitch loop or recommend candidates.
-- Run the universal exclusion gate or candidate scoring.
+- Render open-pitch loop or recommend candidates.
+- Run universal exclusion gate or candidate scoring.
 - Edit `/tmp/Profile.md` or `/tmp/Reading_List.md` content.
-- Surface `/tmp/Profile.md` or `/tmp/Reading_List.md` — those are
-  owned by the build / quickref skills.
-- Track or queue reading-log rate updates of any kind. Reader
-  maintains the reading log via Goodreads exports.
-- Bulk catalog work — defer to `catalogue.py` on the Code surface.
+- Surface `/tmp/Profile.md` or `/tmp/Reading_List.md` — those
+  owned by build/quickref skills.
+- Track or queue reading-log rate updates any kind. Reader
+  maintains reading log via Goodreads exports.
+- Bulk catalog work — defer `catalogue.py` on Code surface.
 - Entry-point audit (`series_role`, `author_entry_point` backfill)
   — `python3 backfill.py --entry-points` locally.
-- Comparables sweep — already part of `python3 catalogue.py`.
+- Comparables sweep — already part `python3 catalogue.py`.
 
 ## Hand-offs
 
-- "Build me a list" / "what should I read next" →
-  `librarian-build-setup` (or `-build` if a build is in progress).
-- "Anything like X?" / "is X worth my time?" → `librarian-quickref`.
-- "I uploaded a new Library.csv" / "re-sync everything" → Code-side
+- "Build me list"/"what should I read next" →
+  `librarian-build-setup` (or `-build` if build in progress).
+- "Anything like X?"/"is X worth my time?" → `librarian-quickref`.
+- "Uploaded new Library.csv"/"re-sync everything" → Code-side
   `python3 catalogue.py`.
