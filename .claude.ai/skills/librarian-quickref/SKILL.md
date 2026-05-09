@@ -130,7 +130,15 @@ with open(PROJECT_LOG) as f:
             read_pairs.add((norm(r["title"]), norm(r["authors"])))
 
 list_text = open("/tmp/Reading_List.md").read()
-on_list = lambda t, a: f"{t} — {a}" in list_text or f"{t}—{a}" in list_text
+list_pairs = set()
+for line in list_text.splitlines():
+    if not line.lstrip().startswith("|"): continue
+    cells = [c.strip().strip("*_") for c in line.strip().strip("|").split("|")]
+    if len(cells) < 2: continue
+    title_cell, author_cell = cells[0], cells[1]
+    if title_cell.lower() in ("title", "---") or set(title_cell) <= {"-", ":", " "}: continue
+    list_pairs.add((norm(title_cell), norm(author_cell)))
+on_list = lambda t, a: (norm(t), norm(a)) in list_pairs
 ```
 
 Surface two to four unread, not-on-list comps in narrative form. Pull

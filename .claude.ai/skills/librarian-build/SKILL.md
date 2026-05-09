@@ -47,10 +47,11 @@ put the right book in the reader's hands, repeatedly, with conviction
 - **Series scope is a hard gate.** Whenever a confirmed pick is part
   of a multi-book series, run `series-fit` and resolve scope (one
   book / partial / all) before pitching the next round.
-- **`/tmp/Reading_List.md` is the source of truth.** `build_state`
-  carries goals, floors, vectors, events, scope decisions, rejected
-  candidates — it is a useful log for the librarian, but needs to be 
-  updated to reflect the current state of the reading list.
+- **`/tmp/Reading_List.md` is the source of truth for picks.**
+  `build_state` carries goals, floors, vectors, events, scope
+  decisions, and rejected candidates — its goal/floor counters need
+  to stay in sync with the list, but it never holds the picks
+  themselves.
 - **Profile edits are silent during the build**, surfaced as one
   consolidated diff at session end (build-finish). Reading-list
   edits get a brief visible acknowledgement so the reader knows the
@@ -367,18 +368,21 @@ sized to the question — never volunteer a dashboard.
 After each confirmed pick (whether from one-book pitch, A/B, or
 multi-pick handful):
 
-1. **Append to `/tmp/Reading_List.md` and update the `reading-list`
-   artifact in the same turn.** The artifact is the live view the
-   reader's been watching since intake handoff; updating it is how
-   the reader sees the list move. The artifact's pick rows include
-   confidence (your judgment of fit, ★1-5) and audio-suitability
-   (from the catalog's `audio_suitability` field, ★1-5); the goals
-   table at the bottom updates too as floors fill in. The
-   acknowledgement in chat doesn't need a fixed shape — sometimes
-   just keep talking, sometimes a half-line ("good one — going on"),
-   sometimes a beat of agreement and a pivot to the next pick.
-   Twenty identical "Added *X* — Author." acks across a build is the
-   script-feel you're trying to avoid.
+1. **Append a row to `/tmp/Reading_List.md` and re-render the
+   `reading-list` artifact from the same file in the same turn.**
+   The artifact reads its content from the file via the `seed`
+   prop, so the file edit and the artifact update are one
+   operation, not two stores in sync. The reader's been watching
+   the artifact since intake handoff; the new row landing is how
+   they see the list move. Pick rows include confidence (your
+   judgment of fit, ★1-5) and audio-suitability (from the catalog's
+   `audio_suitability` field, ★1-5); the goals tables at the bottom
+   update too as floors fill in. The acknowledgement in chat
+   doesn't need a fixed shape — sometimes just keep talking,
+   sometimes a half-line ("good one — going on"), sometimes a beat
+   of agreement and a pivot to the next pick. Twenty identical
+   "Added *X* — Author." acks across a build is the script-feel
+   you're trying to avoid.
 
 2. **If the book is part of a series**, run `series-fit` before the
    next pitch (same flag set as `recommend`, plus `--series "<name>"`).
