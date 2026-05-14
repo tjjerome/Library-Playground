@@ -109,7 +109,7 @@ def save_catalog(catalog: dict, path: str):
 # stay enforced even as the cataloguer adds new entries.
 # ---------------------------------------------------------------------------
 
-INDIE_REVIEW_THRESHOLD = 12000   # > this -> book has broken out of indie identity
+INDIE_REVIEW_THRESHOLD = 10000   # > this -> book has broken out of indie identity
 CLASSIC_MIN_AGE_YEARS = 30       # < this -> not yet a classic by age
 
 # Loose-series-of-standalones gate (Poirot, Reacher, Cadfael shape).

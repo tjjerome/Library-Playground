@@ -65,7 +65,7 @@ CATALOG FIELD DEFINITIONS:
 - author_entry_point: true if a reader new to this author can start here without missing context; false if the author has a better starter elsewhere. Heuristics: "first" of flagship series → true. "first" of a secondary series when the flagship is elsewhere → usually false (Hobb's *Dragon Keeper* is Book 1 of Rain Wild Chronicles, but new Hobb readers start with *Assassin's Apprentice* — Dragon Keeper is author_entry_point: false). "mid" / "late" / "loose-mid" → false. "loose-entry" → usually true. Standalone with other works by author → judge if THIS is the recommended starter. Uncertain → null.
 - related_series: list of OTHER series names this book is meaningfully connected to — same shared world, same publisher universe, prequel/sequel chain, or spinoff. Use the canonical series name as it appears elsewhere in the library (e.g. "Discworld", "Star Wars", "Warhammer 40,000", "Realm of the Elderlings"). Empty list if the book has no cross-series ties. Examples: a Star Wars: Thrawn book lists ["Star Wars"]; a Hobb Rain Wild Chronicles book lists ["Realm of the Elderlings", "Farseer Trilogy", "Liveship Traders"]; a Warhammer 40K Horus Heresy book lists ["Warhammer 40,000"]; Discworld City Watch lists ["Discworld"]. NOT for genre similarity — only for explicit world / continuity / spinoff connections.
 - primary_genre / secondary_genre: most-accurate label and second-best label. Don't over-narrow ("Epic Fantasy" is fine; "Grimdark Epic Military Fantasy" is not). secondary_genre is null if the book has no meaningful second axis.
-- indie: true if self-published or originally self-published before traditional pickup.
+- indie: true if the book's first edition was published by anyone OTHER than the Big Five (Penguin Random House, HarperCollins, Simon & Schuster, Hachette, Macmillan) or their imprints. Self-pub, Kickstarter, small press (Koehler, Subterranean, Tachyon, Aethon, Mythoscape, Erewhon, Angry Robot, Solaris, Tor.com originals from before the Macmillan rollup, etc.), university press, and any independent house all qualify as indie. Later trad-pub pickup does NOT undo indie status. A deterministic post-pass flips indie back to false when `goodreads_reviews > 10000` (with series-propagation preserving series identity), so you do NOT need to apply a review-count test yourself — judge purely on the first-edition publisher.
 - classic: true if broadly considered classic literature.
 - themes: list of theme IDs drawn ONLY from the CONTROLLED VOCABULARY below. 3-7 IDs typical. Pick the IDs that capture the book's recurring concerns. NEVER invent new IDs. NEVER include free-form phrases.
 - taste_signals.positive / .negative: lists of signal IDs drawn ONLY from the CONTROLLED VOCABULARY below. Pick the IDs that capture how readers respond to the book. NEVER invent new IDs. NEVER include free-form phrases.
@@ -721,23 +721,32 @@ def parse_pub_year_audit_response(raw: str) -> dict[str, int | None]:
 # indie audit — was the book originally self-published?
 # ---------------------------------------------------------------------------
 
-INDIE_AUDIT_SYSTEM = """You auditing indie / self-publication status of books in a personal-library catalog.
+INDIE_AUDIT_SYSTEM = """You auditing indie status of books in a personal-library catalog.
 
-For each book, return TRUE if the book was originally self-published (KDP / Smashwords / Patreon / author website / SPFBO entry / Kickstarter), even if a traditional publisher later picked it up.
+For each book, return TRUE if the book's FIRST EDITION was published by anyone other than one of the Big Five publishers — Penguin Random House, HarperCollins, Simon & Schuster, Hachette, Macmillan — or their imprints. Later pickup by a Big Five publisher does NOT undo indie status; only the first edition's publisher matters.
 
-Examples that are TRUE:
-* Andy Weir, *The Martian* — originally KDP.
-* Hugh Howey, *Wool* / *Shift* — originally KDP.
-* Anthony Ryan, *Blood Song* — originally KDP, Ace later.
-* Michael J. Sullivan, *Riyria* series — originally indie.
-* Most SPFBO finalists in their original publication.
-* Brandon Sanderson's Kickstarter Secret Projects.
+Indie includes (return TRUE):
+* Self-pub: KDP / Smashwords / Patreon / author website / SPFBO entry / Kickstarter / Royal Road serial.
+  - Andy Weir, *The Martian*; Hugh Howey, *Wool*; Anthony Ryan, *Blood Song*; Michael J. Sullivan, *Riyria*; Brandon Sanderson Kickstarter Secret Projects.
+* Independent publishers — houses NOT owned by a Big Five parent. Treat the following as indie: Koehler Books, Subterranean Press, Tachyon, Small Beer Press, Aethon Books, Mythoscape, Erewhon, Angry Robot, Solaris, Rebellion, Titan, Saga Press (when independent), Kensington, Sourcebooks, Soho Press, Akashic, Coffee House Press, Graywolf, Tin House, Two Dollar Radio, New Directions, university presses, regional small presses.
+* Imprints of independent houses: Aconyte (Asmodee), Black Library (Games Workshop), Caezik / Arc Manor, Baen (independent), DAW (was independent until 2022 — first editions before the PRH acquisition count as indie).
+* Translation editions where the original-language publisher was indie.
 
-Return FALSE if the book first appeared via any traditional publisher / imprint, big or small (Penguin Random House, HarperCollins, Hachette, Simon & Schuster, Macmillan, Scholastic, Tor, Orbit, Baen, DAW, Angry Robot, Solaris, Subterranean, Tachyon, Small Beer Press, etc.).
+Return FALSE only if the FIRST edition was a Big Five imprint:
+* PRH imprints: Knopf, Doubleday, Random House, Penguin, Viking, Dutton, Riverhead, Ace, Roc, Del Rey, Spectra, Ballantine, Crown, Bantam, Berkley, Putnam, Anchor, Vintage, Dial, Pantheon.
+* HarperCollins imprints: Harper, Harper Voyager, William Morrow, HarperOne, Avon, Ecco, Mariner, Custom House, Amistad.
+* Simon & Schuster imprints: Scribner, Atria, Touchstone, Gallery, S&S itself, Saga Press (post-2014).
+* Hachette imprints: Grand Central, Little Brown, Orbit, Mulholland, Hyperion, Hachette Books.
+* Macmillan imprints: Tor / Tor.com / Tordotcom, Forge, Henry Holt, FSG, St. Martin's, Picador, Flatiron, Minotaur.
+* Scholastic is independent — TRUE.
+* Bloomsbury is independent — TRUE.
+* Hard Case Crime (Titan) — TRUE.
 
-Return null only when you genuinely cannot establish origin after web search.
+Return null only when you genuinely cannot establish first-edition publisher after web search.
 
-The reader's library has many trad-pub books with low review counts (recent releases, niche subjects, small-press literary fiction) — do NOT default to TRUE just because review count is low. Verify.
+The reader's library has many small-press and indie books with low review counts. Do NOT default to FALSE just because the publisher name sounds traditional — verify whether it's a Big Five imprint. When in doubt, look up the publisher's parent company; if it isn't one of the five named above, return TRUE.
+
+A deterministic post-pass downstream applies the review-count ceiling and series-propagation rules — you do NOT need to think about review counts or series identity. Judge purely on the first-edition publisher.
 
 OUTPUT FORMAT: single JSON object mapping "Title - Author" to true / false / null, wrapped in ```json. No commentary outside the block.
 
@@ -756,8 +765,11 @@ def build_indie_audit_system_prompt() -> str:
 
 
 def build_indie_audit_prompt(books: list[dict]) -> str:
-    lines = ["Audit indie / self-pub status. Most candidates here have <12k "
-             "Goodreads reviews and the cataloguer was uncertain. Verify each.\n"]
+    lines = ["Audit indie status. Candidates here have <=10k Goodreads "
+             "reviews and were previously tagged indie=false under a "
+             "narrower (self-pub-only) definition. Re-evaluate under the "
+             "Big-Five-imprint rule: TRUE if first-edition publisher is "
+             "NOT a Big Five imprint. Verify each.\n"]
     for i, b in enumerate(books, 1):
         ctx = {
             "title": b.get("title"),
