@@ -60,7 +60,7 @@ DEFAULT_CHUNK_SIZE = 20
 RATE_LIMIT_DELAY = 10    # seconds between API calls
 CANONICALIZE_DELAY = 2   # tighter delay for the canonicalize loop, which
                          # only does cheap classify-from-fixed-vocab calls
-MAX_RETRIES = 3
+MAX_RETRIES = 5
 
 COMPARABLES_CAP = 6
 RANKING_BATCH_SIZE = 10        # over-cap entries per LLM call
@@ -559,9 +559,13 @@ def call_api_with_tools(client, messages: list, system: str, tools: list | None 
             print(f"  Rate limited. Waiting {wait}s before retry {attempt + 1}/{MAX_RETRIES}...")
             time.sleep(wait)
         except anthropic.APIError as e:
+            status = getattr(e, "status_code", None)
             if attempt < MAX_RETRIES - 1:
-                print(f"  API error: {e}. Retrying in 10s...")
-                time.sleep(10)
+                # Exponential backoff with extra headroom for 529 overload.
+                base = 60 if status == 529 else 10
+                wait = base * (2 ** attempt)
+                print(f"  API error ({status}): {e}. Retrying in {wait}s...")
+                time.sleep(wait)
             else:
                 raise
 
