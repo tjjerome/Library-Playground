@@ -111,7 +111,7 @@ def save_catalog(catalog: dict, path: str):
 # stay enforced even as the cataloguer adds new entries.
 # ---------------------------------------------------------------------------
 
-INDIE_REVIEW_THRESHOLD = 10000   # > this -> book has broken out of indie identity
+INDIE_REVIEW_THRESHOLD = 15000   # > this -> book has broken out of indie identity
 INDIE_POPULARITY_FLOOR = 50000   # if author has any library book > this many
                                  # reviews, treat all their books as
                                  # not-auditable for indie status (their
@@ -1808,12 +1808,16 @@ def audit_indie_flags(
     client,
     *,
     review_ceiling: int = INDIE_REVIEW_THRESHOLD,
+    review_floor: int = 0,
     chunk_size: int = INDIE_AUDIT_CHUNK_SIZE,
     apply_changes: bool = False,
     report_path: Path | None = None,
 ) -> dict:
-    """LLM audits books currently NOT tagged indie that have <= review_ceiling
-    Goodreads reviews. Promotes verified indies to `indie=True`.
+    """LLM audits books currently NOT tagged indie with
+    `review_floor < goodreads_reviews <= review_ceiling`.  Promotes
+    verified indies to `indie=True`.  Set `review_floor > 0` to target
+    a delta band (e.g. when raising the threshold from 10k to 15k,
+    pass review_floor=10000 to audit only the newly-eligible band).
     """
     from catalogue_prompts import (
         build_indie_audit_system_prompt,
@@ -1844,6 +1848,11 @@ def audit_indie_flags(
         if e.get("indie"):
             continue
         reviews = e.get("goodreads_reviews")
+        if review_floor > 0:
+            # Delta-band re-audit: skip books at or below the floor
+            # (they were already covered by an earlier audit run).
+            if reviews is None or not isinstance(reviews, int) or reviews <= review_floor:
+                continue
         in_window = reviews is None or (
             isinstance(reviews, int) and reviews <= review_ceiling
         )
@@ -1854,8 +1863,9 @@ def audit_indie_flags(
             skipped_popular_author += 1
             continue
         candidates.append(k)
+    band = f"{review_floor}<reviews<={review_ceiling}" if review_floor > 0 else f"reviews<={review_ceiling}"
     print(f"  {len(candidates)} indie-backfill candidates "
-          f"(indie!=True AND reviews<={review_ceiling} AND author_max<={INDIE_POPULARITY_FLOOR}).")
+          f"(indie!=True AND {band} AND author_max<={INDIE_POPULARITY_FLOOR}).")
     if skipped_popular_author:
         print(f"  Skipped {skipped_popular_author} books from popular trad-pub authors "
               f"(any library book by author with >{INDIE_POPULARITY_FLOOR} reviews).")
