@@ -744,7 +744,22 @@ Return FALSE only if the FIRST edition was a Big Five imprint:
 
 Return null only when you genuinely cannot establish first-edition publisher after web search.
 
-The reader's library has many small-press and indie books with low review counts. Do NOT default to FALSE just because the publisher name sounds traditional — verify whether it's a Big Five imprint. When in doubt, look up the publisher's parent company; if it isn't one of the five named above, return TRUE.
+**CRITICAL — the FIRST edition's publisher is the ONLY thing that matters.** Do NOT base your answer on whichever publisher is easiest to find. Web searches for older / niche / late-series-volume books often surface reissues, collector editions, audio originals, hardcover-club editions, or omnibus reprints — those are NOT the first edition. The first edition is the original publication of the work, identified on the copyright page of the earliest printing. If you cannot find evidence of the first edition specifically, return null — do NOT fall back to whichever indie publisher you happened to find a reprint from.
+
+**Common reprint-only indie houses to NOT mistake for first-edition publishers:**
+* University of Chicago Press (Donald Westlake / Richard Stark Parker reprints originally Pocket Books → Big Five)
+* Hard Case Crime (Lawrence Block, Donald Westlake, Stephen King reprints — many original eds were Dell/Avon/Morrow → Big Five)
+* Subterranean Press collector editions (most are limited reprints of trad-pub originals)
+* Centipede Press, Suntup Editions, PS Publishing (luxury/limited reprints)
+* NYRB Classics (literary reprints of older trad work)
+* Library of America (canonical reprints)
+* Folio Society (luxury reprints)
+* Open Road Media (ebook reprints of mid-century paperback originals)
+* Mysterious Press (mixed — independent now, but many of their reissues started elsewhere)
+
+**Anti-pattern to avoid:** an Agatha Christie / Ellis Peters / Patrick O'Brian / Ursula K. Le Guin / Gene Wolfe / Lawrence Block / Donald Westlake book is essentially never indie regardless of which reprint house re-issued a particular late-career volume. The first editions of those authors were Collins / Macmillan / Norton / Harper / Tor / Dell / Pocket → all Big Five. Return FALSE for these authors' work unless you have positive evidence that one specific title's first edition was indie.
+
+The reader's library has many small-press and indie books with low review counts (often new authors with one or two books). Do NOT default to FALSE just because the publisher name sounds traditional — but equally, do NOT default to TRUE just because a low-review-count book has an indie reprint floating around. Verify the FIRST edition.
 
 A deterministic post-pass downstream applies the review-count ceiling and series-propagation rules — you do NOT need to think about review counts or series identity. Judge purely on the first-edition publisher.
 

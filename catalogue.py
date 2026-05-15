@@ -112,6 +112,11 @@ def save_catalog(catalog: dict, path: str):
 # ---------------------------------------------------------------------------
 
 INDIE_REVIEW_THRESHOLD = 10000   # > this -> book has broken out of indie identity
+INDIE_POPULARITY_FLOOR = 50000   # if author has any library book > this many
+                                 # reviews, treat all their books as
+                                 # not-auditable for indie status (their
+                                 # under-the-radar volumes are reprint-trap
+                                 # bait, not real indies).
 CLASSIC_MIN_AGE_YEARS = 30       # < this -> not yet a classic by age
 
 # Loose-series-of-standalones gate (Poirot, Reacher, Cadfael shape).
@@ -131,11 +136,15 @@ def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
 
     Rules applied in order:
 
-    1. **Series-indie propagation.** If any book in a series carries
-       `indie=True`, every other book in that same series is set to
-       `indie=True`. Catches cases where the series's first book broke
-       out of indie identity (large review count) but later volumes are
-       still in the same indie footprint.
+    1. **Series-indie propagation.** A series is treated as indie ONLY
+       if its entry-point book (series_role in {'first', 'loose-entry'})
+       is tagged `indie=True`. When that holds, every other book in the
+       series is set to `indie=True`. Anchoring on the series opener
+       blocks the failure mode where a single mis-tagged late / minor
+       volume drags a 40-book trad-pub classic series (Poirot, Cadfael,
+       Parker, Aubrey & Maturin, etc.) into indie status by accident.
+       Series with no `series_role='first'/'loose-entry'` entry catalogued
+       yet do not propagate.
 
     2. **Indie review-count threshold.** A book with `indie=True` and
        `goodreads_reviews > INDIE_REVIEW_THRESHOLD` flips to `indie=False`
@@ -162,10 +171,18 @@ def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
 
     entries = catalog.get("entries") or {}
 
-    # Step 1 — collect series with any indie member, then propagate.
+    # Step 1 — collect series whose entry-point book is indie, then
+    # propagate to the rest of the series.  Anchoring on the opener
+    # prevents a mis-tagged minor volume from flipping a 40-book
+    # trad-pub classic series into indie status.
+    SERIES_ENTRY_ROLES = frozenset({"first", "loose-entry"})
     indie_series: set[str] = set()
     for entry in entries.values():
-        if entry.get("indie") and entry.get("series"):
+        if (
+            entry.get("indie")
+            and entry.get("series")
+            and entry.get("series_role") in SERIES_ENTRY_ROLES
+        ):
             indie_series.add(entry["series"])
 
     propagated = 0
@@ -1804,15 +1821,44 @@ def audit_indie_flags(
         parse_indie_audit_response,
     )
 
+    # Build per-author max-reviews map so we can skip "popular trad-pub
+    # author with one obscure low-review-count volume" cases.  Auditing
+    # those reliably turns up reprint-publisher false positives (Agatha
+    # Christie, Lawrence Block, Patrick O'Brian, Ursula K. Le Guin etc.)
+    # — if the author has any book in the library with reviews above
+    # INDIE_POPULARITY_FLOOR, treat all their books as not-auditable.
+    author_max_reviews: dict[str, int] = {}
+    for e in catalog["entries"].values():
+        author = (e.get("author") or "").strip()
+        if not author:
+            continue
+        reviews = e.get("goodreads_reviews") or 0
+        if not isinstance(reviews, int):
+            continue
+        if reviews > author_max_reviews.get(author, 0):
+            author_max_reviews[author] = reviews
+
     candidates: list[str] = []
+    skipped_popular_author = 0
     for k, e in catalog["entries"].items():
         if e.get("indie"):
             continue
         reviews = e.get("goodreads_reviews")
-        if reviews is None or (isinstance(reviews, int) and reviews <= review_ceiling):
-            candidates.append(k)
+        in_window = reviews is None or (
+            isinstance(reviews, int) and reviews <= review_ceiling
+        )
+        if not in_window:
+            continue
+        author = (e.get("author") or "").strip()
+        if author_max_reviews.get(author, 0) > INDIE_POPULARITY_FLOOR:
+            skipped_popular_author += 1
+            continue
+        candidates.append(k)
     print(f"  {len(candidates)} indie-backfill candidates "
-          f"(indie!=True AND reviews<={review_ceiling}).")
+          f"(indie!=True AND reviews<={review_ceiling} AND author_max<={INDIE_POPULARITY_FLOOR}).")
+    if skipped_popular_author:
+        print(f"  Skipped {skipped_popular_author} books from popular trad-pub authors "
+              f"(any library book by author with >{INDIE_POPULARITY_FLOOR} reviews).")
 
     system = build_indie_audit_system_prompt()
     n_chunks = -(-len(candidates) // chunk_size)
