@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """Librarian query helper — claude.ai port, post-recomposition rewrite.
 
-Four subcommands plus `norm`:
+Subcommands plus `norm`:
 
     recommend          constraint-satisfaction candidate generation,
                        vector-spread sampling, returns 12-18 candidates
     status             actionable signals only — no dashboard
     series-fit         scope-aware series navigation
     unfinished-series  Phase 0 gate
+    compare            swap analysis for a reader-proposed add
+    author-history     log-side read/rating history for an author
+    reconcile          log ↔ catalog match audit
+    normalize-catalog  rewrite stored normalized columns with live norm()
     norm               shared normaliser (used by library-cataloguer)
 
 The recommender returns *material*, not a turn shape. The skill
@@ -32,6 +36,7 @@ from __future__ import annotations
 import argparse
 import difflib
 import json
+import math
 import random
 import re
 import sqlite3
@@ -77,6 +82,35 @@ APPETITE_VARIANCE = {"high": "broad", "moderate": "balanced",
                      "low": "similar"}
 
 QUALITY_FLOOR = 3.8
+
+# Goodreads as a ranking input (Plan C Issues 3 & 4).  GR is one
+# weighted signal among many — never the headline.  The score term is
+# GR_RANK_WEIGHT * clamp(effective_gr_signal - GR_RANK_PIVOT, ±1).
+# Pivot ≈ the catalog-wide median rating above the quality floor, so
+# the term is centred (it reorders rather than uniformly shifting) and
+# small enough that a strong vector/comp match still outranks a
+# mediocre rating.  Nothing is filtered for a low rating — no floor.
+GR_RANK_PIVOT = 4.1
+GR_RANK_WEIGHT = 1.0
+GR_RANK_CLAMP = 1.0
+
+# Selection-bias series-rating correction (Plan C Issue 4).
+SERIES_TIGHT_STATUS = ("Short Series", "Long Series")
+SERIES_TIGHT_ROLES = ("first", "mid", "late")
+# Drop an entry from the retention curve when its review count is an
+# anomalous fraction of the series median (mis-scraped rows, e.g. a
+# Red Rising book with 278 reviews against siblings in the hundred-
+# thousands).
+SERIES_OUTLIER_FRAC = 0.05
+# Heckman blend: mostly the corrected series baseline, lightly the
+# book's own rating.  The 0.75 lets a corrected series carry a weak
+# opener; the 0.25 keeps the book's own rating from being discarded.
+SERIES_BLEND_SERIES = 0.75
+SERIES_BLEND_OWN = 0.25
+# Domain-knowledge default when fewer than 3 mainline entries make an
+# OLS regression impossible (rho ≈ 0.6, sigma ≈ 1.0 ⇒ beta ≈ 0.6).
+SERIES_BETA_DEFAULT = 0.6
+
 DEFAULT_N = 15
 MIN_N = 12
 MAX_N = 18
@@ -145,6 +179,76 @@ def is_book_one(series_position: str | None) -> bool:
     return bool(_BOOK1.match(series_position.strip()))
 
 
+_SERIES_NUM = re.compile(r"(\d+(?:\.\d+)?)")
+
+
+def _series_book_number(series_position: str | None) -> float | None:
+    """First numeric token in a series_position string as a float.
+    `Book 1` → 1.0, `Book 2.5` → 2.5, `Prequel`/None → None.  A
+    non-integer value marks a novella / side entry — excluded from the
+    mainline retention curve (Plan C Issue 4)."""
+    if not series_position:
+        return None
+    m = _SERIES_NUM.search(series_position)
+    return float(m.group(1)) if m else None
+
+
+# ---------------------------------------------------------------------------
+# Standard normal distribution (Plan C Issue 4 — Heckman correction).
+# scipy is not a project dependency and is not worth adding for three
+# small functions; implement directly.
+# ---------------------------------------------------------------------------
+
+_SQRT_2PI = math.sqrt(2.0 * math.pi)
+
+
+def _norm_pdf(x: float) -> float:
+    return math.exp(-0.5 * x * x) / _SQRT_2PI
+
+
+def _norm_cdf(x: float) -> float:
+    return 0.5 * (1.0 + math.erf(x / math.sqrt(2.0)))
+
+
+# Acklam's rational approximation to the inverse normal CDF.
+# Relative error < 1.15e-9 across (0, 1).
+_PPF_A = (-3.969683028665376e+01, 2.209460984245205e+02,
+          -2.759285104469687e+02, 1.383577518672690e+02,
+          -3.066479806614716e+01, 2.506628277459239e+00)
+_PPF_B = (-5.447609879822406e+01, 1.615858368580409e+02,
+          -1.556989798598866e+02, 6.680131188771972e+01,
+          -1.328068155288572e+01)
+_PPF_C = (-7.784894002430293e-03, -3.223964580411365e-01,
+          -2.400758277161838e+00, -2.549732539343734e+00,
+          4.374664141464968e+00, 2.938163982698783e+00)
+_PPF_D = (7.784695709041462e-03, 3.224671290700398e-01,
+          2.445134137142996e+00, 3.754408661907416e+00)
+_PPF_PLOW = 0.02425
+
+
+def _norm_ppf(p: float) -> float:
+    if not 0.0 < p < 1.0:
+        raise ValueError(f"_norm_ppf domain: {p}")
+    if p < _PPF_PLOW:
+        q = math.sqrt(-2.0 * math.log(p))
+        return ((((((_PPF_C[0] * q + _PPF_C[1]) * q + _PPF_C[2]) * q
+                    + _PPF_C[3]) * q + _PPF_C[4]) * q + _PPF_C[5])
+                / ((((_PPF_D[0] * q + _PPF_D[1]) * q + _PPF_D[2]) * q
+                    + _PPF_D[3]) * q + 1.0))
+    if p > 1.0 - _PPF_PLOW:
+        q = math.sqrt(-2.0 * math.log(1.0 - p))
+        return -((((((_PPF_C[0] * q + _PPF_C[1]) * q + _PPF_C[2]) * q
+                     + _PPF_C[3]) * q + _PPF_C[4]) * q + _PPF_C[5])
+                 / ((((_PPF_D[0] * q + _PPF_D[1]) * q + _PPF_D[2]) * q
+                     + _PPF_D[3]) * q + 1.0))
+    q = p - 0.5
+    r = q * q
+    return ((((((_PPF_A[0] * r + _PPF_A[1]) * r + _PPF_A[2]) * r
+               + _PPF_A[3]) * r + _PPF_A[4]) * r + _PPF_A[5]) * q
+            / (((((_PPF_B[0] * r + _PPF_B[1]) * r + _PPF_B[2]) * r
+                 + _PPF_B[3]) * r + _PPF_B[4]) * r + 1.0))
+
+
 # ---------------------------------------------------------------------------
 # Log / list / profile loaders
 # ---------------------------------------------------------------------------
@@ -163,6 +267,21 @@ def already_read_set(log: list[dict]) -> set[tuple[str, str]]:
             for r in log if r.get("title")}
 
 
+def _strip_md_emphasis(s: str) -> str:
+    """Remove surrounding markdown emphasis (*, _, **, __, `) from a
+    table cell.  Reading_List.md writes titles as *italic*; the catalog
+    stores them plain.  Without this, norm("*Red Country*") leaves a
+    trailing "*" (norm strips leading punctuation only) and the row
+    matches nothing — see Plan C Issue 1."""
+    s = s.strip()
+    for _ in range(2):  # handle ** and __ as well as * and _
+        for mark in ("**", "__", "*", "_", "`"):
+            if (len(s) > len(mark) * 2
+                    and s.startswith(mark) and s.endswith(mark)):
+                s = s[len(mark):-len(mark)].strip()
+    return s
+
+
 def list_set(path: str) -> set[tuple[str, str]]:
     p = Path(path)
     if not p.exists():
@@ -178,7 +297,8 @@ def list_set(path: str) -> set[tuple[str, str]]:
             continue
         if cells[0].lower() in ("title", "---") or set(cells[0]) <= set("- :"):
             continue
-        title, author = cells[0], cells[1]
+        title = _strip_md_emphasis(cells[0])
+        author = _strip_md_emphasis(cells[1])
         if not title or set(title) <= set("- :"):
             continue
         out.add((norm(title), norm(author)))
@@ -427,6 +547,7 @@ def _subseries_order_key(entry: dict) -> tuple[float, str]:
 
 
 _NORM_INDEX_CACHE: dict[int, dict[tuple[str, str], dict]] = {}
+_SERIES_SIGNAL_CACHE: dict[int, dict[str, float]] = {}
 
 
 def _norm_index(conn: sqlite3.Connection) -> dict[tuple[str, str], dict]:
@@ -465,6 +586,183 @@ def lookup_by_pair(conn: sqlite3.Connection, title: str, author: str) -> dict | 
     # Fallback: stored normalized columns may predate the current
     # norm().  Match against a freshly normalized index.
     return _norm_index(conn).get((tn, an))
+
+
+# ---------------------------------------------------------------------------
+# Selection-bias-corrected series rating (Plan C Issue 4).
+#
+# A per-book Goodreads rating is a noisy ranking input for a tight
+# series: a weak opener gets ranked by one bad number, and later
+# entries inflate because the audience self-selects.  For tight series
+# only, replace the raw number fed to Issue 3's ranking weight with a
+# Heckman-style selection-bias-corrected series baseline blended lightly
+# with the book's own rating.  The corrected signal and every
+# intermediate (p_k, lambda_k, beta) are internal scoring inputs only —
+# never projected, never surfaced to the skill.
+# ---------------------------------------------------------------------------
+
+def _corrected_series_baseline(entries: list[dict]) -> float | None:
+    """Selection-bias-corrected baseline rating for one tight series.
+
+    `entries` is a list of {number, role, rating, reviews} dicts for a
+    single series.  Returns the corrected baseline, or None when the
+    correction's assumptions don't hold (caller falls back to the
+    candidate's own rating):
+
+      - no identifiable book one (anchorless series)
+      - review counts not roughly monotone decaying (recency/noise
+        dominating rather than selection)
+
+    Method (Heckman two-step; the project methodology doc is
+    authoritative, this mirrors its summary):
+
+      1. retention ratio   p_k    = n_k / n_1            (p_1 = 1)
+      2. selection thresh. alpha_k = invNormCDF(1 - p_k) (alpha_1 = 0)
+      3. inverse Mills     lambda_k = normPDF(alpha_k)/p_k (lambda_1=0)
+      4. bias coeff beta:  ≥3 mainline entries → OLS of mu_k on
+         lambda_k; the intercept estimates the selection-free
+         baseline.  <3 → beta cannot be regressed; the baseline is the
+         corrected book-one score (= mu_1, since lambda_1 = 0).
+      5. corrected score   mu_k_corrected = mu_k - beta*lambda_k
+    """
+    # Mainline = tight role + integer book number + usable numbers.
+    # Novellas / side stories carry fractional positions (Book 2.5)
+    # and are excluded from the retention curve so their low review
+    # counts don't masquerade as audience dropout.
+    by_number: dict[float, dict] = {}
+    for e in entries:
+        num = e.get("number")
+        if (e.get("role") not in SERIES_TIGHT_ROLES
+                or num is None or num != int(num)
+                or e.get("rating") is None
+                or e.get("reviews") is None or e["reviews"] <= 0):
+            continue
+        prev = by_number.get(num)
+        if prev is None or e["reviews"] > prev["reviews"]:
+            by_number[num] = e
+    mains = sorted(by_number.values(), key=lambda x: x["number"])
+    if not mains:
+        return None
+
+    b1 = next((e for e in mains if e["number"] == 1.0), None)
+    if b1 is None:
+        return None  # anchorless — no n_1, no retention ratio
+    n1 = float(b1["reviews"])
+    mu1 = float(b1["rating"])
+
+    # Drop mis-scraped rows: an entry whose review count is an
+    # anomalous fraction of the series median.  Book one is the
+    # anchor and is never dropped.
+    revs = sorted(e["reviews"] for e in mains)
+    mid = len(revs) // 2
+    median = (revs[mid] if len(revs) % 2
+              else (revs[mid - 1] + revs[mid]) / 2.0)
+    floor = SERIES_OUTLIER_FRAC * median
+    retained = [e for e in mains
+                if e["number"] == 1.0 or e["reviews"] >= floor]
+
+    # Monotone/domain check: every non-first retained entry needs
+    # 0 < n_k < n_1 so p_k ∈ (0,1) and invNormCDF is defined.  A
+    # later entry with ≥ n_1 reviews means recency/noise is dominating
+    # — the model is unsafe; fall back to own rating.
+    rest = [e for e in retained if e["number"] != 1.0]
+    for e in rest:
+        if not 0 < e["reviews"] < n1:
+            return None
+
+    if len(retained) < 3:
+        # beta ≈ 0.6 (domain default); baseline = corrected book-one
+        # score = mu_1 - beta*lambda_1, and lambda_1 = 0.
+        return mu1
+
+    lambdas: list[float] = []
+    mus: list[float] = []
+    for e in retained:
+        if e["number"] == 1.0:
+            lambdas.append(0.0)
+        else:
+            p_k = e["reviews"] / n1
+            alpha_k = _norm_ppf(1.0 - p_k)
+            lambdas.append(_norm_pdf(alpha_k) / p_k)
+        mus.append(float(e["rating"]))
+
+    m = len(lambdas)
+    mean_l = sum(lambdas) / m
+    mean_mu = sum(mus) / m
+    var_l = sum((x - mean_l) ** 2 for x in lambdas) / m
+    if var_l < 1e-9:
+        return mu1  # degenerate — no usable slope
+    cov = sum((lambdas[i] - mean_l) * (mus[i] - mean_mu)
+              for i in range(m)) / m
+    beta = cov / var_l
+    intercept = mean_mu - beta * mean_l  # selection-free baseline
+    # The correction's job is to *remove* upward selection inflation,
+    # never to manufacture a higher number.  When the OLS slope is
+    # non-positive (no inflation in the data, or inverted), the
+    # intercept can extrapolate above the observed mean — that is the
+    # model's assumption failing, not real signal.  Cap at the
+    # mainline mean so the corrected baseline is downward-only.  This
+    # keeps the worked-example reproduction (intercept already below
+    # the mean) and the "corrected ≤ plain mean" invariant.
+    return min(intercept, mean_mu)
+
+
+def _series_signal_index(conn: sqlite3.Connection) -> dict[str, float]:
+    """`series` value → corrected baseline, built once per connection.
+    Only series that yield a valid correction get an entry; everything
+    else is absent and the caller uses the book's own rating."""
+    cached = _SERIES_SIGNAL_CACHE.get(id(conn))
+    if cached is not None:
+        return cached
+    grouped: dict[str, list[dict]] = {}
+    for r in conn.execute(
+            "SELECT series, series_status, series_role, series_position, "
+            "goodreads_rating, goodreads_reviews FROM books"):
+        series = r["series"]
+        if not series or r["series_status"] not in SERIES_TIGHT_STATUS:
+            continue
+        grouped.setdefault(series, []).append({
+            "number": _series_book_number(r["series_position"]),
+            "role": r["series_role"],
+            "rating": r["goodreads_rating"],
+            "reviews": r["goodreads_reviews"],
+        })
+    idx: dict[str, float] = {}
+    for series, entries in grouped.items():
+        sig = _corrected_series_baseline(entries)
+        if sig is not None:
+            idx[series] = sig
+    _SERIES_SIGNAL_CACHE[id(conn)] = idx
+    return idx
+
+
+def effective_gr_signal(conn: sqlite3.Connection,
+                        book: dict) -> float | None:
+    """The Goodreads value Issue 3's ranking weight consumes.
+
+      - tight-series book, correction valid →
+        0.75*corrected_series_signal + 0.25*own_rating
+      - everything else (standalone, loose-series, every fallback) →
+        own_rating
+      - missing own rating → the corrected series signal alone
+      - neither available → None (Issue 3 contributes nothing; no
+        penalty)
+
+    Internal scoring input only — never projected."""
+    own = parse_rating(book.get("goodreads_rating"))
+    status = book.get("series_status")
+    role = book.get("series_role")
+    series = book.get("series")
+    tight = (status in SERIES_TIGHT_STATUS
+             and role in SERIES_TIGHT_ROLES)
+    if tight and series:
+        sig = _series_signal_index(conn).get(series)
+        if sig is not None:
+            if own is None:
+                return sig
+            return (SERIES_BLEND_SERIES * sig
+                    + SERIES_BLEND_OWN * own)
+    return own
 
 
 # ---------------------------------------------------------------------------
@@ -1073,13 +1371,25 @@ def _assign_strata_adjacent(pool: list[dict],
 
 def quality_score(c: dict, anchors: list[dict],
                   bucket_weight: dict[str, float],
-                  comp_overlap_count: int) -> tuple[float, list[dict]]:
-    base = float(c.get("goodreads_rating") or 0)
+                  comp_overlap_count: int,
+                  conn: sqlite3.Connection) -> tuple[float, list[dict]]:
+    # Goodreads as one weighted input among many (Plan C Issues 3 & 4):
+    # the series-aware effective signal, centred on the catalog median
+    # and clamped, so a low rating gently pulls down and a high one
+    # gently nudges up — never gating, never the headline.  A strong
+    # vector/comp match still outranks a mediocre rating.
+    eff = effective_gr_signal(conn, c)
+    if eff is None:
+        gr = 0.0
+    else:
+        delta = eff - GR_RANK_PIVOT
+        delta = max(-GR_RANK_CLAMP, min(GR_RANK_CLAMP, delta))
+        gr = GR_RANK_WEIGHT * delta
     anchor, matched_anchors = anchor_strength_for(
         c.get("_signals", set()), c.get("_themes", set()),
         anchors, bucket_weight)
     comp = min(comp_overlap_count, 3) * 0.6
-    return base + anchor + comp, matched_anchors
+    return gr + anchor + comp, matched_anchors
 
 
 def _comp_overlap_count(conn: sqlite3.Connection, key: str,
@@ -1207,7 +1517,8 @@ def _rank_within_stratum(candidates: list[dict], conn: sqlite3.Connection,
     scored = []
     for c in candidates:
         comp_n = _comp_overlap_count(conn, c["key"], favorite_keys)
-        score, matched_anchors = quality_score(c, anchors, bucket_weight, comp_n)
+        score, matched_anchors = quality_score(
+            c, anchors, bucket_weight, comp_n, conn)
         c["_score"] = round(score, 3)
         c["_resonance_titles"] = matched_anchors
         c["_comp_overlap_count"] = comp_n
