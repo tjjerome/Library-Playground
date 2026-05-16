@@ -39,6 +39,11 @@ def main() -> int:
                    help="Override default chunk size (0 = audit-specific default)")
     p.add_argument("--apply", dest="apply_changes", action="store_true",
                    help="Write proposed changes to --library-out (default: dry-run report only)")
+    p.add_argument("--review-floor", type=int, default=0,
+                   help="Skip indie-flags candidates with goodreads_reviews <= this floor. "
+                        "Use to re-audit a delta band (e.g. --review-floor 10000 with the "
+                        "default 15k ceiling targets only books that were excluded under the "
+                        "old 10k threshold).")
 
     g = p.add_mutually_exclusive_group(required=True)
     g.add_argument("--series-type", action="store_true",
@@ -106,6 +111,7 @@ def main() -> int:
             catalog, client,
             chunk_size=args.chunk_size or _c.INDIE_AUDIT_CHUNK_SIZE,
             apply_changes=args.apply_changes,
+            review_floor=args.review_floor,
         )
         print(f"\nindie backfill audit complete.")
         for k in ("candidates", "responses_received", "proposed_promotions", "applied"):

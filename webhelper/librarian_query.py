@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """Librarian query helper — claude.ai port, post-recomposition rewrite.
 
-Four subcommands plus `norm`:
+Subcommands plus `norm`:
 
     recommend          constraint-satisfaction candidate generation,
                        vector-spread sampling, returns 12-18 candidates
     status             actionable signals only — no dashboard
     series-fit         scope-aware series navigation
     unfinished-series  Phase 0 gate
+    compare            swap analysis for a reader-proposed add
+    author-history     log-side read/rating history for an author
+    reconcile          log ↔ catalog match audit
+    normalize-catalog  rewrite stored normalized columns with live norm()
     norm               shared normaliser (used by library-cataloguer)
 
 The recommender returns *material*, not a turn shape. The skill
@@ -30,7 +34,9 @@ Output: JSON to stdout. Diagnostics to stderr. Exit codes:
 from __future__ import annotations
 
 import argparse
+import difflib
 import json
+import math
 import random
 import re
 import sqlite3
@@ -40,13 +46,14 @@ from pathlib import Path
 from typing import Iterable
 
 try:
-    from .sqlite_export import norm  # type: ignore
+    from .sqlite_export import norm, title_short, _swap_lastfirst  # type: ignore
 except (ImportError, ValueError):
     try:
-        from sqlite_export import norm  # type: ignore  # noqa: E402
+        from sqlite_export import norm, title_short, _swap_lastfirst  # type: ignore  # noqa: E402
     except ImportError:
         sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-        from webhelper.sqlite_export import norm  # noqa: E402
+        from webhelper.sqlite_export import (  # noqa: E402
+            norm, title_short, _swap_lastfirst)
 
 
 # ---------------------------------------------------------------------------
@@ -59,8 +66,51 @@ DEFAULT_LIST = "Reading_List.md"
 DEFAULT_PROFILE = "Profile.md"
 DEFAULT_BUILD_STATE = "build_state.json"
 
-VARIANCE_MODES = ("balanced", "focused", "surprising", "adjacent")
+VARIANCE_MODES = ("similar", "balanced", "broad", "adjacent", "focused")
+
+# Structural discovery floor.  `balanced` (the new default) and
+# `broad` reserve a fixed fraction of the result for residual
+# (outside-vector) picks so breadth is guaranteed by construction
+# rather than left to caller judgement.  `similar`, `adjacent`, and
+# `focused` carry no forced residual quota.
+RESIDUAL_QUOTA = {"balanced": 0.20, "broad": 0.375}
+
+# Reader expansion appetite (build_state.preferences.expansion_appetite)
+# maps to the implicit --variance default when the caller doesn't pass
+# one explicitly.
+APPETITE_VARIANCE = {"high": "broad", "moderate": "balanced",
+                     "low": "similar"}
+
 QUALITY_FLOOR = 3.8
+
+# Goodreads as a ranking input (Plan C Issues 3 & 4).  GR is one
+# weighted signal among many — never the headline.  The score term is
+# GR_RANK_WEIGHT * clamp(effective_gr_signal - GR_RANK_PIVOT, ±1).
+# Pivot ≈ the catalog-wide median rating above the quality floor, so
+# the term is centred (it reorders rather than uniformly shifting) and
+# small enough that a strong vector/comp match still outranks a
+# mediocre rating.  Nothing is filtered for a low rating — no floor.
+GR_RANK_PIVOT = 4.1
+GR_RANK_WEIGHT = 1.0
+GR_RANK_CLAMP = 1.0
+
+# Selection-bias series-rating correction (Plan C Issue 4).
+SERIES_TIGHT_STATUS = ("Short Series", "Long Series")
+SERIES_TIGHT_ROLES = ("first", "mid", "late")
+# Drop an entry from the retention curve when its review count is an
+# anomalous fraction of the series median (mis-scraped rows, e.g. a
+# Red Rising book with 278 reviews against siblings in the hundred-
+# thousands).
+SERIES_OUTLIER_FRAC = 0.05
+# Heckman blend: mostly the corrected series baseline, lightly the
+# book's own rating.  The 0.75 lets a corrected series carry a weak
+# opener; the 0.25 keeps the book's own rating from being discarded.
+SERIES_BLEND_SERIES = 0.75
+SERIES_BLEND_OWN = 0.25
+# Domain-knowledge default when fewer than 3 mainline entries make an
+# OLS regression impossible (rho ≈ 0.6, sigma ≈ 1.0 ⇒ beta ≈ 0.6).
+SERIES_BETA_DEFAULT = 0.6
+
 DEFAULT_N = 15
 MIN_N = 12
 MAX_N = 18
@@ -129,6 +179,76 @@ def is_book_one(series_position: str | None) -> bool:
     return bool(_BOOK1.match(series_position.strip()))
 
 
+_SERIES_NUM = re.compile(r"(\d+(?:\.\d+)?)")
+
+
+def _series_book_number(series_position: str | None) -> float | None:
+    """First numeric token in a series_position string as a float.
+    `Book 1` → 1.0, `Book 2.5` → 2.5, `Prequel`/None → None.  A
+    non-integer value marks a novella / side entry — excluded from the
+    mainline retention curve (Plan C Issue 4)."""
+    if not series_position:
+        return None
+    m = _SERIES_NUM.search(series_position)
+    return float(m.group(1)) if m else None
+
+
+# ---------------------------------------------------------------------------
+# Standard normal distribution (Plan C Issue 4 — Heckman correction).
+# scipy is not a project dependency and is not worth adding for three
+# small functions; implement directly.
+# ---------------------------------------------------------------------------
+
+_SQRT_2PI = math.sqrt(2.0 * math.pi)
+
+
+def _norm_pdf(x: float) -> float:
+    return math.exp(-0.5 * x * x) / _SQRT_2PI
+
+
+def _norm_cdf(x: float) -> float:
+    return 0.5 * (1.0 + math.erf(x / math.sqrt(2.0)))
+
+
+# Acklam's rational approximation to the inverse normal CDF.
+# Relative error < 1.15e-9 across (0, 1).
+_PPF_A = (-3.969683028665376e+01, 2.209460984245205e+02,
+          -2.759285104469687e+02, 1.383577518672690e+02,
+          -3.066479806614716e+01, 2.506628277459239e+00)
+_PPF_B = (-5.447609879822406e+01, 1.615858368580409e+02,
+          -1.556989798598866e+02, 6.680131188771972e+01,
+          -1.328068155288572e+01)
+_PPF_C = (-7.784894002430293e-03, -3.223964580411365e-01,
+          -2.400758277161838e+00, -2.549732539343734e+00,
+          4.374664141464968e+00, 2.938163982698783e+00)
+_PPF_D = (7.784695709041462e-03, 3.224671290700398e-01,
+          2.445134137142996e+00, 3.754408661907416e+00)
+_PPF_PLOW = 0.02425
+
+
+def _norm_ppf(p: float) -> float:
+    if not 0.0 < p < 1.0:
+        raise ValueError(f"_norm_ppf domain: {p}")
+    if p < _PPF_PLOW:
+        q = math.sqrt(-2.0 * math.log(p))
+        return ((((((_PPF_C[0] * q + _PPF_C[1]) * q + _PPF_C[2]) * q
+                    + _PPF_C[3]) * q + _PPF_C[4]) * q + _PPF_C[5])
+                / ((((_PPF_D[0] * q + _PPF_D[1]) * q + _PPF_D[2]) * q
+                    + _PPF_D[3]) * q + 1.0))
+    if p > 1.0 - _PPF_PLOW:
+        q = math.sqrt(-2.0 * math.log(1.0 - p))
+        return -((((((_PPF_C[0] * q + _PPF_C[1]) * q + _PPF_C[2]) * q
+                     + _PPF_C[3]) * q + _PPF_C[4]) * q + _PPF_C[5])
+                 / ((((_PPF_D[0] * q + _PPF_D[1]) * q + _PPF_D[2]) * q
+                     + _PPF_D[3]) * q + 1.0))
+    q = p - 0.5
+    r = q * q
+    return ((((((_PPF_A[0] * r + _PPF_A[1]) * r + _PPF_A[2]) * r
+               + _PPF_A[3]) * r + _PPF_A[4]) * r + _PPF_A[5]) * q
+            / (((((_PPF_B[0] * r + _PPF_B[1]) * r + _PPF_B[2]) * r
+                 + _PPF_B[3]) * r + _PPF_B[4]) * r + 1.0))
+
+
 # ---------------------------------------------------------------------------
 # Log / list / profile loaders
 # ---------------------------------------------------------------------------
@@ -147,6 +267,21 @@ def already_read_set(log: list[dict]) -> set[tuple[str, str]]:
             for r in log if r.get("title")}
 
 
+def _strip_md_emphasis(s: str) -> str:
+    """Remove surrounding markdown emphasis (*, _, **, __, `) from a
+    table cell.  Reading_List.md writes titles as *italic*; the catalog
+    stores them plain.  Without this, norm("*Red Country*") leaves a
+    trailing "*" (norm strips leading punctuation only) and the row
+    matches nothing — see Plan C Issue 1."""
+    s = s.strip()
+    for _ in range(2):  # handle ** and __ as well as * and _
+        for mark in ("**", "__", "*", "_", "`"):
+            if (len(s) > len(mark) * 2
+                    and s.startswith(mark) and s.endswith(mark)):
+                s = s[len(mark):-len(mark)].strip()
+    return s
+
+
 def list_set(path: str) -> set[tuple[str, str]]:
     p = Path(path)
     if not p.exists():
@@ -162,10 +297,34 @@ def list_set(path: str) -> set[tuple[str, str]]:
             continue
         if cells[0].lower() in ("title", "---") or set(cells[0]) <= set("- :"):
             continue
-        title, author = cells[0], cells[1]
+        title = _strip_md_emphasis(cells[0])
+        author = _strip_md_emphasis(cells[1])
         if not title or set(title) <= set("- :"):
             continue
         out.add((norm(title), norm(author)))
+    return out
+
+
+def _normalize_preferences(prefs) -> dict:
+    """Normalize build_state.preferences to v2 shape.  Missing or
+    out-of-range fields fall back to the corrected reader defaults:
+    series_commitment=binary, curiosity_targets=[],
+    expansion_appetite=moderate.  The audio flag is accepted under
+    either `audio_flagged` or `audio_preference` and mirrored to both
+    so downstream checks need not branch on the key name."""
+    if not isinstance(prefs, dict):
+        prefs = {}
+    out = dict(prefs)
+    sc = prefs.get("series_commitment")
+    out["series_commitment"] = sc if sc in ("binary", "test-first") else "binary"
+    ct = prefs.get("curiosity_targets")
+    out["curiosity_targets"] = ct if isinstance(ct, list) else []
+    ea = prefs.get("expansion_appetite")
+    out["expansion_appetite"] = (ea if ea in ("high", "moderate", "low")
+                                 else "moderate")
+    audio = bool(prefs.get("audio_flagged") or prefs.get("audio_preference"))
+    out["audio_flagged"] = audio
+    out["audio_preference"] = audio
     return out
 
 
@@ -185,7 +344,43 @@ def load_build_state(path: str) -> dict:
     data.setdefault("events", [])
     data.setdefault("page_budget", None)
     data.setdefault("commitment_load", {})
+    data.setdefault("session_notes", [])
+    # v1 → v2 normalization.  v1 inputs carry no `version`, no
+    # `preferences` block, and no defended/session_lock events; v2
+    # carries all three.  Absences normalize to the corrected-default
+    # shape so callers never branch on version.  `defended`/
+    # `session_lock` events coexist with v1 events untouched.
+    data["preferences"] = _normalize_preferences(data.get("preferences"))
+    data["version"] = 2
     return data
+
+
+def collect_locks(state: dict) -> tuple[dict[str, int], set[str]]:
+    """Read the locks ledger from build_state.
+
+    Returns ``(defended_counts, session_lock_keys)`` where
+    ``defended_counts`` maps a book key to the number of times the
+    reader defended it against a proposed cut, and
+    ``session_lock_keys`` is the set of keys the reader has explicitly
+    locked (unprompted declarations of intent).  Session locks are
+    read from ``events[]`` (``type: session_lock``) and, for
+    Plan-A-written notes, from ``session_notes[]``
+    (``kind: session_lock``)."""
+    defended: dict[str, int] = {}
+    locks: set[str] = set()
+    for ev in state.get("events", []) or []:
+        key = ev.get("key")
+        if not key:
+            continue
+        t = ev.get("type")
+        if t == "defended":
+            defended[key] = defended.get(key, 0) + 1
+        elif t == "session_lock":
+            locks.add(key)
+    for note in state.get("session_notes", []) or []:
+        if note.get("kind") == "session_lock" and note.get("key"):
+            locks.add(note["key"])
+    return defended, locks
 
 
 def parse_profile_preferences(path: str) -> list[dict]:
@@ -351,6 +546,33 @@ def _subseries_order_key(entry: dict) -> tuple[float, str]:
     return _series_order_key(entry)
 
 
+_NORM_INDEX_CACHE: dict[int, dict[tuple[str, str], dict]] = {}
+_SERIES_SIGNAL_CACHE: dict[int, dict[str, float]] = {}
+
+
+def _norm_index(conn: sqlite3.Connection) -> dict[tuple[str, str], dict]:
+    """Catalog index keyed by the *current* norm() of (title, author),
+    built once per connection.  Stored title_normalized /
+    author_normalized columns reflect whatever norm() was in force
+    when each row was written; this recomputes with the live function
+    so a hardened norm doesn't silently lose matches until
+    `normalize-catalog` runs.  Also keys the pre-colon title prefix."""
+    cached = _NORM_INDEX_CACHE.get(id(conn))
+    if cached is not None:
+        return cached
+    idx: dict[tuple[str, str], dict] = {}
+    for r in conn.execute("SELECT * FROM books"):
+        e = row_to_entry(r)
+        an = norm(e.get("author", ""))
+        title = e.get("title", "") or ""
+        full = norm(title)
+        idx.setdefault((full, an), e)
+        if ":" in title:
+            idx.setdefault((norm(title.split(":", 1)[0]), an), e)
+    _NORM_INDEX_CACHE[id(conn)] = idx
+    return idx
+
+
 def lookup_by_pair(conn: sqlite3.Connection, title: str, author: str) -> dict | None:
     tn = norm(title)
     an = norm(author)
@@ -361,7 +583,186 @@ def lookup_by_pair(conn: sqlite3.Connection, title: str, author: str) -> dict | 
         row = conn.execute(sql, (tn, an)).fetchone()
         if row is not None:
             return row_to_entry(row)
-    return None
+    # Fallback: stored normalized columns may predate the current
+    # norm().  Match against a freshly normalized index.
+    return _norm_index(conn).get((tn, an))
+
+
+# ---------------------------------------------------------------------------
+# Selection-bias-corrected series rating (Plan C Issue 4).
+#
+# A per-book Goodreads rating is a noisy ranking input for a tight
+# series: a weak opener gets ranked by one bad number, and later
+# entries inflate because the audience self-selects.  For tight series
+# only, replace the raw number fed to Issue 3's ranking weight with a
+# Heckman-style selection-bias-corrected series baseline blended lightly
+# with the book's own rating.  The corrected signal and every
+# intermediate (p_k, lambda_k, beta) are internal scoring inputs only —
+# never projected, never surfaced to the skill.
+# ---------------------------------------------------------------------------
+
+def _corrected_series_baseline(entries: list[dict]) -> float | None:
+    """Selection-bias-corrected baseline rating for one tight series.
+
+    `entries` is a list of {number, role, rating, reviews} dicts for a
+    single series.  Returns the corrected baseline, or None when the
+    correction's assumptions don't hold (caller falls back to the
+    candidate's own rating):
+
+      - no identifiable book one (anchorless series)
+      - review counts not roughly monotone decaying (recency/noise
+        dominating rather than selection)
+
+    Method (Heckman two-step; the project methodology doc is
+    authoritative, this mirrors its summary):
+
+      1. retention ratio   p_k    = n_k / n_1            (p_1 = 1)
+      2. selection thresh. alpha_k = invNormCDF(1 - p_k) (alpha_1 = 0)
+      3. inverse Mills     lambda_k = normPDF(alpha_k)/p_k (lambda_1=0)
+      4. bias coeff beta:  ≥3 mainline entries → OLS of mu_k on
+         lambda_k; the intercept estimates the selection-free
+         baseline.  <3 → beta cannot be regressed; the baseline is the
+         corrected book-one score (= mu_1, since lambda_1 = 0).
+      5. corrected score   mu_k_corrected = mu_k - beta*lambda_k
+    """
+    # Mainline = tight role + integer book number + usable numbers.
+    # Novellas / side stories carry fractional positions (Book 2.5)
+    # and are excluded from the retention curve so their low review
+    # counts don't masquerade as audience dropout.
+    by_number: dict[float, dict] = {}
+    for e in entries:
+        num = e.get("number")
+        if (e.get("role") not in SERIES_TIGHT_ROLES
+                or num is None or num != int(num)
+                or e.get("rating") is None
+                or e.get("reviews") is None or e["reviews"] <= 0):
+            continue
+        prev = by_number.get(num)
+        if prev is None or e["reviews"] > prev["reviews"]:
+            by_number[num] = e
+    mains = sorted(by_number.values(), key=lambda x: x["number"])
+    if not mains:
+        return None
+
+    b1 = next((e for e in mains if e["number"] == 1.0), None)
+    if b1 is None:
+        return None  # anchorless — no n_1, no retention ratio
+    n1 = float(b1["reviews"])
+    mu1 = float(b1["rating"])
+
+    # Drop mis-scraped rows: an entry whose review count is an
+    # anomalous fraction of the series median.  Book one is the
+    # anchor and is never dropped.
+    revs = sorted(e["reviews"] for e in mains)
+    mid = len(revs) // 2
+    median = (revs[mid] if len(revs) % 2
+              else (revs[mid - 1] + revs[mid]) / 2.0)
+    floor = SERIES_OUTLIER_FRAC * median
+    retained = [e for e in mains
+                if e["number"] == 1.0 or e["reviews"] >= floor]
+
+    # Monotone/domain check: every non-first retained entry needs
+    # 0 < n_k < n_1 so p_k ∈ (0,1) and invNormCDF is defined.  A
+    # later entry with ≥ n_1 reviews means recency/noise is dominating
+    # — the model is unsafe; fall back to own rating.
+    rest = [e for e in retained if e["number"] != 1.0]
+    for e in rest:
+        if not 0 < e["reviews"] < n1:
+            return None
+
+    if len(retained) < 3:
+        # beta ≈ 0.6 (domain default); baseline = corrected book-one
+        # score = mu_1 - beta*lambda_1, and lambda_1 = 0.
+        return mu1
+
+    lambdas: list[float] = []
+    mus: list[float] = []
+    for e in retained:
+        if e["number"] == 1.0:
+            lambdas.append(0.0)
+        else:
+            p_k = e["reviews"] / n1
+            alpha_k = _norm_ppf(1.0 - p_k)
+            lambdas.append(_norm_pdf(alpha_k) / p_k)
+        mus.append(float(e["rating"]))
+
+    m = len(lambdas)
+    mean_l = sum(lambdas) / m
+    mean_mu = sum(mus) / m
+    var_l = sum((x - mean_l) ** 2 for x in lambdas) / m
+    if var_l < 1e-9:
+        return mu1  # degenerate — no usable slope
+    cov = sum((lambdas[i] - mean_l) * (mus[i] - mean_mu)
+              for i in range(m)) / m
+    beta = cov / var_l
+    intercept = mean_mu - beta * mean_l  # selection-free baseline
+    # The correction's job is to *remove* upward selection inflation,
+    # never to manufacture a higher number.  When the OLS slope is
+    # non-positive (no inflation in the data, or inverted), the
+    # intercept can extrapolate above the observed mean — that is the
+    # model's assumption failing, not real signal.  Cap at the
+    # mainline mean so the corrected baseline is downward-only.  This
+    # keeps the worked-example reproduction (intercept already below
+    # the mean) and the "corrected ≤ plain mean" invariant.
+    return min(intercept, mean_mu)
+
+
+def _series_signal_index(conn: sqlite3.Connection) -> dict[str, float]:
+    """`series` value → corrected baseline, built once per connection.
+    Only series that yield a valid correction get an entry; everything
+    else is absent and the caller uses the book's own rating."""
+    cached = _SERIES_SIGNAL_CACHE.get(id(conn))
+    if cached is not None:
+        return cached
+    grouped: dict[str, list[dict]] = {}
+    for r in conn.execute(
+            "SELECT series, series_status, series_role, series_position, "
+            "goodreads_rating, goodreads_reviews FROM books"):
+        series = r["series"]
+        if not series or r["series_status"] not in SERIES_TIGHT_STATUS:
+            continue
+        grouped.setdefault(series, []).append({
+            "number": _series_book_number(r["series_position"]),
+            "role": r["series_role"],
+            "rating": r["goodreads_rating"],
+            "reviews": r["goodreads_reviews"],
+        })
+    idx: dict[str, float] = {}
+    for series, entries in grouped.items():
+        sig = _corrected_series_baseline(entries)
+        if sig is not None:
+            idx[series] = sig
+    _SERIES_SIGNAL_CACHE[id(conn)] = idx
+    return idx
+
+
+def effective_gr_signal(conn: sqlite3.Connection,
+                        book: dict) -> float | None:
+    """The Goodreads value Issue 3's ranking weight consumes.
+
+      - tight-series book, correction valid →
+        0.75*corrected_series_signal + 0.25*own_rating
+      - everything else (standalone, loose-series, every fallback) →
+        own_rating
+      - missing own rating → the corrected series signal alone
+      - neither available → None (Issue 3 contributes nothing; no
+        penalty)
+
+    Internal scoring input only — never projected."""
+    own = parse_rating(book.get("goodreads_rating"))
+    status = book.get("series_status")
+    role = book.get("series_role")
+    series = book.get("series")
+    tight = (status in SERIES_TIGHT_STATUS
+             and role in SERIES_TIGHT_ROLES)
+    if tight and series:
+        sig = _series_signal_index(conn).get(series)
+        if sig is not None:
+            if own is None:
+                return sig
+            return (SERIES_BLEND_SERIES * sig
+                    + SERIES_BLEND_OWN * own)
+    return own
 
 
 # ---------------------------------------------------------------------------
@@ -610,9 +1011,15 @@ def resolve_list_picks(conn: sqlite3.Connection,
             row = conn.execute(
                 "SELECT * FROM books WHERE title_short = ? "
                 "AND author_normalized = ?", (tn, an)).fetchone()
-        if not row:
-            continue
-        e = row_to_entry(row)
+        if row:
+            e = row_to_entry(row)
+        else:
+            # Stored normalized columns may predate the current
+            # norm(); fall back to the freshly normalized index.
+            e = _norm_index(conn).get((tn, an))
+            if e is None:
+                continue
+            e = dict(e)
         e["_signals"] = positive_signals_for(conn, e["key"])
         e["_themes"] = themes_for(conn, e["key"])
         out.append(e)
@@ -795,8 +1202,8 @@ def stage1_pool(conn: sqlite3.Connection, *,
     finishes in Python for the entry-point gate and exclusions.
 
     When `require_relevance` is False, the canonical-signal/theme
-    relevance gate drops — used by `surprising` variance mode to
-    surface quality-floor candidates that match no active vector
+    relevance gate drops — used by the `balanced`/`broad` residual
+    quota to surface quality-floor candidates that match no active vector
     ("books I almost didn't show you").
     """
     if require_relevance and not active_signals and not active_themes:
@@ -964,13 +1371,25 @@ def _assign_strata_adjacent(pool: list[dict],
 
 def quality_score(c: dict, anchors: list[dict],
                   bucket_weight: dict[str, float],
-                  comp_overlap_count: int) -> tuple[float, list[dict]]:
-    base = float(c.get("goodreads_rating") or 0)
+                  comp_overlap_count: int,
+                  conn: sqlite3.Connection) -> tuple[float, list[dict]]:
+    # Goodreads as one weighted input among many (Plan C Issues 3 & 4):
+    # the series-aware effective signal, centred on the catalog median
+    # and clamped, so a low rating gently pulls down and a high one
+    # gently nudges up — never gating, never the headline.  A strong
+    # vector/comp match still outranks a mediocre rating.
+    eff = effective_gr_signal(conn, c)
+    if eff is None:
+        gr = 0.0
+    else:
+        delta = eff - GR_RANK_PIVOT
+        delta = max(-GR_RANK_CLAMP, min(GR_RANK_CLAMP, delta))
+        gr = GR_RANK_WEIGHT * delta
     anchor, matched_anchors = anchor_strength_for(
         c.get("_signals", set()), c.get("_themes", set()),
         anchors, bucket_weight)
     comp = min(comp_overlap_count, 3) * 0.6
-    return base + anchor + comp, matched_anchors
+    return gr + anchor + comp, matched_anchors
 
 
 def _comp_overlap_count(conn: sqlite3.Connection, key: str,
@@ -1008,20 +1427,17 @@ def _allocate_slots(stratum_names: list[str], n: int, mode: str,
         for s in stratum_names:
             weights[s] = 1.0
         weights[chosen] = 6.0  # ~60% if 4 strata; scales naturally
-    elif mode == "surprising":
-        # Residual gets a guaranteed slot or two; vectors weighted
-        # inverse to their pool size (rarer = more coverage needed).
-        for s in stratum_names:
-            weights[s] = 1.0
-        if "residual" in stratum_names:
-            weights["residual"] = 2.0
     elif mode == "adjacent":
         # Adjacency strata share weight evenly; residual stays low
         # so it only fills slots when adjacency strata are thin.
         for s in stratum_names:
             weights[s] = 1.5 if s.startswith("adjacent:") else 0.5
     else:
-        # balanced
+        # similar / balanced / broad share the same even-weight base
+        # (the old `balanced` behaviour, i.e. similarity-heavy).  For
+        # `balanced` and `broad` the structural residual quota is
+        # applied as a post-step below so breadth is guaranteed by
+        # construction rather than by stratum weighting.
         for s in stratum_names:
             weights[s] = 1.0
 
@@ -1044,8 +1460,9 @@ def _allocate_slots(stratum_names: list[str], n: int, mode: str,
         except ValueError:
             pass
 
-    # Light per-call jitter — ±20% for balanced, less for others.
-    jitter = 0.20 if mode == "balanced" else 0.10
+    # Light per-call jitter — wider for the residual-quota modes so
+    # consecutive calls vary; tighter elsewhere.
+    jitter = 0.20 if mode in ("balanced", "broad") else 0.10
     for s in list(weights):
         weights[s] *= 1.0 + (rng.random() * 2 - 1) * jitter
 
@@ -1059,6 +1476,36 @@ def _allocate_slots(stratum_names: list[str], n: int, mode: str,
         floors[remainders[i % len(remainders)]] += 1
         used += 1
         i += 1
+
+    # Structural residual quota for balanced / broad.  Pin the
+    # residual stratum to ~quota·n and reflow the remaining slots
+    # across the other strata in proportion to their current
+    # allocation (so --lean / focused skew is preserved among them).
+    quota = RESIDUAL_QUOTA.get(mode)
+    others = [s for s in stratum_names if s != "residual"]
+    if quota and "residual" in floors and others:
+        target = min(n, max(1, round(n * quota)))
+        if floors["residual"] != target:
+            floors["residual"] = target
+            rem = n - target
+            base = {s: floors[s] for s in others}
+            bsum = sum(base.values())
+            newf: dict[str, int] = {}
+            if bsum > 0:
+                for s in others:
+                    newf[s] = int(rem * base[s] / bsum)
+            else:
+                for s in others:
+                    newf[s] = 0
+            used2 = sum(newf.values())
+            order = sorted(others, key=lambda s: -base[s])
+            j = 0
+            while used2 < rem and order:
+                newf[order[j % len(order)]] += 1
+                used2 += 1
+                j += 1
+            for s in others:
+                floors[s] = newf[s]
     return floors
 
 
@@ -1070,9 +1517,10 @@ def _rank_within_stratum(candidates: list[dict], conn: sqlite3.Connection,
     scored = []
     for c in candidates:
         comp_n = _comp_overlap_count(conn, c["key"], favorite_keys)
-        score, matched_anchors = quality_score(c, anchors, bucket_weight, comp_n)
+        score, matched_anchors = quality_score(
+            c, anchors, bucket_weight, comp_n, conn)
         c["_score"] = round(score, 3)
-        c["_anchor_log_entries"] = matched_anchors
+        c["_resonance_titles"] = matched_anchors
         c["_comp_overlap_count"] = comp_n
         scored.append(c)
     scored.sort(key=lambda x: (-x["_score"], x.get("title", "")))
@@ -1246,13 +1694,15 @@ def _apply_warnings(c: dict, profile_notes: list[dict]) -> list[str]:
 
 def render_candidate(c: dict, underused_names: set[str],
                      at_risk_names: set[str],
-                     profile_notes: list[dict]) -> dict:
+                     profile_notes: list[dict],
+                     show_gr: bool = False,
+                     show_audio: bool = False) -> dict:
     matched_vectors = c.get("_matched_vectors") or []
     matched_themes = sorted(c.get("_themes", set()))
     matched_floors = c.get("_matched_floors") or []
     fills_vectors = [n for n in matched_vectors if n in underused_names]
     fills_floors = [n for n in matched_floors if n in at_risk_names]
-    return {
+    out = {
         "key": c.get("key"),
         "title": c.get("title"),
         "author": c.get("author"),
@@ -1261,12 +1711,11 @@ def render_candidate(c: dict, underused_names: set[str],
         "indie": c.get("indie"),
         "classic": c.get("classic"),
         "match_reasoning": {
-            "anchor_log_entries": c.get("_anchor_log_entries", []),
+            "resonance_titles": c.get("_resonance_titles", []),
             "matched_vectors": matched_vectors,
             "matched_themes": matched_themes,
             "comp_overlap_count": c.get("_comp_overlap_count", 0),
             "entry_point_ok": True,
-            "rating": c.get("goodreads_rating"),
         },
         "fills_gap": {
             "vectors": fills_vectors,
@@ -1276,13 +1725,37 @@ def render_candidate(c: dict, underused_names: set[str],
         },
         "warnings": _apply_warnings(c, profile_notes),
     }
+    # goodreads_rating and audio_suitability are dropped from the
+    # default projection — they were being used reflexively as cut
+    # criteria.  Opt back in via --show-gr / --show-audio or (audio
+    # only) the reader's profile-flagged audio preference.
+    if show_gr:
+        out["goodreads_rating"] = c.get("goodreads_rating")
+    if show_audio:
+        out["audio_suitability"] = c.get("audio_suitability")
+    return out
 
 
 # ---------------------------------------------------------------------------
 # Subcommand: recommend
 # ---------------------------------------------------------------------------
 
+CURATE_MODE_MESSAGE = (
+    "recommend: curate mode does not source new candidates.\n"
+    "Use `compare` for swap analysis or `status` for distribution\n"
+    "and floor checks. To source new candidates, run with\n"
+    "--mode discover."
+)
+
+
 def cmd_recommend(args, conn: sqlite3.Connection) -> None:
+    mode = getattr(args, "mode", "discover") or "discover"
+    if mode == "curate":
+        # Structural guarantee: curate mode never sources new picks.
+        # The message is the entire output; exit non-zero.
+        print(CURATE_MODE_MESSAGE, file=sys.stderr)
+        sys.exit(4)
+
     n = args.n
     if n < MIN_N or n > MAX_N:
         # Permissive: allow tests to pin n outside the recommended
@@ -1298,6 +1771,22 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
     state = load_build_state(args.build_state)
     profile_notes = (parse_profile_preferences(args.profile)
                      if args.profile else [])
+    prefs = state.get("preferences", {})
+
+    # Resolve effective variance.  An explicit --variance always
+    # wins; otherwise the reader's stated expansion appetite (set in
+    # intake) selects the implicit default: high → broad,
+    # low → similar, moderate/unset → balanced.
+    explicit_variance = getattr(args, "variance", None)
+    if explicit_variance:
+        variance = explicit_variance
+    else:
+        variance = APPETITE_VARIANCE.get(
+            prefs.get("expansion_appetite", "moderate"), "balanced")
+
+    show_gr = bool(getattr(args, "show_gr", False))
+    show_audio = bool(getattr(args, "show_audio", False)
+                      or prefs.get("audio_flagged"))
 
     actives = active_vectors_of(state)
     if not actives:
@@ -1322,9 +1811,11 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
     )
     pool_size = len(pool)
 
-    # Surprising mode: also surface a residual sub-pool of
-    # quality-floor candidates that match no active vector.
-    if args.variance == "surprising":
+    # balanced / broad: also surface a residual sub-pool of
+    # quality-floor candidates that match no active vector, so the
+    # structural residual quota has material to draw from
+    # ("books I almost didn't show you").
+    if variance in ("balanced", "broad"):
         relaxed = stage1_pool(
             conn,
             active_signals=active_signals,
@@ -1363,7 +1854,7 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
         active_vectors=actives,
         underused=underused,
         at_risk=at_risk,
-        n=n, variance=args.variance, lean=args.lean,
+        n=n, variance=variance, lean=args.lean,
         rng=rng,
     )
 
@@ -1374,13 +1865,17 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
 
     output = {
         "candidates": [render_candidate(c, underused_names, at_risk_names,
-                                         profile_notes)
+                                         profile_notes,
+                                         show_gr=show_gr,
+                                         show_audio=show_audio)
                        for c in selected],
         "pool_size": pool_size,
         "stratum_breakdown": breakdown,
         "probe": probe,
-        "variance_mode": args.variance,
+        "variance_mode": variance,
     }
+    if getattr(args, "audit_exclusions", False):
+        output["exclusion_audit"] = build_exclusion_audit(conn, log)
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
 
@@ -1402,6 +1897,34 @@ def cmd_status(args, conn: sqlite3.Connection) -> None:
                               len(list_pairs), n_target)
     clusters = rejection_clusters(state.get("events", []))
 
+    defended_counts, session_lock_keys = collect_locks(state)
+    # Title resolution: prefer the title the skill wrote on the
+    # event/note, fall back to the catalog.
+    titles: dict[str, str] = {}
+    for ev in state.get("events", []) or []:
+        if ev.get("key") and ev.get("title"):
+            titles.setdefault(ev["key"], ev["title"])
+    for note in state.get("session_notes", []) or []:
+        if note.get("key") and note.get("title"):
+            titles.setdefault(note["key"], note["title"])
+
+    def _title(key: str) -> str | None:
+        if key in titles:
+            return titles[key]
+        row = conn.execute(
+            "SELECT title FROM books WHERE key = ?", (key,)).fetchone()
+        return row["title"] if row else None
+
+    defended_picks = sorted(
+        ({"key": k, "title": _title(k), "defense_count": c}
+         for k, c in defended_counts.items()),
+        key=lambda d: (-d["defense_count"], d["title"] or ""),
+    )
+    session_locks = sorted(
+        ({"key": k, "title": _title(k)} for k in session_lock_keys),
+        key=lambda d: (d["title"] or ""),
+    )
+
     output = {
         "floors_at_risk": [
             {"name": f["name"], "kind": f["kind"],
@@ -1420,6 +1943,8 @@ def cmd_status(args, conn: sqlite3.Connection) -> None:
         "commitment_load_warning": commitment_load_warning(state, picks),
         "page_budget_warning": page_budget_warning(picks,
                                                    state.get("page_budget")),
+        "defended_picks": defended_picks,
+        "session_locks": session_locks,
     }
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
@@ -1753,6 +2278,14 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
             "to compare against", code=3)
 
     state = load_build_state(args.build_state)
+    defended_counts, session_lock_keys = collect_locks(state)
+    # Hard lock: a pick defended ≥2× this session, or explicitly
+    # session-locked, is removed from cut-candidate sampling
+    # entirely.  A single defense (count == 1) still surfaces but
+    # carries defended_count so the skill can escalate justification.
+    hard_locked = {k for k, c in defended_counts.items() if c >= 2}
+    hard_locked |= session_lock_keys
+
     actives = active_vectors_of(state)
     active_signal_pool = {s for v in actives for s in vector_signal_set(v)}
     active_theme_pool = {t for v in actives for t in vector_theme_set(v)}
@@ -1768,12 +2301,11 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
         add_sigs, add_thms, anchors, bucket_weight)
     add_comp_n = _comp_overlap_count(conn, add_entry["key"], favorite_keys)
     add_match = {
-        "anchor_log_entries": add_matched_anchors,
+        "resonance_titles": add_matched_anchors,
         "matched_vectors": vectors_matched(add_sigs, add_thms, actives),
         "matched_themes": sorted(add_thms),
         "comp_overlap_count": add_comp_n,
         "entry_point_ok": passes_entry_point_gate(add_entry, log_authors),
-        "rating": add_entry.get("goodreads_rating"),
         "anchor_strength": round(add_anchor_strength, 3),
     }
 
@@ -1822,6 +2354,10 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
 
     seen: set[str] = set()
     out: list[dict] = []
+    # Keys filtered by the lock check that were otherwise eligible
+    # swap targets — surfaced so the skill can see what's protected.
+    locked_picks_excluded = sorted(
+        {p["key"] for p in scored_picks if p["key"] in hard_locked})
 
     def take(pool: list[dict], reason: str, slots: int) -> None:
         for p in pool:
@@ -1829,9 +2365,12 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
                 break
             if p["key"] in seen or p["key"] == add_entry["key"]:
                 continue
+            if p["key"] in hard_locked:
+                continue
             seen.add(p["key"])
             entry = {k: v for k, v in p.items() if not k.startswith("_")}
             entry["reason"] = reason
+            entry["defended_count"] = defended_counts.get(p["key"], 0)
             out.append(entry)
             slots -= 1
 
@@ -1862,6 +2401,7 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
         },
         "swap_suggestions": out,
         "list_size": len(list_picks),
+        "locked_picks_excluded": locked_picks_excluded,
     }
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
@@ -1872,6 +2412,210 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
 
 def cmd_norm(args, _conn=None) -> None:
     print(norm(args.text))
+
+
+# ---------------------------------------------------------------------------
+# Addendum B — author history, exclusion audit, reconcile, normalize
+# ---------------------------------------------------------------------------
+
+_AUTHOR_SPLIT = re.compile(r"\s*(?:&|;|/|\band\b|\bwith\b)\s*",
+                           flags=re.IGNORECASE)
+
+
+def _author_parts(raw: str) -> set[str]:
+    """Normalized author tokens for a (possibly multi-author) field.
+    Includes the whole field and each split part so a single-author
+    query matches a co-authored log row."""
+    if not raw:
+        return set()
+    parts = {norm(raw)}
+    for piece in _AUTHOR_SPLIT.split(raw):
+        pn = norm(piece)
+        if pn:
+            parts.add(pn)
+    return parts
+
+
+def _log_author_field(row: dict) -> str:
+    return row.get("authors") or row.get("author") or ""
+
+
+def _log_date(row: dict) -> str | None:
+    for k in ("Last Date Read", "Date Read", "date", "Date"):
+        v = row.get(k)
+        if v:
+            return v.strip()
+    return None
+
+
+def cmd_author_history(args, _conn=None) -> None:
+    log = load_log(args.log)
+    qn = norm(args.author)
+    reads = []
+    matched_author = None
+    for r in log:
+        if not r.get("title"):
+            continue
+        raw = _log_author_field(r)
+        if qn and qn in _author_parts(raw):
+            if matched_author is None:
+                matched_author = raw
+            reads.append({
+                "title": r.get("title"),
+                "rating": parse_rating(r.get("My Rating")),
+                "date": _log_date(r),
+            })
+    rated_4plus = sum(1 for x in reads
+                      if x["rating"] is not None and x["rating"] >= 4.0)
+    print(json.dumps({
+        "author_query": args.author,
+        "matched_author": matched_author,
+        "reads": reads,
+        "read_count": len(reads),
+        "rated_4plus_count": rated_4plus,
+    }, ensure_ascii=False, indent=2))
+
+
+def _norm_distance(a: str, b: str) -> float:
+    """1 − similarity ratio on two normalized strings (0 == identical)."""
+    if not a and not b:
+        return 0.0
+    return round(1.0 - difflib.SequenceMatcher(None, a, b).ratio(), 4)
+
+
+def build_exclusion_audit(conn: sqlite3.Connection,
+                          log: list[dict]) -> dict:
+    """Reconcile every log entry against the catalog.  Surfaces
+    orphans (no catalog match at all) and near-misses (a catalog row
+    that *almost* matched — the silent exclusion-gate failures)."""
+    idx = _norm_index(conn)
+    by_title: dict[str, list[tuple[str, dict]]] = {}
+    by_author: dict[str, list[tuple[str, dict]]] = {}
+    for (tn, an), e in idx.items():
+        by_title.setdefault(tn, []).append((an, e))
+        by_author.setdefault(an, []).append((tn, e))
+
+    total = 0
+    matched = 0
+    orphans: list[dict] = []
+    near: list[dict] = []
+    for r in log:
+        if not r.get("title"):
+            continue
+        total += 1
+        ltn = norm(r.get("title", ""))
+        lan = norm(_log_author_field(r))
+        if (ltn, lan) in idx:
+            matched += 1
+            continue
+        # Look for the closest catalog row: same title (author drift)
+        # or same author (title drift).
+        best = None
+        for cand_an, e in by_title.get(ltn, []):
+            d = _norm_distance(lan, cand_an)
+            if best is None or d < best[0]:
+                best = (d, e, "author")
+        for cand_tn, e in by_author.get(lan, []):
+            d = _norm_distance(ltn, cand_tn)
+            if best is None or d < best[0]:
+                best = (d, e, "title")
+        if best is not None and best[0] <= 0.34:
+            e = best[1]
+            near.append({
+                "log_title": r.get("title"),
+                "catalog_title": e.get("title"),
+                "log_author": _log_author_field(r),
+                "catalog_author": e.get("author"),
+                "normalized_distance": best[0],
+            })
+        else:
+            orphans.append({
+                "title": r.get("title"),
+                "author": _log_author_field(r),
+                "reason": "no catalog match",
+            })
+    return {
+        "log_entries_total": total,
+        "log_entries_matched_to_catalog": matched,
+        "orphan_log_entries": orphans,
+        "near_miss_matches": near,
+    }
+
+
+def cmd_reconcile(args, conn: sqlite3.Connection) -> None:
+    log = load_log(args.log)
+    print(json.dumps(build_exclusion_audit(conn, log),
+                     ensure_ascii=False, indent=2))
+
+
+def cmd_normalize_catalog(args, conn: sqlite3.Connection) -> None:
+    rows = list(conn.execute("SELECT * FROM books"))
+    updates: list[tuple] = []
+    author_format_changes: list[dict] = []
+    malformed: list[dict] = []
+    seen: dict[tuple[str, str], list[str]] = {}
+
+    for r in rows:
+        e = row_to_entry(r)
+        key = e["key"]
+        old_title_n = e.get("title_normalized") or ""
+        old_author_n = e.get("author_normalized") or ""
+        old_short = e.get("title_short") or ""
+        old_author = e.get("author") or ""
+
+        new_author = _swap_lastfirst(old_author)
+        new_title_n = norm(e.get("title", ""))
+        new_author_n = norm(new_author)
+        new_short = title_short(e.get("title"))
+
+        if not new_title_n or not new_author_n:
+            malformed.append({"key": key, "title": e.get("title"),
+                              "author": old_author})
+
+        seen.setdefault((new_title_n, new_author_n), []).append(key)
+
+        if new_author != old_author:
+            author_format_changes.append(
+                {"key": key, "old": old_author, "new": new_author})
+
+        if (new_title_n != old_title_n or new_author_n != old_author_n
+                or new_short != old_short or new_author != old_author):
+            updates.append((new_title_n, new_short, new_author,
+                            new_author_n, key))
+
+    duplicates = [{"normalized": list(k), "keys": v}
+                  for k, v in seen.items() if len(v) > 1]
+
+    summary = {
+        "rows_total": len(rows),
+        "rows_to_update": len(updates),
+        "author_format_changes": author_format_changes,
+        "duplicate_groups": duplicates,
+        "malformed_rows": malformed,
+        "dry_run": bool(args.dry_run),
+        "written": False,
+    }
+
+    if not args.dry_run and updates:
+        conn.executemany(
+            "UPDATE books SET title_normalized = ?, title_short = ?, "
+            "author = ?, author_normalized = ? WHERE key = ?", updates)
+        conn.commit()
+        summary["written"] = True
+        encoded = Path(args.catalog + ".encoded")
+        if args.emit_encoded or encoded.exists():
+            try:
+                from .encoded_codec import encode_file  # type: ignore
+            except (ImportError, ValueError):
+                try:
+                    from encoded_codec import encode_file  # type: ignore
+                except ImportError:
+                    from webhelper.encoded_codec import encode_file
+            conn.execute("VACUUM")
+            encode_file(Path(args.catalog), encoded)
+            summary["encoded_path"] = str(encoded)
+
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
 
 
 # ---------------------------------------------------------------------------
@@ -1896,9 +2640,44 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--n", type=int, default=DEFAULT_N)
     sp.add_argument("--lean", default=None,
                     help="vector:NAME or floor:NAME — soft ×2 stratum bias")
-    sp.add_argument("--variance", choices=VARIANCE_MODES, default="balanced")
+    sp.add_argument("--variance", choices=VARIANCE_MODES, default=None,
+                    help="sampling spread; default derives from "
+                         "build_state.preferences.expansion_appetite "
+                         "(high→broad, low→similar, else balanced)")
+    sp.add_argument("--show-gr", dest="show_gr", action="store_true",
+                    help="include goodreads_rating in candidate projection")
+    sp.add_argument("--show-audio", dest="show_audio", action="store_true",
+                    help="include audio_suitability in candidate projection")
+    sp.add_argument("--mode", choices=("discover", "curate"),
+                    default="discover",
+                    help="discover (default) sources candidates; "
+                         "curate refuses to source new picks")
+    sp.add_argument("--audit-exclusions", dest="audit_exclusions",
+                    action="store_true",
+                    help="also emit an exclusion_audit block "
+                         "(orphan + near-miss log↔catalog matches)")
     sp.add_argument("--seed", type=int, default=None)
     sp.set_defaults(func=cmd_recommend, needs_catalog=True)
+
+    sp = sub.add_parser("author-history")
+    sp.add_argument("--author", required=True)
+    sp.add_argument("--log", default=DEFAULT_LOG)
+    sp.add_argument("--catalog", default=DEFAULT_CATALOG)
+    sp.set_defaults(func=cmd_author_history, needs_catalog=False)
+
+    sp = sub.add_parser("reconcile")
+    sp.add_argument("--catalog", default=DEFAULT_CATALOG)
+    sp.add_argument("--log", default=DEFAULT_LOG)
+    sp.set_defaults(func=cmd_reconcile, needs_catalog=True)
+
+    sp = sub.add_parser("normalize-catalog")
+    sp.add_argument("--catalog", default=DEFAULT_CATALOG)
+    sp.add_argument("--dry-run", dest="dry_run", action="store_true",
+                    help="report changes without writing")
+    sp.add_argument("--emit-encoded", dest="emit_encoded",
+                    action="store_true",
+                    help="force re-emit of <catalog>.encoded after write")
+    sp.set_defaults(func=cmd_normalize_catalog, needs_catalog=True)
 
     sp = sub.add_parser("status")
     sp.add_argument("--catalog", default=DEFAULT_CATALOG)
