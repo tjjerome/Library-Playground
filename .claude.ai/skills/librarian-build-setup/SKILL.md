@@ -116,7 +116,7 @@ persist.
 
 ```json
 {
-  "version": 3,
+  "version": 2,
   "started_at": "<ISO8601>",
   "n_target": 100,
   "working_range": [100, 110],
