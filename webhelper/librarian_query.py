@@ -59,7 +59,21 @@ DEFAULT_LIST = "Reading_List.md"
 DEFAULT_PROFILE = "Profile.md"
 DEFAULT_BUILD_STATE = "build_state.json"
 
-VARIANCE_MODES = ("balanced", "focused", "surprising", "adjacent")
+VARIANCE_MODES = ("similar", "balanced", "broad", "adjacent", "focused")
+
+# Structural discovery floor.  `balanced` (the new default) and
+# `broad` reserve a fixed fraction of the result for residual
+# (outside-vector) picks so breadth is guaranteed by construction
+# rather than left to caller judgement.  `similar`, `adjacent`, and
+# `focused` carry no forced residual quota.
+RESIDUAL_QUOTA = {"balanced": 0.20, "broad": 0.375}
+
+# Reader expansion appetite (build_state.preferences.expansion_appetite)
+# maps to the implicit --variance default when the caller doesn't pass
+# one explicitly.
+APPETITE_VARIANCE = {"high": "broad", "moderate": "balanced",
+                     "low": "similar"}
+
 QUALITY_FLOOR = 3.8
 DEFAULT_N = 15
 MIN_N = 12
@@ -169,6 +183,29 @@ def list_set(path: str) -> set[tuple[str, str]]:
     return out
 
 
+def _normalize_preferences(prefs) -> dict:
+    """Normalize build_state.preferences to v2 shape.  Missing or
+    out-of-range fields fall back to the corrected reader defaults:
+    series_commitment=binary, curiosity_targets=[],
+    expansion_appetite=moderate.  The audio flag is accepted under
+    either `audio_flagged` or `audio_preference` and mirrored to both
+    so downstream checks need not branch on the key name."""
+    if not isinstance(prefs, dict):
+        prefs = {}
+    out = dict(prefs)
+    sc = prefs.get("series_commitment")
+    out["series_commitment"] = sc if sc in ("binary", "test-first") else "binary"
+    ct = prefs.get("curiosity_targets")
+    out["curiosity_targets"] = ct if isinstance(ct, list) else []
+    ea = prefs.get("expansion_appetite")
+    out["expansion_appetite"] = (ea if ea in ("high", "moderate", "low")
+                                 else "moderate")
+    audio = bool(prefs.get("audio_flagged") or prefs.get("audio_preference"))
+    out["audio_flagged"] = audio
+    out["audio_preference"] = audio
+    return out
+
+
 def load_build_state(path: str) -> dict:
     p = Path(path)
     if not p.exists():
@@ -185,7 +222,43 @@ def load_build_state(path: str) -> dict:
     data.setdefault("events", [])
     data.setdefault("page_budget", None)
     data.setdefault("commitment_load", {})
+    data.setdefault("session_notes", [])
+    # v1 → v2 normalization.  v1 inputs carry no `version`, no
+    # `preferences` block, and no defended/session_lock events; v2
+    # carries all three.  Absences normalize to the corrected-default
+    # shape so callers never branch on version.  `defended`/
+    # `session_lock` events coexist with v1 events untouched.
+    data["preferences"] = _normalize_preferences(data.get("preferences"))
+    data["version"] = 2
     return data
+
+
+def collect_locks(state: dict) -> tuple[dict[str, int], set[str]]:
+    """Read the locks ledger from build_state.
+
+    Returns ``(defended_counts, session_lock_keys)`` where
+    ``defended_counts`` maps a book key to the number of times the
+    reader defended it against a proposed cut, and
+    ``session_lock_keys`` is the set of keys the reader has explicitly
+    locked (unprompted declarations of intent).  Session locks are
+    read from ``events[]`` (``type: session_lock``) and, for
+    Plan-A-written notes, from ``session_notes[]``
+    (``kind: session_lock``)."""
+    defended: dict[str, int] = {}
+    locks: set[str] = set()
+    for ev in state.get("events", []) or []:
+        key = ev.get("key")
+        if not key:
+            continue
+        t = ev.get("type")
+        if t == "defended":
+            defended[key] = defended.get(key, 0) + 1
+        elif t == "session_lock":
+            locks.add(key)
+    for note in state.get("session_notes", []) or []:
+        if note.get("kind") == "session_lock" and note.get("key"):
+            locks.add(note["key"])
+    return defended, locks
 
 
 def parse_profile_preferences(path: str) -> list[dict]:
@@ -795,8 +868,8 @@ def stage1_pool(conn: sqlite3.Connection, *,
     finishes in Python for the entry-point gate and exclusions.
 
     When `require_relevance` is False, the canonical-signal/theme
-    relevance gate drops — used by `surprising` variance mode to
-    surface quality-floor candidates that match no active vector
+    relevance gate drops — used by the `balanced`/`broad` residual
+    quota to surface quality-floor candidates that match no active vector
     ("books I almost didn't show you").
     """
     if require_relevance and not active_signals and not active_themes:
@@ -1008,20 +1081,17 @@ def _allocate_slots(stratum_names: list[str], n: int, mode: str,
         for s in stratum_names:
             weights[s] = 1.0
         weights[chosen] = 6.0  # ~60% if 4 strata; scales naturally
-    elif mode == "surprising":
-        # Residual gets a guaranteed slot or two; vectors weighted
-        # inverse to their pool size (rarer = more coverage needed).
-        for s in stratum_names:
-            weights[s] = 1.0
-        if "residual" in stratum_names:
-            weights["residual"] = 2.0
     elif mode == "adjacent":
         # Adjacency strata share weight evenly; residual stays low
         # so it only fills slots when adjacency strata are thin.
         for s in stratum_names:
             weights[s] = 1.5 if s.startswith("adjacent:") else 0.5
     else:
-        # balanced
+        # similar / balanced / broad share the same even-weight base
+        # (the old `balanced` behaviour, i.e. similarity-heavy).  For
+        # `balanced` and `broad` the structural residual quota is
+        # applied as a post-step below so breadth is guaranteed by
+        # construction rather than by stratum weighting.
         for s in stratum_names:
             weights[s] = 1.0
 
@@ -1044,8 +1114,9 @@ def _allocate_slots(stratum_names: list[str], n: int, mode: str,
         except ValueError:
             pass
 
-    # Light per-call jitter — ±20% for balanced, less for others.
-    jitter = 0.20 if mode == "balanced" else 0.10
+    # Light per-call jitter — wider for the residual-quota modes so
+    # consecutive calls vary; tighter elsewhere.
+    jitter = 0.20 if mode in ("balanced", "broad") else 0.10
     for s in list(weights):
         weights[s] *= 1.0 + (rng.random() * 2 - 1) * jitter
 
@@ -1059,6 +1130,36 @@ def _allocate_slots(stratum_names: list[str], n: int, mode: str,
         floors[remainders[i % len(remainders)]] += 1
         used += 1
         i += 1
+
+    # Structural residual quota for balanced / broad.  Pin the
+    # residual stratum to ~quota·n and reflow the remaining slots
+    # across the other strata in proportion to their current
+    # allocation (so --lean / focused skew is preserved among them).
+    quota = RESIDUAL_QUOTA.get(mode)
+    others = [s for s in stratum_names if s != "residual"]
+    if quota and "residual" in floors and others:
+        target = min(n, max(1, round(n * quota)))
+        if floors["residual"] != target:
+            floors["residual"] = target
+            rem = n - target
+            base = {s: floors[s] for s in others}
+            bsum = sum(base.values())
+            newf: dict[str, int] = {}
+            if bsum > 0:
+                for s in others:
+                    newf[s] = int(rem * base[s] / bsum)
+            else:
+                for s in others:
+                    newf[s] = 0
+            used2 = sum(newf.values())
+            order = sorted(others, key=lambda s: -base[s])
+            j = 0
+            while used2 < rem and order:
+                newf[order[j % len(order)]] += 1
+                used2 += 1
+                j += 1
+            for s in others:
+                floors[s] = newf[s]
     return floors
 
 
@@ -1072,7 +1173,7 @@ def _rank_within_stratum(candidates: list[dict], conn: sqlite3.Connection,
         comp_n = _comp_overlap_count(conn, c["key"], favorite_keys)
         score, matched_anchors = quality_score(c, anchors, bucket_weight, comp_n)
         c["_score"] = round(score, 3)
-        c["_anchor_log_entries"] = matched_anchors
+        c["_resonance_titles"] = matched_anchors
         c["_comp_overlap_count"] = comp_n
         scored.append(c)
     scored.sort(key=lambda x: (-x["_score"], x.get("title", "")))
@@ -1246,13 +1347,15 @@ def _apply_warnings(c: dict, profile_notes: list[dict]) -> list[str]:
 
 def render_candidate(c: dict, underused_names: set[str],
                      at_risk_names: set[str],
-                     profile_notes: list[dict]) -> dict:
+                     profile_notes: list[dict],
+                     show_gr: bool = False,
+                     show_audio: bool = False) -> dict:
     matched_vectors = c.get("_matched_vectors") or []
     matched_themes = sorted(c.get("_themes", set()))
     matched_floors = c.get("_matched_floors") or []
     fills_vectors = [n for n in matched_vectors if n in underused_names]
     fills_floors = [n for n in matched_floors if n in at_risk_names]
-    return {
+    out = {
         "key": c.get("key"),
         "title": c.get("title"),
         "author": c.get("author"),
@@ -1261,12 +1364,11 @@ def render_candidate(c: dict, underused_names: set[str],
         "indie": c.get("indie"),
         "classic": c.get("classic"),
         "match_reasoning": {
-            "anchor_log_entries": c.get("_anchor_log_entries", []),
+            "resonance_titles": c.get("_resonance_titles", []),
             "matched_vectors": matched_vectors,
             "matched_themes": matched_themes,
             "comp_overlap_count": c.get("_comp_overlap_count", 0),
             "entry_point_ok": True,
-            "rating": c.get("goodreads_rating"),
         },
         "fills_gap": {
             "vectors": fills_vectors,
@@ -1276,13 +1378,37 @@ def render_candidate(c: dict, underused_names: set[str],
         },
         "warnings": _apply_warnings(c, profile_notes),
     }
+    # goodreads_rating and audio_suitability are dropped from the
+    # default projection — they were being used reflexively as cut
+    # criteria.  Opt back in via --show-gr / --show-audio or (audio
+    # only) the reader's profile-flagged audio preference.
+    if show_gr:
+        out["goodreads_rating"] = c.get("goodreads_rating")
+    if show_audio:
+        out["audio_suitability"] = c.get("audio_suitability")
+    return out
 
 
 # ---------------------------------------------------------------------------
 # Subcommand: recommend
 # ---------------------------------------------------------------------------
 
+CURATE_MODE_MESSAGE = (
+    "recommend: curate mode does not source new candidates.\n"
+    "Use `compare` for swap analysis or `status` for distribution\n"
+    "and floor checks. To source new candidates, run with\n"
+    "--mode discover."
+)
+
+
 def cmd_recommend(args, conn: sqlite3.Connection) -> None:
+    mode = getattr(args, "mode", "discover") or "discover"
+    if mode == "curate":
+        # Structural guarantee: curate mode never sources new picks.
+        # The message is the entire output; exit non-zero.
+        print(CURATE_MODE_MESSAGE, file=sys.stderr)
+        sys.exit(4)
+
     n = args.n
     if n < MIN_N or n > MAX_N:
         # Permissive: allow tests to pin n outside the recommended
@@ -1298,6 +1424,22 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
     state = load_build_state(args.build_state)
     profile_notes = (parse_profile_preferences(args.profile)
                      if args.profile else [])
+    prefs = state.get("preferences", {})
+
+    # Resolve effective variance.  An explicit --variance always
+    # wins; otherwise the reader's stated expansion appetite (set in
+    # intake) selects the implicit default: high → broad,
+    # low → similar, moderate/unset → balanced.
+    explicit_variance = getattr(args, "variance", None)
+    if explicit_variance:
+        variance = explicit_variance
+    else:
+        variance = APPETITE_VARIANCE.get(
+            prefs.get("expansion_appetite", "moderate"), "balanced")
+
+    show_gr = bool(getattr(args, "show_gr", False))
+    show_audio = bool(getattr(args, "show_audio", False)
+                      or prefs.get("audio_flagged"))
 
     actives = active_vectors_of(state)
     if not actives:
@@ -1322,9 +1464,11 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
     )
     pool_size = len(pool)
 
-    # Surprising mode: also surface a residual sub-pool of
-    # quality-floor candidates that match no active vector.
-    if args.variance == "surprising":
+    # balanced / broad: also surface a residual sub-pool of
+    # quality-floor candidates that match no active vector, so the
+    # structural residual quota has material to draw from
+    # ("books I almost didn't show you").
+    if variance in ("balanced", "broad"):
         relaxed = stage1_pool(
             conn,
             active_signals=active_signals,
@@ -1363,7 +1507,7 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
         active_vectors=actives,
         underused=underused,
         at_risk=at_risk,
-        n=n, variance=args.variance, lean=args.lean,
+        n=n, variance=variance, lean=args.lean,
         rng=rng,
     )
 
@@ -1374,12 +1518,14 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
 
     output = {
         "candidates": [render_candidate(c, underused_names, at_risk_names,
-                                         profile_notes)
+                                         profile_notes,
+                                         show_gr=show_gr,
+                                         show_audio=show_audio)
                        for c in selected],
         "pool_size": pool_size,
         "stratum_breakdown": breakdown,
         "probe": probe,
-        "variance_mode": args.variance,
+        "variance_mode": variance,
     }
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
@@ -1402,6 +1548,34 @@ def cmd_status(args, conn: sqlite3.Connection) -> None:
                               len(list_pairs), n_target)
     clusters = rejection_clusters(state.get("events", []))
 
+    defended_counts, session_lock_keys = collect_locks(state)
+    # Title resolution: prefer the title the skill wrote on the
+    # event/note, fall back to the catalog.
+    titles: dict[str, str] = {}
+    for ev in state.get("events", []) or []:
+        if ev.get("key") and ev.get("title"):
+            titles.setdefault(ev["key"], ev["title"])
+    for note in state.get("session_notes", []) or []:
+        if note.get("key") and note.get("title"):
+            titles.setdefault(note["key"], note["title"])
+
+    def _title(key: str) -> str | None:
+        if key in titles:
+            return titles[key]
+        row = conn.execute(
+            "SELECT title FROM books WHERE key = ?", (key,)).fetchone()
+        return row["title"] if row else None
+
+    defended_picks = sorted(
+        ({"key": k, "title": _title(k), "defense_count": c}
+         for k, c in defended_counts.items()),
+        key=lambda d: (-d["defense_count"], d["title"] or ""),
+    )
+    session_locks = sorted(
+        ({"key": k, "title": _title(k)} for k in session_lock_keys),
+        key=lambda d: (d["title"] or ""),
+    )
+
     output = {
         "floors_at_risk": [
             {"name": f["name"], "kind": f["kind"],
@@ -1420,6 +1594,8 @@ def cmd_status(args, conn: sqlite3.Connection) -> None:
         "commitment_load_warning": commitment_load_warning(state, picks),
         "page_budget_warning": page_budget_warning(picks,
                                                    state.get("page_budget")),
+        "defended_picks": defended_picks,
+        "session_locks": session_locks,
     }
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
@@ -1753,6 +1929,14 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
             "to compare against", code=3)
 
     state = load_build_state(args.build_state)
+    defended_counts, session_lock_keys = collect_locks(state)
+    # Hard lock: a pick defended ≥2× this session, or explicitly
+    # session-locked, is removed from cut-candidate sampling
+    # entirely.  A single defense (count == 1) still surfaces but
+    # carries defended_count so the skill can escalate justification.
+    hard_locked = {k for k, c in defended_counts.items() if c >= 2}
+    hard_locked |= session_lock_keys
+
     actives = active_vectors_of(state)
     active_signal_pool = {s for v in actives for s in vector_signal_set(v)}
     active_theme_pool = {t for v in actives for t in vector_theme_set(v)}
@@ -1768,12 +1952,11 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
         add_sigs, add_thms, anchors, bucket_weight)
     add_comp_n = _comp_overlap_count(conn, add_entry["key"], favorite_keys)
     add_match = {
-        "anchor_log_entries": add_matched_anchors,
+        "resonance_titles": add_matched_anchors,
         "matched_vectors": vectors_matched(add_sigs, add_thms, actives),
         "matched_themes": sorted(add_thms),
         "comp_overlap_count": add_comp_n,
         "entry_point_ok": passes_entry_point_gate(add_entry, log_authors),
-        "rating": add_entry.get("goodreads_rating"),
         "anchor_strength": round(add_anchor_strength, 3),
     }
 
@@ -1822,6 +2005,10 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
 
     seen: set[str] = set()
     out: list[dict] = []
+    # Keys filtered by the lock check that were otherwise eligible
+    # swap targets — surfaced so the skill can see what's protected.
+    locked_picks_excluded = sorted(
+        {p["key"] for p in scored_picks if p["key"] in hard_locked})
 
     def take(pool: list[dict], reason: str, slots: int) -> None:
         for p in pool:
@@ -1829,9 +2016,12 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
                 break
             if p["key"] in seen or p["key"] == add_entry["key"]:
                 continue
+            if p["key"] in hard_locked:
+                continue
             seen.add(p["key"])
             entry = {k: v for k, v in p.items() if not k.startswith("_")}
             entry["reason"] = reason
+            entry["defended_count"] = defended_counts.get(p["key"], 0)
             out.append(entry)
             slots -= 1
 
@@ -1862,6 +2052,7 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
         },
         "swap_suggestions": out,
         "list_size": len(list_picks),
+        "locked_picks_excluded": locked_picks_excluded,
     }
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
@@ -1896,7 +2087,18 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--n", type=int, default=DEFAULT_N)
     sp.add_argument("--lean", default=None,
                     help="vector:NAME or floor:NAME — soft ×2 stratum bias")
-    sp.add_argument("--variance", choices=VARIANCE_MODES, default="balanced")
+    sp.add_argument("--variance", choices=VARIANCE_MODES, default=None,
+                    help="sampling spread; default derives from "
+                         "build_state.preferences.expansion_appetite "
+                         "(high→broad, low→similar, else balanced)")
+    sp.add_argument("--show-gr", dest="show_gr", action="store_true",
+                    help="include goodreads_rating in candidate projection")
+    sp.add_argument("--show-audio", dest="show_audio", action="store_true",
+                    help="include audio_suitability in candidate projection")
+    sp.add_argument("--mode", choices=("discover", "curate"),
+                    default="discover",
+                    help="discover (default) sources candidates; "
+                         "curate refuses to source new picks")
     sp.add_argument("--seed", type=int, default=None)
     sp.set_defaults(func=cmd_recommend, needs_catalog=True)
 
