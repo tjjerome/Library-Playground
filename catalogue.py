@@ -2198,18 +2198,91 @@ def main():
     parser.add_argument("--review-only", action="store_true",
                         help="Reprocess needs_review entries instead of pending.")
     parser.add_argument("--dry-run", action="store_true",
-                        help="No API calls, no writes — useful for sanity-checking the diff.")
-    parser.add_argument("--no-push", action="store_true",
-                        help="Skip git commit + push at the end of the sync.")
-    parser.add_argument("--sync-sqlite", default=DEFAULT_SYNC_SQLITE,
+                        help="With --sync-comparables or --audit-entry-points: "
+                             "compute changes but don't call Claude")
+    parser.add_argument("--report", default=None,
+                        help="With --sync-comparables: write JSON report to this path")
+    parser.add_argument("--export-sqlite", dest="export_sqlite", default=None,
                         metavar="PATH",
-                        help=f"SQLite output path (default: {DEFAULT_SYNC_SQLITE}).")
-    parser.add_argument("--sync-audit", default=DEFAULT_SYNC_AUDIT,
-                        metavar="PATH",
-                        help=f"Audit summary output (default: {DEFAULT_SYNC_AUDIT}).")
+                        help="One-shot: convert the existing JSON catalog to a "
+                             "SQLite database at PATH and exit. Pair with "
+                             "--emit-encoded to also produce the gzip+b64 "
+                             "wrapped form for upload to the claude.ai surface.")
+    parser.add_argument("--emit-encoded", action="store_true",
+                        help="With --export-sqlite: also emit "
+                             "<sqlite-path>.encoded — gzip+base64 wrapped, "
+                             "Drive-uploadable, decoded once per session by "
+                             "the librarian-triage skill.")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
+
+    if args.export_sqlite:
+        # Lazy import — the export path stays usable on Pro setups that
+        # don't have the anthropic SDK installed.
+        from pathlib import Path as _Path
+        from webhelper.sqlite_export import export as _sqlite_export
+        from webhelper.encoded_codec import encode_file as _encode_file
+
+        sqlite_path = _Path(args.export_sqlite)
+        _sqlite_export(catalog, sqlite_path)
+        n = len(catalog.get("entries") or {})
+        print(f"  Wrote SQLite catalog → {sqlite_path} ({n} entries)")
+        if args.emit_encoded:
+            encoded_path = sqlite_path.with_suffix(sqlite_path.suffix + ".encoded")
+            _encode_file(sqlite_path, encoded_path)
+            print(f"  Wrote encoded catalog → {encoded_path}")
+        sys.exit(0)
+
+    if args.index_only:
+        save_index(catalog, args.index)
+        print(f"  Wrote slim index → {args.index} ({len(catalog['entries'])} entries)")
+        sys.exit(0)
+
+    if args.audit_entry_points:
+        client = None
+        if not args.dry_run:
+            client = authenticate_anthropic_client()
+        stats = audit_entry_points(
+            catalog,
+            client=client,
+            chunk_size=args.chunk_size,
+            dry_run=args.dry_run,
+            catalog_path=None if args.dry_run else args.catalog,
+            index_path=None if args.dry_run else args.index,
+        )
+        print(f"\nEntry-point audit complete.")
+        print(f"  auto_filled: {stats['auto_filled']}")
+        print(f"  llm_chunks:  {stats['llm_chunks']}")
+        print(f"  llm_filled:  {stats['llm_filled']}")
+        print(f"  still_null:  {stats['still_null']}")
+        if args.dry_run:
+            print(f"  --dry-run: catalog NOT written.")
+        else:
+            # Final save (in addition to per-chunk saves) — ensures the
+            # last chunk's stats land on disk.
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+            print(f"  Cataloguing complete. Wrote → {args.catalog} (+ {args.index})")
+        sys.exit(0)
+
+    if args.sync_comparables:
+        client = None
+        if not args.dry_run:
+            client = authenticate_anthropic_client()
+        stats = sync_comparables(
+            catalog,
+            client=client,
+            dry_run=args.dry_run,
+            report_path=args.report,
+        )
+        print_sync_summary(stats)
+        if not args.dry_run:
+            save_catalog(catalog, args.catalog)
+            save_index(catalog, args.index)
+            print(f"  Wrote → {args.catalog} (+ {args.index})")
+        sys.exit(0)
+
     books = load_library(args.library)
 
     if not books:

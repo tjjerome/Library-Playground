@@ -7,16 +7,13 @@ inspection of the live catalog) and catalog-level metadata.
 
 All cataloguer-side fields end up in one of these tables:
 
-  catalog_meta         – single-row catalog metadata (version, dates, totals)
-  books                – per-entry scalar columns
-  taste_signals        – (book_key, polarity, signal) per signal
-  comparable_books     – (book_key, comp_key) per comp link
-  content_flags        – (book_key, flag) per flag
-  themes               – (book_key, theme) per theme
-  audit_flags          – per-flag audit record (field/severity/reason/...)
-  taste_vectors        – vector vocabulary (id, label, description)
-  taste_vector_members – which canonical signals/themes belong to each vector
-  book_taste_vectors   – which vectors a book exemplifies (sparse, derived)
+  catalog_meta    – single-row catalog metadata (version, dates, totals)
+  books           – per-entry scalar columns
+  taste_signals   – (book_key, polarity, signal) per signal
+  comparable_books– (book_key, comp_key) per comp link
+  content_flags   – (book_key, flag) per flag
+  themes          – (book_key, theme) per theme
+  audit_flags     – per-flag audit record (field/severity/reason/...)
 
 Notes on schema choices:
 
@@ -41,21 +38,6 @@ Notes on schema choices:
   on a small number of entries (72 and 1 respectively).  Preserved
   for byte-for-byte JSON round-trip parity; not queried by any
   skill.
-
-* `goodreads_reviews` is QUALITY-IRRELEVANT for the recommender
-  (RECOMPOSITION_PLAN §6.6).  It stays in the schema for audit /
-  debug visibility, but `recommend` and any future scoring code
-  must NOT consult it — review counts are popularity, not quality,
-  and folding them into ranking re-introduces the popularity-as-
-  quality bias the redesign is fixing.  Use `goodreads_rating` as
-  the quality floor instead.
-
-* `book_taste_vectors` is *derived* at export time from the
-  per-book `taste_signals` (positive polarity) and `themes`
-  collections via `book_taste_vector_matches()` from
-  `catalogue_vocab`.  It is SQLite-only — `reconstruct_entry()`
-  does not round-trip it back into the JSON shape, since the JSON
-  catalog is the input and the derivation is a one-way projection.
 """
 
 from __future__ import annotations
@@ -63,23 +45,8 @@ from __future__ import annotations
 import json
 import re
 import sqlite3
-import sys
 from pathlib import Path
 from typing import Any
-
-# `catalogue_vocab` lives at the repo root; allow import whether this module
-# is loaded as `webhelper.sqlite_export` or run directly.
-try:
-    from catalogue_vocab import (  # type: ignore
-        CANONICAL_TASTE_VECTORS,
-        book_taste_vector_matches,
-    )
-except ImportError:
-    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-    from catalogue_vocab import (  # type: ignore  # noqa: E402
-        CANONICAL_TASTE_VECTORS,
-        book_taste_vector_matches,
-    )
 
 # ---------------------------------------------------------------------------
 # Normalisation — kept in lock-step with webhelper/librarian_query.py:norm()
@@ -163,9 +130,9 @@ SCHEMA = [
         audit_json           TEXT
     )""",
     """CREATE TABLE taste_signals (
-        book_key  TEXT NOT NULL,
-        polarity  TEXT NOT NULL,
-        canonical TEXT NOT NULL,
+        book_key TEXT NOT NULL,
+        polarity TEXT NOT NULL,
+        signal   TEXT NOT NULL,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE comparable_books (
@@ -179,13 +146,8 @@ SCHEMA = [
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE themes (
-        book_key  TEXT NOT NULL,
-        canonical TEXT NOT NULL,
-        FOREIGN KEY (book_key) REFERENCES books(key)
-    )""",
-    """CREATE TABLE related_series (
-        book_key       TEXT NOT NULL,
-        related_series TEXT NOT NULL,
+        book_key TEXT NOT NULL,
+        theme    TEXT NOT NULL,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE audit_flags (
@@ -197,24 +159,6 @@ SCHEMA = [
         expected_value TEXT,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
-    """CREATE TABLE taste_vectors (
-        vector_id   TEXT PRIMARY KEY,
-        label       TEXT NOT NULL,
-        description TEXT NOT NULL
-    )""",
-    """CREATE TABLE taste_vector_members (
-        vector_id  TEXT NOT NULL,
-        kind       TEXT NOT NULL,
-        member_id  TEXT NOT NULL,
-        FOREIGN KEY (vector_id) REFERENCES taste_vectors(vector_id)
-    )""",
-    """CREATE TABLE book_taste_vectors (
-        book_key  TEXT NOT NULL,
-        vector_id TEXT NOT NULL,
-        overlap   INTEGER NOT NULL,
-        FOREIGN KEY (book_key)  REFERENCES books(key),
-        FOREIGN KEY (vector_id) REFERENCES taste_vectors(vector_id)
-    )""",
     "CREATE INDEX idx_books_genre              ON books(primary_genre)",
     "CREATE INDEX idx_books_secondary_genre    ON books(secondary_genre)",
     "CREATE INDEX idx_books_series             ON books(series, series_position)",
@@ -224,13 +168,6 @@ SCHEMA = [
     "CREATE INDEX idx_books_indie              ON books(indie)",
     "CREATE INDEX idx_books_classic            ON books(classic)",
     "CREATE INDEX idx_books_status             ON books(status)",
-    "CREATE INDEX idx_taste_signals_canonical  ON taste_signals(canonical, polarity)",
-    "CREATE INDEX idx_themes_canonical         ON themes(canonical)",
-    "CREATE INDEX idx_related_series           ON related_series(related_series)",
-    "CREATE INDEX idx_taste_vector_members_vec ON taste_vector_members(vector_id)",
-    "CREATE INDEX idx_taste_vector_members_mem ON taste_vector_members(member_id, kind)",
-    "CREATE INDEX idx_book_taste_vectors_book  ON book_taste_vectors(book_key)",
-    "CREATE INDEX idx_book_taste_vectors_vec   ON book_taste_vectors(vector_id)",
 ]
 
 
@@ -383,17 +320,19 @@ def export(catalog: dict, sqlite_path: Path) -> None:
 
             ts = entry.get("taste_signals") or {}
             if isinstance(ts, dict):
-                # Closed-vocab schema: each list element IS a canonical ID.
-                for polarity in ("positive", "negative"):
-                    seen: set[str] = set()
-                    for sig in (ts.get(polarity) or []):
-                        if not sig or sig in seen:
-                            continue
-                        seen.add(sig)
+                for sig in ts.get("positive") or []:
+                    if sig:
                         cur.execute(
-                            "INSERT INTO taste_signals (book_key, polarity, canonical) "
-                            "VALUES (?, ?, ?)",
-                            (key, polarity, sig),
+                            "INSERT INTO taste_signals (book_key, polarity, signal) "
+                            "VALUES (?, 'positive', ?)",
+                            (key, sig),
+                        )
+                for sig in ts.get("negative") or []:
+                    if sig:
+                        cur.execute(
+                            "INSERT INTO taste_signals (book_key, polarity, signal) "
+                            "VALUES (?, 'negative', ?)",
+                            (key, sig),
                         )
 
             for comp in entry.get("comparable_books") or []:
@@ -412,22 +351,11 @@ def export(catalog: dict, sqlite_path: Path) -> None:
                         (key, flag),
                     )
 
-            themes_seen: set[str] = set()
             for theme in entry.get("themes") or []:
-                if not theme or theme in themes_seen:
-                    continue
-                themes_seen.add(theme)
-                cur.execute(
-                    "INSERT INTO themes (book_key, canonical) VALUES (?, ?)",
-                    (key, theme),
-                )
-
-            for rel in entry.get("related_series") or []:
-                if rel:
+                if theme:
                     cur.execute(
-                        "INSERT INTO related_series (book_key, related_series) "
-                        "VALUES (?, ?)",
-                        (key, rel),
+                        "INSERT INTO themes (book_key, theme) VALUES (?, ?)",
+                        (key, theme),
                     )
 
             for row in _audit_flag_rows(key, entry):
@@ -437,49 +365,10 @@ def export(catalog: dict, sqlite_path: Path) -> None:
                     row,
                 )
 
-        _populate_taste_vectors(cur, catalog["entries"])
-
         conn.commit()
         cur.execute("VACUUM")
     finally:
         conn.close()
-
-
-def _populate_taste_vectors(cur: sqlite3.Cursor, entries: dict) -> None:
-    """Insert the taste-vector vocabulary, the vector→signal/theme
-    membership rows, and the per-book vector tags derived via
-    `book_taste_vector_matches()`.  All three tables are populated in
-    one pass after the per-book loop.
-    """
-    for vid, vec in CANONICAL_TASTE_VECTORS.items():
-        cur.execute(
-            "INSERT INTO taste_vectors (vector_id, label, description) "
-            "VALUES (?, ?, ?)",
-            (vid, vec.get("label", vid), vec.get("description", "")),
-        )
-        for sig in vec.get("signals") or []:
-            cur.execute(
-                "INSERT INTO taste_vector_members (vector_id, kind, member_id) "
-                "VALUES (?, 'signal', ?)",
-                (vid, sig),
-            )
-        for th in vec.get("themes") or []:
-            cur.execute(
-                "INSERT INTO taste_vector_members (vector_id, kind, member_id) "
-                "VALUES (?, 'theme', ?)",
-                (vid, th),
-            )
-
-    for key, entry in entries.items():
-        ts = entry.get("taste_signals") or {}
-        positive = list((ts.get("positive") or [])) if isinstance(ts, dict) else []
-        themes = list(entry.get("themes") or [])
-        for vid, overlap in book_taste_vector_matches(positive, themes):
-            cur.execute(
-                "INSERT INTO book_taste_vectors (book_key, vector_id, overlap) "
-                "VALUES (?, ?, ?)",
-                (key, vid, overlap),
-            )
 
 
 # ---------------------------------------------------------------------------
@@ -513,18 +402,15 @@ def reconstruct_entry(conn: sqlite3.Connection, key: str) -> dict:
     entry["indie"] = bool(book["indie"]) if book["indie"] is not None else None
     entry["classic"] = bool(book["classic"]) if book["classic"] is not None else None
 
-    entry["taste_signals"] = {
-        "positive": [r["canonical"] for r in cur.execute(
-            "SELECT canonical FROM taste_signals "
-            "WHERE book_key = ? AND polarity = 'positive'",
-            (key,),
-        )],
-        "negative": [r["canonical"] for r in cur.execute(
-            "SELECT canonical FROM taste_signals "
-            "WHERE book_key = ? AND polarity = 'negative'",
-            (key,),
-        )],
-    }
+    pos = [r["signal"] for r in cur.execute(
+        "SELECT signal FROM taste_signals WHERE book_key = ? AND polarity = 'positive'",
+        (key,),
+    )]
+    neg = [r["signal"] for r in cur.execute(
+        "SELECT signal FROM taste_signals WHERE book_key = ? AND polarity = 'negative'",
+        (key,),
+    )]
+    entry["taste_signals"] = {"positive": pos, "negative": neg}
 
     entry["comparable_books"] = [
         r["comp_key"] for r in cur.execute(
@@ -539,20 +425,11 @@ def reconstruct_entry(conn: sqlite3.Connection, key: str) -> dict:
         )
     ]
     entry["themes"] = [
-        r["canonical"] for r in cur.execute(
-            "SELECT canonical FROM themes WHERE book_key = ?",
+        r["theme"] for r in cur.execute(
+            "SELECT theme FROM themes WHERE book_key = ?",
             (key,),
         )
     ]
-
-    related = [
-        r["related_series"] for r in cur.execute(
-            "SELECT related_series FROM related_series WHERE book_key = ?",
-            (key,),
-        )
-    ]
-    if related:
-        entry["related_series"] = related
 
     aj = book["audit_json"]
     if aj is None:
