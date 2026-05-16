@@ -1,98 +1,267 @@
-# Library-Playground
+# Library-Playground — `claude-ai-port` branch
 
-Repo do two thing:
+You are working on the **claude.ai port** of the librarian agent.  This
+branch ships a Pro-plan-ready implementation that runs entirely on
+claude.ai chat, using six skills, a published React picker artifact,
+and Google Drive for mutable state.
 
-1. **The librarian's runtime.** Skills in `.claude/skills/` auto-activate for recommendation, taste-matching, catalog-write convos.
-2. **Maintenance shell** for catalog: `catalogue.py` build/refresh `Library_Catalog.json` and `Library_Index.json` from `Library.csv`.
+The original Claude-Code-side implementation on `main` is unchanged.
+Both implementations stay side-by-side for comparison; do not migrate
+features between branches without an explicit ask.
 
-Read source on demand. No preload.
+## Read this first
+
+- `CONVERSION_PLAN.md` — original spec from the maintainer.
+- `UX_DESIGN.md` — design rationale + folder layouts + failure modes.
+- `SETUP.md` — user-facing install guide (sourced from UX_DESIGN.md).
+- `PROJECT_INSTRUCTIONS.md` — copy-paste-ready content for the
+  reader's claude.ai project instructions panel.  Contains the
+  Drive file-ID slot and the seven hard rules.
+- `/root/.claude/plans/include-all-fields-in-synchronous-peacock.md` —
+  the approved implementation plan with frozen architecture decisions.
+
+## Project owner's Drive setup (reference)
+
+Catalog file ID in the maintainer's Drive:
+`1QEe3-9Hv0CEe1lsT4C9aRFFYTFgKsjPy`.  Lives in the maintainer's
+claude.ai project instructions as `DRIVE_CATALOG_FILE_ID`.  Triage
+reads that ID at session start and skips folder/name search entirely.
+Other forks set their own ID in their own project instructions; the
+SKILL.md falls back to filename/folder discovery if the ID is absent.
 
 ## Files
 
-- `Library_Index.json` — slim browse index (~1.4MB). Load at session start for librarian. Fields: title, author, series, series_status, primary_genre, comparable_books.
-- `Library_Catalog.json` — full per-book knowledge (~9.4MB). **Never read direct into context.** Query via `librarian-query.py` (preferred) or inline Bash + Python.
-- `Library.csv` — raw data. Tag audits + source of truth only.
-- `Reading_Log.csv` and `Profile.md` — taste context (when present).
-- `Reading_List.md` — reader-controlled TBR pool. Librarian write only on explicit reader pick.
-- `catalogue.py` — bulk cataloguing, audit, index regen.
-- `librarian-query.py` — single chokepoint for candidate gen, exclusion checks, shown-this-session ledger. All batch generation go through here. No duplicate gates in inline Python.
+### Source of truth on this branch (post-Step-6, post-2026-05-02 refactor)
 
-## Skills
+- `Library_Catalog.sqlite` — queryable catalog (~12MB binary)
+  generated from `Library_Catalog.json` via
+  `catalogue.py --export-sqlite`.  Gitignored — regenerate locally.
+- `Library_Catalog.sqlite.encoded` — gzip+base64 wrapped form (~5MB
+  text) for the Drive connector to read.  Header line:
+  `# library-playground-catalog v1 gzip+b64`.  Gitignored.
+- `Library.csv`, `Reading_Log.csv` — user-provided inputs.
+- `Profile.md`, `Reading_List.md` — live in **project knowledge** as
+  the carry-across-sessions form, edited in `/tmp` during a session,
+  surfaced via `present_files` at session end so the reader can
+  re-upload.  Local files only for testing or as project-knowledge
+  seeds.
 
-- **`librarian`** (`.claude/skills/librarian/`) — recommendation + reading-list workflows. Triage small asks away from full Step 1–7 build.
-- **`library-cataloguer`** (`.claude/skills/library-cataloguer/`) — own writes to `Library_Catalog.json` and `Library_Index.json`. Small in-chat changes via Python; bulk work defer to `catalogue.py`.
+### Storage split (2026-05-03 refactor — file-based)
 
-Both skills auto-trigger on description match. Librarian session: ask librarian-shaped question ("what should I read next?", "anything like X?", "build me a 2-year reading list"). Cataloguer work: "add this book", "fix this entry", "save those changes", "what do you know about [book]?".
+| Layer | Holds | Mutability |
+|---|---|---|
+| Drive | `Library_Catalog.sqlite.encoded` | Read-only from chat; reader manually replaces the file at session end via the cataloguer's download-link flow |
+| Project knowledge | `Reading_Log.csv`, optional `Profile.md`, `Reading_List.md`, `build_state.json`, `log_pending_updates.csv` | Reader re-uploads at the end of any session that changed them |
+| Sandbox `/tmp/` (per session) | `Library_Catalog.sqlite`, `Profile.md`, `Reading_List.md`, `build_state.json`, `log_pending_updates.csv`, `catalog_edits.log` | Mutated freely; surfaced via `present_files` at session end |
+| `picker` / `profile` / `reading-list` artifacts | Read-only renderers — content passed in via `seed` prop | None — no `window.storage`, no preflight, no persistence |
 
-## Librarian hard invariants
+The artifacts are pure renderers.  The chat agent has no available
+tool to write to a published artifact's storage by URL/UUID, so the
+prior storage-based persistence model was unimplementable; /tmp files
+plus session-end `present_files` is what actually works on Pro.
 
-These survive even when librarian skill prompt not visible. Full spec at `.claude/skills/librarian/SKILL.md`. Rules non-negotiable:
+### Code-side reference (kept unchanged for parity)
 
-1. **Universal exclusion gate.** Every candidate reaching `AskUserQuestion` clear `is_already_read` (Reading_Log.csv) AND `is_on_list` (Reading_List.md) AND session shown-ledger. Owned by `librarian-query.py`. Never duplicate inline.
-2. **Core target = 100 fixed.** Mid-build cap reductions trigger redistribution `AskUserQuestion`; never lower 100. Phase 4 gate refuse to fire below 100.
-3. **Conservative author-entry-point fallback.** No non-Standalone book by author not in `Reading_Log.csv` unless `series_position == "Book 1"`. Cite rule when declining.
-4. **Phase 0 unfinished-series gate.** Run `librarian-query.py unfinished-series --min-rating 4.0` before any genre batch; route every entry via `AskUserQuestion`.
-5. **Per-batch deep-cut floor.** Every 4-pick batch has ≥1 deep cut, slot randomized, never labeled.
-6. **Open prose questions are turn-ending.** No `AskUserQuestion` same turn after prose question.
-7. **Anti-jargon contract.** No internal vocabulary in chat, `AskUserQuestion` text, or `Reading_List.md`. Translate "Phase 0/1/…", "ledger", "candidate", "deep cut", "is-read", "Bk 1" to reader-facing language before output. Full map in `SKILL.md`.
-8. **Deep-cut silence.** Deep-cut slot is mechanism, not label. Never named, parenthesised, or formatted differently. `librarian-query.py` randomises position; reader sees only the book.
+- `Library_Catalog.json` — deprecated on this branch as the
+  authoritative form; gitignored.  Stays as the one-time conversion
+  input for `catalogue.py --export-sqlite`.
+- `Library_Index.json` — slim browse index, Code-side only.
+- `librarian-query.py` (repo root) — Code-side helper.  Untouched.
+- `.claude/skills/librarian/`, `.claude/skills/library-cataloguer/` —
+  Code-side skills.  Untouched.
 
-**Live memory.** `Profile.md` is written throughout the session, not just at interview time. Every reflection beat, probe answer, surprising selection, or reader correction triggers a write same-turn via `librarian-query.py profile-append`.
+### Catalog sync workflow (Code surface)
 
-Workflow phases: **Phase 0** unfinished-series gate → **Phase 1** highest-confidence → **Phase 2** checklist batches → **Phase 3** new/upcoming → **Phase 4** final review → **Phase 5** Top 5 capstone.
+Bulk catalog work runs from a Claude Code session via:
 
-## Modes — match scope to ask
+```bash
+python3 catalogue.py
+```
 
-Librarian triage before running anything heavy. No full workflow for small ask.
+Default flow (no flags): refresh CSV-authoritative fields, catalogue
+new books, run comparables tail, apply flag gates, export SQLite +
+encoded form, write `dist/sync_audit.md`, `git add -f` + commit +
+push both artefacts to the current feature branch (refuses
+`main`/`master`).  Pass `--no-push` for local-only runs.  Pass
+`--status` for cheap inspection.  Pass `--dry-run` to skip API + writes.
 
-- Single-book query → focused 1–3 paragraph answer, stop.
-- Refine existing list → work off `Reading_List.md`, skip freshness/goals.
-- Add few books / fix entries → cataloguer skill takes over.
-- Build fresh 1–2 year list → full librarian workflow.
+Maintenance commands live in dedicated scripts so the catalogue.py
+surface stays small:
+
+| Script | Purpose |
+|---|---|
+| `backfill.py --entry-points` | LLM backfill `series_role` + `author_entry_point` on existing entries. |
+| `audit_catalog.py --all` | Deterministic review queues over Library_Catalog.sqlite (entry-points consistency, comparables quality). |
+| `audit_library.py` | Library.csv-side LLM audits → Library_new.csv (genres / series-type / pub-years / indie). |
+| `canonicalize.py` | Closed-vocab remap of taste_signals / themes. |
+
+The in-chat `library-cataloguer` skill on claude.ai is intentionally
+scoped to **single-book / short-series** in-the-moment edits.  When
+the reader proposes bulk work it bounces them to `python catalogue.py`
+on the Code side.
+
+### claude.ai port (this branch's deliverables)
+
+- `webhelper/sqlite_export.py` — JSON→SQLite writer + `norm()`.
+- `webhelper/encoded_codec.py` — gzip+b64 codec with format header.
+- `webhelper/librarian_query.py` — port of the Code helper to SQLite +
+  stdin/stdout ledger.  Same subcommand surface.
+- `artifacts/batch-picker.jsx` — pure React renderer for richer batch
+  preview (cover-style cards, content flags).  No storage.  Opt-in
+  alternative to native `AskUserQuestion(multiSelect)`.
+- `artifacts/profile.jsx` — read-only markdown renderer for
+  `Profile.md` content via `seed` prop.  No storage.
+- `artifacts/reading-list.jsx` — read-only markdown renderer for
+  `Reading_List.md` content via `seed` prop.  No storage.
+- `.claude.ai/skills/<name>/SKILL.md` — six skills:
+  `librarian-triage`, `librarian-quickref`, `librarian-build-setup`,
+  `librarian-build`, `librarian-build-finish`,
+  `library-cataloguer`.
+- `Makefile` — `make skills` zips each into `dist/skills/<name>.zip`,
+  bundling the three webhelper modules into each.
+- `tests/sqlite_roundtrip.py`, `tests/encoded_roundtrip.py` — Step 1
+  parity tests.
+
+## Catalog reads + writes
+
+Use `Library_Catalog.sqlite` directly:
+
+```python
+import sqlite3
+conn = sqlite3.connect("Library_Catalog.sqlite")
+conn.row_factory = sqlite3.Row
+row = conn.execute("SELECT * FROM books WHERE key = ?", (key,)).fetchone()
+```
+
+For candidate generation, status, series scope, and the
+unfinished-series gate, route through `webhelper/librarian_query.py`:
+
+```bash
+python3 webhelper/librarian_query.py recommend \
+    --catalog Library_Catalog.sqlite \
+    --log Reading_Log.csv \
+    --profile Profile.md \
+    --reading-list Reading_List.md \
+    --build-state build_state.json \
+    --genre Horror --n 6
+```
+
+The helper exposes four subcommands (`recommend`, `status`,
+`series-fit`, `unfinished-series`) plus `norm` for shared use by the
+cataloguer. Picks live exclusively in `Reading_List.md`; the model
+owns rejection events, scope decisions, and taste-vector edits in
+`build_state.json`.
+
+## Hard invariants — librarian-build/SKILL.md is canonical
+
+The eleven librarian invariants live in
+`.claude.ai/skills/librarian-build/SKILL.md`.  Hard rules
+non-negotiable:
+
+1. Universal exclusion gate (helper-owned via `recommend`).
+2. Working range = 100-110 before stretch picks; 110-125 after. Genre
+   goals are floors that guide direction, not numbers to hit.
+3. Conservative author-entry-point fallback.
+4. Series scope is a hard gate — `series-fit` runs before the next
+   pitch round whenever a confirmed pick is part of a multi-book
+   series.
+5. Open prose questions are turn-ending.
+6. Anti-jargon contract — no internal vocabulary in chat, picker UI,
+   Reading_List.md, or Profile.md.
+7. `/tmp/Profile.md` per-edit write — silent; consolidated diff
+   surfaces at session end alongside the catalog download.
+8. `/tmp/Reading_List.md` per-edit write — user-visible; one-line
+   acknowledgement on each confirmed pick.
+9. Pick state lives in `/tmp/Reading_List.md` only; `build_state`
+   carries goals, floors, vectors, events, scope decisions, rejected
+   candidates — never selected picks.
+10. `AskUserQuestion` is not the default turn shape. Use it for
+    genuine multi-axis decisions; most pitches go reader → prose
+    reply.
+11. Process narration is structurally absent — `status` returns only
+    what's actionable for the next decision.
+12. Catalog flush is manual: cataloguer encodes in sandbox at session
+    end and presents a download link; the reader replaces their Drive
+    file.  Drive connector's write path is intentionally unused.
+13. Working state (`/tmp/Reading_List.md`, `/tmp/Profile.md`,
+    `/tmp/build_state.json`, `/tmp/log_pending_updates.csv`) is
+    surfaced via `present_files` at session end; reader re-uploads to
+    project knowledge to carry into the next session.
+
+Translation map for reader-facing language is at the bottom of
+`librarian-build/SKILL.md`.
+
+## Testing
+
+Run the parity tests against the live catalog:
+
+```bash
+python3 catalogue.py --no-push
+python3 tests/sqlite_roundtrip.py --catalog Library_Catalog.json
+python3 tests/encoded_roundtrip.py --catalog Library_Catalog.json
+python3 tests/taste_vectors_export.py --catalog Library_Catalog.json
+```
+
+Both should report `OK` on a clean export.  `make skills` builds the
+six skill zips for upload to claude.ai.
 
 ## Output style
 
-- Keep `Reading_List.md` and `Profile.md` as repo files. Edit in place via Edit tool — no full-content rewrites in chat. Chat replies brief, point at file.
-- **Never add book to `Reading_List.md` without explicit reader approval.** Approval = `AskUserQuestion` checklist with box checked, or clear "add it" instruction. Discussion not approval. Enthusiasm not approval. Wish-list mention not approval. Unchecked books deferred, never written. Uncertain → don't write.
-- Catalog edits apply via Python (no patch files). Cataloguer always regenerate index same step: `python catalogue.py --library Library.csv --index-only`.
-- Offer to commit memory-bank updates ("Want me to commit this?") — never commit without confirmation. No push without explicit ask.
+- Edit in place via Edit tool; no full-file rewrites in chat.
+- Never add a book to `Reading_List.md` without explicit reader approval
+  (a checked picker option, or a clear "add it" instruction).  Wish-list
+  mention is not approval.
+- Catalog edits go through `library-cataloguer` skill, not directly.
+- Offer to commit memory-bank updates ("Want me to commit this?") —
+  never commit without confirmation.  No push without explicit ask.
 
 ## Asking reader questions
 
-**Any choice-shaped question with discrete options: use `AskUserQuestion` tool — no prose.** Apply across librarian + cataloguer: mode disambiguation, series handling, genre/format goals, batch reviews, wish-list adoption, confirmations before writes. Prose only for genuinely open-ended prompts ("what made that book work for you?"). Tool always offer "Other" free-text option — reader never trapped.
+`AskUserQuestion` is the default for any choice-shaped prompt with
+discrete options.  Prose only for genuinely open-ended questions ("what
+made that book work for you?").  Open prose questions are turn-ending —
+no `AskUserQuestion` chain on the same turn.
 
-### Loading AskUserQuestion schema (one-time per session)
-
-`AskUserQuestion` = **deferred tool in Claude Code** — schema not loaded at session start. Before first choice-shaped question, fetch schema once:
+`AskUserQuestion` is a deferred tool in Claude Code.  Load once:
 
 ```
 ToolSearch(query="select:AskUserQuestion", max_results=1)
 ```
 
-Tool stay callable rest of session. If `ToolSearch` return no match, tool genuinely unavailable — tell reader, fall back to prose.
-
-Load eagerly at session start (recommended for librarian sessions) or lazily on first need.
+If unavailable, fall back to prose and tell the reader.
 
 ## Memory bank
 
-`Library_Catalog.json` = librarian long-term memory. New info worth persisting: corrected facts, content_flags, post-read taste_signals, comparable_books links, audit fixes, new books.
+The SQLite catalog is the librarian's long-term memory.  Reader
+sentiment, ratings, and personal preferences NEVER enter the catalog —
+those go to `Profile.md` (sentiment) and `Reading_Log.csv` (ratings).
+See `library-cataloguer/SKILL.md` for the catalog/profile/log boundary.
 
-Rules:
-1. Never silently mutate. Confirm changes explicitly.
-2. Batch within session. Flush single update when reader say "save those" or end-of-chat — not after every correction.
-3. Always regenerate index after catalog write.
-4. Bulk work → point reader at `catalogue.py` instead of editing in chat.
+Cataloguer rules:
+1. Never silently mutate.  Confirm via `AskUserQuestion`.
+2. ≤20 new books per chat batch.  Bulk → defer to `catalogue.py`.
+3. `comparable_books` reciprocity is mandatory on every comp link write.
+4. Catalog flush is **manual download**: session-end only, never
+   per-edit, never via the Drive write API.  Reader replaces the
+   Drive file from the link.
+5. `/tmp/Profile.md`: per-edit file write, **silent** in chat;
+   consolidated diff surfaced at session end alongside catalog
+   download.
+6. `/tmp/Reading_List.md`: per-edit file write, **user-visible**
+   one-line acknowledgement on every confirmed pick.
 
-Git history = audit trail — commits document what changed and when.
+Git history = audit trail.  Commits document what changed and when.
 
 ## Model routing
 
 - Architecture, debugging, security review: Opus
 - Implementation, standard coding: Sonnet
-- File search, exploration, formatting, renaming: Haiku (use `researcher` sub-agent)
+- File search, exploration, formatting: Haiku (use `researcher`
+  sub-agent)
 
 ## Conventions
 
 - Default Sonnet; escalate to Opus only when reasoning bottleneck.
 - Use `offset`/`limit` on Read for large files.
-- Run `/compact` at logical breakpoints (~60–70% context) instead of letting auto-compact fire.
+- Run `/compact` at logical breakpoints (~60-70% context) instead of
+  letting auto-compact fire.
