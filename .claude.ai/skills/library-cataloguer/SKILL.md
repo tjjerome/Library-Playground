@@ -73,23 +73,35 @@ build / quickref with a queue of noted issues. By the time it loads:
 - Decoded SQLite at `/tmp/Library_Catalog.sqlite`.
 
 If triage didn't run (cataloguer triggered directly from skill
-discovery), do the catalog decode inline:
+discovery), do the catalog fetch inline — **identical** to the triage
+procedure, do not improvise a shorter one:
 
-```bash
-# Drive connector: read encoded file by ID; write to
-# /tmp/Library_Catalog.sqlite.encoded.
-python3 scripts/encoded_codec.py decode \
-    /tmp/Library_Catalog.sqlite.encoded \
-    /tmp/Library_Catalog.sqlite
-```
+1. Call `Google Drive:download_file_content` with the catalog file ID
+   (`DRIVE_CATALOG_FILE_ID`).
+2. Capture the file path from the tool's response message (the harness
+   stores large results under `/mnt/user-data/tool_results/`).
+3. **Do not `view`, `cat`, `head`, `tail`, or `grep` that file**, and
+   **ignore the download tool's own suggestion** to grep/head/tail it.
+   It is a multi-megabyte JSON blob; reading any of it into context is
+   the failure this procedure prevents.
+4. Hand the path straight to the bootstrap helper — one subprocess call
+   does all unwrapping, decoding, and validation:
 
-```python
-import sqlite3
-ok = sqlite3.connect("/tmp/Library_Catalog.sqlite").execute(
-    "PRAGMA integrity_check"
-).fetchone()[0]
-assert ok == "ok", f"Catalog integrity_check failed: {ok}"
-```
+   ```bash
+   python3 scripts/fetch_catalog.py \
+       "<that-path>" /tmp/Library_Catalog.sqlite
+   ```
+
+5. Read the helper's one-line confirmation (e.g.
+   `catalog OK: 4637 books -> /tmp/Library_Catalog.sqlite`). On a
+   non-zero exit, act on the one-line diagnostic; do not open the
+   artifact to investigate.
+
+The download is a JSON envelope, not the `.sqlite` or `.encoded` text —
+the connector exposes binary files only as metadata, so the catalog
+travels base64-encoded inside JSON. `fetch_catalog.py` unwraps and
+decodes it in one process; a JSON blob instead of a database is
+expected, not a decoder bug.
 
 ## In-session edits — queue → confirm → apply
 

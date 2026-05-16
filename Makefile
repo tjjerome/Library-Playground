@@ -3,9 +3,12 @@
 # `make skills`       — build dist/skills/<name>.zip for each skill
 # `make clean-skills` — remove dist/ and build/
 #
-# Each skill zip bundles its SKILL.md plus the four helper modules
+# Each skill zip bundles its SKILL.md plus the five helper modules
 # from webhelper/ (librarian_query.py, sqlite_export.py,
-# encoded_codec.py, book_identity.py).  librarian-triage additionally
+# encoded_codec.py, book_identity.py, fetch_catalog.py).  Catalog
+# startup goes through fetch_catalog.py so the multi-megabyte Drive
+# download never enters the agent's context.  librarian-triage
+# additionally
 # bundles the three
 # React artifact source files under assets/ — triage's first-run
 # setup reads them to render + publish picker / profile / reading-list.
@@ -27,7 +30,7 @@ HELPER_DIR   := webhelper
 ARTIFACT_DIR := artifacts
 
 HELPERS := librarian_query.py sqlite_export.py encoded_codec.py \
-           book_identity.py
+           book_identity.py fetch_catalog.py
 HELPER_SRCS := $(addprefix $(HELPER_DIR)/, $(HELPERS))
 
 ARTIFACTS := batch-picker.jsx profile.jsx reading-list.jsx

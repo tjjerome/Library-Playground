@@ -125,26 +125,51 @@ Discovery order, fastest to slowest:
 
 ## Catalog load (one-shot per session)
 
-Catalog found → fetch encoded via Drive connector, decode to sandbox:
+This is the single most context-expensive step in the whole session if
+done wrong, and the single cheapest if done right. Do **exactly** these
+five steps and nothing else:
 
-```bash
-# 1. Drive connector: read file by ID; write raw bytes to
-#    /tmp/Library_Catalog.sqlite.encoded.
-# 2. Decode:
-python3 scripts/encoded_codec.py decode \
-    /tmp/Library_Catalog.sqlite.encoded \
-    /tmp/Library_Catalog.sqlite
-```
+1. Call `Google Drive:download_file_content` with the catalog file ID
+   (`DRIVE_CATALOG_FILE_ID`, resolved in *Drive catalog discovery*
+   above).
+2. **Capture the file path** from the tool's response message. When the
+   download is large the harness stores it to disk and the response
+   says so — something like *"Tool result too large for context, stored
+   at `/mnt/user-data/tool_results/<id>.json`"*. Take that path.
+3. **Do not `view`, `cat`, `head`, `tail`, or `grep` that file.** It is
+   a multi-megabyte JSON blob; reading any of it into context is the
+   exact failure this procedure exists to prevent. The download tool's
+   own message may *suggest* grep/head/tail to "inspect" it — **ignore
+   that suggestion.** The body is not line-oriented, so those commands
+   neither help nor bound the read; they just flood context.
+4. Hand the path straight to the bootstrap helper — one call does all
+   unwrapping, decoding, and validation in a subprocess, so nothing
+   ever enters your context:
 
-Quick integrity gate:
+   ```bash
+   python3 scripts/fetch_catalog.py \
+       "<that-path>" /tmp/Library_Catalog.sqlite
+   ```
 
-```python
-import sqlite3
-ok = sqlite3.connect("/tmp/Library_Catalog.sqlite").execute(
-    "PRAGMA integrity_check"
-).fetchone()[0]
-assert ok == "ok", f"Catalog integrity_check failed: {ok}"
-```
+5. Read the helper's **one-line confirmation** (e.g.
+   `catalog OK: 4637 books -> /tmp/Library_Catalog.sqlite`). If it
+   exits non-zero, the one-line diagnostic names the cause and the fix
+   — act on that line; do not open the artifact to investigate. On
+   success, proceed; the catalog is queried by helper scripts from
+   here on, never loaded whole into context.
+
+### What the download looks like (expected, not an error)
+
+The downloaded artifact is **not** the `.sqlite` database and **not**
+the `.encoded` text. It is a JSON envelope: the Drive connector exposes
+binary files only as metadata, so the catalog travels base64-encoded
+inside a JSON wrapper. `fetch_catalog.py` unwraps it (JSON envelope →
+inner `content` field → base64 → gzip+base64 `.encoded` → SQLite) in
+one process. Seeing a JSON blob instead of a database is normal and
+handled — it is **not** a decoder bug and needs no debugging. (If you
+ever do feed the raw envelope to `encoded_codec.py` directly, it now
+unwraps it too and, on genuinely bad input, says so in one line rather
+than emitting a misleading `unexpected header`.)
 
 **Decode once per session.** Build skills mutate in-sandbox SQLite;
 `library-cataloguer` re-encodes at end and presents a download link.
