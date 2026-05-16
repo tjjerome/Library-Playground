@@ -30,6 +30,7 @@ Output: JSON to stdout. Diagnostics to stderr. Exit codes:
 from __future__ import annotations
 
 import argparse
+import difflib
 import json
 import random
 import re
@@ -40,13 +41,14 @@ from pathlib import Path
 from typing import Iterable
 
 try:
-    from .sqlite_export import norm  # type: ignore
+    from .sqlite_export import norm, title_short, _swap_lastfirst  # type: ignore
 except (ImportError, ValueError):
     try:
-        from sqlite_export import norm  # type: ignore  # noqa: E402
+        from sqlite_export import norm, title_short, _swap_lastfirst  # type: ignore  # noqa: E402
     except ImportError:
         sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-        from webhelper.sqlite_export import norm  # noqa: E402
+        from webhelper.sqlite_export import (  # noqa: E402
+            norm, title_short, _swap_lastfirst)
 
 
 # ---------------------------------------------------------------------------
@@ -424,6 +426,32 @@ def _subseries_order_key(entry: dict) -> tuple[float, str]:
     return _series_order_key(entry)
 
 
+_NORM_INDEX_CACHE: dict[int, dict[tuple[str, str], dict]] = {}
+
+
+def _norm_index(conn: sqlite3.Connection) -> dict[tuple[str, str], dict]:
+    """Catalog index keyed by the *current* norm() of (title, author),
+    built once per connection.  Stored title_normalized /
+    author_normalized columns reflect whatever norm() was in force
+    when each row was written; this recomputes with the live function
+    so a hardened norm doesn't silently lose matches until
+    `normalize-catalog` runs.  Also keys the pre-colon title prefix."""
+    cached = _NORM_INDEX_CACHE.get(id(conn))
+    if cached is not None:
+        return cached
+    idx: dict[tuple[str, str], dict] = {}
+    for r in conn.execute("SELECT * FROM books"):
+        e = row_to_entry(r)
+        an = norm(e.get("author", ""))
+        title = e.get("title", "") or ""
+        full = norm(title)
+        idx.setdefault((full, an), e)
+        if ":" in title:
+            idx.setdefault((norm(title.split(":", 1)[0]), an), e)
+    _NORM_INDEX_CACHE[id(conn)] = idx
+    return idx
+
+
 def lookup_by_pair(conn: sqlite3.Connection, title: str, author: str) -> dict | None:
     tn = norm(title)
     an = norm(author)
@@ -434,7 +462,9 @@ def lookup_by_pair(conn: sqlite3.Connection, title: str, author: str) -> dict | 
         row = conn.execute(sql, (tn, an)).fetchone()
         if row is not None:
             return row_to_entry(row)
-    return None
+    # Fallback: stored normalized columns may predate the current
+    # norm().  Match against a freshly normalized index.
+    return _norm_index(conn).get((tn, an))
 
 
 # ---------------------------------------------------------------------------
@@ -683,9 +713,15 @@ def resolve_list_picks(conn: sqlite3.Connection,
             row = conn.execute(
                 "SELECT * FROM books WHERE title_short = ? "
                 "AND author_normalized = ?", (tn, an)).fetchone()
-        if not row:
-            continue
-        e = row_to_entry(row)
+        if row:
+            e = row_to_entry(row)
+        else:
+            # Stored normalized columns may predate the current
+            # norm(); fall back to the freshly normalized index.
+            e = _norm_index(conn).get((tn, an))
+            if e is None:
+                continue
+            e = dict(e)
         e["_signals"] = positive_signals_for(conn, e["key"])
         e["_themes"] = themes_for(conn, e["key"])
         out.append(e)
@@ -1527,6 +1563,8 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
         "probe": probe,
         "variance_mode": variance,
     }
+    if getattr(args, "audit_exclusions", False):
+        output["exclusion_audit"] = build_exclusion_audit(conn, log)
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
 
@@ -2066,6 +2104,210 @@ def cmd_norm(args, _conn=None) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Addendum B — author history, exclusion audit, reconcile, normalize
+# ---------------------------------------------------------------------------
+
+_AUTHOR_SPLIT = re.compile(r"\s*(?:&|;|/|\band\b|\bwith\b)\s*",
+                           flags=re.IGNORECASE)
+
+
+def _author_parts(raw: str) -> set[str]:
+    """Normalized author tokens for a (possibly multi-author) field.
+    Includes the whole field and each split part so a single-author
+    query matches a co-authored log row."""
+    if not raw:
+        return set()
+    parts = {norm(raw)}
+    for piece in _AUTHOR_SPLIT.split(raw):
+        pn = norm(piece)
+        if pn:
+            parts.add(pn)
+    return parts
+
+
+def _log_author_field(row: dict) -> str:
+    return row.get("authors") or row.get("author") or ""
+
+
+def _log_date(row: dict) -> str | None:
+    for k in ("Last Date Read", "Date Read", "date", "Date"):
+        v = row.get(k)
+        if v:
+            return v.strip()
+    return None
+
+
+def cmd_author_history(args, _conn=None) -> None:
+    log = load_log(args.log)
+    qn = norm(args.author)
+    reads = []
+    matched_author = None
+    for r in log:
+        if not r.get("title"):
+            continue
+        raw = _log_author_field(r)
+        if qn and qn in _author_parts(raw):
+            if matched_author is None:
+                matched_author = raw
+            reads.append({
+                "title": r.get("title"),
+                "rating": parse_rating(r.get("My Rating")),
+                "date": _log_date(r),
+            })
+    rated_4plus = sum(1 for x in reads
+                      if x["rating"] is not None and x["rating"] >= 4.0)
+    print(json.dumps({
+        "author_query": args.author,
+        "matched_author": matched_author,
+        "reads": reads,
+        "read_count": len(reads),
+        "rated_4plus_count": rated_4plus,
+    }, ensure_ascii=False, indent=2))
+
+
+def _norm_distance(a: str, b: str) -> float:
+    """1 − similarity ratio on two normalized strings (0 == identical)."""
+    if not a and not b:
+        return 0.0
+    return round(1.0 - difflib.SequenceMatcher(None, a, b).ratio(), 4)
+
+
+def build_exclusion_audit(conn: sqlite3.Connection,
+                          log: list[dict]) -> dict:
+    """Reconcile every log entry against the catalog.  Surfaces
+    orphans (no catalog match at all) and near-misses (a catalog row
+    that *almost* matched — the silent exclusion-gate failures)."""
+    idx = _norm_index(conn)
+    by_title: dict[str, list[tuple[str, dict]]] = {}
+    by_author: dict[str, list[tuple[str, dict]]] = {}
+    for (tn, an), e in idx.items():
+        by_title.setdefault(tn, []).append((an, e))
+        by_author.setdefault(an, []).append((tn, e))
+
+    total = 0
+    matched = 0
+    orphans: list[dict] = []
+    near: list[dict] = []
+    for r in log:
+        if not r.get("title"):
+            continue
+        total += 1
+        ltn = norm(r.get("title", ""))
+        lan = norm(_log_author_field(r))
+        if (ltn, lan) in idx:
+            matched += 1
+            continue
+        # Look for the closest catalog row: same title (author drift)
+        # or same author (title drift).
+        best = None
+        for cand_an, e in by_title.get(ltn, []):
+            d = _norm_distance(lan, cand_an)
+            if best is None or d < best[0]:
+                best = (d, e, "author")
+        for cand_tn, e in by_author.get(lan, []):
+            d = _norm_distance(ltn, cand_tn)
+            if best is None or d < best[0]:
+                best = (d, e, "title")
+        if best is not None and best[0] <= 0.34:
+            e = best[1]
+            near.append({
+                "log_title": r.get("title"),
+                "catalog_title": e.get("title"),
+                "log_author": _log_author_field(r),
+                "catalog_author": e.get("author"),
+                "normalized_distance": best[0],
+            })
+        else:
+            orphans.append({
+                "title": r.get("title"),
+                "author": _log_author_field(r),
+                "reason": "no catalog match",
+            })
+    return {
+        "log_entries_total": total,
+        "log_entries_matched_to_catalog": matched,
+        "orphan_log_entries": orphans,
+        "near_miss_matches": near,
+    }
+
+
+def cmd_reconcile(args, conn: sqlite3.Connection) -> None:
+    log = load_log(args.log)
+    print(json.dumps(build_exclusion_audit(conn, log),
+                     ensure_ascii=False, indent=2))
+
+
+def cmd_normalize_catalog(args, conn: sqlite3.Connection) -> None:
+    rows = list(conn.execute("SELECT * FROM books"))
+    updates: list[tuple] = []
+    author_format_changes: list[dict] = []
+    malformed: list[dict] = []
+    seen: dict[tuple[str, str], list[str]] = {}
+
+    for r in rows:
+        e = row_to_entry(r)
+        key = e["key"]
+        old_title_n = e.get("title_normalized") or ""
+        old_author_n = e.get("author_normalized") or ""
+        old_short = e.get("title_short") or ""
+        old_author = e.get("author") or ""
+
+        new_author = _swap_lastfirst(old_author)
+        new_title_n = norm(e.get("title", ""))
+        new_author_n = norm(new_author)
+        new_short = title_short(e.get("title"))
+
+        if not new_title_n or not new_author_n:
+            malformed.append({"key": key, "title": e.get("title"),
+                              "author": old_author})
+
+        seen.setdefault((new_title_n, new_author_n), []).append(key)
+
+        if new_author != old_author:
+            author_format_changes.append(
+                {"key": key, "old": old_author, "new": new_author})
+
+        if (new_title_n != old_title_n or new_author_n != old_author_n
+                or new_short != old_short or new_author != old_author):
+            updates.append((new_title_n, new_short, new_author,
+                            new_author_n, key))
+
+    duplicates = [{"normalized": list(k), "keys": v}
+                  for k, v in seen.items() if len(v) > 1]
+
+    summary = {
+        "rows_total": len(rows),
+        "rows_to_update": len(updates),
+        "author_format_changes": author_format_changes,
+        "duplicate_groups": duplicates,
+        "malformed_rows": malformed,
+        "dry_run": bool(args.dry_run),
+        "written": False,
+    }
+
+    if not args.dry_run and updates:
+        conn.executemany(
+            "UPDATE books SET title_normalized = ?, title_short = ?, "
+            "author = ?, author_normalized = ? WHERE key = ?", updates)
+        conn.commit()
+        summary["written"] = True
+        encoded = Path(args.catalog + ".encoded")
+        if args.emit_encoded or encoded.exists():
+            try:
+                from .encoded_codec import encode_file  # type: ignore
+            except (ImportError, ValueError):
+                try:
+                    from encoded_codec import encode_file  # type: ignore
+                except ImportError:
+                    from webhelper.encoded_codec import encode_file
+            conn.execute("VACUUM")
+            encode_file(Path(args.catalog), encoded)
+            summary["encoded_path"] = str(encoded)
+
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
+
+
+# ---------------------------------------------------------------------------
 # CLI wiring
 # ---------------------------------------------------------------------------
 
@@ -2099,8 +2341,32 @@ def build_parser() -> argparse.ArgumentParser:
                     default="discover",
                     help="discover (default) sources candidates; "
                          "curate refuses to source new picks")
+    sp.add_argument("--audit-exclusions", dest="audit_exclusions",
+                    action="store_true",
+                    help="also emit an exclusion_audit block "
+                         "(orphan + near-miss log↔catalog matches)")
     sp.add_argument("--seed", type=int, default=None)
     sp.set_defaults(func=cmd_recommend, needs_catalog=True)
+
+    sp = sub.add_parser("author-history")
+    sp.add_argument("--author", required=True)
+    sp.add_argument("--log", default=DEFAULT_LOG)
+    sp.add_argument("--catalog", default=DEFAULT_CATALOG)
+    sp.set_defaults(func=cmd_author_history, needs_catalog=False)
+
+    sp = sub.add_parser("reconcile")
+    sp.add_argument("--catalog", default=DEFAULT_CATALOG)
+    sp.add_argument("--log", default=DEFAULT_LOG)
+    sp.set_defaults(func=cmd_reconcile, needs_catalog=True)
+
+    sp = sub.add_parser("normalize-catalog")
+    sp.add_argument("--catalog", default=DEFAULT_CATALOG)
+    sp.add_argument("--dry-run", dest="dry_run", action="store_true",
+                    help="report changes without writing")
+    sp.add_argument("--emit-encoded", dest="emit_encoded",
+                    action="store_true",
+                    help="force re-emit of <catalog>.encoded after write")
+    sp.set_defaults(func=cmd_normalize_catalog, needs_catalog=True)
 
     sp = sub.add_parser("status")
     sp.add_argument("--catalog", default=DEFAULT_CATALOG)

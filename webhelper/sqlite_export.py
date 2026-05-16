@@ -62,18 +62,56 @@ _QUOTE_NORMALIZE = str.maketrans({
 _LEAD_PUNCT = re.compile(r"^[^\w]+", flags=re.UNICODE)
 _LEAD_ARTICLE = re.compile(r"^(the|a|an)\s+", flags=re.IGNORECASE)
 _TRAILING_PAREN = re.compile(r"\s*\([^)]*\)\s*$")
+_MULTI_AUTHOR = re.compile(r"\s*(?:&|;|/|\band\b|\bwith\b)\s*", flags=re.IGNORECASE)
+
+
+def _swap_lastfirst(s: str) -> str:
+    """`Last, First` → `First Last`.  Conservative: a single comma,
+    no multi-author delimiter, no role/parenthetical markup, and each
+    side ≤2 word tokens — so genuine author lists and pen names with
+    stylistic commas are left alone."""
+    if s.count(",") != 1 or _MULTI_AUTHOR.search(s) or "(" in s:
+        return s
+    last, first = (p.strip() for p in s.split(","))
+    if not (last and first):
+        return s
+    if len(last.split()) > 2 or len(first.split()) > 2:
+        return s
+    return f"{first} {last}"
+
+
+def _collapse_initials(tokens: list[str]) -> list[str]:
+    """Merge runs of single-character tokens so `k j parker`,
+    `k.j. parker`, and `kj parker` all converge."""
+    out: list[str] = []
+    buf: list[str] = []
+    for t in tokens:
+        if len(t) == 1 and t.isalpha():
+            buf.append(t)
+            continue
+        if buf:
+            out.append("".join(buf))
+            buf = []
+        out.append(t)
+    if buf:
+        out.append("".join(buf))
+    return out
 
 
 def norm(s: str | None) -> str:
     if not s:
         return ""
     s = s.translate(_QUOTE_NORMALIZE)
+    s = _swap_lastfirst(s)
+    s = s.replace("&", " and ")
     s = _TRAILING_PAREN.sub("", s)
     s = _LEAD_PUNCT.sub("", s)
     s = s.lower()
     s = _LEAD_ARTICLE.sub("", s)
+    # Drop subtitle drift: `Title: A Novel` ≡ `Title`.
+    s = s.split(":", 1)[0]
     s = re.sub(r"\.", " ", s)
-    return " ".join(s.split())
+    return " ".join(_collapse_initials(s.split()))
 
 
 def title_short(title: str | None) -> str:
