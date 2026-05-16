@@ -353,14 +353,33 @@ get pitched as one hard pick or four-up is the model's call.
 - `--log $PROJECT_LOG`
 - `--profile /tmp/Profile.md`  (taste vectors parsed from sections)
 - `--reading-list /tmp/Reading_List.md`  (exclusion gate)
-- `--build-state /tmp/build_state.json`  (vectors, floors, current
-  counts, rejected candidates this session)
+- `--build-state /tmp/build_state.json`  (schema v2: vectors,
+  floors, current counts, rejected candidates this session, a
+  `preferences` block, and `defended`/`session_lock` events. v1
+  files load transparently — absent fields normalize to v2
+  defaults: `series_commitment=binary`, `curiosity_targets=[]`,
+  `expansion_appetite=moderate`)
 - `--genre <G>` (optional — restricts pool to that genre slice;
   vector spread still applies within the slice)
 - `--n <int>` (default 6; caller picks)
 - `--lean <vector|floor>` (optional — caller asks for skew toward
   a specific vector or floor; recommender respects but still
   returns spread, not a pile of clones)
+- `--variance {similar,balanced,broad,adjacent,focused}`
+  (optional — default derives from
+  `build_state.preferences.expansion_appetite`: high→broad,
+  low→similar, else balanced. `balanced` reserves ~20% of slots
+  for residual/outside-vector picks; `broad` ~35-40%; `similar`
+  is similarity-heavy with no residual quota)
+- `--show-gr` / `--show-audio` (optional — `goodreads_rating`
+  and `audio_suitability` are dropped from the default projection
+  to stop their reflexive use as cut criteria; these flags opt
+  them back in. Audio also surfaces when the reader's profile
+  flags an audio preference)
+- `--mode {discover,curate}` (default `discover`. `curate`
+  refuses to source new candidates and exits non-zero with a
+  message pointing at `compare`/`status` — a structural guarantee
+  that curation conversations never spawn new picks)
 
 ### Output
 
@@ -373,12 +392,11 @@ get pitched as one hard pick or four-up is the model's call.
       "author": "...",
       "pages": ...,
       "match_reasoning": {
-        "anchor_log_entries": [{"title": "Pet Sematary", "rating": 5, "bucket": "3+yrs"}],
+        "resonance_titles": [{"title": "Pet Sematary", "rating": 5, "bucket": "3+yrs"}],
         "matched_vectors": ["grief-rooted horror", "lyrical grimdark"],
         "matched_themes": ["isolation", "loss"],
         "comp_overlap": ["A Head Full of Ghosts"],
-        "entry_point_ok": true,
-        "rating": 4.2
+        "entry_point_ok": true
       },
       "fills_gap": {
         "vector": "grief-rooted horror",

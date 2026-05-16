@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Variance-mode tests for `librarian_query.py recommend`.
 
-  - `--variance focused` returns ≥60% of slots from one vector
-  - `--variance surprising` includes ≥1 `is_residual` candidate
-  - `--variance balanced` distributes more evenly than focused
+  - `--variance focused` concentrates ≥50% of slots on one vector
+  - `--variance similar` carries no structural residual quota
+  - `--variance balanced` reserves a ~20% residual quota
+  - `--variance broad` reserves a heavier (~35-40%) residual quota
+  - residual share ordering: similar < balanced < broad
+  - focused stays more lopsided than balanced
 
 Run via:
     python3 tests/recommend_variance.py
@@ -86,41 +89,64 @@ def _max_share(breakdown: dict, n: int) -> float:
     return max(breakdown.values()) / n
 
 
+def _residual_share(breakdown: dict, n: int) -> float:
+    if not breakdown or n == 0:
+        return 0.0
+    total = sum(breakdown.values()) or n
+    return breakdown.get("residual", 0) / total
+
+
 def run(catalog: str) -> int:
     failures: list[str] = []
+    n = 15
     with tempfile.TemporaryDirectory() as tmp:
         wd = Path(tmp)
-        balanced = _capture(_make_args(wd, catalog, "balanced"))
-        focused = _capture(_make_args(wd, catalog, "focused"))
-        surprising = _capture(_make_args(wd, catalog, "surprising"))
+        similar = _capture(_make_args(wd, catalog, "similar", n=n))
+        balanced = _capture(_make_args(wd, catalog, "balanced", n=n))
+        broad = _capture(_make_args(wd, catalog, "broad", n=n))
+        focused = _capture(_make_args(wd, catalog, "focused", n=n))
 
-    n = 15
     bal_max = _max_share(balanced["stratum_breakdown"], n)
     foc_max = _max_share(focused["stratum_breakdown"], n)
 
-    # focused: top stratum should hold ≥50% of slots (target was 60%
-    # but tolerance for jitter / pool shape).
+    sim_res = _residual_share(similar["stratum_breakdown"], n)
+    bal_res = _residual_share(balanced["stratum_breakdown"], n)
+    brd_res = _residual_share(broad["stratum_breakdown"], n)
+
+    # focused: top stratum should hold ≥50% of slots.
     if foc_max < 0.5:
         failures.append(
             f"focused mode top-stratum share {foc_max:.0%} < 50%")
-
-    # focused should be more lopsided than balanced.
     if foc_max <= bal_max:
         failures.append(
             f"focused max share ({foc_max:.0%}) not greater than "
             f"balanced ({bal_max:.0%})")
 
-    # surprising: ≥1 is_residual candidate.
-    residuals = sum(1 for c in surprising["candidates"]
-                    if c["fills_gap"]["is_residual"])
-    if residuals == 0:
-        failures.append("surprising mode produced no is_residual candidates")
-
-    # balanced: no single stratum should exceed 60% (sanity check
-    # against drift).
-    if bal_max > 0.65:
+    # similar: no structural residual quota (similarity-heavy).  A
+    # stray residual match is tolerable but it must stay well under
+    # the balanced quota.
+    if sim_res >= 0.15:
         failures.append(
-            f"balanced mode top-stratum share {bal_max:.0%} > 65%")
+            f"similar mode residual share {sim_res:.0%} ≥ 15% "
+            f"(should carry no structural quota)")
+
+    # balanced: ~20% residual quota (allow jitter band).
+    if not (0.10 <= bal_res <= 0.30):
+        failures.append(
+            f"balanced mode residual share {bal_res:.0%} outside "
+            f"[10%,30%] (expected ~20%)")
+
+    # broad: heavier residual quota (~35-40%).
+    if brd_res < 0.30:
+        failures.append(
+            f"broad mode residual share {brd_res:.0%} < 30% "
+            f"(expected ~35-40%)")
+
+    # Ordering: similar < balanced < broad.
+    if not (sim_res < bal_res < brd_res):
+        failures.append(
+            f"residual share not ordered similar<balanced<broad "
+            f"({sim_res:.0%} / {bal_res:.0%} / {brd_res:.0%})")
 
     if failures:
         print("FAIL")
