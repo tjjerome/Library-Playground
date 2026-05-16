@@ -6,6 +6,8 @@ __pycache__/
 # Step 1+ build outputs.  Derived from Library_Catalog.json + catalogue.py;
 # users regenerate locally.  The live mutable catalog lives in the user's
 # Drive folder, not here.
+Library_Catalog.json
+Library_Index.json
 Library_Catalog.sqlite
 Library_Catalog.sqlite.encoded
 dist/

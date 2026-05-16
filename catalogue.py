@@ -8,6 +8,7 @@ Usage:
     python catalogue.py --status            # cheap inspection
     python catalogue.py --review-only       # reprocess needs_review only
     python catalogue.py --dry-run           # no API calls, no writes
+    python catalogue.py --no-api            # CSV sync + SQLite/.encoded export, no API, no push
     python catalogue.py --no-push           # skip git commit + push at the end
 
 The default flow:
@@ -46,7 +47,9 @@ import time
 from datetime import date
 from pathlib import Path
 
-import anthropic
+# `anthropic` is imported lazily (authenticate_anthropic_client +
+# call_api_with_tools) so offline paths — --no-api, --export-sqlite,
+# --status, --dry-run — run without the SDK installed.
 
 # ---------------------------------------------------------------------------
 # Config
@@ -75,10 +78,59 @@ WEB_SEARCH_TOOL = {
 # Catalog I/O
 # ---------------------------------------------------------------------------
 
+def _catalog_from_sqlite(sqlite_path: Path) -> dict:
+    """Reconstruct the catalog dict from a SQLite file (reverse of export)."""
+    import sqlite3
+    from webhelper.sqlite_export import reconstruct_entry, load_meta
+
+    conn = sqlite3.connect(str(sqlite_path))
+    try:
+        conn.row_factory = sqlite3.Row
+        meta = load_meta(conn)
+        keys = [r["key"] for r in conn.execute("SELECT key FROM books ORDER BY key")]
+        entries = {k: reconstruct_entry(conn, k) for k in keys}
+    finally:
+        conn.close()
+    return {
+        "catalog_version": meta.get("catalog_version", 2),
+        "last_updated": meta.get("last_updated", str(date.today())),
+        "total_in_library": meta.get("total_in_library", len(entries)),
+        "total_catalogued": meta.get("total_catalogued", 0),
+        "total_pending": meta.get("total_pending", 0),
+        "entries": entries,
+    }
+
+
 def load_catalog(path: str) -> dict:
     if Path(path).exists():
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
+
+    # Library_Catalog.json is gitignored on this branch — the persisted
+    # catalog is Library_Catalog.sqlite.encoded.  Hydrate from it (or a
+    # bare .sqlite) so a missing JSON never silently produces an empty
+    # catalog that the export then writes back over the good .encoded.
+    sqlite_path = Path(DEFAULT_SYNC_SQLITE)
+    encoded_path = sqlite_path.with_suffix(sqlite_path.suffix + ".encoded")
+    if encoded_path.exists():
+        from webhelper.encoded_codec import decode_file
+        import tempfile
+        with tempfile.NamedTemporaryFile(suffix=".sqlite", delete=False) as tmp:
+            tmp_path = Path(tmp.name)
+        try:
+            decode_file(encoded_path, tmp_path)
+            cat = _catalog_from_sqlite(tmp_path)
+        finally:
+            tmp_path.unlink(missing_ok=True)
+        print(f"  Hydrated catalog from {encoded_path} "
+              f"({len(cat['entries'])} entries) — {path} absent.")
+        return cat
+    if sqlite_path.exists():
+        cat = _catalog_from_sqlite(sqlite_path)
+        print(f"  Hydrated catalog from {sqlite_path} "
+              f"({len(cat['entries'])} entries) — {path} absent.")
+        return cat
+
     return {
         "catalog_version": 2,
         "last_updated": str(date.today()),
@@ -520,6 +572,7 @@ def call_api_with_tools(client, messages: list, system: str, tools: list | None 
     callers like the comparable_books ranker don't need web search and
     avoid wasted round-trips that way.
     """
+    import anthropic
     if tools is None:
         tools = [WEB_SEARCH_TOOL]
     # Cache the system prompt + tool list so they aren't re-billed on every call.
@@ -2139,12 +2192,24 @@ def run_sync_export(
     from webhelper.sqlite_export import export as _sqlite_export
     from webhelper.encoded_codec import encode_file as _encode_file
 
+    # Guard: never let a degenerate (empty) catalog overwrite an existing
+    # populated .encoded.  A missing Library_Catalog.json used to slip an
+    # empty catalog through here and destroy the persisted artefact.
+    n = len(catalog.get("entries") or {})
+    encoded_path = sqlite_path.with_suffix(sqlite_path.suffix + ".encoded")
+    if n == 0 and (encoded_path.exists() or sqlite_path.exists()):
+        raise SystemExit(
+            f"Refusing to export: catalog has 0 entries but "
+            f"{encoded_path if encoded_path.exists() else sqlite_path} "
+            f"already exists. Aborting to avoid clobbering it with an "
+            f"empty database. Check that Library_Catalog.json or "
+            f"Library_Catalog.sqlite.encoded is present and readable."
+        )
+
     print("\nSync export:")
     _sqlite_export(catalog, sqlite_path)
-    n = len(catalog.get("entries") or {})
     print(f"  Wrote SQLite catalog → {sqlite_path} ({n} entries)")
 
-    encoded_path = sqlite_path.with_suffix(sqlite_path.suffix + ".encoded")
     _encode_file(sqlite_path, encoded_path)
     print(f"  Wrote encoded catalog → {encoded_path}")
 
@@ -2200,6 +2265,11 @@ def main():
     parser.add_argument("--dry-run", action="store_true",
                         help="With --sync-comparables or --audit-entry-points: "
                              "compute changes but don't call Claude")
+    parser.add_argument("--no-api", action="store_true",
+                        help="Refresh CSV-authoritative fields, export "
+                             "SQLite + .encoded, and exit. No LLM calls, no "
+                             "comparables tail, no git push. Use after manual "
+                             "Library.csv edits (e.g. grvotes fixes).")
     parser.add_argument("--report", default=None,
                         help="With --sync-comparables: write JSON report to this path")
     parser.add_argument("--export-sqlite", dest="export_sqlite", default=None,
@@ -2213,6 +2283,14 @@ def main():
                              "<sqlite-path>.encoded — gzip+base64 wrapped, "
                              "Drive-uploadable, decoded once per session by "
                              "the librarian-triage skill.")
+    parser.add_argument("--no-push", action="store_true",
+                        help="Skip git commit + push at the end of the sync.")
+    parser.add_argument("--sync-sqlite", default=DEFAULT_SYNC_SQLITE,
+                        metavar="PATH",
+                        help=f"SQLite output path (default: {DEFAULT_SYNC_SQLITE}).")
+    parser.add_argument("--sync-audit", default=DEFAULT_SYNC_AUDIT,
+                        metavar="PATH",
+                        help=f"Audit summary output (default: {DEFAULT_SYNC_AUDIT}).")
     args = parser.parse_args()
 
     catalog = load_catalog(args.catalog)
@@ -2232,55 +2310,6 @@ def main():
             encoded_path = sqlite_path.with_suffix(sqlite_path.suffix + ".encoded")
             _encode_file(sqlite_path, encoded_path)
             print(f"  Wrote encoded catalog → {encoded_path}")
-        sys.exit(0)
-
-    if args.index_only:
-        save_index(catalog, args.index)
-        print(f"  Wrote slim index → {args.index} ({len(catalog['entries'])} entries)")
-        sys.exit(0)
-
-    if args.audit_entry_points:
-        client = None
-        if not args.dry_run:
-            client = authenticate_anthropic_client()
-        stats = audit_entry_points(
-            catalog,
-            client=client,
-            chunk_size=args.chunk_size,
-            dry_run=args.dry_run,
-            catalog_path=None if args.dry_run else args.catalog,
-            index_path=None if args.dry_run else args.index,
-        )
-        print(f"\nEntry-point audit complete.")
-        print(f"  auto_filled: {stats['auto_filled']}")
-        print(f"  llm_chunks:  {stats['llm_chunks']}")
-        print(f"  llm_filled:  {stats['llm_filled']}")
-        print(f"  still_null:  {stats['still_null']}")
-        if args.dry_run:
-            print(f"  --dry-run: catalog NOT written.")
-        else:
-            # Final save (in addition to per-chunk saves) — ensures the
-            # last chunk's stats land on disk.
-            save_catalog(catalog, args.catalog)
-            save_index(catalog, args.index)
-            print(f"  Cataloguing complete. Wrote → {args.catalog} (+ {args.index})")
-        sys.exit(0)
-
-    if args.sync_comparables:
-        client = None
-        if not args.dry_run:
-            client = authenticate_anthropic_client()
-        stats = sync_comparables(
-            catalog,
-            client=client,
-            dry_run=args.dry_run,
-            report_path=args.report,
-        )
-        print_sync_summary(stats)
-        if not args.dry_run:
-            save_catalog(catalog, args.catalog)
-            save_index(catalog, args.index)
-            print(f"  Wrote → {args.catalog} (+ {args.index})")
         sys.exit(0)
 
     books = load_library(args.library)
@@ -2310,6 +2339,19 @@ def main():
         sys.exit(0)
     if args.dry_run:
         print("\n--dry-run set; no API calls or SQLite/git work performed.")
+        sys.exit(0)
+    if args.no_api:
+        print("\n--no-api set; skipping LLM + comparables. "
+              "Exporting SQLite + .encoded, local-only (no push).")
+        run_sync_export(
+            catalog=catalog,
+            library_sync_stats=library_sync_stats,
+            comparables_stats=None,
+            pre_counts=pre_counts,
+            sqlite_path=Path(args.sync_sqlite),
+            audit_path=Path(args.sync_audit),
+            push=False,
+        )
         sys.exit(0)
 
     # Determine which entries to process
