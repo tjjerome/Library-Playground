@@ -9,10 +9,10 @@ All cataloguer-side fields end up in one of these tables:
 
   catalog_meta    – single-row catalog metadata (version, dates, totals)
   books           – per-entry scalar columns
-  taste_signals   – (book_key, polarity, signal) per signal
+  taste_signals   – (book_key, polarity, canonical) per signal
   comparable_books– (book_key, comp_key) per comp link
   content_flags   – (book_key, flag) per flag
-  themes          – (book_key, theme) per theme
+  themes          – (book_key, canonical) per theme
   audit_flags     – per-flag audit record (field/severity/reason/...)
 
 Notes on schema choices:
@@ -168,9 +168,9 @@ SCHEMA = [
         audit_json           TEXT
     )""",
     """CREATE TABLE taste_signals (
-        book_key TEXT NOT NULL,
-        polarity TEXT NOT NULL,
-        signal   TEXT NOT NULL,
+        book_key  TEXT NOT NULL,
+        polarity  TEXT NOT NULL,
+        canonical TEXT NOT NULL,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE comparable_books (
@@ -184,8 +184,8 @@ SCHEMA = [
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE themes (
-        book_key TEXT NOT NULL,
-        theme    TEXT NOT NULL,
+        book_key  TEXT NOT NULL,
+        canonical TEXT NOT NULL,
         FOREIGN KEY (book_key) REFERENCES books(key)
     )""",
     """CREATE TABLE audit_flags (
@@ -361,14 +361,14 @@ def export(catalog: dict, sqlite_path: Path) -> None:
                 for sig in ts.get("positive") or []:
                     if sig:
                         cur.execute(
-                            "INSERT INTO taste_signals (book_key, polarity, signal) "
+                            "INSERT INTO taste_signals (book_key, polarity, canonical) "
                             "VALUES (?, 'positive', ?)",
                             (key, sig),
                         )
                 for sig in ts.get("negative") or []:
                     if sig:
                         cur.execute(
-                            "INSERT INTO taste_signals (book_key, polarity, signal) "
+                            "INSERT INTO taste_signals (book_key, polarity, canonical) "
                             "VALUES (?, 'negative', ?)",
                             (key, sig),
                         )
@@ -392,7 +392,7 @@ def export(catalog: dict, sqlite_path: Path) -> None:
             for theme in entry.get("themes") or []:
                 if theme:
                     cur.execute(
-                        "INSERT INTO themes (book_key, theme) VALUES (?, ?)",
+                        "INSERT INTO themes (book_key, canonical) VALUES (?, ?)",
                         (key, theme),
                     )
 
@@ -440,12 +440,12 @@ def reconstruct_entry(conn: sqlite3.Connection, key: str) -> dict:
     entry["indie"] = bool(book["indie"]) if book["indie"] is not None else None
     entry["classic"] = bool(book["classic"]) if book["classic"] is not None else None
 
-    pos = [r["signal"] for r in cur.execute(
-        "SELECT signal FROM taste_signals WHERE book_key = ? AND polarity = 'positive'",
+    pos = [r["canonical"] for r in cur.execute(
+        "SELECT canonical FROM taste_signals WHERE book_key = ? AND polarity = 'positive'",
         (key,),
     )]
-    neg = [r["signal"] for r in cur.execute(
-        "SELECT signal FROM taste_signals WHERE book_key = ? AND polarity = 'negative'",
+    neg = [r["canonical"] for r in cur.execute(
+        "SELECT canonical FROM taste_signals WHERE book_key = ? AND polarity = 'negative'",
         (key,),
     )]
     entry["taste_signals"] = {"positive": pos, "negative": neg}
@@ -463,8 +463,8 @@ def reconstruct_entry(conn: sqlite3.Connection, key: str) -> dict:
         )
     ]
     entry["themes"] = [
-        r["theme"] for r in cur.execute(
-            "SELECT theme FROM themes WHERE book_key = ?",
+        r["canonical"] for r in cur.execute(
+            "SELECT canonical FROM themes WHERE book_key = ?",
             (key,),
         )
     ]
