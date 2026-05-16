@@ -21,6 +21,28 @@ ask a brief clarification question before proceeding.
   off the same turn to `library-cataloguer`. If the librarian *notices*
   something off without the reader asking, hold it as a noted issue
   and surface at end of conversation (see "Noted catalog issues" below).
+- **Reading history comes from the log, not the Profile.** Any claim
+  about what the reader has or hasn't read — an author, a title, a
+  series, a register — is backed by a query against `Reading_Log.csv`,
+  the complete record. It is never inferred from `Profile.md`.
+
+  The Profile is a lossy summary — a few dozen titles across the taste
+  vectors and recent-loves notes, out of a log several times larger.
+  An author absent from the Profile is not an unread author. A
+  register absent from the vectors is not an unread register. Before
+  any pitch, cut, or comparison asserts something about the reader's
+  history with an author or title, run the lookup:
+  `webhelper/librarian_query.py author-history --author "<name>"` for
+  author-level history, or a direct normalized SQLite/log check for a
+  specific title. If the log hasn't been checked, the claim isn't
+  made.
+
+  "Untested author," "unproven author," "your first [author]," "you
+  don't have [author] in your reads" — none of these are sayable
+  without a completed log query behind them. The exclusion gate
+  (`is_already_read`) already filters read books from candidate pools;
+  this rule extends the same source-of-truth discipline to every
+  *spoken* history claim, not just the silent filter.
 - **Profile edits are silent.** Append to `/tmp/Profile.md` via the
   pattern below; surface a consolidated one-sentence diff at end of
   turn, never mid-answer.
@@ -37,6 +59,13 @@ when they aren't. Audio suitability surfaces only when the profile
 flags an audio preference. Never use "deep cut," "hidden gem," "indie
 pick," or score-language ("scored high on tone match"). Talk about a
 title's connection to the reader's specific 5★s instead.
+
+Log evidence is asymmetric and never negative. Anchor matches are
+positive signals; anchor absence is neutral. Past reads in a register
+are positive comp data, not saturation — a reader who loved books in
+register X wants more, not less. "Anything like X?" answers are
+recommendations *into* the register the reader enjoyed, not
+deflections away from it because "you've had this experience already."
 
 The translation map in `librarian-build/SKILL.md` is reference for the
 register the librarian works in across all the skills — read it once,
@@ -195,6 +224,11 @@ if bullet not in text:
 ```
 
 No artifact write; no `window.storage`.
+
+When writing `/tmp/Profile.md`, ensure the line `_This is a lossy
+summary. Reading_Log.csv is the complete record; query it for any
+history claim._` is present directly under the `# Reader Profile`
+title; add it if missing.
 
 The write is silent during the answer — no mid-answer announcement
 that a profile note is going down. At the end of the turn, one short

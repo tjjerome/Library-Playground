@@ -27,6 +27,28 @@ and re-uploads to project knowledge to carry into the next session.
   AND `is_on_list`. Owned by `webhelper/librarian_query.py recommend`
   internally; series-gate and wishlist do their own inline checks via
   the helper or simple SQL.
+- **Reading history comes from the log, not the Profile.** Any claim
+  about what the reader has or hasn't read — an author, a title, a
+  series, a register — is backed by a query against `Reading_Log.csv`,
+  the complete record. It is never inferred from `Profile.md`.
+
+  The Profile is a lossy summary — a few dozen titles across the taste
+  vectors and recent-loves notes, out of a log several times larger.
+  An author absent from the Profile is not an unread author. A
+  register absent from the vectors is not an unread register. Before
+  any pitch, cut, or comparison asserts something about the reader's
+  history with an author or title, run the lookup:
+  `webhelper/librarian_query.py author-history --author "<name>"` for
+  author-level history, or a direct normalized SQLite/log check for a
+  specific title. If the log hasn't been checked, the claim isn't
+  made.
+
+  "Untested author," "unproven author," "your first [author]," "you
+  don't have [author] in your reads" — none of these are sayable
+  without a completed log query behind them. The exclusion gate
+  (`is_already_read`) already filters read books from candidate pools;
+  this rule extends the same source-of-truth discipline to every
+  *spoken* history claim, not just the silent filter.
 - **Working range = 100-110 before stretch picks, 110-125 after.**
   Goals are floors that guide direction, not numbers to hit exactly.
 - **Series gate runs before handing off to the main build** — start by
@@ -105,6 +127,13 @@ Before any cartography, inspect `/tmp/Profile.md`:
 In both gap-probe paths, prepend a session date note to the profile
 for future freshness checks.
 
+Whatever the path — empty seed, refine, or fresh pass — make sure the
+line `_This is a lossy summary. Reading_Log.csv is the complete
+record; query it for any history claim._` sits directly under the
+`# Reader Profile` title, adding it if absent. It keeps a librarian
+glancing at the Profile from mistaking it for the full inventory of
+what the reader has read.
+
 ## Internal scratch state
 
 Write a fresh `/tmp/build_state.json` for the helper scripts to read.
@@ -124,6 +153,11 @@ persist.
   "goals": {},
   "floors": {},
   "taste_vectors": [],
+  "preferences": {
+    "series_commitment": "binary",
+    "curiosity_targets": [],
+    "expansion_appetite": "moderate"
+  },
   "events": [],
   "rejected": [],
   "session_notes": []
@@ -132,9 +166,12 @@ persist.
 
 `taste_vectors` is the script-readable form of what's in Profile.md;
 `goals` and `floors` are the script-readable form of what's in
-Reading_List.md's `## Goals` tables. The persistent files are the
-source of truth — this JSON is a derived, transient view the helper
-scripts read.
+Reading_List.md's `## Goals` tables. The `preferences` block carries
+the three intake answers the helper reads to shape sampling
+(`series_commitment`, `curiosity_targets`, `expansion_appetite` — see
+the goals section below). The persistent files are the source of
+truth — this JSON is a derived, transient view the helper scripts
+read.
 
 Persist with `json.dump(state, open("/tmp/build_state.json", "w"), indent=2)`.
 
@@ -268,11 +305,16 @@ A vector has:
   "monastic isolation", "intimate POV with unreliable narrator",
   "lyrical grimdark", "ensemble at the edge of empire". Avoid jargon
   ("tone-vector-3"); avoid bare genres ("fantasy").
-- **`example_titles`** — 2-4 titles from the reader's ≥4★ log
-  spanning years (not all from the last 12 months). Year span is what
-  makes the vector durable. Undated rows count as "older" for the
-  spread requirement — pull them in when a vector would otherwise
-  read as recency-only.
+- **`example_titles`** — 3-4 titles from the reader's ≥4★ log
+  spanning years AND spanning ≥3 distinct authors. Single-author and
+  two-author clusters don't qualify as vectors; if a cluster doesn't
+  reach three authors, either merge it with the nearest adjacent
+  cluster (where the bridge author is the third), or reframe the
+  cluster at a higher level of abstraction until it does. A vector is
+  a *register*, not an author's discography. Year span is what makes
+  the vector durable; undated rows count as "older" for the spread
+  requirement — pull them in when a vector would otherwise read as
+  recency-only.
 - **`canonical_signals`** — list of canonical taste-signal IDs the
   vector corresponds to. Pulled from the SQLite `taste_signals` table
   for the example titles. These drive `recommend`'s overlap math.
@@ -285,6 +327,14 @@ Inline Python: open the SQLite catalog, look up each ≥4★ title's
 signals/themes, cluster via shared signal/theme overlap, assign labels.
 The clustering can be heuristic — semantic groups matter more than
 algorithmic purity.
+
+If the log genuinely doesn't support three distinct authors in a
+register, that register does *not* become a vector. Note it as a
+sub-pattern in `/tmp/Profile.md` (in prose, not under `## Taste
+vectors`) so the observation isn't lost, but don't add it to
+`build_state.taste_vectors` — it won't be surfaced as a clustering
+target for `recommend`. A two-author affinity is real and worth
+remembering; it just isn't a register yet.
 
 **Surface to reader in prose, not as a list.** This is the librarian
 thinking out loud about the reader, naming threads they may already
@@ -341,22 +391,76 @@ ranges**, not exact targets:
 
 Goals work well as tap-confirms: the reader is choosing direction,
 the menu of plausible answers is bounded, and three-word replies
-wouldn't add much over a tap. Three small questions usually cover it
-— genre tilt (multi-select from the reader's highest-rated genres in
-the log; reader picks two to five), series-status balance (mostly
-standalones / even mix / tackle some short series / lean into long
-series), and indie-classic floors. Write the labels as plain language
-— "get lost in long series" reads better than "Series-leaning (Recommended)."
+wouldn't add much over a tap. The bounded questions are genre tilt
+(multi-select from the reader's highest-rated genres in the log;
+reader picks two to five), series-status balance (mostly standalones
+/ even mix / tackle some short series / lean into long series),
+series commitment style, and indie-classic floors. `AskUserQuestion`
+takes three at a time, so this is two small rounds, not one. Write
+the labels as plain language — "get lost in long series" reads
+better than "Series-leaning (Recommended)."
+
+**Series commitment style** is its own tap-confirm, distinct from
+series-status balance: when a *new* multi-book series goes on the
+list, does the reader want the whole series added as one commitment,
+or just book one with the rest added later if it lands? Phrase it
+plainly — *"When we put a new series on the list, do you want me to
+add the whole thing as a single commitment, or just book one and
+we'll add the rest if it lands?"* Persist to
+`build_state.preferences.series_commitment` as `"binary"` (whole
+series) or `"test-first"` (book one first). This governs how
+`librarian-build` scopes new series; absent an answer the default is
+`"binary"`.
+
+**Curiosity targets** is *not* a tap-confirm — it's an open-prose,
+turn-ending question, because the reader's own wording is the data.
+Ask something like *"What are you curious about that isn't on your
+shelf yet? Registers you've been meaning to try, genres you wish you
+read more of, books you've seen recommended and never picked up."*
+Wait for the reply. Write the answers to `/tmp/Profile.md` under a
+new `## Curiosity targets` section — one bullet per target, the
+reader's phrasing preserved — and mirror the list to
+`build_state.preferences.curiosity_targets[]`.
+
+From the cartography conversation and the curiosity-targets answer,
+derive an **expansion appetite**. A reader who lit up at new
+registers and named several curiosity targets reads as `"high"`; a
+reader who wanted to stay close to known favourites reads as `"low"`;
+most readers are `"moderate"`. This is an internal flag, never
+surfaced in chat. Persist as
+`build_state.preferences.expansion_appetite`. The helper reads it to
+set the default sampling spread for `recommend` — higher appetite
+means more breadth in every round without the librarian having to
+ask for it.
 
 After the answers come back, summarise the direction in a couple of
 sentences before moving on. Never "your floor for indie is 15" — say
 "indie's in rotation; I'll check in if it falls behind."
 
-Translate the answers to floors and write them into the `## Goals`
-tables at the bottom of `/tmp/Reading_List.md` along with the meta
-line under the title. The file is the persistent store —
-re-reading next session gives the agent the goals back from the
-user-uploaded file.
+Translate the floor and genre answers into the `## Goals` tables at
+the bottom of `/tmp/Reading_List.md` along with the meta line under
+the title; write series commitment, curiosity targets, and expansion
+appetite into `build_state.preferences` (the `## Curiosity targets`
+bullets also land in `/tmp/Profile.md`, which carries them to the
+next session). The persistent files are the store — re-reading next
+session gives the agent the goals back from the user-uploaded files.
+
+### Mark exploration zones
+
+Once cartography and goals are both done, look for genres where the
+reader has *both* strong anchor data — three or more ≥4★ titles in
+the log — *and* a stated desire to expand, whether that came through
+the genre-tilt answer or a curiosity target. Those genres are
+**exploration zones**: places where the reader has the experience to
+judge breadth well and has asked for more of it.
+
+Persist each as `{"kind": "exploration_zone", "genre": "..."}` in
+`build_state.session_notes`. `librarian-build` reads these — a pick
+in an exploration zone is evaluated on register fit and reader
+interest, and the reader's depth in that genre is what *enables*
+breadth, not something that constrains it. Not having read a
+particular author inside an exploration zone is never a mark against
+a pick (see the log-asymmetry rule in `librarian-build`).
 
 ### Unfinished Series
 

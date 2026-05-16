@@ -37,6 +37,46 @@ put the right book in the reader's hands, repeatedly, with conviction
   `is_already_read` (from `Reading_Log.csv`), `is_on_list` (from
   `/tmp/Reading_List.md`), and `events[*].type == "rejected"` from
   `/tmp/build_state.json`. No inline duplicates.
+- **Reading history comes from the log, not the Profile.** Any claim
+  about what the reader has or hasn't read — an author, a title, a
+  series, a register — is backed by a query against `Reading_Log.csv`,
+  the complete record. It is never inferred from `Profile.md`.
+
+  The Profile is a lossy summary — a few dozen titles across the taste
+  vectors and recent-loves notes, out of a log several times larger.
+  An author absent from the Profile is not an unread author. A
+  register absent from the vectors is not an unread register. Before
+  any pitch, cut, or comparison asserts something about the reader's
+  history with an author or title, run the lookup:
+  `webhelper/librarian_query.py author-history --author "<name>"` for
+  author-level history, or a direct normalized SQLite/log check for a
+  specific title. If the log hasn't been checked, the claim isn't
+  made.
+
+  "Untested author," "unproven author," "your first [author]," "you
+  don't have [author] in your reads" — none of these are sayable
+  without a completed log query behind them. The exclusion gate
+  (`is_already_read`) already filters read books from candidate pools;
+  this rule extends the same source-of-truth discipline to every
+  *spoken* history claim, not just the silent filter.
+- **Log evidence is asymmetric and never negative.** The reader's log
+  surfaces *positive* signal only. Three hard rules:
+  - **Anchor matches positive, anchor absence neutral.** A candidate
+    connecting to a rated log entry is a positive signal in the
+    pitch. The absence of a log connection is *neutral* — never a
+    con. "No [author] anchor," "untested author," "speculative
+    author commit," "no [register] anchor" and all equivalents are
+    not valid reasons to deprioritize a pitch.
+  - **Past reads are positive comp data, not saturation.** A reader
+    who loved books in register X wants *more* books in register X.
+    "You've already read [the original / the real thing / adjacent
+    work in this lane]" is never a reason to deprioritize a pick —
+    it's the strongest possible signal that a register works for the
+    reader.
+  - **Redundancy is a within-list concept only.** Two picks on the
+    current list doing the same job is valid redundancy. A pick
+    overlapping with something in the reader's *history* is not
+    redundancy — it's positive comp evidence.
 - **Working range = 100-110 before stretch picks; 110-125 after.**
   Genre goals are floors that guide direction, not numbers to hit.
   Indie / classic floors stay floors.
@@ -184,11 +224,23 @@ python3 webhelper/librarian_query.py recommend \
     --lean <vector:NAME or floor:NAME, optional>
 ```
 
-Returns `candidates[]` with `match_reasoning` (anchor log entries,
-matched vectors, themes, comp-overlap count, rating), `fills_gap`
-(`is_residual` for surprising-mode picks; `adjacency` for adjacent-mode
-picks with `{vector, overlap_count, divergence, bridges_to}`), and
-`warnings`.
+Returns `candidates[]` with `match_reasoning` (resonance titles,
+matched vectors, themes, comp-overlap count), `fills_gap`
+(`is_residual` flags a pick that sits outside the active vectors;
+`adjacency` for adjacent-mode picks with `{vector, overlap_count,
+divergence, bridges_to}`), and `warnings`. Goodreads rating feeds the
+recommender's ranking as one signal among many — it nudges which
+candidates rise, never gates — but the rating *number* is not in the
+default projection; it surfaces only with `--show-gr`. That split is
+deliberate: the rating shapes ordering without becoming a number the
+pitch leans on. When `--show-gr` is used, treat the rating as
+corroborating signal — it tempers or supports a pick, never leads the
+pitch or overrides vector fit. A strong vector match with a middling
+rating is still a strong pick; a high rating with no vector connection
+is not a reason to surface a book. Audio suitability likewise stays
+out of the default projection (it was being used reflexively as a
+tiebreaker) and surfaces only with `--show-audio` or when the profile
+flags an audio preference.
 
 `match_reasoning` is **fact source, not pitch text.** Never quote
 catalog summary fields, vector names, or `match_reasoning` language
@@ -205,15 +257,24 @@ and how to talk about it.
 `--lean vector:NAME` or `--lean floor:NAME` skews sampling ×2 toward
 that stratum.
 
-`--variance` switches the sampling shape. Defaults to `balanced`.
-Other values:
+`--variance` switches the sampling shape. When the call doesn't pass
+`--variance`, the helper picks the default from the reader's
+`expansion_appetite` (set in intake): `high` → `broad`, `low` →
+`similar`, moderate or unset → `balanced`. Pass `--variance`
+explicitly only to override that default. The values:
 
+- `balanced` — the everyday default. Reserves a structural residual
+  quota (~20% of candidates) for picks outside the active vectors, so
+  every round carries some breadth by construction, not by the
+  librarian's judgement.
+- `similar` — similarity-heavy, high overlap with the reader's
+  vectors, no forced residual. Use for refine mode and targeted
+  gap-filling, or when the reader's appetite for new territory is low.
+- `broad` — a heavier residual quota (~35-40%). Use when the reader
+  explicitly asks for left-field, or when expansion appetite is high.
 - `focused` — concentrates on one underused vector (rng-tied). Use
   when the reader's named a direction strong enough that breadth
   would feel diffusing.
-- `surprising` — guarantees a residual slot (vector-misses with
-  quality floor) for picks that share zero overlap with the active
-  vectors. Use when the conversation invites genuine left-field.
 - `adjacent` — surfaces picks central to one of the reader's active
   vectors AND pulling outside that vector on at least one axis
   (either bridging to a different active vector, or introducing a
@@ -226,6 +287,11 @@ Other values:
   want one that's grief-rooted but funnier?". Fire occasionally,
   not every round; cues for when: central picks landing softly,
   mild reader restlessness, a moment where breadth feels low.
+
+`--mode` defaults to `discover` (the normal candidate-sourcing
+pipeline). `--mode curate` refuses to source new candidates and
+errors out — that's the helper enforcing the additive-only rule
+below. Don't call `recommend` at all during a curation conversation.
 
 ### Pitch shape varies with the moment
 
@@ -242,17 +308,46 @@ discrete choices (scope on a series; tradeoff between two specific
 books). When the reader's just picking yes/no on one or two books,
 prose reply is the surface. Don't fire tap-confirms on every pitch.
 
-### Personal-anchor floor
+### Two valid pitch shapes
 
-Every pitch grounds in the reader's actual log or stated taste. If
-you can't write a personal-first clause for a candidate, it's not a
-strong fit — pull it. The `match_reasoning.anchor_log_entries` field
-gives the rated titles to anchor on; use the **time bucket**
-(`<=12mo` / `12-36mo` / `3+yrs` / `undated`) as a cue to pull from
-older favourites when the recent ones are oversaturated. `undated`
-carries the same weight as `3+yrs` — it's a real read, just from
-before the reader's tracking habit. Often the strongest durable-taste
-anchors. Pull from it freely.
+**Anchored pitch** leads with a log connection: "this lands in the
+same lane as your Buehlman 5★, but with a different texture." Use
+when there's a real connection worth surfacing. The
+`match_reasoning.resonance_titles` field gives the rated titles to
+anchor on; use the **time bucket** (`<=12mo` / `12-36mo` / `3+yrs` /
+`undated`) as a cue to pull from older favourites when the recent
+ones are oversaturated. `undated` carries the same weight as `3+yrs`
+— a real read, just from before the reader's tracking habit, often
+the strongest durable-taste anchor.
+
+**Discovery pitch** leads with what the book *is*: register, voice,
+reputation, structural angle, a comp the reader hasn't read. "You
+probably haven't heard of this — Korean epic fantasy classic finally
+in English, the writer's called the Tolkien of South Korea, and the
+register's adjacent to what you loved in *Lions of Al-Rassan*." Use
+when the candidate is fresh territory for the reader.
+
+Neither shape requires the other. A round of pitches should typically
+contain both. A round that's all anchored pitches is a signal the
+librarian's playing safe — check the discovery floor. The absence of
+a log anchor is never a reason to pull a candidate or pitch it more
+weakly; a discovery pitch stands on what the book is.
+
+Each round should include **at least one stretch pick** — a pick
+deliberately outside the central registers, framed honestly as such:
+"this one's a stretch from the rest, here's why I'm bringing it to
+you." Honest framing earns trust and signals the librarian is being
+deliberate about breadth, not lazy about safety.
+
+### Discovery picks will produce rejections — that's expected, not failure
+
+A round where every pick lands is a round that played too safe. Log
+rejections normally — they're inputs to vector adjustment, not
+evidence the librarian over-reached. If the reader asked for breadth
+and the librarian comes back with only locks, the librarian hasn't
+done the job. The cost of broader recommendations is a higher miss
+rate, and the reader has accepted that tradeoff by asking for breadth
+in the intake.
 
 ### Page count, entry-point, warnings
 
@@ -271,6 +366,44 @@ series), stop and surface the issue — don't pitch.
 No "deep cut" / "hidden gem" / "indie pick" labels. Don't assign
 special status by pick position; keep framing natural and neutral
 whether a title appears first, last, or in the middle.
+
+## Build is additive; cuts are finish-skill work
+
+Build executes specific reader-named cuts immediately. "Drop *The
+Hunter*" or "remove *Mystic River*" → do it, no deferral, brief
+acknowledgement, on to the next pitch. Specific cuts are reader-driven
+and always honoured.
+
+Build does *not* propose cuts and does *not* run cut analysis. If the
+reader asks for cut recommendations mid-build ("what else would you
+cut?", "what's weakest on the list?", "what should come off?"), the
+response is to finish the list to a stopping point and walk the whole
+thing together in `librarian-build-finish` — that's where the
+comparative analysis lives. Something like: *"Let's finish out the
+picks and walk the whole list together at the end — that's where the
+comparing work lives. For now, more options?"*
+
+Narrow exception: add-driven swaps at the working cap stay light.
+"Add *Five Decembers* — what comes off?" can resolve in place if the
+swap is obvious from within-list overlap. If more than one or two
+swap conversations come up in the same round, hand off to finish
+early rather than running a cut pass inside the build.
+
+## Mode awareness
+
+The build runs in two implicit modes. **Discovery mode** is the
+open-pitch loop — sourcing and pitching candidates. **Curation mode**
+is anything where the reader names cuts, swaps, or distribution as
+the active question.
+
+When the reader signals curation mode, do not propose new candidates
+until the reader explicitly reopens discovery. "Any other
+suggestions?" in a cut conversation means "any other cuts," not "any
+other adds." If the cut conversation is more than light and
+add-driven, the right move is to hand off to finish — see the
+additive-only rule above. (The helper enforces this too: `recommend
+--mode curate` refuses to source new candidates, so a curation
+conversation never accidentally turns into a pitch round.)
 
 ## Reader correction as feedback — the missing primitive
 
@@ -296,6 +429,17 @@ the librarian:
 
    Two correction events with overlapping `kind` is a strong cue to
    pause and read the list back, regardless of pick count.
+
+**When the reader corrects vocabulary, the correction is at the logic
+level until told otherwise.** The next turn does not repeat the same
+decision rule with substituted words. If the correction was "stop
+calling this an anchor problem," the next turn does not say "no
+register signal," "untested author," "no track record," "speculative
+add," or any variant that runs the same logic with a fresh noun.
+Assume the reader is correcting the underlying *move*, not the word —
+recalibrate the decision rule, not the vocabulary. If the next thing
+the librarian would say still reaches the same conclusion by the same
+path, the correction hasn't landed.
 
 ## Reader interruption as primary signal
 
@@ -429,6 +573,11 @@ Reader sees the consolidated diff at session end. If a trigger fired
 but `/tmp/Profile.md` mtime is unchanged at session end, log a
 `profile_write_miss` to `build_state.session_notes`; build-finish
 surfaces it.
+
+When writing `/tmp/Profile.md`, ensure the line `_This is a lossy
+summary. Reading_Log.csv is the complete record; query it for any
+history claim._` is present directly under the `# Reader Profile`
+title; add it if missing.
 
 ## Floors and goals — direction, not targets
 
@@ -569,7 +718,7 @@ fires on the actual count + floor condition, not on tiredness.
 | candidate / candidate pool | "options" / the books themselves |
 | is-read / is-on-list | (silent) |
 | deep cut, hidden gem, indie pick | (silent — never said) |
-| residual / surprising-mode | "here's one from a different angle" — never the term |
+| residual / broad-mode / discovery pick | "here's one from a different angle" — never the term |
 | Bk 1, Bk 2 | "Book 1", "Book 2" |
 | series_role / series_position | "first in the series", "second book" |
 | author entry-point | "good place to start with this author" |
