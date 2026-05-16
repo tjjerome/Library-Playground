@@ -123,6 +123,86 @@ def title_short(title: str | None) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Tolerant (title, author) matching (Plan D-1).
+#
+# norm() reconciles punctuation/case/article drift but not author name
+# order, omitted co-authors, or British/American title spelling.  These
+# two helpers add a *conservative* tolerance layer, shared by every
+# resolution call site so they cannot drift apart.  Deliberately no
+# general fuzzy-ratio rule — over-matching resolves the wrong book.
+# ---------------------------------------------------------------------------
+
+_AUTHOR_DELIM = re.compile(r"\s*(?:&|\band\b|,)\s*", flags=re.IGNORECASE)
+
+
+def _author_matches(a: str, b: str) -> bool:
+    """True when two norm()'d author strings name the same author(s)
+    under name-order swap, co-author omission, or — for genuine
+    multi-author lists only — surname overlap.
+
+      - exact equality (current behaviour); or
+      - `_swap_lastfirst` on either side yields equality (name order);
+        also covers bare two-token order flips via the token-set rule
+        below since norm() only swaps on an explicit comma; or
+      - the token set of one author is a subset of the other
+        (`{ben, r, rich}` ⊆ `{ben, r, rich, leo, janos}`, and the
+        order-flip `{cixin, liu}` == `{liu, cixin}`); or
+      - both sides are multi-author lists and a surname token is shared
+        (`Arkady & Boris Strugatsky` ≡ `Arkady Strugatsky & Boris
+        Strugatsky`).  Restricted to multi-author/multi-author so two
+        distinct single authors sharing a surname stay distinct.
+    """
+    if not a or not b:
+        return a == b
+    if a == b:
+        return True
+    if _swap_lastfirst(a) == b or a == _swap_lastfirst(b):
+        return True
+    ta, tb = set(a.split()), set(b.split())
+    if ta and tb and (ta <= tb or tb <= ta):
+        return True
+    pa = [p for p in _AUTHOR_DELIM.split(a) if p.split()]
+    pb = [p for p in _AUTHOR_DELIM.split(b) if p.split()]
+    if len(pa) > 1 and len(pb) > 1:
+        sa = {p.split()[-1] for p in pa}
+        sb = {p.split()[-1] for p in pb}
+        if sa & sb:
+            return True
+    return False
+
+
+# British → American spelling fold, applied per word as an *additional*
+# title-variant key (D-1c), never as a general fuzzy match.  Length
+# guards keep common non-variant words out (four/hour/tour, noise/raise,
+# rise/wise).  -re→-er is intentionally omitted: it mangles
+# nature/future/feature far more often than it folds centre/theatre.
+_FOLD_WORD_RULES = [
+    ("isations", "izations", 9),
+    ("isation", "ization", 8),
+    ("ising", "izing", 7),
+    ("ised", "ized", 6),
+    ("ise", "ize", 6),
+    ("ours", "ors", 6),
+    ("our", "or", 5),
+]
+
+
+def _fold_word(w: str) -> str:
+    for suf, repl, minlen in _FOLD_WORD_RULES:
+        if len(w) >= minlen and w.endswith(suf):
+            return w[: -len(suf)] + repl
+    return w
+
+
+def _title_fold(t: str) -> str:
+    """Spelling-folded form of a norm()'d title.  Compare folded↔folded
+    and only when an exact title key already failed."""
+    if not t:
+        return ""
+    return " ".join(_fold_word(w) for w in t.split())
+
+
+# ---------------------------------------------------------------------------
 # Schema
 # ---------------------------------------------------------------------------
 
