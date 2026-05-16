@@ -6,10 +6,18 @@ The librarian's series-continuation helper queries
 parent tag and a derivative child tag (e.g. "Discworld" +
 "Discworld City Watch") can't navigate across the split.
 
-This script merges 16 confirmed parent/child pairs, renames a
-handful of parents to canonical umbrella forms, retags one
-orphaned subseries (Going Postal → Discworld), and normalises
-the Wilbur Smith "Birds of Prey" / Courtney chain.
+This script merges confirmed parent/child pairs, renames a
+handful of parents to canonical umbrella forms, folds the
+George Mueller and Jack Ryan one-book offshoots into their
+parent series, and normalises the Wilbur Smith "Birds of Prey"
+/ Courtney chain.
+
+Discworld subseries (City Watch, Death, Witches, Tiffany
+Aching, Industrial Revolution) are intentionally kept split:
+the subseries-restricted series walker
+(librarian_query._series_sub_thread / _subseries_order_key)
+relies on each subseries being its own clean Book-N sequence,
+which a single umbrella "Discworld" tag would break.
 
 Reads `Library_Catalog.json` in place by default.  Pass
 --dry-run to preview without writing.
@@ -42,11 +50,6 @@ SIMPLE_MERGES: list[tuple[str, str]] = [
     ("6:20 Man (Travis Devine)", "6:20 Man"),
     ("Birds of Prey (Courtney)", "Birds of Prey"),
     ("Detective Galileo Series", "Detective Galileo"),
-    ("Discworld City Watch", "Discworld"),
-    ("Discworld Death", "Discworld"),
-    ("Discworld Industrial Revolution", "Discworld"),
-    ("Discworld Tiffany Aching", "Discworld"),
-    ("Discworld Witches", "Discworld"),
     ("Gael Song Trilogy", "Gael Song"),
     ("George Mueller / CIA Cold War series", "George Mueller"),
     ("George Smiley / John le Carré", "George Smiley"),
@@ -54,7 +57,6 @@ SIMPLE_MERGES: list[tuple[str, str]] = [
     ("Gunmetal Gods Saga", "Gunmetal Gods"),
     ("Hogwarts Library Books", "Hogwarts Library"),
     ("Jedi Academy Trilogy", "Jedi Academy"),
-    ("Moist von Lipwig", "Discworld"),
     ("Night's Dawn / Commonwealth", "Night's Dawn"),
     ("Star Wars Legends (Clone Wars)", "Star Wars Legends"),
     ("The Feyrlands Collection (Ranker's Charge)", "The Feyrlands Collection"),
@@ -78,35 +80,22 @@ RENAMES: list[tuple[str, str]] = [
 # publication-order numbers, and to normalise the Birds of Prey /
 # Courtney bibliography.  An entry of (None, None) means "no change".
 BOOK_OVERRIDES: dict[tuple[str, str], tuple[str | None, str | None]] = {
-    # ---- Discworld: City Watch subseries (publication-order numbers) ----
-    ("Guards! Guards!", "Terry Pratchett"): ("Discworld", "Book 8 (City Watch Book 1)"),
-    ("Men at Arms", "Terry Pratchett"): ("Discworld", "Book 15 (City Watch Book 2)"),
-    ("Snuff", "Terry Pratchett"): ("Discworld", "Book 39 (City Watch Book 8)"),
+    # ---- George Mueller (Paul Vidich) ----
+    # "The Mercenary" and "The Matchmaker: A Spy in Berlin" were
+    # catalogued as their own 1-book series; they are Books 3 and 4 of
+    # the George Mueller / CIA Cold War sequence (after "An Honorable
+    # Man" #1 and "The Good Assassin" #2).
+    ("The Mercenary", "Paul Vidich"): ("George Mueller", "Book 3"),
+    ("The Matchmaker: A Spy in Berlin", "Paul Vidich"):
+        ("George Mueller", "Book 4"),
 
-    # ---- Discworld: Death subseries ----
-    ("Mort", "Terry Pratchett"): ("Discworld", "Book 4 (Death Book 1)"),
-    ("Reaper Man", "Terry Pratchett"): ("Discworld", "Book 11 (Death Book 2)"),
-
-    # ---- Discworld: Witches subseries ----
-    ("Equal Rites", "Terry Pratchett"): ("Discworld", "Book 3 (Witches Book 1)"),
-    ("Wyrd Sisters", "Terry Pratchett"): ("Discworld", "Book 6 (Witches Book 2)"),
-    ("Lords and Ladies", "Terry Pratchett"): ("Discworld", "Book 14 (Witches Book 4)"),
-    ("Maskerade", "Terry Pratchett"): ("Discworld", "Book 18 (Witches Book 5)"),
-
-    # ---- Discworld: Tiffany Aching subseries ----
-    ("The Wee Free Men", "Terry Pratchett"): ("Discworld", "Book 30 (Tiffany Aching Book 1)"),
-    ("A Hat Full of Sky", "Terry Pratchett"): ("Discworld", "Book 32 (Tiffany Aching Book 2)"),
-    ("Wintersmith", "Terry Pratchett"): ("Discworld", "Book 35 (Tiffany Aching Book 3)"),
-    # I Shall Wear Midnight is canonically Tiffany Aching #4; before
-    # consolidation it sat in the parent Discworld tag without subseries
-    # marker, so Wintersmith's subseries-aware walker couldn't find it.
-    ("I Shall Wear Midnight", "Terry Pratchett"):
-        ("Discworld", "Book 38 (Tiffany Aching Book 4)"),
-
-    # ---- Discworld: Industrial Revolution / Moist von Lipwig subseries ----
-    ("Going Postal", "Terry Pratchett"): ("Discworld", "Book 33 (Industrial Revolution Book 1)"),
-    ("Making Money", "Terry Pratchett"): ("Discworld", "Book 36 (Industrial Revolution Book 2)"),
-    ("Raising Steam", "Terry Pratchett"): ("Discworld", "Book 40 (Industrial Revolution Book 3)"),
+    # ---- Jack Ryan Universe (Tom Clancy) ----
+    # The Jack Ryan books are catalogued in publication order and the
+    # parent tag is renamed to "Jack Ryan Universe" via RENAMES.
+    # "Rainbow Six" (John Clark offshoot, pub. 1998) was its own
+    # 1-book series; folded in as Book 8, after "Executive Orders"
+    # (1996), matching real-world publication sequence.
+    ("Rainbow Six", "Tom Clancy"): ("Jack Ryan Universe", "Book 8"),
 
     # ---- Birds of Prey / Courtney chain (Wilbur Smith) ----
     # Birds of Prey is a sub-trilogy expanded into a 7-book branch of
@@ -196,8 +185,10 @@ VALIDATION_CHAINS: list[tuple[str, str, str]] = [
     # assert the walker returns *something* downstream-of-source for a
     # canonical entry; non-empty result proves the merged series is
     # navigable post-consolidation.
-    # (Light → Eye of Darkness reflects current alpha-tiebreak walk.)
-    ("Light of the Jedi", "Charles Soule", "The Eye of Darkness"),
+    # (Light → A Test of Courage reflects current alpha-tiebreak walk:
+    # Phase tokens collapse to the 999.0 sentinel, so siblings tie on
+    # position and the walker breaks the tie by title.)
+    ("Light of the Jedi", "Charles Soule", "A Test of Courage"),
     # The Strain
     ("The Strain", "Guillermo del Toro & Chuck Hogan", "The Fall"),
     ("The Fall", "Guillermo Del Toro & Chuck Hogan", "The Night Eternal"),
@@ -209,9 +200,14 @@ VALIDATION_CHAINS: list[tuple[str, str, str]] = [
     ("The Tiger's Prey", "Wilbur Smith & Tom Harper", "Storm Tide"),
     ("Storm Tide", "Wilbur Smith", "Nemesis"),
     ("Nemesis", "Wilbur Smith & Tom Harper", "Warrior King"),
-    # Jack Ryan Universe
-    ("The Hunt for Red October", "Tom Clancy", "The Cardinal of the Kremlin"),
-    ("Debt of Honor", "Tom Clancy", "Rainbow Six"),
+    # Jack Ryan Universe.  Catalog is in publication order (the
+    # editorial canon for this series); "Jack Ryan" → "Jack Ryan
+    # Universe" via RENAMES.  Head of the sequence walks
+    # Hunt for Red October (#1) → Patriot Games (#2); the tail
+    # confirms the folded "Rainbow Six" offshoot lands as #8 after
+    # "Executive Orders" (#7).
+    ("The Hunt for Red October", "Tom Clancy", "Patriot Games"),
+    ("Executive Orders", "Tom Clancy", "Rainbow Six"),
 ]
 
 
