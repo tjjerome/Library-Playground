@@ -46,14 +46,24 @@ from pathlib import Path
 from typing import Iterable
 
 try:
-    from .sqlite_export import norm, title_short, _swap_lastfirst  # type: ignore
+    from .book_identity import (  # type: ignore
+        norm, title_short, title_fold, title_keys, author_parts,
+        authors_match, same_book, _swap_lastfirst)
 except (ImportError, ValueError):
     try:
-        from sqlite_export import norm, title_short, _swap_lastfirst  # type: ignore  # noqa: E402
+        from book_identity import (  # type: ignore  # noqa: E402
+            norm, title_short, title_fold, title_keys, author_parts,
+            authors_match, same_book, _swap_lastfirst)
     except ImportError:
         sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-        from webhelper.sqlite_export import (  # noqa: E402
-            norm, title_short, _swap_lastfirst)
+        from webhelper.book_identity import (  # noqa: E402
+            norm, title_short, title_fold, title_keys, author_parts,
+            authors_match, same_book, _swap_lastfirst)
+
+# Back-compat local aliases for the older underscored names still
+# referenced below; one implementation, in book_identity.
+_author_matches = authors_match
+_title_fold = title_fold
 
 
 # ---------------------------------------------------------------------------
@@ -288,20 +298,41 @@ def list_set(path: str) -> set[tuple[str, str]]:
         return set()
     out: set[tuple[str, str]] = set()
     text = p.read_text(encoding="utf-8")
+    # D-2: only parse rows belonging to a table whose header carries
+    # *both* a `title` and an `author` column.  This covers the main
+    # list and the "Upcoming & recent releases" table while excluding
+    # the three-column Goals / Series-balance / Floors pipe tables,
+    # whose rows would otherwise become phantom (title, author) pairs.
+    ti: int | None = None
+    ai: int | None = None
+    pending: list[str] | None = None  # row preceding a potential separator
     for line in text.splitlines():
         line = line.strip()
         if not line.startswith("|"):
+            ti = ai = None  # blank line / prose ends the table
+            pending = None
             continue
         cells = [c.strip() for c in line.strip("|").split("|")]
         if len(cells) < 2:
+            pending = None
             continue
-        if cells[0].lower() in ("title", "---") or set(cells[0]) <= set("- :"):
+        # A separator row resolves the row before it: if that header
+        # carried both columns this is a book table, else it isn't.
+        if all(c and set(c) <= set("-: ") for c in cells):
+            if pending is not None:
+                low = [c.lower() for c in pending]
+                if "title" in low and "author" in low:
+                    ti, ai = low.index("title"), low.index("author")
+                else:
+                    ti = ai = None
+            pending = None
             continue
-        title = _strip_md_emphasis(cells[0])
-        author = _strip_md_emphasis(cells[1])
-        if not title or set(title) <= set("- :"):
-            continue
-        out.add((norm(title), norm(author)))
+        if ti is not None and ai is not None and max(ti, ai) < len(cells):
+            title = _strip_md_emphasis(cells[ti])
+            author = _strip_md_emphasis(cells[ai])
+            if title and not set(title) <= set("- :"):
+                out.add((norm(title), norm(author)))
+        pending = cells  # may be the header of the next table
     return out
 
 
@@ -548,6 +579,7 @@ def _subseries_order_key(entry: dict) -> tuple[float, str]:
 
 _NORM_INDEX_CACHE: dict[int, dict[tuple[str, str], dict]] = {}
 _SERIES_SIGNAL_CACHE: dict[int, dict[str, float]] = {}
+_TITLE_INDEX_CACHE: dict[int, tuple[dict, dict]] = {}
 
 
 def _norm_index(conn: sqlite3.Connection) -> dict[tuple[str, str], dict]:
@@ -573,19 +605,124 @@ def _norm_index(conn: sqlite3.Connection) -> dict[tuple[str, str], dict]:
     return idx
 
 
-def lookup_by_pair(conn: sqlite3.Connection, title: str, author: str) -> dict | None:
-    tn = norm(title)
-    an = norm(author)
-    for sql in (
-        "SELECT * FROM books WHERE title_normalized = ? AND author_normalized = ?",
-        "SELECT * FROM books WHERE title_short = ? AND author_normalized = ?",
-    ):
-        row = conn.execute(sql, (tn, an)).fetchone()
-        if row is not None:
-            return row_to_entry(row)
-    # Fallback: stored normalized columns may predate the current
-    # norm().  Match against a freshly normalized index.
-    return _norm_index(conn).get((tn, an))
+# ---------------------------------------------------------------------------
+# THE resolver.  Every catalog lookup — list resolution, pool/audit
+# exclusion, series-fit, cataloguer add — routes through `resolve_book`
+# so the "same book?" decision lives in exactly one place
+# (book_identity.same_book / authors_match / title_keys) and can never
+# fork per call site again.  `lookup_by_pair` is kept as a thin
+# back-compat alias over it.
+# ---------------------------------------------------------------------------
+
+def _title_index(conn: sqlite3.Connection) -> tuple[dict, dict]:
+    """Catalog rows bucketed by title key, recomputed with the live
+    norm() so stored-column drift never silently loses a match (the
+    `normalize-catalog` command repairs the drift in the data; this is
+    the read-side safety net).  Returns ``(exact, folded)``: ``exact``
+    keys on norm(title) + pre-colon short title, ``folded`` on the
+    spelling-folded forms.  Values are ``(entry, author_norm)`` lists.
+    The fold bucket stays separate so D-1c spelling tolerance is only a
+    gated fallback, never pollutes an exact title match."""
+    cached = _TITLE_INDEX_CACHE.get(id(conn))
+    if cached is not None:
+        return cached
+    exact: dict[str, list[tuple[dict, str]]] = {}
+    folded: dict[str, list[tuple[dict, str]]] = {}
+    for r in conn.execute("SELECT * FROM books"):
+        e = row_to_entry(r)
+        an = norm(e.get("author", ""))
+        title = e.get("title", "") or ""
+        keys = {k for k in (norm(title), title_short(title)) if k}
+        for k in keys:
+            exact.setdefault(k, []).append((e, an))
+            fk = title_fold(k)
+            if fk:
+                folded.setdefault(fk, []).append((e, an))
+    _TITLE_INDEX_CACHE[id(conn)] = (exact, folded)
+    return exact, folded
+
+
+def _pick_best(cands: list[tuple[dict, str]], author_norm: str) -> dict | None:
+    """Among title-matched rows, keep those whose author passes the
+    tolerant matcher; prefer an exact author equality, then break ties
+    deterministically by highest goodreads_reviews then key."""
+    matched = [(e, an) for e, an in cands if _author_matches(author_norm, an)]
+    if not matched:
+        return None
+    matched.sort(key=lambda ea: (
+        ea[1] != author_norm,                       # exact author first
+        -(ea[0].get("goodreads_reviews") or 0),     # then most-reviewed
+        ea[0].get("key") or "",                     # stable final tiebreak
+    ))
+    return matched[0][0]
+
+
+def resolve_book(conn: sqlite3.Connection,
+                 title_norm: str, author_norm: str) -> dict | None:
+    """Resolve one (title_norm, author_norm) pair to a catalog entry
+    with tolerance for author name-order / co-author / multi-author
+    drift (D-1a) and, as a gated fallback, British/American title
+    spelling (D-1c).  The spelling fold is tried only after the exact
+    title key fails, and still requires an author match."""
+    exact, folded = _title_index(conn)
+    hit = _pick_best(exact.get(title_norm, []), author_norm)
+    if hit is not None:
+        return hit
+    # Spelling-fold fallback (D-1c).  Run even when the folded form
+    # equals the query: the *catalog* side may be the variant
+    # ("Valor" in catalog, list wrote "Valour", or vice versa).
+    ft = title_fold(title_norm)
+    if ft:
+        hit = _pick_best(folded.get(ft, []), author_norm)
+        if hit is not None:
+            return hit
+    return None
+
+
+def lookup_by_pair(conn: sqlite3.Connection,
+                   title: str, author: str) -> dict | None:
+    """Back-compat alias.  Was an exact (title_normalized,
+    author_normalized) SQL lookup with a recompute-index fallback —
+    the exact-only path that kept regressing the Cixin-Liu /
+    Strugatsky author-variant class at every caller (reconcile,
+    series-fit, unfinished-series, cataloguer add).  Now delegates to
+    the one tolerant resolver so those callers inherit the fix."""
+    return resolve_book(conn, norm(title), norm(author))
+
+
+def _list_membership(list_pairs: set[tuple[str, str]]):
+    """Closure deciding whether a catalog entry is already on the
+    reading list, using the same tolerant matcher as `resolve_book`
+    (D-1b) so resolved-but-variant on-list books are excluded from the
+    candidate pool."""
+    by_title: dict[str, list[str]] = {}
+    by_fold: dict[str, list[str]] = {}
+    for tn, an in list_pairs:
+        by_title.setdefault(tn, []).append(an)
+        ft = _title_fold(tn)
+        if ft:
+            by_fold.setdefault(ft, []).append(an)
+
+    def on_list(title: str, author: str) -> bool:
+        an = norm(author)
+        keys = [norm(title)]
+        ts = title_short(title)
+        if ts:
+            keys.append(ts)
+        for k in keys:
+            for la in by_title.get(k, []):
+                if _author_matches(an, la):
+                    return True
+        for k in keys:
+            fk = _title_fold(k)
+            if not fk:
+                continue
+            for la in by_fold.get(fk, []):
+                if _author_matches(an, la):
+                    return True
+        return False
+
+    return on_list
 
 
 # ---------------------------------------------------------------------------
@@ -703,7 +840,11 @@ def _corrected_series_baseline(entries: list[dict]) -> float | None:
     # model's assumption failing, not real signal.  Cap at the
     # mainline mean so the corrected baseline is downward-only.  This
     # keeps the worked-example reproduction (intercept already below
-    # the mean) and the "corrected ≤ plain mean" invariant.
+    # the mean).  The "corrected <= plain mean" invariant holds *only
+    # on this >=3-mainline OLS path*: the <3-mainline fallback above
+    # returns mu_1 (book one's rating) un-capped by design, so a short
+    # series whose opener outscored its mainline mean keeps a corrected
+    # baseline marginally above that mean — expected, and exempt.
     return min(intercept, mean_mu)
 
 
@@ -1001,25 +1142,18 @@ def resolve_list_picks(conn: sqlite3.Connection,
                        list_pairs: set[tuple[str, str]]) -> list[dict]:
     """Look up each (title_norm, author_norm) pair in the catalog.
     Returns a list of resolved entries with their signals/themes
-    attached (unresolved pairs drop out)."""
+    attached (unresolved pairs drop out).  Resolution is tolerant of
+    author name-order / co-author / spelling drift (D-1) via the shared
+    `resolve_book`.  Deduped by catalog key so variant list entries
+    that collapse onto one catalog row don't double-count."""
     out = []
+    seen: set[str] = set()
     for tn, an in list_pairs:
-        row = conn.execute(
-            "SELECT * FROM books WHERE title_normalized = ? "
-            "AND author_normalized = ?", (tn, an)).fetchone()
-        if not row:
-            row = conn.execute(
-                "SELECT * FROM books WHERE title_short = ? "
-                "AND author_normalized = ?", (tn, an)).fetchone()
-        if row:
-            e = row_to_entry(row)
-        else:
-            # Stored normalized columns may predate the current
-            # norm(); fall back to the freshly normalized index.
-            e = _norm_index(conn).get((tn, an))
-            if e is None:
-                continue
-            e = dict(e)
+        e = resolve_book(conn, tn, an)
+        if e is None or e["key"] in seen:
+            continue
+        seen.add(e["key"])
+        e = dict(e)
         e["_signals"] = positive_signals_for(conn, e["key"])
         e["_themes"] = themes_for(conn, e["key"])
         out.append(e)
@@ -1236,11 +1370,15 @@ def stage1_pool(conn: sqlite3.Connection, *,
         params.append(genre.lower())
         params.append(genre.lower())
 
+    on_list = _list_membership(list_pairs)
     pool: list[dict] = []
     for row in conn.execute(sql, params):
         e = row_to_entry(row)
-        pair = (norm(e.get("title", "")), norm(e.get("author", "")))
-        if pair in read_pairs or pair in list_pairs:
+        title = e.get("title", "") or ""
+        author = e.get("author", "") or ""
+        if (norm(title), norm(author)) in read_pairs:
+            continue
+        if on_list(title, author):
             continue
         if e["key"] in rejected_keys:
             continue
@@ -2418,24 +2556,6 @@ def cmd_norm(args, _conn=None) -> None:
 # Addendum B — author history, exclusion audit, reconcile, normalize
 # ---------------------------------------------------------------------------
 
-_AUTHOR_SPLIT = re.compile(r"\s*(?:&|;|/|\band\b|\bwith\b)\s*",
-                           flags=re.IGNORECASE)
-
-
-def _author_parts(raw: str) -> set[str]:
-    """Normalized author tokens for a (possibly multi-author) field.
-    Includes the whole field and each split part so a single-author
-    query matches a co-authored log row."""
-    if not raw:
-        return set()
-    parts = {norm(raw)}
-    for piece in _AUTHOR_SPLIT.split(raw):
-        pn = norm(piece)
-        if pn:
-            parts.add(pn)
-    return parts
-
-
 def _log_author_field(row: dict) -> str:
     return row.get("authors") or row.get("author") or ""
 
@@ -2457,7 +2577,7 @@ def cmd_author_history(args, _conn=None) -> None:
         if not r.get("title"):
             continue
         raw = _log_author_field(r)
-        if qn and qn in _author_parts(raw):
+        if qn and qn in author_parts(raw):
             if matched_author is None:
                 matched_author = raw
             reads.append({
@@ -2505,7 +2625,11 @@ def build_exclusion_audit(conn: sqlite3.Connection,
         total += 1
         ltn = norm(r.get("title", ""))
         lan = norm(_log_author_field(r))
-        if (ltn, lan) in idx:
+        # Match decision goes through the one tolerant resolver, not a
+        # private exact index — so the audit's "matched" count agrees
+        # with what the exclusion gate actually excludes.  The norm
+        # index below is kept only to bucket near-miss reporting.
+        if resolve_book(conn, ltn, lan) is not None:
             matched += 1
             continue
         # Look for the closest catalog row: same title (author drift)

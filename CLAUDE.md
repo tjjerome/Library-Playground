@@ -102,7 +102,12 @@ on the Code side.
 
 ### claude.ai port (this branch's deliverables)
 
-- `webhelper/sqlite_export.py` — JSON→SQLite writer + `norm()`.
+- `webhelper/book_identity.py` — canonical "same book?" layer:
+  `norm`, `title_short`, `title_keys`, `authors_match`, `same_book`.
+  The one place tolerant matching lives; every resolution site routes
+  through it.  Contract: `tests/identity_contract.py`.
+- `webhelper/sqlite_export.py` — JSON→SQLite writer; re-exports
+  `norm()` etc. from `book_identity` for back-compat importers.
 - `webhelper/encoded_codec.py` — gzip+b64 codec with format header.
 - `webhelper/librarian_query.py` — port of the Code helper to SQLite +
   stdin/stdout ledger.  Same subcommand surface.
@@ -118,7 +123,7 @@ on the Code side.
   `librarian-build`, `librarian-build-finish`,
   `library-cataloguer`.
 - `Makefile` — `make skills` zips each into `dist/skills/<name>.zip`,
-  bundling the three webhelper modules into each.
+  bundling the four webhelper modules into each.
 - `tests/sqlite_roundtrip.py`, `tests/encoded_roundtrip.py` — Step 1
   parity tests.
 
