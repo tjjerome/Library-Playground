@@ -43,163 +43,27 @@ Notes on schema choices:
 from __future__ import annotations
 
 import json
-import re
 import sqlite3
 from pathlib import Path
 from typing import Any
 
 # ---------------------------------------------------------------------------
-# Normalisation — kept in lock-step with webhelper/librarian_query.py:norm()
-# (Step 2 will import this module rather than duplicating the function.)
+# Normalisation + identity now live in webhelper/book_identity.py — the
+# single canonical "same book?" layer.  Re-exported here so existing
+# importers (`from sqlite_export import norm`, catalogue.py, tests)
+# keep working without forking a second implementation.
 # ---------------------------------------------------------------------------
 
-_QUOTE_NORMALIZE = str.maketrans({
-    "‘": "'", "’": "'", "‚": "'", "‛": "'",
-    "“": '"', "”": '"', "„": '"', "‟": '"',
-    "–": "-", "—": "-", "−": "-",
-    "​": "", "‌": "", "‍": "", "﻿": "",
-})
-_LEAD_PUNCT = re.compile(r"^[^\w]+", flags=re.UNICODE)
-_LEAD_ARTICLE = re.compile(r"^(the|a|an)\s+", flags=re.IGNORECASE)
-_TRAILING_PAREN = re.compile(r"\s*\([^)]*\)\s*$")
-_MULTI_AUTHOR = re.compile(r"\s*(?:&|;|/|\band\b|\bwith\b)\s*", flags=re.IGNORECASE)
-
-
-def _swap_lastfirst(s: str) -> str:
-    """`Last, First` → `First Last`.  Conservative: a single comma,
-    no multi-author delimiter, no role/parenthetical markup, and each
-    side ≤2 word tokens — so genuine author lists and pen names with
-    stylistic commas are left alone."""
-    if s.count(",") != 1 or _MULTI_AUTHOR.search(s) or "(" in s:
-        return s
-    last, first = (p.strip() for p in s.split(","))
-    if not (last and first):
-        return s
-    if len(last.split()) > 2 or len(first.split()) > 2:
-        return s
-    return f"{first} {last}"
-
-
-def _collapse_initials(tokens: list[str]) -> list[str]:
-    """Merge runs of single-character tokens so `k j parker`,
-    `k.j. parker`, and `kj parker` all converge."""
-    out: list[str] = []
-    buf: list[str] = []
-    for t in tokens:
-        if len(t) == 1 and t.isalpha():
-            buf.append(t)
-            continue
-        if buf:
-            out.append("".join(buf))
-            buf = []
-        out.append(t)
-    if buf:
-        out.append("".join(buf))
-    return out
-
-
-def norm(s: str | None) -> str:
-    if not s:
-        return ""
-    s = s.translate(_QUOTE_NORMALIZE)
-    s = _swap_lastfirst(s)
-    s = s.replace("&", " and ")
-    s = _TRAILING_PAREN.sub("", s)
-    s = _LEAD_PUNCT.sub("", s)
-    s = s.lower()
-    s = _LEAD_ARTICLE.sub("", s)
-    # Drop subtitle drift: `Title: A Novel` ≡ `Title`.
-    s = s.split(":", 1)[0]
-    s = re.sub(r"\.", " ", s)
-    return " ".join(_collapse_initials(s.split()))
-
-
-def title_short(title: str | None) -> str:
-    """Pre-colon prefix of the title, normalised. Empty if title has
-    no colon."""
-    if not title or ":" not in title:
-        return ""
-    return norm(title.split(":", 1)[0])
-
-
-# ---------------------------------------------------------------------------
-# Tolerant (title, author) matching (Plan D-1).
-#
-# norm() reconciles punctuation/case/article drift but not author name
-# order, omitted co-authors, or British/American title spelling.  These
-# two helpers add a *conservative* tolerance layer, shared by every
-# resolution call site so they cannot drift apart.  Deliberately no
-# general fuzzy-ratio rule — over-matching resolves the wrong book.
-# ---------------------------------------------------------------------------
-
-_AUTHOR_DELIM = re.compile(r"\s*(?:&|\band\b|,)\s*", flags=re.IGNORECASE)
-
-
-def _author_matches(a: str, b: str) -> bool:
-    """True when two norm()'d author strings name the same author(s)
-    under name-order swap, co-author omission, or — for genuine
-    multi-author lists only — surname overlap.
-
-      - exact equality (current behaviour); or
-      - `_swap_lastfirst` on either side yields equality (name order);
-        also covers bare two-token order flips via the token-set rule
-        below since norm() only swaps on an explicit comma; or
-      - the token set of one author is a subset of the other
-        (`{ben, r, rich}` ⊆ `{ben, r, rich, leo, janos}`, and the
-        order-flip `{cixin, liu}` == `{liu, cixin}`); or
-      - both sides are multi-author lists and a surname token is shared
-        (`Arkady & Boris Strugatsky` ≡ `Arkady Strugatsky & Boris
-        Strugatsky`).  Restricted to multi-author/multi-author so two
-        distinct single authors sharing a surname stay distinct.
-    """
-    if not a or not b:
-        return a == b
-    if a == b:
-        return True
-    if _swap_lastfirst(a) == b or a == _swap_lastfirst(b):
-        return True
-    ta, tb = set(a.split()), set(b.split())
-    if ta and tb and (ta <= tb or tb <= ta):
-        return True
-    pa = [p for p in _AUTHOR_DELIM.split(a) if p.split()]
-    pb = [p for p in _AUTHOR_DELIM.split(b) if p.split()]
-    if len(pa) > 1 and len(pb) > 1:
-        sa = {p.split()[-1] for p in pa}
-        sb = {p.split()[-1] for p in pb}
-        if sa & sb:
-            return True
-    return False
-
-
-# British → American spelling fold, applied per word as an *additional*
-# title-variant key (D-1c), never as a general fuzzy match.  Length
-# guards keep common non-variant words out (four/hour/tour, noise/raise,
-# rise/wise).  -re→-er is intentionally omitted: it mangles
-# nature/future/feature far more often than it folds centre/theatre.
-_FOLD_WORD_RULES = [
-    ("isations", "izations", 9),
-    ("isation", "ization", 8),
-    ("ising", "izing", 7),
-    ("ised", "ized", 6),
-    ("ise", "ize", 6),
-    ("ours", "ors", 6),
-    ("our", "or", 5),
-]
-
-
-def _fold_word(w: str) -> str:
-    for suf, repl, minlen in _FOLD_WORD_RULES:
-        if len(w) >= minlen and w.endswith(suf):
-            return w[: -len(suf)] + repl
-    return w
-
-
-def _title_fold(t: str) -> str:
-    """Spelling-folded form of a norm()'d title.  Compare folded↔folded
-    and only when an exact title key already failed."""
-    if not t:
-        return ""
-    return " ".join(_fold_word(w) for w in t.split())
+try:
+    from .book_identity import (  # type: ignore
+        norm, title_short, title_fold, title_keys, author_parts,
+        authors_match, same_book, _swap_lastfirst, _collapse_initials,
+        _author_matches, _title_fold)
+except (ImportError, ValueError):
+    from book_identity import (  # type: ignore  # noqa: E402
+        norm, title_short, title_fold, title_keys, author_parts,
+        authors_match, same_book, _swap_lastfirst, _collapse_initials,
+        _author_matches, _title_fold)
 
 
 # ---------------------------------------------------------------------------
