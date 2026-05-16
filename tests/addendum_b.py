@@ -166,6 +166,20 @@ def run(catalog: str) -> int:  # noqa: C901
     with tempfile.TemporaryDirectory() as tmp:
         nc = Path(tmp) / "nc.sqlite"
         shutil.copy(catalog, nc)
+        # The shipped catalog may already be normalized at rest, so
+        # inject guaranteed drift: clobber one row's normalized
+        # columns and put its author in `Last, First` form.
+        seed = sqlite3.connect(nc)
+        k = seed.execute(
+            "SELECT key FROM books WHERE author LIKE '% %' LIMIT 1"
+        ).fetchone()[0]
+        seed.execute(
+            "UPDATE books SET title_normalized='zzz drift', "
+            "author_normalized='zzz drift', author='Drifted, Author' "
+            "WHERE key=?", (k,))
+        seed.commit()
+        seed.close()
+
         a_dry = SimpleNamespace(catalog=str(nc), dry_run=True,
                                 emit_encoded=False)
         conn = lq.open_catalog(str(nc))
