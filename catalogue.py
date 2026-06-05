@@ -188,20 +188,21 @@ def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
 
     Rules applied in order:
 
-    1. **Series-indie propagation.** A series is treated as indie ONLY
-       if its entry-point book (series_role in {'first', 'loose-entry'})
-       is tagged `indie=True`. When that holds, every other book in the
-       series is set to `indie=True`. Anchoring on the series opener
-       blocks the failure mode where a single mis-tagged late / minor
-       volume drags a 40-book trad-pub classic series (Poirot, Cadfael,
-       Parker, Aubrey & Maturin, etc.) into indie status by accident.
-       Series with no `series_role='first'/'loose-entry'` entry catalogued
-       yet do not propagate.
+    1. **Indie review-count threshold.** A book with `indie=True` and
+       `goodreads_reviews > INDIE_REVIEW_THRESHOLD` flips to `indie=False`.
+       Runs before series anchoring so an entry-point book that has broken
+       out loses indie status before the series identity is established.
 
-    2. **Indie review-count threshold.** A book with `indie=True` and
-       `goodreads_reviews > INDIE_REVIEW_THRESHOLD` flips to `indie=False`
-       — UNLESS the book is part of a series identified as indie by
-       step 1, which preserves the series identity through breakouts.
+    2. **Series-indie propagation.** A series is treated as indie ONLY
+       if its entry-point book (series_role in {'first', 'loose-entry'})
+       is still tagged `indie=True` after step 1. When that holds, every
+       other book in the series is set to `indie=True`. Anchoring on the
+       post-demotion opener blocks the failure mode where a single mis-tagged
+       late / minor volume drags a 40-book trad-pub classic series (Poirot,
+       Cadfael, Parker, Aubrey & Maturin, etc.) into indie status by
+       accident. Series with no 'first'/'loose-entry' entry catalogued yet
+       do not propagate. A breakout sequel (entry-point stays indie but a
+       later book exceeds the threshold) is re-propagated to indie=True.
 
     3. **Classic age gate.** A book with `classic=True` and either no
        `pub_year` or `pub_year` more recent than
@@ -223,10 +224,23 @@ def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
 
     entries = catalog.get("entries") or {}
 
-    # Step 1 — collect series whose entry-point book is indie, then
-    # propagate to the rest of the series.  Anchoring on the opener
-    # prevents a mis-tagged minor volume from flipping a 40-book
-    # trad-pub classic series into indie status.
+    # Step 1 — threshold demotion.  Runs before series anchoring so an
+    # entry-point that has broken out is demoted before its series identity
+    # is evaluated.  Breakout sequels (entry-point still under threshold)
+    # will be re-propagated to indie=True in step 2.
+    threshold_demoted = 0
+    for entry in entries.values():
+        if not entry.get("indie"):
+            continue
+        reviews = entry.get("goodreads_reviews")
+        if isinstance(reviews, int) and reviews > INDIE_REVIEW_THRESHOLD:
+            entry["indie"] = False
+            threshold_demoted += 1
+
+    # Step 2 — series-indie propagation.  Anchors on the entry-point book
+    # (series_role in {'first', 'loose-entry'}) after threshold demotion.
+    # Prevents a mis-tagged minor volume from flipping a 40-book trad-pub
+    # classic series into indie status.
     SERIES_ENTRY_ROLES = frozenset({"first", "loose-entry"})
     indie_series: set[str] = set()
     for entry in entries.values():
@@ -243,19 +257,6 @@ def apply_flag_gates(catalog: dict, *, current_year: int | None = None) -> dict:
         if s and s in indie_series and not entry.get("indie"):
             entry["indie"] = True
             propagated += 1
-
-    # Step 2 — threshold demotion (skips books in propagated indie series).
-    threshold_demoted = 0
-    for entry in entries.values():
-        if not entry.get("indie"):
-            continue
-        s = entry.get("series")
-        if s and s in indie_series:
-            continue
-        reviews = entry.get("goodreads_reviews")
-        if isinstance(reviews, int) and reviews > INDIE_REVIEW_THRESHOLD:
-            entry["indie"] = False
-            threshold_demoted += 1
 
     # Step 3 — classic age gate.
     classic_demoted = 0
