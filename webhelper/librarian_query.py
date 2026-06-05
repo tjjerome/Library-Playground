@@ -10,7 +10,8 @@ Subcommands plus `norm`:
     unfinished-series  Phase 0 gate
     compare            swap analysis for a reader-proposed add
     author-history     log-side read/rating history for an author
-    reconcile          log ↔ catalog match audit
+    reconcile          log ↔ catalog match audit; --reading-list adds list audit
+    bootstrap-state    derive build_state.json from Profile.md taste vectors
     normalize-catalog  rewrite stored normalized columns with live norm()
     norm               shared normaliser (used by library-cataloguer)
 
@@ -336,6 +337,50 @@ def list_set(path: str) -> set[tuple[str, str]]:
     return out
 
 
+def list_key_map(path: str) -> dict[tuple[str, str], str]:
+    """Parse Reading_List.md and return {(title_norm, author_norm): catalog_key}
+    for rows that carry a <!-- key:... --> HTML comment.  Rows without the
+    comment are absent from the map; callers fall back to fuzzy resolution."""
+    p = Path(path)
+    if not p.exists():
+        return {}
+    out: dict[tuple[str, str], str] = {}
+    text = p.read_text(encoding="utf-8")
+    ti: int | None = None
+    ai: int | None = None
+    pending: list[str] | None = None
+    for line in text.splitlines():
+        line_s = line.strip()
+        if not line_s.startswith("|"):
+            ti = ai = None
+            pending = None
+            continue
+        cells = [c.strip() for c in line_s.strip("|").split("|")]
+        if len(cells) < 2:
+            pending = None
+            continue
+        if all(c and set(c) <= set("-: ") for c in cells):
+            if pending is not None:
+                low = [c.lower() for c in pending]
+                if "title" in low and "author" in low:
+                    ti, ai = low.index("title"), low.index("author")
+                else:
+                    ti = ai = None
+            pending = None
+            continue
+        if ti is not None and ai is not None and max(ti, ai) < len(cells):
+            title = _strip_md_emphasis(cells[ti])
+            author = _strip_md_emphasis(cells[ai])
+            if title and not set(title) <= set("- :"):
+                # Search all cells for a key comment
+                raw_row = line_s
+                km = re.search(r"<!--\s*key:\s*(.+?)\s*-->", raw_row)
+                if km:
+                    out[(norm(title), norm(author))] = km.group(1).strip()
+        pending = cells
+    return out
+
+
 def _normalize_preferences(prefs) -> dict:
     """Normalize build_state.preferences to v2 shape.  Missing or
     out-of-range fields fall back to the corrected reader defaults:
@@ -471,6 +516,57 @@ def parse_profile_preferences(path: str) -> list[dict]:
             elif "less" in bullet_lc or "fewer" in bullet_lc:
                 notes.append({"kind": "avoid", "tag": "classic", "raw": bullet})
     return notes
+
+
+def parse_profile_taste_vectors(path: str) -> list[dict]:
+    """Parse Profile.md's '## Taste vectors' section into a list of
+    {name, example_titles, status} dicts.  Used by bootstrap-state to
+    derive build_state vectors from an existing Profile without
+    re-running full cartography."""
+    p = Path(path)
+    if not p.exists():
+        return []
+    text = p.read_text(encoding="utf-8")
+    vectors: list[dict] = []
+    in_section = False
+    current: dict | None = None
+    for line in text.splitlines():
+        s = line.strip()
+        if s.startswith("## "):
+            heading = s[3:].strip().lower()
+            new_in = heading == "taste vectors"
+            if not new_in and current is not None:
+                vectors.append(current)
+                current = None
+            in_section = new_in
+            continue
+        if not in_section:
+            continue
+        # New vector: "- **Name**" or "- **Name** (prose tags):"
+        m = re.match(r"^-\s+\*\*(.+?)\*\*", s)
+        if m:
+            if current is not None:
+                vectors.append(current)
+            current = {"name": m.group(1).strip(),
+                       "example_titles": [], "status": "active"}
+            continue
+        if current is None:
+            continue
+        # Status line: "- Status: active|demoted"
+        ms = re.match(r"^-\s+[Ss]tatus:\s*(\w+)", s)
+        if ms:
+            current["status"] = ms.group(1).lower()
+            continue
+        # Example-title line: "- *Title* by Author" or "- *Title* (Author)"
+        mt = re.match(r"^-\s+\*(.+?)\*\s+(?:by\s+|[\(\[]?)(.+)", s)
+        if mt:
+            current["example_titles"].append({
+                "title": mt.group(1).strip(),
+                "author": mt.group(2).rstrip(") ]").strip(),
+            })
+    if current is not None:
+        vectors.append(current)
+    return vectors
 
 
 # ---------------------------------------------------------------------------
@@ -1139,17 +1235,32 @@ def anchor_strength_for(candidate_signals: set[str],
 # ---------------------------------------------------------------------------
 
 def resolve_list_picks(conn: sqlite3.Connection,
-                       list_pairs: set[tuple[str, str]]) -> list[dict]:
+                       list_pairs: set[tuple[str, str]],
+                       *,
+                       key_map: dict[tuple[str, str], str] | None = None
+                       ) -> list[dict]:
     """Look up each (title_norm, author_norm) pair in the catalog.
     Returns a list of resolved entries with their signals/themes
     attached (unresolved pairs drop out).  Resolution is tolerant of
     author name-order / co-author / spelling drift (D-1) via the shared
     `resolve_book`.  Deduped by catalog key so variant list entries
-    that collapse onto one catalog row don't double-count."""
+    that collapse onto one catalog row don't double-count.
+
+    When `key_map` is provided (from `list_key_map()`), rows that carry
+    a catalog key comment bypass fuzzy title matching and are resolved
+    directly by key — eliminating false-positive matches on common titles.
+    """
     out = []
     seen: set[str] = set()
     for tn, an in list_pairs:
-        e = resolve_book(conn, tn, an)
+        # Prefer key-based lookup when the row carries a persisted key.
+        direct_key = (key_map or {}).get((tn, an))
+        if direct_key:
+            row = conn.execute("SELECT * FROM books WHERE key = ?",
+                               (direct_key,)).fetchone()
+            e = row_to_entry(row) if row else None
+        else:
+            e = resolve_book(conn, tn, an)
         if e is None or e["key"] in seen:
             continue
         seen.add(e["key"])
@@ -1331,6 +1442,8 @@ def stage1_pool(conn: sqlite3.Connection, *,
                 read_pairs: set, list_pairs: set,
                 rejected_keys: set, log_authors: set,
                 genre: str | None,
+                require_indie: bool = False,
+                series_status: list[str] | None = None,
                 require_relevance: bool = True) -> list[dict]:
     """Build the quality-floor pool.  Filters in SQL where cheap,
     finishes in Python for the entry-point gate and exclusions.
@@ -1339,6 +1452,11 @@ def stage1_pool(conn: sqlite3.Connection, *,
     relevance gate drops — used by the `balanced`/`broad` residual
     quota to surface quality-floor candidates that match no active vector
     ("books I almost didn't show you").
+
+    `require_indie` and `series_status` are hard SQL filters applied
+    before all other logic so they can't be soft-biased away.
+    `series_status` accepts user-facing aliases: 'standalone',
+    'short' (→ 'Short Series'), 'long' (→ 'Long Series').
     """
     if require_relevance and not active_signals and not active_themes:
         return []
@@ -1366,9 +1484,21 @@ def stage1_pool(conn: sqlite3.Connection, *,
         params.extend(sorted(active_themes))
 
     if genre:
-        sql += " AND (LOWER(primary_genre) = ? OR LOWER(secondary_genre) = ?) "
+        sql += " AND (LOWER(b.primary_genre) = ? OR LOWER(b.secondary_genre) = ?) "
         params.append(genre.lower())
         params.append(genre.lower())
+
+    if require_indie:
+        sql += " AND b.indie = 1 "
+
+    if series_status:
+        _status_map = {"standalone": "Standalone",
+                       "short": "Short Series",
+                       "long": "Long Series"}
+        allowed = [_status_map[s] for s in series_status if s in _status_map]
+        if allowed:
+            sql += f" AND b.series_status IN ({_placeholders(len(allowed))}) "
+            params.extend(allowed)
 
     on_list = _list_membership(list_pairs)
     pool: list[dict] = []
@@ -1834,12 +1964,30 @@ def render_candidate(c: dict, underused_names: set[str],
                      at_risk_names: set[str],
                      profile_notes: list[dict],
                      show_gr: bool = False,
-                     show_audio: bool = False) -> dict:
+                     show_audio: bool = False,
+                     compact: bool = False) -> dict:
     matched_vectors = c.get("_matched_vectors") or []
     matched_themes = sorted(c.get("_themes", set()))
     matched_floors = c.get("_matched_floors") or []
     fills_vectors = [n for n in matched_vectors if n in underused_names]
     fills_floors = [n for n in matched_floors if n in at_risk_names]
+    # Cap resonance_titles to 5 anchors (already ranked by weight);
+    # full list with 100+ titles floods context at no benefit.
+    resonance = c.get("_resonance_titles", [])[:5]
+    if compact:
+        return {
+            "key": c.get("key"),
+            "title": c.get("title"),
+            "author": c.get("author"),
+            "indie": c.get("indie"),
+            "series": c.get("series"),
+            "series_position": c.get("series_position"),
+            "pages": c.get("pages"),
+            "match_reasoning": {
+                "matched_vectors": matched_vectors,
+                "resonance_titles": resonance[:3],
+            },
+        }
     out = {
         "key": c.get("key"),
         "title": c.get("title"),
@@ -1849,7 +1997,7 @@ def render_candidate(c: dict, underused_names: set[str],
         "indie": c.get("indie"),
         "classic": c.get("classic"),
         "match_reasoning": {
-            "resonance_titles": c.get("_resonance_titles", []),
+            "resonance_titles": resonance,
             "matched_vectors": matched_vectors,
             "matched_themes": matched_themes,
             "comp_overlap_count": c.get("_comp_overlap_count", 0),
@@ -1937,6 +2085,9 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
     active_signals = {s for v in actives for s in vector_signal_set(v)}
     active_themes = {t for v in actives for t in vector_theme_set(v)}
 
+    require_indie = bool(getattr(args, "require_indie", False))
+    series_status = getattr(args, "series_status", None) or None
+
     pool = stage1_pool(
         conn,
         active_signals=active_signals,
@@ -1946,6 +2097,8 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
         rejected_keys=rejected_keys,
         log_authors=log_authors,
         genre=args.genre,
+        require_indie=require_indie,
+        series_status=series_status,
     )
     pool_size = len(pool)
 
@@ -1963,6 +2116,8 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
             rejected_keys=rejected_keys,
             log_authors=log_authors,
             genre=args.genre,
+            require_indie=require_indie,
+            series_status=series_status,
             require_relevance=False,
         )
         pool_keys = {c["key"] for c in pool}
@@ -2001,11 +2156,13 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
 
     probe = build_probe(state.get("events", []), conn)
 
+    compact = bool(getattr(args, "compact", False))
     output = {
         "candidates": [render_candidate(c, underused_names, at_risk_names,
                                          profile_notes,
                                          show_gr=show_gr,
-                                         show_audio=show_audio)
+                                         show_audio=show_audio,
+                                         compact=compact)
                        for c in selected],
         "pool_size": pool_size,
         "stratum_breakdown": breakdown,
@@ -2273,10 +2430,13 @@ def cmd_series_fit(args, conn: sqlite3.Connection) -> None:
     list_picks = resolve_list_picks(conn, list_pairs)
     scope_signals = _scope_signals(conn, books, state, list_picks)
 
+    books_to_add = [b for b in rendered_books if not b["read"] and not b["on_list"]]
     output = {
         "series": series_name,
         "author": books_sorted[0].get("author") if books_sorted else None,
         "books": rendered_books,
+        "books_to_add_count": len(books_to_add),
+        "books_to_add_pages": sum(b.get("pages") or 0 for b in books_to_add),
         "subseries": _subseries_groups(books_sorted),
         "narrative_shape": _narrative_shape(books_sorted),
         "scope_signals": scope_signals,
@@ -2668,8 +2828,117 @@ def build_exclusion_audit(conn: sqlite3.Connection,
 
 def cmd_reconcile(args, conn: sqlite3.Connection) -> None:
     log = load_log(args.log)
-    print(json.dumps(build_exclusion_audit(conn, log),
-                     ensure_ascii=False, indent=2))
+    result = build_exclusion_audit(conn, log)
+    reading_list_path = getattr(args, "reading_list", None)
+    if reading_list_path:
+        result["reading_list_audit"] = _reading_list_audit(conn, reading_list_path)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
+def _reading_list_audit(conn: sqlite3.Connection, path: str) -> dict:
+    """Reconcile Reading_List.md rows against the catalog.
+
+    Reports rows that already carry a catalog key comment (and whether
+    the key exists in the catalog), rows without a key but with a
+    suggested resolution, and rows that couldn't be resolved at all.
+    """
+    km = list_key_map(path)
+    lp = list_set(path)
+    rows_with_key: list[dict] = []
+    suggested_keys: list[dict] = []
+    unmatched: list[dict] = []
+    ambiguous: list[dict] = []
+
+    for tn, an in sorted(lp):
+        if (tn, an) in km:
+            key = km[(tn, an)]
+            exists = (conn.execute(
+                "SELECT 1 FROM books WHERE key = ?", (key,)).fetchone()
+                      is not None)
+            rows_with_key.append({"title_norm": tn, "author_norm": an,
+                                  "key": key, "key_valid": exists})
+        else:
+            entry = resolve_book(conn, tn, an)
+            if entry is not None:
+                suggested_keys.append({
+                    "title_norm": tn, "author_norm": an,
+                    "suggested_key": entry["key"],
+                    "title": entry.get("title"),
+                    "author": entry.get("author"),
+                })
+            else:
+                unmatched.append({"title_norm": tn, "author_norm": an})
+
+    return {
+        "rows_with_key": rows_with_key,
+        "rows_without_key_count": len(suggested_keys) + len(unmatched),
+        "suggested_keys": suggested_keys,
+        "unmatched": unmatched,
+    }
+
+
+def cmd_bootstrap_state(args, conn: sqlite3.Connection) -> None:
+    """Derive a minimal build_state.json from Profile.md taste vectors.
+
+    For each active vector, resolves example titles against the catalog
+    and unions their canonical_signals and themes into the vector schema
+    that `recommend` expects.  Writes the result to --out.
+    """
+    raw_vectors = parse_profile_taste_vectors(args.profile)
+    if not raw_vectors:
+        die("no taste vectors found in Profile.md — "
+            "check that '## Taste vectors' section exists and is populated",
+            code=2)
+
+    taste_vectors: list[dict] = []
+    for vec in raw_vectors:
+        if vec["status"] == "demoted":
+            continue
+        signals: set[str] = set()
+        themes: set[str] = set()
+        unresolved: list[str] = []
+        for ex in vec["example_titles"]:
+            entry = resolve_book(conn, norm(ex["title"]), norm(ex["author"]))
+            if entry is None:
+                unresolved.append(ex["title"])
+                continue
+            signals |= positive_signals_for(conn, entry["key"])
+            themes |= themes_for(conn, entry["key"])
+        if not signals and not themes:
+            print(f"bootstrap-state: vector '{vec['name']}' — no catalog matches "
+                  f"({', '.join(unresolved) or 'no examples listed'}); skipping",
+                  file=sys.stderr)
+            continue
+        if unresolved:
+            print(f"bootstrap-state: vector '{vec['name']}' — "
+                  f"unresolved titles: {', '.join(unresolved)}",
+                  file=sys.stderr)
+        taste_vectors.append({
+            "name": vec["name"],
+            "canonical_signals": sorted(signals),
+            "themes": sorted(themes),
+            "status": "active",
+        })
+
+    if not taste_vectors:
+        die("no vectors could be resolved from catalog — "
+            "check that example titles in Profile.md match catalog entries",
+            code=2)
+
+    state = {
+        "version": 2,
+        "mode": "refine",
+        "taste_vectors": taste_vectors,
+        "floors": {},
+        "events": [],
+        "preferences": {},
+        "session_notes": [],
+    }
+    out_path = Path(args.out)
+    out_path.write_text(json.dumps(state, ensure_ascii=False, indent=2),
+                        encoding="utf-8")
+    print(f"bootstrap-state: wrote {len(taste_vectors)} vector(s) to {out_path}",
+          file=sys.stderr)
 
 
 def cmd_normalize_catalog(args, conn: sqlite3.Connection) -> None:
@@ -2781,6 +3050,19 @@ def build_parser() -> argparse.ArgumentParser:
                     help="also emit an exclusion_audit block "
                          "(orphan + near-miss log↔catalog matches)")
     sp.add_argument("--seed", type=int, default=None)
+    sp.add_argument("--compact", action="store_true",
+                    help="emit slim per-candidate projection "
+                         "(key/title/author/indie/series/pages/"
+                         "matched_vectors/top-3-resonance); "
+                         "recommended for refine-mode to avoid context floods")
+    sp.add_argument("--require-indie", dest="require_indie", action="store_true",
+                    help="hard SQL filter: only indie=1 candidates")
+    sp.add_argument("--series-status", dest="series_status",
+                    choices=("standalone", "short", "long"),
+                    action="append", default=None,
+                    help="hard SQL filter on series_status: "
+                         "'standalone'=Standalone, 'short'=Short Series, "
+                         "'long'=Long Series; repeatable")
     sp.set_defaults(func=cmd_recommend, needs_catalog=True)
 
     sp = sub.add_parser("author-history")
@@ -2792,7 +3074,19 @@ def build_parser() -> argparse.ArgumentParser:
     sp = sub.add_parser("reconcile")
     sp.add_argument("--catalog", default=DEFAULT_CATALOG)
     sp.add_argument("--log", default=DEFAULT_LOG)
+    sp.add_argument("--reading-list", dest="reading_list", default=None,
+                    help="if provided, also audit Reading_List.md rows "
+                         "for catalog key comments and suggest keys for "
+                         "rows that lack them")
     sp.set_defaults(func=cmd_reconcile, needs_catalog=True)
+
+    sp = sub.add_parser("bootstrap-state")
+    sp.add_argument("--profile", required=True,
+                    help="path to Profile.md (must contain ## Taste vectors)")
+    sp.add_argument("--catalog", default=DEFAULT_CATALOG)
+    sp.add_argument("--out", required=True,
+                    help="path to write the derived build_state.json")
+    sp.set_defaults(func=cmd_bootstrap_state, needs_catalog=True)
 
     sp = sub.add_parser("normalize-catalog")
     sp.add_argument("--catalog", default=DEFAULT_CATALOG)

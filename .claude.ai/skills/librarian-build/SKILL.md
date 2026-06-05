@@ -185,6 +185,23 @@ Skip cartography and goals. Pull those from the existing Profile.md and
 Reading_List.md. Open with a short orienting line that
 names the count and asks what changes — prose, not a tap-confirm.
 
+**If no `/tmp/build_state.json` exists**, derive one from Profile.md before
+the first `recommend` call — do not ask the reader to hand-author it:
+
+```bash
+python3 webhelper/librarian_query.py bootstrap-state \
+    --catalog /tmp/Library_Catalog.sqlite \
+    --profile /tmp/Profile.md \
+    --out /tmp/build_state.json
+```
+
+This resolves the example titles under each active vector in Profile.md
+against the catalog and unions their canonical signals/themes into the
+vector schema that `recommend` expects.  Stderr will name any example
+titles that couldn't be resolved; treat those as gaps to address in
+session if they affect a key vector.  Once written, proceed with
+`recommend` as normal.
+
 Common refine actions:
 
 - **Swap X for Y** — confirm via tap (it's a discrete edit, low cost
@@ -221,8 +238,23 @@ python3 webhelper/librarian_query.py recommend \
     --build-state /tmp/build_state.json \
     --genre <G optional> \
     --n 6 \
-    --lean <vector:NAME or floor:NAME, optional>
+    --lean <vector:NAME or floor:NAME, optional> \
+    --compact                          # recommended for refine-mode
+    # hard filters — add when the reader's request is explicit:
+    # --require-indie                  # only indie=1 candidates
+    # --series-status standalone       # only Standalones (repeatable)
+    # --series-status short            # Short Series
 ```
+
+`--compact` trims each candidate to `key / title / author / indie / series / series_position /
+pages / matched_vectors / top-3-resonance-titles`, eliminating the context flood that comes from
+the full projection (100+ resonance entries × 12 candidates).  Use it for any refine call; use
+the full projection only when you need `fills_gap`, `warnings`, or `audio` fields.
+
+`--require-indie` and `--series-status` are hard SQL filters applied before pool sampling, so
+they can't be soft-biased away by `--lean`.  Use them when the reader's request is unambiguous
+("just standalones", "only indie").  Omit them when you want the broadest quality pool and will
+filter in prose.
 
 Returns `candidates[]` with `match_reasoning` (resonance titles,
 matched vectors, themes, comp-overlap count), `fills_gap`
@@ -625,12 +657,32 @@ multi-pick handful):
    "Added *X* — Author." acks across a build is the script-feel
    you're trying to avoid.
 
+   **Always embed the catalog key** as an HTML comment at the end of
+   the Why cell — this makes `status` and `reconcile` resolution
+   exact rather than fuzzy, eliminating false-positive matches on
+   common titles (*Valour*, *Malice*, etc.):
+   ```
+   | *Champion of the Fallen* | M. L. Spencer | Fantasy | 480 | ★★★★ | ★★★☆ | series opener <!-- key:Champion of the Fallen - M. L. Spencer --> |
+   ```
+   The key is the `key` field from the `recommend` output.  HTML
+   comments are invisible in rendered markdown and in the
+   `reading-list` artifact.  To audit which rows are missing keys,
+   run: `python3 webhelper/librarian_query.py reconcile
+   --catalog /tmp/Library_Catalog.sqlite --log $PROJECT_LOG
+   --reading-list /tmp/Reading_List.md`
+
 2. **If the book is part of a series**, run `series-fit` before the
    next pitch (same flag set as `recommend`, plus `--series "<name>"`).
    Use the recommended scope as the default option in a tap-confirm
    ("just book 1," "all available," "stop after book N"). Walk
    sequentially — no new pitch round until scope is answered. Append
    the resolved scope to `build_state.session_notes`.
+
+   The `series-fit` output includes `books_to_add_count` and
+   `books_to_add_pages` — the number of series entries that are
+   neither already read nor already on the list, and their combined
+   page count.  Use these directly for slot math rather than counting
+   the `books[]` array manually.
 
 3. **Rejected picks** (offered but not selected) → append a
    `{"type": "rejected", "at": <ISO>, "key", "title",
