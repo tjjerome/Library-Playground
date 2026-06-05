@@ -189,6 +189,26 @@ the same variety from the open-pitch loop. Tap-confirms only fire
 for genuine multi-axis decisions (scope on a sequel series, "this
 one or that one" tradeoffs); single-book confirmations go prose.
 
+This pass leans on web search and the librarian's own knowledge more
+than the catalog-side loop does, which makes **"Recognition is not a
+ranking signal"** (in `librarian-build`) especially live here. The
+four sourcing pools above exist so that picks come from the reader's
+authors, unfinished series, comps, and genuine genre-anticipated
+releases — not from whichever forthcoming titles happen to be famous
+enough to surface unbidden. A debut you had to search to find is worth
+exactly as much as a marquee author's next book; if every upcoming
+pick is one you'd have named from memory, pools 3 and 4 weren't worked
+hard enough. The same holds in the walk: do not fill a perceived gap
+with a recognizable title pulled from memory — query the catalog for
+that slot.
+
+Because these books aren't in the catalog, the pitch leans on search
+results — so the blurb risk is acute. Don't recite an announcement or
+a back-cover line. Synthesise against the reader's taste the same way
+the open-pitch loop does: lead with the connection to their log, name
+the register, keep search findings as fact source. Spoiler-free, and
+skip AI-generated sources, as always.
+
 Two differences from the catalog-side loop:
 
 - **Library availability is N/A** (books not in catalog yet) — don't

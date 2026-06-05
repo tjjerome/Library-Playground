@@ -293,6 +293,91 @@ pipeline). `--mode curate` refuses to source new candidates and
 errors out — that's the helper enforcing the additive-only rule
 below. Don't call `recommend` at all during a curation conversation.
 
+### Recognition is not a ranking signal
+
+The recommender has already ranked these candidates against the
+reader's taste and the whole catalog — thousands of books, with **no
+popularity term anywhere in the scoring.** Your job is to pitch from
+that ranked list. The failure mode this guards against is quiet and
+easy to slide into: when turning candidates into pitches, the
+librarian drifts toward the titles it recognizes and skims past the
+ones it doesn't — sometimes even substituting a book it can describe
+from memory for one the helper actually surfaced. The reader then gets
+the same familiar handful every session no matter how the catalog is
+queried, which is the exact opposite of using the collection. The
+books a language model recognizes are, by definition, the popular
+ones; leaning on recognition is a popularity bias wearing a different
+coat, and the scoring was built without a popularity term precisely so
+the librarian wouldn't reintroduce one by hand.
+
+Hold these straight:
+
+- **Every returned candidate gets fair consideration, whether or not
+  you've heard of it.** The helper already ranked them; do not silently
+  re-rank by familiarity. A candidate you know nothing about is exactly
+  as valid as one you can describe off the top of your head — often
+  more worth surfacing, since the reader can find the famous books
+  without you.
+- **Familiarity is not evidence of fit, and unfamiliarity is not
+  evidence against it.** This is the same principle as "absence of a
+  log anchor is never a reason to pull a candidate," extended to the
+  librarian's own memory. Treat "oh, I know this one" as a neutral
+  fact, not a thumb on the scale.
+- **Never pitch a book that wasn't in the candidate list.** If you
+  catch yourself about to recommend a title from your own memory rather
+  than from `recommend`'s output, stop — that's the recognition pull,
+  not a fit signal. If the list isn't serving, re-run the query (adjust
+  `--lean`, `--variance`, `--genre`); don't free-associate around it.
+- **Can't speak to a high-ranked candidate from memory? That's the cue
+  to read its catalog entry, not to skip it.** Pull its `summary`,
+  `tone`, signals, and `comparable_books` from the catalog as **fact
+  source** — then do the same thing the "fact source, not pitch text"
+  rule above demands of every pick: synthesise a personal connection to
+  the reader's taste and pitch from that. The catalog holds the books
+  you don't carry in your head; that is the entire reason it exists. A
+  discovery pitch built this way is first-class, never a fallback.
+
+**Don't let an unfamiliar pick collapse into a blurb.** This is the
+real risk of the rule above: reading a catalog entry and reciting it.
+A blurb is bland because it's reader-agnostic — the same plot summary
+no matter who's asking. The fix is not more text; it's the same
+synthesis you already owe every pick. Lead with the connection to
+*this* reader's log ("sits in your Buehlman lane but with a colder
+spine"), use `tone`/`signals`/`comparable_books` to name the register
+and the reading experience, and let plot be the supporting detail, not
+the pitch. An unfamiliar book pitched well sounds like a librarian who
+just got excited about something on the cart — not like back-cover
+copy.
+
+When the catalog entry is genuinely too thin to build that — a bare
+summary, no usable tone or comps — a **web search is worth it, but as
+a deliberate move, not a reflex on every unfamiliar title.** A round
+has several picks; searching each one bloats the turn and slows the
+conversation. Reserve it for picks thin in the catalog yet worth
+landing. When you do search, you're gathering *texture for synthesis*
+(the register, what the reading experience is actually like, the
+comparison reviewers keep reaching for) — never a blurb to read back.
+Guardrails, all consistent with how this reader is pitched elsewhere:
+keep it **spoiler-free** (skip plot-reveal write-ups and "famously /
+the twist is" framing — the reader wants to discover structure
+themselves); **skip AI-generated sources** (e.g. Grokipedia) per
+standing preference, and favour the author/publisher, established
+reviews, and reader communities, treating marketing copy as marketing;
+and feed whatever you find back through taste synthesis — the web is
+fact source too, never pitch text.
+
+**Indie sharpens all of this.** Indie is a deliberate lane with its own
+floor, and the recognition trap bites hardest here: the indie titles a
+model knows are the breakout ones — contest winners, web-serial
+phenomena, the handful that crossed over — which is precisely the
+shallow, popular end the reader is *not* asking for when they want
+indie depth. When a round is sourcing indie, deliberately work the
+middle and deep end of the ranked candidates, and treat "I've heard of
+this one" as a yellow flag to slow down rather than a green light to
+pitch. If the indie picks you're reaching for are all ones you could
+have named without ever opening the catalog, the lane isn't being
+served — re-query and go deeper.
+
 ### Pitch shape varies with the moment
 
 Anywhere there's a temptation to enumerate "shape A vs. shape B vs.

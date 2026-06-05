@@ -177,6 +177,24 @@ in a page count when the comparison hinges on length or commitment
 (a 1200-page Erikson recommendation needs the page count; a 280-page
 Le Guin probably doesn't).
 
+These comps come from the catalog's `comparable_books` for X — surface
+them, in narrative form, without quietly dropping the ones you don't
+recognize in favour of the ones you do. A comp you've never heard of is
+as valid as a famous one; if you can't speak to it, read its catalog
+entry (`summary`, `tone`, signals) and describe it from that. Do not
+substitute a better-known title that the catalog didn't return — the
+reader is asking what *the collection* is like X, not what you can name
+from memory. The same applies to the "try Z instead" alternative below:
+pull Z from the catalog, not from recognition.
+
+Describing a comp from its catalog entry means synthesising, not
+reciting — connect it to the reader's taste and name the register, the
+way a pitch would; a recited summary reads like a blurb. Single-book
+mode is low-volume, so if a catalog entry is too thin to say anything
+real, one quick web search for texture is fine here — spoiler-free, no
+AI-generated sources, findings fed through taste synthesis rather than
+quoted.
+
 ### "Is X worth my time?"
 
 Pull X from SQLite + `PROJECT_LOG` + `/tmp/Profile.md`. Cover the
