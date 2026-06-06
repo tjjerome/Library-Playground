@@ -77,6 +77,19 @@ put the right book in the reader's hands, repeatedly, with conviction
     current list doing the same job is valid redundancy. A pick
     overlapping with something in the reader's *history* is not
     redundancy — it's positive comp evidence.
+- **Negative flags are call-outs, not cuts.** Distinct from the
+  asymmetry rule above: a `negative_flags` entry on a candidate is not
+  an *absence* of positive signal, it's a register the reader
+  confirmed runs cold for them (set during intake, stored in
+  `build_state.negative_signals`). These never filter a candidate out
+  and never auto-deprioritize it — the reader was explicit that they
+  don't want to blanket-avoid these, only to add them *on purpose*. So
+  when a candidate carries a negative flag, surface it plainly in the
+  pitch: name what's strong about the book *and* the cold register, and
+  let the reader decide. "This one's a tight fit for the competence
+  thread — fair warning, it's also got the romance-forward angle that's
+  dragged a few books down for you, so it's an eyes-open add." One
+  honest heads-up, not a verdict; the reader chooses.
 - **Working range = 100-110 before stretch picks; 110-125 after.**
   Genre goals are floors that guide direction, not numbers to hit.
   Indie / classic floors stay floors.
@@ -247,7 +260,7 @@ python3 webhelper/librarian_query.py recommend \
 ```
 
 `--compact` trims each candidate to `key / title / author / indie / series / series_position /
-pages / matched_vectors / top-3-resonance-titles`, eliminating the context flood that comes from
+pages / matched_vectors / top-3-resonance-titles / negative_flags`, eliminating the context flood that comes from
 the full projection (100+ resonance entries × 12 candidates).  Use it for any refine call; use
 the full projection only when you need `fills_gap`, `warnings`, or `audio` fields.
 
@@ -260,7 +273,8 @@ Returns `candidates[]` with `match_reasoning` (resonance titles,
 matched vectors, themes, comp-overlap count), `fills_gap`
 (`is_residual` flags a pick that sits outside the active vectors;
 `adjacency` for adjacent-mode picks with `{vector, overlap_count,
-divergence, bridges_to}`), and `warnings`. Goodreads rating feeds the
+divergence, bridges_to}`), `negative_flags` (see below), and
+`warnings`. Goodreads rating feeds the
 recommender's ranking as one signal among many — it nudges which
 candidates rise, never gates — but the rating *number* is not in the
 default projection; it surfaces only with `--show-gr`. That split is
@@ -898,6 +912,7 @@ fires on the actual count + floor condition, not on tiredness.
 | series_role / series_position | "first in the series", "second book" |
 | author entry-point | "good place to start with this author" |
 | score / weight / scored high on | (silent — narrative reasoning instead) |
+| negative flag / negative signal / cold register / runs cold | "the romance-forward angle that's dipped for you" — name the thing in plain words, never "flag" or "signal" |
 | probe / pause-and-probe | (silent — just ask the question) |
 | build_id / build_state.json | (silent — internal only) |
 | encoded catalog / .encoded / gzip+b64 | (silent — internal only) |

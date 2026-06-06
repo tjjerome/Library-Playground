@@ -160,13 +160,18 @@ persist.
   },
   "events": [],
   "rejected": [],
+  "negative_signals": [],
   "session_notes": []
 }
 ```
 
 `taste_vectors` is the script-readable form of what's in Profile.md;
 `goals` and `floors` are the script-readable form of what's in
-Reading_List.md's `## Goals` tables. The `preferences` block carries
+Reading_List.md's `## Goals` tables. `negative_signals` holds the
+registers the calibration pass found running *against* the reader —
+written during the taste self-check (see "Read it back, but check it
+first" below) and mirrored as a prose note in Profile.md so it carries
+forward. The `preferences` block carries
 the three intake answers the helper reads to shape sampling
 (`series_commitment`, `curiosity_targets`, `expansion_appetite` — see
 the goals section below). The persistent files are the source of
@@ -336,10 +341,99 @@ vectors`) so the observation isn't lost, but don't add it to
 target for `recommend`. A two-author affinity is real and worth
 remembering; it just isn't a register yet.
 
-**Surface to reader in prose, not as a list.** This is the librarian
+**Read it back, but check it first.** Before any of this reaches the
+reader, the librarian does a quiet gut-check that the threads they're
+about to name actually hold up against the log. A vector is a *claim*
+— "books like these land well for you." The log can confirm or deny
+that claim, and it's worth a glance before saying it out loud. This
+whole pass is silent: it shapes which threads get surfaced and how
+confidently, but the reader never sees the checking, only its result.
+
+Once the vectors are written to `build_state.taste_vectors`, run the
+check — it's one command, not a hand-rolled script:
+
+```bash
+python3 webhelper/librarian_query.py calibrate \
+    --catalog /tmp/Library_Catalog.sqlite \
+    --log $PROJECT_LOG \
+    --build-state /tmp/build_state.json
+```
+
+It scores every rated read against the threads through the same
+overlap math `recommend` uses, and hands back JSON. Run it rather than
+scoring overlap inline: the meaningful test needs the *central* match
+threshold (a read counts toward a thread only when it shares enough of
+the thread's signals), and a naive any-overlap match makes every
+thread match most of the shelf and reports them all as weak — a false
+alarm that would have the librarian tearing up a sound set of threads.
+The command also handles whole-log scoring, leave-one-out, and title
+resolution, so none of that is left to get skipped or fumbled.
+
+How to read what comes back — the `action` field on each thread is
+the decision, and it splits two ways on purpose:
+
+- **`action: "rebuild"`** — the thread is broken: either *actively
+  negative* (its central reads rate no better than reads matching no
+  thread at all) or anchored on a register that runs cold for the
+  reader. Don't surface these. Re-cluster them silently first — split
+  a muddled thread, merge it into a truer neighbour, or re-derive its
+  signals with the cold register removed — then re-run `calibrate`.
+  Only what survives goes into the conversation. If a thread still
+  can't clear the rebuild tier after a second pass, drop it rather
+  than loop forever; a register the log won't support isn't a thread.
+- **`action: "discuss"`** — the thread holds but has a soft spot: a
+  thin lift, too broad (claims a big share of the shelf), or redundant
+  with another thread. These are the reader's call, not the
+  librarian's. Bring them into the cartography conversation as a
+  concrete proposal, not a flag — *"three of these are really one
+  shelf for you; want me to fold them into one sharper thread, or pull
+  out what's actually distinct?"* The reader's answer is the data.
+- **`action: "keep"`** — surface as a confident thread.
+
+The supporting fields tell you *why*:
+
+- **`verdict`** — `holds` / `weak` / `thin`, the predictive read.
+  `thin` (too few central reads) is low log support, not a fault —
+  keep it if it's a real reader interest, just hold it lightly.
+- **`breadth`** + **`redundant_pairs`** — the guard against threads
+  drifting broad and samey. A check that only rewarded predictive lift
+  would quietly push every thread wider, since a broad thread catches
+  more good books and clears the bar easily. Breadth and redundancy
+  pull the other way. **Fewer, sharper threads beat many broad
+  overlapping ones** — a thread that names a specific register the
+  reader would recognise is worth more than one that quietly covers a
+  third of the shelf. When `redundant_pairs` shows two threads sharing
+  most of their books, that's the signal to merge or sharpen, and
+  cutting the thread count to gain specificity is a good trade.
+- **`membership_separation`** — the headline sanity check: reads
+  matching no thread vs one vs several. If the no-thread reads rate
+  clearly lower, the thread set as a whole is doing its job.
+- **`underperformers`** + **`negative_signal_candidates`** — the raw
+  material for the cold-register conversation, which gets its own
+  treatment below ("Finding what runs cold — books first"). The
+  candidates are flagged two ways: *frequent in low-rated reads* (a
+  broadly disliked register) and *drags the expected-strong* (a
+  register that quietly pulls down books your threads said should land
+  — the subtler and more useful one). Both come with `example_books`,
+  including which were expected to be strong.
+- **`notes`** — plain-language summary, including a heads-up when the
+  reader's ratings are compressed (most everything ≥4), in which case
+  thread-to-thread gaps will be small and the negative signals carry
+  the real information. Read these first.
+
+The thresholds have sane defaults (`--broad-frac`, `--overlap-jaccard`,
+`--rebuild-floor`, `--neg-*`, `--weak-margin`, `--min-members`); only
+reach for them if a reader's log is unusually small or unusually
+spread. It's a sanity pass, not a model fit — the conversation is the
+point, and this just makes the librarian's read of the reader a little
+truer before they speak.
+
+**Now surface to reader in prose, not as a list.** This is the librarian
 thinking out loud about the reader, naming threads they may already
 know about themselves and a few that might surprise them, anchoring
-each in two or three of the reader's own titles. The reader replies
+each in two or three of the reader's own titles. (Cold registers are
+their own conversation — see "Finding what runs cold" below — so leave
+them out of this positive readback.) The reader replies
 in prose. No tap-confirm here — the reader's wording on what's
 right, what's stale, what got over-named, what should split, all
 carries signal a menu would compress out.
@@ -356,11 +450,59 @@ The shape varies, but a few cues to listen for in the reply:
   reassign example titles.
 - "Looks right" → no edits; record `"Cartography accepted as-is"` in
   session notes.
+- "Yeah, those never worked for me" (confirming a cold register) →
+  keep the `negative_signal`; tighten the Profile note with the
+  reader's own words.
+- "No, those two were just duds" (waving off a cold register) → drop
+  or soften the `negative_signal` — the reader's read of their own
+  misses outranks the pattern.
 
 Each correction writes to **both** `/tmp/build_state.json`
 `taste_vectors` and `/tmp/Profile.md` (silent profile append, e.g.
 under `## Taste vectors` — one bullet per vector with name + example
 titles).
+
+### Finding what runs cold — books first
+
+The negative signals are the most useful thing the check turns up, but
+they're the easiest to get wrong by leading. Don't open by naming a
+register. Open with the *books*.
+
+1. **Start from `underperformers`** — books the threads expected to
+   land that the reader rated surprisingly low. Pick two to four and
+   put them to the reader plainly, with no theory attached: *"A few of
+   these surprised me — I'd have bet they were right up your alley, but
+   they didn't land. Mockingjay, The Fifth Season, Fourth Wing. Do you
+   remember what put you off them?"* Then wait. The first question is
+   open and non-leading on purpose — you want the reader's own account
+   of what didn't work, not a yes/no on a register you've pre-picked.
+
+2. **Let their words find the register.** The reader will say things
+   like "too much romance," "nothing actually happened," "I never
+   believed the science." Match that against the
+   `negative_signal_candidates` and their `example_books`. Often the
+   reader names the exact register a candidate points at; sometimes
+   they name something better, and the reader's framing wins.
+
+3. **Then — and only then — name it back, tied to the books, as a
+   hypothesis to confirm:** *"That fits — the ones that leaned hard on
+   romance are the ones that dipped, and it's not just those two;
+   Katabasis and Iron Flame went the same way. Want me to treat
+   'romance-forward' as something to flag rather than chase?"* The
+   reader confirms, refines, or rejects.
+
+4. **Land on two to five** registers the reader actually endorses. A
+   candidate the reader explains away ("those were just bad books,
+   nothing in common") gets dropped — their read of their own misses
+   outranks the pattern (the cold-register reply cues above apply).
+
+Persist each confirmed register to `build_state.negative_signals`
+(carry `canonical`, `kind`, `mean_rating`, `support`, and the
+`example_books`) and as one prose line in `/tmp/Profile.md` under a
+`## Registers that run cold` note, in the reader's own words. These
+are *flags, not filters* — `librarian-build` keeps recommending books
+that carry them, it just calls them out so the reader adds such a book
+on purpose rather than by accident.
 
 **Cartography is living, not frozen.** Note in `session_notes` that
 cartography ran; `librarian-build` will re-derive vectors lightly when
@@ -504,7 +646,7 @@ have been meaning to get to. Wait.
 
 For each title named, look up in SQLite directly with a fuzzy match
 on normalized title or author. Some fuzziness is important here — the reader won't necessarily give you perfect metadata, and you want to catch close calls. Normalize with
-the same function the catalog uses for its `title_norm` and `author_norm` fields, which is available in
+the same function the catalog uses for its `title_normalized` and `author_normalized` columns, which is available in
 `webhelper.librarian_query.py norm` or as a Python function if you open the catalog in-process:
 
 ```python
@@ -512,7 +654,7 @@ import sqlite3
 conn = sqlite3.connect("/tmp/Library_Catalog.sqlite")
 conn.row_factory = sqlite3.Row
 rows = conn.execute(
-    "SELECT * FROM books WHERE title_norm LIKE ? OR author_norm LIKE ? LIMIT 5",
+    "SELECT * FROM books WHERE title_normalized LIKE ? OR author_normalized LIKE ? LIMIT 5",
     (f"%{norm(query)}%", f"%{norm(query)}%"),
 ).fetchall()
 ```
@@ -602,6 +744,8 @@ build finishes.
 | series_role / series_position | "first in the series", "second book" |
 | author entry-point | "good place to start with this author" |
 | score / weight / scored high on | (silent — narrative reasoning instead) |
+| calibration / self-check / predictive power / correlation | (silent — "making sure I've read you right") |
+| negative signal / aversion / runs cold | "the ones that never quite landed" / a gentle aside, never a readout |
 | probe / pause-and-probe | (silent — just ask the question) |
 | build_id / build_state.json | (silent — internal only) |
 | encoded catalog / .encoded / gzip+b64 | (silent — internal only) |

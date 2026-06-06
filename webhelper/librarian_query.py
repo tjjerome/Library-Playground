@@ -41,6 +41,7 @@ import math
 import random
 import re
 import sqlite3
+import statistics
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -1965,17 +1966,26 @@ def render_candidate(c: dict, underused_names: set[str],
                      profile_notes: list[dict],
                      show_gr: bool = False,
                      show_audio: bool = False,
-                     compact: bool = False) -> dict:
+                     compact: bool = False,
+                     neg_sig: set[str] | None = None,
+                     neg_thm: set[str] | None = None) -> dict:
     matched_vectors = c.get("_matched_vectors") or []
     matched_themes = sorted(c.get("_themes", set()))
     matched_floors = c.get("_matched_floors") or []
     fills_vectors = [n for n in matched_vectors if n in underused_names]
     fills_floors = [n for n in matched_floors if n in at_risk_names]
+    # Negative flags: registers the reader has flagged as running cold
+    # that this candidate carries. These never filter the candidate out
+    # — they ride along so the pitch can call them out and the reader
+    # adds the book on purpose, not by accident.
+    negative_flags = sorted(
+        (c.get("_signals", set()) & (neg_sig or set()))
+        | (c.get("_themes", set()) & (neg_thm or set())))
     # Cap resonance_titles to 5 anchors (already ranked by weight);
     # full list with 100+ titles floods context at no benefit.
     resonance = c.get("_resonance_titles", [])[:5]
     if compact:
-        return {
+        out = {
             "key": c.get("key"),
             "title": c.get("title"),
             "author": c.get("author"),
@@ -1988,6 +1998,9 @@ def render_candidate(c: dict, underused_names: set[str],
                 "resonance_titles": resonance[:3],
             },
         }
+        if negative_flags:
+            out["negative_flags"] = negative_flags
+        return out
     out = {
         "key": c.get("key"),
         "title": c.get("title"),
@@ -2009,6 +2022,7 @@ def render_candidate(c: dict, underused_names: set[str],
             "is_residual": bool(c.get("_is_residual")),
             "adjacency": c.get("_adjacency"),
         },
+        "negative_flags": negative_flags,
         "warnings": _apply_warnings(c, profile_notes),
     }
     # goodreads_rating and audio_suitability are dropped from the
@@ -2157,12 +2171,20 @@ def cmd_recommend(args, conn: sqlite3.Connection) -> None:
     probe = build_probe(state.get("events", []), conn)
 
     compact = bool(getattr(args, "compact", False))
+    # Reader's flagged cold registers (set during intake). These ride
+    # along on each candidate as negative_flags — never a filter.
+    neg_sig = {n.get("canonical") for n in state.get("negative_signals", [])
+               if n.get("kind") == "signal" and n.get("canonical")}
+    neg_thm = {n.get("canonical") for n in state.get("negative_signals", [])
+               if n.get("kind") == "theme" and n.get("canonical")}
     output = {
         "candidates": [render_candidate(c, underused_names, at_risk_names,
                                          profile_notes,
                                          show_gr=show_gr,
                                          show_audio=show_audio,
-                                         compact=compact)
+                                         compact=compact,
+                                         neg_sig=neg_sig,
+                                         neg_thm=neg_thm)
                        for c in selected],
         "pool_size": pool_size,
         "stratum_breakdown": breakdown,
@@ -2705,6 +2727,387 @@ def cmd_compare(args, conn: sqlite3.Connection) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Subcommand: calibrate
+# ---------------------------------------------------------------------------
+
+def _resolve_title_only(conn: sqlite3.Connection, title: str) -> str | None:
+    """Author-optional resolution for a vector's example title.
+
+    A vector's `example_titles` carry no author, so the tolerant
+    `resolve_book` (which requires an author match) can't be used.
+    This reuses the same title index and, when a title maps to several
+    catalog rows, picks the most-reviewed deterministically.  Returns a
+    catalog key or None."""
+    exact, folded = _title_index(conn)
+    tn = norm(title)
+    cands = exact.get(tn) or exact.get(title_short(title) or "")
+    if not cands:
+        ft = title_fold(tn)
+        cands = folded.get(ft) if ft else None
+    if not cands:
+        return None
+    best = sorted(
+        cands,
+        key=lambda ea: (-(ea[0].get("goodreads_reviews") or 0),
+                        ea[0].get("key") or ""),
+    )[0][0]
+    return best.get("key")
+
+
+def _vector_sets_from_titles(conn: sqlite3.Connection,
+                             titles: list[str]
+                             ) -> tuple[list[str], list[str], list[str]]:
+    """Derive (signals, themes, unresolved) from a vector's example
+    titles, for the fallback where a vector carries no explicit
+    `canonical_signals`/`themes`.  Core rule: a signal/theme counts if
+    it appears in >=2 example titles; falls back to the union when the
+    core set is empty (short title lists).  `unresolved` lists titles
+    that didn't map to the catalog, so a thin derivation is never
+    silent."""
+    from collections import Counter
+    sc: Counter = Counter()
+    tc: Counter = Counter()
+    unresolved: list[str] = []
+    for t in titles:
+        k = _resolve_title_only(conn, t)
+        if not k:
+            unresolved.append(t)
+            continue
+        for s in positive_signals_for(conn, k):
+            sc[s] += 1
+        for th in themes_for(conn, k):
+            tc[th] += 1
+    sig = {s for s, n in sc.items() if n >= 2} or set(sc)
+    thm = {t for t, n in tc.items() if n >= 2} or set(tc)
+    return sorted(sig), sorted(thm), unresolved
+
+
+def cmd_calibrate(args, conn: sqlite3.Connection) -> None:
+    """Predictive self-check of the active taste vectors against the
+    rated log, plus reader-specific negative-signal detection.  Pure
+    read; emits JSON for the cartography step to act on *before* any
+    thread is surfaced to the reader.
+
+    Why this is a command and not inline Python: the meaningful test
+    requires the *central* overlap threshold — a read counts toward a
+    vector only when it hits ~half the vector's signals
+    (`vector_central_threshold`).  A naive any-overlap match makes
+    almost every vector match almost the whole shelf, collapses every
+    vector's mean onto the reader's baseline, and reports every thread
+    as weak — a false negative that invites a model to tear up a sound
+    vector set or skip the check.  Routing through the same overlap
+    math `recommend` uses keeps the verdict honest and the step
+    un-skippable."""
+    state = load_build_state(args.build_state)
+    vecs = active_vectors_of(state)
+    if not vecs:
+        die("no active taste vectors in build state to calibrate", code=3)
+    log = load_log(args.log)
+
+    # Resolve every rated read to its catalog signals/themes.
+    reads: list[dict] = []
+    for r in log:
+        rating = parse_rating(r.get("My Rating"))
+        if rating is None or rating == 0:
+            continue
+        ce = lookup_by_pair(conn, r.get("title", ""), r.get("authors", ""))
+        if not ce:
+            continue
+        reads.append({
+            "key": ce["key"],
+            "title": ce.get("title") or r.get("title", ""),
+            "rating": rating,
+            "signals": positive_signals_for(conn, ce["key"]),
+            "themes": themes_for(conn, ce["key"]),
+        })
+    if len(reads) < args.min_members:
+        die(f"only {len(reads)} rated reads resolved to the catalog — "
+            f"too few to calibrate", code=3)
+    ratings = [rd["rating"] for rd in reads]
+    baseline = statistics.mean(ratings)
+    spread = statistics.pstdev(ratings) if len(ratings) > 1 else 0.0
+    frac_high = sum(1 for x in ratings if x >= 4.0) / len(ratings)
+
+    # Ensure each vector has a signal/theme set; derive from example
+    # titles only as a fallback, flagging it so the caller can see when
+    # a verdict rests on derived rather than assigned signals.
+    for v in vecs:
+        if not vector_signal_set(v) and not vector_theme_set(v):
+            sig, thm, unresolved = _vector_sets_from_titles(
+                conn, v.get("example_titles", []))
+            v["canonical_signals"] = sig
+            v["themes"] = thm
+            v["_derived"] = True
+            v["_unresolved"] = unresolved
+
+    # Per-vector membership, scored through the central threshold. Pass
+    # one collects members and tallies how many vectors each read lands
+    # centrally on; verdicts are assigned in pass two, once the
+    # "matched no thread" baseline is known.
+    central_count: dict[str, int] = {rd["key"]: 0 for rd in reads}
+    vec_members: dict[str, list[float]] = {}
+    vec_keys: dict[str, set[str]] = {}
+    vec_out: list[dict] = []
+    n_reads = len(reads)
+    for v in vecs:
+        thr = vector_central_threshold(v)
+        members: list[float] = []
+        mkeys: set[str] = set()
+        for rd in reads:
+            if vector_overlap_count(rd["signals"], rd["themes"], v) >= thr:
+                members.append(rd["rating"])
+                mkeys.add(rd["key"])
+                central_count[rd["key"]] += 1
+        vec_members[v["name"]] = members
+        vec_keys[v["name"]] = mkeys
+        breadth = len(members) / n_reads
+        rec = {
+            "name": v["name"],
+            "size": len(vector_signal_set(v)) + len(vector_theme_set(v)),
+            "central_threshold": thr,
+            "n_central_reads": len(members),
+            "breadth": round(breadth, 3),
+            "too_broad": breadth >= args.broad_frac,
+        }
+        if v.get("_derived"):
+            rec["signals_derived_from_example_titles"] = True
+            if v.get("_unresolved"):
+                rec["unresolved_example_titles"] = v["_unresolved"]
+        vec_out.append(rec)
+
+    def _mm(lst: list[float]) -> dict:
+        return {"n": len(lst),
+                "mean_rating": round(statistics.mean(lst), 3) if lst else None}
+
+    buckets = {0: [], 1: [], 2: []}
+    for rd in reads:
+        buckets[min(central_count[rd["key"]], 2)].append(rd["rating"])
+    membership_separation = {
+        "matched_no_thread": _mm(buckets[0]),
+        "matched_1_thread": _mm(buckets[1]),
+        "matched_2+_threads": _mm(buckets[2]),
+    }
+
+    # The reference a thread is judged against is the rating a read gets
+    # when it lands on *no* thread — self-calibrating to this reader's
+    # scale, and free of the global mean's self-inclusion (a thread
+    # shouldn't have to beat a baseline its own books inflate). Falls
+    # back to the global baseline when too few reads match nothing.
+    no_thread = buckets[0]
+    ref = (statistics.mean(no_thread)
+           if len(no_thread) >= args.min_members else baseline)
+    ref_label = ("matched-no-thread reads"
+                 if len(no_thread) >= args.min_members else "overall baseline")
+    # Negative signals first — a thread anchored on a cold register is a
+    # rebuild trigger, so these are needed before actions are assigned.
+    #
+    # Two ways a register earns a flag:
+    #   (a) FREQUENT IN LOW-RATED — its carriers average well below the
+    #       reader's baseline (a broadly disliked register).
+    #   (b) DRAGS THE EXPECTED-STRONG — among books the vectors said
+    #       should land (central to >=1 thread), its carriers
+    #       underperform the matched-thread baseline. This catches the
+    #       register that quietly pulls down a book that was otherwise a
+    #       good taste fit — the more useful signal of the two.
+    from collections import defaultdict
+    matched_ratings = buckets[1] + buckets[2]
+    matched_mean = (statistics.mean(matched_ratings)
+                    if matched_ratings else baseline)
+    carriers: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    for rd in reads:
+        ctx = {"rating": rd["rating"], "title": rd["title"],
+               "central": central_count[rd["key"]]}
+        for s in rd["signals"]:
+            carriers[("signal", s)].append(ctx)
+        for t in rd["themes"]:
+            carriers[("theme", t)].append(ctx)
+
+    all_negatives: list[dict] = []
+    for (kind, name), cl in carriers.items():
+        if len(cl) < args.neg_support:
+            continue
+        ratings_all = [c["rating"] for c in cl]
+        mean_all = statistics.mean(ratings_all)
+        expected = [c for c in cl if c["central"] >= 1]
+        mean_expected = (statistics.mean([c["rating"] for c in expected])
+                         if expected else None)
+        reasons = []
+        if mean_all <= baseline - args.neg_margin:
+            reasons.append("frequent in low-rated reads")
+        if (mean_expected is not None and len(expected) >= args.neg_support
+                and mean_expected <= matched_mean - args.neg_margin):
+            reasons.append("drags down books the threads expected to be strong")
+        if not reasons:
+            continue
+        # Example books: lowest-rated carriers, expected-strong first so
+        # the conversation can open on a book that *should* have worked.
+        ex = sorted(cl, key=lambda c: (c["rating"], -c["central"]))[:3]
+        example_books = [
+            {"title": c["title"], "rating": c["rating"],
+             "was_expected_strong": c["central"] >= 1} for c in ex]
+        rests_in = [
+            v["name"] for v in vecs
+            if name in (vector_signal_set(v) if kind == "signal"
+                        else vector_theme_set(v))
+        ]
+        # Severity = the larger of the two drops, so a register that
+        # tanks the expected-strong ranks alongside a broadly-low one.
+        drop_low = baseline - mean_all
+        drop_exp = (matched_mean - mean_expected) if mean_expected is not None else 0.0
+        all_negatives.append({
+            "kind": kind,
+            "canonical": name,
+            "reasons": reasons,
+            "mean_rating": round(mean_all, 3),
+            "mean_rating_when_expected_strong":
+                round(mean_expected, 3) if mean_expected is not None else None,
+            "support": len(cl),
+            "n_expected_strong": len(expected),
+            "delta_vs_baseline": round(mean_all - baseline, 3),
+            "rests_in_active_vectors": rests_in,
+            "example_books": example_books,
+            "_severity": round(max(drop_low, drop_exp), 4),
+        })
+    # Cold-register rebuild trigger considers every qualifying register;
+    # the surfaced candidate list is capped so the conversation stays to
+    # a handful (the reader confirms 2-5).
+    cold_rest = {n for neg in all_negatives for n in neg["rests_in_active_vectors"]}
+    all_negatives.sort(key=lambda x: -x["_severity"])
+    negatives = all_negatives[:args.max_neg]
+    for n in negatives:
+        n.pop("_severity", None)
+
+    # Suspiciously-low books: reads the threads expected to land (central
+    # to >=1 thread) that nonetheless rated well under the matched-thread
+    # mean. These open the conversation — books first, before any
+    # register is named.
+    underperformers = sorted(
+        ({"title": rd["title"], "rating": rd["rating"],
+          "threads_central_to": central_count[rd["key"]],
+          "signals": sorted(rd["signals"]), "themes": sorted(rd["themes"])}
+         for rd in reads
+         if central_count[rd["key"]] >= 1
+         and rd["rating"] <= matched_mean - args.underperf_margin),
+        key=lambda b: (b["rating"], -b["threads_central_to"]),
+    )[:6]
+
+    # Redundancy — thread pairs whose central reads heavily coincide are
+    # the same shelf wearing two names. The fix for these is fewer,
+    # sharper threads, so they're surfaced as merge candidates.
+    import itertools
+    redundant_pairs: list[dict] = []
+    in_redundant_pair: set[str] = set()
+    for a, b in itertools.combinations([v["name"] for v in vecs], 2):
+        union = vec_keys[a] | vec_keys[b]
+        if not union:
+            continue
+        j = len(vec_keys[a] & vec_keys[b]) / len(union)
+        if j >= args.overlap_jaccard:
+            redundant_pairs.append({
+                "threads": [a, b],
+                "jaccard": round(j, 3),
+                "shared_reads": len(vec_keys[a] & vec_keys[b]),
+            })
+            in_redundant_pair.update((a, b))
+    redundant_pairs.sort(key=lambda x: x["jaccard"], reverse=True)
+
+    # Verdict + action per thread.
+    #   rebuild — surface nothing; re-cluster before the reader sees it
+    #             (actively negative, or anchored on a cold register)
+    #   discuss — bring to the reader to refine (weak lift, broad, or
+    #             redundant with another thread)
+    #   keep    — surface as a confident thread
+    for rec in vec_out:
+        name = rec["name"]
+        members = vec_members[name]
+        if len(members) < args.min_members:
+            rec["verdict"] = "thin"
+            rec["action"] = "keep"
+            rec["action_reasons"] = [
+                "too few central reads to judge — low log support, not a "
+                "fault; surface if it's a real reader interest"]
+            continue
+        mean = statistics.mean(members)
+        lift = mean - ref
+        rec["mean_rating_central"] = round(mean, 3)
+        rec["delta_vs_baseline"] = round(mean - baseline, 3)
+        rec["lift_vs_unmatched"] = round(lift, 3)
+        rec["verdict"] = "holds" if lift > args.weak_margin else "weak"
+        reasons: list[str] = []
+        if lift <= args.rebuild_floor:
+            reasons.append("actively negative: central reads rate no better "
+                           "than reads matching no thread at all")
+        if name in cold_rest:
+            reasons.append("anchored on a register that runs cold for the "
+                           "reader — likely mis-clustered")
+        if reasons:
+            rec["action"] = "rebuild"
+        else:
+            if rec["verdict"] == "weak":
+                reasons.append("only a slight lift over matching no thread")
+            if rec["too_broad"]:
+                reasons.append(
+                    f"broad — claims {rec['breadth']:.0%} of the shelf; a "
+                    "split or sharper signal set may serve better")
+            if name in in_redundant_pair:
+                reasons.append("overlaps heavily with another thread — a "
+                               "merge candidate")
+            rec["action"] = "discuss" if reasons else "keep"
+        rec["action_reasons"] = reasons
+
+    notes: list[str] = []
+    if spread < 0.75 or frac_high >= 0.80:
+        notes.append(
+            "Compressed rating distribution (most reads rate >=4): "
+            "thread-to-thread differences will be small, so judge a "
+            "thread by whether it lifts above the matched-no-thread "
+            "reads, not by a big gap. The negative signals carry more "
+            "information for this reader.")
+    rebuilds = [r["name"] for r in vec_out if r["action"] == "rebuild"]
+    discuss = [r["name"] for r in vec_out if r["action"] == "discuss"]
+    if rebuilds:
+        notes.append(
+            "REBUILD before surfacing — do not present these to the "
+            "reader as written; re-cluster (split, merge, or re-derive "
+            "off the cold register) and re-run calibrate first: "
+            + ", ".join(rebuilds))
+    if discuss:
+        notes.append(
+            "BRING TO THE READER to refine — weak lift, too broad, or "
+            "redundant; the reader's reaction decides: " + ", ".join(discuss))
+    if redundant_pairs:
+        top = redundant_pairs[0]
+        notes.append(
+            "Heaviest overlap: " + " + ".join(top["threads"])
+            + f" (share {top['shared_reads']} central reads, "
+            f"jaccard {top['jaccard']}). Fewer, sharper threads beat "
+            "broad overlapping ones — consider merging or sharpening.")
+    if negatives:
+        notes.append(
+            "Negative-signal candidates are HYPOTHESES, not findings. "
+            "Open with the books in `underperformers` and ask, without "
+            "naming a register, what didn't land. Let the reader's words "
+            "lead you to the register; confirm it against the candidate's "
+            "`example_books` before locking 2-5 in.")
+
+    output = {
+        "reader_baseline": {
+            "n_rated_reads": len(reads),
+            "mean_rating": round(baseline, 3),
+            "rating_stdev": round(spread, 3),
+            "fraction_4_plus": round(frac_high, 3),
+        },
+        "vectors": vec_out,
+        "membership_separation": membership_separation,
+        "redundant_pairs": redundant_pairs,
+        "underperformers": underperformers,
+        "negative_signal_candidates": negatives,
+        "notes": notes,
+    }
+    print(json.dumps(output, ensure_ascii=False, indent=2))
+
+
+# ---------------------------------------------------------------------------
 # Subcommand: norm
 # ---------------------------------------------------------------------------
 
@@ -3135,7 +3538,46 @@ def build_parser() -> argparse.ArgumentParser:
                     help="author of the add candidate (improves lookup)")
     sp.add_argument("--n", type=int, default=3,
                     help="number of swap suggestions to return")
-    sp.set_defaults(func=cmd_compare, needs_catalog=True)
+    sp = sub.add_parser("calibrate")
+    sp.add_argument("--catalog", default=DEFAULT_CATALOG)
+    sp.add_argument("--log", default=DEFAULT_LOG)
+    sp.add_argument("--build-state", required=True)
+    sp.add_argument("--neg-support", dest="neg_support", type=int, default=4,
+                    help="min reads carrying a register before it can "
+                         "count as a negative/aversion signal")
+    sp.add_argument("--neg-margin", dest="neg_margin", type=float,
+                    default=0.5,
+                    help="how far below the reader's baseline a "
+                         "register's mean must fall to count as negative")
+    sp.add_argument("--weak-margin", dest="weak_margin", type=float,
+                    default=0.05,
+                    help="a vector whose central reads beat baseline by "
+                         "<= this is flagged 'weak'")
+    sp.add_argument("--min-members", dest="min_members", type=int,
+                    default=5,
+                    help="below this many central reads a vector is "
+                         "'thin' and left unjudged")
+    sp.add_argument("--broad-frac", dest="broad_frac", type=float,
+                    default=0.33,
+                    help="a thread claiming at least this fraction of the "
+                         "rated shelf as central is flagged too_broad")
+    sp.add_argument("--overlap-jaccard", dest="overlap_jaccard", type=float,
+                    default=0.40,
+                    help="thread pairs whose central reads overlap at or "
+                         "above this Jaccard are flagged as merge candidates")
+    sp.add_argument("--rebuild-floor", dest="rebuild_floor", type=float,
+                    default=0.0,
+                    help="a thread whose lift over matched-no-thread reads "
+                         "is at or below this is actively negative → rebuild")
+    sp.add_argument("--max-neg", dest="max_neg", type=int, default=5,
+                    help="cap on surfaced negative-signal candidates "
+                         "(the reader confirms 2-5)")
+    sp.add_argument("--underperf-margin", dest="underperf_margin",
+                    type=float, default=0.5,
+                    help="how far below the matched-thread mean a "
+                         "thread-central read must fall to count as a "
+                         "suspiciously-low 'underperformer'")
+    sp.set_defaults(func=cmd_calibrate, needs_catalog=True)
 
     return p
 
