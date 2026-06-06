@@ -352,11 +352,16 @@ reverse and reproduce the failure modes the system exists to prevent:
   signal among many — it can corroborate a redundancy or fit case,
   but a middling rating on its own doesn't unseat a pick that earns
   its slot on vector fit and list role.
+- Rating or review *count* — how many people rated the book is not a quality signal. A strong
+  fit with few ratings is a positive; low count is never a cut reason or a hesitation reason.
 - Audio suitability below an internal threshold, unless the profile
   flags audio as a criterion.
 - Vocabulary substitutions of any of the above — "no resonance
   signal," "register isn't represented in your reads" — same logic,
   new words.
+
+Before naming a pick as a cut candidate, run `compare` — a free-hand ranking without the score
+in hand isn't reliable enough to raise with the reader.
 
 If a cut suggestion forms and the only available reason is in the
 invalid set, the pick is *not* a cut candidate. Move on.

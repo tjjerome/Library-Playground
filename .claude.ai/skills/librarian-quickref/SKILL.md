@@ -204,6 +204,9 @@ negative if it matters), and the honest verdict — "yes," "yes but
 read Y first," or "not for current taste — try Z instead." Page
 count when it's load-bearing.
 
+Goodreads rating is one signal; rating count — how many people rated it — is not a quality or
+confidence proxy. A strong profile match with few ratings is still a yes.
+
 ### "What comes after X in its series?"
 
 ```bash
@@ -316,6 +319,8 @@ alongside.
 
 ## Hand-off triggers
 
+- Reader asks for something outside their usual register ("surprise me," "something different,"
+  "what would you pick that I'd never pick myself") → `librarian-build` (on-demand stretch pass).
 - Reader escalates to "actually build me a list" →
   `librarian-build-setup` (fresh) or `librarian-build` (resume).
 - Reader bought a new book → `library-cataloguer` (direct).

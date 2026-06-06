@@ -320,6 +320,42 @@ explicitly only to override that default. The values:
   not every round; cues for when: central picks landing softly,
   mild reader restlessness, a moment where breadth feels low.
 
+### On-demand stretch pass
+
+When the reader asks for something outside their usual register — "surprise me," "something
+different," "what would you pick that I'd never pick myself" — run an adjacency pass regardless
+of where you are in the build:
+
+1. If `/tmp/build_state.json` doesn't exist yet, bootstrap it from Profile.md:
+
+   ```bash
+   python3 webhelper/librarian_query.py bootstrap-state \
+       --catalog /tmp/Library_Catalog.sqlite \
+       --profile /tmp/Profile.md \
+       --out /tmp/build_state.json
+   ```
+
+   Warnings about unresolved titles are normal — the vectors still form from what resolves.
+
+2. Source with `--variance adjacent`:
+
+   ```bash
+   python3 webhelper/librarian_query.py recommend \
+       --catalog /tmp/Library_Catalog.sqlite \
+       --log $PROJECT_LOG \
+       --profile /tmp/Profile.md \
+       --reading-list /tmp/Reading_List.md \
+       --build-state /tmp/build_state.json \
+       --variance adjacent --n 8
+   ```
+
+3. Adjacency mode can over-produce within the reader's strongest vector. Cap at two picks per
+   `adjacency.vector` cluster; if a cluster over-produces, take the top two by rank.
+
+4. Same pitch rules as everywhere else — "Recognition is not a ranking signal" and the anti-blurb
+   discipline apply in full. The framing ("sits in your grief-horror lane but with a very different
+   temperature") goes in the pitch itself, not as a label in chat.
+
 `--mode` defaults to `discover` (the normal candidate-sourcing
 pipeline). `--mode curate` refuses to source new candidates and
 errors out — that's the helper enforcing the additive-only rule
@@ -502,7 +538,9 @@ comparing work lives. For now, more options?"*
 
 Narrow exception: add-driven swaps at the working cap stay light.
 "Add *Five Decembers* — what comes off?" can resolve in place if the
-swap is obvious from within-list overlap. If more than one or two
+swap is obvious from within-list overlap. Even for a light inline swap, run `compare` to confirm
+the overlap before naming the cut — a free-hand read is less reliable than you'd expect. If more
+than one or two
 swap conversations come up in the same round, hand off to finish
 early rather than running a cut pass inside the build.
 

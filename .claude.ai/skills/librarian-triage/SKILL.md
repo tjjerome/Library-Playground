@@ -250,6 +250,7 @@ with `ToolSearch(query="select:AskUserQuestion", max_results=1)`.
 | "Anything like X?" / "Is X worth my time?" / "What do you know about X?" | Hand to librarian-quickref. No clarifying needed. |
 | "Build me a reading list" / "what should I read next year" / opener with no existing Reading_List content | Hand to librarian-build-setup. |
 | "Continue the build" / "more picks" / "ready to hear about some books" / opener with Reading_List.md showing real picks but below the working range | Hand to librarian-build. (If close to or above 100 picks, hand to librarian-build-finish for closing passes.) |
+| "Surprise me" / "something outside my usual" / any clear stretch request | Hand to `librarian-build`. If no build state exists, the on-demand stretch procedure there boots it from Profile.md first. No clarifying question needed. |
 | Existing Reading_List with real content + build-shaped opener — refine vs. fresh? | Tap-confirm: refine the existing list or start over. Refine → librarian-build. Fresh → archive list, route to librarian-build-setup. |
 | "Add this book" / "fix this entry" / "I bought X" / "save the catalog" | Hand to library-cataloguer. |
 | Genuinely ambiguous | One tap-confirm with the four routes as plain-language options. |
